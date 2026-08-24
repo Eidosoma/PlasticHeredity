@@ -1,0 +1,70 @@
+{
+  "checkpoint_outcomes_read_during_preparation": false,
+  "checkpoint_record": {
+    "generate": {
+      "checkpoint_contract_sha256": "eec75311b367fc9742200b3495189626b8615941c39d3a38db7369e7ea65a0fc",
+      "checkpoint_digest": {
+        "aggregate_sha256": "b8f3793d4982a8093d99bd91dd01164e88bb671c964fc6b18050d4f00d055850",
+        "states": 400
+      },
+      "status": {
+        "checkpoint_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p2_work/generate",
+        "format": "codex-intervention-checkpoint-v1",
+        "futures_complete": 51200,
+        "futures_total": 51200,
+        "percent_complete": 100.0,
+        "phase": "p2",
+        "stage": "generate",
+        "state": "complete",
+        "states_complete": 400,
+        "states_total": 400
+      }
+    },
+    "replay": {
+      "checkpoint_contract_sha256": "d5950a8c6fda50cdf1be087fa7c8fadaa85896565710c5085796d14c7ac92715",
+      "checkpoint_digest": {
+        "aggregate_sha256": "b8f3793d4982a8093d99bd91dd01164e88bb671c964fc6b18050d4f00d055850",
+        "states": 400
+      },
+      "status": {
+        "checkpoint_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p2_work/replay",
+        "format": "codex-intervention-checkpoint-v1",
+        "futures_complete": 51200,
+        "futures_total": 51200,
+        "percent_complete": 100.0,
+        "phase": "p2",
+        "stage": "replay",
+        "state": "complete",
+        "states_complete": 400,
+        "states_total": 400
+      }
+    }
+  },
+  "failure": {
+    "exception": "ValueError: round-trip intervention inference changed",
+    "log_path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p2_cr3_run.log",
+    "log_sha256": "526f6f40939b86f1596b4f69fd16c5fc3ff567db427590788250451c25f517fb",
+    "p3_launched": false,
+    "primary_futures_complete": 51200,
+    "replay_futures_complete": 51200,
+    "result_bundle_sealed": false
+  },
+  "format": "codex-intervention-p2-readback-amendment-v1",
+  "intended_result_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p2_cr3_physical_rule_pilot",
+  "mandatory_stop_after_recovery": true,
+  "only_repair": "derive readback pilot_eligibility as readback eligibility_without_replay AND exact_replay before comparison",
+  "original_registration": {
+    "all_original_registered_source_hashes_current": true,
+    "checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+    "id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+    "path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/registration"
+  },
+  "phase": "p2",
+  "protocol_id": "dae771f5196eaf981900bcb083b0dcd72fe98d380572e7b1aec69b39ce09a29c",
+  "recovery_futures": 0,
+  "scientific_contract_changes": [],
+  "serialization_alias": "map historical __main__.PhaseBatch to the byte-identical registered intervention_replication.PhaseBatch class",
+  "static_diagnosis": "readback omitted the generation path's derived, replay-dependent pilot_eligibility field before complete dictionary comparison",
+  "status": "sealed_before_recovery_loaded_any_p2_checkpoint_outcome",
+  "work_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p2_work"
+}

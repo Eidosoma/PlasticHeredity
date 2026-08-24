@@ -1,0 +1,204 @@
+schema: eidosoma.e01.s19.l14.preregistration.v1
+researchStepId: S19-L14
+versionedStepId: E01-S19-L14-FIGURE5-PADDING-LENGTH-LEAKAGE-RECONSTRUCTION-v1.0.0
+title: Figure-5 Padding and Length-Leakage Reconstruction
+evidenceClass: ADAPTIVE_EXPLORATORY_FORENSIC_RECONSTRUCTION
+authorizedAtUtc: '2026-08-10T00:00:00Z'
+outcomeAccessedAtLock: false
+
+inputs:
+  matrixCount: 100
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  trajectorySource: /artifacts/research_steps/S13Y/trajectory_manifest.parquet
+  labelSource: /artifacts/research_steps/S13Y/label_values.parquet
+  labelId: MOL_ADJACENT_INCOMING_H900
+  splitManifest: configs/e01/s16_split_manifest.csv
+  tensorManifest: configs/e01/s16_tensor_model_manifest.json
+  paperPdf: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+  paperPdfSha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  trajectoryPolicy: exact frozen S13Y trajectories only; no generation or replacement
+
+primaryTarget:
+  targetId: S16_ADJACENT_INCOMING_H090
+  definition: Y_t = I[H_t > 0.9]
+  threshold: 0.9
+  comparatorTargetsReadOnly: [L13_U2, L13_R1, L08_A_PROJECTED_IF_ARRAY_COMPATIBLE]
+
+paperDigitization:
+  figure5Image: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/figures/figure-05.png
+  figure5ImageSha256: 75be305d13203e65a8c93464b8a23aa25a86a567880458e889137bfe1281a968
+  verticalCalibration:
+    tickRows: [64, 129, 194, 259, 324]
+    tickValues: [1.0, 0.9, 0.8, 0.7, 0.6]
+    coordinateUncertaintyPixels: 2.0
+  boxCoordinates:
+    P1_PHIRL_EMERGENCE_COMPLETED_FIT: {upperWhisker: 141.0, q3: 152.5, median: 162.5, q1: 173.5, lowerWhisker: 196.5}
+    B1_COMPOSITION_CHANGE: {upperWhisker: 162.5, q3: 170.5, median: 190.5, q1: 202.5, lowerWhisker: 209.5}
+    B2_RAW_COMPOSITIONS: {upperWhisker: 170.5, q3: 186.5, median: 194.5, q1: 205.5, lowerWhisker: 207.5, lowFlier: 243.0}
+    B3_MOLECULAR_FLUXES: {upperWhisker: 175.5, q3: 190.5, median: 200.5, q1: 211.5, lowerWhisker: 221.5}
+    D0_MAJORITY_DUMMY: {upperWhisker: 294.0, q3: 310.5, median: 318.0, q1: 323.5, lowerWhisker: 338.5}
+  gateRule:
+    median: empirical ten-split median must lie in the pixel-uncertainty interval for the paper median
+    iqr: empirical IQR must intersect the paper IQR envelope and both empirical quartiles are reported against their own pixel intervals
+    arithmeticDummy: ten-split range must intersect the paper whisker envelope and its median must lie in the paper IQR envelope
+  figure2Image: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/figures/figure-02.png
+  figure2ImageSha256: 0e4aac507ccf6e10ced31edd6d7e5ba8c876d9d0c8d420b145dfc27c7d040778
+  figure2Lengths:
+    aggregate: {estimate: 1250, lower: 1225, upper: 1275, unit: molecular_step}
+    panelB: {estimate: 810, lower: 790, upper: 830, unit: molecular_step}
+    panelC: {estimate: 780, lower: 760, upper: 800, unit: molecular_step}
+    panelD: {estimate: 1020, lower: 1000, upper: 1040, unit: molecular_step}
+  figure2ValidFractionCompatibility:
+    derivation: mean(sample endpoints) divided by aggregate support
+    lower: 0.6666666666666666
+    upper: 0.726530612244898
+  table1ControlProbability:
+    center: 0.88
+    descriptiveLower: 0.85
+    descriptiveUpper: 0.91
+
+tensor:
+  cutoff: floor(0.25*T)
+  maximumInputLength: 367
+  maximumOutputLength: 1101
+  paddingSide: right
+  inputPaddingValue: 0.0
+  targetPaddingValue: 0.0
+  targetPaddingClass: false
+  featureChannelCapacity: 100
+  exactS16ReplayRequired: true
+
+maskConditions:
+  - {conditionId: S00_MASKED_TRAIN_MASKED_SCORE, trainIncludesPadding: false, scoreIncludesPadding: false}
+  - {conditionId: S01_MASKED_TRAIN_UNMASKED_SCORE, trainIncludesPadding: false, scoreIncludesPadding: true}
+  - {conditionId: S10_UNMASKED_TRAIN_MASKED_SCORE, trainIncludesPadding: true, scoreIncludesPadding: false}
+  - {conditionId: S11_UNMASKED_TRAIN_UNMASKED_SCORE, trainIncludesPadding: true, scoreIncludesPadding: true}
+
+features:
+  learned:
+    - P1_PHIRL_EMERGENCE_COMPLETED_FIT
+    - P2_PHIRL_EMERGENCE_FIRST_QUARTER_ONLY
+    - B1_COMPOSITION_CHANGE
+    - B2_RAW_COMPOSITIONS
+    - B3_MOLECULAR_FLUXES
+    - B4_ADJACENT_H
+  diagnostics:
+    - D0_MAJORITY_DUMMY
+    - D1_INPUT_LENGTH_ONLY
+    - D2_DETERMINISTIC_PADDING_BOUNDARY
+    - D3_TIME_ONLY
+  completedFitStatus: RETROSPECTIVE_COMPLETED_FIT_FUTURE_DEPENDENT
+
+diagnostics:
+  logistic:
+    implementation: sklearn.linear_model.LogisticRegression
+    solver: lbfgs
+    penalty: l2
+    C: 1.0
+    tolerance: 1.0e-8
+    maximumIterations: 1000
+    classWeight: null
+    fitPartitionOnly: true
+  D1Columns: [candidate_zscored_valid_input_length, normalized_output_index, interaction]
+  D3Columns: [normalized_output_index]
+  D2:
+    possibleTotalLengths: [4c, 4c+1, 4c+2, 4c+3]
+    tieRule: midpoint_total_length_4c_plus_2
+    inferredOutputLength: 3c+2
+    beforeBoundaryClass: majority class among valid fit-partition targets
+    afterBoundaryClass: false
+
+model:
+  source: configs/e01/s16_tensor_model_manifest.json
+  architecture: exact S16 288789-parameter CPU-float64 MLP
+  optimizer: exact S16 AdamW
+  training: exact S16 scaling, epoch ceiling, validation, early stopping and seeds
+  unmaskedLossImplementation: exact S16 BCE with an all-true target-loss mask
+  repetitions: 10
+  matrixSplit: {fit: 64, validation: 16, test: 20}
+
+controls:
+  NC1_VALID_LABEL_PERMUTATION:
+    scope: P1 under S11
+    rule: independently permute valid labels within fit and validation cells while retaining every padding zero and boundary
+  NC2_PADDING_BOUNDARY_PERMUTATION:
+    scope: deterministic boundary diagnostic
+    rule: permute true output-length identities across matrices while leaving input lengths, valid labels and scientific target arrays unchanged
+  NC3_INPUT_LENGTH_OBFUSCATION:
+    scope: P1 under S11
+    rule: replace scaled values only where input time mask is false with domain-separated matched Gaussian noise; retain channel and time masks
+  NC4_FEATURE_TEMPORAL_PERMUTATION:
+    scope: P1 under S11
+    rule: permute valid first-quarter feature rows and channel masks within matrix; retain valid length
+  NC5_MATRIX_LABEL_PERMUTATION:
+    scope: P1 under S11
+    rule: permute complete padded target arrays among fit matrices only; validation and test targets remain unchanged
+  NC6_COMPLETED_FIT_SUFFIX_PERTURBATION:
+    sentinelMatrices: [0, 24, 49, 74]
+    mutation: deterministic suffix permutation
+    required: P2 exact invariance and quantified P1 change
+
+statistics:
+  independentUnit: catalytic matrix
+  matrixBootstrapReplicates: 4096
+  matrixBootstrapInterval: percentile_2.5_97.5
+  paperComparison: two-sided Mann-Whitney across ten split accuracies
+  pairedComparison: two-sided Wilcoxon across paired splits
+  multiplicity: Holm within registered comparison family
+  accuracyTolerance: 1.0e-12
+
+gates:
+  arithmetic:
+    requireBothCandidates: true
+    dummyRule: split range intersects digitized whiskers and split median lies inside digitized IQR
+    undefinedRowsAllowed: false
+    testLabelsChooseDummy: false
+    requireExactReplay: true
+    qFigure2Range: [0.6666666666666666, 0.726530612244898]
+  panel:
+    conditionId: S11_UNMASKED_TRAIN_UNMASKED_SCORE
+    requireMedianAndIqrOverlap: true
+    ordering: [P1>B1, P1>B2, P1>B3, P1>D0]
+    mannWhitneyPBelow: 0.01
+    requireBothCandidates: true
+  paddingDominance:
+    allMinusValidMinimum: 0.05
+    correctPredictionsFromPaddingMinimum: 0.5
+    lengthOrBoundaryWithinP1: 0.03
+    shuffledValidLabelRetentionMinimum: 0.8
+    obfuscationMaterialDrop: 0.03
+  attribution:
+    scoreInflationMinimum: 0.05
+    scoreInflationFractionOfS11Gain: 0.8
+    trainingContaminationAbsoluteValidChange: 0.02
+  prospective:
+    reference: P2_PHIRL_EMERGENCE_FIRST_QUARTER_ONLY
+    comparators: [D0_MAJORITY_DUMMY, D1_INPUT_LENGTH_ONLY, D3_TIME_ONLY, B1_COMPOSITION_CHANGE, B2_RAW_COMPOSITIONS, B3_MOLECULAR_FLUXES, B4_ADJACENT_H]
+    balancedAccuracyLower95Above: 0.5
+    auprcAbovePrevalence: true
+    brierBeatsTrainingPrior: true
+    minimumPreOnsetMatrices: 20
+    minimumFutureOnsetMatrices: 20
+    requireBothCandidates: true
+
+technicalAssurance:
+  maximumPostOutcomeAmendments: 2
+  permittedOnly: [serialization, schema typing, plotting, report assembly, cache quarantine, atomic file handling]
+  scientificValueChangePermitted: false
+
+resources:
+  cpuCores: 8
+  gpuHours: 0
+  cpuHoursMaximum: 48
+  wallHoursMaximum: 24
+  retainedGiBMaximum: 20
+  temporaryGiBMaximum: 60
+  reserveFraction: 0.15
+  numericalThreadsPerWorker: 1
+
+forbidden:
+  - changed prior artifact, source, trajectory, target, H threshold, Phi-r scalar, architecture, split, padding value or mask after access
+  - new matrix, trajectory, label, feature, fifth mask condition, balancing, resampling or undefined-cell imputation
+  - test-label dummy selection, candidate pooling, prospective completed-fit interpretation or hidden padding decomposition
+  - scientific-value-changing technical amendment or more than two technical amendments
+  - S20, E02, another loop, author contact, intervention or report-bundle generation

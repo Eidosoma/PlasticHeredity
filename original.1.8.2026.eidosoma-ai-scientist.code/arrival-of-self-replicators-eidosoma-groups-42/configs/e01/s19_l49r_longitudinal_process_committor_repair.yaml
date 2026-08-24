@@ -1,0 +1,57 @@
+schema: eidosoma.e01.s19_l49r.preregistration.v1
+researchStepId: S19-L49R
+versionedId: E01-S19-L49R-LANDMARK-AVAILABILITY-REPAIR-v1.0.0
+title: Longitudinal Process-Committor Risk Trajectory — State-Availability Repair
+status: active_preoutcome_one_repair_lock
+repairBoundary:
+  failedPrior: S19-L49
+  failure: one selected state had 9 remaining fissions for a locked F12 future
+  scientificOutcomesPreviouslyOpened: false
+  scientificBranchesPreviouslyExecuted: 0
+  onlyChange: require_at_least_12_future_post_fission_boundaries_at_every_locked_landmark_in_both_candidates_before_matrix_selection
+  selectionConsequence: replace_any_ineligible_shared_matrix_with_the_next_matrix_in_the_original_frozen_sha256_ranking
+unchanged:
+  matricesPerRole: 20
+  roles: [DEVELOPMENT, VALIDATION]
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  selectedClock: C1_SELECTED_DAUGHTER_RETAINED
+  landmarks: [64, 96, 128, 160, 192]
+  futureFissionHorizon: 12
+  branchesPerState: 64
+  threshold: 0.9
+  comparison: strict_greater_than
+  process: first_future_noninheritance_then_three_consecutive_inherited_fissions
+  controls:
+    - normalized_landmark
+    - current_mass
+    - distance_to_fission_mass
+    - generation_local_step
+    - completed_fissions
+    - prefix_inheritance_fraction
+    - prefix_trailing_inheritance_run
+    - latest_parent_daughter_H
+  matrixBootstraps: 4096
+  matrixPermutations: 512
+shooting:
+  workers: 8
+  numericalLibraryThreadsPerWorker: 1
+  exactBranchCampaigns: 2
+  newDomainSeparatedSeedRoot: 661d7f3fe4a51523c427899e657d88455d6861dafd67fe3e5ee9af5026b51c14
+prohibited:
+  - changing_a_landmark
+  - changing_the_F12_horizon
+  - changing_the_process_or_H_threshold
+  - selecting_a_matrix_using_branch_or_realized_process_outcomes
+  - new_primary_trajectory
+  - completed_run_centroid
+  - Phi_or_emergence_metric
+  - architecture_search
+  - intervention
+resources:
+  cpuCores: 8
+  gpuHours: 0
+  cpuHoursCeiling: 100
+  wallClockHoursCeiling: 72
+  retainedGiBCeiling: 25
+  temporaryGiBCeiling: 75
+  validationReserveFraction: 0.10

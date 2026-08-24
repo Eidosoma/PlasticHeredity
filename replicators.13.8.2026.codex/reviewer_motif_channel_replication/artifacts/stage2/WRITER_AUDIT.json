@@ -1,0 +1,16 @@
+{
+  "binding_sha256": "71bf50277d48d0f0dd9c7b9c2bbbb5c4a9f9c97ccb5121fa3e5538e85d27f88b",
+  "payload": {
+    "adjudication_only": true,
+    "classification_passed": true,
+    "history_count": 64,
+    "leave_one_pair_out_accuracy": 1.0,
+    "max_abs_symmetry_error": 0.0,
+    "pair_count": 32,
+    "passed": true,
+    "phase": "writer_audit",
+    "symmetry_passed": true
+  },
+  "payload_sha256": "bc2816641ffcfde8fa80c72b57263a0c64c7f66a7226088fbb5f3b931e6deff9",
+  "schema_version": "reviewer-motif-channel-replication-v1"
+}

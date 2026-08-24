@@ -1,0 +1,447 @@
+{
+  "complete_analysis": true,
+  "donor_selection_id": "275744ea685612978c6009a9ce5aef827892d65e30ec30a839cf0bde6aab839d",
+  "eligible_matrix_counts": {
+    "02": {
+      "b1p0_l1p0": 38,
+      "b2p0_l2p0": 18
+    },
+    "03": {
+      "b1p0_l1p0": 40,
+      "b2p0_l2p0": 21
+    }
+  },
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "protocol_id": "e10e9a1a499c66cb7ab5e20e51aed56cbf6fa1fc4e6a062dd63095576c605e3f",
+  "reporting_boundary": "next-preprint exploratory; not current-preprint evidence or a replication; exact replay still required",
+  "results": {
+    "autonomous_switch_lock_both": false,
+    "candidates": {
+      "02": {
+        "anchors": {
+          "b1p0_l1p0": {
+            "autonomous_switch_lock_pass": false,
+            "eligible_matrices": 38,
+            "phase_coding_secondary_pass": false,
+            "phase_minus_static_signal_f8": {
+              "lower": 0.005499301954877827,
+              "n_matrices": 38,
+              "point": 0.0304286802645844,
+              "upper": 0.06226728139684284
+            },
+            "pulse_release_capture_f32": {
+              "lower": 0.0836245888157895,
+              "n_matrices": 38,
+              "point": 0.17269736842105263,
+              "upper": 0.27616159539473684
+            },
+            "pulse_release_minus_control_f32": {
+              "lower": 0.0012335526315789473,
+              "n_matrices": 38,
+              "point": 0.01069078947368421,
+              "upper": 0.021792763157894735
+            },
+            "quench_wave_capture_f16": {
+              "lower": 0.16940789473684212,
+              "n_matrices": 38,
+              "point": 0.2800164473684211,
+              "upper": 0.4023951480263158
+            },
+            "quench_wave_capture_f32": {
+              "lower": 0.17079564144736845,
+              "n_matrices": 38,
+              "point": 0.2767269736842105,
+              "upper": 0.3974609375
+            },
+            "quench_wave_comparisons_f16": {
+              "control": {
+                "lower": 0.03633840460526319,
+                "n_matrices": 38,
+                "point": 0.09827302631578948,
+                "upper": 0.1787109375
+              },
+              "quench": {
+                "lower": 0.019736842105263157,
+                "n_matrices": 38,
+                "point": 0.05756578947368421,
+                "upper": 0.10238486842105263
+              },
+              "quench_phase_pi": {
+                "lower": -0.031661184210526314,
+                "n_matrices": 38,
+                "point": -0.017269736842105265,
+                "upper": -0.005345394736842105
+              },
+              "quench_shuffled": {
+                "lower": 0.02631578947368421,
+                "n_matrices": 38,
+                "point": 0.07360197368421052,
+                "upper": 0.12664473684210525
+              },
+              "quench_static": {
+                "lower": -0.07771381578947369,
+                "n_matrices": 38,
+                "point": -0.033717105263157895,
+                "upper": 0.0012335526315789473
+              },
+              "wave": {
+                "lower": -0.01850328947368421,
+                "n_matrices": 38,
+                "point": 0.00041118421052631577,
+                "upper": 0.01850328947368421
+              }
+            },
+            "strict_enrichment_pass": false,
+            "strict_minus_f12_signal_f8": {
+              "lower": -0.03492475017272804,
+              "n_matrices": 38,
+              "point": -0.004565437799016385,
+              "upper": 0.032955669287054824
+            },
+            "strict_same_parent_f8": {
+              "lower": 0.5554846271496053,
+              "n_matrices": 38,
+              "point": 0.6241014898549422,
+              "upper": 0.693311716282825
+            },
+            "strict_static_signal_f32": {
+              "lower": -0.02117051219808076,
+              "n_matrices": 38,
+              "point": -0.004037729785759015,
+              "upper": 0.012456954420286668
+            },
+            "strict_static_signal_f8": {
+              "lower": -0.009614704835108397,
+              "n_matrices": 38,
+              "point": 0.017951148729312,
+              "upper": 0.0521969064568884
+            },
+            "strong_static_identity_pass": false,
+            "supported_specificity_pass": false
+          },
+          "b2p0_l2p0": {
+            "autonomous_switch_lock_pass": false,
+            "eligible_matrices": 18,
+            "phase_coding_secondary_pass": false,
+            "phase_minus_static_signal_f8": {
+              "lower": -0.003770915879959323,
+              "n_matrices": 18,
+              "point": 0.004766081992559916,
+              "upper": 0.014482244224712046
+            },
+            "pulse_release_capture_f32": {
+              "lower": 0.11632667824074074,
+              "n_matrices": 18,
+              "point": 0.26780478395061724,
+              "upper": 0.4456958912037037
+            },
+            "pulse_release_minus_control_f32": {
+              "lower": -0.0009403935185185103,
+              "n_matrices": 18,
+              "point": 0.013464506172839504,
+              "upper": 0.02966820987654321
+            },
+            "quench_wave_capture_f16": {
+              "lower": 0.2708333333333333,
+              "n_matrices": 18,
+              "point": 0.4583333333333333,
+              "upper": 0.6614583333333334
+            },
+            "quench_wave_capture_f32": {
+              "lower": 0.2916666666666667,
+              "n_matrices": 18,
+              "point": 0.4782986111111111,
+              "upper": 0.670681423611111
+            },
+            "quench_wave_comparisons_f16": {
+              "control": {
+                "lower": 0.06684027777777778,
+                "n_matrices": 18,
+                "point": 0.2144097222222222,
+                "upper": 0.3819444444444444
+              },
+              "quench": {
+                "lower": -0.13368055555555555,
+                "n_matrices": 18,
+                "point": -0.05642361111111111,
+                "upper": -0.003472222222222222
+              },
+              "quench_phase_pi": {
+                "lower": -0.021701388888888888,
+                "n_matrices": 18,
+                "point": -0.006944444444444444,
+                "upper": 0.004340277777777778
+              },
+              "quench_shuffled": {
+                "lower": -0.0954861111111111,
+                "n_matrices": 18,
+                "point": -0.0234375,
+                "upper": 0.029513888888888888
+              },
+              "quench_static": {
+                "lower": -0.050347222222222224,
+                "n_matrices": 18,
+                "point": -0.022569444444444444,
+                "upper": 0.001736111111111111
+              },
+              "wave": {
+                "lower": 0.05642361111111111,
+                "n_matrices": 18,
+                "point": 0.20833333333333334,
+                "upper": 0.3807870370370371
+              }
+            },
+            "strict_enrichment_pass": false,
+            "strict_minus_f12_signal_f8": {
+              "lower": -0.08529374234687767,
+              "n_matrices": 18,
+              "point": -0.03543513036773773,
+              "upper": 0.00048407464801582527
+            },
+            "strict_same_parent_f8": {
+              "lower": 0.6975775084615357,
+              "n_matrices": 18,
+              "point": 0.7907629930052619,
+              "upper": 0.873311809003713
+            },
+            "strict_static_signal_f32": {
+              "lower": -0.019281839133289663,
+              "n_matrices": 18,
+              "point": -0.008818220216181418,
+              "upper": 0.0015095117053565922
+            },
+            "strict_static_signal_f8": {
+              "lower": -0.005050293611289324,
+              "n_matrices": 18,
+              "point": 0.002466832741358742,
+              "upper": 0.010194815356223534
+            },
+            "strong_static_identity_pass": false,
+            "supported_specificity_pass": false
+          }
+        },
+        "primary_autonomous_switch_lock": false,
+        "primary_phase_coding_secondary": false,
+        "primary_strict_enrichment": false,
+        "primary_strong_static_identity": false,
+        "primary_supported_specificity": false
+      },
+      "03": {
+        "anchors": {
+          "b1p0_l1p0": {
+            "autonomous_switch_lock_pass": false,
+            "eligible_matrices": 40,
+            "phase_coding_secondary_pass": false,
+            "phase_minus_static_signal_f8": {
+              "lower": 0.00675797523495027,
+              "n_matrices": 40,
+              "point": 0.03988273301773146,
+              "upper": 0.0772966246744799
+            },
+            "pulse_release_capture_f32": {
+              "lower": 0.108203125,
+              "n_matrices": 40,
+              "point": 0.209765625,
+              "upper": 0.32109375
+            },
+            "pulse_release_minus_control_f32": {
+              "lower": -0.01484375,
+              "n_matrices": 40,
+              "point": -0.00234375,
+              "upper": 0.011962890625
+            },
+            "quench_wave_capture_f16": {
+              "lower": 0.171875,
+              "n_matrices": 40,
+              "point": 0.28515625,
+              "upper": 0.407421875
+            },
+            "quench_wave_capture_f32": {
+              "lower": 0.17421875,
+              "n_matrices": 40,
+              "point": 0.288671875,
+              "upper": 0.40859375
+            },
+            "quench_wave_comparisons_f16": {
+              "control": {
+                "lower": 0.019140625,
+                "n_matrices": 40,
+                "point": 0.068359375,
+                "upper": 0.129541015625
+              },
+              "quench": {
+                "lower": -0.011328125,
+                "n_matrices": 40,
+                "point": 0.01640625,
+                "upper": 0.046875
+              },
+              "quench_phase_pi": {
+                "lower": -0.01796875,
+                "n_matrices": 40,
+                "point": -0.006640625,
+                "upper": 0.004296875
+              },
+              "quench_shuffled": {
+                "lower": 0.001953125,
+                "n_matrices": 40,
+                "point": 0.033203125,
+                "upper": 0.07109375
+              },
+              "quench_static": {
+                "lower": -0.02890625,
+                "n_matrices": 40,
+                "point": -0.00625,
+                "upper": 0.01640625
+              },
+              "wave": {
+                "lower": -0.024462890624999966,
+                "n_matrices": 40,
+                "point": -0.00390625,
+                "upper": 0.013671875
+              }
+            },
+            "strict_enrichment_pass": false,
+            "strict_minus_f12_signal_f8": {
+              "lower": -0.07362985137836267,
+              "n_matrices": 40,
+              "point": -0.03203971817075817,
+              "upper": 0.004690658330616968
+            },
+            "strict_same_parent_f8": {
+              "lower": 0.5745660789640726,
+              "n_matrices": 40,
+              "point": 0.6480481004758404,
+              "upper": 0.7222766280560393
+            },
+            "strict_static_signal_f32": {
+              "lower": -0.0006557736166906652,
+              "n_matrices": 40,
+              "point": 0.00899424107017539,
+              "upper": 0.020117478349418384
+            },
+            "strict_static_signal_f8": {
+              "lower": -0.016822740788761906,
+              "n_matrices": 40,
+              "point": 0.0005872997586602411,
+              "upper": 0.020815580066572584
+            },
+            "strong_static_identity_pass": false,
+            "supported_specificity_pass": false
+          },
+          "b2p0_l2p0": {
+            "autonomous_switch_lock_pass": false,
+            "eligible_matrices": 21,
+            "phase_coding_secondary_pass": false,
+            "phase_minus_static_signal_f8": {
+              "lower": 0.0008640469318640582,
+              "n_matrices": 21,
+              "point": 0.015352400872578156,
+              "upper": 0.03316725256489582
+            },
+            "pulse_release_capture_f32": {
+              "lower": 0.022724454365079378,
+              "n_matrices": 21,
+              "point": 0.12678571428571428,
+              "upper": 0.2626984126984127
+            },
+            "pulse_release_minus_control_f32": {
+              "lower": -0.02957589285714285,
+              "n_matrices": 21,
+              "point": -0.014583333333333334,
+              "upper": -0.0017361111111111114
+            },
+            "quench_wave_capture_f16": {
+              "lower": 0.23511904761904762,
+              "n_matrices": 21,
+              "point": 0.3913690476190476,
+              "upper": 0.5654761904761905
+            },
+            "quench_wave_capture_f32": {
+              "lower": 0.23139880952380953,
+              "n_matrices": 21,
+              "point": 0.39285714285714285,
+              "upper": 0.5659412202380952
+            },
+            "quench_wave_comparisons_f16": {
+              "control": {
+                "lower": 0.10416666666666667,
+                "n_matrices": 21,
+                "point": 0.24702380952380953,
+                "upper": 0.4064360119047619
+              },
+              "quench": {
+                "lower": -0.036458333333333336,
+                "n_matrices": 21,
+                "point": 0.002232142857142857,
+                "upper": 0.04241071428571429
+              },
+              "quench_phase_pi": {
+                "lower": -0.023065476190476192,
+                "n_matrices": 21,
+                "point": -0.005208333333333333,
+                "upper": 0.01488095238095238
+              },
+              "quench_shuffled": {
+                "lower": -0.023809523809523808,
+                "n_matrices": 21,
+                "point": 0.00744047619047619,
+                "upper": 0.04389880952380952
+              },
+              "quench_static": {
+                "lower": -0.07589285714285714,
+                "n_matrices": 21,
+                "point": -0.03422619047619048,
+                "upper": -0.000744047619047619
+              },
+              "wave": {
+                "lower": 0.0871465773809524,
+                "n_matrices": 21,
+                "point": 0.21676587301587305,
+                "upper": 0.35937500000000006
+              }
+            },
+            "strict_enrichment_pass": false,
+            "strict_minus_f12_signal_f8": {
+              "lower": -0.05779864778404644,
+              "n_matrices": 21,
+              "point": -0.019055679293936402,
+              "upper": 0.014534439005042364
+            },
+            "strict_same_parent_f8": {
+              "lower": 0.6522693255632357,
+              "n_matrices": 21,
+              "point": 0.7346333600661185,
+              "upper": 0.8123371073432077
+            },
+            "strict_static_signal_f32": {
+              "lower": 0.002527260478601034,
+              "n_matrices": 21,
+              "point": 0.011737207917311072,
+              "upper": 0.022978841388831234
+            },
+            "strict_static_signal_f8": {
+              "lower": -0.006699453252873854,
+              "n_matrices": 21,
+              "point": 0.010111806297046702,
+              "upper": 0.034437344543368734
+            },
+            "strong_static_identity_pass": false,
+            "supported_specificity_pass": false
+          }
+        },
+        "primary_autonomous_switch_lock": false,
+        "primary_phase_coding_secondary": false,
+        "primary_strict_enrichment": false,
+        "primary_strong_static_identity": false,
+        "primary_supported_specificity": false
+      }
+    },
+    "classification": "no_registered_primary_signal",
+    "minimum_completion": 0.59375,
+    "phase_coding_secondary_both": false,
+    "strict_enrichment_both": false,
+    "strong_static_identity_both": false,
+    "supported_specificity_both": false
+  },
+  "runtime_selection_id": "63856f908b2dd39fe9da351078aa813f6d6582c24a80eb063bfbe9cae521e719"
+}

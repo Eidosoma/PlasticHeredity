@@ -1,0 +1,23 @@
+{
+  "changed_fields": [
+    {
+      "original_value": "-inf",
+      "path": "$.adjudication.no_rewrite_loss_fraction"
+    }
+  ],
+  "checkpoint_change": false,
+  "checkpoint_count": 96,
+  "date_utc": "2026-08-23",
+  "design_digest": "33fa9e1101ff41533fdc5218df0b0f61fb6a5f6f3944ec52204a45624e7e11f1",
+  "estimand_change": false,
+  "gate_change": false,
+  "kind": "reporting_serialization_amendment",
+  "recovery_script_sha256": "d45f70413fae920d456f8bccfac54e254d93a0f7bbff1ee6ac9dec9398d601eb",
+  "registered_inference_sha256": "0684d65ba9afa5c33c0eea970861a995cb048f36a0b961d0f7c413800c5eeb82",
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1",
+  "sealed_verdict_before_serialization": "NO_DURABLE_RENEWAL",
+  "trajectory_rerun": false,
+  "transformation": "replace the listed nonfinite diagnostic with JSON null",
+  "trigger": "The registered safe-fraction diagnostic returned negative infinity because intact generation-8 crossover was non-positive; strict JSON serialization rejects nonfinite numbers.",
+  "verdict_change": false
+}

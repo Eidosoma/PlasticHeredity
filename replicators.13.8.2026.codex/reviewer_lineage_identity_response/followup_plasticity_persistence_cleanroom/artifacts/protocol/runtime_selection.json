@@ -1,0 +1,17 @@
+{
+  "benchmark_sha256": "a1ebc063e036de58f215b99aa1a1b28dc61eacb20031dfc04d22103ba338b364",
+  "design": {
+    "f12_donors": 2,
+    "factorial_lineages": 12,
+    "factorial_matrices": 12,
+    "factorial_twin_starts": 3,
+    "identity_futures": 24,
+    "surface_lineages": 64,
+    "surface_matrices": 72
+  },
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "protocol_id": "c231093da83fad91eda65348b1cd2dbd4a846b97e62ae79f2b48ad307ec596a8",
+  "selected_before_scientific_futures": true,
+  "selection_id": "4611c3bc551805bd6fe72466d643d59218098721c3c1e41075e15fa8b8f3e95c",
+  "tier": "A"
+}

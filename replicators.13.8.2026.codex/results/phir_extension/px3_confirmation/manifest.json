@@ -1,0 +1,19 @@
+{
+  "classification": "direct_phi_control_not_confirmed",
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 1603.651581182,
+  "format": "codex-ch5-phir-extension-px3-result-v1",
+  "gates": {
+    "confirmation_only_phi_control": false,
+    "confirmed_direct_phi_control": false,
+    "coupled_heredity_response": false,
+    "decoupled_heredity_response": false,
+    "development_validity": true,
+    "original_24_matrix_gate_eligible": false,
+    "prospective_pilot_selector_confirmation": false
+  },
+  "matrices": 24,
+  "phase": "PX3_CONFIRMATION",
+  "registration_id": "bdb2083071141e23bd05dcc8b7fc2744324f2c69294be60972f20dad151817ec"
+}

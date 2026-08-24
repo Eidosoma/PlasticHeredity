@@ -1,0 +1,79 @@
+{
+  "candidate_order": [
+    "identity-r512-f32",
+    "pca-r008-q04",
+    "walsh-r016-q04"
+  ],
+  "codecs": {
+    "identity-r512-f32": {
+      "bits": 32,
+      "bitwise_identity": true,
+      "candidate_id": "identity-r512-f32",
+      "codebook_bits": 0,
+      "family": "identity",
+      "latent_dtype": "float32",
+      "payload_bits": 16384,
+      "precision": "float32",
+      "rank": 512,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "zero_preserved_exactly": true
+    },
+    "pca-r008-q04": {
+      "basis_sha256": "67c920ee5d4506a55f3cc8f825731b6d403785b914697a0b290ab8e0eb912504",
+      "basis_shape": [
+        512,
+        8
+      ],
+      "bits": 4,
+      "candidate_id": "pca-r008-q04",
+      "codebook_bits": 131328,
+      "family": "pca",
+      "latent_dtype": "int8",
+      "orthogonality_max_abs_error": 5.962379923118988e-09,
+      "payload_bits": 32,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "scale_max": 9.824127197265625,
+      "scale_min": 1.301497220993042,
+      "scale_sha256": "e85e04f4f04b4824959edb4f3928e7bc24fc18f771e403cc1ebe59fd1e0a805b",
+      "scale_shape": [
+        8
+      ],
+      "zero_preserved_exactly": true
+    },
+    "walsh-r016-q04": {
+      "basis_sha256": "cc1bf0cf750e23dc11c320372b0c0419f6fd11e4d9f66ba67e6fbfb3dbac5ad5",
+      "basis_shape": [
+        512,
+        16
+      ],
+      "bits": 4,
+      "candidate_id": "walsh-r016-q04",
+      "codebook_bits": 656,
+      "family": "walsh",
+      "latent_dtype": "int8",
+      "orthogonality_max_abs_error": 3.422854799595143e-08,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "scale_max": 6.710241317749023,
+      "scale_min": 2.2774457931518555,
+      "scale_sha256": "1c61df8a0eb5fe65263bec60871469fd4e14b6a9caa63a9dba69c284f48fc6ab",
+      "scale_shape": [
+        16
+      ],
+      "walsh_entry_max_abs_error": 7.563510651120708e-10,
+      "zero_preserved_exactly": true
+    }
+  },
+  "quantizer": "q=clip(rint(7*coefficient/scale),-7,7); decode=q*scale/7",
+  "valid": true
+}

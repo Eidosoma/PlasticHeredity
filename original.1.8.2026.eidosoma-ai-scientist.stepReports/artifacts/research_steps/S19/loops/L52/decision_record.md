@@ -1,0 +1,3 @@
+# S19-L52 decision record
+
+The autonomous authorization through L65 remains active. L51 identified duration-dependent heredity switching and useful current-prefix updating, but its registered observed-prefix renewal models did not reconstruct the reliable L50 empirical committor. Before any L52-derived result is opened, this record freezes the exact L50 32/32 branch halves, L51 pooled duration anchor, three model hierarchy, four-pseudotransition cell prior, target-state exclusion from matrix-transfer fits, A-to-B/B-to-A scoring, nested horizons, proper scores, q ranks, residual gates, matrix bootstraps and permutations. No new simulation, target, threshold, duration cap, branch allocation, Phi quantity, feature search or intervention is authorized.

@@ -1,0 +1,93 @@
+schema: eidosoma.e01.s19_l50.preregistration.v1
+researchStepId: S19-L50
+versionedId: E01-S19-L50-FISSION-ALIGNED-PROCESS-COMMITTOR-HORIZON-v1.0.0
+title: Fission-Aligned Process-Committor Horizon and Phase Identifiability
+status: active_preoutcome_method_lock
+scientificQuestion: >-
+  Does aligning state observation to the post-fission process clock produce a
+  reliable longitudinal probability of a future inheritance break followed by
+  a newly certified three-fission hereditary episode, and at which of the
+  prospectively fixed nested F4, F8 and F12 horizons is that probability
+  measurable and independently predictive?
+inputs:
+  trajectoryCohort: S19-L23 frozen 400 shared matrices and candidate-2/candidate-3 trajectories
+  matrixFirewall: S19-L24 exact development/validation assignment
+  excludedMatrices: every matrix selected in S19-L49R
+  newMatrices: 0
+  newPrimaryTrajectories: 0
+stateDesign:
+  sharedMatricesPerRole: 40
+  roles: [DEVELOPMENT, VALIDATION]
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  observationClock: POST_FISSION_BOUNDARY
+  completedFissionLandmarks: [20, 35, 50, 65, 80]
+  selection: new_sha256_rank_within_role_after_excluding_L49R
+  stateCount: 800
+process:
+  threshold: 0.9
+  comparison: strict_greater_than
+  requiredPostbreakInheritanceRun: 3
+  event: first_future_noninheritance_then_three_consecutive_inherited_fissions
+  completedRunTargetUsed: false
+  targetCentroidUsed: false
+horizons:
+  registered: [4, 8, 12]
+  primary: 12
+  nesting: same_branches_scored_at_fixed_prefixes
+shooting:
+  branchesPerState: 64
+  branchHalves: [0-31, 32-63]
+  workers: 8
+  numericalLibraryThreadsPerWorker: 1
+  exactBranchCampaigns: 2
+  newDomainSeparatedSeedRoot: 7125b9850a4bf944a0f9d5ffc9d99fb41aca78b160d688afb963b1dc060e343a
+probabilities:
+  - BREAK_WITHIN_HORIZON
+  - RUN3_GIVEN_BREAK
+  - JOINT_BREAK_AND_RUN3_WITHIN_HORIZON
+  primaryMeasurement: JOINT_BREAK_AND_RUN3_WITHIN_HORIZON
+  estimator: Jeffreys_Beta_half_half_posterior_mean
+pastControls:
+  - normalized_generation
+  - prefix_inheritance_fraction
+  - recent_five_inheritance_fraction
+  - prefix_trailing_inheritance_run
+  - latest_parent_daughter_H
+  - fissions_since_latest_break
+statistics:
+  independentUnit: catalytic_matrix
+  matrixBootstraps: 4096
+  matrixPermutations: 512
+  candidatesSeparate: true
+  rolesSeparate: true
+  horizonsSeparate: true
+gates:
+  primaryHorizon: 12
+  jointMeasurement:
+    splitHalfCenteredSpearmanLower95: 0.3
+    correctedWithinMatrixVarianceLower95: 0.0
+    minimumIntermediateStatesPerValidationCandidate: 20
+  observedForecast:
+    minimumValidationJointEventsPerCandidate: 20
+    BrierImprovementOverDevelopmentPriorLower95: 0.0
+    BrierImprovementOverPastControlsLower95: 0.0
+    permutationPUpper: 0.05
+  conditionalRenewal: diagnostic_not_required_for_joint_gate
+prohibited:
+  - moving_or_event_aligning_landmarks_after_outcomes
+  - selecting_one_horizon_to_rescue_another
+  - changing_the_process_or_H_threshold
+  - changing_branch_count
+  - candidate_pooling
+  - completed_run_centroid
+  - Phi_or_emergence_metric
+  - architecture_search
+  - intervention
+resources:
+  cpuCores: 8
+  gpuHours: 0
+  cpuHoursCeiling: 100
+  wallClockHoursCeiling: 72
+  retainedGiBCeiling: 25
+  temporaryGiBCeiling: 75
+  validationReserveFraction: 0.10

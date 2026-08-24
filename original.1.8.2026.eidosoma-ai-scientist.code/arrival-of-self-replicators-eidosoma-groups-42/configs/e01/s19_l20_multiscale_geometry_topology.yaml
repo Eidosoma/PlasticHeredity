@@ -1,0 +1,121 @@
+schema: eidosoma.e01.s19_l20.preregistration.v1
+researchStepId: S19-L20
+versionedId: E01-S19-L20-MULTISCALE-GEOMETRY-TOPOLOGY-EARLY-WARNING-v1.0.0
+title: Multiscale Geometry and Topology Before Recurring-Attractor Entry
+evidenceClass: ADAPTIVE_DISCOVERY_ON_FROZEN_LANDMARK_TASK
+
+humanAuthorization:
+  scope: sequential bounded S19-L19 through at most S19-L42
+  stopEarly: only after a lead survives untouched seed-firewalled confirmation
+  terminalBoundary: stop for human review after success or L42
+  prohibited: [S20, E02, author_contact, intervention, report_bundle]
+
+immutableTask:
+  sourceLoop: S19-L18
+  cohort: S13Y_100_SHARED_MATRICES_200_CANDIDATE_TRAJECTORIES
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+  targetTemporalStatus: RETROSPECTIVE_COMPLETED_RUN_OUTCOME_DEFINITION
+  landmarkObservationCount: 64
+  horizonExclusiveIndex: 192
+  atRiskRule: no positive target at indices 0 through 63
+  eventRule: first positive target at indices 64 through 191
+  candidateSeparationRequired: true
+  splits: exact S19-L18 ten-repeated five-fold matrix splits
+  newSimulation: false
+
+sourceGrounding:
+  - sourceId: BAUER_2021_RIPSER
+    doi: 10.1007/s41468-021-00071-5
+    url: https://doi.org/10.1007/s41468-021-00071-5
+    supports: Vietoris-Rips persistence barcodes
+  - sourceId: LEVINA_BICKEL_2004
+    url: https://papers.nips.cc/paper_files/paper/2004/hash/74934548253bcab8490ebd74afed7031-Abstract.html
+    supports: k-nearest-neighbour maximum-likelihood intrinsic dimension
+  - sourceId: STORCH_DAY_2022_TOPOLOGICAL_EWS
+    doi: 10.1016/j.jtbi.2022.111274
+    url: https://doi.org/10.1016/j.jtbi.2022.111274
+    supports: topology as an early-warning observable
+  - sourceId: GUDHI_3_13
+    url: https://gudhi.inria.fr/
+    supports: deterministic CPU Vietoris-Rips persistence implementation
+
+featureFamilies:
+  PERSISTENT_TOPOLOGY:
+    coordinates: l2-normalized closed relative compositions
+    distance: Euclidean chord distance equal to sqrt(2*(1-cosine_H))
+    homology: [H0, H1]
+    coefficientField: 2
+    windows: [full_64, first_32, last_32]
+    backend: GUDHI_3.13.0_CPU_FLOAT64
+    h0Authority: scipy_float64_minimum_spanning_tree
+  INTRINSIC_GEOMETRY:
+    coordinates: closed relative compositions
+    distance: Euclidean
+    neighbourCounts: [5, 10]
+    estimator: fixed global Levina-Bickel likelihood construction
+    distanceFloor: 1.0e-12
+    windows: [full_64, first_32, last_32]
+  PATH_GEOMETRY:
+    coordinates: closed relative compositions
+    fields: [step moments, slope, displacement, tortuosity, turning cosine, lag-2/4/8 displacement ratios]
+    windows: [full_64, first_32, last_32]
+
+models:
+  estimator: fixed L2 logistic regression
+  C: 1.0
+  solver: lbfgs
+  maximumIterations: 5000
+  imputation: training median with missing indicators
+  scaling: training only
+  candidateLeadModels:
+    - COMPACT_PLUS_TOPOLOGY
+    - COMPACT_PLUS_INTRINSIC_GEOMETRY
+    - COMPACT_PLUS_PATH_GEOMETRY
+    - COMPACT_PLUS_MULTISCALE
+
+statistics:
+  independentUnit: catalytic matrix
+  crossValidation: exact L18 repeated five-fold splits
+  bootstrapReplicates: 4096
+  labelPermutationReplicates: 512
+  permutationMultiplicity: maximum incremental AUROC across four candidate-lead models
+  leaveOneMatrixOut: true
+  candidatesPooled: false
+
+discoveryLeadGate:
+  sameModelInBothCandidates: true
+  minimumPointAuRoc: 0.65
+  auRocBootstrapLowerGreaterThan: 0.5
+  pointAuPrcExceedsPrevalence: true
+  brierNoWorseThanDummy: true
+  positiveAuRocDeltaOverCompactBaseline: true
+  positiveAuRocDeltaOverExactH: true
+  familywisePermutationPAtMost: 0.10
+  leaveOneOutPositiveFractionAtLeast: 0.90
+  temporalPermutationMustReduceAuRoc: true
+  exactSuffixInvarianceRequired: true
+  untouchedConfirmationRequiredForSolution: true
+
+resources:
+  cpuCores: 8
+  gpuHoursMaximum: 0
+  cpuHoursMaximum: 100
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 25
+  temporaryGiBMaximum: 75
+  validationReserveFraction: 0.10
+  numericalThreadsPerWorker: 1
+
+classifications:
+  allowed:
+    - MULTISCALE_GEOMETRY_TOPOLOGY_DISCOVERY_LEAD
+    - PERSISTENT_TOPOLOGY_NOT_INCREMENTAL
+    - INTRINSIC_GEOMETRY_NOT_INCREMENTAL
+    - PATH_GEOMETRY_NOT_INCREMENTAL
+    - MULTISCALE_GEOMETRY_FAMILY_NON_SUPPORT
+    - CANDIDATE_SPECIFIC_SIGNAL
+    - POSSIBLE_STABILITY_PROXY
+    - ATTRACTOR_ONSET_TASK_ESTABLISHED
+    - REQUIRES_UNTOUCHED_CONFIRMATION
+    - NOT_PROMOTABLE_AS_CONFIRMED
+    - LOOP_FAILED_CLOSED

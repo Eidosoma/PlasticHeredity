@@ -1,0 +1,68 @@
+{
+  "derived_master_seeds": {
+    "wagner-cleanroom-v1|2026-08-21|predictor-development|discarded-benchmark": "adb2ca8b894bf631f2a08edbab502c80a89491eef1c15d12034ac4112bed4e51",
+    "wagner-cleanroom-v1|2026-08-21|predictor-evaluation": "f0cc9b1ad2e7cd234d17e9ff74ae0538dd0a702fad94990f555e4b80a5b7fcb3"
+  },
+  "format": "wagner-cleanroom-registration-v1",
+  "protocol": {
+    "active_cohort": "development",
+    "bootstrap_repetitions": 64,
+    "cohort": "fresh-wagner-ph-predictor-extension",
+    "development_seed_label": "wagner-cleanroom-v1|2026-08-21|predictor-development|discarded-benchmark",
+    "development_sources": 4,
+    "evaluation_seed_label": "wagner-cleanroom-v1|2026-08-21|predictor-evaluation",
+    "evaluation_sources": 128,
+    "expression_flip_probability": 0.05,
+    "f12": {
+      "break_similarity_maximum": 0.9,
+      "horizon": 12,
+      "inherit_similarity_strict_minimum": 0.9,
+      "run": 3
+    },
+    "f32": {
+      "break_similarity_maximum": 0.9,
+      "horizon": 32,
+      "old_distance_minimum": 0.2,
+      "stable_run": 8
+    },
+    "format": "wagner-cleanroom-predictor-v1",
+    "futures_per_state": 128,
+    "genes": 10,
+    "grouped_folds": 5,
+    "histories_per_source": 5,
+    "horizon": 32,
+    "maximum_source_proposals": 500000,
+    "minimum_basin_fraction": 0.05,
+    "minimum_form_distance": 0.4,
+    "prelaunch_boundaries": 12,
+    "profile": "discarded-benchmark",
+    "promising_gate": {
+      "history_log_loss_gain": 0.02,
+      "reliability_minimum": 0.8,
+      "structural_lower_bound_positive": true
+    },
+    "regularization_c": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ],
+    "scientific": false,
+    "sensitivity": {
+      "old_distance_thresholds": [
+        0.2,
+        0.3
+      ],
+      "similarity_thresholds": [
+        0.8,
+        0.9
+      ]
+    }
+  },
+  "protocol_digest": "4244a102638747aebbe816d7ac702f2f8496c4eb0a3a5e61b105df0496b2fa51"
+}

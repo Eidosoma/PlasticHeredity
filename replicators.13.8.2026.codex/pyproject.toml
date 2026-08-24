@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plastic-heredity-replication"
+version = "0.1.0"
+description = "Independent replication of the GARD plastic-heredity process-risk result"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.5",
+  "numpy>=1.23",
+  "pandas>=2.0",
+  "scikit-learn>=1.2",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+replicate-plastic-heredity = "plastic_heredity.cli:main"
+replicate-mechanistic-ablation = "plastic_heredity.mechanistic:main"
+replicate-beta-completeness = "plastic_heredity.mechanistic_v2:main"
+replicate-inheritance-memory = "plastic_heredity.memory:main"
+replicate-regime-prediction = "plastic_heredity.regime_prediction:main"
+replicate-joint-intervention = "plastic_heredity.intervention_replication:main"
+
+[tool.setuptools.packages.find]
+include = ["plastic_heredity*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

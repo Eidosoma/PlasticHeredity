@@ -1,0 +1,17 @@
+{
+  "automatic_launch": false,
+  "claim_boundary": "Stage 1 cannot establish Plastic Heredity",
+  "results_sha256": "d151b53b18fc22d587c9a96575a2fd49243797fde1a16b98694402ccda6c1d9d",
+  "review_required": true,
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "selected_stage2_input": {
+    "configuration_id": "motif_energy512-w32-s025-d32",
+    "family": "motif_energy512",
+    "read_duration": 32,
+    "strength": 0.25,
+    "write_window": 32
+  },
+  "stage": 1,
+  "stage2_registration_allowed": true,
+  "verdict": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY"
+}

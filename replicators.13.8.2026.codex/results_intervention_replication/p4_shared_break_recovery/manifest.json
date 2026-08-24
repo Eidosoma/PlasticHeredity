@@ -1,0 +1,28 @@
+{
+  "complete_readback_exact": true,
+  "eligible_matrices_by_candidate": {
+    "02": 124,
+    "03": 125
+  },
+  "eligible_states": 805,
+  "exact_replay": true,
+  "format": "codex-intervention-p4-result-v1",
+  "mandatory_stop_after_this_stage": true,
+  "next_scientific_stage_launched": false,
+  "no_acquisition_or_future_retries": true,
+  "no_matrix_or_state_replacement": true,
+  "primary_futures": 128800,
+  "registration_id": "9dc022629f38eb91e897380201ad6e17b810964e149bd862e79dbcc7a52402da",
+  "replay_futures": 128800,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "strength_recovery_gate_pass": true,
+  "topology_classification": "reproducible_directional_topology_effect"
+}

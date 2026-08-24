@@ -1,0 +1,21 @@
+{
+  "figures": [
+    "figures/figure_1_transplant_capture.png",
+    "figures/figure_2_arrival_curves.png",
+    "figures/figure_3_break_hazards.png",
+    "figures/figure_4_rare_form_challenge.png"
+  ],
+  "format": "strict-b-transplant-arrival-residence-v1",
+  "reports": [
+    "SCIENTIFIC_REPORT.md",
+    "APPENDIX_TRANSPLANT.md",
+    "PROPOSED_MANUSCRIPT_AND_REVIEWER_PATCH.md"
+  ],
+  "rows": {
+    "break_hazard": 320,
+    "primary_future_scores": 168448,
+    "primary_rule_metrics": 442,
+    "rare_form_metrics": 12,
+    "rare_future_scores": 13824
+  }
+}

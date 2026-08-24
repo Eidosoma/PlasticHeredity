@@ -1,0 +1,24 @@
+{
+  "adapters": {
+    "local": "previous local clean-room data artifacts",
+    "source": "NewIdeas Stage-4 data/documents allowlist"
+  },
+  "files": {
+    "hypothesis/CA_MOTIF_LINEAGE_STAGE4_PROTOCOL.md": "6795fdf79be6bf6ac9625d187f6e11e51721581d8608aa84cdf9df18ebceb819",
+    "hypothesis/CODEC_MODELS.json": "f21427cc913c667d90ae02749970b403dea302c41b38d7b8c4b919b46d5344b9",
+    "hypothesis/CODEC_MODELS.npz": "fba53f1cd19e073727e79a802ff67423198d26f05bc215bc21c08eed94629462",
+    "hypothesis/STAGE4_CONFIRMATION_DESIGN.json": "0e59fa905c902a2c973d141955545a1b588e8880f26eb66fea6de17b0480348e",
+    "hypothesis/STAGE4_DESIGN.json": "e0791fdadb778a948da21e2edd31bf8cd206e610950004cece8a47624b97bdf6",
+    "local/DONORS.json": "9a97dcc2ed9c29b0f6811addd1e8c9533f004fbd742b08cf9816da504772e52a",
+    "local/HYPOTHESIS.json": "c5021e0a7f5a57d578b17033a7444873486abea04889158e800a2767bf1ad49d",
+    "local/LAUNCH_RESETS.json": "41f1091b28631fe4e6b8acbc171185a110351d16847b4b902a7731b8b911ec36",
+    "local/REFERENCE.json": "3743c46b28670e408c6a9631191bf53887108d72376b42a91a7574bc2886cb67"
+  },
+  "fresh_confirmation_required": true,
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "snapshot_digest": "01fc2a84b10dea7643c2ed929ce2f720861fac9691e79e757f85d2031fd00172",
+  "source_code_opened_imported_hashed_or_executed": false,
+  "source_outcomes_evidential_role": "none",
+  "source_results_or_checkpoints_imported": false,
+  "source_role": "outcome-known hypothesis and frozen codec specification only"
+}

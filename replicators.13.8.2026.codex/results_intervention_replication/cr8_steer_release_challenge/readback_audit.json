@@ -1,0 +1,9 @@
+{
+  "challenge_array_shape_exact": true,
+  "challenge_future_count_exact": true,
+  "challenge_plan_count_exact": true,
+  "complete_readback_exact": true,
+  "primary_metrics_exact": true,
+  "release_array_shape_exact": true,
+  "release_row_count_exact": true
+}

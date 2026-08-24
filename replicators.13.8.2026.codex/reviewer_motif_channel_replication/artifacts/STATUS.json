@@ -1,0 +1,46 @@
+{
+  "automatic_launch": false,
+  "input_snapshot": "verified",
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "snapshot_digest": "b6557c9c367726e5a03b2639b95aa0d9666a398eadc846a52b1691de18e074a2",
+  "stage1": {
+    "calibration": "1/1",
+    "screen_pairs": "48/48",
+    "screen_progress": {
+      "completed": 48,
+      "eta_seconds": 0.0,
+      "last_update_unix": 1787419408.6278377,
+      "pairs_per_second": 0.03589009853842425,
+      "session_started_unix": 1787418071.2116122,
+      "state": "complete",
+      "total": 48
+    },
+    "state": "complete",
+    "validation_pairs": "64/64",
+    "validation_progress": {
+      "completed": 64,
+      "eta_seconds": 0.0,
+      "last_update_unix": 1787422878.327499,
+      "pairs_per_second": 0.018451390419317207,
+      "session_started_unix": 1787419409.7542036,
+      "state": "complete",
+      "total": 64
+    },
+    "verdict": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY"
+  },
+  "stage2": {
+    "outcome_pairs": "96/96",
+    "progress": {
+      "completed": 96,
+      "eta_seconds": 0.0,
+      "last_update_unix": 1787487307.618216,
+      "pairs_per_second": 0.021596002497012996,
+      "session_started_unix": 1787482862.3510826,
+      "state": "complete",
+      "total": 96
+    },
+    "state": "complete",
+    "verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL",
+    "writer_audit": "1/1"
+  }
+}

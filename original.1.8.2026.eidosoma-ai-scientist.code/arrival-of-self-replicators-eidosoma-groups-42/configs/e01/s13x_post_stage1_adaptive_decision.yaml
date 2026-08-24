@@ -1,0 +1,112 @@
+schema: eidosoma.e01.s13x_post_stage1_adaptive_decision.v1
+researchStepId: S13X
+versionedStepId: E01-S13X-CREATIVE-DIRECTIONAL-REPLICATION-SEARCH-v1.0.0
+evidenceClass: ADAPTIVE_OUTCOME_GUIDED_EXPLORATORY_RECONSTRUCTION
+decisionTiming: AFTER_STAGE1_DEVELOPMENT_AND_DIAGNOSTIC_OUTCOMES
+confirmatoryStatus: NOT_CONFIRMATORY
+
+observedLead:
+  pipelineId: S13X-P-fdaf6d74a4e8c821
+  implementationId: PHIRL_REGULARIZED_SOURCE
+  metric: emergence
+  transform: FORWARD_DIFFERENCE
+  labelId: MOL_ADJACENT_INCOMING_H970
+  alignment: PREVIOUS_STATE
+  interpretation: >-
+    The algebraically equivalent causal reading is a backward change in source-defined
+    emergence associated with the current molecular-state label. This branch was the
+    best development source-defined-emergence branch and remained positive on the
+    diagnostic split in both simulator candidates. It was adaptively selected and is
+    not evidence of an author setting.
+  development:
+    candidate02:
+      positiveCorrelationFraction: 0.716667
+      medianCorrelation: 0.028780
+      higherDuringReplicationFraction: 0.683333
+    candidate03:
+      positiveCorrelationFraction: 0.733333
+      medianCorrelation: 0.041018
+      higherDuringReplicationFraction: 0.700000
+  diagnostic:
+    candidate02:
+      positiveCorrelationFraction: 0.900000
+      medianCorrelation: 0.069294
+      higherDuringReplicationFraction: 0.800000
+    candidate03:
+      positiveCorrelationFraction: 0.800000
+      medianCorrelation: 0.034933
+      higherDuringReplicationFraction: 0.825000
+
+focusedNeighborhood:
+  purpose: characterize_local_robustness_without_claiming_a_new_holdout
+  implementations:
+    - IIGR_CORRECTED_SOURCE
+    - PHIRL_REGULARIZED_SOURCE
+  metrics:
+    - emergence
+    - downwardCausation
+  transforms:
+    - LEVEL
+    - BACKWARD_DIFFERENCE
+    - FORWARD_DIFFERENCE
+  labelFamilies:
+    - MOL_ADJACENT_INCOMING
+    - MOL_ADJACENT_AVERAGE
+  thresholds:
+    - 0.950
+    - 0.965
+    - 0.970
+    - 0.975
+    - 0.980
+  alignments:
+    - SAME_STATE
+    - NEXT_STATE
+    - PREVIOUS_STATE
+  pipelineCount: 360
+  dataRole: POST_DIAGNOSTIC_OUTCOME_GUIDED_REUSE
+
+directionalInterventionPilot:
+  authorizedByAdaptiveLead: true
+  purpose: small_mechanistic_direction_check_only
+  rootSeedHex: 402d1d7dcd40d4613499b420424ef437c408aedd39e98fd13c1afd100d25a3f4
+  simulatorCandidates:
+    - S12F-CANDIDATE-02
+    - S12F-CANDIDATE-03
+  sharedMatrixIndices:
+    - 0
+    - 1
+  tripletCount: 4
+  conditionCount: 12
+  fissionsPerCondition: 100
+  conditions:
+    - MAX
+    - CONTROL
+    - MIN
+  actionSet: all_100_single_additions_plus_each_available_single_deletion
+  timing: after_every_fission
+  scoringMetric: PHIRL_SOURCE_DEFINED_EMERGENCE
+  scoringSemantic: RETROSPECTIVE_FROZEN_MATCHED_CONTROL_MODEL
+  sourcePartition: completed_matched_control_phirl_partition
+  sourcePreprocessing: completed_matched_control_phirl_mean_std_and_retained_variables
+  gaussianReference: completed_matched_control_partition_average
+  virtualTransition: selected_daughter_before_action_to_candidate_after_action
+  extremaRule: raw_numeric_argmax_or_argmin
+  tieRule: addition_before_deletion_then_lowest_original_component
+  noOpCandidate: false
+  randomPairing: >-
+    Matrix, initial state, and named RNG stream identities are shared within each
+    max/control/min triplet. Stream consumption is audited and may diverge after the
+    first state-changing action because growth-update counts can differ.
+  primaryOutcomeLabel: MOL_ADJACENT_INCOMING_H970
+  secondaryOutcomeLabel: MOL_ADJACENT_AVERAGE_H970
+  exactReplay: required
+  fixedScorerControlReplayTolerance: 1.0e-10
+  caveat: >-
+    This is a retrospective, future-fitted forensic controller chosen after seeing
+    association results. It cannot establish an online algorithm, causal emergence,
+    an author implementation, or confirmatory intervention evidence.
+
+stoppingBoundary:
+  beginE02: false
+  beginReportBundle: false
+  automaticContinuation: false

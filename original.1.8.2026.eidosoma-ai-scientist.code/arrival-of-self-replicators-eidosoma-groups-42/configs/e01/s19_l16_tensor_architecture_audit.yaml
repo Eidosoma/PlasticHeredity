@@ -1,0 +1,142 @@
+schema: eidosoma.e01.s19.l16.preregistration.v1
+researchStepId: S19-L16
+versionedStepId: E01-S19-L16-FIGURE5-TENSOR-ARCHITECTURE-DISCRIMINATION-v1.0.0
+title: Figure-5 Tensor and Architecture Discrimination
+evidenceClass: ADAPTIVE_EXPLORATORY_FORENSIC_SOURCE_GROUNDING_AUDIT
+authorizedAtUtc: '2026-08-10T00:00:00Z'
+outcomeAccessedAtLock: false
+
+immutableBoundary:
+  preserveByteForByte:
+    - S01-S18
+    - E01 forensic replication V1 bundle
+    - E01 forensic replication V2 artifact
+    - S19-L01-S19-L15
+    - every historical classification, failure, amendment, waiver, manifest, seed, matrix, trajectory, target, feature, split, model and prediction artifact
+    - S17 CPU-allowance waiver
+  acceptL15AsAdditiveExploratoryEvidence: true
+  l15Classifications:
+    - EXPLORATORY_NON_SUPPORT
+    - POSSIBLE_PIPELINE_ARTIFACT
+    - NOT_PROMOTABLE
+  mayAlterPriorClassification: false
+
+frozenInputs:
+  cohort: S19-L15
+  sharedCatalyticMatrices: 200
+  candidateTrajectoriesEach: 200
+  tensorEligibleMatricesEach: 199
+  target: S16_ADJACENT_INCOMING_H090
+  threshold: 0.9
+  candidates: [CANDIDATE_2, CANDIDATE_3]
+  splitContract: TEN_MATRIX_GROUPED_128_32_40_SPLITS
+  featureFamilies:
+    - P1_PHIRL_EMERGENCE_COMPLETED_FIT
+    - P2_PHIRL_EMERGENCE_FIRST_QUARTER_ONLY
+    - B1_COMPOSITION_CHANGE
+    - B2_RAW_COMPOSITIONS
+    - B3_MOLECULAR_FLUXES
+    - B4_ADJACENT_H
+  generateMatrices: false
+  generateTrajectories: false
+  regenerateFeatures: false
+  changeTarget: false
+  changeSplit: false
+
+sourceGroundingGate:
+  maximumCompleteHypotheses: 3
+  minimumRequiredFields:
+    - input_sequence_representation
+    - variable_length_normalization
+    - input_padding_or_truncation
+    - target_sequence_representation
+    - target_padding_or_truncation
+    - training_loss_and_mask
+    - scoring_mask
+    - output_aggregation
+    - architecture_topology
+    - architecture_capacity
+  acceptableEvidence:
+    - DIRECT_PAPER_SPECIFICATION
+    - DIRECT_PUBLIC_CODE_EXPLICITLY_LINKED_TO_GARD_FIGURE5
+  plottingOnlyCodeMayGroundPredictionTensor: false
+  genericRlExtractorMayGroundGardPredictor: false
+  frozenE01ImplementationMaySubstituteForAuthorGrounding: false
+  stopWithoutModelExecutionWhenNoCompleteHypothesis: true
+
+candidateConventionAudit:
+  - hypothesisId: H0_FROZEN_S16_RIGHT_PAD_FLAT_MLP
+    description: Exact S16/L15 right-zero-padded masked-or-unmasked flattening MLP contract.
+    directClues:
+      - PAPER_25_75_MLP_80_20_TEN_REPETITIONS_BINARY_ACCURACY
+      - DIRECT_FROZEN_E01_IMPLEMENTATION
+  - hypothesisId: H1_COMMON_MINIMUM_HORIZON_INTERPOLATED_MLP
+    description: Normalize variable-length sequences to a common minimum horizon by linear interpolation, then apply an MLP.
+    directClues:
+      - PAPER_VARIABLE_LENGTH_AND_PERCENTAGE_SPLIT
+      - PHIRL_PLOTTING_ONLY_COMMON_MINIMUM_HORIZON_INTERPOLATION
+  - hypothesisId: H2_PUBLIC_PHIRL_GENERIC_VECTOR_OR_SEQUENCE_EXTRACTOR
+    description: Use the public PhiRL flattened/vector MLP or optional sequence extractor as an encoder for the prediction task.
+    directClues:
+      - PAPER_NAMES_MLP
+      - PHIRL_GENERIC_RL_FEATURE_EXTRACTOR
+
+executionRule:
+  auditSourceBeforeFrozenOutcomeSummaries: true
+  registerOnlyCompleteSourceGroundedHypothesesForExecution: true
+  identicalFeaturesSeedsComparisonsAcrossExecutedHypotheses: true
+  candidatesSeparate: true
+  architectureTournament: false
+  hyperparameterSearch: false
+  paddingSearch: false
+  outcomeGuidedSelection: false
+  ifGatePasses: RUN_ONLY_REGISTERED_COMPLETE_HYPOTHESES
+  ifGateFails: STOP_BEFORE_ANY_NEW_MODEL_FIT_AND_REPLAY_FROZEN_L15_INTEGRITY_ONLY
+
+requiredFrozenReplay:
+  inputTensorHashes: true
+  targetHashes: true
+  splitIdentity: true
+  cachedModelProbabilityHashes: true
+  l15SentinelModelReplayEvidence: true
+  allCellMetrics: READ_ONLY_L15_REPLAY
+  validCellMetrics: READ_ONLY_L15_REPLAY
+  accuracyDecomposition: READ_ONLY_L15_REPLAY
+  lengthBoundaryTimeControls: READ_ONLY_L15_REPLAY
+  validLabelPermutation: READ_ONLY_L15_REPLAY
+  matrixLabelPermutation: READ_ONLY_L15_REPLAY
+  suffixInvariance: READ_ONLY_L15_REPLAY
+
+scientificBoundary:
+  noProspectivePromotion: true
+  noInitialAppearancePromotion: true
+  reason: FROZEN_ADJACENT_H_COHORT_HAS_ZERO_PREONSET_ELIGIBILITY_AT_QUARTER_CUTOFF
+  completedFitIsFutureDependent: true
+  paddingLengthInvalidCellMatchesRemainNonPromotable: true
+  mayAlterS18: false
+
+classifications:
+  - EXPLORATORY_NON_SUPPORT
+  - AUTHOR_AMBIGUITY_UNRESOLVED
+  - POSSIBLE_PIPELINE_ARTIFACT
+  - NOT_PROMOTABLE
+  - LOOP_FAILED_CLOSED
+
+resources:
+  cpuCoresMaximum: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuHoursMaximum: 160
+  gpuHoursMaximum: 0
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 40
+  temporaryGiBMaximum: 120
+  reserveFraction: 0.15
+
+stopBoundary:
+  mandatoryHumanReviewAfterL16: true
+  activateS20: false
+  activateE02: false
+  contactAuthors: false
+  interventions: false
+  confirmation: false
+  generateReportBundle: false

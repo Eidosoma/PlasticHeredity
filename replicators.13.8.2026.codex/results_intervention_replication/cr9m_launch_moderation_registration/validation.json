@@ -1,0 +1,75 @@
+{
+  "all_checks_passed": true,
+  "artificial_non_scientific_fixture_only": true,
+  "check_count": 21,
+  "checks": {
+    "all_artificial_actions_legal_type_substitutions": true,
+    "artificial_complete_deterministic_replay": true,
+    "artificial_release_zero_interventions": true,
+    "claim_boundary_exact": true,
+    "constant_spearman_rule_exact": true,
+    "design_exact": true,
+    "frozen_model_hash_exact": true,
+    "frozen_model_serialization_predictions_exact": true,
+    "future_replicates_distinct": true,
+    "future_seed_excludes_launch_convention_and_pulse": true,
+    "history_clock_diagnostic_completed": true,
+    "increasing_spearman_fixture_exact": true,
+    "nascent_fixture_generation_history_and_clocks_exact": true,
+    "nascent_fixture_mass_and_distinct_types_exact": true,
+    "post_edit_p1_exact": true,
+    "post_edit_p2_prefix_exact": true,
+    "relaxed_p1_zero_edit": true,
+    "relaxed_p2_prefix_exact": true,
+    "seed_domains_unique": true,
+    "upstream_sealed_cr9_integrity_pass": true,
+    "whole_matrix_draw_shapes_exact": true
+  },
+  "format": "codex-intervention-cr9m-validation-v1",
+  "history_clock_diagnostic": {
+    "completed": true,
+    "history_and_clocks_only_changed": true,
+    "legal_edit_order_identical": true,
+    "noop_predictions_differ": true,
+    "old_noop_probability": 0.9999999999757536,
+    "old_selected_edit": {
+      "add_type": 1,
+      "remove_type": 0
+    },
+    "same_composition_beta_candidate": true,
+    "selected_edit_identical": true,
+    "young_noop_probability": 0.9999999999433522,
+    "young_selected_edit": {
+      "add_type": 1,
+      "remove_type": 0
+    }
+  },
+  "pytest_returncode": 0,
+  "pytest_summary": ".....                                                                    [100%]",
+  "scientific_cr9m_lineages_generated": 0,
+  "scientific_cr9m_matrices_generated": 0,
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR9M_PREREGISTRATION.md": "18aed9ebd746eb928bfb3234f22742bb5537377ad91577354f78183cf24ebf4b",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr9_feedback.py": "4a659fa381502e8c7008aec1ca0e580d5474abfcc818ec1590b6687fb588ee38",
+    "plastic_heredity/intervention_cr9m_launch.py": "a8e7d3f525c8ad6d5c09072b8cf2836ef2a5018da7ef57588d9a3ef86de61fe2",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "348ccf3e51a9839b3aa5d3d5f60a4559abdffd9737d596077982e63300ac1310",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5",
+    "tests/test_intervention_cr9m_launch.py": "ce6fe588fcbc2baacda840cbe1ac8fa37f37ab6a736183400ddb489a9f2328df"
+  },
+  "source_tree_sha256": "0d526790f1563ad94552d8f80c608d8a235d0623c21f82d42884b91506ad2b55",
+  "upstream": {
+    "cr9_complete_readback": true,
+    "cr9_exact_replay": true,
+    "cr9_failed_hysteresis_gate_retained": true,
+    "cr9_registration_checksum_manifest_sha256": "12db59fdeca27d851689286ea1c9525e008b14999ee3eb66b4c647792989651f",
+    "cr9_registration_id": "a2f8340b632e9a75725c8bc42ec3069d59839be2119e6122268440a866d7fe00",
+    "cr9_result_checksum_manifest_sha256": "ab5182546b5da9a7f59f73bdf73102a735c4e8749f5064d6435a6171c151be5d"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "completed": 250,
+  "cumulative_elapsed_seconds": 7570.312090396881,
+  "error": null,
+  "eta_seconds": null,
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "hard_remaining_seconds": 21229.68790960312,
+  "message": "replayed_futures=157824",
+  "pid": 62,
+  "protocol_id": "e4250713b53cffa4fac9be5967c108cb8adff2ef6ce92bf44c53f7898c126a17",
+  "selection_id": "e6a5708b898fa0539c6a03f26da1e4730f680e5b029766c38c4e4bea7c073185",
+  "soft_remaining_seconds": 19429.68790960312,
+  "stage": "complete",
+  "stage_elapsed_seconds": 0.0,
+  "state": "complete",
+  "total": 250,
+  "updated_at_epoch": 1787408564.8759637
+}

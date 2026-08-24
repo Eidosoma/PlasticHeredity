@@ -1,0 +1,75 @@
+schema: eidosoma.e01.s19_l51.preregistration.v1
+version: E01-S19-L51-HEREDITY-REGIME-HAZARD-RENEWAL-DECOMPOSITION-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Is the fission-aligned break-plus-new-hereditary-episode probability best
+  explained by ordinary inheritance frequency, first-order Markov switching,
+  duration-dependent semi-Markov renewal, a stable catalytic-matrix-specific
+  heredity propensity, or longitudinal updating within a matrix?
+inputs:
+  matrices: exact frozen L50 40 development plus 40 validation identities
+  states: exact frozen L50 five post-fission landmarks per matrix and candidate
+  branches: exact frozen L50 64 F12 branches per state
+  horizons: [4, 8, 12]
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  newSimulation: false
+targetFamily:
+  inheritance: strict parent-daughter H > 0.9
+  break: first future noninheritance
+  resumption: three consecutive inherited fissions after a break
+  primary: joint break plus resumption
+  secondary: [break, resumption conditional on break]
+models:
+  - POOLED_IID
+  - POOLED_MARKOV
+  - POOLED_SEMIMARKOV_DURATION
+  - EARLY_PREFIX_MATRIX_MARKOV
+  - EARLY_PREFIX_MATRIX_SEMIMARKOV
+  - CURRENT_PREFIX_MATRIX_SEMIMARKOV
+modelContract:
+  developmentFitOnly: true
+  durationClock: consecutive fissions in the current binary inheritance state
+  durationCapInclusive: 12
+  durationPriorStrength: 1.0
+  matrixPriorStrength: 1.0
+  earlyPrefixBoundary: 20
+  finiteHorizonCalculation: exact dynamic programming
+  hyperparameterSearch: false
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  matrixBootstraps: 4096
+  wholeTrajectoryPermutations: 512
+  primaryHeldoutRole: VALIDATION
+  primaryHorizon: 12
+gates:
+  durationDependence: >-
+    POOLED_SEMIMARKOV_DURATION improves heldout transition log loss over
+    POOLED_MARKOV with matrix-bootstrap lower bound above zero in both candidates.
+  stableMatrixPropensity: >-
+    EARLY_PREFIX_MATRIX_SEMIMARKOV improves heldout transition log loss over
+    POOLED_SEMIMARKOV_DURATION with lower bound above zero in both candidates.
+  longitudinalUpdating: >-
+    CURRENT_PREFIX_MATRIX_SEMIMARKOV improves heldout transition log loss over
+    EARLY_PREFIX_MATRIX_SEMIMARKOV with lower bound above zero in both candidates.
+  committorReconstruction: >-
+    A registered process model improves F12 joint-event branch log loss over
+    POOLED_MARKOV and has state-level Spearman at least 0.5 in both candidates.
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranches: 0
+  thresholdSearch: false
+  processSearch: false
+  featureSearch: false
+  phiComputation: false
+  intervention: false
+ceilings:
+  cpuHours: 40
+  gpuHours: 0
+  wallHours: 24
+  retainedGiB: 15
+  temporaryGiB: 30
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: conditional on frozen L51 result under authorization through L65

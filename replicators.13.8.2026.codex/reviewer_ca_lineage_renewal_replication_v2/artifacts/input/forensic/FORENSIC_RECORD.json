@@ -1,0 +1,60 @@
+{
+  "comparability_breakers": [
+    {
+      "component": "reader_transfer_function",
+      "corrected": "strength*tanh(max(advantage,0)/9)",
+      "v1": "constant strength for every positive advantage; magnitude ignored"
+    },
+    {
+      "component": "visible_reset",
+      "corrected": "sparse launch-specific donor initial_state_hex",
+      "v1": "pair-specific deterministic 50-percent-density board"
+    },
+    {
+      "component": "sweep_order",
+      "corrected": [
+        "CA step",
+        "reader",
+        "process noise"
+      ],
+      "v1": [
+        "CA step",
+        "process noise",
+        "reader"
+      ]
+    }
+  ],
+  "date_utc": "2026-08-23",
+  "retained_source_data_audit": {
+    "aggregate_recomputation_exact": true,
+    "arithmetic_or_integrity_bug_found": false,
+    "design_bindings_consistent": true,
+    "pair_count": 96,
+    "probability_granularity": "multiples of 1/64",
+    "unique_pair_ids": true
+  },
+  "source_inspection": {
+    "authorization": "one-time narrow inspection",
+    "evidential_role": "none",
+    "frozen_specification": "SOURCE_SPEC.md",
+    "further_source_access": "prohibited for this campaign",
+    "role": "recover operational hypothesis specification only"
+  },
+  "v1_data_disposition": "preserved; descriptive evidence for its own implementation only",
+  "v1_disposition": "NON_COMPARABLE_MODEL_RUN",
+  "v1_reader_diagnostic": {
+    "gains_with_identical_decisions": [
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "no_rewrite_crossover_by_generation": {
+      "1": 0.697917,
+      "16": 0.704427,
+      "2": 0.700684,
+      "4": 0.702637,
+      "8": 0.699544
+    }
+  }
+}

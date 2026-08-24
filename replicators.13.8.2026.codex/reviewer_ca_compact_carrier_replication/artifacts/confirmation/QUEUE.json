@@ -1,0 +1,16 @@
+{
+  "candidate_ids": [
+    "identity-r512-f32",
+    "pca-r008-q04",
+    "walsh-r016-q04"
+  ],
+  "cell_definition": "founder pair x codec x environment",
+  "checkpoint_directory": "checkpoints",
+  "confirmation_pairs": 128,
+  "environments": [
+    "ordinary",
+    "moderate_joint"
+  ],
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "total_cells": 768
+}

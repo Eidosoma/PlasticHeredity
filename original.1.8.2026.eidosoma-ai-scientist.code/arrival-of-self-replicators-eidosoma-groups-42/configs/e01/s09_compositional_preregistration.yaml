@@ -1,0 +1,319 @@
+schema: eidosoma.e01.s09_compositional_preregistration.v1
+researchStepId: S09
+experimentId: E01
+preregistrationVersion: E01-S09-compositional-preregistration-v1.0.0
+createdAtUtc: 2026-08-01T00:00:00Z
+status: FROZEN_BEFORE_CANONICAL_TRANSFORM_OUTCOMES
+
+frozenQuestion: >-
+  Can explicit zero treatments and compositional coordinate systems transform every
+  validated input observation without infinities, hidden row deletion, or unexplained
+  singular failure, while retaining all author-method uncertainty and branch identity?
+
+scopeBoundary:
+  executeOnly: S09
+  nextStepForbidden: S10
+  paperEvidence: >-
+    The paper states relative composition, centered log-ratio transformation, and removal
+    of the final component. It does not state a zero policy, pseudocount, multiplicative
+    replacement rule, logarithm implementation, feature orientation/scaling, invalid-row
+    policy, or author code behavior.
+  evidenceClass: VALIDATION_ONLY_RECONSTRUCTION_NOT_AUTHOR_DEFAULT
+  claimBoundary: NUMERICAL_PREPROCESSING_VALIDATION_NOT_PAPER_CLAIM_ADJUDICATION
+  authorCodeIdentity: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  legacyMatlabRngIdentity: UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER
+  noSilentDefaults: true
+
+frozenInputs:
+  - inputId: agentsInstructions
+    path: /workspace/AGENTS.md
+    sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c
+  - inputId: fullPlan
+    path: /workspace/FULL_PLAN.md
+    sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee
+  - inputId: preS09ResearchPlan
+    path: /workspace/RESEARCH_PLAN.md
+    sha256: 3dfdfc3ba8c6ec156fb06fca4a381c9413c792871a9052ed42dde4390d05195f
+  - inputId: attachmentManifest
+    path: /workspace/input-attachments/MANIFEST.json
+    sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e
+  - inputId: attachmentSidecar
+    path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md
+    sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c
+  - inputId: suppliedPaperExtraction
+    path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md
+    sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a
+  - inputId: officialPaperPdf
+    path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+    sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  - inputId: s01Report
+    path: /artifacts/research_steps/S01/research_step_full_results.md
+    sha256: 4e7025fcb2aaa63eb9fad6b0760e5051b857245cfc4fd4c8840d628e44d72a97
+  - inputId: s02Report
+    path: /artifacts/research_steps/S02/research_step_full_results.md
+    sha256: 9bcd86ef86c371ba57e991a3bc8295cd92ef2fe05b9edf53327814b0c52f2cfa
+  - inputId: s03Report
+    path: /artifacts/research_steps/S03/research_step_full_results.md
+    sha256: 7ef7837bf0b2b65fd011ec5b530b90e07089df637050155b81fc08d3c99992ee
+  - inputId: s04Report
+    path: /artifacts/research_steps/S04/research_step_full_results.md
+    sha256: 62a1f862e17579769aca3939b69eba3ff725078d593ece6b29ccb58a29b8c59d
+  - inputId: s05Report
+    path: /artifacts/research_steps/S05/research_step_full_results.md
+    sha256: e83620da619d05687d218186cd2d2789ce26bbac6234de71990948915ea95196
+  - inputId: s06Report
+    path: /artifacts/research_steps/S06/research_step_full_results.md
+    sha256: 206482bce8e8a47d5050e83c4a99370c2bedf7dd4244a066078f9ad5c3233595
+  - inputId: s07Report
+    path: /artifacts/research_steps/S07/research_step_full_results.md
+    sha256: 9262b881f1dc15392d1d674e3ac15222dc6dfef69d82ca6aeb74f9fe90fd876d
+  - inputId: s08Report
+    path: /artifacts/research_steps/S08/research_step_full_results.md
+    sha256: aed1335f670ca695634aed6023247a6b75c5873a96aa0ff3be8bb5fb22cddbb6
+  - inputId: specificationRegistry
+    path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+    sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+  - inputId: sourceManifest
+    path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml
+    sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5
+  - inputId: environmentReport
+    path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json
+    sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd
+  - inputId: s08LabelContract
+    path: /artifacts/E01_forensic_replication_bundle/labels/label_family_contract_v1.0.1.yaml
+    sha256: 4d1bf4d1f57fbf43a49bfd95f072f33e4f78782e2afb1cded9dc1ed8a3a689d5
+  - inputId: s08LabelConfigurations
+    path: /artifacts/E01_forensic_replication_bundle/labels/clustering_configurations_v1.0.1.yaml
+    sha256: 535db35cb5e477f871c059a66daa4ed4ac6b6255c70942248b136f99a645cc07
+  - inputId: s08LabelSchema
+    path: /artifacts/E01_forensic_replication_bundle/labels/label_arrays_schema_v1.0.0.json
+    sha256: a4a4702a42549938842f71e45fad38f7c07673413fc1411e2cae3699b872c70c
+  - inputId: s08FixtureCatalog
+    path: /artifacts/research_steps/S08/fixture_catalog.json
+    sha256: b699f7e4e12c8691f10511957cae8785a3f6b93603968471e37e7fb023e4e89f
+  - inputId: s08LabelOutputs
+    path: /artifacts/research_steps/S08/label_outputs.csv
+    sha256: 24fd8ed34ab49e9fbde511d78bb653445ce37872990a8fe676827ed0d800e08b
+  - inputId: s08ZeroEdgeDiagnostics
+    path: /artifacts/research_steps/S08/edge_case_validation.json
+    sha256: f22895eebc72e2766278c4a010687d7c592a69cec193d341e73d33894dd43110
+  - inputId: s08ValidationSummary
+    path: /artifacts/research_steps/S08/validation_summary.json
+    sha256: 08e537da04d78b72ecfb2c0a06a30a0f200918a71a2e13fdec4e0619f43e8a93
+  - inputId: seedDerivationContract
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml
+    sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1
+  - inputId: trajectoryPrecisionContract
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_precision_contract_v1.0.0.yaml
+    sha256: 2c73d7385d7511636cb809cdb1b2b5c0239632faec2f6ff2ffb692a7b3548b4d
+  - inputId: trajectorySchema
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_schema_v1.0.0.json
+    sha256: 981807b512bff589a6a693c1da191efad829ccb3294fd4f9297c3ee02a7a5d57
+
+fixtureContract:
+  source: s08FixtureCatalog
+  fixtureCount: 5
+  observationCount: 43
+  dimensions: [2, 4]
+  inputScalePolicy: >-
+    Preserve every supplied value and row scale exactly. Integer count fixtures remain
+    counts; the noninteger S04 HC11 source-oracle vectors remain nonnegative weights.
+    Additive count-scale pseudocount results on HC11 are validation diagnostics and are
+    not relabeled as count observations.
+  pooledGroups:
+    - groupId: E01-S09-POOL-D2-v1.0.0
+      dimension: 2
+    - groupId: E01-S09-POOL-D4-v1.0.0
+      dimension: 4
+
+zeroTreatments:
+  pseudocountGrid: [1.0e-6, 1.0e-4, 1.0e-2, 0.1, 0.5, 1.0]
+  branches:
+    - branchId: ADDITIVE_COUNT_PSEUDOCOUNT
+      evidenceClass: PLAN_FROZEN_VALIDATION_BRANCH_NOT_AUTHOR_DEFAULT
+      specificationIdTemplate: E01-S09-ZERO-ADD-DELTA-{deltaTag}-v1.0.0
+      formula: x_i=(n_i+delta)/(sum_j(n_j)+D*delta)
+      eligibleDomain: finite nonnegative row including a zero-sum row
+      zeroSumSemantics: map all-zero row to the uniform composition 1/D
+      scaleProperty: count-scale dependent by design
+    - branchId: MULTIPLICATIVE_REPLACEMENT_MATCHED_COUNT_DELTA
+      evidenceClass: VALIDATION_ONLY_RECONSTRUCTION_NOT_AUTHOR_DEFAULT
+      specificationIdTemplate: E01-S09-ZERO-MULT-MATCHDELTA-{deltaTag}-v1.0.0
+      formula: >-
+        For positive row mass N, close x=n/N, let q=delta/(N+D*delta), let z be
+        the number of zero components, assign q to each zero, and multiply each
+        positive x_i by (1-z*q). This preserves positive-part ratios and closure.
+      eligibleDomain: finite nonnegative row with positive total mass
+      zeroSumSemantics: >-
+        Retain an explicit INELIGIBLE row with reason
+        ZERO_SUM_NO_COMPOSITION_FOR_MULTIPLICATIVE_REPLACEMENT.
+      scaleProperty: matched delta remains count-scale dependent when zeros occur
+      rationale: >-
+        Reusing every frozen count-scale delta gives direct additive-versus-multiplicative
+        comparisons without selecting a second favorable replacement grid.
+    - branchId: NO_ZERO_REPLACEMENT
+      evidenceClass: STRICT_DOMAIN_VALIDATION_CONTROL_NOT_AUTHOR_DEFAULT
+      specificationId: E01-S09-ZERO-NONE-v1.0.0
+      formula: close positive-mass row without altering component zeros
+      zeroSumSemantics: retain explicit INELIGIBLE row
+      logRatioZeroSemantics: retain explicit INELIGIBLE row
+
+coordinateFamilies:
+  - coordinateId: FULL_CLR_DIAGNOSTIC
+    specificationIdTemplate: E01-S09-COORD-FULLCLR-D{dimension}-v1.0.0
+    formula: z=log(x)-mean(log(x))
+    logarithm: natural
+    dimensionRule: D
+    covarianceBoundary: structurally rank-at-most-D-minus-1; never model-ready as full coordinates
+  - coordinateId: DROPPED_COMPONENT_CLR
+    specificationIdTemplate: E01-S09-COORD-DROPCLR-D{dimension}-C{componentOneBased}-v1.0.0
+    formula: compute full CLR then remove exactly the named original component
+    logarithm: natural
+    dimensionRule: D-1
+    componentCoverage: every component index from 1 through D
+    paperLikeMember: final original component only
+    inverseRule: insert omitted CLR coordinate as minus the sum of retained coordinates, exponentiate, and close
+  - coordinateId: ILR_HELMERT
+    specificationIdTemplate: E01-S09-COORD-ILR-HELMERT-D{dimension}-v1.0.0
+    formula: y=V^T*log(x)
+    basis: >-
+      Sequential Helmert simplex basis in original component order: basis column j
+      has 1/sqrt(j*(j+1)) in components 1..j, -j/sqrt(j*(j+1)) in component j+1,
+      and zero thereafter, for one-based j=1..D-1.
+    dimensionRule: D-1
+    inverseRule: close(exp(V*y))
+  - coordinateId: RAW_CLOSED_PROPORTIONS
+    specificationIdTemplate: E01-S09-COORD-RAW-D{dimension}-v1.0.0
+    formula: x
+    dimensionRule: D
+    role: REGISTRY_ADVERSARIAL_COORDINATE_CONTROL
+    inverseRule: close(x)
+  - coordinateId: HELLINGER
+    specificationIdTemplate: E01-S09-COORD-HELLINGER-D{dimension}-v1.0.0
+    formula: sqrt(x)
+    dimensionRule: D
+    role: REGISTRY_ADVERSARIAL_COORDINATE_CONTROL
+    inverseRule: close(y^2)
+  - coordinateId: PRINCIPAL_LOG_RATIO
+    specificationIdTemplate: E01-S09-COORD-PLR-COVEIG-D{dimension}-FIT-{fitScopeId}-v1.0.0
+    formula: y=B^T*log(x), where B=V*Q and Q are covariance eigenvectors in descending order
+    basisFitScope: separately and explicitly fit within each fixture or pooled-dimension diagnostic group
+    signRule: make the largest-absolute loading in each basis vector positive; ties use earliest component
+    eigenvalueTieRule: retain NumPy eigh order after stable descending index sort and report near ties explicitly
+    dimensionRule: D-1
+    role: REGISTRY_ADVERSARIAL_COORDINATE_CONTROL
+    inverseRule: close(exp(B*y))
+    caveat: data-adaptive validation branch; never an author default or cross-fixture fixed basis
+
+featureLayout:
+  validationConfiguration: observations_as_rows_components_as_columns_no_extra_scaling
+  evidenceClass: VALIDATION_ONLY_DOES_NOT_RESOLVE_REGISTRY_E01_A032
+  registrySentinelPreserved: UNRESOLVED::E01-A032
+
+invalidTransformPolicy:
+  validationConfiguration: >-
+    Emit exactly one status-bearing record per input observation and complete
+    zero-treatment/coordinate specification. Reject negative or nonfinite input at the
+    fixture boundary. Mark mathematically undefined rows INELIGIBLE with a machine-readable
+    reason. Never delete, impute, or relabel such rows as drift.
+  evidenceClass: VALIDATION_ONLY_DOES_NOT_RESOLVE_REGISTRY_E01_A033
+  registrySentinelPreserved: UNRESOLVED::E01-A033
+
+diagnostics:
+  evaluationScopes: [each_fixture, pooled_by_dimension]
+  zeroFrequency:
+    outputs: [zero_component_count, zero_component_fraction, any_zero, zero_sum]
+  finiteValues:
+    rule: every eligible closed composition and coordinate must be finite
+  covariance:
+    centered: true
+    divisor: n-1
+    numericalRankTolerance: max(n,p)*machine_epsilon*largest_singular_value
+    conditionThreshold: 1.0e12
+    outputs:
+      - eligible_observation_count
+      - coordinate_dimension
+      - covariance_rank
+      - expected_max_rank
+      - condition_number_raw
+      - effective_nonzero_subspace_condition_number
+      - covariance_readiness_status
+  inverseTransform:
+    absoluteTolerance: 1.0e-12
+    relativeTolerance: 1.0e-12
+    outputs: [maximum_absolute_error, maximum_relative_error, closure_error]
+  representationAgreement:
+    pairwiseDistanceVector: strict_upper_triangle_common_eligible_rows
+    requiredIsometries:
+      - full_clr_vs_ilr_max_absolute_distance_error_at_most_1e-12
+      - ilr_vs_principal_log_ratio_max_absolute_distance_error_at_most_1e-12
+    droppedClrDiagnostics:
+      - every_component_is_materialized
+      - inverse_compositions_agree_with_input
+      - Pearson_and_Spearman_distance_agreement_with_ILR_are_reported_not_forced_to_one
+    adversarialControls:
+      - raw_vs_ilr_distance_Pearson_and_Spearman
+      - Hellinger_vs_ilr_distance_Pearson_and_Spearman
+  replacementAgreement:
+    outputs:
+      - additive_vs_multiplicative_Aitchison_distance_by_delta_and_observation
+      - positive_part_ratio_preservation_for_multiplicative_replacement
+      - strictly_positive_row_no_change_under_multiplicative_replacement
+
+acceptanceRules:
+  transformStatus: >-
+    ACCEPTED_WITH_EXPLICIT_ELIGIBILITY_DOMAIN only when row coverage is complete,
+    every eligible value is finite, every null result has a reason, and all applicable
+    inverse checks pass. A mathematically declared ineligible row is not a hidden deletion.
+  covarianceStatus: >-
+    Covariance readiness is separate from transform validity. Full CLR is explicitly
+    STRUCTURALLY_SINGULAR_FULL_CLR. Other branches are READY only when observed rank equals
+    coordinate dimension and raw condition number is at most 1e12; otherwise report
+    INSUFFICIENT_ELIGIBLE_ROWS, SAMPLE_RANK_DEFICIENT, or ILL_CONDITIONED without repair.
+  outcomeClassification:
+    supportive: all transform specifications meet their declared domain, row coverage, finite-value, inverse, and schema gates
+    constrainingOrContradictory: any branch requires hidden row deletion/defaulting or fails an applicable numerical gate
+    null: validated observations are insufficient to evaluate any zero-containing branch despite correct status handling
+
+serialization:
+  schemaVersion: E01-S09-transform-output-schema-v1.0.0
+  canonicalSerialization: E01-canonical-json-v1.0.0
+  binary64Encoding: canonical Python float.hex strings
+  checksum: SHA-256 over canonical payload bytes
+  roundTripCriterion: schema-conformant checksum-protected bytes reproduce exactly
+
+failureInjections:
+  - NEGATIVE_INPUT_REJECTED
+  - NONFINITE_INPUT_REJECTED
+  - RAW_REGISTRY_SENTINEL_REJECTED_AS_EXECUTABLE_SPECIFICATION
+  - LOG_RATIO_ZERO_WITHOUT_REPLACEMENT_REMAINS_INELIGIBLE_NOT_INFINITE
+  - NONORTHONORMAL_ILR_BASIS_REJECTED
+  - HIDDEN_ROW_DELETION_DETECTED
+  - CORRUPTED_INVERSE_DETECTED
+  - TAMPERED_CHECKSUM_REJECTED
+
+validationGates:
+  - Every frozen input hash matches before execution.
+  - Registry v0.3.0 remains byte-identical and all eight S09-owned values and statuses remain unchanged.
+  - All 43 observations receive a status-bearing output under every applicable complete specification.
+  - The six additive and six matched-delta multiplicative treatments are all materialized; no delta is selected as primary.
+  - Every dropped-component CLR choice is materialized for dimensions 2 and 4.
+  - Every eligible output is finite and every ineligible output has a machine-readable reason.
+  - All applicable inverse transforms meet 1e-12 absolute and relative tolerances.
+  - Helmert and principal-log-ratio bases are orthonormal and orthogonal to the all-ones vector.
+  - Full CLR and ILR pairwise distances agree within 1e-12; ILR and principal-log-ratio distances agree within 1e-12.
+  - Zero frequency, eligibility, covariance rank, conditioning, representation agreement, and inverse diagnostics are complete for fixture and pooled scopes.
+  - Transform arrays conform to Draft 2020-12 schema, verify checksums, and round-trip byte-exactly.
+  - All failure injections are detected.
+  - S10 remains absent.
+
+executionPolicy:
+  cpuWorkers: 1
+  numericLibraryThreads: 1
+  requiredEnvironment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+  gpuUsed: false
+  newDependencies: none

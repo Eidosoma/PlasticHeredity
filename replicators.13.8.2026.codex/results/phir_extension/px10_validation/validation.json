@@ -1,0 +1,129 @@
+{
+  "checks": [
+    {
+      "detail": null,
+      "name": "scientific_shape",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "candidate_separation",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "fresh_seed_namespace",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "no_fable_source",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "dose_arms",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "atom_lags",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "matrix_inference",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "grain_dimensions",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "grain_nested",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "grain_ranges",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "discrete_atom_identity",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "discrete_xor_signature",
+      "pass": true
+    },
+    {
+      "detail": {
+        "atom_sum": 0.16443456469258544,
+        "gaussian_mi": 0.16443419820053448
+      },
+      "name": "continuous_atom_gaussian_crosscheck",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "lag_pairs_match",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "lag_derangement_no_self",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "lag_derangement_marginals",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "random_partition_count",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "random_partition_size",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "constant_channel_capacity",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "deterministic_channel_capacity",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "arm_derangement",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "model_hashes_present",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "development_hashes_present",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "source_files_present",
+      "pass": true
+    }
+  ],
+  "format": "codex-ch5-phir-px10-validation-v1",
+  "passed": true
+}

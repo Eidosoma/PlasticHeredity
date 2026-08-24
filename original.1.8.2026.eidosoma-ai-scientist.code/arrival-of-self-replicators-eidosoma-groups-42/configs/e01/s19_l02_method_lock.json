@@ -1,0 +1,81 @@
+{
+  "schema": "eidosoma.e01.s19_l02_method_lock.v1",
+  "researchStepId": "S19",
+  "loopId": "S19-L02",
+  "versionedLoopId": "E01-S19-L02-REPLICATOR-DEFINITION-TEMPORAL-FINGERPRINT-v1.0.0",
+  "continuationId": "E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0",
+  "outcomeAccessedAtLock": false,
+  "targetRepositoryBranch": "eidosoma/groups/42",
+  "repositoryParentBeforeLockCommit": "471741be3a4e3b0f5c9e78edc274e44f3bd02c57",
+  "pushedCommit": "RESOLVED_FROM_CLEAN_REMOTE_MATCH_IMMEDIATELY_BEFORE_OUTCOME_ACCESS",
+  "labelCount": 4,
+  "labelIds": [
+    "MOL_ADJACENT_INCOMING_H900",
+    "PF_DOMINANT_COMPONENT_CENTROID_H900",
+    "PF_EUCLIDEAN_KMEANS_DOMINANT",
+    "PF_HISTORICAL_ADJACENT_AVERAGE_H090"
+  ],
+  "implementationSource": "src/e01_creative_directional_search/core.py plus frozen S13Y historical labels",
+  "newTrajectoryCount": 0,
+  "newPhiRLCount": 0,
+  "newEmergenceCount": 0,
+  "candidateIds": ["S12F-CANDIDATE-02", "S12F-CANDIDATE-03"],
+  "matrixCountPerCandidate": 100,
+  "independentUnit": "catalytic matrix trajectory",
+  "precision": "CPU float64 authoritative",
+  "workers": 8,
+  "threadsPerWorker": 1,
+  "gpuHours": 0,
+  "paperFingerprintScoring": {
+    "aggregation": "candidate-specific arithmetic means over 100 matrices",
+    "distance": "RMS standardized error over persistence, occupancy, consistency, and onset",
+    "rawOnsetTarget": [37.0, 27.0],
+    "normalizedOnsetTarget": [0.37, 0.27],
+    "persistenceTarget": [716.0, 198.0],
+    "occupancyTarget": [0.88, 0.03],
+    "consistencyTarget": [0.38, 0.06],
+    "rawAndNormalizedRemainSeparate": true,
+    "noOnsetRawScore": "trajectory clock count",
+    "noOnsetNormalizedScore": 1.0
+  },
+  "promotionGate": {
+    "maximumLeads": 2,
+    "distanceImprovementMinimumFraction": 0.10,
+    "distanceImprovementRequiredBothOnsetModesBothCandidates": true,
+    "pairedBootstrapUpper95BelowZero": true,
+    "closerDimensionsMinimum": 3,
+    "mustImproveOnsetOrConsistency": true,
+    "leaveOneOutAllBelowZero": true,
+    "minimumDefinedConsistencyPerCandidate": 95,
+    "minimumObservedOnsetPerCandidate": 95,
+    "unresolvedMaterialChoiceFailsSourceGrounding": true,
+    "retrospectiveCanOnlyPromotePaperFacing": true
+  },
+  "bootstrapReplicates": 4096,
+  "classificationRules": {
+    "exploratoryPaperMatchMaximumDistance": 1.0,
+    "exploratoryDirectionalMatchUsesPromotionFingerprintGatesBeforeSourceGrounding": true,
+    "possibleStabilityProxyMinimumMedianAccuracyOrJaccardBothCandidates": 0.95,
+    "exploratoryNonSupportWhenNoMatchRulePasses": true
+  },
+  "seedRootHex": "56862dd64d12c64bc4cdf2ab6472d65ac0246bcba1089227114fca78764edbad",
+  "computeCeilings": {
+    "cpuHours": 48,
+    "gpuHours": 0,
+    "wallHours": 8,
+    "retainedGiB": 10,
+    "temporaryGiB": 25,
+    "validationReserveFraction": 0.10
+  },
+  "forbidden": [
+    "H>0.97 candidate or threshold grid",
+    "occupancy tuning",
+    "emergence, association, prediction, or intervention based label ranking",
+    "new GARD trajectories",
+    "new PhiRL or emergence values",
+    "S19-L01 repair, rerun, reinterpretation, or scientific extraction",
+    "post-outcome method change",
+    "S19-L03, S20, E02, author contact, or report-bundle generation"
+  ],
+  "mandatoryStop": "human review immediately after L02"
+}

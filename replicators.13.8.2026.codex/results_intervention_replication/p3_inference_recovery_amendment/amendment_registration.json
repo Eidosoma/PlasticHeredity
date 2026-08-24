@@ -1,0 +1,19 @@
+{
+  "amendment_id": "86e0cda5d5403fed3601fcd65110472ed76305ab9f5a1b139a0347abf238e185",
+  "failed_log_sha256": "82fe9a172d8d2db921a1613184fa7c9b195409ae3be2d8d51c1e2e051fe19ead",
+  "format": "codex-intervention-p3-inference-recovery-amendment-v1",
+  "generation_checkpoint_aggregate_sha256": "8d852860a8c8e8da2deb8bf8cc42d3c1f0eca8fc97643e57e6061581bf672b8c",
+  "lifecycle_amendment_id": "679449881a33f0f40a50ca7e9de8849a1996321492a1b8190f8007f6cc22637c",
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "p3_checkpoint_outcomes_loaded": false,
+  "protocol_id": "fb743eceffd90adb713cbfb01262ca43235ddd0f449a61419b3c7113df2da472",
+  "protocol_sha256": "7455cf60965900388428ef9882e3d529db905f7ed6755864ca1718046a1e4a3f",
+  "replay_checkpoint_aggregate_sha256": "8d852860a8c8e8da2deb8bf8cc42d3c1f0eca8fc97643e57e6061581bf672b8c",
+  "scientific_estimates_computed": false,
+  "source_hashes": {
+    "CODEX_INTERVENTION_P3_INFERENCE_RECOVERY_AMENDMENT.md": "a12103b44223f49b664f16c4ed8bd4af161c4a31717a8ff86702bb2d3454cff7",
+    "plastic_heredity/intervention_p3_inference_recovery.py": "34c418c2db20caa613a7afab6e2741887db24bcb1071e71c90ddf02c0468efd6",
+    "tests/test_intervention_p3_inference_recovery.py": "9b4f01d4f59287321066cad9fb6c02e269e543f54ab14fe2df20834800d0b05c"
+  },
+  "status": "sealed_after_complete_p3_futures_before_outcome_loading"
+}

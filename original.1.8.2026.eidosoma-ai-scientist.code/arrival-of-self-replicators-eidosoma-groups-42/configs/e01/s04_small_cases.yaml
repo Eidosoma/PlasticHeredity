@@ -1,0 +1,217 @@
+schema: eidosoma.e01.s04_small_cases.v1
+researchStepId: S04
+fixtureVersion: E01-S04-fixtures-v1.0.0
+oraclePolicy: Expected values are independently hand-calculated from the pinned source formulas and control flow; explicit draw tapes remove RNG-stream assumptions.
+cases:
+  - caseId: HC01_beta_explicit_draws
+    kind: catalytic_matrix
+    inputs:
+      standardNormals:
+        - [0.0, 1.0]
+        - [-1.0, 0.5]
+      a: -4.0
+      sigma: 4.0
+    expected:
+      beta:
+        - [0.01831563888873418, 1.0]
+        - [0.00033546262790251185, 0.1353352832366127]
+      diagonalRetained: true
+  - caseId: HC02_hand_propensities
+    kind: propensities
+    inputs:
+      state: [2, 1]
+      beta:
+        - [1.0, 2.0]
+        - [0.5, 0.0]
+      rho: [0.25, 0.75]
+      kF: 0.1
+      kB: 0.2
+    expected:
+      boost: [2.3333333333333335, 1.3333333333333333]
+      join: [0.17500000000000002, 0.3]
+      leave: [0.9333333333333335, 0.26666666666666666]
+      concatenated: [0.17500000000000002, 0.3, 0.9333333333333335, 0.26666666666666666]
+      total: 1.675
+  - caseId: HC03_join_event_mass_plus_one
+    kind: weighted_event
+    inputs:
+      propensityCase: HC02_hand_propensities
+      uniformDraw: 0.2
+    expected:
+      eventIndexZeroBased: 1
+      kind: join
+      postState: [2, 2]
+      massDelta: 1
+  - caseId: HC04_leave_event_mass_minus_one
+    kind: weighted_event
+    inputs:
+      propensityCase: HC02_hand_propensities
+      uniformDraw: 0.7
+    expected:
+      eventIndexZeroBased: 2
+      kind: leave
+      postState: [1, 1]
+      massDelta: -1
+  - caseId: HC05_two_event_growth
+    kind: growth
+    inputs:
+      state: [1, 1]
+      beta:
+        - [0.0, 0.0]
+        - [0.0, 0.0]
+      rho: [0.5, 0.5]
+      kF: 1.0
+      kB: 0.0
+      nMax: 4
+      uniformDraws: [0.25, 0.75]
+      eventGuard: 10
+    expected:
+      finalState: [2, 2]
+      terminalStatus: split_size_reached
+      historicalSignedSpecies: [1, 2]
+      eventMassDeltas: [1, 1]
+      eventTotalRates: [2.0, 3.0]
+      legacyDtAccumulator: 5.0
+      legacyInverseRateSum: 0.2
+  - caseId: HC06_single_loss_extinction
+    kind: growth
+    inputs:
+      state: [1]
+      beta:
+        - [0.0]
+      rho: [0.0]
+      kF: 0.0
+      kB: 1.0
+      nMax: 2
+      uniformDraws: [0.5]
+      eventGuard: 10
+    expected:
+      finalState: [0]
+      terminalStatus: extinct
+      historicalSignedSpecies: [-1]
+      eventMassDeltas: [-1]
+      legacyDtAccumulator: 1.0
+  - caseId: HC07_even_fixed_size_fission
+    kind: fission
+    inputs:
+      parent: [2, 1, 1]
+      uniformDraws: [0.1, 0.9]
+    expected:
+      childA: [1, 0, 1]
+      childB: [1, 1, 0]
+      discarded: [0, 0, 0]
+      childMasses: [2, 2]
+      followedDaughter: [1, 0, 1]
+      daughterSelectionRule: FIRST_OUTPUT_CHILD_A_NO_ADDITIONAL_RANDOM_DRAW
+  - caseId: HC08_odd_fission_discards_one
+    kind: fission
+    inputs:
+      parent: [2, 1]
+      uniformDraws: [0.9, 0.2]
+    expected:
+      childA: [0, 1]
+      childB: [1, 0]
+      discarded: [1, 0]
+      childMasses: [1, 1]
+      followedDaughter: [0, 1]
+  - caseId: HC09_generation_follows_child_a
+    kind: generation
+    inputs:
+      state: [1, 1]
+      beta:
+        - [0.0, 0.0]
+        - [0.0, 0.0]
+      rho: [0.5, 0.5]
+      kF: 1.0
+      kB: 0.0
+      nMax: 4
+      uniformDraws: [0.25, 0.75, 0.1, 0.9]
+      eventGuard: 10
+    expected:
+      preFissionState: [2, 2]
+      childA: [1, 1]
+      childB: [1, 1]
+      nextState: [1, 1]
+      terminalStatus: continued_from_child_a
+      drawsConsumed: 4
+  - caseId: HC10_h_similarity
+    kind: h_similarity
+    inputs:
+      set1:
+        - [1.0, 0.0]
+        - [0.0, 1.0]
+      set2:
+        - [0.8]
+        - [0.6]
+    expected:
+      h:
+        - [0.8]
+        - [0.6]
+  - caseId: HC11_nondrift_technique1
+    kind: nondrift_technique1
+    inputs:
+      trace:
+        - [1.0, 1.0, 0.8, 0.0, 0.0]
+        - [0.0, 0.0, 0.6, 1.0, 0.0]
+      threshold: 0.9
+    expected:
+      angles: [1.0, 1.0, 0.8, 0.6, 0.0]
+      localScores: [1.0, 0.9, 0.7, 0.6, 0.0]
+      isNonDrift: [true, false, false, false, false]
+      activeGenerationCount: 4
+      firstZeroSumGenerationOneBased: 5
+  - caseId: HC12_nondrift_technique2_shift
+    kind: nondrift_technique2
+    inputs:
+      trace:
+        - [1.0, 0.0, 0.0, 0.0]
+        - [0.0, 1.0, 1.0, 1.0]
+      threshold: 0.9
+      driftSize: 2
+    expected:
+      angles: [0.0, 0.0, 1.0, 1.0]
+      isNonDrift: [false, true, true, false]
+  - caseId: HC13_nondrift_technique2_index_zero_failure
+    kind: expected_source_domain_error
+    inputs:
+      operation: nondrift_technique2
+      trace:
+        - [1.0, 1.0, 1.0]
+        - [0.0, 0.0, 0.0]
+      threshold: 0.9
+      driftSize: 2
+    expected:
+      exception: HistoricalSourceDomainError
+      classification: SOURCE_EDGE_CASE_PRESERVED_NOT_REPAIRED
+  - caseId: HC14_historical_initializer_with_replacement
+    kind: initializer
+    inputs:
+      nG: 3
+      nMin: 4
+      uniformDraws: [0.0, 0.2, 0.4, 0.99]
+    expected:
+      state: [2, 1, 1]
+      distinctTypeCount: 3
+      totalMass: 4
+  - caseId: HC15_two_generation_lineage
+    kind: lineage
+    inputs:
+      state: [1, 1]
+      beta:
+        - [0.0, 0.0]
+        - [0.0, 0.0]
+      rho: [0.5, 0.5]
+      kF: 1.0
+      kB: 0.0
+      nMax: 4
+      nGenerations: 2
+      uniformDraws: [0.25, 0.75, 0.1, 0.9, 0.25, 0.75, 0.1, 0.9]
+      eventGuardPerGeneration: 10
+    expected:
+      preFissionTrace:
+        - [2, 2]
+        - [2, 2]
+      finalState: [1, 1]
+      completedFissions: 2
+      terminalStatus: requested_generations_completed
+      drawsConsumed: 8

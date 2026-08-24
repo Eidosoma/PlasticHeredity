@@ -1,0 +1,14 @@
+{
+  "all_audits_pass": true,
+  "all_beta_strictly_positive": true,
+  "all_nonnoop_surgeries_change_all_and_only_present_present": true,
+  "format": "codex-intervention-p3c-surgery-audit-v1",
+  "maximum_neutral_throughput_absolute_error": 7.275957614183426e-12,
+  "maximum_surgery_norm_relative_error": 1.709709719705731e-15,
+  "neutral_exact_registered_norm": true,
+  "neutral_exact_registered_throughput": true,
+  "no_clipping": true,
+  "rows": 2400,
+  "states": 480,
+  "structural_no_action_states": 0
+}

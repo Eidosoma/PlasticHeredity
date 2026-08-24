@@ -1,0 +1,172 @@
+{
+  "claim_boundary": {
+    "prohibited": [
+      "universal transfer",
+      "strict-eight control",
+      "biological memory",
+      "agency or life",
+      "autonomous organization or installed attractor",
+      "real prebiotic chemistry",
+      "universal origin-of-life mechanism",
+      "Phi or PhiID intervention"
+    ]
+  },
+  "cohort_per_regime": {
+    "arms": [
+      "MODEL_UP",
+      "MODEL_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "branches": 48,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "complete_replay": true,
+    "halves": {
+      "A": [
+        0,
+        23
+      ],
+      "B": [
+        24,
+        47
+      ]
+    },
+    "landmarks": [
+      35,
+      65
+    ],
+    "matrices": 40,
+    "no_retry_or_replacement": true,
+    "primary_futures": 30720,
+    "states": 160
+  },
+  "endpoint": {
+    "break": "H <= 0.9",
+    "horizon": 12,
+    "inheritance": "strict unrounded float64 H > 0.9",
+    "name": "JOINT_BREAK_RUN3",
+    "strict_eight_excluded": true
+  },
+  "format": "codex-intervention-cr6-zero-shot-transfer-v1",
+  "frozen_model": {
+    "refit_recalibration_search_or_regime_switching": false,
+    "sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "source": "sealed CR1 candidate-separated 5x full composite",
+    "zero_shot": true
+  },
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_never_pooled": true,
+    "randomization_repetitions": 4096,
+    "regimes_never_pooled": true,
+    "unit": "whole catalytic matrix within regime"
+  },
+  "operational": {
+    "checkpoint_resumable": true,
+    "cpu_budget_hours": [
+      3.0,
+      6.0
+    ],
+    "cr7_not_launched_automatically": true,
+    "expected_cpu_hours": [
+      3.0,
+      5.0
+    ],
+    "mandatory_stop_after_seal": true,
+    "minimum_free_disk_bytes": 3000000000
+  },
+  "positive_transfer_gate": {
+    "bootstrap_ci95_lower_positive": true,
+    "cells_per_regime": "candidate by fixed branch half",
+    "holm_family_per_regime": 4,
+    "holm_randomization_p_below": 0.05,
+    "random_noop_tost_margin": 0.025,
+    "regimes": [
+      "POS_A_M4_S5",
+      "POS_A_M3_S4",
+      "POS_A_M5_S4"
+    ],
+    "up_minus_down_positive": true,
+    "up_noop_noop_down_and_ratio_reported_not_gated": true
+  },
+  "predicted_null_gate": {
+    "both_candidates_required": true,
+    "candidate_half_results_descriptive": true,
+    "candidate_pooled_across_all_48_branches": true,
+    "ci_crossing_zero_is_not_equivalence": true,
+    "margin": 0.04,
+    "regime": "NULL_A_M4_S3",
+    "tost_interval": "90% whole-matrix bootstrap"
+  },
+  "protocol_id": "135637ddacd6485bce967eb8529ffbfcf874144293b827d2484b604f876c47ba",
+  "randomness": {
+    "common_random_streams": true,
+    "future_seed_excludes_arm": true,
+    "purpose_and_regime_keyed_domains": true,
+    "random_selection_stream_separate": true,
+    "seed_domains": {
+      "NULL_A_M4_S3__bootstrap": "0b606e27e7a78565b481972f789690a12ce66a751066cb05d221af2f322d8d5a",
+      "NULL_A_M4_S3__cohort": "bfde0b3f526a6831e1dacb561cc6e215f044a25a06e885c24e3f18a683b47911",
+      "NULL_A_M4_S3__future": "c17603fe17e7f2f2c65f4e002aad6935da6bc7732906626d90e559763cf52036",
+      "NULL_A_M4_S3__randomization": "4d574fef26e098d49cea3a51db209cc863cb8f0af41656868b4c05c8a57f9fcc",
+      "NULL_A_M4_S3__selection": "7617f72b6868774287cdf6b8ef40dc2f290cbbfa94dd84e139d953d622658edf",
+      "POS_A_M3_S4__bootstrap": "62c1e63bd36919d0bf665e612b81aeced35ae955268c5c3d281f6f002bb4bf96",
+      "POS_A_M3_S4__cohort": "e863b17cdbbdd97a4c03ffbaf62130d0c75f70f51c3b19a27e8206af7057a619",
+      "POS_A_M3_S4__future": "7f4c5c4c25c187663ca15c9a0b79eaf81b442631af53dbf8e6f6e0ffa5ae2bcf",
+      "POS_A_M3_S4__randomization": "ee363dde7ebdadbb5136097526df2b2c1ee27293b7ba7ee86c8b53a7ca84e548",
+      "POS_A_M3_S4__selection": "9628c92a0dfd014363550a1c03b3d74af8c51464c2bf06bd3020b57e6a58697f",
+      "POS_A_M4_S5__bootstrap": "c2e09d0131b579814b47e32ba15db5777a624cecf14bf56660982674aaabbd6d",
+      "POS_A_M4_S5__cohort": "87b5c320357b2542e356ee76ca5a783282b57fd311e532ce5acc2afa8d804c43",
+      "POS_A_M4_S5__future": "28ef63a4f735927b99655220c0e83da97925bee7454ab01728fa2482f3753f51",
+      "POS_A_M4_S5__randomization": "d812cea22febbaa7474dfc00bf1c7b8573496f5d11967a5b02f7646864ed6e8f",
+      "POS_A_M4_S5__selection": "3c3cc739ea7ae9da40a3fbfbb4417adaae8045f558b11d2baa6544a2b01b7222",
+      "POS_A_M5_S4__bootstrap": "5a506a7ecd2aba1a5675f39ad7ea2ac95c541aee4d0fd5ce70c60eb0183e1f0b",
+      "POS_A_M5_S4__cohort": "1794fe45121b82aed9f2cd042f061e51b2d6f1bdd02518abf01e765a2020a5c8",
+      "POS_A_M5_S4__future": "72513be9251b97e54c0ea7dead48692aaabb75f03436d95b9f9d07781ea1a3f0",
+      "POS_A_M5_S4__randomization": "17af246706116eb13ca11184938ab938f74c2d8b89d6ed42209acab371531241",
+      "POS_A_M5_S4__selection": "39537e0c2a734bb9fda88b505b00287df2612a268cb792adeb967da2a8141d6b",
+      "replay": "33e537279e274ece83f7ccb6d2800e6438832f68dd07621aec8dd76b8b529716",
+      "smoke_cohort": "c0e74aa808b89f2b24fafe112fdccb762f1920c7adac32e92954d9e614bf2e85",
+      "smoke_future": "8e1d5cb0c457548fee194d5fecc30807b69fab04e2a9321eb4217a0a03504fad",
+      "smoke_selection": "caccd05bf19a3368b0d5a9fa6bca28a63d318d9d1e1cd606cc530a411b891d99",
+      "validation": "41029bbf9312c3eba800d4e2341ead6cc47e6eff0ca5fdf3d92a237694e5a5bb"
+    }
+  },
+  "regimes": {
+    "NULL_A_M4_S3": {
+      "A": -4.0,
+      "role": "predicted_null",
+      "sigma": 3.0
+    },
+    "POS_A_M3_S4": {
+      "A": -3.0,
+      "role": "positive_transfer",
+      "sigma": 4.0
+    },
+    "POS_A_M4_S5": {
+      "A": -4.0,
+      "role": "positive_transfer",
+      "sigma": 5.0
+    },
+    "POS_A_M5_S4": {
+      "A": -5.0,
+      "role": "positive_transfer",
+      "sigma": 4.0
+    }
+  },
+  "selection": {
+    "deterministic_extreme_ties": true,
+    "every_legal_swap_scored": true,
+    "optional_rule_family_included": false,
+    "random_uniform_over_legal_swaps": true
+  },
+  "status": "frozen_before_any_cr6_scientific_matrix",
+  "upstream": {
+    "cr1_full_four_cell_gate_passed": true,
+    "cr1_registration_id": "a8743234235e82133d2938c15ead062c7c85004c5f640d7359e5b075cb31368e",
+    "cr5r_not_used_to_select_cr6_design": true
+  }
+}

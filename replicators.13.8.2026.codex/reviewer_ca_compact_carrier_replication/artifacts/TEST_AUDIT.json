@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_ca_compact_carrier_replication/tests"
+  ],
+  "implementation_manifest": {
+    "PROTOCOL.md": "b9184286245f9043c5aef5a3d78d54cef0d726152db14b2c3675dd2b1cc0a769",
+    "README.md": "f81e7e78021ff45c063e9ab2985f93428e3484f6d7805fdab3c9c6eceadd07aa",
+    "__init__.py": "f3c8387b19f59fd2f712ce44994f5846adaf9f266c8eb3d5289b35d91707399d",
+    "acquisition.py": "bd8c2f3794446fe3d9e3027306291417760756f77b04df264879aa6b56f29d08",
+    "campaign.py": "26e327061b1fe6b720955efc4edc646120341b5289117398edfe87842ed0b358",
+    "codec.py": "f09e71372987f68bda6c4f5b48a8c44be91a24d1e6b88aa4ee37348e42b59b57",
+    "contract.py": "40f65676240bf844743c643f5d9ded7091d98d577f97ad258b8c5f7fd35f0387",
+    "engine.py": "733728618df8de54c9cc3ff5811e1195f531b8d68a5192e05c33b06f7118dd46",
+    "inference.py": "aea9511c7a1c63ca64add5c123e23d00b26d8a417edb935f4c684cd85c8b579e",
+    "run.py": "adf9cd1dc458197c72cd7e9eedc2371289b29c90f0473ff7a9f6af56cdc9b078",
+    "snapshot.py": "e7a24ff13633ae836488943057c6e21e46baccd7c293d21af7f47c7949a602a3",
+    "tests/__init__.py": "ffcbf33d31e655fa5a7bfa31f8deb80369d0e753f043f661f77dc8a92a79a495",
+    "tests/test_acquisition.py": "e474ad317542063fee24d85eff978a0ddebdc9a84fb5eac520b693b9205d75cd",
+    "tests/test_codec_and_contract.py": "37f15296b7d315f947bf985ca06a28eaf1135d18b01dbf36c7155985d43c561b",
+    "tests/test_engine.py": "bf969ce24431bbbd8fc09daac32e9f5db56572b939404765f73ca53720a19082",
+    "tests/test_inference.py": "819082ebb306dbb8be896f367024ec04767829b3f7569f18faed80b405c0c329"
+  },
+  "passed": true,
+  "physics_dependency_manifest": {
+    "reviewer_ca_lineage_renewal_replication_v2/__init__.py": "c6e61efedb13861bfedaa0bfd83ce798e4a0343c9db84e5aa75c8f7e70fb476b",
+    "reviewer_ca_lineage_renewal_replication_v2/contract.py": "61a218900e7f48107b0c1e85fc85fb6087303356b25994081e80b6c3f357c039",
+    "reviewer_ca_lineage_renewal_replication_v2/engine.py": "82906e901c941d193be3f596d08bf11df955c30a03157cc8c037067f00a2ba8c"
+  },
+  "returncode": 0,
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "stderr": "",
+  "stdout": "................                                                         [100%]\n"
+}

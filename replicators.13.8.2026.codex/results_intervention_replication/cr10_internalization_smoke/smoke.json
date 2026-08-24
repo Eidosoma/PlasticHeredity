@@ -1,0 +1,16 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "all_seven_policies_exercised": true,
+    "artificial_non_scientific_fixture": true,
+    "k8_exact_transport": true,
+    "lambda_zero_plain_bitwise_exact": true,
+    "no_effect_sizes_or_arm_ordering_disclosed": true,
+    "noop_plain_bitwise_exact": true,
+    "policy_selection_and_trajectory_replay_exact": true,
+    "registration_verified": true,
+    "scientific_cr10_matrices_generated_is_zero": true
+  },
+  "format": "codex-intervention-cr10-smoke-v1",
+  "registration_id": "ae144b0f3a1d186a92aa05c8a7db061bfec6da547e3343e91ebbd943a22efcf9"
+}

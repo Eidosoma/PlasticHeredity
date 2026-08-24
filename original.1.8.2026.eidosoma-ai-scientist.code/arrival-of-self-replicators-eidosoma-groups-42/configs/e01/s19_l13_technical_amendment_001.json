@@ -1,0 +1,35 @@
+{
+  "schema": "eidosoma.e01.s19.l13.technical_amendment.v1",
+  "amendmentId": "L13-TA-001-ORACLE-CACHE-ROUTING",
+  "versionedStepId": "E01-S19-L13-FIGURE5-RECURRING-TARGET-PREDICTION-RECONSTRUCTION-v1.0.0",
+  "authorizedBoundary": "value-preserving technical assurance before any MLP fit or prediction outcome",
+  "failure": {
+    "stage": "run_models_feature_cache_assembly",
+    "exceptionClass": "FileNotFoundError",
+    "missingPath": "/cache/e01_s19_l13/features/CANDIDATE_2/O1_COMPLETED_TARGET_CENTROID_ORACLE.npz",
+    "predictionOutcomeProduced": false,
+    "modelFitStarted": false
+  },
+  "repair": "Retain the already constructed target-specific in-memory oracle tensor and skip the redundant generic cache lookup for ORACLE_ID.",
+  "scientificValuesChanged": false,
+  "changedFields": [],
+  "unchanged": [
+    "target labels and target values",
+    "every feature and feature value",
+    "splits and seeds",
+    "model architecture and training",
+    "metrics, tests, gates, and classifications"
+  ],
+  "failedAttemptFeatureHashes": {
+    "all_feature_summary.parquet": "0101590b1f98e882a3691e09ea026f3aeee52eedeb9053cdfd7a7fd48fc111a3",
+    "attractor_control_results.parquet": "de26830fda3cf9f3da7aff1b4379c86e259a03235f6e99d61158ebf6fe1c7da0",
+    "baseline_feature_results.parquet": "b7802cdecac5c0a7e5dad036eeb73816233a597cc76a1ef4d4885b1e61f04928",
+    "completed_fit_phirl_features.parquet": "23458e1e559bf6fde7821f3eb6f1af770914ed0233e800da4e98ec50f9481421",
+    "leakage_audit.parquet": "7bba54492da0965050fe387dbc3b3977b23f9a6a83a007492299b346353b85db",
+    "prefix_only_phirl_features.parquet": "5a2b00e9ae0aed15d2f0cd0d9df5148389068933537c3b8f9362f5138b381172"
+  },
+  "quarantineRoot": "/cache/e01_s19_l13_failed_attempt_001",
+  "freshCacheRequired": true,
+  "exactHashEqualityRequiredBeforeModels": true,
+  "maximumTechnicalAmendmentsAfterModelOutcomesUnaffected": 2
+}

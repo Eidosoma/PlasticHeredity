@@ -1,0 +1,27 @@
+{
+  "branches_per_arm_state": 64,
+  "complete_readback_exact": true,
+  "cr4_launched": false,
+  "declared_cpu_budget_hours": 15.0,
+  "exact_replay": true,
+  "format": "codex-intervention-cr3-confirmation-result-v1",
+  "full_four_cell_cr3_gate": true,
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 200,
+  "no_future_retry_or_matrix_replacement": true,
+  "no_rule_search_refitting_or_threshold_change": true,
+  "primary_futures": 512000,
+  "registration_id": "64e871db56b3958a14bdad47b404f6c9f1ad09d0bda1e996e24498598523d189",
+  "replay_futures": 512000,
+  "rule_expression": "x @ beta == beta.T @ x",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "states": 2000
+}

@@ -1,0 +1,11 @@
+{
+  "all_grid_values_retained": true,
+  "analytic_endpoints_ordered": true,
+  "crossing_fixture": true,
+  "crossing_inside_unit_interval": true,
+  "deterministic_replay": true,
+  "effect_sizes_suppressed": true,
+  "format": "codex-ch5-phir-extension-px6-smoke-v1",
+  "passed": true,
+  "uniform_positive_fixture": true
+}

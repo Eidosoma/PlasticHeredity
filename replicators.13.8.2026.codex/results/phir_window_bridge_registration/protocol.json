@@ -1,0 +1,75 @@
+{
+  "arms": [
+    "MODEL_STABILIZE",
+    "MODEL_DESTABILIZE"
+  ],
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "cannot_authorize_or_launch_original_confirmation": true,
+  "claim_boundary": [
+    "temporal-estimator moderation is not a uniquely correct Phi-r definition",
+    "gauge response is not hereditary control",
+    "no consciousness, life, agency, or biological-memory claim",
+    "no universal origin-of-life mechanism or Platonic-space portal"
+  ],
+  "completed_ch5_pilot_manifest_sha256": "21e7448f498b043467b05eb39607d30d18c6cad823f6eb797cded8add6841f2b",
+  "completed_ch5_pilot_registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+  "format": "codex-ch5-phir-window-bridge-program-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "inference": {
+    "bootstrap": 4096,
+    "candidate_pooling": false,
+    "holm_within_four_cell_family": true,
+    "replicate_pooling": false,
+    "sign_randomization": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "original_confirmation_locked": true,
+  "preprocessings": [
+    "clr",
+    "raw_count"
+  ],
+  "program": "fresh 24-matrix pooled-versus-rolling Phi-r bridge",
+  "protocol_id": "c47e2ae0a6a1a07e85fd572b9660a7afb9e69b078cb83fbc2fa0f050d845126e",
+  "raw_molecular_trajectories_persisted": false,
+  "replay": "complete deterministic regeneration of all 24 matrices",
+  "seed_domains": {
+    "bootstrap": "8e1ff71ae3937e97356042635f6d836fd6516cde2dcf272dca925480619f3053",
+    "controller_action": "b1460da9bddab80125cd0473bfc64c3e5e3a82aff3ca5ed0a03ad6e0422fa738",
+    "future": "66b5aabfbfce05b648800b373e82f117d443e653ebc96bb82805327c5d45388c",
+    "initial": "fff1c4c3d22bb4b51743899861e5bc3a4c0e1329a5ef7d5f3d7cbc47d293d9ec",
+    "main_path": "08265d544c87ee7883b088671f08bc188a49e3360607f179dd3452add3c9c3a2",
+    "matrix": "661519de81cd5d0fb642d22598da82ea7775354a6d9229e4b7eb5c416a805a6d",
+    "randomization": "b59b9c85c2e28dbc66332eef7de334c76c9766a2696eac640b5f2c75acfa7f22",
+    "smoke": "394e4aae2cb666c78567fd56bb725a043a89502cefed8ef552226c84e3b388ea",
+    "validation": "7f3b97cb9282a3543ca12f876913370aa252a009bec0cae3f1d56819ea2d2084"
+  },
+  "spec": {
+    "bootstrap_repetitions": 4096,
+    "bridge_horizon": 60,
+    "label": "window_bridge24",
+    "matrices": 24,
+    "natural_generations": 60,
+    "pooled20_start": 41,
+    "pooled30_start": 31,
+    "randomization_repetitions": 4096,
+    "replicates": 2,
+    "rolling_window": 512
+  },
+  "typeset_taxonomy": {
+    "full_typeset": "full coordinate blocks against whole future",
+    "full_typeset_rolling_steps": [
+      40,
+      60
+    ],
+    "macro_typeset": "two averaged Fiedler halves"
+  },
+  "window_estimators": {
+    "pooled20": "one score on controlled fissions 41-60",
+    "pooled30": "one score on controlled fissions 31-60",
+    "rolling20": "mean rolling-512 score after fissions 41-60",
+    "rolling30": "mean rolling-512 score after fissions 31-60"
+  }
+}

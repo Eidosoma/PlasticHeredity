@@ -1,0 +1,54 @@
+{
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "complete_cr9_registered_gate": false,
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "complete_two_candidate_hysteresis_gate": false,
+  "cr10_launched": false,
+  "event_thresholds": [
+    0.15,
+    0.25,
+    0.35
+  ],
+  "format": "codex-intervention-cr9-result-v1",
+  "generated_policy_lineages": 13248,
+  "horizon": 60,
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 48,
+  "natural_launch_landmark": 60,
+  "no_policy_lineage_retry_or_matrix_replacement": true,
+  "no_refit_recalibration_or_threshold_selection": true,
+  "noop_callback_plain_bitwise_exact": true,
+  "periodic_periods": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "pulse_lengths": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    60
+  ],
+  "registration_id": "a2f8340b632e9a75725c8bc42ec3069d59839be2119e6122268440a866d7fe00",
+  "release_interventions_exactly_zero": true,
+  "replayed_policy_lineages": 13248,
+  "replicates_per_policy": 6,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  }
+}

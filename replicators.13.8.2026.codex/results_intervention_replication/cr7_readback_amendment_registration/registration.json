@@ -1,0 +1,37 @@
+{
+  "administrative_change": "after parent-bound extension identity and exact replay pass, create a temporary reporting view whose case_digest is the original case digest required by the generic primary table helper",
+  "amendment_id": "8fe8647aac70d87318a4ebeea53a56cd12b7cf7a1ead2a70275e7c562131756f",
+  "checkpoint_summary": {
+    "extension_generate": {
+      "checkpoint_files": 96,
+      "checkpoint_hash_digest": "cf823b7ca817afe05d20060a41fe7f2278db511e910dcfcd7cc7f04a5f91280b"
+    },
+    "extension_replay": {
+      "checkpoint_files": 96,
+      "checkpoint_hash_digest": "cf823b7ca817afe05d20060a41fe7f2278db511e910dcfcd7cc7f04a5f91280b"
+    },
+    "primary_generate": {
+      "checkpoint_files": 96,
+      "checkpoint_hash_digest": "84a4c7e211a36932e082a82821fc51896fe336f686dca9ebc85ad2a66dbfe147"
+    },
+    "primary_replay": {
+      "checkpoint_files": 96,
+      "checkpoint_hash_digest": "84a4c7e211a36932e082a82821fc51896fe336f686dca9ebc85ad2a66dbfe147"
+    }
+  },
+  "failed_log_sha256": "62a378e52fe01b08e9e81dcfe5b7845dbf0c1bcd2d989e5eb4fcc84dde77426c",
+  "format": "codex-intervention-cr7-readback-amendment-registration-v1",
+  "original_model_states_seeds_actions_outcomes_inference_and_gates_unchanged": true,
+  "original_registration_checksum_manifest_sha256": "e5a4250e5533ba25773fe292ef5d30c5e0b0977368fac80b7d556726cdc2d2fc",
+  "original_registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70",
+  "scientific_changes": [],
+  "scientific_effect_sizes_inspected_before_amendment": false,
+  "scientific_lineages_to_regenerate": 0,
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR7_READBACK_AMENDMENT.md": "3e0ce0cbf792a83caafb4ea67d4f662a435d976795d5e94f2d3ca3d45d4075ae",
+    "plastic_heredity/intervention_cr7_readback_amendment.py": "849027ad3e63ada9cc5381ecf943539f17529d375fe6066b357fca815c57afb7",
+    "tests/test_intervention_cr7_readback_amendment.py": "572bc35b1a22c87378e0bae15567e6584f6ea2529e233b81d0cd7f9eefb9a9a5"
+  },
+  "status": "sealed_before_cr7_checkpoint_only_result_assembly",
+  "validation_checksum_manifest_sha256": "59d2643b7e750ef880ad6a7acb5ad96b1af4cc1b76449f735a0285a8f81e6842"
+}

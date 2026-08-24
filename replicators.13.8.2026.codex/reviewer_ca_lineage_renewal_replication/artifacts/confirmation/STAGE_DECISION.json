@@ -1,0 +1,8 @@
+{
+  "automatic_continuation": false,
+  "decision": "stop_after_failed_strict_replication_and_review",
+  "design_digest": "33fa9e1101ff41533fdc5218df0b0f61fb6a5f6f3944ec52204a45624e7e11f1",
+  "reporting_amendment": "REPORTING_AMENDMENT.json",
+  "review_required": true,
+  "verdict": "NO_DURABLE_RENEWAL"
+}

@@ -1,0 +1,25 @@
+{
+  "complete_model_dispositions": true,
+  "format": "reviewer-cross-substrate-ca-v1",
+  "frozen_before_pilot": true,
+  "models": {
+    "evoloop": {
+      "eligible": false,
+      "reason": "no viable mechanics cells"
+    },
+    "protocell": {
+      "actual_similarity_mean": 0.48471859423161373,
+      "calibration_file_sha256": "cd1c6fbe9b5ecfe6c96fc8eefb77c04a6e408de28b5255a3a549b7ac786e5f84",
+      "eligible": true,
+      "quantile": 0.95,
+      "quantile_method": "higher",
+      "stranger_similarity_mean": 0.4824571035898515,
+      "strangers_from_different_blocks": true,
+      "threshold": 0.5525173932753096,
+      "threshold_hex": "0x1.1ae38f4d2d604p-1",
+      "usable_blocks": 24,
+      "usable_pairs": 2400
+    }
+  },
+  "profile": "full"
+}

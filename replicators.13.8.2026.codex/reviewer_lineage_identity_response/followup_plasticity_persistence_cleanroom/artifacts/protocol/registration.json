@@ -1,0 +1,20 @@
+{
+  "firewall": {
+    "forbidden_import_hits": [],
+    "passed": true,
+    "prior_outcomes_role": "hypothesis_generation_only_not_pooled",
+    "wagner_code_read_imported_or_executed": false
+  },
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "protocol_id": "c231093da83fad91eda65348b1cd2dbd4a846b97e62ae79f2b48ad307ec596a8",
+  "registered_at_epoch": 1787488364.836362,
+  "registration_id": "e36d9d9032e23399ada0a48b632b6298d77cd433ebb01b35fd1bc49e46bae68f",
+  "runtime": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "scipy": "1.18.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_manifest_id": "97608e912425e8281be9a27252c960b306bf4a82f8632fbeb5f60c6d999d7b07"
+}

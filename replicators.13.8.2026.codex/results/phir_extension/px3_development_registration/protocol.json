@@ -1,0 +1,38 @@
+{
+  "carried_forward_matrix_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "confirmation_not_generated": true,
+  "development_amendment_sha256": "8da33a4ff37092d39d5e01c27f494cea963d3f033b3fed6b19688b08c172db54",
+  "heredity_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "interim_diagnostics_inspected": true,
+  "original_development_gate_eligible": false,
+  "phase": "PX3_DEVELOPMENT",
+  "program_protocol_id": "95d046af8f33772a2b2312cc22a49cb2fffdaa063e9b1ed503e04bf0e86232cd",
+  "protocol_id": "ef72775614e626a11a8bedf33ca05d7c27ac042d495ff01a5d96890b0556125b",
+  "px1_manifest_sha256": "dc3007fb7f80a7fd8ef8f8df9b426ef0079eaaa14f9889f133aafa170f172bd3",
+  "px1_matrix_inputs_sha256": "17835d9d345185179ba0781e6f324219d638ae89800be9870983aa5b5033a03b",
+  "px1_registration_id": "e1987d2dea749f5e92a580da33836a4334175dbd1016d197aee7ff45fe4476bb",
+  "px2_integrity_complete": true,
+  "px2_manifest_sha256": "c4ae752cb05614a37cbb7bc5542c3f8190c68e30eacc6586dbecf28d5b5791ec",
+  "px2_registration_id": "3ebaa78cf37dbe9d7d2cc6eadf12bad587a912da30ea44640cd63914d6b5f76b",
+  "spec": {
+    "branches": 16,
+    "cpu_seconds": 374400.0,
+    "horizon": 8,
+    "label": "development",
+    "landmarks": [
+      20,
+      30,
+      40,
+      50
+    ],
+    "matrices": 12
+  },
+  "supersedes_registration_id": "86a91cf7c75b6b268e25fbd06f5b1efd94eccd37fac16c49adea65ed3977707d"
+}

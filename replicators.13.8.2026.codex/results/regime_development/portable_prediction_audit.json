@@ -1,0 +1,66 @@
+{
+  "all_within_1e-12": true,
+  "errors": {
+    "primary_all8": {
+      "02": {
+        "beta_only": 0.0,
+        "h10": 0.0,
+        "h10_beta": 0.0,
+        "h10_state": 0.0,
+        "h10_state_beta": 0.0,
+        "h10_state_beta_interaction": 0.0,
+        "state_only": 0.0
+      },
+      "03": {
+        "beta_only": 0.0,
+        "h10": 0.0,
+        "h10_beta": 0.0,
+        "h10_state": 0.0,
+        "h10_state_beta": 0.0,
+        "h10_state_beta_interaction": 0.0,
+        "state_only": 0.0
+      }
+    },
+    "secondary_centroid": {
+      "02": {
+        "beta_only": 0.0,
+        "h10": 0.0,
+        "h10_beta": 0.0,
+        "h10_state": 0.0,
+        "h10_state_beta": 0.0,
+        "h10_state_beta_interaction": 0.0,
+        "state_only": 0.0
+      },
+      "03": {
+        "beta_only": 0.0,
+        "h10": 0.0,
+        "h10_beta": 0.0,
+        "h10_state": 0.0,
+        "h10_state_beta": 0.0,
+        "h10_state_beta_interaction": 0.0,
+        "state_only": 0.0
+      }
+    },
+    "secondary_first5": {
+      "02": {
+        "beta_only": 0.0,
+        "h10": 0.0,
+        "h10_beta": 0.0,
+        "h10_state": 0.0,
+        "h10_state_beta": 0.0,
+        "h10_state_beta_interaction": 0.0,
+        "state_only": 0.0
+      },
+      "03": {
+        "beta_only": 0.0,
+        "h10": 0.0,
+        "h10_beta": 0.0,
+        "h10_state": 0.0,
+        "h10_state_beta": 0.0,
+        "h10_state_beta_interaction": 0.0,
+        "state_only": 0.0
+      }
+    }
+  },
+  "maximum_absolute_error": 0.0
+}

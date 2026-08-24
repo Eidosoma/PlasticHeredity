@@ -1,0 +1,396 @@
+{
+  "bootstrap_repetitions": 4096,
+  "cells": [
+    {
+      "arms": {
+        "Q00": {
+          "bootstrap_ci95": [
+            0.23948046875,
+            0.29453906249999995
+          ],
+          "mean_frozen_prediction": 0.2671702238916389,
+          "mean_frozen_shift_from_q00": 0.0,
+          "mean_realized_probability": 0.26646875000000003
+        },
+        "Q100": {
+          "bootstrap_ci95": [
+            0.35356249999999995,
+            0.42248828125
+          ],
+          "mean_frozen_prediction": 0.39519129896961586,
+          "mean_frozen_shift_from_q00": 0.12802107507797686,
+          "mean_realized_probability": 0.38790625000000006
+        },
+        "Q20": {
+          "bootstrap_ci95": [
+            0.3100234375,
+            0.37321484375
+          ],
+          "mean_frozen_prediction": 0.3331428146245678,
+          "mean_frozen_shift_from_q00": 0.06597259073292881,
+          "mean_realized_probability": 0.34146875
+        },
+        "Q40": {
+          "bootstrap_ci95": [
+            0.31201562499999996,
+            0.37505078124999996
+          ],
+          "mean_frozen_prediction": 0.33941687741791515,
+          "mean_frozen_shift_from_q00": 0.07224665352627616,
+          "mean_realized_probability": 0.34328125
+        },
+        "Q60": {
+          "bootstrap_ci95": [
+            0.31375,
+            0.378203125
+          ],
+          "mean_frozen_prediction": 0.34508901139413095,
+          "mean_frozen_shift_from_q00": 0.07791878750249201,
+          "mean_realized_probability": 0.34615624999999994
+        },
+        "Q80": {
+          "bootstrap_ci95": [
+            0.31506249999999997,
+            0.37992578125
+          ],
+          "mean_frozen_prediction": 0.3513960103688818,
+          "mean_frozen_shift_from_q00": 0.0842257864772428,
+          "mean_realized_probability": 0.34724999999999995
+        }
+      },
+      "branch_half": "A",
+      "branch_range": [
+        0,
+        31
+      ],
+      "candidate": "02",
+      "cell": "c02_A",
+      "matrices": 200,
+      "maximum_leave_one_matrix_out_rho_influence": 0.003530530051612246,
+      "maximum_leave_one_matrix_out_slope_influence": 0.016009078203360172,
+      "mean_within_state_spearman": 0.2694664696285175,
+      "positive_state_correlations": 671,
+      "registered_cell_pass": true,
+      "registered_gates": {
+        "mean_spearman_positive": true,
+        "slope_bootstrap_lower_positive": true,
+        "spearman_bootstrap_lower_positive": true,
+        "state_centered_slope_positive": true
+      },
+      "slope_bootstrap_ci95": [
+        0.8408587304082956,
+        1.005236068386377
+      ],
+      "slope_randomization_p_holm": 0.000976324139614352,
+      "slope_randomization_p_raw": 0.000244081034903588,
+      "spearman_bootstrap_ci95": [
+        0.2369512279017082,
+        0.30145853553404417
+      ],
+      "spearman_randomization_p_holm": 0.000976324139614352,
+      "spearman_randomization_p_raw": 0.000244081034903588,
+      "state_centered_calibration_slope": 0.9217488346456624,
+      "states": 1000,
+      "zero_information_state_correlations": 133
+    },
+    {
+      "arms": {
+        "Q00": {
+          "bootstrap_ci95": [
+            0.24257421875000001,
+            0.29660156249999997
+          ],
+          "mean_frozen_prediction": 0.2671702238916389,
+          "mean_frozen_shift_from_q00": 0.0,
+          "mean_realized_probability": 0.269125
+        },
+        "Q100": {
+          "bootstrap_ci95": [
+            0.34842968750000003,
+            0.41542578125
+          ],
+          "mean_frozen_prediction": 0.39519129896961586,
+          "mean_frozen_shift_from_q00": 0.12802107507797686,
+          "mean_realized_probability": 0.38212500000000005
+        },
+        "Q20": {
+          "bootstrap_ci95": [
+            0.3118046875,
+            0.3740703125
+          ],
+          "mean_frozen_prediction": 0.3331428146245678,
+          "mean_frozen_shift_from_q00": 0.06597259073292881,
+          "mean_realized_probability": 0.3431874999999999
+        },
+        "Q40": {
+          "bootstrap_ci95": [
+            0.31351562499999996,
+            0.37786328125
+          ],
+          "mean_frozen_prediction": 0.33941687741791515,
+          "mean_frozen_shift_from_q00": 0.07224665352627616,
+          "mean_realized_probability": 0.34565625
+        },
+        "Q60": {
+          "bootstrap_ci95": [
+            0.31358593749999997,
+            0.37711328125
+          ],
+          "mean_frozen_prediction": 0.34508901139413095,
+          "mean_frozen_shift_from_q00": 0.07791878750249201,
+          "mean_realized_probability": 0.3448125
+        },
+        "Q80": {
+          "bootstrap_ci95": [
+            0.3167109375,
+            0.38181250000000005
+          ],
+          "mean_frozen_prediction": 0.3513960103688818,
+          "mean_frozen_shift_from_q00": 0.0842257864772428,
+          "mean_realized_probability": 0.34887500000000005
+        }
+      },
+      "branch_half": "B",
+      "branch_range": [
+        32,
+        63
+      ],
+      "candidate": "02",
+      "cell": "c02_B",
+      "matrices": 200,
+      "maximum_leave_one_matrix_out_rho_influence": 0.0034801533048357536,
+      "maximum_leave_one_matrix_out_slope_influence": 0.019112016269778653,
+      "mean_within_state_spearman": 0.25649337952071,
+      "positive_state_correlations": 676,
+      "registered_cell_pass": true,
+      "registered_gates": {
+        "mean_spearman_positive": true,
+        "slope_bootstrap_lower_positive": true,
+        "spearman_bootstrap_lower_positive": true,
+        "state_centered_slope_positive": true
+      },
+      "slope_bootstrap_ci95": [
+        0.7805615946056631,
+        0.9436730731114229
+      ],
+      "slope_randomization_p_holm": 0.000976324139614352,
+      "slope_randomization_p_raw": 0.000244081034903588,
+      "spearman_bootstrap_ci95": [
+        0.22391398429489548,
+        0.288334647241337
+      ],
+      "spearman_randomization_p_holm": 0.000976324139614352,
+      "spearman_randomization_p_raw": 0.000244081034903588,
+      "state_centered_calibration_slope": 0.860077939125938,
+      "states": 1000,
+      "zero_information_state_correlations": 126
+    },
+    {
+      "arms": {
+        "Q00": {
+          "bootstrap_ci95": [
+            0.27949999999999997,
+            0.337203125
+          ],
+          "mean_frozen_prediction": 0.2943192446856423,
+          "mean_frozen_shift_from_q00": 0.0,
+          "mean_realized_probability": 0.3086875
+        },
+        "Q100": {
+          "bootstrap_ci95": [
+            0.38158593749999997,
+            0.45080859375
+          ],
+          "mean_frozen_prediction": 0.4406522679869373,
+          "mean_frozen_shift_from_q00": 0.14633302330129502,
+          "mean_realized_probability": 0.41643749999999996
+        },
+        "Q20": {
+          "bootstrap_ci95": [
+            0.34503906250000005,
+            0.4104375
+          ],
+          "mean_frozen_prediction": 0.37644201059231924,
+          "mean_frozen_shift_from_q00": 0.082122765906677,
+          "mean_realized_probability": 0.37809375
+        },
+        "Q40": {
+          "bootstrap_ci95": [
+            0.34834765625,
+            0.41368750000000004
+          ],
+          "mean_frozen_prediction": 0.38211939091067876,
+          "mean_frozen_shift_from_q00": 0.08780014622503646,
+          "mean_realized_probability": 0.3815
+        },
+        "Q60": {
+          "bootstrap_ci95": [
+            0.34918750000000004,
+            0.41506249999999995
+          ],
+          "mean_frozen_prediction": 0.3871521562621428,
+          "mean_frozen_shift_from_q00": 0.09283291157650049,
+          "mean_realized_probability": 0.38237499999999996
+        },
+        "Q80": {
+          "bootstrap_ci95": [
+            0.3484921875,
+            0.41351562500000005
+          ],
+          "mean_frozen_prediction": 0.3934620755077559,
+          "mean_frozen_shift_from_q00": 0.09914283082211361,
+          "mean_realized_probability": 0.38153125000000004
+        }
+      },
+      "branch_half": "A",
+      "branch_range": [
+        0,
+        31
+      ],
+      "candidate": "03",
+      "cell": "c03_A",
+      "matrices": 200,
+      "maximum_leave_one_matrix_out_rho_influence": 0.003094225222643604,
+      "maximum_leave_one_matrix_out_slope_influence": 0.011427628755840802,
+      "mean_within_state_spearman": 0.249587055464825,
+      "positive_state_correlations": 681,
+      "registered_cell_pass": true,
+      "registered_gates": {
+        "mean_spearman_positive": true,
+        "slope_bootstrap_lower_positive": true,
+        "spearman_bootstrap_lower_positive": true,
+        "state_centered_slope_positive": true
+      },
+      "slope_bootstrap_ci95": [
+        0.633291957247032,
+        0.7844736711785569
+      ],
+      "slope_randomization_p_holm": 0.000976324139614352,
+      "slope_randomization_p_raw": 0.000244081034903588,
+      "spearman_bootstrap_ci95": [
+        0.21816107070817023,
+        0.28099093518136603
+      ],
+      "spearman_randomization_p_holm": 0.000976324139614352,
+      "spearman_randomization_p_raw": 0.000244081034903588,
+      "state_centered_calibration_slope": 0.7093915816831378,
+      "states": 1000,
+      "zero_information_state_correlations": 112
+    },
+    {
+      "arms": {
+        "Q00": {
+          "bootstrap_ci95": [
+            0.28048046875,
+            0.33623828125
+          ],
+          "mean_frozen_prediction": 0.2943192446856423,
+          "mean_frozen_shift_from_q00": 0.0,
+          "mean_realized_probability": 0.30878124999999995
+        },
+        "Q100": {
+          "bootstrap_ci95": [
+            0.38312890625,
+            0.4508203125
+          ],
+          "mean_frozen_prediction": 0.4406522679869373,
+          "mean_frozen_shift_from_q00": 0.14633302330129502,
+          "mean_realized_probability": 0.41715624999999995
+        },
+        "Q20": {
+          "bootstrap_ci95": [
+            0.34815624999999994,
+            0.41376953125
+          ],
+          "mean_frozen_prediction": 0.37644201059231924,
+          "mean_frozen_shift_from_q00": 0.082122765906677,
+          "mean_realized_probability": 0.38109375
+        },
+        "Q40": {
+          "bootstrap_ci95": [
+            0.34935546874999995,
+            0.41609375
+          ],
+          "mean_frozen_prediction": 0.38211939091067876,
+          "mean_frozen_shift_from_q00": 0.08780014622503646,
+          "mean_realized_probability": 0.38328125
+        },
+        "Q60": {
+          "bootstrap_ci95": [
+            0.34980468750000004,
+            0.4140625
+          ],
+          "mean_frozen_prediction": 0.3871521562621428,
+          "mean_frozen_shift_from_q00": 0.09283291157650049,
+          "mean_realized_probability": 0.38246875
+        },
+        "Q80": {
+          "bootstrap_ci95": [
+            0.35494921875,
+            0.42025000000000007
+          ],
+          "mean_frozen_prediction": 0.3934620755077559,
+          "mean_frozen_shift_from_q00": 0.09914283082211361,
+          "mean_realized_probability": 0.38787499999999997
+        }
+      },
+      "branch_half": "B",
+      "branch_range": [
+        32,
+        63
+      ],
+      "candidate": "03",
+      "cell": "c03_B",
+      "matrices": 200,
+      "maximum_leave_one_matrix_out_rho_influence": 0.003936942071362665,
+      "maximum_leave_one_matrix_out_slope_influence": 0.01374670682374779,
+      "mean_within_state_spearman": 0.24967353690019436,
+      "positive_state_correlations": 687,
+      "registered_cell_pass": true,
+      "registered_gates": {
+        "mean_spearman_positive": true,
+        "slope_bootstrap_lower_positive": true,
+        "spearman_bootstrap_lower_positive": true,
+        "state_centered_slope_positive": true
+      },
+      "slope_bootstrap_ci95": [
+        0.6602914749185044,
+        0.8084807435912529
+      ],
+      "slope_randomization_p_holm": 0.000976324139614352,
+      "slope_randomization_p_raw": 0.000244081034903588,
+      "spearman_bootstrap_ci95": [
+        0.21736418270262642,
+        0.2821301202528977
+      ],
+      "spearman_randomization_p_holm": 0.000976324139614352,
+      "spearman_randomization_p_raw": 0.000244081034903588,
+      "state_centered_calibration_slope": 0.734153867565293,
+      "states": 1000,
+      "zero_information_state_correlations": 109
+    }
+  ],
+  "confirmation_gate_pass": true,
+  "format": "codex-intervention-cr2-dose-inference-v1",
+  "integrity_gates": {
+    "artifact_readback_exact": true,
+    "cr1_states_exact": true,
+    "exact_replay": true
+  },
+  "randomization_p_values_reported_not_gated": true,
+  "randomization_repetitions": 4096,
+  "registered_all_four_cells_pass": true,
+  "stored_inference_arrays": {
+    "all_cell_bootstrap_and_randomization_arrays_stored": true,
+    "bootstrap_indices_shape": [
+      4096,
+      200
+    ],
+    "path": "inference_arrays.npz",
+    "randomization_signs_shape": [
+      4096,
+      200
+    ]
+  },
+  "undefined_state_spearman_assigned_zero": true
+}

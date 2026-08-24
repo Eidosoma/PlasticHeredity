@@ -1,0 +1,410 @@
+{
+  "endpoint": {
+    "failure": "adverse before certification",
+    "horizon": 12,
+    "name": "CA_BREAK_RENEW_3_F12",
+    "ordering": "break strictly before run",
+    "run_length": 3,
+    "simulated_boundaries": 16
+  },
+  "format": "reviewer-cross-substrate-ca-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "bootstrap_unit": "equal-weight world-block means",
+    "headline": "either complete model gate passes",
+    "model_alpha_one_sided": 0.025,
+    "models_pooled": false,
+    "randomization_repetitions": 4096,
+    "unit": "world block"
+  },
+  "lineage_contracts": {
+    "evoloop": {
+      "boundary": "provenance >=0.80, persistence, then construction-arm launch",
+      "ecology": "Poisson canonical-loop immigration per tick with empty 9x9 placement box",
+      "individual": "component >=20 sites with >=1 enclosed region",
+      "provenance_is_passive": true,
+      "states": 9,
+      "updates": "synchronous public rotate-four von-Neumann table"
+    },
+    "protocell": {
+      "boundary": "two Y-centred Voronoi lobes >=8 sites apart, each >=20 sites, persistent",
+      "individual": "radius-two molecular-proximity cluster with >=20 sites and Y",
+      "initial": "10x10 X patch with central Y on periodic lattice",
+      "states": [
+        "empty",
+        "X",
+        "Y"
+      ],
+      "updates": "random-order replication, degradation, diffusion"
+    }
+  },
+  "mechanics_amendments_before_outcomes": [
+    "Evoloop qualification uses at least one enclosed region because the canonical seed contains several.",
+    "Protocell individuality uses radius-two proximity and Y-centred persistent lobes because diffusion makes localized clouds porous."
+  ],
+  "mechanics_gate": {
+    "boundaries_per_seed": 20,
+    "maximum_ambiguity_fraction": 0.05,
+    "occupancy_limit": 0.25,
+    "per_boundary_update_cap": 100000,
+    "screen_seeds": 16,
+    "selection_uses_endpoint_outcomes": false,
+    "successful_seeds_required": 12,
+    "total_update_cap": 2000000
+  },
+  "models": {
+    "evoloop": [
+      {
+        "immigration_per_10000": 0.0,
+        "initial_count": 4,
+        "kind": "evoloop",
+        "parameter_key": "n=4,imm=0"
+      },
+      {
+        "immigration_per_10000": 0.25,
+        "initial_count": 4,
+        "kind": "evoloop",
+        "parameter_key": "n=4,imm=0.25"
+      },
+      {
+        "immigration_per_10000": 0.5,
+        "initial_count": 4,
+        "kind": "evoloop",
+        "parameter_key": "n=4,imm=0.5"
+      },
+      {
+        "immigration_per_10000": 1.0,
+        "initial_count": 4,
+        "kind": "evoloop",
+        "parameter_key": "n=4,imm=1"
+      },
+      {
+        "immigration_per_10000": 0.0,
+        "initial_count": 8,
+        "kind": "evoloop",
+        "parameter_key": "n=8,imm=0"
+      },
+      {
+        "immigration_per_10000": 0.25,
+        "initial_count": 8,
+        "kind": "evoloop",
+        "parameter_key": "n=8,imm=0.25"
+      },
+      {
+        "immigration_per_10000": 0.5,
+        "initial_count": 8,
+        "kind": "evoloop",
+        "parameter_key": "n=8,imm=0.5"
+      },
+      {
+        "immigration_per_10000": 1.0,
+        "initial_count": 8,
+        "kind": "evoloop",
+        "parameter_key": "n=8,imm=1"
+      },
+      {
+        "immigration_per_10000": 0.0,
+        "initial_count": 16,
+        "kind": "evoloop",
+        "parameter_key": "n=16,imm=0"
+      },
+      {
+        "immigration_per_10000": 0.25,
+        "initial_count": 16,
+        "kind": "evoloop",
+        "parameter_key": "n=16,imm=0.25"
+      },
+      {
+        "immigration_per_10000": 0.5,
+        "initial_count": 16,
+        "kind": "evoloop",
+        "parameter_key": "n=16,imm=0.5"
+      },
+      {
+        "immigration_per_10000": 1.0,
+        "initial_count": 16,
+        "kind": "evoloop",
+        "parameter_key": "n=16,imm=1"
+      },
+      {
+        "immigration_per_10000": 0.0,
+        "initial_count": 32,
+        "kind": "evoloop",
+        "parameter_key": "n=32,imm=0"
+      },
+      {
+        "immigration_per_10000": 0.25,
+        "initial_count": 32,
+        "kind": "evoloop",
+        "parameter_key": "n=32,imm=0.25"
+      },
+      {
+        "immigration_per_10000": 0.5,
+        "initial_count": 32,
+        "kind": "evoloop",
+        "parameter_key": "n=32,imm=0.5"
+      },
+      {
+        "immigration_per_10000": 1.0,
+        "initial_count": 32,
+        "kind": "evoloop",
+        "parameter_key": "n=32,imm=1"
+      }
+    ],
+    "protocell": [
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.99999,
+        "p_y": 1e-05,
+        "parameter_key": "py=1e-05,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.99999,
+        "p_y": 1e-05,
+        "parameter_key": "py=1e-05,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.99999,
+        "p_y": 1e-05,
+        "parameter_key": "py=1e-05,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.001,
+        "kind": "protocell",
+        "p_x": 0.99999,
+        "p_y": 1e-05,
+        "parameter_key": "py=1e-05,ay=1e-03"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.01,
+        "kind": "protocell",
+        "p_x": 0.99999,
+        "p_y": 1e-05,
+        "parameter_key": "py=1e-05,ay=1e-02"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.9999,
+        "p_y": 0.0001,
+        "parameter_key": "py=1e-04,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.9999,
+        "p_y": 0.0001,
+        "parameter_key": "py=1e-04,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.9999,
+        "p_y": 0.0001,
+        "parameter_key": "py=1e-04,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.001,
+        "kind": "protocell",
+        "p_x": 0.9999,
+        "p_y": 0.0001,
+        "parameter_key": "py=1e-04,ay=1e-03"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.01,
+        "kind": "protocell",
+        "p_x": 0.9999,
+        "p_y": 0.0001,
+        "parameter_key": "py=1e-04,ay=1e-02"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.999,
+        "p_y": 0.001,
+        "parameter_key": "py=1e-03,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.999,
+        "p_y": 0.001,
+        "parameter_key": "py=1e-03,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.999,
+        "p_y": 0.001,
+        "parameter_key": "py=1e-03,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.001,
+        "kind": "protocell",
+        "p_x": 0.999,
+        "p_y": 0.001,
+        "parameter_key": "py=1e-03,ay=1e-03"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.01,
+        "kind": "protocell",
+        "p_x": 0.999,
+        "p_y": 0.001,
+        "parameter_key": "py=1e-03,ay=1e-02"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.001,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-03"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.01,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-02"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.001,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-03"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.01,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-02"
+      }
+    ]
+  },
+  "profile": {
+    "boundary_cap": 100000,
+    "calibration_blocks": 24,
+    "calibration_pairs": 100,
+    "confirmation_blocks": 128,
+    "confirmation_branches": 64,
+    "evoloop_arm_window": 4096,
+    "evoloop_persistence": 512,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "mechanics_boundaries": 20,
+    "mechanics_cap": 2000000,
+    "mechanics_required": 12,
+    "mechanics_seeds": 16,
+    "name": "full",
+    "pilot_blocks": 32,
+    "pilot_branches": 32,
+    "protocell_persistence": 64,
+    "side": 256
+  },
+  "protocol_digest": "a5f490626a32bb68d212634e534dd6fe306cd7db596aac6827ff1111766af43d",
+  "sensitivities": {
+    "status": "descriptive and non-rescuing",
+    "variants": [
+      "raw S>0.9",
+      "F8",
+      "F16",
+      "renewal run 2",
+      "renewal run 4"
+    ]
+  },
+  "similarity": {
+    "break": "S <= tau",
+    "invariance": "maximum cosine over C4 rotations and shifts {-1,0,1}^2",
+    "representation": "centroid-aligned non-background one-hot raster",
+    "stranger_control": "child-size-matched child from a different independently seeded world block",
+    "strict_inheritance": "S > tau",
+    "threshold": "model-specific method=higher 95th matched-stranger percentile"
+  },
+  "source_boundary": {
+    "existing_repository": "public event topology only; no scientific code imports",
+    "newideas": "hypothesis only; directory must never be accessed",
+    "public_models": [
+      "Kamimura and Kaneko, Life 4 (2014) 586-597, doi:10.3390/life4040586",
+      "Sayama, Artificial Life 5 (1999) 343-365, plus the public Golly Evoloop table"
+    ]
+  },
+  "stop_rule": "pilot-report is mandatory stop; confirmation requires a later explicit command"
+}

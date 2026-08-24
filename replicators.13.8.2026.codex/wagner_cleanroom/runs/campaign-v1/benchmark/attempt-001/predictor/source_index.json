@@ -1,0 +1,25 @@
+{
+  "cohort": "development",
+  "sources": [
+    {
+      "file": "source_0000.npz",
+      "proposal_index": 4,
+      "source_index": 0
+    },
+    {
+      "file": "source_0001.npz",
+      "proposal_index": 7,
+      "source_index": 1
+    },
+    {
+      "file": "source_0002.npz",
+      "proposal_index": 8,
+      "source_index": 2
+    },
+    {
+      "file": "source_0003.npz",
+      "proposal_index": 21,
+      "source_index": 3
+    }
+  ]
+}

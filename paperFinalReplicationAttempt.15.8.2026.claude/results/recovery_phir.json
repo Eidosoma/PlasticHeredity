@@ -1,0 +1,177 @@
+{
+  "sign_regime": {
+    "phir_run_mean": "+0.9568\u00b10.1996",
+    "phir_runs_positive": 100,
+    "psi_run_mean": "-1.2285\u00b10.6013",
+    "psi_runs_positive": 1,
+    "n_runs": 100,
+    "runmean_pearson_phir_vs_psi": -0.264
+  },
+  "phyid_xcheck": {
+    "pearson_per_run": [
+      0.4008,
+      0.878,
+      0.9153,
+      0.6453,
+      0.4195
+    ]
+  },
+  "headline_phir": {
+    "C2_spike_runs": 95,
+    "C3": {
+      "positive": 31.0,
+      "positive_sig": 12.0,
+      "higher_p001": 9.0,
+      "n": 100,
+      "fisher_p": 1.613964373782642e-15
+    },
+    "C4_ljungbox_reject": 84,
+    "consistency_phi_autocorr": "0.261\u00b10.189"
+  },
+  "c5": {
+    "classic09/psi_local/in64": {
+      "phi": 0.6072,
+      "dcomp": 0.5428,
+      "raw": 0.5706,
+      "flux": 0.6162,
+      "dummy": 0.6022,
+      "p>dcomp": 0.0004,
+      "p>raw": 0.0244,
+      "p>flux": 0.5601,
+      "p>dummy": 0.6044,
+      "beats_all": false
+    },
+    "classic09/psi_local/in32": {
+      "phi": 0.5884,
+      "dcomp": 0.56,
+      "raw": 0.5773,
+      "flux": 0.6245,
+      "dummy": 0.6004,
+      "p>dcomp": 0.032,
+      "p>raw": 0.1283,
+      "p>flux": 0.9829,
+      "p>dummy": 0.8794,
+      "beats_all": false
+    },
+    "classic09/phir/in64": {
+      "phi": 0.6006,
+      "dcomp": 0.5428,
+      "raw": 0.5706,
+      "flux": 0.6162,
+      "dummy": 0.6022,
+      "p>dcomp": 0.0006,
+      "p>raw": 0.0479,
+      "p>flux": 0.6754,
+      "p>dummy": 0.7754,
+      "beats_all": false
+    },
+    "classic09/phir/in32": {
+      "phi": 0.6036,
+      "dcomp": 0.56,
+      "raw": 0.5773,
+      "flux": 0.6245,
+      "dummy": 0.6004,
+      "p>dcomp": 0.0129,
+      "p>raw": 0.0521,
+      "p>flux": 0.919,
+      "p>dummy": 0.575,
+      "beats_all": false
+    },
+    "classic09/phir_leakfree/in64": {
+      "phi": 0.5663,
+      "dcomp": 0.5428,
+      "raw": 0.5706,
+      "flux": 0.6162,
+      "dummy": 0.6022,
+      "p>dcomp": 0.0518,
+      "p>raw": 0.5151,
+      "p>flux": 0.9885,
+      "p>dummy": 0.9775,
+      "beats_all": false
+    },
+    "classic09/phir_leakfree/in32": {
+      "phi": 0.5555,
+      "dcomp": 0.56,
+      "raw": 0.5773,
+      "flux": 0.6245,
+      "dummy": 0.6004,
+      "p>dcomp": 0.5452,
+      "p>raw": 0.818,
+      "p>flux": 0.9993,
+      "p>dummy": 0.9895,
+      "beats_all": false
+    },
+    "quantile12/psi_local/in64": {
+      "phi": 0.9081,
+      "dcomp": 0.9003,
+      "raw": 0.8372,
+      "flux": 0.8944,
+      "dummy": 0.9238,
+      "p>dcomp": 0.0853,
+      "p>raw": 0.0001,
+      "p>flux": 0.0124,
+      "p>dummy": 0.9875,
+      "beats_all": false
+    },
+    "quantile12/psi_local/in32": {
+      "phi": 0.87,
+      "dcomp": 0.8668,
+      "raw": 0.8434,
+      "flux": 0.8698,
+      "dummy": 0.8987,
+      "p>dcomp": 0.26,
+      "p>raw": 0.0003,
+      "p>flux": 0.4398,
+      "p>dummy": 0.9999,
+      "beats_all": false
+    },
+    "quantile12/phir/in64": {
+      "phi": 0.9009,
+      "dcomp": 0.9003,
+      "raw": 0.8372,
+      "flux": 0.8944,
+      "dummy": 0.9238,
+      "p>dcomp": 0.4848,
+      "p>raw": 0.0001,
+      "p>flux": 0.144,
+      "p>dummy": 0.9986,
+      "beats_all": false
+    },
+    "quantile12/phir/in32": {
+      "phi": 0.8625,
+      "dcomp": 0.8668,
+      "raw": 0.8434,
+      "flux": 0.8698,
+      "dummy": 0.8987,
+      "p>dcomp": 0.8874,
+      "p>raw": 0.0007,
+      "p>flux": 0.9624,
+      "p>dummy": 0.9999,
+      "beats_all": false
+    },
+    "quantile12/phir_leakfree/in64": {
+      "phi": 0.8994,
+      "dcomp": 0.9003,
+      "raw": 0.8372,
+      "flux": 0.8944,
+      "dummy": 0.9238,
+      "p>dcomp": 0.4395,
+      "p>raw": 0.0001,
+      "p>flux": 0.1349,
+      "p>dummy": 0.9994,
+      "beats_all": false
+    },
+    "quantile12/phir_leakfree/in32": {
+      "phi": 0.8655,
+      "dcomp": 0.8668,
+      "raw": 0.8434,
+      "flux": 0.8698,
+      "dummy": 0.8987,
+      "p>dcomp": 0.7149,
+      "p>raw": 0.0004,
+      "p>flux": 0.8719,
+      "p>dummy": 0.9999,
+      "beats_all": false
+    }
+  }
+}

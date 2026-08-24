@@ -1,0 +1,32 @@
+{
+  "all_exact": true,
+  "archived_joint_f12_targets_exact": true,
+  "break_future_replay": {
+    "all_exact": true,
+    "generated_digest": "725f233c4b2b194afb603e6064537810d2ec97f2fe3cb5129837e9fee6d20ea4",
+    "mismatched_state_ids": [],
+    "replay_digest": "725f233c4b2b194afb603e6064537810d2ec97f2fe3cb5129837e9fee6d20ea4",
+    "states": 2000,
+    "states_exact": 2000
+  },
+  "feature_arrays_exact_to_archived_5x": {
+    "beta": true,
+    "history": true,
+    "state_graph": true
+  },
+  "model_serialization_predictions_exact": {
+    "break__c02": true,
+    "break__c03": true,
+    "renewal__c02": true,
+    "renewal__c03": true
+  },
+  "natural_break_acquisition_replay_exact": true,
+  "renewal_future_replay": {
+    "all_exact": true,
+    "generated_digest": "e35748ef5020aba26c3be78700fedbdf3855a1d1d7fe8719213050d830e5cb5d",
+    "mismatched_state_ids": [],
+    "replay_digest": "e35748ef5020aba26c3be78700fedbdf3855a1d1d7fe8719213050d830e5cb5d",
+    "states": 1551,
+    "states_exact": 1551
+  }
+}

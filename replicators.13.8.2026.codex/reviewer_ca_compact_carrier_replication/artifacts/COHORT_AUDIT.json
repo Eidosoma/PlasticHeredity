@@ -1,0 +1,18 @@
+{
+  "allocated_donors_unique": true,
+  "cohort_counts": {
+    "audit_reserve": 32,
+    "confirmation": 128,
+    "engineering": 4
+  },
+  "confirmation_outcomes_accessed": false,
+  "historical_state_overlap": 0,
+  "maximum_density_difference": 0.0078125,
+  "pair_ids_unique": true,
+  "thresholds": {
+    "density_caliper": 0.02,
+    "margin": 0.05,
+    "similarity": 0.95
+  },
+  "valid": true
+}

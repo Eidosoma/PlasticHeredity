@@ -1,0 +1,14 @@
+{
+  "format": "reviewer-cross-substrate-ca-v1",
+  "prepared": true,
+  "profile": "full",
+  "protocol_digest": "a5f490626a32bb68d212634e534dd6fe306cd7db596aac6827ff1111766af43d",
+  "runtime": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "scipy": "1.18.0"
+  },
+  "scientific_outcomes_generated": false,
+  "source_manifest_digest": "3b7dd0ec7c195f0120f36e5769a8d1da983d9d7f065ecf621d01a18b0fed34ea"
+}

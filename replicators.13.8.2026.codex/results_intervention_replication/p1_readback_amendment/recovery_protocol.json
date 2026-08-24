@@ -1,0 +1,83 @@
+{
+  "checkpoint_record": {
+    "generate": {
+      "checkpoint_contract_sha256": "8c02e264c2514cdc760719a4738c34a9aeb476d760e81b8e1d5d30bfa27f9cea",
+      "checkpoint_digest": {
+        "aggregate_sha256": "5d80d3cf0f04f02c45f27bea722a0ffaa92866b8d7e681c2a264063c3af4a2f1",
+        "states": 400
+      },
+      "status": {
+        "checkpoint_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p1_work/generate",
+        "format": "codex-intervention-checkpoint-v1",
+        "futures_complete": 51200,
+        "futures_total": 51200,
+        "percent_complete": 100.0,
+        "phase": "p1",
+        "stage": "generate",
+        "state": "complete",
+        "states_complete": 400,
+        "states_total": 400
+      }
+    },
+    "replay": {
+      "checkpoint_contract_sha256": "2973b31b5f105a4b5d42d6aad44d4482afb6b5cc00ad74a8f09cc1fa90512160",
+      "checkpoint_digest": {
+        "aggregate_sha256": "5d80d3cf0f04f02c45f27bea722a0ffaa92866b8d7e681c2a264063c3af4a2f1",
+        "states": 400
+      },
+      "status": {
+        "checkpoint_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p1_work/replay",
+        "format": "codex-intervention-checkpoint-v1",
+        "futures_complete": 51200,
+        "futures_total": 51200,
+        "percent_complete": 100.0,
+        "phase": "p1",
+        "stage": "replay",
+        "state": "complete",
+        "states_complete": 400,
+        "states_total": 400
+      }
+    }
+  },
+  "failure": {
+    "exception": "ValueError: round-trip intervention inference changed",
+    "log_path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p1_cr1_run.log",
+    "log_sha256": "e6d963a526586becdacc84ae9945260a203b7f2df60035a0789d96d8ee8de5cf",
+    "p2_launched": false,
+    "primary_futures_complete": 51200,
+    "replay_futures_complete": 51200,
+    "result_bundle_sealed": false
+  },
+  "format": "codex-intervention-p1-readback-amendment-v1",
+  "intended_result_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p1_cr1_model_guided_pilot",
+  "only_repair": "derive readback pilot_eligibility as readback eligibility_without_replay AND exact_replay before complete dictionary comparison",
+  "original_registration": {
+    "all_original_registered_source_hashes_current": true,
+    "checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+    "id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+    "path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/registration"
+  },
+  "outcomes_read_during_amendment_preparation": false,
+  "prohibited_during_recovery": [
+    "new or regenerated intervention futures",
+    "checkpoint replacement",
+    "matrix replacement",
+    "edit reselection outside checkpoint verification",
+    "model refitting or recalibration",
+    "seed, endpoint, arm, margin, gate, or inference changes",
+    "P2 launch"
+  ],
+  "protocol_id": "b8447bf6e2c6d7e61e41bf7dbb6eacbb0eb954c061787c10058524d240b2f628",
+  "recovery_requirements": [
+    "all 800 state checkpoint files load under their original contracts",
+    "generation and replay campaign digests are exact",
+    "saved branch arrays reproduce complete inference and matrix effects",
+    "checkpoint aggregate hashes are unchanged before and after recovery",
+    "result is checksum sealed",
+    "mandatory stop after P1"
+  ],
+  "scientific_contract_changes": [],
+  "static_diagnosis": "generation metrics include the derived pilot_eligibility field; readback recomputed all inference fields but compared before deriving that one replay-dependent field",
+  "status": "sealed_before_recovery_loaded_any_scientific_checkpoint_outcome",
+  "work_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p1_work"
+}

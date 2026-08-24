@@ -1,0 +1,775 @@
+{
+  "exact_state_edit_endpoint_process_and_rng": true,
+  "format": "codex-intervention-cr8-release-replay-audit-v1",
+  "rows": [
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "a98334ce2b80559cde60476884ae5b7919405084bdfda5fd38672418b25eb67f",
+      "matrix_id": 0,
+      "replay_digest": "a98334ce2b80559cde60476884ae5b7919405084bdfda5fd38672418b25eb67f",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m000"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "0a3afb5a7b7a62381bb117c3735772aa3040f7d8bcf1c447eb90ca00d8b81a58",
+      "matrix_id": 0,
+      "replay_digest": "0a3afb5a7b7a62381bb117c3735772aa3040f7d8bcf1c447eb90ca00d8b81a58",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m000"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "f0d6c257c9f92f107fde19e322bdff2b030bb14279b934b4f1f00dc5a3d3e2fd",
+      "matrix_id": 1,
+      "replay_digest": "f0d6c257c9f92f107fde19e322bdff2b030bb14279b934b4f1f00dc5a3d3e2fd",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m001"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "cf1e87721d835e135a683783ab05298f4f2195458e683cf9f170ba10315cebfd",
+      "matrix_id": 1,
+      "replay_digest": "cf1e87721d835e135a683783ab05298f4f2195458e683cf9f170ba10315cebfd",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m001"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "1363069c7dd9cb91a06001b7312effeb64f109dfe846ead1388631b9bbd7568f",
+      "matrix_id": 2,
+      "replay_digest": "1363069c7dd9cb91a06001b7312effeb64f109dfe846ead1388631b9bbd7568f",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m002"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "ed462807004f52cd798535a54348e371f587282a9be18cbb9234302057a23ad1",
+      "matrix_id": 2,
+      "replay_digest": "ed462807004f52cd798535a54348e371f587282a9be18cbb9234302057a23ad1",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m002"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "a280cd97f24d6df48ac56609bb239fb186b70192d066783a1c21d47575bddf45",
+      "matrix_id": 3,
+      "replay_digest": "a280cd97f24d6df48ac56609bb239fb186b70192d066783a1c21d47575bddf45",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m003"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "0a63d0368e045cefd1714ad49687818ff3ef78cab45e171078a8d34ace8401f7",
+      "matrix_id": 3,
+      "replay_digest": "0a63d0368e045cefd1714ad49687818ff3ef78cab45e171078a8d34ace8401f7",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m003"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "933c3a74eb2cf805557425484e0537dfb0c3c5b9632cef0e84e172a7bbbee1ba",
+      "matrix_id": 4,
+      "replay_digest": "933c3a74eb2cf805557425484e0537dfb0c3c5b9632cef0e84e172a7bbbee1ba",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m004"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "15c36427c98c6eb47df4c35657fc264353ba8b01c7646691b12ca77df3e7b0fa",
+      "matrix_id": 4,
+      "replay_digest": "15c36427c98c6eb47df4c35657fc264353ba8b01c7646691b12ca77df3e7b0fa",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m004"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "3141fb022b305c1c1418ac7af1bea9221dd81b7db03e20b0584a0163ed60e516",
+      "matrix_id": 5,
+      "replay_digest": "3141fb022b305c1c1418ac7af1bea9221dd81b7db03e20b0584a0163ed60e516",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m005"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "7fbba241494b167888cd6608dbe2cbe6fa01952c3354c3823c4a704b569ad2cd",
+      "matrix_id": 5,
+      "replay_digest": "7fbba241494b167888cd6608dbe2cbe6fa01952c3354c3823c4a704b569ad2cd",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m005"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "9e47cfae396daa836850e5c86b67ef394c392c6d96957f99e363e09a94584ffc",
+      "matrix_id": 6,
+      "replay_digest": "9e47cfae396daa836850e5c86b67ef394c392c6d96957f99e363e09a94584ffc",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m006"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "62d1584f6f42e271f56a0a02ed9e48f63a7655193a10421e8070a32a12dee6cb",
+      "matrix_id": 6,
+      "replay_digest": "62d1584f6f42e271f56a0a02ed9e48f63a7655193a10421e8070a32a12dee6cb",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m006"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "3f1ff741677fe2d84040f971570266f061f566351a1262f7d1d9acc067248941",
+      "matrix_id": 7,
+      "replay_digest": "3f1ff741677fe2d84040f971570266f061f566351a1262f7d1d9acc067248941",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m007"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "63765bb5708e848049e7a666e12ab1549b6c7618f4015b46a29ba6abde7fd531",
+      "matrix_id": 7,
+      "replay_digest": "63765bb5708e848049e7a666e12ab1549b6c7618f4015b46a29ba6abde7fd531",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m007"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "40d92ce07dc4c2ce13c5a4be28466c70d3daccc2bfc3034932bd00b36a4abeb3",
+      "matrix_id": 8,
+      "replay_digest": "40d92ce07dc4c2ce13c5a4be28466c70d3daccc2bfc3034932bd00b36a4abeb3",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m008"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "a17c2fa9780635ed88bc892d68f18c843469ca063ad91c7cec37fe2bb8eed964",
+      "matrix_id": 8,
+      "replay_digest": "a17c2fa9780635ed88bc892d68f18c843469ca063ad91c7cec37fe2bb8eed964",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m008"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "83d6d73ba82279e66a7159f2644ce0ea4f384b2997400f4d306de1c823d706e8",
+      "matrix_id": 9,
+      "replay_digest": "83d6d73ba82279e66a7159f2644ce0ea4f384b2997400f4d306de1c823d706e8",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m009"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "852cb6e5c27943a684e6503fe65e550a4571877ef5a8d98ed0522cba0b971286",
+      "matrix_id": 9,
+      "replay_digest": "852cb6e5c27943a684e6503fe65e550a4571877ef5a8d98ed0522cba0b971286",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m009"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "6a245287cd2e4f61e2d2d5bdd50948b7d4ec6971123da7bc2fd13656e51b28c1",
+      "matrix_id": 10,
+      "replay_digest": "6a245287cd2e4f61e2d2d5bdd50948b7d4ec6971123da7bc2fd13656e51b28c1",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m010"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "6535a3203de8da2c29eb33f0c253e3a80d641c637963a59e85f10736725ab4c2",
+      "matrix_id": 10,
+      "replay_digest": "6535a3203de8da2c29eb33f0c253e3a80d641c637963a59e85f10736725ab4c2",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m010"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "476d5d447278b13f13b96ee07e1158e9daefa744df2712f022d2db7b259e456a",
+      "matrix_id": 11,
+      "replay_digest": "476d5d447278b13f13b96ee07e1158e9daefa744df2712f022d2db7b259e456a",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m011"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "8c504c776d4244289ad12601d991bea8f5a92a73683af36015dc0dcdae665ac3",
+      "matrix_id": 11,
+      "replay_digest": "8c504c776d4244289ad12601d991bea8f5a92a73683af36015dc0dcdae665ac3",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m011"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "a13d45c51371367ffb13c67efab5ae369715a39553ee8d2ceb568fd492dea57c",
+      "matrix_id": 12,
+      "replay_digest": "a13d45c51371367ffb13c67efab5ae369715a39553ee8d2ceb568fd492dea57c",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m012"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "606d0969f05641545296ed8d397e886dcf336f849ad5eb760cf05668b61c6d96",
+      "matrix_id": 12,
+      "replay_digest": "606d0969f05641545296ed8d397e886dcf336f849ad5eb760cf05668b61c6d96",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m012"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "1db3db2b8d8454dc8f75fe4f55bcccdfe00489c38bb40c5c3066fa1e3a078648",
+      "matrix_id": 13,
+      "replay_digest": "1db3db2b8d8454dc8f75fe4f55bcccdfe00489c38bb40c5c3066fa1e3a078648",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m013"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "6099f78483f28ea7ef1e71f448eddff628cd9433431ba81e4a5fca20f385a5d7",
+      "matrix_id": 13,
+      "replay_digest": "6099f78483f28ea7ef1e71f448eddff628cd9433431ba81e4a5fca20f385a5d7",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m013"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "4a28249500fbc69156ad003b5844f62dd29863d1a6fc9466bcd1ded84aa5c8f5",
+      "matrix_id": 14,
+      "replay_digest": "4a28249500fbc69156ad003b5844f62dd29863d1a6fc9466bcd1ded84aa5c8f5",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m014"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "cffd503126d221c17b135932ee44d72a362645a7ca93c32b7590bad1ffad32a2",
+      "matrix_id": 14,
+      "replay_digest": "cffd503126d221c17b135932ee44d72a362645a7ca93c32b7590bad1ffad32a2",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m014"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "8715b92b407ab4ad16f5a2e9285a569b112b0d4f57a0a8a6786ec6d0ba8b2be6",
+      "matrix_id": 15,
+      "replay_digest": "8715b92b407ab4ad16f5a2e9285a569b112b0d4f57a0a8a6786ec6d0ba8b2be6",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m015"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "9ed92f28ed587612a5becf36cf2916d903a4d69930d5788af57cbd5d3ec98afa",
+      "matrix_id": 15,
+      "replay_digest": "9ed92f28ed587612a5becf36cf2916d903a4d69930d5788af57cbd5d3ec98afa",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m015"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "5cfa7d78a68fd82df641b37215817bb6719dd7d9d17e9c6bea48eb706c746844",
+      "matrix_id": 16,
+      "replay_digest": "5cfa7d78a68fd82df641b37215817bb6719dd7d9d17e9c6bea48eb706c746844",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m016"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "ef00b77255bbe46b3af42a72d94536411f4917eba658edf59ed517a85ca69c0a",
+      "matrix_id": 16,
+      "replay_digest": "ef00b77255bbe46b3af42a72d94536411f4917eba658edf59ed517a85ca69c0a",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m016"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "6b2361059262646eaaba5d2adccab6f9cb6605d7cb1947d502891e59acf8b0b2",
+      "matrix_id": 17,
+      "replay_digest": "6b2361059262646eaaba5d2adccab6f9cb6605d7cb1947d502891e59acf8b0b2",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m017"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "0461a78b57d8dbdfb8e91aff3784772901ace58ae71e759ea49126f9ba2ab3f9",
+      "matrix_id": 17,
+      "replay_digest": "0461a78b57d8dbdfb8e91aff3784772901ace58ae71e759ea49126f9ba2ab3f9",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m017"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "517546c65399db0e2add1da5e3654e9e5a93c4e3107e1c424c9b8a73cfd07764",
+      "matrix_id": 18,
+      "replay_digest": "517546c65399db0e2add1da5e3654e9e5a93c4e3107e1c424c9b8a73cfd07764",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m018"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "ff44ee8a0b741e27ecbc351069e3fc90d8e0b1847bce8c0ace59e928143f87b5",
+      "matrix_id": 18,
+      "replay_digest": "ff44ee8a0b741e27ecbc351069e3fc90d8e0b1847bce8c0ace59e928143f87b5",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m018"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "16f4193f3345d94ec9ce0bf90a200b06ba3fe0967238a479dfa8c5a6a1b83107",
+      "matrix_id": 19,
+      "replay_digest": "16f4193f3345d94ec9ce0bf90a200b06ba3fe0967238a479dfa8c5a6a1b83107",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m019"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "0c6cedbae1a313d6d073e4efbbe16a1a5cf9d6067e6b88d24ba692622da93e3c",
+      "matrix_id": 19,
+      "replay_digest": "0c6cedbae1a313d6d073e4efbbe16a1a5cf9d6067e6b88d24ba692622da93e3c",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m019"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "5a9e4a1f7d210d47bf5568f44ca5e0bf6f539c02b95208fd9431d21cfe5c72aa",
+      "matrix_id": 20,
+      "replay_digest": "5a9e4a1f7d210d47bf5568f44ca5e0bf6f539c02b95208fd9431d21cfe5c72aa",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m020"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "b70e9fe6f8a17ca8cc44c6048a36f9d5ad0f5e6a9afc8b95cb020805fcae55ad",
+      "matrix_id": 20,
+      "replay_digest": "b70e9fe6f8a17ca8cc44c6048a36f9d5ad0f5e6a9afc8b95cb020805fcae55ad",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m020"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "206dbe5e3f5aef375ba59297e0bb01a6f2bf8557ab7881581f8849f992069143",
+      "matrix_id": 21,
+      "replay_digest": "206dbe5e3f5aef375ba59297e0bb01a6f2bf8557ab7881581f8849f992069143",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m021"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "80742dedf17cea2e97dae98e6045daa4b01d135bb9517a49fd9727de5534af53",
+      "matrix_id": 21,
+      "replay_digest": "80742dedf17cea2e97dae98e6045daa4b01d135bb9517a49fd9727de5534af53",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m021"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "0de551bbc699ac94f1fe28fb6160bfbd4bb1aa6998d71c23973ecb88e4a03b5b",
+      "matrix_id": 22,
+      "replay_digest": "0de551bbc699ac94f1fe28fb6160bfbd4bb1aa6998d71c23973ecb88e4a03b5b",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m022"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "58a81f24a2ab9e4dcf116f8036b6f04ad5fb7944e98080ff3b6f0ebbb36d8e3a",
+      "matrix_id": 22,
+      "replay_digest": "58a81f24a2ab9e4dcf116f8036b6f04ad5fb7944e98080ff3b6f0ebbb36d8e3a",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m022"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "492b79c54164aecf7d253cb5a4a65c030f3aa341a86624a7e299604343f644cf",
+      "matrix_id": 23,
+      "replay_digest": "492b79c54164aecf7d253cb5a4a65c030f3aa341a86624a7e299604343f644cf",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m023"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "bebd9290237f50c69c7c94ea322d9a86d557e9360a8362a794e833f3f5720f46",
+      "matrix_id": 23,
+      "replay_digest": "bebd9290237f50c69c7c94ea322d9a86d557e9360a8362a794e833f3f5720f46",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m023"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "dba363bac44e9220a91ceceb75e1d2258ffa3afdd166d6d21067ba87c9c885eb",
+      "matrix_id": 24,
+      "replay_digest": "dba363bac44e9220a91ceceb75e1d2258ffa3afdd166d6d21067ba87c9c885eb",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m024"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "92a65ff21c02eb9cd8fe56844b0dbb630e117b6a08e6a911c89d02985a25872b",
+      "matrix_id": 24,
+      "replay_digest": "92a65ff21c02eb9cd8fe56844b0dbb630e117b6a08e6a911c89d02985a25872b",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m024"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "b9b41d54a1c9982c4faf8132ab1c10dea3bfeaf1aa6f627fc61698413b9a5c80",
+      "matrix_id": 25,
+      "replay_digest": "b9b41d54a1c9982c4faf8132ab1c10dea3bfeaf1aa6f627fc61698413b9a5c80",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m025"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "f467163c0c517dbe167782d699d12885e5164c39303b6281b54524de4d4b5260",
+      "matrix_id": 25,
+      "replay_digest": "f467163c0c517dbe167782d699d12885e5164c39303b6281b54524de4d4b5260",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m025"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "922f1c9c269d80ccc68ca0401b54a2443b2145cb3f8e3329167c8c98393d3f57",
+      "matrix_id": 26,
+      "replay_digest": "922f1c9c269d80ccc68ca0401b54a2443b2145cb3f8e3329167c8c98393d3f57",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m026"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "f4b26f523a9ae4d601269e4039aa37325458ebcb7ee2215ceef175c1831ea2ca",
+      "matrix_id": 26,
+      "replay_digest": "f4b26f523a9ae4d601269e4039aa37325458ebcb7ee2215ceef175c1831ea2ca",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m026"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "fe96d03a9d91a9dbd1e6411ddf2ac0ca7f8d34b24546a7444cb2ad0ee9577730",
+      "matrix_id": 27,
+      "replay_digest": "fe96d03a9d91a9dbd1e6411ddf2ac0ca7f8d34b24546a7444cb2ad0ee9577730",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m027"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "297a7149d2f6ceb10050a4526fd1840917a52a1589b1e3bf6ba070b0b70c4439",
+      "matrix_id": 27,
+      "replay_digest": "297a7149d2f6ceb10050a4526fd1840917a52a1589b1e3bf6ba070b0b70c4439",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m027"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "022114f10afe9086dc9f3bf826ca435454a226be229f3fa6ca916b961e2604b4",
+      "matrix_id": 28,
+      "replay_digest": "022114f10afe9086dc9f3bf826ca435454a226be229f3fa6ca916b961e2604b4",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m028"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "62191957773f1ce9fe5857275a7cd844b9e47afe1d26257ec492b76d16976a71",
+      "matrix_id": 28,
+      "replay_digest": "62191957773f1ce9fe5857275a7cd844b9e47afe1d26257ec492b76d16976a71",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m028"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "fc27ac65fc024862bd55d9bd5df97d1226872f7d854f2d3bc333020170ed3a0a",
+      "matrix_id": 29,
+      "replay_digest": "fc27ac65fc024862bd55d9bd5df97d1226872f7d854f2d3bc333020170ed3a0a",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m029"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "6e4573b1b59d9d9bcb6a07c91e8cccd8e992491b993e6bab704262424a8b7811",
+      "matrix_id": 29,
+      "replay_digest": "6e4573b1b59d9d9bcb6a07c91e8cccd8e992491b993e6bab704262424a8b7811",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m029"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "8c8ef0444bff6b5ae5fae072a35c04ac15480e9678017e25469a9a0f77faad17",
+      "matrix_id": 30,
+      "replay_digest": "8c8ef0444bff6b5ae5fae072a35c04ac15480e9678017e25469a9a0f77faad17",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m030"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "5c1a226d9aa916399a925dcd75baedf9ee1515c1a1113b349250e2184f83dfa3",
+      "matrix_id": 30,
+      "replay_digest": "5c1a226d9aa916399a925dcd75baedf9ee1515c1a1113b349250e2184f83dfa3",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m030"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "2536560068c0e61dfe3c43f1b0ab23b9bba850ab15c8ec624e224677b5a4ca9a",
+      "matrix_id": 31,
+      "replay_digest": "2536560068c0e61dfe3c43f1b0ab23b9bba850ab15c8ec624e224677b5a4ca9a",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m031"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "afb340ddf97d9360c301d8c32585cfd725d8d40c00206812677c05e1a85979eb",
+      "matrix_id": 31,
+      "replay_digest": "afb340ddf97d9360c301d8c32585cfd725d8d40c00206812677c05e1a85979eb",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m031"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "10f76ca0fb88136451f970d93d829ad8c88a233a70f702758f5d9f5e9057f7bb",
+      "matrix_id": 32,
+      "replay_digest": "10f76ca0fb88136451f970d93d829ad8c88a233a70f702758f5d9f5e9057f7bb",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m032"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "f927137cb55c362882867c5016a35bb261339c24526a3fcadda49b4be0efc8e8",
+      "matrix_id": 32,
+      "replay_digest": "f927137cb55c362882867c5016a35bb261339c24526a3fcadda49b4be0efc8e8",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m032"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "4861bf622ab5199355da2caec1b9b0adab88dfef57ea0b4eea644f0e322cbccc",
+      "matrix_id": 33,
+      "replay_digest": "4861bf622ab5199355da2caec1b9b0adab88dfef57ea0b4eea644f0e322cbccc",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m033"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "7401fd81c7b495659d9add418adb26593d9dfb904890e8d50aa0feac90528942",
+      "matrix_id": 33,
+      "replay_digest": "7401fd81c7b495659d9add418adb26593d9dfb904890e8d50aa0feac90528942",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m033"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "74b9e8a68aa91c44e5972efb7e4bae99c9002d7fd6a32fd860f029a1123f3af1",
+      "matrix_id": 34,
+      "replay_digest": "74b9e8a68aa91c44e5972efb7e4bae99c9002d7fd6a32fd860f029a1123f3af1",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m034"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "4073ec9fbcf710f8a449f1d3bce3f70594ab5e0d93bce6e5918bed68b40a0639",
+      "matrix_id": 34,
+      "replay_digest": "4073ec9fbcf710f8a449f1d3bce3f70594ab5e0d93bce6e5918bed68b40a0639",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m034"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "743904b84f009466ade18399fc920a0d649a96ba41f93a693f5d6d3eb3d23abe",
+      "matrix_id": 35,
+      "replay_digest": "743904b84f009466ade18399fc920a0d649a96ba41f93a693f5d6d3eb3d23abe",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m035"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "9c23be27d86198c7673137c247ed73b87116b53c18d8f90e6ddc9abba85faa0c",
+      "matrix_id": 35,
+      "replay_digest": "9c23be27d86198c7673137c247ed73b87116b53c18d8f90e6ddc9abba85faa0c",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m035"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "797be5ceab8e045da5702afb886d203c55431a774f2123755b36bafcd7c94ee5",
+      "matrix_id": 36,
+      "replay_digest": "797be5ceab8e045da5702afb886d203c55431a774f2123755b36bafcd7c94ee5",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m036"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "24187bb46ed6a5139b971c07f954d0157004c6852329a1eab735a3f71cac6f2d",
+      "matrix_id": 36,
+      "replay_digest": "24187bb46ed6a5139b971c07f954d0157004c6852329a1eab735a3f71cac6f2d",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m036"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "3a5574a1fd060cb5ca6561e78cc0b97490015bc7938ee05f722b1e72c7432dab",
+      "matrix_id": 37,
+      "replay_digest": "3a5574a1fd060cb5ca6561e78cc0b97490015bc7938ee05f722b1e72c7432dab",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m037"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "d736f9fb78cb7bdc8d0d3ad8e233e0a156d3087ad5af8afb2babbe8a83814587",
+      "matrix_id": 37,
+      "replay_digest": "d736f9fb78cb7bdc8d0d3ad8e233e0a156d3087ad5af8afb2babbe8a83814587",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m037"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "9dbb197f1b1bd0f524f7a1690de832252dedde2b567f0f465e463ca585f25b79",
+      "matrix_id": 38,
+      "replay_digest": "9dbb197f1b1bd0f524f7a1690de832252dedde2b567f0f465e463ca585f25b79",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m038"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "62f96d05c6e1dca001d5d081e25f05824de46486162dd121736695997edcb108",
+      "matrix_id": 38,
+      "replay_digest": "62f96d05c6e1dca001d5d081e25f05824de46486162dd121736695997edcb108",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m038"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "23016a156219a99df3709cc9fd3b8d91fdb7cd3964e4d0df7e34c9d4873f9f33",
+      "matrix_id": 39,
+      "replay_digest": "23016a156219a99df3709cc9fd3b8d91fdb7cd3964e4d0df7e34c9d4873f9f33",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m039"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "bd88e3628f655d3f212cc7f891c59f957e19a39e30096dc7e59d8401c7a9f5f0",
+      "matrix_id": 39,
+      "replay_digest": "bd88e3628f655d3f212cc7f891c59f957e19a39e30096dc7e59d8401c7a9f5f0",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m039"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "f2bf9236979462645df9a3ae1ce4162066f84b5fd067f97c02fb0bff86590b13",
+      "matrix_id": 40,
+      "replay_digest": "f2bf9236979462645df9a3ae1ce4162066f84b5fd067f97c02fb0bff86590b13",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m040"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "c39338927e9a26b42fd99d09d3a1e989319f78a9fe334aac36fc1c6cf1d27849",
+      "matrix_id": 40,
+      "replay_digest": "c39338927e9a26b42fd99d09d3a1e989319f78a9fe334aac36fc1c6cf1d27849",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m040"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "3bc0876489503a2e17d8df8fae4c9e8b9ecc48c9ee19ba203f24b943377ac14d",
+      "matrix_id": 41,
+      "replay_digest": "3bc0876489503a2e17d8df8fae4c9e8b9ecc48c9ee19ba203f24b943377ac14d",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m041"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "60cb1900aea1a2286678c29015d88659a0c7e25958fe7dc81910b8607aee699c",
+      "matrix_id": 41,
+      "replay_digest": "60cb1900aea1a2286678c29015d88659a0c7e25958fe7dc81910b8607aee699c",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m041"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "d4c1f0d407ac158e079a329282d404194cb15973751a4c4a4b3978a49b660d3b",
+      "matrix_id": 42,
+      "replay_digest": "d4c1f0d407ac158e079a329282d404194cb15973751a4c4a4b3978a49b660d3b",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m042"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "cb2c9723a6100b7302b83d8f894e4ef0f8aecb7b12886116a8b276910cb96edb",
+      "matrix_id": 42,
+      "replay_digest": "cb2c9723a6100b7302b83d8f894e4ef0f8aecb7b12886116a8b276910cb96edb",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m042"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "6d51a94f4fd754d0a8c998b79ea233ac7363d4976404364cc40955e75e567f48",
+      "matrix_id": 43,
+      "replay_digest": "6d51a94f4fd754d0a8c998b79ea233ac7363d4976404364cc40955e75e567f48",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m043"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "8490b126e2b9a5f0d98b8079f389c2506bfd473fcde0b9f38ce74dedad0e05c7",
+      "matrix_id": 43,
+      "replay_digest": "8490b126e2b9a5f0d98b8079f389c2506bfd473fcde0b9f38ce74dedad0e05c7",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m043"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "daeb138df58ad12c93a0babeda07f012cdfe7172debee1bb983d5eeb55ddaed8",
+      "matrix_id": 44,
+      "replay_digest": "daeb138df58ad12c93a0babeda07f012cdfe7172debee1bb983d5eeb55ddaed8",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m044"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "20c79e18410b29416fb43fe7025f112a2bdc2926089a9afd4fa57158527b7696",
+      "matrix_id": 44,
+      "replay_digest": "20c79e18410b29416fb43fe7025f112a2bdc2926089a9afd4fa57158527b7696",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m044"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "e1629f23b4264a558698bf64835cd4dfb2fc3208c5fa92e3b03972da44608ed0",
+      "matrix_id": 45,
+      "replay_digest": "e1629f23b4264a558698bf64835cd4dfb2fc3208c5fa92e3b03972da44608ed0",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m045"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "6cbe62b3b25c0702040d96a8d8bb8f0ad7849be253341d71c9620f68e19bf61f",
+      "matrix_id": 45,
+      "replay_digest": "6cbe62b3b25c0702040d96a8d8bb8f0ad7849be253341d71c9620f68e19bf61f",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m045"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "bf53b5af4307ece9d26b266c5142a3454a97b1cbc022ac288f6db0ae19a6cf80",
+      "matrix_id": 46,
+      "replay_digest": "bf53b5af4307ece9d26b266c5142a3454a97b1cbc022ac288f6db0ae19a6cf80",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m046"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "0f5af471e1d81f01c3fe8d2b9f59db7fcf5b3c70daeb8de73057b741f9be23fc",
+      "matrix_id": 46,
+      "replay_digest": "0f5af471e1d81f01c3fe8d2b9f59db7fcf5b3c70daeb8de73057b741f9be23fc",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m046"
+    },
+    {
+      "candidate": "02",
+      "exact": true,
+      "generated_digest": "eed6ba325d2d6ffc3d607aa6b19073c8cc2c818f0b20aa97336c09bd5cf1cbd0",
+      "matrix_id": 47,
+      "replay_digest": "eed6ba325d2d6ffc3d607aa6b19073c8cc2c818f0b20aa97336c09bd5cf1cbd0",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c02-m047"
+    },
+    {
+      "candidate": "03",
+      "exact": true,
+      "generated_digest": "a2bbb1f1bb903529fe23c23c4c8757288bdb8bce045da523c4d48bf7232679c8",
+      "matrix_id": 47,
+      "replay_digest": "a2bbb1f1bb903529fe23c23c4c8757288bdb8bce045da523c4d48bf7232679c8",
+      "state_id": "INTCR8_RELEASE_CHALLENGE_V1-c03-m047"
+    }
+  ],
+  "state_batches": 96
+}

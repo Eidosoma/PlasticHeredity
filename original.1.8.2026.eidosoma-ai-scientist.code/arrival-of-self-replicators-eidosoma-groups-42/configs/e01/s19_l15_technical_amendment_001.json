@@ -1,0 +1,13 @@
+{
+  "amendmentId": "S19-L15-TECHNICAL-AMENDMENT-001",
+  "authorizedBasis": "User-directed repair of technical problems before handoff",
+  "failureStage": "finalize_plotting",
+  "failure": "Figure 11 attempted to read medianSplitDifference from paper_model_order_results.csv, where the registered column is stored in paired_model_comparisons.parquet",
+  "scope": "Plotting and report assembly only",
+  "scientificMethodChangePermitted": false,
+  "scientificValueChangePermitted": false,
+  "targetFeatureSplitModelMetricGateChangePermitted": false,
+  "repair": "Read the already frozen medianSplitDifference column from paired_model_comparisons.parquet",
+  "freshFigureCache": "/cache/e01_s19_l15/failed_finalize_001",
+  "requiredValidation": "Exact SHA-256 equality of every frozen scientific artifact before and after amendment"
+}

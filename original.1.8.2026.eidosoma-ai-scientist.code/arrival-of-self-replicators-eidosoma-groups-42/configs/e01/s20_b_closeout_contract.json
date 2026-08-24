@@ -1,0 +1,74 @@
+{
+  "schema": "eidosoma.e01.s20_b_closeout_contract.v1",
+  "researchStepId": "S20",
+  "stepNumber": 20,
+  "versionedStepId": "E01-S20-CONFIRMATION-AUTHOR-AMBIGUITY-AND-FINAL-CLOSEOUT-v1.0.0",
+  "mode": "S20_B_CLOSEOUT_ONLY",
+  "continuationId": "E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0",
+  "closeoutDateUtc": "2026-08-13",
+  "scientificOutcomeGenerationAuthorized": false,
+  "reportBundleGenerationAuthorized": false,
+  "e02ExecutionAuthorizedInsideE01": false,
+  "e02Stage1AuthorizationId": "E02-S01-ADVERSARIAL-VALIDATION-OF-PLASTIC-HEREDITY-PROCESS-RISK-v1.0.0",
+  "expectedS18StatusCounts": {
+    "DIRECTIONALLY_SUPPORTED": 17,
+    "NOT_EVALUATED": 16,
+    "NOT_SUPPORTED_WITHIN_TESTED_SCOPE": 21,
+    "SUPPORTED": 3,
+    "UNDERDETERMINED": 2
+  },
+  "expectedInputIdentities": {
+    "/cache/e01_s03/downloads/paper-2607.28250v1.pdf": "77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4",
+    "/artifacts/research_steps/S18/e01_closeout_manifest.json": "6d2bd1b1263138eb0a43058da6ab38ca884a58c25766c46b958ae21a7a568dfa",
+    "/artifacts/E01_forensic_replication_artifact_v2/artifact_manifest.json": "78f77a62030a084367bfe7379bb2b9af016dc3408f568660305ca994417d4d63",
+    "/artifacts/research_steps/S19/artifact_manifest.json": "a34e4e42f46e41f128a51381600f82600ab1f510426a09e1f12ae01e5cb3b8c0",
+    "/artifacts/research_steps/S19/loops/L53/artifact_manifest.json": "c88ec184eafeadd9ed17714e4949a4be8e17efa2719f9d98f982864fe9766483",
+    "/artifacts/research_steps/S19/loops/L54/artifact_manifest.json": "5d13c00f2653a05bcb79c436e2999c224568c64a1ee7d1cf9397e8f2d9cdc739",
+    "/artifacts/research_steps/S19/loops/L54/classification.json": "5d003c17548b25a9865d1905538f72998c89fb522a044a1e707248b098cafacf",
+    "/artifacts/research_steps/S19/loops/L54/regeneration_validation.json": "16a8cabe8f12fc0f5bd07e826c57cbe7a16c3f3de36dc6af041844c40ad05b14"
+  },
+  "requiredL54Classifications": [
+    "UNTOUCHED_PAST_OBSERVABLE_PROCESS_RISK_COORDINATE_CONFIRMED",
+    "PLASTIC_HEREDITY_SWITCHING_PROPENSITY_PREDICTABLE",
+    "SIMULATOR_PROCESS_EARLY_WARNING_CONFIRMED",
+    "NOT_PAPER_REPLICATION"
+  ],
+  "l54Scope": {
+    "sharedMatrices": 40,
+    "primaryTrajectories": 80,
+    "states": 400,
+    "branchesPerState": 64,
+    "branchFuturesPerCampaign": 25600,
+    "simulatorCandidates": [
+      "S12F-CANDIDATE-02",
+      "S12F-CANDIDATE-03"
+    ],
+    "landmarkFissions": [20, 35, 50, 65, 80],
+    "primaryHorizonFissions": 12,
+    "inheritanceThreshold": "strict H>0.9",
+    "target": "first future inheritance break followed within F12 by a new three-consecutive-fission hereditary episode",
+    "coordinate": "frozen L53 target-blind full-state-graph-plus-history coordinate"
+  },
+  "l54InterpretationExclusions": [
+    "PhiID support",
+    "paper replication",
+    "first-replicator appearance",
+    "a privileged-attractor result",
+    "fixed-composition restoration or homeostasis",
+    "intervention efficacy",
+    "causal control",
+    "evidence outside the reconstructed simulator"
+  ],
+  "e02PreOutcomeTests": [
+    "future-suffix leakage",
+    "calibration",
+    "candidate consistency",
+    "numerical robustness",
+    "preprocessing sensitivity",
+    "target sensitivity",
+    "incremental value beyond direct history",
+    "incremental value beyond exact H or ordinary stability",
+    "incremental value beyond matrix-level propensity",
+    "incremental value beyond simpler state/process controls"
+  ]
+}

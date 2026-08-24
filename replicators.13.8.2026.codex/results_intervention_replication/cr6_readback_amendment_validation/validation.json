@@ -1,0 +1,52 @@
+{
+  "all_checks_passed": true,
+  "check_count": 12,
+  "checkpoint_summary": {
+    "generate": {
+      "checkpoint_contract_sha256": "d2e1d4181199e244f83a50c82e66533d88c5f3004969ba8d79ece9edbb3c5d50",
+      "futures_complete": 30720,
+      "futures_total": 30720,
+      "state_file_hash_digest": "9fd05f53aaad7b7215793c94979a51e6c13c9828a01bc6f95bdba40ac6ae4518",
+      "states": 160,
+      "status_state": "complete"
+    },
+    "replay": {
+      "checkpoint_contract_sha256": "a258bab1e907fb005e2e2e9a635eb0422e4bf6d9032d836474c049842f820a5d",
+      "futures_complete": 30720,
+      "futures_total": 30720,
+      "state_file_hash_digest": "9fd05f53aaad7b7215793c94979a51e6c13c9828a01bc6f95bdba40ac6ae4518",
+      "states": 160,
+      "status_state": "complete"
+    }
+  },
+  "checks": {
+    "amended_round_trip_exact": true,
+    "amendment_only_adds_regime_label": true,
+    "failure_is_readback_row_comparison": true,
+    "later_regimes_not_started": true,
+    "no_failed_regime_artifact_exists": true,
+    "no_final_result_exists": true,
+    "original_false_failure_reproduced": true,
+    "original_registration_exact": true,
+    "original_validation_and_smoke_checksums_exact": true,
+    "primary_checkpoints_complete": true,
+    "replay_checkpoints_complete": true,
+    "scientific_engine_source_unchanged": true
+  },
+  "failed_log_sha256": "e274548e9701744714993ac6c28a669fa1edad42e0bc7b4b991b26ccdea1490d",
+  "failed_time_sha256": "e688d9a0c2cc90127135f34c4cc9d2751bedc772e752554d3dd1bda920aa7f13",
+  "fixture_audit": {
+    "amended_matrix_rows_exact": true,
+    "amended_metrics_exact": true,
+    "numerical_tolerance_weakened": false,
+    "only_added_field": "regime",
+    "original_false_failure_reproduced": true
+  },
+  "format": "codex-intervention-cr6-readback-amendment-validation-v1",
+  "scientific_effect_sizes_inspected": false,
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR6_READBACK_AMENDMENT.md": "d95eb323a1974906b5e9bb11c01f99277c76434c9131e0f8764184d64f8f730a",
+    "plastic_heredity/intervention_cr6_readback_amendment.py": "be38be82f5976b74f5bb834172fac783301b65da7253d337bc149211b3b813c2",
+    "tests/test_intervention_cr6_readback_amendment.py": "a2bc3397d977f10d71f512c1ef0d77464a17726180693be3736c5f2f552fdf74"
+  }
+}

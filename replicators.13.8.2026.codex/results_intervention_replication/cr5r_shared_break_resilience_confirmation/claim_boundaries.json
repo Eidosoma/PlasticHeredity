@@ -1,0 +1,24 @@
+{
+  "cr5_predecessor_unchanged": true,
+  "cr5_resilience_remains_inconclusive": true,
+  "cr5_resistance_remains_passed": true,
+  "cr5r_eligibility_classification": "eligible_for_registered_confirmation",
+  "failed_or_inconclusive": [],
+  "prohibited": [
+    "biological repair",
+    "biological memory",
+    "agency or life",
+    "autonomous organization or installed attractor",
+    "strict-eight control",
+    "real prebiotic chemistry",
+    "universal origin-of-life mechanism",
+    "Phi or PhiID intervention"
+  ],
+  "supported": [
+    "causal molecular control of run3-within-F8 recovery from identical natural post-break daughters in both Codex candidates"
+  ],
+  "unresolved": [
+    "zero-shot parameter-regime transfer",
+    "closed-loop hereditary steering"
+  ]
+}

@@ -1,0 +1,209 @@
+schema: eidosoma.e01.s13r_schema_normalization_confirmation_preregistration.v1
+researchStepId: S13R
+stepNumber: S13R
+versionedStepId: E01-S13R-SCHEMA-NORMALIZATION-CONFIRMATION-v1.0.0
+title: Schema Normalization Confirmation for the Held-out S13 Scale-up
+dateFrozen: '2026-08-06'
+humanOptionId: option-1
+evidenceClass: POST_FAILURE_SCHEMA_REPAIRED_HELD_OUT_ANALYSIS
+humanOverride: >-
+  Explicitly override S13's no-repair rule once and only once, solely to create
+  typed statistical views for the five all-null S13 label tables. S13 and its
+  S13_VALIDATION_FAILED_CLOSED classification remain immutable.
+
+frozenQuestion: >-
+  Are the five physically all-null S13 label tables logically identical to the
+  canonical typed label schema, and, only if that narrow adapter gate passes,
+  what result do the already frozen S13 statistics and two-candidate gate return?
+
+immutability:
+  preserveSteps: S01-S13
+  priorArtifactsByteExact: true
+  s13ClassificationRetained: S13_VALIDATION_FAILED_CLOSED
+  s13ScientificAssociationRetained: NOT_EVALUATED
+  sourceCacheByteExact: true
+  partialS13ConcatenationUsePermitted: false
+  subsetAnalysisPermitted: false
+
+inputs:
+  taskCount: 200
+  cacheRoot: /cache/e01_s13/source_results
+  sourceCacheManifest: /artifacts/research_steps/S13/source_cache_manifest.json
+  schemaFailureDiagnostics: /artifacts/research_steps/S13/source_schema_failure_diagnostics.json
+  sourceSchemaDiagnostics: /artifacts/research_steps/S13/source_schema_diagnostics.csv
+  sourceTaskValidation: /artifacts/research_steps/S13/source_task_validation.parquet
+  s13Classification: /artifacts/research_steps/S13/classification.json
+  s13TrajectoryManifest: /artifacts/research_steps/S13/trajectory_manifest.parquet
+  s13PairingAudit: /artifacts/research_steps/S13/pairing_audit.json
+  candidateIds:
+    - S12F-CANDIDATE-02
+    - S12F-CANDIDATE-03
+  candidate1Excluded: true
+
+adapter:
+  identifier: S13R_LABEL_OPTIONAL_NULL_TYPE_ADAPTER-v1.0.0
+  sourceTable: labels.parquet
+  derivedViewOnly: true
+  sourceMutationPermitted: false
+  exactPermittedFields:
+    clusterId:
+      fromType: 'null'
+      toType: string
+    referenceObservationId:
+      fromType: 'null'
+      toType: string
+    metricToReference:
+      fromType: 'null'
+      toType: double
+  expectedCanonicalTaskCount: 195
+  expectedAdaptedTaskCount: 5
+  exactAffectedTasks:
+    - S12F-CANDIDATE-02/M30
+    - S12F-CANDIDATE-02/M35
+    - S12F-CANDIDATE-02/M63
+    - S12F-CANDIDATE-03/M35
+    - S12F-CANDIDATE-03/M63
+  forbiddenOperations:
+    - cast_any_other_field
+    - alter_any_nonnull_value
+    - alter_any_null_mask
+    - alter_row_count_or_order
+    - alter_column_names_or_order
+    - alter_task_identity
+    - mutate_source_file
+    - use_partial_s13_concatenation
+    - omit_any_task
+
+adapterGates:
+  all200ViewsShareCanonicalSchema: true
+  rowCountsUnchanged: true
+  rowOrderUnchanged: true
+  columnNamesAndOrderUnchanged: true
+  everyValueUnchanged: true
+  everyNullMaskUnchanged: true
+  taskIdentitiesUnchanged: true
+  everyNonAdapterFieldTypeAndBytesUnchanged: true
+  canonical195ValueIdentical: true
+  exactlyFiveViewsAdapted: true
+  sourceHashesUnchanged: true
+
+downstreamContract:
+  runOnlyAfterAdapterPasses: true
+  useExactS13StatisticsImplementation: true
+  useOriginalS13Seeds: true
+  useOriginalS13Gates: true
+  useOriginalS13CandidateIdentities: true
+  useOriginalS13LabelsAndPreprocessing: true
+  useOriginalS13MetricAndTemporalModes: true
+  useOriginalS13ReplayAndSuffixRequirements: true
+  analyses:
+    - candidate_association
+    - replicator_versus_drift
+    - temporal_dependence
+    - spike_structure
+    - metric_identity
+    - full_versus_prefix_future_dependence
+    - paired_cross_candidate_comparison
+    - two_candidate_adjudication
+  statisticsReplicates:
+    trajectoryBootstrap: 4096
+    circularShift: 4096
+    blockAwarePermutation: 4096
+  positiveRequiresBothCandidatesRetrospectiveAndProspective: true
+  candidateDisagreement: HELD_OUT_TWO_CANDIDATE_CANDIDATE_SENSITIVE_UNDERDETERMINATION
+  bothFail: HELD_OUT_TWO_CANDIDATE_SCALEUP_NON_SUPPORT_WITHIN_SOURCE_INFORMED_SCOPE
+  evidenceLabel: POST_FAILURE_SCHEMA_REPAIRED_HELD_OUT_ANALYSIS
+
+strictOneRepairRule:
+  furtherCodeChangePermitted: false
+  furtherSchemaChangePermitted: false
+  dataChangePermitted: false
+  statisticalChangePermitted: false
+  replayRuleChangePermitted: false
+  scopeChangePermitted: false
+  onAnyFurtherRequirement: STOP_PERMANENTLY_WITHOUT_ANOTHER_REPAIR
+
+forbiddenWork:
+  - new_trajectory
+  - source_refit_or_rerun
+  - partial_or_subset_analysis
+  - S12G_cache_use
+  - candidate_1_execution_or_reclassification
+  - candidate_or_weight_change
+  - prediction
+  - MLP
+  - intervention
+  - estimator_repair
+  - S14_through_S18
+  - report_bundle_progression
+  - E02
+  - further_scaleup
+
+requiredValidation:
+  - pushed_clean_method_lock_before_statistics
+  - every_S01_through_S13_artifact_hash_unchanged
+  - every_S13_source_cache_hash_unchanged
+  - exact_adapter_field_and_type_contract
+  - row_value_null_mask_order_and_identity_equality
+  - canonical_195_value_identity
+  - one_declared_normalized_label_schema
+  - source_task_replay_and_suffix_evidence_retained
+  - exact_statistics_replay_if_reached
+  - result_schema_and_cardinality_if_reached
+  - artifact_hash_and_manifest_validation
+
+artifacts:
+  required:
+    - preregistration.yaml
+    - preregistration_record.json
+    - human_override.json
+    - method_lock.json
+    - implementation_lock.json
+    - immutable_prior_baseline.json
+    - immutable_prior_validation.json
+    - source_cache_input_manifest.json
+    - source_cache_input_validation.json
+    - adapter_contract.json
+    - adapter_task_audit.parquet
+    - adapter_field_audit.parquet
+    - normalized_label_schema.json
+    - normalized_view_manifest.json
+    - adapter_validation.json
+    - downstream_schema_validation.json
+    - source_validation.json
+    - prefix_interface_validation.json
+    - label_values.parquet
+    - preprocessing_diagnostics.parquet
+    - full_source_values.parquet
+    - prefix_endpoint_values.parquet
+    - partition_history.parquet
+    - source_diagnostic_outputs.parquet
+    - replay_suffix_validation.parquet
+    - seed_manifest.parquet
+    - candidate_associations.csv
+    - candidate_association_details.parquet
+    - replicator_drift_results.csv
+    - replicator_drift_details.parquet
+    - temporal_dependence_results.csv
+    - spike_results.csv
+    - metric_identity_results.csv
+    - future_dependence_results.csv
+    - cross_candidate_results.csv
+    - ensemble_adjudication.csv
+    - statistics_replay_validation.json
+    - classification.json
+    - execution_validation.json
+    - failure_ledger.csv
+    - scope_access_ledger.json
+    - schema_validation.json
+    - provenance_manifest.json
+    - runtime_manifest.json
+    - storage_validation.json
+    - status.json
+    - research_step_full_results.md
+    - artifact_manifest.json
+
+finalBoundary:
+  laterWorkStatus: BLOCKED_PENDING_S13R_HUMAN_REVIEW
+  mandatoryHumanReview: true
+  automaticContinuationPermitted: false

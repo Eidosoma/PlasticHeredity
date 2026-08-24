@@ -1,0 +1,33 @@
+{
+  "all_unique": true,
+  "domains": {
+    "confirmation_balanced_selection": "58ca08afdd9b05133cf9f2b0e669e117e3a8a2a1d6570c5bc1054861f8e68385",
+    "confirmation_bootstrap": "49463a528520f5e218b123718b8959124bbfbd6d0a724fc07284ad9e6d28fe6a",
+    "confirmation_cohort": "7d1bdfea600a8520d63b88590c754eeff6a80efd23551056fcf129c004adadd3",
+    "confirmation_future": "db910da51cbd33325182ba4491dd9798f19de601725db50fa0aa392fed48a712",
+    "confirmation_neutral_selection": "8d7bc24cdbc78904d724456c0deca8f03ed2b866b32468424e12c06f64270f79",
+    "confirmation_randomization": "f475122f4f27b5c1ac85617cbb26729696b0b7388a05a63ac0f3883648b317c3",
+    "pilot_balanced_selection": "c9c2c34832fe2d2edf5419161a5c7b26ab939ad2b9f44522c3d3e577d49cb5d9",
+    "pilot_bootstrap": "68ff6dc066359abe7b9a2e50b94e902ed20c4215cc44feb22a631f2cdbebeb5e",
+    "pilot_cohort": "53c1efbe08406d846c77aba4c10fedc76e1ba2cbc610b71759b1bc70c56593c2",
+    "pilot_future": "3417ebf325972781b3fe966f67e4d8e7c5ccd985ce6dc652168c01ecaf9f66e8",
+    "pilot_neutral_selection": "db00cc846f926fd82851ba696e9b2ec9814bd111aed18dd5c9e1ef917e5bf7a3",
+    "pilot_randomization": "091019c52315c379a90d6c88a8d45eb566958544895168546924f232556ae5a6",
+    "replay": "bc9cad3d0135a988756a3bfb2f0e0cfc1b8e0a59198f030b822ec36dcb820b4e",
+    "resilience_acquisition": "ac578b0298275b4376791f36edc710ff1590bd586c0759eefe508c46d87f1eda",
+    "resilience_balanced_selection": "2411e3dc9cbe4a64818521a2afd61c973302365755cbf5915f6e73b602393003",
+    "resilience_bootstrap": "4133e7e316a0b2403d9a47b3052485992a4c085623a25b8790d375a8e384a2d6",
+    "resilience_future": "c26fcf52c9aaf17c198324d583f7b4740ad56b8be49dc2d9c38b502e2aed3bf4",
+    "resilience_neutral_selection": "89cb584c3367dbf64387fe697fb715c94e22618d9c6f127ad32a172aa5e159b9",
+    "resilience_randomization": "204509b13c6a15bd5bfb29a166e2193d6a9e91046bc49e3098090f613e1db82c",
+    "smoke_balanced_selection": "498034dac4699a540d52f9835315d8e577dbfd8f2dddd0f99721bace94acd3ec",
+    "smoke_cohort": "a593321be2b15b1d563ff282c5939cbd94dffa2b1aa2abe6c060ade75dec1af6",
+    "smoke_future": "695b7035ebfc2929981bacef1f7ab99c60a680318df98f10c1d06e8dfa1daca8",
+    "smoke_neutral_selection": "e804b370cd7411441d3947ed6329d47185abae4144ed21e0dd2b8bb02e1da2d6",
+    "validation": "7b118a9c1a93231d8079ca99493a4487423af6571420c8cc6e292a13b5350d49"
+  },
+  "format": "codex-intervention-p3c-seed-registry-v1",
+  "future_seed_includes_arm": false,
+  "pilot_confirmation_resilience_domains_disjoint": true,
+  "selection_streams_distinct_from_future": true
+}

@@ -1,0 +1,15 @@
+{
+  "artificial_non_scientific_fixture": true,
+  "format": "codex-ch5-phir-rescue-smoke-v1",
+  "full_score_finite": true,
+  "macro_score_finite": true,
+  "new_scientific_matrices": 0,
+  "numit_calibration_exercised": true,
+  "numit_library_shape": [
+    32
+  ],
+  "partition_null_deterministic": true,
+  "rank_copula_finite": true,
+  "registration_id": "d4e26c19d5a39b80c64a048e195ede50d21281092e863cd7e4dddfaa704762b8",
+  "scientific_effect_sizes_disclosed": false
+}

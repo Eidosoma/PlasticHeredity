@@ -1,0 +1,379 @@
+schema: eidosoma.e01.s16_first_quarter_prediction_preregistration.v1
+researchStepId: S16
+stepNumber: 16
+versionedStepId: E01-S16-FIRST-QUARTER-PREDICTION-RECONSTRUCTION-v1.0.0
+title: Reconstruct the First-25%-to-Final-75% Prediction Experiment
+dateFrozen: '2026-08-07'
+humanDecision: OPTION_2_BOUNDED_PAPER_DIRECTED_RECONSTRUCTION
+evidenceClass: PAPER_DIRECTED_RETROSPECTIVE_AND_CUTOFF_CAUSAL_PREDICTION_RECONSTRUCTION
+
+frozenQuestion: >-
+  Does a paper-like first-quarter completed-fit PhiRL model reproduce the
+  reported prediction advantage, and does any advantage survive a genuinely
+  cutoff-causal first-quarter-only calculation while outperforming exact-H
+  history and ordinary composition stability in both confirmed candidates?
+
+scope:
+  onlyActiveStep: S16
+  nextStepsQueuedInactive: [S17, S18]
+  preserveStepsByteExact: S01-S15
+  authorContactPermitted: false
+  trajectoryGenerationPermitted: false
+  simulatorOrMethodSearchPermitted: false
+  architectureTournamentPermitted: false
+  hyperparameterTournamentPermitted: false
+  upstreamMethodChangesPermitted: false
+  candidatePoolingRole: SECONDARY_DESCRIPTIVE_ONLY
+  s17ExecutionPermitted: false
+
+frozenInputs:
+  s13yRoot: /artifacts/research_steps/S13Y
+  rawTrajectoryRoot: /cache/e01_s13y_v1/raw_trajectories
+  completedSourceValues: /artifacts/research_steps/S13Y/full_source_values.parquet
+  labels: /artifacts/research_steps/S13Y/label_values.parquet
+  trajectoryManifest: /artifacts/research_steps/S13Y/trajectory_manifest.parquet
+  simulationSummary: /artifacts/research_steps/S13Y/simulation_summary.parquet
+  sourceSafeLattice: /artifacts/research_steps/S12B/safe_phi_lattice.json
+  originalPaper: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+  originalPaperSha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  candidates:
+    - candidateId: S12F-CANDIDATE-02
+      h: 0.6031526490073492
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+    - candidateId: S12F-CANDIDATE-03
+      h: 0.5613315384859516
+      daughterRule: RANDOM_NONEMPTY
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+  matrixIndices: {startInclusive: 0, stopExclusive: 100}
+  pairedAcrossCandidates: [matrixIndex, betaSha256, initialStateSha256]
+  primaryLabelId: MOL_ADJACENT_INCOMING_H900
+  primaryLabelDefinition: Y_t_equals_indicator_incomingCosineH_t_strictly_greater_than_0.9
+  exactContemporaneousHDeterminesTarget: true
+  informationBranch:
+    implementationId: PHIRL_REGULARIZED_SOURCE
+    sourceCommit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+    metric: emergence
+    identity: synergy_plus_downward_causation
+    preprocessing: additive_0.5_closure_full_CLR_drop_original_component_100
+    activeVariableRule: per_fit_standard_deviation_strictly_greater_than_1e-8
+    partition: source_confirmed_Fiedler_on_regularized_lagged_MI
+    gaussianRegularization: 1e-6_times_covariance_trace_over_dimension
+    localOffset: 1
+
+paperAndSchemaResolution:
+  paperSpecified:
+    - first_25_percent_input
+    - remaining_75_percent_replication_state_target
+    - MLP
+    - 80_percent_runs_training_and_20_percent_testing
+    - exactly_10_different_seed_repetitions
+    - binary_accuracy
+    - PhiRL_composition_change_raw_counts_flux_and_majority_dummy_comparisons
+  paperOmitted:
+    - tensor_orientation
+    - padding_and_masking
+    - validation_split
+    - scaling_scope
+    - architecture_and_parameter_count
+    - optimizer_regularization_and_early_stopping
+    - flux_formula
+    - target_weighting
+    - seed_hierarchy
+  selectedConvention: >-
+    One original-order right-padded masked multi-output MLP layout, chosen from
+    paper wording, the frozen C1 trajectory schema, and pinned PhiRL time-by-
+    feature source conventions before prediction outcomes.
+  noAlternativeLayoutAfterOutcomeAccess: true
+
+temporalModes:
+  - modeId: RETROSPECTIVE_COMPLETED_FIT_PREDICTION_RESEMBLANCE
+    phirlInput: first_quarter_local_emergence_from_frozen_completed_trajectory_fit
+    futureSuffixUsedByPhiRLFit: true
+    prospectiveEligible: false
+  - modeId: CUTOFF_CAUSAL_FIRST_QUARTER_ONLY
+    phirlInput: local_emergence_from_one_source_fit_on_observations_0_through_c_minus_1
+    futureSuffixUsedByPhiRLFit: false
+    prospectiveEligible: true
+    fitScope:
+      - pointwise_additive_0.5_closure_and_CLR_on_prefix_states
+      - active_variable_selection_on_prefix_only
+      - PhiRL_standardization_on_prefix_only
+      - lagged_MI_on_prefix_only
+      - Fiedler_partition_on_prefix_only
+      - Gaussian_parameters_on_prefix_only
+      - local_emergence_on_prefix_only
+
+tensorLayout:
+  observationOrder: original_C1_selected_molecular_step_order
+  runLengthT: count_of_frozen_MOL_ADJACENT_INCOMING_H900_rows_per_candidate_and_matrix
+  cutoff: floor_0.25_times_T
+  inputIndices: zero_through_c_minus_1
+  targetIndices: c_through_T_minus_1
+  maximumObservedT: 1468
+  maximumInputLength: 367
+  maximumTargetLength: 1101
+  featureChannelCapacity: 100
+  valueDtype: float64
+  maskDtype: bool
+  paddingSide: right
+  paddingValueBeforeAndAfterScaling: 0.0
+  resamplingOrInterpolation: none
+  truncation: none
+  inputValueShape: [matrix_batch, 367, 100]
+  inputChannelMaskShape: [matrix_batch, 367, 100]
+  inputTimeMaskShape: [matrix_batch, 367]
+  targetValueShape: [matrix_batch, 1101]
+  targetMaskShape: [matrix_batch, 1101]
+  targetLossAndMetrics: valid_target_mask_only
+  missingFeaturePolicy: zero_value_with_false_channel_mask_and_no_row_exclusion
+  scalarFeaturePlacement: original_channel_0_only_with_other_99_channel_masks_false
+  vectorFeaturePlacement: original_molecule_channels_0_through_99
+  featureMasksAreModelInputs: true
+  targetMaskIsNeverModelInput: true
+
+featureFamilies:
+  - featureId: PHIRL_EMERGENCE
+    learnedModel: true
+    channels: 1
+    definitionByMode:
+      RETROSPECTIVE_COMPLETED_FIT_PREDICTION_RESEMBLANCE: frozen_completed_fit_source_emergence_at_selected_state
+      CUTOFF_CAUSAL_FIRST_QUARTER_ONLY: prefix_only_refit_source_emergence_at_selected_state
+    initialIndexPolicy: unavailable_mask_false_due_to_PhiRL_local_offset_1
+  - featureId: COMPOSITION_CHANGE_L2
+    learnedModel: true
+    channels: 1
+    definitionByMode: identical_cutoff_available_control_in_both_modes
+    definition: Euclidean_L2_distance_between_consecutive_raw_relative_compositions
+    initialIndexPolicy: unavailable_mask_false
+    frozenControlIdentity: euclideanL2ClosedCompositionChange
+  - featureId: RAW_COUNTS
+    learnedModel: true
+    channels: 100
+    definitionByMode: identical_cutoff_available_control_in_both_modes
+    definition: exact_nonnegative_integer_count_state_on_C1_selected_clock
+    initialIndexPolicy: available
+  - featureId: NET_COUNT_FLUX
+    learnedModel: true
+    channels: 100
+    definitionByMode: identical_cutoff_available_control_in_both_modes
+    definition: state_t_minus_state_t_minus_1_including_selected_post_fission_transitions
+    initialIndexPolicy: unavailable_mask_false
+  - featureId: EXACT_H_HISTORY
+    learnedModel: true
+    channels: 1
+    definitionByMode: identical_cutoff_available_control_in_both_modes
+    definition: frozen_incomingCosineH_with_S13Y_duplicate_first_adjacent_value_at_index_0
+    initialIndexPolicy: available_under_frozen_S13Y_convention
+  - featureId: MAJORITY_DUMMY
+    learnedModel: false
+    channels: 0
+    definition: constant_probability_equal_to_fit_subset_target_prevalence_and_class_at_threshold_0.5
+    testOrValidationTargetAccess: forbidden
+
+scaling:
+  scope: per_candidate_per_split_per_mode_specific_feature_payload
+  fitMatricesOnly: true
+  validationMatricesExcluded: true
+  testMatricesExcluded: true
+  suffixObservationsExcluded: true
+  statistic: per_original_channel_population_mean_and_standard_deviation_over_valid_input_cells
+  zeroVariancePolicy: scale_equals_1.0
+  clipping: none
+  inactiveAndPaddedCellsAfterScaling: 0.0
+  nonPhiControlsSharedAcrossModes: exact_same_scaled_tensor_and_prediction_payload
+
+splitsAndSeeds:
+  splitManifestPath: configs/e01/s16_split_manifest.csv
+  repetitions: 10
+  matrixUnitCount: 100
+  trainAndValidationCount: 80
+  testCount: 20
+  fitCount: 64
+  validationCount: 16
+  testFraction: 0.20
+  validationFractionOfTrainAndValidation: 0.20
+  sampling: independently_seeded_unstratified_without_replacement
+  pairedIdentitiesAcrossCandidates: true
+  pairedIdentitiesAcrossModesAndFeatures: true
+  rootSeedHex: 9a8456c3204eea08a83a7a04d64b4097f7d922fe9c21b8deea0839127f66c2b1
+  splitGenerator: numpy_PCG64DXSM
+  seedDerivation: sha256_of_version_root_and_null_delimited_domain_tokens_first_128_bits
+  modelSeedExcludesFeatureAndMode: true
+  modelSeedIdentity: [candidateId, repetitionId, identical_across_all_learned_features_and_both_modes]
+  noOutcomeStratification: true
+
+model:
+  framework: torch_2.11_CPU_float64
+  device: cpu
+  gpuUsed: false
+  deterministicAlgorithms: true
+  inputPerStep: concatenate_100_scaled_values_and_100_boolean_channel_masks_as_float64
+  stepEncoder:
+    linear: [200, 8]
+    bias: true
+    activation: ReLU
+    sharedAcrossTime: true
+  sequenceVector: flatten_367_by_8_then_concatenate_367_input_time_mask_values
+  hiddenLayers:
+    - {linear: [3303, 64], activation: ReLU, dropout: 0.10}
+    - {linear: [64, 64], activation: ReLU, dropout: 0.10}
+  outputLayer:
+    linear: [64, 1101]
+    activationDuringTraining: logits
+    probabilityAtEvaluation: sigmoid
+  expectedTrainableParameterCount: 288789
+  identicalArchitectureAcrossAllLearnedFeatures: true
+
+training:
+  objective: masked_binary_cross_entropy_with_logits_micro_over_valid_target_positions
+  classWeights: none
+  optimizer: AdamW
+  learningRate: 0.001
+  weightDecay: 0.0001
+  batch: all_64_fit_matrices_per_epoch
+  maximumEpochs: 120
+  earlyStopping:
+    monitor: masked_validation_binary_cross_entropy
+    patience: 15
+    minimumAbsoluteImprovement: 1.0e-5
+    restoreBestEpoch: true
+    exactTieRule: retain_earliest_epoch
+  decisionThreshold: 0.5
+  modelSelectionUsesTest: false
+  noArchitectureOrHyperparameterTournament: true
+
+evaluation:
+  primaryMetric: valid_target_position_micro_binary_accuracy
+  secondaryMetrics:
+    - macro_matrix_binary_accuracy
+    - AUROC
+    - AUPRC
+    - Brier_score
+    - expected_calibration_error_10_equal_width_bins
+    - balanced_accuracy
+    - sensitivity
+    - specificity
+  invalidSingleClassMetricPolicy: null_with_explicit_reason
+  perTimePosition: exact_integer_target_offset_from_cutoff
+  preOnsetRiskSet:
+    eligibleRun: no_positive_label_in_input_quarter
+    includedTargetPositions: cutoff_through_first_future_positive_inclusive_or_all_if_no_future_positive
+    alreadyPositiveInputRuns: excluded_with_explicit_reason
+  prevalenceScopes: [fit, validation, test, test_preonset_risk_set]
+  splitSummary:
+    - mean
+    - median
+    - sample_standard_deviation
+    - two_sided_95_percent_Student_t_interval_across_10_splits
+  paperLikeInference: two_sided_Mann_Whitney_across_10_split_accuracies
+  pairedInference: two_sided_Wilcoxon_and_paired_accuracy_differences
+  matrixClusterBootstrap:
+    replicates: 4096
+    generator: numpy_PCG64DXSM
+    unit: unique_test_matrix_identity_with_all_its_out_of_sample_repetitions
+    estimand: paired_macro_matrix_accuracy_difference
+    interval: percentile_2.5_97.5
+    plusOneDirectionalP: true
+  pooling: descriptive_combination_of_candidate_specific_metrics_only_no_pooled_training
+
+replayAndLeakage:
+  cutoffSourceReplay: exact_every_candidate_matrix
+  suffixVariants:
+    - deletion
+    - deterministic_shuffle
+    - domain_separated_replacement
+  suffixVariantsExecuted: every_candidate_matrix
+  requiredEquality:
+    - prefix_state_bytes
+    - cutoff_CLR_bytes
+    - active_variables
+    - Fiedler_partition_up_to_side_exchange
+    - local_emergence_array_including_nonfinite_mask
+  modelReplay: exact_predictions_and_training_history_for_one_fixed_split_per_candidate_mode_feature
+  scalerAudit: every_fitted_scaler_records_fit_matrix_ids_and_max_source_index_below_each_cutoff
+  completedFitFlag: explicit_future_suffix_dependence_ineligible_for_prospective_gate
+
+classification:
+  retrospectiveModeGate: >-
+    In each candidate, completed-fit PhiRL has higher median split accuracy than
+    composition change, raw counts, flux, and dummy, with each paper-like two-
+    sided Mann-Whitney p below 0.01. Exact-H history is an audit comparator and
+    any lack of increment beyond it must remain explicit.
+  retrospectiveCrossCandidateClassification: RETROSPECTIVE_COMPLETED_FIT_PREDICTION_RESEMBLANCE
+  prospectiveGates:
+    gate1: cutoff_PhiRL_paired_matrix_bootstrap_accuracy_difference_lower95_above_dummy_is_positive
+    gate2: cutoff_PhiRL_lower95_accuracy_difference_above_each_composition_change_raw_counts_and_flux_is_positive
+    gate3: cutoff_PhiRL_lower95_accuracy_difference_above_exact_H_history_and_composition_stability_is_positive
+    gate4: gates_1_through_3_pass_independently_in_candidates_2_and_3
+    gate5: all_required_matrix_cluster_intervals_are_directionally_positive_and_at_least_8_of_10_split_differences_are_positive
+    gate6: cutoff_suffix_leakage_scaler_split_replay_and_calibration_checks_all_pass
+  calibrationGate: median_ECE_at_most_0.10_and_median_Brier_no_worse_than_dummy
+  prospectivePassClassification: PROSPECTIVE_PREDICTION_SUPPORTED
+  prospectiveFailClassification: NOT_SUPPORTED_WITHIN_TESTED_SCOPE
+  contemporaneousExactHBoundary: >-
+    Exact H determines Y at the same target position perfectly, but only first-
+    quarter H history is supplied to the predictor; report both facts and do
+    not call a weaker PhiRL model incrementally informative.
+  noPredictionImpliesCausalControl: true
+
+compute:
+  combinedS16S17NewScientificCpuHourCeiling: 105.0
+  finalValidationArtifactReserveCpuHours: 4.0
+  cpuFloat64Authoritative: true
+  gpuRequiresRepresentativeEquivalence: true
+  gpuPlanned: false
+  workerLimit: 8
+  modelWorkers: 1
+  numericalLibraryThreads: 1
+  stopBeforeCombinedCeilingBreach: true
+
+requiredArtifacts:
+  - preoutcome_design_lock.json
+  - tensor_layout_manifest.json
+  - split_seed_manifest.csv
+  - input_manifest.json
+  - feature_audit.parquet
+  - cutoff_source_fit_audit.parquet
+  - cutoff_suffix_invariance.parquet
+  - scaler_audit.parquet
+  - training_history.parquet
+  - prediction_rows.parquet
+  - split_metrics.csv
+  - split_metric_summary.csv
+  - per_time_position_metrics.parquet
+  - preonset_metrics.csv
+  - prevalence_audit.csv
+  - paired_feature_comparisons.csv
+  - matrix_cluster_bootstrap.parquet
+  - matrix_cluster_bootstrap_summary.csv
+  - paper_target_comparison.csv
+  - interpretation_gates.csv
+  - decision.json
+  - compute_ledger.json
+  - replay_validation.json
+  - leakage_validation.json
+  - validation.json
+  - provenance_manifest.json
+  - failure_ledger.csv
+  - figures/figure5_prediction_reconstruction.png
+  - figures/retrospective_vs_cutoff.png
+  - figures/calibration_and_prevalence.png
+  - figures/per_time_and_preonset.png
+  - status.json
+  - research_step_full_results.md
+  - artifact_manifest.json
+
+forbiddenAfterOutcomeAccess:
+  - tensor_layout_padding_mask_or_target_change
+  - feature_definition_or_family_change
+  - split_validation_or_seed_change
+  - model_architecture_capacity_optimizer_regularization_or_training_change
+  - metric_calibration_or_decision_gate_change
+  - candidate_selection_or_primary_pooling
+  - trajectory_generation
+  - simulator_label_threshold_information_scalar_partition_or_source_change
+  - author_contact
+  - S17_execution

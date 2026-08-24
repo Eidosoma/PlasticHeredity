@@ -1,0 +1,23 @@
+{
+  "all_within_tolerance": true,
+  "archived_experiment_contract_exact": true,
+  "candidate_errors": {
+    "02": {
+      "maximum_absolute_error_vs_archive_implementation": 0.0,
+      "maximum_absolute_error_vs_archived_confirmation_table": 5.551115123125783e-16,
+      "states": 1000,
+      "within_tolerance": true
+    },
+    "03": {
+      "maximum_absolute_error_vs_archive_implementation": 0.0,
+      "maximum_absolute_error_vs_archived_confirmation_table": 5.551115123125783e-16,
+      "states": 1000,
+      "within_tolerance": true
+    }
+  },
+  "source_arrays_sha256": "102abe46f510660a4b11ddfcd96e08301278bd6da585c2158c9bc69122db7fc0",
+  "source_manifest_sha256": "7358276ee14cea62ba18fc7e9d06108ef8b2019999d6f4e4bfcbe6721b37e372",
+  "source_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "source_state_table_sha256": "f83b99009a281a65f045d0634d120013c81131803c06f3ebf98b2dfe49f1cfc2",
+  "tolerance": 1e-12
+}

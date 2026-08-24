@@ -1,0 +1,56 @@
+schema: eidosoma.e01.s06_example_specification.v1
+researchStepId: S06
+scopeBoundary: >-
+  This complete small fixture exercises the modern Gillespie, waiting-time,
+  fixed-size odd-discard fission, and random-daughter branches. Its numerical
+  values are schema-validation inputs, not recovered author values, a primary
+  paper reconstruction, or a registry update.
+
+specification:
+  specification_id: E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0
+  profile_role: modern_gillespie_fixture
+  n_species: 4
+  n_min: 3
+  n_max: 7
+  n_generations: 3
+  max_steps: 128
+  beta_a: -1.0
+  beta_sigma: 0.5
+  k_f: 0.4
+  k_b: 0.03
+  rho: [0.1, 0.2, 0.3, 0.4]
+  propensity_equation_branch: modern_gillespie
+  catalytic_matrix_branch: historical_orientation_with_diagonal
+  reservoir_semantics: constant_require_sum_one
+  update_kernel: direct_gillespie
+  clock_semantics: gillespie_exponential
+  poisson_exposure: null
+  loss_nonnegativity: eventwise_zero_rate
+  growth_boundary: eventwise_exact_stop
+  max_steps_semantics: fission_current_state
+  zero_propensity_semantics: raise
+  fission_semantics: fixed_size_without_replacement_odd_discard
+  fission_probability: null
+  daughter_selection: uniform_random
+  post_fission_semantics: continue_exact_selected
+  initial_state_semantics: distinct_types_without_replacement
+
+seedRequest:
+  experimentId: E01
+  specificationId: E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0
+  trajectoryId: E01-S06-EXAMPLE-T0001
+  replicateIndex: 0
+  engineId: e01_gard_independent@1.0.0
+  rootSeedHex: 000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f
+  couplingPolicy: trajectory_isolated
+  couplingReason: null
+  streamNamespaces:
+    catalytic_matrix: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    initial_state: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    event: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    waiting_time: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    fission: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    daughter_selection: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    intervention: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    estimator: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0
+    machine_learning: urn:eidosoma:seed-namespace:E01:E01-S06-SCHEMA-EXAMPLE-MODERN-GILLESPIE-v1.0.0:E01-S06-EXAMPLE-T0001:r0

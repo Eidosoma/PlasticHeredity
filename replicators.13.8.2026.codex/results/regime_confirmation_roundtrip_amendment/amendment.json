@@ -1,0 +1,36 @@
+{
+  "amendment_id": "76db7c31493360a983da1eba2335f885e93c61b3a97c38ddd5f7be7bf85ae101",
+  "correction": {
+    "parameter": "float_precision",
+    "reader": "pandas.read_csv",
+    "reason": "default CSV parsing did not reproduce binary64 prediction values exactly; centered ranks of theoretically static beta-only predictions were therefore unstable",
+    "value": "round_trip"
+  },
+  "design_checksum_digest": "bfef38e28e25576281f8524915041e4e0ad65ed1980e445a5d842c42db935d26",
+  "design_registration_id": "71dd86609d52e9853afee34d304dcdfd1afaa7556e51c51e9b6ce9b73561b277",
+  "development_checksum_digest": "6076a18edd148fda8f8343b2491a7fd8b48dd147e303418a6f012e6a921d6db3",
+  "failed_run": {
+    "all_confirmation_futures_completed": true,
+    "all_confirmation_replays_completed": true,
+    "error_signature": "metrics.endpoints.primary_all8.candidates.02.models.beta_only.centered_spearman[0]",
+    "failed_before_checksums_and_atomic_seal": true,
+    "no_confirmation_bundle_sealed": true,
+    "retained_log": "failed_confirmation.log",
+    "retained_log_sha256": "4b7cc70632d9e340146fc70d1d611741ac92057ebfd3b46a9ea63c0394a00f74"
+  },
+  "format": "plastic-heredity-regime-operational-amendment-v1",
+  "model_seal_id": "23d91ed55363de348ad4fd8fccc200e35822642eacd3e830e4d05b28bde36b4a",
+  "recovery_runner": "plastic_heredity/regime_confirmation_recovery.py",
+  "recovery_runner_sha256": "731ec43ce6d4f16ab18b50ec92668b1a775fa038af9cac7bcb52c37270d8a9af",
+  "scientific_contract_changes": [],
+  "scope": "CSV prediction-float readback only",
+  "sealed_regime_source_sha256": "034c70adf4571408ad2e0215e8a7bddf4aa03c39199f2e8c080ac6e50ad60c0a",
+  "status": "sealed_after_operational_failure_before_recovery_rerun",
+  "unchanged": [
+    "registered endpoints and thresholds",
+    "development models and coefficients",
+    "matrix, trajectory, future, bootstrap, and randomization seeds",
+    "simulator and feature code",
+    "confirmation cohort and inference gates"
+  ]
+}

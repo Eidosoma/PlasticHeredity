@@ -1,0 +1,76 @@
+{
+  "claim_boundary": [
+    "protocol moderation does not select a universal Phi-r",
+    "information response is not the cause of hereditary control",
+    "no consciousness, agency, life, or metaphysical claim",
+    "previous sealed results remain unchanged"
+  ],
+  "common_random_streams": "future key excludes launch, selector, direction, and arm",
+  "completed_d24_manifest_sha256": "f5c781735d459795633df8f4c3da08c6fd6b7c15f77eb3b5c478da347060d4d7",
+  "completed_d24_registration_id": "2339c473693d06574a266a7d14d9e94e36a75d817cca0a539e173f10157128f6",
+  "directions": [
+    "STABILIZE",
+    "DESTABILIZE"
+  ],
+  "endpoint": "final 30 controlled fissions, edits after fissions 1-59 only",
+  "external_audit_hashes_provenance_only": {
+    "phir_code.py": "76bfe85a34a5d6a59be1aa64db7920c78fa4ba5e6b3c027427f8c738ab8dfef1",
+    "run_phir_bridge.py": "78ca182e4cc9e0b9ffcfb5b2ecf41a864a45f55e323b013b8d6afef275308cb8",
+    "run_phir_confirm.py": "15baaa5ed9460419f2884c60ee34b85cad4ca60228647028912d4412b60fd50f",
+    "sim.py": "289b01ea6b5c2bf62ecb3a1151505c8d92a7cf8dc9afc9ef00e64e6239a822d4"
+  },
+  "external_code_data_models_or_seeds_imported": false,
+  "format": "codex-ch5-phir-protocol-adjudication-program-v1",
+  "inference": {
+    "bootstrap_draws": 4096,
+    "candidate_pooling": false,
+    "holm_across_four_cells": true,
+    "replicate_pooling": false,
+    "sign_randomizations": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "launches": [
+    "FRESH",
+    "MATURE"
+  ],
+  "minimum_free_disk_bytes": 1500000000,
+  "no_48_matrix_continuation": true,
+  "pabr_arms": [
+    "NOOP",
+    "STABILIZE_50",
+    "DESTABILIZE_50",
+    "STABILIZE_100",
+    "DESTABILIZE_100"
+  ],
+  "panel12": {
+    "sampling": "with replacement; remove uniformly over present types; add uniformly over all other types",
+    "size": 12,
+    "ties": "predicted probability then remove type then add type"
+  },
+  "program": "post-clean-room Chapter 5 protocol-adjudication bridge",
+  "protocol_id": "a204cf1c2de83eb19e9c1c91e930f19c1e1bc8aa1e08d27c986cb904e601ad10",
+  "raw_molecular_trajectories_persisted": false,
+  "replay": "complete deterministic replay of PAB-R and PAB24",
+  "representations": [
+    "endpoint_explicit",
+    "fable_style",
+    "phase_normalized",
+    "generational"
+  ],
+  "selectors": [
+    "PANEL12",
+    "EXHAUSTIVE"
+  ],
+  "spec": {
+    "bootstrap_repetitions": 4096,
+    "control_horizon": 60,
+    "final_start": 31,
+    "label": "pab24",
+    "matrices": 24,
+    "natural_generations": 60,
+    "panel_size": 12,
+    "phase_points": 16,
+    "randomization_repetitions": 4096,
+    "replicates": 2
+  }
+}

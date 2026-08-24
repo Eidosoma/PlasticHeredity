@@ -1,0 +1,9 @@
+{
+  "all_table_row_counts_exact": true,
+  "batch_digest_count_exact": true,
+  "complete_readback_exact": true,
+  "matrix_input_shapes_exact": true,
+  "noop_plain_exact": true,
+  "primary_metrics_text_exact": true,
+  "replay_exact": true
+}

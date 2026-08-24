@@ -1,0 +1,14 @@
+{
+  "cell_definition": "founder pair x codec x environment",
+  "completed_cells": 768,
+  "confirmation_pair_count": 128,
+  "elapsed_seconds": 15129.74620294571,
+  "eta_seconds": null,
+  "fraction_complete": 1.0,
+  "remaining_cells": 0,
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "state": "complete",
+  "target_replication_passed": true,
+  "total_cells": 768,
+  "verdict": "ROBUST_COMPACT_RENEWED_CA_PLASTIC_HEREDITY"
+}

@@ -1,0 +1,14 @@
+{
+  "batches": 16,
+  "benchmark_id": "e771ee1be9e21bd8c36fa9ef28b6e0be7bdc27d82cee0c3a34ded1c5ea5b19c9",
+  "benchmark_seed_domain": "benchmark",
+  "classification": "production_seed_safe_benchmark",
+  "effective_generations_per_wall_second": 1334.2029677544062,
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "futures": 256,
+  "observed_generations": 8192,
+  "production_seed_consumed": false,
+  "wall_seconds": 6.139995336532593,
+  "within_five_minutes": true,
+  "workers": 16
+}

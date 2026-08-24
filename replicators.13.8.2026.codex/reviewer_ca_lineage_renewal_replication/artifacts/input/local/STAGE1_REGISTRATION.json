@@ -1,0 +1,1832 @@
+{
+  "added_experiments": [],
+  "all_configurations": [
+    {
+      "configuration_id": "contextual256-w16-s025-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s025-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s025-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s025-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 32
+    }
+  ],
+  "automatic_stage2_launch": false,
+  "cohorts": {
+    "calibration": [
+      {
+        "a_donor_id": "life-31649-1-407",
+        "b_donor_id": "life-31649-1-3259",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "fresh-1-9647d3973a1591ac"
+      },
+      {
+        "a_donor_id": "life-31649-2-937",
+        "b_donor_id": "life-31649-2-176",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-9f89eeedc28c87c5"
+      },
+      {
+        "a_donor_id": "life-31649-1-2709",
+        "b_donor_id": "life-31649-1-389",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-bc98ce12638250ca"
+      },
+      {
+        "a_donor_id": "life-31649-1-3323",
+        "b_donor_id": "life-31649-1-2325",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-e8fd2700e0af6f29"
+      },
+      {
+        "a_donor_id": "life-31649-3-26",
+        "b_donor_id": "life-31649-3-672",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-5140bb3c1c38765f"
+      },
+      {
+        "a_donor_id": "life-31649-3-388",
+        "b_donor_id": "life-31649-3-427",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-cf16c199f08ecde9"
+      },
+      {
+        "a_donor_id": "life-31649-1-2771",
+        "b_donor_id": "life-31649-1-2233",
+        "density_difference": 0.01171875,
+        "launch_index": 1,
+        "pair_id": "fresh-1-91c215a2ecdd5648"
+      },
+      {
+        "a_donor_id": "life-31649-3-584",
+        "b_donor_id": "life-31649-3-383",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-aab8c5c879538678"
+      },
+      {
+        "a_donor_id": "life-31649-1-1177",
+        "b_donor_id": "life-31649-1-1951",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-930bbe436f1d346c"
+      },
+      {
+        "a_donor_id": "life-31649-3-108",
+        "b_donor_id": "life-31649-3-713",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-d17826dac20616f0"
+      },
+      {
+        "a_donor_id": "life-31649-1-1172",
+        "b_donor_id": "life-31649-1-1754",
+        "density_difference": 0.01171875,
+        "launch_index": 1,
+        "pair_id": "fresh-1-11dfeba52d6aa653"
+      },
+      {
+        "a_donor_id": "life-31649-2-941",
+        "b_donor_id": "life-31649-2-8",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-18dad98a36d2d428"
+      },
+      {
+        "a_donor_id": "life-31649-0-623",
+        "b_donor_id": "life-31649-0-1013",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-112813481eb054ee"
+      },
+      {
+        "a_donor_id": "life-31649-1-2174",
+        "b_donor_id": "life-31649-1-882",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "fresh-1-26468a6e6c5a2847"
+      },
+      {
+        "a_donor_id": "life-31649-1-462",
+        "b_donor_id": "life-31649-1-1794",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-fea474bda0849752"
+      },
+      {
+        "a_donor_id": "life-31649-3-19",
+        "b_donor_id": "life-31649-3-610",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-76df73b7cbce9bd3"
+      },
+      {
+        "a_donor_id": "life-31649-0-643",
+        "b_donor_id": "life-31649-0-576",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-017a98961e8cc7fa"
+      },
+      {
+        "a_donor_id": "life-31649-2-1178",
+        "b_donor_id": "life-31649-2-1073",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-8926210deba833c0"
+      },
+      {
+        "a_donor_id": "life-31649-0-442",
+        "b_donor_id": "life-31649-0-1070",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0f8d6b5acdb7246b"
+      },
+      {
+        "a_donor_id": "life-31649-2-169",
+        "b_donor_id": "life-31649-2-673",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-e5fd796dab5afa0c"
+      },
+      {
+        "a_donor_id": "life-31649-3-953",
+        "b_donor_id": "life-31649-3-279",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-4558f3108adae6e9"
+      },
+      {
+        "a_donor_id": "life-31649-3-730",
+        "b_donor_id": "life-31649-3-588",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-8f5cd96912c1db5e"
+      },
+      {
+        "a_donor_id": "life-31649-2-1577",
+        "b_donor_id": "life-31649-2-1060",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-f7b089fb1b454c39"
+      },
+      {
+        "a_donor_id": "life-31649-0-308",
+        "b_donor_id": "life-31649-0-269",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-3606049bae2fd833"
+      },
+      {
+        "a_donor_id": "life-31649-1-727",
+        "b_donor_id": "life-31649-1-2905",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-274f5d808d312ea0"
+      },
+      {
+        "a_donor_id": "life-31649-1-1520",
+        "b_donor_id": "life-31649-1-3453",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-8a4bc825d9f7c3bf"
+      },
+      {
+        "a_donor_id": "life-31649-3-180",
+        "b_donor_id": "life-31649-3-364",
+        "density_difference": 0.015625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-1c325ef4999e7ab8"
+      },
+      {
+        "a_donor_id": "life-31649-1-367",
+        "b_donor_id": "life-31649-1-1208",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-1df2ec5cc81f9e5a"
+      },
+      {
+        "a_donor_id": "life-31649-0-22",
+        "b_donor_id": "life-31649-0-738",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-08f2ea904f93a91c"
+      },
+      {
+        "a_donor_id": "life-31649-2-1207",
+        "b_donor_id": "life-31649-2-1483",
+        "density_difference": 0.00390625,
+        "launch_index": 2,
+        "pair_id": "fresh-2-2506afc128a47a9a"
+      },
+      {
+        "a_donor_id": "life-31649-2-1186",
+        "b_donor_id": "life-31649-2-251",
+        "density_difference": 0.0078125,
+        "launch_index": 2,
+        "pair_id": "fresh-2-596206101b14936f"
+      },
+      {
+        "a_donor_id": "life-31649-2-122",
+        "b_donor_id": "life-31649-2-536",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-28b7c002e8a13f12"
+      },
+      {
+        "a_donor_id": "life-31649-2-1187",
+        "b_donor_id": "life-31649-2-104",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-0e411180dbb095c8"
+      },
+      {
+        "a_donor_id": "life-31649-3-631",
+        "b_donor_id": "life-31649-3-585",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-b8d37a64bffa29d1"
+      },
+      {
+        "a_donor_id": "life-31649-2-923",
+        "b_donor_id": "life-31649-2-1082",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-8e0af654e366b587"
+      },
+      {
+        "a_donor_id": "life-31649-0-1105",
+        "b_donor_id": "life-31649-0-621",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-02bd26b6c2eb6cb3"
+      },
+      {
+        "a_donor_id": "life-31649-2-1636",
+        "b_donor_id": "life-31649-2-1185",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-b568ead25f630ea4"
+      },
+      {
+        "a_donor_id": "life-31649-3-529",
+        "b_donor_id": "life-31649-3-689",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-c605df492430a4d0"
+      },
+      {
+        "a_donor_id": "life-31649-1-1100",
+        "b_donor_id": "life-31649-1-2907",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-6bfa430f024ee34f"
+      },
+      {
+        "a_donor_id": "life-31649-1-2523",
+        "b_donor_id": "life-31649-1-1972",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-c9efb42a5c030465"
+      },
+      {
+        "a_donor_id": "life-31649-1-1488",
+        "b_donor_id": "life-31649-1-876",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "fresh-1-5cbefee42f6b59f4"
+      },
+      {
+        "a_donor_id": "life-31649-0-927",
+        "b_donor_id": "life-31649-0-937",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-05bdfb7887c0f90a"
+      },
+      {
+        "a_donor_id": "life-31649-2-823",
+        "b_donor_id": "life-31649-2-1615",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-1f22b9f582a037f0"
+      },
+      {
+        "a_donor_id": "life-31649-0-181",
+        "b_donor_id": "life-31649-0-1090",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-2db36fe964542aa2"
+      },
+      {
+        "a_donor_id": "life-31649-0-44",
+        "b_donor_id": "life-31649-0-183",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-1a4d7fca1419f54f"
+      },
+      {
+        "a_donor_id": "life-31649-2-580",
+        "b_donor_id": "life-31649-2-1566",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-c0c592b9b3bdee09"
+      },
+      {
+        "a_donor_id": "life-31649-0-51",
+        "b_donor_id": "life-31649-0-248",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0de08d1ef2ab8826"
+      },
+      {
+        "a_donor_id": "life-31649-3-739",
+        "b_donor_id": "life-31649-3-649",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-2bc0a7af92eedc43"
+      },
+      {
+        "a_donor_id": "life-31649-1-146",
+        "b_donor_id": "life-31649-1-2229",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-37e5377f71aedd3c"
+      },
+      {
+        "a_donor_id": "life-31649-1-1234",
+        "b_donor_id": "life-31649-1-1165",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-c0217f25e7172530"
+      },
+      {
+        "a_donor_id": "life-31649-2-931",
+        "b_donor_id": "life-31649-2-1347",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-0234151acdecce8c"
+      },
+      {
+        "a_donor_id": "life-31649-3-685",
+        "b_donor_id": "life-31649-3-62",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-9eb5d70fabf6304c"
+      },
+      {
+        "a_donor_id": "life-31649-2-487",
+        "b_donor_id": "life-31649-2-63",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-c1aad55b604f151d"
+      },
+      {
+        "a_donor_id": "life-31649-3-280",
+        "b_donor_id": "life-31649-3-832",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-add9bab609a0739f"
+      },
+      {
+        "a_donor_id": "life-31649-0-1117",
+        "b_donor_id": "life-31649-0-235",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-2a466fa957cc5f26"
+      },
+      {
+        "a_donor_id": "life-31649-0-846",
+        "b_donor_id": "life-31649-0-1033",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-006cd09c907bbde6"
+      },
+      {
+        "a_donor_id": "life-31649-3-11",
+        "b_donor_id": "life-31649-3-887",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-ea8cdbea9cf68438"
+      },
+      {
+        "a_donor_id": "life-31649-2-717",
+        "b_donor_id": "life-31649-2-1589",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-ca6b7334e6012ef5"
+      },
+      {
+        "a_donor_id": "life-31649-0-128",
+        "b_donor_id": "life-31649-0-107",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-46b2932161104e3f"
+      },
+      {
+        "a_donor_id": "life-31649-2-948",
+        "b_donor_id": "life-31649-2-792",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-6fdabffc3892a2f7"
+      },
+      {
+        "a_donor_id": "life-31649-1-823",
+        "b_donor_id": "life-31649-1-1593",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-cd3e0e86a4999a2d"
+      },
+      {
+        "a_donor_id": "life-31649-1-3386",
+        "b_donor_id": "life-31649-1-571",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-5009d4c8ebcd56b0"
+      },
+      {
+        "a_donor_id": "life-31649-2-390",
+        "b_donor_id": "life-31649-2-383",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-8e237ec69c511b92"
+      },
+      {
+        "a_donor_id": "life-31649-2-1432",
+        "b_donor_id": "life-31649-2-337",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-67cb3e177b651655"
+      }
+    ],
+    "discovery": [
+      {
+        "a_donor_id": "life-31649-0-1158",
+        "b_donor_id": "life-31649-0-541",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0164aec6399e996a"
+      },
+      {
+        "a_donor_id": "life-31649-3-282",
+        "b_donor_id": "life-31649-3-144",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-14ebb9080a05d4f6"
+      },
+      {
+        "a_donor_id": "life-31649-3-352",
+        "b_donor_id": "life-31649-3-974",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-59bec05b8b434fda"
+      },
+      {
+        "a_donor_id": "life-31649-3-358",
+        "b_donor_id": "life-31649-3-155",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-3970dec6a5c0ecc8"
+      },
+      {
+        "a_donor_id": "life-31649-1-2781",
+        "b_donor_id": "life-31649-1-368",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "fresh-1-3177bc83476e955f"
+      },
+      {
+        "a_donor_id": "life-31649-2-1166",
+        "b_donor_id": "life-31649-2-67",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-8182a6ea6d397efa"
+      },
+      {
+        "a_donor_id": "life-31649-0-1192",
+        "b_donor_id": "life-31649-0-1018",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-1352acd86b097b9a"
+      },
+      {
+        "a_donor_id": "life-31649-2-1455",
+        "b_donor_id": "life-31649-2-300",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-1333f2b0975e91d8"
+      },
+      {
+        "a_donor_id": "life-31649-3-230",
+        "b_donor_id": "life-31649-3-47",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-009de31a47d1bfcf"
+      },
+      {
+        "a_donor_id": "life-31649-2-1437",
+        "b_donor_id": "life-31649-2-259",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-f42c80ecaabf2833"
+      },
+      {
+        "a_donor_id": "life-31649-1-1868",
+        "b_donor_id": "life-31649-1-3426",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-8fd86b8761460b7a"
+      },
+      {
+        "a_donor_id": "life-31649-0-153",
+        "b_donor_id": "life-31649-0-13",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-15816c360794a4c4"
+      },
+      {
+        "a_donor_id": "life-31649-1-3025",
+        "b_donor_id": "life-31649-1-6",
+        "density_difference": 0.01953125,
+        "launch_index": 1,
+        "pair_id": "fresh-1-8d7fee13c0b56785"
+      },
+      {
+        "a_donor_id": "life-31649-3-442",
+        "b_donor_id": "life-31649-3-654",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-60977480debebde8"
+      },
+      {
+        "a_donor_id": "life-31649-1-891",
+        "b_donor_id": "life-31649-1-1202",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "fresh-1-8b335dc809c0a69b"
+      },
+      {
+        "a_donor_id": "life-31649-1-1585",
+        "b_donor_id": "life-31649-1-126",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-84b3740ca98f8a72"
+      },
+      {
+        "a_donor_id": "life-31649-2-901",
+        "b_donor_id": "life-31649-2-1246",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-0aa0956c12a7a891"
+      },
+      {
+        "a_donor_id": "life-31649-1-3441",
+        "b_donor_id": "life-31649-1-489",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-ae66fe8f60871b12"
+      },
+      {
+        "a_donor_id": "life-31649-1-3144",
+        "b_donor_id": "life-31649-1-387",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-9967fcf919defdcd"
+      },
+      {
+        "a_donor_id": "life-31649-3-281",
+        "b_donor_id": "life-31649-3-285",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-867df649ae97860a"
+      },
+      {
+        "a_donor_id": "life-31649-3-876",
+        "b_donor_id": "life-31649-3-605",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-b12a1d1ff48f6502"
+      },
+      {
+        "a_donor_id": "life-31649-2-171",
+        "b_donor_id": "life-31649-2-1660",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-bfa66acf7b2652e7"
+      },
+      {
+        "a_donor_id": "life-31649-3-972",
+        "b_donor_id": "life-31649-3-342",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-759b930359ec5679"
+      },
+      {
+        "a_donor_id": "life-31649-0-988",
+        "b_donor_id": "life-31649-0-866",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-189eb9ff182ebfb3"
+      },
+      {
+        "a_donor_id": "life-31649-2-158",
+        "b_donor_id": "life-31649-2-204",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-43bf47152130450b"
+      },
+      {
+        "a_donor_id": "life-31649-0-570",
+        "b_donor_id": "life-31649-0-1073",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0d90b69d690d8e8f"
+      },
+      {
+        "a_donor_id": "life-31649-1-261",
+        "b_donor_id": "life-31649-1-1536",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-e368142d994f7ccd"
+      },
+      {
+        "a_donor_id": "life-31649-0-382",
+        "b_donor_id": "life-31649-0-830",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-615b4481f7b0b426"
+      },
+      {
+        "a_donor_id": "life-31649-3-10",
+        "b_donor_id": "life-31649-3-156",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-f2a522888b211a6f"
+      },
+      {
+        "a_donor_id": "life-31649-0-148",
+        "b_donor_id": "life-31649-0-239",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0198b0df9615ae6f"
+      },
+      {
+        "a_donor_id": "life-31649-3-202",
+        "b_donor_id": "life-31649-3-410",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-1d0a2504d24868fa"
+      },
+      {
+        "a_donor_id": "life-31649-2-1350",
+        "b_donor_id": "life-31649-2-207",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-97a31b158ceb3501"
+      },
+      {
+        "a_donor_id": "life-31649-3-629",
+        "b_donor_id": "life-31649-3-561",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-a6c662564ddc86dc"
+      },
+      {
+        "a_donor_id": "life-31649-0-1099",
+        "b_donor_id": "life-31649-0-796",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-043883123533e553"
+      },
+      {
+        "a_donor_id": "life-31649-3-312",
+        "b_donor_id": "life-31649-3-33",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-8e66f00bebe4436b"
+      },
+      {
+        "a_donor_id": "life-31649-3-761",
+        "b_donor_id": "life-31649-3-185",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-f90602859a22c16e"
+      },
+      {
+        "a_donor_id": "life-31649-0-904",
+        "b_donor_id": "life-31649-0-302",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-228351ba107eda46"
+      },
+      {
+        "a_donor_id": "life-31649-3-536",
+        "b_donor_id": "life-31649-3-920",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-283dc333c8c46956"
+      },
+      {
+        "a_donor_id": "life-31649-2-1298",
+        "b_donor_id": "life-31649-2-440",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-606de1cbca86a076"
+      },
+      {
+        "a_donor_id": "life-31649-1-3021",
+        "b_donor_id": "life-31649-1-2137",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-464c7a09c117b64e"
+      },
+      {
+        "a_donor_id": "life-31649-0-1086",
+        "b_donor_id": "life-31649-0-611",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-1cbc854e00360d1b"
+      },
+      {
+        "a_donor_id": "life-31649-1-2234",
+        "b_donor_id": "life-31649-1-1006",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-53475ad15619b421"
+      },
+      {
+        "a_donor_id": "life-31649-1-1799",
+        "b_donor_id": "life-31649-1-941",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-ab844f6227787fef"
+      },
+      {
+        "a_donor_id": "life-31649-2-498",
+        "b_donor_id": "life-31649-2-1343",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-6447472e126fbc1e"
+      },
+      {
+        "a_donor_id": "life-31649-1-53",
+        "b_donor_id": "life-31649-1-72",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-76add00cb2b88fa6"
+      },
+      {
+        "a_donor_id": "life-31649-2-217",
+        "b_donor_id": "life-31649-2-798",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-84c147dc153ad490"
+      },
+      {
+        "a_donor_id": "life-31649-1-2808",
+        "b_donor_id": "life-31649-1-2351",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-705046967074459c"
+      },
+      {
+        "a_donor_id": "life-31649-2-108",
+        "b_donor_id": "life-31649-2-1193",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-6238eb6dd4d60674"
+      }
+    ],
+    "validation": [
+      {
+        "a_donor_id": "life-31649-3-771",
+        "b_donor_id": "life-31649-3-684",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-a3f6bcae97e31d8b"
+      },
+      {
+        "a_donor_id": "life-31649-2-62",
+        "b_donor_id": "life-31649-2-388",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-61abbf4a9425f23c"
+      },
+      {
+        "a_donor_id": "life-31649-0-2",
+        "b_donor_id": "life-31649-0-483",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0cb471ee1b5df4fb"
+      },
+      {
+        "a_donor_id": "life-31649-1-1155",
+        "b_donor_id": "life-31649-1-2638",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-130e7a007b7df52a"
+      },
+      {
+        "a_donor_id": "life-31649-1-2708",
+        "b_donor_id": "life-31649-1-1194",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-97c3a57297552bf8"
+      },
+      {
+        "a_donor_id": "life-31649-2-898",
+        "b_donor_id": "life-31649-2-1448",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-096a4369e62fb8fe"
+      },
+      {
+        "a_donor_id": "life-31649-2-1044",
+        "b_donor_id": "life-31649-2-993",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-20e6a80a81dd5b22"
+      },
+      {
+        "a_donor_id": "life-31649-1-2425",
+        "b_donor_id": "life-31649-1-231",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-34908d2746e04ed0"
+      },
+      {
+        "a_donor_id": "life-31649-3-917",
+        "b_donor_id": "life-31649-3-332",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-4739e4d24a6485d6"
+      },
+      {
+        "a_donor_id": "life-31649-2-94",
+        "b_donor_id": "life-31649-2-1086",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-af08dce569a98a0f"
+      },
+      {
+        "a_donor_id": "life-31649-2-199",
+        "b_donor_id": "life-31649-2-1243",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-e0c651fdce465bc7"
+      },
+      {
+        "a_donor_id": "life-31649-2-1016",
+        "b_donor_id": "life-31649-2-1457",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-43b91d131b947179"
+      },
+      {
+        "a_donor_id": "life-31649-1-1961",
+        "b_donor_id": "life-31649-1-2518",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "fresh-1-723d3e5fa93266f1"
+      },
+      {
+        "a_donor_id": "life-31649-0-142",
+        "b_donor_id": "life-31649-0-56",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0e93edcf9690b2af"
+      },
+      {
+        "a_donor_id": "life-31649-3-168",
+        "b_donor_id": "life-31649-3-707",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-5139593240c09dcb"
+      },
+      {
+        "a_donor_id": "life-31649-1-1915",
+        "b_donor_id": "life-31649-1-1307",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-e9e61d5d00200223"
+      },
+      {
+        "a_donor_id": "life-31649-2-1402",
+        "b_donor_id": "life-31649-2-1155",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-90c717d80ed03c2c"
+      },
+      {
+        "a_donor_id": "life-31649-1-247",
+        "b_donor_id": "life-31649-1-3208",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-1efd6068c971dd18"
+      },
+      {
+        "a_donor_id": "life-31649-0-357",
+        "b_donor_id": "life-31649-0-1203",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-04e36734f98a45a4"
+      },
+      {
+        "a_donor_id": "life-31649-0-86",
+        "b_donor_id": "life-31649-0-930",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-101e22ade63aa9a1"
+      },
+      {
+        "a_donor_id": "life-31649-3-969",
+        "b_donor_id": "life-31649-3-340",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-77ae7d45e498d408"
+      },
+      {
+        "a_donor_id": "life-31649-1-1544",
+        "b_donor_id": "life-31649-1-3375",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-d94e1cdf0dbe4c65"
+      },
+      {
+        "a_donor_id": "life-31649-1-2436",
+        "b_donor_id": "life-31649-1-2896",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-80a353fb7881afce"
+      },
+      {
+        "a_donor_id": "life-31649-1-1591",
+        "b_donor_id": "life-31649-1-1808",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-ea76c88911e3045b"
+      },
+      {
+        "a_donor_id": "life-31649-1-3366",
+        "b_donor_id": "life-31649-1-395",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-4fc799c63fb86442"
+      },
+      {
+        "a_donor_id": "life-31649-1-2291",
+        "b_donor_id": "life-31649-1-1673",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-fc5703c97550349d"
+      },
+      {
+        "a_donor_id": "life-31649-2-1161",
+        "b_donor_id": "life-31649-2-327",
+        "density_difference": 0.0078125,
+        "launch_index": 2,
+        "pair_id": "fresh-2-b1ade0029e2da570"
+      },
+      {
+        "a_donor_id": "life-31649-1-2262",
+        "b_donor_id": "life-31649-1-1074",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-772f1d6bfbe64f82"
+      },
+      {
+        "a_donor_id": "life-31649-2-909",
+        "b_donor_id": "life-31649-2-809",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-0fa7f37f030e9cb3"
+      },
+      {
+        "a_donor_id": "life-31649-1-1149",
+        "b_donor_id": "life-31649-1-1828",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-3e343735a7213e19"
+      },
+      {
+        "a_donor_id": "life-31649-2-348",
+        "b_donor_id": "life-31649-2-177",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-a9788ffc780401c8"
+      },
+      {
+        "a_donor_id": "life-31649-3-908",
+        "b_donor_id": "life-31649-3-293",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-bef2221858def1ff"
+      },
+      {
+        "a_donor_id": "life-31649-0-1185",
+        "b_donor_id": "life-31649-0-542",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-2a1d1952b10e8987"
+      },
+      {
+        "a_donor_id": "life-31649-2-1586",
+        "b_donor_id": "life-31649-2-1263",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-b876cae4707525dd"
+      },
+      {
+        "a_donor_id": "life-31649-3-532",
+        "b_donor_id": "life-31649-3-339",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-5ea78a34d8963fb5"
+      },
+      {
+        "a_donor_id": "life-31649-1-2032",
+        "b_donor_id": "life-31649-1-2052",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-d493fd61d0641946"
+      },
+      {
+        "a_donor_id": "life-31649-2-1454",
+        "b_donor_id": "life-31649-2-1626",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-c9d4e13a4389e259"
+      },
+      {
+        "a_donor_id": "life-31649-2-740",
+        "b_donor_id": "life-31649-2-710",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-b8eeff584912d6e9"
+      },
+      {
+        "a_donor_id": "life-31649-3-609",
+        "b_donor_id": "life-31649-3-756",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-db27b2d4daa590ad"
+      },
+      {
+        "a_donor_id": "life-31649-0-506",
+        "b_donor_id": "life-31649-0-714",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-2e441b815e3f1254"
+      },
+      {
+        "a_donor_id": "life-31649-2-843",
+        "b_donor_id": "life-31649-2-1652",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-f395e7a1ac7ae9f2"
+      },
+      {
+        "a_donor_id": "life-31649-2-480",
+        "b_donor_id": "life-31649-2-1585",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-fc5686372eedb7bc"
+      },
+      {
+        "a_donor_id": "life-31649-0-35",
+        "b_donor_id": "life-31649-0-595",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-24f75480d4a116c4"
+      },
+      {
+        "a_donor_id": "life-31649-2-1418",
+        "b_donor_id": "life-31649-2-1658",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-a6fc340b1c5cd21e"
+      },
+      {
+        "a_donor_id": "life-31649-0-58",
+        "b_donor_id": "life-31649-0-290",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-04ba73de9bbff7d9"
+      },
+      {
+        "a_donor_id": "life-31649-2-1642",
+        "b_donor_id": "life-31649-2-1670",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-77192b3bcace082a"
+      },
+      {
+        "a_donor_id": "life-31649-3-420",
+        "b_donor_id": "life-31649-3-421",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-14613c891fb565e3"
+      },
+      {
+        "a_donor_id": "life-31649-2-1028",
+        "b_donor_id": "life-31649-2-1335",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-dbe82d9a83ed9643"
+      },
+      {
+        "a_donor_id": "life-31649-2-1458",
+        "b_donor_id": "life-31649-2-1081",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-045ce54108805f9c"
+      },
+      {
+        "a_donor_id": "life-31649-2-1092",
+        "b_donor_id": "life-31649-2-903",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-c586be8d7540480f"
+      },
+      {
+        "a_donor_id": "life-31649-1-172",
+        "b_donor_id": "life-31649-1-3110",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-6c32736433714ad2"
+      },
+      {
+        "a_donor_id": "life-31649-1-347",
+        "b_donor_id": "life-31649-1-2504",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-77a8a13cdfea230c"
+      },
+      {
+        "a_donor_id": "life-31649-0-54",
+        "b_donor_id": "life-31649-0-758",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-1d5faed362f39ec4"
+      },
+      {
+        "a_donor_id": "life-31649-2-1362",
+        "b_donor_id": "life-31649-2-620",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-d6eb426abcbcb525"
+      },
+      {
+        "a_donor_id": "life-31649-0-1057",
+        "b_donor_id": "life-31649-0-642",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-051a14186d625591"
+      },
+      {
+        "a_donor_id": "life-31649-3-909",
+        "b_donor_id": "life-31649-3-744",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-8aa550d384424494"
+      },
+      {
+        "a_donor_id": "life-31649-3-259",
+        "b_donor_id": "life-31649-3-837",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-20379029136e095d"
+      },
+      {
+        "a_donor_id": "life-31649-2-270",
+        "b_donor_id": "life-31649-2-1209",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-3001755e3cb9ed06"
+      },
+      {
+        "a_donor_id": "life-31649-0-369",
+        "b_donor_id": "life-31649-0-492",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-06b8e0f81e549475"
+      },
+      {
+        "a_donor_id": "life-31649-3-316",
+        "b_donor_id": "life-31649-3-289",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-a4483e6af67471f0"
+      },
+      {
+        "a_donor_id": "life-31649-1-1564",
+        "b_donor_id": "life-31649-1-955",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-85322426f4a4d893"
+      },
+      {
+        "a_donor_id": "life-31649-1-67",
+        "b_donor_id": "life-31649-1-2573",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-333f593cf4fa50d6"
+      },
+      {
+        "a_donor_id": "life-31649-2-1318",
+        "b_donor_id": "life-31649-2-701",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-2041b1d65a451672"
+      },
+      {
+        "a_donor_id": "life-31649-3-835",
+        "b_donor_id": "life-31649-3-369",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-cdc755405ff0d51b"
+      }
+    ]
+  },
+  "conditions": [
+    "intact",
+    "zero",
+    "read_disabled",
+    "shuffle",
+    "opposite_history",
+    "unrelated_same_form",
+    "process_noise",
+    "carrier_sign_corruption",
+    "spatial_latch_benchmark",
+    "incomplete_visible64_reset"
+  ],
+  "confirmatory_primary": {
+    "configuration_id": "motif_energy512-w32-s025-d32",
+    "family": "motif_energy512",
+    "read_duration": 32,
+    "strength": 0.25,
+    "write_window": 32
+  },
+  "contract": {
+    "assignment_margin": 0.05,
+    "assignment_similarity": 0.9,
+    "carrier_corruption": 0.01,
+    "checkpoints": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "claim_boundary": "one-generation controllability; not plastic heredity",
+    "control_advantage_gate": 0.1,
+    "crossover_gate": 0.15,
+    "energy_clip": 4.0,
+    "familywise_alpha": 0.0125,
+    "height": 16,
+    "horizon": 64,
+    "jeffreys_alpha": 0.5,
+    "missing_policy": "dead and unresolved futures remain in denominators",
+    "non_gating_diagnostics": [
+      "terminal live 2x2 texture",
+      "occupancy",
+      "8-connected toroidal component geometry",
+      "nearest-lag autocorrelation",
+      "low-frequency spatial power"
+    ],
+    "notation": "B13456/S0578",
+    "observation_window": 8,
+    "primary_observer": "trailing-eight-sweep accumulated live 2x2 texture",
+    "process_noise": 0.002,
+    "robust_crossover_gate": 0.1,
+    "rule": 31649,
+    "survival_gate": 0.9,
+    "width": 16
+  },
+  "design_digest": "96a30447de50910400aa4a6f1d1c1b4f323de4ff62a55653369815cb739a4d90",
+  "fresh_pair_pool_count": 506,
+  "historical_pair_exclusion_count": 373,
+  "implementation_manifest": {
+    "__init__.py": "b43a69a19363c63333ed3369b77175a845995285f4d16ee328e5c3980d685c4d",
+    "campaign.py": "09204892baf0568046d697a99e51732faa68e995ec3978236a27e534b4dfb6c3",
+    "cohorts.py": "03bb36eaddee4ebac020ac23901a8887d28e0a955dde39e0d7c3e0ddcce94514",
+    "contract.py": "4113c062b42fcfcbad2beb42a7bdfe719195ec83e6b3ba97e8ee30f121b8fa16",
+    "engine.py": "aad3267325b41b65b4d7611bec89a680e513a30b0a8e1204e18d37b4cde481c6",
+    "inference.py": "39b32d391da66adfb0d3307724eab3837ecdfec73ea9571a15d6c55bd4347114",
+    "run.py": "8afe4b10e6df1b4e1ae024b6fc50dd2a1e642d17c3824ef06b53906beb2dbfae",
+    "snapshot.py": "c859903885bfed22e419e9dd1d1d621c3151a5e1c83948aa1aa9b25b9232d61c"
+  },
+  "namespace": "reviewer-motif-channel-stage1-fresh-v1",
+  "pair_pool_sha256": "3420b7b2dce8e81002c907ec4f04afe1a5e2a16dd0ec038078e06d9ab0f788c7",
+  "profile": {
+    "bootstrap_resamples": 10000,
+    "calibration_pairs": 64,
+    "discovery_pairs": 48,
+    "nominees_per_family": 2,
+    "read_durations": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "screen_replicates": 16,
+    "strengths": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "validation_pairs": 64,
+    "validation_replicates": 64,
+    "write_windows": [
+      16,
+      32
+    ]
+  },
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "selection_policy": "the retained Stage-1 winner is the sole confirmatory primary; fresh discovery cannot substitute another configuration",
+  "snapshot_digest": "b6557c9c367726e5a03b2639b95aa0d9666a398eadc846a52b1691de18e074a2",
+  "stage": 1,
+  "stage2_reserve_verified": {
+    "development_quarantine": 2,
+    "outcome": 96,
+    "writer_audit": 32
+  },
+  "state": "REGISTERED_NO_FRESH_OUTCOMES",
+  "validation_nominees": [
+    {
+      "configuration_id": "contextual256-w32-s025-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "selected_checkpoint": 8,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "selected_checkpoint": 8,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "selected_checkpoint": 64,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "selected_checkpoint": 64,
+      "strength": 0.25,
+      "write_window": 16
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+schema: eidosoma.e01.s12_strict_mrr_preregistration_amendment.v1
+researchStepId: S12
+stepNumber: 12
+experimentId: E01
+parentPreregistrationVersion: E01-S12-STRICT-MRR-v1.0.0
+amendmentId: E01-S12-STRICT-MRR-v1.0.0-AMENDMENT-02
+createdAtUtc: 2026-08-02T00:00:00Z
+status: FROZEN_CLARIFICATION_BEFORE_ANY_GARD_SCIENTIFIC_OUTCOME
+parentPreregistrationSha256: bb0f2c9863ebc866242c12b46117c0442ab8b2a0694eeebc5de7f5f8c2f8c99a
+parentAmendment01Sha256: bfa470d1d8fe51cf48ba4aba191b3c54a933fa3cb5a6c38c6524fae87060db76
+parentAmendment01RecordSha256: c8a3f3bb0bbe3483841e2c6d21da2d4c95c55d585dbf7ace8a71091ec67a4d79
+
+rationale: >-
+  The base freeze authorized completed-trajectory directional comparisons but
+  did not spell out the aggregation grid, temporal-dependence summaries, or the
+  exact mapping of those summaries to paper-claim statuses. This final
+  pre-outcome clarification closes those degrees of freedom and corrects the
+  executable action-density check to the already frozen four-of-six rule. It
+  changes no trajectory, estimator, threshold, branch identity, eligibility
+  gate, matrix count, or intervention authorization.
+
+wholeTrajectoryDirectionalComparison:
+  scopeLabelExact: DESCRIPTIVE_NONPROSPECTIVE
+  predictionUseForbidden: true
+  actionSelectionUseForbidden: true
+  leadTimeUseForbidden: true
+  prospectiveCausalUseForbidden: true
+  aggregateTrend:
+    source: completed_trajectory_local_equation_aggregate
+    trajectoryAlignment: linear_interpolation_on_normalized_transition_progress
+    normalizedProgressGridPoints: 1001
+    aggregate: arithmetic_mean_across_all_12_trajectories_at_each_grid_point
+    statistic: ordinary_least_squares_slope_and_two_sided_p_value_against_normalized_progress
+    directionalSupportRule: all_four_branch_p_values_greater_than_0.05
+    failureStatus: NOT_SUPPORTED_WITHIN_STRICT_SCOPE
+  spikeDescription:
+    threshold: branch_wide_mean_plus_3_sample_standard_deviations
+    trajectoryStatistic: any_completed_trajectory_local_value_strictly_above_threshold
+    summary: count_of_12_trajectories_with_at_least_one_crossing
+    claimUse: descriptive_only_local_spike_paper_claim_remains_UNDERDETERMINED
+  temporalDependence:
+    test: Ljung_Box_two_sided_portmanteau
+    alpha: 0.05
+    lagRule: min_20_or_floor_series_length_divided_by_5
+    rawSeries: completed_trajectory_local_equation_aggregate
+    differencedSeries: first_difference_of_completed_trajectory_local_equation_aggregate
+    rawMajorityDirectionalRule: at_least_7_of_12_reject_in_all_four_branches
+    rawMedianPDirectionalRule: median_p_below_0.05_in_all_four_branches
+    differencedAllDirectionalRule: exactly_12_of_12_reject_in_all_four_branches
+    exactPublishedCountsOrPValuesRecovered: false
+
+claimClassificationClarification:
+  aggregateTrendClaimId: E01-C013
+  aggregateTrendEligibleForDirectionalComparison: true
+  localSpikeClaimId: E01-C014
+  localSpikePaperClaimStatus: UNDERDETERMINED
+  localSpikeReason: failed_fixed_window_or_highly_localized_height_width_timing_scope_cannot_be_restored_by_completed_trajectory_values
+  rawTemporalDependenceClaimIds: [E01-C022, E01-C023]
+  differencedTemporalDependenceClaimId: E01-C024
+  temporalDependenceMaximumStatus: DIRECTIONALLY_SUPPORTED
+  earlyWarningClaimId: E01-C030
+  earlyWarningPaperClaimStatus: UNDERDETERMINED
+  consistencyInterventionClaimId: E01-C047
+  consistencyInterventionClaimStatus: UNDERDETERMINED
+  restrictedInterventionPersistenceClaimIds: [E01-C046, E01-C054, E01-C058, E01-C059]
+  interventionDirectionalSupportActionDensity: at_least_4_of_6_triplets_each_have_at_least_3_applied_actions_in_both_noncontrol_conditions
+  interventionDirectionalSupportPairDirection: at_least_5_of_6_for_each_max_control_and_control_min_contrast
+  interventionDirectionalSupportIntervals: both_paired_bootstrap_95_percent_intervals_exclude_zero
+  exactPaperCountsNumbersOrAuthorImplementationIdentityForbidden: true
+
+scopePreservation:
+  baselineMatrices: 12
+  interventionTriplets: exactly_zero_or_exactly_six
+  strictMinimumEffectiveSamples: 512
+  fixedWindowBranchesRemainIneligible: true
+  s10S11S11rRemainImmutable: true
+  authorOrPaperPrimaryAssignment: forbidden
+  omegaDiscreteOrDoubletUse: forbidden
+  nextStepForbidden: S13

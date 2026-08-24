@@ -1,0 +1,107 @@
+{
+  "derived_master_seeds": {
+    "wagner-cleanroom-v1|2026-08-21|primary|discarded-benchmark": "2f7a64e8afdc6e06cb1406556ea81f39c046ec2a9abbf8b44bfbf625dfb64aad"
+  },
+  "format": "wagner-cleanroom-registration-v1",
+  "protocol": {
+    "bias": 0.0,
+    "bootstrap_repetitions": 64,
+    "cohort": "fresh-wagner-state-channel-replication",
+    "conditions": [
+      {
+        "ages": [
+          0
+        ],
+        "arms": [
+          "self_continuation",
+          "state_transplant",
+          "reset",
+          "destination_donor",
+          "descriptor_null",
+          "state_shuffle"
+        ],
+        "challenges": [
+          "neutral_damage"
+        ],
+        "futures": 128,
+        "name": "primary"
+      },
+      {
+        "ages": [
+          0
+        ],
+        "arms": [
+          "state_transplant",
+          "reset"
+        ],
+        "challenges": [
+          "forced_break"
+        ],
+        "futures": 128,
+        "name": "recurrence"
+      },
+      {
+        "ages": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "arms": [
+          "state_transplant",
+          "reset",
+          "state_shuffle"
+        ],
+        "challenges": [
+          "release",
+          "neutral_damage",
+          "forced_break"
+        ],
+        "futures": 64,
+        "name": "persistence"
+      }
+    ],
+    "expression_flip_probability": 0.05,
+    "format": "wagner-cleanroom-primary-v1",
+    "gates": {
+      "acquisition_imbalance_maximum": 0.1,
+      "acquisition_minimum": 0.8,
+      "crossover_minimum": 0.05,
+      "hold8_minimum": 0.2,
+      "log_loss_gain_minimum": 0.02,
+      "reliability_minimum": 0.8,
+      "risk_gain_minimum": 0.05
+    },
+    "genes": 10,
+    "horizon": 32,
+    "inheritance_lambda": 1.0,
+    "master_seed_label": "wagner-cleanroom-v1|2026-08-21|primary|discarded-benchmark",
+    "max_sweeps": 100,
+    "maximum_source_proposals": 500000,
+    "midpoint_count": 2,
+    "minimum_basin_fraction": 0.05,
+    "minimum_form_distance": 0.4,
+    "neutral_damage_bits": 2,
+    "profile": "discarded-benchmark",
+    "scientific": false,
+    "simultaneous_test_count": 18,
+    "source_count": 4,
+    "stable_run": 3,
+    "theta": 0.0,
+    "update": "sequential_in_place",
+    "update_order": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "weight_distribution": "standard_normal"
+  },
+  "protocol_digest": "d48dc25c9a61796f749d665f775fd1a9fe65fb3b7869a1da1f1ec2cffd8981e7"
+}

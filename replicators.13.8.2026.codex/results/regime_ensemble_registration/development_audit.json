@@ -1,0 +1,300 @@
+{
+  "baseline_direct_hurdle_exact": true,
+  "confirmation_operations": {
+    "family_switching": false,
+    "model_refitting": false,
+    "nonlinear_fallback": false,
+    "preprocessing_refitting": false,
+    "recalibration": false,
+    "regularization_search": false,
+    "weight_fitting": false
+  },
+  "ensemble_formula_probability_scale_exact": true,
+  "models": {
+    "02": {
+      "direct": {
+        "baseline": {
+          "features": {
+            "h10": 9
+          },
+          "order": [
+            "h10"
+          ],
+          "selected_lambdas": {
+            "h10": 0.0
+          }
+        },
+        "candidate": "02",
+        "enhanced": {
+          "features": {
+            "beta": 239,
+            "h10": 9,
+            "interaction": 64,
+            "state": 11
+          },
+          "order": [
+            "h10",
+            "state",
+            "beta",
+            "interaction"
+          ],
+          "selected_lambdas": {
+            "beta": 1.0,
+            "h10": 0.0,
+            "interaction": 0.01,
+            "state": 100.0
+          }
+        },
+        "family": "direct_ridge"
+      },
+      "hurdle": {
+        "baseline": {
+          "features": {
+            "h10": 9
+          },
+          "order": [
+            "h10"
+          ],
+          "selected_lambdas": {
+            "h10": 0.0
+          }
+        },
+        "candidate": "02",
+        "enhanced": {
+          "break": {
+            "features": {
+              "beta": 239,
+              "dynamics": 94,
+              "h10": 9,
+              "interaction": 64,
+              "state": 11
+            },
+            "order": [
+              "h10",
+              "state",
+              "beta",
+              "interaction",
+              "dynamics"
+            ],
+            "selected_lambdas": {
+              "beta": 1.0,
+              "dynamics": 100.0,
+              "h10": 0.0,
+              "interaction": 0.01,
+              "state": 0.1
+            }
+          },
+          "run8_given_break": {
+            "features": {
+              "beta": 239,
+              "dynamics": 94,
+              "h10": 9,
+              "interaction": 64,
+              "state": 11
+            },
+            "order": [
+              "h10",
+              "state",
+              "beta",
+              "interaction",
+              "dynamics"
+            ],
+            "selected_lambdas": {
+              "beta": 0.1,
+              "dynamics": 100.0,
+              "h10": 0.0,
+              "interaction": 0.1,
+              "state": 1.0
+            }
+          },
+          "strict_given_run8": {
+            "features": {
+              "beta": 239,
+              "dynamics": 94,
+              "h10": 9,
+              "interaction": 64,
+              "state": 11
+            },
+            "order": [
+              "h10",
+              "state",
+              "beta",
+              "interaction",
+              "dynamics"
+            ],
+            "selected_lambdas": {
+              "beta": 1.0,
+              "dynamics": 10.0,
+              "h10": 0.0,
+              "interaction": 0.1,
+              "state": 0.001
+            }
+          }
+        },
+        "family": "hurdle"
+      }
+    },
+    "03": {
+      "direct": {
+        "baseline": {
+          "features": {
+            "h10": 10
+          },
+          "order": [
+            "h10"
+          ],
+          "selected_lambdas": {
+            "h10": 0.0
+          }
+        },
+        "candidate": "03",
+        "enhanced": {
+          "features": {
+            "beta": 239,
+            "h10": 10,
+            "interaction": 64,
+            "state": 12
+          },
+          "order": [
+            "h10",
+            "state",
+            "beta",
+            "interaction"
+          ],
+          "selected_lambdas": {
+            "beta": 1.0,
+            "h10": 0.0,
+            "interaction": 0.1,
+            "state": 0.01
+          }
+        },
+        "family": "direct_ridge"
+      },
+      "hurdle": {
+        "baseline": {
+          "features": {
+            "h10": 10
+          },
+          "order": [
+            "h10"
+          ],
+          "selected_lambdas": {
+            "h10": 0.0
+          }
+        },
+        "candidate": "03",
+        "enhanced": {
+          "break": {
+            "features": {
+              "beta": 239,
+              "dynamics": 95,
+              "h10": 10,
+              "interaction": 64,
+              "state": 12
+            },
+            "order": [
+              "h10",
+              "state",
+              "beta",
+              "interaction",
+              "dynamics"
+            ],
+            "selected_lambdas": {
+              "beta": 1.0,
+              "dynamics": 1.0,
+              "h10": 0.0,
+              "interaction": 0.1,
+              "state": 1.0
+            }
+          },
+          "run8_given_break": {
+            "features": {
+              "beta": 239,
+              "dynamics": 95,
+              "h10": 10,
+              "interaction": 64,
+              "state": 12
+            },
+            "order": [
+              "h10",
+              "state",
+              "beta",
+              "interaction",
+              "dynamics"
+            ],
+            "selected_lambdas": {
+              "beta": 1.0,
+              "dynamics": 1.0,
+              "h10": 0.0,
+              "interaction": 0.1,
+              "state": 1.0
+            }
+          },
+          "strict_given_run8": {
+            "features": {
+              "beta": 239,
+              "dynamics": 95,
+              "h10": 10,
+              "interaction": 64,
+              "state": 12
+            },
+            "order": [
+              "h10",
+              "state",
+              "beta",
+              "interaction",
+              "dynamics"
+            ],
+            "selected_lambdas": {
+              "beta": 1.0,
+              "dynamics": 1.0,
+              "h10": 0.0,
+              "interaction": 1.0,
+              "state": 0.01
+            }
+          }
+        },
+        "family": "hurdle"
+      }
+    }
+  },
+  "pilot_oof_motivation": {
+    "candidate_equal_log_loss": 0.11062597075314862,
+    "cannot_rescue_failed_pilot": true,
+    "four_cell_log_loss_gains": [
+      {
+        "candidate": "02",
+        "half": "A",
+        "log_loss_gain": 0.006403179291625676
+      },
+      {
+        "candidate": "02",
+        "half": "B",
+        "log_loss_gain": 0.005324132164982156
+      },
+      {
+        "candidate": "03",
+        "half": "A",
+        "log_loss_gain": 0.008693537552043
+      },
+      {
+        "candidate": "03",
+        "half": "B",
+        "log_loss_gain": 0.009464369257228314
+      }
+    ],
+    "status": "post_hoc_development_evidence_only"
+  },
+  "portable_prediction_maximum_absolute_errors": {
+    "direct": 0.0,
+    "ensemble": 0.0,
+    "h10": 0.0,
+    "hurdle": 0.0
+  },
+  "portable_predictions_bit_exact": true,
+  "prediction_digest": "bfcb974826d97b342dad30205b63ace3571baa94b74924ef3bc443d2842c9678",
+  "source_pilot_failure_preserved": true,
+  "source_pilot_selection_passed": false,
+  "source_pilot_status": "stopped_before_confirmation",
+  "states_repredicted": 800
+}

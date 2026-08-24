@@ -1,0 +1,200 @@
+{
+  "arms": {
+    "FABLE_LOOSEN": {
+      "factor": 0.6666666666666666
+    },
+    "FABLE_RANDOM_PP": {
+      "balanced_log_direction": true,
+      "location": "all and only P x P",
+      "target_norm_fraction": 0.5
+    },
+    "FABLE_TIGHTEN": {
+      "factor": 1.5
+    },
+    "NOOP": {
+      "factor": 1.0
+    },
+    "SMALL_LOOSEN": {
+      "factor": 0.95
+    },
+    "SMALL_RANDOM_PP": {
+      "balanced_log_direction": true,
+      "location": "all and only P x P",
+      "target_norm_fraction": 0.05
+    },
+    "SMALL_TIGHTEN": {
+      "factor": 1.05
+    },
+    "random_direction_shared_across_doses_within_state": true,
+    "random_directions_domain_separated_from_futures": true
+  },
+  "audit": {
+    "complete_deterministic_replay": true,
+    "complete_written_artifact_readback": true,
+    "per_state_achieved_norm": true,
+    "per_state_changed_edge_set": true,
+    "per_state_log_balance": true,
+    "persist_every_changed_edge": true,
+    "predictions_descriptive_only": true,
+    "refitting_or_recalibration": false
+  },
+  "claim_boundary": {
+    "passing_primary_may_support": "qualitative cross-clean-room replication of Fable-strength present-present beta-surgery control under Codex contracts",
+    "prohibited": [
+      "Phi or PhiID intervention",
+      "strict-eight control",
+      "autonomous agency",
+      "biological memory",
+      "error correction",
+      "a living organism",
+      "a universal origin-of-life mechanism",
+      "real prebiotic chemistry",
+      "cross-clean-room replication before the relevant untouched gate passes"
+    ]
+  },
+  "design": {
+    "arms": [
+      "SMALL_LOOSEN",
+      "SMALL_TIGHTEN",
+      "SMALL_RANDOM_PP",
+      "FABLE_LOOSEN",
+      "FABLE_TIGHTEN",
+      "FABLE_RANDOM_PP",
+      "NOOP"
+    ],
+    "branch_halves": {
+      "A": [
+        0,
+        15
+      ],
+      "B": [
+        16,
+        31
+      ]
+    },
+    "branches_per_arm_per_state": 32,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fresh_matrices_states_and_seed_domains": true,
+    "future_seed_includes_arm": false,
+    "generalization_landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "horizon_fissions": 12,
+    "intervention_future_retries": 0,
+    "landmarks": [
+      20,
+      35,
+      50,
+      60,
+      65,
+      80
+    ],
+    "matrices": 80,
+    "matrix_replacement": false,
+    "primary_futures": 215040,
+    "primary_landmark": 60,
+    "replay_futures": 215040,
+    "role": "Fable-strength beta-surgery replication and two-dose bridge",
+    "states": 960
+  },
+  "endpoint": {
+    "break": "H <= 0.9",
+    "certification_before_later_extinction": "positive",
+    "extinction_before_certification": "negative",
+    "horizon": 12,
+    "inheritance": "unrounded float64 H > 0.9",
+    "name": "JOINT_BREAK_RUN3",
+    "positive": "break followed strictly later by run3"
+  },
+  "format": "codex-intervention-p3b-dose-bridge-v1",
+  "lifecycle": {
+    "mandatory_stop_after_seal": true,
+    "next_scientific_phase_launched": false
+  },
+  "primary_inference": {
+    "bootstrap_repetitions": 4096,
+    "cells": [
+      "c02_A",
+      "c02_B",
+      "c03_A",
+      "c03_B"
+    ],
+    "contrast": "FABLE_LOOSEN - FABLE_TIGHTEN",
+    "cr1_only_gates_excluded": [
+      "each target arm separately differs from NOOP",
+      "random effect no greater than 25% of target contrast"
+    ],
+    "gates": [
+      "contrast > 0",
+      "95% bootstrap lower bound > 0",
+      "Holm-adjusted sign-randomization p < 0.05",
+      "FABLE_RANDOM_PP TOST-equivalent to NOOP within +/-0.025",
+      "exact replay"
+    ],
+    "holm_family_size": 4,
+    "randomization_repetitions": 4096,
+    "scope": "landmark 60 only",
+    "unit": "whole catalytic matrix"
+  },
+  "protocol_id": "d4e11376629429325b570d7523b0e7b50bf854254d7ade41c3de42c2eaa18459",
+  "reason": {
+    "external_clarification_received_after_p3_seal": true,
+    "external_fable_contract": {
+      "frobenius_symmetric": false,
+      "log_symmetric": true,
+      "loosen": "beta[P,P] /= 1.5",
+      "loosen_distance_fraction": 0.3333333333333333,
+      "tighten": "beta[P,P] *= 1.5",
+      "tighten_distance_fraction": 0.5
+    },
+    "external_random_control_limitation": "historical Fable whole-matrix random control was only approximately norm matched; P3b uses an exact within-PxP control",
+    "instruction_assembly_error": "0.05 block-norm target was assembled in error from Fable delta=0.5",
+    "sealed_p3_classification": "valid unintended small-dose experiment; not a failed replication of Fable's delta=0.5 surgery",
+    "sealed_p3_preserved": true
+  },
+  "scientific_label": "INTP3B_DOSE_BRIDGE_V1",
+  "secondary_inference": {
+    "five_landmark_generalization": {
+      "cannot_rescue_primary": true,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "same_high_dose_gate_separate_holm_family": true
+    },
+    "two_dose_ordering": {
+      "claim_boundary": "two-dose ordering, not a complete dose-response curve",
+      "dose_contrast": "Fable-strength effect - small effect",
+      "gates": [
+        "dose contrast > 0",
+        "95% bootstrap lower bound > 0",
+        "Holm-adjusted sign-randomization p < 0.05",
+        "exact replay"
+      ],
+      "small_effect": "SMALL_LOOSEN - SMALL_TIGHTEN"
+    }
+  },
+  "seed_domains": {
+    "bootstrap": "2109cb3773d3627dfad0e5179603adb62fa1f29df06a4bd05a3c3d1b4b23bade",
+    "cohort": "0a6bc9a826f82c812e42bd4e3cc9f6b7dabf994cfad6dda180f562b7f4201eb3",
+    "future": "311aa2f80b185f568576f958b8813bf25220fab4339a0bacef96e59127b40078",
+    "randomization": "723b5033785766651db6b74ef13e7fe70b3a570818ce169bc01e3aa6a81bc765",
+    "replay": "de6beca797988ccd095e7c20e2474f0811c84eacc897b107665f3271e00a27f6",
+    "selection": "47366a7dd183f79481af2217eb09bcda57bf79a0a5d67d7331fc3b6664130173",
+    "smoke_cohort": "45ba807372d3af048bda6189a27c8661e17c19a01cd985f74f1d9a2e1b4e816e",
+    "smoke_future": "89f9937b700be0eb78a742876c8828ee134c87bf09f015eb6c982e9fd5db738e",
+    "smoke_selection": "024eb22c0c6090b026a66e9d9b70a5d6f8aa812a1c29901a4930f09fc3075cf9",
+    "validation": "6f0024c7f24376cad920cae51fd5ae4906b2192bdecfbeffe6df4064487ee48b"
+  },
+  "status": "frozen_before_any_p3b_scientific_matrix"
+}

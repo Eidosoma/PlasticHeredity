@@ -1,0 +1,20 @@
+{
+  "firewall": {
+    "forbidden_import_hits": [],
+    "passed": true,
+    "prior_outcomes_role": "hypothesis_generation_only_not_pooled",
+    "wagner_code_read_imported_copied_or_executed": false
+  },
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "protocol_id": "e10e9a1a499c66cb7ab5e20e51aed56cbf6fa1fc4e6a062dd63095576c605e3f",
+  "registered_at_epoch": 1787522655.3230498,
+  "registration_id": "22e824ed900dbdf4a1b1bf120e8e2a48dcabedd329eb482633b507bf74e111ce",
+  "runtime": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "scipy": "1.18.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_manifest_id": "4e1e4e3f9915645ab9eeb0c07346945ca43bb99939f7c78fbfab667ea4c3362d"
+}

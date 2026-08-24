@@ -1,0 +1,12 @@
+{
+  "baseline_definition": [
+    0.9,
+    12,
+    3
+  ],
+  "completed_horizon_exact": true,
+  "labels_exact": true,
+  "maximum_finite_process_absolute_error": 1.1102230246251565e-16,
+  "process_nan_mask_exact": true,
+  "process_within_1e_14": true
+}

@@ -1,0 +1,233 @@
+schema: eidosoma.e01.s19_l08_preregistration.v1
+researchStepId: S19-L08
+versionedLoopId: E01-S19-L08-UNTOUCHED-OCCUPANCY-MECHANISM-DISCRIMINATION-v1.0.0
+programContinuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+designClass: NON_ADAPTIVE_UNTOUCHED_TWO_MECHANISM_COMPARISON
+authorizedScope:
+  matrices: 100
+  sharedCatalyticMatrices: true
+  matchedInitialStates: true
+  fissionsRequested: 100
+  mechanisms: 2
+  simulatorCandidatesPerMechanism: 2
+  expectedTrajectories: 400
+  newScientificMethodsPermitted: false
+  prohibited:
+    - threshold search or alteration
+    - exposure search or alteration
+    - clock or projection search
+    - label or replicator-definition search
+    - daughter-rule or overshoot alteration
+    - simulator replacement
+    - emergence calculation
+    - prediction modelling
+    - intervention scoring or rollout
+    - replacement of incomplete or extinct units
+    - favorable-candidate selection
+    - author-code identity claim
+immutableBoundary:
+  preserve:
+    - S01-S18
+    - E01 forensic replication V1 bundle
+    - E01 forensic replication V2 artifact
+    - S19-L01-S19-L07 including L06R
+    - all historical classifications and failures
+    - S17 CPU-allowance waiver
+seedContract:
+  rootSeedHex: cf01593507937c62777e4999670f072583db3bce60c281de5a91177a6700f643
+  matrixPhase: s19_l08_untouched_mechanism_comparison
+  bootstrapRootHex: 390de5af8edd2be9c26dcc2ab49a3a946d6d1b69eb2a106ce477ff874b250dde
+  seedRootDerivationStatement: SHA256 of the literal domain string E01-S19-L08-UNTOUCHED-MATRIX-ROOT-v1.0.0::2026-08-09::DOMAIN-SEPARATED
+  noOverlapWithPriorMatrixInitialOrSeedMaterial: true
+  matrixIndices: {startInclusive: 0, stopExclusive: 100}
+  replacementPolicy: NEVER_REPLACE
+numericalContract:
+  authority: CPU_FLOAT64
+  gpuHours: 0
+  numericalLibraryThreadsPerWorker: 1
+  workers: 8
+  strictSimilarityComparator: GREATER_THAN
+  similarityThreshold: 0.9
+  exactReplayRequired:
+    - trajectorySha256
+    - observation sequence and integer states
+    - terminal status and completed fissions
+    - label arrays and eligibility masks
+    - trajectory-level fingerprints
+    - aggregate and decision results
+mechanisms:
+  - mechanismId: A_FISSION_BOUNDARY
+    name: Strict parent-to-selected-daughter fission-boundary H>0.9
+    labelObject: PARENT_TO_SELECTED_DAUGHTER_FISSION_BOUNDARY
+    threshold: 0.9
+    comparator: STRICT_GT
+    boundarySummary: BOUNDARY_ONLY
+    molecularProjection: OUTGOING_INTERVAL_PREFIX_INELIGIBLE
+    projectionMeaning: A boundary decision labels its post-fission observation and the following growth interval; the initial pre-boundary prefix is ineligible.
+    candidates:
+      - candidateId: CANDIDATE_2
+        exposure: 0.6031526490073492
+        daughterRule: FIRST_DAUGHTER
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L08::A::CANDIDATE_2
+      - candidateId: CANDIDATE_3
+        exposure: 0.5613315384859516
+        daughterRule: RANDOM_NONEMPTY
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L08::A::CANDIDATE_3
+  - mechanismId: B_HIGH_EXPOSURE
+    name: All-molecular adjacent-incoming H>0.9 at fixed h=2.875
+    labelObject: ALL_MOLECULAR_ADJACENT_INCOMING
+    clockId: C1_SELECTED_DAUGHTER_RETAINED
+    alignment: INCOMING_DUPLICATE_FIRST
+    projection: ALL_OBSERVATIONS
+    threshold: 0.9
+    comparator: STRICT_GT
+    candidates:
+      - candidateId: CANDIDATE_2
+        exposure: 2.875
+        daughterRule: FIRST_DAUGHTER
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L08::B::CANDIDATE_2
+      - candidateId: CANDIDATE_3
+        exposure: 2.875
+        daughterRule: RANDOM_NONEMPTY
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L08::B::CANDIDATE_3
+missingnessAndExtinction:
+  attemptUnit: catalytic matrix by mechanism by simulator candidate
+  retainEveryAttempt: true
+  completeStatus: requested_fissions_completed with exactly 100 completed fissions
+  incompleteStatuses:
+    - extinct_during_growth
+    - selected_daughter_empty
+    - other incomplete terminal status
+  scientificSummaryRule: Include the observed prefix for a matrix whenever the locked label object has at least one eligible unit; retain an explicit null and reason otherwise.
+  occupancyGateDefinedUnitRequirement: 100 of 100 matrices per mechanism-candidate-analysis-object
+  decisionMetricMinimumDefinedMatrices: 95
+  replacement: prohibited
+analysisObjects:
+  - {mechanismId: A_FISSION_BOUNDARY, analysisObjectId: A_BOUNDARY, unit: fission boundary, primaryOccupancyGate: true}
+  - {mechanismId: A_FISSION_BOUNDARY, analysisObjectId: A_PROJECTED_MOLECULAR, unit: selected molecular clock after locked prefix exclusion, primaryOccupancyGate: true}
+  - {mechanismId: B_HIGH_EXPOSURE, analysisObjectId: B_MOLECULAR, unit: selected molecular clock, primaryOccupancyGate: true}
+fingerprintMetrics:
+  labelSeries:
+    - analysis-unit length
+    - eligible length
+    - persistence
+    - occupancy
+    - raw first onset, zero-based and one-based
+    - normalized first onset
+    - consecutive-label Pearson consistency
+    - positive and negative episode counts
+    - positive and negative episode mean, median, and maximum duration
+    - positive and negative episode onset spacing, mean and median
+  trajectory:
+    - selected-clock length
+    - boundary-unit length
+    - parent-to-selected-daughter similarity mean and median
+    - post-fission mass mean and median
+    - pre-fission mass mean and median
+    - pre-trim overshoot mean, q95, and maximum
+    - max-step termination count and fraction
+    - completed-fission count
+    - terminal status
+paperTargets:
+  occupancy: {target: 0.88, scale: 0.03, acceptanceBandInclusive: [0.85, 0.91]}
+  molecularPersistence: {target: 716.0, scale: 198.0}
+  consistency: {target: 0.38, scale: 0.06}
+  rawOnsetStep1: {target: 37.0, scale: 27.0, status: PAPER_NOTE_SAYS_MOLECULAR_STEPS}
+  normalizedOnset: {target: 0.37, scale: 0.27, status: TABLE_PRINTS_PERCENT}
+  selectedClockLength:
+    target: 813.6363636363636
+    scale: 225.0
+    derivation: control persistence divided by control occupancy; uncertainty scale 198 divided by 0.88
+  firstOnsetAmbiguityRule: Raw and normalized onset are separate locked analyses; neither may replace the other.
+bootstrap:
+  replicateCount: 4096
+  independentUnit: catalytic matrix
+  generator: NumPy PCG64DXSM
+  domainSeparation: bootstrap root plus analysis object, candidate, metric, and contrast identity
+  intervals: percentile 2.5 and 97.5
+  pooling: secondary descriptive only
+sourceCoherenceLock:
+  A_FISSION_BOUNDARY:
+    coherent:
+      - Paper describes recurring compositions inherited across growth-fission generations.
+      - Paper continues one selected daughter after fission.
+      - Historical GARD traces one composition per generation and uses H=0.9 for drift/non-drift.
+    unresolved:
+      - Paper describes similarity to the most recurring composition rather than literal parent-to-daughter fidelity.
+      - The following-interval molecular projection is not specified by the paper or recovered source.
+  B_HIGH_EXPOSURE:
+    coherent:
+      - Paper explicitly describes Poisson updates and an all-molecular trajectory.
+      - Exposure duration is omitted, so a fixed batch exposure is an implementation ambiguity.
+    unresolved:
+      - No retained paper or public-source identity specifies h=2.875.
+      - High exposure changes the molecular clock and pre-trim overshoot substantially.
+  adjudicationRule: Source coherence is reported separately and cannot override a failed numerical gate.
+decisionLock:
+  occupancyGate:
+    requirement: Every primary occupancy object must have 100 defined matrix values and its candidate-specific mean must lie in the inclusive 0.85-0.91 band.
+    mechanismsRequired: both
+  comparisonObjects:
+    A_FISSION_BOUNDARY: A_PROJECTED_MOLECULAR
+    B_HIGH_EXPOSURE: B_MOLECULAR
+  normalizedPaperDistances:
+    RAW_ONSET:
+      metrics: [selectedClockLength, persistence, occupancy, consistency, firstOnsetRawStep1]
+    NORMALIZED_ONSET:
+      metrics: [selectedClockLength, persistence, occupancy, consistency, firstOnsetNormalized]
+  preferredMechanismRequirements:
+    - lower aggregate normalized paper distance in both onset modes and both simulator candidates
+    - paired 4096-bootstrap 95% interval for preferred-minus-other paper distance strictly below zero in both onset modes and both candidates
+    - closer to the paper target on at least four of five non-occupancy discriminants in both candidates, including persistence and at least one onset interpretation
+    - at least 95 matrices with defined positive and negative episode topology in both candidates
+    - 100 attempted matrices and at least 95 completed trajectories per candidate
+    - zero max-step termination fraction at aggregate level
+    - mean post-fission mass within inclusive 38-42 in both candidates
+    - occupancy cross-candidate absolute difference no greater than 0.03
+    - exact replay, complete regeneration, seed firewall, immutable-prior, scope, storage, and artifact-integrity checks pass
+  resolutionOrder:
+    - Any operational or integrity failure returns LOOP_FAILED_CLOSED.
+    - If the joint frozen occupancy requirement fails, return NEITHER_MECHANISM_REPRODUCES_ON_UNTOUCHED_DATA.
+    - If exactly one mechanism meets every preferred-mechanism requirement, return the corresponding EVIDENCE_FAVORS decision.
+    - Otherwise return NONIDENTIFIABLE_BETWEEN_FROZEN_MECHANISMS.
+  decisionVocabulary:
+    - EVIDENCE_FAVORS_FISSION_BOUNDARY_MECHANISM
+    - EVIDENCE_FAVORS_HIGH_EXPOSURE_MECHANISM
+    - NONIDENTIFIABLE_BETWEEN_FROZEN_MECHANISMS
+    - NEITHER_MECHANISM_REPRODUCES_ON_UNTOUCHED_DATA
+    - LOOP_FAILED_CLOSED
+  s19ClassificationVocabulary:
+    - EXPLORATORY_PAPER_MATCH
+    - EXPLORATORY_DIRECTIONAL_MATCH
+    - EXPLORATORY_NON_SUPPORT
+    - RETROSPECTIVE_ONLY_LEAD
+    - METHOD_DEPENDENT_LEAD
+    - POSSIBLE_STABILITY_PROXY
+    - POSSIBLE_PIPELINE_ARTIFACT
+    - PROMOTABLE_TO_S20
+    - NOT_PROMOTABLE
+    - AUTHOR_AMBIGUITY_UNRESOLVED
+    - LOOP_FAILED_CLOSED
+promotionAndClaimBoundary:
+  promoteToS20: prohibited in L08
+  confirmationLanguage: prohibited
+  authorImplementationIdentity: prohibited
+  predictionOrCausalInference: prohibited
+resourceCeilings:
+  cpuHoursMaximum: 100
+  gpuHoursMaximum: 0
+  wallHoursMaximum: 72
+  retainedArtifactsGiBMaximum: 25
+  temporaryCacheGiBMaximum: 75
+  validationReserveFractionMinimum: 0.10
+  scientificComputeCpuHoursMaximumAfterReserve: 90
+benchmarkGate:
+  scope: one matrix across all four frozen mechanism-candidate simulations
+  scientificLabelsOpenedDuringBenchmark: false
+  projectedTotalIncludesPrimaryAndCompleteRegeneration: true
+  stopIfProjectedCpuHoursExceed: 90
+stopBoundary: Freeze all outputs and return for mandatory human review; do not activate L09, S20, E02, author contact, report-bundle generation, prediction, emergence, or intervention work.

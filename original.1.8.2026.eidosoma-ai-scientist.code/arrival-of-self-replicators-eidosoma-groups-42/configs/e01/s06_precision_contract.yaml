@@ -1,0 +1,69 @@
+schema: eidosoma.e01.s06_trajectory_precision_contract.v1
+researchStepId: S06
+experimentId: E01
+contractVersion: E01-trajectory-precision-v1.0.0
+noSilentPrecisionChanges: true
+
+serialization:
+  integerStates: JSON integers, restricted to signed-int64 nonnegative range
+  binary64Values: canonical Python float.hex strings
+  checksum: SHA-256 over E01-canonical-json-v1.0.0 payload bytes
+  portabilityClaim: >-
+    Once generated, integer values and binary64 bit patterns round-trip exactly
+    across conforming JSON implementations; no decimal-float parsing is involved.
+
+seedDerivation:
+  portabilityClaim: >-
+    Canonical UTF-8 context bytes, SHA-256 seed material, and PCG64DXSM raw integer
+    streams are exact for the frozen algorithm and fixed seed.
+
+sameEngineExactRegeneration:
+  requiredIdentityFields:
+    - repositoryCommit
+    - engineSourceSha256
+    - adapterSourceSha256
+    - pythonVersion
+    - numpyVersion
+    - platform
+    - byteOrder
+    - runtimeFingerprint
+    - seedSchemaSha256
+    - trajectorySchemaSha256
+    - precisionContractSha256
+    - numericThreadEnvironment
+  criterion: canonical trajectory payload bytes and SHA-256 must match exactly
+  failureRule: Any byte, state, event, fission, daughter, stopping, or checksum difference is failure.
+
+crossPlatformAudit:
+  exactTrajectoryGuarantee: false
+  reasons:
+    - NumPy distribution-sampler implementation is pinned to NumPy 2.4.6, not promised across arbitrary versions.
+    - exp and floating-point reduction results may vary at the final bits across libm, compiler, BLAS, or architecture.
+    - a tiny propensity difference can change a later discrete event at a categorical boundary.
+  integerAndStructuralFields: exact match required
+  floatingPointComparison:
+    absoluteTolerance: 1.0e-12
+    relativeTolerance: 1.0e-12
+    maximumUlpDistance: 8
+    rule: all three bounds must pass for corresponding finite propensity/time/matrix values
+  cpuGpuReference:
+    sourcePolicy: E01-precision-v0.1.0 from S03
+    absoluteToleranceFloat64: 1.0e-10
+    relativeToleranceFloat64: 1.0e-10
+  decisionDivergenceRule: >-
+    Floating tolerance never masks a changed discrete event, integer state,
+    fission, daughter choice, or stopping reason. Such a change is classified
+    CROSS_PLATFORM_REGENERATION_FAILURE and receives a new platform-specific
+    checksum; it is not accepted as exact regeneration.
+
+executionPolicy:
+  cpuWorkers: 1
+  numericLibraryThreads: 1
+  requiredEnvironment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+  failureRule: Missing or different thread settings reject capture and regeneration.
+  gpuUsed: false
+  rationale: S06 validates deterministic schema plumbing rather than a statistical sweep.

@@ -1,0 +1,280 @@
+{
+  "schema": "eidosoma.e01.s18_final_dual_verdict_contract.v1",
+  "researchStepId": "S18",
+  "stepNumber": 18,
+  "versionedStepId": "E01-S18-FINAL-DUAL-VERDICT-CLOSEOUT-v1.0.0",
+  "replicationArtifactVersion": "E01-FORENSIC-REPLICATION-ARTIFACT-v2.0.0",
+  "legacyBundlePath": "/artifacts/E01_forensic_replication_bundle",
+  "v2ArtifactPath": "/artifacts/E01_forensic_replication_artifact_v2",
+  "claimLedgerPath": "/artifacts/E01_forensic_replication_bundle/ledgers/claim_ledger.csv",
+  "statusVocabulary": [
+    "SUPPORTED",
+    "DIRECTIONALLY_SUPPORTED",
+    "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+    "UNDERDETERMINED",
+    "NOT_EVALUATED"
+  ],
+  "directionalAssessmentVocabulary": [
+    "ALIGNED",
+    "PARTIALLY_ALIGNED",
+    "CONTRADICTED",
+    "MIXED_ACROSS_REQUIRED_BRANCHES",
+    "NOT_ASSESSED"
+  ],
+  "quantitativeAssessmentVocabulary": [
+    "TARGET_MET",
+    "CLOSE_OR_WITHIN_REPORTED_DISPERSION",
+    "DIFFERENT",
+    "MIXED",
+    "UNAVAILABLE"
+  ],
+  "statusPolicy": {
+    "SUPPORTED": "The frozen reconstruction meets the claim's direction and stated inferential or quantitative criterion in every required candidate and mandatory analysis; this does not assert author-code identity.",
+    "DIRECTIONALLY_SUPPORTED": "The claimed direction or qualitative pattern is reproduced in the required branches, but an exact magnitude, count, p-value, equivalence criterion, or implementation identity is not reproduced.",
+    "NOT_SUPPORTED_WITHIN_TESTED_SCOPE": "A required direction, comparison, or gate fails in at least one mandatory candidate or mode; a favorable candidate is never selected to rescue the claim.",
+    "UNDERDETERMINED": "The claim cannot be uniquely adjudicated because the paper omits a material implementation choice or is internally inconsistent; directional findings remain visible in a separate field.",
+    "NOT_EVALUATED": "The locked E01 sequence did not run the estimand; absence of evidence is not treated as non-support."
+  },
+  "directionalPolicy": {
+    "exactNumbersAreNotRequiredForDirectionalSupport": true,
+    "exactAndDirectionalAssessmentsAreSeparate": true,
+    "candidatesTwoAndThreeAreMandatoryAndSeparate": true,
+    "poolingIsSecondaryOnly": true,
+    "favorableCandidateSelectionForbidden": true,
+    "levelAndChangeAnalysesRemainSeparate": true,
+    "retrospectiveProspectiveAndCausalQuestionsRemainSeparate": true
+  },
+  "expectedClaimCount": 59,
+  "expectedClaimStatusCounts": {
+    "SUPPORTED": 3,
+    "DIRECTIONALLY_SUPPORTED": 17,
+    "NOT_SUPPORTED_WITHIN_TESTED_SCOPE": 21,
+    "UNDERDETERMINED": 2,
+    "NOT_EVALUATED": 16
+  },
+  "matrixB": [
+    {
+      "questionId": "B01",
+      "question": "Past-only early warning",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "eligibleMode": "PAST_ONLY_OR_CUTOFF_CAUSAL_ONLY",
+      "finding": "Past-only S13Y/S15 association directions reversed, and the cutoff-causal S16 prediction gates failed in both candidates.",
+      "evidenceKey": "PAST_ONLY_EARLY_WARNING"
+    },
+    {
+      "questionId": "B02",
+      "question": "Incremental prediction beyond exact H and ordinary stability",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "eligibleMode": "CUTOFF_CAUSAL_ONLY",
+      "finding": "Y is exactly I(H>0.9), unrestricted incremental information beyond contemporaneous exact H is zero, ordinary stability is coupled, and S16 gate 3 failed in both candidates.",
+      "evidenceKey": "INCREMENTAL_BEYOND_H"
+    },
+    {
+      "questionId": "B03",
+      "question": "Future-suffix independence",
+      "status": "DIRECTIONALLY_SUPPORTED",
+      "eligibleMode": "CUTOFF_CAUSAL_ONLY",
+      "finding": "All cutoff-causal suffix-invariance checks passed, while the paper-like completed-fit branch is explicitly future-dependent and therefore ineligible for prospective interpretation.",
+      "evidenceKey": "SUFFIX_INDEPENDENCE"
+    },
+    {
+      "questionId": "B04",
+      "question": "Online action scoring",
+      "status": "SUPPORTED",
+      "eligibleMode": "APPEND_AND_REFIT_CURRENT_PREFIX_RECONSTRUCTION",
+      "finding": "The locked scorer used only the current prefix, applied every selected action, and replayed exactly; exact author scorer identity remains unavailable.",
+      "evidenceKey": "ONLINE_SCORING"
+    },
+    {
+      "questionId": "B05",
+      "question": "Intervention reproducibility",
+      "status": "SUPPORTED",
+      "eligibleMode": "LOCKED_LITERAL_RECONSTRUCTION",
+      "finding": "All 72 intervention trajectories, 4,800 applied treated actions, source fits, and trajectory replays were exact under the locked implementation.",
+      "evidenceKey": "INTERVENTION_REPLAY"
+    },
+    {
+      "questionId": "B06",
+      "question": "Action separability",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "eligibleMode": "LOCKED_LITERAL_RECONSTRUCTION",
+      "finding": "Only 0.9258-0.9400 of selected action gaps exceeded the frozen 0.95 separability scale; the required separability gate failed in both candidates.",
+      "evidenceKey": "ACTION_SEPARABILITY"
+    },
+    {
+      "questionId": "B07",
+      "question": "Bidirectional causal control",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "eligibleMode": "PROSPECTIVE_PAIRED_INTERVENTION",
+      "finding": "Max emergence was below control for mean persistence and occupancy in both candidates, max-minus-control uncertainty included zero, and matched-random outcome exclusion was unavailable.",
+      "evidenceKey": "BIDIRECTIONAL_CONTROL"
+    }
+  ],
+  "figureTableMap": [
+    {
+      "componentId": "FIGURE_2",
+      "reconstructionDegree": "DIRECTIONALLY_SIMILAR_WITH_MAJOR_DISCREPANCY",
+      "summary": "Punctuated positive excursions and temporal dependence resemble the paper, but the primary aggregate trend is significantly positive rather than trendless.",
+      "completedFitDependency": "YES_PRIMARY_VALUES_ARE_COMPLETED_FIT_AND_FUTURE_DEPENDENT",
+      "labelScopeDependency": "NO_FOR_EMERGENCE_SHAPE",
+      "interventionScoringDependency": "NO",
+      "evidenceKey": "FIGURE_2"
+    },
+    {
+      "componentId": "FIGURE_3",
+      "reconstructionDegree": "DIRECTIONALLY_SIMILAR_RETROSPECTIVE_ONLY",
+      "summary": "Positive runwise association counts, means, and one-sample diagnostics recur, but are label-coupled and reverse under past-only refitting.",
+      "completedFitDependency": "YES",
+      "labelScopeDependency": "YES_Y_EQUALS_I_H_GT_0_9",
+      "interventionScoringDependency": "NO",
+      "evidenceKey": "FIGURE_3"
+    },
+    {
+      "componentId": "FIGURE_4",
+      "reconstructionDegree": "DIRECTIONALLY_SIMILAR_RETROSPECTIVE_ONLY",
+      "summary": "Replicator-state emergence contrasts and Fisher diagnostics point in the paper's direction, with paper scope unresolved and exact-H/stability coupling intact.",
+      "completedFitDependency": "YES",
+      "labelScopeDependency": "YES_Y_EQUALS_I_H_GT_0_9",
+      "interventionScoringDependency": "NO",
+      "evidenceKey": "FIGURE_4"
+    },
+    {
+      "componentId": "FIGURE_5",
+      "reconstructionDegree": "DIFFERENT_NOT_SUPPORTED",
+      "summary": "Neither completed-fit nor cutoff-causal PhiRL achieved the reported prediction advantage; accuracy largely reflected approximately 98% prevalence and balanced accuracy remained near 0.5.",
+      "completedFitDependency": "PAPER_LIKE_MODE_YES_BUT_FAILED;CUTOFF_MODE_NO_AND_FAILED",
+      "labelScopeDependency": "YES_TARGET_IS_EXACT_H_THRESHOLD",
+      "interventionScoringDependency": "NO",
+      "evidenceKey": "FIGURE_5"
+    },
+    {
+      "componentId": "FIGURE_6",
+      "reconstructionDegree": "PROCEDURE_RECONSTRUCTED_OUTCOMES_DIFFERENT",
+      "summary": "The prospective prefix-only max/control/min procedure executed and replayed exactly, but max was below control and the reported bidirectional ordering did not recur.",
+      "completedFitDependency": "NO",
+      "labelScopeDependency": "YES_OUTCOME_USES_Y_EQUALS_I_H_GT_0_9",
+      "interventionScoringDependency": "YES_APPEND_AND_REFIT_CURRENT_PREFIX_IS_ONE_LITERAL_RECONSTRUCTION",
+      "evidenceKey": "FIGURE_6"
+    },
+    {
+      "componentId": "TABLE_1",
+      "reconstructionDegree": "MIXED_PERSISTENCE_SCALE_SIMILAR_OTHER_VALUES_DIFFERENT",
+      "summary": "Max and control persistence means fall within one paper-reported but undefined dispersion; min persistence and all probability, consistency, and timing targets differ materially.",
+      "completedFitDependency": "NO",
+      "labelScopeDependency": "YES_OUTCOME_USES_Y_EQUALS_I_H_GT_0_9",
+      "interventionScoringDependency": "YES",
+      "evidenceKey": "TABLE_1"
+    }
+  ],
+  "finalClassifications": [
+    {
+      "classification": "LABEL_COUPLED_RETROSPECTIVE_RESEMBLANCE",
+      "status": "RETAINED_ESTABLISHED",
+      "meaning": "Figures 3-4-like association and state contrasts recur only as retrospective evidence under a target exactly determined by H."
+    },
+    {
+      "classification": "RETROSPECTIVE_TEMPORAL_FITTING_DEPENDENCE",
+      "status": "RETAINED_ESTABLISHED",
+      "meaning": "Completed-fit partitions and Gaussian parameters use the future suffix, while past-only associations reverse."
+    },
+    {
+      "classification": "RETROSPECTIVE_PREDICTION_RESEMBLANCE",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "meaning": "The completed-fit PhiRL MLP did not beat all paper baselines or the majority dummy under the locked Figure 5 reconstruction."
+    },
+    {
+      "classification": "PROSPECTIVE_PREDICTION_SUPPORTED",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "meaning": "All six directed cutoff-causal gates failed in both candidates."
+    },
+    {
+      "classification": "LITERAL_INTERVENTION_ORDERING_RESEMBLANCE",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "meaning": "The literal max >= control >= min persistence or occupancy ordering failed in both candidates."
+    },
+    {
+      "classification": "PROSPECTIVE_CAUSAL_CONTROL_SUPPORTED",
+      "status": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "meaning": "Bidirectional paired effects, separability, and matched-random outcome exclusion did not jointly pass."
+    },
+    {
+      "classification": "NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+      "status": "RETAINED_SCOPE_BOUNDARY",
+      "meaning": "Non-support is limited to the frozen candidates, branches, labels, estimators, prediction design, and intervention scorer tested in E01."
+    },
+    {
+      "classification": "UNDERDETERMINED_AUTHOR_IMPLEMENTATION",
+      "status": "RETAINED_UNRESOLVED",
+      "meaning": "Exact author simulator, aggregation, MLP layout, uncertainty definitions, and intervention scoring details remain unavailable."
+    },
+    {
+      "classification": "PUNCTUATED_EXCURSIONS_WITH_AGGREGATE_TREND_DISCREPANCY",
+      "status": "RETAINED_ESTABLISHED",
+      "meaning": "Figure 2-like spikes recur, but the aggregate no-trend target does not."
+    }
+  ],
+  "overallVerdict": {
+    "outcomeClassification": "CONSTRAINING_CONTRADICTORY",
+    "paperFacingVerdict": "PARTIAL_DIRECTIONAL_RETROSPECTIVE_RECONSTRUCTION",
+    "prospectiveVerdict": "PROSPECTIVE_PREDICTION_NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+    "causalVerdict": "PROSPECTIVE_CAUSAL_CONTROL_NOT_SUPPORTED_WITHIN_TESTED_SCOPE",
+    "fullPlanGate": "HOLD",
+    "fullPlanGateReason": "E01 achieves a partial retrospective forensic reconstruction but not two robust central layers, while exact author implementation remains materially underdetermined.",
+    "e01State": "CLOSED_FOR_HUMAN_REVIEW",
+    "e02State": "NOT_STARTED_REQUIRES_SEPARATE_HUMAN_AUTHORIZATION"
+  },
+  "recommendedE02Review": {
+    "recommendation": "AUTHORIZE_A_SEPARATE_STRONGER_E02_AFTER_HUMAN_REVIEW",
+    "rationale": "E01 narrowed the problem enough to test whether PhiRL adds anything beyond recurrence and attractor stability, and whether a better past-only reaction coordinate supports prediction or control.",
+    "priorityQuestions": [
+      "Replace the prevalence-saturated future-suffix task with prospectively defined onset-risk sets while preserving the frozen E01 result.",
+      "Test incremental value against exact H, composition stability, recurrence, attractor distance, and committor-like controls under past-only estimation.",
+      "Stress-test zero handling, partition stability, lag/window choices, and estimator families prospectively with multiplicity control and untouched confirmation matrices.",
+      "Add predeclared random-action, displacement-matched, attractor-directed, and shuffled-score intervention controls with paired uncertainty and action-separability gates.",
+      "Permit E02 to redirect from PhiRL to a validated alternative reaction coordinate rather than forcing the original metric to survive."
+    ],
+    "boundary": "This is a handoff recommendation only. S18 does not start E02, allocate E02 compute, or alter any E01 specification."
+  },
+  "postCloseoutHumanReviewOptions": [
+    {
+      "optionId": "OPTION_A_STRONGER_E02",
+      "recommendationRank": 1,
+      "title": "Authorize the planned stronger E02",
+      "scope": "Use the frozen E01 bundle to adjudicate leakage, labels, estimator stability, attractor geometry, incremental value, and matched intervention controls in a separate workspace.",
+      "why": "This preserves the experiment boundary and directly addresses the mechanisms that E01 could not establish.",
+      "authorizationRequired": true,
+      "active": false
+    },
+    {
+      "optionId": "OPTION_B_VERSIONED_E01_REOPEN_S19_S20",
+      "recommendationRank": 2,
+      "title": "Reopen E01 under a new version for S19-S20",
+      "scope": "S19 would prospectively lock and evaluate the 16 Matrix-A claims left not evaluated (C001-C012, C029, and C031-C033), using frozen E01 data wherever valid. S20 would be a separately locked confirmation and author-ambiguity resolution step defined before any new outcome access.",
+      "why": "This would improve paper-facing completeness before E02, but it would explicitly supersede the current no-further-E01-search boundary and must not mutate S01-S18.",
+      "authorizationRequired": true,
+      "active": false,
+      "requiredConditions": [
+        "A new human decision explicitly reopens E01 and versions the amendment.",
+        "S01-S18 remain byte-for-byte immutable.",
+        "S19 and S20 receive frozen questions, success criteria, compute limits, and stop boundaries before outcome access.",
+        "Directional agreement and exact numerical reproduction remain separate fields.",
+        "No favorable candidate, analysis, or method selection is permitted."
+      ]
+    },
+    {
+      "optionId": "OPTION_C_CLOSE_WITHOUT_CONTINUATION",
+      "recommendationRank": 3,
+      "title": "Archive after E01",
+      "scope": "Retain the V2 artifact and take no immediate follow-up action.",
+      "why": "Available if the human reviewer decides the remaining uncertainty does not justify more compute.",
+      "authorizationRequired": false,
+      "active": false
+    }
+  ],
+  "currentBoundaryAfterS18": {
+    "e01Closed": true,
+    "s19S20Queued": false,
+    "e02Started": false,
+    "chiefAndHumanMayAuthorizeFutureVersionedContinuation": true
+  }
+}

@@ -1,0 +1,443 @@
+schema: eidosoma.e01.s12b_pigozzi_source_audit_preregistration.v1
+researchStepId: S12B
+stepNumber: 12
+stepSuffix: B
+preregistrationVersion: E01-S12B-PIGOZZI-SOURCE-CODE-AUDIT-v1.0.0
+title: Source-Code Reconstruction and Future-Dependence Audit of Local Phi-r
+status: FROZEN_BEFORE_S12B_GARD_SCIENTIFIC_OUTCOMES
+dateFrozenUtc: '2026-08-02'
+evidenceClass: SOURCE_INFORMED_FORENSIC_RECONSTRUCTION
+sourceRelationship: SOURCE_INFORMED_RECONSTRUCTION
+forbiddenIdentities:
+  - AUTHOR_PRIMARY
+  - PAPER_PRIMARY
+  - EXACT_GARD_IMPLEMENTATION
+
+frozenQuestion: >-
+  Do the two pinned public Pigozzi local-Phi implementations produce
+  paper-like punctuated Phi-r trajectories and positive self-replication
+  associations on the twelve completed S12 GARD baselines, and does any such
+  result depend on fitting the information model and bipartition with the
+  completed trajectory rather than only the past available at each endpoint?
+
+scopeBoundary:
+  exactInputTrajectoryCount: 12
+  newGardTrajectories: 0
+  interventionTrajectories: 0
+  exactSourceImplementations:
+    - IIGR_CORRECTED_SOURCE
+    - PHIRL_REGULARIZED_SOURCE
+  exactTemporalModes:
+    - RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    - PAST_ONLY_PREFIX_ENDPOINT
+  s13Status: BLOCKED_PENDING_S12B_HUMAN_REVIEW
+  alterS10ThroughS12Forbidden: true
+  substituteS12BForS12Forbidden: true
+  rescueOrOverturnS12ClaimForbidden: true
+  fixedWindowRepairForbidden: true
+  interventionForbidden: true
+  estimatorTournamentForbidden: true
+  newEstimatorFamilyForbidden: true
+  mlpPredictionForbidden: true
+  reinforcementLearningForbidden: true
+  completeGeneRegulatoryExperimentForbidden: true
+  biomodelsDownloadForbidden: true
+  automaticS13Forbidden: true
+
+sourceSnapshots:
+  IIGR_CORRECTED_SOURCE:
+    repository: pigozzif/IntegratedInformationGeneRegulation
+    repositoryUrl: https://github.com/pigozzif/IntegratedInformationGeneRegulation.git
+    commit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+    tree: b0baf451876f4c8760f25096b7d426add68f6881
+    localCheckout: /cache/e01_s12b/sources/IntegratedInformationGeneRegulation
+    localPhiBehavior: corrected_current_all_declared_atoms_added
+    historicalOverwriteBugExcluded: true
+    files:
+      main.py:
+        sha256: a9df17e226abf3d2a97e2909073a764857d5306553f3328ce8d192a13eb792ca
+        gitBlob: 1d11e130b7b79c2191e36c17967c1d535211f76b
+      information.py:
+        sha256: d4d9043bdcdefc290406341acca9bae8c45956a7c5712e11857adadb0d8348dd
+        gitBlob: ca5dd01196d92bdb62116e6167ad8cf1428a0771
+      phi_lattice_22.pickle:
+        sha256: 66cd662640079e9a2a8bc172250b124d59945fd805b7f91d5588e2f7d1d7ea03
+        gitBlob: ce93845f84026b42f7d6c83553722176979dc8cc
+  PHIRL_REGULARIZED_SOURCE:
+    repository: pigozzif/PhiRL
+    repositoryUrl: https://github.com/pigozzif/PhiRL.git
+    commit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+    tree: e59fa8e311c2f727724acf3c1f1885dc8d840ee5
+    localCheckout: /cache/e01_s12b/sources/PhiRL
+    covarianceRegularizationIntroducedCommit: 9030b598f436cd23c39a3c3fc312ff79c79fb2ad
+    covarianceRegularizationCommitMustBeAncestor: true
+    files:
+      main.py:
+        sha256: 38041d5f158752fa7021c90eab3fbb5f54aa3d99b00bef7c4fc56978d26e2090
+        gitBlob: 6327323467bd6d59474602a05f5e1598fa8e7ab0
+      information.py:
+        sha256: 4b38089c73d52822b5b1d7d397ebaf28aeded591effcb0b0d25916b0cc54703e
+        gitBlob: 0e413918c896080cf3bcfd2be859d5723b4e6cad
+      phi_lattice_22.pickle:
+        sha256: 66cd662640079e9a2a8bc172250b124d59945fd805b7f91d5588e2f7d1d7ea03
+        gitBlob: ce93845f84026b42f7d6c83553722176979dc8cc
+  licensePolicy:
+    licenseFileStatus: NO_LICENSE_FILE_FOUND_AT_EITHER_PINNED_COMMIT
+    publicAvailabilityIsNotRedistributionPermission: true
+    rawSourceRedistributionForbidden: true
+    use: internal_source_informed_forensic_audit
+  picklePolicy:
+    treatAsUntrusted: true
+    inspectWithPickletoolsBeforeLoad: true
+    isolatedDisposableProcessOnly: true
+    restrictedGlobalAllowlist:
+      - builtins.dict
+      - networkx.classes.digraph.DiGraph
+      - networkx.classes.reportviews.NodeView
+    scientificRunnerMayLoadPickle: false
+    requiredSafeArtifact: /artifacts/research_steps/S12B/safe_phi_lattice.json
+    safeSchema: eidosoma.e01.s12b.safe_phi_lattice.v1
+
+immutablePriorEvidence:
+  artifactDirectories:
+    S10: {fileCount: 21, aggregateSha256: aeb44f0348370c78b46cc75f33f4e20acd2f3dfd2b68b91de1013b5052593f6a}
+    S11: {fileCount: 33, aggregateSha256: b328f9bed5458d4513891c85e4c57a8de4a0590ffb505be6c88957b2d4e90f0b}
+    S11R: {fileCount: 25, aggregateSha256: 29603ad75f2d62c5547271c80ae870553c3f479262f67376eb333adc9bc4e557}
+    S12: {fileCount: 54, aggregateSha256: 8434b6e41dd1263e9c1a4e507a00a6af8fb823cdf083e1911ef2bfa29ab761dc}
+  repositoryBeforeS12B:
+    commit: 1fe61d0cad541efe7d179e486bfdc8b246bde5c2
+    trackedFileCount: 101
+    trackedFileAggregateSha256: 1da859a9be97edf02595f9a40a2d83be0deca7c8df6310cb13484051b57fd9a8
+  registryMustRemainByteExact: true
+
+frozenInputs:
+  - {inputId: agentsInstructions, path: /workspace/AGENTS.md, sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c}
+  - {inputId: fullPlan, path: /workspace/FULL_PLAN.md, sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee}
+  - {inputId: s12bPreoutcomeResearchPlan, path: /workspace/RESEARCH_PLAN.md, sha256: fa9543b664ef130b8289caab9f2b79aad4f5cfd3a74b0706ec1d21ec2ad68aa8}
+  - {inputId: attachmentManifest, path: /workspace/input-attachments/MANIFEST.json, sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e}
+  - {inputId: attachmentSidecar, path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md, sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c}
+  - {inputId: suppliedPaperExtraction, path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md, sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a}
+  - {inputId: officialPaperPdf, path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf, sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4}
+  - {inputId: s10Report, path: /artifacts/research_steps/S10/research_step_full_results.md, sha256: 1a996d4e4b549b89761b9b21652553b8bf0e789b9e248a768b1e63d5704f3ff0}
+  - {inputId: s11Report, path: /artifacts/research_steps/S11/research_step_full_results.md, sha256: f37bf5992ab3e5cdf95f66986d7d794f7244ca06f4476026b10e809fcb46ea60}
+  - {inputId: s11rReport, path: /artifacts/research_steps/S11R/research_step_full_results.md, sha256: ccf143b668576b799833259b427e637f8591dd3484563a6256da48232bf6148d}
+  - {inputId: s12Report, path: /artifacts/research_steps/S12/research_step_full_results.md, sha256: bae098df10103db9a195d31e79353e23cd23a4ecd1476658b95f0abeb2d0ed29}
+  - {inputId: s10Preregistration, path: /artifacts/research_steps/S10/preregistration.yaml, sha256: 5c54b8f88e8e8634a4b7f39783e3359084e25ce44cbed2291a141da85e19f3dd}
+  - {inputId: s11Preregistration, path: /artifacts/research_steps/S11/preregistration.yaml, sha256: 1c21ad91927929626edb6b2e14dfa745674decbaa89c3ac57f2cfdc678458f40}
+  - {inputId: s11rPreregistration, path: /artifacts/research_steps/S11R/preregistration.yaml, sha256: 9f8a9424fae41a5ed7ea0d185eb5aaa31449bd12892c027eda2dc83fb57e99e0}
+  - {inputId: s12Preregistration, path: /artifacts/research_steps/S12/preregistration.yaml, sha256: bb0f2c9863ebc866242c12b46117c0442ab8b2a0694eeebc5de7f5f8c2f8c99a}
+  - {inputId: specificationRegistry, path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml, sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891}
+  - {inputId: sourceManifest, path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml, sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5}
+  - {inputId: environmentReport, path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json, sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd}
+  - {inputId: preprocessingContract, path: /artifacts/E01_forensic_replication_bundle/preprocessing/compositional_transform_contract_v1.0.0.yaml, sha256: 7203d0d273f529b3953c45a2c6e1a64dbbd323aac00d72bb60b099ce93dd2679}
+  - {inputId: informationDynamicsContract, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_contract_v1.0.0.yaml, sha256: c31adef6d6fc7acf098244422a6a46c7c98b582bbd1d99d431216577c1f01a83}
+  - {inputId: informationDynamicsEligibility, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_eligibility_registry_v1.0.0.yaml, sha256: ff96a7ee46274bf0c40343a85280647e349fbceaa74003de608fc9b23481a186}
+  - {inputId: baselineObservations, path: /artifacts/research_steps/S12/baseline_observations.parquet, sha256: 3c13b1f86eb3133a3161f5573c179f4f7cb2a6a8f0a0f179ca9a103a11f0888f}
+  - {inputId: baselineTrajectoryEvents, path: /artifacts/research_steps/S12/baseline_trajectory_events.parquet, sha256: 06a43c6e50fae8e5ced3acc1cdfa084c0341e1a5c34344ccba3ce937b7119375}
+  - {inputId: replicatorLabels, path: /artifacts/research_steps/S12/replicator_labels.parquet, sha256: bfe3d03ea0a71aa54a0703112b752226c36f9fff7234c65777437a26aebb5638}
+  - {inputId: baselineMatrices, path: /artifacts/research_steps/S12/baseline_matrices.npz, sha256: 336f040d0d00221560becd69ca6420c8071ad65e274962a527679ce486dc99fc}
+  - {inputId: trajectoryManifest, path: /artifacts/research_steps/S12/trajectory_manifest.json, sha256: 57b9dd984ef92afe20eff190615faebd224e15e376a51d99e836d7c4be1eb539}
+  - {inputId: preprocessingStatus, path: /artifacts/research_steps/S12/preprocessing_status.parquet, sha256: 186d71240e303af905d7a43adf1ef79bc007351d75c23603f98b11731cc4d63b}
+  - {inputId: seedManifest, path: /artifacts/research_steps/S12/seed_manifest.parquet, sha256: d0508cae37ddeb8d6c055c63ac160cab287f996638d86d62c3ebf7d1d6b8d835}
+  - {inputId: s12ArtifactManifest, path: /artifacts/research_steps/S12/artifact_manifest.json, sha256: e9070db9b15fd51eb0ff81c37ccf28d2f3c25447fa3c16e76725746f7c9f555a}
+  - {inputId: s12RuntimeManifest, path: /artifacts/research_steps/S12/runtime_manifest.json, sha256: 3b2d984e38dbf3f3f51bf45836c697b36c93ff352126952c5fcdb18c5d9cf369}
+
+commonGardSubstrate:
+  specificationId: E01-S12B-PREPROC-ADD0p5-DROPCLR-D100-C100-v1.0.0
+  source: frozen_S12_baseline_observations_only
+  inputState: integer_post_event_or_selected_daughter_counts
+  pseudocountDelta: 0.5
+  closureFormula: x_i=(n_i+delta)/(sum_j_n_j+N_g*delta)
+  clrFormula: z_i=log(x_i)-mean_j_log(x_j)
+  originalMolecularComponentRemovedOneBased: 100
+  outputDimension: 99
+  alternatePseudocountsForbidden: true
+  ilrForbidden: true
+  rawCountBranchForbidden: true
+  hiddenDeletionForbidden: true
+  observationSampling:
+    order: increasing_observationIndex_within_trajectory
+    includedKinds: [initial_selected_state, molecular_event, post_fission]
+    molecularEventState: post_event_integer_state
+    fissionBoundary: retain_triggering_post_molecular_event_state_then_selected_post_fission_daughter_as_distinct_consecutive_observation
+    noPoolingAcrossTrajectories: true
+  historicalLabel:
+    configurationId: E01-S08-YH-T1-HGT090-v1.0.0
+    familyId: Y_H
+    labelBranch: historical
+    joinKey: [trajectoryId, generation]
+    associationEvaluationPoints: post_fission_only
+    retrospectiveCaveatRequired: true
+
+implementations:
+  IIGR_CORRECTED_SOURCE:
+    fullModeId: IIGR_FULL
+    prefixModeId: IIGR_PREFIX_ENDPOINT
+    input: frozen_99_dimensional_clr
+    preprocessing:
+      - scipy_zscore_each_dimension
+      - source_global_signal_regression_then_source_corrected_zscore
+      - source_lag_one_linear_residualization_then_source_corrected_zscore
+    constantRowNoiseScale: 1.0e-6
+    constantRowNoiseRng: numpy_legacy_RandomState_domain_separated_preprocessing_seed
+    mi: {function: source_bidirectional_lagged_gaussian_mi, alpha: 1, bonferonni: false, lag: 1}
+    localCovarianceRegularization: none
+    localObservationOffsetFromRaw: 2
+  PHIRL_REGULARIZED_SOURCE:
+    fullModeId: PHIRL_FULL
+    prefixModeId: PHIRL_PREFIX_ENDPOINT
+    input: frozen_99_dimensional_clr
+    activeDimensionRule: retain_std_strictly_greater_than_1e-8
+    preprocessing: [source_active_dimension_filter, scipy_zscore_each_retained_dimension]
+    mi: {function: source_mutual_information_matrix_fast, alpha: 1, bonferonni: false, lag: 1}
+    localCovarianceRegularization:
+      formula: Sigma_epsilon=Sigma+epsilon*(trace(Sigma)/d)*I
+      epsilon: 1.0e-6
+    localObservationOffsetFromRaw: 1
+  commonPartition:
+    graphNoiseFloor: 1.0e-6
+    fiedlerNormalized: false
+    fiedlerMethod: networkx_source_default_tracemin_pcg
+    rng: explicit_domain_separated_legacy_RandomState_for_replay
+    side1: strictly_positive_entries
+    side2: strictly_negative_entries
+    exactZeroStatus: INELIGIBLE_FIEDLER_PARTITION_AMBIGUOUS
+    emptySideStatus: INELIGIBLE_FIEDLER_PARTITION_EMPTY
+    partitionMapping: arithmetic_mean_within_each_side
+  localOutputs:
+    primary: corrected_local_phi_r_all_declared_atoms
+    diagnosticOnly: synergy_plus_downward_causation_source_name_emergence
+    diagnosticCannotSelectClassification: true
+
+temporalModes:
+  full:
+    exactLabel: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    fitInput: entire_completed_trajectory_once
+    fittedObjects: [source_preprocessing, lagged_mi_graph, fiedler_bipartition, partition_averages, gaussian_means, gaussian_covariances]
+    allowedUses: [descriptive_spike_analysis, descriptive_replication_association, comparison_with_paper_figures_2_to_4, source_family_resemblance]
+    forbiddenUses: [prospective_early_warning, first_quarter_prediction, intervention_selection, causal_control]
+  prefix:
+    exactLabel: PAST_ONLY_PREFIX_ENDPOINT
+    endpointKinds: [post_fission]
+    minimumPrecedingMolecularTransitions: 256
+    prefixRows: observation_indices_0_through_endpoint_inclusive
+    return: final_local_value_only
+    fixedRollingWindowForbidden: true
+    futureFittedPartitionForbidden: true
+    futureFittedGaussianForbidden: true
+    trajectoryPoolingForbidden: true
+    statuses:
+      - ELIGIBLE
+      - INELIGIBLE_BEFORE_256_TRANSITIONS
+      - INELIGIBLE_TOO_FEW_ACTIVE_DIMENSIONS
+      - INELIGIBLE_FIEDLER_PARTITION_EMPTY
+      - INELIGIBLE_FIEDLER_PARTITION_AMBIGUOUS
+      - INELIGIBLE_COVARIANCE_EVALUATION
+      - INELIGIBLE_NONFINITE_LOCAL_VALUE
+      - INELIGIBLE_EXACT_REPLAY_FAILED
+      - INELIGIBLE_FUTURE_SUFFIX_INVARIANCE_FAILED
+
+sourceEquivalence:
+  mustPassBeforeGardProcessing: true
+  fixtureIds: [COUPLED_GAUSSIAN_A, COUPLED_GAUSSIAN_B, CONSTANT_INPUT, SINGULAR_DUPLICATE_INPUT]
+  fixtureShape: {time: 320, dimensions: 8}
+  comparisonFixtures: [COUPLED_GAUSSIAN_A, COUPLED_GAUSSIAN_B]
+  statusFixtures: [CONSTANT_INPUT, SINGULAR_DUPLICATE_INPUT]
+  gates:
+    retainedVariablesIdentical: true
+    miMaxAbsDifferenceAtMost: 1.0e-10
+    partitionIdenticalUpToSideExchange: true
+    partitionAverageMaxAbsDifferenceAtMost: 1.0e-10
+    localPhiRMaxAbsDifferenceAtMost: 1.0e-9
+    exactSameSeedReplay: true
+    singularAndConstantStatusIdentical: true
+  failureClassification: SOURCE_RECONSTRUCTION_FAILED
+  failureAction: STOP_BEFORE_GARD_OUTCOMES_NO_REPAIR
+
+futureSuffixInvariance:
+  allPrefixEndpointsStructuralGate: wrapper_slices_0_through_t_before_any_source_fit_and_records_prefix_input_sha256
+  executedSentinelsPerTrajectory: [first_eligible, median_eligible, last_eligible]
+  variants: [suffix_removed, suffix_deterministically_shuffled, suffix_replaced_by_domain_separated_gaussian_values]
+  numericRequirement: bit_exact_float64_endpoint_value_and_identical_partition_status
+  failureAction: STOP_NO_REPAIR
+
+analysis:
+  primaryProspectiveEstimand: current_generation_rho_0
+  secondaryProspectiveEstimand: next_generation_rho_plus_1
+  representativeFigureMatrixIndices: [0, 5, 11]
+  correlation: scipy_spearman_two_sided_reported_with_preregistered_one_sided_positive_null_for_classification
+  undefinedCorrelationPolicy: preserve_status_and_exclude_from_numeric_summary_never_impute
+  bootstrap:
+    replicates: 4096
+    unit: trajectory
+    statistic: median_of_defined_trajectory_spearman_correlations
+    interval: percentile_2.5_97.5_numpy_linear
+  circularShiftNull:
+    replicates: 4096
+    unit: within_trajectory_labels
+    offsets: independent_uniform_integer_1_through_n_minus_1_for_each_defined_trajectory
+    statistic: median_of_defined_trajectory_spearman_correlations
+    positiveP: (1+count(null_statistic>=observed))/(4096+1)
+    negativeP: (1+count(null_statistic<=observed))/(4096+1)
+  fullAssociationPoints: post_fission_local_value_joined_to_historical_generation_label
+  retrospectiveCoherenceRule:
+    ruleId: E01-S12B-FULL-PAPER-DIRECTED-COHERENCE-v1.0.0
+    allMustPass:
+      finiteCoverageAtLeast: 0.80
+      definedTrajectoryCorrelationsExactly: 12
+      positiveTrajectoryCorrelationsAtLeast: 9
+      medianTrajectoryCorrelationStrictlyGreaterThan: 0.0
+      trajectoryBootstrapLower95StrictlyGreaterThan: 0.0
+      positiveCircularShiftPAtMost: 0.05
+      runsWithHigherReplicationMeanAtLeast: 7
+    rationale: ceil_paper_73_of_100_positive_equals_9_of_12_and_ceil_57_of_100_higher_equals_7_of_12
+  prospectiveCandidateRule:
+    coverageAfterBoundaryAtLeast: 0.80
+    definedTrajectoryCorrelationsExactly: 12
+    positiveTrajectoryCorrelationsAtLeast: 9
+    medianTrajectoryCorrelationStrictlyGreaterThan: 0.0
+    trajectoryBootstrapLower95StrictlyGreaterThan: 0.0
+    positiveCircularShiftPAtMost: 0.05
+    exactFutureSuffixInvariance: true
+    exactSourceReplay: true
+    otherImplementationOppositeDirectionForbidden: true
+    oppositeDirectionDefinition: median_less_than_zero_AND_bootstrap_upper_less_than_zero_AND_negative_circular_shift_p_at_most_0.05
+  aggregateTrend:
+    alignment: interpolate_each_full_local_series_to_1001_equal_molecular_progress_points_then_mean_across_runs
+    test: ordinary_least_squares_slope_two_sided
+  spikes:
+    scope: pool_all_finite_full_local_values_within_one_implementation
+    positiveThreeSigma: value_strictly_greater_than_pooled_mean_plus_3_times_sample_sd
+    negativeThreeSigma: value_strictly_less_than_pooled_mean_minus_3_times_sample_sd
+    robustPositive: value_strictly_greater_than_pooled_median_plus_3_times_1.4826_times_MAD
+    spikeOverlap: positive_three_sigma_sets_at_shared_eligible_post_fission_points_using_separate_full_and_prefix_thresholds
+    emptyUnionJaccard: 1.0
+  ljungBox:
+    perTrajectoryLag: min_20_and_floor_number_of_finite_local_values_divided_by_5
+    alpha: 0.05
+  futureDependence:
+    sharedPoints: eligible_post_fission_points_with_finite_full_and_prefix_values
+    delta: full_minus_prefix
+    normalizedDifference: median_absolute_delta_divided_by_full_IQR
+    rankPercentile: (average_rank_minus_0.5)/number_of_shared_points_within_trajectory
+    materialRankChangeThresholdStrictlyGreaterThan: 0.10
+    partitionAgreement: adjusted_rand_index_over_original_99_features
+    signAgreementReference: zero
+    replicationAssociationDifference: full_rho_minus_prefix_rho
+    partitionAriEncoding: original_99_features_with_full_or_prefix_dropped_features_encoded_as_separate_minus_1_cluster
+  firstQuarterAudit:
+    cutoffRawObservationIndex: floor_0.25_times_final_zero_based_observation_index
+    truncatedFitInput: observations_0_through_cutoff_inclusive
+    comparison: completed_fit_local_values_ending_at_or_before_cutoff_versus_truncated_fit_values_at_same_raw_observation_indices
+
+classification:
+  vocabulary:
+    - SOURCE_FAMILY_NOT_SUPPORTED
+    - RETROSPECTIVE_SOURCE_FAMILY_RESEMBLANCE
+    - REGULARIZATION_DEPENDENT_RESEMBLANCE
+    - SOURCE_FAMILY_PROSPECTIVE_CANDIDATE
+  operationalFailureStatus: SOURCE_RECONSTRUCTION_FAILED
+  precedence:
+    - source_equivalence_or_stop_condition_failure_yields_operational_failure_status
+    - if_PhiRL_full_coherent_and_IIGR_full_not_coherent_then_REGULARIZATION_DEPENDENT_RESEMBLANCE
+    - if_at_least_one_prefix_meets_prospective_candidate_rule_then_SOURCE_FAMILY_PROSPECTIVE_CANDIDATE
+    - if_at_least_one_full_implementation_meets_retrospective_coherence_then_RETROSPECTIVE_SOURCE_FAMILY_RESEMBLANCE
+    - otherwise_SOURCE_FAMILY_NOT_SUPPORTED
+  s13AlwaysRequiresSeparateHumanAuthorization: true
+
+randomness:
+  rootSeedHex: 12b012b012b012b012b012b012b012b012b012b012b012b012b012b012b012b0
+  derivation: E01-S12B-SHA256-DOMAIN-SEPARATION-LEGACY-RANDOMSTATE-v1
+  domains:
+    - synthetic_fixture
+    - preprocessing_noise
+    - fiedler_initialization
+    - exact_replay
+    - suffix_shuffle
+    - suffix_replacement
+    - trajectory_bootstrap
+    - circular_shift_null
+  noSeedReuseAcrossIdentityTuples: true
+
+runtimeAndStorage:
+  cpuFloat64Authoritative: true
+  sourceAnalysisWorkers: 6
+  statisticsWorkers: 1
+  orchestrationCores: 1
+  blasThreads: 1
+  openmpThreads: 1
+  hardCpuHours: 50.0
+  hardGpuHours: 2.0
+  hardWallHours: 24.0
+  hardNewArtifactBytes: 10737418240
+  gpuRequired: false
+  benchmark:
+    firstTrajectoryMatrixIndex: 0
+    modes: [IIGR_FULL, PHIRL_FULL, IIGR_PREFIX_ENDPOINT, PHIRL_PREFIX_ENDPOINT]
+    projectionRule: observed_complete_first_trajectory_cpu_and_wall_times_times_12_plus_25_percent_statistics_and_validation_reserve
+    stopIfProjectedCpuHoursGreaterThan: 50.0
+    stopIfProjectedWallHoursGreaterThan: 24.0
+    scopeReductionForbidden: true
+  threadEnvironment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+    VECLIB_MAXIMUM_THREADS: '1'
+
+stopConditions:
+  - PINNED_SOURCE_IDENTITY_CHANGED
+  - PRIOR_S10_THROUGH_S12_ARTIFACT_CHANGED
+  - SOURCE_EQUIVALENCE_FAILED
+  - FUTURE_SUFFIX_INVARIANCE_FAILED
+  - FULL_NONFINITE_FRACTION_GREATER_THAN_0.20
+  - PREFIX_INELIGIBLE_FRACTION_GREATER_THAN_0.50
+  - PROJECTED_RUNTIME_OR_STORAGE_EXCEEDS_CEILING
+  - UNDOCUMENTED_POST_OUTCOME_CODE_CHANGE_REQUIRED
+  - EXACT_SOURCE_WRAPPER_REPLAY_FAILED
+stopPolicy: PRESERVE_FAILURE_COMPLETE_REQUIRED_STATUS_ARTIFACTS_AND_RETURN_FOR_HUMAN_REVIEW_WITHOUT_REPAIR
+stopConditionEvaluation:
+  fullNonfinite: evaluate_separately_per_implementation_over_every_expected_full_local_index_and_stop_if_either_fraction_strictly_greater_than_0.20
+  prefixIneligible: evaluate_separately_per_implementation_over_post_fission_endpoints_meeting_the_256_transition_boundary_and_stop_if_either_fraction_strictly_greater_than_0.50
+
+requiredArtifacts:
+  files:
+    - preregistration.yaml
+    - preregistration_record.json
+    - immutable_input_audit.json
+    - source_snapshot_manifest.json
+    - source_audit.md
+    - safe_phi_lattice.json
+    - source_equivalence_results.csv
+    - full_trajectory_local_values.parquet
+    - prefix_endpoint_values.parquet
+    - partition_history.parquet
+    - source_diagnostic_outputs.parquet
+    - retrospective_associations.csv
+    - prospective_associations.csv
+    - spike_analysis.csv
+    - future_dependence_results.csv
+    - classification.json
+    - failure_ledger.csv
+    - runtime_manifest.json
+    - artifact_manifest.json
+    - status.json
+    - S12B_FULL_RESULTS.md
+    - research_step_full_results.md
+  figures:
+    - figures/full_trajectory_matched_sources.png
+    - figures/full_versus_prefix_representative.png
+    - figures/association_distributions.png
+    - figures/spike_overlap.png
+    - figures/partition_stability.png
+    - figures/final_decision_matrix.png
+  canonicalReportPolicy: research_step_full_results.md_must_be_byte_exact_copy_of_S12B_FULL_RESULTS.md
+  statusJsonRequiredKeys:
+    - researchStepId
+    - stepNumber
+    - success
+    - status
+    - artifactsWritten
+    - validationResult
+    - caveatsOrBlockers
+    - recommendedNextAction

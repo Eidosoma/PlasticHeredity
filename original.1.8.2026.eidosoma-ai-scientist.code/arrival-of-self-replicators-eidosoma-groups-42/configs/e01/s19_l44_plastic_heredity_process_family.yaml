@@ -1,0 +1,66 @@
+schema: eidosoma.e01.s19_l44.preregistration.v1
+version: E01-S19-L44-PLASTIC-HEREDITY-PROCESS-FAMILY-IDENTIFIABILITY-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Which fission-clock heredity processes are nondegenerate, state-dependent,
+  reproducible across candidates and cohorts, and not explained by ordinary
+  inheritance frequency or opportunity count?
+inputs:
+  branchPaths: frozen L41 F12 branch identities
+  branchSummaries: frozen L41-L43 machine-readable outcomes
+  newSimulation: false
+registeredProcessFamily:
+  - INHERITANCE_BREAK_WITH_DEPARTURE
+  - INHERITANCE_RESUMPTION_RUN2
+  - NEW_HEREDITARY_EPISODE_RUN3
+  - PERSISTENT_HEREDITARY_EPISODE_RUN5
+  - OLD_NEIGHBOURHOOD_RECOVERY_RUN2
+  - POSITIVE_OLD_ANCHOR_GAIN_AT_RESUMPTION
+  - REPEATED_CROSS_GENERATION_RETURN
+interpretation:
+  run3: operational inheritance-only new-episode candidate, not a proven compositional regime
+  run5: operational persistence candidate, not a proven functional invariant
+baselines:
+  - exact fixed-positive-count order null for runs 2, 3, and 5
+  - cross-fitted IID Bernoulli inheritance
+  - cross-fitted first-order Markov inheritance
+  - opportunity count
+  - future inheritance frequency
+  - current prefix inheritance frequency and streak
+  - mass and local generation step
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  bootstraps: 4096
+  primaryClock: 12 future fissions
+  reliability:
+    minimumTrialsPerState: 32
+    minimumTrialsPerHalf: 16
+    minimumEligibleStates: 32
+    intermediateProbability: [0.1, 0.9]
+    minimumIntermediateStates: 20
+    correctedVarianceLower95: ">0"
+    splitHalfSpearman: ">0.5"
+    splitHalfLower95: ">0.3"
+selectionHierarchyForL45:
+  - reliable NEW_HEREDITARY_EPISODE_RUN3 with positive order-excess in all evaluation groups
+  - reliable INHERITANCE_RESUMPTION_RUN2 with positive order-excess in all evaluation groups
+  - reliable INHERITANCE_BREAK_WITH_DEPARTURE in all evaluation groups
+  - no process target; L45 remains identifiability-only
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  thresholdSearch: false
+  runLengthSearch: false
+  favorableProcessSelection: false
+  phiComputation: false
+ceilings:
+  cpuHours: 40
+  gpuHours: 0
+  wallHours: 24
+  retainedGiB: 15
+  temporaryGiB: 30
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: L45_PHI_PROCESS_SIDE_QUEST

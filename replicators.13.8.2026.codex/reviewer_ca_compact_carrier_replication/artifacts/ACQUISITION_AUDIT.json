@@ -1,0 +1,81 @@
+{
+  "accepted_donors": 1099,
+  "adaptive_extension_or_threshold_change": false,
+  "allocated_donors_unique": true,
+  "allocation_counts": {
+    "audit_reserve": 32,
+    "confirmation": 128,
+    "engineering": 4
+  },
+  "generated_candidates": 2048,
+  "historical_state_count": 7522,
+  "historical_state_overlap": 0,
+  "launches": [
+    {
+      "accepted": 261,
+      "accepted_A": 87,
+      "accepted_B": 174,
+      "generated": 512,
+      "launch_index": 0,
+      "rejections": {
+        "dead": 0,
+        "fresh_duplicate": 0,
+        "historically_identical": 0,
+        "unresolved": 251
+      }
+    },
+    {
+      "accepted": 293,
+      "accepted_A": 183,
+      "accepted_B": 110,
+      "generated": 512,
+      "launch_index": 1,
+      "rejections": {
+        "dead": 0,
+        "fresh_duplicate": 0,
+        "historically_identical": 0,
+        "unresolved": 219
+      }
+    },
+    {
+      "accepted": 296,
+      "accepted_A": 225,
+      "accepted_B": 71,
+      "generated": 512,
+      "launch_index": 2,
+      "rejections": {
+        "dead": 0,
+        "fresh_duplicate": 0,
+        "historically_identical": 0,
+        "unresolved": 216
+      }
+    },
+    {
+      "accepted": 249,
+      "accepted_A": 137,
+      "accepted_B": 112,
+      "generated": 512,
+      "launch_index": 3,
+      "rejections": {
+        "dead": 0,
+        "fresh_duplicate": 0,
+        "historically_identical": 0,
+        "unresolved": 263
+      }
+    }
+  ],
+  "matched_pairs": 380,
+  "matched_pairs_by_launch": {
+    "launch0": 87,
+    "launch1": 110,
+    "launch2": 71,
+    "launch3": 112
+  },
+  "matching_objective": "maximum same-launch A/B cardinality under 0.02 density caliper; then minimum density distance and deterministic SHA256 tie-break",
+  "maximum_allocated_density_difference": 0.0078125,
+  "namespace": "reviewer-ca-fresh-donor-bank-2026-08-23-v1",
+  "required_pairs": 164,
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "state": "READY",
+  "thresholds_frozen_before_acquisition": true
+}

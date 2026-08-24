@@ -1,0 +1,71 @@
+{
+  "classification": "scientific_input_and_implementation",
+  "entries": {
+    "campaign_core": {
+      "bytes": 11700,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_plasticity_persistence_cleanroom/campaign_core.py",
+      "sha256": "5d1272329243ce3ccae82727b71d2a613aad0a86afc1103bc8dc6cb931d000d3"
+    },
+    "detached_runner": {
+      "bytes": 2642,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_plasticity_persistence_cleanroom/run_detached_pipeline.sh",
+      "sha256": "aa9d5b8791e98ae50d5611805c6d2baf9155588fe50223c3d15111b8ecc600f7"
+    },
+    "dynamic_twin_core": {
+      "bytes": 21391,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_dynamic_regime_cleanroom/regime_core.py",
+      "sha256": "c6348f5b287d8b9b6c306bc8496d4c4f25705b4b38fd291dbc8ad7ff8fa8a8e5"
+    },
+    "gard_config": {
+      "bytes": 3275,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/config.py",
+      "sha256": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957"
+    },
+    "gard_process": {
+      "bytes": 3402,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/processes.py",
+      "sha256": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501"
+    },
+    "gard_simulator": {
+      "bytes": 7900,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/simulator.py",
+      "sha256": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358"
+    },
+    "protocol_text": {
+      "bytes": 2259,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_plasticity_persistence_cleanroom/PROTOCOL.md",
+      "sha256": "584c1d41b962fdcd5a127989ec41208f551b303c92863df680c371f31a3113e7"
+    },
+    "reporting_boundary": {
+      "bytes": 690,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_plasticity_persistence_cleanroom/REPORTING_BOUNDARY.md",
+      "sha256": "66a89b874793e2a7e0b6261dcbf996e8bbc3e119ab4945e8b62045eb76335ce7"
+    },
+    "runner": {
+      "bytes": 82977,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_plasticity_persistence_cleanroom/run_campaign.py",
+      "sha256": "bbd2fdbb5d8d5a3c3b380d32c036875e3799516bdd7c881c226000d1b1285c09"
+    },
+    "seed_derivation": {
+      "bytes": 367,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/seeds.py",
+      "sha256": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61"
+    },
+    "strict8_evaluator": {
+      "bytes": 75059,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/regime_confirmation.py",
+      "sha256": "034c70adf4571408ad2e0215e8a7bddf4aa03c39199f2e8c080ac6e50ad60c0a"
+    },
+    "tests": {
+      "bytes": 6455,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_plasticity_persistence_cleanroom/test_campaign.py",
+      "sha256": "1077c09a81b2bc0fa535b6c1e1ca7ae1f050f4f241d9b3638413796f52e53b77"
+    },
+    "transplant_core": {
+      "bytes": 13771,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/transplant_core.py",
+      "sha256": "ebca9162b74c98f481686db89eb3ac592e5060de64839bff8a168c3c003f5c52"
+    }
+  },
+  "manifest_id": "97608e912425e8281be9a27252c960b306bf4a82f8632fbeb5f60c6d999d7b07"
+}

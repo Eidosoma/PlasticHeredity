@@ -1,0 +1,149 @@
+{
+  "claim_boundary": {
+    "prohibited": [
+      "strict-eight control",
+      "autonomous persistence or installed attractor",
+      "biological memory, agency, life, or error correction",
+      "real prebiotic chemistry or universal origin-of-life mechanism",
+      "Phi or PhiID intervention"
+    ]
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "complete_replay": true,
+    "controlled_lineage_retry_or_replacement": false,
+    "controllers": [
+      "MODEL_UP",
+      "MODEL_DOWN",
+      "RULE_UP",
+      "RULE_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "fissions": 60,
+    "fresh_matrices": 48,
+    "maximum_primary_boundaries": 207360,
+    "primary_lineages": 3456,
+    "replicates_per_controller": 6,
+    "untreated_launch_landmark": 60
+  },
+  "conditional_extension": {
+    "active_feedback_not_passive_persistence": true,
+    "additional_fissions": 60,
+    "arms": [
+      "MODEL_DOWN",
+      "RULE_DOWN",
+      "NOOP"
+    ],
+    "complete_replay": true,
+    "continues_exact_state_and_simulation_rng": true,
+    "launch_only_if_all_primary_and_integrity_gates_pass": true
+  },
+  "controllers": {
+    "MODEL_DOWN": "exhaustive frozen-predictor minimum; first lexicographic tie",
+    "MODEL_UP": "exhaustive frozen-predictor maximum; first lexicographic tie",
+    "NOOP": "callback returning no edit",
+    "RANDOM": "uniform legal swap from separate action stream",
+    "RULE_DOWN": "frozen outgoing x@beta stabilizing rule",
+    "RULE_UP": "frozen outgoing x@beta destabilizing rule",
+    "callback_after_every_successful_fission_including_last": true
+  },
+  "development_envelope": {
+    "candidate_separated_coordinatewise_minimum_and_maximum": true,
+    "coordinates": 21,
+    "descriptive_only": true,
+    "post_action_any_coordinate_outside_is_ood": true,
+    "source": "original 5x development matrices only"
+  },
+  "format": "codex-intervention-cr7-steering-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_never_pooled": true,
+    "random_noop_tost_margin": 0.025,
+    "randomization_repetitions_descriptive": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "integrity_gates": [
+    "all NOOP callbacks bitwise plain",
+    "complete exact replay"
+  ],
+  "operational": {
+    "checkpoint_resumable": true,
+    "cr8_and_cr9_not_launched_automatically": true,
+    "mandatory_stop_after_seal": true,
+    "minimum_free_disk_bytes": 2500000000
+  },
+  "outcomes": {
+    "failed_lineages_retained": true,
+    "fractions_use_observed_boundaries": true,
+    "primary": [
+      "inherited_boundary_fraction",
+      "total_breaks",
+      "nonoverlapping_joint_break_run3_episode_count",
+      "longest_inherited_run"
+    ],
+    "secondary": [
+      "final_entropy",
+      "final_occupied_types",
+      "final_top1_share",
+      "final_xT_beta_x_throughput",
+      "mean_growth_updates",
+      "survival",
+      "cross_lineage_final_cosine",
+      "distinct_repeated_and_immediately_reversing_swaps",
+      "out_of_development_envelope_fraction"
+    ]
+  },
+  "primary_gates_per_candidate": [
+    "MODEL_DOWN-NOOP inheritance CI95 lower > 0",
+    "RULE_DOWN-NOOP inheritance CI95 lower > 0",
+    "MODEL_UP-NOOP inheritance CI95 upper < 0",
+    "MODEL_UP-MODEL_DOWN episode-count CI95 lower > 0",
+    "RANDOM-NOOP inheritance CI90 inside +/-0.025"
+  ],
+  "protocol_id": "b60c937e6a001ed9e5f48a61e66aa8cf132f703b9b905b7aec01e6bc20bf9d29",
+  "randomness": {
+    "action_stream_separate_from_simulation": true,
+    "common_random_streams_not_identical_realized_futures": true,
+    "future_seed_excludes_controller": true,
+    "seed_domains": {
+      "bootstrap": "7319e80372a5f61480eddcce8cb6f393e4469b99ea9717785f20570ce9247d0a",
+      "conditional_extension": "9d9662ecbd4700df7d0ac7325c8d616fa008cb30dc869f9b9b26f88d58827274",
+      "controller_action": "515fb14bdc6a7b8f0767f94d0742c12f8e2e61849a8923963404b39492f16991",
+      "future_simulation": "dc036e0dc22a22be40c627bbfbde51ffe421f4ae8340f586aa8f40def147831b",
+      "initial_composition": "97a0a2ada2e6364767954dad01e4ed5dcb571f8fc1355f33d0e0fa3ac0df6b11",
+      "landmark_restoration": "b5de53245590965457c846d91e907a82497ca9316678b793c8bee8466ebf77ba",
+      "main_trajectory": "7188b7add6f7c8645e8c41ba330df6d3502fd47436385d05a4e5a7500f9f1126",
+      "matrix_generation": "775d1f33c2cd00799d647bef1d7de75253c3927a15851917a77b4486b1573145",
+      "randomization": "abcac627da2d14c4bac71aa0408f69a50112de0f1777a674ec02a79c710de8ab",
+      "replay": "d0f8d28c96147c0c498dd0bf20601094569bbbf8075cf79c31f2ae12a8f186ed",
+      "smoke": "1288cfc7d4d6b253e581a24de55d9f5fb2854100a505467c40a39472b0f0e460",
+      "validation": "da79653cb15c0d113d94e91fcb10927f969e7e4914d96ee7935fab9c849a653a"
+    }
+  },
+  "rule_recovery": {
+    "external_point_hypothesis_at_least": 0.8,
+    "formula": "(RULE_DOWN-NOOP)/(MODEL_DOWN-NOOP)",
+    "nonpositive_denominator_draws_invalid": true,
+    "strong_classification_bootstrap_lower_above": 0.7,
+    "strong_classification_requires_at_least_95_percent_valid_draws": true
+  },
+  "status": "frozen_before_any_cr7_scientific_matrix",
+  "target": {
+    "episode_counter": "non-overlapping; new break required after certification",
+    "inheritance": "strict unrounded float64 H > 0.9",
+    "name": "JOINT_BREAK_RUN3",
+    "strict_eight_excluded": true
+  },
+  "upstream": {
+    "cr1_model_guided_gate_passed": true,
+    "cr1_registration_id": "a8743234235e82133d2938c15ead062c7c85004c5f640d7359e5b075cb31368e",
+    "cr3_outgoing_rule_gate_passed": true,
+    "cr3_registration_id": "64e871db56b3958a14bdad47b404f6c9f1ad09d0bda1e996e24498598523d189",
+    "cr6_complete_gate": false,
+    "cr6_not_used_to_tune_or_authorize_cr7": true
+  }
+}

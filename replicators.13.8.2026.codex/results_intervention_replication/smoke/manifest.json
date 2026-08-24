@@ -1,0 +1,12 @@
+{
+  "arm_ordering_disclosed": false,
+  "candidate_differences_disclosed": false,
+  "effect_sizes_disclosed": false,
+  "event_rates_disclosed": false,
+  "format": "codex-intervention-smoke-v1",
+  "io_legality_checkpoint_and_replay_paths_passed": true,
+  "registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "replay_exact": true,
+  "scientific_matrix_count": 0,
+  "scientific_result": false
+}

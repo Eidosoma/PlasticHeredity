@@ -1,0 +1,3 @@
+# S19-L29 decision record
+
+L28 established reliable state-dependent H32 committor variation in both candidates and found that all frozen representations missed it. Under the human's directed pass branch, L29 freezes exact source-defined local birth/death/fission moments, a complete one-selected-clock kernel moment audit, one basin-blind coordinate, one target-geometry control and target-radial analytic/kernel coordinates before feature or model outcomes. The completed-run target basin is outcome-definition conditioning, not a prospective input claim. No H32 branch, target, landmark, threshold or simulator setting changes.

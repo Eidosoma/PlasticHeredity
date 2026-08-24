@@ -1,0 +1,37 @@
+{
+  "claim_status": "prospective confirmation of a pilot-developed selector only",
+  "development_gate": true,
+  "development_manifest_sha256": "71147138a8b597b01b722220b53c17641bdc727d9a67f8b09e79cd0cb4ad2df1",
+  "development_registration_id": "dd828ee4855fe199b78fd86772466f185fafc8b71b7c852f07fad4e81a07a9d9",
+  "information_equivalence_margins": {
+    "02": {
+      "equivalence_margin": 14.168845944752846,
+      "noop_matrix_sd": 70.84422972376423
+    },
+    "03": {
+      "equivalence_margin": 14.542019211444234,
+      "noop_matrix_sd": 72.71009605722116
+    }
+  },
+  "model_contract_sha256": "d4173807dc34f4d997b13ca3d6276be88afea2271ac7fcb106cdfdb0fcd382f3",
+  "model_sha256": "4639f6186fe7c8b6723d989b4761f9dfe8909fb25ec196fd737be9ccecc5f142",
+  "new_confirmation_matrices_at_registration": 0,
+  "original_24_matrix_gate_eligible": false,
+  "phase": "PX3_CONFIRMATION",
+  "program_protocol_id": "9ea3b7ee5a1bb5c9b7a080f05ca406af799067d82d1c3c6fd93fc1bc5f83cab2",
+  "protocol_id": "6b34553092f6c0b4207bf435228c0027da05ced153085344e3868f6efc47ec6f",
+  "resource_bounded_pilot_development": true,
+  "run_even_if_development_gate_failed": true,
+  "spec": {
+    "branches": 64,
+    "cpu_seconds": 230400.0,
+    "horizon": 8,
+    "label": "confirmation",
+    "landmarks": [
+      20,
+      40,
+      60
+    ],
+    "matrices": 24
+  }
+}

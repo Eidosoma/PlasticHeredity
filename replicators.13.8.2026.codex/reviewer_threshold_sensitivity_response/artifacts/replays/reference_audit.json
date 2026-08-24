@@ -1,0 +1,17 @@
+{
+  "all_seed_roles_distinct_by_contract": true,
+  "classification": "new_contextual_l36_method_simulation_not_historical_l36_replay",
+  "complete_lineages": 3999,
+  "defined_between_lineage_centroid_h": 1999,
+  "frozen_l36_centroid_source_sha256": "85575bca32241b76939fce211647f547e9c60cd583f300ae5e63a2fe31b24914",
+  "frozen_l36_config_sha256": "210f33b5aba2256983c28f075106d5a38a45942cfdd59c47b5fcaa6900968308",
+  "frozen_l36_report_sha256": "67f9438cc046760f921542dba39b193813d0208f0e99d5a76b7c8aeb270e74f0",
+  "frozen_l36_script_sha256": "c59ad145b168070664a3635a6b3ddaebc445ac95434a3ab27b616304811e5d23",
+  "frozen_l37_config_sha256": "1324b7b653c529e79228f830c56f5e1c10c5b02f3a163003a93b5396e53bd400",
+  "frozen_l37_report_sha256": "57564034b21d12fe1af54b393df40483ed94a6ee174fb9e976175b85eeeffef0",
+  "frozen_l37_script_sha256": "f9198ff1f42cb90ab450a9c6e5245bdabe10cc98a82ee0ea274e03edef4825a2",
+  "horizon": 100,
+  "lineages": 4000,
+  "states": 2000,
+  "total_lineages": 4000
+}

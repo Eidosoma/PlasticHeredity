@@ -1,0 +1,219 @@
+{
+  "carrier_overlay": {
+    "arms": [
+      "correct",
+      "zero",
+      "shuffled"
+    ],
+    "cohort": "previously frozen 47-rule confirmation bank; multiform decoding where eligible",
+    "horizon": 32,
+    "not_a_rescue_of_prior_failure": true,
+    "points": "ordered, boundary, expansive",
+    "settings": "two settings frozen by prior carrier campaign without retuning"
+  },
+  "classification": "exploratory_followup_not_current_preprint_evidence",
+  "cohorts": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "development_and_confirmation_seed_domains_disjoint": true,
+    "fresh_matrices_not_selected_for_ph": true,
+    "tiers": {
+      "A": {
+        "carrier_futures": 24,
+        "confirmation_matrices": 64,
+        "confirmation_starts": 16,
+        "development_matrices": 24,
+        "development_starts": 8,
+        "ph_lineages": 48
+      },
+      "B": {
+        "carrier_futures": 16,
+        "confirmation_matrices": 48,
+        "confirmation_starts": 12,
+        "development_matrices": 18,
+        "development_starts": 6,
+        "ph_lineages": 32
+      },
+      "C": {
+        "carrier_futures": 12,
+        "confirmation_matrices": 32,
+        "confirmation_starts": 8,
+        "development_matrices": 12,
+        "development_starts": 4,
+        "ph_lineages": 24
+      }
+    }
+  },
+  "decision_rules": {
+    "boundary": "ordered 95% CI upper<0, expansive lower>0, connected adjacent sign crossing, both candidates",
+    "boundary_susceptibility": "peak integrated damage lies within one Manhattan grid edge of sign crossing",
+    "carrier_enrichment": "boundary correct-minus-zero positive and exceeds both flank contrasts in both candidates",
+    "mean_field": "stability margin and damage exponent have negative Spearman association in both candidates",
+    "original_adjacent": "original within one edge of zero contour and 90% exponent CI within +/-0.02 in both candidates",
+    "ph_enrichment": "boundary minus mean ordered/expansive whole-matrix bootstrap lower>0, separately by endpoint and candidate"
+  },
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "grid": [
+    {
+      "beta_multiplier": 0.125,
+      "grid_id": "b0p125_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 0.25,
+      "grid_id": "b0p25_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 0.5,
+      "grid_id": "b0p5_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 1.0,
+      "grid_id": "b1p0_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 2.0,
+      "grid_id": "b2p0_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 4.0,
+      "grid_id": "b4p0_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 8.0,
+      "grid_id": "b8p0_l0p5",
+      "leave_multiplier": 0.5
+    },
+    {
+      "beta_multiplier": 0.125,
+      "grid_id": "b0p125_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 0.25,
+      "grid_id": "b0p25_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 0.5,
+      "grid_id": "b0p5_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 1.0,
+      "grid_id": "b1p0_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 2.0,
+      "grid_id": "b2p0_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 4.0,
+      "grid_id": "b4p0_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 8.0,
+      "grid_id": "b8p0_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 0.125,
+      "grid_id": "b0p125_l2p0",
+      "leave_multiplier": 2.0
+    },
+    {
+      "beta_multiplier": 0.25,
+      "grid_id": "b0p25_l2p0",
+      "leave_multiplier": 2.0
+    },
+    {
+      "beta_multiplier": 0.5,
+      "grid_id": "b0p5_l2p0",
+      "leave_multiplier": 2.0
+    },
+    {
+      "beta_multiplier": 1.0,
+      "grid_id": "b1p0_l2p0",
+      "leave_multiplier": 2.0
+    },
+    {
+      "beta_multiplier": 2.0,
+      "grid_id": "b2p0_l2p0",
+      "leave_multiplier": 2.0
+    },
+    {
+      "beta_multiplier": 4.0,
+      "grid_id": "b4p0_l2p0",
+      "leave_multiplier": 2.0
+    },
+    {
+      "beta_multiplier": 8.0,
+      "grid_id": "b8p0_l2p0",
+      "leave_multiplier": 2.0
+    }
+  ],
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidate_results_separate": true,
+    "development_cannot_supply_confirmation_evidence": true,
+    "unit": "whole catalytic matrix"
+  },
+  "original_point": "b1p0_l1p0",
+  "ph_overlay": {
+    "endpoints": [
+      "F12 break-then-run3",
+      "strict8",
+      "break time",
+      "terminal diversity",
+      "within versus cross similarity"
+    ],
+    "f12_and_strict8_never_pool_or_rescue_each_other": true,
+    "lineage_horizon": 32,
+    "points": "ordered, boundary, expansive, and original if distinct"
+  },
+  "protocol_id": "fb3ad23678c2b9531ba65c9f0e07556db478d605535167e87a1dc5062f5f1833",
+  "question": "does GARD show a reproducible contraction-to-expansion boundary, and is PH or frozen-carrier efficacy enriched nearby?",
+  "reporting_boundary": {
+    "edge_of_chaos_requires_both_stochastic_and_mean_field_gates": true,
+    "newideas_used_as_data": false,
+    "not_current_preprint_evidence": true,
+    "not_independent_gard_replication": true,
+    "not_wagner_replication": true,
+    "primary_term": "boundary of order",
+    "wagner_code_used": false
+  },
+  "runtime": {
+    "benchmark_selects_largest_fitting_registered_tier": true,
+    "full_exact_checkpoint_replay_required": true,
+    "hard_limit_seconds": 28800.0,
+    "projection_budget_seconds": 21600.0,
+    "restart_does_not_reset_ledger": true,
+    "soft_limit_seconds": 27000.0
+  },
+  "selection": {
+    "boundary": "minimum absolute exponent among above-median integrated-damage cells, excluding selected flanks",
+    "confirmation_evaluates_all_21_cells": true,
+    "expansive": "maximum pooled development median exponent",
+    "ordered": "minimum pooled development median exponent"
+  },
+  "status": "frozen_before_any_dynamic_regime_scientific_future",
+  "twins": {
+    "burn_in_fissions": 64,
+    "corroboration": "one minus cosine similarity",
+    "coupling": "shared Poisson minimum plus independent residuals; shared molecule-token priorities",
+    "exponent": "log((D8+1/160)/(D0+1/160))/8",
+    "horizon": 32,
+    "perturbation": "one outcome-blind mass-preserving molecule substitution",
+    "primary_damage": "total variation between normalized compositions"
+  }
+}

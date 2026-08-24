@@ -1,0 +1,10 @@
+{
+  "comparisons_sha256": "69f24c58fa1ad4f80dceaed99e1894ad84fb06e72b6f1cc2912c1d94d6ebfe5e",
+  "confirmation_outcomes_loaded_only_in_analyze": true,
+  "format": "reviewer-sequence-history-analysis-v1",
+  "primary_cells_passed": 8,
+  "primary_cells_total": 8,
+  "protocol_id": "bfeff2ea8e4b6d32c87e04b0887a121f658d3ce34a55315ca9ef125dd47b9913",
+  "scores_sha256": "559897ec19740c0b784460d35cfad77dbe8e02c2dc5a22d02e9e3ecb2b32cfd3",
+  "strong_cross_clean_room_gate": true
+}

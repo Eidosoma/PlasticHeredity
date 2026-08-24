@@ -1,0 +1,44 @@
+{
+  "arms": [
+    "NOOP",
+    "RANDOM",
+    "NEUTRAL",
+    "STABILIZE_25",
+    "STABILIZE_50",
+    "STABILIZE_75",
+    "STABILIZE_100",
+    "DESTABILIZE_25",
+    "DESTABILIZE_50",
+    "DESTABILIZE_75",
+    "DESTABILIZE_100"
+  ],
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "format": "codex-ch5-phir-feedback-dose-result-v1",
+  "matrices": 24,
+  "original_confirmation_authorized": false,
+  "original_confirmation_launched": false,
+  "previous_results_modified": false,
+  "raw_molecular_trajectories_persisted": false,
+  "registration_id": "2339c473693d06574a266a7d14d9e94e36a75d817cca0a539e173f10157128f6",
+  "replicates": 2,
+  "row_counts": {
+    "lineage_metrics": 1056,
+    "lineages": 1056,
+    "matrix_effects": 34190,
+    "rolling_windows": 31625,
+    "selected_edits": 63278,
+    "selection_diagnostics": 44
+  },
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  }
+}

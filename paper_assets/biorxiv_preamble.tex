@@ -1,0 +1,112 @@
+% Typography and page design for the author-created bioRxiv PDF.
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{TeX Gyre Pagella}[
+  Ligatures=TeX,
+  Numbers={Proportional,OldStyle}
+]
+\setsansfont{TeX Gyre Heros}[Scale=0.92]
+\setmonofont{DejaVu Sans Mono}[Scale=0.82]
+\setmathfont{TeX Gyre Pagella Math}
+
+\usepackage{xcolor}
+\usepackage{titling}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\usepackage{xurl}
+\usepackage{etoolbox}
+\usepackage{needspace}
+
+\definecolor{EidosomaBlue}{HTML}{185B6B}
+\definecolor{EidosomaInk}{HTML}{24323A}
+\definecolor{EidosomaMuted}{HTML}{66757C}
+\definecolor{EidosomaRule}{HTML}{B8C8CD}
+
+\AtBeginDocument{%
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=EidosomaBlue,
+    citecolor=EidosomaBlue,
+    urlcolor=EidosomaBlue,
+    pdfborder={0 0 0},
+    bookmarksopen=true,
+    bookmarksnumbered=false
+  }%
+}
+
+\setlength{\droptitle}{-3.1em}
+\pretitle{\begin{flushleft}\sffamily\bfseries\color{EidosomaInk}\fontsize{21}{24}\selectfont}
+\posttitle{\par\end{flushleft}\vspace{0.55em}}
+\preauthor{\begin{flushleft}\sffamily\large\color{EidosomaInk}}
+\postauthor{\par\end{flushleft}\vspace{0.1em}}
+\predate{\begin{flushleft}\sffamily\small\color{EidosomaMuted}}
+\postdate{\par\end{flushleft}\vspace{0.7em}\color{EidosomaBlue}\rule{\textwidth}{0.8pt}\color{EidosomaInk}\vspace{0.9em}}
+
+% Keep heading customization on LaTeX's native \@startsection path so that
+% Pandoc's already-loaded hyperref/bookmark hooks create a distinct, current
+% destination for every heading. Needspace runs before the section command,
+% preventing an anchor from being left on the preceding page.
+\makeatletter
+\renewcommand\section{%
+  \Needspace{5\baselineskip}%
+  \@startsection{section}{1}{\z@}%
+    {-2.1em}%
+    {0.65em}%
+    {\sffamily\bfseries\color{EidosomaInk}\Large}%
+}
+\renewcommand\subsection{%
+  \Needspace{4\baselineskip}%
+  \@startsection{subsection}{2}{\z@}%
+    {-1.55em}%
+    {0.45em}%
+    {\sffamily\bfseries\color{EidosomaBlue}\large}%
+}
+\renewcommand\subsubsection{%
+  \Needspace{3\baselineskip}%
+  \@startsection{subsubsection}{3}{\z@}%
+    {-1.2em}%
+    {0.35em}%
+    {\sffamily\bfseries\color{EidosomaInk}\normalsize}%
+}
+\makeatother
+\setcounter{secnumdepth}{0}
+
+\setlength{\parindent}{1.15em}
+\setlength{\parskip}{0.12em}
+\linespread{1.075}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\emergencystretch=2em
+
+\captionsetup{
+  font=small,
+  labelfont={bf,sf,color=EidosomaBlue},
+  textfont={color=EidosomaInk},
+  justification=raggedright,
+  singlelinecheck=false,
+  skip=7pt
+}
+\setlength{\tabcolsep}{4.5pt}
+\renewcommand{\arraystretch}{1.12}
+\AtBeginEnvironment{longtable}{\small}
+
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\footnotesize\color{EidosomaMuted}Plastic heredity}
+\fancyhead[R]{\sffamily\footnotesize\color{EidosomaMuted}Bjarnason}
+\fancyfoot[C]{\sffamily\footnotesize\color{EidosomaMuted}\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{EidosomaRule}\leaders\hrule height \headrulewidth\hfill}}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\sffamily\footnotesize\color{EidosomaMuted}\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}

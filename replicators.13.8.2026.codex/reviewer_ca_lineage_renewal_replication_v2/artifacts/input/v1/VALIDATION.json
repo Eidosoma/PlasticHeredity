@@ -1,0 +1,45 @@
+{
+  "allocated_donors_unique": true,
+  "cohort_counts": {
+    "confirmation": 96,
+    "quarantine": 2
+  },
+  "confirmation_donor_overlap_with_prior_local_or_newideas": 0,
+  "contract_checks": {
+    "generation_sweeps": true,
+    "observe_start": true,
+    "process_noise": true,
+    "read_sweeps": true,
+    "rule": true,
+    "stale_retention": true
+  },
+  "data_docs_only_source": true,
+  "donor_audit": {
+    "eligible_pairs": 98,
+    "frozen_pool_pairs": 506,
+    "local_used_donors": 612,
+    "local_used_pairs": 306,
+    "max_density_difference": 0.01171875,
+    "newideas_exposed_donors": 1000,
+    "newideas_exposed_pair_ids": 500,
+    "union_excluded_donors": 1421
+  },
+  "local_prerequisites": {
+    "stage1": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY",
+    "stage2": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL"
+  },
+  "new_scientific_experiments_added": false,
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1",
+  "sealed_dependency_checks": {
+    "__init__.py": true,
+    "contract.py": true,
+    "engine.py": true
+  },
+  "secondary_decoder_status": "excluded because data/docs do not operationally specify it",
+  "snapshot_digest": "7e447a2cc25dfbac82de9f5b2e906ca5ff9572d84d3bd2be2eaa4dee958f63e4",
+  "source_candidate": "simple--strict-49-64--gain-050",
+  "source_code_opened_hashed_imported_or_executed": false,
+  "source_role": "hypothesis and fixed protocol only",
+  "source_verdict_used_as_evidence": false,
+  "valid": true
+}

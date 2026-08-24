@@ -1,0 +1,15 @@
+{
+  "accepted_sources": 128,
+  "cohort": "evaluation",
+  "complete": true,
+  "completed_sources": 128,
+  "expected_sources": 128,
+  "futures": 81920,
+  "last_proposal": 519,
+  "median_source_seconds": 0.47818812215700746,
+  "phase": "simulation-complete",
+  "registration_digest": "87a52b861bb1b23db158388a3dd95043df0c8b98248498fe845d5523b9b55dd6",
+  "sources": 128,
+  "states": 640,
+  "total_sources": 128
+}

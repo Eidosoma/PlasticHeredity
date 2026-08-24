@@ -1,0 +1,15 @@
+{
+  "design_digest": "6fc88d2c942ec9b523cf322cf956e7c5eda819c82d7279a8c51a19e26adc10d0",
+  "files": {
+    "AGGREGATE.csv": "c377ee3d18ff283929a0d68fa15e93819a699ab8dd6b40ae03901130bdc3ec77",
+    "CHECKPOINT_MANIFEST.json": "b98687770598aed0b9a976f5b4ed495e6011f5c98d40336cd05a9d089cd6c93b",
+    "LAY_SUMMARY.md": "f5b324be2d3cd730809a9dfc6f7cebe5426f215ab8b94b4a108b70625f0b395d",
+    "PREPRINT_TABLE.md": "1544fc0ee81d4e9c5ba766214947741221ccd933decc4b2e261c4fc4af21bfd6",
+    "RAW_OUTCOMES.csv": "9afb00f3e28c5edb4ab50c890294f9d0bff845ecae6154b975d719972165f5ec",
+    "RECOMPUTATION.json": "510222c05f10ec570e34a84eccd8249fd4d963dacafa717496d32b516c8c2d50",
+    "REPORT.md": "599abab9f3e4f80bb3dba3ccbf2d0c491f07c58be7ac0dd04f3f9e5319baa4d5",
+    "RESULTS.json": "16fa4d082d93defca4c5a69af58729370542e824a8a603279024b7993cf683fa",
+    "STAGE_DECISION.json": "64959d95a6d85aea65a3633f33b9e69d53bae0330aa342b5e7f08683d0e7f195"
+  },
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1"
+}

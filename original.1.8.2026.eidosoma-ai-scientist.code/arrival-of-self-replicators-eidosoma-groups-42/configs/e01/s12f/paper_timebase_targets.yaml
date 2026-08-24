@@ -1,0 +1,59 @@
+schemaVersion: E01-S12F-paper-timebase-targets-v1.0.0
+researchStepId: E01-S12F-LATENT-TIMEBASE-INFERENCE-v1.0.0
+evidenceClass: PAPER_AS_DATA_SIMULATOR_IDENTIFICATION
+source:
+  paper: arXiv:2607.28250v1
+  pdfSha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  figure2Raster: figure-02.png
+  figure2RasterSha256: 0e4aac507ccf6e10ced31edd6d7e5ba8c876d9d0c8d420b145dfc27c7d040778
+  rasterPixels: [926, 569]
+directMethodConstraints:
+  nSpecies: 100
+  nMin: 40
+  nMax: 80
+  nGenerations: 100
+  maxStepsPerGeneration: 1000
+  initialization: sampling_without_replacement
+  update: vector_valued_poisson
+  fission: specieswise_binomial_p_0p5
+figure2:
+  panelA:
+    labelledTickRange: [0.0, 1200.0]
+    plotBoundaryRangeReconciled: [-63.4, 1314.0]
+    positiveDisplaySupport: [0.0, 1314.0]
+    visibleAggregateTraceTerminalInterval: [1090.0, 1120.0]
+    lateDiscontinuityInterval: [980.0, 1070.0]
+    regressionLineExtendsBeyondAggregateTrace: true
+    visibleTraceTerminatesBeforeRightBoundary: true
+  panelB:
+    labelledTickRange: [0.0, 800.0]
+    finalPlottedTimeInterval: [792.0, 808.0]
+    finalPlottedTimePoint: 800.0
+    visibleTraceTerminatesBeforeRightBoundary: true
+  panelC:
+    labelledTickRange: [0.0, 800.0]
+    finalPlottedTimeInterval: [792.0, 808.0]
+    finalPlottedTimePoint: 800.0
+    visibleTraceTerminatesBeforeRightBoundary: true
+  panelD:
+    labelledTickRange: [0.0, 1000.0]
+    finalPlottedTimeInterval: [990.0, 1010.0]
+    finalPlottedTimePoint: 1000.0
+    visibleTraceTerminatesBeforeRightBoundary: true
+table1:
+  persistenceMean: 716.0
+  persistenceSd: 198.0
+  replicationProbabilityMean: 0.88
+  replicationProbabilitySd: 0.03
+  descriptiveRatio: 813.6363636363636
+  descriptiveEndpointRange: [569.2307692307692, 1075.2941176470588]
+  evidentiaryWeight: SOFT_SECONDARY_ONLY
+  warning: ratio_of_reported_means_is_not_mean_trajectory_length_and_inputs_are_dependent
+massTarget:
+  derivation: complementary_binomial_division_near_parent_mass_80_with_p_0p5
+  medianPostFissionMassInterval: [35.0, 45.0]
+  centralMass: 40.0
+selectionFirewall:
+  labelFingerprintUsed: false
+  emergenceFingerprintUsed: false
+  interventionFingerprintUsed: false

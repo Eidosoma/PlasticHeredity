@@ -1,0 +1,590 @@
+claims_version: E01-S01-v1.0.0
+
+metric_distinctiveness:
+  source: 'Results paragraph 2; extracted Markdown line 33'
+  sample_scope: '100 GARD runs; aggregation and multiplicity handling not reported'
+  metrics:
+    - [E01-C001, number of catalytic-graph nodes]
+    - [E01-C002, number of catalytic-graph edges]
+    - [E01-C003, catalytic-graph in-degree]
+    - [E01-C004, catalytic-graph out-degree]
+    - [E01-C005, catalytic-graph betweenness centrality]
+    - [E01-C006, catalytic-graph PageRank]
+    - [E01-C007, catalytic-graph HITS scores]
+    - [E01-C008, trajectory sample entropy]
+    - [E01-C009, trajectory correlation dimension]
+    - [E01-C010, trajectory Lyapunov exponents]
+    - [E01-C011, trajectory detrended fluctuation analysis]
+    - [E01-C012, trajectory generalized Hurst exponent]
+
+claims:
+  - claim_id: E01-C013
+    claim_family: aggregate_trend
+    evidence_layer: descriptive
+    claim_text: Aggregate Phi-r over 100 runs has no significant linear trend over molecular time.
+    primary_source_location: 'Results paragraph 3; extracted Markdown line 35'
+    corroborating_source_location: 'Figure 2A image and caption; extracted Markdown lines 238-240'
+    reported_statistic: linear-regression p-value
+    reported_target: 'p=0.1995'
+    expected_direction: no significant aggregate trend
+    unit_of_analysis: aggregate median Phi-r at aligned molecular step
+    sample_scope: 100 independent runs
+    reproduction_estimand: slope and two-sided p-value from the paper-like aggregate regression
+    reproduction_criterion: 'EXACT if the paper-like p-value rounds to 0.1995 and the slope interval includes zero; DIRECTIONAL if p>=0.05 with the interval including zero; NONREPLICATION if a robust nonzero trend is found; UNDERDETERMINED if alignment cannot be reconstructed.'
+    inferential_test: linear regression; model details not reported
+    specification_status: testable_with_declared_ambiguity
+    downstream_step: S14
+    discrepancy_ids: D08
+    notes: Figure 2A labels the summary as median +/- standard deviation.
+
+  - claim_id: E01-C014
+    claim_family: spiking
+    evidence_layer: descriptive
+    claim_text: Most individual runs contain punctuated positive Phi-r spikes more than three standard deviations above the overall mean.
+    primary_source_location: 'Results paragraph 3; extracted Markdown line 35'
+    corroborating_source_location: 'Figure 2B-D image and caption; extracted Markdown lines 238-240'
+    reported_statistic: run prevalence of threshold exceedance
+    reported_target: 'most runs; spike > overall mean + 3 SD; exact count not reported'
+    expected_direction: more than half of runs contain at least one positive spike
+    unit_of_analysis: run
+    sample_scope: 100 independent runs
+    reproduction_estimand: fraction of runs with at least one paper-like positive 3-SD excursion
+    reproduction_criterion: 'DIRECTIONAL if >50/100 runs contain at least one excursion above the reconstructed overall mean plus 3 SD; NONREPLICATION if <=50/100; exact numerical replication is UNDERDETERMINED because the paper omits the count and threshold scope.'
+    inferential_test: deterministic threshold count; no inferential test reported
+    specification_status: underdetermined_pending_S02
+    downstream_step: S14
+    discrepancy_ids: D07
+    notes: Positive-only, negative-only, absolute, and robust MAD alternatives are reserved for S14, not silently substituted here.
+
+  - claim_id: E01-C015
+    claim_family: run_level_association
+    evidence_layer: associative
+    claim_text: Seventy-three of 100 runs have a positive within-run Spearman association between Phi-r and replication state.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: 'Figure 3 image/caption; extracted Markdown lines 242-246'
+    reported_statistic: count of positive runwise Spearman coefficients
+    reported_target: '73/100'
+    expected_direction: positive in 73 runs
+    unit_of_analysis: runwise correlation
+    sample_scope: 100 independent runs; entire trajectory per Results
+    reproduction_estimand: number of runwise Spearman coefficients greater than zero
+    reproduction_criterion: 'EXACT if 73/100 coefficients are >0; DIRECTIONAL if >50/100 are >0 but the count differs; NONREPLICATION if <=50/100; UNDERDETERMINED if level-versus-change wording cannot be resolved.'
+    inferential_test: Spearman correlation within each run
+    specification_status: underdetermined_pending_S02
+    downstream_step: S15
+    discrepancy_ids: D02
+    notes: Replication is a binary state; tie handling and time dependence are not reported.
+
+  - claim_id: E01-C016
+    claim_family: run_level_association
+    evidence_layer: associative
+    claim_text: Fifty-four runs have a positive and statistically significant within-run Phi-r/replication correlation.
+    primary_source_location: 'Results paragraph 4 (54/73); extracted Markdown line 37'
+    corroborating_source_location: 'Figure 3B image/caption (54%); extracted Markdown line 246'
+    reported_statistic: count and conditional proportion of positive significant runwise Spearman tests
+    reported_target: '54/100 positive and significant; equivalently 54/73 of positive runs'
+    expected_direction: positive and significant in 54 runs
+    unit_of_analysis: runwise correlation test
+    sample_scope: 100 runs total; 73 positive-coefficient runs
+    reproduction_estimand: number of runwise coefficients that are both positive and p<0.05
+    reproduction_criterion: 'EXACT if the raw count is 54/100 and therefore 54/73 among positive runs; DIRECTIONAL if a majority of all runs are positive/significant but the count differs; NONREPLICATION if <=50/100; report both denominators.'
+    inferential_test: runwise Spearman test; alpha inferred as 0.05; multiplicity correction not reported
+    specification_status: testable_with_declared_ambiguity
+    downstream_step: S15
+    discrepancy_ids: 'D01;D02'
+    notes: The two wordings are arithmetically compatible but describe different proportions.
+
+  - claim_id: E01-C017
+    claim_family: run_level_association
+    evidence_layer: associative
+    claim_text: The mean of the 100 runwise Phi-r/replication Spearman coefficients is 0.139.
+    primary_source_location: 'Figure 3A image legend'
+    corroborating_source_location: 'Figure 3 caption; extracted Markdown line 246 reports a positive mean but not its value'
+    reported_statistic: mean runwise Spearman rho
+    reported_target: 'mean rho=0.139'
+    expected_direction: positive
+    unit_of_analysis: mean across runwise correlations
+    sample_scope: 100 runs
+    reproduction_estimand: arithmetic mean of the 100 paper-like runwise Spearman coefficients
+    reproduction_criterion: 'EXACT if the reconstructed mean rounds to 0.139 at three decimals; DIRECTIONAL if mean>0; NONREPLICATION if mean<=0; UNDERDETERMINED if level-versus-change wording is unresolved.'
+    inferential_test: descriptive mean; one-sample test is a separate claim
+    specification_status: underdetermined_pending_S02
+    downstream_step: S15
+    discrepancy_ids: D02
+    notes: Numeric value was read from the extracted Figure 3 image.
+
+  - claim_id: E01-C018
+    claim_family: run_level_association
+    evidence_layer: associative
+    claim_text: The population mean of runwise Phi-r/replication correlations is significantly positive.
+    primary_source_location: 'Figure 3 caption; extracted Markdown line 246'
+    corroborating_source_location: 'Figure 3A image'
+    reported_statistic: one-sample t-test of runwise coefficients
+    reported_target: 'positive mean; p<0.05 (exact p not reported)'
+    expected_direction: significantly positive
+    unit_of_analysis: distribution of 100 runwise correlation coefficients
+    sample_scope: 100 runs
+    reproduction_estimand: one-sample mean coefficient and two-sided t-test against zero
+    reproduction_criterion: 'EXACT at reported precision if mean>0 and p<0.05; DIRECTIONAL if mean>0 but p>=0.05; NONREPLICATION if mean<=0.'
+    inferential_test: one-sample t-test
+    specification_status: testable_with_declared_ambiguity
+    downstream_step: S15
+    discrepancy_ids: D02
+    notes: Dependence and non-normality of runwise coefficients are later robustness issues.
+
+  - claim_id: E01-C019
+    claim_family: state_comparison
+    evidence_layer: associative
+    claim_text: Mean Phi-r is higher in self-replicating than drift steps in 57 of 100 runs.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: 'Figure 4 caption; extracted Markdown line 248'
+    reported_statistic: count of positive within-run mean differences
+    reported_target: '57/100'
+    expected_direction: self-replicating mean higher in 57 runs
+    unit_of_analysis: runwise self-replicating-minus-drift mean difference
+    sample_scope: 100 runs
+    reproduction_estimand: number of runs with mean(Phi-r|replicating) > mean(Phi-r|drift)
+    reproduction_criterion: 'EXACT if the count is 57/100; DIRECTIONAL if >50/100 but not 57; NONREPLICATION if <=50/100.'
+    inferential_test: sign count of runwise mean differences
+    specification_status: fully_specified_from_paper
+    downstream_step: S15
+    discrepancy_ids: ''
+    notes: Run eligibility when one state is absent is not stated.
+
+  - claim_id: E01-C020
+    claim_family: state_comparison
+    evidence_layer: associative
+    claim_text: Phi-r is significantly higher during self-replicating than drift time steps by a Mann-Whitney comparison.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: ''
+    reported_statistic: Mann-Whitney p-value
+    reported_target: 'p<0.001'
+    expected_direction: self-replicating steps higher
+    unit_of_analysis: time step, with pooling or run-summary scope unstated
+    sample_scope: 100 runs mentioned in surrounding analysis
+    reproduction_estimand: paper-matched Mann-Whitney location comparison
+    reproduction_criterion: 'EXACT at reported precision if the paper-matched comparison is in the higher direction with p<0.001; DIRECTIONAL if higher with p<0.05; NONREPLICATION if direction is reversed; UNDERDETERMINED until test scope is resolved.'
+    inferential_test: Mann-Whitney U
+    specification_status: underdetermined_pending_S02
+    downstream_step: S15
+    discrepancy_ids: D11
+    notes: Temporal dependence makes a naive step-pooled p-value anti-conservative; S15 will add block-aware inference.
+
+  - claim_id: E01-C021
+    claim_family: state_comparison
+    evidence_layer: associative
+    claim_text: Fisher-combined evidence across runs supports higher Phi-r during self-replication.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: ''
+    reported_statistic: Fisher combined p-value
+    reported_target: 'p<0.001'
+    expected_direction: combined evidence favors higher Phi-r in replication
+    unit_of_analysis: 100 runwise p-values
+    sample_scope: 100 independent runs
+    reproduction_estimand: Fisher statistic and combined p-value from eligible runwise state comparisons
+    reproduction_criterion: 'EXACT at reported precision if the directional runwise p-values combine to p<0.001; DIRECTIONAL if combined p<0.05 in the reported direction; NONREPLICATION otherwise; preserve excluded-run policy.'
+    inferential_test: Fisher method
+    specification_status: testable_with_declared_ambiguity
+    downstream_step: S15
+    discrepancy_ids: D11
+    notes: The source does not state one- versus two-sided runwise p-values or handling of ineligible runs.
+
+  - claim_id: E01-C022
+    claim_family: temporal_structure
+    evidence_layer: descriptive
+    claim_text: Raw Phi-r trajectories reject temporal independence in 86 of 100 runs.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: 'Discussion paragraph 2; extracted Markdown line 53 says most reject white noise'
+    reported_statistic: count of significant runwise Ljung-Box tests
+    reported_target: '86/100'
+    expected_direction: temporal dependence
+    unit_of_analysis: runwise raw Phi-r trajectory
+    sample_scope: 100 runs
+    reproduction_estimand: count of raw trajectories with Ljung-Box p<0.05
+    reproduction_criterion: 'EXACT if 86/100 reject under the paper-matched lag specification; DIRECTIONAL if >50/100 reject; NONREPLICATION if <=50/100; UNDERDETERMINED if lag is unresolved.'
+    inferential_test: Ljung-Box; lag(s) not reported
+    specification_status: underdetermined_pending_S02
+    downstream_step: S15
+    discrepancy_ids: ''
+    notes: Rejection establishes autocorrelation, not biological memory.
+
+  - claim_id: E01-C023
+    claim_family: temporal_structure
+    evidence_layer: descriptive
+    claim_text: The median raw-trajectory Ljung-Box p-value is 2.07e-51.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: ''
+    reported_statistic: median runwise Ljung-Box p-value
+    reported_target: 'median p=2.07e-51'
+    expected_direction: extremely small median p-value
+    unit_of_analysis: median across 100 runwise tests
+    sample_scope: 100 raw Phi-r trajectories
+    reproduction_estimand: median of paper-matched Ljung-Box p-values
+    reproduction_criterion: 'EXACT if the median rounds to 2.07e-51 at three significant figures; DIRECTIONAL if median<0.05; NONREPLICATION if median>=0.05; UNDERDETERMINED if lag is unresolved.'
+    inferential_test: Ljung-Box; lag(s) not reported
+    specification_status: underdetermined_pending_S02
+    downstream_step: S15
+    discrepancy_ids: ''
+    notes: Extremely small p-values are sensitive to trajectory length and lag choice.
+
+  - claim_id: E01-C024
+    claim_family: temporal_structure
+    evidence_layer: descriptive
+    claim_text: Differenced Phi-r trajectories reject temporal independence in all 100 runs.
+    primary_source_location: 'Results paragraph 4; extracted Markdown line 37'
+    corroborating_source_location: ''
+    reported_statistic: count of significant runwise Ljung-Box tests after differencing
+    reported_target: '100/100'
+    expected_direction: residual temporal dependence after differencing
+    unit_of_analysis: runwise first-differenced Phi-r trajectory
+    sample_scope: 100 runs
+    reproduction_estimand: count of differenced trajectories with Ljung-Box p<0.05
+    reproduction_criterion: 'EXACT if 100/100 reject under the paper-matched lag specification; DIRECTIONAL if >50/100 reject; NONREPLICATION if <=50/100; UNDERDETERMINED if differencing or lag semantics are unresolved.'
+    inferential_test: Ljung-Box after differencing
+    specification_status: underdetermined_pending_S02
+    downstream_step: S15
+    discrepancy_ids: ''
+    notes: The differencing order is inferred to be one.
+
+  - claim_id: E01-C025
+    claim_family: prediction
+    evidence_layer: predictive
+    claim_text: A Phi-r-only MLP has higher binary accuracy than an otherwise matched change-in-composition model.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: 'Figure 5 image/caption; extracted Markdown lines 252-260'
+    reported_statistic: binary-accuracy distribution and pairwise Mann-Whitney p-value
+    reported_target: 'Phi-r accuracy higher; p<0.01'
+    expected_direction: Phi-r model higher
+    unit_of_analysis: 10 train/test repetitions split by run
+    sample_scope: first 25% inputs and remaining 75% labels; 80/20 split of 100 runs
+    reproduction_estimand: paired feature-family difference in test binary accuracy under the paper-like MLP task
+    reproduction_criterion: 'EXACT at reported precision if Phi-r accuracy is higher and the paper-like Mann-Whitney p<0.01; DIRECTIONAL if median accuracy is higher but p>=0.01; NONREPLICATION if not higher; UNDERDETERMINED if input layout cannot be reconstructed.'
+    inferential_test: Mann-Whitney across 10 repetitions
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D03
+    notes: Repetition-level tests may be dependent because they reuse runs.
+
+  - claim_id: E01-C026
+    claim_family: prediction
+    evidence_layer: predictive
+    claim_text: A Phi-r-only MLP has higher binary accuracy than an otherwise matched raw-composition-count model.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: 'Figure 5 image/caption; extracted Markdown lines 252-260'
+    reported_statistic: binary-accuracy distribution and pairwise Mann-Whitney p-value
+    reported_target: 'Phi-r accuracy higher; p<0.01'
+    expected_direction: Phi-r model higher
+    unit_of_analysis: 10 train/test repetitions split by run
+    sample_scope: first 25% inputs and remaining 75% labels; 80/20 split of 100 runs
+    reproduction_estimand: paired feature-family difference in test binary accuracy under the paper-like MLP task
+    reproduction_criterion: 'EXACT at reported precision if Phi-r accuracy is higher and the paper-like Mann-Whitney p<0.01; DIRECTIONAL if median accuracy is higher but p>=0.01; NONREPLICATION if not higher; UNDERDETERMINED if input layout cannot be reconstructed.'
+    inferential_test: Mann-Whitney across 10 repetitions
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D03
+    notes: Exact accuracies are not printed in text or caption.
+
+  - claim_id: E01-C027
+    claim_family: prediction
+    evidence_layer: predictive
+    claim_text: A Phi-r-only MLP has higher binary accuracy than an otherwise matched molecular-flux model.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: 'Figure 5 image/caption; extracted Markdown lines 252-260'
+    reported_statistic: binary-accuracy distribution and pairwise Mann-Whitney p-value
+    reported_target: 'Phi-r accuracy higher; p<0.01'
+    expected_direction: Phi-r model higher
+    unit_of_analysis: 10 train/test repetitions split by run
+    sample_scope: first 25% inputs and remaining 75% labels; 80/20 split of 100 runs
+    reproduction_estimand: paired feature-family difference in test binary accuracy under the paper-like MLP task
+    reproduction_criterion: 'EXACT at reported precision if Phi-r accuracy is higher and the paper-like Mann-Whitney p<0.01; DIRECTIONAL if median accuracy is higher but p>=0.01; NONREPLICATION if not higher; UNDERDETERMINED if input layout cannot be reconstructed.'
+    inferential_test: Mann-Whitney across 10 repetitions
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D03
+    notes: Flux definition and input tensor layout are not reported.
+
+  - claim_id: E01-C028
+    claim_family: prediction
+    evidence_layer: predictive
+    claim_text: A Phi-r-only MLP has higher binary accuracy than a majority-class dummy baseline.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: 'Figure 5 image/caption; extracted Markdown lines 252-260'
+    reported_statistic: binary-accuracy distribution and pairwise Mann-Whitney p-value
+    reported_target: 'Phi-r accuracy higher; p<0.01'
+    expected_direction: Phi-r model higher
+    unit_of_analysis: 10 train/test repetitions split by run
+    sample_scope: first 25% inputs and remaining 75% labels; 80/20 split of 100 runs
+    reproduction_estimand: difference in test binary accuracy between Phi-r MLP and majority-class baseline
+    reproduction_criterion: 'EXACT at reported precision if Phi-r accuracy is higher and the paper-like Mann-Whitney p<0.01; DIRECTIONAL if median accuracy is higher but p>=0.01; NONREPLICATION if not higher; UNDERDETERMINED if baseline prevalence scope is unresolved.'
+    inferential_test: Mann-Whitney across 10 repetitions
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D03
+    notes: It is unclear whether the majority label is determined globally, in training runs, or per sequence.
+
+  - claim_id: E01-C029
+    claim_family: prediction
+    evidence_layer: predictive
+    claim_text: Prediction results are quantitatively similar under input/output split proportions other than 25%/75%.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: ''
+    reported_statistic: sensitivity of binary accuracy to split proportion
+    reported_target: 'quantitatively similar; proportions and tolerance not reported'
+    expected_direction: stable performance ordering
+    unit_of_analysis: alternative split specification
+    sample_scope: 100 runs with 10 train/test repetitions
+    reproduction_estimand: Phi-r-versus-baseline accuracy contrasts over a preregistered split grid
+    reproduction_criterion: 'DIRECTIONAL if Phi-r remains the top median-accuracy feature family over every S16-preregistered split; NONREPLICATION if ordering reverses materially; exact replication is UNDERDETERMINED because splits and similarity tolerance are omitted.'
+    inferential_test: not reported
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D03
+    notes: S16 must label this as sensitivity analysis, not retrofit unspecified paper choices.
+
+  - claim_id: E01-C030
+    claim_family: prediction
+    evidence_layer: predictive
+    claim_text: Early Phi-r contains prospective information about the initial future appearance of a self-replicator.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: 'Figure 5 title/caption; extracted Markdown lines 252-260'
+    reported_statistic: future replication prediction from first-quarter Phi-r
+    reported_target: 'predicts initial appearance better than all baselines; no first-event metric reported'
+    expected_direction: positive prospective predictive value
+    unit_of_analysis: held-out run and future first-replicator event
+    sample_scope: 100 runs; first 25% as input
+    reproduction_estimand: held-out-run first-event AUROC/AUPRC or binary accuracy using only pre-onset observations
+    reproduction_criterion: 'DIRECTIONAL if a leakage-free first-event model using Phi-r outperforms every matched baseline on preregistered held-out metrics; NONREPLICATION if it does not; exact paper replication is UNDERDETERMINED because the described target is a full 75% state trajectory.'
+    inferential_test: MLP evaluation; first-event formulation not reported
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D03
+    notes: This preserves the headline claim separately from the paper-like trajectory-classification claims.
+
+  - claim_id: E01-C031
+    claim_family: spike_timing
+    evidence_layer: associative
+    claim_text: Self-replication probability is positively associated with the time at which a Phi-r spike occurs.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: ''
+    reported_statistic: Spearman correlation
+    reported_target: 'rho=0.66; p<0.001'
+    expected_direction: positive
+    unit_of_analysis: spike or run summary; not reported
+    sample_scope: paper spike catalog; exact n not reported
+    reproduction_estimand: Spearman association between spike time and self-replication probability
+    reproduction_criterion: 'EXACT if rho is within 0.01 of 0.66 and p<0.001 under the paper-matched unit; DIRECTIONAL if rho>0 and p<0.05; NONREPLICATION if rho<=0; UNDERDETERMINED until unit and spike definition are resolved.'
+    inferential_test: Spearman correlation
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D07
+    notes: Association does not by itself establish prediction or temporal precedence.
+
+  - claim_id: E01-C032
+    claim_family: spike_timing
+    evidence_layer: associative
+    claim_text: Self-replication probability is positively associated with inter-spike distance.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: ''
+    reported_statistic: Spearman correlation
+    reported_target: 'rho=0.71; p<0.001'
+    expected_direction: positive
+    unit_of_analysis: inter-spike interval or run summary; not reported
+    sample_scope: paper spike catalog; exact n not reported
+    reproduction_estimand: Spearman association between inter-spike distance and self-replication probability
+    reproduction_criterion: 'EXACT if rho is within 0.01 of 0.71 and p<0.001 under the paper-matched unit; DIRECTIONAL if rho>0 and p<0.05; NONREPLICATION if rho<=0; UNDERDETERMINED until unit and spike definition are resolved.'
+    inferential_test: Spearman correlation
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: D07
+    notes: The matching of a probability outcome to individual intervals is unspecified.
+
+  - claim_id: E01-C033
+    claim_family: spike_timing
+    evidence_layer: associative
+    claim_text: Self-replication probability is not significantly associated with Phi-r spike height.
+    primary_source_location: 'Results paragraph 5; extracted Markdown line 39'
+    corroborating_source_location: ''
+    reported_statistic: Spearman correlation significance
+    reported_target: 'not significant; coefficient and p-value not reported'
+    expected_direction: no significant association
+    unit_of_analysis: spike or run summary; not reported
+    sample_scope: paper spike catalog; exact n not reported
+    reproduction_estimand: Spearman association between spike height and self-replication probability
+    reproduction_criterion: 'EXACT at reported precision if the paper-matched two-sided p>=0.05; DIRECTIONAL if the effect is practically small under a preregistered equivalence margin; NONREPLICATION if a robust association is found; exact coefficient replication is UNDERDETERMINED.'
+    inferential_test: Spearman correlation
+    specification_status: underdetermined_pending_S02
+    downstream_step: S16
+    discrepancy_ids: 'D07;D12'
+    notes: Nonsignificance is not evidence of equivalence without an effect-size bound.
+
+table1_targets:
+  source: 'Table 1 and note; extracted Markdown lines 280-288'
+  rows:
+    - [E01-C034, max Phi-r, persistence, '874 +/- 233 molecular steps', higher, '874', '233']
+    - [E01-C035, control, persistence, '716 +/- 198 molecular steps', reference, '716', '198']
+    - [E01-C036, min Phi-r, persistence, '559 +/- 99 molecular steps', lower, '559', '99']
+    - [E01-C037, max Phi-r, probability, '88 +/- 3%', higher or comparable to control, '88', '3']
+    - [E01-C038, control, probability, '88 +/- 3%', reference, '88', '3']
+    - [E01-C039, min Phi-r, probability, '80 +/- 3%', lower, '80', '3']
+    - [E01-C040, max Phi-r, consistency, '0.52 +/- 0.04', higher, '0.52', '0.04']
+    - [E01-C041, control, consistency, '0.38 +/- 0.06', reference, '0.38', '0.06']
+    - [E01-C042, min Phi-r, consistency, '0.42 +/- 0.04', paper text says lower/worse but table is above control, '0.42', '0.04']
+    - [E01-C043, max Phi-r, time to first replicator, '36 +/- 26% (unit conflict)', earlier or comparable to control, '36', '26']
+    - [E01-C044, control, time to first replicator, '37 +/- 27% (unit conflict)', reference, '37', '27']
+    - [E01-C045, min Phi-r, time to first replicator, '40 +/- 28% (unit conflict)', later, '40', '28']
+
+intervention_claims:
+  - claim_id: E01-C046
+    claim_family: intervention_contrast
+    claim_text: Maximizing Phi-r increases self-replicator persistence relative to control.
+    source: 'Results paragraph 7 and Figure 6B caption/image; extracted Markdown lines 43 and 272-278'
+    reported_statistic: Mann-Whitney p-value and treatment means
+    reported_target: 'max 874 vs control 716 molecular steps; p<0.001'
+    expected_direction: max higher than control
+    estimand: max-minus-control persistence
+    criterion: 'EXACT at reported precision if max>control and Mann-Whitney p<0.001, with Table 1 means reproduced under their cell criteria; DIRECTIONAL if max>control but p>=0.001; NONREPLICATION if max<=control.'
+    discrepancy_ids: D10
+  - claim_id: E01-C047
+    claim_family: intervention_contrast
+    claim_text: Maximizing Phi-r increases self-replicator consistency relative to control.
+    source: 'Results paragraph 7 and Table 1 note; extracted Markdown lines 43 and 288'
+    reported_statistic: Mann-Whitney p-value and treatment means
+    reported_target: 'max 0.52 vs control 0.38; p<0.001'
+    expected_direction: max higher than control
+    estimand: max-minus-control consistency
+    criterion: 'EXACT at reported precision if max>control and Mann-Whitney p<0.001, with Table 1 means reproduced under their cell criteria; DIRECTIONAL if max>control but p>=0.001; NONREPLICATION if max<=control.'
+    discrepancy_ids: D10
+  - claim_id: E01-C048
+    claim_family: intervention_contrast
+    claim_text: Overall self-replication probability does not significantly differ between max-Phi-r and control.
+    source: 'Results paragraph 7 and Table 1; extracted Markdown lines 43 and 284-285'
+    reported_statistic: pairwise significance and treatment means
+    reported_target: 'max 88% vs control 88%; not significant'
+    expected_direction: no significant overall difference
+    estimand: max-minus-control overall replication occupancy
+    criterion: 'EXACT at reported precision if both rounded means are 88% and the paper-like p>=0.05; DIRECTIONAL if the difference interval includes zero; NONREPLICATION if a robust overall difference is found; preserve final-generation claim separately.'
+    discrepancy_ids: 'D06;D10'
+  - claim_id: E01-C049
+    claim_family: intervention_contrast
+    claim_text: Time to first replicator is comparable between max-Phi-r and control.
+    source: 'Table 1 and note; extracted Markdown lines 284-285 and 288'
+    reported_statistic: treatment summaries; no comparison p-value
+    reported_target: 'max 36 +/- 26% vs control 37 +/- 27%; described as comparable'
+    expected_direction: no material difference
+    estimand: max-minus-control time to first replicator
+    criterion: 'DIRECTIONAL if a preregistered equivalence interval is contained within the S17 margin; NONREPLICATION if a material difference is found; exact replication is UNDERDETERMINED until unit, dispersion, and equivalence margin are resolved.'
+    discrepancy_ids: 'D04;D10'
+  - claim_id: E01-C050
+    claim_family: intervention_time_trend
+    claim_text: Self-replication probability increases over generations under max-Phi-r intervention.
+    source: 'Results paragraph 7 and Figure 6C image/caption; extracted Markdown lines 43 and 272-278'
+    reported_statistic: regression coefficient and p-value
+    reported_target: 'coefficient=0.041; p<0.001'
+    expected_direction: positive and significant
+    estimand: generation coefficient for max-Phi-r probability
+    criterion: 'EXACT if the coefficient is within 0.001 of 0.041 and p<0.001 under the paper-matched regression; DIRECTIONAL if coefficient>0 and p<0.05; NONREPLICATION if coefficient<=0.'
+    discrepancy_ids: D09
+  - claim_id: E01-C051
+    claim_family: intervention_time_trend
+    claim_text: Self-replication probability has no significant generational trend under control.
+    source: 'Results paragraph 7 and Figure 6C image; extracted Markdown line 43'
+    reported_statistic: regression coefficient and p-value
+    reported_target: 'coefficient=0.008; p=0.4659'
+    expected_direction: no significant trend
+    estimand: generation coefficient for control probability
+    criterion: 'EXACT if the coefficient is within 0.001 of 0.008 and p rounds to 0.4659; DIRECTIONAL if p>=0.05 and the interval includes zero; NONREPLICATION if a robust trend is found.'
+    discrepancy_ids: D09
+  - claim_id: E01-C052
+    claim_family: intervention_time_trend
+    claim_text: Self-replication probability decreases over generations under min-Phi-r intervention.
+    source: 'Figure 6C image/caption; extracted Markdown lines 272-278'
+    reported_statistic: regression coefficient and p-value
+    reported_target: 'coefficient=-0.03; p=0.0034'
+    expected_direction: negative and significant
+    estimand: generation coefficient for min-Phi-r probability
+    criterion: 'EXACT if the coefficient is within 0.001 of -0.03 and p rounds to 0.0034; DIRECTIONAL if coefficient<0 and p<0.05; NONREPLICATION if coefficient>=0.'
+    discrepancy_ids: D09
+  - claim_id: E01-C053
+    claim_family: intervention_contrast
+    claim_text: Max-Phi-r runs have higher self-replication probability than control by the last generation.
+    source: 'Results paragraph 7; extracted Markdown line 43; Discussion paragraph 2 line 53'
+    reported_statistic: final-generation treatment contrast
+    reported_target: 'max higher at final generation; exact difference and p-value not reported'
+    expected_direction: max higher than control at generation 100
+    estimand: max-minus-control replication probability at final generation
+    criterion: 'DIRECTIONAL if the paired final-generation contrast is >0; supportive inference requires a 95% paired interval excluding zero; NONREPLICATION if <=0; exact numerical replication is UNDERDETERMINED.'
+    discrepancy_ids: D06
+  - claim_id: E01-C054
+    claim_family: intervention_contrast
+    claim_text: Minimizing Phi-r decreases self-replicator persistence relative to control.
+    source: 'Results paragraphs 7-8, Figure 6B, and Table 1; extracted Markdown lines 45, 274, 278, and 285-286'
+    reported_statistic: Mann-Whitney p-value and treatment means
+    reported_target: 'min 559 vs control 716 molecular steps; p<0.001'
+    expected_direction: min lower than control
+    estimand: min-minus-control persistence
+    criterion: 'EXACT at reported precision if min<control and Mann-Whitney p<0.001, with Table 1 means reproduced under their cell criteria; DIRECTIONAL if min<control but p>=0.001; NONREPLICATION if min>=control.'
+    discrepancy_ids: D10
+  - claim_id: E01-C055
+    claim_family: intervention_contrast
+    claim_text: Minimizing Phi-r decreases overall self-replication probability relative to control.
+    source: 'Results paragraph 8 and Table 1; extracted Markdown lines 45 and 285-286'
+    reported_statistic: Mann-Whitney p-value and treatment means
+    reported_target: 'min 80% vs control 88%; p<0.001'
+    expected_direction: min lower than control
+    estimand: min-minus-control overall replication occupancy
+    criterion: 'EXACT at reported precision if min<control and Mann-Whitney p<0.001, with Table 1 means reproduced under their cell criteria; DIRECTIONAL if min<control but p>=0.001; NONREPLICATION if min>=control.'
+    discrepancy_ids: D10
+  - claim_id: E01-C056
+    claim_family: intervention_contrast
+    claim_text: Results text claims minimizing Phi-r worsens consistency relative to control.
+    source: 'Results paragraphs 7-8 and Table 1; extracted Markdown lines 43-45 and 285-286'
+    reported_statistic: Mann-Whitney p-value claim versus treatment means
+    reported_target: 'text: worse with p<0.001; table: min 0.42 vs control 0.38, where higher is better'
+    expected_direction: text predicts min lower; table points min higher
+    estimand: min-minus-control consistency
+    criterion: 'UNDERDETERMINED at paper level because source directions conflict; report the reconstructed estimate and interval without choosing the favorable source. NONREPLICATION applies separately to whichever source-specific target is tested.'
+    discrepancy_ids: 'D05;D10'
+  - claim_id: E01-C057
+    claim_family: intervention_contrast
+    claim_text: Minimizing Phi-r delays the first replicator relative to control.
+    source: 'Results paragraph 8 and Table 1; extracted Markdown lines 45 and 285-286'
+    reported_statistic: Mann-Whitney p-value claim and treatment summaries
+    reported_target: 'min 40 +/- 28% vs control 37 +/- 27%; text says all four worsen with p<0.001'
+    expected_direction: min later than control
+    estimand: min-minus-control time to first replicator
+    criterion: 'EXACT at reported precision if the resolved-unit onset is later under min and p<0.001, with Table 1 summaries reproduced under their cell criteria; DIRECTIONAL if later but p>=0.001; NONREPLICATION if not later; UNDERDETERMINED until unit is resolved.'
+    discrepancy_ids: 'D04;D10'
+  - claim_id: E01-C058
+    claim_family: intervention_contrast
+    claim_text: Max-Phi-r persistence exceeds min-Phi-r persistence.
+    source: 'Figure 6B image/caption and Table 1; extracted Markdown lines 274-286'
+    reported_statistic: Mann-Whitney p-value and treatment means
+    reported_target: 'max 874 vs min 559 molecular steps; p<0.001'
+    expected_direction: max higher than min
+    estimand: max-minus-min persistence
+    criterion: 'EXACT at reported precision if max>min and Mann-Whitney p<0.001, with Table 1 means reproduced under their cell criteria; DIRECTIONAL if max>min but p>=0.001; NONREPLICATION if max<=min.'
+    discrepancy_ids: D10
+  - claim_id: E01-C059
+    claim_family: intervention_contrast
+    claim_text: Control persistence exceeds min-Phi-r persistence.
+    source: 'Figure 6B image/caption and Table 1; extracted Markdown lines 274-286'
+    reported_statistic: Mann-Whitney p-value and treatment means
+    reported_target: 'control 716 vs min 559 molecular steps; p<0.001'
+    expected_direction: control higher than min
+    estimand: control-minus-min persistence
+    criterion: 'EXACT at reported precision if control>min and Mann-Whitney p<0.001, with Table 1 means reproduced under their cell criteria; DIRECTIONAL if control>min but p>=0.001; NONREPLICATION if control<=min.'
+    discrepancy_ids: D10
+
+reconciliations:
+  - [R01, E01-C013, 'Results line 35: no aggregate trend, p=0.1995', 'Figure 2A/caption: no significant trend, p=0.1995', match, 'Preserve median +/- SD aggregation wording.']
+  - [R02, E01-C014, 'Results line 35: most runs; >3 SD above overall mean', 'Figure 2 caption: individual runs spike; no threshold/count', partial, 'Threshold appears only in Results; exact prevalence remains underdetermined.']
+  - [R03, 'E01-C015;E01-C016', 'Results line 37: trajectory, 73/100 positive, 54/73 significant', 'Figure 3 caption: changes in Phi-r, 54% positive/significant', discrepancy, 'Preserve raw counts and both estimands/denominators; D01 and D02.']
+  - [R04, E01-C019, 'Results line 37: higher in 57/100', 'Figure 4 caption: higher in 57%', match, 'Raw count and percentage agree.']
+  - [R05, 'E01-C025;E01-C026;E01-C027;E01-C028;E01-C030', 'Results line 39: first 25% predicts remaining 75% states; each baseline p<0.01', 'Figure 5 title/caption: initial appearance; all baselines p<0.01', discrepancy, 'Pairwise ordering matches; prediction endpoint wording differs (D03).']
+  - [R06, 'E01-C034;E01-C035;E01-C036;E01-C046;E01-C054;E01-C058;E01-C059', 'Results lines 43-45: persistence improves under max and worsens under min', 'Figure 6B and Table 1: 874 > 716 > 559; pairwise ***', match, 'Direction and significance class agree.']
+  - [R07, 'E01-C037;E01-C038;E01-C048', 'Results line 43: max/control overall probability not significantly different', 'Table 1: both 88 +/- 3%', match, 'Keep separate from final-generation contrast.']
+  - [R08, 'E01-C040;E01-C041;E01-C042;E01-C056', 'Results lines 43-45: max improves consistency and min worsens all four', 'Table 1: max 0.52, min 0.42, control 0.38; higher is better', contradiction, 'Max direction agrees; min-versus-control direction conflicts (D05).']
+  - [R09, 'E01-C048;E01-C053', 'Results line 43: no overall max/control difference; max higher at final generation', 'Discussion line 53: max yielded higher probability than original runs', partial, 'Interpret Discussion as potentially final-generation only but retain D06.']
+  - [R10, 'E01-C043;E01-C044;E01-C045;E01-C049;E01-C057', 'Table cells include percent signs', 'Table note defines number of molecular steps', contradiction, 'Do not choose a unit until S02 (D04).']
+  - [R11, 'all Phi-r claims', 'Methods lines 79-89 refer to two missing displayed equations', 'Extracted Markdown lines 81 and 83 are formula-not-decoded placeholders', blocked_method_link, 'Claim targets remain testable only after the exact Phi-r formula/atom is resolved (D08).']
+  - [R12, 'E01-C050;E01-C051;E01-C052', 'Results/caption call Figure 6C lines regressions', 'Figure 6C legend uses rho-like coefficient labels 0.041, 0.008, -0.03', discrepancy, 'Preserve numeric coefficients but defer statistic identity to S02 (D09).']

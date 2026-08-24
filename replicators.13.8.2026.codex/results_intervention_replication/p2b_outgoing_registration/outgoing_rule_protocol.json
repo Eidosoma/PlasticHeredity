@@ -1,0 +1,117 @@
+{
+  "claim_boundary": {
+    "cross_clean_room_confirmation": false,
+    "pilot_only": true,
+    "prohibited": [
+      "Phi or PhiID intervention",
+      "strict-eight control",
+      "autonomous agency",
+      "biological memory",
+      "error correction",
+      "a living organism",
+      "a universal origin-of-life mechanism",
+      "real prebiotic chemistry",
+      "cross-clean-room replication before the relevant untouched gate passes"
+    ]
+  },
+  "correction_basis": {
+    "codex_equivalent": "beta.T @ x",
+    "codex_storage": "beta[target,catalyst]",
+    "external_frozen_expression": "x @ beta",
+    "received_after_original_p2_was_sealed": true,
+    "wrong_for_fable_c3": "beta @ x"
+  },
+  "design": {
+    "arms": [
+      "RULE_UP",
+      "RULE_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "branch_halves": {
+      "A": [
+        0,
+        15
+      ],
+      "B": [
+        16,
+        31
+      ]
+    },
+    "branches_per_arm_per_state": 32,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fresh_matrices_states_and_seed_domains": true,
+    "future_seed_includes_arm": false,
+    "horizon_fissions": 12,
+    "intervention_future_retries": 0,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 40,
+    "primary_futures": 51200,
+    "replay_futures": 51200,
+    "role": "CR3 corrected outgoing catalytic-influence rule pilot",
+    "states": 400
+  },
+  "disclosed_post_p2_prediction_only_diagnostic": {
+    "candidate_02_mean_predicted_up_down": 0.08955050900014036,
+    "candidate_03_mean_predicted_up_down": 0.10084118732222329,
+    "directional_agreement_each_candidate": 0.995,
+    "new_futures_generated": 0,
+    "not_an_outcome_or_gate": true
+  },
+  "format": "codex-intervention-outgoing-rule-correction-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "equivalence_margin": 0.025,
+    "full_gates_unchanged": true,
+    "holm_family": [
+      "c02_A",
+      "c02_B",
+      "c03_A",
+      "c03_B"
+    ],
+    "pilot_eligibility_gates_unchanged": true,
+    "random_ratio_limit": 0.25,
+    "randomization_repetitions": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "lifecycle": {
+    "does_not_launch_p3_or_confirmation": true,
+    "mandatory_stop_after_seal": true,
+    "readback_derives_pilot_eligibility_before_comparison": true
+  },
+  "original_p2": {
+    "classification": "incoming-support negative control; not Fable C3",
+    "exact_replay": true,
+    "pilot_eligibility": false,
+    "result": "results_intervention_replication/p2_cr3_physical_rule_pilot",
+    "scientific_result_unchanged": true
+  },
+  "protocol_id": "3128743368708a4a3c07de12b094ce5e406334cad03f9a76ffbeaeb04cf51645",
+  "rule": {
+    "normalization": "x = n / sum(n)",
+    "rule_down": "remove minimum-influence present; add maximum-influence different type",
+    "rule_up": "remove maximum-influence present; add minimum-influence different type",
+    "score": "x @ beta == beta.T @ x",
+    "selection": "exhaustive legal substitutions with deterministic lexicographic ties"
+  },
+  "scientific_label": "INTP2B_OUTGOING_V1",
+  "seed_domains": {
+    "bootstrap": "9cb1cb3e153ed2e4a4575258059628ea628b0dd426488e4a3cef5860df0ff140",
+    "cohort": "e0e4af8142d1d1aea1a9e30104dfd5b43a45d01995dd08841ebcaf535a3519ac",
+    "future": "9366fb5500a05b545fc252d95699118441076d43b9f5d9e3b7192b5301736c77",
+    "randomization": "2eb8f913c854872d7dee6fb30948d6cab1b62fd603f635f2461983c3a5b43297",
+    "replay": "2231c8251ca0c6dcd0a3cd794effaa1a18371e535228ce4575e77e516e4a8553",
+    "selection": "811a1ba08cf23836a937f5fd382fda19f81876800b3d1bbd605c7bf9a14d9de9",
+    "validation": "139e67f1fec5e582f5dfb1bd798c26bb3870dd98e0a62074fde3e0f7767b8817"
+  },
+  "status": "frozen_before_any_p2b_scientific_matrix"
+}

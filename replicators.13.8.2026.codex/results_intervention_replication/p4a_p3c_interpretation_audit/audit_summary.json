@@ -1,0 +1,842 @@
+{
+  "audit_id": "23a559a9cf7fdbf1daba684246c031a3a0f695c715ab4a40c9797f0040f8bb26",
+  "claim_boundary": {
+    "not_supported": [
+      "P3c passed its registered composite confirmation gate",
+      "x^T beta x is a sufficient one-dimensional mechanism",
+      "causal post-break resilience",
+      "mediation by any audited geometry statistic"
+    ],
+    "supported": [
+      "coherent occupied-web strength causally changes JOINT_BREAK_RUN3",
+      "starting catalytic throughput is a strong but incomplete causal-axis summary",
+      "fixed-throughput topology perturbation changes early process dynamics"
+    ]
+  },
+  "classification": "posthoc_exploratory_sealed_data_audit",
+  "confirmation_primary_gate": false,
+  "confirmation_resistance_gate": false,
+  "equivalence_sensitivity": [
+    {
+      "cell": "c02_A",
+      "ci90_lower": -0.0010937499999999997,
+      "ci90_upper": 0.021328124999999996,
+      "equivalent": false,
+      "margin": 0.015
+    },
+    {
+      "cell": "c02_A",
+      "ci90_lower": -0.0010937499999999997,
+      "ci90_upper": 0.021328124999999996,
+      "equivalent": false,
+      "margin": 0.02
+    },
+    {
+      "cell": "c02_A",
+      "ci90_lower": -0.0010937499999999997,
+      "ci90_upper": 0.021328124999999996,
+      "equivalent": true,
+      "margin": 0.025
+    },
+    {
+      "cell": "c02_A",
+      "ci90_lower": -0.0010937499999999997,
+      "ci90_upper": 0.021328124999999996,
+      "equivalent": true,
+      "margin": 0.03
+    },
+    {
+      "cell": "c02_A",
+      "ci90_lower": -0.0010937499999999997,
+      "ci90_upper": 0.021328124999999996,
+      "equivalent": true,
+      "margin": 0.04
+    },
+    {
+      "cell": "c02_B",
+      "ci90_lower": 0.0034960937500000005,
+      "ci90_upper": 0.02640625,
+      "equivalent": false,
+      "margin": 0.015
+    },
+    {
+      "cell": "c02_B",
+      "ci90_lower": 0.0034960937500000005,
+      "ci90_upper": 0.02640625,
+      "equivalent": false,
+      "margin": 0.02
+    },
+    {
+      "cell": "c02_B",
+      "ci90_lower": 0.0034960937500000005,
+      "ci90_upper": 0.02640625,
+      "equivalent": false,
+      "margin": 0.025
+    },
+    {
+      "cell": "c02_B",
+      "ci90_lower": 0.0034960937500000005,
+      "ci90_upper": 0.02640625,
+      "equivalent": true,
+      "margin": 0.03
+    },
+    {
+      "cell": "c02_B",
+      "ci90_lower": 0.0034960937500000005,
+      "ci90_upper": 0.02640625,
+      "equivalent": true,
+      "margin": 0.04
+    },
+    {
+      "cell": "c03_A",
+      "ci90_lower": 0.0032812500000000007,
+      "ci90_upper": 0.027265624999999998,
+      "equivalent": false,
+      "margin": 0.015
+    },
+    {
+      "cell": "c03_A",
+      "ci90_lower": 0.0032812500000000007,
+      "ci90_upper": 0.027265624999999998,
+      "equivalent": false,
+      "margin": 0.02
+    },
+    {
+      "cell": "c03_A",
+      "ci90_lower": 0.0032812500000000007,
+      "ci90_upper": 0.027265624999999998,
+      "equivalent": false,
+      "margin": 0.025
+    },
+    {
+      "cell": "c03_A",
+      "ci90_lower": 0.0032812500000000007,
+      "ci90_upper": 0.027265624999999998,
+      "equivalent": true,
+      "margin": 0.03
+    },
+    {
+      "cell": "c03_A",
+      "ci90_lower": 0.0032812500000000007,
+      "ci90_upper": 0.027265624999999998,
+      "equivalent": true,
+      "margin": 0.04
+    },
+    {
+      "cell": "c03_B",
+      "ci90_lower": 0.0125,
+      "ci90_upper": 0.03421875,
+      "equivalent": false,
+      "margin": 0.015
+    },
+    {
+      "cell": "c03_B",
+      "ci90_lower": 0.0125,
+      "ci90_upper": 0.03421875,
+      "equivalent": false,
+      "margin": 0.02
+    },
+    {
+      "cell": "c03_B",
+      "ci90_lower": 0.0125,
+      "ci90_upper": 0.03421875,
+      "equivalent": false,
+      "margin": 0.025
+    },
+    {
+      "cell": "c03_B",
+      "ci90_lower": 0.0125,
+      "ci90_upper": 0.03421875,
+      "equivalent": false,
+      "margin": 0.03
+    },
+    {
+      "cell": "c03_B",
+      "ci90_lower": 0.0125,
+      "ci90_upper": 0.03421875,
+      "equivalent": true,
+      "margin": 0.04
+    }
+  ],
+  "format": "codex-p3c-sealed-interpretation-audit-v1",
+  "gate_attribution": [
+    {
+      "cell": "c02_A",
+      "cell_pass": true,
+      "failed_gates": [],
+      "neutral_ci90": [
+        -0.0010937499999999997,
+        0.021328124999999996
+      ],
+      "neutral_effect": 0.0103125,
+      "spearman": -0.35763844481359836,
+      "target_ci95": [
+        0.09787109375,
+        0.129814453125
+      ],
+      "target_effect": 0.11335937500000001,
+      "target_holm_p": 0.000976324139614352,
+      "throughput_slope": -0.13454567731357545
+    },
+    {
+      "cell": "c02_B",
+      "cell_pass": false,
+      "failed_gates": [
+        "neutral_tost_equivalent"
+      ],
+      "neutral_ci90": [
+        0.0034960937500000005,
+        0.02640625
+      ],
+      "neutral_effect": 0.015000000000000003,
+      "spearman": -0.3261617049872559,
+      "target_ci95": [
+        0.08810546875,
+        0.118828125
+      ],
+      "target_effect": 0.103359375,
+      "target_holm_p": 0.000976324139614352,
+      "throughput_slope": -0.11990140332395491
+    },
+    {
+      "cell": "c03_A",
+      "cell_pass": false,
+      "failed_gates": [
+        "neutral_tost_equivalent"
+      ],
+      "neutral_ci90": [
+        0.0032812500000000007,
+        0.027265624999999998
+      ],
+      "neutral_effect": 0.015312499999999998,
+      "spearman": -0.2895185577824082,
+      "target_ci95": [
+        0.093671875,
+        0.12453125
+      ],
+      "target_effect": 0.108984375,
+      "target_holm_p": 0.000976324139614352,
+      "throughput_slope": -0.12972678772563548
+    },
+    {
+      "cell": "c03_B",
+      "cell_pass": false,
+      "failed_gates": [
+        "neutral_tost_equivalent"
+      ],
+      "neutral_ci90": [
+        0.0125,
+        0.03421875
+      ],
+      "neutral_effect": 0.0234375,
+      "spearman": -0.32409383841367423,
+      "target_ci95": [
+        0.088203125,
+        0.1215625
+      ],
+      "target_effect": 0.104453125,
+      "target_holm_p": 0.000976324139614352,
+      "throughput_slope": -0.12971411003262612
+    }
+  ],
+  "geometry_associations": [
+    {
+      "cell": "c02_A",
+      "geometry": "log_throughput_ratio",
+      "mean_within_state_spearman": -0.35812465870359506,
+      "slope_bootstrap_ci95": [
+        -0.15293550896673855,
+        -0.11728437217630613
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.3988186043504662,
+        -0.3163828978621024
+      ],
+      "state_centered_slope": -0.13454567731357542
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_block_sum",
+      "mean_within_state_spearman": -0.2877035294829473,
+      "slope_bootstrap_ci95": [
+        -0.11828021682128974,
+        -0.07887188908863367
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.33354659556058186,
+        -0.24211912371343794
+      ],
+      "state_centered_slope": -0.09799865045893451
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "log_perron_ratio",
+      "mean_within_state_spearman": -0.3222011560921183,
+      "slope_bootstrap_ci95": [
+        -0.07149730377940497,
+        -0.053843449541455056
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.36440342935853814,
+        -0.2800154062160785
+      ],
+      "state_centered_slope": -0.062447628823491835
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "log_singular_ratio",
+      "mean_within_state_spearman": -0.246214697539003,
+      "slope_bootstrap_ci95": [
+        -0.09727956740158333,
+        -0.06596864008132997
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.2912082580275365,
+        -0.20081329393263517
+      ],
+      "state_centered_slope": -0.08126112525922208
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_incoming_dispersion",
+      "mean_within_state_spearman": -0.06624999548944847,
+      "slope_bootstrap_ci95": [
+        -0.11625327963342212,
+        -0.03802400848434898
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.115938946210696,
+        -0.018480914734264657
+      ],
+      "state_centered_slope": -0.07707189072878076
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_outgoing_dispersion",
+      "mean_within_state_spearman": -0.02233319374067733,
+      "slope_bootstrap_ci95": [
+        -0.11600301942279816,
+        -0.03362211956978353
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.0674274248148363,
+        0.022149088396675086
+      ],
+      "state_centered_slope": -0.07455822870308267
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_incoming_concentration",
+      "mean_within_state_spearman": -0.08532568162205602,
+      "slope_bootstrap_ci95": [
+        -0.15619380143675712,
+        -0.044248229143951295
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.13434425525955251,
+        -0.03765899996966435
+      ],
+      "state_centered_slope": -0.09711577105873574
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_outgoing_concentration",
+      "mean_within_state_spearman": -0.05333840199022426,
+      "slope_bootstrap_ci95": [
+        -0.217793261107456,
+        -0.08398339986033451
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.09898574353458792,
+        -0.008886137305443615
+      ],
+      "state_centered_slope": -0.1500868556111749
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_asymmetry",
+      "mean_within_state_spearman": 0.03716960751992966,
+      "slope_bootstrap_ci95": [
+        6.26462757258429e-05,
+        0.01463678358265958
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.006040733562253358,
+        0.08257776472728526
+      ],
+      "state_centered_slope": 0.0002474784301182145
+    },
+    {
+      "cell": "c02_A",
+      "geometry": "relative_reciprocity",
+      "mean_within_state_spearman": 0.012118706190636774,
+      "slope_bootstrap_ci95": [
+        -2.397060701430334e-05,
+        6.522459521957964e-05
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.026118916656756617,
+        0.051156761340277676
+      ],
+      "state_centered_slope": -1.8247432361100857e-05
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "log_throughput_ratio",
+      "mean_within_state_spearman": -0.3268494319406517,
+      "slope_bootstrap_ci95": [
+        -0.13799772223746093,
+        -0.10339421045312694
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.37015307221457994,
+        -0.2849479359559616
+      ],
+      "state_centered_slope": -0.1199014033239549
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_block_sum",
+      "mean_within_state_spearman": -0.26986844812478167,
+      "slope_bootstrap_ci95": [
+        -0.10787822458969233,
+        -0.07146144231917369
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.31508452718786717,
+        -0.22281901097247767
+      ],
+      "state_centered_slope": -0.08900235459185761
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "log_perron_ratio",
+      "mean_within_state_spearman": -0.3101248197585029,
+      "slope_bootstrap_ci95": [
+        -0.06970281548318621,
+        -0.05030674026226141
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.350986961944625,
+        -0.26905180398034867
+      ],
+      "state_centered_slope": -0.05940714501107376
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "log_singular_ratio",
+      "mean_within_state_spearman": -0.22808558722553857,
+      "slope_bootstrap_ci95": [
+        -0.08706854927509895,
+        -0.05743483124461893
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.2736130253324822,
+        -0.18289327939241617
+      ],
+      "state_centered_slope": -0.07199110151463128
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_incoming_dispersion",
+      "mean_within_state_spearman": -0.08405580948520415,
+      "slope_bootstrap_ci95": [
+        -0.1077978182535268,
+        -0.03205466774726913
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.1310003419502413,
+        -0.036824537347807135
+      ],
+      "state_centered_slope": -0.06911004762416063
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_outgoing_dispersion",
+      "mean_within_state_spearman": -0.04287765308826656,
+      "slope_bootstrap_ci95": [
+        -0.10628007452868901,
+        -0.03159885975471358
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.08927080818855768,
+        0.001137782258527174
+      ],
+      "state_centered_slope": -0.06772602870218425
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_incoming_concentration",
+      "mean_within_state_spearman": -0.11773879615336076,
+      "slope_bootstrap_ci95": [
+        -0.15853502400761849,
+        -0.05010441452869452
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.1636671072154242,
+        -0.07080954428016628
+      ],
+      "state_centered_slope": -0.09931350382104587
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_outgoing_concentration",
+      "mean_within_state_spearman": -0.06354855808127106,
+      "slope_bootstrap_ci95": [
+        -0.22281273889461942,
+        -0.09959770063013118
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.10802039930215752,
+        -0.02088210872914394
+      ],
+      "state_centered_slope": -0.1574065699797274
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_asymmetry",
+      "mean_within_state_spearman": 0.03681367691534198,
+      "slope_bootstrap_ci95": [
+        4.116139871840341e-05,
+        0.011003253191250843
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.005149039800584855,
+        0.08016856455822216
+      ],
+      "state_centered_slope": 0.0001803616535117942
+    },
+    {
+      "cell": "c02_B",
+      "geometry": "relative_reciprocity",
+      "mean_within_state_spearman": 0.003562541895379599,
+      "slope_bootstrap_ci95": [
+        -6.020302535163346e-06,
+        8.779648927000272e-05
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.04016895536458178,
+        0.045950507519420765
+      ],
+      "state_centered_slope": -1.726147852692452e-06
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "log_throughput_ratio",
+      "mean_within_state_spearman": -0.29090546083612745,
+      "slope_bootstrap_ci95": [
+        -0.1470091912184337,
+        -0.1120009703557292
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.3301165469348375,
+        -0.25036140782429017
+      ],
+      "state_centered_slope": -0.12972678772563548
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_block_sum",
+      "mean_within_state_spearman": -0.21696249147449076,
+      "slope_bootstrap_ci95": [
+        -0.10739665767550391,
+        -0.06998433278771592
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.2621081152663256,
+        -0.1695060779946671
+      ],
+      "state_centered_slope": -0.08850903681982726
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "log_perron_ratio",
+      "mean_within_state_spearman": -0.2491355197639077,
+      "slope_bootstrap_ci95": [
+        -0.06416599064322785,
+        -0.04284474856732084
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.28504913877378824,
+        -0.21234385756373925
+      ],
+      "state_centered_slope": -0.052752512128317074
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "log_singular_ratio",
+      "mean_within_state_spearman": -0.20435701471373777,
+      "slope_bootstrap_ci95": [
+        -0.09098569702216425,
+        -0.061544296437467685
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.24504842426343282,
+        -0.16156038118943944
+      ],
+      "state_centered_slope": -0.07638773467368451
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_incoming_dispersion",
+      "mean_within_state_spearman": -0.10670123626251402,
+      "slope_bootstrap_ci95": [
+        -0.1566343851004359,
+        -0.074001349968466
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.15148067987284022,
+        -0.06360968197034754
+      ],
+      "state_centered_slope": -0.1148533581287697
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_outgoing_dispersion",
+      "mean_within_state_spearman": -0.08023704973547487,
+      "slope_bootstrap_ci95": [
+        -0.1626782308890194,
+        -0.08486392450624733
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.12606153281134355,
+        -0.03605517433106848
+      ],
+      "state_centered_slope": -0.12372732918726902
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_incoming_concentration",
+      "mean_within_state_spearman": -0.11433215407812344,
+      "slope_bootstrap_ci95": [
+        -0.21184796512178966,
+        -0.09239599608613346
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.15916824174215477,
+        -0.069669400532793
+      ],
+      "state_centered_slope": -0.15087890863605236
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_outgoing_concentration",
+      "mean_within_state_spearman": -0.0694943547962602,
+      "slope_bootstrap_ci95": [
+        -0.2931911340821978,
+        -0.15754890834158222
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.1145404806098004,
+        -0.02396078927487515
+      ],
+      "state_centered_slope": -0.22516802953877937
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_asymmetry",
+      "mean_within_state_spearman": 0.009214608640081676,
+      "slope_bootstrap_ci95": [
+        -6.468995492179324e-05,
+        0.0067089140850150435
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.027767997475743884,
+        0.047037528470932045
+      ],
+      "state_centered_slope": -2.8035565794469393e-05
+    },
+    {
+      "cell": "c03_A",
+      "geometry": "relative_reciprocity",
+      "mean_within_state_spearman": 0.013825221738589494,
+      "slope_bootstrap_ci95": [
+        -4.413701971001666e-05,
+        7.88972528106984e-05
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.025979757620617466,
+        0.0521322079983103
+      ],
+      "state_centered_slope": 5.50038619776989e-06
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "log_throughput_ratio",
+      "mean_within_state_spearman": -0.32517607566919043,
+      "slope_bootstrap_ci95": [
+        -0.14947779722648177,
+        -0.11130094194748019
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.36828917718483795,
+        -0.28339153701574304
+      ],
+      "state_centered_slope": -0.12971411003262615
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_block_sum",
+      "mean_within_state_spearman": -0.25460991103202885,
+      "slope_bootstrap_ci95": [
+        -0.11128763833577163,
+        -0.07175601499490143
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.2980356546645378,
+        -0.21003865827091908
+      ],
+      "state_centered_slope": -0.09089790196641119
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "log_perron_ratio",
+      "mean_within_state_spearman": -0.2576296324639898,
+      "slope_bootstrap_ci95": [
+        -0.0569558330070397,
+        -0.03743105072200915
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.2994762605031742,
+        -0.2182842706699539
+      ],
+      "state_centered_slope": -0.046539671434454574
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "log_singular_ratio",
+      "mean_within_state_spearman": -0.26835068356856706,
+      "slope_bootstrap_ci95": [
+        -0.10149755551114224,
+        -0.07146337236179387
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.31001855765673964,
+        -0.2289593022619693
+      ],
+      "state_centered_slope": -0.0862856501385915
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_incoming_dispersion",
+      "mean_within_state_spearman": -0.12561060792106202,
+      "slope_bootstrap_ci95": [
+        -0.17689365869902982,
+        -0.10234963343533164
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.16197828957207397,
+        -0.08940093158479356
+      ],
+      "state_centered_slope": -0.13929557527544295
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_outgoing_dispersion",
+      "mean_within_state_spearman": -0.0772933449195182,
+      "slope_bootstrap_ci95": [
+        -0.1674859470797734,
+        -0.09064339398866661
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.11981899961763307,
+        -0.03639936507160112
+      ],
+      "state_centered_slope": -0.12942922557864614
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_incoming_concentration",
+      "mean_within_state_spearman": -0.14115128256444465,
+      "slope_bootstrap_ci95": [
+        -0.24298196562526292,
+        -0.13178516159603695
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.1826374911188316,
+        -0.10076661150305845
+      ],
+      "state_centered_slope": -0.18685307423677183
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_outgoing_concentration",
+      "mean_within_state_spearman": -0.08292533231424781,
+      "slope_bootstrap_ci95": [
+        -0.3011669032778247,
+        -0.17475246078178747
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.12598277801942026,
+        -0.040272665281575214
+      ],
+      "state_centered_slope": -0.23617875287433007
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_asymmetry",
+      "mean_within_state_spearman": -0.017474109834254722,
+      "slope_bootstrap_ci95": [
+        8.666938933440488e-06,
+        0.0070401979867687516
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.06007928492559506,
+        0.0247307833026944
+      ],
+      "state_centered_slope": 3.8331035787150644e-05
+    },
+    {
+      "cell": "c03_B",
+      "geometry": "relative_reciprocity",
+      "mean_within_state_spearman": 0.005204017032576736,
+      "slope_bootstrap_ci95": [
+        -8.635491728490475e-05,
+        3.224526148541625e-05
+      ],
+      "spearman_bootstrap_ci95": [
+        -0.030972489223874692,
+        0.041406509527316615
+      ],
+      "state_centered_slope": -4.17104860029626e-06
+    }
+  ],
+  "neutral_process_summary": [
+    {
+      "break_shift": 0.01203125,
+      "cell": "c02_A",
+      "entropy_shift": 0.09614172536680891,
+      "growth_updates_shift": -7.197428385416666,
+      "joint_shift": 0.0103125,
+      "occupied_types_shift": 0.520078125
+    },
+    {
+      "break_shift": 0.018046875,
+      "cell": "c02_B",
+      "entropy_shift": 0.09271638601531439,
+      "growth_updates_shift": -7.255891927083334,
+      "joint_shift": 0.015,
+      "occupied_types_shift": 0.469921875
+    },
+    {
+      "break_shift": 0.015390625,
+      "cell": "c03_A",
+      "entropy_shift": 0.09889849110110017,
+      "growth_updates_shift": -5.449694010416668,
+      "joint_shift": 0.0153125,
+      "occupied_types_shift": 0.526015625
+    },
+    {
+      "break_shift": 0.02640625,
+      "cell": "c03_B",
+      "entropy_shift": 0.08822651544803145,
+      "growth_updates_shift": -5.3065625,
+      "joint_shift": 0.0234375,
+      "occupied_types_shift": 0.435390625
+    }
+  ],
+  "new_scientific_matrices": 0,
+  "new_simulated_futures": 0,
+  "pilot_primary_gate": true,
+  "registered_p3c_verdict_changed": false
+}

@@ -1,0 +1,76 @@
+schema: eidosoma.e01.s19_l46.preregistration.v1
+version: E01-S19-L46-FUNCTIONAL-HEREDITARY-REGIME-TRANSITION-AUDIT-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  When a genuine inheritance break is followed by the frozen run of three
+  inherited fissions, does the new episode restore the old matrix-conditioned
+  functional regime, or form a locally coherent new functional regime, despite
+  failure to restore the old molecular composition?
+inputs:
+  branchStreams: frozen L41 F12 identities only
+  process: frozen L44 NEW_HEREDITARY_EPISODE_RUN3 after genuine break
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+functionalObjects:
+  - CATALYTIC_ACTIVATION_PROFILE: beta times relative composition
+  - EXPECTED_NET_EXCHANGE_DIRECTION: source GARD join rates minus loss rates
+  - GROWTH_DIVISION_SIGNATURE:
+      - log1p molecular updates to fission
+      - log1p gross sampled events
+      - nonzero reaction types per update
+      - selected-daughter mass fraction
+clocks:
+  processClock: post-fission boundaries
+  primaryHorizon: 12 future fissions
+  certificationWindow: first frozen run of three inherited post-break fissions
+comparisons:
+  restoration:
+    - pre-break anchor versus certification-window mean
+    - break daughter versus certification-window mean
+    - molecule-permuted pre-break anchor versus certification-window mean
+    - unrelated-matrix prefix daughter versus certification-window mean
+  orderedCoherence:
+    - first consecutive inherited triple
+    - all inherited post-break states as fixed-count order control
+  growthDivision:
+    - pre-break growth interval versus certification window
+    - all inherited post-break intervals as fixed-count control
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  evaluationCohorts: [L28_VALIDATION, L31_CONFIRMATION]
+  matrixBootstraps: 4096
+  growthScaling: development-candidate median and MAD, zero MAD replaced by 1
+successGate:
+  oldFunctionalRestoration:
+    - actual old-to-new similarity exceeds break-to-new in every evaluation group
+    - actual old-to-new similarity exceeds molecule-permuted and unrelated controls
+    - catalytic activation and expected net exchange both pass
+    - growth distance is smaller than its fixed-count inherited-state control
+    - all paired matrix-bootstrap lower bounds exceed zero
+  newRegimeCoherence:
+    - consecutive-triple functional coherence exceeds fixed-count inherited-state control
+    - both vector domains agree in every evaluation group
+    - all paired matrix-bootstrap lower bounds exceed zero
+interpretation:
+  compositionReturn: must remain separately reported and cannot be rescued
+  functionalRestoration: does not imply exact compositional restoration
+  newRegimeCoherence: does not imply one global attractor or causal control
+scope:
+  thresholdSearch: false
+  processSearch: false
+  horizonSearch: false
+  signatureSearch: false
+  modelSearch: false
+  phiComputation: false
+  intervention: false
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: outcome-dependent L47 regime-mechanism audit

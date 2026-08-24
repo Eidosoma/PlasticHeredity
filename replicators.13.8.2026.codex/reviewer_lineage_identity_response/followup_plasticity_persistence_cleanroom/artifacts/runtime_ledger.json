@@ -1,0 +1,11 @@
+{
+  "active_cumulative_at_start": null,
+  "active_started_epoch": null,
+  "created_at_epoch": 1787488394.9550216,
+  "cumulative_seconds": 28800.0,
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "hard_limit_seconds": 28800.0,
+  "last_stopped_at_epoch": 1787518171.0344498,
+  "runs_started": 1,
+  "soft_limit_seconds": 27000.0
+}

@@ -1,0 +1,17 @@
+{
+  "all_candidates_and_environments": true,
+  "cell_digests": {
+    "identity-r512-f32:moderate_joint": "00bdf629f2adbd81f8c0c6284c233578cf72dfffa3a81b1d6c5a4f4a3a7cae58",
+    "identity-r512-f32:ordinary": "27de9c95442bcc2fd62e78f5800c4509cde31e56155e9768fb7419f71c95c47d",
+    "pca-r008-q04:moderate_joint": "1451567b4cf86c10b2d48732852e9a79a75d3c5cfe1c54f80d6d77b713c3606f",
+    "pca-r008-q04:ordinary": "b87ba7a668a6562e85dcdd73f4bf06eaab262aecb0e049810645e6684fa2545b",
+    "walsh-r016-q04:moderate_joint": "ae1037f4a577a6138ad156249c9ece2caff947264c31b7e9a793f9df43047d73",
+    "walsh-r016-q04:ordinary": "442040a35f67e32f6814e1def93692315989c40536124d3e2b144d8d048f47af"
+  },
+  "generations": 4,
+  "pair_id": "fresh-pair-3-06271e1d163981887fc2",
+  "replicates": 2,
+  "role": "non-evidential engineering smoke test",
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "valid": true
+}

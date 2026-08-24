@@ -1,0 +1,11 @@
+{
+  "active_cumulative_at_start": null,
+  "active_started_epoch": null,
+  "created_at_epoch": 1787411955.103717,
+  "cumulative_seconds": 16709.20422053337,
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "hard_limit_seconds": 28800.0,
+  "last_stopped_at_epoch": 1787428664.3079462,
+  "runs_started": 1,
+  "soft_limit_seconds": 27000.0
+}

@@ -1,0 +1,86 @@
+{
+  "phir": {
+    "C1_aggregate_trend": {
+      "slope": -1.048596172570951e-05,
+      "p": 0.3356194264521787,
+      "horizon_steps": 968
+    },
+    "C2_spikes": {
+      "runs_with_spikes": 95.0,
+      "n_runs": 100
+    },
+    "C3_correlation": {
+      "runs_valid": 100,
+      "positive": 31,
+      "positive_significant": 12,
+      "phi_higher_in_sr_p001": 9,
+      "fisher_p": 1.613964373782642e-15,
+      "mean_rho": -0.0476443434620031,
+      "mean_rho_ttest_p": 6.277300373568946e-05
+    },
+    "C4_ljungbox": {
+      "reject": 84,
+      "reject_after_diff": 100,
+      "median_p": 9.830343442027945e-17
+    },
+    "C6_spike_geometry": {
+      "sr_prob_vs_spike_time": {
+        "rho": -0.3603023516237402,
+        "p": 0.0003350778664793668,
+        "n": 95
+      },
+      "sr_prob_vs_spike_gap": {
+        "rho": -0.1780697563306259,
+        "p": 0.0912730816336464,
+        "n": 91
+      },
+      "sr_prob_vs_spike_height": {
+        "rho": -0.051763717805151176,
+        "p": 0.618353361945229,
+        "n": 95
+      }
+    }
+  },
+  "emergence3": {
+    "C1_aggregate_trend": {
+      "slope": 2.0378738104520724e-05,
+      "p": 0.02514488887543078,
+      "horizon_steps": 968
+    },
+    "C2_spikes": {
+      "runs_with_spikes": 89.0,
+      "n_runs": 100
+    },
+    "C3_correlation": {
+      "runs_valid": 100,
+      "positive": 36,
+      "positive_significant": 14,
+      "phi_higher_in_sr_p001": 8,
+      "fisher_p": 2.0052276414518026e-16,
+      "mean_rho": -0.025916105422496317,
+      "mean_rho_ttest_p": 0.005442934558149697
+    },
+    "C4_ljungbox": {
+      "reject": 75,
+      "reject_after_diff": 100,
+      "median_p": 4.434193920523284e-07
+    },
+    "C6_spike_geometry": {
+      "sr_prob_vs_spike_time": {
+        "rho": -0.21171623626214575,
+        "p": 0.046400553260260304,
+        "n": 89
+      },
+      "sr_prob_vs_spike_gap": {
+        "rho": -0.3028024606971975,
+        "p": 0.007433459086143575,
+        "n": 77
+      },
+      "sr_prob_vs_spike_height": {
+        "rho": 0.058018386108273756,
+        "p": 0.5891542378132066,
+        "n": 89
+      }
+    }
+  }
+}

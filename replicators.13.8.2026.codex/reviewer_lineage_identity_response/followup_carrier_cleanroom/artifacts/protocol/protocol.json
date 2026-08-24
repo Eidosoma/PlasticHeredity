@@ -1,0 +1,560 @@
+{
+  "all_writes_below": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_carrier_cleanroom",
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "carrier_definition": {
+    "bounds": [
+      -1.0,
+      1.0
+    ],
+    "half_life_decay": "2**(-1/L)",
+    "nominal_copy": {
+      "dropout": 0.02,
+      "gaussian_sigma": 0.05,
+      "retention": 0.95
+    },
+    "reader": "softmax(coupling * carrier)",
+    "writer": "centered adult-parent abundance scaled by maximum absolute coordinate"
+  },
+  "engineering_rules": [
+    11,
+    54,
+    63
+  ],
+  "firewall_audit": {
+    "hypothesis_files": 17,
+    "newideas_modules_imported": [],
+    "passed": true,
+    "policy": "NewIdeas documents and result JSON only; no source/tests/scripts/notebooks/config modules"
+  },
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "hypothesis_only_manifest_sha256": "bb7efa1504f4768efaa043506eb380f476d8af83293b1f219cd2775d20552b6e",
+  "manuscript_modified": false,
+  "mask_registry_sha256": "0599ef6d69b1a8c0b8ed2ba763fd6c7f263b76bf4b8416ef22c70cb15c54cfac",
+  "parent_integrity": {
+    "complete": true,
+    "format": "reviewer-lineage-identity-v1",
+    "protocol_id": "ac22060e8ebd1e2a501b21cecbc303fa32454cce7a5a506eb84da9c448c024b4",
+    "registration_id": "e18577a04c2e60c33677c26f3660e262e13b45f92fa83dd76aa7aeee73cf92ab",
+    "replayed_lineages": 21504
+  },
+  "primary_rule_count": 47,
+  "protocol_id": "e4250713b53cffa4fac9be5967c108cb8adff2ef6ce92bf44c53f7898c126a17",
+  "registration_id": "d7b11bd379f9e4e05dbf403b2248e77a3b792e37d1d41e55ac2b09c5449541ec",
+  "rules": [
+    11,
+    88,
+    110,
+    179,
+    23,
+    17,
+    54,
+    132,
+    196,
+    158,
+    10,
+    90,
+    32,
+    45,
+    28,
+    159,
+    149,
+    58,
+    25,
+    198,
+    97,
+    14,
+    197,
+    126,
+    112,
+    38,
+    1,
+    43,
+    18,
+    64,
+    72,
+    178,
+    161,
+    174,
+    5,
+    9,
+    79,
+    55,
+    117,
+    24,
+    153,
+    138,
+    86,
+    148,
+    63,
+    125,
+    171,
+    119,
+    2,
+    118
+  ],
+  "runtime": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "threadpoolctl": "3.6.0"
+  },
+  "scientific_source_manifest_sha256": "8f94104ead8cd9a8b1c602cb389d2b01de41d5565bef3a0f00c16f92d263d663",
+  "scope": "clean-room molecule-indexed inherited-register stress test",
+  "seed_registry_sha256": "80c0ebe46e3d084542f0c02b51797b6d9cb0965fd81d6c20d83d148b2f4b12cc",
+  "settings": [
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 100
+    }
+  ],
+  "shared_multiform_rules": [
+    2,
+    10,
+    23,
+    25,
+    45,
+    55,
+    72,
+    112,
+    148,
+    159,
+    161,
+    174,
+    178,
+    196
+  ],
+  "status": "sealed_before_new_carrier_futures",
+  "target_registry_sha256": "1fd9810ffe719edea99ef27dc62b5e5275eeb5737e7ef3e0ba50d72ad503c0bb",
+  "wagner_code_used": false
+}

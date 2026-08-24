@@ -1,0 +1,226 @@
+{
+  "02": {
+    "arms": {
+      "ph_stab": {
+        "inherit": 0.9345486111111111,
+        "breaks": 3.9270833333333335,
+        "longest_run": 41.1875,
+        "phi_code": 1.856434557759835,
+        "phi_text": -0.02047052005735985
+      },
+      "ph_destab": {
+        "inherit": 0.8090277777777777,
+        "breaks": 11.458333333333334,
+        "longest_run": 24.104166666666668,
+        "phi_code": 1.7015940090295494,
+        "phi_text": -0.015879819693137325
+      },
+      "phiR_max": {
+        "inherit": 0.884548611111111,
+        "breaks": 6.927083333333333,
+        "longest_run": 31.21875,
+        "phi_code": 1.7913346706476176,
+        "phi_text": -0.02299442833662953
+      },
+      "phiR_min": {
+        "inherit": 0.8720486111111111,
+        "breaks": 7.677083333333333,
+        "longest_run": 30.927083333333332,
+        "phi_code": 1.7616568979430614,
+        "phi_text": -0.024382629031714242
+      },
+      "random": {
+        "inherit": 0.8782986111111111,
+        "breaks": 7.302083333333333,
+        "longest_run": 31.8125,
+        "phi_code": 1.7831702080899356,
+        "phi_text": -0.023231388240763932
+      },
+      "noop": {
+        "inherit": 0.8864583333333332,
+        "breaks": 6.8125,
+        "longest_run": 32.71875,
+        "phi_code": 1.8289997146372603,
+        "phi_text": -0.019125538057481312
+      }
+    },
+    "tests": {
+      "C1_phstab_minus_phdestab_PHICODE": {
+        "diff": 0.1548405487302853,
+        "ci": [
+          0.07485570005275308,
+          0.23334145414542617
+        ],
+        "excludes0": true
+      },
+      "C2a_phiRmax_minus_phiRmin_PHICODE": {
+        "diff": 0.029677772704556658,
+        "ci": [
+          -0.057888462001593435,
+          0.1103779139702818
+        ],
+        "excludes0": false
+      },
+      "C2b_phiRmax_minus_phiRmin_INHERIT": {
+        "diff": 0.012499999999999999,
+        "ci": [
+          -0.001736111111111111,
+          0.026736111111111103
+        ],
+        "excludes0": false
+      },
+      "C2b_phiRmax_minus_phiRmin_BREAKS": {
+        "diff": -0.75,
+        "ci": [
+          -1.6041666666666667,
+          0.10416666666666667
+        ],
+        "excludes0": false
+      },
+      "C2b_phiRmax_minus_phiRmin_LONGRUN": {
+        "diff": 0.2916666666666667,
+        "ci": [
+          -1.9544270833333333,
+          2.5481770833333335
+        ],
+        "excludes0": false
+      },
+      "C3_phstab_minus_phdestab_INHERIT": {
+        "diff": 0.12552083333333333,
+        "ci": [
+          0.09947916666666666,
+          0.1552083333333333
+        ],
+        "excludes0": true
+      },
+      "C4_random_minus_noop_INHERIT": {
+        "diff": -0.008159722222222221,
+        "ci": [
+          -0.020312499999999997,
+          0.003927951388888887
+        ],
+        "excludes0": false
+      },
+      "C4_random_minus_noop_PHICODE": {
+        "diff": -0.04582950654732471,
+        "ci": [
+          -0.12349726132602981,
+          0.03687151004520609
+        ],
+        "excludes0": false
+      }
+    }
+  },
+  "03": {
+    "arms": {
+      "ph_stab": {
+        "inherit": 0.9388888888888888,
+        "breaks": 3.6666666666666665,
+        "longest_run": 41.541666666666664,
+        "phi_code": 1.1765910202410146,
+        "phi_text": -0.028547007855821538
+      },
+      "ph_destab": {
+        "inherit": 0.7895833333333334,
+        "breaks": 12.625,
+        "longest_run": 22.291666666666668,
+        "phi_code": 0.9984949017920162,
+        "phi_text": -0.031190329975548686
+      },
+      "phiR_max": {
+        "inherit": 0.8828125,
+        "breaks": 7.03125,
+        "longest_run": 31.729166666666668,
+        "phi_code": 1.0987641300322724,
+        "phi_text": -0.038073779775473326
+      },
+      "phiR_min": {
+        "inherit": 0.8770833333333333,
+        "breaks": 7.375,
+        "longest_run": 30.989583333333332,
+        "phi_code": 1.0337969247016299,
+        "phi_text": -0.03460097511887774
+      },
+      "random": {
+        "inherit": 0.8607638888888888,
+        "breaks": 8.354166666666666,
+        "longest_run": 29.166666666666668,
+        "phi_code": 1.0852340031301138,
+        "phi_text": -0.03259447694922374
+      },
+      "noop": {
+        "inherit": 0.8777777777777777,
+        "breaks": 7.333333333333333,
+        "longest_run": 30.6875,
+        "phi_code": 1.0614893150341662,
+        "phi_text": -0.033484742340173845
+      }
+    },
+    "tests": {
+      "C1_phstab_minus_phdestab_PHICODE": {
+        "diff": 0.17809611844899856,
+        "ci": [
+          0.10296965940656637,
+          0.25908595158762293
+        ],
+        "excludes0": true
+      },
+      "C2a_phiRmax_minus_phiRmin_PHICODE": {
+        "diff": 0.06496720533064247,
+        "ci": [
+          0.0056712311117123005,
+          0.12274763296167114
+        ],
+        "excludes0": true
+      },
+      "C2b_phiRmax_minus_phiRmin_INHERIT": {
+        "diff": 0.005729166666666667,
+        "ci": [
+          -0.007986111111111107,
+          0.018750000000000006
+        ],
+        "excludes0": false
+      },
+      "C2b_phiRmax_minus_phiRmin_BREAKS": {
+        "diff": -0.34375,
+        "ci": [
+          -1.125,
+          0.4791666666666667
+        ],
+        "excludes0": false
+      },
+      "C2b_phiRmax_minus_phiRmin_LONGRUN": {
+        "diff": 0.7395833333333334,
+        "ci": [
+          -1.78125,
+          3.37109375
+        ],
+        "excludes0": false
+      },
+      "C3_phstab_minus_phdestab_INHERIT": {
+        "diff": 0.14930555555555555,
+        "ci": [
+          0.1190972222222222,
+          0.18177083333333333
+        ],
+        "excludes0": true
+      },
+      "C4_random_minus_noop_INHERIT": {
+        "diff": -0.017013888888888887,
+        "ci": [
+          -0.03246527777777778,
+          -0.0029513888888888958
+        ],
+        "excludes0": true
+      },
+      "C4_random_minus_noop_PHICODE": {
+        "diff": 0.023744688095947635,
+        "ci": [
+          -0.051062796239668765,
+          0.09626795681969859
+        ],
+        "excludes0": false
+      }
+    }
+  }
+}

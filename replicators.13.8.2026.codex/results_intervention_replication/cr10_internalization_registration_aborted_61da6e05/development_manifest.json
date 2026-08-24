@@ -1,0 +1,80 @@
+{
+  "development_landmarks": [
+    20,
+    35,
+    50,
+    65,
+    80
+  ],
+  "development_matrices": 200,
+  "development_states": 2000,
+  "exact_reconstruction": {
+    "beta": true,
+    "history": true,
+    "state_graph": true
+  },
+  "format": "codex-intervention-cr10-development-v1",
+  "frozen_model_archive_reproduced": true,
+  "model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "portable_tree_actions_exact": true,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scaled5_checksum_manifest_sha256": "0e7ca52ccf654fad2557d2eed9558429033a70476d4137375180d96bd2875ca0",
+  "scientific_cr10_matrices_generated": 0,
+  "tree_contract": {
+    "architecture": {
+      "class_weight": "balanced",
+      "criterion": "gini",
+      "max_depth": 3,
+      "min_samples_leaf": 25,
+      "splitter": "best"
+    },
+    "candidate_separated": true,
+    "features": [
+      "abundance_share",
+      "outgoing_influence_percentile",
+      "incoming_boost_percentile",
+      "presence"
+    ],
+    "format": "codex-intervention-cr10-local-tree-contract-v1",
+    "orientation": {
+      "beta": "beta[target,catalyst]",
+      "incoming": "beta @ x",
+      "outgoing": "x @ beta == beta.T @ x"
+    },
+    "roles": [
+      "remove",
+      "add"
+    ],
+    "summaries": {
+      "02": {
+        "add_agreement": 0.606,
+        "add_tree_depth": 3,
+        "joint_agreement": 0.076,
+        "maximum_predicted_risk_regret": 0.20501900846372256,
+        "median_predicted_risk_regret": 0.007933253045606554,
+        "remove_agreement": 0.143,
+        "remove_tree_depth": 3,
+        "states": 1000
+      },
+      "03": {
+        "add_agreement": 0.562,
+        "add_tree_depth": 3,
+        "joint_agreement": 0.061,
+        "maximum_predicted_risk_regret": 0.27466961213572216,
+        "median_predicted_risk_regret": 0.010219734934860197,
+        "remove_agreement": 0.113,
+        "remove_tree_depth": 3,
+        "states": 1000
+      }
+    },
+    "tie_break": "first numeric type after legality mask"
+  }
+}

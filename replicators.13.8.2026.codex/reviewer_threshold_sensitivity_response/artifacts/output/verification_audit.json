@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "cr1_baseline": true,
+    "f12_baseline": true,
+    "f32_baseline": true,
+    "figures_present": true,
+    "metric_readback": true,
+    "protocol_current": true,
+    "result_contract": true
+  },
+  "checksum_manifest_regenerated_after_audit": true
+}

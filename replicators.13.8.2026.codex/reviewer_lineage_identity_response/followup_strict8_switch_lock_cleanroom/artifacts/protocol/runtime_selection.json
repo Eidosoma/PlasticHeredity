@@ -1,0 +1,13 @@
+{
+  "benchmark_sha256": "14d3543c6b0b9c9f74bbf1dd9e6e136ce84e68aaddf29f8ac7342ed0ff30046d",
+  "design": {
+    "donor_lineages": 192,
+    "future_replicates": 16,
+    "matrices": 64
+  },
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "protocol_id": "e10e9a1a499c66cb7ab5e20e51aed56cbf6fa1fc4e6a062dd63095576c605e3f",
+  "selected_before_donor_production": true,
+  "selection_id": "63856f908b2dd39fe9da351078aa813f6d6582c24a80eb063bfbe9cae521e719",
+  "tier": "A"
+}

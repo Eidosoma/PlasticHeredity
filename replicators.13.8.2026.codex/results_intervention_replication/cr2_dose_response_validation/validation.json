@@ -1,0 +1,213 @@
+{
+  "all_pass": true,
+  "checks": {
+    "cr1_exact_replay_passed": true,
+    "cr1_full_gate_passed": true,
+    "cr1_model_hash_preserved": true,
+    "cr1_readback_passed": true,
+    "cr1_registration_verified": true,
+    "cr1_result_checksum_verified": true,
+    "fresh_seeds_disjoint_from_earlier_program": true,
+    "full_branch_count": true,
+    "full_matrix_count": true,
+    "future_seed_domain_differs_from_cr1": true,
+    "future_seed_key_has_no_arm_argument": true,
+    "inherited_validation_all_passed": true,
+    "primary_future_count": true,
+    "quantile_ranks_exact": true,
+    "quantile_selection_exact": true,
+    "replay_future_count": 768000,
+    "scientific_cr2_output_absent": true,
+    "scientific_cr2_work_absent": true,
+    "seed_domains_unique": true,
+    "six_quantile_contract": true,
+    "tie_resolution_lexicographic_at_both_extremes": true
+  },
+  "format": "codex-intervention-cr2-dose-response-validation-v1",
+  "inherited_validation": {
+    "all_checks_passed": true,
+    "check_count": 26,
+    "checks": {
+      "01_legal_substitution_preserves_mass": {
+        "detail": null,
+        "passed": true
+      },
+      "02_same_type_substitution_rejected": {
+        "detail": null,
+        "passed": true
+      },
+      "03_absent_source_rejected": {
+        "detail": null,
+        "passed": true
+      },
+      "04_legal_edits_nonnegative_integer": {
+        "detail": {
+          "legal_edits": 6
+        },
+        "passed": true
+      },
+      "05_edited_features_permutation_invariant": {
+        "detail": {
+          "maximum_absolute_error": 2.220446049250313e-16
+        },
+        "passed": true
+      },
+      "06_history_unchanged_by_instantaneous_edit": {
+        "detail": null,
+        "passed": true
+      },
+      "07_frozen_predictor_serialization_exact": {
+        "detail": {
+          "all_within_tolerance": true,
+          "archived_experiment_contract_exact": true,
+          "candidate_errors": {
+            "02": {
+              "maximum_absolute_error_vs_archive_implementation": 0.0,
+              "maximum_absolute_error_vs_archived_confirmation_table": 5.551115123125783e-16,
+              "states": 1000,
+              "within_tolerance": true
+            },
+            "03": {
+              "maximum_absolute_error_vs_archive_implementation": 0.0,
+              "maximum_absolute_error_vs_archived_confirmation_table": 5.551115123125783e-16,
+              "states": 1000,
+              "within_tolerance": true
+            }
+          },
+          "source_arrays_sha256": "102abe46f510660a4b11ddfcd96e08301278bd6da585c2158c9bc69122db7fc0",
+          "source_manifest_sha256": "7358276ee14cea62ba18fc7e9d06108ef8b2019999d6f4e4bfcbe6721b37e372",
+          "source_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+          "source_state_table_sha256": "f83b99009a281a65f045d0634d120013c81131803c06f3ebf98b2dfe49f1cfc2",
+          "tolerance": 1e-12
+        },
+        "passed": true
+      },
+      "08_exhaustive_legal_enumeration_exact": {
+        "detail": null,
+        "passed": true
+      },
+      "09_extreme_tie_selection_deterministic": {
+        "detail": null,
+        "passed": true
+      },
+      "10_random_edit_selection_uniform": {
+        "detail": {
+          "counts": [
+            4997,
+            4993,
+            5016,
+            4994
+          ]
+        },
+        "passed": true
+      },
+      "11_random_selection_stream_distinct_from_future_stream": {
+        "detail": null,
+        "passed": true
+      },
+      "12_future_streams_paired_across_arms": {
+        "detail": {
+          "arm_identity_in_seed_key": false
+        },
+        "passed": true
+      },
+      "13_noop_one_shot_bitwise_plain_simulator": {
+        "detail": null,
+        "passed": true
+      },
+      "14_endpoint_threshold_and_horizon_edges": {
+        "detail": null,
+        "passed": true
+      },
+      "15_positive_before_extinction_remains_positive": {
+        "detail": null,
+        "passed": true
+      },
+      "16_extinction_before_certification_negative": {
+        "detail": null,
+        "passed": true
+      },
+      "17_candidate_selected_daughter_semantics_preserved": {
+        "detail": {
+          "candidate_02": "first fixed-size daughter",
+          "candidate_03": "second binomial daughter"
+        },
+        "passed": true
+      },
+      "18_matrix_bootstrap_uses_whole_blocks": {
+        "detail": null,
+        "passed": true
+      },
+      "19_matrix_sign_randomization_preserves_pairing": {
+        "detail": null,
+        "passed": true
+      },
+      "20_replay_state_edit_endpoint_and_process_exact": {
+        "detail": null,
+        "passed": true
+      },
+      "21_beta_surgery_positive_and_norm_preserving": {
+        "detail": null,
+        "passed": true
+      },
+      "22_random_beta_surgery_norm_matched": {
+        "detail": null,
+        "passed": true
+      },
+      "23_closed_loop_noop_callback_bitwise_plain": {
+        "detail": null,
+        "passed": true
+      },
+      "24_release_applies_zero_interventions_after_release": {
+        "detail": null,
+        "passed": true
+      },
+      "25_batched_exhaustive_scoring_is_not_an_approximation": {
+        "detail": {
+          "actual_dimension": 100,
+          "edits_compared": 64,
+          "maximum_feature_absolute_error": 8.881784197001252e-16,
+          "maximum_probability_absolute_error": 2.220446049250313e-16
+        },
+        "passed": true
+      },
+      "26_beta_orientation_matches_codex_propensity_equation": {
+        "detail": {
+          "expression": "beta @ x",
+          "storage": "beta[target,catalyst]"
+        },
+        "passed": true
+      }
+    },
+    "format": "codex-intervention-validation-v1",
+    "required_checks_passed": true,
+    "scientific_cohort_generated": false
+  },
+  "pytest_command": [
+    "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "tests/test_intervention_cr2_dose_response.py",
+    "tests/test_intervention_replication.py"
+  ],
+  "pytest_stderr": "",
+  "pytest_stdout": "...................................                                      [100%]\n",
+  "scientific_cr2_futures_generated": 0,
+  "scientific_cr2_matrices_generated": 0,
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR2_DOSE_RESPONSE_PREREGISTRATION.md": "a32a4186a2e48ebc127bfae4b5dcd7cf07e1c8c9b0cd8c53fff339a2ec65191e",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr1_confirmation.py": "1e8f002e8796ee9002d5859fb40a87a875e3ca345a02a8e1c281133dfff8c205",
+    "plastic_heredity/intervention_cr2_dose_response.py": "f95345de69c0a7a45c0b5a91a578fda63667ec3ff8533c4a68d84dda352f2b51",
+    "plastic_heredity/intervention_metrics.py": "037c36dd20547dd54b0638f99fb4e520e2f64d17b8fc2799331076a9ddb4eb54",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_intervention_cr2_dose_response.py": "64f52527c0577a4c78eaf4054e4fc5166446552fd5a9f9f292152971348e6e9c"
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "all_writes_below": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence",
+  "arms": [
+    "native",
+    "state_only",
+    "rule_only",
+    "joint",
+    "natural_stranger"
+  ],
+  "bray_calibration": {
+    "bray_cutoff_by_cosine": {
+      "0.85": 0.5585585585585586,
+      "0.9": 0.6086956521739131,
+      "0.95": 0.6666666666666667
+    },
+    "method": "empirical_percentile_match_from_first_eight_sealed_random_start_lineages_per_candidate_rule",
+    "pairs": 204800
+  },
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "donors_per_cell": 3,
+  "format": "strict-b-transplant-arrival-residence-v1",
+  "futures_per_start_arm": 128,
+  "horizon": 32,
+  "hypothesis_only_manifest_sha256": "df8cc1618b16755bada1d681f3166c5f15bf5596cde199f817087e1fa07262b5",
+  "manuscript_modified": false,
+  "parent_integrity": {
+    "complete": true,
+    "format": "reviewer-lineage-identity-v1",
+    "protocol_id": "ac22060e8ebd1e2a501b21cecbc303fa32454cce7a5a506eb84da9c448c024b4",
+    "registration_id": "e18577a04c2e60c33677c26f3660e262e13b45f92fa83dd76aa7aeee73cf92ab",
+    "replayed_lineages": 21504
+  },
+  "permutation_proposals": 4096,
+  "protocol_id": "920aa591842e0aec5a25fcc6f803ae4ca71d285e6157c5032d56e2e34c1ee165",
+  "rare_adequacy": {
+    "c02_m011_f0": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12648,
+      "starts_found": 8
+    },
+    "c02_m011_f1": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12335,
+      "starts_found": 8
+    },
+    "c02_m054_f0": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12320,
+      "starts_found": 8
+    },
+    "c02_m054_f1": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12404,
+      "starts_found": 8
+    },
+    "c02_m063_f0": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12645,
+      "starts_found": 8
+    },
+    "c02_m063_f1": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12720,
+      "starts_found": 8
+    },
+    "c03_m011_f0": {
+      "dose": 20,
+      "passed": true,
+      "proposals_examined": 16417,
+      "starts_found": 8
+    },
+    "c03_m011_f1": {
+      "dose": 20,
+      "passed": true,
+      "proposals_examined": 16431,
+      "starts_found": 8
+    },
+    "c03_m054_f0": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 12331,
+      "starts_found": 8
+    },
+    "c03_m054_f1": {
+      "dose": 16,
+      "passed": true,
+      "proposals_examined": 13154,
+      "starts_found": 8
+    },
+    "c03_m063_f0": {
+      "dose": 24,
+      "passed": true,
+      "proposals_examined": 20523,
+      "starts_found": 8
+    },
+    "c03_m063_f1": {
+      "dose": 20,
+      "passed": true,
+      "proposals_examined": 16479,
+      "starts_found": 8
+    }
+  },
+  "rare_dose_ladder": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24
+  ],
+  "rare_perturbations": 8,
+  "rare_proposals_per_dose": 4096,
+  "rare_rules": [
+    11,
+    54,
+    63
+  ],
+  "registration_id": "11e923976c45c5fd6b58ded2d2a428d66524becb21bfc3fd0beaed91018dd51a",
+  "rule_count": 50,
+  "rules": [
+    11,
+    88,
+    110,
+    179,
+    23,
+    17,
+    54,
+    132,
+    196,
+    158,
+    10,
+    90,
+    32,
+    45,
+    28,
+    159,
+    149,
+    58,
+    25,
+    198,
+    97,
+    14,
+    197,
+    126,
+    112,
+    38,
+    1,
+    43,
+    18,
+    64,
+    72,
+    178,
+    161,
+    174,
+    5,
+    9,
+    79,
+    55,
+    117,
+    24,
+    153,
+    138,
+    86,
+    148,
+    63,
+    125,
+    171,
+    119,
+    2,
+    118
+  ],
+  "runtime": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "scipy": "1.18.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "scientific_source_manifest_sha256": "fa597720cbddd6828a09c0b8268f3298d01c5600503385216caa1b005d41c8ec",
+  "scope": "strict-B transplant, rule rehoming, and rare-two-form challenge",
+  "status": "sealed_before_new_futures"
+}

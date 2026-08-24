@@ -1,0 +1,25 @@
+# Environments & secrets
+.venv/
+venv/
+.env
+.env.*
+*.local
+
+# Python cruft
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Large simulation outputs (raw per-run arrays; keep the small results/*.json summaries)
+results/runs/
+results/runs_coarse/
+results/runs_pred/
+results/phi_variants/
+results/phi_authors/
+results/recovery_c7_runs/
+results/**/*.npz
+results/*.pkl
+
+# OS noise
+.DS_Store

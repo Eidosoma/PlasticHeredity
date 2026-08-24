@@ -1,0 +1,7 @@
+{
+  "all_within_1e-14": true,
+  "branch_artifact": "confirmation_branches.csv.gz",
+  "maximum_absolute_error": 0.0,
+  "point_estimates_checked": 487,
+  "state_artifact": "confirmation_states.csv"
+}

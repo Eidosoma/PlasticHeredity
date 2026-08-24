@@ -1,0 +1,34 @@
+{
+  "all_passed": true,
+  "checks": {
+    "all_four_mechanisms": true,
+    "cpu_allocation_fixed": true,
+    "draws_fixed": true,
+    "explicit_pairs_only": true,
+    "future_seed_has_no_arm_or_mechanism": true,
+    "gn_first_checkpoint_exists": true,
+    "gn_last_selected_checkpoint_exists": true,
+    "gn_result_exists": true,
+    "horizon_fixed": true,
+    "intervention_branches_fixed": true,
+    "landmarks_fixed": true,
+    "master_registration_exists": true,
+    "matrix_subset_fixed": true,
+    "no_48_matrix_campaign": true,
+    "no_outcome_selection": true,
+    "strict_eight_excluded": true,
+    "untreated_branches_fixed": true
+  },
+  "format": "codex-ch5-phir-extension-px5-validation-v1",
+  "pytest_returncode": 0,
+  "pytest_stderr": "",
+  "pytest_stdout": "........                                                                 [100%]\n",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  }
+}

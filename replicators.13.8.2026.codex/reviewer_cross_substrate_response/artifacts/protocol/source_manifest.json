@@ -1,0 +1,73 @@
+{
+  "files": {
+    "HYPOTHESIS_PROVENANCE.md": {
+      "path": "reviewer_cross_substrate_response/HYPOTHESIS_PROVENANCE.md",
+      "sha256": "a24a3379d169b19bbb0dddc34c5e04aed362e3a0be1a74667a2f2db865966529"
+    },
+    "PREREGISTRATION.md": {
+      "path": "reviewer_cross_substrate_response/PREREGISTRATION.md",
+      "sha256": "f2123ffe40c6c005619e33122808a5a56cf4ac53b7c6d119cd8ff15bfd2c66bf"
+    },
+    "PUBLIC_SOURCES.md": {
+      "path": "reviewer_cross_substrate_response/PUBLIC_SOURCES.md",
+      "sha256": "d3b3b308ed2dddd6992b42e44a902a63dd61a3be8dd953d8d321995039547163"
+    },
+    "README.md": {
+      "path": "reviewer_cross_substrate_response/README.md",
+      "sha256": "31716d77fa81e39a424245b0f4791a08026f405d037e472181ba04268f1145bd"
+    },
+    "REVIEWER_RESPONSE_DRAFT.md": {
+      "path": "reviewer_cross_substrate_response/REVIEWER_RESPONSE_DRAFT.md",
+      "sha256": "b581c1aaf5e20d979d07673b615882e78b2e079bf3356a23639ed2e98aabfd32"
+    },
+    "REVIEW_AND_PLAN.md": {
+      "path": "reviewer_cross_substrate_response/REVIEW_AND_PLAN.md",
+      "sha256": "c2b649c85e08eaf7fda652def4d25d4cc7a23fbf6f093d28b338a75f2d3e2a1d"
+    },
+    "__init__.py": {
+      "path": "reviewer_cross_substrate_response/__init__.py",
+      "sha256": "5fe944203e754e27105bb9263e77556ae431f6fcd4ae05075c916e2fa048273a"
+    },
+    "analysis.py": {
+      "path": "reviewer_cross_substrate_response/analysis.py",
+      "sha256": "d6c819d8daaca89d60a9581517ea54e17aaa6f5113a7da8df1ddfb20f12e52f2"
+    },
+    "campaign.py": {
+      "path": "reviewer_cross_substrate_response/campaign.py",
+      "sha256": "e7e5a48ad4496cb65f7ddab8a1b2ae0f0b700752d774c859984511cd668adafe"
+    },
+    "core.py": {
+      "path": "reviewer_cross_substrate_response/core.py",
+      "sha256": "8fc5d7383b6aeb50cf5263418d525becf8153f378925ee833cb5d874e5ecc5ae"
+    },
+    "evoloop.table": {
+      "path": "reviewer_cross_substrate_response/evoloop.table",
+      "sha256": "fe6a24075e0ccb7d35f889c123d40faf2fd3c08c1ef15d31ee20ea818abf3101"
+    },
+    "models.py": {
+      "path": "reviewer_cross_substrate_response/models.py",
+      "sha256": "e124b8e77282a5b706867ba65f0d78c6fbf18e055bb0f3a365ff11a0f50f9bb8"
+    },
+    "requirements-lock.txt": {
+      "path": "requirements-lock.txt",
+      "sha256": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+    },
+    "run_developmental_pilot.sh": {
+      "path": "reviewer_cross_substrate_response/run_developmental_pilot.sh",
+      "sha256": "12b63e5759c24d0f0e59da39a8ad9c265711bdb5044f78d210ac63b39eabc26b"
+    },
+    "run_experiment.py": {
+      "path": "reviewer_cross_substrate_response/run_experiment.py",
+      "sha256": "e77c657f163998153ac5e748eaeca5f7e13f2d1c26461b4cd55d95fac672e860"
+    },
+    "tests/__init__.py": {
+      "path": "reviewer_cross_substrate_response/tests/__init__.py",
+      "sha256": "2d59f8dababdc26c53af7c9f6efe8485a4989c5d53a0213f2a45b94a9dc30069"
+    },
+    "tests/test_cross_substrate.py": {
+      "path": "reviewer_cross_substrate_response/tests/test_cross_substrate.py",
+      "sha256": "432a9f913586c7f9cd11fa53b469ff5b0ab07b007e5167dae7d825c03d2d9146"
+    }
+  },
+  "source_firewall": "No path below ../NewIdeas is read, imported, or hashed."
+}

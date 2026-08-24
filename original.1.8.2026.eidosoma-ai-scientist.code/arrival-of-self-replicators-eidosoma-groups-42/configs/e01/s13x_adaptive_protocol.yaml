@@ -1,0 +1,50 @@
+schema: eidosoma.e01.s13x_adaptive_protocol.v1
+researchStepId: S13X
+versionedStepId: E01-S13X-CREATIVE-DIRECTIONAL-REPLICATION-SEARCH-v1.0.0
+evidenceClass: ADAPTIVE_OUTCOME_GUIDED_EXPLORATORY_RECONSTRUCTION
+evidentialBoundary:
+  confirmatory: false
+  exactAuthorIdentityPermitted: false
+  causalClaimPermitted: false
+  priorEvidenceMutable: false
+  outcomeGuidedAdaptationRequiredToBeLogged: true
+inputs:
+  sourceValues: /artifacts/research_steps/S13RRR/full_source_values.parquet
+  labelsReference: /artifacts/research_steps/S13RRR/label_values.parquet
+  trajectories: /cache/e01_s13/raw_trajectories/{candidateId}/M{matrixIndex:03d}.pickle
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  developmentMatrixIndices: [0, 59]
+  diagnosticMatrixIndices: [60, 99]
+searchOrder:
+  - label identity and observation-level placement
+  - level versus change and temporal alignment
+  - source scalar and atom identity
+  - preprocessing and partition reconstruction
+  - simulator semantics only if upstream analytical gaps remain explanatory
+  - bounded directional intervention pilot only if a plausible pipeline appears
+paperTargets:
+  positiveCorrelationFraction: 0.73
+  positiveSignificantFraction: 0.54
+  higherDuringReplicationFraction: 0.57
+  aggregateTrendP: 0.1995
+  rawLjungBoxFraction: 0.86
+  differencedLjungBoxFraction: 1.0
+  persistenceMean: 716
+  probabilityMean: 0.88
+  consistencyMean: 0.38
+  timeToFirstMean: 37
+softwareValidation:
+  exactReplay: required
+  inputHashAudit: required
+  chronologicalAttemptLedger: required
+  negativeResultRetention: required
+  developmentDiagnosticSeparation: required
+compute:
+  maximumCpuWorkers: 8
+  sourceAnalysisWorkers: 6
+  blasThreadsPerWorker: 1
+  gpu: optional_not_required
+stopBoundary:
+  beginE02: false
+  generateReportBundle: false
+  returnForHumanReview: true

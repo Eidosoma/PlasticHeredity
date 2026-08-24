@@ -1,0 +1,89 @@
+{
+  "clean_room": true,
+  "confirmation_digest_first": "24f79bc2a984892d8bc26e99eaf5b0a1e0d048c6d89b4bb0ce29e416035c1cdb",
+  "confirmation_digest_second": null,
+  "confirmation_replay_exact": null,
+  "experiment": {
+    "bootstrap_repetitions": 128,
+    "candidates": {
+      "02": {
+        "daughter_rule": "first",
+        "fission_rule": "fixed_size",
+        "name": "02",
+        "overshoot_rule": "trim_whole_assembly",
+        "poisson_exposure": 0.1
+      },
+      "03": {
+        "daughter_rule": "second",
+        "fission_rule": "binomial",
+        "name": "03",
+        "overshoot_rule": "admit_joiners_to_capacity",
+        "poisson_exposure": 0.125
+      }
+    },
+    "confirmation": {
+      "branches_per_state": 12,
+      "landmarks": [
+        20,
+        50,
+        80
+      ],
+      "matrices": 6
+    },
+    "development": {
+      "branches_per_state": 8,
+      "landmarks": [
+        20,
+        50,
+        80
+      ],
+      "matrices": 6
+    },
+    "gard": {
+      "beta_log_mean": -4.0,
+      "beta_log_sd": 4.0,
+      "generations": 100,
+      "inheritance_threshold": 0.9,
+      "k_join": 0.01,
+      "k_leave": 0.0001,
+      "max_growth_steps": 1000,
+      "n_max": 80,
+      "n_min": 40,
+      "n_types": 100
+    },
+    "horizon": 12,
+    "logistic_c": 0.1,
+    "master_seed": "7d6e6f7dfe3ff3cd781693f4d95bbdc93f6404c90cbd39076d0c89704b77f21a",
+    "pca_components": 12,
+    "permutation_repetitions": 64,
+    "regenerate_confirmation": false
+  },
+  "inferred_contract": {
+    "candidate_02_and_03_details": "explicit source-constrained alternatives; the paper does not publish their executable definitions",
+    "conditional_process_definitions": "inferred from prose and embedded plot labels; see REPLICATION.md",
+    "node_feature_basis": "15 equivariant profiles x 13 symmetric summaries"
+  },
+  "inputs": {
+    "PRE_PRINT_DISTILL.PUB.html": "69673784e5b311a4c403570b158d51093d5c330babbdd0a7f7d752f41e00a4fc",
+    "PRE_PRINT_PAPER_DRAFT.md": "bd67247cb994be953f540f753d962695f871a3e4692892dcd1d6de498876c382",
+    "historical_gard_specification_commit": "86dff6320d5ae91b4e831471079ff46749b14df9",
+    "paper_pdf": "77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4"
+  },
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scope": "plastic-heredity discovery only",
+  "specified_contract": {
+    "inheritance": "strict parent-selected-daughter cosine H > 0.9",
+    "logistic_c": 0.1,
+    "pca_components": 12,
+    "state_graph_features": 195,
+    "target": "within 12 fissions, a break followed by three inherited fissions"
+  }
+}

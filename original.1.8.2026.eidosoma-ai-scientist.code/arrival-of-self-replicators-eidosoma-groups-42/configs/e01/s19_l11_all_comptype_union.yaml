@@ -1,0 +1,288 @@
+schema: eidosoma.e01.s19_l11.preregistration.v1
+programContinuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+researchStepId: S19-L11
+versionedLoopId: E01-S19-L11-ALL-COMPTYPE-UNION-LABEL-RECONSTRUCTION-v1.0.0
+title: Testing Whether Self-Replication Means Membership in Any Recurring Compotype Rather Than Only the Dominant Attractor
+designClass: ADDITIVE_EXPLORATORY_UNTOUCHED_ALL_COMPTYPE_UNION_RECONSTRUCTION
+
+immutableBoundary:
+  preserveByteForByte:
+    - S01-S18
+    - E01 forensic replication V1 bundle
+    - E01 forensic replication V2 artifact
+    - S19-L01-S19-L10 including L06R
+    - every prior classification, failure, waiver, seed, source snapshot, regeneration record, and artifact hash
+  requiredHistoricalClassifications:
+    l08: NEITHER_MECHANISM_REPRODUCES_ON_UNTOUCHED_DATA
+    l09: LOOP_FAILED_CLOSED
+    l10: RECURRING_ATTRACTOR_LABEL_NOT_RECONSTRUCTED
+  l10TechnicalRepairProvenanceMustRemainUnchanged: true
+
+sourceAuditGate:
+  requiredStatements:
+    - TGS_NONDRIFT_RETURNS_LOGICAL_NONDRIFT_INDEX
+    - TGS_ACLUSTER_INITIALIZES_COMPLETE_TAG_MATRIX_TO_ZERO
+    - CLUSTER_LABELS_ASSIGNED_TO_ALL_INDEXED_NONDRIFT_COMPOSITIONS
+    - SELECTED_CLUSTERING_RETAINS_COMPLETE_TAG_VECTOR
+    - HISTORICAL_SOURCE_DOES_NOT_REDUCE_BINARY_STATE_TO_LARGEST_CLUSTER
+    - SOURCE_TAG_BINARY_CAN_BE_EXPRESSED_AS_TAG_GREATER_THAN_ZERO
+  contradictionAction: GLOBAL_STOP_BEFORE_SCIENTIFIC_EXECUTION
+
+pipelines:
+  - pipelineId: U1_HISTORICAL_ALL_COMPTYPE_TAGS_H090
+    substrate: 100_SELECTED_POST_FISSION_RELATIVE_COMPOSITIONS
+    clustering: EXACT_L10_R1_MATLAB_COMPATIBLE_HISTORICAL_PIPELINE
+    prefilter: PINNED_TGS_NONDRIFT_TECHNIQUE_1_STRICT_H090
+    metric: COSINE_DISTANCE
+    kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    replicas: 10
+    tagRule: SOURCE_TAG_GREATER_THAN_ZERO
+    singletonTagsRetained: true
+    molecularRule: PROJECT_SELECTED_BOUNDARY_TAG_FROM_DAUGHTER_THROUGH_BEFORE_NEXT_BOUNDARY
+    prefixBeforeFirstSelectedDaughter: NEGATIVE
+    fullRunRetrospective: true
+  - pipelineId: U2_PAPER_EUCLIDEAN_ALL_RECURRING_CENTROIDS_H090
+    substrate: ALL_100_SELECTED_POST_FISSION_RELATIVE_COMPOSITIONS
+    clustering: EXACT_L10_R2_EUCLIDEAN_PIPELINE
+    metric: ORDINARY_EUCLIDEAN_L2
+    kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    replicas: 10
+    minimumRecurringClusterSize: 2
+    emptyStatus: NO_RECURRING_CLUSTER_UNION
+    molecularRule: DIRECT_MAX_H_TO_ANY_VALID_RECURRING_CENTROID_STRICT_H090
+    boundaryRule: DIRECT_MAX_H_TO_ANY_VALID_RECURRING_CENTROID_STRICT_H090
+    intervalProjection: PROHIBITED
+    fullRunRetrospective: true
+
+commonLabel:
+  threshold: 0.9
+  comparator: STRICT_GREATER_THAN
+  similarity: PINNED_HISTORICAL_TGS_H_COSINE
+  boundaryAndMolecularQuantitiesInterchangeable: false
+
+singletonAudit:
+  clusterSizeClasses:
+    - SINGLETON_SIZE_1
+    - PAIR_SIZE_2
+    - RECURRING_SIZE_3_PLUS
+  reportAllTagOccupancy: true
+  reportAtLeastTwoOccupancy: true
+  reportSingletonOnlyOccupancy: true
+  u1PromotionMaximumSingletonPositiveFractionInclusive: 0.10
+  singletonDeletionAfterOutcomes: PROHIBITED
+
+scope:
+  sharedCatalyticMatrices: 100
+  matchedInitialStates: true
+  candidates: [CANDIDATE_2, CANDIDATE_3]
+  expectedTrajectories: 200
+  requestedFissions: 100
+  labelsCalculatedOnlyAfterAllTrajectoryAttempts: true
+  incompleteTrajectoryRule: RETAIN_ATTEMPT_PRIMARY_LABEL_INELIGIBLE_UNLESS_EXACT_100_BOUNDARIES
+  replacementPolicy: NEVER_REPLACE
+  highExposureScientificTrajectories: 0
+  causalEmergenceCalculations: 0
+  predictionRuns: 0
+  interventionRuns: 0
+  metricDistinctivenessRuns: 0
+
+simulations:
+  - candidateId: CANDIDATE_2
+    exposure: 0.6031526490073492
+    daughterRule: FIRST_DAUGHTER
+    overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+    streamIdentity: S19-L11::ORIGINAL::CANDIDATE_2
+  - candidateId: CANDIDATE_3
+    exposure: 0.5613315384859516
+    daughterRule: RANDOM_NONEMPTY
+    overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+    streamIdentity: S19-L11::ORIGINAL::CANDIDATE_3
+
+seedContract:
+  phase: s19_l11_untouched_all_comptype_union
+  matrixRootHex: ad0a176c7b7edd83e82fb2d01d8f44c65b045cc93efb8285c07bbe6ccf7393a5
+  matrixRootDerivationStatement: SHA256 of E01-S19-L11-ALL-COMPTYPE-UNION-MATRIX-ROOT-v1.0.0::2026-08-09::DOMAIN-SEPARATED
+  controlRootHex: fe3872bc0e2774f42fb76008a0f6e50fa27266e7ec48949c29b315f0ad149247
+  bootstrapRootHex: 4ddc59d7a3489ea463a0676d768fa6927a2c334a2edb4b80279e387e01ca0833
+  matrixIndices:
+    startInclusive: 0
+    stopExclusive: 100
+  requireZeroOverlapWithEveryPriorSeedAndInput: true
+  replacementPolicy: NEVER_REPLACE
+
+negativeControls:
+  randomCentroidSet:
+    drawsPerTrajectory: 64
+    referenceCount: MATCH_PIPELINE_VALID_CENTROID_OR_TAG_CLUSTER_COUNT
+    referenceSubstrate: OBSERVED_POST_FISSION_COMPOSITIONS
+    u1Clock: BOUNDARY_UNION_THEN_FIXED_PROJECTION
+    u2Clock: DIRECT_MOLECULAR_UNION
+  singletonOnlyCentroid:
+    drawsPerTrajectory: 1
+    whenApplicable: SELECTED_CLUSTERING_HAS_SINGLETON_CLUSTERS
+    u1Clock: SINGLETON_TAG_BOUNDARY_THEN_FIXED_PROJECTION
+    u2Clock: DIRECT_MOLECULAR_UNION_OF_SINGLETON_CENTROIDS
+  timePermutedPostFission:
+    drawsPerTrajectory: 1
+    operation: PERMUTE_BOUNDARY_ORDER_BEFORE_CLUSTERING_AND_INVERSE_MAP_U1_TAGS
+  clusterLabelPermutation:
+    drawsPerTrajectory: 1
+    operation: PRESERVE_CENTROIDS_AND_RANDOMIZE_BOUNDARY_MEMBERSHIP_IDENTITIES
+    u1Clock: PERMUTED_SOURCE_TAG_BOUNDARY_THEN_FIXED_PROJECTION
+    u2Clock: DIRECT_MOLECULAR_LABEL_EXPECTED_INVARIANT_WHEN_CENTROIDS_PRESERVED
+    u2FingerprintDominanceApplicability: NOT_APPLICABLE_BY_CONSTRUCTION
+  noCausalEmergence: true
+  adjudication:
+    recurrenceOutcome: MINIMUM_OF_POSITIVE_AND_NEGATIVE_EPISODE_COUNTS
+    onsetOutcome: ABSOLUTE_RAW_ONE_BASED_ONSET_ERROR_TO_37
+    completeFingerprintOutcome: RAW_COMPLETE_FINGERPRINT_DISTANCE
+    primaryAdvantageDirection:
+      recurrence: PRIMARY_MINUS_CONTROL_POSITIVE
+      onset: CONTROL_ERROR_MINUS_PRIMARY_ERROR_POSITIVE
+      completeFingerprint: CONTROL_DISTANCE_MINUS_PRIMARY_DISTANCE_POSITIVE
+    randomDrawReduction: MATRIX_LEVEL_MEAN_ACROSS_64_DRAWS
+    uncertainty: 4096_DOMAIN_SEPARATED_PAIRED_MATRIX_BOOTSTRAPS
+    passRule: POSITIVE_MEAN_AND_BOOTSTRAP_CI025_ABOVE_ZERO_AND_HOLM_ADJUSTED_P_LE_005
+    u2TimePermutationApplicability: DESCRIPTIVE_DISTRIBUTION_ORDER_INVARIANT
+    u2ClusterLabelPermutationApplicability: NOT_APPLICABLE_BY_CONSTRUCTION
+
+comparators:
+  currentDatasetDefinitions:
+    - ORIGINAL_ADJACENT_MOLECULAR_H090
+    - L08_A_FISSION_BOUNDARY_H090
+    - L08_A_FOLLOWING_INTERVAL_PROJECTED_H090
+  frozenAggregateDefinitions:
+    - L08_B_HIGH_EXPOSURE_MOLECULAR_H090
+    - R1_MATLAB_COMPATIBLE_HISTORICAL_DOMINANT_COMPTYPE_H090
+    - R2_PAPER_EUCLIDEAN_DOMINANT_ATTRACTOR_H090
+  rule: NO_COMPARATOR_DEFINITION_CHANGE_AND_NO_L10_DOMINANT_PIPELINE_RERUN
+
+paperTargets:
+  authorDispersionIdentity: AUTHOR_DISPERSION_UNRESOLVED
+  selectedClockLength:
+    target: 813.6363636363636
+    scale: 225.0
+    derivation: 716/0.88
+  persistence:
+    target: 716.0
+    scale: 198.0
+    promotionRangeInclusive: [518.0, 914.0]
+  occupancy:
+    target: 0.88
+    scale: 0.03
+    promotionRangeInclusive: [0.85, 0.91]
+  consistency:
+    target: 0.38
+    scale: 0.06
+  firstOnsetRawStep1:
+    target: 37.0
+    scale: 27.0
+  firstOnsetNormalized:
+    target: 0.37
+    scale: 0.27
+    status: UNRESOLVED_COMPANION
+
+statistics:
+  independentUnit: CATALYTIC_MATRIX
+  candidatesSeparate: true
+  candidatePooling: PROHIBITED_FOR_PRIMARY_GATES
+  bootstrapReplicates: 4096
+  confidenceLevel: 0.95
+  multiplicity: HOLM_WITHIN_TWO_PRIMARY_PIPELINES_AND_REGISTERED_CONTROLS
+  undefinedRule: RETAIN_WITH_REASON_NO_IMPUTATION
+
+promotionGate:
+  maximumPromotedLeads: 1
+  minimumDefinedMatricesEachCandidate: 95
+  occupancyBothCandidates: [0.85, 0.91]
+  persistenceBothCandidates: [518.0, 914.0]
+  rawOnsetCloserThanComparatorsBothCandidates:
+    - ORIGINAL_ADJACENT_MOLECULAR_H090
+    - L08_A_FOLLOWING_INTERVAL_PROJECTED_H090
+    - R1_MATLAB_COMPATIBLE_HISTORICAL_DOMINANT_COMPTYPE_H090
+    - R2_PAPER_EUCLIDEAN_DOMINANT_ATTRACTOR_H090
+  consistencyCloserThanSameComparatorsBothCandidates: true
+  quarterCutoffMinimumNoOnsetFraction: 0.20
+  positiveAndNegativeEpisodesNondegenerate: true
+  controlsMustPass:
+    - RANDOM_CENTROID_SET
+    - SINGLETON_ONLY_CENTROID_WHERE_APPLICABLE
+    - TIME_PERMUTED_POST_FISSION
+    - CLUSTER_LABEL_PERMUTATION_WHERE_APPLICABLE
+  u1MaximumSingletonPositiveFractionInclusive: 0.10
+  candidateDirectionalAgreement: true
+  exactReplayAndCompleteRegeneration: true
+  validationGatesAllPass: true
+  noEmergenceThresholdExposureClockOrClusteringSearch: true
+  promotionScope: UNTOUCHED_CONFIRMATION_OF_RETROSPECTIVE_LABEL_AND_PAPER_FINGERPRINT_ONLY
+  simultaneousPassPolicy: BOTH_PASS_NONIDENTIFIABLE_NO_AUTOMATIC_PROMOTION
+
+classifications:
+  - EXPLORATORY_UNION_LABEL_MATCH
+  - EXPLORATORY_OCCUPANCY_ONLY_MATCH
+  - SOURCE_TAG_SINGLETON_DEPENDENT
+  - METHOD_DEPENDENT_LEAD
+  - ALL_COMPTYPE_UNION_NOT_SUPPORTED
+  - LOOP_FAILED_CLOSED
+  - PROMOTABLE_TO_S20
+  - NOT_PROMOTABLE
+
+benchmark:
+  matrixCount: 10
+  opaque: true
+  labelsCalculated: false
+  projectionIncludesPrimaryAndCompleteRegeneration: true
+  safetyFactor: 1.5
+
+resourceCeilings:
+  cpuWorkers: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuHoursMaximum: 32
+  scientificCpuHoursMaximumAfterReserve: 28.8
+  gpuHoursMaximum: 0
+  wallHoursMaximum: 12
+  retainedArtifactsGiBMaximum: 15
+  temporaryCacheGiBMaximum: 40
+  validationReserveFractionMinimum: 0.10
+
+prohibitedSearches:
+  - H_THRESHOLD
+  - STRICT_VERSUS_INCLUSIVE_THRESHOLD
+  - POISSON_EXPOSURE
+  - OBSERVATION_CLOCK
+  - SIMULATOR_CANDIDATE
+  - DAUGHTER_CONTINUATION
+  - OVERSHOOT_HANDLING
+  - INITIALIZATION
+  - GENERATION_COUNT
+  - K_RANGE
+  - CLUSTERING_REPLICAS
+  - CLUSTERING_ALGORITHM
+  - DISTANCE_METRIC
+  - MINIMUM_RECURRING_CLUSTER_SIZE
+  - CENTROID_VERSUS_MEDOID
+  - MOLECULAR_PROJECTION_RULE
+  - CAUSAL_EMERGENCE
+  - PREDICTION
+  - INTERVENTION
+
+stopConditions:
+  - IMMUTABLE_PRIOR_CHANGED
+  - SOURCE_TAG_AUDIT_CONTRADICTION
+  - MANDATORY_FIXTURE_FAILED
+  - THIRD_PRIMARY_PIPELINE_INTRODUCED
+  - THRESHOLD_OR_CLUSTER_SETTING_CHANGED
+  - DOMINANT_ONLY_REPLACES_UNION
+  - BOUNDARY_REPLACES_MOLECULAR
+  - SINGLETON_TAGS_REMOVED_FROM_U1
+  - EMERGENCE_USED_FOR_SELECTION
+  - PREDICTION_OR_INTERVENTION_EXECUTED
+  - MISSING_UNIT_REPLACED
+  - REQUIRED_CANDIDATE_DISAPPEARS
+  - SEED_OVERLAP_DETECTED
+  - EXACT_REPLAY_FAILED
+  - UNREGISTERED_EXCEPTION
+  - COMPUTE_OR_STORAGE_CEILING_EXCEEDED
+  - ARTIFACT_REGENERATION_FAILED
+
+stopBoundary: Freeze all L11 outputs and hashes and return for mandatory human review; no later work starts automatically.

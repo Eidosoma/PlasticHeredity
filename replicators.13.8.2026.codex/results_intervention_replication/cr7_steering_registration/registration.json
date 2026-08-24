@@ -1,0 +1,197 @@
+{
+  "format": "codex-intervention-cr7-registration-v1",
+  "frozen_array_source_sha256": "102abe46f510660a4b11ddfcd96e08301278bd6da585c2158c9bc69122db7fc0",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "protocol": {
+    "claim_boundary": {
+      "prohibited": [
+        "strict-eight control",
+        "autonomous persistence or installed attractor",
+        "biological memory, agency, life, or error correction",
+        "real prebiotic chemistry or universal origin-of-life mechanism",
+        "Phi or PhiID intervention"
+      ]
+    },
+    "cohort": {
+      "candidates": [
+        "02",
+        "03"
+      ],
+      "complete_replay": true,
+      "controlled_lineage_retry_or_replacement": false,
+      "controllers": [
+        "MODEL_UP",
+        "MODEL_DOWN",
+        "RULE_UP",
+        "RULE_DOWN",
+        "RANDOM",
+        "NOOP"
+      ],
+      "fissions": 60,
+      "fresh_matrices": 48,
+      "maximum_primary_boundaries": 207360,
+      "primary_lineages": 3456,
+      "replicates_per_controller": 6,
+      "untreated_launch_landmark": 60
+    },
+    "conditional_extension": {
+      "active_feedback_not_passive_persistence": true,
+      "additional_fissions": 60,
+      "arms": [
+        "MODEL_DOWN",
+        "RULE_DOWN",
+        "NOOP"
+      ],
+      "complete_replay": true,
+      "continues_exact_state_and_simulation_rng": true,
+      "launch_only_if_all_primary_and_integrity_gates_pass": true
+    },
+    "controllers": {
+      "MODEL_DOWN": "exhaustive frozen-predictor minimum; first lexicographic tie",
+      "MODEL_UP": "exhaustive frozen-predictor maximum; first lexicographic tie",
+      "NOOP": "callback returning no edit",
+      "RANDOM": "uniform legal swap from separate action stream",
+      "RULE_DOWN": "frozen outgoing x@beta stabilizing rule",
+      "RULE_UP": "frozen outgoing x@beta destabilizing rule",
+      "callback_after_every_successful_fission_including_last": true
+    },
+    "development_envelope": {
+      "candidate_separated_coordinatewise_minimum_and_maximum": true,
+      "coordinates": 21,
+      "descriptive_only": true,
+      "post_action_any_coordinate_outside_is_ood": true,
+      "source": "original 5x development matrices only"
+    },
+    "format": "codex-intervention-cr7-steering-v1",
+    "inference": {
+      "bootstrap_repetitions": 4096,
+      "candidates_never_pooled": true,
+      "random_noop_tost_margin": 0.025,
+      "randomization_repetitions_descriptive": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "integrity_gates": [
+      "all NOOP callbacks bitwise plain",
+      "complete exact replay"
+    ],
+    "operational": {
+      "checkpoint_resumable": true,
+      "cr8_and_cr9_not_launched_automatically": true,
+      "mandatory_stop_after_seal": true,
+      "minimum_free_disk_bytes": 2500000000
+    },
+    "outcomes": {
+      "failed_lineages_retained": true,
+      "fractions_use_observed_boundaries": true,
+      "primary": [
+        "inherited_boundary_fraction",
+        "total_breaks",
+        "nonoverlapping_joint_break_run3_episode_count",
+        "longest_inherited_run"
+      ],
+      "secondary": [
+        "final_entropy",
+        "final_occupied_types",
+        "final_top1_share",
+        "final_xT_beta_x_throughput",
+        "mean_growth_updates",
+        "survival",
+        "cross_lineage_final_cosine",
+        "distinct_repeated_and_immediately_reversing_swaps",
+        "out_of_development_envelope_fraction"
+      ]
+    },
+    "primary_gates_per_candidate": [
+      "MODEL_DOWN-NOOP inheritance CI95 lower > 0",
+      "RULE_DOWN-NOOP inheritance CI95 lower > 0",
+      "MODEL_UP-NOOP inheritance CI95 upper < 0",
+      "MODEL_UP-MODEL_DOWN episode-count CI95 lower > 0",
+      "RANDOM-NOOP inheritance CI90 inside +/-0.025"
+    ],
+    "protocol_id": "b60c937e6a001ed9e5f48a61e66aa8cf132f703b9b905b7aec01e6bc20bf9d29",
+    "randomness": {
+      "action_stream_separate_from_simulation": true,
+      "common_random_streams_not_identical_realized_futures": true,
+      "future_seed_excludes_controller": true,
+      "seed_domains": {
+        "bootstrap": "7319e80372a5f61480eddcce8cb6f393e4469b99ea9717785f20570ce9247d0a",
+        "conditional_extension": "9d9662ecbd4700df7d0ac7325c8d616fa008cb30dc869f9b9b26f88d58827274",
+        "controller_action": "515fb14bdc6a7b8f0767f94d0742c12f8e2e61849a8923963404b39492f16991",
+        "future_simulation": "dc036e0dc22a22be40c627bbfbde51ffe421f4ae8340f586aa8f40def147831b",
+        "initial_composition": "97a0a2ada2e6364767954dad01e4ed5dcb571f8fc1355f33d0e0fa3ac0df6b11",
+        "landmark_restoration": "b5de53245590965457c846d91e907a82497ca9316678b793c8bee8466ebf77ba",
+        "main_trajectory": "7188b7add6f7c8645e8c41ba330df6d3502fd47436385d05a4e5a7500f9f1126",
+        "matrix_generation": "775d1f33c2cd00799d647bef1d7de75253c3927a15851917a77b4486b1573145",
+        "randomization": "abcac627da2d14c4bac71aa0408f69a50112de0f1777a674ec02a79c710de8ab",
+        "replay": "d0f8d28c96147c0c498dd0bf20601094569bbbf8075cf79c31f2ae12a8f186ed",
+        "smoke": "1288cfc7d4d6b253e581a24de55d9f5fb2854100a505467c40a39472b0f0e460",
+        "validation": "da79653cb15c0d113d94e91fcb10927f969e7e4914d96ee7935fab9c849a653a"
+      }
+    },
+    "rule_recovery": {
+      "external_point_hypothesis_at_least": 0.8,
+      "formula": "(RULE_DOWN-NOOP)/(MODEL_DOWN-NOOP)",
+      "nonpositive_denominator_draws_invalid": true,
+      "strong_classification_bootstrap_lower_above": 0.7,
+      "strong_classification_requires_at_least_95_percent_valid_draws": true
+    },
+    "status": "frozen_before_any_cr7_scientific_matrix",
+    "target": {
+      "episode_counter": "non-overlapping; new break required after certification",
+      "inheritance": "strict unrounded float64 H > 0.9",
+      "name": "JOINT_BREAK_RUN3",
+      "strict_eight_excluded": true
+    },
+    "upstream": {
+      "cr1_model_guided_gate_passed": true,
+      "cr1_registration_id": "a8743234235e82133d2938c15ead062c7c85004c5f640d7359e5b075cb31368e",
+      "cr3_outgoing_rule_gate_passed": true,
+      "cr3_registration_id": "64e871db56b3958a14bdad47b404f6c9f1ad09d0bda1e996e24498598523d189",
+      "cr6_complete_gate": false,
+      "cr6_not_used_to_tune_or_authorize_cr7": true
+    }
+  },
+  "protocol_id": "b60c937e6a001ed9e5f48a61e66aa8cf132f703b9b905b7aec01e6bc20bf9d29",
+  "registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70",
+  "scientific_controlled_lineages_at_registration": 0,
+  "scientific_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "7319e80372a5f61480eddcce8cb6f393e4469b99ea9717785f20570ce9247d0a",
+    "conditional_extension": "9d9662ecbd4700df7d0ac7325c8d616fa008cb30dc869f9b9b26f88d58827274",
+    "controller_action": "515fb14bdc6a7b8f0767f94d0742c12f8e2e61849a8923963404b39492f16991",
+    "future_simulation": "dc036e0dc22a22be40c627bbfbde51ffe421f4ae8340f586aa8f40def147831b",
+    "initial_composition": "97a0a2ada2e6364767954dad01e4ed5dcb571f8fc1355f33d0e0fa3ac0df6b11",
+    "landmark_restoration": "b5de53245590965457c846d91e907a82497ca9316678b793c8bee8466ebf77ba",
+    "main_trajectory": "7188b7add6f7c8645e8c41ba330df6d3502fd47436385d05a4e5a7500f9f1126",
+    "matrix_generation": "775d1f33c2cd00799d647bef1d7de75253c3927a15851917a77b4486b1573145",
+    "randomization": "abcac627da2d14c4bac71aa0408f69a50112de0f1777a674ec02a79c710de8ab",
+    "replay": "d0f8d28c96147c0c498dd0bf20601094569bbbf8075cf79c31f2ae12a8f186ed",
+    "smoke": "1288cfc7d4d6b253e581a24de55d9f5fb2854100a505467c40a39472b0f0e460",
+    "validation": "da79653cb15c0d113d94e91fcb10927f969e7e4914d96ee7935fab9c849a653a"
+  },
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR7_PREREGISTRATION.md": "437b5309985a47463d3a91a976efa217de2531ab915bcedc0643f20ddadad37d",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr7_steering.py": "9412c93fee6f410d1f791cae71cf036a090f92514181e0baa09f4fbb0a275b7c",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "348ccf3e51a9839b3aa5d3d5f60a4559abdffd9737d596077982e63300ac1310",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5",
+    "tests/test_intervention_cr7_steering.py": "9726b6dce8c1e774b4cfd7fad7cc7885822be7880efbf3f215123b5b1bf3fbbc"
+  },
+  "source_tree_sha256": "6a9344556e70d0b03a514d0633f6e8be7e3cbdf8e29948047dad57a22910446d",
+  "upstream": {
+    "cr0_checksum_manifest_sha256": "7a37b71ad8659dd4ce208b4dbff87e4cf85ed5bff199f9e0d4a8fdf1401dcad6",
+    "cr1_registration_checksum_manifest_sha256": "4fa9814303f4f927544ef4f8c1c72b87a27c5d745446e9969dbfb5c53b77a784",
+    "cr1_result_checksum_manifest_sha256": "a76ac941b976ffbc64831ae888fd140fa6d34c9cd2a5a3fa797945873bebb939",
+    "cr3_registration_checksum_manifest_sha256": "93ea3d1006b2ed4ea8230a9fa739903d98abedbbebadc13476c9cc2a970a8c2a",
+    "cr3_result_checksum_manifest_sha256": "4275695af8edfb2d7e34c8c0cdf0e125e7cee8fb8b3920b7a43041a01f9062a3"
+  },
+  "validation_checksum_manifest_sha256": "16ca18e9b5db80805bb989e54cac80df315f19db249ca6031e9dee96fe69d177"
+}

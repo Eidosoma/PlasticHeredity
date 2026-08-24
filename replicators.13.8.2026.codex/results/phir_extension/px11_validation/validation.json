@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "detail": null,
+      "name": "staged_shapes",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "candidate_separation",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "manual_confirmation",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "arm_panel",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "future_seed_arm_free",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "fresh_namespace",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "source_files",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "frozen_models",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "px10_seals",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "all_arms_selected",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "all_molecular_edits_legal",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "outgoing_orientation",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "physical_extrema_direction",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "multiplicative_surgery_exact",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "neutral_surgery_exact_norm",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "neutral_surgery_throughput",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "iri_half_label_symmetric",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "sensor_mask_deterministic",
+      "pass": true
+    },
+    {
+      "detail": {
+        "coefficient": 0.8475048103304422,
+        "converged": true,
+        "objective": 0.8690933484302957,
+        "shift_scale": 1.707825127659933
+      },
+      "name": "shared_dose_fit",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "sensor_profiles_frozen",
+      "pass": true
+    },
+    {
+      "detail": null,
+      "name": "public_phi_r_nonwinning",
+      "pass": true
+    }
+  ],
+  "format": "codex-ch5-phir-px11-validation-v1",
+  "passed": true,
+  "scientific_effects_disclosed": false,
+  "scientific_matrices": 0
+}

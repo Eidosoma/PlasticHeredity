@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "motif_counts_batch_exact": true,
+    "reader_batch_exact": true,
+    "rule_batch_exact": true,
+    "texture_counts_batch_exact": true,
+    "writer_batch_exact": true,
+    "zero_reader_inert": true
+  },
+  "evidential_role": "implementation validation only",
+  "fresh_outcomes_generated": false,
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1",
+  "trajectory_parity_against_source": "not performed; source code is prohibited",
+  "valid": true
+}

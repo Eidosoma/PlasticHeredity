@@ -1,0 +1,38 @@
+{
+  "arms": [
+    "Q00",
+    "Q20",
+    "Q40",
+    "Q60",
+    "Q80",
+    "Q100",
+    "RANDOM",
+    "NOOP"
+  ],
+  "branches_per_arm": 256,
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "declared_cpu_budget_hours": 30.0,
+  "format": "codex-ch5-phir-px9-result-v1",
+  "gates": {
+    "automatic_48_matrix_continuation_authorized": false,
+    "behaviorally_nonredundant": false,
+    "beta_topology_specificity": false,
+    "eligibility": true,
+    "pilot_classification": "finite_sample_or_marginal_explanation",
+    "plastic_heredity_manipulation_valid": true,
+    "public_revised_positive_all_cells": false,
+    "temporal_authenticity": false,
+    "temporal_score_complete": true,
+    "topology_score_complete": true
+  },
+  "generation_cpu_seconds": 17114.225675899,
+  "matrices": 24,
+  "registration_id": "2e1aec89d8e6d9e6d51d4257d7886e4b476779359cef1f808f5781e415abda11",
+  "replay_cpu_seconds": 16687.150578903,
+  "scientific_digest": "46f95971eb9f2ff3e1cfe9396b2929db91401419139a430bfd52dcb482c5f2e8",
+  "work_directory": "/mnt/bioIce1/PlasticHeredityArchivedWorkfiles/replicators.13.8.2026.codex/px9_gauge_identity_work",
+  "workers": 8
+}

@@ -1,0 +1,100 @@
+{
+  "80_matrix_subsample_stability": {
+    "02": {
+      "A": {
+        "mean_gain": 0.0005256396543100131,
+        "positive_fraction": 0.909423828125,
+        "quantiles_025_50_975": [
+          -0.0001991902150436835,
+          0.0005138011849584664,
+          0.0012958344596065827
+        ]
+      },
+      "B": {
+        "mean_gain": 0.00028363744474490615,
+        "positive_fraction": 0.793701171875,
+        "quantiles_025_50_975": [
+          -0.00036124349722356454,
+          0.0002858891136380417,
+          0.0009471654894766864
+        ]
+      }
+    },
+    "03": {
+      "A": {
+        "mean_gain": 0.00038873286863959843,
+        "positive_fraction": 0.98046875,
+        "quantiles_025_50_975": [
+          2.3549904122716592e-05,
+          0.0003873483880734654,
+          0.0007669116627246243
+        ]
+      },
+      "B": {
+        "mean_gain": 0.0003513879695253728,
+        "positive_fraction": 0.96044921875,
+        "quantiles_025_50_975": [
+          -4.538611422044089e-05,
+          0.00034937806966518347,
+          0.0007509083652169613
+        ]
+      }
+    }
+  },
+  "cannot_select_or_validate_final_model": true,
+  "diagnostic_seed": "fcf6a91470b4464d2a903c38abfa0a2787a7d113be53dcac921b47d9cc56e7a3",
+  "feature_reconstruction": {
+    "dynamic_coordinates_per_state": 106,
+    "dynamic_feature_digest": "fa796901a36cd553651b360358bc7b2ee5ce724df0f51d8ea0bd5ceacec3df95",
+    "dynamic_features_all_finite": true,
+    "maximum_absolute_errors": {
+      "beta_block": 3.552713678800501e-15,
+      "h10": 0.0,
+      "interaction_block": 1.7763568394002505e-15,
+      "state_block": 0.0
+    },
+    "performed": true,
+    "states": 2000,
+    "within_1e-14": true
+  },
+  "format": "plastic-heredity-regime-prediction-diagnostic-v1",
+  "implementation_source_hashes": {
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/episode_coherence.py": "3bcd307a2c345eaf1f297a697808c27f094fb819ecbd32f6e82f6258c862caf4",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_features.py": "5499658d44031b895ff3f015030971418b2637238eef33c25350551d25f0ff8d",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/mechanistic_v2.py": "cbb69032d665b023d35ce7593acea914f3f0c7d2b4b36408be5a388d45132ddf",
+    "plastic_heredity/mechanistic_v2_features.py": "292bb478c71f6569fcbbc9834d6692a8ed92d1a8ae12f29fc2e759d29e9a7cd4",
+    "plastic_heredity/mechanistic_v2_models.py": "0ab9cc1ace5be8f7b7e2992a2f8fbe889ed029b61c51881ec61e1cf6f4377b8a",
+    "plastic_heredity/memory.py": "a1565c564dc1e22b11a6ed15190aa0030e0621217007163ada8c8471715cdca0",
+    "plastic_heredity/metrics.py": "56647628567f1cf8c38cec6adb4ec31efea45ad8b7744089ebe8c4d34e1a59cc",
+    "plastic_heredity/regime_confirmation.py": "034c70adf4571408ad2e0215e8a7bddf4aa03c39199f2e8c080ac6e50ad60c0a",
+    "plastic_heredity/regime_prediction.py": "6ae491d00099b6715b2fd6cc469f2aa11d182d49d31890d8265a3d33b6747c3f",
+    "plastic_heredity/regime_prediction_endpoints.py": "5bf338609fc8186b325bad3fa20842458631f1ef8ca17894f97765c40b9235d6",
+    "plastic_heredity/regime_prediction_features.py": "afbaaafc1bb91f4f369d3a017f02d4cb73c4041b1e004f8428c3390e3d91b678",
+    "plastic_heredity/regime_prediction_models.py": "e91688c67b81cf788b5d0c956f9e70de520b2a19d0761f414aa4af24bd36adc6",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+  },
+  "source": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results/regime_confirmation",
+  "source_checksum_digest": "162657b02c44e63fa804620e5c879fdfbebc6633d8e1d4738835c00ac4dc7b52",
+  "stage_rates": {
+    "02": {
+      "any_run8_rate": 0.5274296875,
+      "break_rate": 0.69065625,
+      "strict_given_run8": 0.03486839181762972,
+      "strict_rate": 0.018390625
+    },
+    "03": {
+      "any_run8_rate": 0.562375,
+      "break_rate": 0.7385703125,
+      "strict_given_run8": 0.03732773949766615,
+      "strict_rate": 0.0209921875
+    }
+  },
+  "status": "post_hoc_nonconfirmatory"
+}

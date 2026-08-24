@@ -1,0 +1,401 @@
+{
+  "attractor_census": {
+    "cluster_edge": "terminal H>0.90",
+    "multiform": "two clusters each >=5% starts, centroids H<=0.85, reproduced across even/odd halves",
+    "stable": "strict minimum pairwise last8 H>0.90"
+  },
+  "classification": "next_preprint_exploratory_followup",
+  "factorial": {
+    "attribution": "exact four-factor Shapley decomposition",
+    "candidate_corner_parity_required": true,
+    "contracts": [
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "contract_id": "e0_o0_f0_d0"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "contract_id": "e0_o0_f0_d1"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "contract_id": "e0_o0_f1_d0"
+      },
+      {
+        "bits": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "contract_id": "e0_o0_f1_d1"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "contract_id": "e0_o1_f0_d0"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          0,
+          1
+        ],
+        "contract_id": "e0_o1_f0_d1"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "contract_id": "e0_o1_f1_d0"
+      },
+      {
+        "bits": [
+          0,
+          1,
+          1,
+          1
+        ],
+        "contract_id": "e0_o1_f1_d1"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "contract_id": "e1_o0_f0_d0"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          0,
+          1
+        ],
+        "contract_id": "e1_o0_f0_d1"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          0
+        ],
+        "contract_id": "e1_o0_f1_d0"
+      },
+      {
+        "bits": [
+          1,
+          0,
+          1,
+          1
+        ],
+        "contract_id": "e1_o0_f1_d1"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "contract_id": "e1_o1_f0_d0"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "contract_id": "e1_o1_f0_d1"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "contract_id": "e1_o1_f1_d0"
+      },
+      {
+        "bits": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "contract_id": "e1_o1_f1_d1"
+      }
+    ],
+    "endpoints": [
+      "joint_f12",
+      "registered_strict8",
+      "terminal_diversity",
+      "coupled_twin_damage_exponent"
+    ],
+    "factors": {
+      "daughter": [
+        "first",
+        "second"
+      ],
+      "exposure": [
+        0.1,
+        0.125
+      ],
+      "fission": [
+        "fixed_size",
+        "binomial"
+      ],
+      "overshoot": [
+        "trim_whole_assembly",
+        "admit_joiners_to_capacity"
+      ]
+    },
+    "full_21_cell_surface": true
+  },
+  "fixed_contrast": {
+    "flanks": [
+      "b1p0_l0p5",
+      "b4p0_l2p0"
+    ],
+    "high_f12": "b2p0_l2p0",
+    "original": "b1p0_l1p0",
+    "prior_result_role": "hypothesis_generation_only"
+  },
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "gates": {
+    "dominant_contract_source": "absolute Shapley share point>0.50 and lower>0.35 with replicate-half direction agreement",
+    "lineage_identity": "native residence exceeds both strangers; same-minus-cross F8 terminal similarity lower>0.10; same-parent similarity lower>0.90, both candidates",
+    "shared_destination": "permuted-stranger F16 capture lower>0.40 and native-minus-permuted 90% interval within +/-0.10",
+    "tradeoff": "within-matrix 21-cell F12-versus-strict8 Spearman 95% upper<0 in both candidates, plus high-F12 fixed contrast F12 lower>0 and strict8 upper<0",
+    "transient_churn": "native and stranger F32 capture upper<0.25"
+  },
+  "identity": {
+    "anchors": [
+      "b1p0_l0p5",
+      "b1p0_l1p0",
+      "b2p0_l2p0",
+      "b4p0_l2p0"
+    ],
+    "arms": [
+      "native_a",
+      "native_b",
+      "permuted",
+      "natural"
+    ],
+    "b_definition_f12": "third daughter completing earliest post-break run3 within F12",
+    "b_definition_strict8": "eighth daughter completing earliest registered strict8 window",
+    "f12_donor_selection": "first N outcome-eligible lineage indices by semantic hash",
+    "future_horizon": 32,
+    "natural_stranger": "different eligible lineage with closest mass, hash tie break",
+    "permuted_stranger": "first of 4096 seeded permutations with H<=0.85, otherwise minimum-H proposal",
+    "strict8_donors": "one separately labelled donor per available matrix-anchor cell"
+  },
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_separate": true,
+    "f12_and_strict8_never_pool_or_rescue_each_other": true,
+    "unit": "whole catalytic matrix"
+  },
+  "protocol_id": "c231093da83fad91eda65348b1cd2dbd4a846b97e62ae79f2b48ad307ec596a8",
+  "question": "does weak F12 plasticity trade against strict persistent form, and does high F12 transmit lineage identity or only increase churn?",
+  "reporting_boundary": {
+    "edge_of_chaos_not_a_success_criterion": true,
+    "not_current_preprint_evidence": true,
+    "not_independent_gard_replication": true,
+    "not_wagner_replication": true,
+    "prior_results_not_pooled": true
+  },
+  "runtime": {
+    "benchmark_selects_largest_fitting_tier": true,
+    "full_exact_checkpoint_replay_required": true,
+    "hard_limit_seconds": 28800.0,
+    "projection_budget_seconds": 24300.0,
+    "restart_does_not_reset_ledger": true,
+    "soft_limit_seconds": 27000.0
+  },
+  "status": "frozen_before_any_scientific_future",
+  "surface": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "endpoints": [
+      "break_by_f12",
+      "run3_given_break",
+      "joint_f12",
+      "run8",
+      "coherent8",
+      "distinct8",
+      "registered_strict8",
+      "last8_coherence",
+      "cross_lineage_similarity",
+      "stable_multiform"
+    ],
+    "fresh_unselected_matrices": true,
+    "grid": [
+      {
+        "beta_multiplier": 0.125,
+        "grid_id": "b0p125_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 0.25,
+        "grid_id": "b0p25_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 0.5,
+        "grid_id": "b0p5_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 1.0,
+        "grid_id": "b1p0_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 2.0,
+        "grid_id": "b2p0_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 4.0,
+        "grid_id": "b4p0_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 8.0,
+        "grid_id": "b8p0_l0p5",
+        "leave_multiplier": 0.5
+      },
+      {
+        "beta_multiplier": 0.125,
+        "grid_id": "b0p125_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 0.25,
+        "grid_id": "b0p25_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 0.5,
+        "grid_id": "b0p5_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 1.0,
+        "grid_id": "b1p0_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 2.0,
+        "grid_id": "b2p0_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 4.0,
+        "grid_id": "b4p0_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 8.0,
+        "grid_id": "b8p0_l1p0",
+        "leave_multiplier": 1.0
+      },
+      {
+        "beta_multiplier": 0.125,
+        "grid_id": "b0p125_l2p0",
+        "leave_multiplier": 2.0
+      },
+      {
+        "beta_multiplier": 0.25,
+        "grid_id": "b0p25_l2p0",
+        "leave_multiplier": 2.0
+      },
+      {
+        "beta_multiplier": 0.5,
+        "grid_id": "b0p5_l2p0",
+        "leave_multiplier": 2.0
+      },
+      {
+        "beta_multiplier": 1.0,
+        "grid_id": "b1p0_l2p0",
+        "leave_multiplier": 2.0
+      },
+      {
+        "beta_multiplier": 2.0,
+        "grid_id": "b2p0_l2p0",
+        "leave_multiplier": 2.0
+      },
+      {
+        "beta_multiplier": 4.0,
+        "grid_id": "b4p0_l2p0",
+        "leave_multiplier": 2.0
+      },
+      {
+        "beta_multiplier": 8.0,
+        "grid_id": "b8p0_l2p0",
+        "leave_multiplier": 2.0
+      }
+    ],
+    "lineage_horizon": 32
+  },
+  "tiers": {
+    "A": {
+      "f12_donors": 2,
+      "factorial_lineages": 12,
+      "factorial_matrices": 12,
+      "factorial_twin_starts": 3,
+      "identity_futures": 24,
+      "surface_lineages": 64,
+      "surface_matrices": 72
+    },
+    "B": {
+      "f12_donors": 2,
+      "factorial_lineages": 10,
+      "factorial_matrices": 10,
+      "factorial_twin_starts": 3,
+      "identity_futures": 20,
+      "surface_lineages": 48,
+      "surface_matrices": 56
+    },
+    "C": {
+      "f12_donors": 1,
+      "factorial_lineages": 8,
+      "factorial_matrices": 8,
+      "factorial_twin_starts": 2,
+      "identity_futures": 16,
+      "surface_lineages": 32,
+      "surface_matrices": 40
+    }
+  }
+}

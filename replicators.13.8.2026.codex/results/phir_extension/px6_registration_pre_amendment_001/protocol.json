@@ -1,0 +1,127 @@
+{
+  "analytic_envelope": "because each matrix effect is affine in lambda, extrema over [0,1] occur at lambda=0 or lambda=1",
+  "claim_boundary": [
+    "robustness of a full-block statistic is not robustness of public nine-atom Phi-r",
+    "no correction value may be chosen after seeing results",
+    "information robustness is not consciousness, agency, or life",
+    "strict-eight is excluded"
+  ],
+  "classification": {
+    "definition_sensitive": "point analytic envelope spans zero",
+    "inconclusive_same_sign": "point envelope has one sign but its bootstrap envelope includes zero",
+    "uniform_negative": "95% whole-matrix bootstrap upper bound of the analytic maximum is below zero",
+    "uniform_positive": "95% whole-matrix bootstrap lower bound of the analytic minimum is above zero"
+  },
+  "correction": "Phi(lambda) = full_base + lambda * double_redundancy",
+  "cpu_seconds": 7200.0,
+  "datasets": [
+    {
+      "base_column": "material_full_base",
+      "filters": [],
+      "group_columns": [
+        "candidate",
+        "replicate"
+      ],
+      "high_arm": "STABILIZE",
+      "low_arm": "DESTABILIZE",
+      "phase": "PX1",
+      "redundancy_column": "material_double_redundancy",
+      "relative_path": "results/phir_extension/px1_fresh_confirmation/lineages.csv.gz",
+      "within_columns": []
+    },
+    {
+      "base_column": "material_full_base",
+      "filters": [],
+      "group_columns": [
+        "candidate",
+        "half"
+      ],
+      "high_arm": "RENEWAL_UP",
+      "low_arm": "RENEWAL_DOWN",
+      "phase": "PX2",
+      "redundancy_column": "material_double_redundancy",
+      "relative_path": "results/phir_extension/px2_event_locked_recovery/scores.csv.gz",
+      "within_columns": [
+        "landmark"
+      ]
+    },
+    {
+      "base_column": "material_full_base",
+      "filters": [],
+      "group_columns": [
+        "candidate",
+        "half"
+      ],
+      "high_arm": "PHI_UP",
+      "low_arm": "PHI_DOWN",
+      "phase": "PX3",
+      "redundancy_column": "material_double_redundancy",
+      "relative_path": "results/phir_extension/px3_confirmation/scores.csv.gz",
+      "within_columns": [
+        "landmark"
+      ]
+    },
+    {
+      "base_column": "final30_material_full_base",
+      "filters": [],
+      "group_columns": [
+        "candidate",
+        "replicate",
+        "variant"
+      ],
+      "high_arm": "STABILIZE",
+      "low_arm": "DESTABILIZE",
+      "phase": "PX4",
+      "redundancy_column": "final30_material_double_redundancy",
+      "relative_path": "results/phir_extension/px4_simulator_moderator/lineages.csv.gz",
+      "within_columns": []
+    },
+    {
+      "base_column": "material_full_base",
+      "filters": [
+        [
+          "context",
+          "INTERVENTION"
+        ]
+      ],
+      "group_columns": [
+        "candidate",
+        "mechanism"
+      ],
+      "high_arm": "SOURCE_RULE_DOWN",
+      "low_arm": "SOURCE_RULE_UP",
+      "phase": "PX5",
+      "redundancy_column": "material_double_redundancy",
+      "relative_path": "results/phir_extension/px5_generative_null_remeasurement/scores.csv.gz",
+      "within_columns": [
+        "landmark"
+      ]
+    }
+  ],
+  "inference": {
+    "bootstrap": 4096,
+    "randomization": 4096,
+    "same_matrix_resamples_for_all_lambda": true,
+    "unit": "whole catalytic matrix"
+  },
+  "lambda_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "phase": "PX6",
+  "prohibitions": {
+    "cannot_rescue_failed_public_nine_atom_result": true,
+    "no_48_matrix_campaign": true,
+    "no_lambda_selection": true,
+    "no_outcome_driven_grid_change": true
+  },
+  "protocol_id": "a14afe4d225e70a94da3a28def9725f1dac3ef91434eaa0ba9a9db4ea9440c25",
+  "provenance_boundary": {
+    "PX1_PX2": "post-outcome robustness remeasurement",
+    "PX3_PX4_PX5": "prospectively fixed before those result files existed"
+  },
+  "question": "are full-block intervention contrasts robust to every fixed correction between no redundancy restoration and the complete minimum-MI correction?"
+}

@@ -1,0 +1,143 @@
+{
+  "derivation_notes": {
+    "originating_event_count": "round(mean Jeffreys q * states * (futures_per_state + 1) - 0.5 * states); the implied mean must reproduce the retained seven-decimal meanQ",
+    "raw_prevalence": "event_successes / event_futures",
+    "relative_log_loss_reduction_percent": "100 * full_vs_direct_log_loss_gain / direct_history_log_loss, paired within candidate and branch direction"
+  },
+  "endpoint": "JOINT_BREAK_RUN3 within F12",
+  "independent_test_1_confirmation": {
+    "candidates": {
+      "02": {
+        "event_futures": 12800,
+        "event_successes": 4220,
+        "raw_event_prevalence": 0.3296875,
+        "states": 200
+      },
+      "03": {
+        "event_futures": 12800,
+        "event_successes": 4858,
+        "raw_event_prevalence": 0.37953125,
+        "states": 200
+      }
+    },
+    "source": {
+      "path": "replicators.13.8.2026.codex/results/full/confirmation_branches.csv.gz",
+      "sha256": "81cf9eb54c783bd33f75487be021eb4cf3e1701df56cf7db11847065e4427520"
+    }
+  },
+  "independent_test_2_confirmation": {
+    "candidates": {
+      "02": {
+        "event_futures": 12800,
+        "event_successes": 4445,
+        "raw_event_prevalence": 0.347265625,
+        "states": 200
+      },
+      "03": {
+        "event_futures": 12800,
+        "event_successes": 4970,
+        "raw_event_prevalence": 0.38828125,
+        "states": 200
+      }
+    },
+    "source": {
+      "path": "replicators.13.8.2026.fable/replication/results/conf_data.pkl",
+      "sha256": "750145f2104d83d85699e748205c5efcb549e1dae3c7349de83972a5a3670476"
+    }
+  },
+  "manuscript_summaries": {
+    "independent_test_raw_prevalence_percent_range_rounded_1dp": [
+      33.0,
+      38.8
+    ],
+    "originating_direct_history_log_loss_range_rounded_3dp": [
+      0.51,
+      0.56
+    ],
+    "originating_event_counts": {
+      "02": {
+        "futures": 12800,
+        "successes": 4535
+      },
+      "03": {
+        "futures": 12800,
+        "successes": 4843
+      }
+    },
+    "originating_jeffreys_q_mean_sd_rounded_3dp": {
+      "02": {
+        "mean": 0.357,
+        "sd": 0.283
+      },
+      "03": {
+        "mean": 0.38,
+        "sd": 0.269
+      }
+    },
+    "originating_relative_log_loss_reduction_percent_range_rounded_1dp": [
+      8.1,
+      9.3
+    ]
+  },
+  "originating_confirmation": {
+    "candidates": {
+      "02": {
+        "direct_history_log_loss": {
+          "A_TO_B": 0.52944,
+          "B_TO_A": 0.510267
+        },
+        "event_futures": 12800,
+        "event_successes": 4535,
+        "full_vs_direct_log_loss_gain": {
+          "A_TO_B": 0.0478012,
+          "B_TO_A": 0.041486
+        },
+        "futures_per_state": 64,
+        "jeffreys_q_mean_reported": 0.3565385,
+        "jeffreys_q_sd_reported": 0.2825732,
+        "raw_event_prevalence": 0.354296875,
+        "relative_log_loss_reduction_percent": {
+          "A_TO_B": 9.028634028407375,
+          "B_TO_A": 8.13025337715353
+        },
+        "states": 200,
+        "transition_region_states": 138
+      },
+      "03": {
+        "direct_history_log_loss": {
+          "A_TO_B": 0.5494264,
+          "B_TO_A": 0.5595459
+        },
+        "event_futures": 12800,
+        "event_successes": 4843,
+        "full_vs_direct_log_loss_gain": {
+          "A_TO_B": 0.0490781,
+          "B_TO_A": 0.0520026
+        },
+        "futures_per_state": 64,
+        "jeffreys_q_mean_reported": 0.3802308,
+        "jeffreys_q_sd_reported": 0.2693809,
+        "raw_event_prevalence": 0.378359375,
+        "relative_log_loss_reduction_percent": {
+          "A_TO_B": 8.932606805934334,
+          "B_TO_A": 9.293714778358664
+        },
+        "states": 200,
+        "transition_region_states": 149
+      }
+    },
+    "history_log_loss_range": [
+      0.510267,
+      0.5595459
+    ],
+    "relative_log_loss_reduction_percent_range": [
+      8.13025337715353,
+      9.293714778358664
+    ],
+    "source": {
+      "path": "original.1.8.2026.eidosoma-ai-scientist.stepReports/artifacts/research_steps/S19/loops/L54/S19_L54_FULL_RESULTS.md",
+      "sha256": "71cb1c001997b7a5584e27fc79cd95ae99c4c67af27922c6c56b72172551a804"
+    }
+  },
+  "schema_version": 1
+}

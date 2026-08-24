@@ -1,0 +1,217 @@
+schema: eidosoma.e01.s19_l01_preregistration.v1
+researchStepId: S19
+loopId: S19-L01
+versionedLoopId: E01-S19-L01-UNEVALUATED-CLAIM-RECOVERY-v1.0.0
+continuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+outcomeAccessedAtLock: false
+preLockFeasibilityAudit:
+  scope: one_candidate2_matrix0_direct_source_metric_smoke_test
+  observed: raw_metric_values_and_per_function_runtime_only
+  notObserved:
+    - any_run_level_metric_emergence_correlation
+    - any_candidate_comparison
+    - any_claim_classification
+    - any_alternative_proportion_prediction
+    - any_spike_correlation
+  methodSelectionImpact: none_source_formulas_and_candidate_bundles_were_already_fixed_from_public_evidence
+  interpretation: non_claim_outcome_feasibility_benchmark_recorded_transparently
+question: >-
+  Can the sixteen S18 NOT_EVALUATED claims be reconstructed from the frozen
+  S13Y data using no more than two source-plausible interpretations per material
+  ambiguity, and does any result become a precise, cross-candidate lead suitable
+  for untouched S20 confirmation?
+historicalBoundary:
+  immutableSteps: S01-S18
+  immutableS18Totals:
+    SUPPORTED: 3
+    DIRECTIONALLY_SUPPORTED: 17
+    NOT_SUPPORTED_WITHIN_TESTED_SCOPE: 21
+    UNDERDETERMINED: 2
+    NOT_EVALUATED: 16
+  additiveOverlayOnly: true
+  noS18VerdictRewrite: true
+data:
+  trajectoryUnit: catalytic_matrix_with_candidate_specific_frozen_trajectory
+  independentUnit: matrix_or_trajectory_never_molecular_row
+  matrixCountPerCandidate: 100
+  candidateIds:
+    - S12F-CANDIDATE-02
+    - S12F-CANDIDATE-03
+  pooling: secondary_descriptive_only
+  newGardTrajectories: 0
+  primaryInputs:
+    fullSourceValues: /artifacts/research_steps/S13Y/full_source_values.parquet
+    prefixEndpointValues: /artifacts/research_steps/S13Y/prefix_endpoint_values.parquet
+    labels: /artifacts/research_steps/S13Y/label_values.parquet
+    trajectoryManifest: /artifacts/research_steps/S13Y/trajectory_manifest.parquet
+    rawTrajectoryCache: /cache/e01_s13y_v1/raw_trajectories
+bundles:
+  - bundleId: A_METRIC_DISTINCTIVENESS
+    claims: [C001, C002, C003, C004, C005, C006, C007, C008, C009, C010, C011, C012]
+    specifications:
+      - A_GRAPH_UNWEIGHTED_POSITIVE_SUPPORT
+      - A_GRAPH_WEIGHTED_BETA
+      - A_DYNAMICS_DIRECT_SELECTED_CLOCK
+      - A_DYNAMICS_SOURCE_WINDOW100
+    sourceImplementation:
+      graph: >-
+        NetworkX DiGraph; node and edge counts; mean/std in-degree, out-degree,
+        betweenness, PageRank, HITS hubs and authorities, matching public lineage.
+      dynamical: >-
+        nolds 0.6.1 sampen(multivariate matrix), per-component corr_dim emb_dim=2,
+        max lyap_e per component with mean/std/max aggregation, dfa(matrix), and
+        mfhurst_b(matrix)[0].
+      preprocessing:
+        primary: relative-composition trajectories standardized per molecular type without time resampling
+        companion: source-literal moving mean size 100 sampled every 100 observations then standardized
+    graphConversion:
+      primary: all beta_ij_greater_than_zero become unweighted directed edges including self-loops
+      companion: all beta_ij_greater_than_zero become directed edges carrying beta_ij weight
+      prohibited: threshold_grid_or_outcome_selected_sparsification
+    emergenceSummary: run_mean_completed_fit_source_emergence
+    dependencyComparators:
+      - run_mean_past_only_prefix_endpoint_emergence
+      - run_mean_exact_H
+      - run_mean_composition_change_L2
+    correlations: [spearman, pearson]
+    confidenceInterval: matrix_bootstrap_percentile_4096
+    multiplicity: Holm_FWER_across_24_primary_claim_method_tests
+    equivalence:
+      region: absolute_correlation_strictly_less_than_0.20
+      decision: 90_percent_bootstrap_interval_entirely_inside_region
+    detectableEffect: Fisher_z_80_percent_power_with_two_sided_alpha_0.05_over_24
+    promotionGate: >-
+      Source-grounded, stable across both candidates, equivalent-small rather
+      than merely nonsignificant, not constant/undefined, and exact replay.
+  - bundleId: B_ALTERNATIVE_PREDICTION_PROPORTIONS
+    claims: [C029]
+    specifications:
+      - B_MINIMAL_FIVE_PROPORTIONS
+    proportions: [0.10, 0.20, 0.25, 0.33, 0.50]
+    modes:
+      - RETROSPECTIVE_COMPLETED_FIT_PREDICTION_RESEMBLANCE
+      - CUTOFF_CAUSAL_FIRST_QUARTER_ONLY
+    featureFamilies:
+      - PHIRL_EMERGENCE
+      - EXACT_H_HISTORY
+      - COMPOSITION_CHANGE_L2
+      - RAW_COUNTS
+      - NET_COUNT_FLUX
+      - MAJORITY_DUMMY
+    s16Reuse:
+      splitManifest: configs/e01/s16_split_manifest.csv
+      matrixSplit: ten_unstratified_80_20_repetitions_with_16_of_80_validation
+      layout: original_order_right_padding_explicit_channel_time_and_target_masks_no_truncation
+      architecture: >-
+        exact S16 step-encoder/flattened-position/two-hidden-layer formula,
+        instantiated at the frozen proportion's observed maximum input and target
+        lengths; shape dimensions are data-determined and not tuned.
+      hiddenLayers: [64, 64]
+      stepEmbedding: 8
+      optimizer: AdamW_lr_0.001_weight_decay_0.0001
+      objective: masked_micro_BCE_without_class_weights
+      earlyStopping: validation_BCE_patience_15_min_improvement_1e-5_restore_earliest_best
+      epochCeiling: 120
+      modelSeed: exact_S16_candidate_and_repetition_seed_excluding_feature_mode_and_proportion
+    primaryMetric: binary_accuracy
+    secondaryMetrics: [balanced_accuracy, AUROC, AUPRC, Brier_score, ECE_10_bins, sensitivity, specificity]
+    exactReplayComparator: S16_25_75_split_metrics
+    promotionGate: >-
+      Qualitative PhiRL relationship stable over all proportions in both
+      candidates, not prevalence-only, not completed-fit-only, and no suffix leak.
+  - bundleId: C_SPIKE_TIMING_SPACING_HEIGHT
+    claims: [C031, C032, C033]
+    specifications:
+      - C_GLOBAL_POOLED_3SD_RAW
+      - C_WITHIN_RUN_3SD_NORMALIZED
+    primary:
+      threshold: candidate_and_temporal_mode_pooled_mean_plus_3_population_SD
+      event: contiguous_strict_exceedance_episode_with_earliest_maximum_peak
+      spikeTime: mean_raw_molecular_observation_index_across_peaks
+      interSpikeDistance: mean_all_unordered_pairwise_raw_index_distance
+      height: mean_raw_peak_emergence
+    robustnessCompanion:
+      threshold: within_run_mean_plus_3_population_SD
+      event: contiguous_strict_exceedance_episode_with_earliest_maximum_peak
+      spikeTime: mean_peak_index_divided_by_last_run_index
+      interSpikeDistance: mean_all_unordered_pairwise_normalized_index_distance
+      height: mean_peak_z_score_under_within_run_moments
+    outcome: per_run_occupancy_of_frozen_Y_equals_indicator_exact_H_greater_than_0.9
+    zeroSpikePolicy: descriptors_undefined_and_run_retained_in_counts
+    oneSpikePolicy: time_and_height_defined_spacing_undefined
+    correlations: run_level_spearman
+    inference: 4096_matrix_permutations_and_4096_matrix_bootstraps
+    robustness:
+      - leave_one_run_out_range
+      - partial_rank_controlling_trajectory_length
+      - middle_90_percent_trajectory_length
+      - completed_fit_versus_past_only
+    promotionGate: >-
+      Paper direction in both candidates, primary and companion agree, not driven
+      by a few long trajectories, exact definition suitable for untouched S20.
+candidateRanking:
+  positiveFormula: >-
+    2*sourceGrounding + 1.5*paperFingerprintSpecificity +
+    1.5*explanatoryLeverage + testability + crossCandidateDiscriminability +
+    computeEfficiency + 1.5*independenceFromPriorOutcomeSelection
+  penaltyFormula: >-
+    2*outcomeGuidedThresholdSelection + 2*deterministicHReuse +
+    2*completedFitLeakage + 1.5*candidateSpecificSuccess +
+    1.5*undefinedAuthorSemantics + 0.5*max(0,branchCount-1)
+  selection: exactly_the_three_human_directed_bundles_highest_ranked
+statistics:
+  alpha: 0.05
+  bootstrapReplicates: 4096
+  permutationReplicates: 4096
+  candidateSpecificPrimary: true
+  pooledPrimary: false
+seeds:
+  rootHex: d72e1dfd986c367c8481f0f24c925cfbe67817583c429f77b7f80b95663d1a66
+  generator: PCG64DXSM
+  derivation: sha256_version_root_null_delimited_domain_tokens
+compute:
+  cpuCores: 8
+  numericalThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  gpuUsed: false
+  maximumCpuHours: 100
+  maximumGpuHours: 12
+  maximumWallHours: 72
+  maximumRetainedGiB: 25
+  maximumTemporaryGiB: 75
+  validationReserveFraction: 0.10
+  operationalTarget: few_wall_clock_hours_where_scientifically_possible
+stopConditions:
+  - immutable_S01_S18_change
+  - source_identity_change_after_lock
+  - more_than_three_executed_bundles
+  - more_than_eight_scientific_specifications_inside_any_bundle
+  - unregistered_method
+  - future_suffix_in_cutoff_causal_feature
+  - exact_replay_failure_requiring_scientific_repair
+  - post_outcome_scientific_method_change
+  - budget_or_storage_exceeded
+  - report_not_regenerable_from_machine_results
+promotionLimitEntireS19: 3
+classificationVocabulary:
+  - EXPLORATORY_PAPER_MATCH
+  - EXPLORATORY_DIRECTIONAL_MATCH
+  - EXPLORATORY_NON_SUPPORT
+  - RETROSPECTIVE_ONLY_LEAD
+  - METHOD_DEPENDENT_LEAD
+  - POSSIBLE_STABILITY_PROXY
+  - POSSIBLE_PIPELINE_ARTIFACT
+  - PROMOTABLE_TO_S20
+  - NOT_PROMOTABLE
+  - AUTHOR_AMBIGUITY_UNRESOLVED
+  - LOOP_FAILED_CLOSED
+forbiddenAfterOutcomeAccess:
+  - scientific_formula_or_threshold_change
+  - candidate_or_label_change
+  - data_subset_or_alignment_change
+  - preprocessing_or_metric_change
+  - prediction_layout_architecture_optimizer_or_seed_change
+  - test_multiplicity_or_promotion_gate_change
+  - new_trajectory_generation
+  - author_contact
+  - S19_L02_or_S20_or_E02_execution

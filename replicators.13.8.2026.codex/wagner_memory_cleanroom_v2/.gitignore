@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+runs/**
+
+# Publish the compact report and verification bundle for the authoritative run.
+!runs/wagner-memory-v2-full-corrected-20260822/
+!runs/wagner-memory-v2-full-corrected-20260822/analysis/
+
+!runs/wagner-memory-v2-full-corrected-20260822/REPORT.md
+!runs/wagner-memory-v2-full-corrected-20260822/LAY_SUMMARY.md
+!runs/wagner-memory-v2-full-corrected-20260822/SHA256SUMS
+!runs/wagner-memory-v2-full-corrected-20260822/STATUS.json
+!runs/wagner-memory-v2-full-corrected-20260822/manifest.json
+!runs/wagner-memory-v2-full-corrected-20260822/registration.json
+!runs/wagner-memory-v2-full-corrected-20260822/runtime_manifest.json
+!runs/wagner-memory-v2-full-corrected-20260822/count-contract.json
+!runs/wagner-memory-v2-full-corrected-20260822/benchmark.json
+!runs/wagner-memory-v2-full-corrected-20260822/validation.json
+!runs/wagner-memory-v2-full-corrected-20260822/verification.json
+!runs/wagner-memory-v2-full-corrected-20260822/analysis/*.json
+*.launcher/

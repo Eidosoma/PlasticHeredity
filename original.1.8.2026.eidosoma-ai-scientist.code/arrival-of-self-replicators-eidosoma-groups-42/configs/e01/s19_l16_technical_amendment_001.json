@@ -1,0 +1,18 @@
+{
+  "amendmentId": "S19-L16-TECHNICAL-AMENDMENT-001",
+  "authorizedScope": "FROZEN_TARGET_REPLAY_VALIDATOR_ONLY",
+  "createdAtUtc": "2026-08-10T00:00:00Z",
+  "failedAttemptPreservedAt": "/cache/e01_s19_l16/failed_attempt_001_artifacts",
+  "failure": "The first independent validator required a SHA-256 value for all 400 padded target rows, but the frozen L15 manifest intentionally stores null target hashes for the two status-bearing tensor-ineligible rows.",
+  "outcomeAccessed": false,
+  "newModelFitExecuted": false,
+  "repair": "Require exact full-row target and mask hashes for each eligible unit; for an ineligible unit require a null manifest hash, exact ineligible flag, retained matrix identity, and no replacement. Record informational cache hashes without treating them as manifest identities.",
+  "scientificMethodChanged": false,
+  "scientificValueChanged": false,
+  "targetChanged": false,
+  "featureChanged": false,
+  "splitChanged": false,
+  "modelChanged": false,
+  "metricChanged": false,
+  "gateChanged": false
+}

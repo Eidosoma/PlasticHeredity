@@ -1,0 +1,30 @@
+{
+  "claim_boundary": {
+    "cellular_automaton": "one-generation motif control followed by an outcome-known, source-isolated direct replication of an engineered compact renewable carrier; synthetic same-substrate sufficiency, not spontaneous origin or universal necessity",
+    "wagner": "engineered renewable-carrier sufficiency; not spontaneous acquisition or universal necessity"
+  },
+  "figure": "figure10_carrier_mechanisms.png",
+  "ordering": [
+    "cellular-automaton break-and-renewal occurrence",
+    "cellular-automaton one-generation motif intervention",
+    "cellular-automaton frozen-reader generalisation",
+    "cellular-automaton compact renewable-carrier direct replication",
+    "unaugmented Wagner break-and-renewal occurrence",
+    "augmented Wagner renewable-carrier intervention"
+  ],
+  "sources": {
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/causal-heredity-round-1/RESULTS.json": "3be002b6992ecffad423321464d26e80c070ce1db9295c9e4c3c16850f637d32",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/golden-reconciliation/RESULTS.json": "7b00531bb4d9777424c6c3e90abe0a07cae460fca95675ac87fae6b6787be2e3",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/golden-reconciliation/atlas/eca_rules.csv": "e6120b8342aa84f1146be1cc7ac0a137597575314e19626decffaff1a30ff316",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/golden-reconciliation/phase/phase.csv": "7f268aa5cfcef7e5f26501d61efcd2f4d11707a20b50efc6545641291d47d051",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/eca_atlas/results/full/eca_rules.csv": "1b25f8566ae935c9ac71f6a343f38fe7bd5a00173714e85ac4fc630a99c5c5a2",
+    "replicators.13.8.2026.codex/reviewer_ca_compact_carrier_replication/artifacts/VERIFY.json": "321e8f8cf0b7213beb7919a8d8ef98056bfe1fb449a4c0cea8e3e8de6ee90507",
+    "replicators.13.8.2026.codex/reviewer_ca_compact_carrier_replication/artifacts/confirmation/RESULTS.json": "16fa4d082d93defca4c5a69af58729370542e824a8a603279024b7993cf683fa",
+    "replicators.13.8.2026.codex/reviewer_motif_channel_replication/artifacts/stage1/RESULTS.json": "d151b53b18fc22d587c9a96575a2fd49243797fde1a16b98694402ccda6c1d9d",
+    "replicators.13.8.2026.codex/reviewer_motif_channel_replication/artifacts/stage2/RESULTS.json": "28b5703fa131d24ec78913d4fd47c77bd414266e16714529d1c7f1ba9f029576",
+    "replicators.13.8.2026.codex/wagner_cleanroom/runs/campaign-v2/predictor/analysis.json": "60c0bb55c4cc8f87467c326c1ea240699b69effb85873aca370c4f15f01a39e9",
+    "replicators.13.8.2026.codex/wagner_memory_cleanroom_v2/runs/wagner-memory-v2-full-corrected-20260822/analysis/carrier.json": "6a5f30b38d1681c076698e1b93ecb2b2329f36b379a4f0ec55439771e24a4a14",
+    "replicators.13.8.2026.codex/wagner_memory_cleanroom_v2/runs/wagner-memory-v2-full-corrected-20260822/analysis/summary.json": "3872b9eb176a348456caf5d8d03c8c452b8938b378113e15ef54259ea44d169b"
+  },
+  "v2_figure": "figure12_v2_carrier_mechanisms.png"
+}

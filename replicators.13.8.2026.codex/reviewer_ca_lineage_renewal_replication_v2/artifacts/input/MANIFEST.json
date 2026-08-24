@@ -1,0 +1,32 @@
+{
+  "files": {
+    "context/CA_MOTIF_LINEAGE_STAGE3R_PROTOCOL.md": "ff715c3774bcb70e39ce96c5d7d9d3806044b6c26f88f110510244a860ab3136",
+    "context/STAGE3R_COHORTS.json": "10699445c1786e7fc6b794770329a788c4dd77d9238cfa1de37c1d5aad34dd89",
+    "context/STAGE3R_DESIGN.json": "9c5711889e172f364cee238fd440157f4acb5c4d0ca61b022adde6797c6821e7",
+    "context/STAGE3R_RESULTS.json": "bde1629cdd8b437f5dd1492230b8bca3c98ff489c6c5384677c6f0dcce8bdf1b",
+    "context/STAGE3R_STAGE_DECISION.json": "97c5eee0743a13f2ec2febd4bb20923b3c9cdaf1f552a0b85211ab5c46c120cf",
+    "forensic/FORENSIC_AUDIT.md": "586e6ac3bf91ba6d5d43cabdd037e5c022a00ef9866e35176c48b8dfa077948e",
+    "forensic/FORENSIC_RECORD.json": "515b4eeb1447807c3d472df3af081716a5462fd05d9048f4f350ad1775869f81",
+    "forensic/SOURCE_SPEC.md": "b8f152012a6bf47d1b3bb4d82b39c07a2ffda36c85be2beb5dc5b41f0640d9dd",
+    "local/DONORS.json": "9a97dcc2ed9c29b0f6811addd1e8c9533f004fbd742b08cf9816da504772e52a",
+    "local/HYPOTHESIS.json": "c5021e0a7f5a57d578b17033a7444873486abea04889158e800a2767bf1ad49d",
+    "local/LAUNCH_RESETS.json": "41f1091b28631fe4e6b8acbc171185a110351d16847b4b902a7731b8b911ec36",
+    "local/STAGE1_CALIBRATION.json": "40bd9a4dff504523aa0654c863382d93fb0be9f66d2b8d3e185181f94b703882",
+    "local/STAGE1_DECISION.json": "a7f96c20daf17f3f10ce446465d2ed2077ca6013e3a6951896cc07e85d375bbd",
+    "local/STAGE1_REGISTRATION.json": "ee73ea1d4a5020a9c83eaca8505c67605be576bd1c8e42c4f33ddb7f3b70b69f",
+    "local/STAGE2_DECISION.json": "cb225341a951d3bf3a214e1428e1c84f4908407724011d6e696dd7f93d00d7a6",
+    "local/STAGE2_REGISTRATION.json": "93b0db4f71e56842efbe5c187a604665d47359e02831671b999a71a46b0f361b",
+    "v1/REGISTRATION.json": "7b94f9f77d15d747f4aef28c2137f260231dbbeeca1ab0522dd5c5cc5548da43",
+    "v1/REPORTING_AMENDMENT.json": "250aeab305928a87771e4534634979810f1a2bc2f41282683d8018ef5779a9c4",
+    "v1/RESULTS.json": "e0c5ab38ee676b50d49aeab2516ef89dde8fa627ebdea4763aecb904e10b4d62",
+    "v1/VALIDATION.json": "51770aebd19db99fe0e7451b0ab959e86fa5d264bdf3e743a4bd6071c0b5cbf4"
+  },
+  "one_time_source_spec": "forensic/SOURCE_SPEC.md",
+  "original_source_tree_accessed": false,
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "snapshot_digest": "f83fe4945277da978519b478079719c416a8e162bc7eac0399d25e37003f511d",
+  "source_code_opened_hashed_imported_or_executed": false,
+  "source_outcomes_evidential_role": "none; contextual protocol binding only",
+  "upstream": "sealed local v1 artifacts only",
+  "v1_outcomes_evidential_role": "none for intended-mechanism adjudication"
+}

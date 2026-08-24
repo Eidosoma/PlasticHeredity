@@ -1,0 +1,6163 @@
+{
+  "beta": [
+    {
+      "name": "legacy_beta__log_in_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_in_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_out_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_join_propensity__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_leave_propensity__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__row_log_beta_sd__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__column_log_beta_sd__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_row_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_column_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_in_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "legacy_beta__log_active_out_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_raw_entries__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_row_strength__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_column_strength__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_strength__row_column_correlation",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_log_entries__reciprocity_correlation",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_matrix__normalized_asymmetry",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_001",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_002",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_003",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_004",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_005",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_006",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_007",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_008",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_009",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_010",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_011",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_012",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_013",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_014",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_015",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_016",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_017",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_018",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_019",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_020",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_021",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_022",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_023",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_024",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_025",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_026",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_027",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_028",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_029",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_030",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_031",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_032",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_033",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_034",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_035",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_036",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_037",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_038",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_039",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_040",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_041",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_042",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_043",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_044",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_045",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_046",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_047",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_048",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_049",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_050",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_051",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_052",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_053",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_054",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_055",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_056",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_057",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_058",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_059",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_060",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_061",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_062",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_063",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_064",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_065",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_066",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_067",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_068",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_069",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_070",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_071",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_072",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_073",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_074",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_075",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_076",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_077",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_078",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_079",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_080",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_081",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_082",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_083",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_084",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_085",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_086",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_087",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_088",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_089",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_090",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_091",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_092",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_093",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_094",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_095",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_096",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_097",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_098",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_099",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_100",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__stable_rank",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_singular__normalized_spectral_entropy",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_row_strength__normalized_entropy",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_column_strength__normalized_entropy",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_row_strength__herfindahl",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "beta_column_strength__herfindahl",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    }
+  ],
+  "dynamics": [
+    {
+      "name": "dynamics_expected_join__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_join__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_expected_leave__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_simplex_tangent_drift__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_absolute_simplex_tangent_drift__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_event_variance__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_standardized_tangent_drift__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_log_join_leave_ratio__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__expected_mass_drift",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__total_event_variance",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__tangent_drift_l1",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__tangent_drift_l2",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__drift_noise_l2",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__entropy_derivative",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__concentration_derivative",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__jacobian_maximum_real_eigenvalue",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__jacobian_spectral_radius",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__jacobian_stable_fraction",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__jacobian_largest_singular_value",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__velocity_available",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__velocity_l1",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__velocity_l2",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "dynamics_global__velocity_drift_cosine",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    }
+  ],
+  "h10": [
+    {
+      "name": "normalized_generation",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": true,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_current_mass",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": true,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "prefix_inheritance_fraction",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "recent5_inheritance_fraction",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_trailing_inheritance_run",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "latest_parent_daughter_h",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "current_inheritance_state",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_current_regime_duration",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_previous_growth_steps",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": true,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_cumulative_growth_steps",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": true,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    }
+  ],
+  "interaction": [
+    {
+      "name": "log_in_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_in_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_out_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "row_log_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "row_log_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "row_log_beta_sd__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "row_log_beta_sd__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "column_log_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "column_log_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "column_log_beta_sd__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "column_log_beta_sd__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_row_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_row_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_column_beta_mean__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_column_beta_mean__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_in_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__sd",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__minimum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__q05",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__q10",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__q25",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__median",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__q75",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__q90",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__q95",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__maximum",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "log_active_out_catalysis__active_mean",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    }
+  ],
+  "post_break": [
+    {
+      "name": "normalized_generation",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": true,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_current_mass",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": true,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "prefix_inheritance_fraction",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "recent5_inheritance_fraction",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_trailing_inheritance_run",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "latest_parent_daughter_h",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "current_inheritance_state",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_current_regime_duration",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_previous_growth_steps",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": true,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "normalized_cumulative_growth_steps",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": true,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": false
+      }
+    },
+    {
+      "name": "composition_fraction__mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__sd",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__minimum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q05",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q10",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q25",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__median",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q75",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q90",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q95",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__maximum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__active_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__sd",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__minimum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q05",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q10",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q25",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__median",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q75",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q90",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q95",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__maximum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__active_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_expected_mass_drift",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_total_event_variance",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_tangent_l1",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_tangent_l2",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_drift_noise_l2",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_velocity_l1",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_velocity_l2",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "postbreak_velocity_drift_cosine",
+      "provenance": {
+        "depends_on_beta": true,
+        "depends_on_clock": false,
+        "depends_on_history": true,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    }
+  ],
+  "state": [
+    {
+      "name": "composition_fraction__mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__sd",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__minimum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q05",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q10",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q25",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__median",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q75",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q90",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__q95",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__maximum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "composition_fraction__active_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__sd",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__minimum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q05",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q10",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q25",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__median",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q75",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q90",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__q95",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__maximum",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__composition_weighted_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    },
+    {
+      "name": "present__active_mean",
+      "provenance": {
+        "depends_on_beta": false,
+        "depends_on_clock": false,
+        "depends_on_history": false,
+        "depends_on_mass": false,
+        "depends_on_phase": false,
+        "depends_on_state": true
+      }
+    }
+  ]
+}

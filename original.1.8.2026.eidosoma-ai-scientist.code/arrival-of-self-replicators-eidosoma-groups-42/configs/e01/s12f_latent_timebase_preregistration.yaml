@@ -1,0 +1,454 @@
+schemaVersion: E01-S12F-preregistration-v1.0.0
+researchStepId: E01-S12F-LATENT-TIMEBASE-INFERENCE-v1.0.0
+shortStepId: S12F
+title: Inferring the Missing Poisson Exposure and Molecular-Step Observation Clock
+evidenceClass: PAPER_AS_DATA_SIMULATOR_IDENTIFICATION
+preregisteredAtUtc: '2026-08-02T00:00:00Z'
+s13Status: BLOCKED_PENDING_S12F_HUMAN_REVIEW
+
+frozenQuestion: >-
+  Can the S12E paper-style K1-K3 dynamics be reconciled with the paper-visible
+  molecular time base by an observation-clock convention, a bounded common
+  Poisson exposure, or (only after fixed-exposure failure) one adaptive gross-
+  event exposure, without using labels, emergence, prediction, or interventions?
+
+interpretationBoundary:
+  additiveEvidenceOnly: true
+  s12eClassificationRemains: TIME_BASE_MISMATCH_CONFIRMED
+  authorsContacted: false
+  labelsPermitted: false
+  causalEmergencePermitted: false
+  localPhiRPermitted: false
+  interventionsPermitted: false
+  s12gPermitted: false
+  s13Permitted: false
+  outcomeBasedCandidateAdditionPermitted: false
+  priorStepsImmutable: [S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S11R, S12, S12B, S12C, S12D, S12E]
+
+phaseFirewall:
+  order:
+    - phase0_paper_targets
+    - phase1_read_only_clock_audit
+    - benchmark
+    - phase2_fixed_exposure_abc
+    - phase2_adaptive_exposure_abc_if_needed
+    - candidate_lock
+    - phase3_untouched_confirmation
+    - phase4_downstream_lock_only
+  beforeNewSimulation:
+    - paper_timebase_targets.yaml
+    - figure_digitization.csv
+    - figure_digitization_uncertainty.json
+    - table_timebase_fingerprints.json
+    - preregistration_schema_validation
+    - source_and_input_identity_validation
+    - immutable_prior_and_s12e_cache_baseline
+    - focused_tests
+    - committed_and_pushed_method_and_targets
+  beforeConfirmation:
+    - accepted_posterior_region_frozen
+    - at_most_three_candidate_identities_frozen
+    - candidate_lock_committed_and_pushed
+    - fresh_confirmation_root_frozen
+    - zero_s12e_seed_and_matrix_overlap_verified
+  prohibitedAccessDuringSelection:
+    - self_replication_label
+    - compositional_cluster
+    - source_defined_emergence
+    - corrected_local_phi_r
+    - spike_replication_relationship
+    - intervention_outcome
+  prohibitedAfterDevelopmentOpen:
+    - new_update_kernel
+    - new_exposure_family
+    - new_daughter_semantic
+    - new_overshoot_semantic
+    - new_observation_clock
+    - distance_weight_change
+    - acceptance_gate_change
+    - target_ledger_change
+    - seed_root_change
+
+sourcePins:
+  paper:
+    arxivId: 2607.28250v1
+    pdfPath: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+    sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+    figure2Path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/figures/figure-02.png
+    figure2Sha256: 0e4aac507ccf6e10ced31edd6d7e5ba8c876d9d0c8d420b145dfc27c7d040778
+  historicalGard:
+    path: /cache/e01_s03/sources/gard-historical
+    commit: 86dff6320d5ae91b4e831471079ff46749b14df9
+  iigr:
+    path: /cache/e01_s12b/sources/IntegratedInformationGeneRegulation
+    commit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+  phirl:
+    path: /cache/e01_s12b/sources/PhiRL
+    commit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+  safeLattice:
+    path: /artifacts/research_steps/S12B/safe_phi_lattice.json
+    sha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+  s12e:
+    report: /artifacts/research_steps/S12E/S12E_FULL_RESULTS.md
+    artifactManifest: /artifacts/research_steps/S12E/artifact_manifest.json
+    artifactManifestSha256: ebcc731ba9e3b3543e4748b1cdc844e512d561d66bbfc579e0f088d236b8accc
+    cacheRoot: /cache/e01_s12e
+    designCommit: 8581a365a82ac31970363a63dd6e14f8d0519678
+
+paperConstraints:
+  nSpecies: 100
+  nMin: 40
+  nMax: 80
+  nGenerations: 100
+  maxStepsPerGeneration: 1000
+  initialization: exactly_40_distinct_types_uniform_without_replacement
+  updateProse: simultaneous_vector_poisson
+  fission: complementary_specieswise_binomial_p_0p5
+  kForward: 0.01
+  kBackward: 0.0001
+  rhoEach: 0.01
+  catalyticMatrix: exp_minus4_plus_4_times_standard_normal_historical_orientation
+
+phase0:
+  targetFiles:
+    - configs/e01/s12f/paper_timebase_targets.yaml
+    - configs/e01/s12f/figure_digitization.csv
+    - configs/e01/s12f/figure_digitization_uncertainty.json
+    - configs/e01/s12f/table_timebase_fingerprints.json
+  extractionMethods:
+    method1: TICK_CENTROID_PIXEL_AFFINE_CALIBRATION_ORIGINAL_RASTER
+    method2: INDEPENDENT_HIGH_DPI_MANUAL_GRID_CALIBRATION
+  agreementTolerance: max_of_two_original_raster_pixels_or_one_percent_panel_range
+  disagreementRule: retain_union_interval_without_preference
+  frozenTargets:
+    sampleEndpointIntervals:
+      B: [792.0, 808.0]
+      C: [792.0, 808.0]
+      D: [990.0, 1010.0]
+    sampleEndpointCenters: [800.0, 800.0, 1000.0]
+    aggregateVisibleTraceTerminalInterval: [1090.0, 1120.0]
+    aggregateAxisUpperInterval: [1300.0, 1314.0]
+    aggregateLateDiscontinuityInterval: [980.0, 1070.0]
+    tableRatioCenter: 813.6363636363636
+    tableRatioSoftInterval: [569.2307692307692, 1075.2941176470588]
+    postFissionMassInterval: [35.0, 45.0]
+  targetUse:
+    figureEndpoints: primary_upstream_fingerprint
+    aggregateSupport: primary_but_interval_censored
+    tableRatio: soft_secondary_only
+    labelsOrInformationTheory: prohibited
+
+phase1:
+  source: read_only_s12e_K1_K2_K3_pickles
+  engineIds:
+    - K1_PAPER_POISSON_RANDOM_NONEMPTY
+    - K2_PAPER_POISSON_FIRST_DAUGHTER
+    - K3_PAPER_POISSON_RANDOM_LITERAL
+  clocks:
+    C0_BATCH_UPDATES_ONLY:
+      formula: sum_U
+      exactFromCache: true
+      materializedNaturally: true
+      primaryGateAdmissible: true
+    C1_SELECTED_DAUGHTER_RETAINED:
+      formula: sum_U_plus_completed_fissions
+      exactFromCache: true
+      materializedNaturally: true
+      primaryGateAdmissible: true
+    C2_EXPLICIT_PRE_AND_POST_FISSION:
+      formula: sum_U_plus_two_times_completed_fissions
+      exactFromCache: true
+      materializedNaturally: false
+      requiresSyntheticDuplicate: true
+      primaryGateAdmissible: false
+    C3_NONZERO_REACTION_CHANNEL:
+      exactFromCache: false
+      phase1Status: NOT_RECOVERABLE_FROM_S12E_CACHE
+      diagnosticOnly: true
+      primaryGateAdmissible: false
+    C4_GROSS_MOLECULAR_EVENT:
+      exactFromCache: false
+      phase1Status: NOT_RECOVERABLE_FROM_S12E_CACHE
+      diagnosticOnly: true
+      primaryGateAdmissible: false
+  clockOnlyGate:
+    completedFissions: 24_of_24
+    minimumSampleEndpointsInsideQ05Q95: 2
+    aggregateCompatibility: true
+    postFissionMassInterval: [35.0, 45.0]
+    exactReplayAndCardinality: true
+    syntheticDuplicatePermitted: false
+  continueRule: clock_only_match_still_requires_untouched_phase3_confirmation
+  exposureSkipRule: may_skip_exposure_only_for_clock_only_candidate_with_no_clear_mass_or_overshoot_discrepancy
+
+simulationFamily:
+  updateKernel: separate_reaction_simultaneous_poisson_vector
+  equations:
+    join: h_t_times_kf_times_rho_i_times_N_times_catalytic_boost_i
+    loss: h_t_times_kb_times_n_i_times_catalytic_boost_i
+    state: n_plus_join_draw_minus_min_loss_draw_and_n
+  daughterSemantics:
+    - RANDOM_NONEMPTY
+    - FIRST_DAUGHTER
+    - RANDOM_LITERAL
+  overshootSemantics:
+    - RETAIN_OVERSHOOT
+    - TRIM_NEW_ENTRANTS_TO_NMAX
+  trimRule: randomly_remove_only_excess_newly_joined_molecules_using_domain_separated_stream
+  simulatedClocks:
+    - C0_BATCH_UPDATES_ONLY
+    - C1_SELECTED_DAUGHTER_RETAINED
+    - C2_EXPLICIT_PRE_AND_POST_FISSION
+  diagnosticClocks:
+    - C3_NONZERO_REACTION_CHANNEL
+    - C4_GROSS_MOLECULAR_EVENT
+  growthStop: first_post_update_mass_at_least_80_or_1000_updates
+  maxStepsAction: fission_current_nonempty_state
+  bothDaughtersEmpty: terminal
+  precision: CPU_FLOAT64_AUTHORITATIVE
+
+benchmark:
+  configurationCount: 16
+  matricesPerConfiguration: 1
+  exactReplay: true
+  configurations:
+    - [RANDOM_NONEMPTY, RETAIN_OVERSHOOT, 0.25]
+    - [RANDOM_NONEMPTY, TRIM_NEW_ENTRANTS_TO_NMAX, 0.25]
+    - [FIRST_DAUGHTER, RETAIN_OVERSHOOT, 0.25]
+    - [FIRST_DAUGHTER, TRIM_NEW_ENTRANTS_TO_NMAX, 0.25]
+    - [RANDOM_LITERAL, RETAIN_OVERSHOOT, 0.25]
+    - [RANDOM_LITERAL, TRIM_NEW_ENTRANTS_TO_NMAX, 0.25]
+    - [RANDOM_NONEMPTY, RETAIN_OVERSHOOT, 0.75]
+    - [RANDOM_NONEMPTY, TRIM_NEW_ENTRANTS_TO_NMAX, 0.75]
+    - [FIRST_DAUGHTER, RETAIN_OVERSHOOT, 0.75]
+    - [FIRST_DAUGHTER, TRIM_NEW_ENTRANTS_TO_NMAX, 0.75]
+    - [RANDOM_LITERAL, RETAIN_OVERSHOOT, 0.75]
+    - [RANDOM_LITERAL, TRIM_NEW_ENTRANTS_TO_NMAX, 0.75]
+    - [RANDOM_NONEMPTY, RETAIN_OVERSHOOT, 0.10]
+    - [RANDOM_NONEMPTY, TRIM_NEW_ENTRANTS_TO_NMAX, 0.10]
+    - [RANDOM_NONEMPTY, RETAIN_OVERSHOOT, 1.25]
+    - [RANDOM_NONEMPTY, TRIM_NEW_ENTRANTS_TO_NMAX, 1.25]
+  projectionModel: median_cpu_seconds_per_trajectory_times_planned_true_simulations
+  stopIfProjectedCpuHoursAbove: 250.0
+  stopIfProjectedWallHoursAbove: 72.0
+  stopIfProjectedRetainedGiBAbove: 30.0
+
+phase2:
+  developmentMatricesPerParticle: 8
+  commonMatricesAndInitialStatesAcrossParticles: true
+  distinctDynamicsStreamPerConfiguration: true
+  fixedExposure:
+    identifier: FIXED_COMMON_EXPOSURE
+    hBounds: [0.10, 1.25]
+    prior: log_uniform
+    alwaysRun: true
+  adaptiveExposure:
+    identifier: ADAPTIVE_GROSS_EVENT_EXPOSURE
+    formula: min_hmax_and_c_divided_by_total_join_plus_loss_rate
+    cBounds: [0.5, 16.0]
+    hMaxBounds: [0.1, 2.0]
+    priors: independent_log_uniform
+    runOnlyIfNoFixedCandidateAccepted: true
+  abcSmc:
+    rounds:
+      - {round: 1, particlesEvaluated: 256, retainForProposal: 128, logKernelSd: null}
+      - {round: 2, particlesEvaluated: 128, retainForProposal: 64, logKernelSd: 0.20}
+      - {round: 3, particlesEvaluated: 64, retainForProposal: 64, logKernelSd: 0.10}
+    maximumToleranceRounds: 3
+    round1DiscretePrior: exactly_stratified_uniform_over_3_daughters_x_2_overshoot_x_3_clocks
+    resampling: systematic_from_normalized_abc_importance_weights
+    continuousBoundary: reflection_in_log_space
+    discreteKernel: parent_category_retained
+    importanceWeights: prior_density_divided_by_weighted_same_category_log_normal_kernel_mixture
+    intermediateTolerance: empirical_median_distance_of_current_round
+    finalAcceptanceEnvelope:
+      maximumDistance: 1.0
+      minimumCompletedFraction: 1.0
+      maximumMaxstepsFraction: 0.05
+      minimumSampleEndpointsInsideQ05Q95: 2
+      postFissionMassInterval: [35.0, 45.0]
+      aggregateCompatibilityRequired: true
+      c2CandidatesEligible: false
+    groupRepresentative: minimum_distance_final_particle_with_ties_by_complexity_then_particle_id
+    pipelineRanking: posterior_mass_desc_then_group_median_distance_asc_then_complexity_then_lexical
+    maximumCandidatePipelines: 3
+  summaryVector:
+    - q05_T_phi
+    - q50_T_phi
+    - q95_T_phi
+    - q50_pre_fission_mass
+    - q50_post_fission_mass
+    - q95_overshoot
+    - fraction_complete_100
+    - fraction_maxsteps
+  distance:
+    intervalGapDefinition: max_of_zero_or_disjoint_interval_gap
+    D_T:
+      sampleEndpointWeight: 0.60
+      aggregateSupportWeight: 0.25
+      tableRatioWeight: 0.15
+      sampleGapScale: 50.0
+      aggregateGapScale: 200.0
+      tableGapScale: 198.0
+    D_M:
+      targetInterval: [35.0, 45.0]
+      gapScale: 5.0
+    D_O: >-
+      zero when post-fission mass and aggregate-length constraints are compatible;
+      otherwise the incompatible-mass or length gap multiplied by capped q95 overshoot/80
+    components:
+      wT: 4.0
+      wM: 2.0
+      wO: 1.0
+      wCompletion: 20.0
+      wMaxsteps: 10.0
+      wComplexity: 0.05
+    complexity:
+      clock_h1_reinterpretation: 0.0
+      fixed_h_not_1: 1.0
+      trimIncrement: 1.0
+      adaptiveIncrement: 2.0
+      c2SyntheticDuplicateIncrement: 4.0
+
+phase3:
+  matricesPerCandidate: 32
+  maximumCandidates: 3
+  matricesSharedAcrossCandidates: true
+  exactReplay: true
+  candidateGate:
+    completedAtLeast: 31
+    outOf: 32
+    minimumSampleEndpointsInsideQ05Q95: 2
+    aggregateCompatibility:
+      minimumObservedMaximum: 1090.0
+      maximumQ95: 1314.0
+      maximumFractionBeyondAxisUpper: 0.05
+    postFissionMassInterval: [35.0, 45.0]
+    maximumMaxstepsFraction: 0.05
+    duplicatedBoundarySoleCauseForbidden: true
+    maximumDistance: 1.0
+    exactReplayRequired: true
+    runtimeStorageSeedProvenanceRequired: true
+  multiplePassClassification: NONIDENTIFIABLE_TIMEBASE_ENSEMBLE
+  noSelectionUsingDownstreamOutcomes: true
+
+phase4:
+  output: candidate_timebase_pipeline_lock.json
+  freezePerCandidate:
+    - update_kernel
+    - exposure_rule_and_parameters
+    - observation_clock
+    - overshoot_handling
+    - daughter_selection
+    - exact_composition_trajectory_schema
+    - local_lag_one_output_indexing
+    - seed_and_replay_contracts
+    - confirmation_trajectory_hashes
+    - upstream_fingerprint_results
+  downstreamComputationPermitted: false
+
+randomness:
+  bitGenerator: PCG64DXSM
+  derivation: sha256_of_version_root_phase_purpose_matrix_configuration_and_extra_first_128_bits_big_endian
+  roots:
+    benchmark: adcb9d039b421c93edf67314290feaa67d346e0e454b2ef5558248670cb0b147
+    development: dab1feb8d91b6337bdcffdbd016d0c23d67f487ea8fd82c77a802169b2ac4fb3
+    inference: 39a3e3fd8dcf68ca04841f0a4ddb21919b96f22d6c080cfe22221ce80a661d0f
+    confirmation: 955c93f7c2f2081ca5415bd029433015e736160b6333e5c8b4bf1f8b3f252e33
+  streamPurposes:
+    - catalytic_matrix
+    - initial_state
+    - poisson_update
+    - overshoot_trim
+    - fission
+    - daughter_selection
+    - abc_prior
+    - abc_resampling
+    - abc_perturbation
+  zeroOverlapWithS06ThroughS12E: required
+
+compute:
+  workers: 6
+  statisticsWorkers: 1
+  orchestrationCores: 1
+  blasThreadsPerWorker: 1
+  cpuHourCeiling: 250.0
+  gpuHourCeiling: 12.0
+  wallHourCeiling: 72.0
+  retainedArtifactGiBCeiling: 30.0
+  gpuUse: optional_surrogate_only
+  cpuFloat64Authoritative: true
+
+outcomeVocabulary:
+  - CLOCK_ACCOUNTING_MATCH
+  - FIXED_EXPOSURE_MATCH
+  - ADAPTIVE_EXPOSURE_MATCH
+  - OVERSHOOT_SEMANTICS_REQUIRED
+  - PAPER_TIMEBASE_CANDIDATE
+  - NONIDENTIFIABLE_TIMEBASE_ENSEMBLE
+  - NO_PAPER_TIMEBASE_RECONSTRUCTION
+  - FIGURE_TARGET_EXTRACTION_BLOCKED
+  - SIMULATOR_IDENTIFICATION_FAILED
+  - UNDERDETERMINED
+
+stopConditions:
+  - prior_artifact_changed
+  - figure_extraction_not_independently_reproduced
+  - target_ledger_changed_after_simulation_access
+  - forbidden_downstream_value_accessed
+  - candidate_manually_added_after_abc
+  - development_confirmation_seed_overlap
+  - exact_replay_failure
+  - more_than_three_confirmation_candidates_needed
+  - no_fixed_or_adaptive_particle_in_acceptance_envelope
+  - hard_compute_or_storage_ceiling_exceeded
+  - artifact_regeneration_or_hash_validation_failed
+
+requiredArtifacts:
+  - preregistration.yaml
+  - paper_timebase_targets.yaml
+  - figure_digitization.csv
+  - figure_digitization_uncertainty.json
+  - table_timebase_fingerprints.json
+  - source_input_snapshot_manifest.json
+  - immutable_prior_baseline.json
+  - s12e_cache_manifest.json
+  - phase0_validation.json
+  - preregistration_record.json
+  - preregistration_artifact_manifest.json
+  - clock_audit_results.parquet
+  - clock_audit_summary.csv
+  - benchmark_results.csv
+  - benchmark_runtime_projection.json
+  - development_seed_manifest.parquet
+  - abc_particle_results.parquet
+  - abc_round_summary.csv
+  - posterior_candidates.csv
+  - candidate_lock_proposal.json
+  - candidate_timebase_pipeline_lock.json
+  - confirmation_seed_manifest.parquet
+  - confirmation_trajectories.parquet
+  - confirmation_trajectory_manifest.parquet
+  - posterior_predictive_results.csv
+  - regeneration_validation.json
+  - scope_access_ledger.json
+  - failure_ledger.csv
+  - runtime_manifest.json
+  - classification.json
+  - status.json
+  - artifact_manifest.json
+  - research_step_full_results.md
+  - figures/01_figure_digitization.png
+  - figures/02_clock_audit.png
+  - figures/03_abc_posterior.png
+  - figures/04_posterior_predictive.png
+  - figures/05_mass_overshoot.png
+  - figures/06_decision_summary.png
+
+recommendedNextActionIfCandidate: >-
+  Return for human review and recommend only a separately preregistered S12G
+  applying frozen labels and validated source-defined emergence to the locked
+  time-base candidate or posterior ensemble.
+recommendedNextActionIfNoCandidate: >-
+  Return for human review with S13 blocked; do not broaden the kernel family or
+  begin labels, emergence, interventions, S12G, or S13 automatically.

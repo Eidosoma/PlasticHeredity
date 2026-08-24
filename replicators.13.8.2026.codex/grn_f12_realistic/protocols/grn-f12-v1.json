@@ -1,0 +1,50 @@
+{
+  "format": "grn-f12-realistic-v1",
+  "scientific": true,
+  "master_seed_label": "grn-f12-realistic-v1|2026-08-21|clean-room",
+  "landmarks": [0, 2, 4, 8, 12],
+  "history": {"burnin_generations": 16, "cue_generations": 4, "cue_genes": 6, "cue_strength": 1.5},
+  "endpoint": {"stable_run": 3, "strict_run": 5, "horizon": 12, "secondary_horizon": 24, "threshold_quantile": 0.05, "sensitivity_quantiles": [0.025, 0.1]},
+  "tiers": {
+    "continuous": {
+      "genes": 32, "edge_probability": 0.125, "substeps": 16, "dt": 0.0625,
+      "gain": 2.5, "noise_sigma": 0.04, "partition_scale": 200,
+      "state_min": 0.0, "state_max": 1.5,
+      "calibration_networks": 64, "development_networks": 128,
+      "confirmation_networks": 320, "futures": 256, "calibration_futures": 128,
+      "control_networks": 80
+    },
+    "molecular": {
+      "genes": 16, "edge_probability": 0.25, "substeps": 32, "dt": 0.03125,
+      "gain": 2.5, "transcription_basal": 0.2, "transcription_induced": 3.8,
+      "mrna_decay": 1.0, "translation": 2.0, "protein_decay": 0.15,
+      "protein_scale": 50.0,
+      "calibration_networks": 32, "development_networks": 64,
+      "confirmation_networks": 160, "futures": 128, "calibration_futures": 64,
+      "control_networks": 64
+    }
+  },
+  "predictor": {
+    "folds": 5, "message_layers": 3, "width": 64,
+    "learning_rate": 0.0003, "weight_decay": 0.0001,
+    "batch_states": 256, "max_epochs": 400, "patience": 40,
+    "ridge_c": 1.0,
+    "history_features": ["cue_A", "cue_B", "age_0", "age_2", "age_4", "age_8", "age_12", "age_scaled", "cue_age", "intercept_context"],
+    "node_features": ["expression", "velocity", "field", "activation_derivative", "signed_in_strength", "signed_out_strength", "cue_sign", "partition_cv"]
+  },
+  "inference": {"bootstrap_repetitions": 4096, "permutation_repetitions": 2048, "familywise_alpha": 0.05},
+  "gates": {
+    "reliability_minimum": 0.8, "log_loss_gain_minimum": 0.02,
+    "spearman_overall_minimum": 0.6, "spearman_within_network_minimum": 0.3,
+    "permutation_p_maximum": 0.01, "control_gap_minimum": 0.05,
+    "transplant_retention_minimum": 0.9, "null_retention_maximum": 0.3
+  },
+  "operations": {
+    "benchmark_networks_per_tier": 8, "benchmark_margin": 1.25,
+    "admission_hours": 10.5, "stop_new_hours": 11.0,
+    "closeout_hours": 11.5, "hard_limit_hours": 12.0,
+    "disk_admission_gib": 40, "disk_running_gib": 30,
+    "shard_networks": 8, "required_gpus": 2
+  }
+}
+

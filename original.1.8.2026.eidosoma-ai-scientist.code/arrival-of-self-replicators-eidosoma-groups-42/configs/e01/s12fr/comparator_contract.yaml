@@ -1,0 +1,126 @@
+schemaVersion: E01-S12FR-comparator-contract-v1.0.0
+researchStepId: E01-S12FR-EXACT-REPLAY-COMPARATOR-REPAIR-v1.0.0
+contractStatus: FROZEN_BEFORE_ANY_S12FR_SIMULATOR_RERUN
+
+oldComparator:
+  implementation: TimebaseTrajectory_dataclass_equality_AND_trajectory_sha256_equality
+  sourceCommit: cf5b27b370a2d8d12e6867034d6ec8f4f96b3fc7
+  knownOutcome: at_least_one_false_among_2048_original_round1_pairs
+  exactFailingPairsKnownBeforeS12FR: false
+
+repairedComparator:
+  identifier: S12FR_SCHEMA_CAUSAL_EXACT_COMPARATOR_v1.0.0
+  defaultRule: exact_type_shape_length_and_value_equality
+  finiteFloatRule: exact_IEEE754_binary64_bit_pattern
+  signedZeroRule: distinct_bit_patterns_are_unequal
+  integerRule: exact_value_and_sequence_equality
+  discreteRule: exact_string_boolean_none_enum_and_sequence_equality
+  arrayRule: exact_dtype_shape_and_C_order_bytes
+  seedRule: exact_SeedIdentity_field_equality
+  trajectoryDigestRule: exact_SHA256_equality
+  rngRule:
+    identity: exact_seed_identity
+    callOrder: exact
+    method: exact
+    argumentDigest: exact
+    resultDigest: exact
+    resultShapeAndDtype: exact
+    finalBitGeneratorStateDigest: exact
+    finiteFloatElements: exact_bit_pattern
+    discreteOutputs: exact
+  permittedNormalization:
+    token: PAIRED_SCHEMA_UNDEFINED_NAN_ZERO_UPDATE
+    fields:
+      - generations[*].maximum_exposure
+      - generations[*].minimum_exposure
+    valueCondition: both_values_are_IEEE_NaN
+    causeCondition: both_corresponding_GenerationSummary.update_count_equal_zero
+    interpretation: exposure_accumulator_is_empty_because_no_growth_update_occurred
+    equalityEffect: compare_equal_only_under_all_conditions
+  forbiddenNormalizations:
+    - one_sided_nan
+    - paired_nan_at_any_other_field
+    - paired_nan_with_different_or_unverified_cause
+    - positive_or_negative_infinity
+    - finite_tolerance_or_rounding
+    - dtype_or_shape_coercion
+    - field_deletion
+    - sequence_reordering
+    - missing_or_extra_rng_call
+    - changed_rng_consumption
+
+pairPassRule:
+  oldComparatorMayFail: true
+  repairedTrajectoryComparatorMustPass: true
+  seedComparatorMustPass: true
+  rngConsumptionComparatorMustPass: true
+  instrumentedVersusUninstrumentedSimulatorParityMustPass: true
+  discreteDivergenceCountMustEqual: 0
+  finiteNumericDivergenceCountMustEqual: 0
+  forbiddenNonfiniteDifferenceCountMustEqual: 0
+  rngDivergenceCountMustEqual: 0
+  everyOldFailureMustHaveOnlyPermittedNormalizationDifferences: true
+
+campaignGates:
+  originalRound1:
+    pairCount: 2048
+    particles: 256
+    matricesPerParticle: 8
+    passRule: unanimous_pair_pass_and_every_old_failure_fully_explained
+  benchmark:
+    pairCount: 16
+    passRule: 16_of_16
+  untouchedConfirmation:
+    pairCount: 2048
+    particles: 256
+    matricesPerParticle: 8
+    design: same_fixed_exposure_round1_prior_and_stratified_discrete_schedule
+    passRule: 2048_of_2048
+  oneRepairRule: any_failure_permanently_closes_this_path
+
+diagnosticRetention:
+  everyPairIdentity: required
+  everyFieldDifference: required
+  catalyticMatrixHashEachSide: required
+  initialStateHashEachSide: required
+  trajectoryHashEachSide: required
+  observationStateSequence: canonical_trace_in_cache_plus_both_side_hashes
+  poissonJoinAndLossSequences: canonical_trace_in_cache_plus_both_side_hashes
+  trimSequence: canonical_trace_in_cache_plus_both_side_hashes
+  fissionSequence: canonical_trace_in_cache_plus_both_side_hashes
+  daughterSequence: canonical_trace_in_cache_plus_both_side_hashes
+  stoppingSequence: canonical_trace_in_cache_plus_both_side_hashes
+  rngCallLedger: per_stream_call_count_argument_and_result_digests
+  pairedIdenticalPayloadRule: one_complete_canonical_payload_may_represent_both_sides_only_when_all_exact_gates_pass
+  divergentPayloadRule: retain_complete_left_and_right_payloads
+  largeTraceLocation: /cache/e01_s12fr/replay_traces
+  collectibleTraceEvidence: paths_sizes_hashes_and_schema_under_artifacts
+
+stopRules:
+  - any_discrete_difference
+  - any_rng_identity_or_consumption_difference
+  - any_finite_float_bit_difference
+  - any_forbidden_nonfinite_difference
+  - any_instrumentation_parity_difference
+  - incomplete_pair_or_field_diagnostics
+  - original_round1_not_unanimously_explained
+  - benchmark_not_16_of_16
+  - untouched_confirmation_not_2048_of_2048
+  - prior_artifact_or_cache_identity_change
+  - development_confirmation_seed_or_matrix_overlap
+  - comparator_code_or_contract_changed_after_lock
+  - required_hash_or_schema_validation_failure
+
+conditionalResumeBoundary:
+  permittedOnlyAfterAllRepairGates: true
+  previouslySuppressedS12FDistancesMayBeOpened: false
+  freshDistancesMayBeComputedOnlyAfterConfirmation: true
+  simulatorMayChange: false
+  rngDerivationMayChange: false
+  particlesScheduleTargetsDistancesAndGatesMayChange: false
+  adaptiveFamilyConditionMayChange: false
+  candidateLimitMayChange: false
+  confirmationMatrixCountMayChange: false
+  labelsClustersEmergenceLocalPhiPredictionInterventionsPermitted: false
+  s12gPermitted: false
+  s13Permitted: false

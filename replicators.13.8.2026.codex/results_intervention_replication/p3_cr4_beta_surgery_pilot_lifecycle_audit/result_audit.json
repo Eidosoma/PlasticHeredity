@@ -1,0 +1,19 @@
+{
+  "audit_id": "3d1e42f4d1165fe8cd6b84fb4297536ac52ba0417714a395d7b0656eff3d3bd9",
+  "checkpoint_hashes_unchanged": true,
+  "complete_readback_exact": true,
+  "confirmation_launched": false,
+  "exact_replay": true,
+  "format": "codex-intervention-p3-recovered-result-audit-v1",
+  "inference_recovery_amendment_id": "86e0cda5d5403fed3601fcd65110472ed76305ab9f5a1b139a0347abf238e185",
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "phase": "p3",
+  "primary_futures": 51200,
+  "prospective_lifecycle_amendment_id": "679449881a33f0f40a50ca7e9de8849a1996321492a1b8190f8007f6cc22637c",
+  "recovery_futures": 0,
+  "replay_futures": 51200,
+  "result_checksum_manifest_sha256": "dcde0f03165b43eaefb0d552c93fc64ec03890fdcb3ade02d6062ccc3f338abd",
+  "result_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p3_cr4_beta_surgery_pilot",
+  "scientific_contract_changes": [],
+  "semantic_random_arm": "RANDOM_SURGERY"
+}

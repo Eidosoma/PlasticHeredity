@@ -1,0 +1,36 @@
+{
+  "arms": [
+    "LOOSEN",
+    "TIGHTEN",
+    "GLOBAL_RANDOM_SURGERY",
+    "THROUGHPUT_NEUTRAL_TOPOLOGY",
+    "NOOP"
+  ],
+  "branches_per_arm_state": 64,
+  "complete_readback_exact": true,
+  "cr5_launched": false,
+  "declared_cpu_budget_hours": 20.0,
+  "exact_replay": true,
+  "format": "codex-intervention-cr4-confirmation-result-v1",
+  "full_four_cell_cr4_gate": true,
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 200,
+  "no_future_retry_or_matrix_replacement": true,
+  "no_surgery_search_refitting_or_threshold_change": true,
+  "predecessor_verdicts_unchanged": true,
+  "primary_futures": 640000,
+  "registration_id": "c088f787e11fcd1474adb886e1978bd79ed5c5a497e38815833ddf4cc6f9c9f5",
+  "replay_futures": 640000,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "states": 2000,
+  "surgery_audit_pass": true,
+  "topology_classification": "inconclusive"
+}

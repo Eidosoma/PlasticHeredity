@@ -1,0 +1,31 @@
+schema: eidosoma.e01.s12c_implementation_lock.v1
+researchStepId: S12C
+preregistrationVersion: E01-S12C-SOURCE-EQUIVALENCE-CONFIRMATION-v1.0.0
+repairId: E01-S12C-IIGR-PAIRWISE-PEARSONR-SOURCE-LOOP-v1.0.0
+confirmationAccessStatus: LOCKED_BEFORE_UNTOUCHED_CONFIRMATION
+lockedUtc: '2026-08-02'
+branch: eidosoma/groups/42
+remote: origin
+implementationCommit: a38be91dc903220e06f5a82b8dbfd76097d991d4
+developmentSummaryPath: /artifacts/research_steps/S12C/development_summary.json
+developmentSummarySha256: 974746bf657307f815543927cd053ec505e5403b334d9a8d0f12dd03cd1c6b5e
+developmentResult:
+  expectedRows: 14
+  passedRows: 14
+  allRowsPassed: true
+  gardInputOpened: false
+implementationFiles:
+  src/e01_pigozzi_source_equivalence_confirmation/core.py: 403438e48f54c6c6bd2bcf8b0d839c4eb55dfa92afc5fff672e0be333c2612d3
+  scripts/e01/run_s12c_source_equivalence_confirmation.py: af3b37f601879d1fec4a1ccdf7acde0a08abd0744b2533dcd1e467083c7ec222
+  scripts/e01/freeze_s12c_preregistration.py: 912135ea9e3c93fc8df096456eecc5300d999ba7c9059ddcc292106e687a5874
+  configs/e01/s12c_source_equivalence_confirmation_preregistration.yaml: 4b81500ba2677c0d58fe1916af4debadb05e7371dba14e6c7844f138f45431c2
+  tests/e01/test_s12c_source_equivalence_confirmation.py: 0d7fd54bf9aa08c73f1c432fc28702101954e9908b1fac89ed83cb55d873e8b1
+  scripts/e01/s12b_original_source_adapter.py: 45835594d61c12f274243cdb75ac38453e88a70b5e730b687ccc700b5f8d0437
+lockRecordPolicy:
+  lockFileSelfHashRecordedAfterCommit: true
+  lockFileMustBeTrackedInConfirmationCommit: true
+  cleanWorkingTreeRequired: true
+  pushedHeadRequired: true
+  implementationFilesMayNotChangeAfterThisLock: true
+  confirmationFixtureGenerationBeforeThisLockForbidden: true
+  gardInputAccessBeforeUnanimousConfirmationForbidden: true

@@ -1,0 +1,83 @@
+schema: eidosoma.e01.s19_l45.preregistration.v1
+version: E01-S19-L45-PHI-INCREMENTAL-VALUE-FOR-HEREDITARY-EPISODE-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Do source-defined past-only PhiID quantities predict the frozen L44
+  NEW_HEREDITARY_EPISODE_RUN3 empirical committor on held-out matrices beyond
+  direct inheritance, stability, composition-change, mass, phase and elapsed-time
+  controls; and do completed-fit counterparts align only retrospectively?
+inputs:
+  target: L44 NEW_HEREDITARY_EPISODE_RUN3 successes/trials/qHat
+  trajectories: frozen L23 280 selected candidate/matrix identities used by L44
+  sourcePipeline: L17/L18 validated BreakingGRNMemories-IIGR clean-room path
+  newSimulation: false
+metricIdentities:
+  - EMERGENCE_NAN0
+  - INTEGRATED_RAW
+  - SYNERGY_RAW
+  - DOWNWARD_CAUSATION_RAW
+temporalModes:
+  - PAST_ONLY_PREFIX_FIT
+  - RETROSPECTIVE_COMPLETED_TRAJECTORY_FIT
+metricSummaries:
+  current: final available local value
+  recentSlope: ordinary least-squares slope over the final 8 local values
+directControls:
+  - latest parent-daughter H
+  - prefix inheritance fraction
+  - current inheritance streak
+  - prefix fission opportunities
+  - current mass
+  - generation-local phase
+  - selected-clock landmark
+  - adjacent molecular H
+  - current Euclidean relative-composition change
+models:
+  estimator: fixed L2 ridge-binomial logistic regression
+  C: 1.0
+  preprocessing: development-only median imputation plus standardization
+  trainingCohort: L28_DEVELOPMENT
+  evaluationCohorts: [L28_VALIDATION, L31_CONFIRMATION]
+  candidatesPooled: false
+  registeredFamilies:
+    - TRAINING_PRIOR
+    - INHERITANCE_BASELINE
+    - DIRECT_CONTROLS
+    - PAST_PHI_ONLY
+    - DIRECT_PLUS_PAST_PHI
+    - COMPLETED_PHI_ONLY
+    - DIRECT_PLUS_COMPLETED_PHI
+statistics:
+  independentUnit: catalytic_matrix
+  bootstraps: 4096
+  featurePermutations: 512
+  trainingTargetPermutations: 512
+  primaryMetrics: [MATRIX_BINOMIAL_LOG_LOSS, Q_BRIER]
+  companionMetrics: [SPEARMAN, CALIBRATION_INTERCEPT, CALIBRATION_SLOPE]
+pastOnlyGate:
+  - suffix invariance exact
+  - direct-plus-past improves direct-control Brier in every evaluation group
+  - direct-plus-past improves direct-control log loss in every evaluation group
+  - both bootstrap lower bounds above zero
+  - both permutation families pass in each candidate
+  - candidate directions agree
+completedFitBoundary: retrospective only; never eligible for prospective language
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  newLabels: 0
+  targetSearch: false
+  scalarSearch: false
+  modelSearch: false
+  hyperparameterSearch: false
+  intervention: false
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: outcome-dependent L46 process/regime audit

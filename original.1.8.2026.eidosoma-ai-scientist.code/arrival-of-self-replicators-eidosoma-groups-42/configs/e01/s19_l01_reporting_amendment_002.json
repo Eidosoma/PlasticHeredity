@@ -1,0 +1,24 @@
+{
+  "schema": "eidosoma.e01.s19_l01_reporting_amendment.v1",
+  "amendmentId": "S19-L01-REPORT-002",
+  "loopId": "S19-L01",
+  "triggerFailureId": "F002",
+  "classification": "REPORTING_ONLY_VALUE_PRESERVING",
+  "authorizedEffect": [
+    "serialize explicit failed-closed statuses",
+    "write required empty-not-eligible scientific result schemas",
+    "write additive claim overlay without modifying S18",
+    "append the post-loop learning and human-review records",
+    "validate and hash the immutable prior and S19 failure package"
+  ],
+  "prohibitedEffect": [
+    "recover or inspect invalidated in-memory scientific outcomes",
+    "rerun any candidate bundle",
+    "change any locked scientific method, seed, estimand, gate, or specification",
+    "adjudicate any of the sixteen claims",
+    "activate another S19 loop or S20"
+  ],
+  "scientificValuesChanged": false,
+  "requiresScientificRerun": false,
+  "reason": "The preregistered S16 25/75 exact-replay gate stopped Loop 1 before an eligible result package was serialized. Required handoff artifacts must record that failure without manufacturing or exposing invalidated values."
+}

@@ -1,0 +1,65 @@
+schema: eidosoma.e01.s19_l25.preregistration.v1
+research_step_id: S19-L25
+versioned_id: E01-S19-L25-ONLINE-OPERATOR-CHANGE-PRECURSOR-v1.0.0
+title: Online Local-Operator Change Before Recurring-Attractor Entry
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does a past-only change in local transition dynamics predict first entry into
+  the frozen recurring-attractor state during the next 32 selected-clock
+  observations, beyond time, exact-H history, and ordinary channel shifts?
+input:
+  cohort: frozen L23 400-shared-matrix cohort
+  matrix_firewall: exact frozen L24 200-development/200-validation split
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+task:
+  landmarks: [64, 96, 128, 160, 192]
+  event_horizon: 32
+  at_risk: no first onset before landmark
+  input_window: previous 64 observations only
+  statistical_unit: catalytic matrix
+features:
+  invariant_channels: exact frozen L22 eleven-channel sequence
+  comparison: first 32 versus most recent 32 observations
+  primary: channel shifts plus fixed ridge local-operator, covariance, energy-distance, and speed changes
+  ordinary_control: all channel-level mean, variance, and AR1 shifts
+  exact_h_control: changes in adjacent-H, chord, prior-H, recurrence, and running-centroid channels
+  time_control: normalized landmark only
+model:
+  estimator: development-only StandardScaler then L1 logistic liblinear
+  C: 0.5
+  candidate_weighting: equal total candidate weight and equal matrix weight within candidate
+  common_coordinate_across_candidates: true
+validation:
+  candidate_separate: true
+  matrix_bootstraps: 4096
+  development_label_permutations: 512
+  validation_label_permutations: 512
+  suffix_invariance: true
+  minimum_validation_events: 50
+success:
+  auroc_minimum_each_candidate: 0.60
+  bootstrap_lower_above_chance: true
+  incremental_over_exact_h_and_ordinary: true
+  auprc_above_prevalence: true
+  brier_below_training_prior: true
+  familywise_permutation_p_maximum: 0.05
+  directionally_agreeing_landmarks_minimum: 4
+  requires_untouched_confirmation: true
+interpretation:
+  target_is_completed_run_retrospective: true
+  predictors_are_suffix_invariant: true
+  prospective_confirmation_claim_permitted: false
+prohibited:
+  - new_simulation
+  - target_change
+  - landmark_or_horizon_search
+  - feature_or_hyperparameter_tournament
+  - validation_guided_change
+  - candidate_pooling_to_rescue_failure
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75

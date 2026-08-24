@@ -1,0 +1,122 @@
+{
+  "challenge": {
+    "adversarial": "exhaustive frozen-predictor maximum risk; first lexicographic tie",
+    "anchor": "release-end composition",
+    "history_unchanged_by_instantaneous_edits": true,
+    "random_doses": [
+      0,
+      2,
+      4,
+      8,
+      16
+    ],
+    "random_k_additions": "uniform with replacement outside removal labels",
+    "random_k_exact_transport": true,
+    "random_k_removals": "molecules sampled without replacement"
+  },
+  "claim_boundary": {
+    "permitted_if_passive": "controller-maintained compotype-like state",
+    "prohibited": [
+      "installed compotype without autonomous release-and-return gates",
+      "biological memory, autonomous agency, life, or error correction",
+      "real prebiotic chemistry or a universal origin-of-life mechanism",
+      "strict-eight or Phi/PhiID control"
+    ]
+  },
+  "classifier": {
+    "departure": "unrounded cosine < 0.7, launch included",
+    "exclusive_precedence": [
+      "held",
+      "returned",
+      "mode_recovered",
+      "lost"
+    ],
+    "incomplete_future": "lost",
+    "mode_recovery": "completed F24, >=5 inherited in final 6, final top1 share >=0.45",
+    "return": "strictly after departure, unrounded cosine > 0.9 for three consecutive post-fission states"
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "challenge_arms": [
+      "NONE",
+      "RANDOM_K2",
+      "RANDOM_K4",
+      "RANDOM_K8",
+      "RANDOM_K16",
+      "ADVERSARIAL"
+    ],
+    "challenge_branches_per_arm": 32,
+    "challenge_fissions": 24,
+    "challenge_futures": 331776,
+    "complete_release_and_challenge_replay": true,
+    "cr7_replicates": 6,
+    "matrices": 48,
+    "no_retry_or_replacement": true,
+    "origins": [
+      "MODEL_DOWN",
+      "RULE_DOWN",
+      "NOOP"
+    ],
+    "release_fissions": 60,
+    "release_trajectories": 1728
+  },
+  "external_written_but_passive_gates": [
+    "mean written-anchor similarity crosses below 0.7 for both origins and candidates",
+    "last-six inheritance written-minus-natural CI90 inside +/-0.03 for both origins and candidates",
+    "held+returned written-minus-natural CI90 inside +/-0.05 for K=0,2,4,8,16 for both origins and candidates",
+    "no dose-slope CI95 lower bound above zero",
+    "shared registered basin radius equals zero",
+    "release and challenge replay and readback exact"
+  ],
+  "format": "codex-intervention-cr8-release-challenge-v1",
+  "inference": {
+    "adversarial_excluded_from_dose_slope_and_basin_radius": true,
+    "bootstrap_repetitions": 4096,
+    "candidates_never_pooled": true,
+    "challenge_tost_margin": 0.05,
+    "random_dose_slope": "within-matrix OLS of written-minus-natural held+returned against K",
+    "randomization_repetitions": 4096,
+    "release_tost_margin": 0.03,
+    "unit": "whole catalytic matrix"
+  },
+  "protocol_id": "a67d8a74248a5a3ed3fd0a022ede306f1dd07ddcf188ba121f274798a9aea365",
+  "randomness": {
+    "challenge_future_seed_excludes_origin_and_arm": true,
+    "challenge_selection_stream_separate_from_future": true,
+    "common_random_streams_not_identical_realized_futures": true,
+    "release_future_seed_excludes_origin": true,
+    "seed_domains": {
+      "bootstrap": "91fcd9d3dd48d090b851d1a3bf2f7ea03fc3c94c07f1729e976de9c876322173",
+      "challenge_edit": "d9a8da067fb320a6c9dcf2f0b99e73531c6b08e33f06dfafb49649f7dd317f93",
+      "challenge_future": "96b33410dcfe7f638b1fbfcee432b41b203ecb41134eb3675e661b9bfd10e962",
+      "randomization": "3c535cfb46832731be5e4e05bf237fc9666ad685446052b240ddb839f881fa62",
+      "release_future": "de9d1efcc678b2812d492a1ce554932e2809a40e629bf8ac9a5ba056f2b5cac5",
+      "replay": "e173aef8c4126026c6c3ffb091d32392cf71ba08668599ff5c06db40b929f67e",
+      "smoke": "17501e3b548cfe2cb6253525042e25ac6e296e0330a89e2734e45fed9cb2b82e",
+      "validation": "561f02b01b013c1dcaa9cb33e423f44c44a719277e1e357927b71503b47ed465"
+    }
+  },
+  "release": {
+    "controller": null,
+    "final_inheritance_window": 6,
+    "interventions_after_release": 0,
+    "preparation_anchor": "exact CR7 fission-60 endpoint composition",
+    "unobserved_registered_boundaries_count_as_not_inherited": true
+  },
+  "status": "frozen_before_any_cr8_release_or_challenge_future",
+  "stop_rule": "seal CR8 and stop before CR9",
+  "upstream": {
+    "cr7_active_extension_excluded": true,
+    "cr7_complete_60_fission_gate_required": true,
+    "cr7_exact_replay_and_readback_required": true,
+    "cr7_primary_endpoints_used": [
+      "MODEL_DOWN",
+      "RULE_DOWN",
+      "NOOP"
+    ],
+    "cr7_registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70"
+  }
+}

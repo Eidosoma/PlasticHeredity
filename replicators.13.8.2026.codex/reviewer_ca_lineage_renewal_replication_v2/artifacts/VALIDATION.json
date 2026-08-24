@@ -1,0 +1,82 @@
+{
+  "additional_scientific_experiments": [],
+  "cohort_audit": {
+    "confirmation_pairs": 92,
+    "confirmation_pairs_by_launch": {
+      "launch0": 20,
+      "launch1": 30,
+      "launch2": 21,
+      "launch3": 21
+    },
+    "confirmation_unique_donors": 184,
+    "frozen_donors": 2048,
+    "local_stage1_stage2_donors": 612,
+    "local_stage1_stage2_pairs": 306,
+    "matching_objective": "maximum same-launch A/B cardinality under density caliper; then minimum total density difference; SHA256 deterministic tie-break",
+    "maximum_density_difference": 0.01953125,
+    "quarantine_source": "two already-exposed sealed-v1 engineering pairs",
+    "sealed_v1_donors": 196,
+    "sealed_v1_pairs": 98,
+    "source_exposed_donors": 1000,
+    "union_excluded_donors": 1617,
+    "untouched_by_launch_label": {
+      "launch0_A": 20,
+      "launch0_B": 166,
+      "launch1_A": 43,
+      "launch1_B": 30,
+      "launch2_A": 81,
+      "launch2_B": 21,
+      "launch3_A": 49,
+      "launch3_B": 21
+    },
+    "untouched_donors": 431
+  },
+  "cohort_counts": {
+    "confirmation": 92,
+    "quarantine": 2
+  },
+  "confirmation_donor_overlap_with_any_exposure": 0,
+  "confirmation_donors_unique": true,
+  "contract_checks": {
+    "decoder_splits": true,
+    "generation_sweeps": true,
+    "observe_start": true,
+    "process_noise": true,
+    "read_sweeps": true,
+    "rule": true,
+    "stale_retention": true
+  },
+  "further_source_code_access": false,
+  "one_time_source_specification_frozen": true,
+  "reference_recalibration": {
+    "max_abs_error": 0.0,
+    "sha256": "3743c46b28670e408c6a9631191bf53887108d72376b42a91a7574bc2886cb67"
+  },
+  "reset_audit": {
+    "launch0": {
+      "array_sha256": "4bda8b6cf18869919d88840e7454376ce6083dda8998f15039a8dc6793c688eb",
+      "live_cells": 5,
+      "state_hex": "000000000000000000000000000001c001000080000000000000000000000000"
+    },
+    "launch1": {
+      "array_sha256": "fa6c3f586a18b490dac7f3c01b76a12c742f094b50ce4d6abf2b44562c3629eb",
+      "live_cells": 3,
+      "state_hex": "0000000000000000000000000000038000000000000000000000000000000000"
+    },
+    "launch2": {
+      "array_sha256": "ff5b0b0cb635dc5cf3a8b7fb0a8ed3e07527606becdc3b045b8d11b815310957",
+      "live_cells": 6,
+      "state_hex": "0000000000000000000000000000038007000000000000000000000000000000"
+    },
+    "launch3": {
+      "array_sha256": "f502aefd1fde3f6eb475cf1517d9f1a6b7fb08798a6b8bf2a7e7e84a8af4d4de",
+      "live_cells": 4,
+      "state_hex": "0000000000000000000000000000018001800000000000000000000000000000"
+    }
+  },
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "snapshot_digest": "f83fe4945277da978519b478079719c416a8e162bc7eac0399d25e37003f511d",
+  "source_and_v1_outcomes_used_as_evidence": false,
+  "v1_disposition": "NON_COMPARABLE_MODEL_RUN",
+  "valid": true
+}

@@ -1,0 +1,17 @@
+{
+  "calculation": "716 / 0.88",
+  "controlPersistence": {"mean": 716.0, "sd": 198.0, "unit": "molecular_steps"},
+  "controlReplicationProbability": {"mean": 0.88, "sd": 0.03},
+  "descriptiveRatio": 813.6363636363636,
+  "descriptiveRatioEndpointRange": {
+    "lower": 569.2307692307692,
+    "lowerFormula": "(716-198)/(0.88+0.03)",
+    "upper": 1075.2941176470588,
+    "upperFormula": "(716+198)/(0.88-0.03)"
+  },
+  "evidentiaryClass": "SOFT_SECONDARY_FINGERPRINT_ONLY",
+  "paperLocation": "Table 1 control row",
+  "researchStepId": "E01-S12F-LATENT-TIMEBASE-INFERENCE-v1.0.0",
+  "schemaVersion": "E01-S12F-table-timebase-fingerprints-v1.0.0",
+  "warning": "The ratio of reported means need not equal the mean trajectory length, and persistence and probability are not statistically independent."
+}

@@ -1,0 +1,9 @@
+# S19-L38 decision summary
+
+**Classification:** RECURRENCE_INHERITANCE_OUTCOME_NOT_COMMITTOR_COMPATIBLE, INDEPENDENT_EVENT_TARGET_REQUIRES_REDEFINITION, NOT_PROMOTABLE_AS_CONFIRMED
+
+**All-group independent outcome:** `False`.
+
+**All-group H8 shooting coordinate:** `False`.
+
+**Next:** `SUSTAINED_HOMEOSTATIC_INHERITANCE_OUTCOME_CONSTRUCTION`.

@@ -1,0 +1,14 @@
+{
+  "all_exact": true,
+  "resilience": {
+    "matrix_effects_exact": true,
+    "metrics_exact": true,
+    "not_applicable": true
+  },
+  "resistance": {
+    "branch_arrays_reloaded": true,
+    "inference_draws_reloaded": true,
+    "matrix_effects_exact": true,
+    "metrics_exact": true
+  }
+}

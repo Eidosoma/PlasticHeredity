@@ -1,0 +1,12 @@
+{
+  "Fable": "No code, data, models, states, seeds, or result objects imported.",
+  "PhiRL": {
+    "commit": "a6d1d0d18c7551302724b7158c6ccdc4d3a33373",
+    "repository": "https://github.com/pigozzif/PhiRL",
+    "used_for": "independent semantic audit and synthetic parity fixture"
+  },
+  "preprint": {
+    "identifier": "arXiv:2607.28250v1",
+    "used_for": "visual verification of the typeset whole-minus-parts equation"
+  }
+}

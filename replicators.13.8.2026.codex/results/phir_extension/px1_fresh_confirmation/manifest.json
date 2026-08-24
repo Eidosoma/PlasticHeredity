@@ -1,0 +1,14 @@
+{
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 6417.254054828001,
+  "format": "codex-ch5-phir-extension-px1-result-v1",
+  "gates": {
+    "functional_flux_confirmation": false,
+    "heredity_manipulation_validity": false,
+    "material_confirmation": false
+  },
+  "lineages": 384,
+  "matrices": 24,
+  "registration_id": "e1987d2dea749f5e92a580da33836a4334175dbd1016d197aee7ff45fe4476bb"
+}

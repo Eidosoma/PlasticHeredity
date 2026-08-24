@@ -1,0 +1,10 @@
+{
+  "all_readback_checks_passed": true,
+  "format": "codex-intervention-cr10-readback-v1",
+  "kinetic_array_shape_exact": true,
+  "kinetic_lineage_rows_exact": true,
+  "policy_array_shape_exact": true,
+  "policy_lineage_rows_exact": true,
+  "policy_matrix_rows_exact": true,
+  "selected_action_rows_exact": true
+}

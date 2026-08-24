@@ -1,0 +1,34 @@
+{
+  "all_passed": true,
+  "checks": {
+    "all_atoms_retained": true,
+    "candidate02_factor_complete": true,
+    "candidate03_factorial_complete": true,
+    "codex_wrapper_record_exact": true,
+    "codex_wrapper_rng_exact": true,
+    "cpu_allocation_14h": true,
+    "draws_fixed": true,
+    "full_ports_fixed": true,
+    "future_seed_arm_and_variant_free": true,
+    "horizon_60": true,
+    "master_registration_exists": true,
+    "matrix_scale_24": true,
+    "no_48_matrix_campaign": true,
+    "no_external_code_execution": true,
+    "outgoing_rule_orientation_fixed": true,
+    "replicates_two": true,
+    "strict_eight_excluded": true
+  },
+  "format": "codex-ch5-phir-extension-px4-validation-v1",
+  "pytest_returncode": 0,
+  "pytest_stderr": "",
+  "pytest_stdout": ".....                                                                    [100%]\n",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  }
+}

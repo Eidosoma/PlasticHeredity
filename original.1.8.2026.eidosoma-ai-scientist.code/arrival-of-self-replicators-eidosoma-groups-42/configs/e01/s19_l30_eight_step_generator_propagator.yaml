@@ -1,0 +1,78 @@
+schema: eidosoma.e01.s19_l30.preregistration.v1
+research_step_id: S19-L30
+versioned_id: E01-S19-L30-EIGHT-STEP-GENERATOR-PROPAGATOR-COMMITTOR-COORDINATE-v1.0.0
+title: Eight-Step Generator Propagator Committor Coordinate
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does one fixed short propagator from the exact landmark state recover the
+  reliable H32 committor beyond static target geometry and frozen ordinary
+  controls without simulating the H32 endpoint?
+input:
+  states: exact 200 L28 restored states
+  target: exact L28 retrospective completed-run matrix-specific basin
+  response: exact independent L28 128-branch H32 q_hat
+  roles: exact L28 development/validation roles
+propagator:
+  selected_clock_horizon: 8
+  rationale: frozen one-quarter of H32, not outcome tuned
+  branches_per_state: 64
+  branch_halves: [32, 32]
+  new_domain_separated_seed_root: 7b08b24f28d2a075637d4602b3494533924e42104cd52f9a320f4dfb80cc853f
+  overlaps_l28_branch_streams: false
+  observed_suffix_used: false
+  H32_endpoint_simulated: false
+registered_models:
+  - DEVELOPMENT_PRIOR
+  - Q8_JEFFREYS_DIRECT
+  - Q8_CALIBRATED
+  - EIGHT_STEP_PROPAGATOR_MOMENTS
+  - read_only_L29_TARGET_GEOMETRY_CONTROL
+  - read_only_EXACT_H_TRACE_ANALOG
+  - read_only_ORDINARY_PATH_ANALOG
+primary_model: EIGHT_STEP_PROPAGATOR_MOMENTS
+model:
+  family: standardized L2-regularized aggregated-binomial logistic coordinate
+  inverse_regularization_C: 0.1
+  solver: L-BFGS
+  max_iterations: 2000
+  development_only: true
+controls:
+  - 512 development-label permutations
+  - target-reference permutation using unchanged streams
+  - exact full branch and model replay
+  - 32/32 branch-half reliability
+statistics:
+  matrix_bootstraps: 4096
+  primary_rank: held-out Spearman with L28 q_hat
+  calibration: [branchwise Brier, binomial log loss, calibration intercept, calibration slope]
+gate:
+  validation_spearman_point_above: 0.5
+  validation_spearman_lower95_above: 0.3
+  brier_improvement_lower95_above_zero_vs:
+    - development prior
+    - L29 target geometry
+    - exact-H trace
+    - ordinary path
+  development_label_permutation_p_at_most: 0.05
+  target_reference_control_worse_both_candidates: true
+  both_candidates_required: true
+interpretation:
+  pass: retrospective-basin-conditioned multistep shooting coordinate requiring untouched confirmation
+  fail: short propagator does not resolve the missing state representation
+prohibited:
+  - horizon_search
+  - branch_count_search
+  - target_or_threshold_change
+  - candidate_pooling
+  - H32_shooting_for_predictor
+  - observed_suffix_use
+  - transition_current_analysis
+  - intervention
+  - author_contact
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

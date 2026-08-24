@@ -1,0 +1,17 @@
+{
+  "archive_exact": true,
+  "complete_readback_exact": true,
+  "expected_row_counts": {
+    "candidate_diagnostics": 4,
+    "cell_summaries": 52,
+    "lineages": 288,
+    "matrix_effects": 1248
+  },
+  "replay_exact": true,
+  "row_counts": {
+    "candidate_diagnostics": 4,
+    "cell_summaries": 52,
+    "lineages": 288,
+    "matrix_effects": 1248
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "means": {
+    "control": {
+      "classic09.persistence": "305.85\u00b1143.02",
+      "classic09.probability": "0.39\u00b10.26",
+      "classic09.time_to_first": "103.73\u00b1145.13",
+      "quantile12.persistence": "848.38\u00b1302.43",
+      "quantile12.probability": "0.88\u00b10.00",
+      "quantile12.time_to_first": "9.52\u00b115.93",
+      "consistency_phi": "0.597\u00b10.159",
+      "phi_mean": "-1.230\u00b10.583"
+    },
+    "max": {
+      "classic09.persistence": "275.51\u00b1147.44",
+      "classic09.probability": "0.37\u00b10.26",
+      "classic09.time_to_first": "100.26\u00b1145.37",
+      "quantile12.persistence": "789.24\u00b1283.72",
+      "quantile12.probability": "0.88\u00b10.00",
+      "quantile12.time_to_first": "10.35\u00b116.42",
+      "consistency_phi": "0.569\u00b10.149",
+      "phi_mean": "-1.279\u00b10.622"
+    },
+    "min": {
+      "classic09.persistence": "267.91\u00b1129.56",
+      "classic09.probability": "0.38\u00b10.25",
+      "classic09.time_to_first": "86.13\u00b1110.16",
+      "quantile12.persistence": "748.27\u00b1277.33",
+      "quantile12.probability": "0.88\u00b10.00",
+      "quantile12.time_to_first": "8.08\u00b113.04",
+      "consistency_phi": "0.573\u00b10.141",
+      "phi_mean": "-1.092\u00b10.550"
+    }
+  },
+  "tests": {
+    "classic09.persistence": {
+      "max>control": 0.9413541778311347,
+      "min<control": 0.018513295867447908
+    },
+    "classic09.probability": {
+      "max>control": 0.7361810944630058,
+      "min<control": 0.4049039712774233
+    },
+    "quantile12.persistence": {
+      "max>control": 0.9309824770013644,
+      "min<control": 0.006390175441132725
+    },
+    "quantile12.probability": {
+      "max>control": 0.885828141015695,
+      "min<control": 0.1781471622425278
+    },
+    "consistency_phi": {
+      "max>control": 0.9549139131745399,
+      "min<control": 0.05936767633718148
+    },
+    "phi_mean": {
+      "max>control": 0.6315517365415289,
+      "min<control": 0.9659231931721334
+    }
+  }
+}

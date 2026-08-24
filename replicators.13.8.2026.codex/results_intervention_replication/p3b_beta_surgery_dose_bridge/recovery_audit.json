@@ -1,0 +1,28 @@
+{
+  "all_registered_states_retained": true,
+  "eligible_surgery_audit": {
+    "all_and_only_present_present": true,
+    "all_beta_positive": true,
+    "all_targeted_ratios_exact": true,
+    "expected_surgery_rows": 5736,
+    "format": "codex-intervention-p3b-surgery-audit-v1",
+    "maximum_norm_absolute_error": 1.3969838619232178e-09,
+    "maximum_norm_relative_error": 6.8833827526759706e-15,
+    "random_control_location_norm_positivity_audit_pass": true,
+    "random_maximum_absolute_log_change_sum": 3.9968028886505635e-14,
+    "states": 956,
+    "surgery_rows": 5736
+  },
+  "eligible_surgery_states": 956,
+  "format": "codex-intervention-p3b-singleton-recovery-audit-v1",
+  "maximum_norm_relative_error": 6.8833827526759706e-15,
+  "structural_no_action_audit_pass": true,
+  "structural_no_action_state_ids": [
+    "INTP3B_DOSE_BRIDGE_V1-c02-m030-g060",
+    "INTP3B_DOSE_BRIDGE_V1-c02-m030-g080",
+    "INTP3B_DOSE_BRIDGE_V1-c03-m030-g035",
+    "INTP3B_DOSE_BRIDGE_V1-c03-m030-g050"
+  ],
+  "structural_no_action_states": 4,
+  "total_states": 960
+}

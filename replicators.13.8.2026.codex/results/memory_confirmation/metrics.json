@@ -1,0 +1,229 @@
+{
+  "candidates": {
+    "02": {
+      "model_scores": {
+        "iid": {
+          "even_test_bits_per_transition": 0.6259615668231394,
+          "odd_test_bits_per_transition": 0.6346820090072939,
+          "pooled_bits_per_transition": 0.6302916072283177
+        },
+        "markov": {
+          "even_test_bits_per_transition": 0.5802560585940727,
+          "odd_test_bits_per_transition": 0.5864647063253113,
+          "pooled_bits_per_transition": 0.5833388948734793
+        },
+        "semimarkov": {
+          "even_test_bits_per_transition": 0.569801955979013,
+          "odd_test_bits_per_transition": 0.5753751974935037,
+          "pooled_bits_per_transition": 0.5725692882353304
+        }
+      },
+      "positive_destination_fraction": 0.8416952651070574,
+      "transitions": 1030942
+    },
+    "03": {
+      "model_scores": {
+        "iid": {
+          "even_test_bits_per_transition": 0.648344890101464,
+          "odd_test_bits_per_transition": 0.6528233116945925,
+          "pooled_bits_per_transition": 0.6505897745464135
+        },
+        "markov": {
+          "even_test_bits_per_transition": 0.6152174273294708,
+          "odd_test_bits_per_transition": 0.6180832572768461,
+          "pooled_bits_per_transition": 0.6166539729822085
+        },
+        "semimarkov": {
+          "even_test_bits_per_transition": 0.6060228160205295,
+          "odd_test_bits_per_transition": 0.6073130337784757,
+          "pooled_bits_per_transition": 0.6066695594579623
+        }
+      },
+      "positive_destination_fraction": 0.8330951077035414,
+      "transitions": 1095600
+    }
+  },
+  "confirmatory": true,
+  "decision_rule": "transition-weighted out-of-matrix gain > 0, matrix-bootstrap lower 95% bound > 0, Holm-adjusted whole-matrix sign-randomization p < 0.05, and positive point gain in both cross-fit directions, for both simulator candidates",
+  "family_size": 4,
+  "primary_contrasts": {
+    "markov_vs_iid": [
+      "iid",
+      "markov"
+    ],
+    "semimarkov_vs_markov": [
+      "markov",
+      "semimarkov"
+    ]
+  },
+  "primary_tests": [
+    {
+      "baseline": "iid",
+      "both_directions_positive": true,
+      "candidate": "02",
+      "contrast": "markov_vs_iid",
+      "directions": {
+        "even_to_odd": {
+          "gain_bits_per_transition": 0.04821730268198302,
+          "gain_ci95": [
+            0.03606456514936399,
+            0.06480408432517787
+          ],
+          "matrices": 95,
+          "test_fold": 1,
+          "transitions": 511903
+        },
+        "odd_to_even": {
+          "gain_bits_per_transition": 0.04570550822906585,
+          "gain_ci95": [
+            0.03806738787483052,
+            0.05399808454264524
+          ],
+          "matrices": 96,
+          "test_fold": 0,
+          "transitions": 519039
+        }
+      },
+      "enhanced": "markov",
+      "equal_state_macro_gain_bits": 0.045915812436693,
+      "gain_bits_per_transition": 0.04695271235483787,
+      "gain_ci95": [
+        0.039503410265992724,
+        0.056486440809919845
+      ],
+      "matrices": 191,
+      "passes_gate": true,
+      "randomization_p_holm": 0.000976324139614352,
+      "randomization_p_raw": 0.000244081034903588,
+      "states_with_transitions": 931,
+      "transitions": 1030942
+    },
+    {
+      "baseline": "markov",
+      "both_directions_positive": true,
+      "candidate": "02",
+      "contrast": "semimarkov_vs_markov",
+      "directions": {
+        "even_to_odd": {
+          "gain_bits_per_transition": 0.011089508831807038,
+          "gain_ci95": [
+            0.007868859321844467,
+            0.01554324273463923
+          ],
+          "matrices": 95,
+          "test_fold": 1,
+          "transitions": 511903
+        },
+        "odd_to_even": {
+          "gain_bits_per_transition": 0.010454102615060018,
+          "gain_ci95": [
+            0.008103575196323425,
+            0.013334018994380534
+          ],
+          "matrices": 96,
+          "test_fold": 0,
+          "transitions": 519039
+        }
+      },
+      "enhanced": "semimarkov",
+      "equal_state_macro_gain_bits": 0.01079353317176516,
+      "gain_bits_per_transition": 0.010769606638149047,
+      "gain_ci95": [
+        0.008656963150281196,
+        0.013493102171226413
+      ],
+      "matrices": 191,
+      "passes_gate": true,
+      "randomization_p_holm": 0.000976324139614352,
+      "randomization_p_raw": 0.000244081034903588,
+      "states_with_transitions": 931,
+      "transitions": 1030942
+    },
+    {
+      "baseline": "iid",
+      "both_directions_positive": true,
+      "candidate": "03",
+      "contrast": "markov_vs_iid",
+      "directions": {
+        "even_to_odd": {
+          "gain_bits_per_transition": 0.03474005441774547,
+          "gain_ci95": [
+            0.026751162821992552,
+            0.04623062646837769
+          ],
+          "matrices": 94,
+          "test_fold": 1,
+          "transitions": 549188
+        },
+        "odd_to_even": {
+          "gain_bits_per_transition": 0.03312746277199435,
+          "gain_ci95": [
+            0.027765247740782383,
+            0.03931679270145709
+          ],
+          "matrices": 96,
+          "test_fold": 0,
+          "transitions": 546412
+        }
+      },
+      "enhanced": "markov",
+      "equal_state_macro_gain_bits": 0.03520264364805968,
+      "gain_bits_per_transition": 0.03393580156420571,
+      "gain_ci95": [
+        0.0288939942392444,
+        0.04037586761897709
+      ],
+      "matrices": 190,
+      "passes_gate": true,
+      "randomization_p_holm": 0.000976324139614352,
+      "randomization_p_raw": 0.000244081034903588,
+      "states_with_transitions": 937,
+      "transitions": 1095600
+    },
+    {
+      "baseline": "markov",
+      "both_directions_positive": true,
+      "candidate": "03",
+      "contrast": "semimarkov_vs_markov",
+      "directions": {
+        "even_to_odd": {
+          "gain_bits_per_transition": 0.010770223498370132,
+          "gain_ci95": [
+            0.007994519267091039,
+            0.01455460070628316
+          ],
+          "matrices": 94,
+          "test_fold": 1,
+          "transitions": 549188
+        },
+        "odd_to_even": {
+          "gain_bits_per_transition": 0.009194611308940911,
+          "gain_ci95": [
+            0.006635712133226764,
+            0.012134205886883659
+          ],
+          "matrices": 96,
+          "test_fold": 0,
+          "transitions": 546412
+        }
+      },
+      "enhanced": "semimarkov",
+      "equal_state_macro_gain_bits": 0.01054724144998753,
+      "gain_bits_per_transition": 0.009984413524246,
+      "gain_ci95": [
+        0.007921282085720953,
+        0.012332765394456966
+      ],
+      "matrices": 190,
+      "passes_gate": true,
+      "randomization_p_holm": 0.000976324139614352,
+      "randomization_p_raw": 0.000244081034903588,
+      "states_with_transitions": 937,
+      "transitions": 1095600
+    }
+  ],
+  "support": {
+    "markov_vs_iid": true,
+    "semimarkov_vs_markov": true
+  }
+}

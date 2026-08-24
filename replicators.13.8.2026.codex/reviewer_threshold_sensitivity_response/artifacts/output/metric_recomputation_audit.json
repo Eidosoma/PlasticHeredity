@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "cr1_baseline_nonempty": true,
+    "cr1_rows": true,
+    "f12_event_counts": true,
+    "f12_rows": true,
+    "f32_event_counts": true,
+    "f32_rows": true
+  },
+  "f12_grid_cells": 60,
+  "f32_grid_cells": 27
+}

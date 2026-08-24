@@ -1,0 +1,93 @@
+schema: eidosoma.e01.s19_l49.preregistration.v1
+researchStepId: S19-L49
+versionedId: E01-S19-L49-LONGITUDINAL-PROCESS-COMMITTOR-RISK-TRAJECTORY-v1.0.0
+title: Longitudinal Process-Committor Risk Trajectory
+status: active_preoutcome_method_lock
+scientificQuestion: >-
+  Does the probability of a genuine future heredity break followed by a newly
+  certified three-fission hereditary episode vary reproducibly along the same
+  frozen lineage and forecast the independently observed next episode beyond
+  time, phase, mass, and ordinary inheritance history?
+inputs:
+  trajectoryCohort: S19-L23 frozen 400 shared matrices and candidate-2/candidate-3 trajectories
+  matrixFirewall: S19-L24 exact 200-development/200-validation assignment
+  newMatrices: 0
+  newPrimaryTrajectories: 0
+stateDesign:
+  sharedMatricesPerRole: 20
+  roles: [DEVELOPMENT, VALIDATION]
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  selectedClock: C1_SELECTED_DAUGHTER_RETAINED
+  landmarks: [64, 96, 128, 160, 192]
+  selection: sha256_rank_within_role_shared_across_candidates
+  stateCount: 400
+process:
+  threshold: 0.9
+  comparison: strict_greater_than
+  futureFissionHorizon: 12
+  requiredPostbreakInheritanceRun: 3
+  event: first_future_noninheritance_then_three_consecutive_inherited_fissions
+  completedRunTargetUsed: false
+  targetCentroidUsed: false
+shooting:
+  branchesPerState: 64
+  branchHalves: [0-31, 32-63]
+  workers: 8
+  numericalLibraryThreadsPerWorker: 1
+  newDomainSeparatedSeedRoot: 7ce4281f7613ee8b97ea89df3c60a0f924342523125a211826ff7ea1cd515c4f
+probabilities:
+  - BREAK_WITHIN_F12
+  - RUN3_GIVEN_BREAK
+  - JOINT_BREAK_AND_RUN3_WITHIN_F12
+  estimator: Jeffreys_Beta_half_half_posterior_mean
+primaryAnalyses:
+  - split_half_state_ranking
+  - corrected_within_matrix_longitudinal_variance
+  - fixed_landmark_risk_trajectory
+  - observed_next_episode_Brier_and_log_loss
+  - development_fit_validation_score_increment_beyond_past_controls
+pastControls:
+  - normalized_landmark
+  - current_mass
+  - distance_to_fission_mass
+  - generation_local_step
+  - completed_fissions
+  - prefix_inheritance_fraction
+  - prefix_trailing_inheritance_run
+  - latest_parent_daughter_H
+statistics:
+  independentUnit: catalytic_matrix
+  matrixBootstraps: 4096
+  matrixPermutations: 512
+  candidatesSeparate: true
+  rolesSeparate: true
+  repeatedLandmarksClusteredWithinMatrix: true
+gates:
+  measurement:
+    splitHalfSpearmanLower95: 0.3
+    correctedWithinMatrixVarianceLower95: 0.0
+    minimumIntermediateStatesPerValidationCandidate: 20
+  observedForecast:
+    minimumValidationJointEventsPerCandidate: 20
+    jointBrierImprovementOverDevelopmentPriorLower95: 0.0
+    jointBrierImprovementOverPastControlsLower95: 0.0
+    permutationPUpper: 0.05
+  interpretation: simulator_shooting_not_static_biomarker
+prohibited:
+  - new_catalytic_matrix
+  - new_primary_trajectory
+  - target_or_threshold_search
+  - horizon_or_run_length_search
+  - candidate_pooling
+  - completed_run_centroid
+  - Phi_or_emergence_metric
+  - prediction_architecture_search
+  - intervention
+resources:
+  cpuCores: 8
+  gpuHours: 0
+  cpuHoursCeiling: 100
+  wallClockHoursCeiling: 72
+  retainedGiBCeiling: 25
+  temporaryGiBCeiling: 75
+  validationReserveFraction: 0.10

@@ -1,0 +1,71 @@
+{
+  "checkpoint_reuse": {
+    "complete_replay_required": true,
+    "immutable_prefix_aggregate_sha256": "efc28a57eac888f74b2ae84e56013c856d6cb0a682842093dc1baa1accdcb66d",
+    "immutable_prefix_count": 363,
+    "prefix_checkpoints_loaded_before_seal": false,
+    "prefix_checkpoints_regenerated": false
+  },
+  "claim_boundary": {
+    "prohibited": [
+      "Phi or PhiID intervention",
+      "strict-eight control",
+      "autonomous agency",
+      "biological memory",
+      "error correction",
+      "a living organism",
+      "a universal origin-of-life mechanism",
+      "real prebiotic chemistry",
+      "cross-clean-room replication before the relevant untouched gate passes"
+    ],
+    "recovered_estimand": "natural-cohort intervention policy with structural no-action where a matched balanced random control is undefined"
+  },
+  "failure": {
+    "exception": "ValueError: P3b surgery requires at least two present types",
+    "futures_completed": 81312,
+    "inference_started": false,
+    "next_state_id": "INTP3B_DOSE_BRIDGE_V1-c02-m030-g060",
+    "replay_started": false,
+    "result_bundle_created": false,
+    "states_completed": 363
+  },
+  "format": "codex-intervention-p3b-singleton-recovery-amendment-v1",
+  "original_registration_id": "c1fe38be6a7e2b71eb5e288c9e238ff45c30d8fe388f2d21a879acea6dd5624e",
+  "outcome_firewall": {
+    "arm_means_computed_before_seal": false,
+    "candidate_differences_computed_before_seal": false,
+    "checkpoint_files_hashed_without_deserialization": true,
+    "contrasts_computed_before_seal": false,
+    "event_rates_computed_before_seal": false
+  },
+  "protocol_id": "b0d83175de537c1cd2f122353263af04db52e4f4cf3034e2bc9458ba8cfd365c",
+  "recovery_rule": {
+    "all_seven_arm_labels_use_original_beta": true,
+    "all_seven_arm_labels_use_same_registered_arm_free_future_seed": true,
+    "applies_to_every_later_state_meeting_the_rule": true,
+    "eligibility": "number of occupied types >= 2",
+    "future_retried": false,
+    "ineligible_action": "STRUCTURAL_NO_ACTION",
+    "matrix_or_state_replaced": false,
+    "matrix_retained": true,
+    "paired_contribution_to_every_contrast": 0.0,
+    "predictions_must_be_bitwise_identical_across_arms": true,
+    "records_must_be_bitwise_identical_across_arms_within_branch": true,
+    "state_retained": true
+  },
+  "status": "frozen_after_partial_generation_before_replay_or_inference",
+  "stop_rule": {
+    "launch_next_phase": false,
+    "seal_result_after_recovery": true
+  },
+  "unchanged": {
+    "arms_and_doses": true,
+    "cohort_seed_and_state_order": true,
+    "eligible_state_interventions": true,
+    "endpoint_and_horizon": true,
+    "frozen_predictor": true,
+    "future_seed_and_branch_halves": true,
+    "inference_and_gates": true,
+    "sealed_p3b_source": true
+  }
+}

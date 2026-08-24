@@ -1,0 +1,211 @@
+{
+  "arms": {
+    "BALANCED_LOG_RANDOM": {
+      "frobenius_fraction": 0.5,
+      "location": "all and only P x P",
+      "required_null": false,
+      "sum_log_change": 0.0
+    },
+    "LOOSEN": {
+      "factor": 0.6666666666666666
+    },
+    "NOOP": {
+      "changed_edges": 0
+    },
+    "THROUGHPUT_NEUTRAL_RANDOM": {
+      "frobenius_fraction": 0.5,
+      "location": "all and only P x P",
+      "maximum_attempts": 4096,
+      "positivity": "strict; no clipping",
+      "required_null": true,
+      "throughput": "x.T @ beta @ x preserved"
+    },
+    "TIGHTEN": {
+      "factor": 1.5
+    },
+    "order": [
+      "LOOSEN",
+      "TIGHTEN",
+      "BALANCED_LOG_RANDOM",
+      "THROUGHPUT_NEUTRAL_RANDOM",
+      "NOOP"
+    ],
+    "singleton_contract": "all-arm structural NOOP when |P| < 2"
+  },
+  "claim_boundary": {
+    "cross_clean_room_requires_external_compatibility": true,
+    "passing_confirmation_may_support": "Codex-specific causal catalytic-throughput control of simulated JOINT_BREAK_RUN3",
+    "prohibited": [
+      "repair or rescue of P3b",
+      "control of strict-eight",
+      "life or living organism",
+      "agency or autonomous organization",
+      "biological memory or error correction",
+      "real prebiotic chemistry",
+      "universal origin-of-life mechanism"
+    ]
+  },
+  "classification": "new additive prospective clarification program",
+  "confirmation": {
+    "bootstrap_repetitions": 4096,
+    "branches": 32,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "compatibility_landmark": [
+      60
+    ],
+    "equivalence_margin": 0.025,
+    "frozen_before_pilot_outcomes": true,
+    "gates_in_every_candidate_half": [
+      "LOOSEN - TIGHTEN > 0, 95% lower > 0, Holm p < 0.05",
+      "state-centered event slope on log throughput ratio < 0, 95% upper < 0",
+      "mean within-state Spearman < 0, 95% upper < 0",
+      "neutral-minus-NOOP 90% CI strictly inside +/-0.025",
+      "exact replay and readback"
+    ],
+    "holm_family": 4,
+    "landmarks": [
+      20,
+      35,
+      50,
+      60,
+      65,
+      80
+    ],
+    "matrices": 160,
+    "primary_futures": 307200,
+    "primary_landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "randomization_repetitions": 4096
+  },
+  "endpoint": {
+    "break": "H <= 0.9",
+    "horizon": 12,
+    "inheritance": "unrounded float64 H > 0.9",
+    "name": "JOINT_BREAK_RUN3",
+    "renewal": "three consecutive inherited fissions strictly after break"
+  },
+  "external_response": {
+    "may_change_protocol_after_archive": false,
+    "required_before_registration": true,
+    "used_as_fitting_target": false
+  },
+  "format": "codex-intervention-p3c-throughput-v1",
+  "inference": {
+    "candidate_pooling": false,
+    "future_seed_includes_arm": false,
+    "intervention_future_retries": 0,
+    "matrix_replacement": false,
+    "states_and_landmarks_stay_with_matrix": true,
+    "unit": "whole catalytic matrix"
+  },
+  "lifecycle": {
+    "cpu_budget_ceiling_hours": 30,
+    "cpu_budget_expected_hours": [
+      14,
+      20
+    ],
+    "mandatory_stops": [
+      "pilot",
+      "confirmation",
+      "resilience"
+    ]
+  },
+  "pilot": {
+    "advancement_scope": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "branch_halves": {
+      "A": [
+        0,
+        15
+      ],
+      "B": [
+        16,
+        31
+      ]
+    },
+    "branches": 32,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "cannot_support_confirmation_claim": true,
+    "complete_replay": true,
+    "gates_in_every_candidate_half": [
+      "LOOSEN - TIGHTEN > 0",
+      "state-centered event slope on log throughput ratio < 0",
+      "abs(THROUGHPUT_NEUTRAL_RANDOM - NOOP) <= 0.025",
+      "surgery audit, replay, and readback exact"
+    ],
+    "landmarks": [
+      20,
+      35,
+      50,
+      60,
+      65,
+      80
+    ],
+    "matrices": 40,
+    "primary_futures": 76800
+  },
+  "protocol_id": "83834e9b0e5e02a4dc4f86bddce7892963f848b4dfc988dc30ff906c1cb79228",
+  "resilience": {
+    "branches": 32,
+    "future_horizon": 8,
+    "identical_post_break_daughter_across_arms": true,
+    "minimum_eligible_matrices_per_candidate": 120,
+    "natural_break_acquisition_horizon": 12,
+    "no_retries_or_replacements": true,
+    "run_only_after_confirmation_pass": true
+  },
+  "resistance": {
+    "endpoint": "first break within F6",
+    "registered_before_confirmation": true,
+    "reuses_confirmation_futures": true
+  },
+  "sealed_predecessor": {
+    "p3b_formal_specificity_gate_passed": false,
+    "p3b_not_rescued_by_p3c": true,
+    "p3b_target_contrast_succeeded": true,
+    "p3b_unchanged": true
+  },
+  "seed_domains": {
+    "confirmation_balanced_selection": "58ca08afdd9b05133cf9f2b0e669e117e3a8a2a1d6570c5bc1054861f8e68385",
+    "confirmation_bootstrap": "49463a528520f5e218b123718b8959124bbfbd6d0a724fc07284ad9e6d28fe6a",
+    "confirmation_cohort": "7d1bdfea600a8520d63b88590c754eeff6a80efd23551056fcf129c004adadd3",
+    "confirmation_future": "db910da51cbd33325182ba4491dd9798f19de601725db50fa0aa392fed48a712",
+    "confirmation_neutral_selection": "8d7bc24cdbc78904d724456c0deca8f03ed2b866b32468424e12c06f64270f79",
+    "confirmation_randomization": "f475122f4f27b5c1ac85617cbb26729696b0b7388a05a63ac0f3883648b317c3",
+    "pilot_balanced_selection": "c9c2c34832fe2d2edf5419161a5c7b26ab939ad2b9f44522c3d3e577d49cb5d9",
+    "pilot_bootstrap": "68ff6dc066359abe7b9a2e50b94e902ed20c4215cc44feb22a631f2cdbebeb5e",
+    "pilot_cohort": "53c1efbe08406d846c77aba4c10fedc76e1ba2cbc610b71759b1bc70c56593c2",
+    "pilot_future": "3417ebf325972781b3fe966f67e4d8e7c5ccd985ce6dc652168c01ecaf9f66e8",
+    "pilot_neutral_selection": "db00cc846f926fd82851ba696e9b2ec9814bd111aed18dd5c9e1ef917e5bf7a3",
+    "pilot_randomization": "091019c52315c379a90d6c88a8d45eb566958544895168546924f232556ae5a6",
+    "replay": "bc9cad3d0135a988756a3bfb2f0e0cfc1b8e0a59198f030b822ec36dcb820b4e",
+    "resilience_acquisition": "ac578b0298275b4376791f36edc710ff1590bd586c0759eefe508c46d87f1eda",
+    "resilience_balanced_selection": "2411e3dc9cbe4a64818521a2afd61c973302365755cbf5915f6e73b602393003",
+    "resilience_bootstrap": "4133e7e316a0b2403d9a47b3052485992a4c085623a25b8790d375a8e384a2d6",
+    "resilience_future": "c26fcf52c9aaf17c198324d583f7b4740ad56b8be49dc2d9c38b502e2aed3bf4",
+    "resilience_neutral_selection": "89cb584c3367dbf64387fe697fb715c94e22618d9c6f127ad32a172aa5e159b9",
+    "resilience_randomization": "204509b13c6a15bd5bfb29a166e2193d6a9e91046bc49e3098090f613e1db82c",
+    "smoke_balanced_selection": "498034dac4699a540d52f9835315d8e577dbfd8f2dddd0f99721bace94acd3ec",
+    "smoke_cohort": "a593321be2b15b1d563ff282c5939cbd94dffa2b1aa2abe6c060ade75dec1af6",
+    "smoke_future": "695b7035ebfc2929981bacef1f7ab99c60a680318df98f10c1d06e8dfa1daca8",
+    "smoke_neutral_selection": "e804b370cd7411441d3947ed6329d47185abae4144ed21e0dd2b8bb02e1da2d6",
+    "validation": "7b118a9c1a93231d8079ca99493a4487423af6571420c8cc6e292a13b5350d49"
+  },
+  "status": "frozen_before_any_p3c_scientific_matrix"
+}

@@ -1,0 +1,7 @@
+artifacts/work/
+artifacts/smoke/
+artifacts/matplotlib/
+artifacts/*.log
+artifacts/*.pid
+__pycache__/
+*.pyc

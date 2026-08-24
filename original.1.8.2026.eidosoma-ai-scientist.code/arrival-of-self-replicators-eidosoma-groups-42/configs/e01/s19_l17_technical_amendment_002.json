@@ -1,0 +1,19 @@
+{
+  "schema": "eidosoma.e01.s19.l17.technical_amendment.v1",
+  "amendmentId": "S19-L17-TECHNICAL-AMENDMENT-002",
+  "authorizedScope": "value-preserving empty failure-ledger schema finalization only",
+  "observedFailure": "The successful run had zero failures, and pandas serialized the zero-column internal frame as a one-byte CSV rather than a schema-bearing zero-row failure ledger.",
+  "changes": [
+    "Freeze the empty failure ledger columns as candidateId, matrixIndex, stage, status, and reason.",
+    "Regenerate the loop and S19-root artifact manifests after adding the header-only ledger and this amendment record."
+  ],
+  "scientificValuesChanged": false,
+  "scientificMethodChanged": false,
+  "sourcePathChanged": false,
+  "trajectoryChanged": false,
+  "seedChanged": false,
+  "scalarChanged": false,
+  "gateChanged": false,
+  "classificationRuleChanged": false,
+  "status": "FINALIZED_BEFORE_HANDOFF"
+}

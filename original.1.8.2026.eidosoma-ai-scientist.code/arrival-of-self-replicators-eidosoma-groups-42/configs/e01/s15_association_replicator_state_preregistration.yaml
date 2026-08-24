@@ -1,0 +1,254 @@
+schema: eidosoma.e01.s15_association_replicator_state_preregistration.v1
+researchStepId: S15
+stepNumber: 15
+versionedStepId: E01-S15-ASSOCIATION-REPLICATOR-STATE-ANALYSES-v1.0.0
+title: Reconstruct Association and Replicator-State Analyses
+dateFrozen: '2026-08-07'
+humanDecision: OPTION_2_BOUNDED_PAPER_DIRECTED_RECONSTRUCTION
+evidenceClass: PAPER_DIRECTED_RETROSPECTIVE_ASSOCIATION_RECONSTRUCTION
+
+frozenQuestion: >-
+  Do the frozen S13Y branch's paper-facing Figure 3 and Figure 4 associations
+  reproduce separately for LEVEL_ANALYSIS and CHANGE_ANALYSIS, for both
+  simulator candidates, and survive trajectory-aware controls without being
+  misread as prediction or causal control?
+
+scope:
+  onlyActiveStep: S15
+  nextStepsQueuedInactive: [S16, S17, S18]
+  preserveStepsByteExact: S01-S14
+  newTrajectoriesPermitted: false
+  sourceRefitsPermitted: false
+  upstreamMethodChangesPermitted: false
+  authorContactPermitted: false
+  candidatePoolingRole: SECONDARY_DESCRIPTIVE_ONLY
+  predictionClaimsPermitted: false
+  causalControlClaimsPermitted: false
+
+frozenInputs:
+  root: /artifacts/research_steps/S13Y
+  completedValues: full_source_values.parquet
+  pastOnlyValues: prefix_endpoint_values.parquet
+  circularityResults: circularity_control_results.csv
+  trajectoryManifest: trajectory_manifest.parquet
+  simulationSummary: simulation_summary.parquet
+  s14ContextRoot: /artifacts/research_steps/S14
+  candidates:
+    - candidateId: S12F-CANDIDATE-02
+      h: 0.6031526490073492
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+    - candidateId: S12F-CANDIDATE-03
+      h: 0.5613315384859516
+      daughterRule: RANDOM_NONEMPTY
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+  informationBranch:
+    implementationId: PHIRL_REGULARIZED_SOURCE
+    metric: emergence
+    identity: synergy_plus_downward_causation
+    primaryMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    comparatorMode: PAST_ONLY_PREFIX_ENDPOINT
+    preprocessing: additive_0.5_closure_dropped_component_CLR
+    partition: source_confirmed_Fiedler
+    localSemantics: source_confirmed_local_PhiID
+  label:
+    primaryId: MOL_ADJACENT_INCOMING_H900
+    primaryDefinition: Y_t_equals_indicator_incomingCosineH_t_strictly_greater_than_0.9
+    primaryAlignment: SAME_STATE
+    historicalComparatorId: HISTORICAL_H090_REPLICATOR
+    historicalComparatorRole: FROZEN_POST_FISSION_PROPAGATED_COMPARATOR
+    pastOnlyComparatorId: MOL_ADJACENT_INCOMING_H900
+    pastOnlyAlignment: CURRENT_ENDPOINT
+
+analyses:
+  - analysisId: LEVEL_ANALYSIS
+    value: emergence_t
+    target: Y_t
+    initialObservationPolicy: retain
+  - analysisId: CHANGE_ANALYSIS
+    value: emergence_t_minus_emergence_previous_observed_endpoint
+    target: Y_t
+    initialObservationPolicy: drop_first_per_trajectory
+    completedSpacing: consecutive_selected_molecular_states
+    pastOnlySpacing: consecutive_eligible_post_fission_prefix_endpoints
+noOutcomeBasedReplacement: true
+
+branches:
+  - branchId: COMPLETED_FIT_PRIMARY
+    temporalMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    labelId: MOL_ADJACENT_INCOMING_H900
+    comparisonRole: PRIMARY_PAPER_FACING_RETROSPECTIVE
+  - branchId: COMPLETED_FIT_HISTORICAL_COMPARATOR
+    temporalMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    labelId: HISTORICAL_H090_REPLICATOR
+    comparisonRole: FROZEN_HISTORICAL_POST_FISSION_COMPARATOR
+  - branchId: PAST_ONLY_PREFIX_COMPARATOR
+    temporalMode: PAST_ONLY_PREFIX_ENDPOINT
+    labelId: MOL_ADJACENT_INCOMING_H900
+    comparisonRole: PAST_ONLY_CURRENT_ENDPOINT_COMPARATOR
+
+correlation:
+  primary: scipy_stats_spearmanr_two_sided_with_average_ranks
+  secondary: scipy_stats_pearsonr_two_sided
+  significanceAlpha: 0.05
+  eligibility: at_least_three_values_nonconstant_analysis_value_and_both_binary_states
+  signs: strict_greater_than_zero_strict_less_than_zero_exact_zero
+  multiplicityRole: unadjusted_paper_like_runwise_diagnostic
+  summaries:
+    - positive_negative_zero_undefined_counts
+    - positive_significant_negative_significant_nonsignificant_counts
+    - arithmetic_mean
+    - median
+
+oneSampleDiagnostics:
+  paperLikePrimary: scipy_stats_ttest_1samp_against_zero_two_sided
+  directionalSecondary: scipy_stats_ttest_1samp_against_zero_greater
+  robustSecondary:
+    - scipy_stats_wilcoxon_greater_zero_method_approx
+    - scipy_stats_binomtest_positive_signs_greater_than_one_half
+  analysisUnit: defined_runwise_coefficients
+  noMultiplicityCorrection: true
+
+stateComparison:
+  summaries:
+    - within_run_replicator_and_drift_means
+    - within_run_replicator_and_drift_medians
+    - replicator_minus_drift_mean_and_median_differences
+    - across_run_median_and_sample_standard_deviation
+  mannWhitney:
+    implementation: scipy_stats_mannwhitneyu_asymptotic_with_tie_correction
+    alternatives: [greater, two-sided]
+    scopes:
+      - WITHIN_RUN
+      - POINT_POOLED_WITHIN_SCOPE
+      - RUN_SUMMARY_UNPAIRED_WITHIN_SCOPE
+    interpretation: PAPER_LIKE_DIAGNOSTIC_NOT_DEPENDENCE_AWARE
+  fisher:
+    implementation: scipy_stats_combine_pvalues_method_fisher
+    inputs: all_eligible_within_run_mann_whitney_pvalues
+    alternatives: [greater, two-sided]
+    excludedRunPolicy: exclude_only_runs_without_both_states
+    interpretation: PAPER_LIKE_DIAGNOSTIC
+
+dependenceAwareControls:
+  resamplingReplicates: 4096
+  seedRootHex: 8a8e32f1c848880425008c43a8f6bd1198758f36a241c7d27fc1ddcb599896b7
+  generator: numpy_PCG64DXSM
+  seedDerivation: sha256_seed_root_plus_null_delimited_domain_tokens_first_128_bits
+  trajectoryBootstrap:
+    candidateSpecificUnit: trajectory
+    pooledSecondaryUnit: shared_matrix_index_cluster
+    interval: percentile_2.5_97.5
+    metrics:
+      - medianSpearman
+      - meanSpearman
+      - positiveSpearmanFraction
+      - positiveSignificantSpearmanFraction
+      - medianPearson
+      - meanPearson
+      - medianMeanDifference
+      - meanMeanDifference
+      - positiveMeanDifferenceFraction
+      - medianMedianDifference
+      - positiveMedianDifferenceFraction
+      - medianReplicatorMean
+      - medianDriftMean
+  circularShift:
+    unit: trajectory
+    shift: independently_sampled_nonzero_cyclic_rotation_per_trajectory_and_replicate
+    preserves: cyclic_binary_label_sequence_prevalence_and_episode_durations
+    metrics:
+      - medianSpearman
+      - medianPearson
+      - medianMeanDifference
+    pvalues:
+      - positive_one_sided_plus_one_correction
+      - two_sided_absolute_plus_one_correction
+
+ordinaryStabilityAudit:
+  scope: COMPLETED_FIT_PRIMARY_ONLY
+  predictors:
+    - incomingCosineH
+    - negativeEuclideanL2ClosedCompositionChange
+  analyses: [LEVEL_ANALYSIS, CHANGE_ANALYSIS]
+  correlations: [Spearman, Pearson]
+  interpretation: descriptive_coupling_not_incremental_information
+  exactBoundary:
+    conditionalEntropyYGivenExactHBits: 0
+    unrestrictedConditionalInformationEmergenceYGivenExactHBits: 0
+
+paperTargets:
+  E01-C015:
+    statistic: positive_runwise_Spearman_count
+    target: 73_of_100
+  E01-C016:
+    statistic: positive_and_p_less_than_0.05_runwise_Spearman_count
+    target: 54_of_100_and_54_of_73_positive_runs
+  E01-C017:
+    statistic: mean_runwise_Spearman
+    target: 0.139
+  E01-C018:
+    statistic: one_sample_t_test_of_runwise_Spearman
+    target: positive_mean_and_two_sided_p_less_than_0.05
+  E01-C019:
+    statistic: higher_replicator_mean_count
+    target: 57_of_100
+  E01-C020:
+    statistic: Mann_Whitney_higher_during_replication
+    target: p_less_than_0.001_scope_unreported
+  E01-C021:
+    statistic: Fisher_combined_within_run_Mann_Whitney
+    target: p_less_than_0.001
+  levelChangeDiscrepancy: >-
+    Results names the Phi-r trajectory level; Figure 3 says changes in Phi-r.
+    Both analyses are mandatory and neither may replace the other.
+
+classification:
+  candidateAssociationGate: >-
+    mean Spearman greater than zero, two-sided one-sample t p less than 0.05,
+    trajectory-bootstrap median lower 95 percent bound greater than zero, and
+    positive circular-shift p at most 0.05
+  candidateStateGate: >-
+    more than half of defined runs have positive mean difference,
+    Fisher-greater p less than 0.001, trajectory-bootstrap median mean-
+    difference lower 95 percent bound greater than zero, and positive
+    circular-shift p at most 0.05
+  analysisResemblance: both_candidate_association_and_state_gates_pass
+  supportive: both_LEVEL_ANALYSIS_and_CHANGE_ANALYSIS_resemblance_pass
+  constrainingContradictory: >-
+    exactly one named analysis passes, candidate directions disagree, or a
+    dependence-aware gate contradicts a paper-like diagnostic
+  null: frozen_values_or_defined_trajectory_count_insufficient
+  componentVocabulary:
+    - LABEL_COUPLED_RETROSPECTIVE_RESEMBLANCE
+    - RETROSPECTIVE_TEMPORAL_FITTING_DEPENDENCE
+    - NOT_SUPPORTED_WITHIN_TESTED_SCOPE
+  noProspectiveOrCausalInference: true
+
+validation:
+  required:
+    - exact_S13Y_and_S14_frozen_input_hashes_before_and_after
+    - zero_generated_trajectories_and_zero_source_refits
+    - exact_candidate_simulator_information_and_component_identity
+    - exact_completed_and_prefix_H_label_identity
+    - strict_candidate_separation_and_secondary_only_pooling
+    - strict_LEVEL_ANALYSIS_CHANGE_ANALYSIS_separation
+    - independent_runwise_statistic_recomputation
+    - deterministic_two_pass_frame_hash_replay
+    - exact_bootstrap_and_circular_shift_seed_replay
+    - schema_cardinality_figure_and_artifact_hash_checks
+    - repository_tests_lint_and_compilation
+
+forbiddenAfterOutcomeAccess:
+  - candidate_selection_or_pooling_as_primary
+  - level_change_replacement
+  - label_threshold_or_alignment_change
+  - preprocessing_partition_information_scalar_or_source_change
+  - source_refit
+  - trajectory_generation
+  - resampling_count_seed_or_test_change
+  - outcome_guided_exclusion
+  - prediction_or_causal_control_claim
+  - S16_execution

@@ -1,0 +1,31 @@
+{
+  "cr5_predecessor_unchanged": true,
+  "cr5r_gate": true,
+  "cr6_launched": false,
+  "declared_cpu_budget_hours": 12.0,
+  "eligibility_classification": "eligible_for_registered_confirmation",
+  "eligible_broken_states": 1936,
+  "format": "codex-intervention-cr5r-result-v1",
+  "integrity": {
+    "all_pass": true,
+    "artifact_readback_exact": true,
+    "future_replay_exact_or_not_launched": true,
+    "natural_break_acquisition_replay_exact": true
+  },
+  "mandatory_stop_after_this_stage": true,
+  "no_refit_recalibration_retry_replacement_or_subselection": true,
+  "primary_futures": 495616,
+  "registration_id": "10d582c3ac6b3f7f519d81cef1c4bc330d2b2c6b1281e69f3aec9a749022c42b",
+  "replay_futures": 495616,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_matrices": 250,
+  "source_states": 2500
+}

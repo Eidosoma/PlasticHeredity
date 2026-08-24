@@ -1,0 +1,80 @@
+schema: eidosoma.e01.s19_l24.preregistration.v1
+research_step_id: S19-L24
+versioned_id: E01-S19-L24-EVENT-ALIGNED-REACTION-COORDINATE-v1.0.0
+title: Event-Aligned Cross-Candidate Pre-Onset Reaction Coordinate
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Was a time-localized organization precursor averaged away by the fixed
+  landmark, and can one development-fitted reaction coordinate distinguish a
+  32-observation window immediately before onset from a non-imminent window at
+  the same absolute time on a held-out matrix half in both candidates?
+input:
+  cohort: frozen L23 400-shared-matrix cohort
+  trajectory_payloads: exact hash-validated L23 primary caches
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+matrix_firewall:
+  method: SHA256 rank of L24_SPLIT matrix identity
+  development_shared_matrices: 200
+  validation_shared_matrices: 200
+  paired_across_candidates: true
+matching:
+  event_onset_min_inclusive: 128
+  event_onset_max_inclusive: 256
+  window_length: 32
+  event_window: indices [onset-32, onset)
+  control_window_endpoint: exact event onset
+  control_onset_minimum_lead: 96
+  control_must_have_onset_after: 256
+  control_reuse: false
+  event_matrix_as_control: false
+  greedy_order: descending event onset
+  eligible_control_choice: smallest sufficient onset then matrix index
+coordinate:
+  features: fixed_28_permutation_invariant_window_features
+  scaler: development_only_standard_scaler
+  model: L1_logistic_liblinear
+  C: 0.5
+  candidate_weighting: equal_total_weight_per_candidate
+  target: imminent_event_window_vs_time_matched_non_imminent_window
+controls:
+  - exact_H_window_logistic
+  - ordinary_composition_stability_window_logistic
+  - time_only_endpoint
+  - temporal_reversal
+  - feature_row_permutation
+  - 512_development_pair_label_permutations
+  - 4096_validation_pair_swap_permutations
+  - suffix_invariance
+validation:
+  candidate_separate: true
+  pair_bootstraps: 4096
+  minimum_pairs_per_candidate: 20
+  coordinate_lock_written_before_validation_open: true
+success:
+  auroc_minimum: 0.65
+  bootstrap_lower_above_chance: true
+  paired_score_difference_lower_above_zero: true
+  point_improvement_over_exact_H_and_ordinary_controls: true
+  pair_swap_permutation_p_maximum: 0.05
+  same_direction_both_candidates: true
+  requires_future_untouched_online_confirmation: true
+interpretation:
+  event_alignment_is_retrospective: true
+  prospective_claim_permitted: false
+  author_identity_claim_permitted: false
+prohibited:
+  - new_simulation
+  - target_change
+  - window_search
+  - onset_range_search
+  - control_matching_search
+  - hyperparameter_tournament
+  - validation_guided_coordinate_change
+  - candidate_pooling_to_rescue_failure
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75

@@ -1,0 +1,180 @@
+{
+  "active_feedback_not_passive_persistence": true,
+  "additional_fissions": 60,
+  "candidates": [
+    {
+      "active_control": true,
+      "candidate": "02",
+      "fissions_1_120": {
+        "arm_means": {
+          "MODEL_DOWN": {
+            "bootstrap_ci95": [
+              0.9887839988425926,
+              0.9970775462962963
+            ],
+            "mean_inherited_fraction": 0.9933738425925925
+          },
+          "NOOP": {
+            "bootstrap_ci95": [
+              0.879246238425926,
+              0.9321144386574074
+            ],
+            "mean_inherited_fraction": 0.9072337962962962
+          },
+          "RULE_DOWN": {
+            "bootstrap_ci95": [
+              0.9855034722222222,
+              0.9960069444444445
+            ],
+            "mean_inherited_fraction": 0.9914062500000002
+          }
+        },
+        "contrasts": {
+          "model_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.0637839988425926,
+              0.11162109375
+            ],
+            "estimate": 0.08614004629629629
+          },
+          "rule_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.06230830439814816,
+              0.10893012152777777
+            ],
+            "estimate": 0.0841724537037037
+          }
+        }
+      },
+      "fissions_61_120": {
+        "arm_means": {
+          "MODEL_DOWN": {
+            "bootstrap_ci95": [
+              0.989525462962963,
+              0.997800925925926
+            ],
+            "mean_inherited_fraction": 0.9941550925925927
+          },
+          "NOOP": {
+            "bootstrap_ci95": [
+              0.8833333333333332,
+              0.9341579861111111
+            ],
+            "mean_inherited_fraction": 0.9103009259259259
+          },
+          "RULE_DOWN": {
+            "bootstrap_ci95": [
+              0.9882740162037038,
+              0.9968171296296298
+            ],
+            "mean_inherited_fraction": 0.9930555555555557
+          }
+        },
+        "contrasts": {
+          "model_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.06168981481481478,
+              0.10827546296296295
+            ],
+            "estimate": 0.08385416666666663
+          },
+          "rule_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.06065538194444441,
+              0.10750144675925924
+            ],
+            "estimate": 0.08275462962962961
+          }
+        }
+      }
+    },
+    {
+      "active_control": true,
+      "candidate": "03",
+      "fissions_1_120": {
+        "arm_means": {
+          "MODEL_DOWN": {
+            "bootstrap_ci95": [
+              0.985109230324074,
+              0.9953414351851851
+            ],
+            "mean_inherited_fraction": 0.9906539351851853
+          },
+          "NOOP": {
+            "bootstrap_ci95": [
+              0.8693033854166665,
+              0.9235532407407407
+            ],
+            "mean_inherited_fraction": 0.8981770833333332
+          },
+          "RULE_DOWN": {
+            "bootstrap_ci95": [
+              0.9824652777777778,
+              0.9943287037037036
+            ],
+            "mean_inherited_fraction": 0.9892071759259259
+          }
+        },
+        "contrasts": {
+          "model_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.06909722222222224,
+              0.11782407407407412
+            ],
+            "estimate": 0.09247685185185188
+          },
+          "rule_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.06825086805555555,
+              0.11593243634259259
+            ],
+            "estimate": 0.09103009259259259
+          }
+        }
+      },
+      "fissions_61_120": {
+        "arm_means": {
+          "MODEL_DOWN": {
+            "bootstrap_ci95": [
+              0.9849754050925926,
+              0.9962384259259259
+            ],
+            "mean_inherited_fraction": 0.9912037037037038
+          },
+          "NOOP": {
+            "bootstrap_ci95": [
+              0.8748842592592592,
+              0.9269097222222222
+            ],
+            "mean_inherited_fraction": 0.9020254629629628
+          },
+          "RULE_DOWN": {
+            "bootstrap_ci95": [
+              0.9846643518518517,
+              0.9967013888888889
+            ],
+            "mean_inherited_fraction": 0.9916666666666666
+          }
+        },
+        "contrasts": {
+          "model_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.0667679398148148,
+              0.11334635416666666
+            ],
+            "estimate": 0.08917824074074072
+          },
+          "rule_down_minus_noop": {
+            "bootstrap_ci95": [
+              0.06773003472222222,
+              0.11375144675925924
+            ],
+            "estimate": 0.0896412037037037
+          }
+        }
+      }
+    }
+  ],
+  "format": "codex-intervention-cr7-active-extension-v1",
+  "launched_because_primary_gate_passed": true
+}

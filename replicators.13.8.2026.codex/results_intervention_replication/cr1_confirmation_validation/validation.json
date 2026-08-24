@@ -1,0 +1,33 @@
+{
+  "all_pass": true,
+  "checks": {
+    "fresh_seed_domains_unique": true,
+    "fresh_seeds_disjoint_from_original": true,
+    "frozen_model_hash_preserved": true,
+    "full_directive_branch_count": true,
+    "full_directive_matrix_count": true,
+    "original_arm_order": true,
+    "original_equivalence_margin": true,
+    "original_random_ratio_limit": true,
+    "original_registration_verified": true,
+    "p1_pilot_eligible_for_confirmation": true,
+    "p1_pilot_retained_as_developmental": true,
+    "p4_outcomes_unavailable_to_design": true
+  },
+  "format": "codex-intervention-cr1-confirmation-validation-v1",
+  "scientific_futures_generated": 0,
+  "scientific_matrices_generated": 0,
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR1_CONFIRMATION_PREREGISTRATION.md": "15c3f772a5df100b84842c1991fd2be2801c6a03aadeb51085cd5d335ea03d44",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr1_confirmation.py": "1e8f002e8796ee9002d5859fb40a87a875e3ca345a02a8e1c281133dfff8c205",
+    "plastic_heredity/intervention_metrics.py": "037c36dd20547dd54b0638f99fb4e520e2f64d17b8fc2799331076a9ddb4eb54",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_intervention_cr1_confirmation.py": "27f15944e3fe722b1c4839881d6d098e86338bb2b1c32bf7d2b711cfcc9d075c"
+  }
+}

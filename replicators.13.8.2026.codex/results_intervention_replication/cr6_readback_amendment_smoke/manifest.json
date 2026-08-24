@@ -1,0 +1,13 @@
+{
+  "amendment_id": "c96d9c305a103736f7063ff29d19e8c16f85487983051d55b9e9396e044c1ef5",
+  "artificial_fixture_only": true,
+  "fixture_audit": {
+    "amended_matrix_rows_exact": true,
+    "amended_metrics_exact": true,
+    "numerical_tolerance_weakened": false,
+    "only_added_field": "regime",
+    "original_false_failure_reproduced": true
+  },
+  "format": "codex-intervention-cr6-readback-amendment-smoke-v1",
+  "scientific_effect_sizes_disclosed": false
+}

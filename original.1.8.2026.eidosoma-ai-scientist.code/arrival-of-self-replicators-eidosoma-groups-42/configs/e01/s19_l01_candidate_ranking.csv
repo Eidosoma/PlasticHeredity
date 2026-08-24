@@ -1,0 +1,11 @@
+candidateId,bundleId,selected,sourceGrounding,paperFingerprintSpecificity,explanatoryLeverage,testability,crossCandidateDiscriminability,computeEfficiency,independenceFromPriorOutcomeSelection,outcomeGuidedThresholdSelection,deterministicHReuse,completedFitLeakage,candidateSpecificSuccess,undefinedAuthorSemantics,branchCount,proposedSpecification,selectionReason
+S19-CAND-A1,A_METRIC_DISTINCTIVENESS,True,5,5,5,5,5,4,5,0,0,0,0,2,4,Public same-author lineages define every named metric,Human-directed bundle and highest source grounding
+S19-CAND-A2,A_METRIC_DISTINCTIVENESS,False,2,3,3,4,3,4,4,0,0,0,0,4,1,Active-support induced catalytic graph,No public source supports active-support node deletion
+S19-CAND-A3,A_METRIC_DISTINCTIVENESS,False,0,1,2,5,2,2,0,5,0,0,0,5,8,Threshold grid over catalytic weights,Explicitly prohibited outcome-multiplicity risk
+S19-CAND-B1,B_ALTERNATIVE_PREDICTION_PROPORTIONS,True,4,5,4,5,5,3,5,0,3,2,0,1,1,Five directed proportions with exact S16 architecture formula,Human-directed minimal family and exact historical replay comparator
+S19-CAND-B2,B_ALTERNATIVE_PREDICTION_PROPORTIONS,False,1,2,2,5,3,1,1,0,3,2,0,3,5,Retuned MLP per proportion,Retuning is explicitly prohibited
+S19-CAND-B3,B_ALTERNATIVE_PREDICTION_PROPORTIONS,False,1,2,2,5,3,4,3,0,3,1,0,3,1,Summary-statistic predictor,Would alter frozen tensor and architecture
+S19-CAND-C1,C_SPIKE_TIMING_SPACING_HEIGHT,True,5,5,5,5,5,5,5,0,0,2,0,2,2,Global pooled 3SD raw and within-run normalized companion,Paper threshold plus public all-pairs spacing lineage and one bounded robustness companion
+S19-CAND-C2,C_SPIKE_TIMING_SPACING_HEIGHT,False,4,3,3,5,4,5,4,0,0,2,0,2,1,Public local-window peak detector,Conflicts with human-directed paper primary 3SD rule
+S19-CAND-C3,C_SPIKE_TIMING_SPACING_HEIGHT,False,0,1,1,5,1,5,0,4,0,2,0,5,8,Threshold and descriptor grid,Outcome-guided multiplicity and no source identity
+S19-CAND-C4,C_SPIKE_TIMING_SPACING_HEIGHT,False,0,1,1,5,1,5,2,0,0,2,0,5,1,Molecular-row correlation,Pseudoreplication violates matrix-level unit

@@ -1,0 +1,221 @@
+schema: eidosoma.e01.s19_l18.preregistration.v1
+researchStepId: S19-L18
+versionedId: E01-S19-L18-RECURRING-ATTRACTOR-ONSET-EARLY-WARNING-v1.0.0
+title: Past-Only Organizational Early Warning Before a Recurring-Attractor Onset
+evidenceClass: ADAPTIVE_EXPLORATORY_LANDMARK_ONSET_RECONSTRUCTION
+humanDirection: >-
+  Continue L17, replace the nearly universal adjacent-H state with a less
+  permissive replicator event, and test whether emerging organization can be
+  detected before replication while thinking outside the prior Figure-5 task.
+
+immutableInputs:
+  cohort: S13Y_100_SHARED_MATRICES_200_CANDIDATE_TRAJECTORIES
+  trajectoryManifest: /artifacts/research_steps/S13Y/trajectory_manifest.parquet
+  trajectoryCacheRoot: /cache/e01_s13y_v1/raw_trajectories
+  targetTable: /artifacts/research_steps/S19/loops/L02/label_values.parquet
+  targetFingerprintTable: /artifacts/research_steps/S19/loops/L02/fingerprint_results.parquet
+  completedBreakingValues: /artifacts/research_steps/S19/loops/L17/gard_phi_values.parquet
+  safePhiIdLattice: /artifacts/research_steps/S12B/safe_phi_lattice.json
+  candidates:
+    - S12F-CANDIDATE-02
+    - S12F-CANDIDATE-03
+
+target:
+  labelId: PF_DOMINANT_COMPONENT_CENTROID_H900
+  family: POSTFISSION_DOMINANT_COMPONENT_CENTROID
+  comparator: GREATER_THAN_OR_EQUAL
+  threshold: 0.9
+  construction: >-
+    Build a cosine-H>=0.9 graph over all 100 selected post-fission
+    compositions, select the largest connected component with the frozen L02
+    deterministic tie rule, close its arithmetic centroid, and label every
+    selected molecular composition by H>=0.9 to that centroid.
+  temporalStatus: RETROSPECTIVE_COMPLETED_RUN_TARGET
+  authorIdentityStatus: AUTHOR_IMPLEMENTATION_UNRESOLVED
+  targetSelectionDisclosure: >-
+    This target and landmark task were selected adaptively after inspecting
+    frozen L02 fingerprints. They are exploratory and never confirm the paper.
+
+landmarkTask:
+  clockId: C1_SELECTED_DAUGHTER_RETAINED
+  landmarkObservationCount: 64
+  landmarkLastIndexZeroBased: 63
+  horizonAdditionalObservations: 128
+  horizonExclusiveIndexZeroBased: 192
+  atRiskRule: NO_POSITIVE_TARGET_AT_INDICES_0_THROUGH_63
+  eventRule: FIRST_POSITIVE_TARGET_AT_INDEX_64_THROUGH_191
+  nonEventRule: FIRST_POSITIVE_AT_OR_AFTER_192_OR_NEVER
+  rationale: >-
+    The program already declared 64- and 128-observation information windows.
+    A fixed raw clock avoids completed-length and padding leakage. Frozen L02
+    evidence shows adequate event/non-event support in both candidates.
+
+featureFamilies:
+  TIME_ONLY:
+    source: PAST_ONLY
+    fields:
+      - prefix_generation_last
+      - prefix_post_fission_count
+      - prefix_molecular_update_count
+      - prefix_mass_last
+  EXACT_H_STABILITY:
+    source: PAST_ONLY
+    fields:
+      - adjacent_h_last
+      - adjacent_h_mean
+      - adjacent_h_std
+      - adjacent_h_slope
+      - adjacent_h_min
+      - adjacent_h_ge_090_fraction
+      - composition_change_last
+      - composition_change_mean
+      - composition_change_std
+      - composition_change_slope
+      - composition_change_max
+      - mass_mean
+      - mass_std
+      - mass_slope
+  PREFIX_RECURRENCE_GEOMETRY:
+    source: PAST_ONLY
+    fields:
+      - nonadjacent_recurrence_edge_density
+      - mean_max_prior_nonadjacent_h
+      - last_max_prior_nonadjacent_h
+      - slope_max_prior_nonadjacent_h
+      - recurrent_state_fraction
+      - largest_recurrence_component_fraction
+      - recurrence_component_count
+      - maximum_recurrence_lag_fraction
+      - post_fission_recurrence_edge_density
+      - post_fission_recurrent_state_fraction
+  ORGANIZATION_DYNAMICS:
+    source: PAST_ONLY
+    fields:
+      - shannon_mean
+      - shannon_last
+      - shannon_std
+      - shannon_slope
+      - effective_species_mean
+      - effective_species_last
+      - richness_mean
+      - richness_last
+      - simpson_concentration_mean
+      - simpson_concentration_last
+      - centroid_radius_mean
+      - centroid_radius_last
+      - centroid_radius_slope
+      - participation_ratio
+      - first_pc_variance_fraction
+      - acceleration_mean
+      - directional_persistence_mean
+  BGM_PREFIX_EMERGENCE:
+    source: PAST_ONLY_EXPLORATORY_PREFIX_APPLICATION
+    scalar: emergence_nan0
+    summary: [mean, std, last, slope, min, max, q90, positive_fraction, finite_fraction]
+  BGM_PREFIX_INTEGRATED:
+    source: PAST_ONLY_EXPLORATORY_PREFIX_APPLICATION
+    scalar: integrated_raw
+    summary: [mean, std, last, slope, min, max, q90, positive_fraction, finite_fraction]
+  COMPLETED_BGM_ORACLE:
+    source: RETROSPECTIVE_COMPLETED_FIT_FUTURE_DEPENDENT_DIAGNOSTIC_ONLY
+  COMPLETED_TARGET_CENTROID_ORACLE:
+    source: RETROSPECTIVE_TARGET_DEFINING_FUTURE_DEPENDENT_DIAGNOSTIC_ONLY
+
+models:
+  estimator: SKLEARN_LOGISTIC_REGRESSION_L2
+  C: 1.0
+  penalty: l2
+  solver: lbfgs
+  maximumIterations: 5000
+  classWeight: null
+  missingValuePolicy: TRAINING_MEDIAN_WITH_MISSING_INDICATOR
+  scaler: TRAINING_ONLY_STANDARD_SCALER
+  probabilityThreshold: 0.5
+  registry:
+    - DUMMY_TRAINING_PRIOR
+    - TIME_ONLY
+    - EXACT_H_STABILITY
+    - PREFIX_RECURRENCE_GEOMETRY
+    - ORGANIZATION_DYNAMICS
+    - BGM_PREFIX_EMERGENCE
+    - BGM_PREFIX_INTEGRATED
+    - PAST_FULL_NO_BGM
+    - PAST_FULL_WITH_BGM_EMERGENCE
+    - PAST_FULL_WITH_BGM_INTEGRATED
+    - COMPLETED_BGM_ORACLE
+    - COMPLETED_TARGET_CENTROID_ORACLE
+  primaryModel: PAST_FULL_WITH_BGM_EMERGENCE
+  primaryNonPhiComparator: PAST_FULL_NO_BGM
+
+crossValidation:
+  unit: CATALYTIC_MATRIX
+  design: REPEATED_STRATIFIED_FIVE_FOLD
+  folds: 5
+  repeats: 10
+  candidatesPooled: false
+  identicalSplitsAcrossModels: true
+
+metrics:
+  primary: [AUROC, AUPRC, BRIER]
+  secondary: [ACCURACY, BALANCED_ACCURACY, LOG_LOSS, SENSITIVITY, SPECIFICITY, PPV, NPV, ECE]
+  bootstrapReplicates: 4096
+  labelPermutationReplicates: 512
+  multiplicity: HOLM_WITHIN_REGISTERED_PRIMARY_COMPARISONS
+
+negativeControls:
+  - MATRIX_LABEL_PERMUTATION_PRIMARY_MODEL
+  - MATRIX_LABEL_PERMUTATION_NONPHI_MODEL
+  - WITHIN_PREFIX_TEMPORAL_PERMUTATION
+  - SUFFIX_DELETE_SHUFFLE_REPLACEMENT_INVARIANCE
+  - COMPLETED_FIT_SUFFIX_SENSITIVITY_DIAGNOSTIC
+
+gates:
+  taskEstablished:
+    minimumAtRiskMatricesPerCandidate: 40
+    minimumEventsPerCandidate: 15
+    minimumNonEventsPerCandidate: 15
+    maximumWholeTrajectoryOccupancy: 0.90
+    minimumWholeTrajectoryOccupancy: 0.05
+  pastOnlyLead:
+    primaryAuRocBootstrapLowerGreaterThan: 0.5
+    primaryAuPrcExceedsPrevalence: true
+    primaryBrierImprovesTrainingPrior: true
+    primaryOutperformsTimeExactHRecurrenceAndNonPhiCombined: true
+    matrixPermutationPAtMost: 0.05
+    suffixInvarianceRequired: true
+    bothCandidatesRequired: true
+  interpretation:
+    completedOracleExcluded: true
+    targetCentroidOracleExcluded: true
+    directPromotionProhibitedBecauseAdaptiveTargetAndTask: true
+
+classifications:
+  allowed:
+    - ATTRACTOR_ONSET_TASK_ESTABLISHED
+    - PAST_ONLY_ORGANIZATIONAL_EARLY_WARNING_LEAD
+    - BGM_PREFIX_NOT_INCREMENTAL
+    - ORGANIZATION_GEOMETRY_PROXY_ONLY
+    - COMPLETED_FIT_ORACLE_ONLY
+    - EARLY_WARNING_NOT_SUPPORTED_WITHIN_FROZEN_ATTRACTOR_TASK
+    - TARGET_RETROSPECTIVE_AUTHOR_AMBIGUITY_UNRESOLVED
+    - NOT_PROMOTABLE
+    - LOOP_FAILED_CLOSED
+
+resources:
+  cpuCores: 8
+  gpuHoursMaximum: 0
+  cpuHoursMaximum: 100
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 25
+  temporaryGiBMaximum: 75
+  validationReserveFraction: 0.10
+  numericalThreadsPerWorker: 1
+  authoritativePrecision: CPU_FLOAT64
+
+stopBoundary:
+  mandatoryHumanReview: true
+  activateLaterLoop: false
+  activateS20: false
+  activateE02: false
+  contactAuthors: false
+  generateReportBundle: false

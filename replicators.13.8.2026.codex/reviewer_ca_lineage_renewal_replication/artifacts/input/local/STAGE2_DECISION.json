@@ -1,0 +1,10 @@
+{
+  "automatic_launch": false,
+  "claim_boundary": "Stage 2 cannot establish Plastic Heredity",
+  "results_sha256": "28b5703fa131d24ec78913d4fd47c77bd414266e16714529d1c7f1ba9f029576",
+  "review_required": true,
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "stage": 2,
+  "stage3": "OUT_OF_SCOPE",
+  "verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL"
+}

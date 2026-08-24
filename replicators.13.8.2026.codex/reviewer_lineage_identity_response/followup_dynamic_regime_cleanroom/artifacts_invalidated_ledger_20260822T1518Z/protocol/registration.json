@@ -1,0 +1,20 @@
+{
+  "firewall": {
+    "forbidden_import_hits": [],
+    "newideas_role": "hypothesis_only_non_evidentiary",
+    "passed": true,
+    "wagner_code_read_imported_or_executed": false
+  },
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "protocol_id": "fb3ad23678c2b9531ba65c9f0e07556db478d605535167e87a1dc5062f5f1833",
+  "registered_at_epoch": 1787411796.8552973,
+  "registration_id": "e214dd71a6547b7a872dd71bf9ba6978a51e3c61b29d01c92fb876b8f705cca7",
+  "runtime": {
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "scipy": "1.18.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_manifest_id": "882f912d3109c9ca61c8d168598850d74329b9cdfe6c5847d4323b2dba0a1ddd"
+}

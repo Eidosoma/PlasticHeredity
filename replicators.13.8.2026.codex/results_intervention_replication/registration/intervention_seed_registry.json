@@ -1,0 +1,32 @@
+{
+  "all_values_unique": true,
+  "domains": {
+    "chosen_confirmation_bootstrap": "a135bc082c4b310cc48cc6f1d2504b0b82a11a340de45ddc6228e0ae90dcbfd6",
+    "chosen_confirmation_cohort": "f4d5d6724b152868deb923f7915d6311eebd711ded551b9deff2256f1a1dee17",
+    "chosen_confirmation_future": "1322cc2ad4a8f74dab1332c2ba859e23571c794f830eafab5b1aeebbcc9ae9df",
+    "chosen_confirmation_randomization": "4735706ff8b0f4734a1e67740292a9d15f2ffddf48828c5e0f3ffd8a09f49075",
+    "chosen_confirmation_selection": "82473e92766f7e4736df5599453d7d890612ad5b66a6455db62ed3c4e57be689",
+    "p1_bootstrap": "69d19ea6c574d52b5cd1fed241c48393573dfd0582d83a3fb0beec79e08bde7f",
+    "p1_cohort": "1d09fff8bdadc3e1d8abfa826dec8bb28ea3b77c163c2b8fba7920216b64c2e9",
+    "p1_future": "68ed16910f611f4fb2b03761e408b8ce04f4292b2b7c652de63b430caf250852",
+    "p1_randomization": "1ba4a31956c03d5a410870aaa57eb539c5464ae149605be997c10434b6b5f223",
+    "p1_selection": "849ef0f433b2778be0eaa08ebb57e2af73ec8cb09e8d722b200011409e294e30",
+    "p2_bootstrap": "3274f680b54e58c55df63d423f947e3dfe4bad259eb0c8e4324de5baf12ca3dc",
+    "p2_cohort": "4521eeb173dd658719e762e36e7101fb39bfb467fc4c1f0c7c52933c0d09c811",
+    "p2_future": "dc9bf36fab8b952ff58987c92adb2980f7c7ac211d4e73c1d94f5e3444bb6898",
+    "p2_randomization": "be0b01bd9aff2e57387f053494be3118c09b3f29c27798f35fbcbac993cf0fee",
+    "p2_selection": "1d60cb6e71690a137971c0e3150fbf0c737e16441c4799f642c447da0f4773f4",
+    "p3_bootstrap": "0baea7dd908563f22fa7efe1134eef9641c3410b087967aad44eb0edf08bb57f",
+    "p3_cohort": "786b23ed3578276c0b2e57a45ade05b1cf33ccdbe756c474c67ca757dd3d94c9",
+    "p3_future": "29fe8bab02e955fbe344c5375586f03a9beaf09e6275d1eed6386e295f4215e9",
+    "p3_randomization": "dffee4be3e320ed35eb71343835ad0663cd5eb1dd0b0ca585f81307abc426974",
+    "p3_selection": "04872f7c3e68ab8792ca6aaa86b34ec8e321ab98a727798eb39e76cc569904dd",
+    "replay": "33df60cbf00f37961c88f76f005765dac115127bdfa2ff2d804dd9235efbb1b6",
+    "smoke_cohort": "b7e4c8daaf498b0ca72be49f0cff3ccb088da4d3e5ba33752f71fbda330ba3da",
+    "smoke_future": "11ebe120a36f39b0445e09fc702bf80e658c498163d2681d4edc1b6fbbca0e7b",
+    "smoke_selection": "52f0bf4aaf2bd63d868f21e298bc1f6712556d7cd978ce57e14c9c05ad709855",
+    "validation": "f8a673db0815fc7760dd309b50c7360933556e7aa8f1e5ddf95f2b62ad578c1a"
+  },
+  "format": "codex-intervention-seed-registry-v1",
+  "future_keys_exclude_arm_identity": true
+}

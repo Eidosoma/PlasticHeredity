@@ -1,0 +1,23 @@
+{
+  "all_passed": true,
+  "checks": {
+    "acquisition_pool_fixed": true,
+    "branches_and_halves_fixed": true,
+    "break_window_fixed": true,
+    "cpu_allocation_fixed": true,
+    "draws_fixed": true,
+    "endpoint_positive_fixture": true,
+    "future_and_selection_streams_distinct": true,
+    "future_seed_arm_free": true,
+    "information_margins_positive": true,
+    "model_contract_hash_exact": true,
+    "model_hash_exact": true,
+    "representations_fixed": true,
+    "target_scale_fixed": true,
+    "threshold_is_strict": true
+  },
+  "format": "codex-ch5-phir-extension-px2-validation-v1",
+  "pytest_returncode": 0,
+  "pytest_stderr": "",
+  "pytest_stdout": "......                                                                   [100%]\n"
+}

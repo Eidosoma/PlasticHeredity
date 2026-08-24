@@ -1,0 +1,301 @@
+schema: eidosoma.e01.s08_label_reconstruction_preregistration.v1
+researchStepId: S08
+title: Reconstruct self-replicator detection
+preregistrationVersion: E01-S08-label-preregistration-v1.0.1
+configurationCollectionVersion: E01-S08-label-configurations-v1.0.1
+status: FROZEN_BEFORE_LABEL_OUTCOME_GENERATION
+amendmentHistory:
+  - priorVersion: E01-S08-label-preregistration-v1.0.0
+    priorGitCommit: ef8e3c0b4a3d7429f88d56115abb7c2ba0c096b7
+    timing: BEFORE_LABEL_OUTCOME_GENERATION
+    change: >-
+      Clarified that order-permutation invariance applies only to full-trace
+      retrospective clustering. Past-only outputs are sequence-defined and
+      therefore receive exact replay validation with observation order held
+      fixed. No family, threshold, minimum size, fixture, or outcome rule
+      changed.
+frozenQuestion: >-
+  Can the source-traceable historical non-drift label and explicit
+  validation-only cosine, Euclidean, and Aitchison cluster labels be
+  implemented without silently resolving author-facing ambiguity, and can
+  their disagreements be quantified on validated fixtures?
+scopeBoundary: >-
+  The historical H calculation and tgs_nondrift techniques are traced only to
+  the pinned public GARD v10 snapshot. The cosine, Euclidean, and Aitchison
+  clustering configurations below are reconstruction validation branches,
+  not recovered author settings and not paper-claim adjudication profiles.
+  The unavailable author implementation and legacy MATLAB RNG identity remain
+  unknown. S09 zero-resolution branches are not selected here.
+
+frozenInputs:
+  specificationRegistry:
+    path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+    sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+    version: E01-specification-registry-v0.3.0
+    preservationRule: BYTE_FOR_BYTE_NO_SOURCE_UPDATE_IN_S08
+  sourceManifest:
+    path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml
+    sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5
+  historicalBehaviorContract:
+    path: /artifacts/E01_forensic_replication_bundle/software/historical_reference/historical_behavior_contract.yaml
+    sha256: e6fe49aba2240047d018e5b619ef07d3e48922fb43a963256b6b2233f07d0a43
+  historicalCompatibilityNotes:
+    path: /artifacts/E01_forensic_replication_bundle/software/historical_reference/compatibility_notes.md
+    sha256: f8cc4fa96d104ce1ddf3ae06da1857a24a7166fa1a2b873358fd82a7bf50c869
+  independentEngineContract:
+    path: /artifacts/E01_forensic_replication_bundle/software/independent_engine/independent_engine_contract.yaml
+    sha256: a35e313cb0685218691397980d1f5d8020fee8c994359e3227b9b1c1ef8605e8
+  independentValidationProfiles:
+    path: /artifacts/E01_forensic_replication_bundle/software/independent_engine/validation_profiles.yaml
+    sha256: 959fb3171e19087af06b09d21fd499e776b16de85e0b673f9ccde61e5b23ee0c
+  seedContract:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml
+    sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1
+  trajectoryPrecisionContract:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_precision_contract_v1.0.0.yaml
+    sha256: 2c73d7385d7511636cb809cdb1b2b5c0239632faec2f6ff2ffb692a7b3548b4d
+  trajectorySchema:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_schema_v1.0.0.json
+    sha256: 981807b512bff589a6a693c1da191efad829ccb3294fd4f9297c3ee02a7a5d57
+  exampleTrajectory:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/examples/example_trajectory.json
+    sha256: 020634d20a248ec0516040128e37aed3d7b8f5c1c6b4fde5fca7388b65b55483
+  officialPaperPdf:
+    path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+    sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+
+registryBoundary:
+  ownerParameterCount: 9
+  ownerParameters:
+    - labels.clustering.algorithm_and_hyperparameters
+    - labels.compotype.reference_definition
+    - labels.family_registry
+    - labels.ineligible_and_drift_policy
+    - labels.molecular_step_alignment
+    - labels.persistence_and_homeostasis_rule
+    - labels.similarity.metric
+    - labels.similarity.threshold
+    - labels.temporal_information_scope
+  preservationRules:
+    - Preserve every unresolved sentinel, conflict, and branch set in registry v0.3.0.
+    - Do not promote a validation configuration to an author-facing or paper baseline value.
+    - Materialize each exercised alternative under an immutable configuration ID.
+    - Emit an explicit status and reason for every observation; never delete an ineligible row.
+
+commonClusteringContract:
+  algorithm: strict_threshold_graph_connected_components
+  linkageInterpretation: single_linkage_transitive_closure
+  comparator: strict
+  minimumClusterSize: 3
+  minimumClusterSizeSensitivity: [2, 3, 4, 5]
+  referenceDefinition: observed_medoid_minimum_within_component_distance_sum
+  referenceTieBreak: earliest_original_observation_index
+  driftPolicyForEligibleRows: components_smaller_than_minimum_are_drift
+  ineligiblePolicy: emit_null_label_null_cluster_and_machine_readable_reason
+  clusterIdRule: canonical_id_from_earliest_original_member
+  clusteringRngPolicy: RNG_FREE_DETERMINISTIC
+  retrospectiveObservationOrderAudit: >-
+    Permute input order with the frozen machine_learning stream, restore by
+    observation identity, and require binary labels and canonical cluster
+    memberships to match exactly.
+  pastOnlyOrderPolicy: >-
+    Observation order is part of the past-only estimand and may not be
+    permuted. Require exact deterministic replay with the original sequence.
+
+familyConfigurations:
+  - configurationId: E01-S08-YH-T1-HGT090-v1.0.0
+    familyId: Y_H
+    familyName: historical_non_drift_technique1
+    evidenceClass: PINNED_PUBLIC_HISTORICAL_SOURCE_BEHAVIOR
+    implementation: e01_gard_historical.historical_nondrift_technique1
+    inputAlignment: generation_composition_endpoints_as_columns
+    representation: source_l2_normalized_raw_nonnegative_vectors
+    metric: historical_H_clipped_columnwise_cosine
+    threshold: 0.9
+    comparator: strict_greater_than
+    temporalInformationScope: local_adjacent_with_next_observation_for_interior_scores
+    retrospectiveCaveat: true
+    persistenceRule: source_local_average_of_previous_and_next_adjacent_H
+    zeroPolicy: source_truncate_at_first_zero_sum_then_pad_false_and_zero
+    clusterReference: NOT_APPLICABLE
+    role: REFERENCE_LABEL_FAMILY
+  - configurationId: E01-S08-YC-COS-HGT090-MIN3-RETRO-v1.0.0
+    familyId: Y_C
+    familyName: cosine_threshold_graph
+    evidenceClass: VALIDATION_ONLY_RECONSTRUCTION_NOT_AUTHOR_DEFAULT
+    representation: raw_nonnegative_vectors
+    metric: historical_H_clipped_cosine
+    threshold: 0.9
+    comparator: strict_greater_than
+    minimumClusterSize: 3
+    temporalInformationScope: paper_retrospective_full_trace
+    zeroPolicy: zero_sum_observation_is_explicitly_ineligible
+    role: REFERENCE_LABEL_FAMILY
+  - configurationId: E01-S08-YE-EUCLIDEAN-DLT010-MIN3-RETRO-v1.0.0
+    familyId: Y_E
+    familyName: euclidean_threshold_graph
+    evidenceClass: VALIDATION_ONLY_RECONSTRUCTION_NOT_AUTHOR_DEFAULT
+    representation: l1_closed_proportions
+    metric: euclidean_l2
+    threshold: 0.1
+    comparator: strict_less_than
+    minimumClusterSize: 3
+    temporalInformationScope: paper_retrospective_full_trace
+    zeroPolicy: zero_sum_observation_is_explicitly_ineligible
+    role: REFERENCE_LABEL_FAMILY
+  - configurationId: E01-S08-YA-AITCHISON-DLT050-MIN3-RETRO-v1.0.0
+    familyId: Y_A
+    familyName: aitchison_threshold_graph
+    evidenceClass: VALIDATION_ONLY_RECONSTRUCTION_NOT_AUTHOR_DEFAULT
+    representation: l1_closure_then_full_clr_strictly_positive_only
+    metric: euclidean_distance_between_full_clr_vectors
+    threshold: 0.5
+    comparator: strict_less_than
+    minimumClusterSize: 3
+    temporalInformationScope: paper_retrospective_full_trace
+    zeroPolicy: any_zero_component_is_explicitly_ineligible_no_replacement
+    role: REFERENCE_LABEL_FAMILY
+
+temporalScopeCompanions:
+  rule: >-
+    For Y_C, Y_E, and Y_A, materialize a past-only online companion with the
+    same metric, threshold, strict comparator, and minimum size. At time t the
+    current observation is classified using only observations 1..t. These
+    companions diagnose retrospective dependence; they do not resolve the
+    registry temporal-scope branch.
+  idSubstitution: replace_RETRO_with_ONLINE_in_reference_configuration_id
+
+historicalTechnique2Diagnostics:
+  enabled: true
+  evidenceClass: PINNED_PUBLIC_HISTORICAL_SOURCE_BEHAVIOR_OPTIONAL_TECHNIQUE
+  configurationIdTemplate: E01-S08-YH-T2-HGT{thresholdTag}-D{driftSize}-v1.0.0
+  threshold: 0.9
+  driftSizes: [2, 3, 5]
+  sourceEdgePolicy: emit_ERROR_SOURCE_DOMAIN_record_do_not_repair_index_zero
+  referenceFamilyRole: false
+
+thresholdSensitivity:
+  historicalHStrictGreaterThan: [0.85, 0.875, 0.9, 0.925, 0.95]
+  cosineHStrictGreaterThan: [0.85, 0.875, 0.9, 0.925, 0.95]
+  euclideanDistanceStrictLessThan: [0.025, 0.05, 0.075, 0.1, 0.15, 0.2]
+  aitchisonDistanceStrictLessThan: [0.1, 0.2, 0.35, 0.5, 0.75, 1.0]
+  interpretation: >-
+    These are frozen validation grids. The 0.1 Euclidean and 0.5 Aitchison
+    reference anchors have no author-source status and may not be selected as
+    paper defaults because of favorable fixture outcomes.
+
+fixtureSeedContract:
+  seedRequestId: E01-S08-SYNTHETIC-FIXTURE-SEED-v1.0.0
+  experimentId: E01
+  specificationId: E01-S08-SYNTHETIC-FIXTURES-v1.0.0
+  trajectoryId: E01-S08-FIXTURE-COLLECTION-T0001
+  replicateIndex: 0
+  engineId: e01_replicator_labels
+  rootSeedHex: 0808080808080808080808080808080808080808080808080808080808080808
+  couplingPolicy: trajectory_isolated
+  consumedPurposes: [estimator, machine_learning]
+  estimatorUse: seeded_positive_multinomial_fixture_generation
+  machineLearningUse: seeded_observation_order_permutation_audit_only
+  clusteringUse: none_rng_free_algorithm
+
+fixtures:
+  - fixtureId: E01-S08-FIXTURE-TWO-ATTRACTORS-v1.0.0
+    provenance: S08_seeded_synthetic
+    dimension: 4
+    generationRule: >-
+      Add one molecule to each component, then draw the remaining mass from a
+      multinomial with the frozen estimator stream. Generate eight A points,
+      four convex bridge points at B weights 0.15, 0.35, 0.65, and 0.85, and
+      eight B points. Cycle total masses 80, 100, and 120.
+    attractorA: [0.62, 0.24, 0.10, 0.04]
+    attractorB: [0.07, 0.16, 0.29, 0.48]
+    bridgeBWeights: [0.15, 0.35, 0.65, 0.85]
+    counts: {attractorA: 8, bridge: 4, attractorB: 8}
+    massCycle: [80, 100, 120]
+  - fixtureId: E01-S08-FIXTURE-RARE-SPECIES-SWING-v1.0.0
+    provenance: S08_literal_synthetic
+    states:
+      - [70, 20, 9, 1]
+      - [70, 20, 8, 2]
+      - [70, 20, 6, 4]
+      - [70, 20, 4, 6]
+      - [70, 20, 2, 8]
+      - [70, 20, 1, 9]
+      - [70, 20, 2, 8]
+      - [70, 20, 4, 6]
+      - [70, 20, 8, 2]
+    purpose: probe_metric_disagreement_when_rare_components_change
+  - fixtureId: E01-S08-FIXTURE-ZERO-AND-EXTINCTION-v1.0.0
+    provenance: S08_literal_synthetic
+    states:
+      - [5, 5, 0, 0]
+      - [10, 10, 0, 0]
+      - [0, 0, 0, 0]
+      - [0, 4, 4, 2]
+      - [1, 4, 4, 1]
+      - [1, 4, 4, 1]
+    purpose: validate_explicit_zero_status_and_historical_first_zero_truncation
+  - fixtureId: E01-S08-FIXTURE-S04-HC11-v1.0.0
+    provenance: S04_verified_small_case_HC11
+    sourcePath: /artifacts/E01_forensic_replication_bundle/software/historical_reference/verified_small_cases.json
+    sourceCaseId: HC11_nondrift_technique1
+    states:
+      - [1.0, 0.0]
+      - [1.0, 0.0]
+      - [0.8, 0.6]
+      - [0.0, 1.0]
+      - [0.0, 0.0]
+  - fixtureId: E01-S08-FIXTURE-S06-GROWTH-FINAL-v1.0.0
+    provenance: S06_checksum_validated_example_trajectory_growth_final_view
+    sourcePath: /artifacts/E01_forensic_replication_bundle/reproducibility/examples/example_trajectory.json
+    sourcePayloadSha256: aa6bc449dd5ebebf89b331c798289235e394ba1bf9af94be142d8fdefe6a9e4e
+    alignmentBranch: generation_growth_final_state
+    states:
+      - [2, 3, 2, 0]
+      - [2, 1, 2, 2]
+      - [1, 3, 2, 1]
+
+comparisonContract:
+  referenceFamilies: [Y_H, Y_C, Y_E, Y_A]
+  binaryOverlap:
+    denominator: common_nonnull_labels
+    outputs: [intersection, union, jaccard, overall_agreement, positive_agreement]
+    zeroUnionPolicy: emit_null_jaccard_with_reason_NO_POSITIVES_IN_EITHER_FAMILY
+  binaryAdjustedRand:
+    denominator: common_nonnull_labels
+    fewerThanTwoPolicy: emit_null_with_reason_FEWER_THAN_TWO_COMMON_LABELS
+  clusterAdjustedRand:
+    families: [Y_C, Y_E, Y_A]
+    driftEncoding: shared_NOISE_class
+    denominator: common_nonnull_cluster_assignments
+    ineligiblePolicy: retain_in_label_output_and_report_exclusion_count_here
+  disagreement:
+    outputs:
+      - per_observation_family_vector
+      - pairwise_one_sided_counts
+      - run_level_disagreement_rate
+      - retrospective_vs_past_only_flip_count
+      - threshold_flip_count
+
+validationGates:
+  - Every frozen input hash matches before execution.
+  - Registry v0.3.0 is byte-identical before and after execution and all nine S08 owner parameters retain their statuses and values.
+  - Historical HC11 H, local scores, first-zero position, and labels match the S04 oracle exactly.
+  - Exact-threshold H and distance cases obey strict comparison, not inclusive comparison.
+  - Every input observation receives one output row for each of the four reference families; ineligible rows are null-labeled with reasons.
+  - Seeded fixtures, retrospective order-audit permutations, and sequence-preserving past-only outputs regenerate exactly from the S06-derived streams.
+  - Positive compositions are invariant under per-row positive scaling and common component permutation for all applicable metrics.
+  - Aitchison never replaces a zero and never emits a finite distance for a non-strictly-positive observation.
+  - Label, overlap, ARI, sensitivity, disagreement, and provenance artifacts pass independent row-count and checksum audits.
+  - No S09 directory or implementation is created.
+
+outcomeRule:
+  supportive: >-
+    All four reference families produce complete status-bearing label outputs,
+    all preregistered validation gates pass, and disagreements are quantified.
+  constrainingOrContradictory: >-
+    An implementation or validation failure invalidates a family, or hidden
+    exclusions/defaults are required to produce outputs.
+  null: >-
+    Available validated fixtures do not contain enough common eligible
+    observations to quantify any family disagreement despite valid code.

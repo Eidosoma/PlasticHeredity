@@ -1,0 +1,72 @@
+schemaVersion: "1.0.0"
+researchStepId: S11R
+lockId: E01-S11R-CONFIRMATION-METHOD-LOCK-v1.0.0
+status: FROZEN_AFTER_DEVELOPMENT_BEFORE_CONFIRMATION_SEED_ACCESS
+frozenAtUtc: "2026-08-01T22:21:05Z"
+preregistrationCommit: a4763d0d5c7428897fcb595ae7d25a754d346c31
+preregistrationSha256: 9f8a9424fae41a5ed7ea0d185eb5aaa31449bd12892c027eda2dc83fb57e99e0
+implementationCommit: c244bae2fbdefb8555c8fe8f0eeb11da531afff6
+confirmationAccessAuthorized: true
+
+developmentSummaryPath: /cache/e01_s11r/development/development_summary.json
+developmentSummarySha256: 8358b011e7fc3c7d5b892d0ed8ced9775951e6c03ca34f462b3ae01825c79cc7
+developmentSeedRecordsPath: /cache/e01_s11r/development/seed_records.parquet
+developmentSeedRecordsSha256: 529b3748821cc24548d3d8a005771d512061fbd423af399a398e0ddc423f333d
+developmentStreamCount: 11920
+confirmationSeedsAccessedBeforeLock: false
+
+developmentOutcomeBoundary:
+  use: IMPLEMENTATION_DIAGNOSTICS_ONLY
+  methodGateSeedOrSampleSelectionFromDevelopment: false
+  diagnosticFailedFamilies:
+    - condition_matched_null
+    - known_truth_mmi
+    - known_truth_ccs_experimental
+    - structured_shuffle
+    - d8_exhaustive_agreement
+  action: >-
+    Retain every diagnostic failure. Do not change the preregistered estimator,
+    calibration, partition method, confirmation gates, sample sizes, or seeds.
+    Execute untouched confirmation because the implementation can run soundly.
+  preLockCorrection:
+    classification: HARNESS_SELF_TEST_IMPLEMENTATION_DEFECT_ONLY
+    detail: >-
+      The first development attempt's non-mutating S12 path-guard injection
+      inspected report text rather than invoking the already present path guard.
+      The injection was corrected to invoke that unchanged guard, all development
+      seeds were replayed, all 16 injections passed, and scientific diagnostic
+      outcomes reproduced. No scientific method, gate, seed, or sample changed.
+  preLockOutputHarnessCompletion:
+    classification: OUTPUT_PROVENANCE_ONLY
+    detail: >-
+      Before freezing this lock, confirmation was made to verify the locked
+      development seed-table hash and copy the locked development summary into
+      the required final artifact directory. No calculation, gate, seed, sample,
+      or scientific output changed.
+
+implementationFiles:
+  - path: scripts/e01/run_s11r_time_localized_phir_repair.py
+    sha256: 5dddbb0dad9b5b94fb72ee282126c408fff3a854eb8100a6b9d17300fc7d6fe4
+  - path: src/e01_time_localized_phir_repair/__init__.py
+    sha256: 8aba3d53198a1b47fa598b82890999ef7c8b716a8f65b9f76041b58a1df85a40
+  - path: src/e01_time_localized_phir_repair/estimator.py
+    sha256: 4c1fa7912784db3d99fb7ba7fa6e78622844b1cff3652c1970bd866e28526c77
+  - path: src/e01_time_localized_phir_repair/partition.py
+    sha256: d385ed4adb0f4e5b0ede1c5cbe6c2888c6265f4a342c8702966d4ecbc65dc794
+  - path: src/e01_time_localized_phir_repair/synthetic.py
+    sha256: ff9dd24c3ae2b5ceeb9e4396f21dc2440d510529d428f4905fb706901d7cf1d4
+  - path: tests/e01/test_time_localized_phir_repair.py
+    sha256: 7c6339786d876c5ddc9d10df62c1c02260f709b5b02cbd2d365837e9dae5e33f
+
+confirmationBoundary:
+  rootSeedHex: c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+  untouchedBeforeThisLock: true
+  developmentRootSeedHex: d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1
+  zeroCrossPhaseOverlapRequired: true
+  methodOrGateChangesAfterLock: FORBIDDEN_WITHIN_BOUNDED_S11R
+  allFrozenConfirmationFamiliesRequired: true
+  failurePolicy: FAIL_CLOSED_ALL_576_FIXED_BRANCHES_NO_NUMERIC_GARD_ESTIMATE
+  s11Status: IMMUTABLE_RETURN_FOR_REVIEW_VALIDATION_BLOCKED
+  s10StrictMinimumEffectiveSamples: 512
+  omegaDiscreteAndDoublet: EXCLUDED
+  s12: FORBIDDEN

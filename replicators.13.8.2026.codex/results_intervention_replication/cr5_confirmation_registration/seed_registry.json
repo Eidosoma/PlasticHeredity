@@ -1,0 +1,19 @@
+{
+  "confirmation_cohort": "03b1103847486442ec4886f7af9e8b61c456364aad6231a4fa1336b77546ca30",
+  "confirmation_replay": "de1fb88ee635bdbc164a26bae85ad6a1c5bbba88154ce257ced6fa8641bfc395",
+  "development_renewal_acquisition": "7d1090f9c60aa2af14dde495f3d0a65664d6a8add6f8814e3709f62e5ead0c39",
+  "development_renewal_future": "8709bdd37de00ed9b4070f943ed70d60e09ecbaeff80c1d5f0871f39a3ba50a7",
+  "development_replay": "632932b68bfe70767a09fbddd25e70872244fa8a1cdc3a140be33f47c012456c",
+  "resilience_acquisition": "021c48e3a85545825f08a470dbedcdbace42194b30cab79dd8a7a33f5a548e96",
+  "resilience_bootstrap": "13c26994956338b5296dcb3b132087824170de7c551c74fd61380333be6747a5",
+  "resilience_future": "0fffc81038ea2ba0254170aaaca29d0a9854004d600959aef14665aa2baa5025",
+  "resilience_randomization": "571c33d1fe0e7016bf3a0a7485a56eddc08bb452b9e8cc95c9b069f26052f71e",
+  "resilience_selection": "0c1adc183135f73c2f9e4d7e4597589a48c187135561368a3f00212bbe544b3b",
+  "resistance_bootstrap": "7b1cce7c3642a62b161997fedd8ade5c89bb699045a18e8c0872fbd9e1dcae8a",
+  "resistance_future": "dc43e53f3ada0e8b94a45b06b1f3ff1e7e9a773337800c5d8f431cf9b88259dc",
+  "resistance_randomization": "2c631c1613e230902b30f03c93242ce93da27b724f25d7bb64e5be3de0c5442e",
+  "resistance_selection": "52e74d2af465cf08ff685ee1ba35469ddeeffa9268fd22dca48ad2b72da12244",
+  "smoke_future": "c63a34c263d9a35ecf74a6ad971f953172f39d577fdeb057b624d9fd71eea098",
+  "smoke_selection": "dc6fb43dbaabb0d43f0d1639f587825618c925033145854f2d2fffecaea48092",
+  "validation": "67ffef860854fe490d849d56510b85a18f238431b2acf378c59284a943556a2b"
+}

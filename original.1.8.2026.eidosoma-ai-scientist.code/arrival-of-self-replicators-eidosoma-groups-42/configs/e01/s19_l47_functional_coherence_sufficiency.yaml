@@ -1,0 +1,66 @@
+schema: eidosoma.e01.s19_l47.preregistration.v1
+version: E01-S19-L47-FUNCTIONAL-COHERENCE-COMPOSITIONAL-SUFFICIENCY-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Does L46 functional coherence exceed the direct composition-H coherence and
+  process chronology built into the frozen run-of-three inheritance event?
+inputs:
+  primary: frozen L46 functional_episode_results and growth_division_results
+  newSimulation: false
+targets:
+  - CATALYTIC_ACTIVATION_ORDERED_COHERENCE_EXCESS
+  - EXPECTED_NET_EXCHANGE_ORDERED_COHERENCE_EXCESS
+  - GROWTH_ORDERED_COHERENCE_EXCESS
+directContrasts:
+  - catalytic activation excess minus composition-H excess
+  - expected exchange excess minus composition-H excess
+registeredBaselines:
+  M0_COMPOSITION:
+    - composition triple coherence
+    - all-inherited composition coherence
+    - old-to-new composition H
+    - break-to-new composition H
+  M1_COMPOSITION_PLUS_CHRONOLOGY:
+    - all M0 fields
+    - post-break opportunities
+    - inherited post-break count
+    - certification delay after earliest possible run3
+models:
+  estimator: fixed L2 ridge linear regression
+  alpha: 1.0
+  fitCohort: L28_DEVELOPMENT
+  fitUnit: catalytic-matrix mean
+  candidateSpecific: true
+  refitOnEvaluation: false
+pathwayStrata:
+  - IMMEDIATE_CERTIFICATION: certification relative index equals 3
+  - DELAYED_CERTIFICATION: certification relative index greater than 3
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  matrixBootstraps: 4096
+  matrixLabelPermutations: 512
+incrementalGate:
+  - both vector direct contrasts have bootstrap lower bound above zero in every evaluation group
+  - M1 residual mean has bootstrap lower bound above zero for all three targets in every evaluation group
+  - candidate directions agree
+pathwayGate:
+  - both strata contain at least 20 matrices per evaluation group
+  - delayed-minus-immediate residual difference has one common direction with intervals excluding zero for all targets and groups
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  featureSearch: false
+  modelSearch: false
+  thresholdSearch: false
+  intervention: false
+ceilings:
+  cpuHours: 24
+  gpuHours: 0
+  wallHours: 24
+  retainedGiB: 15
+  temporaryGiB: 30
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: outcome-dependent L48

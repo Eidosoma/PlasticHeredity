@@ -1,0 +1,590 @@
+{
+  "bootstrap_repetitions": 10000,
+  "calibration": {
+    "arms": [
+      "native_correct",
+      "native_zero",
+      "native_opposite",
+      "native_shuffled",
+      "stranger_correct",
+      "stranger_zero"
+    ],
+    "futures": 8,
+    "horizon": 32
+  },
+  "calibration_grid": [
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 8
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 16
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 32
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 4,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 0.5,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 1.0,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 100
+    },
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 100
+    }
+  ],
+  "calibration_pass_each_candidate": {
+    "correct_minus_opposite_ge": 0.2,
+    "correct_minus_shuffle_ge": 0.1,
+    "correct_minus_zero_ge": 0.2,
+    "native_correct_terminal8_f32_point_ge": 0.5,
+    "stranger_correct_minus_zero_ge": 0.2
+  },
+  "candidates_separate": true,
+  "classification": "exploratory_reviewer_prompted_cleanroom_frozen_before_carrier_futures",
+  "confirmation_arms": [
+    "native_correct",
+    "stranger_correct",
+    "stranger_zero",
+    "stranger_shuffled",
+    "native_zero",
+    "native_shuffled",
+    "native_reader_off",
+    "native_founder_writer_off",
+    "native_renewal_off",
+    "native_erase_after_g2",
+    "native_erase_rescue_g3",
+    "native_no_carrier",
+    "native_random_mask",
+    "joint_relabel_correct"
+  ],
+  "confirmation_gates": {
+    "control_difference_lower_gt": 0.0,
+    "correct_minus_zero_lower_gt": 0.1,
+    "correct_minus_zero_point_ge": 0.2,
+    "erasure_removal_fraction_ge": 0.7,
+    "isomorphism_absolute_rate_difference_le": 0.03,
+    "multiform_crossover_lower_gt": 0.1,
+    "multiform_crossover_point_ge": 0.2,
+    "multiform_each_cross_capture_lower_gt": 0.25,
+    "multiform_origin_accuracy_lower_gt": 0.75,
+    "native_correct_f32_lower_gt": 0.3,
+    "rescue_restoration_fraction_ge": 0.7
+  },
+  "engineering_rules": [
+    11,
+    54,
+    63
+  ],
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "multiform_arms": [
+    "state_a_carrier_a",
+    "state_a_carrier_b",
+    "state_b_carrier_a",
+    "state_b_carrier_b"
+  ],
+  "primary_rules": [
+    88,
+    110,
+    179,
+    23,
+    17,
+    132,
+    196,
+    158,
+    10,
+    90,
+    32,
+    45,
+    28,
+    159,
+    149,
+    58,
+    25,
+    198,
+    97,
+    14,
+    197,
+    126,
+    112,
+    38,
+    1,
+    43,
+    18,
+    64,
+    72,
+    178,
+    161,
+    174,
+    5,
+    9,
+    79,
+    55,
+    117,
+    24,
+    153,
+    138,
+    86,
+    148,
+    125,
+    171,
+    119,
+    2,
+    118
+  ],
+  "registration_id": "d7b11bd379f9e4e05dbf403b2248e77a3b792e37d1d41e55ac2b09c5449541ec",
+  "reporting_boundary": "not preprint evidence; not a Wagner replication; candidates are contracts, not independent replications",
+  "shared_multiform_rules": [
+    2,
+    10,
+    23,
+    25,
+    45,
+    55,
+    72,
+    112,
+    148,
+    159,
+    161,
+    174,
+    178,
+    196
+  ],
+  "tier_selection": {
+    "analysis_reserve_seconds": 600.0,
+    "budget_seconds": 24300.0,
+    "safety_factor": 1.5
+  },
+  "tiers": {
+    "A": {
+      "futures": 64,
+      "horizon": 64
+    },
+    "B": {
+      "futures": 48,
+      "horizon": 64
+    },
+    "C": {
+      "futures": 64,
+      "horizon": 32
+    }
+  },
+  "walltime": {
+    "cumulative_across_restarts": true,
+    "hard_seconds": 28800.0,
+    "soft_seconds": 27000.0
+  }
+}

@@ -1,0 +1,77 @@
+schema: eidosoma.e01.s19_l32.preregistration.v1
+research_step_id: S19-L32
+versioned_id: E01-S19-L32-COMMITTOR-ORDERED-PAST-ONLY-TRANSITION-TUBE-v1.0.0
+title: Committor-Ordered Past-Only Transition-Tube Coordinate
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Can a single observed 32-state prefix recover the confirmed H32 committor
+  beyond exact-H/recurrence and ordinary-composition path controls?
+inputs:
+  development: exact L28 DEVELOPMENT states and q_hat
+  internal_validation: exact L28 VALIDATION states and q_hat
+  untouched_confirmation: exact L31 CONFIRMATION states and q_hat
+  target_scope: RETROSPECTIVE_COMPLETED_RUN_MATRIX_SPECIFIC
+  predictors_use_observed_suffix: false
+representations:
+  source: exact frozen L27 transition_tube_views
+  window_states: 32
+  primary: FULL_TRANSITION_TUBE
+  controls:
+    - EXACT_H_TRANSITION_TUBE
+    - ORDINARY_TRANSITION_TUBE
+    - LANDMARK_PRIOR
+  branch_derived_predictors_allowed: false
+model:
+  family: exact L29 standardized L2 aggregated-binomial logistic coordinate
+  inverse_regularization_C: 0.1
+  solver: L-BFGS
+  max_iterations: 2000
+  candidate_specific: true
+  fit_scope: L28_DEVELOPMENT_ONLY
+  refit_on_validation_or_confirmation: false
+statistics:
+  matrix_bootstraps: 4096
+  development_response_permutations: 512
+  confirmation_response_permutations: 512
+  candidates_and_evaluation_cohorts_separate: true
+controls:
+  - exact feature and model replay
+  - future-suffix shuffle invariance
+  - temporal reversal
+  - molecule relabelling fixture
+  - development-response permutation
+  - confirmation-response permutation
+solution_gate:
+  required_evaluation_cohorts: [L28_VALIDATION, L31_CONFIRMATION]
+  primary_spearman_point_above: 0.5
+  primary_spearman_lower95_above: 0.3
+  brier_improvement_lower95_above_zero_vs:
+    - LANDMARK_PRIOR
+    - EXACT_H_TRANSITION_TUBE
+    - ORDINARY_TRANSITION_TUBE
+  development_permutation_p_at_most: 0.05
+  confirmation_permutation_p_at_most: 0.05
+  temporal_reversal_worse: true
+  suffix_invariance: exact
+  both_candidates_required: true
+interpretation:
+  pass: organization-before-entry coordinate established within the retrospective target task
+  fail: confirmed committor remains inaccessible to the frozen observed-prefix tube representation
+prohibited:
+  - representation_search
+  - window_search
+  - regularization_search
+  - model_refit_on_confirmation
+  - branch_derived_predictor
+  - completed_run_centroid_predictor
+  - candidate_pooling
+  - reactive_current_claim
+  - intervention
+  - author_contact
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

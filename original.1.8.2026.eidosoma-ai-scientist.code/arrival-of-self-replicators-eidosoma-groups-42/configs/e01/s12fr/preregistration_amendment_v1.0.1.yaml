@@ -1,0 +1,38 @@
+schemaVersion: E01-S12FR-preregistration-amendment-v1.0.1
+researchStepId: E01-S12FR-EXACT-REPLAY-COMPARATOR-REPAIR-v1.0.0
+amendmentClass: PRE_SIMULATION_INTERFACE_CORRECTION
+status: FROZEN_BEFORE_ANY_SIMULATOR_TASK_WAS_CONSTRUCTED
+trigger:
+  commandStage: diagnose-original
+  failure: mixed_object_particle_identity_columns_passed_to_numpy_array_equal_equal_nan
+  location: particle_identity_audit
+  simulatorTaskConstructionReached: false
+  simulatorRerunOccurred: false
+  pairOutcomeInspected: false
+  abcDistanceOrPosteriorInspected: false
+authorizedChange:
+  file: scripts/e01/run_s12fr_replay_repair.py
+  oldBehavior: numpy_array_equal_equal_nan_on_every_column
+  newBehavior: pandas_Series_equals_per_column
+  rationale: >-
+    Series.equals preserves exact shape/order and value comparison while
+    recognizing missing values at the same positions for mixed string/object
+    identity columns; this is only a frozen-input identity audit and is not the
+    scientific trajectory comparator.
+unchanged:
+  - comparator_contract
+  - comparator_implementation
+  - RNG_audit_adapter
+  - simulator
+  - RNG_derivation_and_roots
+  - particles_and_schedule
+  - exposure_families_and_clocks
+  - targets_summary_distance_thresholds_and_gates
+  - pair_diagnostic_contract
+  - one_repair_rule
+  - previously_suppressed_distance_firewall
+validationRequired:
+  - focused_tests
+  - S12F_plus_S12FR_regression_tests
+  - Ruff_and_py_compile
+  - commit_and_push_before_rerun

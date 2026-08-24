@@ -1,0 +1,158 @@
+schema: eidosoma.e01.s06_seed_derivation_contract.v1
+researchStepId: S06
+experimentId: E01
+contractVersion: E01-seed-derivation-contract-v1.0.0
+seedSchemaVersion: E01-seed-schema-v1.0.0
+canonicalJsonVersion: E01-canonical-json-v1.0.0
+derivationAlgorithm: E01-SHA256-DOMAIN-SEPARATION-PCG64DXSM-v1
+status: reconstruction_engineering_contract
+scopeBoundary: >-
+  This contract defines E01 reconstruction seeds. It does not identify the
+  unavailable author implementation, legacy MATLAB rand/randn algorithms,
+  global-state reset order, or the paper's stream-sharing policy.
+
+canonicalJson:
+  encoding: UTF-8
+  objectKeys: lexicographically sorted
+  separators: comma and colon with no surrounding whitespace
+  ensureAscii: false
+  numericRule: integers only; every binary64 value is a canonical float.hex string
+  invalidValues: [NaN, Infinity, -Infinity, JSON numeric float, duplicate object key]
+
+rootIdentity:
+  requiredFields:
+    - experimentId
+    - specificationId
+    - trajectoryId
+    - replicateIndex
+    - engineId
+    - rootSeedHex
+    - couplingPolicy
+    - couplingReason
+    - explicit namespace for every stream purpose
+  rootSeedEncoding: exactly 32 bytes as 64 lowercase hexadecimal characters
+  securityBoundary: Seeds are reproducibility identities, not cryptographic secrets.
+
+streamPurposes:
+  required:
+    - catalytic_matrix
+    - initial_state
+    - event
+    - waiting_time
+    - fission
+    - daughter_selection
+    - intervention
+    - estimator
+    - machine_learning
+  waitingTimeRationale: >-
+    S05 gives direct Gillespie waiting time its own RNG input. Folding that input
+    into event selection would regress the already validated stream separation.
+  futureExtensionRule: >-
+    A new stochastic purpose requires a versioned schema addition; it may not
+    silently reuse an existing stream.
+
+derivation:
+  domainUtf8WithTerminalNul: EIDOSOMA-E01-SEED-DERIVATION-v1
+  contextFieldsInCanonicalOrderBySerializer:
+    - seedSchemaVersion
+    - derivationAlgorithm
+    - experimentId
+    - replicateIndex
+    - streamPurpose
+    - streamNamespace
+  preimage: >-
+    domain_bytes || uint32_be(length(root_seed_bytes)) || root_seed_bytes ||
+    uint64_be(length(canonical_context_utf8)) || canonical_context_utf8
+  digest: SHA-256(preimage)
+  seedInteger: unsigned big-endian integer represented by the complete 256-bit digest
+  bitGenerator: numpy.random.PCG64DXSM
+  generatorConstruction: numpy.random.Generator(numpy.random.PCG64DXSM(seed_integer))
+  numpyVersion: 2.4.6
+  compatibilityEvidence: >-
+    The pinned NumPy PCG64DXSM documentation guarantees that a fixed seed
+    reproduces the same random integer stream. Distribution samplers and engine
+    floating-point operations remain scoped to the pinned same-engine runtime.
+
+coupling:
+  policies:
+    trajectory_isolated:
+      rule: >-
+        Every purpose must explicitly use the canonical namespace
+        urn:eidosoma:seed-namespace:{experiment}:{specification}:{trajectory}:r{replicate}.
+      couplingReason: must be null
+    explicit_common_random_numbers:
+      rule: >-
+        Every purpose namespace remains explicit and a nonempty scientific
+        coupling reason is mandatory. Matching namespaces are the only permitted
+        way to share raw streams across trajectories/specifications.
+  noImplicitCoupling: true
+  purposeDomainSeparation: true
+
+engineBindings:
+  e01_gard_independent:
+    catalytic_matrix: catalytic_matrix
+    initialization: initial_state
+    events: event
+    waiting_time: waiting_time
+    fission: fission
+    daughter: daughter_selection
+    auxiliaryUnconsumedBySimulation: [intervention, estimator, machine_learning]
+  e01_gard_historical:
+    status: NONCONFORMING_TO_CANONICAL_SEEDED_REGENERATION
+    exactFixtureMode: EXPLICIT_DRAW_TAPE_NO_RNG_ASSUMPTION
+    reason: >-
+      Historical public behavior uses a shared order-dependent legacy MATLAB
+      global RNG. Assigning separate PCG64DXSM streams would change that behavior.
+    authorMatlabIdentity: UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER
+
+preservedRegistryBoundaries:
+  registryVersion: E01-specification-registry-v0.3.0
+  registrySha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+  gard.initial_state.rng_stream: UNRESOLVED::E01-A020
+  preprocessing.state_sampling_instant: UNRESOLVED::E01-A025
+  authorCodeIdentity: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  rule: >-
+    The canonical reconstruction policy is not an evidence-based resolution of
+    either author-facing sentinel. Registry v0.3.0 remains byte-for-byte unchanged.
+
+validationRequirements:
+  - all nine derivations are unique
+  - every serialized derivation regenerates exactly
+  - known-answer seed vectors match
+  - fresh generator objects are pairwise distinct
+  - consuming auxiliary streams cannot alter a simulation trajectory
+  - all manifest and payload checksums validate
+
+knownAnswerVector:
+  sourceFixture: configs/e01/s06_example_specification.yaml
+  interpretation: >-
+    Frozen regression values for the specified canonical preimage and NumPy
+    PCG64DXSM constructor; they are not statistical validation.
+  streams:
+    catalytic_matrix:
+      seedMaterialHex: 28df7ce21b3cb9d24545eb61fcb57512b50dd250a79685d861646324e8a7371d
+      firstFourRawUint64: [15798977804078337820, 6284927119150286005, 1326332071301679626, 14363712055115283238]
+    initial_state:
+      seedMaterialHex: aa8a4afdbb6a75e5a29614bac39fe02bb4a68682ec4872dc413ba86b7f37a0ed
+      firstFourRawUint64: [15412279007280519372, 6935519702479453981, 10078941716305938214, 858973409220398117]
+    event:
+      seedMaterialHex: fbd5623f950f56e655d997676329349498cc59933b73c37cf0292ec9b508d57b
+      firstFourRawUint64: [6403512476576402153, 207056205339880215, 4323501418720825658, 3718843903231058713]
+    waiting_time:
+      seedMaterialHex: dc384141717793f4c0082545db8cf99cf846d11751a109f081b4ae44ae323d3b
+      firstFourRawUint64: [12004127793609061730, 1442978172532456174, 8607273586354036503, 4223597322642472257]
+    fission:
+      seedMaterialHex: 985326128567510ebfd8dc0c6349e217f4e2472ccd93dc185e03eca0c03ef16a
+      firstFourRawUint64: [10283796822957663926, 2856354956200729492, 17468295805742890159, 17572650331940878701]
+    daughter_selection:
+      seedMaterialHex: c3df09fa7fef7bb753a98653d24ee0da56bea81c53a113570303751e1d6cbfe2
+      firstFourRawUint64: [14719079064902187238, 16709995199508977437, 12187064389948357553, 6033585825295132279]
+    intervention:
+      seedMaterialHex: 184ccc65c741407e5c17c29d92c3827de10050912bafb4da31575b598982fe3d
+      firstFourRawUint64: [5898747255692417104, 17310990862987466616, 1789115030724245310, 9281282824987039591]
+    estimator:
+      seedMaterialHex: f4f898eea6dbb6eb934fb5a493fd910754a6bcc0b549d216d4b16aef370a4068
+      firstFourRawUint64: [16590029345445536747, 5562021551273307410, 1402174207872408314, 7335951835465532049]
+    machine_learning:
+      seedMaterialHex: f283213d20faed8cbaa34929dcd45720d0ba0d13e10b39623f740905e3018eb9
+      firstFourRawUint64: [15256671092279527516, 397222477051734218, 8922682771206678026, 10121026239872402531]

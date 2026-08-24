@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wagner-memory-cleanroom"
+version = "0.1.0"
+description = "Independent two-GPU clean-room replication of Wagner state and lineage memory"
+requires-python = ">=3.13"
+dependencies = [
+  "jax[cuda13]==0.11.1",
+  "numpy==2.5.2",
+  "scipy==1.18.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+wagner-memory = "wagner_memory_cleanroom.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

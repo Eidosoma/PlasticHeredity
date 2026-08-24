@@ -1,0 +1,18 @@
+{
+  "amendment_id": "86e0cda5d5403fed3601fcd65110472ed76305ab9f5a1b139a0347abf238e185",
+  "complete_readback_exact": true,
+  "derived_pilot_eligibility_recomputed": true,
+  "failure_log_sha256": "82fe9a172d8d2db921a1613184fa7c9b195409ae3be2d8d51c1e2e051fe19ead",
+  "format": "codex-intervention-p3-inference-recovery-audit-v1",
+  "generation_checkpoint_digest_unchanged": true,
+  "intervention_futures_regenerated": 0,
+  "new_intervention_futures_generated": 0,
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "primary_checkpoint_states_loaded": 400,
+  "prospective_lifecycle_amendment_id": "679449881a33f0f40a50ca7e9de8849a1996321492a1b8190f8007f6cc22637c",
+  "replay_checkpoint_digest_unchanged": true,
+  "replay_checkpoint_states_loaded": 400,
+  "scientific_contract_changes": [],
+  "semantic_random_arm": "RANDOM_SURGERY",
+  "semantic_random_arm_explicit_in_primary_and_readback": true
+}

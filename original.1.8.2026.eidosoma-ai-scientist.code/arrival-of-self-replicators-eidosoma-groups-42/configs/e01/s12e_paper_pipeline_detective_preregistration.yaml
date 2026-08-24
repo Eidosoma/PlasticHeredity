@@ -1,0 +1,578 @@
+schemaVersion: E01-S12E-preregistration-v1.0.0
+researchStepId: E01-S12E-PAPER-PIPELINE-DETECTIVE-RECONSTRUCTION-v1.0.0
+shortStepId: S12E
+title: Reconstructing the Authors' GARD, Replicator-Label, Causal-Emergence and Intervention Pipeline from Observable Fingerprints
+evidenceClass: SOURCE_AND_PAPER_INFORMED_FORENSIC_RECONSTRUCTION
+sourceRelationship: SOURCE_AND_PAPER_INFORMED_FORENSIC_RECONSTRUCTION
+preregisteredAtUtc: '2026-08-02T00:00:00Z'
+s13Status: BLOCKED_PENDING_S12E_HUMAN_REVIEW
+
+frozenQuestion: >-
+  Can one source-grounded, dependency-ordered reconstruction match the paper's
+  molecular time base, 100-generation GARD behavior, control replicator
+  fingerprints, retrospective causal-emergence association, and (only if all
+  upstream gates pass) the direction of the stated max/control/min intervention?
+
+interpretationBoundary:
+  additiveEvidenceOnly: true
+  authorContactPermitted: false
+  authorPrimaryPermitted: false
+  paperPrimaryPermitted: false
+  exactAuthorImplementationClaimPermitted: false
+  automaticS13Permitted: false
+  scaleUp100MatricesPermitted: false
+  selectionOnEmergenceBeforePhase3: false
+  priorStepsImmutable: [S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S11R, S12, S12B, S12C, S12D]
+  priorClassificationsImmutable:
+    S12: frozen
+    S12B: SOURCE_RECONSTRUCTION_FAILED
+    S12C: SOURCE_FAMILY_NOT_SUPPORTED
+    S12D: S12D_OPERATIONAL_VALIDATION_FAILED_CLOSED
+
+phaseFirewall:
+  order: [phase0_archaeology, phase1_gard, phase2_labels, phase3_information, phase4_intervention]
+  phase0MustExistBeforeDevelopment:
+    - paper_fingerprint_ledger.yaml
+    - implementation_ambiguity_ledger.csv
+    - source_clue_ledger.md
+    - paper_figure_measurements.csv
+    - source_snapshot_manifest.json
+  methodLockRequirements:
+    - preregistration_schema_validation
+    - registry_cross_reference_validation
+    - source_identity_validation
+    - immutable_prior_baseline
+    - focused_tests
+    - clean_git_diff_review
+    - committed_and_pushed_before_development_outcomes
+  prohibitedAfterDevelopmentOpen:
+    - new_engine_candidate
+    - new_label_candidate
+    - new_metric_candidate
+    - new_intervention_semantic
+    - threshold_change
+    - seed_change
+    - outcome_vocabulary_change
+    - preprocessing_change
+  confirmationEmergenceAccessRequires:
+    - qualifying_engine_label_pipeline
+    - candidate_pipeline_lock
+    - all_confirmation_trajectories_generated
+    - all_confirmation_labels_generated
+    - confirmation_inputs_hash_frozen
+
+sourcePins:
+  paper:
+    arxivId: 2607.28250v1
+    expectedSha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+    sourceEndpointExpectedRepresentation: PDF_NOT_TEX_ARCHIVE
+  historicalGard:
+    repository: ModelingOriginsofLife/GARD
+    commit: 86dff6320d5ae91b4e831471079ff46749b14df9
+    tree: a602fc99b494982c04c60405bc6422af9db5a77a
+  iigr:
+    repository: pigozzif/IntegratedInformationGeneRegulation
+    commit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+    tree: b0baf451876f4c8760f25096b7d426add68f6881
+  phirl:
+    repository: pigozzif/PhiRL
+    commit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+    tree: e59fa8e311c2f727724acf3c1f1885dc8d840ee5
+    regularizationAncestor: 9030b598f436cd23c39a3c3fc312ff79c79fb2ad
+  grnLineage:
+    repository: pigozzif/BreakingGRNMemories
+    commit: afe44231ad3ce915172cdb53a6b234bd76fcb6a5
+    tree: 56f66ab8b57a2c60e830370842926708eee0767d
+  safeLattice:
+    path: /artifacts/research_steps/S12B/safe_phi_lattice.json
+    sha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+
+paperFingerprints:
+  parameters:
+    nSpecies: 100
+    nMin: 40
+    nMax: 80
+    nGenerations: 100
+    maxStepsPerGeneration: 1000
+    betaA: -4.0
+    betaSigma: 4.0
+    initialSampling: distinct_types_uniform_without_replacement
+    updateProse: simultaneous_vector_poisson_join_and_loss
+    fissionProse: independent_binomial_per_species_p_0p5
+  results:
+    aggregateSlopeP: 0.1995
+    positiveEmergenceReplicationRuns: 73
+    positiveSignificantRuns: 54
+    higherEmergenceDuringReplicationRuns: 57
+    ljungBoxRawSignificantRuns: 86
+    ljungBoxDifferencedSignificantRuns: 100
+    controlPersistenceMean: 716.0
+    controlPersistenceSd: 198.0
+    controlProbabilityMean: 0.88
+    controlProbabilitySd: 0.03
+    controlConsistencyMean: 0.38
+    controlConsistencySd: 0.06
+    controlFirstReplicatorMean: 37.0
+    controlFirstReplicatorSd: 27.0
+    firstReplicatorPrimaryUnit: raw_molecular_batch_step
+    firstReplicatorDiagnosticUnit: percent_of_trajectory
+    inferredControlBatchSteps: 813.6363636363636
+  interventionTable:
+    max:
+      persistence: [874.0, 233.0]
+      probability: [0.88, 0.03]
+      consistency: [0.52, 0.04]
+      timeToFirst: [36.0, 26.0]
+    control:
+      persistence: [716.0, 198.0]
+      probability: [0.88, 0.03]
+      consistency: [0.38, 0.06]
+      timeToFirst: [37.0, 27.0]
+    min:
+      persistence: [559.0, 99.0]
+      probability: [0.80, 0.03]
+      consistency: [0.42, 0.04]
+      timeToFirst: [40.0, 28.0]
+
+randomness:
+  bitGenerator: PCG64DXSM
+  derivation: sha256_domain_identity_first_128_bits_as_unsigned_big_endian_seed
+  roots:
+    development: 377f3cf041f1effb83e98435163f99ca3f9ab94496fecf97d09a2ede8af4aa84
+    confirmation: cb6f4f86ee97f03bbc5f5d4bb64304266a2425807fdbc7040104befd8191f259
+    intervention: 9fe1b424ddcb1812b4c877136f4a0240ab47c3802b48d0621c53b57fec204fbf
+  domains:
+    - catalytic_matrix
+    - initial_state
+    - event_update
+    - fission
+    - daughter_selection
+    - label_kmeans
+    - source_preprocessing
+    - source_partition
+    - bootstrap
+    - circular_shift
+    - intervention_action
+  requirements:
+    noSeedMaterialOverlapAcrossPhases: true
+    sameCatalyticMatricesAcrossEngineCandidates: true
+    sameInitialDistinctTypeSetsAcrossEngineCandidates: true
+    engineSpecificDynamicsStreams: true
+    exactReplay: true
+
+timeAndObservationContract:
+  primaryPaperTimeUnit: molecular_batch_update
+  batchStepIncrement: one_per_categorical_event_or_simultaneous_poisson_vector_update
+  fissionIncrementsBatchStep: false
+  generation: completed_fission_count
+  retainedObservationKinds: [initial_selected_state, molecular_update, post_fission]
+  sourceAnalysisSeries: initial_plus_every_molecular_update_plus_every_post_fission_state
+  fingerprintSeries: molecular_update_rows_only
+  rationale: >-
+    Batch updates are the paper's stated molecular steps; explicit fission rows
+    are retained in the source-analysis series to preserve boundary jumps and
+    permit exact post-fission prefix endpoints. Both lengths are always reported.
+  labelPropagation:
+    generationClusterLabels: label_post_fission_g_applies_to_post_fission_g_and_subsequent_growth_until_next_fission
+    preFirstFissionForPropagatedLabels: drift
+    directCentroidLabels: evaluated_independently_on_each_observation_state
+
+phase1:
+  informationTheoryProhibited: true
+  developmentMatricesPerCandidate: 24
+  commonParameters:
+    nSpecies: 100
+    nMin: 40
+    nMax: 80
+    nGenerations: 100
+    maxStepsPerGeneration: 1000
+    betaA: -4.0
+    betaSigma: 4.0
+    kForward: 0.01
+    kBackward: 0.0001
+    initialState: exactly_40_distinct_types_at_count_one
+    catalyticMatrix: exp_A_plus_sigma_times_standard_normal_with_diagonal_and_historical_orientation
+    batchLoss: applied_loss_is_min_poisson_loss_and_current_count
+    growthStop: first_post_update_mass_ge_80_or_1000_updates
+    maxStepsAction: fission_current_nonempty_state
+    overshoot: retained
+    binomialFission: independent_species_binomial_n_i_p_0p5_with_complementary_other_daughter
+    bothDaughtersEmpty: terminal
+  candidates:
+    K0_HISTORICAL_EVENTWISE:
+      updateKernel: categorical_single_join_or_loss_event_from_normalized_rates
+      rhoEach: 0.01
+      daughter: first_literal
+      emptySelectedDaughter: terminal
+      note: paper_initialization_binomial_fission_and_maxsteps_are_shared;_only_the_update_kernel_is_S12_historical
+    K1_PAPER_POISSON_RANDOM_NONEMPTY:
+      updateKernel: simultaneous_vector_poisson
+      rhoEach: 0.01
+      daughter: uniform_over_nonempty_daughters
+      emptySelectedDaughter: impossible_unless_both_empty
+    K2_PAPER_POISSON_FIRST_DAUGHTER:
+      updateKernel: simultaneous_vector_poisson
+      rhoEach: 0.01
+      daughter: first_literal
+      emptySelectedDaughter: terminal
+    K3_PAPER_POISSON_RANDOM_LITERAL:
+      updateKernel: simultaneous_vector_poisson
+      rhoEach: 0.01
+      daughter: uniform_over_both_daughters_including_empty
+      emptySelectedDaughter: terminal
+    K4_PAPER_POISSON_RHO_ONE:
+      updateKernel: simultaneous_vector_poisson
+      rhoEach: 1.0
+      daughter: uniform_over_nonempty_daughters
+      emptySelectedDaughter: impossible_unless_both_empty
+  reportedPerTrajectory:
+    - completed_fissions
+    - terminal_status
+    - total_batch_steps
+    - total_source_observations
+    - steps_per_generation
+    - pre_fission_mass
+    - post_fission_mass
+    - overshoot
+    - extinction_generation
+    - maxsteps_terminations
+    - daughter_sizes
+    - exact_replay
+  selection:
+    maximumCandidates: 2
+    hardEligibility:
+      completedAtLeast: 23
+      outOf: 24
+      medianBatchStepsMin: 500
+      medianBatchStepsMax: 1500
+      maximumExtinctions: 1
+      minimumFractionGenerationsReachingNMax: 0.95
+      medianPostFissionMassMin: 20
+      medianPostFissionMassMax: 60
+    rankScore: >-
+      abs(median_batch_steps-813.6363636363636)/813.6363636363636
+      +abs(median_post_fission_mass-40)/40+extinction_fraction
+    ties: lexical_engine_identifier
+    noEligibleOutcome: TIME_BASE_MISMATCH_CONFIRMED
+
+phase2:
+  emergenceProhibited: true
+  substrate: post_fission_relative_compositions
+  candidates:
+    L0_HISTORICAL_ADJACENT_H090:
+      algorithm: historical_nondrift_technique_1
+      similarity: source_H_cosine
+      threshold: 0.9
+      comparator: strict_greater_than
+      molecularMapping: generation_propagation
+    L1_DOMINANT_CENTROID_H090:
+      algorithm: connected_components_of_post_fission_H_graph_then_largest_component_centroid
+      similarity: source_H_cosine
+      edgeComparator: strict_greater_than_0p9
+      dominantTie: largest_then_earliest_member
+      centroid: closed_arithmetic_mean_of_relative_compositions
+      stateComparator: greater_than_or_equal_0p9
+      molecularMapping: direct_state_to_centroid
+    L2_EUCLIDEAN_COMPTYPE:
+      algorithm: deterministic_kmeans_on_historical_nondrift_post_fission_relative_compositions
+      kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      replicasPerK: 10
+      k1Silhouette: 0.0
+      k1Use: only_if_no_finite_positive_k_ge_2_silhouette
+      selection: maximum_silhouette_then_lower_k_then_lower_replica
+      minimumPersistentClusterSize: 3
+      molecularMapping: generation_propagation
+      kmeansNInitPerReplica: 1
+      kmeansAlgorithm: lloyd
+    L3_EUCLIDEAN_DOMINANT_CENTROID:
+      baseClustering: L2_EUCLIDEAN_COMPTYPE
+      dominantTie: largest_then_lowest_cluster_id
+      centroid: closed_arithmetic_mean_of_relative_compositions
+      memberDistances: euclidean_relative_composition
+      robustRadiusCap: min_max_member_distance_and_median_plus_3_times_1p4826_MAD
+      zeroMadPolicy: maximum_member_distance
+      stateComparator: distance_less_than_or_equal_radius
+      molecularMapping: direct_state_to_centroid
+  fingerprints:
+    primarySeries: molecular_update_rows_only
+    values:
+      - replicating_fraction
+      - replicating_lifetime
+      - first_replicator_batch_step
+      - longest_episode
+      - mean_episode
+      - entries
+      - exits
+      - consecutive_binary_pearson
+      - generation_fraction
+      - persistent_cluster_count
+      - dominant_cluster_size
+      - label_agreement
+    cohortComparison: arithmetic_mean_across_complete_trajectories
+    matchIntervalsTwoReportedSd:
+      replicating_lifetime: [320.0, 1112.0]
+      replicating_fraction: [0.82, 0.94]
+      consecutive_binary_pearson: [0.26, 0.50]
+      first_replicator_batch_step: [0.0, 91.0]
+  developmentPipelineRank:
+    primary: fingerprint_match_count_descending
+    secondary: summed_absolute_reported_sd_distance_ascending
+    tertiaryEngine: phase1_rank
+    tertiaryLabelPriority:
+      - L1_DOMINANT_CENTROID_H090
+      - L2_EUCLIDEAN_COMPTYPE
+      - L3_EUCLIDEAN_DOMINANT_CENTROID
+      - L0_HISTORICAL_ADJACENT_H090
+    maximumPipelines: 2
+    minimumDevelopmentMatchCount: 0
+  confirmation:
+    newMatrices: 24
+    reuseAcrossLockedEngines: true
+    untouchedUntilPipelineLock: true
+    qualification:
+      completedAtLeast: 23
+      outOf: 24
+      medianBatchSteps: [500, 1500]
+      fingerprintMatchesAtLeast: 3
+      fingerprintCount: 4
+      exactRegeneration: true
+      postConfirmationThresholdChange: false
+    noQualifierOutcome: UPSTREAM_GARD_OR_LABEL_MISMATCH
+
+phase3:
+  conditionalOnQualifiedPhase2: true
+  commonPreprocessing:
+    pseudocount: 0.5
+    closure: true
+    transform: full_centered_log_ratio
+    removedOriginalComponentOneBased: 100
+    outputDimensions: 99
+    alternatePreprocessingPermitted: false
+  sourceCore:
+    lag: 1
+    alpha: 1.0
+    bonferroni: false
+    graphNoiseFloor: 1.0e-6
+    fiedlerNormalized: false
+    partition: strict_sign
+    reduction: arithmetic_mean_within_partition
+    safeLatticeOnly: true
+  branches:
+    M1_IIGR_EMERGENCE_CLR_FULL:
+      implementation: IIGR_CORRECTED_SOURCE
+      sourceSpecificPreprocessing: none_after_common_CLR
+      scalar: synergy_plus_downward_causation
+      temporalMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    M2_IIGR_EMERGENCE_CLR_GSR_AR1_FULL:
+      implementation: IIGR_CORRECTED_SOURCE
+      sourceSpecificPreprocessing: zscore_global_signal_regression_lag1_residualization_zscore
+      scalar: synergy_plus_downward_causation
+      temporalMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    M3_IIGR_LOCAL_PHIR_CLR_FULL:
+      implementation: IIGR_CORRECTED_SOURCE
+      sourceSpecificPreprocessing: none_after_common_CLR
+      scalar: corrected_local_phi_r
+      temporalMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    M4_PHIRL_EMERGENCE_CLR_FULL:
+      implementation: PHIRL_REGULARIZED_SOURCE
+      sourceSpecificPreprocessing: remove_std_le_1e-8_then_zscore
+      covarianceRegularization: trace_scaled_diagonal_epsilon_1e-6
+      scalar: synergy_plus_downward_causation
+      temporalMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+  associationAmbiguity:
+    paperTextPrimary: spearman_scalar_with_current_label
+    figure3CaptionDiagnostic: spearman_first_difference_scalar_with_current_label
+    noSubstitution: true
+  statistics:
+    trajectoryBootstrapReplicates: 4096
+    circularShiftReplicates: 4096
+    bootstrapUnit: catalytic_matrix
+    shiftUnit: within_trajectory_nonzero_circular_offset
+    ordinarySignificanceAlpha: 0.05
+    ljungBoxLag: min_10_and_floor_n_over_5_with_minimum_1
+    robustScale: 1p4826_times_MAD
+    spikeThreshold: 3.0
+    punctuatedTrajectory: at_least_one_absolute_3sigma_excursion_and_at_least_one_absolute_3MAD_excursion
+    illConditionedThreshold: 1.0e12
+    problematicSpikeNeighborhood: same_or_adjacent_observation
+  retrospectiveCandidateGate:
+    positiveCorrelationFractionMin: 0.65
+    medianCorrelationStrictlyPositive: true
+    higherMeanDuringReplicationFractionMin: 0.50
+    punctuatedTrajectoryFractionStrictlyGreaterThan: 0.50
+    problematicSpikeFractionMustBeLessThan: 1.0
+  prefixAudit:
+    endpoint: every_post_fission_observation_with_at_least_256_prior_molecular_batch_updates
+    series: complete_past_only_source_observation_prefix_including_current_post_fission_state
+    refitPartitionAndDistribution: true
+    temporalLabel: PROSPECTIVE_PREFIX_RECONSTRUCTION
+    exactReplay: true
+    futureSuffixDeletionInvariance: true
+    futureSuffixShuffleInvariance: true
+    futureSuffixReplacementInvariance: true
+    successGate:
+      finiteCoverageMin: 0.80
+      positiveTrajectoryFractionMin: 0.65
+      medianCurrentCorrelationStrictlyPositive: true
+      trajectoryBootstrapLower95StrictlyPositive: true
+      positiveCircularShiftPMax: 0.05
+  classifications:
+    fullPassPrefixFail: RETROSPECTIVE_TEMPORAL_FITTING_DEPENDENCE
+    fullPassPrefixPass: PROSPECTIVE_SOURCE_EMERGENCE_MATCH
+    noFullPass: METRIC_IDENTITY_MISMATCH
+
+phase4:
+  conditionalOnConfirmedRetrospectivePhase3Candidate: true
+  selectPipelineMetricForPilot:
+    pipelineOrder: frozen_phase2_pipeline_rank
+    metricPriority:
+      - M1_IIGR_EMERGENCE_CLR_FULL
+      - M2_IIGR_EMERGENCE_CLR_GSR_AR1_FULL
+      - M3_IIGR_LOCAL_PHIR_CLR_FULL
+      - M4_PHIRL_EMERGENCE_CLR_FULL
+    selectionUsesOnlyPassStatusAndFrozenPriority: true
+  scoringSemantics:
+    I1_APPEND_PREFIX_REFIT: append_candidate_to_available_treatment_history_refit_and_score_final_local_value
+    I2_FROZEN_CONTROL_MODEL: score_candidate_under_completed_matched_control_partition_and_gaussian_parameters
+    I3_REPLACE_IN_COMPLETED_CONTROL: replace_corresponding_control_post_fission_state_refit_completed_control_and_score_local_value
+  tripletsPerSemanticMaximum: 6
+  tripletSelection: first_six_confirmation_matrix_indices_in_frozen_pipeline_rank_that_complete_and_have_numeric_baseline_scores
+  actions: all_plus_one_species_and_all_minus_one_present_species
+  noOpCandidate: false
+  interventionAfterEveryFission: true
+  rawNumericArgmaxArgmin: true
+  deterministicTiePolicy: smallest_action_kind_order_add_before_delete_then_smallest_original_component_index
+  nonfiniteCandidatePolicy: candidate_ineligible_no_numeric_replacement;_semantic_fails_if_no_finite_action_for_a_required_decision
+  commonRandomStreamsUntilDivergence: true
+  outcomes:
+    persistence: sum_binary_label_over_molecular_update_rows
+    probability: mean_binary_label_over_molecular_update_rows
+    consistency: pearson_consecutive_binary_labels
+    timeToFirst: first_replicator_molecular_batch_step
+  candidateGate: max_and_min_move_persistence_or_probability_in_opposite_directions_on_at_least_4_of_6_triplets
+  successClassification: INTERVENTION_SEMANTICS_MATCH
+  noSuccessClassification: INTERVENTION_SCORING_UNRESOLVED
+
+compute:
+  cpuCoresMaximum: 8
+  simulationOrSourceWorkers: 6
+  statisticsWorkers: 1
+  orchestrationCores: 1
+  blasThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  gpu: optional_guarded_cross_check_only
+  cpuHoursMaximum: 120
+  gpuHoursMaximum: 8
+  wallHoursMaximum: 48
+  retainedArtifactBytesMaximum: 21474836480
+  benchmarkBeforeBulkSourceAnalysis: true
+  scopeReductionForRuntimeProhibited: true
+
+validation:
+  testsBeforeDevelopment: true
+  engineHandChecks:
+    - rate_equation_exact_small_fixture
+    - poisson_loss_clipping
+    - retained_overshoot
+    - binomial_complement_mass_conservation
+    - daughter_rules
+    - maxsteps_fission
+    - extinction
+  labelFixtures:
+    - adjacent_H
+    - dominant_H_component
+    - kmeans_k1_and_multi_cluster
+    - robust_radius_cap
+    - episode_metrics
+  sourceChecks:
+    - safe_lattice_hash
+    - S12C_fixture_replay
+    - M1_M3_shared_partition_identity
+    - local_component_identity
+  final:
+    - exact_replay
+    - seed_domain_disjointness
+    - confirmation_firewall
+    - immutable_prior_postcheck
+    - schema_validation
+    - manifest_hash_validation
+    - required_artifact_completeness
+    - report_equivalence
+    - runtime_ceiling
+    - storage_ceiling
+    - scope_compliance
+
+outcomeVocabulary:
+  - PAPER_PROSE_GARD_MATCH
+  - PAPER_REPLICATOR_LABEL_MATCH
+  - RETROSPECTIVE_SOURCE_EMERGENCE_MATCH
+  - PROSPECTIVE_SOURCE_EMERGENCE_MATCH
+  - INTERVENTION_SEMANTICS_MATCH
+  - TIME_BASE_MISMATCH_CONFIRMED
+  - UPSTREAM_GARD_OR_LABEL_MISMATCH
+  - METRIC_IDENTITY_MISMATCH
+  - RETROSPECTIVE_TEMPORAL_FITTING_DEPENDENCE
+  - INTERVENTION_SCORING_UNRESOLVED
+  - NO_SOURCE_GROUNDED_RECONSTRUCTION
+  - UNDERDETERMINED
+
+requiredArtifacts:
+  - preregistration.yaml
+  - paper_fingerprint_ledger.yaml
+  - paper_figure_measurements.csv
+  - implementation_ambiguity_ledger.csv
+  - source_clue_ledger.md
+  - source_snapshot_manifest.json
+  - engine_registry.yaml
+  - label_registry.yaml
+  - metric_registry.yaml
+  - intervention_semantics_registry.yaml
+  - development_seed_manifest.parquet
+  - confirmation_seed_manifest.parquet
+  - engine_development_results.parquet
+  - engine_fingerprint_summary.csv
+  - label_development_results.parquet
+  - label_fingerprint_summary.csv
+  - candidate_pipeline_lock.json
+  - confirmation_trajectories.parquet
+  - confirmation_labels.parquet
+  - confirmation_pipeline_results.csv
+  - full_emergence_values.parquet
+  - prefix_emergence_values.parquet
+  - emergence_associations.csv
+  - spike_results.csv
+  - temporal_dependence_results.csv
+  - partition_history.parquet
+  - numerical_diagnostics.parquet
+  - intervention_candidate_scores.parquet
+  - intervention_pilot_results.csv
+  - pipeline_adjudication.csv
+  - failure_ledger.csv
+  - runtime_manifest.json
+  - regeneration_validation.json
+  - artifact_manifest.json
+  - classification.json
+  - status.json
+  - S12E_FULL_RESULTS.md
+  - research_step_full_results.md
+requiredFigures:
+  - figures/01_paper_vs_reconstructed_trajectory_lengths.png
+  - figures/02_growth_fission_by_engine.png
+  - figures/03_replication_occupancy_onset_by_label.png
+  - figures/04_control_summary_comparison.png
+  - figures/05_emergence_trajectories_by_metric.png
+  - figures/06_association_and_drift_comparisons.png
+  - figures/07_full_versus_prefix.png
+  - figures/08_intervention_outcomes_by_semantic.png
+  - figures/09_final_pipeline_decision_tree.png
+
+stopRules:
+  immutablePriorChange: stop
+  sourceIdentityChange: stop
+  noPhase1Candidate: stop_after_phase1
+  noPhase2Qualifier: stop_after_phase2
+  noPhase3RetrospectiveCandidate: stop_after_phase3
+  phase4OnlyAfterPhase3Candidate: true
+  projectedCeilingExceeded: stop_at_phase_boundary
+  undocumentedPostOutcomeCodeChange: stop
+  alwaysReturnAfterS12E: true

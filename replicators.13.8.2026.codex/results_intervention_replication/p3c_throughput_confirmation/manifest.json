@@ -1,0 +1,54 @@
+{
+  "arms": [
+    "LOOSEN",
+    "TIGHTEN",
+    "BALANCED_LOG_RANDOM",
+    "THROUGHPUT_NEUTRAL_RANDOM",
+    "NOOP"
+  ],
+  "branches": 32,
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "checkpoint_audit": {
+    "campaign_contract_sha256": "2f493529bd7a0b4356583b049233d602d2d5fec5bf2101984d306e1dd9e665ad",
+    "generate_contract_sha256": "6d8027d33103f64e6df9de0f117bed5f87ca2f9e405eecdae88cfc12973e40d9",
+    "replay_contract_sha256": "a886d78ef3b86d02a8c6e66d7b1f5e8800319c9b0705c3ff56aa5f716226b902",
+    "work_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p3c_throughput_confirmation_work"
+  },
+  "complete_readback_exact": true,
+  "exact_replay": true,
+  "format": "codex-intervention-p3c-result-v1",
+  "landmarks": [
+    20,
+    35,
+    50,
+    60,
+    65,
+    80
+  ],
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 160,
+  "next_scientific_stage_launched": false,
+  "no_future_retries": true,
+  "no_matrix_replacement": true,
+  "p3b_preserved": true,
+  "primary_futures": 307200,
+  "primary_gate_pass": false,
+  "registration_id": "9f0cb51335257d309e7868bd0e8e53bd6ebff3415e4ecafdfe367dcfd56cb8ea",
+  "replay_futures": 307200,
+  "resistance_gate_pass": false,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "stage": "confirmation",
+  "states": 1920,
+  "surgery_audit_pass": true
+}

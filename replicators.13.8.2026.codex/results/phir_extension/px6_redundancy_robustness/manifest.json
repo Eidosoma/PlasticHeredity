@@ -1,0 +1,15 @@
+{
+  "cells": 40,
+  "classification_counts": {
+    "definition_sensitive": 0,
+    "inconclusive_same_sign": 7,
+    "uniform_negative": 5,
+    "uniform_positive": 28
+  },
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 2.6034998870000003,
+  "format": "codex-ch5-phir-extension-px6-result-v1",
+  "no_lambda_selected": true,
+  "registration_id": "0b5e17ae7ff253be723700d457af4751b77705d704ea15bc9db9b658cb9db0a8"
+}

@@ -1,0 +1,105 @@
+{
+  "replay_gate": true,
+  "02": {
+    "arms": {
+      "ph_stab": {
+        "paper_full": -9.286300811951348,
+        "paper_late": -9.505564009197757,
+        "n_valid_full": 96
+      },
+      "ph_destab": {
+        "paper_full": -10.548820880656931,
+        "paper_late": -8.297821563599019,
+        "n_valid_full": 96
+      },
+      "random": {
+        "paper_full": -11.031303069804041,
+        "paper_late": -9.56595810517099,
+        "n_valid_full": 96
+      },
+      "noop": {
+        "paper_full": -10.103248521924991,
+        "paper_late": -9.39849169826826,
+        "n_valid_full": 96
+      }
+    },
+    "tests": {
+      "L1_phstab_minus_phdestab_FULL": {
+        "diff": 1.2625200687055826,
+        "ci": [
+          0.07965297027415992,
+          2.4282941610766153
+        ],
+        "excludes0": true
+      },
+      "L1sec_phstab_minus_phdestab_LATE": {
+        "diff": -1.2077424455987398,
+        "ci": [
+          -3.3851503226908948,
+          0.9167911215391992
+        ],
+        "excludes0": false
+      },
+      "L2_random_minus_noop_FULL": {
+        "diff": -0.9280545478790504,
+        "ci": [
+          -2.2910433386104274,
+          0.42003632097829047
+        ],
+        "excludes0": false
+      }
+    },
+    "paper_vs_code_pearson": 0.17561587880466464
+  },
+  "03": {
+    "arms": {
+      "ph_stab": {
+        "paper_full": -8.923883474332685,
+        "paper_late": -4.66622003626125,
+        "n_valid_full": 96
+      },
+      "ph_destab": {
+        "paper_full": -8.882566918286509,
+        "paper_late": -2.610164377063581,
+        "n_valid_full": 96
+      },
+      "random": {
+        "paper_full": -9.938272538794067,
+        "paper_late": -5.09550621244327,
+        "n_valid_full": 96
+      },
+      "noop": {
+        "paper_full": -7.819602460476517,
+        "paper_late": -3.9820607136346027,
+        "n_valid_full": 96
+      }
+    },
+    "tests": {
+      "L1_phstab_minus_phdestab_FULL": {
+        "diff": -0.041316556046176046,
+        "ci": [
+          -1.295244330198873,
+          1.2469432586688856
+        ],
+        "excludes0": false
+      },
+      "L1sec_phstab_minus_phdestab_LATE": {
+        "diff": -2.1655740337922667,
+        "ci": [
+          -3.786423993643748,
+          -0.5598524212869269
+        ],
+        "excludes0": true
+      },
+      "L2_random_minus_noop_FULL": {
+        "diff": -2.118670078317549,
+        "ci": [
+          -3.0397253270906655,
+          -1.2580714232861865
+        ],
+        "excludes0": true
+      }
+    },
+    "paper_vs_code_pearson": 0.08949417270179459
+  }
+}

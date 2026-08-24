@@ -1,0 +1,14 @@
+{
+  "audit_id": "23a559a9cf7fdbf1daba684246c031a3a0f695c715ab4a40c9797f0040f8bb26",
+  "confirmation_checksum_manifest_sha256": "a104d02cdf588f93ad4e9aa252bf2227709a2855ca84d924030627a692068fb9",
+  "format": "codex-p3c-sealed-interpretation-audit-v1",
+  "new_scientific_matrices": 0,
+  "new_simulated_futures": 0,
+  "pilot_checksum_manifest_sha256": "9017aaf39b3713767d6d257f2578db2c6950e2b22c00f04ccd73ea461146ae52",
+  "registered_p3c_verdict_changed": false,
+  "source_hashes": {
+    "CODEX_INTERVENTION_P3C_INTERPRETATION_AUDIT.md": "c0afc1b7665f9aa261251092d89bbb980bb02f593071932179e2b8819ef88026",
+    "plastic_heredity/intervention_p3c_interpretation.py": "8fb84c05924ababb370a215c77243edeb082cd9a21deb0cf1b598a38ccdaf7e8",
+    "tests/test_intervention_p3c_interpretation.py": "e67f7d7d54a2c61a490d4f9eaf20f51bcc19ebbcde1ad34b304e45c73cf63000"
+  }
+}

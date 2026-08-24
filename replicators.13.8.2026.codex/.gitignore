@@ -1,0 +1,118 @@
+results/.regime_ensemble_confirmation.work/replay/
+.venv/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+/results_intervention_replication/work_archives/
+/results_intervention_replication/.cr9m_launch_moderation_work/
+/results_intervention_replication/cr9m_launch_moderation/*.csv.gz
+/results_intervention_replication/cr9m_launch_moderation/*.npz
+/results_intervention_replication/cr9m_launch_moderation.log
+/results_intervention_replication/.cr10_exploratory_internalization_work/
+/results_intervention_replication/cr10_exploratory_internalization/*.csv.gz
+/results_intervention_replication/cr10_exploratory_internalization/*.npz
+/results_intervention_replication/cr10_exploratory_internalization.log
+/results/.generative_null_work/
+/results/generative_null_decomposition/*.csv.gz
+/results/generative_null_decomposition/*.npz
+/results/generative_null_decomposition.log
+/results/.phir_ch5_pilot_work/
+/results/.phir_ch5_confirmation_work/
+/results/phir_ch5_pilot/*.csv.gz
+/results/phir_ch5_pilot/*.npz
+/results/phir_ch5_confirmation/*.csv.gz
+/results/phir_ch5_confirmation/*.npz
+/results/phir_ch5_pilot.log
+/results/phir_ch5_confirmation.log
+/results/.phir_window_bridge24_work/
+/results/phir_window_bridge24/*.csv.gz
+/results/phir_window_bridge24/*.npz
+/results/phir_window_bridge24.log
+/results/.phir_feedback_dose24_work/
+/results/phir_feedback_dose24/*.csv.gz
+/results/phir_feedback_dose24/*.npz
+/results/phir_feedback_dose24.log
+/results/.phir_protocol_adjudication_work/
+/results/phir_protocol_adjudication24/*.csv.gz
+/results/phir_protocol_adjudication24/*.npz
+/results/phir_protocol_adjudication24.log
+/results/phir_protocol_adjudication_smoke/*.csv.gz
+/results/phir_protocol_adjudication_smoke/*.npz
+/results/.phir_rescue_r0_work/
+/results/.phir_rescue_r0_work_failed_pre_amendment_001/
+/results/phir_rescue_r0/*.csv.gz
+/results/phir_rescue_r0/*.npz
+/results/phir_rescue_r0.log
+/results/phir_rescue_r0_failed_pre_amendment_001.log
+
+# Chapter 5 Phi-r extension: compact reports stay tracked; scientific work,
+# replay checkpoints, logs, and large machine-readable arrays stay local.
+/results/phir_extension/.px*_work/
+/results/phir_extension/*.log
+/results/phir_extension/px*/*.csv.gz
+/results/phir_extension/px*/*.npz
+/results/phir_extension/px*/*.pkl
+/results/phir_extension/px*/replay_audits/
+/results/phir_extension/px*/figures/
+
+# PX7 axis-gauge tournament: keep compact reports, not scientific work blobs.
+/results/phir_extension/.px7*_work/
+/results/phir_extension/px7*/*.csv.gz
+/results/phir_extension/px7*/*.npz
+/results/phir_extension/px7*/*.pkl
+/results/phir_extension/px7*.log
+
+# PX8 high-support resilience confirmation: checkpoints and dense tables stay local.
+/results/phir_extension/.px8*_work/
+/results/phir_extension/px8*/*.csv.gz
+/results/phir_extension/px8*/*.npz
+/results/phir_extension/px8*/*.pkl
+/results/phir_extension/px8*.log
+
+# PX9 gauge-identity pilot: only compact reports and seals are trackable.
+/results/phir_extension/.px9*_work/
+/results/phir_extension/.px9*.staging/
+/results/phir_extension/px9*/*.csv.gz
+/results/phir_extension/px9*/*.npz
+/results/phir_extension/px9*/*.pkl
+/results/phir_extension/px9*.log
+
+# PX10 multiscale causal-information adjudication: keep preregistration,
+# seals, compact reports, and checksums; ignore dense tables and checkpoints.
+/results/phir_extension/.px10*_work/
+/results/phir_extension/.px10*.staging/
+/results/phir_extension/px10*/*.csv.gz
+/results/phir_extension/px10*/*.npz
+/results/phir_extension/px10*/*.pkl
+/results/phir_extension/px10*/replay_audits/
+/results/phir_extension/px10*/figures/
+/results/phir_extension/px10*.log
+# The frozen development-only grain is a 17 KB registration artifact, not a
+# large result array, and must travel with the hash-verified registration.
+!/results/phir_extension/px10_registration/grain_model.npz
+
+# PX11 causal-information redistribution program: compact protocols, seals,
+# reports, and fitted scalar contracts stay trackable; dense traces and
+# resumable scientific checkpoints remain local (normally on /mnt/bioIce1).
+/results/phir_extension/.px11*_work/
+/results/phir_extension/.px11*.staging/
+/results/phir_extension/px11*/*.csv.gz
+/results/phir_extension/px11*/*.npz
+/results/phir_extension/px11*/*.pkl
+/results/phir_extension/px11*/replay_audits/
+/results/phir_extension/px11*/figures/
+/results/phir_extension/px11*.log
+
+# Reviewer sensitivity replay checkpoints; final outputs remain publishable for manuscript auditability.
+/reviewer_threshold_sensitivity_response/artifacts/work/
+/reviewer_threshold_sensitivity_response/artifacts/work/f32/
+/reviewer_threshold_sensitivity_response/artifacts/replays/*.npz
+
+# Reviewer sequence-history scratch arrays and local plotting cache; protocol artifacts remain tracked.
+/reviewer_sequence_history_response/artifacts/work/
+/reviewer_sequence_history_response/artifacts/matplotlib/
+
+# Compact-carrier confirmation: keep reports and aggregate reproduction
+# metadata, but leave the regenerable row-level outcome table local.
+/reviewer_ca_compact_carrier_replication/artifacts/confirmation/RAW_OUTCOMES.csv

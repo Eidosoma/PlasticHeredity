@@ -1,0 +1,77 @@
+schema: eidosoma.e01.s19_l23.preregistration.v1
+research_step_id: S19-L23
+versioned_id: E01-S19-L23-POWERED-FROZEN-PREFIX-FAMILY-SCREEN-v1.0.0
+title: Powered Independent Screen of Frozen Prefix Organization Families
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  On a new seed-firewalled 400-shared-matrix cohort, does any complete feature
+  family frozen in L19, L20, or L22 reproducibly predict the frozen 64-to-192
+  recurring-attractor onset task in both simulator candidates beyond compact
+  dynamics and exact H/stability?
+data:
+  shared_matrix_count: 400
+  trajectory_count: 800
+  fissions_per_trajectory: 100
+  candidates:
+    - candidate_id: S12F-CANDIDATE-02
+      exposure: 0.6031526490073492
+      daughter_rule: FIRST_DAUGHTER
+      overshoot_rule: TRIM_NEW_ENTRANTS_TO_NMAX
+    - candidate_id: S12F-CANDIDATE-03
+      exposure: 0.5613315384859516
+      daughter_rule: RANDOM_NONEMPTY
+      overshoot_rule: TRIM_NEW_ENTRANTS_TO_NMAX
+  matrix_root_hex: f3b0fd551b8f182388cad84365b62a2f2f51e82aa11a0c6b6e22a088dbe90544
+  phase: s19_l23_powered_frozen_prefix_screen
+  replacement_policy: NEVER_REPLACE
+task:
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+  landmark_count: 64
+  horizon_exclusive: 192
+  target_role: retrospective_outcome_only
+models:
+  controls:
+    - DUMMY_TRAINING_PRIOR
+    - TIME_ONLY
+    - EXACT_H_STABILITY
+    - PREFIX_RECURRENCE_GEOMETRY
+    - L18_PAST_FULL_NO_BGM
+    - COMPACT_BASELINE
+  registered_families:
+    - COMPACT_PLUS_L19_ALL
+    - COMPACT_PLUS_L20_TOPOLOGY
+    - COMPACT_PLUS_L20_INTRINSIC
+    - COMPACT_PLUS_L20_PATH
+    - COMPACT_PLUS_L20_MULTISCALE
+    - COMPACT_PLUS_L22_RANDOM_CONVOLUTION
+  downstream: exact_L18_L19_C1_L2_logistic
+  splits: ten_repeated_five_fold_stratified_matrix_level
+uncertainty:
+  matrix_bootstraps: 4096
+  maxstat_whole_matrix_label_permutations: 512
+  leave_one_matrix_out: true
+controls:
+  - temporal_permutation_with_first_observation_fixed
+  - feature_rows_permuted_among_matrices
+  - suffix_invariance
+success:
+  minimum_at_risk_per_candidate: 150
+  minimum_events_per_candidate: 50
+  minimum_non_events_per_candidate: 50
+  same_frozen_family_must_pass_both_candidates: true
+  discovery_requires_untouched_confirmation: true
+prohibited:
+  - new_feature_family
+  - within_loop_feature_selection
+  - target_change
+  - threshold_search
+  - completed_run_predictor
+  - candidate_pooling
+  - matrix_replacement
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75

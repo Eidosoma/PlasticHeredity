@@ -1,0 +1,37 @@
+{
+  "all_seed_domains_unique": true,
+  "confirmation_requires_sealed_development_models": true,
+  "development_output_must_not_exist": true,
+  "feature_provenance_digest": "04e68c6e535638b1aafd330d20a72fa20a19637fefe576d20b9e5906ad376aaa",
+  "format": "plastic-heredity-regime-design-v1",
+  "protocol_digest": "756ca3926a7fe1f232f053497a9929af1cd5db52099a905da95e4e0737916e7b",
+  "protocol_id": "7bcdfadd5a7620226882d7185eecec0ab092a01df4484f1490578a5c0bde42fd",
+  "registration_id": "71dd86609d52e9853afee34d304dcdfd1afaa7556e51c51e9b6ce9b73561b277",
+  "seed_domains": {
+    "MECHCONF": "9329144f93f357f7c53f235edbbbfbc2aacd49a88e162499eebe77749fa950fd",
+    "MECHCONF2": "4b80c4056081287f4ad0c4359f9229cba2cb803124278b6961ca8edbaf86a086",
+    "MEMCONF": "25cd8e32e8e2176b36c31ecf2486827a523a9d49ab18eb6e39cd74237f153868",
+    "REGCONF": "c498f2e934bfd17e0fb175dee2332eedec9e4c5914ab58fa621aaf7c5d99ac9a",
+    "REGDEV": "4ab47ce6f50cc194f28418be8cf8048d9e47972eb2864492f6dc3449869fa931",
+    "bootstrap": "78fc1508f7e42bdcbbbee9576bff758cf187b9754831ae8f14973063bd33846e",
+    "randomization": "c22ae1e6071d072fa707ca31c77b682a339768761710decb5d2cd2559a76c8c2",
+    "scaled5": "7d6e6f7dfe3ff3cd781693f4d95bbdc93f6404c90cbd39076d0c89704b77f21a"
+  },
+  "source_hashes": {
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/mechanistic_v2.py": "cbb69032d665b023d35ce7593acea914f3f0c7d2b4b36408be5a388d45132ddf",
+    "plastic_heredity/mechanistic_v2_features.py": "292bb478c71f6569fcbbc9834d6692a8ed92d1a8ae12f29fc2e759d29e9a7cd4",
+    "plastic_heredity/mechanistic_v2_models.py": "0ab9cc1ace5be8f7b7e2992a2f8fbe889ed029b61c51881ec61e1cf6f4377b8a",
+    "plastic_heredity/memory.py": "a1565c564dc1e22b11a6ed15190aa0030e0621217007163ada8c8471715cdca0",
+    "plastic_heredity/metrics.py": "56647628567f1cf8c38cec6adb4ec31efea45ad8b7744089ebe8c4d34e1a59cc",
+    "plastic_heredity/regime_confirmation.py": "034c70adf4571408ad2e0215e8a7bddf4aa03c39199f2e8c080ac6e50ad60c0a",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+  },
+  "status": "sealed_before_development_matrix_generation"
+}

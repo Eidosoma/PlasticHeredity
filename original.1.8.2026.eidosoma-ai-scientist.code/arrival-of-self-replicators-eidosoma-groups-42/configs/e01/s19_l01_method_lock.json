@@ -1,0 +1,193 @@
+{
+  "schema": "eidosoma.e01.s19_l01_method_lock.v1",
+  "researchStepId": "S19",
+  "loopId": "S19-L01",
+  "versionedLoopId": "E01-S19-L01-UNEVALUATED-CLAIM-RECOVERY-v1.0.0",
+  "continuationId": "E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0",
+  "outcomeAccessedAtLock": false,
+  "targetRepositoryBranch": "eidosoma/groups/42",
+  "repositoryParentBeforeLockCommit": "b92eb97e2b2e961e3aea4657561f49cab0c4848f",
+  "pushedCommit": "RESOLVED_FROM_CLEAN_REMOTE_MATCH_IMMEDIATELY_BEFORE_OUTCOME_ACCESS",
+  "valuePreservingAmendments": [
+    {
+      "amendmentId": "S19-L01-VPA-001",
+      "path": "configs/e01/s19_l01_value_preserving_amendment_001.json",
+      "sha256": "6dbb51338dc6d5d261cd0a9578656d88a844697fba0eefdd82958b1b58ccf824",
+      "scope": "restore exact frozen S13Y/S16 duplicate-first H-history input after pre-B assertion failure",
+      "scientificContractChanged": false
+    }
+  ],
+  "preLockFeasibilityAudit": {
+    "scope": "one candidate-2 matrix-0 raw dynamical-feature/runtime smoke test",
+    "valuesSeen": "raw per-feature values only",
+    "claimOutcomesNotSeen": [
+      "metric-emergence correlation",
+      "cross-candidate comparison",
+      "claim status",
+      "alternative-proportion prediction",
+      "spike correlation"
+    ],
+    "methodSelectionImpact": "none; formulas and bundles were fixed from public source before the smoke test",
+    "status": "TRANSPARENT_NON_CLAIM_FEASIBILITY_BENCHMARK"
+  },
+  "computeBenchmark": {
+    "representativeDirectDynamics": {
+      "candidateId": "S12F-CANDIDATE-02",
+      "matrixIndex": 0,
+      "trajectoryLength": 728,
+      "measuredComponents": "nolds 0.6.1 sample entropy, DFA, GHE, one correlation dimension, one Lyapunov exponent",
+      "projectedFullAndReplayCpuHours": 10.0
+    },
+    "predictionReference": {
+      "source": "/artifacts/research_steps/S16/compute_ledger.json",
+      "historicalScientificCpuHours": 0.476168,
+      "projectedFiveProportionCpuHours": 3.0
+    },
+    "projectedTotalCpuHours": 18.0,
+    "projectedWallHoursWithEightWorkers": 4.0,
+    "hardCpuCeilingHours": 100.0,
+    "hardWallCeilingHours": 72.0,
+    "validationReserveFraction": 0.10,
+    "gatePassed": true,
+    "operationalInterpretation": "few hours preferred; ceilings are not runtime targets"
+  },
+  "immutableBoundary": {
+    "steps": "S01-S18",
+    "bundles": [
+      "/artifacts/E01_forensic_replication_bundle",
+      "/artifacts/E01_forensic_replication_artifact_v2"
+    ],
+    "frozenTrajectoryRoot": "/cache/e01_s13y_v1/raw_trajectories",
+    "s18Totals": {
+      "SUPPORTED": 3,
+      "DIRECTIONALLY_SUPPORTED": 17,
+      "NOT_SUPPORTED_WITHIN_TESTED_SCOPE": 21,
+      "UNDERDETERMINED": 2,
+      "NOT_EVALUATED": 16
+    },
+    "overlayOnly": true
+  },
+  "bundles": {
+    "A_METRIC_DISTINCTIVENESS": {
+      "claims": ["C001", "C002", "C003", "C004", "C005", "C006", "C007", "C008", "C009", "C010", "C011", "C012"],
+      "specificationCount": 4,
+      "primaryGraph": "A_GRAPH_UNWEIGHTED_POSITIVE_SUPPORT",
+      "companionGraph": "A_GRAPH_WEIGHTED_BETA",
+      "primaryDynamics": "A_DYNAMICS_DIRECT_SELECTED_CLOCK",
+      "companionDynamics": "A_DYNAMICS_SOURCE_WINDOW100",
+      "runSummary": "mean completed-fit source emergence",
+      "dependencies": ["past-only emergence", "exact H", "composition change L2"],
+      "correlations": ["Spearman", "Pearson"],
+      "primaryBootstrapReplicates": 4096,
+      "dependencyBootstrapReplicates": 512,
+      "holmTestsPerCandidate": 24,
+      "equivalenceRegion": [-0.2, 0.2],
+      "promotionRequiresDefinedNonconstant": true
+    },
+    "B_ALTERNATIVE_PREDICTION_PROPORTIONS": {
+      "claims": ["C029"],
+      "specificationCount": 1,
+      "proportions": [0.1, 0.2, 0.25, 0.33, 0.5],
+      "modes": [
+        "RETROSPECTIVE_COMPLETED_FIT_PREDICTION_RESEMBLANCE",
+        "CUTOFF_CAUSAL_FIRST_QUARTER_ONLY"
+      ],
+      "featureFamilies": [
+        "PHIRL_EMERGENCE",
+        "COMPOSITION_CHANGE_L2",
+        "RAW_COUNTS",
+        "NET_COUNT_FLUX",
+        "EXACT_H_HISTORY",
+        "MAJORITY_DUMMY"
+      ],
+      "tensor": "original order, right padding, explicit value/channel/time/target masks, no truncation/interpolation",
+      "architecture": "S16 shared 200-to-8 step encoder, flattened position plus time mask, 64/64 ReLU dropout-0.1 hidden layers, positionwise target logits",
+      "shapeRule": "non-tunable input and target dimensions equal frozen observed maxima at each declared proportion",
+      "exactS16IdentityAt25_75": true,
+      "optimizer": "AdamW lr=0.001 weight_decay=0.0001",
+      "objective": "unweighted masked micro BCE",
+      "epochCeiling": 120,
+      "earlyStopping": "validation BCE, patience 15, improvement 1e-5, earliest exact-tie best",
+      "splitsAndSeeds": "exact frozen S16 matrix-level manifest and candidate/repetition model seed; model seed excludes proportion, feature, and mode",
+      "retuning": false
+    },
+    "C_SPIKE_TIMING_SPACING_HEIGHT": {
+      "claims": ["C031", "C032", "C033"],
+      "specificationCount": 2,
+      "primary": "C_GLOBAL_POOLED_3SD_RAW",
+      "companion": "C_WITHIN_RUN_3SD_NORMALIZED",
+      "eventRule": "strict contiguous exceedance; earliest maximum peak",
+      "timeReduction": "mean peak time",
+      "spacingReduction": "mean all unordered pairwise peak distances",
+      "heightReduction": "mean raw peak emergence primary; mean within-run z height companion",
+      "outcome": "run occupancy of frozen Y=I(H>0.9)",
+      "zeroSpike": "retain run; descriptors undefined",
+      "oneSpike": "time/height defined; spacing undefined",
+      "bootstrapReplicates": 4096,
+      "permutationReplicates": 4096,
+      "lengthRobustness": ["leave-one-out", "partial rank", "middle 90%"],
+      "completedAndPrefixSeparate": true
+    }
+  },
+  "sourceIdentities": [
+    {
+      "repository": "pigozzif/BreakingGRNMemories",
+      "commit": "afe44231ad3ce915172cdb53a6b234bd76fcb6a5",
+      "tree": "56f66ab8b57a2c60e830370842926708eee0767d",
+      "license": "NO_LICENSE_FILE_FOUND",
+      "relationship": "same-author public lineage; not target-paper author code"
+    },
+    {
+      "repository": "pigozzif/IntegratedInformationGeneRegulation",
+      "commit": "7c1c22fe39f539d4a453135476f1f0dd5a6b45f7",
+      "tree": "b0baf451876f4c8760f25096b7d426add68f6881",
+      "license": "NO_LICENSE_FILE_FOUND",
+      "relationship": "same-author public lineage; not target-paper author code"
+    },
+    {
+      "repository": "pigozzif/PhiRL",
+      "commit": "a6d1d0d18c7551302724b7158c6ccdc4d3a33373",
+      "tree": "e59fa8e311c2f727724acf3c1f1885dc8d840ee5",
+      "license": "NO_LICENSE_FILE_FOUND",
+      "relationship": "frozen S13Y source lineage"
+    },
+    {
+      "package": "nolds",
+      "version": "0.6.1",
+      "wheelSha256": "208714600333f03e428c968a0cea0e8029d75ac30b454e28e968630b14973829",
+      "license": "MIT"
+    }
+  ],
+  "seedRootHex": "d72e1dfd986c367c8481f0f24c925cfbe67817583c429f77b7f80b95663d1a66",
+  "workers": 8,
+  "threadsPerWorker": 1,
+  "precision": "CPU_float64_authoritative",
+  "gpuUsed": false,
+  "promotionLimitEntireS19": 3,
+  "nextLoopAuthorized": false,
+  "s20Active": false,
+  "lockedRepositoryFiles": [
+    {"path": "configs/e01/s19_l01_preregistration.yaml", "sha256": "c3d6c5e0b1b90cce403f129eb2fc4d37770a420b935ec90ad8c5f8e98e7a5f33"},
+    {"path": "configs/e01/s19_l01_candidate_ranking.csv", "sha256": "e4b0c3928a692dc3aff9a8795ccc1096167a64d97e364b27015aa66382818504"},
+    {"path": "src/e01_s19_iterative_replication/__init__.py", "sha256": "d1484441169e00a0ca22dc5c63f2c4a677e0ade93aec426955dd5960b4017155"},
+    {"path": "src/e01_s19_iterative_replication/core.py", "sha256": "86d1cc2eefd81576afca110676835ebfa57161d5f186644dbcffa255bfa2b766"},
+    {"path": "src/e01_s19_iterative_replication/bundle_a.py", "sha256": "60beb583a04d92a015a2d4e5301c27ba1e4837e32374b6271877d36c5c7b2c05"},
+    {"path": "src/e01_s19_iterative_replication/bundle_b.py", "sha256": "40f9392ba133ce498ab5a9217017343720812d14255a3e7306f27dfc66a74431"},
+    {"path": "src/e01_s19_iterative_replication/bundle_c.py", "sha256": "19dcf679bf6bf5979d4003019c3de5fe76931033af53a0dbd739e691696bb391"},
+    {"path": "scripts/e01/prepare_s19_l01_lock.py", "sha256": "421474defa5ca01309c3c67c0c1143c28144ca1faeed1ed3d0912df2d910e034"},
+    {"path": "scripts/e01/run_s19_l01.py", "sha256": "ff6638041a4ca4030153f43962dceced74a57ae61769f130e164b768c6778d6a"},
+    {"path": "tests/e01/test_s19_l01.py", "sha256": "0b57a48ed510bee0bf7902ac5d205e2cbcaa89ec3eb2b6005afc45954e3064a8"},
+    {"path": "configs/e01/s16_split_manifest.csv", "sha256": "ba17cc7bd5fdbaba2e88033982dd1f624a8113d78976fc06e590a33b0e50a4a8"},
+    {"path": "src/e01_prediction_reconstruction/core.py", "sha256": "d9b94e65c28669723a0245156709e014a3cb7200d02ff398d902deba2e8cdc06"},
+    {"path": "configs/e01/s19_l01_value_preserving_amendment_001.json", "sha256": "6dbb51338dc6d5d261cd0a9578656d88a844697fba0eefdd82958b1b58ccf824"}
+  ],
+  "forbiddenAfterOutcomeAccess": [
+    "scientific formula, graph conversion, threshold, descriptor, preprocessing, or metric change",
+    "data subset, simulator candidate, label, alignment, or independent-unit change",
+    "prediction tensor, shape rule, architecture, optimizer, validation, stopping, split, or seed change",
+    "multiplicity, equivalence margin, inference, or promotion-gate change",
+    "new GARD trajectory generation",
+    "author contact",
+    "S19-L02, S20, E02, or report-bundle execution"
+  ]
+}

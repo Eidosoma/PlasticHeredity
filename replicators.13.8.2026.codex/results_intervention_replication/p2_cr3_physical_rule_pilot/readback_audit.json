@@ -1,0 +1,8 @@
+{
+  "branch_arrays_reloaded": true,
+  "derived_pilot_eligibility_recomputed": true,
+  "inference_draws_reloaded": true,
+  "matrix_effects_exact": true,
+  "no_fitting_or_recalibration": true,
+  "primary_metrics_exact": true
+}

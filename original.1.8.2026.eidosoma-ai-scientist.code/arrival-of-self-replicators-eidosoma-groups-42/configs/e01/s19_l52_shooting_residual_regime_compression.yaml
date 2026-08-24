@@ -1,0 +1,72 @@
+schema: eidosoma.e01.s19_l52.preregistration.v1
+version: E01-S19-L52-SHOOTING-RESIDUAL-REGIME-COMPRESSION-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Can independent shooting-half transition hazards compress the reliable L50
+  process committor, and do those hazards transfer across states of one
+  catalytic matrix or require the exact current state?
+inputs:
+  states: exact frozen L50 800 post-fission states
+  branches: exact frozen L50 51,200 F12 branches
+  branchHalves: [A, B]
+  crossfitDirections: [A_TO_B, B_TO_A]
+  pooledAnchor: exact frozen L51 candidate-specific duration table
+  newSimulation: false
+models:
+  - L51_POOLED_SEMIMARKOV
+  - MATRIX_OTHER_LANDMARK_SEMIMARKOV
+  - STATE_LOCAL_SEMIMARKOV
+fitContract:
+  durationCapInclusive: 12
+  cellSpecificPriorStrength: 4.0
+  matrixTransfer: fit only other four landmarks of the same matrix
+  stateLocal: fit only the target state's fitting branch half
+  targetStateExcludedFromMatrixTransfer: true
+  heldoutHalfNeverEntersFit: true
+  finiteHorizonCalculation: exact dynamic programming
+  hyperparameterSearch: false
+targets:
+  inheritance: strict parent-daughter H > 0.9
+  break: first future noninheritance
+  resumption: three consecutive inherited fissions after a break
+  primary: joint break plus resumption at F12
+  nestedHorizons: [4, 8, 12]
+  secondary: [break, resumption conditional on break]
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  rolesPooled: false
+  matrixBootstraps: 4096
+  wholeMatrixPermutations: 512
+  primaryRole: VALIDATION
+gates:
+  matrixTransfer: >-
+    Matrix-other-landmark hazards improve heldout-half F12 joint-event log loss
+    over the pooled L51 table with matrix-bootstrap lower bound above zero and
+    minimum crossfit q Spearman above 0.5 in both candidates.
+  stateSpecific: >-
+    State-local hazards improve heldout-half F12 joint-event log loss over
+    matrix-transfer hazards with lower bound above zero in both candidates.
+  compression: >-
+    State-local hazards improve over pooled, have crossfit q Spearman lower
+    bounds above 0.3, pass whole-matrix permutation, and leave no reliable
+    centered split-half residual rank: the residual-rank upper 95% bound must
+    be below 0.3 in both candidates.
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranches: 0
+  targetSearch: false
+  thresholdSearch: false
+  modelSearch: false
+  phiComputation: false
+  intervention: false
+ceilings:
+  cpuHours: 40
+  gpuHours: 0
+  wallHours: 24
+  retainedGiB: 15
+  temporaryGiB: 30
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: conditional on frozen L52 result under authorization through L65

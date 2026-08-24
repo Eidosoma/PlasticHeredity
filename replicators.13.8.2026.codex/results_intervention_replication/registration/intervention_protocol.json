@@ -1,0 +1,207 @@
+{
+  "budgeted_serial_program": {
+    "chosen_mechanism_confirmation": {
+      "branches_per_arm": 32,
+      "matrices": 160,
+      "mechanism_chosen_only_after_all_three_pilots": true,
+      "new_seed_domain": true,
+      "pilot_outcomes_not_confirmation_data": true,
+      "role": "separately registered untouched confirmation"
+    },
+    "conditional_compact_extensions": [
+      "graded dose response",
+      "closed-loop maintenance",
+      "steer-release challenge"
+    ],
+    "deferred_from_this_budget": [
+      "full resistance/resilience decomposition",
+      "parameter-regime transfer",
+      "control-half-life ladder",
+      "internalization ladder"
+    ],
+    "elapsed_runtime_goal_hours": 30,
+    "hard_mid_phase_kill": false,
+    "p1": {
+      "arms": [
+        "MODEL_UP",
+        "MODEL_DOWN",
+        "RANDOM",
+        "NOOP"
+      ],
+      "branches_per_arm": 32,
+      "candidates": 2,
+      "full_replay": true,
+      "futures_per_pass": 51200,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "mandatory_stop_after_seal": true,
+      "matrices": 40,
+      "role": "CR1 predictor-guided pilot"
+    },
+    "p2": {
+      "arms": [
+        "RULE_UP",
+        "RULE_DOWN",
+        "RANDOM",
+        "NOOP"
+      ],
+      "branches_per_arm": 32,
+      "mandatory_stop_after_seal": true,
+      "matrices": 40,
+      "role": "CR3 physical-rule pilot",
+      "runs_only_after_separate_user_continue_instruction": true
+    },
+    "p3": {
+      "arms": [
+        "LOOSEN",
+        "TIGHTEN",
+        "RANDOM_SURGERY",
+        "NOOP"
+      ],
+      "branches_per_arm": 32,
+      "mandatory_stop_after_seal": true,
+      "matrices": 40,
+      "primary_delta_fraction": 0.05,
+      "role": "CR4 beta-surgery pilot",
+      "runs_only_after_separate_user_continue_instruction": true
+    },
+    "stopping_policy": "finish, replay, seal, and report each stage; stop for user review before the next scientific stage"
+  },
+  "claim_boundaries": {
+    "may_eventually_support": "small molecular or network interventions causally alter the Codex JOINT_BREAK_RUN3 probability under common random streams",
+    "prohibited": [
+      "Phi or PhiID intervention",
+      "strict-eight control",
+      "autonomous agency",
+      "biological memory",
+      "error correction",
+      "a living organism",
+      "a universal origin-of-life mechanism",
+      "real prebiotic chemistry",
+      "cross-clean-room replication before the relevant untouched gate passes"
+    ]
+  },
+  "clean_room": {
+    "external_values_available_only_after_each_codex_result_is_sealed": true,
+    "fable_code_models_matrices_states_seeds_edits_and_results_imported": false,
+    "uses_codex_frozen_predictor_only": true,
+    "uses_codex_simulator_contracts_only": true
+  },
+  "endpoint": {
+    "break": "H <= 0.9",
+    "extinction_before_certification": "negative",
+    "horizon_fissions": 12,
+    "inheritance": "unrounded float64 parent-selected-daughter cosine H > 0.9",
+    "name": "JOINT_BREAK_RUN3",
+    "positive": "a break followed strictly later by three consecutive inherited fissions within F12",
+    "positive_before_later_extinction_remains_positive": true,
+    "uninterrupted_existing_run_qualifies": false
+  },
+  "format": "codex-joint-break-run3-intervention-program-v1",
+  "frozen_predictor": {
+    "archived_prediction_tolerance": 1e-12,
+    "family": "candidate-separated full 5x-development composite",
+    "refitting_recalibration_or_threshold_change": false,
+    "sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "source": "results/scaled5/frozen_models.npz"
+  },
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "complete_exact_replay": true,
+    "holm_family": "four candidate-by-fixed-branch-half cells",
+    "paired_sign_randomizations": 4096,
+    "prediction_brier": "ordinary branch-level squared error",
+    "prediction_log_loss": "ordinary branch-level Bernoulli log loss",
+    "random_effect_ratio_limit": 0.25,
+    "random_noop_tost_margin": [
+      -0.025,
+      0.025
+    ],
+    "states_arms_halves_and_landmarks_travel_with_matrix": true,
+    "unit": "whole catalytic matrix"
+  },
+  "mission": "independent clean-room causal intervention tests on the validated Codex JOINT_BREAK_RUN3 process",
+  "molecular_edit": {
+    "definition": "one mass-preserving remove-i/add-j substitution",
+    "history_held_fixed_instantaneously": true,
+    "requires_distinct_types": true,
+    "requires_present_source": true
+  },
+  "phase_advancement": {
+    "failed_result_retained_at_full_prominence": true,
+    "future_branches_never_retried": true,
+    "matrices_never_replaced": true,
+    "next_automatic_scientific_phase": null,
+    "user_instruction_required_after_each_pilot": true
+  },
+  "pilot_decision_boundary": {
+    "pilot_eligibility_only": [
+      "up-minus-down point estimate positive in all four cells",
+      "random-minus-noop point estimate within +/-0.025 in all four cells",
+      "exact replay"
+    ],
+    "pilot_pass_is_not_cross_clean_room_confirmation": true,
+    "registered_confirmatory_gates_still_reported": true
+  },
+  "protocol_id": "235954744f872a1087b691f8a0a6b536483136f5bb2504b4da7f5ef4f749ad02",
+  "randomness": {
+    "arm_identity_in_future_seed": false,
+    "matrix_shared_across_candidates": true,
+    "paired_description": "common random streams, not identical realized futures",
+    "purpose_keyed_domains": [
+      "chosen_confirmation_bootstrap",
+      "chosen_confirmation_cohort",
+      "chosen_confirmation_future",
+      "chosen_confirmation_randomization",
+      "chosen_confirmation_selection",
+      "p1_bootstrap",
+      "p1_cohort",
+      "p1_future",
+      "p1_randomization",
+      "p1_selection",
+      "p2_bootstrap",
+      "p2_cohort",
+      "p2_future",
+      "p2_randomization",
+      "p2_selection",
+      "p3_bootstrap",
+      "p3_cohort",
+      "p3_future",
+      "p3_randomization",
+      "p3_selection",
+      "replay",
+      "smoke_cohort",
+      "smoke_future",
+      "smoke_selection",
+      "validation"
+    ],
+    "random_selection_independent_of_future_stream": true
+  },
+  "simulator_contracts": {
+    "02": {
+      "daughter_rule": "first",
+      "fission_rule": "fixed_size",
+      "overshoot_rule": "trim_whole_assembly",
+      "poisson_exposure": 0.1
+    },
+    "03": {
+      "daughter_rule": "second",
+      "fission_rule": "binomial",
+      "overshoot_rule": "admit_joiners_to_capacity",
+      "poisson_exposure": 0.125
+    }
+  },
+  "status": "frozen_before_any_scientific_intervention_matrix",
+  "strict_eight_program": {
+    "additional_predictor_search_prohibited": true,
+    "common_prospective_predictor_gate_passed": false,
+    "not_an_endpoint_in_this_program": true,
+    "occurrence_result_preserved": true,
+    "status": "closed"
+  }
+}

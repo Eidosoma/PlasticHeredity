@@ -1,0 +1,13 @@
+{
+  "amendmentId": "S19-L15-TECHNICAL-AMENDMENT-002",
+  "authorizedBasis": "User-directed repair of technical problems before handoff",
+  "failureStage": "finalize_report_assembly",
+  "failure": "The report formatter requested orderingPassed from paired_model_comparisons.parquet; that registered Boolean is stored separately, while its exact defining quantity medianSplitDifference is present",
+  "scope": "Report assembly only",
+  "scientificMethodChangePermitted": false,
+  "scientificValueChangePermitted": false,
+  "targetFeatureSplitModelMetricGateChangePermitted": false,
+  "repair": "Render ordering as the exact Boolean expression medianSplitDifference > 0 without changing or rewriting any table",
+  "freshFigureCache": "/cache/e01_s19_l15/failed_finalize_002",
+  "requiredValidation": "Exact SHA-256 equality of every frozen scientific artifact before and after amendment"
+}

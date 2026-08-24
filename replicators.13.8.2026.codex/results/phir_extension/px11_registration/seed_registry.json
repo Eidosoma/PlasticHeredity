@@ -1,0 +1,22 @@
+{
+  "disjoint_from_px10": true,
+  "domains": {
+    "acquisition": "b720b24f9a29c35ece26222521ceb02ce3238e3e0b74889334fcc514b343e51d",
+    "beta_control": "e76bc6266c5b45649148e1c54ef4b069940bb9b58b299361be934cf492370aa6",
+    "bootstrap": "d0a384807e37ad35f682f4b89cf4028278a47672553d201b021f2e33b5ebda35",
+    "channel_derangement": "373b247a5049278f3f16725fc0177040d721d5c015f0f49829b906c1a9a65630",
+    "future": "c11699fddea595f76266e0f4b8f3703b794e6cc67ba6e42a92349579e0c26228",
+    "initial": "85c5e100cf4b997322b5d5f68f5351b0087f7bbef96a4776914255adbaec419b",
+    "main_path": "244e7037b47ef9323db7704951ecf10b830e70b74b792fa85cb153b6013b7c17",
+    "matrix": "dae47ad553742b7cbf79312db1baa49ebbc7cc9ff7b671090c7488478c0b29e8",
+    "observation_mask": "b59e4d98296fde5c954c25257ad6a88303bb2a6454b3f68f0e6f5dc9655b7aa3",
+    "observation_noise": "c5a9af92d9940673e3a173a47b73f31116f8b4d430f81532b2ab940d18a01b0d",
+    "random_action": "f8856ce947022ff861289e220dcc910fbafd1c1f0a845638aacd06d31f350357",
+    "randomization": "21211ac559426b73d81ed614c7b4882acf99bf892aff72e7ddccacf7f2f29226",
+    "replay": "0abf8f2fb1bc756efbb2ff3d0c208cad3547783651461c30e808043a03b4fe7b",
+    "smoke": "b829acb88c97c3204a2d61abb18932805eec13adfa0f7b6be3a78ed41cf4cd35",
+    "validation": "bc4b4d4eb6fe924497ce62c4cab9a380dcfbd0f18fddd69ab59cd0166ba5bc5d"
+  },
+  "format": "codex-ch5-phir-px11-seed-registry-v1",
+  "label": "CODEX_CH5_PHIR_PX11_CAUSAL_REDISTRIBUTION_V1"
+}

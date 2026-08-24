@@ -1,0 +1,204 @@
+schema: eidosoma.e01.s19_l02_preregistration.v1
+researchStepId: S19
+loopId: S19-L02
+versionedLoopId: E01-S19-L02-REPLICATOR-DEFINITION-TEMPORAL-FINGERPRINT-v1.0.0
+continuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+outcomeAccessedAtLock: false
+question: >-
+  Does one of four pre-existing, source- or paper-grounded replicator-state
+  definitions jointly reconstruct the paper's occupancy, persistence,
+  consistency, onset, episode, and recurrence fingerprint in both frozen
+  simulator candidates, without emergence-based selection or occupancy tuning?
+historicalBoundary:
+  immutable: S01-S18_V1_V2_S19-L01_and_S17_waiver
+  l01ScientificValuesEligibleForUse: false
+  l01RepairOrRerun: false
+  additiveL02Only: true
+data:
+  source: frozen_S13Y_clean_directional_confirmation
+  sharedMatrixCount: 100
+  trajectoryCount: 200
+  candidateIds: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  independentUnit: catalytic_matrix_trajectory
+  molecularRowsAreIndependentReplicates: false
+  pooling: secondary_descriptive_only
+  newGardTrajectories: 0
+  newPhiRLValues: 0
+  newEmergenceValues: 0
+preanalysisReplayGate:
+  required: true
+  checks:
+    - all_200_cache_sha256_values_equal_frozen_manifest
+    - candidate_matrix_trajectory_and_internal_trajectory_sha256_identities_equal
+    - selected_molecular_clock_indices_kinds_generations_and_raw_indices_equal
+    - freshly_recomputed_adjacent_H_arrays_bitwise_equal_frozen_S13Y_values
+    - freshly_recomputed_strict_H_greater_than_0_9_labels_equal_frozen_S13Y_values
+  failureAction: LOOP_FAILED_CLOSED_before_any_new_label_family_outcome
+labelFamilies:
+  - ordinal: 1
+    labelId: MOL_ADJACENT_INCOMING_H900
+    role: frozen_comparator
+    implementation: e01_creative_directional_search.label_trajectory/MOLECULAR_ADJACENT_INCOMING
+    coordinates: L1_closed_selected_molecular_compositions
+    rule: incoming_cosine_H_strictly_greater_than_0.9
+    initialRule: duplicate_first_incoming_H_to_initial_selected_state
+    temporalScope: local_incoming_except_initial_one_step_lookahead
+    selectableLead: false
+  - ordinal: 2
+    labelId: PF_DOMINANT_COMPONENT_CENTROID_H900
+    role: dominant_recurring_composition_centroid_membership
+    implementation: e01_creative_directional_search.label_trajectory/POSTFISSION_DOMINANT_COMPONENT_CENTROID
+    coordinates: L1_closed_postfission_and_selected_molecular_compositions
+    distance: cosine_H
+    linkage: threshold_graph_single_linkage_transitive_closure_at_greater_than_or_equal_to_0.9
+    componentTie: largest_size_then_earliest_postfission_index
+    reference: arithmetic_mean_composition_of_dominant_component
+    selectedStateRule: cosine_to_reference_greater_than_or_equal_to_0.9
+    temporalScope: retrospective_completed_trajectory
+    unresolved: paper_says_Euclidean_and_omits_threshold_linkage_centroid_and_ties
+  - ordinal: 3
+    labelId: PF_EUCLIDEAN_KMEANS_DOMINANT
+    role: recurring_composition_cluster_membership
+    implementation: e01_creative_directional_search.label_trajectory/POSTFISSION_EUCLIDEAN_KMEANS_DOMINANT
+    coordinates: L1_closed_postfission_and_selected_molecular_compositions
+    distance: Euclidean_L2
+    clustering: sklearn_KMeans_Lloyd_n_init_10_for_k_2_through_10
+    kSelection: maximum_finite_silhouette_exact_tie_to_lower_k
+    clusterTie: largest_postfission_cluster_exact_tie_to_lowest_cluster_id
+    selectedStateRule: fitted_KMeans_cluster_identity_equals_dominant_cluster
+    temporalScope: retrospective_completed_trajectory
+    unresolved: paper_omits_kmeans_k_range_silhouette_and_ties
+  - ordinal: 4
+    labelId: PF_HISTORICAL_ADJACENT_AVERAGE_H090
+    role: historical_source_traceable_GARD_technique1_compotype_nondrift
+    implementation: frozen_S13Y_HISTORICAL_H090_REPLICATOR_from_e01_gard_historical.historical_nondrift_technique1
+    coordinates: raw_postfission_counts_source_L2_normalized
+    rule: mean_incoming_and_outgoing_cosine_H_strictly_greater_than_0.9
+    propagation: postfission_generation_label_to_all_selected_molecular_rows_in_generation
+    missingRule: retain_initial_selected_state_as_ineligible
+    temporalScope: local_adjacent_with_outgoing_neighbor_dependence
+    unresolved: historical_public_GARD_v10_is_not_target_paper_author_code
+prohibitedSpecifications:
+  - H_greater_than_0.97_as_candidate
+  - any_threshold_grid
+  - any_occupancy_tuning
+  - any_additional_cluster_or_centroid_branch
+  - emergence_association_prediction_or_intervention_for_label_ranking
+  - favorable_candidate_or_simulator_selection
+fingerprint:
+  trajectoryMetrics:
+    - eligible_and_ineligible_count
+    - persistence_true_molecular_steps
+    - occupancy_true_fraction_among_eligible_rows
+    - Pearson_consistency_between_consecutive_eligible_labels
+    - first_onset_raw_selected_clock_index_zero_based
+    - first_onset_raw_selected_clock_step_one_based
+    - first_onset_fraction_of_last_zero_based_clock_index
+    - entries_and_exits
+    - episode_count_mean_median_and_longest_duration
+    - current_nonreplicating_state_at_floor_25_percent_cutoff
+    - no_positive_label_observed_through_floor_25_percent_cutoff
+    - postfission_membership_fraction_and_episodes
+    - same_reference_reentry_and_temporal_span_where_a_global_reference_exists
+  noOnsetScoring:
+    raw: total_selected_clock_count_as_right_censored_penalty
+    normalized: 1.0_as_right_censored_penalty
+    reportOriginalOnsetAs: null
+  consistencyUndefinedRule: retain_null_and_fail_95_of_100_defined_promotion_gate
+  cutoff:
+    count: floor_0.25_times_total_selected_clock_count
+    stateIndex: count_minus_1_with_latest_eligible_fallback
+  candidatesSeparate: true
+  poolingSecondaryOnly: true
+paperTargets:
+  source: Table_1_control_fingerprint
+  persistence: {center: 716.0, declaredDispersionScale: 198.0}
+  occupancy: {center: 0.88, declaredDispersionScale: 0.03}
+  consistency: {center: 0.38, declaredDispersionScale: 0.06}
+  rawOnsetInterpretation: {center: 37.0, declaredDispersionScale: 27.0}
+  normalizedOnsetInterpretation: {center: 0.37, declaredDispersionScale: 0.27}
+  ambiguity: table_cells_print_percent_but_note_says_molecular_steps
+  scoring:
+    raw: root_mean_square_of_standardized_persistence_occupancy_consistency_raw_onset_errors
+    normalized: root_mean_square_of_standardized_persistence_occupancy_consistency_normalized_onset_errors
+    selectionRule: both_named_scores_retained_neither_may_replace_the_other
+    occupancyAloneSufficient: false
+statistics:
+  bootstrapReplicates: 4096
+  bootstrapUnit: matrix_within_candidate
+  generator: PCG64DXSM
+  confidenceIntervals: percentile_2.5_and_97.5
+  crossCandidateMetrics: [Pearson, Spearman, median_absolute_difference]
+  outlierRobustness: leave_one_matrix_out_distance_improvement_range
+  exactReplay: recompute_all_four_labels_and_require_identical_status_label_score_and_fingerprint_hashes
+  comparatorOverlap: accuracy_jaccard_and_mismatch_fraction_against_adjacent_H_on_common_eligible_rows
+classificationRules:
+  exploratoryPaperMatch: >-
+    all candidate-specific raw and normalized aggregate target distances are at
+    most 1.0 and the directional fingerprint gate passes
+  exploratoryDirectionalMatch: >-
+    both onset-mode distances improve by at least 10 percent, at least three of
+    four dimensions improve including onset or consistency, in both candidates
+  possibleStabilityProxy: >-
+    median common-row label accuracy or Jaccard against adjacent H is at least
+    0.95 in each candidate
+  exploratoryNonSupport: neither paper-match nor directional-match rule passes
+promotion:
+  maximumLeads: 2
+  exploratoryOnly: true
+  gates:
+    - not_the_adjacent_H_comparator
+    - precise_paper_or_public_source_relationship
+    - no_unresolved_material_choice_that_changes_label_identity
+    - exact_replay_all_200_trajectories
+    - at_least_95_defined_consistency_and_95_finite_onset_trajectories_per_candidate
+    - raw_and_normalized_aggregate_distance_each_at_least_10_percent_better_than_comparator_in_both_candidates
+    - raw_and_normalized_paired_bootstrap_upper_95_percent_bound_for_distance_difference_below_zero_in_both_candidates
+    - at_least_3_of_4_target_dimensions_strictly_closer_than_comparator_for_each_onset_interpretation_in_both_candidates
+    - consistency_or_onset_must_be_one_of_the_improved_dimensions
+    - leave_one_matrix_out_distance_difference_below_zero_for_every_omission_and_both_onset_interpretations_in_both_candidates
+    - not_selected_by_occupancy_H_overlap_or_any_downstream_outcome
+    - fixed_untouched_S20_design_is_feasible
+  retrospectiveRestriction: full_run_cluster_labels_may_only_be_promoted_for_paper_facing_retrospective_confirmation
+classificationVocabulary:
+  - EXPLORATORY_PAPER_MATCH
+  - EXPLORATORY_DIRECTIONAL_MATCH
+  - EXPLORATORY_NON_SUPPORT
+  - RETROSPECTIVE_ONLY_LEAD
+  - METHOD_DEPENDENT_LEAD
+  - POSSIBLE_STABILITY_PROXY
+  - POSSIBLE_PIPELINE_ARTIFACT
+  - PROMOTABLE_TO_S20
+  - NOT_PROMOTABLE
+  - AUTHOR_AMBIGUITY_UNRESOLVED
+  - LOOP_FAILED_CLOSED
+seeds:
+  rootHex: 56862dd64d12c64bc4cdf2ab6472d65ac0246bcba1089227114fca78764edbad
+  derivation: sha256_version_root_and_null_delimited_identity_tokens
+  scientificRngUses: bootstrap_only
+  inheritedKMeansSeed: exact_frozen_S13X_derive_seed_per_candidate_matrix_label_k
+compute:
+  cpuCores: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  maximumCpuHours: 48
+  maximumGpuHours: 0
+  maximumWallHours: 8
+  maximumRetainedGiB: 10
+  maximumTemporaryGiB: 25
+  validationReserveFraction: 0.10
+  ceilingsAreTargets: false
+stopConditions:
+  - any_S01_S18_or_V1_V2_or_S19_L01_hash_change
+  - preanalysis_adjacent_H_replay_failure
+  - source_or_implementation_identity_change_after_lock
+  - any_fifth_label_family_or_second_implementation_within_family
+  - outcome_access_before_clean_pushed_lock
+  - post_outcome_scientific_method_change
+  - budget_or_storage_ceiling_exceeded
+  - report_not_regenerable_from_machine_readable_results
+postLoopBoundary:
+  mandatoryHumanReview: true
+  noAutomaticLaterLoop: true
+  noAutomaticS20: true
+  ifNoLeadAfterTwoConsecutiveLoops: recommend_ACTIVATE_S20_CLOSEOUT_ONLY

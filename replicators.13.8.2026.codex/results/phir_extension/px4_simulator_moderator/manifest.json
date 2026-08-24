@@ -1,0 +1,14 @@
+{
+  "classification": "unresolved_or_distributed_simulator_moderation",
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 747.3510592060003,
+  "format": "codex-ch5-phir-extension-px4-result-v1",
+  "gates": {
+    "at_least_one_localized_public_factor": false,
+    "full_port_public_direction_recovery": false,
+    "heredity_full_port_valid": true
+  },
+  "matrices": 24,
+  "registration_id": "62b0463faf9ada82a7f9db32e061804f7ff5233810d78914058f47da144a43b8"
+}

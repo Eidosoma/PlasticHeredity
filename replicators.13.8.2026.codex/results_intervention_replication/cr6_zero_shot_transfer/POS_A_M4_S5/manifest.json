@@ -1,0 +1,18 @@
+{
+  "A": -4.0,
+  "branches_per_arm_state": 48,
+  "complete_readback_exact": true,
+  "exact_replay": true,
+  "format": "codex-intervention-cr6-regime-result-v1",
+  "matrices": 40,
+  "no_future_retry_or_matrix_replacement": true,
+  "no_refit_recalibration_or_regime_switching": true,
+  "primary_futures": 30720,
+  "regime": "POS_A_M4_S5",
+  "registered_regime_gate": false,
+  "registered_role": "positive_transfer",
+  "registration_id": "d15ad57c7f925b5aa8585e3ae32090fa08c500b465d657bd0faf84327744b07e",
+  "replay_futures": 30720,
+  "sigma": 5.0,
+  "states": 160
+}

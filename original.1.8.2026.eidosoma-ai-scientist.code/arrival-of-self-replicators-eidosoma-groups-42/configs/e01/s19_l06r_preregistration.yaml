@@ -1,0 +1,81 @@
+schema: eidosoma.e01.s19_l06r_preregistration.v1
+researchStepId: S19-L06R
+stepNumber: 19
+loopId: S19-L06R
+versionedLoopId: E01-S19-L06R-NUMERICAL-EQUIVALENCE-CONFIRMATION-v1.0.0
+continuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+outcomeAccessedAtLock: false
+authorization:
+  optionId: option-1
+  title: Repair the numerical replay gate
+  additiveRepairOnly: true
+  mandatoryHumanReviewAfter: true
+  l07Active: false
+  s20Active: false
+historicalBoundary:
+  immutable: S01-S18_V1_V2_S19-L01_through_S19-L06_and_S17_waiver
+  failedL06RemainsFailedClosed: true
+  modifyOrReinterpretL06: false
+question: >-
+  Do the unchanged L06 canonical and independent CPU-float64 boundary-score
+  paths agree under the prospectively locked S06 numerical-equivalence policy
+  across all 200 frozen trajectories, permitting the complete unchanged L06
+  analysis to be adjudicated?
+scientificContract:
+  inheritedWithoutChangeFrom: E01-S19-L06-PAST-ONLY-MULTIATTRACTOR-BOUNDARY-RECURRENCE-v1.0.0
+  threshold: {value: 0.9, comparator: STRICT_GREATER_THAN}
+  boundaryRule: ZERO_LT_H_LE_G_MINUS_2_AT_LEAST_ONE_PRIOR_SELECTED_POST_FISSION_BOUNDARY
+  projection: B_G_INCLUSIVE_TO_B_G_PLUS_1_EXCLUSIVE
+  comparator: MOL_ADJACENT_INCOMING_H900
+  data: frozen_S13Y_100_shared_matrices_200_trajectories
+  seeds: exact_L06_seed_manifest_and_derivation_reused
+  statistics: exact_L06_4096_bootstrap_leave_one_out_and_4096_generation_block_permutation
+  suffixAudit: exact_L06_3000_deletion_shuffle_replacement_sentinels
+  promotion: exact_L06_gates_maximum_one_retrospective_paper_facing_lead
+numericalRepair:
+  canonicalPath: e01_s19_boundary_recurrence.core.boundary_recurrence_CPU_float64
+  independentPath: e01_s19_boundary_recurrence.core.boundary_recurrence_reference_CPU_float64
+  finiteNonfiniteMasks: exact
+  nonfiniteClasses: exact
+  booleanLabels: exact
+  recurrenceCountsAndMatchIdentities: exact
+  finiteScores:
+    absoluteTolerance: 1.0e-12
+    relativeTolerance: 1.0e-12
+    maximumUlpDistance: 8
+    passRule: all_three_bounds_for_every_finite_pair
+  scope: projected_scores_and_all_independent_replay_discrete_fields
+  failureAction: L06R_PERMANENTLY_FAILED_CLOSED_NO_SECOND_REPAIR
+execution:
+  invalidatedL06WorkerCachesPermitted: false
+  cacheRoot: /cache/e01_s19_l06r
+  recomputeTrajectoryCount: 200
+  workersMaximum: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  newGardTrajectories: 0
+  newPhiRLOrEmergenceValues: 0
+  predictionModels: 0
+  interventions: 0
+compute:
+  maximumCpuHours: 32
+  maximumGpuHours: 0
+  maximumWallHours: 8
+  maximumRetainedGiB: 10
+  maximumTemporaryGiB: 25
+  validationReserveFraction: 0.10
+stopConditions:
+  - any_immutable_prior_hash_change
+  - any_preanalysis_replay_failure
+  - any_numerical_equivalence_failure
+  - any_scientific_contract_or_seed_change
+  - any_new_repair_needed
+  - any_compute_or_storage_ceiling_exceeded
+  - report_not_regenerable_from_machine_readable_results
+postLoopBoundary:
+  mandatoryHumanReview: true
+  noAutomaticL07: true
+  noAutomaticS20: true
+  noAutomaticE02: true
+  noAuthorContact: true
+  noReportBundleGeneration: true

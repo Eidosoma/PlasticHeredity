@@ -1,0 +1,13 @@
+{
+  "all_values_unique": true,
+  "disjoint_from_original": true,
+  "domains": {
+    "bootstrap": "9cb1cb3e153ed2e4a4575258059628ea628b0dd426488e4a3cef5860df0ff140",
+    "cohort": "e0e4af8142d1d1aea1a9e30104dfd5b43a45d01995dd08841ebcaf535a3519ac",
+    "future": "9366fb5500a05b545fc252d95699118441076d43b9f5d9e3b7192b5301736c77",
+    "randomization": "2eb8f913c854872d7dee6fb30948d6cab1b62fd603f635f2461983c3a5b43297",
+    "replay": "2231c8251ca0c6dcd0a3cd794effaa1a18371e535228ce4575e77e516e4a8553",
+    "selection": "811a1ba08cf23836a937f5fd382fda19f81876800b3d1bbd605c7bf9a14d9de9",
+    "validation": "139e67f1fec5e582f5dfb1bd798c26bb3870dd98e0a62074fde3e0f7767b8817"
+  }
+}

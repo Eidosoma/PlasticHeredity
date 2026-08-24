@@ -1,0 +1,15 @@
+{
+  "amendment_id": "1cad7cda20f852e33c21e2ac1aee4e96c925c2c170b3f2714dcd7642ef3699ea",
+  "complete_readback_exact": true,
+  "derived_field_fix_only": true,
+  "failure_log_sha256": "526f6f40939b86f1596b4f69fd16c5fc3ff567db427590788250451c25f517fb",
+  "format": "codex-intervention-p2-readback-recovery-audit-v1",
+  "generation_checkpoint_digest_unchanged": true,
+  "intervention_futures_regenerated": 0,
+  "new_intervention_futures_generated": 0,
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "primary_checkpoint_states_loaded": 400,
+  "replay_checkpoint_digest_unchanged": true,
+  "replay_checkpoint_states_loaded": 400,
+  "scientific_contract_changes": []
+}

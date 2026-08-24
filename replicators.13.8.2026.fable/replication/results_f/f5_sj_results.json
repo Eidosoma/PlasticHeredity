@@ -1,0 +1,31 @@
+{
+  "G1": {
+    "inherit": 0.9512711864406779,
+    "switches": 138,
+    "pass": true
+  },
+  "tau": {
+    "inactive": 0.2857234447344115,
+    "active": 0.07706823935048306
+  },
+  "hold_inactive": {
+    "none": 0.79296875,
+    "x4_minus2": 0.77734375,
+    "x4_minus10": 0.8359375,
+    "x4_zero": 0.82421875,
+    "x4_plus10": 0.5859375
+  },
+  "hold_active": {
+    "none": 0.4166666666666667,
+    "x4_minus2": 0.4375,
+    "x4_minus10": 0.3645833333333333,
+    "x4_zero": 0.18229166666666666,
+    "x4_plus10": 0.40625
+  },
+  "G2_pass": false,
+  "G3_pass": true,
+  "G4_active_log_drift": 0.2623564766545122,
+  "G4_pass": false,
+  "cosine_between_mode_concentrations": 0.9996209030594315,
+  "assay_validity_pass": false
+}

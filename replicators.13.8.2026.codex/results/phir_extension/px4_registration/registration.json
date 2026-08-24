@@ -1,0 +1,109 @@
+{
+  "format": "codex-ch5-phir-extension-px4-registration-v1",
+  "master_registration_id": "3ce19b47deeb543e23162edb3bf822cfbf248c308a6e8cb4e8ecf83f08636c3b",
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "analysis": {
+      "bootstrap": 4096,
+      "candidate_02": "eventwise-minus-Codex moderation of the arm contrast",
+      "candidate_03": "complete 2^3 factorial moderation of the arm contrast",
+      "inference_unit": "whole catalytic matrix",
+      "randomization": 4096,
+      "replicates_never_pooled": true
+    },
+    "arms": [
+      "STABILIZE",
+      "DESTABILIZE",
+      "NOOP"
+    ],
+    "candidate_02_factor": {
+      "codex": "fixed-exposure vector Poisson, whole-assembly trim, fixed-size first daughter",
+      "port": "single-event categorical growth to exact mass, same fixed-size first daughter"
+    },
+    "candidate_03_factorial": {
+      "adaptive_exposure": "expected four events per vector-Poisson update",
+      "allow_overshoot": "stop at or above parent mass without capacity admission",
+      "uniform_daughter": "uniformly choose one of two binomial daughters",
+      "variants": [
+        "C03_E0_O0_D0",
+        "C03_E0_O0_D1",
+        "C03_E0_O1_D0",
+        "C03_E0_O1_D1",
+        "C03_E1_O0_D0",
+        "C03_E1_O0_D1",
+        "C03_E1_O1_D0",
+        "C03_E1_O1_D1"
+      ]
+    },
+    "claim_boundary": [
+      "simulator moderation is not proof that either implementation is uniquely correct",
+      "an information response is not consciousness, agency, or life",
+      "prior negative public Phi-r results remain unchanged",
+      "strict-eight is excluded"
+    ],
+    "classification": {
+      "factor_localization": "a registered factor contrast has a same-signed 95% interval excluding zero in both replicates",
+      "full_port_recovery": "public response positive with positive 95% matrix-bootstrap lower bound in both replicates of both candidates, with positive hereditary separation",
+      "otherwise": "unresolved or distributed simulator moderation"
+    },
+    "controller": {
+      "destabilize": "RULE_UP: remove highest and add lowest outgoing influence",
+      "rule": "outgoing catalytic influence beta.T @ x",
+      "stabilize": "RULE_DOWN: remove lowest and add highest outgoing influence",
+      "timing": "after fissions 1-59; final daughter remains unedited"
+    },
+    "external_code_imported_or_executed": false,
+    "measurements": {
+      "all_16_atoms_retained": true,
+      "primary": "public nine-atom revised STABILIZE minus DESTABILIZE",
+      "representation": "material",
+      "secondary": "material full-block revised and inherited-boundary fraction",
+      "windows": {
+        "final20": "21 post-fission/post-control observations from boundaries 40-60",
+        "final30": "31 post-fission/post-control observations from boundaries 30-60"
+      }
+    },
+    "neutral_shared_inputs": {
+      "common_random_streams_not_identical_realized_futures": true,
+      "future_seed_excludes_arm": true,
+      "future_seed_excludes_variant": true,
+      "same_beta_and_initial_across_all_variants": true
+    },
+    "no_48_matrix_campaign": true,
+    "phase": "PX4",
+    "protocol_id": "18050519588c1b13ef4fada99bb68ff9bb8c4e07db90fbfbe2cb4ce2d7807984",
+    "question": "which documented simulator mechanics moderate the public nine-atom and full-block material responses to the physical outgoing rule?",
+    "run_regardless_of_px1_px2_px3_gates": true,
+    "spec": {
+      "cpu_seconds": 50400.0,
+      "final20_start": 40,
+      "final30_start": 30,
+      "horizon": 60,
+      "label": "scientific",
+      "matrices": 24,
+      "replicates": 2
+    }
+  },
+  "registration_id": "62b0463faf9ada82a7f9db32e061804f7ff5233810d78914058f47da144a43b8",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px4.py": "e27d38318309c11477fb6f46e74b039562aad45c15fe81e51ba4ccd1634f4bbc",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_extension_px4.py": "8d77cc048714333fbb60b24fa33262791c955b571d23c47e9f7ec12529213c31"
+  }
+}

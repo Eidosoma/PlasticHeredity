@@ -1,0 +1,124 @@
+{
+  "completed_d24_manifest_sha256": "f5c781735d459795633df8f4c3da08c6fd6b7c15f77eb3b5c478da347060d4d7",
+  "completed_d24_registration_id": "2339c473693d06574a266a7d14d9e94e36a75d817cca0a539e173f10157128f6",
+  "external_code_data_models_or_seeds_imported": false,
+  "format": "codex-ch5-phir-protocol-adjudication-registration-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "post_clean_room_adjudication": true,
+  "protocol": {
+    "claim_boundary": [
+      "protocol moderation does not select a universal Phi-r",
+      "information response is not the cause of hereditary control",
+      "no consciousness, agency, life, or metaphysical claim",
+      "previous sealed results remain unchanged"
+    ],
+    "common_random_streams": "future key excludes launch, selector, direction, and arm",
+    "completed_d24_manifest_sha256": "f5c781735d459795633df8f4c3da08c6fd6b7c15f77eb3b5c478da347060d4d7",
+    "completed_d24_registration_id": "2339c473693d06574a266a7d14d9e94e36a75d817cca0a539e173f10157128f6",
+    "directions": [
+      "STABILIZE",
+      "DESTABILIZE"
+    ],
+    "endpoint": "final 30 controlled fissions, edits after fissions 1-59 only",
+    "external_audit_hashes_provenance_only": {
+      "phir_code.py": "76bfe85a34a5d6a59be1aa64db7920c78fa4ba5e6b3c027427f8c738ab8dfef1",
+      "run_phir_bridge.py": "78ca182e4cc9e0b9ffcfb5b2ecf41a864a45f55e323b013b8d6afef275308cb8",
+      "run_phir_confirm.py": "15baaa5ed9460419f2884c60ee34b85cad4ca60228647028912d4412b60fd50f",
+      "sim.py": "289b01ea6b5c2bf62ecb3a1151505c8d92a7cf8dc9afc9ef00e64e6239a822d4"
+    },
+    "external_code_data_models_or_seeds_imported": false,
+    "format": "codex-ch5-phir-protocol-adjudication-program-v1",
+    "inference": {
+      "bootstrap_draws": 4096,
+      "candidate_pooling": false,
+      "holm_across_four_cells": true,
+      "replicate_pooling": false,
+      "sign_randomizations": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "launches": [
+      "FRESH",
+      "MATURE"
+    ],
+    "minimum_free_disk_bytes": 1500000000,
+    "no_48_matrix_continuation": true,
+    "pabr_arms": [
+      "NOOP",
+      "STABILIZE_50",
+      "DESTABILIZE_50",
+      "STABILIZE_100",
+      "DESTABILIZE_100"
+    ],
+    "panel12": {
+      "sampling": "with replacement; remove uniformly over present types; add uniformly over all other types",
+      "size": 12,
+      "ties": "predicted probability then remove type then add type"
+    },
+    "program": "post-clean-room Chapter 5 protocol-adjudication bridge",
+    "protocol_id": "a204cf1c2de83eb19e9c1c91e930f19c1e1bc8aa1e08d27c986cb904e601ad10",
+    "raw_molecular_trajectories_persisted": false,
+    "replay": "complete deterministic replay of PAB-R and PAB24",
+    "representations": [
+      "endpoint_explicit",
+      "fable_style",
+      "phase_normalized",
+      "generational"
+    ],
+    "selectors": [
+      "PANEL12",
+      "EXHAUSTIVE"
+    ],
+    "spec": {
+      "bootstrap_repetitions": 4096,
+      "control_horizon": 60,
+      "final_start": 31,
+      "label": "pab24",
+      "matrices": 24,
+      "natural_generations": 60,
+      "panel_size": 12,
+      "phase_points": 16,
+      "randomization_repetitions": 4096,
+      "replicates": 2
+    }
+  },
+  "protocol_id": "a204cf1c2de83eb19e9c1c91e930f19c1e1bc8aa1e08d27c986cb904e601ad10",
+  "registration_id": "2988738462b863cfd6e9695a24c1b759c5f6b73d632df5f0db025731b3340e2c",
+  "scientific_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "797aa4ab21c3d43e78632755aa65e8994bbf21e4bbc47207fb4a0609091eb4c2",
+    "future": "b908ab6346c96d6ebc69bb681beecd8c47e6dd3cb1b87f801c12a367e26cae85",
+    "initial": "2f9b1b47cf82a56751653a32e1e4e616c991f1653d5895a299a88f8ac1d142de",
+    "main_path": "9fa867d9c24264fdc009dd067533613b9e60e517587b9d49f3dc1a2677463867",
+    "matrix": "5baf569cd3916ab08f1617f56485d09972a900f8984345ff12115511826773b6",
+    "panel_action": "7c80d787573961e58b15638d1f14e1bf1fb7d1e029d1856b8fdabf6928b2390e",
+    "randomization": "517257bbca804ef416644c4f85ae3b41c4bde910048ab797a898cbfe22c3ec1d",
+    "replay": "fb1b779c3db0dbd21cdf3556b6cda5db9dbab9d21d0005b1bd44348004bb0dd1",
+    "smoke": "04215be6e73de4bc3eb03ced0ab92fc5bdef99d55b3eb7cf8746d2d929551cfb",
+    "validation": "06f96798a3c5222520db1d84ba0636a7c91c3583e787a68e36b5c996942c7d18"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_PROTOCOL_ADJUDICATION_PREREGISTRATION.md": "eb3883411f27baf389ed3e8b26b4aa5d234dfc3e8e5422619432aa6d3d426da2",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/phir_ch5.py": "dac7c122573bb1548188c19ebfb051d8f6e6c4b750f45c0707eae03ac9ca1425",
+    "plastic_heredity/phir_feedback_dose.py": "401085ad91f5f7e281f234a784f31790c823ba3ce193eea310cc7a3ac0414891",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_protocol_adjudication.py": "5ab2cb7d7c1f0c94cf21ef0bdf5aa4e198f1d83838868e8a9d6782abe716e4e1",
+    "plastic_heredity/phir_window_bridge.py": "c39233f8f4b1c0a5672d970478bd49f67a607520d657edc0bfe92a6c82ff3b74",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_protocol_adjudication.py": "23fa469edd53db62c6180e953ffd958001749a3c403d56ca01a4c90236bd3a71"
+  },
+  "source_tree_sha256": "18f093cc7bba840edd40a8e4310a93b70a86890d50d2c9d173454330d826ff2a"
+}

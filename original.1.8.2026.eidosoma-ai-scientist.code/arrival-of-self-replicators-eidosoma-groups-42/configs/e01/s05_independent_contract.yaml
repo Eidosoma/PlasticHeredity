@@ -1,0 +1,140 @@
+schema: eidosoma.e01.s05_independent_engine_contract.v1
+researchStepId: S05
+experimentId: E01
+contractVersion: E01-independent-engine-v1.0.0
+engineVersion: 1.0.0
+implementationBoundary:
+  repositoryPackage: src/e01_gard_independent
+  forbiddenImport: e01_gard_historical
+  rule: >-
+    Production engine modules are independently structured from frozen equations
+    and may not import or invoke S04. The S05 validation builder may import both
+    engines solely to compare matched-branch output distributions.
+  authorCodeClaim: prohibited
+  authorCodeSentinel: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  matlabRngClaim: prohibited
+  modernRngRule: six distinct caller-owned numpy.random.Generator inputs
+  seedSchemaBoundary: S05 records caller-provided stream IDs and state digests but
+    does not freeze the S06 seed derivation or canonical trajectory schema.
+
+frozenEvidence:
+  specificationRegistry:
+    path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+    sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+    preservationRule: Preserve byte-for-byte; S05 adds no registry resolution.
+  sourceManifest:
+    path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml
+    sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5
+  environmentReport:
+    path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json
+    sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd
+  historicalBehaviorContract:
+    path: /artifacts/E01_forensic_replication_bundle/software/historical_reference/historical_behavior_contract.yaml
+    sha256: e6fe49aba2240047d018e5b619ef07d3e48922fb43a963256b6b2233f07d0a43
+
+equations:
+  catalyticMatrix: beta_ij = exp(A + sigma * epsilon_ij), epsilon_ij ~ Normal(0,1)
+  catalyticBoost: b_i = 1 + sum_j(beta_ij*n_j)/N
+  join: a_i_plus = k_f * rho_i * N * b_i
+  leave: a_i_minus = k_b * n_i * b_i
+  gillespieSelection: P(event=k) = a_k / sum(a)
+  gillespieWaiting: delta_t ~ Exponential(rate=sum(a))
+  paperPoissonFixture: independent Poisson(a_i*exposure) join and loss arrays with
+    an explicitly selected loss and overshoot branch
+
+implementedBranches:
+  propensityEquationBranch:
+    - historical_reference
+    - paper_poisson_reconstruction
+    - modern_gillespie
+  catalyticMatrixBranch:
+    - historical_orientation_with_diagonal
+    - transposed_with_diagonal
+    - historical_orientation_zero_diagonal
+  reservoirSemantics:
+    - constant_require_sum_one
+    - constant_as_supplied
+  updateKernel:
+    - categorical_single_event
+    - direct_gillespie
+    - vector_poisson_batch
+  clockSemantics:
+    - event_index_only
+    - gillespie_exponential
+    - fixed_poisson_exposure
+  lossNonnegativity:
+    - eventwise_zero_rate
+    - clip_batch_to_available
+    - error_on_batch_excess
+  growthBoundary:
+    - eventwise_exact_stop
+    - retain_batch_overshoot
+    - reject_batch_overshoot
+  maxStepsSemantics:
+    - unbounded_historical_comparison
+    - fission_current_state
+    - stop_without_fission
+    - raise
+  fissionSemantics:
+    - fixed_size_without_replacement_odd_discard
+    - binomial_complement
+  daughterSelection:
+    - first
+    - second
+    - uniform_random
+  postFissionSemantics:
+    - continue_exact_selected
+    - error_if_selected_empty
+  initialStateSemantics:
+    - distinct_types_without_replacement
+    - with_replacement_counts
+
+failClosedRules:
+  - Every GardSpecification dataclass field is required; there are no model-defining defaults.
+  - Mapping construction rejects missing fields, extra fields, raw unresolved sentinels, raw conflicts, and unexpanded branch sets.
+  - Kernel, clock, loss, boundary, role, exposure, fission probability, and max-step combinations are cross-validated.
+  - Integer states reject negative, nonintegral, nonfinite, empty-vector, and wrong-length inputs.
+  - RNG stream IDs and Generator objects must be pairwise distinct.
+  - Registry v0.3.0 remains closed and is not a runnable profile.
+
+eventLogging:
+  schemaVersion: eidosoma.e01.s05_event_log.v1
+  fields:
+    - specification and branch identities
+    - generation and update indices
+    - complete pre/post integer states and masses
+    - boost, join, leave, normalized event arrays, and total propensity
+    - selected event/species/probability or attempted/applied Poisson counts
+    - boundary action and time semantics
+    - event/waiting stream IDs and RNG-state digests before/after use
+  boundary: Diagnostic S05 engine record; canonical serialization and exact regeneration remain S06.
+
+fissionLogging:
+  schemaVersion: eidosoma.e01.s05_fission_log.v1
+  fields:
+    - fission, daughter, and post-fission branch identities
+    - parent, both daughters, discard vector, and selected daughter
+    - conservation result
+    - fission/daughter stream IDs, consumption flag, and state digests
+
+sameBranchComparison:
+  permittedProfile: E01-S05-HISTORICAL-DISTRIBUTION-COMPARISON-v1.0.0
+  comparedFeatures:
+    - propensity arrays
+    - categorical event probabilities
+    - fixed-size fission distribution including odd discard
+    - one-generation endpoint and growth-event-count distributions
+  prohibitedClaims:
+    - exact cross-RNG trajectories
+    - legacy MATLAB random-stream equality
+    - identity with the unavailable author implementation
+    - equivalence of the paper vector-Poisson or modern Gillespie branches to S04
+
+registryPreservation:
+  registryVersion: E01-specification-registry-v0.3.0
+  parameterCount: 120
+  unresolvedParameterCount: 64
+  unexpandedBranchSetCount: 21
+  expectedExecutable: false
+  expectedNoSilentDefaults: true
+  action: PRESERVE_ALL_PARAMETERS_AND_SENTINELS

@@ -1,0 +1,9 @@
+# Resolved 2026-08-21 in the isolated Python 3.13 environment.
+# CUDA component versions are also captured at runtime by `grn-f12 validate`.
+jax[cuda13]==0.11.1
+numpy==2.5.2
+optax==0.2.8
+scikit-learn==1.9.0
+scipy==1.18.0
+pytest==9.1.1
+

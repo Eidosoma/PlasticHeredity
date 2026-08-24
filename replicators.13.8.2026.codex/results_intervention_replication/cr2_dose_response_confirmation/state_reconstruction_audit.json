@@ -1,0 +1,23 @@
+{
+  "all_state_history_and_beta_arrays_exact": true,
+  "cr1_checksum_manifest_sha256": "a76ac941b976ffbc64831ae888fd140fa6d34c9cd2a5a3fa797945873bebb939",
+  "cr1_state_artifact_sha256": "9e9e935b20609c66bf13ba61dae35cbaec1ebb13991330ae9308f9e4557c246b",
+  "field_exact": {
+    "beta": true,
+    "beta_matrix_ids": true,
+    "boundary_h": true,
+    "candidates": true,
+    "compositions": true,
+    "cumulative_growth_steps": true,
+    "generations": true,
+    "history_lengths": true,
+    "inheritance": true,
+    "landmarks": true,
+    "matrix_ids": true,
+    "previous_growth_steps": true,
+    "state_ids": true
+  },
+  "format": "codex-intervention-cr2-state-reconstruction-audit-v1",
+  "matrix_count": 200,
+  "state_count": 2000
+}

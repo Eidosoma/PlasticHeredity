@@ -1,0 +1,369 @@
+schema: eidosoma.e01.s12j_aggregation_interface_repair_confirmation_preregistration.v1
+researchStepId: S12J
+versionedStepId: E01-S12J-AGGREGATION-INTERFACE-REPAIR-CONFIRMATION-v1.0.0
+title: Aggregation Interface Repair Confirmation
+dateFrozen: '2026-08-06'
+authorizedOption: option-1
+evidenceClass: HUMAN_AUTHORIZED_AGGREGATION_INTERFACE_REPAIR_CONFIRMATION
+sourceRelationship: SOURCE_INFORMED_RECONSTRUCTION
+s13Status: BLOCKED_PENDING_S12J_HUMAN_REVIEW
+
+frozenQuestion: >-
+  Does a verified index-column adapter that creates only the derived prefix
+  statistical-view alias rawObservationIndex=endpointRawObservationIndex repair
+  S12I's aggregation interface without changing any scientific input or rule,
+  and what conclusion do the already frozen candidate statistics and all-three
+  sensitivity adjudication then produce?
+
+humanOverride:
+  optionId: option-1
+  title: Authorize one bounded adapter repair
+  overriddenRule: S12I_no_post_access_repair
+  permittedException: aggregation_interface_alias_only
+  postResultOverride: true
+  proceduralCredibilityWeakened: true
+  oneRepairOnly: true
+  furtherRepairPermitted: false
+  s12iFailureMustRemainVisible: true
+  s12iClassificationMustRemain: S12I_VALIDATION_FAILED_CLOSED
+
+immutability:
+  preserveStepsInclusive: [S01, S12I]
+  preserveEveryPriorArtifactByteForByte: true
+  preserveS12IClassification: S12I_VALIDATION_FAILED_CLOSED
+  preserveS12HClassification: BOUNDARY_INCLUSIVE_CANDIDATE1_NOT_UPSTREAM_CONFIRMED
+  preserveCandidate1EvidenceStatus: HUMAN_WAIVED_NEAR_ENVELOPE_NONCONFIRMED
+  auditBeforeStatistics: true
+  auditAtHandoff: true
+
+inputs:
+  root: /artifacts/research_steps/S12I
+  scientificTables:
+    labelValues:
+      path: /artifacts/research_steps/S12I/label_values.parquet
+      sha256: 56d336ec511eed33adf202925028c3303d2c88d8c878600074611fb828540896
+      rows: 19200
+    fullValues:
+      path: /artifacts/research_steps/S12I/full_source_values.parquet
+      sha256: 442b94d1b51f6d7bf1aac2113310d5d4b6f836f93033766e4194a5a47d298dd3
+      rows: 168880
+    prefixValues:
+      path: /artifacts/research_steps/S12I/prefix_endpoint_values.parquet
+      sha256: 1b615cfea91057a660a028f83957a45a43d901cd5940155733923135669603e3
+      rows: 19200
+    partitions:
+      path: /artifacts/research_steps/S12I/partition_history.parquet
+      sha256: 5df19ca64991bf834bc11c4b3a34306d01f601e205bb7f679c06a87f75c11b80
+      rows: 13532
+    diagnostics:
+      path: /artifacts/research_steps/S12I/source_diagnostic_outputs.parquet
+      sha256: 254496e17e633af2c60b44d1d72325a70600f03559fc4858517e642330b4a33f
+      rows: 13532
+    replaySuffix:
+      path: /artifacts/research_steps/S12I/replay_suffix_validation.parquet
+      sha256: 6b4db0148bd00cb52e235bd4cd29fdd623b09779367263ebc2deec173b4b74d3
+      rows: 40020
+    seeds:
+      path: /artifacts/research_steps/S12I/seed_manifest.parquet
+      sha256: 9edaacdf777241229b6893c27738e5d7e08aa0cbfb825edd584e392a07489a8e
+      rows: 27064
+    preprocessingDiagnostics:
+      path: /artifacts/research_steps/S12I/preprocessing_diagnostics.parquet
+      sha256: c73634c00a03981af8243ab0922a17274dbf462342602a56d5cc83eb33b09aa6
+      rows: 96
+  validationEvidence:
+    s12iArtifactManifest:
+      path: /artifacts/research_steps/S12I/artifact_manifest.json
+      passedRequired: true
+    s12iExecutionValidation:
+      path: /artifacts/research_steps/S12I/execution_validation.json
+      sha256: a169aef6b18a3802fc38a104ab336dca7831bf6a873aa194c4769f8ebc0fbc8b
+    s12iClassification:
+      path: /artifacts/research_steps/S12I/classification.json
+      sha256: 25a7e2e94c8b5cfa5d2c6b81d4751b9d7dfecb9aa937d880f7c42e2fc9465c87
+    s12iFailureLedger:
+      path: /artifacts/research_steps/S12I/failure_ledger.csv
+      sha256: f6bd646aac8de0c91d1d5ff27d29aaf2ab1b6f117bf4879899961eca613680f9
+    s12iStatus:
+      path: /artifacts/research_steps/S12I/status.json
+      sha256: ff55b79b3d9b4621de8877e011fdc3cad2103f9257f6ed78a0d9f3fed605fddb
+    sourceEquivalence:
+      path: /artifacts/research_steps/S12I/source_equivalence_validation.json
+      sha256: 4b68003cc0534393f901f0e82c58f08e67ea946eacffe10eb64291d8a775f9e6
+    sharedIdentity:
+      path: /artifacts/research_steps/S12I/shared_identity_audit.json
+      sha256: aa2dc5e4269a7642dff740396beddfc94e6f8b08de3ae97e0f140d214f795188
+    waiverValidation:
+      path: /artifacts/research_steps/S12I/waiver_validation.json
+      sha256: f0a135777d8bcb0b610d5c8d9fc7bc240bf70be7ac899999677cbfa41f287bd1
+  sourceFitsRerunPermitted: false
+  gardTrajectoriesGenerated: 0
+  s12gScientificCacheReadsPermitted: 0
+
+adapter:
+  id: S12J-PREFIX-ENDPOINT-RAW-INDEX-ALIAS-v1.0.0
+  scope: derived_in_memory_prefix_statistical_view_only
+  sourceField: endpointRawObservationIndex
+  derivedField: rawObservationIndex
+  formula: rawObservationIndex := endpointRawObservationIndex
+  sourceTableMutationPermitted: false
+  persistedScientificCopyPermitted: false
+  persistedAuditView: prefix_statistical_view_index.parquet
+  persistedAuditViewColumns:
+    - rowOrdinal
+    - candidateId
+    - trajectoryId
+    - matrixIndex
+    - implementationId
+    - generation
+    - endpointRawObservationIndex
+    - rawObservationIndex
+  validation:
+    sourceFieldRequired: true
+    derivedFieldMustBeAbsentBeforeAdapter: true
+    sourceAndDerivedNonnull: true
+    sourceAndDerivedInteger: true
+    exactRowwiseIdentity: true
+    rowCountUnchanged: true
+    rowOrderUnchanged: true
+    originalColumnOrderUnchanged: true
+    everyOriginalFieldExactEquality: true
+    everyOriginalFieldCanonicalArrowHashUnchanged: true
+    sourceParquetHashUnchanged: true
+    uniquenessKeys:
+      - candidateId
+      - trajectoryId
+      - implementationId
+      - generation
+    monotonicGroupKeys:
+      - candidateId
+      - trajectoryId
+      - implementationId
+    monotonicField: endpointRawObservationIndex
+    monotonicity: strictly_increasing
+    endpointIdentityJoin:
+      labelId: HISTORICAL_H090_REPLICATOR
+      prefixKeys: [candidateId, trajectoryId, matrixIndex, generation]
+      labelKeys: [candidateId, trajectoryId, matrixIndex, generation]
+      expectedLabelField: postFissionRawObservationIndex
+      requireEveryPrefixRowMatched: true
+      requireExactIndexIdentity: true
+
+frozenScientificContract:
+  inheritedPreregistration:
+    path: configs/e01/s12i_aggregate_support_waiver_sensitivity_preregistration.yaml
+    sha256: a719fc3775dc718dad0914b2e39989bd67f63a3f794e5b2d9ea31106b5fe7e23
+  inheritedStatisticsImplementation:
+    path: scripts/e01/run_s12g_frozen_timebase_ensemble.py
+    sha256: 6a13b471743edede4a348314e4592ab5a410ec224d04107176f04fb8ef75bb7a
+  inheritedAnalysisPrimitives:
+    path: src/e01_source_emergence_metric_identity/analysis.py
+  analysisRootSeedHex: 9aa1b76069d0d264ed738ba50a5c04eccbba5ff0547ac93ceb29624caf11dc53
+  resampling:
+    trajectoryBootstrapReplicates: 4096
+    circularShiftReplicates: 4096
+    blockAwarePermutationReplicates: 4096
+    exactS12gSeedDerivation: true
+  candidateIdentities:
+    - candidateId: S12F-CANDIDATE-01
+      h: 0.5081160391061118
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: RETAIN_OVERSHOOT
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+      evidenceStatus: HUMAN_WAIVED_NEAR_ENVELOPE_NONCONFIRMED
+      upstreamConfirmed: false
+    - candidateId: S12F-CANDIDATE-02
+      h: 0.6031526490073492
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+      evidenceStatus: S12FR_UPSTREAM_CONFIRMED
+      upstreamConfirmed: true
+    - candidateId: S12F-CANDIDATE-03
+      h: 0.5613315384859516
+      daughterRule: RANDOM_NONEMPTY
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+      evidenceStatus: S12FR_UPSTREAM_CONFIRMED
+      upstreamConfirmed: true
+  primaryLabel: HISTORICAL_H090_REPLICATOR
+  secondaryLabel: PAST_ONLY_COSINE_REPLICATOR
+  preprocessing: additive_0.5_closure_full_CLR_remove_original_component_100
+  primaryMetric: IIGR_source_defined_emergence_synergy_plus_two_downward_atoms
+  robustnessMetric: PhiRL_regularized_source_defined_emergence
+  comparatorMetric: corrected_local_phi_r_only
+  fullModeLabel: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+  prefixBoundaryTransitions: 256
+  analysesInOrder:
+    - candidate_association_and_replicator_drift
+    - temporal_dependence_and_spikes
+    - emergence_versus_local_phi_r_metric_identity
+    - full_versus_prefix_future_dependence
+    - paired_cross_candidate_comparison
+    - all_three_sensitivity_adjudication
+  candidateGates:
+    association:
+      finiteCoverageAtLeast: 0.80
+      definedTrajectoriesAtLeast: 26
+      positiveTrajectoriesAtLeast: 24
+      medianStrictlyPositive: true
+      trajectoryBootstrapLower95StrictlyPositive: true
+      circularShiftPositivePAtMost: 0.05
+    drift:
+      definedTrajectoriesAtLeast: 26
+      positiveMeanDifferencesAtLeast: 19
+      medianMeanDifferenceStrictlyPositive: true
+      trajectoryBootstrapLower95StrictlyPositive: true
+      blockAwarePositivePAtMost: 0.05
+    prefix:
+      associationGatePlusNoSignificantOppositePhiRL: true
+    punctuatedSeparateGate:
+      runsWithPositive3SigmaSpikeAtLeast: 24
+      aggregateTrendPGreaterThan: 0.05
+      rawLjungBoxSignificantRunsAtLeast: 28
+      differencedLjungBoxSignificantRunsAtMost: 0
+  allThreeRule:
+    positiveRequiresSameGateAndDirectionAllThree: true
+    noWeights: true
+    noFavorableCandidateSelection: true
+    allPrefixPositive: EXPLORATORY_SENSITIVITY_SET_PROSPECTIVE_POSITIVE_CONSISTENCY
+    allFullPositiveNotAllPrefix: EXPLORATORY_SENSITIVITY_SET_RETROSPECTIVE_POSITIVE_CONSISTENCY
+    disagreement: CANDIDATE_SENSITIVE_UNDERDETERMINED
+    allNegative: SENSITIVITY_SET_WIDE_NON_SUPPORT_WITHIN_SOURCE_INFORMED_SCOPE
+    otherwise: UNDERDETERMINED
+  deterministicStatisticsReplayRequired: true
+
+executionFirewall:
+  order:
+    - add_S12J_to_RESEARCH_PLAN
+    - implement_and_unit_test_alias_only_adapter
+    - commit_and_push_complete_method
+    - freeze_preregistration_method_adapter_and_input_hashes
+    - validate_all_19200_adapter_rows_before_any_candidate_statistic
+    - run_only_inherited_frozen_statistics
+    - exact_deterministic_statistics_replay
+    - validate_prior_immutability_schemas_hashes_runtime_storage
+    - report_and_return_for_human_review
+  candidateStatisticAccessBeforeMethodLock: forbidden
+  sourceFitExecution: forbidden
+  newSimulation: forbidden
+  additionalRepair: forbidden
+  permanentStopOn:
+    - adapter_validation_failure
+    - immutable_input_failure
+    - source_or_replay_evidence_failure
+    - additional_code_or_interface_requirement
+    - schema_or_data_change_requirement
+    - statistical_or_scope_change_requirement
+    - statistics_exception
+    - statistics_replay_failure
+    - artifact_hash_or_manifest_failure
+
+validation:
+  expectedSourceTasks: 96
+  expectedTaskFailures: 0
+  expectedLabelRows: 19200
+  expectedFullRows: 168880
+  expectedPrefixRows: 19200
+  expectedEligiblePrefixRows: 13340
+  expectedPartitionRows: 13532
+  expectedDiagnosticRows: 13532
+  expectedReplaySuffixRows: 40020
+  expectedExecutedSuffixSentinels: 1728
+  expectedSeedRows: 27064
+  expectedUniqueSeedRows: 27064
+  expectedCandidateAssociationSummaryRows: 24
+  expectedReplicatorDriftSummaryRows: 12
+  expectedTemporalRows: 198
+  expectedSpikeRows: 192
+  expectedMetricIdentityRows: 384
+  expectedFutureDependenceRows: 192
+  expectedCrossCandidateRows: 864
+  expectedAdjudicationRows: 3
+  schemaValidation: true
+  exactStatisticsReplay: true
+  artifactHashValidation: true
+  priorImmutabilityAtEnd: true
+
+runtime:
+  cpuWorkers: 1
+  blasThreads: 1
+  cpuPrecision: float64_authoritative
+  gpuUse: none
+  hardCeilings:
+    cpuHours: 250
+    wallHours: 72
+    retainedArtifactGiB: 30
+    newGardTrajectories: 0
+
+artifacts:
+  root: /artifacts/research_steps/S12J
+  required:
+    - preregistration.yaml
+    - preregistration_record.json
+    - method_lock.json
+    - implementation_lock.json
+    - adapter_contract.json
+    - adapter_validation.json
+    - analysis_lock.json
+    - input_manifest.json
+    - input_validation.json
+    - immutable_prior_baseline.json
+    - immutable_prior_validation.json
+    - prefix_statistical_view_index.parquet
+    - candidate_associations.csv
+    - candidate_association_details.parquet
+    - replicator_drift_results.csv
+    - replicator_drift_details.parquet
+    - temporal_dependence_results.csv
+    - spike_results.csv
+    - metric_identity_results.csv
+    - future_dependence_results.csv
+    - cross_candidate_results.csv
+    - ensemble_adjudication.csv
+    - statistics_replay_validation.json
+    - result_validation.json
+    - schema_validation.json
+    - provenance_manifest.json
+    - runtime_manifest.json
+    - scope_access_ledger.json
+    - failure_ledger.csv
+    - classification.json
+    - status.json
+    - artifact_manifest.json
+    - research_step_full_results.md
+  figures:
+    - figures/label_fingerprints.png
+    - figures/full_emergence_trajectories.png
+    - figures/association_distributions.png
+    - figures/full_prefix_comparison.png
+    - figures/metric_identity_comparison.png
+    - figures/ensemble_decision_matrix.png
+
+forbiddenWork:
+  - source_refit
+  - GARD_simulation
+  - S12G_scientific_cache_reuse
+  - candidate_change
+  - confirmation_status_change
+  - clock_or_exposure_change
+  - candidate_weight_update
+  - label_or_preprocessing_change
+  - metric_or_temporal_boundary_change
+  - filter_or_statistic_change
+  - resampling_seed_change
+  - decision_gate_change
+  - all_three_rule_change
+  - prediction
+  - MLP
+  - intervention
+  - estimator_repair
+  - report_bundle_progression
+  - scale_up
+  - S13
+
+handoff:
+  alwaysReturnForHumanReview: true
+  s13AlwaysBlocked: true
+  downstreamAutomaticStartForbidden: true
+  reportPath: /artifacts/research_steps/S12J/research_step_full_results.md

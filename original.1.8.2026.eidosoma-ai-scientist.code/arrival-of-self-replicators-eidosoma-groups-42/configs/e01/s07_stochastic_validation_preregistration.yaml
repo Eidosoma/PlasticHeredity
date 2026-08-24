@@ -1,0 +1,379 @@
+schema: eidosoma.e01.s07_stochastic_validation_preregistration.v1
+researchStepId: S07
+experimentId: E01
+preregistrationVersion: E01-S07-stochastic-validation-v1.0.0
+status: FROZEN_BEFORE_CANONICAL_S07_OUTCOMES
+frozenQuestion: >-
+  Do the historical-reference and independent GARD engines generate the
+  stochastic laws declared by their explicit, legitimately comparable branch
+  specifications before any scientific trajectory analysis begins?
+
+scopeBoundary:
+  authorCodeIdentity: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  legacyMatlabRngIdentity: UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER
+  historicalHarnessIdentity: NUMPY_GENERATOR_EXPLICIT_NOT_MATLAB_LEGACY
+  paperPoissonInterpretation: >-
+    The vector-Poisson profile is an explicit validation-only reconstruction;
+    its exposure, clipping, boundary, and daughter choices are not author defaults.
+  modernGillespieInterpretation: >-
+    The direct-Gillespie profile is an independent modern interpretation of the
+    frozen propensity equations, not a claim about author code or legacy time.
+  registryRule: >-
+    Registry v0.3.0 remains byte-for-byte unchanged, non-executable, and
+    sentinel-bearing. Validation fixtures instantiate named branch tests only.
+
+frozenEvidence:
+  specificationRegistry:
+    path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+    sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+  sourceManifest:
+    path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml
+    sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5
+  environmentReport:
+    path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json
+    sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd
+  precisionPolicy:
+    path: /artifacts/E01_forensic_replication_bundle/provenance/precision_policy.yaml
+    sha256: a49b2f37629382264881bb390dd010b453f1959d792eee180dae6c6c425259e6
+  historicalContract:
+    path: /artifacts/E01_forensic_replication_bundle/software/historical_reference/historical_behavior_contract.yaml
+    sha256: e6fe49aba2240047d018e5b619ef07d3e48922fb43a963256b6b2233f07d0a43
+  independentContract:
+    path: /artifacts/E01_forensic_replication_bundle/software/independent_engine/independent_engine_contract.yaml
+    sha256: a35e313cb0685218691397980d1f5d8020fee8c994359e3227b9b1c1ef8605e8
+  validationProfiles:
+    path: /artifacts/E01_forensic_replication_bundle/software/independent_engine/validation_profiles.yaml
+    sha256: 959fb3171e19087af06b09d21fd499e776b16de85e0b673f9ccde61e5b23ee0c
+  seedContract:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml
+    sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1
+  seedSchema:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_schema_v1.0.0.json
+    sha256: 9eab6f1d796810fa3ba3e58d486d22293f65cac07da5c635c0aa023092e72218
+  trajectoryContract:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_precision_contract_v1.0.0.yaml
+    sha256: 2c73d7385d7511636cb809cdb1b2b5c0239632faec2f6ff2ffb692a7b3548b4d
+  trajectorySchema:
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_schema_v1.0.0.json
+    sha256: 981807b512bff589a6a693c1da191efad829ccb3294fd4f9297c3ee02a7a5d57
+
+randomness:
+  rootSeedHex: '0707070707070707070707070707070707070707070707070707070707070707'
+  seedSchemaVersion: E01-seed-schema-v1.0.0
+  derivationAlgorithm: E01-SHA256-DOMAIN-SEPARATION-PCG64DXSM-v1
+  numpyVersion: 2.4.6
+  couplingPolicy: trajectory_isolated
+  rule: >-
+    Every fixture/engine pair receives a distinct isolated namespace and all
+    nine S06 streams. Independent-engine draws use the bound engine streams.
+    Historical validation uses the event, matrix, or fission PCG64DXSM draw as
+    an explicit NumPy harness only and never claims MATLAB-stream conformance.
+
+execution:
+  workerProcesses: 4
+  maximumWorkerProcesses: 8
+  numericLibraryThreads: 1
+  environment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+  device: cpu
+  dtype: float64
+  gpuUsed: false
+
+statisticalDesign:
+  globalFamilywiseAlpha: 0.005
+  primaryTestCount: 26
+  multiplicityCorrection: BONFERRONI_SINGLE_GLOBAL_FAMILY
+  perTestAlpha: 0.0001923076923076923
+  multinomialMethod: EXACT_PARAMETRIC_MONTE_CARLO_WITH_PLUS_ONE_PVALUE
+  multinomialStatistic: LOG_LIKELIHOOD_DEVIANCE_G2
+  monteCarloReplicates: 199999
+  monteCarloBatchSize: 5000
+  minimumExpectedCountForAsymptoticDiagnostic: 25
+  rareCategoryRule: >-
+    Primary inference always uses the exact Monte Carlo multinomial null over
+    every positive-probability category. Categories with expected count below
+    25 are additionally pooled into one diagnostic rare bin. Pearson/chi-square
+    asymptotics are prohibited whenever any unpooled or pooled expected count
+    remains below 25. A structural-zero target receiving an observation is an
+    immediate deterministic failure.
+  momentMethod: >-
+    For y=log(beta), use the exact normal z statistic for mean A and the exact
+    chi-square statistic for unbiased sample variance sigma^2; both are
+    two-sided and use the same Bonferroni per-test alpha.
+  crossEngineMethod: >-
+    For each legitimately matched event/fission fixture, compare the observed
+    total-variation distance with paired independent multinomial samples from
+    the known analytical target using the same plus-one Monte Carlo rule.
+  passRule: >-
+    Every one of the 26 preregistered primary p-values must be at least
+    perTestAlpha, every deterministic invariant must have zero failures, every
+    failure injection must be detected, and frozen evidence must remain intact.
+
+profiles:
+  E01-S07-MATCHED-COMMON-v1.0.0:
+    specification_id: E01-S07-MATCHED-COMMON-v1.0.0
+    profile_role: historical_distribution_comparison
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 1
+    max_steps: null
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 0.4
+    k_b: 0.02
+    rho: [0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+    propensity_equation_branch: historical_reference
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: categorical_single_event
+    clock_semantics: event_index_only
+    poisson_exposure: null
+    loss_nonnegativity: eventwise_zero_rate
+    growth_boundary: eventwise_exact_stop
+    max_steps_semantics: unbounded_historical_comparison
+    zero_propensity_semantics: raise
+    fission_semantics: fixed_size_without_replacement_odd_discard
+    fission_probability: null
+    daughter_selection: first
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: with_replacement_counts
+
+  E01-S07-MATCHED-RARE-v1.0.0:
+    specification_id: E01-S07-MATCHED-RARE-v1.0.0
+    profile_role: historical_distribution_comparison
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 1
+    max_steps: null
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 1.0
+    k_b: 0.00005
+    rho: [0.49995, 0.49995, 0.0001]
+    propensity_equation_branch: historical_reference
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: categorical_single_event
+    clock_semantics: event_index_only
+    poisson_exposure: null
+    loss_nonnegativity: eventwise_zero_rate
+    growth_boundary: eventwise_exact_stop
+    max_steps_semantics: unbounded_historical_comparison
+    zero_propensity_semantics: raise
+    fission_semantics: fixed_size_without_replacement_odd_discard
+    fission_probability: null
+    daughter_selection: first
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: with_replacement_counts
+
+  E01-S07-MODERN-GILLESPIE-v1.0.0:
+    specification_id: E01-S07-MODERN-GILLESPIE-v1.0.0
+    profile_role: modern_gillespie_fixture
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 1
+    max_steps: 100
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 0.4
+    k_b: 0.02
+    rho: [0.2, 0.3, 0.5]
+    propensity_equation_branch: modern_gillespie
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: direct_gillespie
+    clock_semantics: gillespie_exponential
+    poisson_exposure: null
+    loss_nonnegativity: eventwise_zero_rate
+    growth_boundary: eventwise_exact_stop
+    max_steps_semantics: fission_current_state
+    zero_propensity_semantics: raise
+    fission_semantics: binomial_complement
+    fission_probability: 0.5
+    daughter_selection: uniform_random
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: distinct_types_without_replacement
+
+  E01-S07-PAPER-POISSON-v1.0.0:
+    specification_id: E01-S07-PAPER-POISSON-v1.0.0
+    profile_role: paper_reconstruction_fixture
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 1
+    max_steps: 4
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 0.4
+    k_b: 0.02
+    rho: [0.2, 0.3, 0.5]
+    propensity_equation_branch: paper_poisson_reconstruction
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: vector_poisson_batch
+    clock_semantics: fixed_poisson_exposure
+    poisson_exposure: 0.25
+    loss_nonnegativity: clip_batch_to_available
+    growth_boundary: retain_batch_overshoot
+    max_steps_semantics: fission_current_state
+    zero_propensity_semantics: stop
+    fission_semantics: binomial_complement
+    fission_probability: 0.5
+    daughter_selection: first
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: distinct_types_without_replacement
+
+fixtures:
+  catalyticMatrixMoments:
+    fixtureId: S07-BETA-LOG-MOMENTS
+    profileId: E01-S07-MATCHED-COMMON-v1.0.0
+    engines: [historical_reference, independent]
+    matrixDrawCount: 32768
+    entriesPerMatrix: 9
+    totalEntriesPerEngine: 294912
+    expectedLogMean: -4.0
+    expectedLogVariance: 16.0
+
+  eventSelection:
+    - fixtureId: S07-EVENT-COMMON
+      profileId: E01-S07-MATCHED-COMMON-v1.0.0
+      engines: [historical_reference, independent]
+      state: [2, 1, 1]
+      beta:
+        - [1.0, 0.2, 0.1]
+        - [0.5, 0.3, 0.4]
+        - [0.2, 0.8, 0.1]
+      drawsPerEngine: 150000
+    - fixtureId: S07-EVENT-RARE
+      profileId: E01-S07-MATCHED-RARE-v1.0.0
+      engines: [historical_reference, independent]
+      state: [1, 1, 1]
+      beta:
+        - [0.0, 0.0, 0.0]
+        - [0.0, 0.0, 0.0]
+        - [0.0, 0.0, 0.0]
+      drawsPerEngine: 300000
+    - fixtureId: S07-EVENT-MODERN
+      profileId: E01-S07-MODERN-GILLESPIE-v1.0.0
+      engines: [independent]
+      state: [2, 1, 1]
+      beta:
+        - [1.0, 0.2, 0.1]
+        - [0.5, 0.3, 0.4]
+        - [0.2, 0.8, 0.1]
+      drawsPerEngine: 150000
+      waitingTimeUniformBins: 10
+
+  fission:
+    - fixtureId: S07-FISSION-FIXED-EVEN
+      profileId: E01-S07-MATCHED-COMMON-v1.0.0
+      engines: [historical_reference, independent]
+      parent: [2, 2, 2]
+      drawsPerEngine: 120000
+      targetLaw: fixed_size_multivariate_hypergeometric
+    - fixtureId: S07-FISSION-FIXED-ODD
+      profileId: E01-S07-MATCHED-COMMON-v1.0.0
+      engines: [historical_reference, independent]
+      parent: [2, 2, 1]
+      drawsPerEngine: 120000
+      targetLaw: fixed_size_multivariate_hypergeometric_plus_uniform_discard
+    - fixtureId: S07-FISSION-BINOMIAL
+      profileId: E01-S07-MODERN-GILLESPIE-v1.0.0
+      engines: [independent]
+      parent: [2, 3, 1]
+      drawsPerEngine: 120000
+      targetLaw: independent_per_species_binomial_complement
+      daughterSelectionTarget: [0.5, 0.5]
+
+  paperPoisson:
+    fixtureId: S07-PAPER-POISSON
+    profileId: E01-S07-PAPER-POISSON-v1.0.0
+    engines: [independent]
+    state: [2, 1, 1]
+    beta:
+      - [1.0, 0.2, 0.1]
+      - [0.5, 0.3, 0.4]
+      - [0.2, 0.8, 0.1]
+    draws: 120000
+    targetChannels: [join_1, join_2, join_3, leave_1, leave_2, leave_3]
+    tailProbabilityFloor: 1.0e-12
+    appliedLossRule: componentwise_min_attempted_and_available
+
+primaryTests:
+  - {testId: S07-T01, family: event, subject: S07-EVENT-COMMON/historical_reference, type: multinomial_target}
+  - {testId: S07-T02, family: event, subject: S07-EVENT-COMMON/independent, type: multinomial_target}
+  - {testId: S07-T03, family: event, subject: S07-EVENT-RARE/historical_reference, type: multinomial_target}
+  - {testId: S07-T04, family: event, subject: S07-EVENT-RARE/independent, type: multinomial_target}
+  - {testId: S07-T05, family: event, subject: S07-EVENT-MODERN/independent, type: multinomial_target}
+  - {testId: S07-T06, family: cross_engine, subject: S07-EVENT-COMMON, type: two_engine_tv_exact_mc}
+  - {testId: S07-T07, family: cross_engine, subject: S07-EVENT-RARE, type: two_engine_tv_exact_mc}
+  - {testId: S07-T08, family: beta_moment, subject: historical_reference/log_mean, type: exact_normal_mean}
+  - {testId: S07-T09, family: beta_moment, subject: historical_reference/log_variance, type: exact_normal_variance}
+  - {testId: S07-T10, family: beta_moment, subject: independent/log_mean, type: exact_normal_mean}
+  - {testId: S07-T11, family: beta_moment, subject: independent/log_variance, type: exact_normal_variance}
+  - {testId: S07-T12, family: fission, subject: S07-FISSION-FIXED-EVEN/historical_reference, type: multinomial_target}
+  - {testId: S07-T13, family: fission, subject: S07-FISSION-FIXED-EVEN/independent, type: multinomial_target}
+  - {testId: S07-T14, family: fission, subject: S07-FISSION-FIXED-ODD/historical_reference, type: multinomial_target}
+  - {testId: S07-T15, family: fission, subject: S07-FISSION-FIXED-ODD/independent, type: multinomial_target}
+  - {testId: S07-T16, family: fission, subject: S07-FISSION-BINOMIAL/independent, type: multinomial_target}
+  - {testId: S07-T17, family: fission, subject: S07-FISSION-BINOMIAL/daughter_selection, type: multinomial_target}
+  - {testId: S07-T18, family: cross_engine, subject: S07-FISSION-FIXED-EVEN, type: two_engine_tv_exact_mc}
+  - {testId: S07-T19, family: cross_engine, subject: S07-FISSION-FIXED-ODD, type: two_engine_tv_exact_mc}
+  - {testId: S07-T20, family: poisson, subject: S07-PAPER-POISSON/join_1, type: multinomial_target}
+  - {testId: S07-T21, family: poisson, subject: S07-PAPER-POISSON/join_2, type: multinomial_target}
+  - {testId: S07-T22, family: poisson, subject: S07-PAPER-POISSON/join_3, type: multinomial_target}
+  - {testId: S07-T23, family: poisson, subject: S07-PAPER-POISSON/leave_1, type: multinomial_target}
+  - {testId: S07-T24, family: poisson, subject: S07-PAPER-POISSON/leave_2, type: multinomial_target}
+  - {testId: S07-T25, family: poisson, subject: S07-PAPER-POISSON/leave_3, type: multinomial_target}
+  - {testId: S07-T26, family: waiting_time, subject: S07-EVENT-MODERN/exponential_pit, type: multinomial_target}
+
+deterministicInvariants:
+  allowedFailures: 0
+  required:
+    - categorical and direct-Gillespie events change mass by exactly +1 or -1
+    - join events change exactly one selected species by +1
+    - leave events change exactly one selected species by -1 without negativity
+    - vector-Poisson state change equals applied joins minus applied losses
+    - fixed even fission conserves the parent with zero discard and equal child sizes
+    - fixed odd fission conserves the parent with exactly one discard and equal child sizes
+    - binomial-complement fission conserves the parent with zero discard
+    - deterministic first-daughter selection consumes no daughter RNG draw
+    - uniform daughter selection is statistically tested and consumes the dedicated stream
+    - all explicit catalytic orientation/diagonal branches match independent analytical propensities
+
+failureInjection:
+  requiredDetectedCount: 7
+  cases:
+    - {injectionId: FI01, target: event_multinomial, fault: move_3_percent_from_modal_to_next_category}
+    - {injectionId: FI02, target: log_beta_mean, fault: add_0.05_sigma_to_each_log_beta}
+    - {injectionId: FI03, target: categorical_mass, fault: add_two_to_recorded_post_mass}
+    - {injectionId: FI04, target: fixed_fission_multinomial, fault: move_3_percent_from_modal_to_next_outcome}
+    - {injectionId: FI05, target: fission_conservation, fault: add_one_unmatched_molecule_to_child_first}
+    - {injectionId: FI06, target: poisson_multinomial, fault: move_3_percent_from_zero_to_one_count_bin}
+    - {injectionId: FI07, target: branch_identity, fault: relabel_vector_poisson_batch_as_categorical_single_event}
+
+expectedArtifacts:
+  - preregistration.yaml
+  - preregistration_record.json
+  - calibrated_tolerances.json
+  - validation_fixtures.json
+  - seed_manifest.json
+  - goodness_of_fit_summary.csv
+  - goodness_of_fit_details.json
+  - moment_tests.csv
+  - invariant_checks.csv
+  - failure_injection.json
+  - diagnostic_event_probabilities.png
+  - diagnostic_beta_moments.png
+  - diagnostic_fission_probabilities.png
+  - diagnostic_independent_only_branches.png
+  - registry_preservation.json
+  - validation_summary.json
+  - artifact_manifest.json
+  - research_step_full_results.md

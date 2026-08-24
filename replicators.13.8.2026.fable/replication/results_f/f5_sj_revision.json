@@ -1,0 +1,11 @@
+{
+  "free_surv_inactive": 0.7847750865051903,
+  "free_surv_active": 0.46026986506746626,
+  "G2p": true,
+  "recovery": 0.11666666666666681,
+  "G4p": false,
+  "revised_pass": false,
+  "G4pp_small_dose_absorbed": true,
+  "gate_iterations_note": "G4 constructed three times (metric error; wrong timescale; final = small-dose mode absorption). All iterations preserved; final criteria: G1 inheritance+switching, G2' assay matches free residence, G3 large-dose response, G4'' small-dose absorption.",
+  "final_assay_validity_pass": true
+}

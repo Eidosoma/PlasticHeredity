@@ -1,0 +1,21 @@
+{
+  "acquisition_limit": 60,
+  "acquisition_replay_exact": true,
+  "all_eligible_states_retained": true,
+  "classification": "eligible_for_registered_confirmation",
+  "eligible_broken_states": 1936,
+  "eligible_by_candidate": {
+    "02": {
+      "matrices": 216,
+      "states": 935
+    },
+    "03": {
+      "matrices": 222,
+      "states": 1001
+    }
+  },
+  "intervention_futures_authorized": true,
+  "minimum_eligible_matrices_per_candidate": 200,
+  "no_retry_replacement_or_subselection": true,
+  "source_states": 2500
+}

@@ -1,0 +1,15 @@
+{
+  "checkpoint_counts": {
+    "confirmation": 92,
+    "quarantine": 2
+  },
+  "confirmation_expected": 92,
+  "design_digest": "05bbff9c76cc264828bb6916f10cc4a4e0dd80b6041903772dcad2a505598bfc",
+  "implementation_manifest": "valid",
+  "report_seal": "valid",
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "snapshot_digest": "f83fe4945277da978519b478079719c416a8e162bc7eac0399d25e37003f511d",
+  "source_and_v1_evidence_boundary": "valid",
+  "test_audit": "valid",
+  "valid": true
+}

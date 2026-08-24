@@ -1,0 +1,64 @@
+{
+  "all_registered_states_retained": true,
+  "arms": [
+    "SMALL_LOOSEN",
+    "SMALL_TIGHTEN",
+    "SMALL_RANDOM_PP",
+    "FABLE_LOOSEN",
+    "FABLE_TIGHTEN",
+    "FABLE_RANDOM_PP",
+    "NOOP"
+  ],
+  "branches_per_arm_per_state": 32,
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "checkpoint_audit": {
+    "generate_recovery_contract_sha256": "c97f7276b24d15dd3941b3d4df51074df83758bd91690fbfdffb5b096af785b6",
+    "immutable_prefix_aggregate_sha256": "efc28a57eac888f74b2ae84e56013c856d6cb0a682842093dc1baa1accdcb66d",
+    "replay_recovery_contract_sha256": "dfaec593f6c319468441d8fff396bc261898fa5e42c7d78b4efa56c21ecd867f",
+    "work_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p3b_dose_bridge_work"
+  },
+  "complete_readback_exact": true,
+  "eligible_surgery_audit_pass": true,
+  "exact_replay": true,
+  "five_landmark_generalization_gate": false,
+  "five_landmark_two_dose_gate": true,
+  "format": "codex-intervention-p3b-singleton-recovered-result-v1",
+  "landmark60_primary_gate": false,
+  "landmark60_two_dose_gate": true,
+  "landmarks": [
+    20,
+    35,
+    50,
+    60,
+    65,
+    80
+  ],
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 80,
+  "next_scientific_phase_launched": false,
+  "no_future_retries": true,
+  "no_matrix_replacement": true,
+  "no_refitting_or_recalibration": true,
+  "original_registration_id": "c1fe38be6a7e2b71eb5e288c9e238ff45c30d8fe388f2d21a879acea6dd5624e",
+  "phase": "p3b_dose_bridge",
+  "primary_futures": 215040,
+  "replay_futures": 215040,
+  "reused_original_generation_checkpoints": 363,
+  "role": "Fable-strength beta-surgery replication and two-dose bridge",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "singleton_recovery_amendment_id": "c5a941f9a6b1d71fcd02b4d3878cb9c091cc2090bd914273d58f5740d3e183c0",
+  "states": 960,
+  "structural_no_action_audit_pass": true,
+  "structural_no_action_states": 4
+}

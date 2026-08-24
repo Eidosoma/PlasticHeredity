@@ -1,0 +1,98 @@
+{
+  "acquisition": {
+    "break_limit": 60,
+    "break_start": 10,
+    "if_shortfall": "run all paired-eligible matrices and fail coverage; add no seeds",
+    "outcome_blind": true,
+    "paired_candidate_eligibility": true,
+    "seeded_pool": 32,
+    "selection": "first 24 paired-eligible matrices in sealed seed order"
+  },
+  "arms": [
+    "RENEWAL_UP",
+    "RENEWAL_DOWN",
+    "RANDOM",
+    "NOOP"
+  ],
+  "branches": 64,
+  "claim_boundary": [
+    "event-locked information is not consciousness",
+    "association is not a claim that Phi causes recovery",
+    "strict-eight is excluded",
+    "prior results remain unchanged"
+  ],
+  "cross_branch_transitions": false,
+  "equivalence_margins": {
+    "heredity_probability": 0.025,
+    "information": {
+      "functional_flux": 0.03321441162874219,
+      "material": 3.303539192139139
+    },
+    "origin": "transported pre-outcome PX1 archived-NOOP calibration maxima"
+  },
+  "explicit_pairs": true,
+  "extinction_information_rule": "retain every observed transition, never retry, and report pair count and survival",
+  "format": "codex-ch5-phir-extension-px2-program-v1",
+  "future_seed_includes_arm": false,
+  "gate": [
+    "24 paired-eligible matrices",
+    "positive material effect in all four cells",
+    "positive bootstrap lower bounds",
+    "Holm-adjusted p < 0.05",
+    "RANDOM equivalent to NOOP",
+    "renewal manipulation valid in all four cells",
+    "exact acquisition and intervention replay"
+  ],
+  "halves": {
+    "A": [
+      0,
+      32
+    ],
+    "B": [
+      32,
+      64
+    ]
+  },
+  "inference": {
+    "bootstrap": 4096,
+    "holm": "four candidate-by-half primary cells",
+    "randomization": 4096,
+    "unit": "whole catalytic matrix",
+    "vector_test": "ridge Hotelling paired whole-matrix sign randomization"
+  },
+  "model_contract_sha256": "0d14920f45f831c3825ee36a73537cfbc067cafe9042088ae9a123d82900bd95",
+  "model_refit_or_recalibration": false,
+  "model_sha256": "59750718efcea3492a6d9b4493e9dc379eb221150025681acd38651d623cd430",
+  "no_48_matrix_continuation": true,
+  "phase": "PX2",
+  "primary": "material full-block RENEWAL_UP minus RENEWAL_DOWN",
+  "protocol_id": "f9753b0d7813e36bb2495dad88a37bc4d486ef82e8220606a24f5ae128d9515a",
+  "question": "information dynamics during causal recovery from an identical naturally broken state",
+  "representations": [
+    "material",
+    "functional_flux"
+  ],
+  "secondary": [
+    "functional-flux full block",
+    "first two transitions",
+    "four-component public PhiID vector",
+    "renewal probability",
+    "inherited count",
+    "renewal time",
+    "old-anchor similarity",
+    "survival"
+  ],
+  "selection_stream_separate": true,
+  "spec": {
+    "acquisition_limit": 60,
+    "acquisition_matrices": 32,
+    "acquisition_start": 10,
+    "bootstrap_draws": 4096,
+    "branches": 64,
+    "cpu_allocation_seconds": 36000.0,
+    "horizon": 8,
+    "label": "scientific",
+    "randomization_draws": 4096,
+    "target_matrices": 24
+  }
+}

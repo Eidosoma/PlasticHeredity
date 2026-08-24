@@ -1,0 +1,28 @@
+{
+  "schema": "eidosoma.e01.s19.l14.technical_amendment.v1",
+  "amendmentId": "S19-L14-TECHNICAL-AMENDMENT-001",
+  "authorizedBy": "prospectively_locked_two-amendment_technical_assurance_boundary",
+  "observedAfterOutcomeAccess": true,
+  "scope": "report_assembly_only",
+  "defect": "The canonical loop report used correct loop-local figure links, but the derived S19 root handoff retained those links instead of prefixing loops/L14.",
+  "permittedChanges": [
+    "root handoff figure-link prefix",
+    "technical amendment disclosure in reports",
+    "technical amendment ledger",
+    "regeneration and artifact manifests"
+  ],
+  "forbiddenChanges": [
+    "target labels",
+    "target values",
+    "features",
+    "feature values",
+    "splits",
+    "models",
+    "predictions",
+    "metrics",
+    "scientific gates",
+    "classifications"
+  ],
+  "freshCache": "/cache/e01_s19_l14/amendment_001_fresh",
+  "exactScientificValueEqualityRequired": true
+}

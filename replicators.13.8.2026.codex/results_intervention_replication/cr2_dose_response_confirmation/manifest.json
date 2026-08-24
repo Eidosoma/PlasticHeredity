@@ -1,0 +1,37 @@
+{
+  "arms": [
+    "Q00",
+    "Q20",
+    "Q40",
+    "Q60",
+    "Q80",
+    "Q100"
+  ],
+  "available_cpu_hours_at_launch": 20.0,
+  "branches_per_arm_state": 64,
+  "complete_readback_exact": true,
+  "cr1_effect_sizes_not_used": true,
+  "exact_cr1_state_reconstruction": true,
+  "exact_replay": true,
+  "format": "codex-intervention-cr2-dose-response-result-v1",
+  "fresh_future_seed_domain": true,
+  "full_four_cell_gate": true,
+  "later_phase_launched": false,
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 200,
+  "no_future_retry_matrix_replacement_or_state_exclusion": true,
+  "no_refitting_recalibration_or_threshold_change": true,
+  "primary_futures": 768000,
+  "registration_id": "9d5c1f3deddb1c4b09276f74b208f3e8a15ac5ca421171d69b3c39ac2d4cb6a0",
+  "replay_futures": 768000,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "states": 2000
+}

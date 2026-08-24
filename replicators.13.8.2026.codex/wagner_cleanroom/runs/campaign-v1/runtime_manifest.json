@@ -1,0 +1,17 @@
+{
+  "disk_free_bytes_at_finish": 144626741248,
+  "elapsed_seconds": 207.01758585637435,
+  "finished_utc": "2026-08-21T21:53:58.676982+00:00",
+  "logical_cpus": 24,
+  "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+  "profile": "full",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "started_utc": "2026-08-21T21:50:31.658821+00:00",
+  "versions": {
+    "numpy": "2.5.2",
+    "scikit_learn": "1.9.0",
+    "scipy": "1.18.0"
+  },
+  "wall_limit_seconds": 43200,
+  "workers": 12
+}

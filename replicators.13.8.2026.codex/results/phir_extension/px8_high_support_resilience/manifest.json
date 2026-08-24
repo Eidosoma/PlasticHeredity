@@ -1,0 +1,23 @@
+{
+  "branches_per_arm": 256,
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "declared_cpu_budget_hours": 30.0,
+  "format": "codex-ch5-phir-px8-result-v1",
+  "gates": {
+    "estimator_support_converged": true,
+    "primary_information_tests_pass": true,
+    "public_revised_negative_control_positive_response_all_cells": false,
+    "resilience_eligibility": true,
+    "resilience_manipulation_valid": true,
+    "specialized_resilience_gauge_confirmed": true
+  },
+  "generation_cpu_seconds": 11815.54369046,
+  "matrices": 48,
+  "registration_id": "390821f0da1052276ebd68fe640ba350715e531097e9bd07a4018045769f42e1",
+  "replay_cpu_seconds": 11559.857792851999,
+  "scientific_digest": "dd1520c306ebf5c3b4f8e5606c90824ead17bfc388c8bbb074f57242dd00ec21",
+  "workers": 8
+}

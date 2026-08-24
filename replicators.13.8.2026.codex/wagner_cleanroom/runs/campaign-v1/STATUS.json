@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "elapsed_seconds": 207.01758585637435,
+  "phase": "complete",
+  "predictor_verdict": "NOT_PROMISING",
+  "primary_verdict": "PASS",
+  "started_utc": "2026-08-21T21:50:31.658821+00:00",
+  "verification": {
+    "failures": [],
+    "ok": true
+  }
+}

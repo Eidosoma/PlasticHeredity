@@ -1,0 +1,240 @@
+{
+  "ca": {
+    "atlas_exact": true,
+    "compact_carrier": {
+      "checkpoint_count": 768,
+      "expected_checkpoint_count": 768,
+      "source_results_or_checkpoints_used": false,
+      "target_replication_contract": "identity ordinary plus Walsh-r16-q04 ordinary and moderate strict ladders; PCA cannot substitute for Walsh",
+      "target_replication_passed": true,
+      "verdict": "ROBUST_COMPACT_RENEWED_CA_PLASTIC_HEREDITY",
+      "verification_valid": true,
+      "walsh_moderate_generation16": {
+        "alpha": 0.005,
+        "ci": [
+          0.70849609375,
+          0.751953125
+        ],
+        "correct": 0.8643798828125,
+        "direction_a": 0.7442626953125,
+        "direction_b": 0.732666015625,
+        "fraction_pairs_positive": 1.0,
+        "mean": 0.7315673828125,
+        "n_pairs": 128,
+        "p_a_given_a": 0.9737548828125,
+        "p_a_given_b": 0.2294921875,
+        "p_b_given_a": 0.0223388671875,
+        "p_b_given_b": 0.7550048828125,
+        "resolved": 0.99029541015625
+      },
+      "walsh_moderate_generation8": {
+        "alpha": 0.005,
+        "ci": [
+          0.816650390625,
+          0.8608410644531252
+        ],
+        "correct": 0.91900634765625,
+        "direction_a": 0.8544921875,
+        "direction_b": 0.841796875,
+        "fraction_pairs_positive": 1.0,
+        "mean": 0.8404541015625,
+        "n_pairs": 128,
+        "p_a_given_a": 0.97998046875,
+        "p_a_given_b": 0.12548828125,
+        "p_b_given_a": 0.0162353515625,
+        "p_b_given_b": 0.8580322265625,
+        "resolved": 0.9898681640625
+      },
+      "walsh_ordinary_generation16": {
+        "alpha": 0.005,
+        "ci": [
+          0.9390863037109375,
+          0.9755862426757813
+        ],
+        "correct": 0.97979736328125,
+        "direction_a": 0.9609375,
+        "direction_b": 0.9600830078125,
+        "fraction_pairs_positive": 1.0,
+        "mean": 0.9595947265625,
+        "n_pairs": 128,
+        "p_a_given_a": 0.994873046875,
+        "p_a_given_b": 0.033935546875,
+        "p_b_given_a": 0.004638671875,
+        "p_b_given_b": 0.9647216796875,
+        "resolved": 0.99908447265625
+      },
+      "walsh_ordinary_generation8": {
+        "alpha": 0.005,
+        "ci": [
+          0.9479977416992188,
+          0.985595703125
+        ],
+        "correct": 0.9849853515625,
+        "direction_a": 0.971435546875,
+        "direction_b": 0.9700927734375,
+        "fraction_pairs_positive": 1.0,
+        "mean": 0.969970703125,
+        "n_pairs": 128,
+        "p_a_given_a": 0.9951171875,
+        "p_a_given_b": 0.023681640625,
+        "p_b_given_a": 0.0047607421875,
+        "p_b_given_b": 0.974853515625,
+        "resolved": 0.99920654296875
+      }
+    },
+    "futures": 180224,
+    "motif_stage1_ci95": [
+      0.7022689819335938,
+      0.80859375
+    ],
+    "motif_stage1_crossover": 0.760498046875,
+    "motif_stage2_density_environments_passed": 3,
+    "motif_stage2_dose_crossover": {
+      "0.00": 0.0,
+      "0.25": 0.21240234374999997,
+      "0.50": 0.44482421875,
+      "0.75": 0.6350911458333334,
+      "1.00": 0.765625
+    },
+    "motif_stage2_dose_spearman": 0.9999999999999999,
+    "motif_stage2_intact_crossover_range": [
+      0.7513020833333334,
+      0.7685546875
+    ],
+    "motif_stage2_primary_environments_passed": 8,
+    "motif_stage2_terminal_crossover_range": [
+      0.75146484375,
+      0.7635091145833334
+    ],
+    "motif_stage2_verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL",
+    "phase_strict_spearman": 0.963616425877581,
+    "rule_110_particle_strict": 0.01806640625,
+    "rules": 88,
+    "strict_spearman": 1.0
+  },
+  "figure": "figure9_cross_model_evidence.png",
+  "sources": {
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/causal-heredity-round-1/RESULTS.json": "3be002b6992ecffad423321464d26e80c070ce1db9295c9e4c3c16850f637d32",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/golden-reconciliation/RESULTS.json": "7b00531bb4d9777424c6c3e90abe0a07cae460fca95675ac87fae6b6787be2e3",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/golden-reconciliation/atlas/eca_rules.csv": "e6120b8342aa84f1146be1cc7ac0a137597575314e19626decffaff1a30ff316",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/results/golden-reconciliation/phase/phase.csv": "7f268aa5cfcef7e5f26501d61efcd2f4d11707a20b50efc6545641291d47d051",
+    "NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/eca_atlas/results/full/eca_rules.csv": "1b25f8566ae935c9ac71f6a343f38fe7bd5a00173714e85ac4fc630a99c5c5a2",
+    "replicators.13.8.2026.codex/reviewer_ca_compact_carrier_replication/artifacts/VERIFY.json": "321e8f8cf0b7213beb7919a8d8ef98056bfe1fb449a4c0cea8e3e8de6ee90507",
+    "replicators.13.8.2026.codex/reviewer_ca_compact_carrier_replication/artifacts/confirmation/RESULTS.json": "16fa4d082d93defca4c5a69af58729370542e824a8a603279024b7993cf683fa",
+    "replicators.13.8.2026.codex/reviewer_motif_channel_replication/artifacts/stage1/RESULTS.json": "d151b53b18fc22d587c9a96575a2fd49243797fde1a16b98694402ccda6c1d9d",
+    "replicators.13.8.2026.codex/reviewer_motif_channel_replication/artifacts/stage2/RESULTS.json": "28b5703fa131d24ec78913d4fd47c77bd414266e16714529d1c7f1ba9f029576",
+    "replicators.13.8.2026.codex/wagner_cleanroom/runs/campaign-v2/predictor/analysis.json": "60c0bb55c4cc8f87467c326c1ea240699b69effb85873aca370c4f15f01a39e9",
+    "replicators.13.8.2026.codex/wagner_memory_cleanroom_v2/runs/wagner-memory-v2-full-corrected-20260822/analysis/carrier.json": "6a5f30b38d1681c076698e1b93ecb2b2329f36b379a4f0ec55439771e24a4a14",
+    "replicators.13.8.2026.codex/wagner_memory_cleanroom_v2/runs/wagner-memory-v2-full-corrected-20260822/analysis/summary.json": "3872b9eb176a348456caf5d8d03c8c452b8938b378113e15ef54259ea44d169b"
+  },
+  "v2_figure": "figure11_v2_cross_model_evidence.png",
+  "wagner_carrier": {
+    "ablation_loss_fraction": 0.9507351345938819,
+    "carrier_verdict": "LINEAGE_CARRIER_CONFIRMED",
+    "causal_verdict": "CAUSAL_CARRIER_SUPPORTED",
+    "distributed_verdict": "DISTRIBUTED_CARRIER_SUPPORTED",
+    "futures": 8847360,
+    "metrics": {
+      "g16.forced_break.risk": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.6611979166666667,
+        "n": 240,
+        "simultaneous_lower": 0.6240587022569446
+      },
+      "g16.neutral_damage.risk": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.6480794270833333,
+        "n": 240,
+        "simultaneous_lower": 0.6109402126736112
+      },
+      "g16.release_only.risk": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.641796875,
+        "n": 240,
+        "simultaneous_lower": 0.6046576605902779
+      },
+      "g8.forced_break.risk": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.6638346354166667,
+        "n": 240,
+        "simultaneous_lower": 0.6266954210069445
+      },
+      "g8.neutral_damage.risk": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.64150390625,
+        "n": 240,
+        "simultaneous_lower": 0.6043646918402779
+      },
+      "g8.release_only.risk": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.64150390625,
+        "n": 240,
+        "simultaneous_lower": 0.6043646918402779
+      },
+      "generation4_risk_gain": {
+        "critical_shortfall": 0.03713921440972211,
+        "mean": 0.6501844618055554,
+        "n": 240,
+        "simultaneous_lower": 0.6130452473958333
+      }
+    },
+    "opposite_reversal": {
+      "critical_shortfall": 0.03713921440972211,
+      "mean": 1.0,
+      "n": 240,
+      "simultaneous_lower": 0.9628607855902779
+    },
+    "rescue_fraction": 1.0
+  },
+  "wagner_occurrence": {
+    "checks": {
+      "history_gain": false,
+      "reliability": true,
+      "strong_baseline_gain": false
+    },
+    "claim_class": "exploratory; cannot alter the primary replication verdict",
+    "development_sources": 96,
+    "evaluation_prevalence": 0.6722900390625,
+    "evaluation_sources": 128,
+    "expected_calibration_error": 0.026625420318065716,
+    "format": "wagner-cleanroom-predictor-analysis-v1",
+    "full_brier_score": {
+      "adjusted_lower": 0.2040240021807536,
+      "estimate": 0.20915000673704953,
+      "lower": 0.20295182281907156,
+      "upper": 0.21566676143552133
+    },
+    "history_log_loss_gain": {
+      "adjusted_lower": 0.008250226604185165,
+      "estimate": 0.012684482080610082,
+      "lower": 0.0073455821042629,
+      "upper": 0.01803513241656849
+    },
+    "selected_regularization_c": {
+      "full": 0.0001,
+      "history": 0.001,
+      "structural": 0.001
+    },
+    "sensitivity_event_rates": [
+      0.639990234375,
+      0.6722900390625,
+      0.3872802734375,
+      0.356982421875
+    ],
+    "split_half_reliability": 0.9678825418155569,
+    "strict_f32_prevalence": 0.3872802734375,
+    "structural_log_loss_gain": {
+      "adjusted_lower": -0.019572088342859836,
+      "estimate": -0.015525721281689924,
+      "lower": -0.020445782962337435,
+      "upper": -0.010808423180413192
+    },
+    "verdict": "NOT_PROMISING",
+    "within_rulebook_rank_correlation": {
+      "adjusted_lower": 0.24543752955772716,
+      "estimate": 0.31853978986314324,
+      "lower": 0.23269644037119863,
+      "upper": 0.40495571873774044
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "control": {
+    "persistence": "2312\u00b11281",
+    "persistence_1k": "381\u00b1247",
+    "episode_mean": "293\u00b1511",
+    "probability": "39\u00b126%",
+    "consistency_1k": "0.93\u00b10.04",
+    "time_to_first": "12\u00b116%",
+    "phi_mean": "-1.691\u00b10.795",
+    "gen_trend_slope": 0.0013329343293775303,
+    "gen_trend_p": 2.817640165801809e-07
+  },
+  "max": {
+    "persistence": "1959\u00b11198",
+    "persistence_1k": "344\u00b1253",
+    "episode_mean": "254\u00b1414",
+    "probability": "36\u00b127%",
+    "consistency_1k": "0.92\u00b10.05",
+    "time_to_first": "11\u00b116%",
+    "phi_mean": "-1.726\u00b10.963",
+    "gen_trend_slope": 0.001433746969028556,
+    "gen_trend_p": 2.225188668360673e-12
+  },
+  "min": {
+    "persistence": "2053\u00b11208",
+    "persistence_1k": "341\u00b1235",
+    "episode_mean": "225\u00b1326",
+    "probability": "36\u00b126%",
+    "consistency_1k": "0.93\u00b10.04",
+    "time_to_first": "13\u00b118%",
+    "phi_mean": "-1.593\u00b10.760",
+    "gen_trend_slope": 0.0011083355108596005,
+    "gen_trend_p": 2.4004987223661097e-07
+  },
+  "mw_persistence": {
+    "max_vs_control": 0.9771131100024297,
+    "min_vs_control": 0.0780385577237008
+  },
+  "mw_probability": {
+    "max_vs_control": 0.9187024732236593,
+    "min_vs_control": 0.13077456330742676
+  },
+  "mw_consistency_1k": {
+    "max_vs_control": 0.8925159757746262,
+    "min_vs_control": 0.32606495869313856
+  },
+  "mw_phi_mean": {
+    "max_vs_control": 0.4105954711160294,
+    "min_vs_control": 0.8088078369992626
+  }
+}

@@ -1,0 +1,187 @@
+schema: eidosoma.e01.s19_l03_preregistration.v1
+researchStepId: S19
+loopId: S19-L03
+versionedLoopId: E01-S19-L03-BOUNDARY-COMPOTYPE-MOLECULAR-PROJECTION-v1.0.0
+continuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+outcomeAccessedAtLock: false
+question: >-
+  Does identifying the most recurring compotype at selected post-fission or
+  historical generation-end boundaries, applying a fixed recurrence-activation
+  rule, and projecting the boundary state onto incoming or outgoing molecular
+  intervals jointly improve the paper-facing temporal fingerprint in both
+  frozen simulator candidates relative to adjacent molecular H>0.9?
+humanOverride:
+  priorTwoLoopCloseoutDefaultSuperseded: true
+  fixedLoopCap: null
+  mandatoryHumanReviewAfterEveryLoop: true
+  onlyThisLoopAuthorized: true
+historicalBoundary:
+  immutable: S01-S18_V1_V2_S19-L01_S19-L02_and_S17_waiver
+  priorLoopRepairOrRerun: false
+  additiveL03Only: true
+nonduplicationFinding: >-
+  L02 classified each molecular row directly against completed-run centroid or
+  K-means references and projected only historical local non-drift. It did not
+  project modal-compotype boundary membership, distinguish retrospective
+  backfill from recurrence activation, compare incoming/outgoing growth
+  intervals, or compare selected post-fission with historical pre-fission
+  generation-end substrate.
+data:
+  source: frozen_S13Y_clean_directional_confirmation
+  sharedMatrixCount: 100
+  trajectoryCount: 200
+  candidateIds: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  independentUnit: catalytic_matrix_trajectory
+  molecularRowsAreIndependentReplicates: false
+  pooling: secondary_descriptive_only
+  newGardTrajectories: 0
+  newPhiRLValues: 0
+  newEmergenceValues: 0
+preanalysisReplayGate:
+  required: true
+  checks:
+    - all_200_cache_sha256_values_equal_frozen_manifest
+    - candidate_matrix_trajectory_and_internal_trajectory_identities_equal
+    - selected_molecular_clock_indices_kinds_generations_and_raw_indices_equal
+    - freshly_recomputed_adjacent_H_arrays_bitwise_equal_frozen_S13Y_values
+    - freshly_recomputed_strict_H_greater_than_0_9_labels_equal_frozen_S13Y_values
+    - all_S01_S18_V1_V2_L01_and_L02_hashes_equal
+  failureAction: LOOP_FAILED_CLOSED_before_any_new_boundary_label_outcome
+fixedBoundaryReference:
+  coordinates: L1_closed_100_component_compositions
+  similarity: historical_cosine_H
+  threshold: 0.9
+  comparator: strict_greater_than
+  reference: boundary_state_with_maximum_strict_H_neighbor_count_including_self
+  tie: earliest_boundary_generation_then_earliest_boundary_index
+  recurrentMinimum: 2
+  noRecurrenceRule: all_eligible_projected_labels_false
+labelFamily:
+  totalLabelCountIncludingComparator: 5
+  structuralCandidateCount: 4
+  labels:
+    - MOL_ADJACENT_INCOMING_H900
+    - PF_MODAL_MEDOID_BACKFILL_INCOMING_H900
+    - PF_MODAL_MEDOID_ACTIVATED_INCOMING_H900
+    - PF_MODAL_MEDOID_ACTIVATED_OUTGOING_H900
+    - GE_MODAL_MEDOID_ACTIVATED_INCOMING_H900
+  isolations:
+    recurrenceActivation: PF_backfill_incoming_vs_PF_activated_incoming
+    temporalAlignment: PF_activated_incoming_vs_PF_activated_outgoing
+    boundarySubstrate: PF_activated_incoming_vs_GE_activated_incoming
+  incomingProjection: boundary_g_to_all_selected_rows_tagged_generation_g
+  outgoingProjection: boundary_g_to_its_postfission_row_and_generation_g_plus_1_molecular_updates
+  activation: first_modal_member_false_second_and_later_members_true
+  fullRunReferenceIsRetrospective: true
+prohibitedSpecifications:
+  - H_greater_than_0.97_or_any_other_threshold
+  - any_threshold_or_cluster_grid
+  - any_centroid_kmeans_or_linkage_alternative
+  - any_occupancy_tuning
+  - any_emergence_association_prediction_or_intervention_selection
+  - any_favorable_candidate_selection
+fingerprint:
+  report:
+    - persistence
+    - occupancy
+    - raw_and_normalized_first_onset
+    - consecutive_label_Pearson_consistency
+    - entries_exits_episode_count_mean_median_and_longest_duration
+    - modal_boundary_frequency_and_temporal_span
+    - fraction_nonreplicating_and_fraction_without_onset_at_25_percent_cutoff
+    - candidate_2_candidate_3_agreement
+  paperTargets:
+    persistence: {center: 716.0, declaredDispersionScale: 198.0}
+    occupancy: {center: 0.88, declaredDispersionScale: 0.03}
+    consistency: {center: 0.38, declaredDispersionScale: 0.06}
+    rawOnset: {center: 37.0, declaredDispersionScale: 27.0}
+    normalizedOnset: {center: 0.37, declaredDispersionScale: 0.27}
+  onsetAmbiguity: raw_and_normalized_are_separate_and_neither_may_replace_the_other
+  occupancyAloneSufficient: false
+statistics:
+  bootstrapReplicates: 4096
+  bootstrapUnit: catalytic_matrix_within_candidate
+  generator: PCG64DXSM
+  confidenceIntervals: percentile_2.5_and_97.5
+  influence: leave_one_matrix_out
+  exactReplay: independent_second_label_materialization_and_hash_identity
+  negativeControls:
+    - recurrence_activation_delta_against_backfill
+    - outgoing_alignment_delta_against_incoming
+    - generation_end_substrate_delta_against_postfission
+    - overlap_with_adjacent_H_and_historical_L02_non_drift
+promotion:
+  maximumLeads: 2
+  exploratoryOnly: true
+  gates:
+    - non_comparator
+    - exact_replay_all_200_trajectories
+    - complete_source_and_paper_relationship
+    - no_unresolved_choice_inside_the_locked_implementation
+    - occupancy_error_strictly_smaller_than_adjacent_H_in_both_candidates
+    - raw_and_normalized_joint_distance_each_at_least_10_percent_better_in_both_candidates
+    - paired_bootstrap_upper_95_percent_bound_below_zero_for_both_modes_and_candidates
+    - at_least_3_of_4_core_dimensions_closer_including_occupancy_and_onset_or_consistency
+    - leave_one_matrix_out_distance_difference_below_zero_everywhere
+    - at_least_95_defined_consistency_and_95_observed_onset_runs_per_candidate
+    - nonzero_nonreplicating_fraction_at_25_percent_cutoff_in_both_candidates
+    - occupancy_cross_candidate_difference_at_most_0.05
+    - consistency_cross_candidate_difference_at_most_0.10
+    - normalized_onset_cross_candidate_difference_at_most_0.10
+    - not_selected_by_occupancy_or_any_downstream_outcome_alone
+  retrospectiveRestriction: all_structural_candidates_can_only_support_paper_facing_retrospective_confirmation
+  overflowTieRule: >-
+    If more than two labels pass every gate, order by the frozen pre-outcome
+    candidate ranking score and then by label-family ordinal; promote the first two.
+  classificationRules:
+    exploratoryPaperMatch: >-
+      Paper distance is at most one declared-dispersion RMS unit in raw- and
+      normalized-onset analyses for both candidates.
+    exploratoryDirectionalMatch: >-
+      A structural label is closer than the adjacent-H comparator on at least
+      three of four paper-fingerprint dimensions, including occupancy and at
+      least one of onset or consistency, in both candidates.
+    retrospectiveOnlyLead: >-
+      Any directional structural label using a completed-run modal reference.
+    promotableToS20: all_promotion_gates_true_subject_to_overflow_tie_rule
+    noConfirmationClaim: true
+classificationVocabulary:
+  - EXPLORATORY_PAPER_MATCH
+  - EXPLORATORY_DIRECTIONAL_MATCH
+  - EXPLORATORY_NON_SUPPORT
+  - RETROSPECTIVE_ONLY_LEAD
+  - METHOD_DEPENDENT_LEAD
+  - POSSIBLE_STABILITY_PROXY
+  - POSSIBLE_PIPELINE_ARTIFACT
+  - PROMOTABLE_TO_S20
+  - NOT_PROMOTABLE
+  - AUTHOR_AMBIGUITY_UNRESOLVED
+  - LOOP_FAILED_CLOSED
+seeds:
+  rootHex: f933a93d674227efb7c10f111f47c25d55ba088fb7045a2dc9f8c845b81b2d49
+  derivation: sha256_version_root_and_null_delimited_identity_tokens
+  scientificRngUses: bootstrap_only
+compute:
+  cpuCores: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  maximumCpuHours: 100
+  maximumGpuHours: 0
+  maximumWallHours: 72
+  maximumRetainedGiB: 25
+  maximumTemporaryGiB: 75
+  validationReserveFraction: 0.10
+stopConditions:
+  - any_immutable_prior_hash_change
+  - preanalysis_adjacent_H_replay_failure
+  - source_or_implementation_identity_change_after_lock
+  - any_unregistered_structural_candidate_or_threshold
+  - outcome_access_before_clean_pushed_lock
+  - post_outcome_scientific_method_change
+  - budget_or_storage_ceiling_exceeded
+  - report_not_regenerable_from_machine_readable_results
+postLoopBoundary:
+  mandatoryHumanReview: true
+  noAutomaticLaterLoop: true
+  noAutomaticS20: true
+  noFixedLoopCount: true

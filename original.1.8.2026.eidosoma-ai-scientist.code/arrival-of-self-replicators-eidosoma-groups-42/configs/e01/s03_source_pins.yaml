@@ -1,0 +1,193 @@
+schema: eidosoma.e01.s03_source_pins.v1
+researchStepId: S03
+experimentId: E01
+snapshotDate: '2026-08-01'
+cacheRoot: /cache/e01_s03
+priorRegistry: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry.yaml
+registryOutput: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+
+paper:
+  sourceId: paper_arxiv_v1
+  title: Causal Architecture Dynamics Prior to Arrival of Self-replicators in a Model of Catalytic Networks Relevant to Origin-of-Life
+  authors:
+    - Federico Pigozzi
+    - Michael Levin
+  arxivId: '2607.28250'
+  version: v1
+  published: '2026-07-30T14:12:23Z'
+  abstractUrl: https://arxiv.org/abs/2607.28250v1
+  retrievalUrl: https://arxiv.org/pdf/2607.28250v1
+  localPath: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+  sizeBytes: 1117911
+  sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  attachmentOriginalSizeBytes: 1117911
+  license: CC-BY-4.0
+  sourcePackaging: PDF-only arXiv submission; the e-print endpoint returned the same PDF bytes.
+  formulaEvidence:
+    page: 7
+    phiR: 'Phi^r = I(X_t, X_{t+1}) - sum_i I(X_t^i, X_{t+1})'
+    clr: 'X_t = log(X_t / geometric_mean(X))'
+    interpretationBoundary: The paper calls Phi^r a PhiID atom but does not identify a reference-implementation atom key or redundancy function.
+
+repositories:
+  - sourceId: gard_historical
+    role: Required historical GARD reference
+    remoteUrl: https://github.com/ModelingOriginsofLife/GARD.git
+    webUrl: https://github.com/ModelingOriginsofLife/GARD
+    selectedRef: refs/heads/master
+    commit: 86dff6320d5ae91b4e831471079ff46749b14df9
+    tree: a602fc99b494982c04c60405bc6422af9db5a77a
+    commitDate: '2014-03-13T20:35:22-04:00'
+    localPath: /cache/e01_s03/sources/gard-historical
+    archivePath: /cache/e01_s03/archives/ModelingOriginsofLife-GARD-86dff6320d5a.tar.gz
+    archiveSizeBytes: 17502
+    archiveSha256: 34b9e4623519888cfbbd5f6459f4c2c0c991b59c62d44a4ccdf6938634c1e636
+    archiveConstruction: git archive --format=tar.gz at the pinned commit
+    license: NO-LICENSE-FILE-DETECTED
+    redistributionPolicy: Reference in place by commit; do not redistribute repository contents.
+    files:
+      - path: tgs_grow_v10.m
+        sha256: 72cae8cd5555f4605dbad1526d3221b7f3f03eb76cea35714499299b3aa068a0
+      - path: tgs_nondrift.m
+        sha256: 0800359cdbef869fb545e80ab353d5aad15be2af845c90134e020f44ac860663
+      - path: tgs_parameters_v10.m
+        sha256: 4376b58ccae7ac6f56f9eaca87a95ab666cd5112b5f43e14d3f6a68030144db3
+      - path: README.txt
+        sha256: 73ee9578b49464b56664a516f37e40a681470ebad59bb5fd8d66f76d9240c40c
+
+  - sourceId: gard_modern
+    role: Required modern GARD reference
+    remoteUrl: https://github.com/Amitmiti/GARD-model.git
+    webUrl: https://github.com/Amitmiti/GARD-model
+    selectedRef: refs/heads/main
+    commit: 19878f6432fdfb30bea5d775175ed42a767eb3ef
+    tree: b6655121074f7fdf4474f270e49bc74045e5de53
+    commitDate: '2022-04-17T14:22:54+01:00'
+    localPath: /cache/e01_s03/sources/gard-modern
+    archivePath: /cache/e01_s03/archives/Amitmiti-GARD-model-19878f6432fd.tar.gz
+    archiveSizeBytes: 47456160
+    archiveSha256: 62ab43292b93443793279fb4d63f7e5767d841fde5135f32751a300a150fb3cd
+    archiveConstruction: git archive --format=tar.gz at the pinned commit
+    license: ROOT-LICENSE-NOT-DETECTED
+    redistributionPolicy: Reference in place by commit; nested GARD_v10 files carry CC0-1.0, but no license is asserted for the repository as a whole.
+    files:
+      - path: Matlab/SourceCode/Doron_Lancet_GARD_Next_generation/GARD_v10/tgs_grow_v10.m
+        sha256: 768464c5c344c1c015af9b198221c95c08c4034f14198572910ce2f20b63a6f3
+      - path: Matlab/SourceCode/Doron_Lancet_GARD_Next_generation/GARD_v10/tgs_nondrift.m
+        sha256: 0800359cdbef869fb545e80ab353d5aad15be2af845c90134e020f44ac860663
+      - path: Matlab/SourceCode/Doron_Lancet_GARD_Next_generation/GARD_v10/LICENCE.txt
+        sha256: a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499
+      - path: README.md
+        sha256: fa84fbb8b7da3ae298cbb53a32d5d4f379f06330433d567e032dae284ff02798
+
+  - sourceId: phyid_reference
+    role: Required authoritative PhiID reference implementation
+    remoteUrl: https://github.com/Imperial-MIND-lab/integrated-info-decomp.git
+    webUrl: https://github.com/Imperial-MIND-lab/integrated-info-decomp
+    selectedRef: refs/heads/main
+    commit: 6c5f2e9d33c985efbdf875d45cb5a2a6a5cdbf44
+    tree: fdfe5a21190062b9dda7c8831f72438d8ff5ea95
+    commitDate: '2026-03-14T12:44:53Z'
+    localPath: /cache/e01_s03/sources/phyid
+    archivePath: /cache/e01_s03/archives/Imperial-MIND-lab-integrated-info-decomp-6c5f2e9d33c9.tar.gz
+    archiveSizeBytes: 35297
+    archiveSha256: ec63feb6132249e94c17f8a2dd896f62eab75356cec2f96ed29769cd03f2db4b
+    archiveConstruction: git archive --format=tar.gz at the pinned commit
+    license: BSD-3-Clause
+    licenseFileSha256: be936c9502566b895b46d3d25f404d73f9a9e983f1a20bd90809178057d3e013
+    redistributionPolicy: Redistribution permitted subject to BSD-3-Clause conditions.
+    sourceFindings:
+      pythonRequires: '>=3.8'
+      estimatorKinds: [gaussian, discrete]
+      redundancyFunctions: [MMI, CCS]
+      codeDefaultKind: gaussian
+      codeDefaultRedundancy: MMI
+      phiRNamedAggregate: false
+      atomKeys: [rtr, rtx, rty, rts, xtr, xtx, xty, xts, ytr, ytx, yty, yts, str, stx, sty, sts]
+    files:
+      - path: phyid/calculate.py
+        sha256: fe4a101e696bb298b3975bdc4fc3d96fc3faef268a45107be98b49956cac03d8
+      - path: phyid/measures.py
+        sha256: 4f816026f40698863ef45768536c3c6f95c78b2641d9b907b494b01174b2d7a6
+      - path: pyproject.toml
+        sha256: f058d2b54688885e1a3835ef88f08690f760b831d52b4b5f4178e36da28c8b46
+      - path: LICENSE
+        sha256: be936c9502566b895b46d3d25f404d73f9a9e983f1a20bd90809178057d3e013
+
+  - sourceId: omegaid_optional
+    role: Optional OmegaID accelerator/reference
+    remoteUrl: https://github.com/dmf-archive/OmegaID.git
+    webUrl: https://github.com/dmf-archive/OmegaID
+    selectedRef: refs/tags/v0.2.5
+    releaseVersion: 0.2.5
+    commit: 7fcf1fa8e288e0634f81423283d2b349ed88440e
+    tree: 33ab6f59592048e78a691ecffd9a3dff6d95e54d
+    commitDate: '2025-06-30T12:12:38Z'
+    localPath: /cache/e01_s03/sources/omegaid
+    archivePath: /cache/e01_s03/archives/dmf-archive-OmegaID-7fcf1fa8e288.tar.gz
+    archiveSizeBytes: 36704
+    archiveSha256: deba66a9eced2f9e69bcb4772cb865f7b2bffe29f1f14df3f06e5d865c791ed3
+    archiveConstruction: git archive --format=tar.gz at the pinned commit
+    pypiSdistPath: /cache/e01_s03/downloads/omegaid-0.2.5.tar.gz
+    pypiSdistSizeBytes: 36877
+    pypiSdistSha256: 8e8179f3f1d3a0bd79aec65342c6cc9c7375114fa89415e4c39be9835a1e5c7b
+    pypiWheelSha256: 8077bd698f53aa881c6728bc56d6d20527c0fcb51fd9e4d1a9ed3b052cbee632
+    license: BSD-3-Clause
+    licenseFileSha256: be936c9502566b895b46d3d25f404d73f9a9e983f1a20bd90809178057d3e013
+    redistributionPolicy: Redistribution permitted subject to BSD-3-Clause conditions.
+    sourceFindings:
+      pythonRequires: '>=3.12'
+      requiredDependencies: [numba>=0.58.1, numpy, scipy]
+      optionalCudaDependency: cupy-cuda12x
+    files:
+      - path: omegaid/core/decomposition.py
+        sha256: 718c4a51242452369b7c7c6f6b3dacdc959a18767e19c9579fc954c929a74d78
+      - path: omegaid/core/atoms.py
+        sha256: 12f24fc90bf61e3c2c80d173735e4457b752f90230370b14812ddd28c66ff300
+      - path: omegaid/utils/backend.py
+        sha256: 9b67e3c7cfcdbc913873dd0b942ccbc7516b440dac7885377209120e939ad3ce
+      - path: pyproject.toml
+        sha256: d175c3d69e9dec8525df15798558228d1d796eae64918c9c07895698052ee08c
+      - path: LICENSE
+        sha256: be936c9502566b895b46d3d25f404d73f9a9e983f1a20bd90809178057d3e013
+
+authorCodeSearch:
+  checkedAt: '2026-08-01T14:17:40Z'
+  result: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  paperStatement: Code will be made available upon publication.
+  arxivCodeLinkPresent: false
+  githubUser: pigozzif
+  githubPublicRepositoryCount: 34
+  githubRepositoryListResponseSha256: 0e4318824f906821428a5831c5861a0cb90c6dbeb35a5802c54248bd45f5789a
+  exactRepositorySearches:
+    - query: '"Causal emergence precedes the appearance of self-replicators"'
+      totalCount: 0
+    - query: '"arrival of self-replicators"'
+      totalCount: 0
+    - query: '"Phi-r" GARD'
+      totalCount: 0
+    - query: '"causal emergence" GARD'
+      totalCount: 0
+    - query: 'user:pigozzif GARD'
+      totalCount: 0
+  interpretationBoundary: Absence at the checked locations is not evidence that code will never be released; retain the unresolved author-code sentinel.
+
+sourceComparisons:
+  - comparisonId: S03-SC01
+    subject: GARD tgs_grow_v10.m
+    result: CONFLICT_PRESERVED
+    historicalSha256: 72cae8cd5555f4605dbad1526d3221b7f3f03eb76cea35714499299b3aa068a0
+    modernNestedSha256: 768464c5c344c1c015af9b198221c95c08c4034f14198572910ce2f20b63a6f3
+    rule: Treat historical and modern files as distinct source revisions; S04 may not silently substitute one for the other.
+  - comparisonId: S03-SC02
+    subject: GARD tgs_nondrift.m
+    result: BYTE_IDENTICAL
+    historicalSha256: 0800359cdbef869fb545e80ab353d5aad15be2af845c90134e020f44ac860663
+    modernNestedSha256: 0800359cdbef869fb545e80ab353d5aad15be2af845c90134e020f44ac860663
+    rule: Byte identity is recorded only for this file and must not be generalized to either repository.
+  - comparisonId: S03-SC03
+    subject: Paper Phi^r versus phyid output identity
+    result: UNRESOLVED_MAPPING
+    paperFinding: Scalar Phi^r formula recovered from arXiv v1.
+    phyidFinding: Sixteen atom keys and MMI/CCS support are source-verified, but no Phi^r-named aggregate exists.
+    rule: Preserve E01-A043 and E01-A044 unresolved; a library default is not evidence of the authors' method.

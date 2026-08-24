@@ -1,0 +1,17 @@
+{
+  "master_seed": "93215f519746560e614232582321142186621022b13f1e46cbcb1b7d139ff075",
+  "nonproduction_domains": [
+    "test",
+    "smoke",
+    "benchmark"
+  ],
+  "production_domains": [
+    "donor.beta",
+    "donor.lineage",
+    "selection",
+    "future.dynamics",
+    "future.shuffle",
+    "bootstrap",
+    "replay"
+  ]
+}

@@ -1,0 +1,1472 @@
+targets_version: E01-S02-v1.0.0
+
+items:
+  - id: E01-A001
+    category: source_provenance
+    parameter: source.paper.complete_formula_source
+    materiality: critical
+    evidence: 'Attachment sidecar: original PDF not materialized; extracted Markdown lines 81, 83, and 95 contain formula-not-decoded placeholders.'
+    issue: The complete displayed equations for Phi-r and CLR are unavailable in the supplied text extraction.
+    candidates: 'author PDF or authoritative equation-bearing source; otherwise explicit unresolved formula'
+    selected: 'UNRESOLVED::E01-A001'
+    status: DEFERRED_EVIDENCE
+    basis: Source recovery belongs to immutable source collection, not inference from results.
+    owner: S03
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A002
+    category: source_provenance
+    parameter: source.author_code.revision
+    materiality: critical
+    evidence: 'Paper line 125 promises code upon publication; no code or supplementary material accompanies the attachment.'
+    issue: The author implementation and its revision are unavailable.
+    candidates: 'immutable author-code commit if released; explicit unavailable sentinel'
+    selected: 'UNRESOLVED::E01-A002'
+    status: DEFERRED_EVIDENCE
+    basis: No implementation identity can be inferred from prose.
+    owner: S03
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A003
+    category: source_provenance
+    parameter: source.gard_historical.revision
+    materiality: high
+    evidence: 'FULL_PLAN names ModelingOriginsofLife/GARD and specific MATLAB files but does not pin a commit in S02.'
+    issue: Historical reference behavior depends on an immutable repository revision.
+    candidates: 'commit selected and hashed in S03; unavailable sentinel if retrieval fails'
+    selected: 'UNRESOLVED::E01-A003'
+    status: DEFERRED_EVIDENCE
+    basis: Source pinning is explicitly assigned to S03.
+    owner: S03
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A004
+    category: source_provenance
+    parameter: source.phiid_reference.revision
+    materiality: critical
+    evidence: 'FULL_PLAN requires an authoritative phyid implementation but no source identity is yet frozen.'
+    issue: PhiID atom names and estimator behavior are implementation-version dependent.
+    candidates: 'authoritative immutable phyid commit selected in S03; explicit unresolved sentinel'
+    selected: 'UNRESOLVED::E01-A004'
+    status: DEFERRED_EVIDENCE
+    basis: S03 owns source and environment snapshots.
+    owner: S03
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A005
+    category: gard_dynamics
+    parameter: gard.model.variant
+    materiality: critical
+    evidence: 'Paper Methods line 63 says the original GARD model was adopted; no executable version is identified.'
+    issue: Original GARD denotes a literature family rather than one uniquely specified algorithm.
+    candidates: 'historical-reference behavior; paper-described Poisson behavior; independent modern behavior'
+    selected: 'UNRESOLVED::E01-A005'
+    status: DEFERRED_EVIDENCE
+    basis: Historical source audit and implementation comparison are required.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A006
+    category: gard_dynamics
+    parameter: gard.beta.distribution_parameterization
+    materiality: critical
+    evidence: 'Paper lines 65 and 69 call beta lognormal with mean A=-4 and SD sigma=4, which cannot be arithmetic-scale moments; FULL_PLAN defines beta=exp(A+sigma*epsilon).'
+    issue: Mean and standard deviation could refer to log-space or arithmetic-scale parameters.
+    candidates: 'log beta ~ Normal(A,sigma^2); alternative lognormal conventions only as discrepancy checks'
+    selected: 'beta_ij=exp(A+sigma*epsilon_ij), epsilon_ij~N(0,1)'
+    status: PLAN_FIXED
+    basis: FULL_PLAN freezes the log-space interpretation and forbids treating historical defaults as author settings.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A007
+    category: gard_dynamics
+    parameter: gard.beta.orientation_and_diagonal
+    materiality: high
+    evidence: 'Paper only describes a catalytic matrix; FULL_PLAN writes beta_ij in a rate equation but author index orientation and self-catalysis handling are not stated.'
+    issue: Transposition and diagonal inclusion change catalytic effects.
+    candidates: 'historical orientation with diagonal; transposed audit; diagonal-excluded audit'
+    selected: 'BRANCH_SET::historical_orientation_with_diagonal|transpose_audit|diagonal_exclusion_audit'
+    status: FROZEN_BRANCH_SET
+    basis: Preserve the historical interpretation and adversarial orientation controls until S04 source tracing.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A008
+    category: gard_dynamics
+    parameter: gard.beta.lifetime_per_run
+    materiality: high
+    evidence: 'Paper line 65 says each simulation has a catalytic matrix beta; Results line 31 says independent random seeds.'
+    issue: It is not explicit whether beta is fixed for all generations and treatments or regenerated.
+    candidates: 'one fixed beta per run and paired treatment triplet; regeneration by generation; regeneration by treatment'
+    selected: 'one fixed beta per run; same beta across paired intervention treatments'
+    status: PROVISIONAL_PRIMARY
+    basis: Singular wording and the FULL_PLAN paired-matrix design support one fixed matrix, pending source audit.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A009
+    category: gard_dynamics
+    parameter: gard.kinetics.k_f
+    materiality: critical
+    evidence: 'Paper omits k_f; FULL_PLAN notes historical public default 1e-2 is reference-only and not an assumed author setting.'
+    issue: Forward uptake rate is not reported.
+    candidates: 'author value if recovered; historical 1e-2 reference branch; calibrated branches declared before results'
+    selected: 'UNRESOLVED::E01-A009'
+    status: UNRESOLVED_REQUIRED
+    basis: Historical default cannot silently become the paper value.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A010
+    category: gard_dynamics
+    parameter: gard.kinetics.k_b
+    materiality: critical
+    evidence: 'Paper omits k_b; FULL_PLAN notes historical public default 1e-4 is reference-only and not an assumed author setting.'
+    issue: Backward loss rate is not reported.
+    candidates: 'author value if recovered; historical 1e-4 reference branch; calibrated branches declared before results'
+    selected: 'UNRESOLVED::E01-A010'
+    status: UNRESOLVED_REQUIRED
+    basis: Historical default cannot silently become the paper value.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A011
+    category: gard_dynamics
+    parameter: gard.environment.rho_i
+    materiality: critical
+    evidence: 'Paper describes an environment but does not report molecular-type concentrations; FULL_PLAN marks rho_i explicit ambiguity.'
+    issue: Uptake depends on the environmental concentration vector and its normalization.
+    candidates: 'uniform rho_i; historical source vector; author vector; normalized and unnormalized branches'
+    selected: 'UNRESOLVED::E01-A011'
+    status: UNRESOLVED_REQUIRED
+    basis: Uniformity is not stated and must not be assumed.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A012
+    category: gard_dynamics
+    parameter: gard.kinetics.propensity_equations
+    materiality: critical
+    evidence: 'Paper gives prose Poisson uptake/loss; FULL_PLAN gives historical-reference a_i+ and a_i- equations and a Gillespie interpretation.'
+    issue: The author event rates and normalization are absent.
+    candidates: 'historical-reference equations; paper-described batch Poisson equations; modern Gillespie propensities'
+    selected: 'BRANCH_SET::historical_reference|paper_poisson_reconstruction|modern_gillespie'
+    status: FROZEN_BRANCH_SET
+    basis: FULL_PLAN explicitly requires these interpretations to remain distinct.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A013
+    category: gard_dynamics
+    parameter: gard.update.kernel
+    materiality: critical
+    evidence: 'Paper line 67 says stochastic Poisson updates of counts; FULL_PLAN warns not to conflate historical code, paper prose, and Gillespie semantics.'
+    issue: Simultaneous Poisson count updates and one-event-at-a-time simulation generate different trajectories.
+    candidates: 'vector Poisson batch; historical update loop; direct Gillespie event sampling'
+    selected: 'BRANCH_SET::paper_vector_poisson|historical_loop|direct_gillespie'
+    status: FROZEN_BRANCH_SET
+    basis: All defensible kernels must be versioned separately.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A014
+    category: gard_dynamics
+    parameter: gard.update.poisson_exposure
+    materiality: critical
+    evidence: 'Paper does not report the Poisson interval or how rates are converted into expected counts.'
+    issue: Batch Poisson means require an exposure or time increment.
+    candidates: 'unit exposure; historical timestep; event-adaptive exposure; author value if recovered'
+    selected: 'UNRESOLVED::E01-A014'
+    status: UNRESOLVED_REQUIRED
+    basis: Unit exposure would be an undocumented default.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A015
+    category: gard_dynamics
+    parameter: gard.time.molecular_step_definition
+    materiality: critical
+    evidence: 'Paper indexes trajectories by molecular step but uses Poisson updates that may change multiple molecules.'
+    issue: A molecular step may mean one update, one molecule event, or elapsed stochastic time.
+    candidates: 'one batch update; one individual event; expanded molecule events; continuous Gillespie time'
+    selected: 'UNRESOLVED::E01-A015'
+    status: UNRESOLVED_REQUIRED
+    basis: Outcome durations and every time-series claim depend on this unit.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A016
+    category: gard_dynamics
+    parameter: gard.update.loss_nonnegativity
+    materiality: high
+    evidence: 'Paper does not state how Poisson losses exceeding current counts are handled.'
+    issue: Clipping, resampling, binomial loss, or eventwise execution changes mass and bias.
+    candidates: 'clip; resample; cap-distribution; eventwise rejection; historical behavior'
+    selected: 'UNRESOLVED::E01-A016'
+    status: UNRESOLVED_REQUIRED
+    basis: Nonnegative integer state is mandatory but the enforcement rule is unknown.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A017
+    category: gard_dynamics
+    parameter: gard.growth.boundary_handling
+    materiality: high
+    evidence: 'Paper stops growth when n_max is reached but batch updates can overshoot 80.'
+    issue: Overshoot can be retained, truncated, rejected, or expanded eventwise.
+    candidates: 'retain overshoot; truncate final batch; reject batch; eventwise stop at 80'
+    selected: 'UNRESOLVED::E01-A017'
+    status: UNRESOLVED_REQUIRED
+    basis: Fission composition depends on boundary handling.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A018
+    category: gard_dynamics
+    parameter: gard.growth.max_steps_terminal_semantics
+    materiality: high
+    evidence: 'Paper line 67 says updates stop at n_max or max_steps and then the generation ends.'
+    issue: It is unclear whether a subcritical assembly fissions when max_steps is reached and how the terminal state is logged.
+    candidates: 'force fission; abandon generation/run; retain without fission; historical behavior'
+    selected: 'UNRESOLVED::E01-A018'
+    status: UNRESOLVED_REQUIRED
+    basis: Prose does not resolve failure-to-grow behavior.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A019
+    category: gard_dynamics
+    parameter: gard.initial_state.construction
+    materiality: critical
+    evidence: 'Paper line 65 says n_min molecular types are sampled uniformly without replacement from N_g types.'
+    issue: The wording conflates molecules and types; the likely interpretation is 40 distinct types with one molecule each.
+    candidates: '40 distinct types with count one; 40 molecules sampled without type replacement; historical initializer'
+    selected: '40 distinct uniformly sampled types, one molecule per selected type'
+    status: PROVISIONAL_PRIMARY
+    basis: This is the literal count-preserving reading; source audit must confirm it.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A020
+    category: gard_dynamics
+    parameter: gard.initial_state.rng_stream
+    materiality: medium
+    evidence: 'Paper reports different random seeds but not whether initialization shares a stream with beta or dynamics.'
+    issue: Shared streams couple unrelated random choices and impede exact regeneration.
+    candidates: 'dedicated initialization stream; shared global stream; historical RNG order'
+    selected: 'UNRESOLVED::E01-A020'
+    status: DEFERRED_EVIDENCE
+    basis: S06 will freeze separate seed streams after engine behavior is known.
+    owner: S06
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A021
+    category: gard_dynamics
+    parameter: gard.environment.reservoir_semantics
+    materiality: high
+    evidence: 'Paper calls the environment a prebiotic soup but does not specify depletion, replenishment, or rho_i updates.'
+    issue: Constant versus depleting reservoirs alter uptake and stationarity.
+    candidates: 'constant infinite reservoir; finite depleted reservoir; generation-reset reservoir; historical behavior'
+    selected: 'UNRESOLVED::E01-A021'
+    status: UNRESOLVED_REQUIRED
+    basis: Constant reservoir is plausible but not stated.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A022
+    category: gard_dynamics
+    parameter: gard.fission.sampling_semantics
+    materiality: high
+    evidence: 'Paper line 67 and FULL_PLAN specify Binomial(n_i,0.5) daughter counts.'
+    issue: Independence across types and whether the complementary daughter is explicitly formed are unstated.
+    candidates: 'independent per-type binomial followed daughter with complement; per-molecule Bernoulli equivalent; historical ordering'
+    selected: 'n_i_followed ~ Binomial(n_i_pre,0.5); other daughter is complement'
+    status: PLAN_FIXED
+    basis: FULL_PLAN freezes this reconstruction while retaining source-order tests for S04.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A023
+    category: gard_dynamics
+    parameter: gard.fission.daughter_selection
+    materiality: critical
+    evidence: 'Results line 31 says simulation continued from one daughter but does not state which or how chosen.'
+    issue: First, larger, random, or conditioned daughter selection changes lineage dynamics.
+    candidates: 'first sampled daughter; uniformly random daughter; larger daughter; historical behavior'
+    selected: 'UNRESOLVED::E01-A023'
+    status: UNRESOLVED_REQUIRED
+    basis: No daughter rule is supplied.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A024
+    category: gard_dynamics
+    parameter: gard.fission.post_fission_continuation
+    materiality: high
+    evidence: 'Paper depicts continuation from one daughter but does not state replenishment to n_min or handling of an empty daughter.'
+    issue: Replenishing or rejecting daughters changes generation initial states.
+    candidates: 'continue exact daughter; redraw empty daughter; replenish to n_min; historical behavior'
+    selected: 'UNRESOLVED::E01-A024'
+    status: UNRESOLVED_REQUIRED
+    basis: Exact daughter continuation is plausible but edge-case behavior is missing.
+    owner: S04
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A025
+    category: preprocessing
+    parameter: preprocessing.state_sampling_instant
+    materiality: high
+    evidence: 'Figure 1D says relative compositions at every molecular step; event/fission boundary inclusion is not stated.'
+    issue: Pre-event, post-event, pre-fission, and post-fission states produce shifted trajectories.
+    candidates: 'post-update states; pre-update states; include both fission boundaries; generation-only states'
+    selected: 'UNRESOLVED::E01-A025'
+    status: UNRESOLVED_REQUIRED
+    basis: Time alignment must be frozen before Phi-r or labels are computed.
+    owner: S06
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A026
+    category: preprocessing
+    parameter: preprocessing.composition.normalization
+    materiality: high
+    evidence: 'Paper line 93 uses relative molecular composition; FULL_PLAN defines x_i=n_i/N.'
+    issue: The denominator and treatment of any zero-total state must be explicit.
+    candidates: 'x_i=n_i/sum(n); reject zero-total states; explicit empty-state sentinel'
+    selected: 'x_i=n_i/sum_j(n_j); zero-total state is invalid and must raise a recorded failure'
+    status: PLAN_FIXED
+    basis: FULL_PLAN supplies the normalization and no valid GARD assembly should have N=0.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A027
+    category: preprocessing
+    parameter: preprocessing.zero.policy
+    materiality: critical
+    evidence: 'Paper applies CLR but never states how zero component counts avoid log(0); FULL_PLAN requires pseudocount and multiplicative-replacement alternatives.'
+    issue: Zero handling can dominate log-ratio coordinates and covariance.
+    candidates: 'pseudocount grid; multiplicative replacement; reject invalid rows only as explicit failure'
+    selected: 'BRANCH_SET::pseudocount_grid|multiplicative_replacement'
+    status: FROZEN_BRANCH_SET
+    basis: FULL_PLAN prohibits one hidden zero policy.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A028
+    category: preprocessing
+    parameter: preprocessing.zero.pseudocount_delta
+    materiality: high
+    evidence: 'Paper gives no delta; FULL_PLAN freezes six values.'
+    issue: Delta changes rare-component leverage.
+    candidates: '1e-6; 1e-4; 1e-2; 0.1; 0.5; 1'
+    selected: 'BRANCH_SET::1e-6|1e-4|1e-2|0.1|0.5|1'
+    status: FROZEN_BRANCH_SET
+    basis: Every frozen delta is a separate specification; none is silently primary.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A029
+    category: preprocessing
+    parameter: preprocessing.clr.logarithm_and_formula
+    materiality: high
+    evidence: 'Paper CLR equation is not decoded at line 95; prose describes geometric-mean CLR; FULL_PLAN writes the standard log-ratio formula.'
+    issue: Log base and pseudocount placement determine scale and zeros.
+    candidates: 'natural-log CLR after closure-preserving pseudocount; base-2 audit'
+    selected: 'natural-log CLR of closed pseudocount-adjusted composition'
+    status: PROVISIONAL_PRIMARY
+    basis: Figure 2 labels Phi-r in nats and FULL_PLAN uses natural-log notation.
+    owner: S09
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A030
+    category: preprocessing
+    parameter: preprocessing.clr.component_removal
+    materiality: critical
+    evidence: 'Paper line 97 removes the last component; FULL_PLAN requires all dropped-component choices and ILR comparison.'
+    issue: Arbitrary component dropping can alter estimator conditioning and paper matching.
+    candidates: 'drop final component paper-like; drop each component in turn; no drop only for diagnostics; ILR'
+    selected: 'BRANCH_SET::drop_last|drop_each_component|ILR'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like drop-last is retained but cannot be the only valid specification.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A031
+    category: preprocessing
+    parameter: preprocessing.coordinate_family
+    materiality: high
+    evidence: 'FULL_PLAN requires dropped CLR, ILR, raw proportions, Hellinger, principal log-ratio, and multiplicative-replacement alternatives.'
+    issue: Coordinate geometry may create or remove apparent information structure.
+    candidates: 'paper-like CLR; ILR; raw proportions; Hellinger; principal log-ratio coordinates'
+    selected: 'BRANCH_SET::CLR|ILR|raw_proportions|Hellinger|principal_log_ratio'
+    status: FROZEN_BRANCH_SET
+    basis: All named adversarial representations remain preregistered.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A032
+    category: preprocessing
+    parameter: preprocessing.feature_orientation_and_scaling
+    materiality: high
+    evidence: 'Paper gives trajectory shape N_g x n_tot but does not specify estimator orientation, additional centering, whitening, or variance scaling.'
+    issue: Transposition and scaling alter covariance and model inputs.
+    candidates: 'time rows/features columns without extra scaling; feature z-score; whitening; implementation-native orientation'
+    selected: 'UNRESOLVED::E01-A032'
+    status: UNRESOLVED_REQUIRED
+    basis: Estimator and MLP interfaces must declare rather than infer orientation/scaling.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A033
+    category: preprocessing
+    parameter: preprocessing.invalid_transform_policy
+    materiality: high
+    evidence: 'Paper does not state behavior for nonfinite CLR rows, singular covariance, or insufficient rank.'
+    issue: Silent row deletion changes time and outcome alignment.
+    candidates: 'fail specification; explicit regularized branch; explicit row exclusion with audit; never silently drop'
+    selected: 'UNRESOLVED::E01-A033'
+    status: UNRESOLVED_REQUIRED
+    basis: FULL_PLAN forbids hidden exclusions and requires numerical diagnostics.
+    owner: S09
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A034
+    category: replicator_labels
+    parameter: labels.similarity.metric
+    materiality: critical
+    evidence: 'Paper line 71 says highly similar in Euclidean space; Results says threshold to most recurring composition; FULL_PLAN defines historical cosine-like H and Euclidean/Aitchison alternatives.'
+    issue: Euclidean, cosine, and Aitchison geometries label different states.
+    candidates: 'historical H/cosine; Euclidean; Aitchison/ILR'
+    selected: 'BRANCH_SET::historical_H|Euclidean|Aitchison'
+    status: FROZEN_BRANCH_SET
+    basis: FULL_PLAN requires all three label families.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A035
+    category: replicator_labels
+    parameter: labels.similarity.threshold
+    materiality: critical
+    evidence: 'Paper says a similarity threshold but omits its value; RESEARCH_PLAN S08 names historical H>0.9.'
+    issue: Threshold choice controls replicator occupancy and every downstream label-based result.
+    candidates: 'historical H>0.9; preregistered sensitivity grid; source-recovered author threshold'
+    selected: 'historical label uses H>0.9; sensitivity grid must be versioned before S08 results'
+    status: PLAN_FIXED
+    basis: S08 explicitly instructs historical H>0.9 while requiring threshold sensitivity.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A036
+    category: replicator_labels
+    parameter: labels.compotype.reference_definition
+    materiality: critical
+    evidence: 'Results line 31 refers to the most recurring composition; no selection, update, or tie rule is given.'
+    issue: Global mode, cluster medoid, centroid, or online reference can yield circular labels.
+    candidates: 'retrospective modal compotype; cluster medoid; centroid; past-only online reference; historical nondrift rule'
+    selected: 'UNRESOLVED::E01-A036'
+    status: DEFERRED_EVIDENCE
+    basis: Historical nondrift source and synthetic audits are needed.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A037
+    category: replicator_labels
+    parameter: labels.clustering.algorithm_and_hyperparameters
+    materiality: critical
+    evidence: 'Figure 1C calls replicators tight clusters; algorithm, number of clusters, linkage, epsilon, and minimum size are absent.'
+    issue: Cluster method and hyperparameters define the label target.
+    candidates: 'historical nondrift/compotype procedure; density clustering; hierarchical clustering; preregistered alternatives'
+    selected: 'UNRESOLVED::E01-A037'
+    status: DEFERRED_EVIDENCE
+    basis: S08 must reconstruct historical labels and quantify disagreement.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A038
+    category: replicator_labels
+    parameter: labels.persistence_and_homeostasis_rule
+    materiality: critical
+    evidence: 'Paper defines recurring compositions with homeostatic growth but gives no minimum recurrence, duration, or generation count.'
+    issue: Transient similarity may be called replication without a persistence rule.
+    candidates: 'historical nondrift persistence; minimum episode duration; minimum generation recurrence; basin-return probability'
+    selected: 'UNRESOLVED::E01-A038'
+    status: UNRESOLVED_REQUIRED
+    basis: Persistence cannot be inferred from descriptive prose.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A039
+    category: replicator_labels
+    parameter: labels.temporal_information_scope
+    materiality: critical
+    evidence: 'Most-recurring composition suggests whole-run hindsight; prospective prediction claims require careful temporal separation.'
+    issue: Retrospective labels can leak future trajectory information into predictors and endpoints.
+    candidates: 'paper-like retrospective labels; past-only online labels; fixed training-derived compotypes'
+    selected: 'BRANCH_SET::paper_retrospective|past_only_online|training_derived_reference'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like description and leakage-safe alternatives must receive separate verdicts.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: D03
+
+  - id: E01-A040
+    category: replicator_labels
+    parameter: labels.molecular_step_alignment
+    materiality: high
+    evidence: 'Labels are described at any time step while clusters may be defined at generation or steady-state resolution.'
+    issue: Propagating generation labels to molecular steps changes occupancy and correlation alignment.
+    candidates: 'per-step label; generation label broadcast to all steps; steady-state-only label; boundary-shift alternatives'
+    selected: 'UNRESOLVED::E01-A040'
+    status: UNRESOLVED_REQUIRED
+    basis: The paper does not state label resolution.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A041
+    category: replicator_labels
+    parameter: labels.ineligible_and_drift_policy
+    materiality: high
+    evidence: 'Paper uses drift as complement but does not state behavior for runs lacking either class or ambiguous threshold states.'
+    issue: Excluding one-class runs silently changes denominators and Fisher combinations.
+    candidates: 'drift=complement; explicit unknown label; run ineligible with recorded reason; no silent exclusion'
+    selected: 'UNRESOLVED::E01-A041'
+    status: UNRESOLVED_REQUIRED
+    basis: Claim denominators require an explicit eligibility contract.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: D11
+
+  - id: E01-A042
+    category: replicator_labels
+    parameter: labels.family_registry
+    materiality: high
+    evidence: 'FULL_PLAN requires historical, Euclidean, and Aitchison labels plus recurrence/fidelity alternatives.'
+    issue: Choosing the closest-looking label after results would be post hoc optimization.
+    candidates: 'Y_H historical; Y_E Euclidean; Y_A Aitchison; continuous recurrence; parent-daughter fidelity; basin return'
+    selected: 'BRANCH_SET::Y_H|Y_E|Y_A|continuous_recurrence|parent_daughter_fidelity|basin_return'
+    status: FROZEN_BRANCH_SET
+    basis: Every family receives a specification ID and disagreement report.
+    owner: S08
+    claims: 'E01-C015:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A043
+    category: phi_estimation
+    parameter: phi.atom.identity_and_formula
+    materiality: critical
+    evidence: 'Paper lines 79-89 refer to a PhiID atom but both displayed equations are missing from the extraction.'
+    issue: Phi-r cannot be computed without the exact atom and operational formula.
+    candidates: 'source-recovered PhiID atom; reference-implementation atom name and equation; no guessed substitute'
+    selected: 'UNRESOLVED::E01-A043'
+    status: DEFERRED_EVIDENCE
+    basis: Equation and authoritative implementation must be frozen before estimator work.
+    owner: S03
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A044
+    category: phi_estimation
+    parameter: phi.redundancy.function
+    materiality: critical
+    evidence: 'Paper cites PID/PhiID but does not name the redundancy function; FULL_PLAN requires it in every manifest.'
+    issue: Different redundancy functions produce different atoms and signs.
+    candidates: 'author/reference choice; all defensible supported functions as versioned branches'
+    selected: 'UNRESOLVED::E01-A044'
+    status: DEFERRED_EVIDENCE
+    basis: Reference source inspection is required.
+    owner: S03
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A045
+    category: phi_estimation
+    parameter: phi.estimator.family
+    materiality: critical
+    evidence: 'Paper calls time-lagged multivariate Shannon mutual information but does not state Gaussian, discrete, kNN, kernel, or other estimator.'
+    issue: Estimator family determines finite-sample bias, rank requirements, and numerical values.
+    candidates: 'reference phyid estimator; Gaussian-covariance; discrete/plugin; kNN; validated alternatives'
+    selected: 'UNRESOLVED::E01-A045'
+    status: DEFERRED_EVIDENCE
+    basis: S03 source pinning and S10 synthetic validation must precede selection.
+    owner: S10
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A046
+    category: phi_estimation
+    parameter: phi.estimator.bias_and_regularization
+    materiality: high
+    evidence: 'Paper does not state bias correction, shrinkage, jitter, covariance estimator, or singular-case handling.'
+    issue: High dimension relative to window length can make estimates undefined or heavily biased.
+    candidates: 'reference defaults made explicit; shrinkage branches; no correction; fail-invalid policy'
+    selected: 'UNRESOLVED::E01-A046'
+    status: UNRESOLVED_REQUIRED
+    basis: Numerical defaults cannot be inherited silently from a library.
+    owner: S10
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A047
+    category: phi_estimation
+    parameter: phi.information_units
+    materiality: medium
+    evidence: 'Figure 2 y-axis labels Phi-r in nats; the paper does not state log base in Methods.'
+    issue: Bits versus nats rescale values and spike heights.
+    candidates: 'natural logarithm/nats; base-2/bits audit'
+    selected: 'natural logarithm; report nats'
+    status: PAPER_FIXED
+    basis: Figure axis provides direct unit evidence.
+    owner: S10
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A048
+    category: phi_estimation
+    parameter: phi.window.length
+    materiality: critical
+    evidence: 'Paper reports a Phi-r trajectory but no estimation window; FULL_PLAN freezes w={32,64,128,256}.'
+    issue: Window length changes bias, localization, and partition stability.
+    candidates: '32; 64; 128; 256; whole-trajectory descriptive'
+    selected: 'BRANCH_SET::32|64|128|256|whole_trajectory_descriptive'
+    status: FROZEN_BRANCH_SET
+    basis: FULL_PLAN specifies the primary grid and descriptive whole-run branch.
+    owner: S11
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A049
+    category: phi_estimation
+    parameter: phi.lag
+    materiality: critical
+    evidence: 'Paper defines time-lagged information without a lag value; FULL_PLAN freezes tau={1,2,4,8}.'
+    issue: Lag changes the predictive relationship and sample pairing.
+    candidates: '1; 2; 4; 8 molecular-step units after time semantics are fixed'
+    selected: 'BRANCH_SET::1|2|4|8'
+    status: FROZEN_BRANCH_SET
+    basis: FULL_PLAN requires every lag branch.
+    owner: S11
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A050
+    category: phi_estimation
+    parameter: phi.window.mode
+    materiality: critical
+    evidence: 'Paper does not state whole-trajectory, expanding, or sliding estimation; FULL_PLAN requires all three with whole-run labeled non-prospective.'
+    issue: Whole-trajectory estimation leaks future observations into past Phi-r values.
+    candidates: 'sliding past-only; expanding past-only; whole-trajectory descriptive only'
+    selected: 'BRANCH_SET::sliding_past_only|expanding_past_only|whole_trajectory_descriptive'
+    status: FROZEN_BRANCH_SET
+    basis: Prospective and descriptive reconstructions must stay separate.
+    owner: S11
+    claims: ALL
+    discrepancies: D03
+
+  - id: E01-A051
+    category: phi_estimation
+    parameter: phi.temporal_information_access
+    materiality: critical
+    evidence: 'FULL_PLAN states prospective Phi-r at t may use only observations s<=t.'
+    issue: Future access would invalidate prediction and intervention claims.
+    candidates: 'past-only for prospective analyses; whole-trajectory only with descriptive label'
+    selected: 'prospective estimates use s<=t; future access is validation failure'
+    status: PLAN_FIXED
+    basis: This is an explicit scientific guardrail.
+    owner: S11
+    claims: ALL
+    discrepancies: D03
+
+  - id: E01-A052
+    category: phi_estimation
+    parameter: phi.temporal_pairing_and_alignment
+    materiality: critical
+    evidence: 'Paper does not state whether Phi-r at t labels the window endpoint, target time, center, or next step.'
+    issue: Off-by-lag alignment can manufacture lead-lag relationships.
+    candidates: 'window-end t predicting t+tau; target-index labeling; center labeling; explicit audit shifts'
+    selected: 'UNRESOLVED::E01-A052'
+    status: UNRESOLVED_REQUIRED
+    basis: S11 causality-index audit must freeze the index convention.
+    owner: S11
+    claims: ALL
+    discrepancies: D03
+
+  - id: E01-A053
+    category: phi_estimation
+    parameter: phi.early_window.policy
+    materiality: high
+    evidence: 'No policy is given for times before a full window and lag are available.'
+    issue: Padding, expanding estimates, NaN, or delayed start changes early prediction inputs and spike timing.
+    candidates: 'NaN until full window; expanding minimum-sample estimate; explicit padding branch'
+    selected: 'UNRESOLVED::E01-A053'
+    status: UNRESOLVED_REQUIRED
+    basis: Early values must not be filled by a library default.
+    owner: S11
+    claims: ALL
+    discrepancies: D03
+
+  - id: E01-A054
+    category: phi_estimation
+    parameter: phi.mib.objective
+    materiality: critical
+    evidence: 'Paper says the two components share the least information and have the weakest causal cut; exact cut statistic is absent.'
+    issue: Several minimum-information objectives are compatible with this prose.
+    candidates: 'source-recovered cut objective; mutual-information cut; normalized integrated-information cut; reference implementation'
+    selected: 'UNRESOLVED::E01-A054'
+    status: DEFERRED_EVIDENCE
+    basis: Exact operational cut must come from authoritative source, not prose interpolation.
+    owner: S10
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A055
+    category: phi_estimation
+    parameter: phi.mib.normalization
+    materiality: critical
+    evidence: 'Paper does not specify MIB normalization; FULL_PLAN requires it in every manifest.'
+    issue: Normalization can change the selected bipartition.
+    candidates: 'none; minimum-part entropy; geometric/size normalization; source-recovered rule'
+    selected: 'UNRESOLVED::E01-A055'
+    status: DEFERRED_EVIDENCE
+    basis: No normalization is inferable from the attachment.
+    owner: S10
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A056
+    category: phi_estimation
+    parameter: phi.partition.search
+    materiality: critical
+    evidence: 'Paper says a minimum-information bipartition is computed but gives no exact, heuristic, or candidate search procedure.'
+    issue: Search approximation can miss the MIB and create seed-dependent trajectories.
+    candidates: 'exhaustive bipartitions; Queyranne-compatible search; greedy/heuristic; fixed candidate set'
+    selected: 'UNRESOLVED::E01-A056'
+    status: DEFERRED_EVIDENCE
+    basis: S03/S10 must identify reference behavior and validate approximations.
+    owner: S10
+    claims: ALL
+    discrepancies: D08
+
+  - id: E01-A057
+    category: phi_estimation
+    parameter: phi.partition.tie_and_recomputation
+    materiality: high
+    evidence: 'Paper does not state tie-breaking or whether the partition is recomputed at every time, window, or run.'
+    issue: Partition switching can create artificial spikes; tie choices impede reproducibility.
+    candidates: 'recompute each window with lexicographic ties; fixed run partition; warm-started partition; source behavior'
+    selected: 'UNRESOLVED::E01-A057'
+    status: UNRESOLVED_REQUIRED
+    basis: FULL_PLAN requires partition histories, so cadence and ties must be manifest fields.
+    owner: S11
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A058
+    category: phi_estimation
+    parameter: phi.sample_sufficiency_and_failure_policy
+    materiality: critical
+    evidence: 'N_g=100 and short windows can yield rank-deficient estimates; paper reports no minimum sample rule or failures.'
+    issue: Silent regularization or dropped windows can select favorable trajectories.
+    candidates: 'explicit minimum n/rank; shrinkage branch; invalid-window sentinel; no silent row deletion'
+    selected: 'UNRESOLVED::E01-A058'
+    status: UNRESOLVED_REQUIRED
+    basis: S09/S10 numerical validation must set the gate before data analysis.
+    owner: S10
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A059
+    category: phi_estimation
+    parameter: phi.negative_value_policy
+    materiality: high
+    evidence: 'Figure 2 displays large negative Phi-r values; no clipping or interpretation rule is stated.'
+    issue: Clipping, absolute values, or preserving signed values changes trends and spikes.
+    candidates: 'preserve signed values; positive-only derived spikes; absolute-excursion sensitivity; never silently clip'
+    selected: 'preserve signed Phi-r; derived positive/negative/absolute spike catalogs are separate branches'
+    status: PAPER_FIXED
+    basis: The published figure directly demonstrates signed values.
+    owner: S11
+    claims: ALL
+    discrepancies: D07
+
+  - id: E01-A060
+    category: phi_estimation
+    parameter: phi.backend_precision_and_cadence
+    materiality: high
+    evidence: 'Paper omits numerical precision, backend, and evaluation cadence; FULL_PLAN requires CPU/GPU agreement and Phi-r at every evaluation.'
+    issue: Precision/backend differences and sparse evaluation can alter partitions and spikes.
+    candidates: 'CPU float64 reference every molecular step; accelerated path only after tolerance validation; documented reduced cadence branch'
+    selected: 'CPU float64 reference evaluated every molecular step; accelerated results require cross-validation'
+    status: PLAN_FIXED
+    basis: FULL_PLAN numerical guardrails define the reference policy without implementing S03.
+    owner: S10
+    claims: ALL
+    discrepancies: ''
+
+  - id: E01-A061
+    category: descriptive_statistics
+    parameter: aggregate.variable_length_alignment
+    materiality: critical
+    evidence: 'Paper line 93 says trajectory lengths differ; Figure 2A aggregates 100 runs over molecular steps without an alignment policy.'
+    issue: Truncation, padding, interpolation, or available-case aggregation changes the trend.
+    candidates: 'common-prefix truncation; available-case per step; normalized-time interpolation; explicit padding with missingness'
+    selected: 'UNRESOLVED::E01-A061'
+    status: UNRESOLVED_REQUIRED
+    basis: Figure reconstruction cannot assume an alignment rule.
+    owner: S14
+    claims: 'E01-C013;E01-C014'
+    discrepancies: ''
+
+  - id: E01-A062
+    category: descriptive_statistics
+    parameter: aggregate.center_and_spread
+    materiality: medium
+    evidence: 'Figure 2A caption explicitly says median +/- standard deviation across 100 runs.'
+    issue: Median with SD is unusual and could be mistaken for mean+/-SD or median+/-MAD.
+    candidates: 'median plus/minus SD paper-like; mean plus/minus SD audit; median plus/minus MAD robustness'
+    selected: 'paper-like summary is median plus/minus sample SD; robust alternatives remain separate'
+    status: PAPER_FIXED
+    basis: Caption wording is explicit and must be reproduced literally before sensitivity analysis.
+    owner: S14
+    claims: 'E01-C013;E01-C014'
+    discrepancies: ''
+
+  - id: E01-A063
+    category: descriptive_statistics
+    parameter: aggregate.trend_regression
+    materiality: high
+    evidence: 'Paper reports a linear-regression p=0.1995 but omits dependent series, weighting, intercept, covariance, and missing-step treatment.'
+    issue: Regression choices determine the reported p-value.
+    candidates: 'OLS on per-step median with intercept; weighted OLS by run count; robust regression; autocorrelation-aware model'
+    selected: 'UNRESOLVED::E01-A063'
+    status: UNRESOLVED_REQUIRED
+    basis: Paper-like and robust models must be declared separately in S14.
+    owner: S14
+    claims: 'E01-C013'
+    discrepancies: ''
+
+  - id: E01-A064
+    category: descriptive_statistics
+    parameter: spike.threshold.scope
+    materiality: critical
+    evidence: 'Results line 35 says >3 SD above the overall mean; it does not define which observations form the mean and SD.'
+    issue: Across-run, per-run, per-window, and training-only thresholds produce different spike catalogs.
+    candidates: 'all-run/all-time global; per-run; aligned aggregate; past-only rolling; training-only frozen'
+    selected: 'UNRESOLVED::E01-A064'
+    status: UNRESOLVED_REQUIRED
+    basis: The word overall is insufficient to identify the threshold population.
+    owner: S14
+    claims: 'E01-C014;E01-C031:E01-C033'
+    discrepancies: D07
+
+  - id: E01-A065
+    category: descriptive_statistics
+    parameter: spike.definition.direction_and_scale
+    materiality: high
+    evidence: 'Text defines positive >3-SD excursions; Figure 2 examples contain prominent negative spikes; FULL_PLAN requires positive, negative, absolute, and MAD variants.'
+    issue: Spike sign and scale determine which events enter timing analyses.
+    candidates: 'positive 3-SD paper-like; negative 3-SD; absolute 3-SD; positive/negative/absolute robust MAD'
+    selected: 'BRANCH_SET::positive_3SD|negative_3SD|absolute_3SD|positive_MAD|negative_MAD|absolute_MAD'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like positive spikes and adversarial alternatives receive distinct IDs.
+    owner: S14
+    claims: 'E01-C014;E01-C031:E01-C033'
+    discrepancies: D07
+
+  - id: E01-A066
+    category: descriptive_statistics
+    parameter: spike.episode_and_prevalence_rule
+    materiality: high
+    evidence: 'Paper reports spiking events and most runs but does not state whether adjacent exceedances merge or how one run is counted.'
+    issue: Point exceedances versus episodes change spike count, timing, distance, and run prevalence.
+    candidates: 'each exceedance; contiguous exceedances merged; peak per episode; refractory interval; run has >=1 episode'
+    selected: 'UNRESOLVED::E01-A066'
+    status: UNRESOLVED_REQUIRED
+    basis: S14 must freeze episode construction before spike-result inspection.
+    owner: S14
+    claims: 'E01-C014;E01-C031:E01-C033'
+    discrepancies: D07
+
+  - id: E01-A067
+    category: descriptive_statistics
+    parameter: spike.reported_run_count
+    materiality: medium
+    evidence: 'Paper says most runs spike but gives no count.'
+    issue: An exact paper count cannot be recovered from the supplied prose or sample plots.
+    candidates: 'source-recovered count; directional threshold >50/100 only; explicit underdetermined verdict'
+    selected: 'UNRESOLVED::E01-A067'
+    status: UNRESOLVED_REQUIRED
+    basis: Do not infer a population count from three displayed runs.
+    owner: S14
+    claims: 'E01-C014'
+    discrepancies: D07
+
+  - id: E01-A068
+    category: descriptive_statistics
+    parameter: association.phi_level_or_change
+    materiality: critical
+    evidence: 'Results line 37 says entire Phi-r trajectory; Figure 3 caption says changes in Phi-r.'
+    issue: Levels and first differences are distinct estimands with different autocorrelation and signs.
+    candidates: 'Spearman(Phi-r level,Y); Spearman(delta Phi-r,Y); lag-aligned variants'
+    selected: 'CONFLICT::paper_results_level|figure_caption_first_difference'
+    status: CONFLICT_PRESERVED
+    basis: Neither source is privileged; both receive separate claim-linked results.
+    owner: S15
+    claims: 'E01-C015:E01-C018'
+    discrepancies: D02
+
+  - id: E01-A069
+    category: descriptive_statistics
+    parameter: association.time_alignment_and_ties
+    materiality: high
+    evidence: 'Paper does not state whether Y_t aligns with Phi_t, Phi_{t-1}, or delta endpoints, nor how binary-label ties are handled.'
+    issue: Off-by-one alignment and tie conventions affect Spearman values and p-values.
+    candidates: 'same-index; one-step lead/lag audit; scipy tie correction; exact/permutation test'
+    selected: 'UNRESOLVED::E01-A069'
+    status: UNRESOLVED_REQUIRED
+    basis: Index convention must follow S06/S11 schemas.
+    owner: S15
+    claims: 'E01-C015:E01-C021'
+    discrepancies: D02
+
+  - id: E01-A070
+    category: descriptive_statistics
+    parameter: association.positive_significant_denominators
+    materiality: medium
+    evidence: 'Results gives 54/73 significant among positive runs; Figure 3 gives 54% of 100 runs.'
+    issue: Conditional and total-run percentages answer different questions.
+    candidates: 'raw count 54; 54/100 total proportion; 54/73 conditional proportion'
+    selected: 'raw_count=54; total_denominator=100; positive_subset_denominator=73; report both proportions'
+    status: RECONCILED
+    basis: The statements are arithmetically compatible when denominators are explicit.
+    owner: S15
+    claims: 'E01-C015;E01-C016'
+    discrepancies: D01
+
+  - id: E01-A071
+    category: descriptive_statistics
+    parameter: inference.alpha_sidedness_and_multiplicity
+    materiality: critical
+    evidence: 'Paper reports significance but omits alpha declaration, sidedness for most tests, and multiplicity correction across runs/metrics/baselines.'
+    issue: Uncorrected repeated tests inflate positive counts and distinctiveness claims.
+    candidates: 'paper-like alpha=0.05 uncorrected descriptive; FDR/familywise corrections; one/two-sided branches; block-aware tests'
+    selected: 'BRANCH_SET::paper_like_alpha0.05_uncorrected|multiplicity_corrected|block_aware'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like reproduction and robust inference must be reported separately.
+    owner: S15
+    claims: 'E01-C001:E01-C033;E01-C046:E01-C059'
+    discrepancies: D11;D12
+
+  - id: E01-A072
+    category: descriptive_statistics
+    parameter: metric_comparison.definition_and_aggregation
+    materiality: high
+    evidence: 'Paper line 33 names 12 network/dynamical metric families but gives no graph construction, hyperparameters, temporal aggregation, or comparison unit.'
+    issue: Static graph metrics and trajectory metrics cannot be correlated with Phi-r without an aggregation contract.
+    candidates: 'run-level summaries; aligned trajectories; generation summaries; source-specific standard definitions and preregistered hyperparameters'
+    selected: 'UNRESOLVED::E01-A072'
+    status: UNRESOLVED_REQUIRED
+    basis: Each named metric needs an explicit implementation and aggregation before S15.
+    owner: S15
+    claims: 'E01-C001:E01-C012'
+    discrepancies: ''
+
+  - id: E01-A073
+    category: descriptive_statistics
+    parameter: state_comparison.mann_whitney_scope
+    materiality: critical
+    evidence: 'Results line 37 reports Mann-Whitney p<0.001 and 57/100 runs but does not say pooled, per-run, or summary-level test.'
+    issue: Pooling autocorrelated time steps creates pseudo-replication and a different sample unit.
+    candidates: 'pooled steps paper-like; within-run tests then Fisher; run-summary test; block permutation/bootstrap'
+    selected: 'CONFLICT::pooled_steps|within_run_tests|run_summary_test'
+    status: CONFLICT_PRESERVED
+    basis: Source scope is genuinely ambiguous; paper-like and block-aware versions stay separate.
+    owner: S15
+    claims: 'E01-C019:E01-C021'
+    discrepancies: D11
+
+  - id: E01-A074
+    category: descriptive_statistics
+    parameter: state_comparison.fisher_combination
+    materiality: high
+    evidence: 'Paper reports Fisher p<0.001 across 100 runs but omits directional p-values, eligibility, dependence, and handling of one-class runs.'
+    issue: Fisher input construction can reverse or exaggerate combined evidence.
+    candidates: 'two-sided runwise p; directional one-sided p; exclude ineligible with audit; conservative bounded p'
+    selected: 'UNRESOLVED::E01-A074'
+    status: UNRESOLVED_REQUIRED
+    basis: Run eligibility and sidedness must be frozen with label policy.
+    owner: S15
+    claims: 'E01-C020;E01-C021'
+    discrepancies: D11
+
+  - id: E01-A075
+    category: descriptive_statistics
+    parameter: temporal_structure.ljung_box_and_differencing
+    materiality: critical
+    evidence: 'Paper reports Ljung-Box results before and after differencing but omits lag set, model degrees of freedom, differencing order, missing handling, and alpha.'
+    issue: Rejection counts and median p-values depend strongly on lags and trajectory length.
+    candidates: 'fixed lag; automatic lag; lag grid; first difference; higher differences only as sensitivity'
+    selected: 'UNRESOLVED::E01-A075'
+    status: UNRESOLVED_REQUIRED
+    basis: Exact 86/100 and 100/100 targets cannot be evaluated without these fields.
+    owner: S15
+    claims: 'E01-C022:E01-C024'
+    discrepancies: ''
+
+  - id: E01-A076
+    category: descriptive_statistics
+    parameter: spike_timing.observation_unit_and_outcome_mapping
+    materiality: critical
+    evidence: 'Paper reports correlations of replication probability with spike time and distance but not whether observations are spikes, intervals, runs, or aggregates.'
+    issue: Pseudoreplication and repeated outcomes can produce inflated correlations.
+    candidates: 'one observation per run; one per spike; one per interval; hierarchical/run-clustered analysis'
+    selected: 'UNRESOLVED::E01-A076'
+    status: UNRESOLVED_REQUIRED
+    basis: The matching rule is absent from text and captions.
+    owner: S16
+    claims: 'E01-C031:E01-C033'
+    discrepancies: D07
+
+  - id: E01-A077
+    category: descriptive_statistics
+    parameter: spike_height.reported_statistic_and_equivalence
+    materiality: high
+    evidence: 'Paper calls spike-height correlation nonsignificant but gives no coefficient, p-value, sample size, or equivalence margin.'
+    issue: Nonsignificance cannot be treated as evidence of no association.
+    candidates: 'source-recovered rho/p; significance-class reproduction only; preregistered equivalence test as separate robust claim'
+    selected: 'UNRESOLVED::E01-A077'
+    status: UNRESOLVED_REQUIRED
+    basis: Exact-value reproduction is impossible from supplied evidence.
+    owner: S16
+    claims: 'E01-C033'
+    discrepancies: D12
+
+  - id: E01-A078
+    category: prediction
+    parameter: ml.target.endpoint
+    materiality: critical
+    evidence: 'Results predicts the remaining 75% replication-state trajectory; Figure 5 calls the task initial appearance.'
+    issue: Sequence state prediction and first-event prediction are not interchangeable.
+    candidates: 'paper-like remaining-state trajectory; strict first-event endpoint with pre-onset risk sets'
+    selected: 'BRANCH_SET::paper_like_state_trajectory|strict_first_event'
+    status: FROZEN_BRANCH_SET
+    basis: RESEARCH_PLAN S16 explicitly requires separate verdicts for both tasks.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A079
+    category: prediction
+    parameter: ml.temporal_split.boundary_unit
+    materiality: high
+    evidence: 'Paper says first 25% and remaining 75% of each trajectory but trajectories vary in molecular-step length.'
+    issue: Rounding, fission boundaries, and normalized time determine input/output samples.
+    candidates: 'floor(0.25*T) molecular-step index; ceil; generation boundary; normalized-time resampling'
+    selected: 'floor(0.25*T) molecular-step boundary, with boundary rule logged'
+    status: PROVISIONAL_PRIMARY
+    basis: Molecular-step trajectories are the stated substrate; alternatives remain sensitivity analyses.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A080
+    category: prediction
+    parameter: ml.sequence.layout
+    materiality: critical
+    evidence: 'Paper gives variable-length run trajectories but no padding, truncation, flattening, summary, or multi-output tensor layout.'
+    issue: Layout can leak length, change model capacity, and make feature families incomparable.
+    candidates: 'fixed-length resampling; padding+mask; truncation; summary features; sequence model; explicit multi-output layout'
+    selected: 'UNRESOLVED::E01-A080'
+    status: UNRESOLVED_REQUIRED
+    basis: No author input/output tensor specification is supplied.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A081
+    category: prediction
+    parameter: ml.feature_family.definitions
+    materiality: critical
+    evidence: 'Paper names Phi-r, composition change, raw composition counts, and molecular flux but gives no formulas, temporal aggregation, or dimensionality matching.'
+    issue: Unequal information content and capacity undermine baseline comparisons.
+    candidates: 'explicit per-step arrays for each family; matched summaries; recurrence baseline required by FULL_PLAN'
+    selected: 'UNRESOLVED::E01-A081'
+    status: UNRESOLVED_REQUIRED
+    basis: S16 must freeze feature schemas and equal-capacity preprocessing before fitting.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A082
+    category: prediction
+    parameter: ml.mlp.architecture
+    materiality: critical
+    evidence: 'Paper states MLP but omits layer widths, depth, activations, output activation, regularization, and parameter count.'
+    issue: Architecture determines capacity and may advantage one feature family.
+    candidates: 'source-recovered architecture; preregistered matched-capacity grid; fixed simple MLP'
+    selected: 'UNRESOLVED::E01-A082'
+    status: UNRESOLVED_REQUIRED
+    basis: Architecture cannot be inferred from Figure 5.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: ''
+
+  - id: E01-A083
+    category: prediction
+    parameter: ml.training_and_scaling
+    materiality: critical
+    evidence: 'Paper omits loss, optimizer, learning rate, epochs, early stopping, class weighting, feature scaling, and fit scope.'
+    issue: Training defaults and full-data scaling can create leakage or unstable comparisons.
+    candidates: 'training-only fitted scaling; explicit optimizer/loss/early-stop; identical tuning budget per feature family'
+    selected: 'UNRESOLVED::E01-A083'
+    status: UNRESOLVED_REQUIRED
+    basis: All training choices must be manifest fields and fit only on training data.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A084
+    category: prediction
+    parameter: ml.run_split.stratification_and_reuse
+    materiality: high
+    evidence: 'Paper specifies 80/20 runs but not stratification, group balance, reuse across feature families, or nested validation.'
+    issue: Different splits across models or label-stratified leakage distort paired comparisons.
+    candidates: 'identical group split across models; stratify by training-visible target summary; unstratified; nested validation'
+    selected: 'UNRESOLVED::E01-A084'
+    status: UNRESOLVED_REQUIRED
+    basis: Ratio is fixed, but split construction remains absent.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A085
+    category: prediction
+    parameter: ml.repetition.bootstrap_and_seed_semantics
+    materiality: high
+    evidence: 'Paper says bootstrapped across 10 repetitions with different seeds, without saying whether runs are resampled or merely re-split/reinitialized.'
+    issue: Repetition dependence determines uncertainty and test validity.
+    candidates: 'bootstrap runs with replacement; repeated group splits; fixed split/reinitialized model; separate split/model seeds'
+    selected: 'UNRESOLVED::E01-A085'
+    status: UNRESOLVED_REQUIRED
+    basis: Ten is known; the resampling unit and seed hierarchy are not.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A086
+    category: prediction
+    parameter: ml.dummy_baseline.prevalence_scope
+    materiality: high
+    evidence: 'Paper says always predict the most abundant label but not whether prevalence is global, training-only, per run, or per horizon.'
+    issue: Global/test prevalence leaks labels and inflates the dummy comparator.
+    candidates: 'training-only global label; training-run weighted label; per-horizon training label; forbidden test/global leakage'
+    selected: 'UNRESOLVED::E01-A086'
+    status: UNRESOLVED_REQUIRED
+    basis: Baseline prevalence must be learned only from training data in prospective analysis.
+    owner: S16
+    claims: 'E01-C028;E01-C030'
+    discrepancies: D03
+
+  - id: E01-A087
+    category: prediction
+    parameter: ml.performance_aggregation_and_inference
+    materiality: critical
+    evidence: 'Paper reports binary accuracy dots and Mann-Whitney across 10 repetitions; step/run weighting, pairing, and multiple comparisons are absent.'
+    issue: Step-weighted accuracy favors long runs and unpaired tests waste matched splits.
+    candidates: 'micro step accuracy; macro run accuracy; paired split contrasts; Mann-Whitney paper-like; hierarchical/bootstrap inference'
+    selected: 'CONFLICT::micro_vs_macro_weighting|paired_vs_unpaired_inference'
+    status: CONFLICT_PRESERVED
+    basis: Paper-like and dependence-aware evaluations must be separate.
+    owner: S16
+    claims: 'E01-C025:E01-C030'
+    discrepancies: D03
+
+  - id: E01-A088
+    category: prediction
+    parameter: ml.sensitivity_and_preonset_policy
+    materiality: critical
+    evidence: 'Paper says other split proportions are similar but gives none; FULL_PLAN requires stopping first-arrival prediction if pre-input replication drives the effect.'
+    issue: Unspecified splits and already-replicating input intervals can create a trivial prediction task.
+    candidates: 'versioned split grid; paper 25/75; exclude or separately report onset within input; strict pre-onset risk sets'
+    selected: 'BRANCH_SET::paper_25_75|versioned_split_grid|strict_preonset_first_event'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like and leakage-controlled tasks must both be reported.
+    owner: S16
+    claims: 'E01-C029;E01-C030'
+    discrepancies: D03
+
+  - id: E01-A089
+    category: intervention_outcomes
+    parameter: intervention.action.set
+    materiality: critical
+    evidence: 'Paper searches additions and deletions; FULL_PLAN action set also includes no-op and restricts deletions to present molecules.'
+    issue: Including no-op and feasibility constraints changes the maximizing/minimizing action.
+    candidates: 'paper-like +/-e_i; modern {0,+e_i,-e_i if n_i>0}; explicit invalid-action policy'
+    selected: 'BRANCH_SET::paper_plus_minus|modern_noop_plus_minus_feasible'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like reconstruction and safe prospective operator remain separate.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A090
+    category: intervention_outcomes
+    parameter: intervention.action.magnitude_and_deletion
+    materiality: high
+    evidence: 'Figure 6A shows +1/-1 per type; paper says add or delete the molecule.'
+    issue: Type-level versus molecule-level action and zero-count deletion feasibility must be explicit.
+    candidates: 'one molecule of one type; deletion only when count>0; rejected/omitted infeasible actions'
+    selected: 'one molecule action; -e_i only when n_i>0; infeasible actions omitted and logged'
+    status: PLAN_FIXED
+    basis: FULL_PLAN formalizes the feasible one-molecule operator.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A091
+    category: intervention_outcomes
+    parameter: intervention.timing_and_frequency
+    materiality: critical
+    evidence: 'Paper and Figure 6A say after every fission event/at every generation; generation-zero and final-generation boundaries are not specified.'
+    issue: Boundary inclusion changes action count and first-generation outcomes.
+    candidates: 'post-fission generations 1..99; include generation 0; include final post-fission action; historical source behavior'
+    selected: 'post-fission before next growth at every nonterminal generation; exact boundary count requires manifest'
+    status: PROVISIONAL_PRIMARY
+    basis: This follows the depicted feedback loop while retaining boundary audit.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A092
+    category: intervention_outcomes
+    parameter: intervention.score.horizon
+    materiality: critical
+    evidence: 'Paper says choose the action that immediately raises/lowers Phi-r; FULL_PLAN defines append-only, expected-next-step, and generation-rollout interpretations.'
+    issue: Myopic and prospective rollout scores optimize different actions and causal claims.
+    candidates: 'append-only paper-like; one-step expectation; K-generation rollout'
+    selected: 'BRANCH_SET::append_only_primary|one_step_expected|generation_rollout'
+    status: FROZEN_BRANCH_SET
+    basis: Append-only is the provisional paper match, but all three must be versioned.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: D08
+
+  - id: E01-A093
+    category: intervention_outcomes
+    parameter: intervention.score.window_and_partition
+    materiality: critical
+    evidence: 'Paper does not state what history is supplied when scoring candidate actions or whether MIB is held fixed.'
+    issue: Candidate-specific repartitioning and future-aware windows can cause discontinuous or leaked action scores.
+    candidates: 'append candidate to past-only window and recompute MIB; fixed pre-action partition; candidate-specific partition; rollout window'
+    selected: 'UNRESOLVED::E01-A093'
+    status: UNRESOLVED_REQUIRED
+    basis: Must be resolved after Phi-r implementation semantics are fixed.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: D08
+
+  - id: E01-A094
+    category: intervention_outcomes
+    parameter: intervention.counterfactual_rng_and_tie_break
+    materiality: high
+    evidence: 'Paper gives no score stochasticity, number of rollouts, tie tolerance, or action tie-break.'
+    issue: Candidate evaluation noise and arbitrary ties can create uncontrolled treatment differences.
+    candidates: 'deterministic append score+lexicographic ties; common rollout seeds; randomized ties with dedicated seed; tolerance rule'
+    selected: 'UNRESOLVED::E01-A094'
+    status: UNRESOLVED_REQUIRED
+    basis: Tie and counterfactual seed policies must be reproducible and action-neutral.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A095
+    category: intervention_outcomes
+    parameter: intervention.control_and_pairing
+    materiality: critical
+    evidence: 'Paper calls controls the original runs and the same 100 assemblies; it does not state rerun versus reuse or common-random-number coupling.'
+    issue: Reusing baselines, rerunning independently, and paired randomness imply different estimands and uncertainty.
+    candidates: 'reuse exact baseline; paired rerun with common random numbers; independent rerun; synchronized-stream audit'
+    selected: 'CONFLICT::reuse_original|paired_rerun|independent_rerun'
+    status: CONFLICT_PRESERVED
+    basis: FULL_PLAN prefers paired matrices/CRN where valid, while paper wording may mean reused originals.
+    owner: S17
+    claims: 'E01-C034:E01-C059'
+    discrepancies: ''
+
+  - id: E01-A096
+    category: intervention_outcomes
+    parameter: intervention.persistence.formula
+    materiality: high
+    evidence: 'Table 1 note defines persistence as total lifetime in molecular steps; episode semantics are not given.'
+    issue: Total labeled steps, longest episode, and mean episode length differ.
+    candidates: 'paper-like total labeled molecular steps; longest episode; mean episode; occupancy reported separately'
+    selected: 'paper-like persistence=sum_t Y_t; episode metrics retained as separate outcomes'
+    status: PAPER_FIXED
+    basis: Table note directly identifies total lifetime; FULL_PLAN retains episode alternatives.
+    owner: S17
+    claims: 'E01-C034:E01-C036;E01-C046;E01-C054;E01-C058;E01-C059'
+    discrepancies: ''
+
+  - id: E01-A097
+    category: intervention_outcomes
+    parameter: intervention.probability.formula_and_scope
+    materiality: critical
+    evidence: 'Table note defines fraction of steps; Results says max/control overall are equal but max rises and ends higher; Discussion says max is higher than originals.'
+    issue: Overall occupancy, per-generation probability, and final-generation contrast are different estimands.
+    candidates: 'overall O=sum(Y)/T; per-generation occupancy; generation-100 contrast; run-weighted versus step-weighted'
+    selected: 'CONFLICT::overall_occupancy|per_generation_trajectory|final_generation_contrast'
+    status: CONFLICT_PRESERVED
+    basis: All scopes are retained and reported separately; no broad probability claim substitutes for another.
+    owner: S17
+    claims: 'E01-C037:E01-C039;E01-C048;E01-C050:E01-C055'
+    discrepancies: D06
+
+  - id: E01-A098
+    category: intervention_outcomes
+    parameter: intervention.consistency.formula
+    materiality: critical
+    evidence: 'Paper says Pearson rho between consecutive steps but not which variable; FULL_PLAN retains C_Y, C_H, and C_Z.'
+    issue: Label autocorrelation, compositional similarity, and flattened-CLR correlation are distinct.
+    candidates: 'C_Y label autocorrelation; C_H mean consecutive composition similarity; C_Z flattened CLR lag correlation'
+    selected: 'BRANCH_SET::C_Y|C_H|C_Z'
+    status: FROZEN_BRANCH_SET
+    basis: Every candidate must be compared to Table 1 before one is called the paper formula.
+    owner: S17
+    claims: 'E01-C040:E01-C042;E01-C047;E01-C056'
+    discrepancies: D05
+
+  - id: E01-A099
+    category: intervention_outcomes
+    parameter: intervention.consistency.reported_direction
+    materiality: critical
+    evidence: 'Results says min worsens all four; Table 1 says min consistency 0.42 versus control 0.38 and higher is better.'
+    issue: Source directions are logically incompatible under the table definition.
+    candidates: 'text target min<control; table target min>control; possible formula mismatch flagged'
+    selected: 'CONFLICT::results_min_worse|table_min_0.42_gt_control_0.38'
+    status: CONFLICT_PRESERVED
+    basis: Both source-specific targets remain; later results cannot choose the favorable one.
+    owner: S17
+    claims: 'E01-C040:E01-C042;E01-C056'
+    discrepancies: D05
+
+  - id: E01-A100
+    category: intervention_outcomes
+    parameter: intervention.time_to_first.unit
+    materiality: critical
+    evidence: 'Table cells show 36/37/40 with percent signs; note defines number of molecular steps.'
+    issue: Percent of trajectory and absolute molecular steps are dimensionally different.
+    candidates: 'molecular steps; percent of total run; percent of generation horizon; source correction'
+    selected: 'CONFLICT::table_percent_cells|note_molecular_steps'
+    status: CONFLICT_PRESERVED
+    basis: Do not strip percent signs or invent normalization without source evidence.
+    owner: S17
+    claims: 'E01-C043:E01-C045;E01-C049;E01-C057'
+    discrepancies: D04
+
+  - id: E01-A101
+    category: intervention_outcomes
+    parameter: intervention.time_to_first.censoring_and_equivalence
+    materiality: high
+    evidence: 'Paper does not state handling of runs with no replicator or the margin behind comparable onset.'
+    issue: Dropping censored runs biases onset earlier; nonsignificance is not equivalence.
+    candidates: 'right-censored survival analysis; fixed-horizon sentinel; exclude only with audit; preregistered equivalence margin'
+    selected: 'UNRESOLVED::E01-A101'
+    status: UNRESOLVED_REQUIRED
+    basis: Eligibility and equivalence margin must precede S17 results.
+    owner: S17
+    claims: 'E01-C043:E01-C045;E01-C049;E01-C057'
+    discrepancies: D04
+
+  - id: E01-A102
+    category: intervention_outcomes
+    parameter: intervention.table1.center_and_dispersion
+    materiality: critical
+    evidence: 'Table 1 reports value +/- quantity but labels neither center nor dispersion.'
+    issue: Mean/median and SD/SE/CI cannot be matched using the same criterion.
+    candidates: 'mean+/-SD; mean+/-SE; mean+/-95% CI half-width; median+/-SD; source-recovered convention'
+    selected: 'UNRESOLVED::E01-A102'
+    status: UNRESOLVED_REQUIRED
+    basis: S01 explicitly forbids assuming SD, SE, or CI.
+    owner: S17
+    claims: 'E01-C034:E01-C049;E01-C054:E01-C059'
+    discrepancies: D10
+
+  - id: E01-A103
+    category: intervention_outcomes
+    parameter: intervention.pairwise_inference
+    materiality: critical
+    evidence: 'Paper reports Mann-Whitney despite same assemblies; sidedness, pairing, multiplicity, and unit are unstated.'
+    issue: Independent-rank tests ignore pairing and repeated treatment structure.
+    candidates: 'paper-like Mann-Whitney; paired permutation/Wilcoxon; paired bootstrap CI; multiple-comparison correction'
+    selected: 'BRANCH_SET::paper_mann_whitney|paired_inference|multiplicity_corrected'
+    status: FROZEN_BRANCH_SET
+    basis: Paper-like p-values and stronger paired causal evidence require separate outputs.
+    owner: S17
+    claims: 'E01-C046:E01-C059'
+    discrepancies: D10
+
+  - id: E01-A104
+    category: intervention_outcomes
+    parameter: intervention.generation_trend.coefficient_identity
+    materiality: critical
+    evidence: 'Figure 6C calls lines regressions but displays rho-like labels 0.041, 0.008, and -0.03.'
+    issue: Regression slope and correlation coefficient have different units and interpretations.
+    candidates: 'OLS slope in percentage points/generation; Pearson rho; Spearman rho; source-recovered statistic'
+    selected: 'CONFLICT::regression_slope|correlation_coefficient'
+    status: CONFLICT_PRESERVED
+    basis: Preserve numeric labels while deferring statistic identity.
+    owner: S17
+    claims: 'E01-C050:E01-C052'
+    discrepancies: D09
+
+  - id: E01-A105
+    category: intervention_outcomes
+    parameter: intervention.generation_trend.aggregation_model
+    materiality: high
+    evidence: 'Figure 6C shows treatment regression lines and 95% CI but omits run weighting, repeated-measures model, link function, and CI construction.'
+    issue: Treating correlated generations or steps as independent understates uncertainty.
+    candidates: 'OLS on per-generation run mean; weighted regression; mixed model/GEE; paired bootstrap over runs'
+    selected: 'UNRESOLVED::E01-A105'
+    status: UNRESOLVED_REQUIRED
+    basis: Paper-like and dependence-aware trend models must be declared before S17 analysis.
+    owner: S17
+    claims: 'E01-C050:E01-C053'
+    discrepancies: D09

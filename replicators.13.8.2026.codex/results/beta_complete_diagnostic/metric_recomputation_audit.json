@@ -1,0 +1,18 @@
+{
+  "all_within_1e-14": true,
+  "errors": {
+    "interaction/02/A": 0.0,
+    "interaction/02/B": 0.0,
+    "interaction/03/A": 0.0,
+    "interaction/03/B": 0.0,
+    "network/02/A": 0.0,
+    "network/02/B": 0.0,
+    "network/03/A": 0.0,
+    "network/03/B": 0.0,
+    "state/02/A": 0.0,
+    "state/02/B": 0.0,
+    "state/03/A": 0.0,
+    "state/03/B": 0.0
+  },
+  "maximum_absolute_error": 0.0
+}

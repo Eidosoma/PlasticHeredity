@@ -1,0 +1,145 @@
+{
+  "phase_a": {
+    "02": {
+      "n_states": 200,
+      "arm_means": {
+        "up": 0.394921875,
+        "noop": 0.333828125,
+        "down": 0.238984375,
+        "random": 0.33375
+      },
+      "paired_up_down": {
+        "mean": 0.1559375,
+        "ci": [
+          0.12546875,
+          0.1890078125
+        ]
+      },
+      "paired_up_noop": {
+        "mean": 0.06109375,
+        "ci": [
+          0.047904296875,
+          0.07458203125000001
+        ]
+      },
+      "paired_noop_down": {
+        "mean": 0.09484375,
+        "ci": [
+          0.068841796875,
+          0.12154882812500001
+        ]
+      },
+      "paired_random_noop": {
+        "mean": -7.8125e-05,
+        "ci": [
+          -0.0096875,
+          0.010064453125000004
+        ]
+      },
+      "transition_subset_up_down": 0.19130345394736842,
+      "predicted_shift_up_down": 0.23012372883055526,
+      "noop_rank_check": 0.8701090861234115,
+      "components": {
+        "break_up_down": 0.1171875,
+        "ep3gb_up_down": 0.16162705651017287
+      },
+      "gates": {
+        "G1": true,
+        "G2": true,
+        "G3": true
+      },
+      "pass": true
+    },
+    "03": {
+      "n_states": 200,
+      "arm_means": {
+        "up": 0.43953125,
+        "noop": 0.383359375,
+        "down": 0.281328125,
+        "random": 0.39
+      },
+      "paired_up_down": {
+        "mean": 0.158203125,
+        "ci": [
+          0.129921875,
+          0.18625
+        ]
+      },
+      "paired_up_noop": {
+        "mean": 0.056171875,
+        "ci": [
+          0.041810546875,
+          0.07209570312500001
+        ]
+      },
+      "paired_noop_down": {
+        "mean": 0.10203125,
+        "ci": [
+          0.075638671875,
+          0.13033593750000003
+        ]
+      },
+      "paired_random_noop": {
+        "mean": 0.006640625,
+        "ci": [
+          -0.00609375,
+          0.019283203125000006
+        ]
+      },
+      "transition_subset_up_down": 0.19020061728395063,
+      "predicted_shift_up_down": 0.22921711492195102,
+      "noop_rank_check": 0.9035759413494547,
+      "components": {
+        "break_up_down": 0.121171875,
+        "ep3gb_up_down": 0.14760054890075838
+      },
+      "gates": {
+        "G1": true,
+        "G2": true,
+        "G3": true
+      },
+      "pass": true
+    },
+    "phase_a_pass": true
+  },
+  "tag": "intervention-2026-08-13",
+  "phase_b": {
+    "02": {
+      "n_states": 191,
+      "mean_within_state_spearman": 0.4754092925751833,
+      "spearman_ci": [
+        0.4018933447869053,
+        0.5447130739221545
+      ],
+      "pooled_slope": 0.6993491701719217,
+      "slope_ci": [
+        0.6203924932314406,
+        0.7678450338694146
+      ],
+      "gates": {
+        "B1": true,
+        "B2": true
+      },
+      "pass": true
+    },
+    "03": {
+      "n_states": 191,
+      "mean_within_state_spearman": 0.47119968369175197,
+      "spearman_ci": [
+        0.4188656530420104,
+        0.5249346571793837
+      ],
+      "pooled_slope": 0.7332884502502931,
+      "slope_ci": [
+        0.6611445285451817,
+        0.7954575574138837
+      ],
+      "gates": {
+        "B1": true,
+        "B2": true
+      },
+      "pass": true
+    },
+    "phase_b_pass": true
+  }
+}

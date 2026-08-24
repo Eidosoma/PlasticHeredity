@@ -1,0 +1,138 @@
+{
+  "format": "codex-ch5-phir-rescue-registration-v1",
+  "new_scientific_matrices_at_registration": 0,
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "predecessor_manifest_sha256": "37635968d035e3c4dc7b5389fa29d9fc1ae5dc515be45de2eeb535b4e4c4e069",
+  "predecessor_registration_id": "2988738462b863cfd6e9695a24c1b759c5f6b73d632df5f0db025731b3340e2c",
+  "predecessor_selected_edits_sha256": "e6c1d74c48f4d8248b20626be0a5b1819fa2c45e88e2358af63f9af53fdcec7c",
+  "procedural_amendment": {
+    "document_sha256": "eb47d3e7aa2e77fde12ea05b104d5915e4cd45251ffc077693f9661b57a9cf1e",
+    "number": 1,
+    "supersedes_registration_id": "d4e26c19d5a39b80c64a048e195ede50d21281092e863cd7e4dddfaa704762b8"
+  },
+  "protocol": {
+    "candidate_menu": [
+      "NUMIT_MACRO",
+      "PARTITION_NULL_FULL",
+      "FULL_BLOCK_RAW",
+      "COPULA_PUBLIC_RAW"
+    ],
+    "claim_boundary": [
+      "R0 is development remeasurement, not confirmation",
+      "legacy raw nine-atom negative result is unchanged",
+      "no consciousness, agency, biological life, or metaphysical claim",
+      "no cross-clean-room rescue before an independent mirrored result"
+    ],
+    "execution": {
+      "complete_exact_replay": true,
+      "cpu_budget_seconds": 108000,
+      "detached": true,
+      "maximum_workers": 12,
+      "minimum_free_disk_bytes": 1500000000
+    },
+    "external_fable_code_data_models_or_seeds_imported": false,
+    "format": "codex-ch5-phir-rescue-program-v1",
+    "immutable_predecessor": {
+      "manifest_sha256": "37635968d035e3c4dc7b5389fa29d9fc1ae5dc515be45de2eeb535b4e4c4e069",
+      "registration_id": "2988738462b863cfd6e9695a24c1b759c5f6b73d632df5f0db025731b3340e2c",
+      "result": "results/phir_protocol_adjudication24"
+    },
+    "inference": {
+      "bootstrap_draws": 4096,
+      "candidates_pooled": false,
+      "replicates_pooled": false,
+      "sign_randomizations": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "no_48_matrix_run": true,
+    "nulls": {
+      "numit_burn": 512,
+      "numit_neighbors": 256,
+      "numit_systems": 4096,
+      "partition_draws": 128,
+      "transition_bucket": "nearest positive multiple of 16, half upward"
+    },
+    "procedural_amendment": {
+      "deterministic_numit_libraries_may_be_hash_verified_and_reused": true,
+      "document": "CODEX_CH5_PHIR_RESCUE_PROCEDURAL_AMENDMENT_001.md",
+      "document_sha256": "eb47d3e7aa2e77fde12ea05b104d5915e4cd45251ffc077693f9661b57a9cf1e",
+      "failed_lineage_checkpoints_reused": false,
+      "number": 1,
+      "scientific_contract_changed": false,
+      "supersedes_registration_id": "d4e26c19d5a39b80c64a048e195ede50d21281092e863cd7e4dddfaa704762b8"
+    },
+    "program": "Chapter 5 Phi-r strongest-fair-test R0",
+    "protocol_id": "362ab9d7f7da84fb87ebbd69599226e7e609514d4f57dcf456bf9c73b2b5acc4",
+    "r1_locked_pending_human_authorization": true,
+    "representations": [
+      "fable_style",
+      "phase_normalized",
+      "generational"
+    ],
+    "selection_order_is_frozen": true,
+    "spec": {
+      "bootstrap_repetitions": 4096,
+      "cpu_budget_seconds": 108000,
+      "final_start": 31,
+      "label": "r0",
+      "matrices": 24,
+      "numit_burn": 512,
+      "numit_neighbors": 256,
+      "numit_systems": 4096,
+      "partition_null_draws": 128,
+      "phase_points": 16,
+      "randomization_repetitions": 4096,
+      "replicates": 2
+    },
+    "substrate": {
+      "arms": [
+        "FRESH__NOOP",
+        "FRESH__EXHAUSTIVE__STABILIZE",
+        "FRESH__EXHAUSTIVE__DESTABILIZE"
+      ],
+      "candidates": [
+        "02",
+        "03"
+      ],
+      "launch": "FRESH",
+      "matrices": 24,
+      "new_scientific_matrices": 0,
+      "replicates": 2
+    }
+  },
+  "protocol_id": "362ab9d7f7da84fb87ebbd69599226e7e609514d4f57dcf456bf9c73b2b5acc4",
+  "registration_id": "ca6281f9539a0a45d5e0fe297f4479b793c312cb6542f767c3cd9b95d45155e1",
+  "seed_registry": {
+    "bootstrap": "3a47d42e203fdfba79085a9ac8ba7a9bb01da743d41fdc3723470620a5c37c36",
+    "numit": "2683b13c8160b9343fccedf099e23d2ef4bcb377671ed913e54a2d6bcc41361c",
+    "partition_null": "3099b29f5bae2e7d799266843d6cb40ef979834333b8969ea70399cceb20852b",
+    "randomization": "60f88e397e6bc5d70a1eb831d3ddccfa140ec66aa14b168fe1af73ecd58d8615",
+    "replay": "04b40784c79f5b95588be463b0ff0065433a2cb07b84206ad1919808dcb84d8d",
+    "smoke": "e7e9092852146c5ff97c83809a482cb6a19451e08d1db6248694281cc28711c8",
+    "validation": "f962eaef404ef62c7877c44c1bccd46e67d6c3df163a601ad9cf6c7548acd0f6"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_RESCUE_PREREGISTRATION.md": "707cb1ba966e1139db1e2d896c52a83ebbe5375c46e247e5b701d6fb8b2c1acf",
+    "CODEX_CH5_PHIR_RESCUE_PROCEDURAL_AMENDMENT_001.md": "eb47d3e7aa2e77fde12ea05b104d5915e4cd45251ffc077693f9661b57a9cf1e",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/phir_ch5.py": "dac7c122573bb1548188c19ebfb051d8f6e6c4b750f45c0707eae03ac9ca1425",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_protocol_adjudication.py": "5ab2cb7d7c1f0c94cf21ef0bdf5aa4e198f1d83838868e8a9d6782abe716e4e1",
+    "plastic_heredity/phir_rescue.py": "0441a5100f3b18bba26d045458bf5cf2580ad0b17c85100b529248bde454e5e8",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_rescue.py": "e4c636b10cd38855b700de4471874bbec46a50602e241f10ccf3e380b1f17f2d"
+  },
+  "source_tree_sha256": "189f84fac31332208360d7606f5a72f096f80d554765e382ca891b08ed661627"
+}

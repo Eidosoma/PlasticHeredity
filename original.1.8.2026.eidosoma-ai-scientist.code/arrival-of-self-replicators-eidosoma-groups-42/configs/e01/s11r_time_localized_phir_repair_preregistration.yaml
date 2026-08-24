@@ -1,0 +1,402 @@
+schemaVersion: "1.0.0"
+researchStepId: S11R
+stepOrdinal: AFTER_S11_BEFORE_S12
+title: Repair and independently confirm fixed-window Phi-r validation
+status: FROZEN_BEFORE_ANY_S11R_DEVELOPMENT_OR_CONFIRMATION_OUTCOME
+frozenAtUtc: "2026-08-01T00:00:00Z"
+evidenceClass: VALIDATION_ONLY_REPAIR_NOT_AUTHOR_METHOD_RECOVERY
+
+frozenQuestion: >-
+  Can a separately versioned Wishart-corrected Gaussian PhiID estimator,
+  condition-matched complete-row-shuffle null, and permutation-equivariant
+  correlation-component partition method pass untouched confirmation at every
+  planned fixed-window effective sample size without changing any S11 result or
+  gate and without changing the S10 strict branch?
+
+scopeBoundary:
+  executeOnly: S11R
+  nextStepForbidden: S12
+  originalS11Immutable: true
+  noGardBaselineInterventionOrScientificEstimate: true
+  validationFixturesOnly: true
+  noPaperPrimaryDesignation: true
+  noSilentDefaults: true
+  noAuthorOrMatlabIdentityClaim: true
+  fixedWindowEligibilityOnlyAfterAllConfirmationGates: true
+  failurePolicy: >-
+    Any failed or unevaluable confirmation family makes every S11R fixed-window
+    branch ineligible. Retain every row and reason, emit no numeric scientific
+    estimate, stop the repair path, and hand control back before S12.
+
+immutableBoundaries:
+  s10Strict:
+    specificationId: E01-S10-SAMPLE-GATE-STRICT-v1.0.0
+    minimumEffectiveSamples: 512
+    action: DO_NOT_RELAX_RENAME_BACKPORT_OR_REPLACE
+  s11:
+    status: RETURN_FOR_REVIEW_VALIDATION_BLOCKED
+    gateFamiliesPassed: 11
+    gateFamiliesTotal: 16
+    knownTruthPassed: 46
+    knownTruthTotal: 64
+    structuredShufflePassed: 28
+    structuredShuffleTotal: 64
+    invariancePassed: 356
+    invarianceTotal: 576
+    partitionSummariesPassed: 0
+    partitionSummariesTotal: 48
+    eligibleFixedBranches: 0
+    totalFixedBranches: 576
+    eligibleFixedPairs: 0
+    fixedNumericEstimateRows: 0
+    fixedSuppressedRows: 33984
+    validationSummarySha256: d60bc525c59948b0274f4cb121c6e91d723184c8293c089fc44c122061720674
+    artifactManifestSha256: 21e58c969bc511cb620408518f96b5cab8acae02ec269fa376716c01123742ea
+    artifactAggregateSha256: 5e0d91d800999ecb47cd3107c2b61cf3c6c76f56b6730f27aa0a059244daa773
+    immutableArtifactCountExcludingManifest: 34
+    verificationRule: >-
+      Verify the frozen artifact-manifest hash, then verify every path, size, and
+      SHA-256 entry in that manifest before development, before confirmation,
+      and at final handoff. No S11 path may be written by S11R.
+  registry:
+    path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+    sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+    executable: false
+    noSilentDefaults: true
+  exclusions:
+    - branch: OmegaID discrete CPU/GPU
+      reason: S10 relabel-invariance failure
+    - branch: OmegaID more-than-2x2 doublet lattice
+      reason: not the required 16-atom PhiID lattice
+
+fixedWindowGrid:
+  windows: [32, 64, 128, 256]
+  lags: [1, 2, 4, 8]
+  effectiveSampleFormula: windowLength - lag
+  pairs:
+    - {pairId: E01-S11R-W032-T01, windowLength: 32, lag: 1, effectiveSampleCount: 31}
+    - {pairId: E01-S11R-W032-T02, windowLength: 32, lag: 2, effectiveSampleCount: 30}
+    - {pairId: E01-S11R-W032-T04, windowLength: 32, lag: 4, effectiveSampleCount: 28}
+    - {pairId: E01-S11R-W032-T08, windowLength: 32, lag: 8, effectiveSampleCount: 24}
+    - {pairId: E01-S11R-W064-T01, windowLength: 64, lag: 1, effectiveSampleCount: 63}
+    - {pairId: E01-S11R-W064-T02, windowLength: 64, lag: 2, effectiveSampleCount: 62}
+    - {pairId: E01-S11R-W064-T04, windowLength: 64, lag: 4, effectiveSampleCount: 60}
+    - {pairId: E01-S11R-W064-T08, windowLength: 64, lag: 8, effectiveSampleCount: 56}
+    - {pairId: E01-S11R-W128-T01, windowLength: 128, lag: 1, effectiveSampleCount: 127}
+    - {pairId: E01-S11R-W128-T02, windowLength: 128, lag: 2, effectiveSampleCount: 126}
+    - {pairId: E01-S11R-W128-T04, windowLength: 128, lag: 4, effectiveSampleCount: 124}
+    - {pairId: E01-S11R-W128-T08, windowLength: 128, lag: 8, effectiveSampleCount: 120}
+    - {pairId: E01-S11R-W256-T01, windowLength: 256, lag: 1, effectiveSampleCount: 255}
+    - {pairId: E01-S11R-W256-T02, windowLength: 256, lag: 2, effectiveSampleCount: 254}
+    - {pairId: E01-S11R-W256-T04, windowLength: 256, lag: 4, effectiveSampleCount: 252}
+    - {pairId: E01-S11R-W256-T08, windowLength: 256, lag: 8, effectiveSampleCount: 248}
+
+phaseFirewall:
+  specificationId: E01-S11R-DEVELOPMENT-CONFIRMATION-FIREWALL-v1.0.0
+  derivationContract: E01-S06-SEED-DERIVATION-v1.0.0
+  streamPurpose: estimator
+  developmentRootSeedHex: "d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1"
+  confirmationRootSeedHex: "c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1"
+  namespaceIncludes: [researchStepId, phase, domain, pairId, dimension, replicateIndex]
+  collisionPolicy: ZERO_STREAM_ID_OR_SEED_MATERIAL_OVERLAP
+  developmentUse: implementation diagnostics only; no method, gate, threshold, or branch selection
+  confirmationUse: untouched until a method-lock record and implementation commit are frozen
+  confirmationOnDevelopmentFailure: still execute the frozen confirmation unless implementation cannot run soundly
+  postDevelopmentMethodChanges: FORBIDDEN_WITHIN_BOUNDED_S11R
+
+smallWindowEstimator:
+  specificationId: E01-S11R-PHIID-GAUSSIAN-WISHART-LOCAL-v1.0.0
+  relationshipToS11: DISTINCT_ESTIMATOR; DOES_NOT_REPLACE_OR_REINTERPRET_S11
+  implementation:
+    inputAfterPartitionMapping: two finite scalar time series
+    laggedVectorOrder: [x_t, y_t, x_t_plus_tau, y_t_plus_tau]
+    standardization: full-lagged-sample mean and sample standard deviation per variable
+    covariance: unbiased sample covariance with divisor n_eff-1
+    regularization: none
+    localEntropy: in-sample Gaussian negative log density for every required covariance submatrix
+    finiteSampleCorrection: >-
+      For subset dimension p and nu=n_eff-1, add
+      0.5*(p/n_eff - (sum_i=1^p digamma((nu+1-i)/2) + p*log(2) - p*log(nu)))
+      to every local entropy row. This exactly removes the Gaussian Wishart mean
+      log-determinant and in-sample quadratic-form bias under the declared model.
+    nativeUnits: nats
+    precision: IEEE-754 binary64 CPU
+    rowsDeleted: 0
+    noFallback: true
+  gate:
+    minimumEffectiveSamples: 24
+    finiteInputRequired: true
+    minimumSampleSd: 1.0e-12
+    covariancePositiveDefinite: true
+    minimumCovarianceEigenvalue: 1.0e-10
+    maximumCovarianceConditionNumber: 1.0e8
+    maximumLatticeClosureAbsoluteError: 5.0e-10
+    maximumEquationClosureAbsoluteError: 5.0e-10
+
+conditionMatchedNull:
+  specificationId: E01-S11R-NULL-CONDITION-MATCHED-COMPLETE-ROW-SHUFFLE-v1.0.0
+  construction: >-
+    Generate an independent replicate from the same declared synthetic system at
+    the exact window length, apply one uniformly random permutation to complete
+    contemporaneous source-target rows before lagging, and evaluate with the exact
+    pair and estimator. This preserves the system-specific instantaneous joint
+    condition while destroying ordered lag structure.
+  keys: [phase, pairId, systemId, redundancyId]
+  centering: subtract the calibration-bank mean for every atom and intermediate MI
+  envelope: 99th percentile of absolute centered paper-equation aggregate using method=higher
+  calibrationAndEvaluationStreamsDisjoint: true
+  preserveRawAndCalibratedValues: true
+  noIndependentWhiteSubstitutionForStructuredSystems: true
+
+redundancyBranches:
+  - redundancyId: E01-S11R-REDUNDANCY-MMI-v1.0.0
+    name: MMI
+    relationshipToS11: same explicit lattice semantics under a distinct estimator/calibration
+    evidenceClass: VALIDATION_BRANCH_NOT_AUTHOR_DEFAULT
+  - redundancyId: E01-S11R-REDUNDANCY-CCS-EXPERIMENTAL-v1.0.0
+    name: CCS
+    relationshipToS11: same experimental sign-filtered semantics under a distinct estimator/calibration
+    evidenceClass: EXPERIMENTAL_VALIDATION_BRANCH_NOT_AUTHOR_DEFAULT
+    caveat: pinned phyid source says To be implemented
+
+atomAndAggregateContract:
+  nativeAtomIds: [rtr, rtx, rty, rts, xtr, xtx, xty, xts, ytr, ytx, yty, yts, str, stx, sty, sts]
+  latticeSolveId: E01-S10-PHYID-16-ATOM-LINEAR-SOLVE-v1.0.0
+  equationAggregateId: E01-S10-PAPER-EQUATION-DERIVED-AGGREGATE-v1.0.0
+  equationAggregateFormula: str+stx+sty+sts-rtr-rtx-rty-rts
+  equationDirectFormula: I_xytab-I_xtab-I_ytab
+  sourceNamingBoundary: equation-derived aggregate is not a source-named atom
+  authorMapping: UNRESOLVED::E01-A043
+
+partitionBranch:
+  affinityId: E01-S11R-PARTITION-AFFINITY-LAG-ALIGNED-ABS-CORR-v1.0.0
+  searchId: E01-S11R-PARTITION-THRESHOLD-COMPONENTS-v1.0.0
+  relationshipToS11: DISTINCT_PERMUTATION_EQUIVARIANT_BRANCH; S11_SPECTRAL_FAILURES_REMAIN
+  implementation:
+    componentStandardization: pair-local sample mean and sample standard deviation
+    affinity: mean of absolute Pearson correlation among past rows and among future rows for the exact lag alignment
+    edgeThreshold: 0.90
+    thresholdTieTolerance: 1.0e-12
+    graphRule: undirected edge iff affinity is strictly above threshold; any edge within tolerance of threshold is ineligible
+    basePartition: exactly two connected components; otherwise ineligible
+    bootstrap:
+      method: Bayesian exponential weights on the exact lagged-pair rows
+      replicates: 8
+      rule: every bootstrap must also yield exactly two components
+    permutationEquivariance: >-
+      Affinity, threshold graph, connected-component membership, and ARI comparison
+      commute with arbitrary feature permutations. Part labels are unordered and no
+      feature index is used to resolve a graph or objective tie.
+    noFallback: true
+  eligibilityGate:
+    minimumPartFraction: 0.10
+    minimumMeanBootstrapAri: 0.75
+    minimumWithinAffinity: 0.90
+    minimumWithinMinusMaximumBetweenAffinity: 0.10
+    allValuesFinite: true
+  exhaustiveDimension8:
+    oracleSearch: every nonempty unordered bipartition with component zero in part A
+    comparisonGrid:
+      mappings: [zscore_group_mean, zscore_pc1]
+      objectives: [synchronous_mi, bidirectional_lagged_mi, abs_paper_equation]
+      normalizations: [none, min_part_entropy, geometric_part_size]
+    agreementMetric: selected unordered partition equality / adjusted Rand index 1
+    tiePolicy: exhaustive objective ties within 1.0e-12 are ineligible; no index-based winner
+  representativeDimensions:
+    - {dimension: 8, plantedPartSizes: [4, 4]}
+    - {dimension: 99, plantedPartSizes: [49, 50]}
+    - {dimension: 100, plantedPartSizes: [50, 50]}
+  mappings:
+    - {mappingId: E01-S11-PARTMAP-ZSCORE-GROUP-MEAN-v1.0.0, name: zscore_group_mean}
+    - {mappingId: E01-S11-PARTMAP-ZSCORE-PC1-v1.0.0, name: zscore_pc1}
+  objectives:
+    - {objectiveId: E01-S10-MIB-OBJ-SYNCHRONOUS-GAUSSIAN-MI-v1.0.0, name: synchronous_mi}
+    - {objectiveId: E01-S10-MIB-OBJ-BIDIRECTIONAL-LAGGED-GAUSSIAN-MI-v1.0.0, name: bidirectional_lagged_mi}
+    - {objectiveId: E01-S10-MIB-OBJ-ABS-PAPER-EQUATION-AGGREGATE-v1.0.0, name: abs_paper_equation}
+  normalizations:
+    - {normalizationId: E01-S10-MIB-NORM-NONE-v1.0.0, name: none}
+    - {normalizationId: E01-S10-MIB-NORM-MIN-PART-ENTROPY-v1.0.0, name: min_part_entropy}
+    - {normalizationId: E01-S10-MIB-NORM-GEOMETRIC-PART-SIZE-v1.0.0, name: geometric_part_size}
+  uncertaintyPolicy: >-
+    Every mapping/objective/normalization identity remains a separate sensitivity
+    row. The repair partition is validation-only and is not designated as the
+    source-recovered MIB or paper-primary search.
+
+syntheticSystems:
+  scalar:
+    - systemId: E01-S11-SYS-INDEPENDENT-WHITE-GAUSSIAN-v1.0.0
+      truth: every lagged MI, atom, and equation aggregate is zero
+    - systemId: E01-S11-SYS-NOISY-REDUNDANT-AR-v1.0.0
+      parameters: {latentAr: 0.80, latentInnovationSd: 1.0, observationSd: 0.35}
+      truth: analytic lag-specific Gaussian MMI and frozen quasi-Monte-Carlo CCS oracle
+    - systemId: E01-S11-SYS-DIRECTIONAL-VAR-v1.0.0
+      parameters: {transition: [[0.10, 0.00], [0.75, 0.20]], innovationSd: [1.0, 0.5]}
+      truth: analytic lag-specific Gaussian MMI and frozen quasi-Monte-Carlo CCS oracle
+  highDimensional:
+    - systemId: E01-S11-SYS-PLANTED-TWO-BLOCK-AR-v1.0.0
+      parameters: {latentAr: 0.80, loading: 1.0, componentNoiseSd: 0.10, burnIn: 512}
+    - systemId: E01-S11-SYS-HIGHDIM-INDEPENDENT-NULL-v1.0.0
+      parameters: {componentAr: 0.20, burnIn: 512}
+
+sampleSizes:
+  development:
+    calibrationReplicatesPerPairPerStructuredSystem: 128
+    knownTruthReplicatesPerPairPerSystem: 64
+    structuredShuffleReplicatesPerPairPerSystem: 64
+    d8ExhaustiveReplicatesPerPair: 16
+    highDimensionalSignalReplicatesPerPairPerDimension: 8
+    highDimensionalNullReplicatesPerPairPerDimension: 8
+    featureRelabelReplicatesPerPairPerDimension: 4
+  confirmation:
+    calibrationReplicatesPerPairPerStructuredSystem: 512
+    knownTruthReplicatesPerPairPerSystem: 256
+    structuredShuffleReplicatesPerPairPerSystem: 128
+    d8ExhaustiveReplicatesPerPair: 64
+    highDimensionalSignalReplicatesPerPairPerDimension: 16
+    highDimensionalNullReplicatesPerPairPerDimension: 16
+    featureRelabelReplicatesPerPairPerDimension: 8
+  rule: Development sample sizes cannot substitute for or reduce confirmation.
+
+confirmationGates:
+  multipleTestingPolicy: all gates are simultaneous engineering acceptance gates; no branch substitution
+  nullCalibration:
+    maximumAbsoluteHeldOutMeanPerAtom: 0.040
+    maximumAbsoluteHeldOutMeanEquationAggregate: 0.040
+    maximumHeldOutFalsePositiveRateAgainstCalibration99PercentEnvelope: 0.050
+  gaussianMmiKnownTruth:
+    maximumAbsoluteEnsembleTotalMiError: 0.20
+    maximumAbsoluteEnsembleEquationAggregateError: 0.20
+    maximumAtomRootMeanSquareError: 0.20
+    requiredDirectionalSigns: true
+  gaussianCcsKnownTruth:
+    maximumPopulationOracleCrossScrambleDifference: 0.002
+    maximumAbsoluteEnsembleTotalMiError: 0.20
+    maximumAbsoluteEnsembleEquationAggregateError: 0.25
+    maximumAtomRootMeanSquareError: 0.25
+    requiredDirectionalSigns: true
+    experimentalLabelRequired: true
+  structuredShuffle:
+    minimumFractionInsideConditionMatched99PercentEnvelope: 0.95
+  plantedPartition:
+    minimumEligibleReplicatesPer16: 15
+    minimumMedianAdjustedRandIndex: 0.95
+    minimumExactPlantedRecoveryFraction: 0.875
+  nullPartition:
+    maximumEligibleReplicatesPer16: 1
+    numericPhiEstimateCount: 0
+  d8Exhaustive:
+    minimumExactSearchAgreementFraction: 0.90
+  invariance:
+    featureRelabelMinimumPartitionAri: 1.0
+    positiveFeatureAffineMinimumPartitionAri: 1.0
+    scalarAffineMaximumAbsoluteDifference: 1.0e-9
+    scalarSourceTargetRelabelMaximumMappedAtomDifference: 1.0e-9
+  reproducibility:
+    exactCpuRepeat: true
+    exactSeedManifestRepeat: true
+  closure:
+    maximumAbsoluteLatticeError: 5.0e-10
+    maximumAbsoluteEquationError: 5.0e-10
+
+globalEligibilityRule: >-
+  Every preregistered confirmation family must pass for both MMI and experimental
+  CCS wherever applicable, for all 16 exact pairs and both representative high
+  dimensions. Only then may the 576 separately identified combinations of pair,
+  redundancy, mapping, objective, and normalization receive
+  ELIGIBLE_VALIDATION_BRANCH. Any failure makes all 576 combinations ineligible
+  with numeric scientific estimates absent. Eligibility never designates a paper
+  primary or resolves an author-method sentinel.
+
+failureInjections:
+  - DEVELOPMENT_CONFIRMATION_SEED_COLLISION
+  - CONFIRMATION_ACCESSED_BEFORE_METHOD_LOCK
+  - NONFINITE_INPUT_NO_ROW_DELETION
+  - INVALID_LAG
+  - EFFECTIVE_SAMPLE_COUNT_BELOW_24
+  - SINGULAR_SAMPLE_COVARIANCE_NO_REGULARIZATION_FALLBACK
+  - CONDITION_MISMATCHED_INDEPENDENT_NULL_FOR_STRUCTURED_SYSTEM
+  - FEATURE_INDEX_TIE_BREAK_IN_PARTITION
+  - THRESHOLD_EDGE_TIE
+  - NULL_PARTITION_NUMERIC_ESTIMATE
+  - S11_ARTIFACT_HASH_MUTATION
+  - S10_STRICT_GATE_MUTATION
+  - OMEGA_DISCRETE_CALL
+  - OMEGA_DOUBLET_CALL
+  - S12_ARTIFACT_CREATION
+  - FAILED_CONFIRMATION_NUMERIC_ELIGIBILITY
+
+runtimePolicy:
+  cpuWorkers: 8
+  threadEnvironment:
+    OMP_NUM_THREADS: "1"
+    OPENBLAS_NUM_THREADS: "1"
+    MKL_NUM_THREADS: "1"
+    NUMEXPR_NUM_THREADS: "1"
+  cpuBackend: NumPy/SciPy float64
+  gpuUsed: false
+  temporaryOutputs: /cache/e01_s11r
+  finalOutputs: /artifacts/research_steps/S11R
+  noReducedConfirmationScopeOnLongRuntime: true
+
+requiredOutputs:
+  - preregistration.yaml
+  - preregistration_record.json
+  - development_summary.json
+  - method_lock.json
+  - validation_summary.json
+  - condition_matched_calibration.csv
+  - known_truth_confirmation.csv
+  - structured_shuffle_confirmation.csv
+  - d8_exhaustive_confirmation.csv
+  - highdim_partition_confirmation.csv
+  - invariance_confirmation.csv
+  - exact_pair_eligibility.csv
+  - seed_firewall.json
+  - seed_records.parquet
+  - s11_immutability.json
+  - strict_boundary_preservation.json
+  - failure_injection.json
+  - reproducibility_validation.json
+  - runtime_benchmarks.csv
+  - runtime_manifest.json
+  - specification_metadata.yaml
+  - confirmation_gate_matrix.png
+  - partition_confirmation.png
+  - artifact_manifest.json
+  - research_step_full_results.md
+
+frozenInputs:
+  - {path: /workspace/AGENTS.md, sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c}
+  - {path: /workspace/FULL_PLAN.md, sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee}
+  - {path: /workspace/RESEARCH_PLAN.md, sha256: 3244b1eb6cf74d4aa12a1615209a56f8cf75dedae66473e3f17c75f2a08b292a}
+  - {path: /workspace/input-attachments/MANIFEST.json, sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e}
+  - {path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md, sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c}
+  - {path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md, sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a}
+  - {path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf, sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4}
+  - {path: /artifacts/research_steps/S09/research_step_full_results.md, sha256: 6d78777fd4a4fcecbfc8e0844554b8aa3398c7347464958787d385bfd06aad1c}
+  - {path: /artifacts/E01_forensic_replication_bundle/preprocessing/compositional_transform_contract_v1.0.0.yaml, sha256: 7203d0d273f529b3953c45a2c6e1a64dbbd323aac00d72bb60b099ce93dd2679}
+  - {path: /artifacts/E01_forensic_replication_bundle/preprocessing/valid_transform_specification_registry_v1.0.0.yaml, sha256: a09608fe117c23d398a386326a06acc3742e2285aa77d59ff3e3a43590147e56}
+  - {path: /artifacts/research_steps/S10/research_step_full_results.md, sha256: 1a996d4e4b549b89761b9b21652553b8bf0e789b9e248a768b1e63d5704f3ff0}
+  - {path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_contract_v1.0.0.yaml, sha256: c31adef6d6fc7acf098244422a6a46c7c98b582bbd1d99d431216577c1f01a83}
+  - {path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_eligibility_registry_v1.0.0.yaml, sha256: ff96a7ee46274bf0c40343a85280647e349fbceaa74003de608fc9b23481a186}
+  - {path: /artifacts/research_steps/S11/research_step_full_results.md, sha256: f37bf5992ab3e5cdf95f66986d7d794f7244ca06f4476026b10e809fcb46ea60}
+  - {path: /artifacts/research_steps/S11/preregistration.yaml, sha256: 1c21ad91927929626edb6b2e14dfa745674decbaa89c3ac57f2cfdc678458f40}
+  - {path: /artifacts/research_steps/S11/validation_summary.json, sha256: d60bc525c59948b0274f4cb121c6e91d723184c8293c089fc44c122061720674}
+  - {path: /artifacts/research_steps/S11/exact_pair_eligibility.csv, sha256: dd01ba559186b7d031d0074ca796c031ca0b7c83fb3236841d32953c329a9c53}
+  - {path: /artifacts/research_steps/S11/artifact_manifest.json, sha256: 21e58c969bc511cb620408518f96b5cab8acae02ec269fa376716c01123742ea}
+  - {path: /artifacts/E01_forensic_replication_bundle/information_dynamics/time_localized_phir_contract_v1.0.0.yaml, sha256: a925524873e7da989c975099b3f74efe8d80ba3435244b443614cf191e0ee2ee}
+  - {path: /artifacts/E01_forensic_replication_bundle/information_dynamics/time_localized_phir_eligibility_registry_v1.0.0.yaml, sha256: 1ebcd012790777b69e050b071ce3c464402231360efe4989398070a2959b7c64}
+  - {path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml, sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5}
+  - {path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json, sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd}
+  - {path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml, sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1}
+  - {path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml, sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891}
+
+immutableS11RepositoryFiles:
+  - {path: configs/e01/s11_time_localized_phir_preregistration.yaml, sha256: 1c21ad91927929626edb6b2e14dfa745674decbaa89c3ac57f2cfdc678458f40}
+  - {path: src/e01_time_localized_phir/__init__.py, sha256: 51faf6773716feabd2e98c5b00adc57943471c545677814782b6f29c12a0336f}
+  - {path: src/e01_time_localized_phir/estimator.py, sha256: 274b897aa8fb42bac8ce051a0b5fdc94725aca6b719391bf936347b97b8ea546}
+  - {path: src/e01_time_localized_phir/partition.py, sha256: b19f75b3fca614a4d804fb03fe69d8d9e1057b54a72ef30fd89a9967d28e7e04}
+  - {path: src/e01_time_localized_phir/synthetic.py, sha256: 134c1fa0986072c9ffae52af8426b13874e64eda672c9b3267934425b832bc9f}
+  - {path: src/e01_time_localized_phir/temporal.py, sha256: 64e1fc6f622ef965cacc6a9e24436775310eeb4c6ce48f29def8946709a353f5}
+  - {path: scripts/e01/run_s11_time_localized_phir.py, sha256: 8bc82e6d603e6df2e5b3360f337f8a24071a79f0d093a39ce42bf29eb288e119}
+  - {path: tests/e01/test_time_localized_phir.py, sha256: a5695fef7eeb79e3dabdd3e560ee8c5cb33c56043440756d81f1f2455638f982}

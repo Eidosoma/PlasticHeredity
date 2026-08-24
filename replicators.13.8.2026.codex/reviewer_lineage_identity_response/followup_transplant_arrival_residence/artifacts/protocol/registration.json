@@ -1,0 +1,39 @@
+{
+  "bootstrap_repetitions": 10000,
+  "candidates_separate": true,
+  "classification": "reviewer_prompted_frozen_before_new_futures",
+  "format": "strict-b-transplant-arrival-residence-v1",
+  "primary_gates": {
+    "isomorphism": {
+      "confidence": 0.9,
+      "margin": 0.03
+    },
+    "lineage_identity": {
+      "difference_lower_gt": 0.1,
+      "difference_point_ge": 0.2,
+      "native_f16_lower_gt": 0.4
+    },
+    "rule_rehoming": {
+      "difference_lower_gt": 0.1,
+      "difference_point_ge": 0.2
+    },
+    "shared_destination": {
+      "confidence": 0.9,
+      "difference_equivalence_margin": 0.1,
+      "stranger_f16_lower_gt": 0.4
+    },
+    "transient": {
+      "native_and_stranger_f32_upper_lt": 0.25
+    }
+  },
+  "rare_gate": {
+    "cross_upper_lt": 0.2,
+    "origin_accuracy_lower_gt": 0.75,
+    "own_lower_gt": 0.5
+  },
+  "registration_id": "11e923976c45c5fd6b58ded2d2a428d66524becb21bfc3fd0beaed91018dd51a",
+  "thresholds": {
+    "departure_inclusive_le": 0.85,
+    "inheritance_strict_gt": 0.9
+  }
+}

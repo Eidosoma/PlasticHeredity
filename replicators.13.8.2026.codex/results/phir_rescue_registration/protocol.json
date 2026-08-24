@@ -1,0 +1,90 @@
+{
+  "candidate_menu": [
+    "NUMIT_MACRO",
+    "PARTITION_NULL_FULL",
+    "FULL_BLOCK_RAW",
+    "COPULA_PUBLIC_RAW"
+  ],
+  "claim_boundary": [
+    "R0 is development remeasurement, not confirmation",
+    "legacy raw nine-atom negative result is unchanged",
+    "no consciousness, agency, biological life, or metaphysical claim",
+    "no cross-clean-room rescue before an independent mirrored result"
+  ],
+  "execution": {
+    "complete_exact_replay": true,
+    "cpu_budget_seconds": 108000,
+    "detached": true,
+    "maximum_workers": 12,
+    "minimum_free_disk_bytes": 1500000000
+  },
+  "external_fable_code_data_models_or_seeds_imported": false,
+  "format": "codex-ch5-phir-rescue-program-v1",
+  "immutable_predecessor": {
+    "manifest_sha256": "37635968d035e3c4dc7b5389fa29d9fc1ae5dc515be45de2eeb535b4e4c4e069",
+    "registration_id": "2988738462b863cfd6e9695a24c1b759c5f6b73d632df5f0db025731b3340e2c",
+    "result": "results/phir_protocol_adjudication24"
+  },
+  "inference": {
+    "bootstrap_draws": 4096,
+    "candidates_pooled": false,
+    "replicates_pooled": false,
+    "sign_randomizations": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "no_48_matrix_run": true,
+  "nulls": {
+    "numit_burn": 512,
+    "numit_neighbors": 256,
+    "numit_systems": 4096,
+    "partition_draws": 128,
+    "transition_bucket": "nearest positive multiple of 16, half upward"
+  },
+  "procedural_amendment": {
+    "deterministic_numit_libraries_may_be_hash_verified_and_reused": true,
+    "document": "CODEX_CH5_PHIR_RESCUE_PROCEDURAL_AMENDMENT_001.md",
+    "document_sha256": "eb47d3e7aa2e77fde12ea05b104d5915e4cd45251ffc077693f9661b57a9cf1e",
+    "failed_lineage_checkpoints_reused": false,
+    "number": 1,
+    "scientific_contract_changed": false,
+    "supersedes_registration_id": "d4e26c19d5a39b80c64a048e195ede50d21281092e863cd7e4dddfaa704762b8"
+  },
+  "program": "Chapter 5 Phi-r strongest-fair-test R0",
+  "protocol_id": "362ab9d7f7da84fb87ebbd69599226e7e609514d4f57dcf456bf9c73b2b5acc4",
+  "r1_locked_pending_human_authorization": true,
+  "representations": [
+    "fable_style",
+    "phase_normalized",
+    "generational"
+  ],
+  "selection_order_is_frozen": true,
+  "spec": {
+    "bootstrap_repetitions": 4096,
+    "cpu_budget_seconds": 108000,
+    "final_start": 31,
+    "label": "r0",
+    "matrices": 24,
+    "numit_burn": 512,
+    "numit_neighbors": 256,
+    "numit_systems": 4096,
+    "partition_null_draws": 128,
+    "phase_points": 16,
+    "randomization_repetitions": 4096,
+    "replicates": 2
+  },
+  "substrate": {
+    "arms": [
+      "FRESH__NOOP",
+      "FRESH__EXHAUSTIVE__STABILIZE",
+      "FRESH__EXHAUSTIVE__DESTABILIZE"
+    ],
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "launch": "FRESH",
+    "matrices": 24,
+    "new_scientific_matrices": 0,
+    "replicates": 2
+  }
+}

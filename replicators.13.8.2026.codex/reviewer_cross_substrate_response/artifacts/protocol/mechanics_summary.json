@@ -1,0 +1,99 @@
+{
+  "format": "reviewer-cross-substrate-ca-v1",
+  "mechanics_checkpoint_digest": "72fb5d231aad9ecd69407b0437d40ecd34909b91ea285839e5fe96f7f6b6b7a5",
+  "mechanics_only": true,
+  "mechanics_trials_sha256": "255fc8faad90da3d1e7b96b61fdbdcd125682c8e755668f300bb307b2bf30850",
+  "models": {
+    "evoloop": {
+      "model_eligible_for_calibration": false,
+      "tested_cells": 16,
+      "viable_cells": 0,
+      "viable_parameter_keys": []
+    },
+    "protocell": {
+      "model_eligible_for_calibration": true,
+      "tested_cells": 25,
+      "viable_cells": 8,
+      "viable_parameter_keys": [
+        "py=1e-01,ay=1e-03",
+        "py=1e-01,ay=1e-04",
+        "py=1e-01,ay=1e-05",
+        "py=1e-01,ay=1e-06",
+        "py=1e-02,ay=1e-04",
+        "py=1e-02,ay=1e-05",
+        "py=1e-02,ay=1e-06",
+        "py=1e-03,ay=1e-06"
+      ]
+    }
+  },
+  "profile": "full",
+  "viable_parameters": {
+    "evoloop": [],
+    "protocell": [
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.999,
+        "p_y": 0.001,
+        "parameter_key": "py=1e-03,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.99,
+        "p_y": 0.01,
+        "parameter_key": "py=1e-02,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-06,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-06"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 1e-05,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-05"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.0001,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-04"
+      },
+      {
+        "a_x": 0.01,
+        "a_y": 0.001,
+        "kind": "protocell",
+        "p_x": 0.9,
+        "p_y": 0.1,
+        "parameter_key": "py=1e-01,ay=1e-03"
+      }
+    ]
+  }
+}

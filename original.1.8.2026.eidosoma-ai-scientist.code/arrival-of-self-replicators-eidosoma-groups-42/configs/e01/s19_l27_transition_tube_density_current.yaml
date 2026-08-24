@@ -1,0 +1,59 @@
+schema: eidosoma.e01.s19_l27.preregistration.v1
+research_step_id: S19-L27
+versioned_id: E01-S19-L27-TRANSITION-TUBE-DENSITY-CURRENT-v1.0.0
+title: Online Transition-Tube Density and Current Before Attractor Entry
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does the time-resolved level-and-current path through invariant organization
+  coordinates enter a development-defined transition tube before recurring-
+  attractor onset, beyond exact-H-only and ordinary-path tubes?
+input:
+  cohort: frozen L23 400-shared-matrix cohort
+  matrix_firewall: exact frozen L24 200-development/200-validation split
+  online_task: exact frozen L25 five-landmark next-32 task
+representation:
+  window: most recent 32 selected-clock states
+  primary: all eleven organization-channel levels and first differences
+  controls:
+    - five H-derived channel levels and differences
+    - six non-H ordinary channel levels and differences
+    - landmark prior
+model:
+  estimator: development-only same-landmark diagonal Gaussian prototype likelihood ratio
+  standardization: development-only same-landmark mean and standard deviation
+  candidate_weighting: equal total candidate and matrix weight
+  candidate_identity_used: false
+  threshold_or_hyperparameter_search: none
+validation:
+  candidate_separate: true
+  matrix_bootstraps: 4096
+  development_label_permutations: 512
+  validation_label_permutations: 512
+  temporal_reversal_control: true
+  suffix_invariance: true
+success:
+  auroc_minimum_each_candidate: 0.60
+  bootstrap_lower_above_chance: true
+  incremental_over_exact_h_and_ordinary: true
+  auprc_above_prevalence: true
+  brier_below_landmark_prior: true
+  familywise_permutation_p_maximum: 0.05
+  directionally_agreeing_landmarks_minimum: 4
+  requires_untouched_confirmation: true
+interpretation:
+  target_is_completed_run_retrospective: true
+  predictors_are_suffix_invariant: true
+  prospective_confirmation_claim_permitted: false
+prohibited:
+  - new_simulation
+  - target_or_task_change
+  - covariance_or_regularization_search
+  - validation_guided_change
+  - candidate_pooling_to_rescue_failure
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75

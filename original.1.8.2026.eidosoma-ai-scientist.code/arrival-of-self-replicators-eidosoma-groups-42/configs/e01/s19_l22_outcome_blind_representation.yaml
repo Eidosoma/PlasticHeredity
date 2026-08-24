@@ -1,0 +1,59 @@
+schema: eidosoma.e01.s19_l22.preregistration.v1
+research_step_id: S19-L22
+versioned_id: E01-S19-L22-OUTCOME-BLIND-PREFIX-REPRESENTATION-v1.0.0
+title: Outcome-Blind Permutation-Invariant Prefix Representation
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does one fixed outcome-blind random-convolution representation of the first
+  64 observations add candidate-consistent information before first entry into
+  the frozen recurring-attractor state beyond compact dynamics and exact H?
+inputs:
+  cohort: frozen S13Y / L18 100-shared-matrix discovery cohort
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+  landmark_count: 64
+  horizon_exclusive: 192
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+representation:
+  family: ROCKET_INSPIRED_FIXED_RANDOM_CONVOLUTION
+  molecule_label_permutation_invariant: true
+  construction_uses_outcomes: false
+  channel_count: 11
+  per_trajectory_channel_standardization: true
+  kernel_count: 64
+  kernel_lengths: [7, 9, 11]
+  dilations: [1, 2, 4, 8]
+  summaries_per_kernel: [proportion_positive, maximum]
+  bias_distribution: uniform_-1_1
+  weights: mean_centered_unit_l2_gaussian
+  kernel_bank_count: 1
+models:
+  downstream: exact_L18_L19_C1_L2_logistic
+  lead: COMPACT_PLUS_RANDOM_CONVOLUTION
+  diagnostic: RANDOM_CONVOLUTION_ONLY
+  controls: [DUMMY_TRAINING_PRIOR, TIME_ONLY, EXACT_H_STABILITY, PREFIX_RECURRENCE_GEOMETRY, COMPACT_BASELINE]
+uncertainty:
+  matrix_bootstraps: 4096
+  whole_matrix_maxstat_label_permutations: 512
+  leave_one_matrix_out: true
+negative_controls:
+  - temporal_permutation_with_first_observation_fixed
+  - representation_row_permutation_across_matrices
+  - suffix_perturbation_invariance
+promotion:
+  discovery_only: true
+  same_model_both_candidates: true
+  requires_untouched_confirmation: true
+prohibited:
+  - new_trajectory
+  - target_change
+  - threshold_search
+  - completed_run_input
+  - outcome_guided_kernel_selection
+  - candidate_pooling
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75

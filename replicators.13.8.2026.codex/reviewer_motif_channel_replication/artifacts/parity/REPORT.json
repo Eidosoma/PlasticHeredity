@@ -1,0 +1,26 @@
+{
+  "anchor_terminal2x2_max_abs_error": 0.0,
+  "calibration_reference_max_abs_errors": {
+    "16": {
+      "context_probability": 0.0,
+      "motif_probability": 0.0
+    },
+    "32": {
+      "context_probability": 0.0,
+      "motif_probability": 0.0
+    }
+  },
+  "evidential_status": "NON_EVIDENTIAL_IMPLEMENTATION_PARITY",
+  "legacy_stage1_verdict": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY",
+  "legacy_stage2_verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL",
+  "passed": true,
+  "reader_trajectory_parity": "not claimed: retained artifacts do not contain raw daughter states or a complete semantic-RNG specification",
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "state_hex_roundtrip_failures": 0,
+  "writer_carrier_mean_abs_errors": {
+    "contextual256-w16-s025-d08": 0.0,
+    "contextual256-w32-s025-d08": 0.0,
+    "motif_energy512-w16-s025-d08": 0.0,
+    "motif_energy512-w32-s025-d08": 0.0
+  }
+}

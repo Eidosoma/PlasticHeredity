@@ -1,0 +1,136 @@
+schema: eidosoma.e01.s12_strict_mrr_preregistration_amendment.v1
+researchStepId: S12
+stepNumber: 12
+experimentId: E01
+parentPreregistrationVersion: E01-S12-STRICT-MRR-v1.0.0
+amendmentId: E01-S12-STRICT-MRR-v1.0.0-AMENDMENT-01
+createdAtUtc: 2026-08-02T00:00:00Z
+status: FROZEN_CLARIFICATION_BEFORE_ANY_GARD_SCIENTIFIC_OUTCOME
+parentPreregistrationSha256: bb0f2c9863ebc866242c12b46117c0442ab8b2a0694eeebc5de7f5f8c2f8c99a
+parentFreezeRecordSha256: b8d350609d48333c15747038dbf3211ba654df9e6362d46e82b3c1252eaf3e62
+
+rationale: >-
+  The base freeze fully fixed the model, estimator, action search, and gate
+  families. This pre-outcome amendment makes three operational details explicit:
+  atom/source checkpointing for the redundancy-invariant scalar, actual-action
+  observation semantics, and the restricted intervention endpoint. It changes
+  no S10/S11/S11R evidence, threshold, branch identity, matrix count, sample
+  boundary, eligibility gate, or permitted scope.
+
+estimatorCheckpointClarification:
+  everyObservation:
+    scalar: equation_derived_I_xytab_minus_I_xtab_minus_I_ytab
+    implementation: binary64_running_complete_four_vector_sample_covariance_ddof_1
+    strictGate: E01-S10-SAMPLE-GATE-STRICT-v1.0.0
+    mmiClosure: analytic_MMI_mean_atoms_from_same_sample_covariance
+    ccsIdentity: separately_status_bearing_experimental_branch_same_redundancy_invariant_scalar
+    ccsAtomFallbackForbidden: true
+  pinnedPhyidFullAtomCheckpoints:
+    baselineMatrixIndices: [0, 5, 11]
+    pointsPerTrajectoryAndPreprocessing: [first_eligible, middle_eligible, final_eligible]
+    redundancies: [MMI, CCS]
+    directVsAtomAbsoluteTolerance: 1.0e-10
+    runningVsPinnedDirectAbsoluteTolerance: 1.0e-10
+  completedWholeTrajectory:
+    everyMatrix: true
+    everyPreprocessing: true
+    redundancies: [MMI, CCS]
+    retainLocalEquationAggregate: true
+    exactLabel: DESCRIPTIVE_NONPROSPECTIVE
+  interpretation: >-
+    No uncomputed CCS atom is imputed. The scalar exists for both named
+    redundancy branches because the printed equation is algebraically
+    redundancy-invariant; CCS source atoms are validation checkpoints and whole
+    descriptive outputs, not a hidden per-step fallback.
+
+actualActionObservationClarification:
+  decisionObservation: selected_daughter_state_immediately_after_fission
+  candidateScore: append_action_modified_state_as_one_hypothetical_transition_only
+  appliedActionState:
+    becomes_next_generation_engine_initial_state: true
+    separately_logged_in_action_table: true
+    inserted_as_additional_estimator_observation: false
+    reason: >-
+      The molecular sampling contract contains initial, post-molecular-event,
+      and post-fission selected-daughter observations only. Inserting an extra
+      action observation would silently change lag units and n_eff.
+  nextEstimatorObservationAfterAction: first_post_molecular_event_state_of_next_generation
+  finalGenerationAction:
+    scored_and_applied_if_eligible_and_separable: true
+    retained_in_action_log: true
+    excluded_from_prospective_effect_endpoint: true
+    reason: no_later_generation_exists_within_the_frozen_100_generation_trajectory
+
+actionTieClarification:
+  numericalTieTolerance: 1.0e-12
+  rule: >-
+    Before naming a best candidate, count all candidates within the tie tolerance
+    of the direction-specific extreme. If more than one exists, suppress with
+    INELIGIBLE_ACTION_NOT_SEPARABLE. Candidate ID, species index, array order,
+    and sort stability may appear only in audit ordering after suppression and
+    may never select an applied action.
+
+baselineCandidatePilotClarification:
+  qualifyingTrajectoriesEvaluated: every_trajectory_meeting_the_frozen_coverage_requirements
+  pilotPoint: first_post_fission_point_eligible_under_both_preprocessing_branches
+  completeWork:
+    - all_noop_addition_and_valid_deletion_candidates_under_both_preprocessing_branches
+    - exact_repeat_scoring
+    - both_max_and_min_4096_family_full_candidate_null_envelopes
+  minimumPassingPilots: 6
+  runtimeProjection: >-
+    Median complete pilot wall and CPU time times two treated conditions and all
+    remaining decision points for the first six qualifying matrix indices, plus
+    observed baseline time. No favorable outcome or runtime convenience may
+    replace the frozen first-six rule.
+
+restrictedInterventionEndpoint:
+  endpointId: E01-S12-INTERVENTION-ENDPOINT-POSTOPPORTUNITY-YH-COUNT-v1.0.0
+  commonRiskOriginPerMatrix: >-
+    G0 is the generation of the baseline trajectory's first post-fission point
+    at which both preprocessing branches are strictly eligible and the complete
+    candidate pilot passes. The evaluated generations are G0+1 through 100 for
+    max, control, and min, irrespective of later condition-specific suppression.
+  primaryOutcome: >-
+    Count of source-traceable historical technique-1 H>0.9 non-drift labels
+    across the common G0+1..100 generation set.
+  direction: max_greater_than_control_greater_than_min
+  pairingUnit: catalytic_matrix_triplet
+  requiredCompleteness:
+    - all_three_conditions_complete_100_fissions
+    - identical_common_risk_generation_set
+    - no_missing_historical_label_in_common_risk_set
+    - pairing_audit_passes
+  uncertainty:
+    method: exact_all_2_power_6_sign_flips_for_each_paired_contrast_plus_percentile_bootstrap
+    bootstrapReplicates: 4096
+    confidenceLevel: 0.95
+    seedPurpose: estimator
+  secondaryOutcomes:
+    - separable_actions_applied_by_condition
+    - suppression_fraction_by_condition_and_reason
+    - historical_H_positive_fraction_on_common_risk_set
+    - strict_expanding_post_fission_Phi_r_mean_where_independently_eligible
+  claimBoundary: >-
+    The primary endpoint is post-opportunity and retrospective-label based. It
+    cannot support intervention-before-eligibility, every-fission intervention,
+    fixed-window control, exact Table 1, or exact Figure 6 claims.
+
+associationAdequacyClarification:
+  minimumDefinedTrajectoriesPerBranch: 9
+  minimumEligiblePostFissionPairsPerDefinedTrajectory: 24
+  directionalSupportRequiresBothPreprocessingBranches: true
+  notSupportedWithinStrictScopeRule: >-
+    Use NOT_SUPPORTED_WITHIN_STRICT_SCOPE only when both representations have at
+    least nine defined trajectory statistics meeting the 24-pair minimum and
+    both 95% intervals have upper bounds at or below zero. Otherwise a result
+    that does not meet directional support is UNDERDETERMINED.
+
+scopePreservation:
+  baselineMatrices: 12
+  interventionTriplets: exactly_zero_or_exactly_six
+  strictMinimumEffectiveSamples: 512
+  fixedWindowBranchesRemainIneligible: true
+  s10S11S11rRemainImmutable: true
+  authorOrPaperPrimaryAssignment: forbidden
+  nextStepForbidden: S13

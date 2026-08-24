@@ -1,0 +1,20 @@
+{
+  "sealed": "2026-08-18",
+  "module": "Phase L - paper-faithful Phi-r instrument",
+  "design": "byte-exact replay of Phase J arms, domain 28 untouched",
+  "bootstrap": {
+    "draws": 4096,
+    "seed": 23,
+    "unit": "catalytic matrix"
+  },
+  "suite": "32/32 PASS at seal time",
+  "sha256": {
+    "PHIR_PAPER.md": "d0f4086eb20f03bd3742aad8b382112db7a08eeb601dffc246c0ac693d8ed509",
+    "phir_paper.py": "37597ed92535019826ca787dda252c5a96f2280081738ed39d611f417aee8143",
+    "run_phir_paper.py": "52c7481800d564b5867121f589842833590fe9aff1c38ee124da616225d743e4",
+    "phir_code.py": "76b56991c38f3eaa564cded9714157861bb09de24c88c50921705cd005ff8178",
+    "run_phir_confirm.py": "15ba27af952b737abe0d2bedb304ebd8fc5be9e52d7ee81ab0697a55082ae5b0",
+    "sim.py": "289b6a48fe3f4850b5248f747172a5f859d1b270391eb650ff890235e4534221",
+    "cohort.py": "acab68436627b1a942382dd7fc4be3a41eb1a743d102eee8b1b40a7d086f4c89"
+  }
+}

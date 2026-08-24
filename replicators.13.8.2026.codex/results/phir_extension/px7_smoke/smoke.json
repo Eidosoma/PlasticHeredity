@@ -1,0 +1,14 @@
+{
+  "all_formulations_exercised": true,
+  "both_axes_exercised": true,
+  "branches_created": 64,
+  "cpu_seconds_per_smoke_matrix": 4.165923126,
+  "exact_replay": true,
+  "format": "codex-ch5-phir-px7-smoke-v1",
+  "matrices": 1,
+  "projected_complete_cpu_hours_upper_bound": 12.442223736319999,
+  "projected_within_cpu_ceiling": true,
+  "registration_id": "6cc8bc263d1f6cebc4025fa6706170010614b9b78571c854d1e1b3007ddf3893",
+  "scientific_effects_disclosed": false,
+  "score_rows_created": 576
+}

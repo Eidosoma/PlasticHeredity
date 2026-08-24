@@ -1,0 +1,10 @@
+{
+  "branch_arrays_reloaded": true,
+  "inference_arrays_exact": true,
+  "inference_draws_reloaded": true,
+  "matrix_effects_csv_exact": true,
+  "matrix_effects_recomputed_exact": true,
+  "no_fitting_or_recalibration": true,
+  "primary_metrics_exact": true,
+  "selected_interventions_csv_exact": true
+}

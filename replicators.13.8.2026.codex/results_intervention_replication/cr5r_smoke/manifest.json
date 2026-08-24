@@ -1,0 +1,19 @@
+{
+  "arm_ordering_disclosed": false,
+  "artificial_fixture_only": true,
+  "candidate_differences_disclosed": false,
+  "checks": {
+    "all_and_only_legal_swaps_scored": true,
+    "complete_artificial_worker_contract": true,
+    "future_stream_replay_exact": true,
+    "scientific_arm_ordering_not_disclosed": true,
+    "scientific_effect_sizes_not_disclosed": true,
+    "selection_deterministic": true
+  },
+  "effect_sizes_disclosed": false,
+  "event_rates_disclosed": false,
+  "format": "codex-intervention-cr5r-smoke-v1",
+  "registration_id": "10d582c3ac6b3f7f519d81cef1c4bc330d2b2c6b1281e69f3aec9a749022c42b",
+  "scientific_futures": 0,
+  "scientific_matrices": 0
+}

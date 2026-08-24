@@ -1,0 +1,110 @@
+{
+  "audit_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p3_cr4_beta_surgery_pilot_lifecycle_audit",
+  "checkpoint_outcomes_loaded_during_amendment_preparation": false,
+  "checkpoint_record": {
+    "generate": {
+      "checkpoint_contract_sha256": "12a494683bd9e4045e23bc8945cb555fff187cc8df44fd62a1e405b1d1560c29",
+      "checkpoint_digest": {
+        "aggregate_sha256": "8d852860a8c8e8da2deb8bf8cc42d3c1f0eca8fc97643e57e6061581bf672b8c",
+        "states": 400
+      },
+      "status": {
+        "checkpoint_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p3_work/generate",
+        "format": "codex-intervention-checkpoint-v1",
+        "futures_complete": 51200,
+        "futures_total": 51200,
+        "percent_complete": 100.0,
+        "phase": "p3",
+        "stage": "generate",
+        "state": "complete",
+        "states_complete": 400,
+        "states_total": 400
+      }
+    },
+    "replay": {
+      "checkpoint_contract_sha256": "b68acdf65b8300c7b50fd8c2cc7e4171f4cc5cb0eb5660adcbc5a5d05bf488f7",
+      "checkpoint_digest": {
+        "aggregate_sha256": "8d852860a8c8e8da2deb8bf8cc42d3c1f0eca8fc97643e57e6061581bf672b8c",
+        "states": 400
+      },
+      "status": {
+        "checkpoint_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p3_work/replay",
+        "format": "codex-intervention-checkpoint-v1",
+        "futures_complete": 51200,
+        "futures_total": 51200,
+        "percent_complete": 100.0,
+        "phase": "p3",
+        "stage": "replay",
+        "state": "complete",
+        "states_complete": 400,
+        "states_total": 400
+      }
+    }
+  },
+  "confirmation_launched": false,
+  "failure": {
+    "exception": "ValueError: missing registered arms: ['RANDOM']",
+    "log_path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p3_cr4_run.log",
+    "log_sha256": "82fe9a172d8d2db921a1613184fa7c9b195409ae3be2d8d51c1e2e051fe19ead",
+    "primary_futures_complete": 51200,
+    "replay_futures_complete": 51200,
+    "result_bundle_sealed": false,
+    "scientific_estimates_computed": false,
+    "stage": "first whole-matrix inference call"
+  },
+  "format": "codex-intervention-p3-inference-recovery-amendment-v1",
+  "intended_result_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p3_cr4_beta_surgery_pilot",
+  "mandatory_stop_after_recovery": true,
+  "only_repair": "pass random_arm='RANDOM_SURGERY' explicitly to the unchanged primary and readback inference routine",
+  "original_registration": {
+    "checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+    "id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+    "path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/registration"
+  },
+  "phase": "p3",
+  "prohibited_during_recovery": [
+    "new or regenerated intervention futures",
+    "checkpoint or matrix replacement",
+    "beta-surgery reselection",
+    "seed, endpoint, arm, contrast, inference, margin, or gate changes",
+    "model refitting or recalibration",
+    "confirmation launch"
+  ],
+  "prospective_lifecycle_amendment": {
+    "checksum_manifest_sha256": "7c6472891e6a9b8a6a2204b886a075b02e688b3de374d2a2f937c67ea1d27f38",
+    "id": "679449881a33f0f40a50ca7e9de8849a1996321492a1b8190f8007f6cc22637c",
+    "path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/p3_lifecycle_amendment"
+  },
+  "protocol_id": "fb743eceffd90adb713cbfb01262ca43235ddd0f449a61419b3c7113df2da472",
+  "recovery_futures": 0,
+  "registered_scientific_design": {
+    "arms": [
+      "LOOSEN",
+      "TIGHTEN",
+      "RANDOM_SURGERY",
+      "NOOP"
+    ],
+    "bootstrap_repetitions": 4096,
+    "branches": 32,
+    "contrast": [
+      "LOOSEN",
+      "TIGHTEN"
+    ],
+    "equivalence_margin": 0.025,
+    "horizon": 12,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 40,
+    "random_ratio_limit": 0.25,
+    "randomization_repetitions": 4096
+  },
+  "scientific_contract_changes": [],
+  "static_diagnosis": "P3 registers RANDOM_SURGERY, but its generic inference caller implicitly used the molecular-phase default RANDOM",
+  "status": "sealed_after_complete_p3_futures_before_outcome_loading",
+  "work_directory": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results_intervention_replication/.p3_work"
+}

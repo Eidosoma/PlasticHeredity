@@ -1,0 +1,16 @@
+{
+  "all_arms_exercised": true,
+  "all_atom_kinds_exercised": true,
+  "all_score_kinds_exercised": true,
+  "atom_scores_created": 544,
+  "both_candidates_exercised": true,
+  "branches_created": 256,
+  "conservative_projected_cpu_hours": 45.6101518848,
+  "exact_replay": true,
+  "format": "codex-ch5-phir-px10-smoke-v1",
+  "passed": true,
+  "projection_is_upper_bound": true,
+  "registration_id": "bc273708a4f49f82304c0c293872c7aaff445194db0bc6b9fbbfa8a9ef42d616",
+  "scores_created": 680,
+  "smoke_cpu_seconds": 10.689879348
+}

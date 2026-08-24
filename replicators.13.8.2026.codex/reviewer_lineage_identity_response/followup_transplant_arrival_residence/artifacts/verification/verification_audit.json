@@ -1,0 +1,967 @@
+{
+  "checkpoint_files": 106,
+  "checkpoints": [
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 11,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m011.npz",
+      "replay_exact": true,
+      "sha256": "c32960742d05659fbb2e4e1f597a8df8ec444a7f4eaa838344bd1b47f83fe296"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 88,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m088.npz",
+      "replay_exact": true,
+      "sha256": "19fe04a47377d3dd2cece479001e000c2b9a09fd4758da00d0626ebe6c6f0019"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 110,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m110.npz",
+      "replay_exact": true,
+      "sha256": "ee42131b023364ef31301766cdfd714d7748e1909623c31105acef9292c16759"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 179,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m179.npz",
+      "replay_exact": true,
+      "sha256": "42313f89445e8f888fb45d956fad6dcc4b965ced5db87d7fedadc0d35dd68619"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 23,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m023.npz",
+      "replay_exact": true,
+      "sha256": "cee289ba1beb5fe03c0136af1fb3a01af68568c390a02eb86d2942de662d09b6"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 17,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m017.npz",
+      "replay_exact": true,
+      "sha256": "60371c96f3152a411f910e89ca630d871a1b51c9d10435beef1e35c88b132f16"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 54,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m054.npz",
+      "replay_exact": true,
+      "sha256": "5927b20fc4fe5945fa35a4ecb5ce58af1d015e35d93edd4a630a45dccc7f2bf1"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 132,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m132.npz",
+      "replay_exact": true,
+      "sha256": "af8040ac46c9d3117efd7bb7b25627d3eaeed8bb496ef73c2eaeb811cff8707b"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 196,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m196.npz",
+      "replay_exact": true,
+      "sha256": "b0a7665c0ef9aa72257cbffabaf4801d26e4bb34d3081b6cbb3864aa46510013"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 158,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m158.npz",
+      "replay_exact": true,
+      "sha256": "6dd5c02cb7969d4cfe893cfd3662bfc417571158438e3bad77502cdd568a3996"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 10,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m010.npz",
+      "replay_exact": true,
+      "sha256": "9b436730f7679190b1e793461a10110e34e93634e1b08124daf6f86ddcada254"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 90,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m090.npz",
+      "replay_exact": true,
+      "sha256": "21ee5299fad8ca20ba4144d8b223b59fd7c92e8ec319025075b86ca48d9f217e"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 32,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m032.npz",
+      "replay_exact": true,
+      "sha256": "668bb4f2f0c60809a179413d32b85abffb67801d8c380bdb951385620ba386a6"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 45,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m045.npz",
+      "replay_exact": true,
+      "sha256": "8cc53b6018f24689a9dc75a71cdb70cf8f349ffb181b7a948178ad210b9f96d4"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 28,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m028.npz",
+      "replay_exact": true,
+      "sha256": "41ea001937228a3cc5fd056e313cb7eb92bcf0c7db3f90f91eaa7c3e780bc9a0"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 159,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m159.npz",
+      "replay_exact": true,
+      "sha256": "ffef3b638b696961ad3d392dadca607460b9020b0e4b7dc13f93293f2ad3dcd6"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 149,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m149.npz",
+      "replay_exact": true,
+      "sha256": "1fa84dfed77254ab912990f7ee06b09e6dd78439365c71968fcef9566cd1aa05"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 58,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m058.npz",
+      "replay_exact": true,
+      "sha256": "11a433bfd8dfdc39b6602b66956bc20045144ddd57689866844351a9d1cbd615"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 25,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m025.npz",
+      "replay_exact": true,
+      "sha256": "b5cad7d243cdb37755e093ea1a4c38ef2616cf000f023b8f497cd16734054510"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 198,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m198.npz",
+      "replay_exact": true,
+      "sha256": "c5ef4dde47b557fbb6e2e4d8265d13fdcda4c5b921d7b9e68cc6c916d139e79f"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 97,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m097.npz",
+      "replay_exact": true,
+      "sha256": "d1a8085f25fbf3325fb7e57b6cf29b03eb3be181d8729bda0d5a7cbfcc6be22d"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 14,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m014.npz",
+      "replay_exact": true,
+      "sha256": "a2c0fbbf628603e9193cda8b1fbe82b656d3e1dc55e054190fdd74318a09d376"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 197,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m197.npz",
+      "replay_exact": true,
+      "sha256": "77b9c2f907b3aa54725d43191b94def089bc5d73d3dc9dd1dc6558e2700c95e9"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 126,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m126.npz",
+      "replay_exact": true,
+      "sha256": "c0bebe0fa5a52d943da2e13690ee7e3ee17ccc442fce3084fb4175d2a6dd1172"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 112,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m112.npz",
+      "replay_exact": true,
+      "sha256": "1abcd5f99d862d6ced8ad78efb79690c1bc52631395796b280405bf43b32eff0"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 38,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m038.npz",
+      "replay_exact": true,
+      "sha256": "c996dea50b5c23120d0aca810e377d76fee1892d513c3d08d25f12e11465db9a"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 1,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m001.npz",
+      "replay_exact": true,
+      "sha256": "195c6294c2156acd52408c5ab70e24064e911bd444dfe770597894d65aed86a3"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 43,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m043.npz",
+      "replay_exact": true,
+      "sha256": "952e30d730a7017d8a321eca558691340dae486f0bcf75591e77fe12634322c2"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 18,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m018.npz",
+      "replay_exact": true,
+      "sha256": "13048dc2e34f68197f770f0953de56e72c3a2cab922019fd840bc9f252ab4fea"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 64,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m064.npz",
+      "replay_exact": true,
+      "sha256": "bbe9939ccb0b27a703f50cd4299032d748486987cb336cb0b790b64b1b701f12"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 72,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m072.npz",
+      "replay_exact": true,
+      "sha256": "d33ca3a7e2454667564ab9f4d9c0bc4e6d46e10b8da860ed240479f7fb3386e2"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 178,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m178.npz",
+      "replay_exact": true,
+      "sha256": "66b613b3f88bd7c9ecd1b199d0b656866ea94ddeb52d45145b6673e5980dc7e3"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 161,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m161.npz",
+      "replay_exact": true,
+      "sha256": "362e93745d1303395044fe3305558ce475327f2e50b17463e7786101caba5ada"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 174,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m174.npz",
+      "replay_exact": true,
+      "sha256": "35c3490f1018a189b5d4fe1095babf7ba3ecb0248c441b863de59cc3ac453e44"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 5,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m005.npz",
+      "replay_exact": true,
+      "sha256": "34318b6610824caee63491f99eb4c06ac454bdb84830caa3883d8bcc8574cb91"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 9,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m009.npz",
+      "replay_exact": true,
+      "sha256": "dd63bfb2253a54883bbb1122d6b7456275df4945dea0ccbd45956bd2ef62597e"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 79,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m079.npz",
+      "replay_exact": true,
+      "sha256": "6dcb4497b1e6faf5e0bcdcb9bc8d35b17b8c6713fc210df81beb9a6541d4bd16"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 55,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m055.npz",
+      "replay_exact": true,
+      "sha256": "60e3a5c17e79fa634edb150372276bdb9992bc43320e8882cd31d6821995e9c3"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 117,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m117.npz",
+      "replay_exact": true,
+      "sha256": "6ac7ee99689b77df2e68bea0b04a833b40a16ec02eeb6b1d7c7a18691b974968"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 24,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m024.npz",
+      "replay_exact": true,
+      "sha256": "14fd3d35606e4fcd33906674ad1085fbc13e221c28fc4b9e1d5883b1a9d5b610"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 153,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m153.npz",
+      "replay_exact": true,
+      "sha256": "2ecd91f519692fce7df759bd89f6e5e6fcb6d52ca6efd807f914bce38d337405"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 138,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m138.npz",
+      "replay_exact": true,
+      "sha256": "615a3ccb30c2f6e1556441e15ad0635ed4d3695215e862e1ac8587b79af04d60"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 86,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m086.npz",
+      "replay_exact": true,
+      "sha256": "d7289d6d44004a1eab74ba39eb0493e562dd0d01ce2d5cf05d3bdc54e77dcb93"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 148,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m148.npz",
+      "replay_exact": true,
+      "sha256": "3e675f0cfc2f3849c75932f4532f64e17c3d533686e60cf399b37e84b45864c8"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 63,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m063.npz",
+      "replay_exact": true,
+      "sha256": "d461538380693fe746ddff69538fd825071e54e928d1f23c1fe046d7aa2e20d4"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 125,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m125.npz",
+      "replay_exact": true,
+      "sha256": "99f960c8d1482c01906ed74e0471c267b3625ebec826d269abc619d93ad5e060"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 171,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m171.npz",
+      "replay_exact": true,
+      "sha256": "8ab7d0e89afbce9614709f63f087d82b48fff25a95d3c2332538810f329800a7"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 119,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m119.npz",
+      "replay_exact": true,
+      "sha256": "bccde14eee45552d8b6c1b2deefb9e20c376341abef8fe1510c10b9cfe42f0f2"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 2,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m002.npz",
+      "replay_exact": true,
+      "sha256": "624072baaea5dee98582d9b63993a2c9f4c9914c693bd466352e8e22d9cc4db3"
+    },
+    {
+      "candidate": "02",
+      "kind": "primary",
+      "matrix_id": 118,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c02_m118.npz",
+      "replay_exact": true,
+      "sha256": "1ce599f7e9dd0851d98a80043428af25f11374eea72935c34e2cd2214d28cddf"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 11,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m011.npz",
+      "replay_exact": true,
+      "sha256": "833d59ab25aeaa8e0ff1bb6078c906e9758612d74003a3448d774d888db58ec9"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 88,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m088.npz",
+      "replay_exact": true,
+      "sha256": "94fd55448ed1404cd2b79b81b7980d6ffbb7140e24b562d830fb75105894f42a"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 110,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m110.npz",
+      "replay_exact": true,
+      "sha256": "f35b602da4bce5ba45a6457a2d234f96c705005613885c5b5b6ca1c4b822f928"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 179,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m179.npz",
+      "replay_exact": true,
+      "sha256": "1f774fba8c451bcc17d7f5d91a2c96bcdc7ad4b7e601d77748e07cd5c6a34573"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 23,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m023.npz",
+      "replay_exact": true,
+      "sha256": "b99dc3c03869870d838a692308120ec62acbf83eaa1c290346c97610891a4a6f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 17,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m017.npz",
+      "replay_exact": true,
+      "sha256": "0ed4df58a5e0016cf38d0d2dd9df226f0b5b0da39199852421bceda4f9d7d60a"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 54,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m054.npz",
+      "replay_exact": true,
+      "sha256": "60ab123f91cbb6b07804b24e6afd21021f37ccab1217a65c4b0c61f9641701bf"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 132,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m132.npz",
+      "replay_exact": true,
+      "sha256": "c28856343fd15f3dbd07f72200bdf9fdd5087fe3b9a2444c785f155949faa932"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 196,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m196.npz",
+      "replay_exact": true,
+      "sha256": "48acf0af19f0f52a2d62e7d0ab6a571634a99429a097e54924e182e2524f561f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 158,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m158.npz",
+      "replay_exact": true,
+      "sha256": "7694f3ab5b9b4da15a4b984d9bc3b5aebc51b46a4dd5da850b71735750dc4a4c"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 10,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m010.npz",
+      "replay_exact": true,
+      "sha256": "8aec3ad1a42c5983893ad783141f02d253db903158969721e8a95e2a60497b16"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 90,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m090.npz",
+      "replay_exact": true,
+      "sha256": "b609a154843a6c6cc2577a84a8fd5ea3b838321e8df6d2b695e6237d719b1e7e"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 32,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m032.npz",
+      "replay_exact": true,
+      "sha256": "09e6fb7b134737c3f3d0df6e4489a843e12901b8679f1738739e0601ad4a6206"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 45,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m045.npz",
+      "replay_exact": true,
+      "sha256": "68af7df2b7948351bb3093cd0bc24c5edffded907c0a4407ae8fdae602a9f95c"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 28,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m028.npz",
+      "replay_exact": true,
+      "sha256": "288f4aee1c58e2dbfcb3fad909c34f1cecf62d3b2d4dbea27a3e0aaa9bc0f7db"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 159,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m159.npz",
+      "replay_exact": true,
+      "sha256": "675082d00d2d49721ba0f4712a5444e22a35d85c44e8f9e8822a7edbaf4caa86"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 149,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m149.npz",
+      "replay_exact": true,
+      "sha256": "8d56f276d59d615fb67f29fec3603ab4776c2b03852bb4ba9d6354c255bbaf0d"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 58,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m058.npz",
+      "replay_exact": true,
+      "sha256": "ca039861bd4900448150b1299ca7981ce11721131a6717a95cd5c3d3066ad28f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 25,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m025.npz",
+      "replay_exact": true,
+      "sha256": "6c3bb5728385433b86877571cb1dd8f4b11516f2feb1b2d709e4bc7785c4a00d"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 198,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m198.npz",
+      "replay_exact": true,
+      "sha256": "09779a9806c27c25f330bb6206e393dd6ca4df1b346a53ffadaada29d7ed1ed5"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 97,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m097.npz",
+      "replay_exact": true,
+      "sha256": "a3b8bc45557e5084eb7c09be056788b77c5db8f27b769533f14d796b5fad660d"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 14,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m014.npz",
+      "replay_exact": true,
+      "sha256": "0fb5e9979f7501b28e92172216a4d7076c1f55bef5eff3c04dd993228883c00f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 197,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m197.npz",
+      "replay_exact": true,
+      "sha256": "e2ef0342ac0a87b6208e5587a4d85198c4454b0b9d78199fdf81aa03112ee672"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 126,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m126.npz",
+      "replay_exact": true,
+      "sha256": "840823c7c2f15d9a7bf54f8cc3c53886e9e1ad40dae330350b08a98a94e9b601"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 112,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m112.npz",
+      "replay_exact": true,
+      "sha256": "dc89df000ddfaf6b4a7fe8cac8d2f34cc4e4682a108c4d605e35d584b7e48e2b"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 38,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m038.npz",
+      "replay_exact": true,
+      "sha256": "c5e8eac33f5ce5315934096103293e04a2bda541731002850e6a652582b0f96f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 1,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m001.npz",
+      "replay_exact": true,
+      "sha256": "b4cf9f9708293f3481abeea1dd01c04426e37b73aecade764b87531fd06d9b62"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 43,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m043.npz",
+      "replay_exact": true,
+      "sha256": "fe72d023cb9d1a88a2d117ac507c9dcc7ff30a0b9285edbb21d0f3b40ddc4209"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 18,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m018.npz",
+      "replay_exact": true,
+      "sha256": "38a007edbe8538a605c6fc0213a9985c0675d73da624f7c1e912b38baf1efe71"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 64,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m064.npz",
+      "replay_exact": true,
+      "sha256": "f4b71503ff24ca961eca1c6c785c1b38289169eed406914d12bd90ea4e2fc832"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 72,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m072.npz",
+      "replay_exact": true,
+      "sha256": "75420be1bec480e353907b4a3a0bc8d0cb71b355d52c4fe89de13584d750313a"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 178,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m178.npz",
+      "replay_exact": true,
+      "sha256": "2834cb4858e85a9adeb48a7a81e61176d9738c4c77828c4c8f2a06f3f3134938"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 161,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m161.npz",
+      "replay_exact": true,
+      "sha256": "28dd1fb13705c70535b1da95faaf7f68188d865d6646b68872dd854103ec78d6"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 174,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m174.npz",
+      "replay_exact": true,
+      "sha256": "a6599d077fa3d40df8a8e94932972449aa9d221b16d2968dd889914ca6475556"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 5,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m005.npz",
+      "replay_exact": true,
+      "sha256": "3ee8934584dca49b83a163344c81440247621f468905d22e20e2777d0ab7acd8"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 9,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m009.npz",
+      "replay_exact": true,
+      "sha256": "6a926a41ce858f20042c18a2646a30bd7e22f2718f84e82585cd6db842026f16"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 79,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m079.npz",
+      "replay_exact": true,
+      "sha256": "fc6d06df59a31653550efe95399b7087bec78a688f8f2c73946e32b983a7e013"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 55,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m055.npz",
+      "replay_exact": true,
+      "sha256": "879e20c9e38f9f0b0b577232317158134290caad8c9eda817d4eede624558f53"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 117,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m117.npz",
+      "replay_exact": true,
+      "sha256": "5aa8efaaebbeacc16d38e9dbce0abbdfaa7b4aeab29d1ee9d145ebd07038d07f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 24,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m024.npz",
+      "replay_exact": true,
+      "sha256": "fb369ec1e83ea2faea672783e927e045693ea6d9c9a2bf67a409764a3e05aeb5"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 153,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m153.npz",
+      "replay_exact": true,
+      "sha256": "d86c3f64e47dda6324a89a030c9a32993ef2da06bdc8f9ef58cf4b98d05a24b7"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 138,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m138.npz",
+      "replay_exact": true,
+      "sha256": "914bc7f7df5fe8b4ef3d698b8a2ee0e98f60447c38a7858a6436dba5fbf80e7c"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 86,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m086.npz",
+      "replay_exact": true,
+      "sha256": "1918463b8a0cd112453e88ef6a1f6f94dc17a9fafef449db9a219f6c29b8ec87"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 148,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m148.npz",
+      "replay_exact": true,
+      "sha256": "7352e114a538aa68a64ca4a23b6552981914e7c1a3367d14cc144094d4a3d708"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 63,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m063.npz",
+      "replay_exact": true,
+      "sha256": "c385eb39f72e162b3b663f50255af34d8ed2410c8e2004e4fd386f1f8632a547"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 125,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m125.npz",
+      "replay_exact": true,
+      "sha256": "0270f3b4991a440f68e6c81dd4deca6f5d9310429e006e6b93276c2623081545"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 171,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m171.npz",
+      "replay_exact": true,
+      "sha256": "dda6296776b75397cae55024350434c752f11624df3f11ccbddd5d1c64e278be"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 119,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m119.npz",
+      "replay_exact": true,
+      "sha256": "e1a6917a0a789009fc077745f52a6587ea2d6b8d104047fc1ffa5c69c964532f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 2,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m002.npz",
+      "replay_exact": true,
+      "sha256": "587d3df066bba84f91e3d4f3f519a7364c6653d4f7097056a009c1f971c09b6f"
+    },
+    {
+      "candidate": "03",
+      "kind": "primary",
+      "matrix_id": 118,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/primary/c03_m118.npz",
+      "replay_exact": true,
+      "sha256": "6db408247d5ace132ac7dd2b4e2b13d687b06cc84424c547d15f924f032588e8"
+    },
+    {
+      "candidate": "02",
+      "kind": "rare",
+      "matrix_id": 11,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/rare/c02_m011.npz",
+      "replay_exact": true,
+      "sha256": "fcc9a84bd8e955e606f6f284e0fe4bcdf33f8b7dab7cc0d4aa46e47344401ead"
+    },
+    {
+      "candidate": "02",
+      "kind": "rare",
+      "matrix_id": 54,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/rare/c02_m054.npz",
+      "replay_exact": true,
+      "sha256": "6534b7941f8cdc4cabfd124ffb1eaebb6880192bde4b24f87ef42768733bc6ee"
+    },
+    {
+      "candidate": "02",
+      "kind": "rare",
+      "matrix_id": 63,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/rare/c02_m063.npz",
+      "replay_exact": true,
+      "sha256": "c27b3fb5659b41e54813ded7012355ae5952d13b5c5cc508670bd69c307f0f36"
+    },
+    {
+      "candidate": "03",
+      "kind": "rare",
+      "matrix_id": 11,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/rare/c03_m011.npz",
+      "replay_exact": true,
+      "sha256": "7b4df38a35b5459c12d441d400df39fdfb52819b70e660403140106238c08044"
+    },
+    {
+      "candidate": "03",
+      "kind": "rare",
+      "matrix_id": 54,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/rare/c03_m054.npz",
+      "replay_exact": true,
+      "sha256": "2f3b91adff59db061fba5b508ee98a5725e2dcdda52f68af3adfd9471ce693e6"
+    },
+    {
+      "candidate": "03",
+      "kind": "rare",
+      "matrix_id": 63,
+      "maximum_h_error": 0.0,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_transplant_arrival_residence/artifacts/work/rare/c03_m063.npz",
+      "replay_exact": true,
+      "sha256": "b634ba6462c3832057524c6c31cab65576f9bc9cd22105d9a5a4758325355aff"
+    }
+  ],
+  "complete": true,
+  "discrete_replay_exact": true,
+  "format": "strict-b-transplant-arrival-residence-v1",
+  "full_replay_requested": true,
+  "maximum_h_error": 0.0,
+  "output_checksums_verified": true,
+  "protocol_id": "920aa591842e0aec5a25fcc6f803ae4ca71d285e6157c5032d56e2e34c1ee165",
+  "replayed_futures": 182272
+}

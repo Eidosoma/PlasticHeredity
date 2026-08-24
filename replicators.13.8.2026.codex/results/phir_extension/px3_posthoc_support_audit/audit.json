@@ -1,0 +1,59 @@
+{
+  "audit_date": "2026-08-21",
+  "classification_after_audit": "direct_phi_control_not_confirmed",
+  "confirmation_manifest_sha256": "74a4c2eeda418dd386d68b1fd8e427ccc15105edcbf0f6547efa209b9775177b",
+  "confirmation_sha256s_sha256": "67ff8665a2992658034adf1ad4d0f265396d44febcd7ccbb598a53358f6df891",
+  "frozen_confirmation_modified": false,
+  "information_dimensions": {
+    "active_material_coordinates": 100,
+    "joint_past_future_coordinates": 200,
+    "ridge": 1e-06
+  },
+  "method": "post-hoc deterministic replay and blockwise remeasurement of sealed seed-defined confirmation futures",
+  "new_matrices": 0,
+  "new_outcomes": 0,
+  "posthoc": true,
+  "precision_note": "The 16- and 64-branch diagnostic values are recorded to the six decimals retained in the audit notes; registered 32-branch values retain machine precision.",
+  "public_nine_atom_up_minus_down": {
+    "branches_16": {
+      "02": 0.007,
+      "03": -0.001
+    },
+    "branches_32": {
+      "02": 0.009629546655319456,
+      "03": -0.00040229288344315246
+    }
+  },
+  "registered_confirmation": {
+    "futures": 36864,
+    "matrices": 24,
+    "registration_id": "bdb2083071141e23bd05dcc8b7fc2744324f2c69294be60972f20dad151817ec",
+    "transitions": 294912
+  },
+  "support_remeasurement": [
+    {
+      "branches_per_block": 16,
+      "candidate_02_positive_matrices": 21,
+      "candidate_02_up_minus_down": 8.690129,
+      "candidate_03_positive_matrices": 22,
+      "candidate_03_up_minus_down": 12.53738,
+      "pairs_per_block": 128
+    },
+    {
+      "branches_per_block": 32,
+      "candidate_02_positive_matrices": 3,
+      "candidate_02_up_minus_down": -2.4574839624194813,
+      "candidate_03_positive_matrices": 1,
+      "candidate_03_up_minus_down": -2.7251895589506407,
+      "pairs_per_block": 256
+    },
+    {
+      "branches_per_block": 64,
+      "candidate_02_positive_matrices": 3,
+      "candidate_02_up_minus_down": -0.89095,
+      "candidate_03_positive_matrices": 1,
+      "candidate_03_up_minus_down": -1.087114,
+      "pairs_per_block": 512
+    }
+  ]
+}

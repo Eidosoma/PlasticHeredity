@@ -1,0 +1,26 @@
+{
+  "confirmation_not_generated": true,
+  "heredity_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "phase": "PX3_DEVELOPMENT",
+  "program_protocol_id": "81ab66fc412d04946d3df9c6bff048a4cbdea2dec14206dfe10ef1c9708e49ff",
+  "protocol_id": "7dad6e0bb3c3b92526735b8b04ea42bb4a4980b266a62d78cf5954af22cb6f21",
+  "px1_manifest_sha256": "dc3007fb7f80a7fd8ef8f8df9b426ef0079eaaa14f9889f133aafa170f172bd3",
+  "px1_matrix_inputs_sha256": "17835d9d345185179ba0781e6f324219d638ae89800be9870983aa5b5033a03b",
+  "px1_registration_id": "e1987d2dea749f5e92a580da33836a4334175dbd1016d197aee7ff45fe4476bb",
+  "px2_integrity_complete": true,
+  "px2_manifest_sha256": "c4ae752cb05614a37cbb7bc5542c3f8190c68e30eacc6586dbecf28d5b5791ec",
+  "px2_registration_id": "3ebaa78cf37dbe9d7d2cc6eadf12bad587a912da30ea44640cd63914d6b5f76b",
+  "spec": {
+    "branches": 16,
+    "cpu_seconds": 72000.0,
+    "horizon": 8,
+    "label": "development",
+    "landmarks": [
+      20,
+      30,
+      40,
+      50
+    ],
+    "matrices": 24
+  }
+}

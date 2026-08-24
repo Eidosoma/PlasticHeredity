@@ -1,0 +1,15 @@
+{
+  "files": {
+    "LAY_SUMMARY.md": "00d45564cd552fe0d2af2137d3d16b303729872f657cc1fae0bb16ccc90ae4ba",
+    "QUEUE.json": "138eff2bd23197cc361b3b1d6f8f746dd697741ae74379b8ad6f8fe3fe3e2172",
+    "RAW_OUTCOMES.csv": "ae8bee945e8ce1384dccc8ae93841bd68d5516d3b7970d6dfb7cde0838570696",
+    "REGISTRATION.json": "93b0db4f71e56842efbe5c187a604665d47359e02831671b999a71a46b0f361b",
+    "REPORT.md": "6d2cd3e5bcc63c79d25b62b92389ac749e3d9ec3aa33b0e6f2e29db75dcbc0fb",
+    "RESULTS.json": "28b5703fa131d24ec78913d4fd47c77bd414266e16714529d1c7f1ba9f029576",
+    "STAGE_DECISION.json": "cb225341a951d3bf3a214e1428e1c84f4908407724011d6e696dd7f93d00d7a6",
+    "WRITER_AUDIT.json": "00350992f0dc9cf6081150d12daeeaeafb0909021b9aa60595342dba076d5265"
+  },
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "seal_digest": "83fade9269ce993fcca127cf0f8ad3468679be083f1295f70aca787c1ed6bcf3",
+  "stage": 2
+}

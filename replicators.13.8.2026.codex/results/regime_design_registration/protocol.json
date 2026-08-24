@@ -1,0 +1,215 @@
+{
+  "boundary_rules": {
+    "coherence_equality_0.90": "fails",
+    "distinctness_equality_0.85": "passes",
+    "extinction_no_certification": "negative",
+    "first_break": "first fission with H<=0.90",
+    "horizon_without_certification": "negative",
+    "no_break": "negative",
+    "search_begins": "fission immediately after the first break"
+  },
+  "claim_boundary": {
+    "not_tested": [
+      "compositional recurrence",
+      "attractor switching",
+      "perturbation recovery",
+      "causality",
+      "biological memory",
+      "prebiotic realism"
+    ],
+    "occurrence_pass": "distinct coherent persistent new hereditary regime",
+    "prediction_pass": "its probability is compositionally predictable beyond h10"
+  },
+  "cohorts": {
+    "confirmation": {
+      "bootstrap_repetitions": 4096,
+      "candidates": {
+        "02": {
+          "daughter_rule": "first",
+          "fission_rule": "fixed_size",
+          "name": "02",
+          "overshoot_rule": "trim_whole_assembly",
+          "poisson_exposure": 0.1
+        },
+        "03": {
+          "daughter_rule": "second",
+          "fission_rule": "binomial",
+          "name": "03",
+          "overshoot_rule": "admit_joiners_to_capacity",
+          "poisson_exposure": 0.125
+        }
+      },
+      "confirmation": {
+        "branches_per_state": 128,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "development": {
+        "branches_per_state": 128,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "gard": {
+        "beta_log_mean": -4.0,
+        "beta_log_sd": 4.0,
+        "generations": 100,
+        "inheritance_threshold": 0.9,
+        "k_join": 0.01,
+        "k_leave": 0.0001,
+        "max_growth_steps": 1000,
+        "n_max": 80,
+        "n_min": 40,
+        "n_types": 100
+      },
+      "horizon": 32,
+      "logistic_c": 0.1,
+      "master_seed": "c498f2e934bfd17e0fb175dee2332eedec9e4c5914ab58fa621aaf7c5d99ac9a",
+      "pca_components": 12,
+      "permutation_repetitions": 4096,
+      "regenerate_confirmation": true
+    },
+    "development": {
+      "bootstrap_repetitions": 4096,
+      "candidates": {
+        "02": {
+          "daughter_rule": "first",
+          "fission_rule": "fixed_size",
+          "name": "02",
+          "overshoot_rule": "trim_whole_assembly",
+          "poisson_exposure": 0.1
+        },
+        "03": {
+          "daughter_rule": "second",
+          "fission_rule": "binomial",
+          "name": "03",
+          "overshoot_rule": "admit_joiners_to_capacity",
+          "poisson_exposure": 0.125
+        }
+      },
+      "confirmation": {
+        "branches_per_state": 128,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "development": {
+        "branches_per_state": 128,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "gard": {
+        "beta_log_mean": -4.0,
+        "beta_log_sd": 4.0,
+        "generations": 100,
+        "inheritance_threshold": 0.9,
+        "k_join": 0.01,
+        "k_leave": 0.0001,
+        "max_growth_steps": 1000,
+        "n_max": 80,
+        "n_min": 40,
+        "n_types": 100
+      },
+      "horizon": 32,
+      "logistic_c": 0.1,
+      "master_seed": "4ab47ce6f50cc194f28418be8cf8048d9e47972eb2864492f6dc3449869fa931",
+      "pca_components": 12,
+      "permutation_repetitions": 4096,
+      "regenerate_confirmation": true
+    },
+    "matrices_are_disjoint_by_master_seed": true
+  },
+  "endpoints": {
+    "primary_all8": {
+      "coherence": "all 28 daughter pairs have strict H>0.90",
+      "distinctness": "all eight daughters have inclusive H<=0.85 to the pre-break parent",
+      "inheritance": "eight consecutive fissions with strict H>0.90",
+      "role": "primary_confirmatory",
+      "selection": "earliest qualifying eight-fission window after the first inheritance break"
+    },
+    "secondary_centroid": {
+      "coherence": "all eight daughters have strict H>0.90 to their arithmetic-mean composition",
+      "distinctness": "all eight daughters have inclusive H<=0.85 to the pre-break parent",
+      "inheritance": "eight consecutive fissions with strict H>0.90",
+      "role": "prespecified_secondary_no_rescue",
+      "selection": "earliest qualifying eight-fission window after the first inheritance break"
+    },
+    "secondary_first5": {
+      "coherence": "all 10 pairs among the first five daughters have strict H>0.90",
+      "distinctness": "the first five daughters have inclusive H<=0.85 to the pre-break parent",
+      "inheritance": "eight consecutive fissions with strict H>0.90",
+      "role": "prespecified_secondary_no_rescue",
+      "selection": "earliest qualifying eight-fission window after the first inheritance break"
+    }
+  },
+  "feature_model": {
+    "additional_descriptive_blocks": [
+      "complete beta-only",
+      "beta-conditioned state interaction"
+    ],
+    "baseline": "unpenalized unique h10 history/mass/phase/all-clock block",
+    "cv_folds": 5,
+    "cv_split": "development matrix_id modulo 5",
+    "cv_tie_break": "largest lambda within 1e-12 of minimum loss",
+    "model_sequence": [
+      "h10",
+      "state",
+      "beta",
+      "interaction"
+    ],
+    "primary_added_block": "provenance-selected state-only composition block",
+    "ridge_lambda_grid": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "uses_pca": false
+  },
+  "format": "plastic-heredity-regime-design-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "occurrence_primary_gate": "whole-matrix bootstrap 95% lower event-rate bound above zero in both candidates and both branch halves",
+    "power_gate": {
+      "failure_language": "prediction underpowered; occurrence unaffected; no adaptive sampling",
+      "minimum_event_matrices_per_candidate_per_cohort": 20,
+      "minimum_events_per_candidate_per_cohort": 100
+    },
+    "prediction_family_size": 4,
+    "prediction_gate": "positive gain, whole-matrix bootstrap 95% lower bound above zero, and Holm-adjusted paired matrix randomization p<0.05 in both candidates and both halves",
+    "prediction_primary_contrast": [
+      "h10",
+      "h10_state"
+    ],
+    "randomization_repetitions": 4096,
+    "secondary_endpoints_may_rescue_primary": false
+  },
+  "protocol_id": "7bcdfadd5a7620226882d7185eecec0ab092a01df4484f1490578a5c0bde42fd",
+  "scope": "prospective coherent-distinct-persistent regime occurrence and prediction",
+  "status": "sealed_before_development_matrix_generation"
+}

@@ -1,0 +1,171 @@
+{
+  "bootstrap_repetitions": 4096,
+  "bootstrap_unit": "catalytic_matrix",
+  "cohort": "REGCONF",
+  "endpoints": {
+    "primary_all8": {
+      "02": {
+        "all_branches_events": 2354,
+        "all_branches_rate": 0.018390625,
+        "halves": {
+          "A": {
+            "ci95": [
+              0.013912109374999999,
+              0.0236875
+            ],
+            "event_matrices": 119,
+            "events": 1196,
+            "passes_positive_lower_bound": true,
+            "rate": 0.0186875
+          },
+          "B": {
+            "ci95": [
+              0.013865234375,
+              0.022828124999999998
+            ],
+            "event_matrices": 126,
+            "events": 1158,
+            "passes_positive_lower_bound": true,
+            "rate": 0.018093750000000002
+          }
+        }
+      },
+      "03": {
+        "all_branches_events": 2687,
+        "all_branches_rate": 0.0209921875,
+        "halves": {
+          "A": {
+            "ci95": [
+              0.015630859375,
+              0.026484375
+            ],
+            "event_matrices": 129,
+            "events": 1337,
+            "passes_positive_lower_bound": true,
+            "rate": 0.020890625
+          },
+          "B": {
+            "ci95": [
+              0.016255859375,
+              0.026765625
+            ],
+            "event_matrices": 143,
+            "events": 1350,
+            "passes_positive_lower_bound": true,
+            "rate": 0.02109375
+          }
+        }
+      }
+    },
+    "secondary_centroid": {
+      "02": {
+        "all_branches_events": 10582,
+        "all_branches_rate": 0.082671875,
+        "halves": {
+          "A": {
+            "ci95": [
+              0.073365234375,
+              0.09301953125
+            ],
+            "event_matrices": 188,
+            "events": 5292,
+            "passes_positive_lower_bound": true,
+            "rate": 0.08268750000000001
+          },
+          "B": {
+            "ci95": [
+              0.072828125,
+              0.0927734375
+            ],
+            "event_matrices": 190,
+            "events": 5290,
+            "passes_positive_lower_bound": true,
+            "rate": 0.08265625
+          }
+        }
+      },
+      "03": {
+        "all_branches_events": 12006,
+        "all_branches_rate": 0.093796875,
+        "halves": {
+          "A": {
+            "ci95": [
+              0.08287109375,
+              0.105884765625
+            ],
+            "event_matrices": 190,
+            "events": 6024,
+            "passes_positive_lower_bound": true,
+            "rate": 0.09412500000000001
+          },
+          "B": {
+            "ci95": [
+              0.08236523437499998,
+              0.10511328125
+            ],
+            "event_matrices": 191,
+            "events": 5982,
+            "passes_positive_lower_bound": true,
+            "rate": 0.09346875
+          }
+        }
+      }
+    },
+    "secondary_first5": {
+      "02": {
+        "all_branches_events": 9156,
+        "all_branches_rate": 0.07153125,
+        "halves": {
+          "A": {
+            "ci95": [
+              0.06123046875,
+              0.082369140625
+            ],
+            "event_matrices": 181,
+            "events": 4588,
+            "passes_positive_lower_bound": true,
+            "rate": 0.07168749999999999
+          },
+          "B": {
+            "ci95": [
+              0.061333984375,
+              0.081822265625
+            ],
+            "event_matrices": 179,
+            "events": 4568,
+            "passes_positive_lower_bound": true,
+            "rate": 0.07137500000000001
+          }
+        }
+      },
+      "03": {
+        "all_branches_events": 10489,
+        "all_branches_rate": 0.0819453125,
+        "halves": {
+          "A": {
+            "ci95": [
+              0.069068359375,
+              0.092384765625
+            ],
+            "event_matrices": 177,
+            "events": 5147,
+            "passes_positive_lower_bound": true,
+            "rate": 0.080421875
+          },
+          "B": {
+            "ci95": [
+              0.07165234375,
+              0.09521289062499999
+            ],
+            "event_matrices": 181,
+            "events": 5342,
+            "passes_positive_lower_bound": true,
+            "rate": 0.08346875000000001
+          }
+        }
+      }
+    }
+  },
+  "primary_decision_rule": "whole-matrix bootstrap 95% lower event-rate bound above zero in both branch halves and both simulator candidates",
+  "primary_occurrence_supported": true
+}

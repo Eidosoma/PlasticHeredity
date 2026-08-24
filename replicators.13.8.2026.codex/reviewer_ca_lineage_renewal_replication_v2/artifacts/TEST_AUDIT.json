@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/.venv/bin/python",
+    "-m",
+    "pytest",
+    "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_ca_lineage_renewal_replication_v2/tests",
+    "-q"
+  ],
+  "elapsed_seconds": 9.915578918065876,
+  "implementation_manifest": {
+    "FORENSIC_AUDIT.md": "586e6ac3bf91ba6d5d43cabdd037e5c022a00ef9866e35176c48b8dfa077948e",
+    "README.md": "b6e7b12bafc4bf2cf500f1f90e4190799e90539f79266edadb8547350a0992f6",
+    "SOURCE_SPEC.md": "b8f152012a6bf47d1b3bb4d82b39c07a2ffda36c85be2beb5dc5b41f0640d9dd",
+    "__init__.py": "c6e61efedb13861bfedaa0bfd83ce798e4a0343c9db84e5aa75c8f7e70fb476b",
+    "campaign.py": "86aa87299a5800f622de163d28078b4bdbe45df43b0b5cfe99fafee1690b3d10",
+    "cohorts.py": "eb22970387dbd37fd9445f33d590570a200abe372120338526f30327266471e0",
+    "contract.py": "61a218900e7f48107b0c1e85fc85fb6087303356b25994081e80b6c3f357c039",
+    "engine.py": "82906e901c941d193be3f596d08bf11df955c30a03157cc8c037067f00a2ba8c",
+    "inference.py": "9495c7d605e1aa8ba1d86618aee8a5e17a9d935fa9ed0efdac0b50536bf8351a",
+    "run.py": "d64741469c3eabdf520b17c4fac410540d634ecbb6b6a1bd46c7ccb298e27f99",
+    "snapshot.py": "7fc1a070db17922e5fed14e2b4e44a4f549f6c19dc3b46c2d64eea05dd9865f4",
+    "tests/__init__.py": "bd447ec1dc198b19155e4446dc5774523b1a8971600fc877a742ef9d80201abe",
+    "tests/test_contracts.py": "f12a6a45590f579551f1d36e04f23c70bf5980d32cf1f2f7594f3b67823e1dc4",
+    "tests/test_engine.py": "d20d0b209d786a844462ab13e7233437fa7c7b8c955149809864a606f81cabda",
+    "tests/test_inference.py": "4894f0ae1fd7478cf47e2a5c29c3cb4e1c39199987ad634ae452dc5bc9a313c5"
+  },
+  "output": ".......................                                                  [100%]\n",
+  "passed": true,
+  "returncode": 0,
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2"
+}

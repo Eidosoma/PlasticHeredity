@@ -1,0 +1,113 @@
+{
+  "claim_boundary": [
+    "a geometric information floor is not catalytic heredity",
+    "Phi-r is not consciousness, agency, or life",
+    "null remeasurement cannot overwrite earlier intervention results",
+    "strict-eight is excluded"
+  ],
+  "classification": {
+    "catalytic_enrichment": "natural-minus-null full-block or public information has positive 95% lower bounds in both candidates and both halves",
+    "catalytic_steerability": "natural SOURCE_RULE_DOWN-minus-SOURCE_RULE_UP information and heredity effects have positive 95% lower bounds in both candidates",
+    "geometric_residual": "finite nonzero null information is reported as a floor, not catalytic heredity",
+    "no_omnibus_gate": true
+  },
+  "inference": {
+    "bootstrap": 4096,
+    "candidate_pooling": false,
+    "randomization": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "information_metrics": [
+    "full_revised",
+    "public_revised"
+  ],
+  "mechanisms": [
+    "NATURAL_GARD",
+    "HOMOGENEOUS_GENERATIVE",
+    "COUPLING_DERANGED",
+    "FISSION_ONLY_GENERATIVE"
+  ],
+  "no_48_matrix_campaign": true,
+  "no_new_matrix_or_branch_selection": true,
+  "phase": "PX5",
+  "primary_comparisons": {
+    "coupling": "within-matrix Spearman between information and JOINT_BREAK_RUN3 probability",
+    "levels": "NATURAL_GARD minus each generative null for untreated full-block and public revised readings",
+    "reliability": "within-matrix Spearman between independent untreated branch-half readings across landmarks",
+    "steerability": "SOURCE_RULE_DOWN minus SOURCE_RULE_UP information and heredity response in each mechanism"
+  },
+  "protocol_id": "53c7c8800fbc4c9a504486ddd2c3f9dfd65347fab1ba575e81fa0a882363ce24",
+  "question": "which information-dynamic features remain under homogeneous, coupling-deranged, and fission-only generative nulls?",
+  "remeasurement": {
+    "cross_branch_transitions": false,
+    "every_replayed_outcome_checked_against_sealed_GN1": true,
+    "explicit_transition_pairs": true,
+    "horizon": 12,
+    "intervention_arms": [
+      "NOOP",
+      "SOURCE_RULE_UP",
+      "SOURCE_RULE_DOWN",
+      "RANDOM"
+    ],
+    "intervention_branches": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "untreated_branches": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "untreated_halves": {
+      "A": [
+        0,
+        8
+      ],
+      "B": [
+        8,
+        16
+      ]
+    }
+  },
+  "representations": [
+    "material",
+    "functional_flux"
+  ],
+  "run_regardless_of_prior_phase_gates": true,
+  "selection": "first 24 matrix identifiers from the sealed 96-matrix seed order",
+  "source_campaign": "sealed GN1 generative-null decomposition",
+  "spec": {
+    "cpu_seconds": 43200.0,
+    "horizon": 12,
+    "intervention_branches": 8,
+    "label": "scientific",
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 24,
+    "untreated_branches": 16
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "format": "codex-intervention-cr4-confirmation-registration-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "predecessor_checksum_manifests": {
+    "results_intervention_replication/cr3_physical_rule_confirmation": "4275695af8edfb2d7e34c8c0cdf0e125e7cee8fb8b3920b7a43041a01f9062a3",
+    "results_intervention_replication/p3b_beta_surgery_dose_bridge": "9aaf3cafadfa595c924821efa543e6c08865633b0f592d5eb7977541d70b0a19",
+    "results_intervention_replication/p3c_fable_response": "eaa5f11dee9e52145fd634bee576f914e36139da59241eb61ab9ac03289e9989",
+    "results_intervention_replication/p3c_throughput_confirmation": "a104d02cdf588f93ad4e9aa252bf2227709a2855ca84d924030627a692068fb9",
+    "results_intervention_replication/p4_shared_break_recovery": "f8f884e18bb15b50943d4289473503ddf0c888336652005c99aa20391d92e9e4"
+  },
+  "predecessor_outcomes_seen_before_registration": true,
+  "predecessors_preserved_not_rescued": true,
+  "protocol_id": "fb143ff927481c1630e0e62219d57514fd95fa76f00e75dfcd952935e4b15575",
+  "registration_id": "c088f787e11fcd1474adb886e1978bd79ed5c5a497e38815833ddf4cc6f9c9f5",
+  "scientific_futures_at_registration": 0,
+  "scientific_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "326767cc064375bf79136241baf3d3a2bcea716011362337210b4f2b9f6cf6ce",
+    "cohort": "24377b0deb15a03e122a6940bda61e6ebd79fa6c672bd1098a3000c90f3185a5",
+    "future": "37d511edfa7200b94d42d0a6755fd7b244c42897e630f442cb11ac68f65d7975",
+    "global_selection": "52f5ba514fd68fd8461ead6ad791df0d11e75dfc96a52b8b67d440ba58c21d05",
+    "randomization": "c3aaff1020d2ee6d550988a9e6edb2ed16085111e75b99f900c598fbdd7c11d0",
+    "replay": "fe1abe80d3af13128a063e6387ec06b2bcabaddfa5aa3dcbd9ea1cd3cb06d348",
+    "smoke_cohort": "d1f90aa8665c8db96e8d2a2a469643d630e24a4b75ec0a6bf2ef134723ffc69f",
+    "smoke_future": "7cb1751db7240d1250c990ba4cae81534b2c0be779ae50df092c7ff1a08f092f",
+    "smoke_global_selection": "b743e8e583bb873ee88562bcc76d6eac14f7f5a24ee80f0e4f5c5e2d1aeae26c",
+    "smoke_topology_selection": "4405e3c70014afca0d1c9aa1b15d1c839ebd2934a7dec94ee2bb90c7b5f36d7a",
+    "topology_selection": "c85d6ba4d8569608ed9f67cb7e14f508b23b085fed899ae3dff39a7b66f15777",
+    "validation": "398158f45d9a8c5a13b722f11b0d26734e17e7b2bf9b5362803d68d390fb2f8e"
+  },
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR4_CONFIRMATION_PREREGISTRATION.md": "d6faf35ed0757194f452d123db0a6c6c7b5e57fc348201a7d50f4ca55f5d79ae",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr4_confirmation.py": "6208f46d378a3a45da8155788790f831b61814b3b2a7857820674608faeb2e05",
+    "plastic_heredity/intervention_metrics.py": "037c36dd20547dd54b0638f99fb4e520e2f64d17b8fc2799331076a9ddb4eb54",
+    "plastic_heredity/intervention_p3c.py": "17bbc47346297419bfb32146766affb68bd4e2e258c2da1c078db7f2bb10bba2",
+    "plastic_heredity/intervention_p4.py": "7f9d4bd7460cbabac487044b1dd04b490a4d9606a318a43233b3f4134f114776",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/models.py": "cbfc5cdddc901edd17a8facd166cd32951649910f4515d3eb3a654ffbbd16f3b",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "348ccf3e51a9839b3aa5d3d5f60a4559abdffd9737d596077982e63300ac1310",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5",
+    "tests/test_intervention_cr4_confirmation.py": "8af7908f66c336635118f6757fd1d9f4377c913ed25a3f7e6f60b3df137097e3"
+  },
+  "validation_checksum_manifest_sha256": "609954943ff724c36986657af01dddf96f410c6ace5309ab2c844c3ddf39b666"
+}

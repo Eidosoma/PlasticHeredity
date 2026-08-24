@@ -1,0 +1,42 @@
+schema: eidosoma.e01.s03_precision_policy.v1
+researchStepId: S03
+policyVersion: E01-precision-v0.1.0
+noSilentPrecisionChanges: true
+randomSeed: 20260801
+threadPolicy:
+  maximumProjectWorkers: 8
+  smokeWorkers: 1
+  environmentVariables:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMBA_NUM_THREADS: '1'
+cpuReference:
+  device: cpu
+  arrayDtype: float64
+  torchDtype: float64
+  role: Numerical reference and all source-forensic smoke checks.
+gpuAssisted:
+  deviceSelection: Explicit CUDA index and UUID required in every run manifest.
+  smokeDeviceIndex: 0
+  referenceDtype: float64
+  float32AllowedOnlyWithExplicitMode: true
+  float32ModeName: gpu_float32
+  tensorFloat32Allowed: false
+  deterministicAlgorithmsRequiredForValidation: true
+  crossDeviceAbsoluteToleranceFloat64: 1.0e-10
+  crossDeviceRelativeToleranceFloat64: 1.0e-10
+optionalOmegaId:
+  defaultBackend: numpy
+  cupyCuda12xInstalledInFrozenCoreEnvironment: false
+  rule: CuPy acceleration is a separate optional environment and may not silently replace the NumPy reference backend.
+manifestRequiredFields:
+  - device
+  - deviceIndex
+  - deviceUuid
+  - dtype
+  - torchFloat32MatmulPrecision
+  - torchMatmulAllowTf32
+  - cudnnAllowTf32
+  - deterministicAlgorithms
+  - threadEnvironment

@@ -1,0 +1,201 @@
+{
+  "challenge": {
+    "additions": "with replacement outside unique removed labels",
+    "fixed_mass_nonnegative_integer": true,
+    "order": "ordinary controller action after fission 30, then exact K8 transport; control resumes after fission 31",
+    "removals": "molecule instances sampled without replacement"
+  },
+  "claim_boundary": {
+    "exploratory_only": true,
+    "prohibited": [
+      "autonomous agency or installed compotype",
+      "biological memory or error correction",
+      "life or universal origin-of-life mechanism",
+      "real prebiotic chemistry",
+      "strict-eight control",
+      "Phi or PhiID"
+    ]
+  },
+  "development": {
+    "architecture": {
+      "class_weight": "balanced",
+      "criterion": "gini",
+      "max_depth": 3,
+      "min_samples_leaf": 25,
+      "splitter": "best"
+    },
+    "candidate_pooled": false,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "features": [
+      "abundance_share",
+      "outgoing_influence_percentile",
+      "incoming_boost_percentile",
+      "presence"
+    ],
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 200,
+    "outcomes_used": false,
+    "source": "exact reconstructed original scaled5 development cohort only",
+    "teacher": "frozen candidate-separated exhaustive MODEL_DOWN",
+    "trees_per_candidate": [
+      "remove",
+      "add"
+    ]
+  },
+  "format": "codex-intervention-cr10-internalization-v2",
+  "home_cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "challenge_after_fission": 30,
+    "challenge_exact_transport": 8,
+    "conditions": [
+      "UNCHALLENGED",
+      "CHALLENGED_K8"
+    ],
+    "fissions": 60,
+    "fresh_matrices": 48,
+    "lineages": 4032,
+    "natural_untreated_landmark": 60,
+    "policies": [
+      "L0_RULE_CONTINUOUS",
+      "L1_RULE_AFTER_BREAK",
+      "L2_RULE_UNTIL_RUN3",
+      "L3_LOCAL_TREE",
+      "MODEL_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "replicates": 3
+  },
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_and_transfer_regimes_never_pooled": true,
+    "holm_within_analysis_family": true,
+    "no_confirmatory_pass_fail_gate": true,
+    "random_noop_tost_margin": 0.025,
+    "randomization_repetitions": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "integrity": {
+    "checkpoint_resumable": true,
+    "complete_exact_replay": true,
+    "controlled_future_retry_or_matrix_replacement": false,
+    "lambda_zero_plain_bitwise_identity": true,
+    "noop_plain_bitwise_identity": true
+  },
+  "kinetic_prototype": {
+    "baseline_simulator_unchanged": true,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fissions": 60,
+    "formula": "leave_rate(type)/(1+lambda*outgoing_influence_percentile(type))",
+    "lambda_zero_plain_dispatch_and_bitwise_identity": true,
+    "lambdas": [
+      0.0,
+      0.1,
+      0.3
+    ],
+    "matrices": 48,
+    "percentile_recomputed_each_growth_update": true,
+    "replicates": 3
+  },
+  "operational": {
+    "mandatory_stop_after_cr10_seal": true,
+    "minimum_free_disk_bytes": 2000000000,
+    "no_later_phase_launched": true
+  },
+  "policies": {
+    "L0_RULE_CONTINUOUS": "outgoing x@beta RULE_DOWN after every fission",
+    "L1_RULE_AFTER_BREAK": "RULE_DOWN only when just-observed H <= 0.9",
+    "L2_RULE_UNTIL_RUN3": "RULE_DOWN only while trailing strict run < 3",
+    "L3_LOCAL_TREE": "frozen local remove/add trees after every fission",
+    "MODEL_DOWN": "exhaustive frozen predictor minimum after every fission",
+    "NOOP": "no edit",
+    "RANDOM": "uniform legal edit after every fission from separate stream",
+    "callback_including_last_fission": true
+  },
+  "protocol_id": "d8de91a0acc03b9206d23ff0e6ae1eae6970928f953899457b8c2ec3a5043f52",
+  "randomness": {
+    "common_random_streams_not_identical_realized_futures": true,
+    "future_seed_excludes_policy_and_home_condition": true,
+    "random_action_challenge_and_future_streams_separate": true,
+    "seed_domains": {
+      "bootstrap": "5f6b9aab2edb281400019ee924adf287b63d5cb853883d7c23503ea874830b86",
+      "challenge_action": "92697a964867e70f61d22e6126658e7669e15b326cf1a09e50337937eb7ece80",
+      "development_reconstruction": "cdc6a81c8a1a4f00b6de3725f9d8602729f2544f79f730630fa9a05e5c23e3ae",
+      "future_simulation": "adbc6d814ecf7a0f745e3b241741498b8d2cd4997abc1111a3d018ac63e528b4",
+      "home_initial_composition": "bb4f04f860462ddaaa141cd8e243034f9447a8167a3a591027e6109e5c57213d",
+      "home_main_trajectory": "a0f6c2de970200a14f6726136b680ea7270220736a81b28db2ad75f82731ff78",
+      "home_matrix_generation": "6696b2b2577920bbb185a245fabd9821d881aecff91d8119cd0c75e1f4133739",
+      "kinetic_future": "9b69023e324cd3d76a8643df02e773e2f599488bf3a3c679fca5c88d8291950a",
+      "random_policy_action": "cc22d773a72b40ae9019de2cab7c599e6c107f2238dda399062b210584432cec",
+      "randomization": "a2bc479bc1ce8c5d80d3bd203ada29f62761e08fb7fd907c21c956abfd34c80d",
+      "replay": "c3e337146e70eadaf70b169b160148e1aa519fce4298b1aa4f271b30c1bfe056",
+      "smoke": "19c0ddd003e155439401e1866f4c83fa25a4fdabb64ba22a948f56f4bb12436f",
+      "transfer_initial_composition": "5a7e0a2eec8eb7fc3872149affdd42761e1f33a34e6c33c21f9ef2d9b7833198",
+      "transfer_main_trajectory": "7c0bbdec5a9695df510d46dc57428d280c2fa97c8d454b30005a855e57672e61",
+      "transfer_matrix_generation": "941b048a09457f5aa0bf6fcbdfbc3faea140079fd973cc56b5c118fa4ba751d4",
+      "tree_fit": "f9ad4725f52ca2cd89b8162894584f007e0e19dda7c593b880dea3e4973dc759",
+      "validation": "0cf57b4c582124cc3da7913cfa1889957c179997cdf5a8419310fdbb206c9494"
+    }
+  },
+  "role": "final exploratory phase; cannot rescue any confirmatory result",
+  "status": "frozen_before_any_cr10_scientific_matrix",
+  "target": {
+    "inheritance": "strict unrounded float64 H > 0.9",
+    "name": "JOINT_BREAK_RUN3",
+    "strict_eight_excluded": true
+  },
+  "transfer": {
+    "conditions": [
+      "UNCHALLENGED"
+    ],
+    "fissions": 60,
+    "fresh_matrices_per_regime": 24,
+    "natural_untreated_landmark": 60,
+    "policies": [
+      "L0_RULE_CONTINUOUS",
+      "L1_RULE_AFTER_BREAK",
+      "L2_RULE_UNTIL_RUN3",
+      "L3_LOCAL_TREE",
+      "MODEL_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "regimes": {
+      "POS_A_M3_S4": {
+        "A": -3.0,
+        "sigma": 4.0
+      },
+      "POS_A_M4_S5": {
+        "A": -4.0,
+        "sigma": 5.0
+      },
+      "POS_A_M5_S4": {
+        "A": -5.0,
+        "sigma": 4.0
+      }
+    },
+    "replicates": 2
+  },
+  "upstream": {
+    "cr3_gate_required": true,
+    "cr3_registration_id": "64e871db56b3958a14bdad47b404f6c9f1ad09d0bda1e996e24498598523d189",
+    "cr6_cr8_cr9_cr9m_not_advancement_gates": true,
+    "cr7_gate_required": true,
+    "cr7_registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70"
+  }
+}

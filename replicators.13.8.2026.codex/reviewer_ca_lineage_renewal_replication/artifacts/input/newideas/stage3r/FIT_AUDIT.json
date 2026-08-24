@@ -1,0 +1,770 @@
+{
+  "design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "diagnostic_digest": "44b3b2d4bca7ff02c5b41f7c9dcba8ea04eab37ac1829ee13b53bce76565f949",
+  "model_count": 27,
+  "norm_target": 28.75956566456363,
+  "windows": {
+    "overlap-17-48": {
+      "diagonal-ridge": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8824837670678769,
+            "normalized_error": 0.45438757165668764,
+            "rank": null
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8824840207902638,
+            "normalized_error": 0.45438755602841185,
+            "rank": null
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8824865584849233,
+            "normalized_error": 0.45438740203800176,
+            "rank": null
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8825118678916384,
+            "normalized_error": 0.4543860331804259,
+            "rank": null
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8827584016725484,
+            "normalized_error": 0.45438904282471404,
+            "rank": null
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8846790826357396,
+            "normalized_error": 0.45575728605489163,
+            "rank": null
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 0.1,
+          "direction_cosine": 0.8825118678916384,
+          "normalized_error": 0.4543860331804259,
+          "rank": null
+        },
+        "training_samples": 512
+      },
+      "reduced-rank-ridge": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8291883501366749,
+            "normalized_error": 0.4957664783672654,
+            "rank": 8
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8377589746597075,
+            "normalized_error": 0.4842611910071123,
+            "rank": 8
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8629864098020914,
+            "normalized_error": 0.4518781721806193,
+            "rank": 8
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.885207634327482,
+            "normalized_error": 0.42499703064753114,
+            "rank": 8
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8948832697566876,
+            "normalized_error": 0.4140994127802307,
+            "rank": 8
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8976217525256536,
+            "normalized_error": 0.4104050589398263,
+            "rank": 8
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8098559534887821,
+            "normalized_error": 0.5269121716594528,
+            "rank": 16
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8213756693197392,
+            "normalized_error": 0.5096427603266901,
+            "rank": 16
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8550068273092217,
+            "normalized_error": 0.46112116425178307,
+            "rank": 16
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8856696491171434,
+            "normalized_error": 0.41984443566896,
+            "rank": 16
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8998259613319395,
+            "normalized_error": 0.4021146276044083,
+            "rank": 16
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.9045472718906922,
+            "normalized_error": 0.3958967969128305,
+            "rank": 16
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.7777404980980438,
+            "normalized_error": 0.580491237738958,
+            "rank": 32
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.7926557463404368,
+            "normalized_error": 0.5553047360942754,
+            "rank": 32
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.836583090850633,
+            "normalized_error": 0.48539211967593515,
+            "rank": 32
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.879271513704632,
+            "normalized_error": 0.42344774320767803,
+            "rank": 32
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.9012236551360617,
+            "normalized_error": 0.39463855287894556,
+            "rank": 32
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.909840725871712,
+            "normalized_error": 0.3840698862257962,
+            "rank": 32
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.733119913742338,
+            "normalized_error": 0.6704088505181339,
+            "rank": 64
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.7519490523494889,
+            "normalized_error": 0.6336463453621226,
+            "rank": 64
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.809606973025323,
+            "normalized_error": 0.5304084493115059,
+            "rank": 64
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8683400365790476,
+            "normalized_error": 0.43667202499132624,
+            "rank": 64
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.9005430377364428,
+            "normalized_error": 0.38991964900549625,
+            "rank": 64
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.9142417552313982,
+            "normalized_error": 0.37375021204262004,
+            "rank": 64
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 10.0,
+          "direction_cosine": 0.9142417552313982,
+          "normalized_error": 0.37375021204262004,
+          "rank": 64
+        },
+        "training_samples": 512
+      },
+      "scalar-affine": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8741316442708789,
+            "normalized_error": 0.5510074819687254,
+            "rank": null
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8741316442708789,
+            "normalized_error": 0.5510074819692775,
+            "rank": null
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8741316442708789,
+            "normalized_error": 0.5510074819747994,
+            "rank": null
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8741316442708789,
+            "normalized_error": 0.5510074820300487,
+            "rank": null
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8741316442708789,
+            "normalized_error": 0.5510074825855024,
+            "rank": null
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8741316442708789,
+            "normalized_error": 0.551007488436186,
+            "rank": null
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 0.0001,
+          "direction_cosine": 0.8741316442708789,
+          "normalized_error": 0.5510074819687254,
+          "rank": null
+        },
+        "training_samples": 512
+      }
+    },
+    "strict-41-56": {
+      "diagonal-ridge": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8098807362521452,
+            "normalized_error": 0.5124986096070085,
+            "rank": null
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8098834071012562,
+            "normalized_error": 0.5124985835103554,
+            "rank": null
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8099100853703474,
+            "normalized_error": 0.5124983394449427,
+            "rank": null
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8101737919324593,
+            "normalized_error": 0.512497704011504,
+            "rank": null
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8125408002836306,
+            "normalized_error": 0.512645789892501,
+            "rank": null
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.82400152592991,
+            "normalized_error": 0.5198218730402011,
+            "rank": null
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 0.1,
+          "direction_cosine": 0.8101737919324593,
+          "normalized_error": 0.512497704011504,
+          "rank": null
+        },
+        "training_samples": 512
+      },
+      "reduced-rank-ridge": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.5162370036935643,
+            "normalized_error": 0.9598573437882045,
+            "rank": 8
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.53076834783349,
+            "normalized_error": 0.9138984969830919,
+            "rank": 8
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.5975089180332991,
+            "normalized_error": 0.7511532871110038,
+            "rank": 8
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.714599459781623,
+            "normalized_error": 0.5757892543643928,
+            "rank": 8
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8028155381210598,
+            "normalized_error": 0.49193169826250294,
+            "rank": 8
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8454510813258056,
+            "normalized_error": 0.4671002435450202,
+            "rank": 8
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.47203515762167236,
+            "normalized_error": 1.0700440350237266,
+            "rank": 16
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.4863995250950439,
+            "normalized_error": 1.0163104795651676,
+            "rank": 16
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.553989766945909,
+            "normalized_error": 0.825422914928871,
+            "rank": 16
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.6796687965047699,
+            "normalized_error": 0.6120824728418879,
+            "rank": 16
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.7855044194289418,
+            "normalized_error": 0.5017565153292427,
+            "rank": 16
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.841692035253488,
+            "normalized_error": 0.46583840054050585,
+            "rank": 16
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.42512691943532355,
+            "normalized_error": 1.216845407427884,
+            "rank": 32
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.4389030067002313,
+            "normalized_error": 1.1540215113709875,
+            "rank": 32
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.505840446418937,
+            "normalized_error": 0.9283795349974215,
+            "rank": 32
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.6415471996420312,
+            "normalized_error": 0.6641579102346331,
+            "rank": 32
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.7664694692191131,
+            "normalized_error": 0.5182544265070679,
+            "rank": 32
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.836818809214086,
+            "normalized_error": 0.4676504770380371,
+            "rank": 32
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.39079824741935043,
+            "normalized_error": 1.3427893417315127,
+            "rank": 64
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.40408976710739164,
+            "normalized_error": 1.2721898806219865,
+            "rank": 64
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.4698275861077186,
+            "normalized_error": 1.0169314738336745,
+            "rank": 64
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.6091776604328616,
+            "normalized_error": 0.7112049308911518,
+            "rank": 64
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.7487447937977125,
+            "normalized_error": 0.5350426550851719,
+            "rank": 64
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8321054390589218,
+            "normalized_error": 0.47050905619275807,
+            "rank": 64
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 10.0,
+          "direction_cosine": 0.841692035253488,
+          "normalized_error": 0.46583840054050585,
+          "rank": 16
+        },
+        "training_samples": 512
+      },
+      "scalar-affine": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8310402421719595,
+            "normalized_error": 0.5454789811019616,
+            "rank": null
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8310402421719596,
+            "normalized_error": 0.5454789811094656,
+            "rank": null
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8310402421719595,
+            "normalized_error": 0.5454789811845067,
+            "rank": null
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8310402421719594,
+            "normalized_error": 0.5454789819350814,
+            "rank": null
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8310402421719594,
+            "normalized_error": 0.5454789894572125,
+            "rank": null
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8310402421719595,
+            "normalized_error": 0.5454790663167429,
+            "rank": null
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 0.0001,
+          "direction_cosine": 0.8310402421719595,
+          "normalized_error": 0.5454789811019616,
+          "rank": null
+        },
+        "training_samples": 512
+      }
+    },
+    "strict-49-64": {
+      "diagonal-ridge": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.7916649333841269,
+            "normalized_error": 0.5405420145856492,
+            "rank": null
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.7916697749186605,
+            "normalized_error": 0.5405419715932942,
+            "rank": null
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.7917180768950265,
+            "normalized_error": 0.5405415860155393,
+            "rank": null
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.7921900696722181,
+            "normalized_error": 0.5405419538722602,
+            "rank": null
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.7960716527284782,
+            "normalized_error": 0.5408523630707819,
+            "rank": null
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8100148617190117,
+            "normalized_error": 0.5503837823212754,
+            "rank": null
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 0.01,
+          "direction_cosine": 0.7917180768950265,
+          "normalized_error": 0.5405415860155393,
+          "rank": null
+        },
+        "training_samples": 512
+      },
+      "reduced-rank-ridge": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.4991677796966796,
+            "normalized_error": 0.9643209505552907,
+            "rank": 8
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.5169359906383468,
+            "normalized_error": 0.9226704675406958,
+            "rank": 8
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.6006526250098956,
+            "normalized_error": 0.76560030753719,
+            "rank": 8
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.7217722089432737,
+            "normalized_error": 0.5909074804790385,
+            "rank": 8
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8074192849678938,
+            "normalized_error": 0.504931224102557,
+            "rank": 8
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8447499995516359,
+            "normalized_error": 0.4775452775370046,
+            "rank": 8
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.449287171211927,
+            "normalized_error": 1.0964191734350215,
+            "rank": 16
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.46611947232323164,
+            "normalized_error": 1.0464899445120666,
+            "rank": 16
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.5470844900850742,
+            "normalized_error": 0.8562853165389004,
+            "rank": 16
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.6812549113064568,
+            "normalized_error": 0.6335928833845874,
+            "rank": 16
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.7873810877802601,
+            "normalized_error": 0.5167866113512587,
+            "rank": 16
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8404123825563312,
+            "normalized_error": 0.4772179509230252,
+            "rank": 16
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.4086651609534189,
+            "normalized_error": 1.2267288872119315,
+            "rank": 32
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.4249468432485222,
+            "normalized_error": 1.1681121402197525,
+            "rank": 32
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.5043618286460902,
+            "normalized_error": 0.9466525038672675,
+            "rank": 32
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.645963106940562,
+            "normalized_error": 0.6802455177603037,
+            "rank": 32
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.768109978502174,
+            "normalized_error": 0.532477417643084,
+            "rank": 32
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8347726052494389,
+            "normalized_error": 0.47941155552524795,
+            "rank": 32
+          },
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.3739037850826962,
+            "normalized_error": 1.3624025974714817,
+            "rank": 64
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.3895067849818465,
+            "normalized_error": 1.2943148566778493,
+            "rank": 64
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.4667717615156941,
+            "normalized_error": 1.0398220108525922,
+            "rank": 64
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.6131598242037222,
+            "normalized_error": 0.7286805859102738,
+            "rank": 64
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.7502336338616032,
+            "normalized_error": 0.549128943925883,
+            "rank": 64
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8296671605228517,
+            "normalized_error": 0.4823646495111538,
+            "rank": 64
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 10.0,
+          "direction_cosine": 0.8404123825563312,
+          "normalized_error": 0.4772179509230252,
+          "rank": 16
+        },
+        "training_samples": 512
+      },
+      "scalar-affine": {
+        "grid": [
+          {
+            "alpha": 0.0001,
+            "direction_cosine": 0.8169116998229753,
+            "normalized_error": 0.5712467938212802,
+            "rank": null
+          },
+          {
+            "alpha": 0.001,
+            "direction_cosine": 0.8169116998229754,
+            "normalized_error": 0.571246793828253,
+            "rank": null
+          },
+          {
+            "alpha": 0.01,
+            "direction_cosine": 0.8169116998229753,
+            "normalized_error": 0.571246793897983,
+            "rank": null
+          },
+          {
+            "alpha": 0.1,
+            "direction_cosine": 0.8169116998229754,
+            "normalized_error": 0.5712467945954638,
+            "rank": null
+          },
+          {
+            "alpha": 1.0,
+            "direction_cosine": 0.8169116998229754,
+            "normalized_error": 0.5712468015882339,
+            "rank": null
+          },
+          {
+            "alpha": 10.0,
+            "direction_cosine": 0.8169116998229753,
+            "normalized_error": 0.5712468733120794,
+            "rank": null
+          }
+        ],
+        "pair_groups": 64,
+        "selected": {
+          "alpha": 0.0001,
+          "direction_cosine": 0.8169116998229753,
+          "normalized_error": 0.5712467938212802,
+          "rank": null
+        },
+        "training_samples": 512
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "all_checks_passed": true,
+  "check_count": 29,
+  "checks": {
+    "01_legal_substitution_preserves_mass": {
+      "detail": null,
+      "passed": true
+    },
+    "02_same_type_substitution_rejected": {
+      "detail": null,
+      "passed": true
+    },
+    "03_absent_source_rejected": {
+      "detail": null,
+      "passed": true
+    },
+    "04_legal_edits_nonnegative_integer": {
+      "detail": {
+        "legal_edits": 6
+      },
+      "passed": true
+    },
+    "05_edited_features_permutation_invariant": {
+      "detail": {
+        "maximum_absolute_error": 2.220446049250313e-16
+      },
+      "passed": true
+    },
+    "06_history_unchanged_by_instantaneous_edit": {
+      "detail": null,
+      "passed": true
+    },
+    "07_frozen_predictor_serialization_exact": {
+      "detail": {
+        "all_within_tolerance": true,
+        "archived_experiment_contract_exact": true,
+        "candidate_errors": {
+          "02": {
+            "maximum_absolute_error_vs_archive_implementation": 0.0,
+            "maximum_absolute_error_vs_archived_confirmation_table": 5.551115123125783e-16,
+            "states": 1000,
+            "within_tolerance": true
+          },
+          "03": {
+            "maximum_absolute_error_vs_archive_implementation": 0.0,
+            "maximum_absolute_error_vs_archived_confirmation_table": 5.551115123125783e-16,
+            "states": 1000,
+            "within_tolerance": true
+          }
+        },
+        "source_arrays_sha256": "102abe46f510660a4b11ddfcd96e08301278bd6da585c2158c9bc69122db7fc0",
+        "source_manifest_sha256": "7358276ee14cea62ba18fc7e9d06108ef8b2019999d6f4e4bfcbe6721b37e372",
+        "source_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+        "source_state_table_sha256": "f83b99009a281a65f045d0634d120013c81131803c06f3ebf98b2dfe49f1cfc2",
+        "tolerance": 1e-12
+      },
+      "passed": true
+    },
+    "08_exhaustive_legal_enumeration_exact": {
+      "detail": null,
+      "passed": true
+    },
+    "09_extreme_tie_selection_deterministic": {
+      "detail": null,
+      "passed": true
+    },
+    "10_random_edit_selection_uniform": {
+      "detail": {
+        "counts": [
+          4997,
+          4993,
+          5016,
+          4994
+        ]
+      },
+      "passed": true
+    },
+    "11_random_selection_stream_distinct_from_future_stream": {
+      "detail": null,
+      "passed": true
+    },
+    "12_future_streams_paired_across_arms": {
+      "detail": {
+        "arm_identity_in_seed_key": false
+      },
+      "passed": true
+    },
+    "13_noop_one_shot_bitwise_plain_simulator": {
+      "detail": null,
+      "passed": true
+    },
+    "14_endpoint_threshold_and_horizon_edges": {
+      "detail": null,
+      "passed": true
+    },
+    "15_positive_before_extinction_remains_positive": {
+      "detail": null,
+      "passed": true
+    },
+    "16_extinction_before_certification_negative": {
+      "detail": null,
+      "passed": true
+    },
+    "17_candidate_selected_daughter_semantics_preserved": {
+      "detail": {
+        "candidate_02": "first fixed-size daughter",
+        "candidate_03": "second binomial daughter"
+      },
+      "passed": true
+    },
+    "18_matrix_bootstrap_uses_whole_blocks": {
+      "detail": null,
+      "passed": true
+    },
+    "19_matrix_sign_randomization_preserves_pairing": {
+      "detail": null,
+      "passed": true
+    },
+    "20_replay_state_edit_endpoint_and_process_exact": {
+      "detail": null,
+      "passed": true
+    },
+    "21_beta_surgery_positive_and_norm_preserving": {
+      "detail": null,
+      "passed": true
+    },
+    "22_random_beta_surgery_norm_matched": {
+      "detail": null,
+      "passed": true
+    },
+    "23_closed_loop_noop_callback_bitwise_plain": {
+      "detail": null,
+      "passed": true
+    },
+    "24_release_applies_zero_interventions_after_release": {
+      "detail": null,
+      "passed": true
+    },
+    "25_batched_exhaustive_scoring_is_not_an_approximation": {
+      "detail": {
+        "actual_dimension": 100,
+        "edits_compared": 64,
+        "maximum_feature_absolute_error": 8.881784197001252e-16,
+        "maximum_probability_absolute_error": 2.220446049250313e-16
+      },
+      "passed": true
+    },
+    "26_beta_orientation_matches_codex_propensity_equation": {
+      "detail": {
+        "expression": "beta @ x",
+        "storage": "beta[target,catalyst]"
+      },
+      "passed": true
+    },
+    "27_p3_original_contract_unchanged": {
+      "detail": null,
+      "passed": true
+    },
+    "28_p3_readback_field_derived": {
+      "detail": null,
+      "passed": true
+    },
+    "29_present_present_surgery_is_transpose_invariant": {
+      "detail": null,
+      "passed": true
+    }
+  },
+  "format": "codex-intervention-p3-lifecycle-validation-v1",
+  "original_required_checks_passed": true,
+  "scientific_cohort_generated": false
+}

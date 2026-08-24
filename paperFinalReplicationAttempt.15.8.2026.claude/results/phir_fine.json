@@ -1,0 +1,54 @@
+{
+  "battery": {
+    "C1_aggregate_trend": {
+      "slope": -2.7359873500100096e-06,
+      "p": 4.60435573005349e-05,
+      "horizon_steps": 7428
+    },
+    "C2_spikes": {
+      "runs_with_spikes": 99.0,
+      "n_runs": 100
+    },
+    "C3_correlation": {
+      "runs_valid": 100,
+      "positive": 39,
+      "positive_significant": 30,
+      "phi_higher_in_sr_p001": 28,
+      "fisher_p": 0.0,
+      "mean_rho": -0.03608803315461099,
+      "mean_rho_ttest_p": 0.014925780421589974
+    },
+    "C4_ljungbox": {
+      "reject": 83,
+      "reject_after_diff": 100,
+      "median_p": 7.956801920105503e-57
+    },
+    "C6_spike_geometry": {
+      "sr_prob_vs_spike_time": {
+        "rho": -0.2105256648113791,
+        "p": 0.0364740377671683,
+        "n": 99
+      },
+      "sr_prob_vs_spike_gap": {
+        "rho": 0.13583127721566599,
+        "p": 0.18233559321981346,
+        "n": 98
+      },
+      "sr_prob_vs_spike_height": {
+        "rho": -0.3222263450834879,
+        "p": 0.0011435166788288714,
+        "n": 99
+      }
+    }
+  },
+  "sign_regime": {
+    "phir_run_mean": "+1.9624\u00b10.2749",
+    "phir_runs_positive": 100,
+    "n_runs": 100
+  },
+  "consistency_phi_autocorr": "0.123\u00b10.150",
+  "polarity_runmean_phir_vs_sr_prob": {
+    "rho": -0.43920792079207915,
+    "p": 4.844954269865797e-06
+  }
+}

@@ -1,0 +1,44 @@
+from: markdown+tex_math_dollars+tex_math_single_backslash+raw_tex+pipe_tables+link_attributes
+to: latex
+standalone: true
+pdf-engine: xelatex
+metadata-file: paper_assets/biorxiv_metadata.yaml
+filters:
+  - paper_assets/biorxiv_frontmatter.lua
+include-in-header:
+  - paper_assets/biorxiv_preamble.tex
+resource-path:
+  - .
+variables:
+  documentclass: article
+  fontsize: 11pt
+  papersize: a4
+  geometry:
+    - top=25mm
+    - bottom=28mm
+    - left=25mm
+    - right=25mm
+    - headheight=14pt
+  colorlinks: true
+  linkcolor: EidosomaBlue
+  citecolor: EidosomaBlue
+  urlcolor: EidosomaBlue
+  graphics: true
+  tables: true
+  title-meta: "Plastic heredity: Predicting and steering compositional inheritance in simulated lipid-like molecular assemblies"
+  author-meta: "Robert Bjarnason"
+  subject: "Plastic heredity in reconstructed GARD, cellular automata, and gene-regulatory networks"
+  keywords:
+    - GARD
+    - cellular automata
+    - gene-regulatory networks
+    - lineage carrier
+    - dynamical regimes
+    - PhiID
+    - Phi-r
+    - compositional heredity
+    - origins-of-life simulation
+    - plastic heredity
+    - break-and-renewal
+    - causal intervention
+strip-comments: true

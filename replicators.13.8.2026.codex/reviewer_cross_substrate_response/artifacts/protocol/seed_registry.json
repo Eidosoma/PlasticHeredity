@@ -1,0 +1,15 @@
+{
+  "domains": [
+    "mechanics",
+    "calibration",
+    "pilot/main",
+    "pilot/future",
+    "confirmation/main",
+    "confirmation/future",
+    "strangers",
+    "bootstrap",
+    "randomization",
+    "replay"
+  ],
+  "master_commitment": "f93cd1044ef1cfdf5043e9a9618c0ecefff36b980006b7d489133939641c5618"
+}

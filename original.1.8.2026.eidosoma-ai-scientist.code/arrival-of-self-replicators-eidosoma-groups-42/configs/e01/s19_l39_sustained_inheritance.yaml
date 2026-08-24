@@ -1,0 +1,65 @@
+schema: eidosoma.e01.s19_l39.preregistration.v1
+version: E01-S19-L39-SUSTAINED-HOMEOSTATIC-INHERITANCE-COMMITTOR-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Does online certification of three consecutive strict-H090 parent-to-selected-
+  daughter inheritance events have a reliable H32 committor, and does the
+  already validated H8 inheritance propensity recover that committor across
+  both simulator candidates and independent evaluation cohorts?
+inputs:
+  states: 280 frozen L28/L31 restored states
+  branchStreams:
+    H32: 128 exact frozen continuations per state
+    H8: 64 exact frozen continuations per state
+  observedHistory: frozen selected-clock prefix ending at each restored state
+primaryEvent:
+  id: SUSTAINED_PARENT_DAUGHTER_INHERITANCE_H090_RUN3
+  clock: selected post-fission boundaries
+  inheritance: strict parent-to-selected-daughter cosine H > 0.9
+  requiredConsecutiveFissions: 3
+  certificationOnset: third qualifying future fission
+  retrospectivePhysicalOnset: first fission in the qualifying run
+  completedTestTrajectoryUsed: false
+  prefixCarryIn: false
+controls:
+  - H32_FISSION_OPPORTUNITY
+  - EXACT_ORDER_CONDITIONED_RUN_NULL
+  - H8_ANY_INHERITANCE_PROPENSITY
+  - H8_EXPECTED_INHERITED_BOUNDARY_FRACTION
+  - PREFIX_INHERITANCE_FRACTION
+  - PREFIX_TRAILING_INHERITANCE_RUN
+  - CURRENT_MASS
+  - GENERATION_PHASE
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  bootstraps: 4096
+  primaryHorizon: 32
+  shortHorizon: 8
+gates:
+  correctedVarianceLower95: ">0"
+  splitHalfSpearman: ">0.5"
+  splitHalfLower95: ">0.3"
+  intermediateStatesPerEvaluationGroup: 20
+  h8ToH32Spearman: ">0.5"
+  h8ToH32Lower95: ">0.3"
+  sequenceOrderDifferenceLower95: ">0"
+  opportunityWithoutCertificationFraction: ">=0.1"
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  thresholdSearch: false
+  runLengthSearch: false
+  horizonSearch: false
+  targetBasin: none
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  validationReserveFraction: 0.10
+nextIfPass: UNTOUCHED_SUSTAINED_INHERITANCE_CONFIRMATION
+nextIfTargetPassesButProxyFails: SHOOTING_BRANCH_BUDGET_AND_EFFICIENCY
+nextIfFail: RECURRENCE_AFTER_DEPARTURE_COMMITTOR

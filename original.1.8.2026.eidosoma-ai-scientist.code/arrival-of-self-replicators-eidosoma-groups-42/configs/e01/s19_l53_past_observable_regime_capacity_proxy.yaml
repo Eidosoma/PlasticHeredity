@@ -1,0 +1,84 @@
+schema: eidosoma.e01.s19_l53.preregistration.v1
+version: E01-S19-L53-PAST-OBSERVABLE-REGIME-CAPACITY-PROXY-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Can the reliable state-local process risk measured by independent L50/L52
+  branch halves be predicted on held-out catalytic matrices from direct regime
+  history and phase, beta-only catalytic structure, or the exact target-blind
+  current-state graph?
+inputs:
+  states: exact frozen L50 800 post-fission states
+  responses: exact frozen L50 A/B branch counts
+  branchDerivedCeilings: exact frozen L52 matrix-transfer and state-local predictions
+  developmentMatricesPerCandidate: 40
+  validationMatricesPerCandidate: 40
+  statesPerMatrix: 5
+  newSimulation: false
+targets:
+  inheritance: strict parent-daughter H > 0.9
+  break: first future noninheritance
+  resumption: three consecutive inherited fissions after a break
+  primary: joint break plus resumption at F12
+  nestedHorizons: [4, 8, 12]
+models:
+  - TRAINING_PRIOR
+  - DIRECT_HISTORY_PHASE
+  - BETA_STRUCTURE
+  - FULL_STATE_GRAPH_HISTORY
+features:
+  directHistory:
+    - normalizedGeneration
+    - currentMass
+    - prefixInheritanceFraction
+    - recentFiveInheritanceFraction
+    - prefixTrailingInheritanceRun
+    - latestParentDaughterH
+    - fissionsSinceLatestBreak
+    - currentInheritanceState
+    - currentRegimeDuration
+  betaStructure: exactly 20 frozen beta-log and beta-singular graph coordinates
+  fullStateGraph: exact 195-coordinate L34 target-blind graph signature
+modelContract:
+  fitRole: DEVELOPMENT
+  scoreRole: VALIDATION
+  crossfitDirections: [A_TO_B, B_TO_A]
+  graphPcaComponents: 12
+  pcaScope: development only
+  logisticRidgeC: 0.1
+  hyperparameterSearch: false
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  branchHalvesPooled: false
+  matrixBootstraps: 4096
+  wholeMatrixPermutations: 512
+gates:
+  stableCatalyticCapacity: >-
+    Beta-only structure improves F12 joint-event heldout-half log loss over the
+    development prior with a positive matrix-bootstrap lower bound, has q-rank
+    lower bound above 0.3, and permutation p below 0.01 in both candidates and
+    crossfit directions.
+  stateLocalPastProxy: >-
+    Full-state graph plus history improves F12 joint-event log loss over direct
+    history and the prior with positive matrix-bootstrap lower bounds, has
+    overall q-rank lower bound above 0.3 and centered within-matrix q-rank lower
+    bound above 0.1, passes permutation p below 0.01, and agrees in both
+    candidates and directions.
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranches: 0
+  targetSearch: false
+  featureSearch: false
+  architectureSearch: false
+  phiComputation: false
+  intervention: false
+ceilings:
+  cpuHours: 40
+  gpuHours: 0
+  wallHours: 24
+  retainedGiB: 15
+  temporaryGiB: 30
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+nextStep: conditional on frozen L53 result under authorization through L65

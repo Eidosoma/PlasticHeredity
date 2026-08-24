@@ -1,0 +1,119 @@
+{
+  "completed_ch5_pilot_checksums_sha256": "8af989671d30e6c9d56c402d507672b6bf184657d281ca7bbb49eab706836c55",
+  "completed_ch5_pilot_manifest_sha256": "21e7448f498b043467b05eb39607d30d18c6cad823f6eb797cded8add6841f2b",
+  "completed_ch5_pilot_registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+  "external_code_data_seeds_models_imported": false,
+  "format": "codex-ch5-phir-window-bridge-registration-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "protocol": {
+    "arms": [
+      "MODEL_STABILIZE",
+      "MODEL_DESTABILIZE"
+    ],
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "cannot_authorize_or_launch_original_confirmation": true,
+    "claim_boundary": [
+      "temporal-estimator moderation is not a uniquely correct Phi-r definition",
+      "gauge response is not hereditary control",
+      "no consciousness, life, agency, or biological-memory claim",
+      "no universal origin-of-life mechanism or Platonic-space portal"
+    ],
+    "completed_ch5_pilot_manifest_sha256": "21e7448f498b043467b05eb39607d30d18c6cad823f6eb797cded8add6841f2b",
+    "completed_ch5_pilot_registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+    "format": "codex-ch5-phir-window-bridge-program-v1",
+    "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "inference": {
+      "bootstrap": 4096,
+      "candidate_pooling": false,
+      "holm_within_four_cell_family": true,
+      "replicate_pooling": false,
+      "sign_randomization": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "original_confirmation_locked": true,
+    "preprocessings": [
+      "clr",
+      "raw_count"
+    ],
+    "program": "fresh 24-matrix pooled-versus-rolling Phi-r bridge",
+    "protocol_id": "c47e2ae0a6a1a07e85fd572b9660a7afb9e69b078cb83fbc2fa0f050d845126e",
+    "raw_molecular_trajectories_persisted": false,
+    "replay": "complete deterministic regeneration of all 24 matrices",
+    "seed_domains": {
+      "bootstrap": "8e1ff71ae3937e97356042635f6d836fd6516cde2dcf272dca925480619f3053",
+      "controller_action": "b1460da9bddab80125cd0473bfc64c3e5e3a82aff3ca5ed0a03ad6e0422fa738",
+      "future": "66b5aabfbfce05b648800b373e82f117d443e653ebc96bb82805327c5d45388c",
+      "initial": "fff1c4c3d22bb4b51743899861e5bc3a4c0e1329a5ef7d5f3d7cbc47d293d9ec",
+      "main_path": "08265d544c87ee7883b088671f08bc188a49e3360607f179dd3452add3c9c3a2",
+      "matrix": "661519de81cd5d0fb642d22598da82ea7775354a6d9229e4b7eb5c416a805a6d",
+      "randomization": "b59b9c85c2e28dbc66332eef7de334c76c9766a2696eac640b5f2c75acfa7f22",
+      "smoke": "394e4aae2cb666c78567fd56bb725a043a89502cefed8ef552226c84e3b388ea",
+      "validation": "7f3b97cb9282a3543ca12f876913370aa252a009bec0cae3f1d56819ea2d2084"
+    },
+    "spec": {
+      "bootstrap_repetitions": 4096,
+      "bridge_horizon": 60,
+      "label": "window_bridge24",
+      "matrices": 24,
+      "natural_generations": 60,
+      "pooled20_start": 41,
+      "pooled30_start": 31,
+      "randomization_repetitions": 4096,
+      "replicates": 2,
+      "rolling_window": 512
+    },
+    "typeset_taxonomy": {
+      "full_typeset": "full coordinate blocks against whole future",
+      "full_typeset_rolling_steps": [
+        40,
+        60
+      ],
+      "macro_typeset": "two averaged Fiedler halves"
+    },
+    "window_estimators": {
+      "pooled20": "one score on controlled fissions 41-60",
+      "pooled30": "one score on controlled fissions 31-60",
+      "rolling20": "mean rolling-512 score after fissions 41-60",
+      "rolling30": "mean rolling-512 score after fissions 31-60"
+    }
+  },
+  "protocol_id": "c47e2ae0a6a1a07e85fd572b9660a7afb9e69b078cb83fbc2fa0f050d845126e",
+  "registration_id": "9ef3c307b39d56ee9b82651ee39984ef5c3260cef735243eecd680fb97100c89",
+  "scientific_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "8e1ff71ae3937e97356042635f6d836fd6516cde2dcf272dca925480619f3053",
+    "controller_action": "b1460da9bddab80125cd0473bfc64c3e5e3a82aff3ca5ed0a03ad6e0422fa738",
+    "future": "66b5aabfbfce05b648800b373e82f117d443e653ebc96bb82805327c5d45388c",
+    "initial": "fff1c4c3d22bb4b51743899861e5bc3a4c0e1329a5ef7d5f3d7cbc47d293d9ec",
+    "main_path": "08265d544c87ee7883b088671f08bc188a49e3360607f179dd3452add3c9c3a2",
+    "matrix": "661519de81cd5d0fb642d22598da82ea7775354a6d9229e4b7eb5c416a805a6d",
+    "randomization": "b59b9c85c2e28dbc66332eef7de334c76c9766a2696eac640b5f2c75acfa7f22",
+    "smoke": "394e4aae2cb666c78567fd56bb725a043a89502cefed8ef552226c84e3b388ea",
+    "validation": "7f3b97cb9282a3543ca12f876913370aa252a009bec0cae3f1d56819ea2d2084"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_WINDOW_BRIDGE_PREREGISTRATION.md": "3c4ab5bae36ed0e0d32de32bf568c55b88368bcd82d22f5cfa7d03e73745e447",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/phir_ch5.py": "dac7c122573bb1548188c19ebfb051d8f6e6c4b750f45c0707eae03ac9ca1425",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_window_bridge.py": "c39233f8f4b1c0a5672d970478bd49f67a607520d657edc0bfe92a6c82ff3b74",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_window_bridge.py": "2ef545dc34abc3932b9a1026c3af9e0686744704340740e4b8b9f02722812adc"
+  },
+  "source_tree_sha256": "13e4d89b50370b2b69b481b5065714a257d18d764124bb9eaa9a763cd5769501"
+}

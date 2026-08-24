@@ -1,0 +1,42 @@
+schema: eidosoma.e01.s19_l07_governing_protocol.v1
+researchStepId: S19
+loopId: S19-L07
+versionedLoopId: E01-S19-L07-OCCUPANCY-SETTING-SEARCH-v1.0.0
+evidenceClass: ADAPTIVE_EXPLORATORY_OCCUPANCY_DIRECTED_RECONSTRUCTION
+humanWaiver:
+  soleScientificTarget: mean self-replicator occupancy close to 0.88
+  target: 0.88
+  approximateBand: [0.85, 0.91]
+  exactMatchRequired: false
+  allOtherPaperFingerprintAndPromotionGatesWaived: true
+  integrityRequirementsNotWaived:
+    - immutable-prior preservation
+    - complete attempted-setting and failure retention
+    - pre-result chronological registration
+    - source and code provenance
+    - numerical validity
+    - exact regeneration of strongest settings
+    - artifact and scope accounting
+claimBoundary: An occupancy match is exploratory and does not establish author-code identity, correct temporal structure, prediction, or causal control.
+adaptiveRounds:
+  - R01_BOUNDARY_CLOCK
+  - R02_THRESHOLD_TRANSCRIPTION
+  - R03_EXPOSURE_SIMULATOR
+  - R04_ADAPTIVE_EXPOSURE_REFINEMENT_IF_INFORMATIVE
+  - R05_EXACT_REGENERATION
+selectionRule:
+  primary: minimize the maximum candidate-specific absolute deviation from 0.88
+  secondary: minimize mean candidate-specific absolute deviation from 0.88
+  prohibitedSelectors:
+    - emergence association
+    - prediction performance
+    - intervention outcome
+    - any non-occupancy temporal fingerprint
+resources:
+  maximumCpuWorkers: 8
+  maximumGpuHours: 0
+  numericalAuthority: CPU_FLOAT64
+  retainedArtifactLimitGiB: 25
+  temporaryCacheLimitGiB: 75
+  perAttemptRuntime: may last up to a few hours when scientifically justified
+stopBoundary: mandatory human review after L07; no automatic L08, S20, E02, author contact, or report generation

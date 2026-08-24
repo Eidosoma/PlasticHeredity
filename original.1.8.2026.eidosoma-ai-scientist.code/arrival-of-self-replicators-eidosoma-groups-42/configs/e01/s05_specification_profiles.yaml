@@ -1,0 +1,139 @@
+schema: eidosoma.e01.s05_specification_profiles.v1
+researchStepId: S05
+profileCollectionVersion: E01-S05-profiles-v1.0.0
+scopeBoundary: >-
+  These are small S05 validation profiles. They instantiate explicit branches
+  and numerical fixture values without resolving any author-code sentinel,
+  registry conflict, or unexpanded branch set. They are not baseline paper
+  settings and are not eligible for paper-claim adjudication.
+profiles:
+  E01-S05-HISTORICAL-DISTRIBUTION-COMPARISON-v1.0.0:
+    specification_id: E01-S05-HISTORICAL-DISTRIBUTION-COMPARISON-v1.0.0
+    profile_role: historical_distribution_comparison
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 1
+    max_steps: null
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 0.4
+    k_b: 0.02
+    rho: [0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+    propensity_equation_branch: historical_reference
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: categorical_single_event
+    clock_semantics: event_index_only
+    poisson_exposure: null
+    loss_nonnegativity: eventwise_zero_rate
+    growth_boundary: eventwise_exact_stop
+    max_steps_semantics: unbounded_historical_comparison
+    zero_propensity_semantics: raise
+    fission_semantics: fixed_size_without_replacement_odd_discard
+    fission_probability: null
+    daughter_selection: first
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: with_replacement_counts
+    evidenceBoundary: >-
+      Distribution-compatible with the pinned public historical transition law
+      for matched explicit values; not a legacy MATLAB RNG or author-code claim.
+
+  E01-S05-MODERN-GILLESPIE-FIXTURE-v1.0.0:
+    specification_id: E01-S05-MODERN-GILLESPIE-FIXTURE-v1.0.0
+    profile_role: modern_gillespie_fixture
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 2
+    max_steps: 100
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 0.4
+    k_b: 0.02
+    rho: [0.2, 0.3, 0.5]
+    propensity_equation_branch: modern_gillespie
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: direct_gillespie
+    clock_semantics: gillespie_exponential
+    poisson_exposure: null
+    loss_nonnegativity: eventwise_zero_rate
+    growth_boundary: eventwise_exact_stop
+    max_steps_semantics: fission_current_state
+    zero_propensity_semantics: raise
+    fission_semantics: binomial_complement
+    fission_probability: 0.5
+    daughter_selection: uniform_random
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: distinct_types_without_replacement
+    evidenceBoundary: >-
+      Independent modern Gillespie fixture using the FULL_PLAN rate equations;
+      it is neither historical timing nor the paper's vector-Poisson branch.
+
+  E01-S05-PAPER-POISSON-FIXTURE-v1.0.0:
+    specification_id: E01-S05-PAPER-POISSON-FIXTURE-v1.0.0
+    profile_role: paper_reconstruction_fixture
+    n_species: 3
+    n_min: 2
+    n_max: 6
+    n_generations: 1
+    max_steps: 4
+    beta_a: -4.0
+    beta_sigma: 4.0
+    k_f: 0.4
+    k_b: 0.02
+    rho: [0.2, 0.3, 0.5]
+    propensity_equation_branch: paper_poisson_reconstruction
+    catalytic_matrix_branch: historical_orientation_with_diagonal
+    reservoir_semantics: constant_require_sum_one
+    update_kernel: vector_poisson_batch
+    clock_semantics: fixed_poisson_exposure
+    poisson_exposure: 0.25
+    loss_nonnegativity: clip_batch_to_available
+    growth_boundary: retain_batch_overshoot
+    max_steps_semantics: fission_current_state
+    zero_propensity_semantics: stop
+    fission_semantics: binomial_complement
+    fission_probability: 0.5
+    daughter_selection: first
+    post_fission_semantics: continue_exact_selected
+    initial_state_semantics: distinct_types_without_replacement
+    evidenceBoundary: >-
+      Illustrative paper-prose reconstruction only. Exposure, clipping, boundary,
+      and daughter semantics are explicit fixture branches, not author defaults.
+
+validationRandomInputs:
+  policy: >-
+    Literal independent NumPy Generator seeds are fixture inputs only. S05 does
+    not define a canonical seed tuple, derivation hierarchy, or regeneration
+    schema; that remains S06.
+  streamNames: [catalytic_matrix, initialization, events, waiting_time, fission, daughter]
+  unitFixtureSeeds: [1101, 1102, 1103, 1104, 1105, 1106]
+  comparisonSeeds:
+    independentEvents: 51001
+    historicalEvents: 51002
+    independentFission: 52001
+    historicalFission: 52002
+    independentTrajectoryEvents: 53001
+    independentTrajectoryFission: 53002
+    historicalTrajectory: 53003
+
+distributionalValidation:
+  propensityCases: 512
+  eventDrawsPerEngine: 120000
+  fissionDrawsPerEngine: 50000
+  oddFissionDrawsPerEngine: 30000
+  trajectoryDrawsPerEngine: 20000
+  thresholds:
+    propensityMaximumAbsoluteError: 1.0e-12
+    categoricalTwoEngineTotalVariation: 0.015
+    categoricalPerEngineTargetTotalVariation: 0.015
+    fixedFissionTwoEngineTotalVariation: 0.04
+    oddFissionTwoEngineTotalVariation: 0.04
+    trajectoryEndpointTwoEngineTotalVariation: 0.04
+    trajectoryMeanEventCountStandardizedDifference: 5.0
+  thresholdBasis: >-
+    Fixed before execution as conservative Monte Carlo tolerances for the stated
+    sample sizes. These S05 agreement gates are not the calibrated goodness-of-fit
+    program reserved for S07.

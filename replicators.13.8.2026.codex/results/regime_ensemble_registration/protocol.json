@@ -1,0 +1,175 @@
+{
+  "claim_boundary": {
+    "not_tested": [
+      "causal control",
+      "molecular intervention",
+      "attractor or regime switching",
+      "recurrence",
+      "origin-of-life realism"
+    ],
+    "tested": "out-of-cohort prediction of strict break-and-distinct-renewal probability beyond unique history and growth clocks"
+  },
+  "cohort": {
+    "branches_per_state": 128,
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "experiment": {
+      "bootstrap_repetitions": 4096,
+      "candidates": {
+        "02": {
+          "daughter_rule": "first",
+          "fission_rule": "fixed_size",
+          "name": "02",
+          "overshoot_rule": "trim_whole_assembly",
+          "poisson_exposure": 0.1
+        },
+        "03": {
+          "daughter_rule": "second",
+          "fission_rule": "binomial",
+          "name": "03",
+          "overshoot_rule": "admit_joiners_to_capacity",
+          "poisson_exposure": 0.125
+        }
+      },
+      "confirmation": {
+        "branches_per_state": 128,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "development": {
+        "branches_per_state": 128,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "gard": {
+        "beta_log_mean": -4.0,
+        "beta_log_sd": 4.0,
+        "generations": 100,
+        "inheritance_threshold": 0.9,
+        "k_join": 0.01,
+        "k_leave": 0.0001,
+        "max_growth_steps": 1000,
+        "n_max": 80,
+        "n_min": 40,
+        "n_types": 100
+      },
+      "horizon": 32,
+      "logistic_c": 0.1,
+      "master_seed": "650fecf3a953484eea76701964a08f85d81f54a0bbe7ff5e0e30ca05fd02537d",
+      "pca_components": 12,
+      "permutation_repetitions": 4096,
+      "regenerate_confirmation": true
+    },
+    "full_exact_replay": true,
+    "future_horizon_fissions": 32,
+    "label": "REGENSCONF",
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 200,
+    "new_seed_domain": "650fecf3a953484eea76701964a08f85d81f54a0bbe7ff5e0e30ca05fd02537d",
+    "number_of_confirmation_cohorts": 1,
+    "primary_futures": 256000,
+    "states": 2000
+  },
+  "endpoint_contract": {
+    "coherence": {
+      "rule": "every daughter pair in the window > threshold",
+      "threshold": 0.9
+    },
+    "continuous_margin": "max over eligible windows of min(minimum_pairwise - 0.9, nextafter(0.85,+infinity) - maximum_old_anchor_similarity); primary event iff best margin > 0",
+    "first_break": {
+      "inclusive_upper_bound": 0.9,
+      "rule": "first future fission not satisfying inheritance"
+    },
+    "horizon_fissions": 32,
+    "inheritance": {
+      "rule": "parent-daughter cosine similarity > threshold",
+      "threshold": 0.9
+    },
+    "old_anchor_distinctness": {
+      "anchor": "parent composition at the first break",
+      "rule": "every window daughter <= threshold from anchor",
+      "threshold": 0.85
+    },
+    "post_break_windows_only": true,
+    "primary_is_unconditional": true,
+    "required_consecutive_inherited_fissions": 8,
+    "search_every_eligible_window": true
+  },
+  "experiment_role": "prospective confirmation of a pilot-developed direct-plus-hurdle ensemble; the pilot's registered failure remains unchanged",
+  "format": "plastic-heredity-regime-ensemble-registration-v1",
+  "frozen_predictor": {
+    "candidate_specific_models": true,
+    "comparator": "the identical frozen h10 baseline in both families",
+    "direct_weight": 0.5,
+    "formula": "p_ensemble = 0.5 * p_direct + 0.5 * p_hurdle",
+    "hurdle_weight": 0.5,
+    "same_family_recipe_for_both_candidates": true,
+    "scale": "probability",
+    "source": "already fitted final models from the checksum-sealed pilot"
+  },
+  "operations": {
+    "generation_and_replay_checkpoints_separate": true,
+    "per_state_resumable_checkpoints": true,
+    "refuse_output_overwrite": true,
+    "registration_verified_before_any_matrix_generation": true,
+    "round_trip_primary_metric_recomputation": true
+  },
+  "primary_endpoint": "primary_all8",
+  "primary_inference": {
+    "bootstrap_repetitions": 4096,
+    "cells": "candidate 02/03 x fixed branch half A/B",
+    "cluster_unit": "whole catalytic matrix",
+    "contrast": "frozen ensemble minus frozen h10 comparator",
+    "gate_per_cell": [
+      "log-loss gain > 0",
+      "whole-matrix bootstrap 95% lower bound > 0",
+      "Holm-adjusted whole-matrix randomization p < 0.05"
+    ],
+    "loss": "natural-log Bernoulli log loss on state-level event fractions",
+    "multiplicity": "Holm adjustment over the four primary cells",
+    "overall_gate": "all three conditions in all four cells",
+    "randomization_repetitions": 4096,
+    "validity_prerequisite": {
+      "minimum_event_matrices_per_candidate": 20,
+      "minimum_events_per_candidate": 100
+    }
+  },
+  "prohibited_after_registration": [
+    "model refitting",
+    "preprocessing refitting",
+    "recalibration",
+    "regularization search",
+    "ensemble-weight fitting",
+    "candidate-specific family switching",
+    "nonlinear fallback",
+    "endpoint or threshold changes"
+  ],
+  "protocol_id": "f05ea75ad37f840e00c0292dc05bc80ed982d65234220fcf062aaadee8f43e14",
+  "secondary_no_rescue": [
+    "direct and hurdle constituent performance",
+    "Brier-score contrast",
+    "rank descriptives",
+    "event and stage incidence"
+  ],
+  "status": "sealed_before_confirmation_matrix_generation"
+}

@@ -1,0 +1,517 @@
+{
+  "classification": "registered_carrier_family_failed_constructive_gate",
+  "complete": true,
+  "confirmation_run": true,
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "protocol_id": "e4250713b53cffa4fac9be5967c108cb8adff2ef6ce92bf44c53f7898c126a17",
+  "reporting_boundary": "exploratory hypothesis stress test; not current-preprint evidence; not Wagner or independent GARD replication",
+  "scientific_verdict": "The selected carrier settings did not jointly pass maintenance, causal ablation/rescue, multiform selection, and relabeling gates in both contracts.",
+  "selection_id": "e6a5708b898fa0539c6a03f26da1e4730f680e5b029766c38c4e4bea7c073185",
+  "settings": [
+    {
+      "candidates": {
+        "02": {
+          "multiform": {
+            "carrier_crossover": {
+              "lower": -0.04241071428571426,
+              "n_rules": 14,
+              "point": -0.01636904761904761,
+              "upper": 0.008184523809523817
+            },
+            "carrier_origin_accuracy": {
+              "lower": 0.47916666666666663,
+              "n_rules": 14,
+              "point": 0.49181547619047616,
+              "upper": 0.5044642857142858
+            },
+            "cross_start_form_a_terminal8_f32": {
+              "lower": 0.002976190476190476,
+              "n_rules": 14,
+              "point": 0.03422619047619047,
+              "upper": 0.09077380952380952
+            },
+            "cross_start_form_b_terminal8_f32": {
+              "lower": 0.0,
+              "n_rules": 14,
+              "point": 0.001488095238095238,
+              "upper": 0.004464285714285714
+            },
+            "final_carrier_decoding": {
+              "lower": 0.4851190476190476,
+              "n_rules": 14,
+              "point": 0.49627976190476186,
+              "upper": 0.5063244047619048
+            },
+            "multiform_gate_passed": false,
+            "same_start_capture_context": {
+              "a_with_a": {
+                "lower": 0.004464285714285714,
+                "n_rules": 14,
+                "point": 0.043154761904761904,
+                "upper": 0.11160714285714284
+              },
+              "b_with_b": {
+                "lower": 0.0,
+                "n_rules": 14,
+                "point": 0.002976190476190476,
+                "upper": 0.00744047619047619
+              }
+            }
+          },
+          "primary": {
+            "control_differences": {
+              "native_founder_writer_off": {
+                "lower": -0.0031028368794326243,
+                "n_rules": 47,
+                "point": 0.005762411347517731,
+                "upper": 0.018173758865248225
+              },
+              "native_reader_off": {
+                "lower": -0.0026595744680851055,
+                "n_rules": 47,
+                "point": 0.031028368794326248,
+                "upper": 0.0775709219858156
+              },
+              "native_renewal_off": {
+                "lower": -3.7093555177800302e-19,
+                "n_rules": 47,
+                "point": 0.03280141843971631,
+                "upper": 0.07801418439716312
+              },
+              "native_shuffled": {
+                "lower": 0.0008865248226950352,
+                "n_rules": 47,
+                "point": 0.03324468085106383,
+                "upper": 0.07757092198581561
+              }
+            },
+            "correct_minus_zero_terminal8_f32": {
+              "lower": -0.002659574468085106,
+              "n_rules": 47,
+              "point": 0.031028368794326248,
+              "upper": 0.07668439716312057
+            },
+            "equivariance_gate_passed": true,
+            "erasure": {
+              "effect_correct_minus_zero": 0.03102836879432624,
+              "removal_fraction": 1.0,
+              "removed_correct_minus_erase": 0.03102836879432624,
+              "restoration_fraction": 0.8571428571428572,
+              "restored_rescue_minus_erase": 0.026595744680851064
+            },
+            "joint_relabel_minus_native": {
+              "lower": -0.007978723404255317,
+              "n_rules": 47,
+              "point": 0.003546099290780142,
+              "upper": 0.01374113475177305
+            },
+            "memory_gate_passed": false,
+            "native_correct_terminal8_f32": {
+              "lower": 0.013741134751773052,
+              "n_rules": 47,
+              "point": 0.047872340425531915,
+              "upper": 0.09751773049645389
+            },
+            "native_correct_terminal8_f64": {
+              "lower": 0.00975177304964539,
+              "n_rules": 47,
+              "point": 0.04343971631205674,
+              "upper": 0.09397163120567373
+            },
+            "stranger_installation_difference": {
+              "lower": 0.003102836879432623,
+              "n_rules": 47,
+              "point": 0.022163120567375884,
+              "upper": 0.04964539007092197
+            }
+          }
+        },
+        "03": {
+          "multiform": {
+            "carrier_crossover": {
+              "lower": -0.017113095238095243,
+              "n_rules": 14,
+              "point": 0.012648809523809519,
+              "upper": 0.04092261904761905
+            },
+            "carrier_origin_accuracy": {
+              "lower": 0.4918154761904762,
+              "n_rules": 14,
+              "point": 0.5063244047619048,
+              "upper": 0.5204613095238095
+            },
+            "cross_start_form_a_terminal8_f32": {
+              "lower": 0.0,
+              "n_rules": 14,
+              "point": 0.028273809523809524,
+              "upper": 0.0788690476190476
+            },
+            "cross_start_form_b_terminal8_f32": {
+              "lower": 0.0,
+              "n_rules": 14,
+              "point": 0.004464285714285714,
+              "upper": 0.013392857142857142
+            },
+            "final_carrier_decoding": {
+              "lower": 0.5003720238095238,
+              "n_rules": 14,
+              "point": 0.5100446428571429,
+              "upper": 0.5200892857142857
+            },
+            "multiform_gate_passed": false,
+            "same_start_capture_context": {
+              "a_with_a": {
+                "lower": 0.002976190476190476,
+                "n_rules": 14,
+                "point": 0.055059523809523815,
+                "upper": 0.15029761904761907
+              },
+              "b_with_b": {
+                "lower": 0.0,
+                "n_rules": 14,
+                "point": 0.011904761904761904,
+                "upper": 0.029761904761904764
+              }
+            }
+          },
+          "primary": {
+            "control_differences": {
+              "native_founder_writer_off": {
+                "lower": -0.005319148936170212,
+                "n_rules": 47,
+                "point": 1.99308654686697e-18,
+                "upper": 0.005762411347517731
+              },
+              "native_reader_off": {
+                "lower": -0.0013297872340425532,
+                "n_rules": 47,
+                "point": 0.03058510638297873,
+                "upper": 0.07579787234042554
+              },
+              "native_renewal_off": {
+                "lower": -0.0013297872340425538,
+                "n_rules": 47,
+                "point": 0.031028368794326244,
+                "upper": 0.0771276595744681
+              },
+              "native_shuffled": {
+                "lower": -0.0013297872340425525,
+                "n_rules": 47,
+                "point": 0.030585106382978722,
+                "upper": 0.07624113475177305
+              }
+            },
+            "correct_minus_zero_terminal8_f32": {
+              "lower": -0.001329787234042553,
+              "n_rules": 47,
+              "point": 0.03058510638297873,
+              "upper": 0.07535460992907801
+            },
+            "equivariance_gate_passed": true,
+            "erasure": {
+              "effect_correct_minus_zero": 0.030585106382978726,
+              "removal_fraction": 1.072463768115942,
+              "removed_correct_minus_erase": 0.03280141843971631,
+              "restoration_fraction": 1.22972972972973,
+              "restored_rescue_minus_erase": 0.04033687943262412
+            },
+            "joint_relabel_minus_native": {
+              "lower": -0.001773049645390071,
+              "n_rules": 47,
+              "point": 0.0039893617021276575,
+              "upper": 0.01063829787234042
+            },
+            "memory_gate_passed": false,
+            "native_correct_terminal8_f32": {
+              "lower": 0.008865248226950354,
+              "n_rules": 47,
+              "point": 0.044326241134751775,
+              "upper": 0.09352836879432623
+            },
+            "native_correct_terminal8_f64": {
+              "lower": 0.008865248226950354,
+              "n_rules": 47,
+              "point": 0.039893617021276584,
+              "upper": 0.08600398936170198
+            },
+            "stranger_installation_difference": {
+              "lower": -0.0017730496453900702,
+              "n_rules": 47,
+              "point": 0.028368794326241134,
+              "upper": 0.07136524822695037
+            }
+          }
+        }
+      },
+      "compressed_noisy_pass": false,
+      "constructive_carrier_pass": false,
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "engineered_full_register_pass": false,
+      "equivariance_both_candidates": true,
+      "half_life": 1,
+      "k": 8,
+      "memory_both_candidates": false,
+      "multiform_both_candidates": false,
+      "setting_id": "k008_l01_u2p0_nominal"
+    },
+    {
+      "candidates": {
+        "02": {
+          "multiform": {
+            "carrier_crossover": {
+              "lower": -0.02901785714285714,
+              "n_rules": 14,
+              "point": 0.006696428571428563,
+              "upper": 0.03497023809523808
+            },
+            "carrier_origin_accuracy": {
+              "lower": 0.48549107142857145,
+              "n_rules": 14,
+              "point": 0.5033482142857142,
+              "upper": 0.5178571428571428
+            },
+            "cross_start_form_a_terminal8_f32": {
+              "lower": 0.00744047619047619,
+              "n_rules": 14,
+              "point": 0.05654761904761905,
+              "upper": 0.13839285714285712
+            },
+            "cross_start_form_b_terminal8_f32": {
+              "lower": 0.0,
+              "n_rules": 14,
+              "point": 0.004464285714285714,
+              "upper": 0.008928571428571428
+            },
+            "final_carrier_decoding": {
+              "lower": 0.49404761904761907,
+              "n_rules": 14,
+              "point": 0.5093005952380952,
+              "upper": 0.5256696428571429
+            },
+            "multiform_gate_passed": false,
+            "same_start_capture_context": {
+              "a_with_a": {
+                "lower": 0.0,
+                "n_rules": 14,
+                "point": 0.046130952380952384,
+                "upper": 0.11904761904761907
+              },
+              "b_with_b": {
+                "lower": 0.001488095238095238,
+                "n_rules": 14,
+                "point": 0.005952380952380952,
+                "upper": 0.010416666666666666
+              }
+            }
+          },
+          "primary": {
+            "control_differences": {
+              "native_founder_writer_off": {
+                "lower": -0.004432624113475179,
+                "n_rules": 47,
+                "point": 0.0008865248226950347,
+                "upper": 0.006648936170212765
+              },
+              "native_reader_off": {
+                "lower": -0.0004432624113475169,
+                "n_rules": 47,
+                "point": 0.033687943262411355,
+                "upper": 0.08156028368794324
+              },
+              "native_renewal_off": {
+                "lower": -0.005319148936170212,
+                "n_rules": 47,
+                "point": 0.02570921985815603,
+                "upper": 0.06471631205673758
+              },
+              "native_shuffled": {
+                "lower": -5.942350630473416e-19,
+                "n_rules": 47,
+                "point": 0.03324468085106383,
+                "upper": 0.07934397163120568
+              }
+            },
+            "correct_minus_zero_terminal8_f32": {
+              "lower": -0.000886524822695035,
+              "n_rules": 47,
+              "point": 0.033687943262411355,
+              "upper": 0.08200354609929078
+            },
+            "equivariance_gate_passed": true,
+            "erasure": {
+              "effect_correct_minus_zero": 0.03368794326241134,
+              "removal_fraction": 0.8684210526315791,
+              "removed_correct_minus_erase": 0.029255319148936167,
+              "restoration_fraction": 1.1515151515151518,
+              "restored_rescue_minus_erase": 0.033687943262411355
+            },
+            "joint_relabel_minus_native": {
+              "lower": -0.007978723404255319,
+              "n_rules": 47,
+              "point": 0.004875886524822693,
+              "upper": 0.01950354609929078
+            },
+            "memory_gate_passed": false,
+            "native_correct_terminal8_f32": {
+              "lower": 0.014627659574468085,
+              "n_rules": 47,
+              "point": 0.05053191489361702,
+              "upper": 0.10017730496453901
+            },
+            "native_correct_terminal8_f64": {
+              "lower": 0.015957446808510637,
+              "n_rules": 47,
+              "point": 0.04920212765957447,
+              "upper": 0.09751773049645392
+            },
+            "stranger_installation_difference": {
+              "lower": 0.005319148936170213,
+              "n_rules": 47,
+              "point": 0.03590425531914893,
+              "upper": 0.07712765957446807
+            }
+          }
+        },
+        "03": {
+          "multiform": {
+            "carrier_crossover": {
+              "lower": -0.04017857142857143,
+              "n_rules": 14,
+              "point": -0.014136904761904762,
+              "upper": 0.011904761904761913
+            },
+            "carrier_origin_accuracy": {
+              "lower": 0.4799107142857143,
+              "n_rules": 14,
+              "point": 0.4929315476190476,
+              "upper": 0.5063244047619048
+            },
+            "cross_start_form_a_terminal8_f32": {
+              "lower": 0.0,
+              "n_rules": 14,
+              "point": 0.044642857142857144,
+              "upper": 0.1279761904761905
+            },
+            "cross_start_form_b_terminal8_f32": {
+              "lower": 0.0,
+              "n_rules": 14,
+              "point": 0.005952380952380952,
+              "upper": 0.01636904761904762
+            },
+            "final_carrier_decoding": {
+              "lower": 0.4873511904761904,
+              "n_rules": 14,
+              "point": 0.5011160714285714,
+              "upper": 0.515625
+            },
+            "multiform_gate_passed": false,
+            "same_start_capture_context": {
+              "a_with_a": {
+                "lower": 0.001488095238095238,
+                "n_rules": 14,
+                "point": 0.06547619047619048,
+                "upper": 0.18898809523809526
+              },
+              "b_with_b": {
+                "lower": 0.002976190476190476,
+                "n_rules": 14,
+                "point": 0.013392857142857146,
+                "upper": 0.025297619047619044
+              }
+            }
+          },
+          "primary": {
+            "control_differences": {
+              "native_founder_writer_off": {
+                "lower": -0.0008865248226950355,
+                "n_rules": 47,
+                "point": 0.008865248226950355,
+                "upper": 0.022163120567375887
+              },
+              "native_reader_off": {
+                "lower": 0.0026595744680851076,
+                "n_rules": 47,
+                "point": 0.04343971631205674,
+                "upper": 0.10195035460992906
+              },
+              "native_renewal_off": {
+                "lower": -0.011968085106382979,
+                "n_rules": 47,
+                "point": 0.030585106382978722,
+                "upper": 0.08689051418439701
+              },
+              "native_shuffled": {
+                "lower": -0.0013297872340425523,
+                "n_rules": 47,
+                "point": 0.04078014184397163,
+                "upper": 0.09929078014184396
+              }
+            },
+            "correct_minus_zero_terminal8_f32": {
+              "lower": 0.0022163120567375892,
+              "n_rules": 47,
+              "point": 0.04343971631205674,
+              "upper": 0.100177304964539
+            },
+            "equivariance_gate_passed": true,
+            "erasure": {
+              "effect_correct_minus_zero": 0.04343971631205674,
+              "removal_fraction": 1.0102040816326532,
+              "removed_correct_minus_erase": 0.043882978723404256,
+              "restoration_fraction": 0.9898989898989898,
+              "restored_rescue_minus_erase": 0.04343971631205674
+            },
+            "joint_relabel_minus_native": {
+              "lower": -0.008421985815602837,
+              "n_rules": 47,
+              "point": -0.002659574468085107,
+              "upper": 0.002659574468085106
+            },
+            "memory_gate_passed": false,
+            "native_correct_terminal8_f32": {
+              "lower": 0.01374113475177305,
+              "n_rules": 47,
+              "point": 0.057180851063829786,
+              "upper": 0.11835106382978722
+            },
+            "native_correct_terminal8_f64": {
+              "lower": 0.011968085106382979,
+              "n_rules": 47,
+              "point": 0.05274822695035462,
+              "upper": 0.11125886524822694
+            },
+            "stranger_installation_difference": {
+              "lower": -0.0013297872340425547,
+              "n_rules": 47,
+              "point": 0.03856382978723404,
+              "upper": 0.0953014184397163
+            }
+          }
+        }
+      },
+      "compressed_noisy_pass": false,
+      "constructive_carrier_pass": false,
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "engineered_full_register_pass": false,
+      "equivariance_both_candidates": true,
+      "half_life": 8,
+      "k": 8,
+      "memory_both_candidates": false,
+      "multiform_both_candidates": false,
+      "setting_id": "k008_l08_u2p0_ideal"
+    }
+  ],
+  "tier": {
+    "confirmation_future_generations": 8773632,
+    "fits_6p75_hour_budget": true,
+    "futures": 48,
+    "horizon": 64,
+    "projected_cumulative_seconds": 21954.559153437614,
+    "raw_remaining_seconds": 14249.209633111954,
+    "safety_adjusted_remaining_seconds": 21373.81444966793,
+    "selected_settings": 2,
+    "tier": "B"
+  }
+}

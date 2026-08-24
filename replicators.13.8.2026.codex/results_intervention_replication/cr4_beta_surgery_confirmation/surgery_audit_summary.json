@@ -1,0 +1,24 @@
+{
+  "all_audits_pass": true,
+  "checks": {
+    "all_beta_strictly_positive": true,
+    "all_nonnoop_norms_exact": true,
+    "global_locations_distinct_and_count_matched": true,
+    "global_norm_matches_tighten": true,
+    "noop_unchanged": true,
+    "singleton_all_arm_structural_noop": true,
+    "targeted_arms_all_and_only_present_present": true,
+    "targeted_factors_exact": true,
+    "topology_all_and_only_present_present": true,
+    "topology_norm_matches_tighten": true,
+    "topology_throughput_exact": true
+  },
+  "format": "codex-intervention-cr4-surgery-audit-v1",
+  "global_locations_sampled_without_replacement": true,
+  "maximum_surgery_norm_relative_error": 4.302736587744763e-14,
+  "maximum_topology_throughput_absolute_error": 2.1827872842550278e-11,
+  "no_clipping": true,
+  "rows": 10000,
+  "states": 2000,
+  "structural_no_action_states": 20
+}

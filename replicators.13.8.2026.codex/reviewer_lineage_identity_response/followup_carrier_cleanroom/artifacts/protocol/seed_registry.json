@@ -1,0 +1,20 @@
+{
+  "master_seed": "df243aec2474d575012dfa1263e1cfeb1b92c62f962f45fe7cb87df85b713510",
+  "nonproduction_domains": [
+    "registry.stranger",
+    "registry.isomorphism",
+    "registry.random_mask",
+    "registry.carrier_shuffle",
+    "benchmark",
+    "smoke"
+  ],
+  "production_domains": [
+    "calibration.dynamics",
+    "calibration.carrier",
+    "confirmation.dynamics",
+    "confirmation.carrier",
+    "multiform.dynamics",
+    "multiform.carrier",
+    "bootstrap"
+  ]
+}

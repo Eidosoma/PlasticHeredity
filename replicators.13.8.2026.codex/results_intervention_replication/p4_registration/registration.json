@@ -1,0 +1,40 @@
+{
+  "format": "codex-intervention-p4-registration-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "p3c_audit_checksum_manifest_sha256": "b69e9608973176e2186df7e912b1bf19face76ded867671125b1fee918109e3e",
+  "p3c_confirmation_checksum_manifest_sha256": "a104d02cdf588f93ad4e9aa252bf2227709a2855ca84d924030627a692068fb9",
+  "protocol_id": "d739c55e18cb5fb1032480e3d890ff91510c7a0f9d7cea973fa1499747a25982",
+  "registration_id": "9dc022629f38eb91e897380201ad6e17b810964e149bd862e79dbcc7a52402da",
+  "scientific_futures_at_registration": 0,
+  "scientific_matrices_at_registration": 0,
+  "seed_registry": {
+    "acquisition": "0ff966e3227101a3588658e80826505013973742eba0fd0b04dea890948480ee",
+    "balanced_selection": "e7eff504ebd0e56d8c1f2790af8e23cf7a271d2c64945d90741642885aa34176",
+    "bootstrap": "dbec50693751c67f82c0071222ec02c558f8d4e99145db25b79ca3d4feddcab9",
+    "cohort": "3908a8bc0d520d1470c904aad9bf3d0cc7db68ccc8361e38d808393d9ea722db",
+    "future": "678526cbcd8b7bbd1a841d720efc89b671b525cc8443adc8540cc8ed9948dafd",
+    "neutral_selection": "27daa3c1c9b60319db97ae86710e3ad4fd89600701710468088f81aa81e9f316",
+    "randomization": "3dec9c442ca249a6df9a4767eeb2ef601afd3a97c84de3b2658cd436c0799b28",
+    "replay": "d1a7fffbf8655319db4347d9946aaadefac27fe653160284964218db1f110aab",
+    "smoke_acquisition": "0e804f49c5464297de695c840457abf55574bf4e12280f0379a1cbdc3b2cc4b4",
+    "smoke_balanced_selection": "a49d440932f5a457c44a1498e4b1a5d735b99dd6e3fe04aa002aed929b3b00f1",
+    "smoke_cohort": "954e16c8c32770f7e7bc44840beefd3e4439cab562041cdbfe8d8cfd0f6e3862",
+    "smoke_future": "d654d3a961052403aa5f857b6e3605e54b3885b4d428b025f4fe21c80b83480b",
+    "smoke_neutral_selection": "3a49f869af9b3e4c1c40fc468cef2adc8e9811f6d1d05c678f7a3db8f9cc1753",
+    "validation": "c3843824f9254a0fb7cf92be48e5106505969bc1dcc88d931a285bdfe913bde7"
+  },
+  "source_hashes": {
+    "CODEX_INTERVENTION_P4_SHARED_BREAK_PREREGISTRATION.md": "0ea6d5ab51685779fc3e26c0a5da5f6ca8a9b115a80a158700a72102d910469a",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_metrics.py": "037c36dd20547dd54b0638f99fb4e520e2f64d17b8fc2799331076a9ddb4eb54",
+    "plastic_heredity/intervention_p3c.py": "17bbc47346297419bfb32146766affb68bd4e2e258c2da1c078db7f2bb10bba2",
+    "plastic_heredity/intervention_p4.py": "7f9d4bd7460cbabac487044b1dd04b490a4d9606a318a43233b3f4134f114776",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_intervention_p4.py": "93a6e9ee4aad6842a643c258b7effd12db04203593b4bd3ef1489a5554211aa9"
+  },
+  "validation_checksum_manifest_sha256": "e65d7a18a561bbbd46b57c93b346618ba78e730ceb73ed0a2ec6af33490bc3d8"
+}

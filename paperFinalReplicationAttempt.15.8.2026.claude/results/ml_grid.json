@@ -1,0 +1,57 @@
+{
+  "in32_out64_z0_h(64,)": {
+    "phi": 0.58,
+    "dcomp": 0.6193,
+    "raw": 0.5602,
+    "flux": 0.6212,
+    "dummy": 0.5698,
+    "p_phi>dcomp": 0.9439,
+    "p_phi>raw": 0.1721,
+    "p_phi>flux": 0.9754,
+    "p_phi>dummy": 0.4849
+  },
+  "in32_out64_z1_h(64,)": {
+    "phi": 0.5615,
+    "dcomp": 0.6193,
+    "raw": 0.5602,
+    "flux": 0.6212,
+    "dummy": 0.5698,
+    "p_phi>dcomp": 0.9989,
+    "p_phi>raw": 0.4849,
+    "p_phi>flux": 0.9989,
+    "p_phi>dummy": 0.7147
+  },
+  "in128_out64_z1_h(64,)": {
+    "phi": 0.581,
+    "dcomp": 0.6066,
+    "raw": 0.5635,
+    "flux": 0.6274,
+    "dummy": 0.5698,
+    "p_phi>dcomp": 0.9884,
+    "p_phi>raw": 0.1537,
+    "p_phi>flux": 0.9968,
+    "p_phi>dummy": 0.3669
+  },
+  "in250_out250_z1_h(128, 64)": {
+    "phi": 0.5729,
+    "dcomp": 0.6046,
+    "raw": 0.5726,
+    "flux": 0.6126,
+    "dummy": 0.5754,
+    "p_phi>dcomp": 0.9812,
+    "p_phi>raw": 0.5451,
+    "p_phi>flux": 0.9905,
+    "p_phi>dummy": 0.5749
+  },
+  "in64_out16_z1_h(32,)": {
+    "phi": 0.5875,
+    "dcomp": 0.6203,
+    "raw": 0.5719,
+    "flux": 0.6406,
+    "dummy": 0.5947,
+    "p_phi>dcomp": 0.9299,
+    "p_phi>raw": 0.2853,
+    "p_phi>flux": 0.9978,
+    "p_phi>dummy": 0.675
+  }
+}

@@ -1,0 +1,9 @@
+# Versions used for the completed clean-room confirmation run.
+matplotlib==3.5.1
+numpy==1.26.4
+pandas==2.3.3
+pytest==9.1.1
+scikit-learn==1.7.2
+scipy==1.15.3
+threadpoolctl==3.6.0
+

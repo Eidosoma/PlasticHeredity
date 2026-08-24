@@ -1,0 +1,2005 @@
+{
+  "adjudication": {
+    "complete": true,
+    "density_robust": true,
+    "dose_response": {
+      "contrasts": {
+        "0.00": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.36189778645833337,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.369140625,
+          "p_a_given_b": 0.369140625,
+          "p_b_given_a": 0.3546549479166667,
+          "p_b_given_b": 0.3546549479166667,
+          "resolved": 0.7237955729166666
+        },
+        "0.25": {
+          "ci": [
+            0.17891387939453127,
+            0.24882049560546862
+          ],
+          "correct": 0.48592122395833337,
+          "crossover": 0.21240234374999997,
+          "direction_a": 0.23730468750000006,
+          "direction_b": 0.21240234374999997,
+          "fraction_pairs_positive": 0.9791666666666666,
+          "p_a_given_a": 0.5125325520833334,
+          "p_a_given_b": 0.2752278645833333,
+          "p_b_given_a": 0.24690755208333334,
+          "p_b_given_b": 0.4593098958333333,
+          "resolved": 0.7469889322916666
+        },
+        "0.50": {
+          "ci": [
+            0.39322916666666663,
+            0.4925954182942706
+          ],
+          "correct": 0.615966796875,
+          "crossover": 0.44482421875,
+          "direction_a": 0.45003255208333326,
+          "direction_b": 0.44482421875,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.6383463541666666,
+          "p_a_given_b": 0.18831380208333334,
+          "p_b_given_a": 0.14876302083333334,
+          "p_b_given_b": 0.5935872395833334,
+          "resolved": 0.7845052083333334
+        },
+        "0.75": {
+          "ci": [
+            0.5797526041666666,
+            0.6863606770833334
+          ],
+          "correct": 0.7378743489583333,
+          "crossover": 0.6350911458333334,
+          "direction_a": 0.6396484375,
+          "direction_b": 0.6350911458333334,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.7516276041666666,
+          "p_a_given_b": 0.11197916666666667,
+          "p_b_given_a": 0.08902994791666667,
+          "p_b_given_b": 0.72412109375,
+          "resolved": 0.83837890625
+        },
+        "1.00": {
+          "ci": [
+            0.7123199462890625,
+            0.8142501831054687
+          ],
+          "correct": 0.8341471354166667,
+          "crossover": 0.765625,
+          "direction_a": 0.7840169270833334,
+          "direction_b": 0.765625,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.8533528645833334,
+          "p_a_given_b": 0.0693359375,
+          "p_b_given_a": 0.04931640625,
+          "p_b_given_b": 0.81494140625,
+          "resolved": 0.8934733072916666
+        }
+      },
+      "monotone": true,
+      "passed": true,
+      "slope": {
+        "ci": [
+          0.7277994791666667,
+          0.8304205322265624
+        ],
+        "estimate": 0.7815755208333334
+      },
+      "spearman": 0.9999999999999999
+    },
+    "general": true,
+    "native_robustness": {
+      "carrier_sign_corruption": {
+        "ci": [
+          0.6925455729166666,
+          0.7993988037109373
+        ],
+        "correct": 0.8240559895833334,
+        "crossover": 0.7467447916666667,
+        "direction_a": 0.7685546875,
+        "direction_b": 0.7467447916666667,
+        "fraction_pairs_positive": 1.0,
+        "intact_minus_robust": {
+          "ci": [
+            -0.0028493245442708505,
+            0.03853403727213531
+          ],
+          "estimate": 0.01888020833333326
+        },
+        "p_a_given_a": 0.8426106770833334,
+        "p_a_given_b": 0.07405598958333333,
+        "p_b_given_a": 0.058756510416666664,
+        "p_b_given_b": 0.8055013020833334,
+        "passed": true,
+        "resolved": 0.8904622395833334,
+        "retention_vs_intact": 0.9753401360544218
+      },
+      "process_noise": {
+        "ci": [
+          0.6720779418945312,
+          0.7780771891276038
+        ],
+        "correct": 0.8056640625,
+        "crossover": 0.7275390625,
+        "direction_a": 0.7493489583333334,
+        "direction_b": 0.7275390625,
+        "fraction_pairs_positive": 1.0,
+        "intact_minus_robust": {
+          "ci": [
+            0.019368489583333287,
+            0.05631510416666663
+          ],
+          "estimate": 0.0380859375
+        },
+        "p_a_given_a": 0.8225911458333334,
+        "p_a_given_b": 0.0732421875,
+        "p_b_given_a": 0.061197916666666664,
+        "p_b_given_b": 0.7887369791666666,
+        "passed": true,
+        "resolved": 0.8728841145833334,
+        "retention_vs_intact": 0.9502551020408163
+      }
+    },
+    "primary_environments": {
+      "launch0": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7031651814778646,
+              0.8077799479166666
+            ],
+            "correct": 0.8272298177083333,
+            "crossover": 0.7581380208333334,
+            "direction_a": 0.7718098958333333,
+            "direction_b": 0.7581380208333334,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8468424479166666,
+            "p_a_given_b": 0.07503255208333333,
+            "p_b_given_a": 0.049479166666666664,
+            "p_b_given_b": 0.8076171875,
+            "resolved": 0.8894856770833334
+          },
+          "matched_random": {
+            "ci": [
+              -0.1031499226888021,
+              0.040975443522135294
+            ],
+            "correct": 0.362548828125,
+            "crossover": -0.02880859375,
+            "direction_a": -0.003580729166666685,
+            "direction_b": -0.02880859375,
+            "fraction_pairs_positive": 0.46875,
+            "p_a_given_a": 0.3974609375,
+            "p_a_given_b": 0.4010416666666667,
+            "p_b_given_a": 0.3564453125,
+            "p_b_given_b": 0.32763671875,
+            "resolved": 0.7412923177083334
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.364990234375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3834635416666667,
+            "p_a_given_b": 0.3834635416666667,
+            "p_b_given_a": 0.3465169270833333,
+            "p_b_given_b": 0.3465169270833333,
+            "resolved": 0.72998046875
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8217371622721354,
+              -0.7220052083333334
+            ],
+            "correct": 0.062255859375,
+            "crossover": -0.7718098958333333,
+            "direction_a": -0.7718098958333333,
+            "direction_b": -0.7581380208333334,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.07503255208333333,
+            "p_a_given_b": 0.8468424479166666,
+            "p_b_given_a": 0.8076171875,
+            "p_b_given_b": 0.049479166666666664,
+            "resolved": 0.8894856770833334
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.5,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.0,
+            "p_a_given_b": 0.0,
+            "p_b_given_a": 1.0,
+            "p_b_given_b": 1.0,
+            "resolved": 1.0
+          },
+          "shuffle": {
+            "ci": [
+              -0.09643656412760415,
+              0.055949401855468664
+            ],
+            "correct": 0.3642578125,
+            "crossover": -0.018391927083333315,
+            "direction_a": -0.00146484375,
+            "direction_b": -0.018391927083333315,
+            "fraction_pairs_positive": 0.4479166666666667,
+            "p_a_given_a": 0.3899739583333333,
+            "p_a_given_b": 0.3914388020833333,
+            "p_b_given_a": 0.35693359375,
+            "p_b_given_b": 0.3385416666666667,
+            "resolved": 0.7384440104166666
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7000727335611978,
+              0.8028167724609372
+            ],
+            "correct": 0.8246256510416667,
+            "crossover": 0.7522786458333334,
+            "direction_a": 0.7708333333333334,
+            "direction_b": 0.7522786458333334,
+            "fraction_pairs_positive": 0.9895833333333334,
+            "p_a_given_a": 0.8430989583333334,
+            "p_a_given_b": 0.072265625,
+            "p_b_given_a": 0.053873697916666664,
+            "p_b_given_b": 0.80615234375,
+            "resolved": 0.8876953125
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.5,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.0,
+            "p_a_given_b": 0.0,
+            "p_b_given_a": 1.0,
+            "p_b_given_b": 1.0,
+            "resolved": 1.0
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.7015375773111979,
+              0.8747166951497392
+            ],
+            "estimate": 0.7869466145833334
+          },
+          "read_disabled": {
+            "ci": [
+              0.7043045043945313,
+              0.8051355997721353
+            ],
+            "estimate": 0.7581380208333334
+          },
+          "shuffle": {
+            "ci": [
+              0.6910807291666666,
+              0.8636067708333334
+            ],
+            "estimate": 0.7765299479166667
+          },
+          "zero": {
+            "ci": [
+              0.7048329671223958,
+              0.8048924763997393
+            ],
+            "estimate": 0.7581380208333334
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.364990234375,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.3834635416666667,
+          "p_a_given_b": 0.3834635416666667,
+          "p_b_given_a": 0.3465169270833333,
+          "p_b_given_b": 0.3465169270833333,
+          "resolved": 0.72998046875
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.6931966145833334,
+            0.8009038289388021
+          ],
+          "correct": 0.8138834635416667,
+          "crossover": 0.75146484375,
+          "direction_a": 0.75146484375,
+          "direction_b": 0.7646484375,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.80517578125,
+          "p_a_given_b": 0.0537109375,
+          "p_b_given_a": 0.057942708333333336,
+          "p_b_given_b": 0.8225911458333334,
+          "resolved": 0.8697102864583334
+        },
+        "unrelated_retention": 0.9922713610991842
+      },
+      "launch1": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7179361979166666,
+              0.8146982828776039
+            ],
+            "correct": 0.833984375,
+            "crossover": 0.7685546875,
+            "direction_a": 0.7843424479166667,
+            "direction_b": 0.7685546875,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8474934895833334,
+            "p_a_given_b": 0.06315104166666667,
+            "p_b_given_a": 0.051920572916666664,
+            "p_b_given_b": 0.8204752604166666,
+            "resolved": 0.8915201822916666
+          },
+          "matched_random": {
+            "ci": [
+              -0.10494028727213542,
+              0.034505208333333356
+            ],
+            "correct": 0.35343424479166663,
+            "crossover": -0.03271484375,
+            "direction_a": -0.022298177083333315,
+            "direction_b": -0.03271484375,
+            "fraction_pairs_positive": 0.3854166666666667,
+            "p_a_given_a": 0.38916015625,
+            "p_a_given_b": 0.4114583333333333,
+            "p_b_given_a": 0.3504231770833333,
+            "p_b_given_b": 0.3177083333333333,
+            "resolved": 0.734375
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.3646647135416667,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3844401041666667,
+            "p_a_given_b": 0.3844401041666667,
+            "p_b_given_a": 0.3448893229166667,
+            "p_b_given_b": 0.3448893229166667,
+            "resolved": 0.7293294270833334
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8308517456054687,
+              -0.736328125
+            ],
+            "correct": 0.05753580729166667,
+            "crossover": -0.7843424479166667,
+            "direction_a": -0.7843424479166667,
+            "direction_b": -0.7685546875,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.06315104166666667,
+            "p_a_given_b": 0.8474934895833334,
+            "p_b_given_a": 0.8204752604166666,
+            "p_b_given_b": 0.051920572916666664,
+            "resolved": 0.8915201822916666
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.5,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 1.0,
+            "p_a_given_b": 1.0,
+            "p_b_given_a": 0.0,
+            "p_b_given_b": 0.0,
+            "resolved": 1.0
+          },
+          "shuffle": {
+            "ci": [
+              -0.0815450032552083,
+              0.06563466389973927
+            ],
+            "correct": 0.373046875,
+            "crossover": -0.005208333333333315,
+            "direction_a": 0.00748697916666663,
+            "direction_b": -0.005208333333333315,
+            "fraction_pairs_positive": 0.4270833333333333,
+            "p_a_given_a": 0.3792317708333333,
+            "p_a_given_b": 0.3717447916666667,
+            "p_b_given_a": 0.3720703125,
+            "p_b_given_b": 0.3668619791666667,
+            "resolved": 0.7449544270833334
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7041417439778646,
+              0.8129079182942706
+            ],
+            "correct": 0.8299153645833334,
+            "crossover": 0.7628580729166667,
+            "direction_a": 0.7762044270833334,
+            "direction_b": 0.7628580729166667,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8489583333333334,
+            "p_a_given_b": 0.07275390625,
+            "p_b_given_a": 0.048014322916666664,
+            "p_b_given_b": 0.8108723958333334,
+            "resolved": 0.8902994791666666
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.5,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 1.0,
+            "p_a_given_b": 1.0,
+            "p_b_given_a": 0.0,
+            "p_b_given_b": 0.0,
+            "resolved": 1.0
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.7141103108723958,
+              0.8824890136718745
+            ],
+            "estimate": 0.80126953125
+          },
+          "read_disabled": {
+            "ci": [
+              0.7173655192057292,
+              0.8173426310221353
+            ],
+            "estimate": 0.7685546875
+          },
+          "shuffle": {
+            "ci": [
+              0.6820063273111978,
+              0.8637293497721353
+            ],
+            "estimate": 0.7737630208333333
+          },
+          "zero": {
+            "ci": [
+              0.7161458333333333,
+              0.8152267456054687
+            ],
+            "estimate": 0.7685546875
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.3646647135416667,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.3844401041666667,
+          "p_a_given_b": 0.3844401041666667,
+          "p_b_given_a": 0.3448893229166667,
+          "p_b_given_b": 0.3448893229166667,
+          "resolved": 0.7293294270833334
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.7047927856445313,
+            0.8066004435221353
+          ],
+          "correct": 0.8196614583333333,
+          "crossover": 0.7589518229166666,
+          "direction_a": 0.7589518229166666,
+          "direction_b": 0.7732747395833334,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.8043619791666666,
+          "p_a_given_b": 0.04541015625,
+          "p_b_given_a": 0.061686197916666664,
+          "p_b_given_b": 0.8349609375,
+          "resolved": 0.8732096354166666
+        },
+        "unrelated_retention": 0.992587886488776
+      },
+      "launch2": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7101638793945312,
+              0.8088389078776039
+            ],
+            "correct": 0.830078125,
+            "crossover": 0.7613932291666667,
+            "direction_a": 0.7799479166666666,
+            "direction_b": 0.7613932291666667,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8439127604166666,
+            "p_a_given_b": 0.06396484375,
+            "p_b_given_a": 0.054850260416666664,
+            "p_b_given_b": 0.8162434895833334,
+            "resolved": 0.8894856770833334
+          },
+          "matched_random": {
+            "ci": [
+              -0.06132049560546878,
+              0.04813690185546861
+            ],
+            "correct": 0.3627115885416667,
+            "crossover": -0.00553385416666663,
+            "direction_a": -0.00032552083333331483,
+            "direction_b": -0.00553385416666663,
+            "fraction_pairs_positive": 0.4270833333333333,
+            "p_a_given_a": 0.4034830729166667,
+            "p_a_given_b": 0.40380859375,
+            "p_b_given_a": 0.3274739583333333,
+            "p_b_given_b": 0.3219401041666667,
+            "resolved": 0.7283528645833334
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.3673502604166667,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3785807291666667,
+            "p_a_given_b": 0.3785807291666667,
+            "p_b_given_a": 0.3561197916666667,
+            "p_b_given_b": 0.3561197916666667,
+            "resolved": 0.7347005208333334
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8297124226888022,
+              -0.7283528645833333
+            ],
+            "correct": 0.05940755208333333,
+            "crossover": -0.7799479166666666,
+            "direction_a": -0.7799479166666666,
+            "direction_b": -0.7613932291666667,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.06396484375,
+            "p_a_given_b": 0.8439127604166666,
+            "p_b_given_a": 0.8162434895833334,
+            "p_b_given_b": 0.054850260416666664,
+            "resolved": 0.8894856770833334
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.5,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 1.0,
+            "p_a_given_b": 1.0,
+            "p_b_given_a": 0.0,
+            "p_b_given_b": 0.0,
+            "resolved": 1.0
+          },
+          "shuffle": {
+            "ci": [
+              -0.0832550048828125,
+              0.046549479166666685
+            ],
+            "correct": 0.3656412760416667,
+            "crossover": -0.017578125,
+            "direction_a": 0.012858072916666685,
+            "direction_b": -0.017578125,
+            "fraction_pairs_positive": 0.4791666666666667,
+            "p_a_given_a": 0.3756510416666667,
+            "p_a_given_b": 0.36279296875,
+            "p_b_given_a": 0.3732096354166667,
+            "p_b_given_b": 0.3556315104166667,
+            "resolved": 0.733642578125
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.715289815266927,
+              0.8132736206054686
+            ],
+            "correct": 0.8310546875,
+            "crossover": 0.7679036458333333,
+            "direction_a": 0.7802734375,
+            "direction_b": 0.7679036458333333,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8470052083333334,
+            "p_a_given_b": 0.06673177083333333,
+            "p_b_given_a": 0.047200520833333336,
+            "p_b_given_b": 0.8151041666666666,
+            "resolved": 0.8880208333333334
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.5,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 1.0,
+            "p_a_given_b": 1.0,
+            "p_b_given_a": 0.0,
+            "p_b_given_b": 0.0,
+            "resolved": 1.0
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.6944986979166666,
+              0.8402918497721353
+            ],
+            "estimate": 0.7669270833333334
+          },
+          "read_disabled": {
+            "ci": [
+              0.7095530192057292,
+              0.8095703125
+            ],
+            "estimate": 0.7613932291666667
+          },
+          "shuffle": {
+            "ci": [
+              0.6974283854166667,
+              0.8580347696940097
+            ],
+            "estimate": 0.7789713541666667
+          },
+          "zero": {
+            "ci": [
+              0.7104894002278646,
+              0.8093673706054686
+            ],
+            "estimate": 0.7613932291666667
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.3673502604166667,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.3785807291666667,
+          "p_a_given_b": 0.3785807291666667,
+          "p_b_given_a": 0.3561197916666667,
+          "p_b_given_b": 0.3561197916666667,
+          "resolved": 0.7347005208333334
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.6966949462890626,
+            0.8063151041666666
+          ],
+          "correct": 0.8181966145833334,
+          "crossover": 0.7561848958333334,
+          "direction_a": 0.7561848958333334,
+          "direction_b": 0.7692057291666667,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.8006184895833334,
+          "p_a_given_b": 0.04443359375,
+          "p_b_given_a": 0.06656901041666667,
+          "p_b_given_b": 0.8357747395833334,
+          "resolved": 0.8736979166666666
+        },
+        "unrelated_retention": 1.0085506626763572
+      },
+      "launch3": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7101236979166666,
+              0.8098556518554686
+            ],
+            "correct": 0.8306477864583334,
+            "crossover": 0.7633463541666667,
+            "direction_a": 0.7796223958333334,
+            "direction_b": 0.7633463541666667,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8460286458333334,
+            "p_a_given_b": 0.06640625,
+            "p_b_given_a": 0.051920572916666664,
+            "p_b_given_b": 0.8152669270833334,
+            "resolved": 0.8898111979166666
+          },
+          "matched_random": {
+            "ci": [
+              -0.05867614746093747,
+              0.0863052368164059
+            ],
+            "correct": 0.379638671875,
+            "crossover": 0.01578776041666663,
+            "direction_a": 0.02620442708333337,
+            "direction_b": 0.01578776041666663,
+            "fraction_pairs_positive": 0.4583333333333333,
+            "p_a_given_a": 0.4235026041666667,
+            "p_a_given_b": 0.3972981770833333,
+            "p_b_given_a": 0.3199869791666667,
+            "p_b_given_b": 0.3357747395833333,
+            "resolved": 0.73828125
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.3553873697916667,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3649088541666667,
+            "p_a_given_b": 0.3649088541666667,
+            "p_b_given_a": 0.3458658854166667,
+            "p_b_given_b": 0.3458658854166667,
+            "resolved": 0.7107747395833334
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8279622395833334,
+              -0.7317687988281255
+            ],
+            "correct": 0.05916341145833333,
+            "crossover": -0.7796223958333334,
+            "direction_a": -0.7796223958333334,
+            "direction_b": -0.7633463541666667,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.06640625,
+            "p_a_given_b": 0.8460286458333334,
+            "p_b_given_a": 0.8152669270833334,
+            "p_b_given_b": 0.051920572916666664,
+            "resolved": 0.8898111979166666
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.0,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.0,
+            "p_a_given_b": 0.0,
+            "p_b_given_a": 0.0,
+            "p_b_given_b": 0.0,
+            "resolved": 0.0
+          },
+          "shuffle": {
+            "ci": [
+              -0.09403533935546873,
+              0.026204427083333356
+            ],
+            "correct": 0.35164388020833337,
+            "crossover": -0.03076171875,
+            "direction_a": -0.03076171875,
+            "direction_b": -0.024251302083333315,
+            "fraction_pairs_positive": 0.3541666666666667,
+            "p_a_given_a": 0.365234375,
+            "p_a_given_b": 0.39599609375,
+            "p_b_given_a": 0.3623046875,
+            "p_b_given_b": 0.3380533854166667,
+            "resolved": 0.7307942708333334
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7111002604166666,
+              0.8103841145833334
+            ],
+            "correct": 0.829833984375,
+            "crossover": 0.76220703125,
+            "direction_a": 0.7783203125,
+            "direction_b": 0.76220703125,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8468424479166666,
+            "p_a_given_b": 0.06852213541666667,
+            "p_b_given_a": 0.050618489583333336,
+            "p_b_given_b": 0.8128255208333334,
+            "resolved": 0.889404296875
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.0,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.0,
+            "p_a_given_b": 0.0,
+            "p_b_given_a": 0.0,
+            "p_b_given_b": 0.0,
+            "resolved": 0.0
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.6606847127278646,
+              0.8364679972330725
+            ],
+            "estimate": 0.7475585937500001
+          },
+          "read_disabled": {
+            "ci": [
+              0.7080078125,
+              0.8115656534830725
+            ],
+            "estimate": 0.7633463541666667
+          },
+          "shuffle": {
+            "ci": [
+              0.7211491902669271,
+              0.8766276041666667
+            ],
+            "estimate": 0.7941080729166667
+          },
+          "zero": {
+            "ci": [
+              0.7108149210611979,
+              0.8118087768554686
+            ],
+            "estimate": 0.7633463541666667
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.3553873697916667,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.3649088541666667,
+          "p_a_given_b": 0.3649088541666667,
+          "p_b_given_a": 0.3458658854166667,
+          "p_b_given_b": 0.3458658854166667,
+          "resolved": 0.7107747395833334
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.7024739583333333,
+            0.8045247395833334
+          ],
+          "correct": 0.8170572916666667,
+          "crossover": 0.7560221354166667,
+          "direction_a": 0.7560221354166667,
+          "direction_b": 0.7685546875,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.8040364583333334,
+          "p_a_given_b": 0.048014322916666664,
+          "p_b_given_a": 0.0615234375,
+          "p_b_given_b": 0.830078125,
+          "resolved": 0.871826171875
+        },
+        "unrelated_retention": 0.9985074626865671
+      },
+      "native": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7156977335611978,
+              0.8141276041666666
+            ],
+            "correct": 0.8341471354166667,
+            "crossover": 0.765625,
+            "direction_a": 0.7840169270833334,
+            "direction_b": 0.765625,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8533528645833334,
+            "p_a_given_b": 0.0693359375,
+            "p_b_given_a": 0.04931640625,
+            "p_b_given_b": 0.81494140625,
+            "resolved": 0.8934733072916666
+          },
+          "matched_random": {
+            "ci": [
+              -0.09855448404947918,
+              0.03857421875
+            ],
+            "correct": 0.36417643229166663,
+            "crossover": -0.029622395833333315,
+            "direction_a": -0.00764973958333337,
+            "direction_b": -0.029622395833333315,
+            "fraction_pairs_positive": 0.3854166666666667,
+            "p_a_given_a": 0.4119466145833333,
+            "p_a_given_b": 0.4195963541666667,
+            "p_b_given_a": 0.3460286458333333,
+            "p_b_given_b": 0.31640625,
+            "resolved": 0.7469889322916666
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.36189778645833337,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.369140625,
+            "p_a_given_b": 0.369140625,
+            "p_b_given_a": 0.3546549479166667,
+            "p_b_given_b": 0.3546549479166667,
+            "resolved": 0.7237955729166666
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8313822428385417,
+              -0.7371419270833333
+            ],
+            "correct": 0.059326171875,
+            "crossover": -0.7840169270833334,
+            "direction_a": -0.7840169270833334,
+            "direction_b": -0.765625,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.0693359375,
+            "p_a_given_b": 0.8533528645833334,
+            "p_b_given_a": 0.81494140625,
+            "p_b_given_b": 0.04931640625,
+            "resolved": 0.8934733072916666
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          },
+          "shuffle": {
+            "ci": [
+              -0.07779947916666669,
+              0.04846242268880198
+            ],
+            "correct": 0.36214192708333337,
+            "crossover": -0.013020833333333315,
+            "direction_a": -0.013020833333333315,
+            "direction_b": -0.0068359375,
+            "fraction_pairs_positive": 0.4375,
+            "p_a_given_a": 0.38623046875,
+            "p_a_given_b": 0.3992513020833333,
+            "p_b_given_a": 0.3448893229166667,
+            "p_b_given_b": 0.3380533854166667,
+            "resolved": 0.7342122395833334
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7105697631835938,
+              0.8096125284830726
+            ],
+            "correct": 0.8292643229166667,
+            "crossover": 0.7633463541666667,
+            "direction_a": 0.7762044270833334,
+            "direction_b": 0.7633463541666667,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8427734375,
+            "p_a_given_b": 0.06656901041666667,
+            "p_b_given_a": 0.052408854166666664,
+            "p_b_given_b": 0.8157552083333334,
+            "resolved": 0.8887532552083334
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.7032053629557292,
+              0.884765625
+            ],
+            "estimate": 0.7952473958333333
+          },
+          "read_disabled": {
+            "ci": [
+              0.7140701293945312,
+              0.8136393229166666
+            ],
+            "estimate": 0.765625
+          },
+          "shuffle": {
+            "ci": [
+              0.7012120564778646,
+              0.8612477620442706
+            ],
+            "estimate": 0.7786458333333333
+          },
+          "zero": {
+            "ci": [
+              0.7155349731445313,
+              0.8128255208333334
+            ],
+            "estimate": 0.765625
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.36189778645833337,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.369140625,
+          "p_a_given_b": 0.369140625,
+          "p_b_given_a": 0.3546549479166667,
+          "p_b_given_b": 0.3546549479166667,
+          "resolved": 0.7237955729166666
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.7018229166666666,
+            0.8059895833333334
+          ],
+          "correct": 0.8191731770833334,
+          "crossover": 0.7568359375,
+          "direction_a": 0.7568359375,
+          "direction_b": 0.7737630208333334,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.8074544270833334,
+          "p_a_given_b": 0.050618489583333336,
+          "p_b_given_a": 0.05712890625,
+          "p_b_given_b": 0.8308919270833334,
+          "resolved": 0.873046875
+        },
+        "unrelated_retention": 0.9970238095238096
+      },
+      "native_reflect_x": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7065831502278646,
+              0.810669453938802
+            ],
+            "correct": 0.8284505208333334,
+            "crossover": 0.76025390625,
+            "direction_a": 0.7805989583333334,
+            "direction_b": 0.76025390625,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8509114583333334,
+            "p_a_given_b": 0.0703125,
+            "p_b_given_a": 0.045735677083333336,
+            "p_b_given_b": 0.8059895833333334,
+            "resolved": 0.886474609375
+          },
+          "matched_random": {
+            "ci": [
+              -0.10933481852213542,
+              0.07002919514973925
+            ],
+            "correct": 0.366455078125,
+            "crossover": -0.018229166666666685,
+            "direction_a": -0.018229166666666685,
+            "direction_b": -0.00146484375,
+            "fraction_pairs_positive": 0.4375,
+            "p_a_given_a": 0.369140625,
+            "p_a_given_b": 0.3873697916666667,
+            "p_b_given_a": 0.365234375,
+            "p_b_given_b": 0.36376953125,
+            "resolved": 0.7427571614583334
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.36043294270833337,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.37158203125,
+            "p_a_given_b": 0.37158203125,
+            "p_b_given_a": 0.3492838541666667,
+            "p_b_given_b": 0.3492838541666667,
+            "resolved": 0.7208658854166666
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8249521891276042,
+              -0.7360427856445313
+            ],
+            "correct": 0.05802408854166667,
+            "crossover": -0.7805989583333334,
+            "direction_a": -0.7805989583333334,
+            "direction_b": -0.76025390625,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.0703125,
+            "p_a_given_b": 0.8509114583333334,
+            "p_b_given_a": 0.8059895833333334,
+            "p_b_given_b": 0.045735677083333336,
+            "resolved": 0.886474609375
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          },
+          "shuffle": {
+            "ci": [
+              -0.09468638102213542,
+              0.026692708333333315
+            ],
+            "correct": 0.3497721354166667,
+            "crossover": -0.02945963541666663,
+            "direction_a": -0.029296875,
+            "direction_b": -0.02945963541666663,
+            "fraction_pairs_positive": 0.3541666666666667,
+            "p_a_given_a": 0.3619791666666667,
+            "p_a_given_b": 0.3912760416666667,
+            "p_b_given_a": 0.3670247395833333,
+            "p_b_given_b": 0.3375651041666667,
+            "resolved": 0.7289225260416666
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.6978744506835938,
+              0.807739766438802
+            ],
+            "correct": 0.8299967447916667,
+            "crossover": 0.7545572916666667,
+            "direction_a": 0.7820638020833334,
+            "direction_b": 0.7545572916666667,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8486328125,
+            "p_a_given_b": 0.06656901041666667,
+            "p_b_given_a": 0.056803385416666664,
+            "p_b_given_b": 0.8113606770833334,
+            "resolved": 0.8916829427083334
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.6771235148111978,
+              0.8798044840494784
+            ],
+            "estimate": 0.7784830729166667
+          },
+          "read_disabled": {
+            "ci": [
+              0.7051162719726562,
+              0.8072916666666666
+            ],
+            "estimate": 0.76025390625
+          },
+          "shuffle": {
+            "ci": [
+              0.7068242390950521,
+              0.8746342976888021
+            ],
+            "estimate": 0.7897135416666666
+          },
+          "zero": {
+            "ci": [
+              0.7062978108723958,
+              0.810181172688802
+            ],
+            "estimate": 0.76025390625
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.36043294270833337,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.37158203125,
+          "p_a_given_b": 0.37158203125,
+          "p_b_given_a": 0.3492838541666667,
+          "p_b_given_b": 0.3492838541666667,
+          "resolved": 0.7208658854166666
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.7017807006835938,
+            0.802368672688802
+          ],
+          "correct": 0.814697265625,
+          "crossover": 0.7561848958333334,
+          "direction_a": 0.7561848958333334,
+          "direction_b": 0.7672526041666666,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.80517578125,
+          "p_a_given_b": 0.048990885416666664,
+          "p_b_given_a": 0.056966145833333336,
+          "p_b_given_b": 0.82421875,
+          "resolved": 0.86767578125
+        },
+        "unrelated_retention": 0.992506957824877
+      },
+      "native_rot90": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7112208048502604,
+              0.8122166951497393
+            ],
+            "correct": 0.834716796875,
+            "crossover": 0.7639973958333333,
+            "direction_a": 0.7864583333333334,
+            "direction_b": 0.7639973958333333,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8543294270833334,
+            "p_a_given_b": 0.06787109375,
+            "p_b_given_a": 0.051106770833333336,
+            "p_b_given_b": 0.8151041666666666,
+            "resolved": 0.8942057291666666
+          },
+          "matched_random": {
+            "ci": [
+              -0.0997319539388021,
+              0.04048716227213531
+            ],
+            "correct": 0.3533528645833333,
+            "crossover": -0.026041666666666685,
+            "direction_a": -0.02197265625,
+            "direction_b": -0.026041666666666685,
+            "fraction_pairs_positive": 0.3645833333333333,
+            "p_a_given_a": 0.3719075520833333,
+            "p_a_given_b": 0.3938802083333333,
+            "p_b_given_a": 0.36083984375,
+            "p_b_given_b": 0.3347981770833333,
+            "resolved": 0.730712890625
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.363525390625,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3829752604166667,
+            "p_a_given_b": 0.3829752604166667,
+            "p_b_given_a": 0.3440755208333333,
+            "p_b_given_b": 0.3440755208333333,
+            "resolved": 0.72705078125
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8356943766276042,
+              -0.736693827311198
+            ],
+            "correct": 0.05948893229166667,
+            "crossover": -0.7864583333333334,
+            "direction_a": -0.7864583333333334,
+            "direction_b": -0.7639973958333333,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.06787109375,
+            "p_a_given_b": 0.8543294270833334,
+            "p_b_given_a": 0.8151041666666666,
+            "p_b_given_b": 0.051106770833333336,
+            "resolved": 0.8942057291666666
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          },
+          "shuffle": {
+            "ci": [
+              -0.0791015625,
+              0.04178924560546862
+            ],
+            "correct": 0.3621419270833333,
+            "crossover": -0.01904296875,
+            "direction_a": -0.01904296875,
+            "direction_b": -0.00830078125,
+            "fraction_pairs_positive": 0.375,
+            "p_a_given_a": 0.3880208333333333,
+            "p_a_given_b": 0.4070638020833333,
+            "p_b_given_a": 0.3445638020833333,
+            "p_b_given_b": 0.3362630208333333,
+            "resolved": 0.7379557291666666
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7091873168945313,
+              0.8092046101888021
+            ],
+            "correct": 0.8336588541666667,
+            "crossover": 0.7623697916666666,
+            "direction_a": 0.7859700520833334,
+            "direction_b": 0.7623697916666666,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8528645833333334,
+            "p_a_given_b": 0.06689453125,
+            "p_b_given_a": 0.052083333333333336,
+            "p_b_given_b": 0.814453125,
+            "resolved": 0.8931477864583334
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.7027572631835938,
+              0.8814300537109373
+            ],
+            "estimate": 0.7900390625
+          },
+          "read_disabled": {
+            "ci": [
+              0.7096755981445312,
+              0.8127049763997392
+            ],
+            "estimate": 0.7639973958333333
+          },
+          "shuffle": {
+            "ci": [
+              0.700072733561198,
+              0.8672698974609372
+            ],
+            "estimate": 0.7830403645833333
+          },
+          "zero": {
+            "ci": [
+              0.7118718465169271,
+              0.81005859375
+            ],
+            "estimate": 0.7639973958333333
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.363525390625,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.3829752604166667,
+          "p_a_given_b": 0.3829752604166667,
+          "p_b_given_a": 0.3440755208333333,
+          "p_b_given_b": 0.3440755208333333,
+          "resolved": 0.72705078125
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.7054036458333333,
+            0.8100184122721353
+          ],
+          "correct": 0.8235677083333333,
+          "crossover": 0.7635091145833334,
+          "direction_a": 0.7635091145833334,
+          "direction_b": 0.77099609375,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.81494140625,
+          "p_a_given_b": 0.051432291666666664,
+          "p_b_given_a": 0.061197916666666664,
+          "p_b_given_b": 0.8321940104166666,
+          "resolved": 0.8798828125
+        },
+        "unrelated_retention": 0.9978696207925011
+      },
+      "native_translate_3_5": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7090245564778646,
+              0.8098958333333333
+            ],
+            "correct": 0.8295084635416667,
+            "crossover": 0.76171875,
+            "direction_a": 0.7810872395833334,
+            "direction_b": 0.76171875,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8474934895833334,
+            "p_a_given_b": 0.06640625,
+            "p_b_given_a": 0.0498046875,
+            "p_b_given_b": 0.8115234375,
+            "resolved": 0.8876139322916666
+          },
+          "matched_random": {
+            "ci": [
+              -0.10335286458333337,
+              0.0443532307942706
+            ],
+            "correct": 0.3531901041666667,
+            "crossover": -0.026204427083333315,
+            "direction_a": -0.026204427083333315,
+            "direction_b": -0.025716145833333315,
+            "fraction_pairs_positive": 0.375,
+            "p_a_given_a": 0.3819986979166667,
+            "p_a_given_b": 0.408203125,
+            "p_b_given_a": 0.35009765625,
+            "p_b_given_b": 0.3243815104166667,
+            "resolved": 0.7323404947916666
+          },
+          "midpoint": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.36612955729166663,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.388671875,
+            "p_a_given_b": 0.388671875,
+            "p_b_given_a": 0.3435872395833333,
+            "p_b_given_b": 0.3435872395833333,
+            "resolved": 0.7322591145833334
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8275965372721354,
+              -0.73388671875
+            ],
+            "correct": 0.05810546875,
+            "crossover": -0.7810872395833334,
+            "direction_a": -0.7810872395833334,
+            "direction_b": -0.76171875,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.06640625,
+            "p_a_given_b": 0.8474934895833334,
+            "p_b_given_a": 0.8115234375,
+            "p_b_given_b": 0.0498046875,
+            "resolved": 0.8876139322916666
+          },
+          "read_disabled": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          },
+          "shuffle": {
+            "ci": [
+              -0.03951059977213541,
+              0.0965993245442706
+            ],
+            "correct": 0.38680013020833337,
+            "crossover": 0.029134114583333315,
+            "direction_a": 0.029134114583333315,
+            "direction_b": 0.039713541666666685,
+            "fraction_pairs_positive": 0.4895833333333333,
+            "p_a_given_a": 0.4091796875,
+            "p_a_given_b": 0.3800455729166667,
+            "p_b_given_a": 0.32470703125,
+            "p_b_given_b": 0.3644205729166667,
+            "resolved": 0.7391764322916666
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7035308837890625,
+              0.80908203125
+            ],
+            "correct": 0.82958984375,
+            "crossover": 0.7591145833333334,
+            "direction_a": 0.77978515625,
+            "direction_b": 0.7591145833333334,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8527018229166666,
+            "p_a_given_b": 0.07291666666666667,
+            "p_b_given_a": 0.04736328125,
+            "p_b_given_b": 0.8064778645833334,
+            "resolved": 0.8897298177083334
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.34375,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3854166666666667,
+            "p_a_given_b": 0.3854166666666667,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.6875
+          }
+        },
+        "control_advantages": {
+          "matched_random": {
+            "ci": [
+              0.7034907023111979,
+              0.8749598185221353
+            ],
+            "estimate": 0.7879231770833333
+          },
+          "read_disabled": {
+            "ci": [
+              0.7090245564778646,
+              0.8108322143554686
+            ],
+            "estimate": 0.76171875
+          },
+          "shuffle": {
+            "ci": [
+              0.6564529418945312,
+              0.80810546875
+            ],
+            "estimate": 0.7325846354166667
+          },
+          "zero": {
+            "ci": [
+              0.7086990356445312,
+              0.810546875
+            ],
+            "estimate": 0.76171875
+          }
+        },
+        "midpoint": {
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "correct": 0.36612955729166663,
+          "crossover": 0.0,
+          "direction_a": 0.0,
+          "direction_b": 0.0,
+          "fraction_pairs_positive": 0.0,
+          "p_a_given_a": 0.388671875,
+          "p_a_given_b": 0.388671875,
+          "p_b_given_a": 0.3435872395833333,
+          "p_b_given_b": 0.3435872395833333,
+          "resolved": 0.7322591145833334
+        },
+        "passed": true,
+        "survival": 1.0,
+        "terminal": {
+          "ci": [
+            0.6979568481445313,
+            0.802856953938802
+          ],
+          "correct": 0.8133138020833334,
+          "crossover": 0.7526041666666667,
+          "direction_a": 0.7526041666666667,
+          "direction_b": 0.767578125,
+          "fraction_pairs_positive": 1.0,
+          "p_a_given_a": 0.8011067708333334,
+          "p_a_given_b": 0.048502604166666664,
+          "p_b_given_a": 0.057942708333333336,
+          "p_b_given_b": 0.8255208333333334,
+          "resolved": 0.8665364583333334
+        },
+        "unrelated_retention": 0.9965811965811966
+      }
+    },
+    "stress_environments": {
+      "random_density_10": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7056869506835938,
+              0.8097330729166666
+            ],
+            "correct": 0.8299967447916667,
+            "crossover": 0.7599283854166666,
+            "direction_a": 0.7786458333333334,
+            "direction_b": 0.7599283854166666,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8455403645833334,
+            "p_a_given_b": 0.06689453125,
+            "p_b_given_a": 0.054524739583333336,
+            "p_b_given_b": 0.814453125,
+            "resolved": 0.8907063802083334
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8285730997721354,
+              -0.7294097900390628
+            ],
+            "correct": 0.06070963541666667,
+            "crossover": -0.7786458333333334,
+            "direction_a": -0.7786458333333334,
+            "direction_b": -0.7599283854166666,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.06689453125,
+            "p_a_given_b": 0.8455403645833334,
+            "p_b_given_a": 0.814453125,
+            "p_b_given_b": 0.054524739583333336,
+            "resolved": 0.8907063802083334
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7069488525390625,
+              0.8102213541666666
+            ],
+            "correct": 0.8272298177083334,
+            "crossover": 0.7594401041666667,
+            "direction_a": 0.77734375,
+            "direction_b": 0.7594401041666667,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8430989583333334,
+            "p_a_given_b": 0.06575520833333333,
+            "p_b_given_a": 0.051920572916666664,
+            "p_b_given_b": 0.8113606770833334,
+            "resolved": 0.8860677083333334
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.390625,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.4166666666666667,
+            "p_a_given_b": 0.4166666666666667,
+            "p_b_given_a": 0.3645833333333333,
+            "p_b_given_b": 0.3645833333333333,
+            "resolved": 0.78125
+          }
+        },
+        "control_advantages": {
+          "zero": {
+            "ci": [
+              0.7054438273111979,
+              0.80908203125
+            ],
+            "estimate": 0.7599283854166666
+          }
+        },
+        "midpoint": null,
+        "passed": true,
+        "survival": 1.0,
+        "terminal": null,
+        "unrelated_retention": 0.9993574641250804
+      },
+      "random_density_30": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.6914866129557291,
+              0.8057866414388021
+            ],
+            "correct": 0.8290201822916667,
+            "crossover": 0.7513020833333334,
+            "direction_a": 0.7820638020833334,
+            "direction_b": 0.7513020833333334,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8567708333333334,
+            "p_a_given_b": 0.07470703125,
+            "p_b_given_a": 0.049967447916666664,
+            "p_b_given_b": 0.80126953125,
+            "resolved": 0.891357421875
+          },
+          "opposite_history": {
+            "ci": [
+              -0.8313018798828125,
+              -0.7340474446614588
+            ],
+            "correct": 0.06233723958333333,
+            "crossover": -0.7820638020833334,
+            "direction_a": -0.7820638020833334,
+            "direction_b": -0.7513020833333334,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.07470703125,
+            "p_a_given_b": 0.8567708333333334,
+            "p_b_given_a": 0.80126953125,
+            "p_b_given_b": 0.049967447916666664,
+            "resolved": 0.891357421875
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7047927856445313,
+              0.80615234375
+            ],
+            "correct": 0.8286946614583333,
+            "crossover": 0.7578125,
+            "direction_a": 0.7766927083333333,
+            "direction_b": 0.7578125,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8453776041666666,
+            "p_a_given_b": 0.06868489583333333,
+            "p_b_given_a": 0.05419921875,
+            "p_b_given_b": 0.81201171875,
+            "resolved": 0.89013671875
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.3802083333333333,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.4583333333333333,
+            "p_a_given_b": 0.4583333333333333,
+            "p_b_given_a": 0.3020833333333333,
+            "p_b_given_b": 0.3020833333333333,
+            "resolved": 0.7604166666666666
+          }
+        },
+        "control_advantages": {
+          "zero": {
+            "ci": [
+              0.6946614583333333,
+              0.80517578125
+            ],
+            "estimate": 0.7513020833333334
+          }
+        },
+        "midpoint": null,
+        "passed": true,
+        "survival": 1.0,
+        "terminal": null,
+        "unrelated_retention": 1.0086655112651646
+      },
+      "random_density_50": {
+        "conditions": {
+          "intact": {
+            "ci": [
+              0.7017003377278646,
+              0.810181172688802
+            ],
+            "correct": 0.8301595052083333,
+            "crossover": 0.75634765625,
+            "direction_a": 0.7820638020833334,
+            "direction_b": 0.75634765625,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.8544921875,
+            "p_a_given_b": 0.07242838541666667,
+            "p_b_given_a": 0.049479166666666664,
+            "p_b_given_b": 0.8058268229166666,
+            "resolved": 0.89111328125
+          },
+          "opposite_history": {
+            "ci": [
+              -0.83056640625,
+              -0.7316482543945313
+            ],
+            "correct": 0.06095377604166667,
+            "crossover": -0.7820638020833334,
+            "direction_a": -0.7820638020833334,
+            "direction_b": -0.75634765625,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.07242838541666667,
+            "p_a_given_b": 0.8544921875,
+            "p_b_given_a": 0.8058268229166666,
+            "p_b_given_b": 0.049479166666666664,
+            "resolved": 0.89111328125
+          },
+          "unrelated_pair": {
+            "ci": [
+              0.7002756754557292,
+              0.8119313557942706
+            ],
+            "correct": 0.8306477864583333,
+            "crossover": 0.7584635416666666,
+            "direction_a": 0.7828776041666666,
+            "direction_b": 0.7584635416666666,
+            "fraction_pairs_positive": 1.0,
+            "p_a_given_a": 0.853515625,
+            "p_a_given_b": 0.07063802083333333,
+            "p_b_given_a": 0.04931640625,
+            "p_b_given_b": 0.8077799479166666,
+            "resolved": 0.890625
+          },
+          "zero": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "correct": 0.328125,
+            "crossover": 0.0,
+            "direction_a": 0.0,
+            "direction_b": 0.0,
+            "fraction_pairs_positive": 0.0,
+            "p_a_given_a": 0.3020833333333333,
+            "p_a_given_b": 0.3020833333333333,
+            "p_b_given_a": 0.3541666666666667,
+            "p_b_given_b": 0.3541666666666667,
+            "resolved": 0.65625
+          }
+        },
+        "control_advantages": {
+          "zero": {
+            "ci": [
+              0.7023513793945313,
+              0.80908203125
+            ],
+            "estimate": 0.75634765625
+          }
+        },
+        "midpoint": null,
+        "passed": true,
+        "survival": 1.0,
+        "terminal": null,
+        "unrelated_retention": 1.0027975037658705
+      }
+    },
+    "verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL",
+    "writer_audit": {
+      "adjudication_only": true,
+      "classification_passed": true,
+      "history_count": 64,
+      "leave_one_pair_out_accuracy": 1.0,
+      "max_abs_symmetry_error": 0.0,
+      "pair_count": 32,
+      "passed": true,
+      "phase": "writer_audit",
+      "symmetry_passed": true
+    }
+  },
+  "claim_boundary": "one-generation reusable form channel; not plastic heredity",
+  "complete": true,
+  "configuration": {
+    "configuration_id": "motif_energy512-w32-s025-d32",
+    "family": "motif_energy512",
+    "read_duration": 32,
+    "strength": 0.25,
+    "write_window": 32
+  },
+  "design_digest": "71bf50277d48d0f0dd9c7b9c2bbbb5c4a9f9c97ccb5121fa3e5538e85d27f88b",
+  "missing_pair_ids": [],
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "stage": 2,
+  "verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL"
+}

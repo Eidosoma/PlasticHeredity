@@ -1,0 +1,54 @@
+{
+  "config": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/config.py",
+    "sha256": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957"
+  },
+  "confirmation_manifest": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/results/regime_confirmation/manifest.json",
+    "sha256": "ebb81bbd3d3e41a476c710e0206e8f3a991c5062a88688bbb7b45f6feb40e619"
+  },
+  "confirmation_occurrence": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/results/regime_confirmation/occurrence_metrics.json",
+    "sha256": "ebcfa66a1d287ad25c077241a70c0c39eda6ff6f8ccf5b7bf83036863aa4e8af"
+  },
+  "confirmation_states": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/results/regime_confirmation/confirmation_states.csv",
+    "sha256": "883851acb86bde14c3f004e2a4d9d447f8b27ba44f4cdeac9fea030b5bdd2ab1"
+  },
+  "core": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/lineage_identity_core.py",
+    "sha256": "6706ff05c155e418c0ab5a6fb73bf17d9b98d2b99b073ab566c4813e8eda3de6"
+  },
+  "readme": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/README.md",
+    "sha256": "cffafecbd38337c79a2a1809947baeddc4d2599fdd8982b2f79832a8428e994b"
+  },
+  "regime_scorer": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/regime_confirmation.py",
+    "sha256": "034c70adf4571408ad2e0215e8a7bddf4aa03c39199f2e8c080ac6e50ad60c0a"
+  },
+  "requirements": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/requirements-lock.txt",
+    "sha256": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+  },
+  "review_plan": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/REVIEW_AND_PLAN.md",
+    "sha256": "f6908f9fc8bc8e22fca0b0fbb5e314e155594e13cac964526009c6f83e643674"
+  },
+  "reviewer_comment": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/REVIEWER_COMMENT.md",
+    "sha256": "940560de875e032cae2b37a124bac5243c79d3fcf3a048bf82f48ad5e7cb693c"
+  },
+  "runner": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/run_analysis.py",
+    "sha256": "1e9eaed9f6aa8cdb7d0c64c79dd24798df506379f661fa21139a520f71127d74"
+  },
+  "seeds": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/seeds.py",
+    "sha256": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61"
+  },
+  "simulator": {
+    "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/simulator.py",
+    "sha256": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358"
+  }
+}

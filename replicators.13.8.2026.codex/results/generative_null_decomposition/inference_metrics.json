@@ -1,0 +1,2179 @@
+{
+  "cell_summaries": [
+    {
+      "break_f12": {
+        "ci95": [
+          0.4507120768229167,
+          0.5645711263020834
+        ],
+        "matrices": 96,
+        "mean": 0.5076171875000001
+      },
+      "candidate": "02",
+      "f12": {
+        "ci95": [
+          0.33431396484375,
+          0.4188557942708333
+        ],
+        "matrices": 96,
+        "mean": 0.3758463541666666
+      },
+      "frozen_outside_5sd_fraction": 0.06041666666666667,
+      "mean_inherited_f12": {
+        "ci95": [
+          10.414615885416667,
+          10.957377115885416
+        ],
+        "matrices": 96,
+        "mean": 10.70322265625
+      },
+      "mechanism": "NATURAL_GARD",
+      "run8_f32": {
+        "ci95": [
+          0.5049601236979168,
+          0.5962320963541667
+        ],
+        "matrices": 96,
+        "mean": 0.5507486979166667
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.01181640625,
+          0.02643229166666667
+        ],
+        "matrices": 96,
+        "mean": 0.0185546875
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.07232259114583335,
+          0.09824218749999998
+        ],
+        "matrices": 96,
+        "mean": 0.08450520833333335
+      },
+      "strict_first5": {
+        "ci95": [
+          0.05733642578125,
+          0.0859375
+        ],
+        "matrices": 96,
+        "mean": 0.07106119791666667
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "candidate": "02",
+      "f12": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "frozen_outside_5sd_fraction": 1.0,
+      "mean_inherited_f12": {
+        "ci95": [
+          9.765625000000002e-05,
+          0.0005208333333333333
+        ],
+        "matrices": 96,
+        "mean": 0.00029296875
+      },
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "run8_f32": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_first5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          0.5696329752604168,
+          0.66434326171875
+        ],
+        "matrices": 96,
+        "mean": 0.6169921875000001
+      },
+      "candidate": "02",
+      "f12": {
+        "ci95": [
+          0.44994710286458334,
+          0.5255289713541667
+        ],
+        "matrices": 96,
+        "mean": 0.48701171875
+      },
+      "frozen_outside_5sd_fraction": 0.0375,
+      "mean_inherited_f12": {
+        "ci95": [
+          10.06844482421875,
+          10.641634114583333
+        ],
+        "matrices": 96,
+        "mean": 10.376041666666666
+      },
+      "mechanism": "COUPLING_DERANGED",
+      "run8_f32": {
+        "ci95": [
+          0.6017171223958333,
+          0.6793253580729166
+        ],
+        "matrices": 96,
+        "mean": 0.6415690104166667
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.02009684244791667,
+          0.047265625
+        ],
+        "matrices": 96,
+        "mean": 0.032519531250000004
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.11440022786458333,
+          0.1625
+        ],
+        "matrices": 96,
+        "mean": 0.13756510416666667
+      },
+      "strict_first5": {
+        "ci95": [
+          0.08845621744791668,
+          0.13035888671875
+        ],
+        "matrices": 96,
+        "mean": 0.10869140625000001
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "candidate": "02",
+      "f12": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "frozen_outside_5sd_fraction": 1.0,
+      "mean_inherited_f12": {
+        "ci95": [
+          0.00013020833333333333,
+          0.0005208333333333333
+        ],
+        "matrices": 96,
+        "mean": 0.0003255208333333333
+      },
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "run8_f32": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_first5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          0.5035115559895834,
+          0.6102620442708334
+        ],
+        "matrices": 96,
+        "mean": 0.5566731770833334
+      },
+      "candidate": "03",
+      "f12": {
+        "ci95": [
+          0.37568359375,
+          0.45126546223958336
+        ],
+        "matrices": 96,
+        "mean": 0.4144205729166666
+      },
+      "frozen_outside_5sd_fraction": 0.0375,
+      "mean_inherited_f12": {
+        "ci95": [
+          10.385668945312501,
+          10.872481282552084
+        ],
+        "matrices": 96,
+        "mean": 10.638183593750002
+      },
+      "mechanism": "NATURAL_GARD",
+      "run8_f32": {
+        "ci95": [
+          0.5426595052083333,
+          0.6312215169270834
+        ],
+        "matrices": 96,
+        "mean": 0.5881184895833333
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.012369791666666666,
+          0.02561848958333333
+        ],
+        "matrices": 96,
+        "mean": 0.018424479166666667
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.07996012369791668,
+          0.10480550130208334
+        ],
+        "matrices": 96,
+        "mean": 0.09244791666666667
+      },
+      "strict_first5": {
+        "ci95": [
+          0.06305338541666666,
+          0.09192708333333334
+        ],
+        "matrices": 96,
+        "mean": 0.07662760416666665
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "candidate": "03",
+      "f12": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "frozen_outside_5sd_fraction": 1.0,
+      "mean_inherited_f12": {
+        "ci95": [
+          0.02298177083333333,
+          0.02662760416666667
+        ],
+        "matrices": 96,
+        "mean": 0.024707031249999997
+      },
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "run8_f32": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_first5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          0.6300089518229167,
+          0.7135782877604168
+        ],
+        "matrices": 96,
+        "mean": 0.6719401041666667
+      },
+      "candidate": "03",
+      "f12": {
+        "ci95": [
+          0.4990152994791667,
+          0.5666219075520833
+        ],
+        "matrices": 96,
+        "mean": 0.5329101562499999
+      },
+      "frozen_outside_5sd_fraction": 0.029166666666666667,
+      "mean_inherited_f12": {
+        "ci95": [
+          9.968868001302084,
+          10.492480468750001
+        ],
+        "matrices": 96,
+        "mean": 10.242415364583334
+      },
+      "mechanism": "COUPLING_DERANGED",
+      "run8_f32": {
+        "ci95": [
+          0.6438476562500001,
+          0.7135172526041667
+        ],
+        "matrices": 96,
+        "mean": 0.6800130208333334
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.023872884114583336,
+          0.05468343098958334
+        ],
+        "matrices": 96,
+        "mean": 0.03798828125
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.1312825520833333,
+          0.18426513671874997
+        ],
+        "matrices": 96,
+        "mean": 0.15670572916666667
+      },
+      "strict_first5": {
+        "ci95": [
+          0.10406087239583335,
+          0.150390625
+        ],
+        "matrices": 96,
+        "mean": 0.12633463541666667
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    },
+    {
+      "break_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "candidate": "03",
+      "f12": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "frozen_outside_5sd_fraction": 1.0,
+      "mean_inherited_f12": {
+        "ci95": [
+          0.0232421875,
+          0.027018229166666668
+        ],
+        "matrices": 96,
+        "mean": 0.02516276041666667
+      },
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "run8_f32": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "states": 480,
+      "strict_all8": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_centroid": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "strict_first5": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "matrices": 96,
+        "mean": 0.0
+      },
+      "survival_f12": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      },
+      "survival_f32": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "matrices": 96,
+        "mean": 1.0
+      }
+    }
+  ],
+  "classification": {
+    "all_null_rule_effects_equivalent_zero": true,
+    "interpretation": "component-wise decomposition only; no omnibus pass gate and no null may be called equivalent solely because its interval crosses zero",
+    "natural_rule_effect_positive_both_candidates": true,
+    "nonzero_fission_only_geometric_floor_both_candidates": false
+  },
+  "crossfit_state_predictor": [
+    {
+      "brier_gain": 0.0008463116186374765,
+      "candidate": "02",
+      "ci95": [
+        -0.00041204205392334235,
+        0.005514967434020218
+      ],
+      "effect": 0.002499958184920825,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 58,
+      "maximum_single_matrix_abs": 0.06284274807122624,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.39126189895045155,
+      "randomization_p_raw": 0.05589455699292165
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "02",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.0013678386494715877,
+      "candidate": "02",
+      "ci95": [
+        -0.0011056788988636414,
+        0.006010085117517777
+      ],
+      "effect": 0.0025069607866133044,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 49,
+      "maximum_single_matrix_abs": 0.05334866483956047,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.4979253112033195,
+      "randomization_p_raw": 0.08298755186721991
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "02",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.0013777069509709407,
+      "candidate": "03",
+      "ci95": [
+        0.0005654769150044885,
+        0.007826403028421542
+      ],
+      "effect": 0.003953203244213648,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 54,
+      "maximum_single_matrix_abs": 0.09467358019960552,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.1484012692213815,
+      "randomization_p_raw": 0.018550158652672687
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "03",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.0012519232131703736,
+      "candidate": "03",
+      "ci95": [
+        -0.0017493526674541252,
+        0.00597279048227638
+      ],
+      "effect": 0.0022289500307454304,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 53,
+      "maximum_single_matrix_abs": 0.07539205796302124,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.6846473029045643,
+      "randomization_p_raw": 0.13692946058091288
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "03",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.0012106656084299367,
+      "candidate": "02",
+      "ci95": [
+        0.0005674044786190462,
+        0.006570602684931859
+      ],
+      "effect": 0.003501696267754356,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 59,
+      "maximum_single_matrix_abs": 0.06284274807122624,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.07810593116914816,
+      "randomization_p_raw": 0.00976324139614352
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "02",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.0013182285245375638,
+      "candidate": "02",
+      "ci95": [
+        -0.0008480703167814857,
+        0.005266965412685036
+      ],
+      "effect": 0.002286669537672995,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 51,
+      "maximum_single_matrix_abs": 0.0437142655745939,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.4408103490358799,
+      "randomization_p_raw": 0.07346839150597999
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "02",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.0013140605510743946,
+      "candidate": "03",
+      "ci95": [
+        0.00020922585294138276,
+        0.007676953234369805
+      ],
+      "effect": 0.003787758750629941,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 58,
+      "maximum_single_matrix_abs": 0.09467358019960552,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.19306809860873808,
+      "randomization_p_raw": 0.027581156944105442
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "03",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": -0.00013066167235695187,
+      "candidate": "03",
+      "ci95": [
+        -0.004659380004063038,
+        0.0028883210069381585
+      ],
+      "effect": -0.00091122232452371,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 50,
+      "maximum_single_matrix_abs": 0.08507765719205847,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 0.6763485477178424
+    },
+    {
+      "brier_gain": 0.0,
+      "candidate": "03",
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "effect": 0.0,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 0.0,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    }
+  ],
+  "format": "codex-generative-null-inference-v1",
+  "frozen_predictor": [
+    {
+      "brier_gain": 0.009327486971578872,
+      "candidate": "02",
+      "ci95": [
+        0.018044337535040655,
+        0.03356197859124067
+      ],
+      "effect": 0.025580607623662266,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 69,
+      "maximum_single_matrix_abs": 0.14918848848950902,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": -0.06528468161309964,
+      "candidate": "02",
+      "ci95": [
+        -13.886658771039457,
+        -13.81436886095624
+      ],
+      "effect": -13.850090141151922,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 14.232370478099678,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.02607703511191734,
+      "candidate": "02",
+      "ci95": [
+        0.05198425268035489,
+        0.08643428176438159
+      ],
+      "effect": 0.06912314205339211,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 80,
+      "maximum_single_matrix_abs": 0.32259435201034964,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": -0.0685336061851725,
+      "candidate": "02",
+      "ci95": [
+        -13.939261208378936,
+        -13.865069570433757
+      ],
+      "effect": -13.901461050750735,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 14.375177882220385,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.009894366169535922,
+      "candidate": "03",
+      "ci95": [
+        0.01647706683996723,
+        0.03467364512688192
+      ],
+      "effect": 0.0254802051605737,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 68,
+      "maximum_single_matrix_abs": 0.19402814882253677,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.9539134739359765,
+      "candidate": "03",
+      "ci95": [
+        3.9064157868432448,
+        4.031493048509253
+      ],
+      "effect": 3.967953017209304,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 96,
+      "maximum_single_matrix_abs": 4.656628150778385,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.031236069964171893,
+      "candidate": "03",
+      "ci95": [
+        0.059922328526040486,
+        0.09386816512759083
+      ],
+      "effect": 0.07678820228773371,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 79,
+      "maximum_single_matrix_abs": 0.3891915763365836,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.9540067915297055,
+      "candidate": "03",
+      "ci95": [
+        3.888432513797074,
+        4.011614399127276
+      ],
+      "effect": 3.9495310248616815,
+      "half": "A",
+      "matrices": 96,
+      "matrices_positive": 96,
+      "maximum_single_matrix_abs": 4.5912110456117885,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.008569526718203,
+      "candidate": "02",
+      "ci95": [
+        0.016485252408182268,
+        0.032321193198413097
+      ],
+      "effect": 0.02427170106697832,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 71,
+      "maximum_single_matrix_abs": 0.15197377049811941,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": -0.06528468161309964,
+      "candidate": "02",
+      "ci95": [
+        -13.88501559532554,
+        -13.81473107704333
+      ],
+      "effect": -13.850090141151922,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 14.232370478099678,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.026513851309257822,
+      "candidate": "02",
+      "ci95": [
+        0.05356927000593779,
+        0.08686271465158733
+      ],
+      "effect": 0.06983506619111075,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 82,
+      "maximum_single_matrix_abs": 0.3009139237226973,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": -0.0685336061851725,
+      "candidate": "02",
+      "ci95": [
+        -13.93822486109786,
+        -13.865419186831662
+      ],
+      "effect": -13.901461050750735,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 0,
+      "maximum_single_matrix_abs": 14.375177882220385,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 1.0,
+      "randomization_p_raw": 1.0
+    },
+    {
+      "brier_gain": 0.009853299416162496,
+      "candidate": "03",
+      "ci95": [
+        0.016104431410111506,
+        0.03373705931999388
+      ],
+      "effect": 0.024820812962795962,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 71,
+      "maximum_single_matrix_abs": 0.19679502762182333,
+      "mechanism": "NATURAL_GARD",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.9539134739359765,
+      "candidate": "03",
+      "ci95": [
+        3.9062169643502944,
+        4.031903680285153
+      ],
+      "effect": 3.967953017209304,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 96,
+      "maximum_single_matrix_abs": 4.656628150778385,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.02784585677676587,
+      "candidate": "03",
+      "ci95": [
+        0.05285410647933076,
+        0.08830657230473758
+      ],
+      "effect": 0.07034919394158563,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 79,
+      "maximum_single_matrix_abs": 0.38555439310358014,
+      "mechanism": "COUPLING_DERANGED",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "brier_gain": 0.9540067915297055,
+      "candidate": "03",
+      "ci95": [
+        3.886434167049943,
+        4.01210214385977
+      ],
+      "effect": 3.9495310248616815,
+      "half": "B",
+      "matrices": 96,
+      "matrices_positive": 96,
+      "maximum_single_matrix_abs": 4.5912110456117885,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "ordinary_branch_level_brier": true,
+      "randomization_p_holm": 0.001952648279228704,
+      "randomization_p_raw": 0.000244081034903588
+    }
+  ],
+  "intervention": [
+    {
+      "arm_means": {
+        "NOOP": 0.37421875,
+        "RANDOM": 0.38046875,
+        "SOURCE_RULE_DOWN": 0.3147786458333333,
+        "SOURCE_RULE_UP": 0.40970052083333336
+      },
+      "candidate": "02",
+      "mechanism": "NATURAL_GARD",
+      "noop_minus_down": {
+        "ci95": [
+          0.04674479166666667,
+          0.07285156250000001
+        ],
+        "effect": 0.059440104166666674,
+        "matrices": 96,
+        "matrices_positive": 75,
+        "maximum_single_matrix_abs": 0.25625,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "random_minus_noop": {
+        "ci90": [
+          -0.0017578124999999996,
+          0.014322916666666666
+        ],
+        "ci95": [
+          -0.003076171874999989,
+          0.015755208333333336
+        ],
+        "effect": 0.0062499999999999995,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 53,
+        "maximum_single_matrix_abs": 0.125,
+        "randomization_p_raw": 0.10202587258969978
+      },
+      "up_minus_down": {
+        "ci95": [
+          0.0798828125,
+          0.11088867187499998
+        ],
+        "effect": 0.094921875,
+        "matrices": 96,
+        "matrices_positive": 82,
+        "maximum_single_matrix_abs": 0.31875,
+        "randomization_p_holm": 0.001952648279228704,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "up_minus_noop": {
+        "ci95": [
+          0.025415039062500006,
+          0.04574381510416667
+        ],
+        "effect": 0.035481770833333336,
+        "matrices": 96,
+        "matrices_positive": 71,
+        "maximum_single_matrix_abs": 0.14375,
+        "randomization_p_raw": 0.000244081034903588
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.0,
+        "RANDOM": 0.0,
+        "SOURCE_RULE_DOWN": 0.0,
+        "SOURCE_RULE_UP": 0.0
+      },
+      "candidate": "02",
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "noop_minus_down": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "random_minus_noop": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_down": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_noop": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.48658854166666665,
+        "RANDOM": 0.48483072916666664,
+        "SOURCE_RULE_DOWN": 0.4837890625,
+        "SOURCE_RULE_UP": 0.485546875
+      },
+      "candidate": "02",
+      "mechanism": "COUPLING_DERANGED",
+      "noop_minus_down": {
+        "ci95": [
+          -0.007202148437499995,
+          0.012475585937499999
+        ],
+        "effect": 0.002799479166666666,
+        "matrices": 96,
+        "matrices_positive": 47,
+        "maximum_single_matrix_abs": 0.15625,
+        "randomization_p_raw": 0.29240907981449843
+      },
+      "random_minus_noop": {
+        "ci90": [
+          -0.010416666666666666,
+          0.006591796875000001
+        ],
+        "ci95": [
+          -0.011889648437499992,
+          0.0081787109375
+        ],
+        "effect": -0.0017578124999999998,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 42,
+        "maximum_single_matrix_abs": 0.1375,
+        "randomization_p_raw": 0.6348547717842323
+      },
+      "up_minus_down": {
+        "ci90": [
+          -0.006901041666666667,
+          0.010481770833333334
+        ],
+        "ci95": [
+          -0.009114583333333334,
+          0.012215169270833333
+        ],
+        "effect": 0.0017578124999999996,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 49,
+        "maximum_single_matrix_abs": 0.1375,
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 0.36758603856480354
+      },
+      "up_minus_noop": {
+        "ci95": [
+          -0.01171875,
+          0.008984375
+        ],
+        "effect": -0.0010416666666666664,
+        "matrices": 96,
+        "matrices_positive": 46,
+        "maximum_single_matrix_abs": 0.1375,
+        "randomization_p_raw": 0.5706614596045887
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.0,
+        "RANDOM": 0.0,
+        "SOURCE_RULE_DOWN": 0.0,
+        "SOURCE_RULE_UP": 0.0
+      },
+      "candidate": "02",
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "noop_minus_down": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "random_minus_noop": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_down": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_noop": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.4147135416666667,
+        "RANDOM": 0.4163411458333333,
+        "SOURCE_RULE_DOWN": 0.35703125,
+        "SOURCE_RULE_UP": 0.45143229166666665
+      },
+      "candidate": "03",
+      "mechanism": "NATURAL_GARD",
+      "noop_minus_down": {
+        "ci95": [
+          0.04388020833333334,
+          0.07198079427083334
+        ],
+        "effect": 0.05768229166666666,
+        "matrices": 96,
+        "matrices_positive": 74,
+        "maximum_single_matrix_abs": 0.29375,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "random_minus_noop": {
+        "ci90": [
+          -0.0062499999999999995,
+          0.009765625
+        ],
+        "ci95": [
+          -0.007682291666666669,
+          0.011458333333333334
+        ],
+        "effect": 0.001627604166666667,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 42,
+        "maximum_single_matrix_abs": 0.14375,
+        "randomization_p_raw": 0.3705150109836466
+      },
+      "up_minus_down": {
+        "ci95": [
+          0.07805989583333334,
+          0.11212565104166668
+        ],
+        "effect": 0.09440104166666667,
+        "matrices": 96,
+        "matrices_positive": 83,
+        "maximum_single_matrix_abs": 0.35,
+        "randomization_p_holm": 0.001952648279228704,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "up_minus_noop": {
+        "ci95": [
+          0.025065104166666668,
+          0.0484130859375
+        ],
+        "effect": 0.03671875,
+        "matrices": 96,
+        "matrices_positive": 67,
+        "maximum_single_matrix_abs": 0.23125,
+        "randomization_p_raw": 0.000244081034903588
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.0,
+        "RANDOM": 0.0,
+        "SOURCE_RULE_DOWN": 0.0,
+        "SOURCE_RULE_UP": 0.0
+      },
+      "candidate": "03",
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "noop_minus_down": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "random_minus_noop": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_down": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_noop": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.5370442708333333,
+        "RANDOM": 0.5303385416666667,
+        "SOURCE_RULE_DOWN": 0.5380859375,
+        "SOURCE_RULE_UP": 0.5287109375
+      },
+      "candidate": "03",
+      "mechanism": "COUPLING_DERANGED",
+      "noop_minus_down": {
+        "ci95": [
+          -0.010872395833333333,
+          0.009220377604166666
+        ],
+        "effect": -0.0010416666666666667,
+        "matrices": 96,
+        "matrices_positive": 41,
+        "maximum_single_matrix_abs": 0.16875,
+        "randomization_p_raw": 0.5870148889431291
+      },
+      "random_minus_noop": {
+        "ci90": [
+          -0.015299479166666666,
+          0.0017089843750000007
+        ],
+        "ci95": [
+          -0.016796875,
+          0.0030598958333333333
+        ],
+        "effect": -0.006705729166666667,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 44,
+        "maximum_single_matrix_abs": 0.1375,
+        "randomization_p_raw": 0.9018794239687576
+      },
+      "up_minus_down": {
+        "ci90": [
+          -0.019482421875000006,
+          0.0007812499999999978
+        ],
+        "ci95": [
+          -0.02135416666666667,
+          0.0029296875
+        ],
+        "effect": -0.009374999999999998,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 37,
+        "maximum_single_matrix_abs": 0.1875,
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 0.9316573102269954
+      },
+      "up_minus_noop": {
+        "ci95": [
+          -0.019506835937499994,
+          0.003190104166666667
+        ],
+        "effect": -0.008333333333333333,
+        "matrices": 96,
+        "matrices_positive": 47,
+        "maximum_single_matrix_abs": 0.15,
+        "randomization_p_raw": 0.9189650964120087
+      }
+    },
+    {
+      "arm_means": {
+        "NOOP": 0.0,
+        "RANDOM": 0.0,
+        "SOURCE_RULE_DOWN": 0.0,
+        "SOURCE_RULE_UP": 0.0
+      },
+      "candidate": "03",
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "noop_minus_down": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "random_minus_noop": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_down": {
+        "ci90": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "equivalent": true,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 1.0
+      },
+      "up_minus_noop": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "effect": 0.0,
+        "matrices": 96,
+        "matrices_positive": 0,
+        "maximum_single_matrix_abs": 0.0,
+        "randomization_p_raw": 1.0
+      }
+    }
+  ],
+  "natural_minus_null": {
+    "f12": [
+      {
+        "candidate": "02",
+        "ci95": [
+          0.33507080078125,
+          0.4176961263020833
+        ],
+        "effect": 0.3758463541666666,
+        "matrices": 96,
+        "matrices_positive": 95,
+        "maximum_single_matrix_abs": 0.7625,
+        "null": "HOMOGENEOUS_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      {
+        "candidate": "02",
+        "ci95": [
+          -0.14506022135416669,
+          -0.07686767578124999
+        ],
+        "effect": -0.11116536458333333,
+        "matrices": 96,
+        "matrices_positive": 24,
+        "maximum_single_matrix_abs": 0.634375,
+        "null": "COUPLING_DERANGED",
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 1.0
+      },
+      {
+        "candidate": "02",
+        "ci95": [
+          0.33563232421875,
+          0.41629638671874997
+        ],
+        "effect": 0.3758463541666666,
+        "matrices": 96,
+        "matrices_positive": 95,
+        "maximum_single_matrix_abs": 0.7625,
+        "null": "FISSION_ONLY_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      {
+        "candidate": "03",
+        "ci95": [
+          0.37452392578125,
+          0.4529052734375
+        ],
+        "effect": 0.4144205729166666,
+        "matrices": 96,
+        "matrices_positive": 94,
+        "maximum_single_matrix_abs": 0.740625,
+        "null": "HOMOGENEOUS_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      {
+        "candidate": "03",
+        "ci95": [
+          -0.15116780598958332,
+          -0.08640543619791666
+        ],
+        "effect": -0.11848958333333333,
+        "matrices": 96,
+        "matrices_positive": 23,
+        "maximum_single_matrix_abs": 0.553125,
+        "null": "COUPLING_DERANGED",
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 1.0
+      },
+      {
+        "candidate": "03",
+        "ci95": [
+          0.3746622721354167,
+          0.45244140625
+        ],
+        "effect": 0.4144205729166666,
+        "matrices": 96,
+        "matrices_positive": 94,
+        "maximum_single_matrix_abs": 0.740625,
+        "null": "FISSION_ONLY_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      }
+    ],
+    "strict_all8": [
+      {
+        "candidate": "02",
+        "ci95": [
+          0.011751302083333331,
+          0.026420084635416664
+        ],
+        "effect": 0.0185546875,
+        "matrices": 96,
+        "matrices_positive": 64,
+        "maximum_single_matrix_abs": 0.209375,
+        "null": "HOMOGENEOUS_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      {
+        "candidate": "02",
+        "ci95": [
+          -0.023795572916666664,
+          -0.005338541666666667
+        ],
+        "effect": -0.013964843749999999,
+        "matrices": 96,
+        "matrices_positive": 23,
+        "maximum_single_matrix_abs": 0.265625,
+        "null": "COUPLING_DERANGED",
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 0.9990236758603857
+      },
+      {
+        "candidate": "02",
+        "ci95": [
+          0.011979166666666666,
+          0.02651774088541667
+        ],
+        "effect": 0.0185546875,
+        "matrices": 96,
+        "matrices_positive": 64,
+        "maximum_single_matrix_abs": 0.209375,
+        "null": "FISSION_ONLY_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      {
+        "candidate": "03",
+        "ci95": [
+          0.012447102864583337,
+          0.025508626302083334
+        ],
+        "effect": 0.018424479166666667,
+        "matrices": 96,
+        "matrices_positive": 67,
+        "maximum_single_matrix_abs": 0.175,
+        "null": "HOMOGENEOUS_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      {
+        "candidate": "03",
+        "ci95": [
+          -0.03369140625,
+          -0.0075520833333333325
+        ],
+        "effect": -0.01956380208333333,
+        "matrices": 96,
+        "matrices_positive": 19,
+        "maximum_single_matrix_abs": 0.396875,
+        "null": "COUPLING_DERANGED",
+        "randomization_p_holm": 1.0,
+        "randomization_p_raw": 0.9997559189650964
+      },
+      {
+        "candidate": "03",
+        "ci95": [
+          0.012239583333333331,
+          0.025455729166666666
+        ],
+        "effect": 0.018424479166666667,
+        "matrices": 96,
+        "matrices_positive": 67,
+        "maximum_single_matrix_abs": 0.175,
+        "null": "FISSION_ONLY_GENERATIVE",
+        "randomization_p_holm": 0.001464486209421528,
+        "randomization_p_raw": 0.000244081034903588
+      }
+    ]
+  },
+  "reliability": [
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        0.6158759444792016,
+        0.7492659652670588
+      ],
+      "centered_within_matrix": 0.6883114449298814,
+      "matrices": 96,
+      "mechanism": "NATURAL_GARD",
+      "overall": 0.9224095296176615,
+      "overall_ci95": [
+        0.8994539129375266,
+        0.9356881788027736
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "centered_within_matrix": null,
+      "matrices": 96,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "overall": null,
+      "overall_ci95": [
+        null,
+        null
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        0.6962679953467461,
+        0.8100701869833634
+      ],
+      "centered_within_matrix": 0.7584734591063425,
+      "matrices": 96,
+      "mechanism": "COUPLING_DERANGED",
+      "overall": 0.899863310657311,
+      "overall_ci95": [
+        0.8724792700731739,
+        0.9179437940962477
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "centered_within_matrix": null,
+      "matrices": 96,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "overall": null,
+      "overall_ci95": [
+        null,
+        null
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        0.6338816761483003,
+        0.7584485893542785
+      ],
+      "centered_within_matrix": 0.701611864584043,
+      "matrices": 96,
+      "mechanism": "NATURAL_GARD",
+      "overall": 0.882546106651035,
+      "overall_ci95": [
+        0.8432645951856346,
+        0.9104085818952996
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "centered_within_matrix": null,
+      "matrices": 96,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "overall": null,
+      "overall_ci95": [
+        null,
+        null
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        0.5920903796457392,
+        0.7377561524996976
+      ],
+      "centered_within_matrix": 0.6697661664550882,
+      "matrices": 96,
+      "mechanism": "COUPLING_DERANGED",
+      "overall": 0.8632664820656771,
+      "overall_ci95": [
+        0.8263888696253978,
+        0.889912107441667
+      ],
+      "states": 480
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "centered_within_matrix": null,
+      "matrices": 96,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "overall": null,
+      "overall_ci95": [
+        null,
+        null
+      ],
+      "states": 480
+    }
+  ],
+  "reliability_natural_minus_null": [
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "natural_minus_null_centered": null,
+      "natural_minus_null_overall": null,
+      "null": "HOMOGENEOUS_GENERATIVE",
+      "overall_ci95": [
+        null,
+        null
+      ]
+    },
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        -0.15234608474659306,
+        0.00879454742134754
+      ],
+      "natural_minus_null_centered": -0.07016201417646106,
+      "natural_minus_null_overall": 0.022546218960350584,
+      "null": "COUPLING_DERANGED",
+      "overall_ci95": [
+        -0.004984677756742273,
+        0.05021547511576599
+      ]
+    },
+    {
+      "candidate": "02",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "natural_minus_null_centered": null,
+      "natural_minus_null_overall": null,
+      "null": "FISSION_ONLY_GENERATIVE",
+      "overall_ci95": [
+        null,
+        null
+      ]
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "natural_minus_null_centered": null,
+      "natural_minus_null_overall": null,
+      "null": "HOMOGENEOUS_GENERATIVE",
+      "overall_ci95": [
+        null,
+        null
+      ]
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        -0.06502089299231849,
+        0.12525006732149074
+      ],
+      "natural_minus_null_centered": 0.03184569812895477,
+      "natural_minus_null_overall": 0.019279624585357813,
+      "null": "COUPLING_DERANGED",
+      "overall_ci95": [
+        -0.02122363178547569,
+        0.06249334581178084
+      ]
+    },
+    {
+      "candidate": "03",
+      "centered_ci95": [
+        null,
+        null
+      ],
+      "natural_minus_null_centered": null,
+      "natural_minus_null_overall": null,
+      "null": "FISSION_ONLY_GENERATIVE",
+      "overall_ci95": [
+        null,
+        null
+      ]
+    }
+  ],
+  "rule_attenuation": [
+    {
+      "candidate": "02",
+      "ci95": [
+        0.07994791666666667,
+        0.11080729166666665
+      ],
+      "effect": 0.094921875,
+      "matrices": 96,
+      "matrices_positive": 82,
+      "maximum_single_matrix_abs": 0.31875,
+      "null": "HOMOGENEOUS_GENERATIVE",
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        0.07342122395833335,
+        0.11328125
+      ],
+      "effect": 0.09316406250000002,
+      "matrices": 96,
+      "matrices_positive": 79,
+      "maximum_single_matrix_abs": 0.40625,
+      "null": "COUPLING_DERANGED",
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        0.07949218749999999,
+        0.11087239583333335
+      ],
+      "effect": 0.094921875,
+      "matrices": 96,
+      "matrices_positive": 82,
+      "maximum_single_matrix_abs": 0.31875,
+      "null": "FISSION_ONLY_GENERATIVE",
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        0.07774251302083336,
+        0.11162923177083334
+      ],
+      "effect": 0.09440104166666667,
+      "matrices": 96,
+      "matrices_positive": 83,
+      "maximum_single_matrix_abs": 0.35,
+      "null": "HOMOGENEOUS_GENERATIVE",
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        0.08261718750000001,
+        0.12434895833333333
+      ],
+      "effect": 0.10377604166666665,
+      "matrices": 96,
+      "matrices_positive": 79,
+      "maximum_single_matrix_abs": 0.31875,
+      "null": "COUPLING_DERANGED",
+      "randomization_p_raw": 0.000244081034903588
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        0.07743326822916667,
+        0.11184895833333332
+      ],
+      "effect": 0.09440104166666667,
+      "matrices": 96,
+      "matrices_positive": 83,
+      "maximum_single_matrix_abs": 0.35,
+      "null": "FISSION_ONLY_GENERATIVE",
+      "randomization_p_raw": 0.000244081034903588
+    }
+  ]
+}

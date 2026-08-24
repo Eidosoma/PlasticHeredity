@@ -1,0 +1,82 @@
+{
+  "archived_score_reproduction": {
+    "codex_headline": {
+      "02": {
+        "exact_retained_branch_targets": true,
+        "max_abs_log_loss_error": 0.0,
+        "tolerance": 2e-12
+      },
+      "03": {
+        "exact_retained_branch_targets": true,
+        "max_abs_log_loss_error": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    "codex_primary": {
+      "02": {
+        "exact_retained_branch_targets": true,
+        "max_abs_log_loss_error": 0.0,
+        "tolerance": 2e-12
+      },
+      "03": {
+        "exact_retained_branch_targets": true,
+        "max_abs_log_loss_error": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    "fable_headline": {
+      "02": {
+        "exact_retained_branch_targets": true,
+        "max_abs_log_loss_error": 0.0,
+        "tolerance": 2e-12
+      },
+      "03": {
+        "exact_retained_branch_targets": true,
+        "max_abs_log_loss_error": 1.1102230246251565e-16,
+        "tolerance": 2e-12
+      }
+    },
+    "fable_primary": {
+      "02": {
+        "max_abs_log_loss_error": 1.073695393694063e-05,
+        "new_confirmation_futures": false,
+        "target_reconstruction": "retained float32 H64 and retained branch lengths",
+        "tolerance": 2e-05
+      },
+      "03": {
+        "max_abs_log_loss_error": 1.1102230246251565e-16,
+        "new_confirmation_futures": false,
+        "target_reconstruction": "retained float32 H64 and retained branch lengths",
+        "tolerance": 2e-05
+      }
+    }
+  },
+  "codex_headline": {
+    "confirmation_future_source": "retained artifact",
+    "direct_feature_max_abs_error": 0.0,
+    "new_confirmation_futures": false,
+    "states": 400,
+    "targets": 25600
+  },
+  "codex_primary": {
+    "confirmation_future_source": "retained artifact",
+    "direct_feature_max_abs_error": 0.0,
+    "new_confirmation_futures": false,
+    "states": 2000,
+    "targets": 128000
+  },
+  "fable_headline": {
+    "confirmation_future_source": "retained artifact",
+    "direct_feature_max_abs_error": 0.0,
+    "new_confirmation_futures": false,
+    "states": 400,
+    "targets": 25600
+  },
+  "fable_primary": {
+    "confirmation_future_source": "retained artifact",
+    "direct_feature_max_abs_error": 0.0,
+    "new_confirmation_futures": false,
+    "states": 2000,
+    "targets": 128000
+  }
+}

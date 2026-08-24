@@ -1,0 +1,19 @@
+{
+  "acquisition_limit": 60,
+  "acquisition_replay_exact": true,
+  "all_200_matrices_per_candidate": false,
+  "classification": "inconclusive_incomplete_matrix_coverage",
+  "eligible_broken_states": 1574,
+  "eligible_by_candidate": {
+    "02": {
+      "matrices": 177,
+      "states": 771
+    },
+    "03": {
+      "matrices": 177,
+      "states": 803
+    }
+  },
+  "no_replacement": true,
+  "source_states": 2000
+}

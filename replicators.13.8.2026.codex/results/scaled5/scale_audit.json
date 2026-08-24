@@ -1,0 +1,111 @@
+{
+  "baseline": "results/full",
+  "design": {
+    "confirmation": {
+      "baseline_futures": 25600,
+      "baseline_matrices": 40,
+      "baseline_states": 400,
+      "branches_per_state": 64,
+      "matrix_scale": 5.0,
+      "realized_branch_inventory": {
+        "by_candidate": {
+          "02": {
+            "extinct": 13,
+            "rows": 64000
+          },
+          "03": {
+            "extinct": 1,
+            "rows": 64000
+          }
+        },
+        "completed_horizon": 127986,
+        "extinct": 14,
+        "rows": 128000
+      },
+      "realized_futures_match": true,
+      "scaled_futures": 128000,
+      "scaled_matrices": 200,
+      "scaled_states": 2000
+    },
+    "development": {
+      "baseline_futures": 12800,
+      "baseline_matrices": 40,
+      "baseline_states": 400,
+      "branches_per_state": 32,
+      "matrix_scale": 5.0,
+      "realized_branch_inventory": {
+        "by_candidate": {
+          "02": {
+            "extinct": 0,
+            "rows": 32000
+          },
+          "03": {
+            "extinct": 0,
+            "rows": 32000
+          }
+        },
+        "completed_horizon": 64000,
+        "extinct": 0,
+        "rows": 64000
+      },
+      "realized_futures_match": true,
+      "scaled_futures": 64000,
+      "scaled_matrices": 200,
+      "scaled_states": 2000
+    }
+  },
+  "exact_confirmation_replay": true,
+  "frozen_model_predictions": {
+    "02": {
+      "all_within_1e-12": true,
+      "maximum_absolute_errors": {
+        "beta": 3.3306690738754696e-16,
+        "full": 5.551115123125783e-16,
+        "history": 1.1102230246251565e-16,
+        "prior": 0.0
+      },
+      "states": 1000
+    },
+    "03": {
+      "all_within_1e-12": true,
+      "maximum_absolute_errors": {
+        "beta": 2.7755575615628914e-16,
+        "full": 5.551115123125783e-16,
+        "history": 1.1102230246251565e-16,
+        "prior": 0.0
+      },
+      "states": 1000
+    }
+  },
+  "nested_identity": {
+    "confirmation_arrays": {
+      "archive_keys": true,
+      "confirmation_beta": true,
+      "confirmation_history": true,
+      "confirmation_state_graph": true,
+      "confirmation_targets": true
+    },
+    "confirmation_arrays_all_equal": true,
+    "confirmation_branch_rows_compared": 25600,
+    "confirmation_branch_rows_equal": true,
+    "development_arrays": {
+      "archive_keys": true,
+      "development_beta": true,
+      "development_history": true,
+      "development_state_graph": true,
+      "development_targets": true
+    },
+    "development_arrays_all_equal": true,
+    "development_branch_rows_compared": 12800,
+    "development_branch_rows_equal": true
+  },
+  "reported_ranges": {
+    "baseline_matches": 11,
+    "comparisons": 32,
+    "scaled_matches": 8
+  },
+  "same_candidate_contracts": true,
+  "same_horizon": true,
+  "same_master_seed": true,
+  "scaled": "results/scaled5"
+}

@@ -1,0 +1,721 @@
+schema: eidosoma.e01.s12_strict_mrr_preregistration.v1
+researchStepId: S12
+stepNumber: 12
+experimentId: E01
+preregistrationVersion: E01-S12-STRICT-MRR-v1.0.0
+createdAtUtc: 2026-08-02T00:00:00Z
+status: FROZEN_BEFORE_ANY_GARD_SCIENTIFIC_OUTCOME
+
+frozenQuestion: >-
+  Is the already validated S10 strict Gaussian PhiID branch numerically usable
+  on twelve complete GARD trajectories after the immutable 512-effective-sample
+  boundary; how much prospective coverage remains; are valid past-only estimates
+  associated with later or continuing self-replication within that restricted
+  scope; and, only if a frozen feasibility gate passes, are post-eligibility
+  max/control/min candidate actions reproducibly distinguishable?
+
+scopeBoundary:
+  executeOnly: S12
+  versionedIdentity: E01-S12-STRICT-MRR-v1.0.0
+  evidenceClass: PARTIAL_FORENSIC_REPLICATION_AND_FEASIBILITY_TEST
+  exactBaselineMatrixCount: 12
+  interventionTripletCountRule: exactly_zero_or_exactly_six
+  maximumInterventionTriplets: 6
+  nextStepForbidden: S13
+  fixedWindowRestorationForbidden: true
+  s11FixedEstimatesForbidden: true
+  s11rFixedEstimatesForbidden: true
+  estimatorRepairForbidden: true
+  scaleUpForbidden: true
+  broaderInterventionWorkForbidden: true
+  matrixCountExpansionForbidden: true
+  paperPrimarySelectionForbidden: true
+  authorPrimarySelectionForbidden: true
+  noSilentDefaults: true
+  noTrajectoryPoolingForSampleGate: true
+  noFutureDataInProspectiveEstimate: true
+  unavailableAuthorCode: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  matlabRngIdentity: UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER
+  authorPhiidMapping: UNRESOLVED::E01-A043
+  authorRedundancyFunction: UNRESOLVED::E01-A044
+  authorEstimatorFamily: UNRESOLVED::E01-A045
+  authorMibObjective: UNRESOLVED::E01-A054
+  authorMibNormalization: UNRESOLVED::E01-A055
+  authorPartitionSearch: UNRESOLVED::E01-A056
+  cannotRecover:
+    - failed_fixed_window_Phi_r
+    - highly_localized_Phi_r_spike_height_width_or_timing
+    - any_event_before_first_eligible_time
+    - early_warning_whose_prediction_origin_precedes_eligibility
+    - original_first_25_percent_to_final_75_percent_when_first_quarter_is_not_independently_eligible
+    - intervention_before_first_eligible_post_fission_point
+    - intervention_after_every_fission_from_the_beginning
+    - exact_Figure_6_reconstruction
+    - exact_Table_1_reconstruction
+
+frozenInputs:
+  - {inputId: agentsInstructions, path: /workspace/AGENTS.md, sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c}
+  - {inputId: fullPlan, path: /workspace/FULL_PLAN.md, sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee}
+  - {inputId: s12RedesignedResearchPlan, path: /workspace/RESEARCH_PLAN.md, sha256: 95859e7479be997c27409455d2e730db162cd3445ca241ff57523b9e6d804e61}
+  - {inputId: attachmentManifest, path: /workspace/input-attachments/MANIFEST.json, sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e}
+  - {inputId: attachmentSidecar, path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md, sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c}
+  - {inputId: suppliedPaperExtraction, path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md, sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a}
+  - {inputId: officialPaperPdf, path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf, sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4}
+  - {inputId: s09Report, path: /artifacts/research_steps/S09/research_step_full_results.md, sha256: 6d78777fd4a4fcecbfc8e0844554b8aa3398c7347464958787d385bfd06aad1c}
+  - {inputId: s10Report, path: /artifacts/research_steps/S10/research_step_full_results.md, sha256: 1a996d4e4b549b89761b9b21652553b8bf0e789b9e248a768b1e63d5704f3ff0}
+  - {inputId: s11Report, path: /artifacts/research_steps/S11/research_step_full_results.md, sha256: f37bf5992ab3e5cdf95f66986d7d794f7244ca06f4476026b10e809fcb46ea60}
+  - {inputId: s11rReport, path: /artifacts/research_steps/S11R/research_step_full_results.md, sha256: ccf143b668576b799833259b427e637f8591dd3484563a6256da48232bf6148d}
+  - {inputId: specificationRegistry, path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml, sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891}
+  - {inputId: sourceManifest, path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml, sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5}
+  - {inputId: environmentReport, path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json, sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd}
+  - {inputId: precisionPolicy, path: /artifacts/E01_forensic_replication_bundle/provenance/precision_policy.yaml, sha256: a49b2f37629382264881bb390dd010b453f1959d792eee180dae6c6c425259e6}
+  - {inputId: historicalContract, path: /artifacts/E01_forensic_replication_bundle/software/historical_reference/historical_behavior_contract.yaml, sha256: e6fe49aba2240047d018e5b619ef07d3e48922fb43a963256b6b2233f07d0a43}
+  - {inputId: independentEngineContract, path: /artifacts/E01_forensic_replication_bundle/software/independent_engine/independent_engine_contract.yaml, sha256: a35e313cb0685218691397980d1f5d8020fee8c994359e3227b9b1c1ef8605e8}
+  - {inputId: seedContract, path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml, sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1}
+  - {inputId: trajectorySchema, path: /artifacts/E01_forensic_replication_bundle/reproducibility/trajectory_schema_v1.0.0.json, sha256: 981807b512bff589a6a693c1da191efad829ccb3294fd4f9297c3ee02a7a5d57}
+  - {inputId: labelContract, path: /artifacts/E01_forensic_replication_bundle/labels/label_family_contract_v1.0.1.yaml, sha256: 4d1bf4d1f57fbf43a49bfd95f072f33e4f78782e2afb1cded9dc1ed8a3a689d5}
+  - {inputId: preprocessingContract, path: /artifacts/E01_forensic_replication_bundle/preprocessing/compositional_transform_contract_v1.0.0.yaml, sha256: 7203d0d273f529b3953c45a2c6e1a64dbbd323aac00d72bb60b099ce93dd2679}
+  - {inputId: validTransformRegistry, path: /artifacts/E01_forensic_replication_bundle/preprocessing/valid_transform_specification_registry_v1.0.0.yaml, sha256: a09608fe117c23d398a386326a06acc3742e2285aa77d59ff3e3a43590147e56}
+  - {inputId: informationDynamicsContract, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_contract_v1.0.0.yaml, sha256: c31adef6d6fc7acf098244422a6a46c7c98b582bbd1d99d431216577c1f01a83}
+  - {inputId: informationDynamicsEligibility, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_eligibility_registry_v1.0.0.yaml, sha256: ff96a7ee46274bf0c40343a85280647e349fbceaa74003de608fc9b23481a186}
+  - {inputId: s11Contract, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/time_localized_phir_contract_v1.0.0.yaml, sha256: a925524873e7da989c975099b3f74efe8d80ba3435244b443614cf191e0ee2ee}
+  - {inputId: s11Eligibility, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/time_localized_phir_eligibility_registry_v1.0.0.yaml, sha256: 1ebcd012790777b69e050b071ce3c464402231360efe4989398070a2959b7c64}
+  - {inputId: s11rContract, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/time_localized_phir_repair_contract_v1.0.0.yaml, sha256: b6bd2e1f347433f0068311ebf4175a246f8551f04b2beee170535a0763340cc0}
+  - {inputId: s11rEligibility, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/time_localized_phir_repair_eligibility_registry_v1.0.0.yaml, sha256: b35b2ad58c86e3fd9be38709ba6f886fcb351e31692525fdb3705760394bc8c9}
+
+immutablePriorEvidence:
+  repositoryPrePreregistrationCommit: 0497e9cf84cd4360ba4a36796da2443ae2dae002
+  repositoryFileSet:
+    selection: >-
+      All Git-tracked files under src/e01_information_dynamics,
+      src/e01_time_localized_phir, and src/e01_time_localized_phir_repair;
+      their three tests and runners; and the four S10/S11/S11R configuration files.
+    fileCount: 23
+    aggregateSha256: 979039195c3d94ecbc18d992bcd533b1ff378cc912a1669bee4a241a310f5d70
+    aggregateAlgorithm: sha256_of_sorted_lines_each_line_sha256_two_spaces_repo_relative_path_newline
+  artifactDirectories:
+    S10:
+      fileCount: 21
+      aggregateSha256: aeb44f0348370c78b46cc75f33f4e20acd2f3dfd2b68b91de1013b5052593f6a
+      manifestSha256: e614637796a3a46a667e2f844c904e7957a7a40cdb55d7017aae403bd9c9de0a
+    S11:
+      fileCount: 33
+      aggregateSha256: b328f9bed5458d4513891c85e4c57a8de4a0590ffb505be6c88957b2d4e90f0b
+      manifestSha256: 21e58c969bc511cb620408518f96b5cab8acae02ec269fa376716c01123742ea
+    S11R:
+      fileCount: 25
+      aggregateSha256: 29603ad75f2d62c5547271c80ae870553c3f479262f67376eb333adc9bc4e557
+      manifestSha256: 52ff405ae998052f0edb5015a8738804be0827faf9b184eb5101042fcbc0a754
+  exactArtifactAggregateAlgorithm: >-
+    SHA-256 of UTF-8 sorted records formatted as
+    sha256 two-spaces absolute-path-relative-to-step-directory newline.
+  requiredAtHandoff: exact_match_all_counts_and_aggregates
+
+gardSpecification:
+  specificationId: E01-S12-GARD-HISTORICAL-SOURCE-TRACEABLE-SCALE-v1.0.0
+  engineId: E01-GARD-INDEPENDENT-v1.0.0
+  engineImplementation: e01_gard_independent
+  evidenceBoundary: >-
+    Explicit full-scale reconstruction of pinned public historical GARD behavior
+    through the independently written and S07-validated engine. It is neither
+    the unavailable author implementation nor an assertion that the paper used
+    these public historical defaults. Conflicts with paper prose remain visible.
+  nSpecies: 100
+  nMin: 40
+  nMax: 80
+  nGenerations: 100
+  maxSteps: null
+  betaA: -4.0
+  betaSigma: 4.0
+  kF: 0.01
+  kB: 0.0001
+  rho: uniform_exact_1_over_100
+  propensityEquationBranch: historical_reference
+  catalyticMatrixBranch: historical_orientation_with_diagonal
+  reservoirSemantics: constant_require_sum_one
+  updateKernel: categorical_single_event
+  clockSemantics: event_index_only
+  poissonExposure: null
+  lossNonnegativity: eventwise_zero_rate
+  growthBoundary: eventwise_exact_stop
+  maxStepsSemantics: unbounded_historical_comparison
+  zeroPropensitySemantics: raise_and_retain_failure
+  fissionSemantics: fixed_size_without_replacement_odd_discard
+  fissionProbability: null
+  daughterSelection: first
+  postFissionSemantics: continue_exact_selected
+  initialStateSemantics: with_replacement_counts
+  conflictsPreserved:
+    paperPoissonVsHistoricalCategorical: CONFLICT::E01-A012
+    paperBinomialVsHistoricalFixedSizeFission: CONFLICT::E01-A018
+    paperDistinctInitialVsHistoricalWithReplacement: CONFLICT::E01-A021
+    paperMaxStepsVsHistoricalNoMaxSteps: CONFLICT::E01-A015
+
+molecularSampling:
+  specificationId: E01-S12-SAMPLING-POSTTRANSITION-ALL-v1.0.0
+  initialObservation:
+    observationIndex: 0
+    kind: initial_selected_state
+    includedInEstimatorHistory: true
+  molecularEventObservation:
+    instant: immediately_after_each_integer_plus_or_minus_one_event
+    kind: molecular_event
+    includedInEstimatorHistory: true
+  fissionBoundaryObservation:
+    instant: immediately_after_fission_and_first_daughter_selection_before_next_growth_event
+    kind: post_fission
+    includedInEstimatorHistory: true
+    fissionTransitionTreatment: one_explicit_observation_transition_not_deleted_or_smoothed
+  indexDefinitions:
+    observationIndex: zero_based_over_initial_plus_every_molecular_event_plus_every_post_fission_state
+    molecularStep: cumulative_number_of_plus_or_minus_one_events
+    generation: completed_fission_count_at_observation
+    postFissionDecisionPoint: each_kind_post_fission_observation
+  noHiddenDeletion: true
+
+lagAndProspectiveIndexing:
+  lagSpecificationId: E01-S12-LAG-OBSERVATION-TAU1-v1.0.0
+  tau: 1
+  unit: adjacent_materialized_observation_transition
+  prefixAtTimeT: observations_with_observation_index_at_most_t
+  effectiveSampleFormula: n_eff(t)=number_of_prefix_observations-tau
+  effectiveSampleFormulaExecutable: n_eff=t_for_zero_based_observation_index_and_tau_1
+  minimumEffectiveSamples: 512
+  perTrajectoryOnly: true
+  expandingWindow: all_observations_indices_0_through_t_inclusive
+  prospectiveLabel: PROSPECTIVE_PAST_ONLY_EXPANDING
+  noCompletedTrajectoryCovariance: true
+  noRetrospectivePartition: true
+  noFutureObservation: true
+
+preprocessingBranches:
+  statusBoundary: VALIDATION_BRANCHES_NOT_RECOVERED_PAPER_DEFAULTS
+  commonZeroSpecification:
+    specificationId: E01-S09-ZERO-ADD-DELTA-0p5-v1.0.0
+    method: additive_pseudocount
+    delta: 0.5
+    deltaHex: 0x1.0000000000000p-1
+    closure: divide_by_exact_row_sum_after_addition
+    evidenceClass: FROZEN_S09_VALIDATION_GRID_MEMBER_NOT_AUTHOR_DEFAULT
+  branches:
+    - preprocessingId: E01-S12-PREPROC-ADD0p5-DROPCLR-D100-C100-v1.0.0
+      coordinateFamily: dropped_clr
+      inputDimension: 100
+      outputDimension: 99
+      droppedOriginalComponentOneBased: 100
+      logBase: natural
+      inverseValidation: reconstruct_full_composition_then_forward_transform
+      evidenceClass: VERSIONED_S12_EXTENSION_OF_S09_TRANSFORM_NOT_AUTHOR_DEFAULT
+    - preprocessingId: E01-S12-PREPROC-ADD0p5-ILR-HELMERT-D100-v1.0.0
+      coordinateFamily: ilr_helmert
+      inputDimension: 100
+      outputDimension: 99
+      basis: orthonormal_Helmert_submatrix
+      logBase: natural
+      inverseValidation: ilr_inverse_then_forward_transform
+      evidenceClass: VERSIONED_S12_EXTENSION_OF_S09_TRANSFORM_NOT_AUTHOR_DEFAULT
+  requiredForEveryObservation:
+    - retain_integer_input_state_and_exact_zero_count
+    - retain_eligibility_status_and_reason
+    - finite_output
+    - inverse_maximum_absolute_error_at_most_1e-10
+    - no_row_deletion
+
+partitionBranch:
+  branchId: E01-S12-PARTITION-PASTONLY-FIRST-PASS-LOCK-v1.0.0
+  mappingId: E01-S10-PARTMAP-GROUP-MEAN-v1.0.0
+  objectiveId: E01-S10-MIB-OBJ-BIDIRECTIONAL-LAGGED-GAUSSIAN-MI-v1.0.0
+  normalizationId: E01-S10-MIB-NORM-NONE-v1.0.0
+  searchId: E01-S10-MIB-SEARCH-SPECTRAL-FIXED-CANDIDATE-v1.0.0
+  authorStatus: VALIDATION_ONLY_NOT_AUTHOR_OR_PAPER_PRIMARY
+  updatePoints: post_fission_decision_points_with_n_eff_at_least_512
+  lockRule: >-
+    For each trajectory and preprocessing branch independently, evaluate the
+    fixed S10 spectral candidate at each eligible post-fission point in temporal
+    order until all partition and replay gates pass. Lock that first passing
+    partition for every later prospective estimate. Never revise it using later
+    data. If no partition has passed, emit PARTITION_NOT_YET_LOCKED.
+  candidateConstruction: >-
+    Absolute Pearson-correlation adjacency of all 99 coordinate series in the
+    available prefix, zero diagonal, normalized-Laplacian Fiedler vector,
+    largest-absolute-entry-positive orientation with earliest-index ties, sign
+    split, zeros to part A.
+  objectiveEvaluation: >-
+    Arithmetic mean of the coordinate series in each part; minimize
+    I(A_t;B_t+1)+I(B_t;A_t+1) with no normalization for metadata only. The
+    spectral search returns one fixed candidate rather than claiming a global MIB.
+  gates:
+    allPartitionInputsFinite: true
+    fiedlerRelativeEigengapStrictlyGreaterThan: 1.0e-10
+    nonemptyParts: true
+    minimumSideFractionAtLeast: 0.1
+    finiteObjective: true
+    deterministicReplayExact: true
+    featureRelabelReplay:
+      permutationCount: 3
+      permutationsFromStreamPurpose: estimator
+      ariMustEqual: 1.0
+      objectiveAbsoluteTolerance: 1.0e-10
+      canonicalInverseMapRequired: true
+    failurePolicy: retain_status_reason_and_try_again_only_at_next_post_fission_point
+  partitionHistoryRequired: true
+
+estimatorBranches:
+  estimatorId: E01-S10-PHYID-GAUSSIAN-STRICT-v1.0.0
+  aggregateId: E01-S10-AGG-PAPER-EQUATION-v1.0.0
+  aggregateFormula: str+stx+sty+sts-rtr-rtx-rty-rts
+  directFormula: I_xytab-I_xtab-I_ytab
+  units: nats
+  covariance: numpy_cov_ddof_1
+  scalarSeriesScaling: divide_each_series_by_sample_sd_ddof_1_without_mean_subtraction
+  regularization: none
+  biasCorrection: none
+  branches:
+    - redundancyId: E01-S10-REDUNDANCY-MMI-v1.0.0
+      implementation: pinned_phyid
+      status: VALIDATION_CANDIDATE_NOT_AUTHOR_DEFAULT
+    - redundancyId: E01-S10-REDUNDANCY-CCS-v1.0.0
+      implementation: pinned_phyid
+      status: EXPERIMENTAL_VALIDATION_CANDIDATE_NOT_AUTHOR_DEFAULT
+      caveat: pinned_source_docstrings_mark_this_path_to_be_implemented
+  redundancyInvariantAggregatePolicy: >-
+    The direct paper-equation scalar is algebraically independent of the
+    redundancy function. Identical scalar values remain separately status-bearing
+    under MMI and experimental CCS identities; branch provenance is never merged
+    and full 16-atom source decompositions are retained at frozen checkpoints.
+  omegaPolicy:
+    discrete: EXCLUDED
+    moreThan2x2Doublet: EXCLUDED
+    guardedGaussian2x2: NUMERICAL_CROSS_CHECK_ONLY_NEVER_SOLE_SCIENTIFIC_IMPLEMENTATION
+
+strictEstimateGates:
+  gateId: E01-S10-SAMPLE-GATE-STRICT-v1.0.0
+  allMustPassPerEstimate:
+    - n_eff_at_least_512
+    - preprocessing_eligible_with_no_deleted_row
+    - partition_locked_from_past_only_data
+    - every_input_and_derived_value_finite
+    - every_scalar_series_sample_sd_ddof_1_strictly_positive
+    - complete_four_vector_sample_covariance_positive_definite
+    - numerical_rank_equals_four
+    - condition_number_at_most_1e12
+    - at_least_20_effective_samples_per_joint_dimension
+    - lattice_closure_absolute_error_at_most_1e-10
+    - direct_aggregate_matches_atom_aggregate_within_1e-10
+    - deterministic_same_engine_replay_passed
+    - estimator_and_partition_specifications_exactly_match_preregistration
+  rankTolerance: max(n_eff,4)*binary64_epsilon*largest_singular_value
+  maximumConditionNumber: 1.0e12
+  latticeClosureAbsoluteTolerance: 1.0e-10
+  numericCrosscheckAbsoluteTolerance: 1.0e-10
+  numericCrosscheckRelativeTolerance: 1.0e-10
+  failurePolicy: RETAIN_ROW_WITH_NULL_NUMERIC_ESTIMATE_AND_MACHINE_READABLE_REASON
+  noFallbackRegularization: true
+  noImputation: true
+
+estimateEmission:
+  molecularRows: every_initial_molecular_event_and_post_fission_observation_for_each_preprocessing_and_redundancy_branch
+  postFissionRows: every_post_fission_decision_point_for_each_preprocessing_and_redundancy_branch
+  validStatus: ELIGIBLE_NUMERIC_STRICT_EXPANDING
+  requiredIdentityFields:
+    - specificationId
+    - trajectoryId
+    - matrixIndex
+    - observationIndex
+    - molecularStep
+    - generation
+    - seedIdentity
+    - preprocessingId
+    - partitionBranchId
+    - partitionId
+    - estimatorId
+    - redundancyId
+    - aggregateId
+    - tau
+    - nEff
+    - status
+    - reason
+  ineligibleRowsNumericValue: null
+  omissionForbidden: true
+
+wholeTrajectoryBranch:
+  specificationId: E01-S12-WHOLE-TRAJECTORY-DESCRIPTIVE-v1.0.0
+  executionTime: only_after_corresponding_trajectory_is_complete
+  labelExact: DESCRIPTIVE_NONPROSPECTIVE
+  partition: recompute_same_frozen_partition_branch_on_complete_trajectory
+  uses:
+    - descriptive_association
+    - directional_comparison_with_paper
+  forbiddenUses:
+    - prediction
+    - action_selection
+    - lead_time_claim
+    - prospective_causal_control
+  localValues: source_equivalent_local_equation_aggregate_from_completed_trajectory_covariance
+
+replicatorLabels:
+  samplingInput: selected_daughter_state_at_each_post_fission_generation
+  branches:
+    - labelId: E01-S08-YH-T1-HGT090-v1.0.0
+      family: historical_non_drift_technique1
+      threshold: 0.9
+      comparator: strict_greater_than
+      role: source_traceable_retrospective_label_not_author_identity
+      prospectiveUse: outcome_only_not_predictor
+    - labelId: E01-S08-YC-COS-HGT090-MIN3-ONLINE-v1.0.0
+      family: cosine_threshold_graph_past_only
+      threshold: 0.9
+      comparator: strict_greater_than
+      minimumClusterSize: 3
+      role: validation_only_past_only_companion
+  propagationToMolecularObservations: >-
+    The label for generation g is attached to observations after fission g and
+    before fission g+1. Initial-growth observations before the first fission have
+    status LABEL_NOT_YET_DEFINED. Retrospective historical labels are outcomes,
+    never prospective predictor inputs.
+  noHiddenExclusion: true
+
+associationAnalyses:
+  analysisId: E01-S12-POSTELIGIBILITY-ASSOCIATION-v1.0.0
+  evidenceBoundary: restricted_post_eligibility_estimands_only
+  branches:
+    - estimandId: continuing_replication
+      unit: eligible_post_fission_decision_point
+      predictor: strict_expanding_Phi_r_at_current_decision
+      outcome: historical_non_drift_label_at_current_generation
+      statistic: per_trajectory_Spearman_then_median_across_trajectories
+    - estimandId: later_replication_one_generation
+      unit: eligible_post_fission_decision_point_with_observed_next_generation
+      predictor: strict_expanding_Phi_r_at_current_decision
+      outcome: historical_non_drift_label_at_next_generation
+      statistic: per_trajectory_point_biserial_Spearman_then_median_across_trajectories
+    - estimandId: past_only_companion_continuing
+      unit: eligible_post_fission_decision_point
+      predictor: strict_expanding_Phi_r_at_current_decision
+      outcome: past_only_cosine_label_at_current_generation
+      statistic: per_trajectory_Spearman_then_median_across_trajectories
+  uncertainty:
+    trajectoryBootstrapReplicates: 4096
+    confidenceLevel: 0.95
+    seedPurpose: estimator
+    interval: percentile
+  nullControl:
+    permutationsPerBranch: 4096
+    method: independent_nonzero_circular_generation_shift_within_each_trajectory_then_recompute_summary
+    minimumShift: 1
+    pValue: plus_one_one_sided_for_positive_direction
+  branchConcordance: both_preprocessing_branches_must_have_same_sign_for_directional_claim
+  noFixedWindowInput: true
+
+baselineFeasibilityGate:
+  gateId: E01-S12-BASELINE-FEASIBILITY-INTERVENTION-v1.0.0
+  frozenBeforeBaselineOutcomes: true
+  allMustPass:
+    exactBaselineTrajectoriesComplete: 12
+    generationsPerTrajectoryExactly: 100
+    exactReplayTrajectoriesRequired: 3
+    replaySelectionMatrixIndices: [0, 5, 11]
+    minimumQualifyingTrajectories: 6
+    qualifyingTrajectoryRequirements:
+      minimumEligiblePostFissionPointsUnderEachPreprocessing: 24
+      bothPreprocessingPartitionsLocked: true
+      finalObservationEligibleUnderEachPreprocessing: true
+    finalMolecularCoverageAtLeastUnderEachPreprocessing: 0.75
+    medianFirstEligibleGenerationAtMost: 25
+    candidateScoringPilot:
+      selection: first_eligible_post_fission_point_of_each_qualifying_trajectory
+      minimumPilotsPassingCompleteCandidateStrictGatesAndExactReplay: 6
+      completeCandidateSetRequired: true
+    runtime:
+      observedBaselineCpuHoursAtMost: 20.0
+      projectedCompleteS12CpuHoursAtMost: 200.0
+      projectedCompleteS12WallHoursAtMost: 48.0
+      overallE01CpuCeilingHours: 250.0
+      projectionUses: median_full_candidate_pilot_time_times_number_of_planned_decision_points_plus_observed_baseline
+    storage:
+      projectedS12BytesAtMost: 21474836480
+      freeBytesMustExceedProjectionTimes: 1.25
+  outcome:
+    pass: run_exactly_six_triplets
+    fail: run_zero_triplets_and_retain_every_gate_reason
+  tripletSelectionOnPass: >-
+    Sort qualifying baseline matrix indices ascending and select exactly the first
+    six. No outcome statistic, effect direction, runtime convenience, or label
+    prevalence may change selection or reduce six to a smaller positive count.
+
+interventionDesign:
+  specificationId: E01-S12-STRICT-POSTELIGIBILITY-INTERVENTION-v1.0.0
+  conditions: [max, control, min]
+  initialIdentityRule: >-
+    All three conditions use the same matrix, initial state, and stochastic
+    streams and remain state- and action-identical until the first eligible and
+    separable post-fission action is actually applied.
+  decisionPoints: post_fission_only
+  firstPermittedPoint: first_post_fission_point_with_valid_strict_candidate_scoring_after_n_eff_512
+  candidates:
+    noop: unchanged_state
+    additions: one_candidate_plus_one_for_each_of_100_species
+    deletions: one_candidate_minus_one_for_each_species_with_positive_current_count
+    fullSetRequired: true
+  scoring:
+    history: all_materialized_observations_available_through_current_post_fission_state
+    hypotheticalAction: append_action_modified_state_as_one_hypothetical_next_observation
+    partition: frozen_past_only_locked_partition_not_reestimated_per_candidate
+    aggregate: E01-S10-AGG-PAPER-EQUATION-v1.0.0
+    redundancyPolicy: direct_equation_score_is_redundancy_invariant_but_MMI_and_CCS_provenance_remain_distinct
+    everyCandidateMustPassBothPreprocessingStrictGates: true
+    fallbackScoreForbidden: true
+    ineligibleScore: null
+  actionConsensus:
+    requireSameUniqueWinningActionAcrossBothPreprocessingBranches: true
+    tieTolerance: 1.0e-12
+    indexOrArrayOrderTieBreakForbidden: true
+    favorableOutcomeTieBreakForbidden: true
+  separation:
+    deltaDefinition: Phi_best_minus_Phi_runner_up_for_max_and_Phi_runner_up_minus_Phi_best_for_min
+    permitOnlyIf: Delta_action_strictly_greater_than_epsilon_numeric_plus_null
+    epsilonNumericBase: 1.0e-10
+    epsilonNumericObserved: maximum_of_base_and_exact_candidate_replay_absolute_error
+    nullEnvelope:
+      envelopeId: E01-S12-ACTION-NULL-FULLSET-BOOTSTRAP-v1.0.0
+      stateMatched: true
+      families: 4096
+      seedPurpose: intervention
+      construction: >-
+        Within each preprocessing branch and direction, center scores separately
+        within the observed addition and deletion action classes. Generate each
+        null candidate family by sampling centered residuals with replacement
+        within its action class while preserving the complete observed class
+        counts; retain no-op at centered zero. Compute the selected top-two gap
+        for max or bottom-two gap for min across the complete candidate family.
+      threshold: empirical_0.99_quantile_method_higher
+      multipleCandidateControl: complete_family_extreme_gap_not_selected_action_as_prespecified_comparison
+    bothPreprocessingEnvelopesMustPass: true
+  suppression:
+    exactStatus: INELIGIBLE_ACTION_NOT_SEPARABLE
+    appliedActionOnSuppression: noop
+    affectedClaimClassification: UNDERDETERMINED
+  pairing:
+    policy: explicit_common_random_numbers
+    commonPurposes:
+      - catalytic_matrix
+      - initial_state
+      - event
+      - waiting_time
+      - fission
+      - daughter_selection
+    conditionSpecificPurposes: [intervention, estimator, machine_learning]
+    recordFirstActionDivergence: true
+    recordFirstStateDivergence: true
+    recordFirstRawDrawIndexNoLongerSemanticallyAligned: true
+    noCrossStateClaimAfterDivergence: true
+
+randomness:
+  rootSeedHex: '1212121212121212121212121212121212121212121212121212121212121212'
+  seedSchemaVersion: E01-seed-schema-v1.0.0
+  derivationAlgorithm: E01-SHA256-DOMAIN-SEPARATION-PCG64DXSM-v1
+  bitGenerator: PCG64DXSM
+  baselineMatrixIndices: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+  baselineTrajectoryIdTemplate: E01-S12-B{matrixIndex:02d}
+  interventionTrajectoryIdTemplate: E01-S12-I{matrixIndex:02d}-{condition}
+  streamPurposes:
+    - catalytic_matrix
+    - initial_state
+    - event
+    - waiting_time
+    - fission
+    - daughter_selection
+    - intervention
+    - estimator
+    - machine_learning
+  baselineCoupling: trajectory_isolated
+  interventionCoupling: explicit_common_random_numbers_as_frozen_above
+  matlabIdentityClaimForbidden: true
+
+runtimeAndPrecision:
+  python: 3.13.14
+  numpy: 2.4.6
+  scipy: 1.18.0
+  referenceBackend: numpy_cpu_float64
+  guardedCrosscheckBackend: cupy_gpu_float64
+  gpu:
+    visibleDevicePolicy: CUDA_VISIBLE_DEVICES=0
+    uuid: GPU-1f5bed19-d63f-be98-470c-f670e3d4aafd
+    model: NVIDIA_L4
+  dtype: float64
+  tf32: false
+  mixedPrecision: false
+  cpuGpuAbsoluteTolerance: 1.0e-10
+  cpuGpuRelativeTolerance: 1.0e-10
+  omegaCrosscheckMatrixIndices: [0, 5, 11]
+  omegaCrosscheckPoints: [first_eligible, middle_eligible, final_eligible]
+  workerProcesses: 8
+  numericalLibraryThreads: 1
+  environment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+  cpuHourCeilingS12: 200.0
+  overallE01CpuHourCeiling: 250.0
+  wallHourCeilingS12: 48.0
+  runtimeFailurePolicy: retain_checkpoint_and_return_for_review_without_scope_reduction
+  crossPlatformBoundary: >-
+    Same-engine exact replay is required only under the pinned Python, NumPy,
+    source commit, platform, thread, and binary64 identities. Cross-platform
+    results are bounded by recorded absolute/relative tolerances; bit identity is
+    not claimed.
+
+storageContract:
+  cacheRoot: /cache/e01_s12
+  canonicalStepRoot: /artifacts/research_steps/S12
+  canonicalBundleRoot: /artifacts/E01_forensic_replication_bundle/data/s12_strict_mrr
+  compactArtifactByteCeiling: 21474836480
+  cacheUse: temporary_and_regeneration_inputs_only
+  artifactUse: compact_final_evidence_reports_manifests_tables_figures_and_complete_compressed_trajectories
+  serialization:
+    tables: parquet_zstd
+    smallTables: csv_utf8_lf
+    structuredRecords: canonical_json_utf8
+    configs: yaml_utf8
+  checksums: sha256
+  noBytecodeCachesInArtifacts: true
+  noDependencyOrBuildTreesInArtifacts: true
+
+claimClassification:
+  vocabulary:
+    - SUPPORTED
+    - DIRECTIONALLY_SUPPORTED
+    - NOT_SUPPORTED_WITHIN_STRICT_SCOPE
+    - UNDERDETERMINED
+    - NOT_EVALUATED
+  unavailableAlwaysUnderdetermined:
+    - fixed_window_Phi_r
+    - local_spike_height_width_timing
+    - events_before_first_eligible_time
+    - early_warning_origin_before_eligibility
+    - original_first_25_percent_to_final_75_percent_when_first_quarter_ineligible
+    - interventions_before_first_eligible_post_fission_point
+    - intervention_after_every_fission
+    - exact_Figure_6
+    - exact_Table_1
+  restrictedAssociationRule:
+    directionalSupportedOnlyIf:
+      - all_numeric_and_replay_gates_pass
+      - both_preprocessing_branches_have_same_positive_direction
+      - at_least_9_of_12_defined_trajectory_statistics_are_positive
+      - trajectory_bootstrap_95_percent_interval_excludes_zero
+      - permutation_p_value_at_most_0.05
+    notSupportedWithinStrictScopeOnlyIf: >-
+      The post-eligibility estimand is adequately observed under both
+      preprocessing branches and its preregistered interval excludes the
+      directional effect or supports a null/reversed result. Never generalize
+      this label to fixed-window, pre-eligibility, or early-time behavior.
+    otherwise: UNDERDETERMINED
+  interventionRule:
+    directionalSupportedOnlyIf:
+      - feasibility_gate_passed_and_six_triplets_completed
+      - at_least_4_of_6_triplets_apply_at_least_3_separable_actions_per_noncontrol_condition
+      - at_least_5_of_6_triplets_have_max_greater_than_control_and_control_greater_than_min_for_restricted_posteligibility_endpoint
+      - paired_bootstrap_95_percent_intervals_for_both_contrasts_exclude_zero
+      - both_preprocessing_action_branches_agree
+    noTripletsBecauseFrozenGateFailed: UNDERDETERMINED
+    sparseSuppressedActions: UNDERDETERMINED
+    validRestrictedNull: NOT_SUPPORTED_WITHIN_STRICT_SCOPE
+  supportedBoundary: >-
+    SUPPORTED may be used only for a literal restricted S12 estimand whose point,
+    interval, permutation, sensitivity, and provenance gates all pass; it may
+    never imply exact author replication or restore unavailable paper scope.
+
+stopDecision:
+  widelyEligibleAndCoherent:
+    criteria:
+      - final_coverage_at_least_0.75_under_both_preprocessing_branches
+      - median_first_eligible_generation_at_most_25
+      - restricted_association_or_intervention_directional_gate_passes
+    recommendation: consider_only_a_separately_authorized_restricted_S13_strict_reconstruction
+  lateAndSparse:
+    criteria:
+      - numeric_estimates_exist
+      - median_first_eligible_generation_greater_than_25_or_interventions_sparse
+    recommendation: partial_descriptive_replication_with_early_and_fixed_window_claims_underdetermined
+  mostlyIneligible:
+    criteria:
+      - final_coverage_below_0.5_under_either_preprocessing_or_action_ranking_mostly_ineligible
+    recommendation: close_Phi_r_reconstruction_blocked_or_underdetermined_and_move_alternative_causal_architecture_to_separately_preregistered_E02
+  mandatoryStop: after_12_baselines_and_zero_or_six_conditionally_authorized_triplets
+
+requiredOutputs:
+  - preregistration.yaml
+  - preregistration_record.json
+  - immutable_input_audit.json
+  - baseline_matrices.npz
+  - baseline_trajectory_events.parquet
+  - baseline_observations.parquet
+  - trajectory_manifest.json
+  - seed_manifest.parquet
+  - preprocessing_status.parquet
+  - replicator_labels.parquet
+  - expanding_estimates.parquet
+  - post_fission_estimates.parquet
+  - partition_history.parquet
+  - first_eligibility.csv
+  - eligibility_coverage_by_molecular_step.csv
+  - eligibility_coverage_by_generation.csv
+  - suppression_summary.csv
+  - whole_trajectory_estimates.parquet
+  - association_results.csv
+  - intervention_feasibility_gate.json
+  - intervention_trajectories.parquet
+  - intervention_candidate_scores.parquet
+  - intervention_action_log.parquet
+  - intervention_pairing_audit.json
+  - claim_status_matrix.csv
+  - runtime_manifest.json
+  - storage_validation.json
+  - regeneration_validation.json
+  - numerical_validation.json
+  - artifact_completeness.json
+  - failure_ledger.csv
+  - validation_summary.json
+  - artifact_manifest.json
+  - status.json
+  - figures/eligibility_coverage_molecular_step.png
+  - figures/eligibility_coverage_generation.png
+  - figures/strict_expanding_examples.png
+  - research_step_full_results.md
+
+statusJsonRequiredFields:
+  - researchStepId
+  - stepNumber
+  - success
+  - status
+  - artifactsWritten
+  - validationResult
+  - caveatsOrBlockers
+  - recommendedNextAction
+
+reportRequirements:
+  topSummaryFields:
+    - actual_research_step_ID
+    - completion_status
+    - artifacts_written
+    - validation_result
+    - outcome_classification
+    - caveats_or_blockers
+    - recommended_next_action
+  fullResultsAdditionalSections:
+    - lay_summary
+    - frozen_question
+    - detailed_methods
+    - commands
+    - inputs
+    - dependencies
+    - parameters
+    - results
+    - validation
+    - caveats
+    - provenance
+  exactScopeStatementRequired: >-
+    E01-S12-STRICT-MRR-v1.0.0 cannot recover the failed fixed-window scope and is
+    not an exact author-implementation, Figure 6, or Table 1 replication.

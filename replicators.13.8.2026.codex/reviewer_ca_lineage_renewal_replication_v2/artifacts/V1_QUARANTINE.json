@@ -1,0 +1,33 @@
+{
+  "classification": "NON_COMPARABLE_MODEL_RUN",
+  "reasons": [
+    {
+      "component": "reader_transfer_function",
+      "corrected": "strength*tanh(max(advantage,0)/9)",
+      "v1": "constant strength for every positive advantage; magnitude ignored"
+    },
+    {
+      "component": "visible_reset",
+      "corrected": "sparse launch-specific donor initial_state_hex",
+      "v1": "pair-specific deterministic 50-percent-density board"
+    },
+    {
+      "component": "sweep_order",
+      "corrected": [
+        "CA step",
+        "reader",
+        "process noise"
+      ],
+      "v1": [
+        "CA step",
+        "process noise",
+        "reader"
+      ]
+    }
+  ],
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "use_for_v2_intended_mechanism_verdict": false,
+  "v1_design_digest": "33fa9e1101ff41533fdc5218df0b0f61fb6a5f6f3944ec52204a45624e7e11f1",
+  "v1_files_modified": false,
+  "v1_verdict": "NO_DURABLE_RENEWAL"
+}

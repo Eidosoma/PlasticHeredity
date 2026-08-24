@@ -1,0 +1,13 @@
+{
+  "completed_cells": 768,
+  "design_digest": "6fc88d2c942ec9b523cf322cf956e7c5eda819c82d7279a8c51a19e26adc10d0",
+  "elapsed_seconds": 15101.986015319824,
+  "last_checkpoint_at": "2026-08-24T04:24:32.665697+00:00",
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "started_at": "2026-08-24T00:12:53.504595+00:00",
+  "started_epoch": 1787530373.5045953,
+  "state": "complete",
+  "total_cells": 768,
+  "updated_at": "2026-08-24T04:24:35.490582+00:00",
+  "workers": 20
+}

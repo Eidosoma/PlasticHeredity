@@ -1,0 +1,14 @@
+{
+  "completed": 0,
+  "cumulative_elapsed_seconds": 28800.0,
+  "error": null,
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "message": "cumulative 7.5-hour soft limit reached after checkpoint",
+  "pid": 62,
+  "protocol_id": "c231093da83fad91eda65348b1cd2dbd4a846b97e62ae79f2b48ad307ec596a8",
+  "stage": "soft-stop",
+  "stage_elapsed_seconds": null,
+  "state": "incomplete_walltime_soft_stop",
+  "total": 0,
+  "updated_at_epoch": 1787518171.0356083
+}

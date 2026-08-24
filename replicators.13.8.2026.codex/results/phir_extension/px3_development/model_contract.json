@@ -1,0 +1,23 @@
+{
+  "candidates": {
+    "02": {
+      "ridge_alpha": 100.0
+    },
+    "03": {
+      "ridge_alpha": 100.0
+    }
+  },
+  "feature_count": 195,
+  "feature_reference": "post_edit_minus_noop_same_state",
+  "fit_intercept": false,
+  "format": "codex-ch5-phir-extension-px3-surrogate-v1",
+  "pca": false,
+  "ridge_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ]
+}

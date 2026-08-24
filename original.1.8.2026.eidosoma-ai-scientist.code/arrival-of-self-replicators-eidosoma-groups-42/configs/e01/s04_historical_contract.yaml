@@ -1,0 +1,268 @@
+schema: eidosoma.e01.s04_historical_contract.v1
+researchStepId: S04
+experimentId: E01
+contractVersion: E01-historical-reference-v1.0.0
+engineVersion: 1.0.0
+sourceIdentity:
+  sourceId: gard_historical
+  remoteUrl: https://github.com/ModelingOriginsofLife/GARD.git
+  commit: 86dff6320d5ae91b4e831471079ff46749b14df9
+  tree: a602fc99b494982c04c60405bc6422af9db5a77a
+  localPath: /cache/e01_s03/sources/gard-historical
+  license: NO-LICENSE-FILE-DETECTED
+  redistributionRule: Reference in place by commit; do not redistribute the historical repository.
+sourceManifest:
+  path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml
+  sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5
+specificationRegistry:
+  path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+  sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+  parameterCount: 120
+  s04OwnedParameterCount: 19
+  preservationRule: Preserve v0.3.0 byte-for-byte; source-specific findings do not establish unavailable author choices.
+paperBoundary:
+  officialIdentity: arXiv:2607.28250v1
+  pdfSha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  authorCodeSentinel: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  interpretation: The paper's vector-Poisson prose and binomial-fission description are not relabeled as historical v10 behavior.
+sourceFiles:
+  - path: tgs_parameters_v10.m
+    sha256: 4376b58ccae7ac6f56f9eaca87a95ab666cd5112b5f43e14d3f6a68030144db3
+  - path: tgs_newbeta_v10.m
+    sha256: e37c2b20bdc6388b32ee0fb003030814a86569ab07229795d35097e032a4e729
+  - path: tgs_grow_v10.m
+    sha256: 72cae8cd5555f4605dbad1526d3221b7f3f03eb76cea35714499299b3aa068a0
+  - path: tgs_rndpdf.m
+    sha256: 151db90a17aee15559e788fbfab2b8942071c97f29db9178d530734984bb616b
+  - path: tgs_split_v10.m
+    sha256: 68a83dd3efe1a7b79ccbfb7de67ba6dfbc5697722d0646f1446d45acfe22c11c
+  - path: tgs_agard_v10.m
+    sha256: 01f4d2fb64e652e6e2e05db3a034a9bacbee74e9c7114045f1dc40923bea2edf
+  - path: tgs_H.m
+    sha256: a9712f51a294dcece0cdd3e1cc34855793984dd37b98f60c593ad014c94fdd30
+  - path: tgs_nondrift.m
+    sha256: 0800359cdbef869fb545e80ab353d5aad15be2af845c90134e020f44ac860663
+  - path: README.txt
+    sha256: 73ee9578b49464b56664a516f37e40a681470ebad59bb5fd8d66f76d9240c40c
+sourceLineMappings:
+  - behaviorId: public_v10_defaults
+    sourceFile: tgs_parameters_v10.m
+    lineStart: 7
+    lineEnd: 27
+    portSymbols: []
+    finding: Kf=1e-2 and Kb=1e-4 are public historical defaults; rho is initially empty; three seed slots and legacy global RNG APIs are used.
+  - behaviorId: catalytic_matrix_transform
+    sourceFile: tgs_newbeta_v10.m
+    lineStart: 7
+    lineEnd: 10
+    portSymbols:
+      - e01_gard_historical.engine.catalytic_matrix_from_standard_normals
+      - e01_gard_historical.engine.catalytic_matrix_from_numpy_rng_explicit
+    finding: Apply exp(mu + sigma*z) elementwise with source orientation and diagonal retained; both legacy randn and rand global states are reset.
+  - behaviorId: propensity_equations
+    sourceFile: tgs_grow_v10.m
+    lineStart: 6
+    lineEnd: 16
+    portSymbols:
+      - e01_gard_historical.engine.compute_propensities
+    finding: beta multiplies the state as beta@n; the same boost multiplies concatenated join-then-leave weights.
+  - behaviorId: weighted_event_draw
+    sourceFile: tgs_rndpdf.m
+    lineStart: 15
+    lineEnd: 42
+    portSymbols:
+      - e01_gard_historical.engine.historical_weighted_index
+    finding: Draw a nonzero uniform, multiply by total weight, and use strict cumulative-boundary comparison.
+  - behaviorId: stochastic_growth_and_rate_sum
+    sourceFile: tgs_grow_v10.m
+    lineStart: 13
+    lineEnd: 33
+    portSymbols:
+      - e01_gard_historical.engine.grow_to_split_size
+    finding: Apply one join or leave per loop, record signed one-based species, add total rate to dt, stop at nmax or extinction, and do not sample waiting time.
+  - behaviorId: loss_nonnegativity
+    sourceFile: tgs_grow_v10.m
+    lineStart: 19
+    lineEnd: 31
+    portSymbols:
+      - e01_gard_historical.engine.grow_to_split_size
+    finding: Zero-count loss weights are zero; after a chosen loss the source checks and errors if the count is negative.
+  - behaviorId: fixed_size_fission
+    sourceFile: tgs_split_v10.m
+    lineStart: 7
+    lineEnd: 23
+    portSymbols:
+      - e01_gard_historical.engine.split_fixed_size_without_replacement
+    finding: Sequentially sample floor(N/2) molecules without replacement into child A; child B is the remainder; one molecule is discarded for odd N.
+  - behaviorId: environmental_fallback
+    sourceFile: tgs_agard_v10.m
+    lineStart: 18
+    lineEnd: 37
+    portSymbols: []
+    finding: If rho length differs from NG the historical orchestrator supplies a constant uniform vector; beta is generated once if absent.
+  - behaviorId: hidden_rng_and_initializer
+    sourceFile: tgs_agard_v10.m
+    lineStart: 39
+    lineEnd: 51
+    portSymbols:
+      - e01_gard_historical.engine.historical_initial_state_with_replacement
+    finding: Legacy global rand/randn state and seed calls are order-dependent; initial molecules are sampled with replacement before the explicit rand seed reset in this branch.
+  - behaviorId: daughter_selection_and_continuation
+    sourceFile: tgs_agard_v10.m
+    lineStart: 59
+    lineEnd: 83
+    portSymbols:
+      - e01_gard_historical.engine.advance_one_generation
+      - e01_gard_historical.engine.simulate_lineage
+    finding: The single-lineage orchestrator requests only split function output one, thereby following child A without another random daughter-choice draw or replenishment.
+  - behaviorId: generation_endpoint_trace
+    sourceFile: tgs_agard_v10.m
+    lineStart: 53
+    lineEnd: 97
+    portSymbols:
+      - e01_gard_historical.engine.advance_one_generation
+      - e01_gard_historical.engine.simulate_lineage
+    finding: Trace columns contain pre-fission generation endpoints, not every molecular event; time stores inverse of the accumulated rate sums.
+  - behaviorId: h_similarity
+    sourceFile: tgs_H.m
+    lineStart: 14
+    lineEnd: 25
+    portSymbols:
+      - e01_gard_historical.nondrift.historical_h
+    finding: Column-wise cosine similarity uses epsilon 1e-7 denominators and clips results to [0,1].
+  - behaviorId: nondrift_technique1
+    sourceFile: tgs_nondrift.m
+    lineStart: 21
+    lineEnd: 45
+    portSymbols:
+      - e01_gard_historical.nondrift.historical_nondrift_technique1
+    finding: Truncate at the first zero-sum column, L2-normalize, average adjacent H values at interior generations, and apply a strict threshold.
+  - behaviorId: nondrift_technique2
+    sourceFile: tgs_nondrift.m
+    lineStart: 47
+    lineEnd: 82
+    portSymbols:
+      - e01_gard_historical.nondrift.historical_nondrift_technique2
+    finding: Optional consecutive-similarity runs are shifted one index earlier; a qualifying run beginning at the first element exposes an invalid MATLAB index-zero source edge case.
+compatibilityBoundaries:
+  - boundaryId: CB01
+    subject: author implementation identity
+    historicalBehavior: Public GARD v10 commit 86dff6320d5a only.
+    paperOrModernBehavior: Author code is unavailable; no equivalence claim is allowed.
+  - boundaryId: CB02
+    subject: update kernel
+    historicalBehavior: One weighted join/leave event per loop; no vector Poisson batch and no sampled Gillespie waiting time.
+    paperOrModernBehavior: Paper vector-Poisson and modern Gillespie remain distinct registry branches.
+  - boundaryId: CB03
+    subject: time
+    historicalBehavior: dt accumulates total rate and orchestrator records 1/dt.
+    paperOrModernBehavior: This is not physical Gillespie time; paper molecular-step semantics remain unresolved.
+  - boundaryId: CB04
+    subject: fission
+    historicalBehavior: Fixed-size without-replacement child A and complement child B; odd mass discards one molecule.
+    paperOrModernBehavior: Paper/plan independent Binomial(n_i,0.5) semantics remain a separate branch.
+  - boundaryId: CB05
+    subject: daughter choice
+    historicalBehavior: Follow first function output child A with no extra draw.
+    paperOrModernBehavior: Paper only says one daughter; author choice remains unresolved.
+  - boundaryId: CB06
+    subject: initialization
+    historicalBehavior: With-replacement molecule-type sampling under hidden legacy global RNG order.
+    paperOrModernBehavior: Paper says without replacement; no silent substitution is allowed.
+  - boundaryId: CB07
+    subject: max steps
+    historicalBehavior: The historical growth loop has no max_steps condition.
+    paperOrModernBehavior: Paper max_steps=1000 and terminal semantics remain unresolved.
+  - boundaryId: CB08
+    subject: random streams
+    historicalBehavior: Legacy MATLAB global rand/randn state APIs with order-dependent resets.
+    paperOrModernBehavior: Exact cross-runtime stream equality is not claimed; explicit draw tapes bypass, rather than resolve, this ambiguity.
+  - boundaryId: CB09
+    subject: modern GARD
+    historicalBehavior: Historical tgs_grow_v10.m SHA-256 72cae8cd5555f4605dbad1526d3221b7f3f03eb76cea35714499299b3aa068a0.
+    paperOrModernBehavior: Modern nested grow file differs and adds flux output/logging; non-drift is byte-identical only at the pinned files.
+  - boundaryId: CB10
+    subject: license
+    historicalBehavior: No repository license file detected; source remains reference-in-place and is not copied into artifacts or this repository.
+    paperOrModernBehavior: The independent Python port is repository-authored; this is provenance separation, not legal advice.
+s04RegistryMappings:
+  - parameter: gard.beta.distribution_parameterization
+    ambiguityId: E01-A006
+    historicalFinding: exp(mu + sigma*z) elementwise
+    registryAction: PRESERVED
+  - parameter: gard.beta.lifetime_per_run
+    ambiguityId: E01-A008
+    historicalFinding: beta generated once if absent and reused
+    registryAction: PRESERVED
+  - parameter: gard.beta.orientation_and_diagonal
+    ambiguityId: E01-A007
+    historicalFinding: beta@n orientation; diagonal retained
+    registryAction: PRESERVED_BRANCH_SET
+  - parameter: gard.environment.reservoir_semantics
+    ambiguityId: E01-A021
+    historicalFinding: constant p.rho vector; uniform fallback in tgs_agard
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.environment.rho_i
+    ambiguityId: E01-A011
+    historicalFinding: uniform 1/NG fallback in tgs_agard
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.fission.daughter_selection
+    ambiguityId: E01-A023
+    historicalFinding: first output child A
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.fission.post_fission_continuation
+    ambiguityId: E01-A024
+    historicalFinding: exact child A; no replenishment
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.fission.sampling_semantics
+    ambiguityId: E01-A022
+    historicalFinding: fixed-size sequential without-replacement split, not independent binomial
+    registryAction: PRESERVED_PAPER_PLAN_VALUE_AND_RECORDED_CONFLICT
+  - parameter: gard.growth.boundary_handling
+    ambiguityId: E01-A017
+    historicalFinding: one-event updates reach nmax exactly from below
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.growth.max_steps_terminal_semantics
+    ambiguityId: E01-A018
+    historicalFinding: no max_steps check exists in historical growth
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.initial_state.construction
+    ambiguityId: E01-A019
+    historicalFinding: with-replacement counts, contrary to paper wording
+    registryAction: PRESERVED_PROVISIONAL_PAPER_VALUE_AND_RECORDED_CONFLICT
+  - parameter: gard.kinetics.k_b
+    ambiguityId: E01-A010
+    historicalFinding: public v10 default 1e-4
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.kinetics.k_f
+    ambiguityId: E01-A009
+    historicalFinding: public v10 default 1e-2
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.kinetics.propensity_equations
+    ambiguityId: E01-A012
+    historicalFinding: historical join/leave weight equations implemented as one named branch
+    registryAction: PRESERVED_BRANCH_SET
+  - parameter: gard.model.variant
+    ambiguityId: E01-A005
+    historicalFinding: public historical GARD v10 profile only
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.time.molecular_step_definition
+    ambiguityId: E01-A015
+    historicalFinding: event history records one signed species per event; trace records generation endpoints
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.update.kernel
+    ambiguityId: E01-A013
+    historicalFinding: historical_loop branch implemented
+    registryAction: PRESERVED_BRANCH_SET
+  - parameter: gard.update.loss_nonnegativity
+    ambiguityId: E01-A016
+    historicalFinding: zero-count loss has zero rate; negative post-loss triggers source error
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+  - parameter: gard.update.poisson_exposure
+    ambiguityId: E01-A014
+    historicalFinding: no Poisson exposure is used by historical loop
+    registryAction: PRESERVED_AUTHOR_SENTINEL
+fixturesPath: configs/e01/s04_small_cases.yaml
+artifactPaths:
+  sharedDirectory: E01_forensic_replication_bundle/software/historical_reference
+  stepDirectory: research_steps/S04

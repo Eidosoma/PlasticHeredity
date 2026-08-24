@@ -1,0 +1,16 @@
+{
+  "files": {
+    "CALIBRATION.json": "40bd9a4dff504523aa0654c863382d93fb0be9f66d2b8d3e185181f94b703882",
+    "LAY_SUMMARY.md": "10472369d0d6a0f69a73e2d155cfb201b779d3876bd6346817ef96800c72c58e",
+    "QUEUE.json": "3057564c89aa24976719702f1c8fb114f529ae18dfde9db66fe33da356683c36",
+    "RAW_SCREEN.csv": "0384c20e8266eb5e3ea0c063e6e3c4bbfccaf3a6fa7bcab9d09fdb52c304bcb6",
+    "RAW_VALIDATION.csv": "b8ef33ac502ff0c0315ac210543baa68cab2652acabc5dd2e2f120666b20e093",
+    "REGISTRATION.json": "ee73ea1d4a5020a9c83eaca8505c67605be576bd1c8e42c4f33ddb7f3b70b69f",
+    "REPORT.md": "bdae6165435de4a18760eed27b88af1a223727cf72243a3bca828f6f5b432129",
+    "RESULTS.json": "d151b53b18fc22d587c9a96575a2fd49243797fde1a16b98694402ccda6c1d9d",
+    "STAGE_DECISION.json": "a7f96c20daf17f3f10ce446465d2ed2077ca6013e3a6951896cc07e85d375bbd"
+  },
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "seal_digest": "6c490a8309b44fd88828dd511edf69b6445556b971bef20876e9ec57c66de2c8",
+  "stage": 1
+}

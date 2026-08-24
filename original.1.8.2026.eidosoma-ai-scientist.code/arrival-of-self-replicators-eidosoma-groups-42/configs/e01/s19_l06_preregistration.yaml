@@ -1,0 +1,191 @@
+schema: eidosoma.e01.s19_l06_preregistration.v1
+researchStepId: S19
+loopId: S19-L06
+versionedLoopId: E01-S19-L06-PAST-ONLY-MULTIATTRACTOR-BOUNDARY-RECURRENCE-v1.0.0
+continuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+outcomeAccessedAtLock: false
+question: >-
+  Does one past-only strict-H>0.9 recurrence rule evaluated only at selected
+  post-fission boundaries, with each decision projected prospectively through
+  the following molecular-growth interval, jointly improve the paper-facing
+  temporal fingerprint in both simulator candidates?
+authorization:
+  optionId: option-2
+  onlyThisLoopAuthorized: true
+  mandatoryHumanReviewAfter: true
+  laterLoopActive: false
+  s20Active: false
+historicalBoundary:
+  immutable: S01-S18_V1_V2_S19-L01_S19-L02_S19-L03_S19-L04_S19-L05_and_S17_waiver
+  priorLoopRepairRerunOrReinterpret: false
+  additiveL06Only: true
+data:
+  source: frozen_S13Y_clean_directional_confirmation
+  sharedMatrixCount: 100
+  trajectoryCount: 200
+  candidateIds: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  independentUnit: catalytic_matrix_trajectory
+  molecularRowsAreIndependentReplicates: false
+  pooling: secondary_descriptive_only
+  newGardTrajectories: 0
+  newPhiRLValues: 0
+  newEmergenceValues: 0
+preanalysisReplayGate:
+  required: true
+  checks:
+    - all_200_cache_sha256_values_equal_frozen_manifest
+    - candidate_matrix_trajectory_and_internal_trajectory_identities_equal
+    - selected_molecular_clock_indices_kinds_generations_and_raw_indices_equal
+    - exactly_100_selected_post_fission_boundaries_per_trajectory
+    - boundary_indices_generations_raw_indices_and_kinds_equal_frozen_L03_evidence
+    - freshly_recomputed_adjacent_H_arrays_bitwise_equal_frozen_S13Y_values
+    - freshly_recomputed_strict_H_greater_than_0_9_labels_equal_frozen_S13Y_values
+    - all_S01_S18_V1_V2_L01_L02_L03_L04_and_L05_hashes_equal
+  failureAction: LOOP_FAILED_CLOSED_before_any_new_label_outcome
+labels:
+  totalCountIncludingComparator: 2
+  structuralCount: 1
+  comparator:
+    labelId: MOL_ADJACENT_INCOMING_H900
+    role: frozen_primary_comparator_only
+  fixedComparisonEvidence:
+    - {loopId: S19-L03, labelId: PF_MODAL_MEDOID_ACTIVATED_OUTGOING_H900, role: frozen_boundary_modal_comparison_only, recomputed: false}
+    - {loopId: S19-L05, labelId: MOL_PAST_ONLY_CROSS_GENERATION_RECURRENCE_H900, role: frozen_molecular_past_only_comparison_only, recomputed: false}
+  primary:
+    labelId: PF_PAST_ONLY_MULTIATTRACTOR_BOUNDARY_RECURRENCE_H900
+    coordinates: L1_closed_100_component_relative_composition
+    boundarySubstrate: selected_post_fission_selected_daughter
+    similarity: historical_cosine_H
+    threshold: 0.9
+    comparator: strict_greater_than
+    boundaryQuery: b_g_for_positive_generation_g
+    boundaryReference: b_h_with_zero_less_than_h_less_than_or_equal_to_g_minus_2
+    positiveRule: at_least_one_qualifying_prior_boundary
+    visitCountRule: each_earlier_generation_counts_once
+    projection: label_b_g_and_subsequent_selected_rows_until_excluding_b_g_plus_1
+    preFirstBoundaryRule: positive_generation_rows_are_eligible_negative
+    generationZeroRule: retain_initial_row_as_ineligible
+    temporalScope: past_only_boundary_online_no_backfill
+    futureReferences: prohibited
+    backfill: prohibited
+    carryAcrossNextBoundaryWithoutReactivation: prohibited
+    persistenceRule: prohibited
+    ties: none_boolean_existential_rule
+  prohibited:
+    - any_threshold_other_than_strict_H_greater_than_0.9
+    - threshold_grid_or_recurrence_count_search
+    - dominant_compotype_cluster_centroid_modal_reference_or_alignment_variant
+    - incoming_outgoing_alternative
+    - emergence_association_prediction_or_intervention_selection
+    - favorable_simulator_selection
+    - occupancy_only_selection
+fingerprint:
+  report:
+    - persistence
+    - occupancy
+    - raw_zero_based_and_one_based_first_onset
+    - normalized_first_onset
+    - consecutive_label_Pearson_consistency
+    - entries_exits_episode_count_mean_median_and_longest_duration
+    - nonreplicating_and_no_onset_through_25_percent_cutoff
+    - activated_boundary_and_distinct_prior_boundary_recurrence_counts
+    - cross_candidate_agreement
+  paperTargets:
+    persistence: {center: 716.0, declaredDispersionScale: 198.0}
+    occupancy: {center: 0.88, declaredDispersionScale: 0.03}
+    consistency: {center: 0.38, declaredDispersionScale: 0.06}
+    rawOnset: {center: 37.0, declaredDispersionScale: 27.0}
+    normalizedOnset: {center: 0.37, declaredDispersionScale: 0.27}
+  distance: frozen_S19_L02_standardized_four_dimension_RMS
+  onsetAmbiguity: raw_and_normalized_are_separate_and_neither_may_replace_the_other
+  occupancyAloneSufficient: false
+statistics:
+  bootstrapReplicates: 4096
+  bootstrapUnit: catalytic_matrix_within_candidate
+  generator: PCG64DXSM
+  confidenceIntervals: percentile_2.5_and_97.5
+  influence: leave_one_matrix_out
+  exactReplay: independent_boundary_loop_and_projection_replay_all_200_trajectories
+  suffixInvariance:
+    endpointQuantiles: [0.10, 0.25, 0.50, 0.75, 0.90]
+    endpointFormula: clamp_floor_q_times_T_minus_1_to_indices_2_through_T_minus_2
+    variants: [delete_future_suffix, shuffle_future_state_rows, independently_permute_future_state_components]
+    comparedPrefixFields: [label, score, distinct_prior_boundary_count, qualifying_boundary_count, matching_boundary_generations, source_boundary_generation]
+    passRule: exact_all_sampled_endpoints_and_variants
+  generationBlockPermutation:
+    replicates: 4096
+    unit: complete_positive_numbered_growth_fission_block_within_trajectory
+    initialGenerationZero: retained_ineligible_at_sequence_zero
+    blockInternalOrder: preserved
+    blockOrder: independently_permuted_for_each_matrix_and_replicate
+    generationRenumbering: sequential_by_permuted_order
+    boundaryRule: recomputed_after_permutation_with_h_less_than_or_equal_to_g_minus_2
+    projectionRule: recomputed_boundary_decision_projected_through_following_interval
+    tested: occupancy_persistence_consistency_onset_and_joint_paper_distance
+    passRule: observed_distance_strictly_below_null_2.5_percentile_for_both_modes_and_candidates
+promotion:
+  maximumLeads: 1
+  exploratoryOnly: true
+  promotableScope: retrospective_paper_facing_only_pending_untouched_confirmation
+  gates:
+    - structural_not_comparator
+    - exact_primary_and_independent_replay_all_200_trajectories
+    - exact_frozen_adjacent_comparator_replay
+    - exact_future_suffix_deletion_shuffle_replacement_invariance
+    - precise_human_locked_paper_relationship
+    - no_outcome_tuned_choice
+    - occupancy_error_strictly_smaller_than_adjacent_H_in_both_candidates
+    - raw_and_normalized_joint_distance_strictly_better_than_adjacent_H_in_both_candidates
+    - paired_bootstrap_upper_95_percent_bound_below_zero_for_both_modes_and_candidates
+    - at_least_3_of_4_core_dimensions_closer_including_onset_or_consistency
+    - every_leave_one_matrix_out_joint_distance_strictly_better
+    - recomputed_generation_block_permutation_negative_control_passes_both_modes_and_candidates
+    - at_least_95_defined_consistency_and_95_observed_onset_runs_per_candidate
+    - nonzero_nonreplicating_fraction_at_25_percent_cutoff_in_both_candidates
+    - nonzero_no_onset_through_25_percent_cutoff_fraction_in_both_candidates
+    - occupancy_consistency_and_normalized_onset_cross_candidate_agreement
+    - untouched_S20_design_complete
+  interpretationRestriction: >-
+    Even if promoted, L06 is an adaptive exploratory label reconstruction on
+    previously studied matrices. It supplies no emergence, prediction,
+    intervention, or causal-control evidence.
+untouchedS20Design:
+  scope: retrospective_paper_facing_boundary_label_confirmation_only
+  units: exactly_100_new_shared_catalytic_matrices
+  candidates: both_separate
+  trajectories: complete_100_fissions_under_frozen_candidate_contracts
+  label: exact_L06_formula_without_change
+  threshold: strict_H_greater_than_0.9
+  futureSuffixAudit: same_locked_deletion_shuffle_replacement_invariance
+  selection: no_emergence_prediction_or_intervention_outcome
+  seed: new_domain_separated_256_bit_root_with_zero_overlap
+  decision: replay_suffix_permutation_and_same_locked_joint_fingerprint_gates
+seeds:
+  rootHex: c44296c170a0aeebcf29c476f415e24788e01da88e2442b66c97f856251c79df
+  derivation: sha256_version_root_and_null_delimited_identity_tokens
+  scientificRngUses: paired_matrix_bootstrap_suffix_mutations_and_generation_block_permutation
+compute:
+  cpuCores: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  maximumCpuHours: 32
+  maximumGpuHours: 0
+  maximumWallHours: 8
+  maximumRetainedGiB: 10
+  maximumTemporaryGiB: 25
+  validationReserveFraction: 0.10
+stopConditions:
+  - any_immutable_prior_hash_change
+  - preanalysis_identity_clock_boundary_adjacent_H_or_label_replay_failure
+  - source_or_implementation_identity_change_after_lock
+  - any_unregistered_label_threshold_alignment_or_variant
+  - any_future_suffix_invariance_failure
+  - outcome_access_before_clean_pushed_lock
+  - post_outcome_scientific_method_change
+  - budget_or_storage_ceiling_exceeded
+  - report_not_regenerable_from_machine_readable_results
+postLoopBoundary:
+  mandatoryHumanReview: true
+  noAutomaticL07: true
+  noAutomaticS20: true
+  noAutomaticE02: true

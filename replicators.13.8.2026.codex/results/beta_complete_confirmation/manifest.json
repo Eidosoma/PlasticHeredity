@@ -1,0 +1,190 @@
+{
+  "clean_room": true,
+  "cohort": "MECHCONF2",
+  "confirmation_digest_first": "f3d67e010559034548bcf7ede520a2339d75ab3c206d05fe9c912fd1543a1c25",
+  "confirmation_digest_second": "f3d67e010559034548bcf7ede520a2339d75ab3c206d05fe9c912fd1543a1c25",
+  "confirmation_futures": 128000,
+  "confirmation_replay_exact": true,
+  "experiment": {
+    "bootstrap_repetitions": 4096,
+    "candidates": {
+      "02": {
+        "daughter_rule": "first",
+        "fission_rule": "fixed_size",
+        "name": "02",
+        "overshoot_rule": "trim_whole_assembly",
+        "poisson_exposure": 0.1
+      },
+      "03": {
+        "daughter_rule": "second",
+        "fission_rule": "binomial",
+        "name": "03",
+        "overshoot_rule": "admit_joiners_to_capacity",
+        "poisson_exposure": 0.125
+      }
+    },
+    "confirmation": {
+      "branches_per_state": 64,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "development": {
+      "branches_per_state": 32,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "gard": {
+      "beta_log_mean": -4.0,
+      "beta_log_sd": 4.0,
+      "generations": 100,
+      "inheritance_threshold": 0.9,
+      "k_join": 0.01,
+      "k_leave": 0.0001,
+      "max_growth_steps": 1000,
+      "n_max": 80,
+      "n_min": 40,
+      "n_types": 100
+    },
+    "horizon": 12,
+    "logistic_c": 0.1,
+    "master_seed": "4b80c4056081287f4ad0c4359f9229cba2cb803124278b6961ca8edbaf86a086",
+    "pca_components": 12,
+    "permutation_repetitions": 4096,
+    "regenerate_confirmation": true
+  },
+  "extinct_futures": 0,
+  "metric_recomputation_exact": true,
+  "models": {
+    "02": {
+      "cv_scores": {
+        "beta": {
+          "0.0001": 0.6296594755711862,
+          "0.001": 0.5677602137925981,
+          "0.01": 0.5409068532177687,
+          "0.1": 0.5319345976376779,
+          "1": 0.5291376590846776,
+          "10": 0.528607670171194,
+          "100": 0.5288636287539206
+        },
+        "interaction": {
+          "0.0001": 0.6594713785462311,
+          "0.001": 0.6495500670683677,
+          "0.01": 0.629093044619191,
+          "0.1": 0.5896030690304201,
+          "1": 0.5426785928900375,
+          "10": 0.528191012722051,
+          "100": 0.5284622462690202
+        },
+        "state": {
+          "0.0001": 0.5322181613957429,
+          "0.001": 0.5307757178755997,
+          "0.01": 0.5295227501339259,
+          "0.1": 0.5290477663242615,
+          "1": 0.5299332089114288,
+          "10": 0.5311123617966,
+          "100": 0.5313609739016446
+        }
+      },
+      "raw_features": {
+        "beta": 309,
+        "h10": 10,
+        "interaction": 64,
+        "state": 26
+      },
+      "retained_features": {
+        "beta": 240,
+        "h10": 9,
+        "interaction": 64,
+        "state": 11
+      },
+      "selected_lambdas": {
+        "beta": 10.0,
+        "interaction": 10.0,
+        "state": 0.1
+      },
+      "uses_pca": false
+    },
+    "03": {
+      "cv_scores": {
+        "beta": {
+          "0.0001": 0.653575753848004,
+          "0.001": 0.5869081261781678,
+          "0.01": 0.5575481416726668,
+          "0.1": 0.548396645717123,
+          "1": 0.5460416595035031,
+          "10": 0.5460434373923311,
+          "100": 0.5464120634891558
+        },
+        "interaction": {
+          "0.0001": 0.7675026788442896,
+          "0.001": 0.7595855247844226,
+          "0.01": 0.7241946842702885,
+          "0.1": 0.6324392761662087,
+          "1": 0.5569967569873793,
+          "10": 0.5447005544954476,
+          "100": 0.5457967185290347
+        },
+        "state": {
+          "0.0001": 0.5470744332470979,
+          "0.001": 0.5467911140534549,
+          "0.01": 0.5465131996363382,
+          "0.1": 0.5466485897075627,
+          "1": 0.5485093089784229,
+          "10": 0.5504006754001415,
+          "100": 0.550792585082229
+        }
+      },
+      "raw_features": {
+        "beta": 309,
+        "h10": 10,
+        "interaction": 64,
+        "state": 26
+      },
+      "retained_features": {
+        "beta": 240,
+        "h10": 10,
+        "interaction": 64,
+        "state": 12
+      },
+      "selected_lambdas": {
+        "beta": 1.0,
+        "interaction": 10.0,
+        "state": 0.01
+      },
+      "uses_pca": false
+    }
+  },
+  "prediction_readback_exact": true,
+  "registration_checksums_verified": true,
+  "registration_id": "7c6acd1e3bac96dae7931c48bff39deedfc6550344dfea3753949956f71701bd",
+  "registration_path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results/beta_complete_registration",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scope": "prospective beta-completeness correction",
+  "source_hashes_verified": true,
+  "states": 2000,
+  "support": {
+    "interaction": false,
+    "network": false,
+    "state": false
+  }
+}

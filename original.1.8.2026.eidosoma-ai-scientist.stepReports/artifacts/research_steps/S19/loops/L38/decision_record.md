@@ -1,0 +1,3 @@
+# S19-L38 decision record
+
+L37 showed that a completed-lineage target does not satisfy the complete network-stability gate across both candidates and evaluation cohorts. The reviewer directed the next branch toward outcomes that do not require a completed test trajectory. L38 freezes one event before outcomes: a future selected daughter and an earlier, nonadjacent-generation selected daughter must each preserve parent-to-daughter composition at strict H>0.9 and must recur with each other at strict H>0.9. Only the observed prefix and branch past are visible. Existing H32/H8 paths, candidates, horizons and streams are unchanged. Molecule-permuted, unrelated-matrix, branch-only and inheritance-only diagnostics are fixed; no target or threshold search is permitted.

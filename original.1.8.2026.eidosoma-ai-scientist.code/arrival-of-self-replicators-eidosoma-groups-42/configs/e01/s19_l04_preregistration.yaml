@@ -1,0 +1,184 @@
+schema: eidosoma.e01.s19_l04_preregistration.v1
+researchStepId: S19
+loopId: S19-L04
+versionedLoopId: E01-S19-L04-CROSS-GENERATION-RECURRENCE-MEMBERSHIP-v1.0.0
+continuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+outcomeAccessedAtLock: false
+question: >-
+  Does one completed-run strict-H>0.9 label requiring recurrence in a
+  different fission generation jointly improve the paper-facing temporal
+  fingerprint in both frozen simulator candidates relative to adjacent
+  molecular H>0.9?
+authorization:
+  optionId: option-1
+  onlyThisLoopAuthorized: true
+  mandatoryHumanReviewAfter: true
+  laterLoopActive: false
+  s20Active: false
+historicalBoundary:
+  immutable: S01-S18_V1_V2_S19-L01_S19-L02_S19-L03_and_S17_waiver
+  priorLoopRepairRerunOrReinterpret: false
+  additiveL04Only: true
+nonduplicationFinding: >-
+  L02 classified molecular rows against one centroid, one K-means cluster,
+  or local historical non-drift. L03 projected membership in one modal
+  boundary compotype. Neither tested whether a state recurs in any distinct
+  growth-fission generation while permitting multiple recurring regions.
+data:
+  source: frozen_S13Y_clean_directional_confirmation
+  sharedMatrixCount: 100
+  trajectoryCount: 200
+  candidateIds: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  independentUnit: catalytic_matrix_trajectory
+  molecularRowsAreIndependentReplicates: false
+  pooling: secondary_descriptive_only
+  newGardTrajectories: 0
+  newPhiRLValues: 0
+  newEmergenceValues: 0
+preanalysisReplayGate:
+  required: true
+  checks:
+    - all_200_cache_sha256_values_equal_frozen_manifest
+    - candidate_matrix_trajectory_and_internal_trajectory_identities_equal
+    - selected_molecular_clock_indices_kinds_generations_and_raw_indices_equal
+    - freshly_recomputed_adjacent_H_arrays_bitwise_equal_frozen_S13Y_values
+    - freshly_recomputed_strict_H_greater_than_0_9_labels_equal_frozen_S13Y_values
+    - all_S01_S18_V1_V2_L01_L02_and_L03_hashes_equal
+  failureAction: LOOP_FAILED_CLOSED_before_any_new_label_outcome
+labels:
+  totalCountIncludingComparator: 2
+  structuralCount: 1
+  comparator:
+    labelId: MOL_ADJACENT_INCOMING_H900
+    role: frozen_comparator_only
+  primary:
+    labelId: MOL_CROSS_GENERATION_RECURRENCE_H900
+    coordinates: L1_closed_100_component_relative_composition
+    similarity: historical_cosine_H
+    threshold: 0.9
+    comparator: strict_greater_than
+    queryEligibility: positive_numbered_growth_fission_generations_only
+    referenceEligibility: positive_numbered_growth_fission_generations_only
+    generationRule: reference_generation_must_differ_from_query_generation
+    immediateNeighborRule: absolute_selected_sequence_difference_must_exceed_one
+    positiveRule: at_least_one_qualifying_reference_state
+    visitCountRule: each_distinct_reference_generation_counts_once
+    temporalScope: retrospective_completed_run_symmetric_membership
+    generationZeroRule: retain_row_as_ineligible
+    ties: none_boolean_existential_rule
+  prohibited:
+    - any_threshold_other_than_strict_H_greater_than_0.9
+    - threshold_grid
+    - centroid_cluster_modal_reference_or_boundary_projection_variant
+    - temporal_alignment_variant
+    - emergence_association_prediction_or_intervention_selection
+    - favorable_simulator_selection
+    - occupancy_only_selection
+fingerprint:
+  report:
+    - persistence
+    - occupancy
+    - raw_zero_based_and_one_based_first_onset
+    - normalized_first_onset
+    - consecutive_label_Pearson_consistency
+    - entries_exits_episode_count_mean_median_and_longest_duration
+    - nonreplicating_and_no_onset_through_25_percent_cutoff
+    - distinct_cross_generation_recurrence_counts
+    - cross_candidate_agreement
+  paperTargets:
+    persistence: {center: 716.0, declaredDispersionScale: 198.0}
+    occupancy: {center: 0.88, declaredDispersionScale: 0.03}
+    consistency: {center: 0.38, declaredDispersionScale: 0.06}
+    rawOnset: {center: 37.0, declaredDispersionScale: 27.0}
+    normalizedOnset: {center: 0.37, declaredDispersionScale: 0.27}
+  distance: frozen_S19_L02_standardized_four_dimension_RMS
+  onsetAmbiguity: raw_and_normalized_are_separate_and_neither_may_replace_the_other
+  occupancyAloneSufficient: false
+statistics:
+  bootstrapReplicates: 4096
+  bootstrapUnit: catalytic_matrix_within_candidate
+  generator: PCG64DXSM
+  confidenceIntervals: percentile_2.5_and_97.5
+  influence: leave_one_matrix_out
+  exactReplay: independent_second_label_materialization_and_hash_identity
+  generationBlockPermutation:
+    replicates: 4096
+    unit: complete_growth_fission_generation_block_within_trajectory
+    initialGenerationZero: retained_ineligible_at_sequence_zero
+    blockInternalOrder: preserved
+    blockOrder: independently_permuted_for_each_matrix_and_replicate
+    invariant: completed_run_symmetric_membership_and_occupancy
+    tested: temporal_arrangement_consistency_onset_and_joint_paper_distance
+    passRule: observed_distance_strictly_below_null_2.5_percentile_for_both_modes_and_candidates
+promotion:
+  maximumLeads: 1
+  exploratoryOnly: true
+  gates:
+    - structural_not_comparator
+    - exact_replay_all_200_trajectories
+    - precise_paper_and_source_relationship
+    - no_outcome_tuned_choice
+    - occupancy_error_strictly_smaller_than_adjacent_H_in_both_candidates
+    - raw_and_normalized_joint_distance_strictly_better_in_both_candidates
+    - paired_bootstrap_upper_95_percent_bound_below_zero_for_both_modes_and_candidates
+    - at_least_3_of_4_core_dimensions_closer_including_occupancy_and_onset_or_consistency
+    - every_leave_one_matrix_out_joint_distance_strictly_better
+    - generation_block_permutation_negative_control_passes_both_modes_and_candidates
+    - at_least_95_defined_consistency_and_95_observed_onset_runs_per_candidate
+    - nonzero_nonreplicating_fraction_at_25_percent_cutoff_in_both_candidates
+    - occupancy_cross_candidate_difference_at_most_0.05
+    - consistency_cross_candidate_difference_at_most_0.10
+    - normalized_onset_cross_candidate_difference_at_most_0.10
+    - untouched_S20_design_complete
+  retrospectiveRestriction: primary_label_can_only_support_paper_facing_retrospective_confirmation
+  classificationVocabulary:
+    - EXPLORATORY_PAPER_MATCH
+    - EXPLORATORY_DIRECTIONAL_MATCH
+    - EXPLORATORY_NON_SUPPORT
+    - RETROSPECTIVE_ONLY_LEAD
+    - METHOD_DEPENDENT_LEAD
+    - POSSIBLE_STABILITY_PROXY
+    - POSSIBLE_PIPELINE_ARTIFACT
+    - PROMOTABLE_TO_S20
+    - NOT_PROMOTABLE
+    - AUTHOR_AMBIGUITY_UNRESOLVED
+    - LOOP_FAILED_CLOSED
+untouchedS20Design:
+  scope: retrospective_paper_facing_confirmation_only
+  units: exactly_100_new_shared_catalytic_matrices
+  candidates: both_separate
+  trajectories: complete_100_fissions_under_frozen_candidate_contracts
+  label: exact_L04_formula_without_change
+  threshold: strict_H_greater_than_0.9
+  selection: no_emergence_prediction_or_intervention_outcome
+  seed: new_domain_separated_256_bit_root_with_zero_overlap
+  decision: replay_and_same_locked_joint_fingerprint_gates
+seeds:
+  rootHex: 701f9bc9f413b89114e0d5d2e25bb1e4389c8071d8c4e8f305c65d9c75bb2a87
+  derivation: sha256_version_root_and_null_delimited_identity_tokens
+  scientificRngUses: paired_matrix_bootstrap_and_generation_block_permutation
+compute:
+  cpuCores: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  maximumCpuHours: 32
+  maximumGpuHours: 0
+  maximumWallHours: 8
+  maximumRetainedGiB: 10
+  maximumTemporaryGiB: 25
+  validationReserveFraction: 0.10
+stopConditions:
+  - any_immutable_prior_hash_change
+  - preanalysis_adjacent_H_or_label_replay_failure
+  - source_or_implementation_identity_change_after_lock
+  - any_unregistered_label_threshold_alignment_or_variant
+  - outcome_access_before_clean_pushed_lock
+  - post_outcome_scientific_method_change
+  - budget_or_storage_ceiling_exceeded
+  - report_not_regenerable_from_machine_readable_results
+postLoopBoundary:
+  mandatoryHumanReview: true
+  noAutomaticL05: true
+  noAutomaticS20: true
+  noAutomaticE02: true
+

@@ -1,0 +1,2 @@
+$ /home/robert/Projects/replications/replicators.13.8.2026.codex/.venv/bin/python -m pytest -q tests/test_intervention_replication.py
+............................                                             [100%]

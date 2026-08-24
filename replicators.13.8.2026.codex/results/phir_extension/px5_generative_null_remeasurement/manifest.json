@@ -1,0 +1,18 @@
+{
+  "classification": "no_complete_catalytic_information_separation",
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 1682.7764991690003,
+  "format": "codex-ch5-phir-extension-px5-result-v1",
+  "gates": {
+    "archived_outcomes_exact": true,
+    "material_full_catalytic_enrichment": false,
+    "material_public_catalytic_enrichment": false,
+    "natural_full_information_steerability": false,
+    "natural_heredity_steerability": true,
+    "natural_public_information_steerability": false
+  },
+  "matrices": 24,
+  "registration_id": "300e09b7ee09fdfcc519f66433ea5af4cde23325239fd548ee8d7c26ec99c9f8",
+  "states": 960
+}

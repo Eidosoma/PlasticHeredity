@@ -1,0 +1,33 @@
+{
+  "calibration_sha256": "f9169165d8510a843e3c61c83decc8ed5fc84b300d176663f2bfea55ebad7647",
+  "format": "codex-ch5-phir-px10-registration-v1",
+  "model_contract": {
+    "development_arrays_sha256": "a6031e65d227b7e45b8947e4c8cf85e8ec5e6d6efbb91f1c6acf60f3659ccb21",
+    "development_states_sha256": "f194220c7eea64dece7d41deff21c7828407092769a9baabf81ce08139e7cce8",
+    "format": "codex-ch5-phir-px10-model-contract-v1",
+    "grain_model_sha256": "4abeeaf598d115d65ad98ea4daef2e18c3b3ec4bbe9c7a640fecce31d6cdfb18",
+    "outcome_used_for_grain": false,
+    "renewal_contract_sha256": "0d14920f45f831c3825ee36a73537cfbc067cafe9042088ae9a123d82900bd95",
+    "renewal_student_sha256": "59750718efcea3492a6d9b4493e9dc379eb221150025681acd38651d623cd430"
+  },
+  "protocol_id": "24efacf6a04ef1d4ef35eec912ed74471d0441369e6f89eb9a7a00aa4b302f40",
+  "registered_at_unix": 1787490399.7663145,
+  "registration_id": "bc273708a4f49f82304c0c293872c7aaff445194db0bc6b9fbbfa8a9ef42d616",
+  "scientific_matrices_generated": false,
+  "source_hashes": {
+    "CODEX_CH5_PHIR_PX10_PREREGISTRATION.md": "9de625b7f77d75f41bcfc3894d74753623d6878302303d258676a653c34a8b1e",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr5.py": "f28488a2d0f7e742f12f6636696ea02e81a4bbb1e9f1f25d88760a86aac44050",
+    "plastic_heredity/phir_extension_px10.py": "50994908836e903899b90bd390dd127b78c8e71ef6d57ab485960b5e3606f07e",
+    "plastic_heredity/phir_extension_px7.py": "cd1845d6d9d9e776a0ab9422c01e9df27502bb327462c4fff32477f0bafa6c7d",
+    "plastic_heredity/phir_extension_px9.py": "e3eb020d4553435521ce2104087c95811333172f3b8da4e01be45d68b6cbac17",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "348ccf3e51a9839b3aa5d3d5f60a4559abdffd9737d596077982e63300ac1310",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5",
+    "tests/test_phir_extension_px10.py": "fffa41640bb96e3350509ad2062a00e6f42f8bb672ed1473281d834a4f8d07c6"
+  }
+}

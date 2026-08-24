@@ -1,0 +1,169 @@
+{
+  "all_candidate_gates": {
+    "isomorphism": true,
+    "lineage_identity": false,
+    "rule_conditioned_rehoming": false,
+    "shared_rule_destination": false,
+    "transient": true
+  },
+  "candidate": {
+    "02": {
+      "gates": {
+        "isomorphism": true,
+        "lineage_identity": false,
+        "rule_conditioned_rehoming": false,
+        "shared_rule_destination": false,
+        "transient": true
+      },
+      "isomorphism_native_minus_joint_break_f8_90ci": [
+        -1.3877787807814458e-18,
+        -0.007031249999999999,
+        0.006822916666666666
+      ],
+      "isomorphism_native_minus_joint_f16_90ci": [
+        0.0008333333333333317,
+        -0.002968750000000001,
+        0.004791666666666665
+      ],
+      "isomorphism_native_minus_joint_f32_90ci": [
+        -0.0016145833333333316,
+        -0.006093749999999993,
+        0.0028645833333333344
+      ],
+      "native_capture_f16_ci": [
+        0.08625,
+        0.05234375,
+        0.125625
+      ],
+      "native_capture_f32_ci": [
+        0.13520833333333335,
+        0.08734244791666668,
+        0.18869921875
+      ],
+      "native_minus_state_f16_ci": [
+        0.06359375,
+        0.03760286458333335,
+        0.09437630208333332
+      ],
+      "native_minus_state_f16_equivalence_90ci": [
+        0.06359375,
+        0.04093489583333332,
+        0.08916666666666666
+      ],
+      "rule_only_rule_target_minus_launch_target_ci": [
+        0.07135416666666666,
+        0.04552083333333334,
+        0.10151171875
+      ],
+      "state_only_capture_f16_ci": [
+        0.02265625,
+        0.012395833333333335,
+        0.03520833333333333
+      ],
+      "state_only_capture_f32_ci": [
+        0.07223958333333332,
+        0.04630208333333334,
+        0.10234375
+      ],
+      "state_only_rule_target_minus_launch_target_ci": [
+        0.07223958333333332,
+        0.04604036458333335,
+        0.10302343749999997
+      ]
+    },
+    "03": {
+      "gates": {
+        "isomorphism": true,
+        "lineage_identity": false,
+        "rule_conditioned_rehoming": false,
+        "shared_rule_destination": false,
+        "transient": true
+      },
+      "isomorphism_native_minus_joint_break_f8_90ci": [
+        -0.003385416666666671,
+        -0.009791666666666672,
+        0.0029166666666666625
+      ],
+      "isomorphism_native_minus_joint_f16_90ci": [
+        0.0008333333333333313,
+        -0.0032812500000000007,
+        0.004895833333333329
+      ],
+      "isomorphism_native_minus_joint_f32_90ci": [
+        0.0010416666666666667,
+        -0.0034374999999999974,
+        0.005468750000000001
+      ],
+      "native_capture_f16_ci": [
+        0.08260416666666667,
+        0.047760416666666666,
+        0.12474088541666666
+      ],
+      "native_capture_f32_ci": [
+        0.12802083333333333,
+        0.07979166666666666,
+        0.18552083333333336
+      ],
+      "native_minus_state_f16_ci": [
+        0.06067708333333333,
+        0.03322786458333334,
+        0.09578255208333332
+      ],
+      "native_minus_state_f16_equivalence_90ci": [
+        0.06067708333333333,
+        0.03697916666666667,
+        0.08870052083333331
+      ],
+      "rule_only_rule_target_minus_launch_target_ci": [
+        0.07197916666666666,
+        0.04531119791666667,
+        0.10531250000000002
+      ],
+      "state_only_capture_f16_ci": [
+        0.02192708333333334,
+        0.012708333333333332,
+        0.03265625
+      ],
+      "state_only_capture_f32_ci": [
+        0.06958333333333334,
+        0.04333203125,
+        0.09921875
+      ],
+      "state_only_rule_target_minus_launch_target_ci": [
+        0.06958333333333334,
+        0.044375,
+        0.09911588541666665
+      ]
+    }
+  },
+  "format": "strict-b-transplant-arrival-residence-v1",
+  "natural_stranger_active_fraction": 0.38666666666666666,
+  "primary_classification": "transient",
+  "rare_panel": {
+    "any_exceptional_rule": false,
+    "rules": {
+      "11": {
+        "candidate_pass": {
+          "02": false,
+          "03": false
+        },
+        "exceptional_two_basin_rule": false
+      },
+      "54": {
+        "candidate_pass": {
+          "02": false,
+          "03": false
+        },
+        "exceptional_two_basin_rule": false
+      },
+      "63": {
+        "candidate_pass": {
+          "02": false,
+          "03": false
+        },
+        "exceptional_two_basin_rule": false
+      }
+    }
+  },
+  "scope": "conditional_on_50_previously_strict_capable_rules_and_three_previously_observed_B_donors_per_cell"
+}

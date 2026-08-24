@@ -1,0 +1,56 @@
+amendmentId: S19-L11R-VALIDATOR-AMENDMENT-001
+schema: eidosoma.e01.s19_l11r.validator_amendment.v1
+researchStepId: S19-L11R
+versionedLoopId: E01-S19-L11R-CENTROID-NUMERICAL-TOLERANCE-CONFIRMATION-v1.0.0
+amendmentClass: POST_OUTCOME_TECHNICAL_VALIDATION_ONLY
+authorizationDate: '2026-08-09'
+authorizationSource: EXPLICIT_HUMAN_OVERRIDE_BEFORE_HANDOFF
+humanDirectionSummary: Fix the technical replay issue, continue through repeated validation cycles, and preserve scientifically negative results without outcome tuning.
+
+preservedInitialFailure:
+  failureId: S19-L11R-F001
+  stage: FIRST_OUTCOME_ANALYSIS_NUMERICAL_REPLAY_GATE
+  scientificAggregationReleased: false
+  canonicalAndIndependentCentroidsExact: true
+  binaryLabelsExact: true
+  maximumScoreAbsoluteError: 2.220446049250313e-16
+  classification: POSSIBLE_PIPELINE_ARTIFACT
+
+amendment:
+  target: INDEPENDENT_U2_SCORE_REPLAY_VALIDATOR_ONLY
+  before: Independent validation omitted portions of the canonical value/reference scoring-boundary reclosure sequence.
+  after: Independent validation replays the same registered two-stage value/reference reclosure sequence before independently recomputing H scores and strict labels.
+  scientificScoresChanged: false
+  scientificLabelsChanged: false
+  thresholdChanged: false
+  clusteringChanged: false
+  simulatorChanged: false
+  seedChanged: false
+  controlChanged: false
+  statisticChanged: false
+  promotionGateChanged: false
+  exactEqualityStillRequired: true
+
+scientificScorePathChanged: false
+exactScoreReplayGateRelaxed: false
+invalidatedWorkerOutputsReusable: false
+freshScientificAggregationRequired: true
+fullExactRegenerationRequired: true
+
+assuranceCycles:
+  - cycle: 1
+    name: FOCUSED_VALIDATOR_FIXTURE_AND_DIAGNOSTIC_REPLAY
+  - cycle: 2
+    name: COMPLETE_UNCHANGED_U1_U2_ANALYSIS_AND_CONTROLS
+  - cycle: 3
+    name: FRESH_TRAJECTORY_AND_ALL_RESULT_TABLE_REGENERATION
+
+amendedFiles:
+  - path: scripts/e01/run_s19_l11r.py
+    oldSha256: 7f8c20d3e88ea6f77d4f74fc5400c3d5e73d05b7e50e7b77b11b244e2e2be31a
+    newSha256: 3f4a1b97c2f71a349e39a1da5b155fb909d72c056a4e884a5b8ec0b84a88c1a0
+    changeClass: VALIDATOR_AND_TRANSPARENT_REPORTING_ONLY
+  - path: tests/e01/test_s19_l11r.py
+    oldSha256: 49f78883bc287dcc58375e5614cb922912544dae88bcbff238b864e7da04c5e7
+    newSha256: 7a3cbef48513f9ce50e8897c3617dbff63d2999319c1967bfad9e93fd7ace6bb
+    changeClass: FOCUSED_VALIDATOR_FIXTURE_ONLY

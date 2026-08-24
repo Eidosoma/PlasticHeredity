@@ -1,0 +1,49 @@
+schema: eidosoma.e01.s19_l37.preregistration.v1
+research_step_id: S19-L37
+versioned_id: E01-S19-L37-MULTILINEAGE-ANY-ATTRACTOR-TARGET-CONSTRUCTION-v1.0.0
+title: Multi-Lineage Any-Attractor Target Construction
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Can two independent same-matrix reference lineages define a family of
+  recurring basins that recognizes a reciprocal held-out lineage and supports
+  a reliable finite-horizon committor without using that held-out future?
+lineages: [ORIGINAL, REFERENCE_A, REFERENCE_B]
+reciprocal_design:
+  held_out_roles: [ORIGINAL, REFERENCE_A, REFERENCE_B]
+  reference_lineages_per_atlas: 2
+atlas:
+  clock: post_fission
+  generations_per_lineage: 100
+  similarity: historical_cosine_H
+  threshold: 0.9
+  minimum_visits_per_reference_lineage: 2
+  minimum_generation_span: 2
+  target: union_of_all_cross_lineage_component_centroids
+controls:
+  - same_candidate_cohort_unrelated_matrix_atlas
+  - matched_species_permuted_atlas
+branch_replay:
+  evaluated_held_out_role: ORIGINAL
+  actual_library: [REFERENCE_A, REFERENCE_B]
+  horizons: {H32: 32, H8: 8}
+  branches: {H32: 128, H8: 64}
+  new_branch_streams: 0
+statistics:
+  matrix_bootstraps: 4096
+  candidates_and_cohorts_separate: true
+prohibited:
+  - threshold_search
+  - component_or_radius_search
+  - favorable_reference_selection
+  - favorable_control_selection
+  - simulator_or_branch_change
+  - candidate_pooling
+  - completed_held_out_future_in_target_construction
+  - paper_or_causal_claim
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

@@ -1,0 +1,1086 @@
+{
+  "checkpoint_digests": [
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m011_fixed.npz",
+      "sha256": "35621a0f72e029725ddd140348b474e777f9fde1b79e3a3ebd9b1cd5fdbb5d46"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m011.npz",
+      "sha256": "2ead45dc06fa9d1655769be2efb8813f1a543bccce85f5e7c12b4cf285472641"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m088_fixed.npz",
+      "sha256": "90bd290c8339318e7f89e3189317fcd43ee2e6767b22a7e690bc407e102e9f20"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m088_extension.npz",
+      "sha256": "c3679203c22fb21a307a98ac399c7ea611bb0e325e3131a87208121d029be4d3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m088.npz",
+      "sha256": "c7d18fe6d63736bbbe60db0294e711077e373aeb370ca09b2841cdcd3eef943d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m110_fixed.npz",
+      "sha256": "ffd7a43cb663fa21ff79d29054f89ddc040f510eb010fa271f949692e9137f1a"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m110.npz",
+      "sha256": "18d488b309173bc85e4dec9f2c3bc3a1548cf8eea5c3a00b3dddabdf235c2e65"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m179_fixed.npz",
+      "sha256": "11f78cb7b69c5b9b9ae821724daf40faed51a7200993be59127b487a3a876a01"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m179.npz",
+      "sha256": "b1fa107f1163d007c381ec0cc4450e80c4beabff483fd013242307faea714b2e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m023_fixed.npz",
+      "sha256": "6f92a7ece7400b67512a038fd4e5a229030344837aade56bb5f59111b94836e6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m023_extension.npz",
+      "sha256": "69c8382b57865a773d793d65487916a6e18220f5bb8fb6964dd7dffae4966433"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m023.npz",
+      "sha256": "24eeca91a6d6ccc24c082633f61c8e8622fed837318972f9e4c6b2e008f360bf"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m017_fixed.npz",
+      "sha256": "b2548cad3238be1bbee78bb3817e9d61cb32f6b28e7418b37a0b70158e5f1d49"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m017_extension.npz",
+      "sha256": "63778a2fa486562d1ba5a04a22ca74fa0222c41bfc38b54fb551521347341b94"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m017.npz",
+      "sha256": "48e92d57226d963ac285871c87f517892292192df9ff795f581235171e05a903"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m054_fixed.npz",
+      "sha256": "71e6224e99b575d33858b2dd795f7acfabbd7e5867b4d4a29537816da9067683"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m054_extension.npz",
+      "sha256": "8555c63d73df262e96e463844cab5753b5eac9d26cd860dcced35ace1af11a8f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m054.npz",
+      "sha256": "4245ac58b7f8512500a49dd7b0c0dc2926a47d6b7cbbf43969f2c77bc730fa96"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m132_fixed.npz",
+      "sha256": "57252b19ab707eff7f5014926d09819cbe1a7c62924bcdf5a7942fe7352c0262"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m132.npz",
+      "sha256": "48c58e974cdd95f2c1cdeee751f89a50538deb2bcda32653e374ab9389dcf417"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m196_fixed.npz",
+      "sha256": "7cc9d17e5158c90617ba621977ad015015e9a57f101a6fd5ce289a51567e9b99"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m196_extension.npz",
+      "sha256": "dc0bc561f75cc12e177e485d35c4f2f8bce6981cb78243465cc599c49a33917f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m196.npz",
+      "sha256": "54dd4a0b0a5ca8114f9e9216b481c6db53e7c582548782a536f154b0ef3e6f4b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m158_fixed.npz",
+      "sha256": "e48a776b85042f9b778c5190413c24684e52787b2993f548d9e6d35f8e141f9b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m158.npz",
+      "sha256": "d89bfbd66bce7b748c24e295777f88ec06602079102c149dc3f8619c7fbd1626"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m010_fixed.npz",
+      "sha256": "31c69c1563d84691911434fc055ccfa85aa9618b4227c08d9d684076c6c25b21"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m010_extension.npz",
+      "sha256": "9f284d8607248cabd378ff0fa085800e005383da4cb16f62dac72369c21c1a94"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m010.npz",
+      "sha256": "abc9f4cbe8b7cb10bd75fd93af519664ac354fa1150f0e795964481d13c1625b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m090_fixed.npz",
+      "sha256": "498bb4c990d5719bf65492ba184f397335c7e6061fba5dbe0bf65049a3189bfd"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m090_extension.npz",
+      "sha256": "c6fcd384d0152253b938cb656a05e2e6fe9377753a25fb60d17ecf4c26453e5c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m090.npz",
+      "sha256": "c290c0610ec227db67dd2b4064d99038c1216fd8d9a1228d8b4afb7571bb8c14"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m032_fixed.npz",
+      "sha256": "9b122d4aadbefb470c86c6225b4aa9755d02ffb74f42f3e0f9265f01a3a33c36"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m032_extension.npz",
+      "sha256": "abb43636a6a64ce057b8d025a275dd7ceab0244a2a383d62419cd0306a34be52"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m032.npz",
+      "sha256": "86f617b2f466bc2aaf88fbd41bcbebd374fdeb04a31e0f459194e352dfa85673"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m045_fixed.npz",
+      "sha256": "05cb51bc5dee928a227967c4cf76a49ecdc5c53dd3b27d91d4fbd57667b40e9a"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m045_extension.npz",
+      "sha256": "35645439ddb61abc3bc02b111d1bc59b573e4fc34fea2f4d2aa57f64f3b2d235"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m045.npz",
+      "sha256": "8b0a7fab1efae9d1a3998060e742e291eb46f88bfc21d4b7d6a654e58c5bed68"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m028_fixed.npz",
+      "sha256": "5a0c02dd6b3e497dc48209eec7599b73ce34acfdde050babb59627cf167e2fee"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m028_extension.npz",
+      "sha256": "b9bae62bdf99cfc0fb0dfff27cf278c707acf866c7162a1676e2679d8d430079"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m028.npz",
+      "sha256": "ec191c267b86d71901642179666a550b89810a861b651a02019d182d93377306"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m159_fixed.npz",
+      "sha256": "343548ac7bc525c55956dd88f28f6d078d6ef758c7dee067f0e3fded6e49bf0e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m159.npz",
+      "sha256": "d1321d0a55b82c83e994979f3ccd2d6229968e259e5bc440f4a53f01336bc948"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m149_fixed.npz",
+      "sha256": "5e94c2e954d166df94943b5de7c27e8695a693fe0a908faae775334aec6fd3a2"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m149_extension.npz",
+      "sha256": "33248fa0bf6e0f59858ad35a0f81106771fc2b7e340014b1483d3da2c7e180ae"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m149.npz",
+      "sha256": "d35b738b0a2713b35b994c45d5ff25ba41fc172488975b39ec8e2147e49f15bd"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m058_fixed.npz",
+      "sha256": "56227292391342831355e3eac3238a5a31241a1fae91ae585c1dd051f38082a7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m058_extension.npz",
+      "sha256": "b9c08cf5f1ddd08fb9535a7652fa0e9e5bc4573cb0e2f91c52c335f9193a3009"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m058.npz",
+      "sha256": "476606ce135356b6f8ac3f976d6f403e633a9a6e371f1e68c8c1000d3025178c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m025_fixed.npz",
+      "sha256": "8be74e8d051e35fec692ef2c7efaac4a6be758a600d4563b107db05edcce8771"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m025_extension.npz",
+      "sha256": "bf4e2047f81809bc04e3f20e3d6efb75c4c62bb7533457aa0b7aa8fc916558ad"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m025.npz",
+      "sha256": "aad2ab21d178a3b54f7903595a61c05baa9f7d49cf529d86a90c4132cc98cfc6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m198_fixed.npz",
+      "sha256": "28f0b3d12de67b1366b0a9d4dc9608078df61722e8adfdfa4386f32f70aacec7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m198.npz",
+      "sha256": "7e26c272d258653ef2623cd2837285b9182abdcb84b5a60f7643e0d470f20701"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m097_fixed.npz",
+      "sha256": "37a5716f2944849ba2e358edd41459bff5dcbc6c06dfdd5cf66479f7f6c79f71"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m097_extension.npz",
+      "sha256": "5902ba87bb4cdb96cbfc497d9e4145671c580f9bebea0c036d888b7867318d29"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m097.npz",
+      "sha256": "8148092a9c9f609d5a57c66b189123f1a6660a2ea703f9512811f08391a794e7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m014_fixed.npz",
+      "sha256": "1bc0f46d5de320363e9db2200b0ae7402fd9e24737342feb1d63adb53cf534bb"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m014_extension.npz",
+      "sha256": "43709f92e09b1e246296588e554ec6b6b59a3f8ed61a750ba5560a86d65cc9ac"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m014.npz",
+      "sha256": "d4cdbede674ba708bed0a83607573816b4912582cbc9310534031c92f9c8d4ad"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m197_fixed.npz",
+      "sha256": "e05ac96a1bee18029cfa24611082ffd0dad8b511fa20267188a5eef315e4fd46"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m197_extension.npz",
+      "sha256": "2f2650e9ca6d69d672ce452d4e85d2f888244bb7185c24d81bc6f2fa06f934f7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m197.npz",
+      "sha256": "8decc41cacf5f71ad77d87e8738890f5db035ef4cd644377cfbdc15fce21dc9a"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m126_fixed.npz",
+      "sha256": "5cee3f2102a2bfc4bb646818025bfe24ac17d4e71354d95a4d82127656b4a286"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m126_extension.npz",
+      "sha256": "0bd161382d11bda92261e2706103de3b054e3af7de77fb531f2e10fc2fefc913"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m126.npz",
+      "sha256": "4db0770fce52c82de3a1b089f1f15cd745f8608c9c5471b27bfb4258144c0e83"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m112_fixed.npz",
+      "sha256": "178a8a47e32cd7ffae897f01441d6b852c3b7d056fa54fd0e852f0dcd94e0013"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m112_extension.npz",
+      "sha256": "072cc7524bc5544d77e162ee33be08b98aba1391c09fe4d664b690fb1e6c1aab"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m112.npz",
+      "sha256": "6aecc9ed0c140ffcef6b267c2e80f3e92c40a1f06d506f213a42f5e27f653379"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m038_fixed.npz",
+      "sha256": "93404a73c517c5bc4920e31cb25dce94070022dae3e2af241a7ff3dcf99384c0"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m038.npz",
+      "sha256": "8b35e8692abbd588bb89a348235730c3b629ee3a48ca86ea7b8cd39a95cd1c73"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m001_fixed.npz",
+      "sha256": "77fc819e62a9b3d2c92e4ae3fdc8fffdbc516f140c25123b49f4c487c6f897e3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m001_extension.npz",
+      "sha256": "2241deab8f9cd44adb8a6fed3662ed09eab60b6474223e35efd8421f3422cd8c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m001.npz",
+      "sha256": "822aa19ca35bc2f942d6d376adc0013720829f49577f0e6480c225d8a6a173e3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m043_fixed.npz",
+      "sha256": "ce5d3de6852743193772f8f405ed0625b4c9e10dd946adc0966aa20c83b4cee6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m043_extension.npz",
+      "sha256": "467ff5bddd809e00e0d9c896096e9767a606de2dcd90d9d47f5f14d66f526caa"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m043.npz",
+      "sha256": "37fd1f67bb96e986bae238448d48e8480591f844e2096981980dce24757337f5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m018_fixed.npz",
+      "sha256": "aba44b61e62497c396c2af5ca8395b65fb75e0bb02409c8f2faf6d0f18c38d5a"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m018_extension.npz",
+      "sha256": "1ce1ba11bd4bb799ccb3de3b67d484572d5d133e1beb30e773cecd7b470fd375"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m018.npz",
+      "sha256": "633b4b4a5256d58d7ec1293972c9f9dd1c767f639f52df496d5e1f19214c26cc"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m064_fixed.npz",
+      "sha256": "52f8c617a7581670fb16b4fa89a2df0b99ee6569bd769d4b312d68b9ad955c2d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m064_extension.npz",
+      "sha256": "890a3ba69e2f8843d16cebbac7b0fdb069356c8e9aeda5a4828a74539a873811"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m064.npz",
+      "sha256": "f2980561597ef820d82fe0306fe9682863e7820fa1b9af65a27e79893ff6cf93"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m072_fixed.npz",
+      "sha256": "e7bf8ed347e322c38af77b0a749891007988b3ab3e787c0443d11173ed9e9727"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m072_extension.npz",
+      "sha256": "062f50a1b8948c262a6417670395dc36850a16650bf36114276645474606f597"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m072.npz",
+      "sha256": "a30870fe626a6a342d5b824902d3f28fc344a06512b6343a04793e0c07b046e0"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m178_fixed.npz",
+      "sha256": "0207d671b315e9c2983bfd40150d55ace6e3cd1d7de7cd6a30e307818b0f04d1"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m178_extension.npz",
+      "sha256": "87da5697ffb136931c1bdcdef6f512456011cb8fb3c6cd2e0a9ce0158c010a93"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m178.npz",
+      "sha256": "6707745f1c9f062376a0334673b90deaa1784c18cb1aed9ce422faebb3b82aae"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m161_fixed.npz",
+      "sha256": "96ca1758961b3d1db4dc822622d91e2ee14c3fbc2ba2d15b73870620f394caeb"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m161.npz",
+      "sha256": "ea711e1a2f833a2c893aca2b2f486c6e974cf1e222755928c54a1f17a209b28c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m174_fixed.npz",
+      "sha256": "9447cefd4ab5feecf471847501d418921613f289fc855e94a7fced19a3365f1b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m174_extension.npz",
+      "sha256": "4869256d962de367f4724b868a217521cdda31b386dff7c304e05132f4068926"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m174.npz",
+      "sha256": "69177faa3dec60289b70169bc0d7f5e7ee0190f656bf3d2208e29b9463c8c662"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m005_fixed.npz",
+      "sha256": "8d92007c055cb344b10e9f985f261a2b2c3a445c58f54eb507b8eb5eb796e235"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m005_extension.npz",
+      "sha256": "f97e00276b63938023591b2ee522f8528a579d0855b292ef1a65a356f4f9069f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m005.npz",
+      "sha256": "f017cf667d894c5af940b35ec611ace229662baf3d7cf41b3cc4544bc122e64b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m009_fixed.npz",
+      "sha256": "75f5ee43d9e0c160c665e2dd6f2f92d5eccb7e7f8d950503e6ba40a37722cf6b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m009.npz",
+      "sha256": "e0f769e9b1b20e03a623b848c9d47a26b2eefca7e1ab4a2e2d62791b88291d14"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m079_fixed.npz",
+      "sha256": "998b1a11f8ec37e4589d26a7e815c21294a56b89b9e002f922eee5d3cf9b1ee2"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m079_extension.npz",
+      "sha256": "b330e186535e4bcd5121ce827351a88be0d30a1533f63f57633239ffd9385722"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m079.npz",
+      "sha256": "35bb5c143ea31491797c3b37647019a7e931f3312b0994a42d204b6e05120ef1"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m055_fixed.npz",
+      "sha256": "1e675e5d0b8bbe40a1efa4de7aa4879d2b69f824f414afa7a0dc7e5135943dc7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m055_extension.npz",
+      "sha256": "cbf87d5c00fee169c4e678cd94089cc8ba5c3b58a06f4c5b5f1e1310fd87eb58"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m055.npz",
+      "sha256": "69d5caae9ae81fd65881d3358448176a70d37be2b099badb69d8e9b05acf4bd9"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m117_fixed.npz",
+      "sha256": "d02399ed9c2d3fd90cc74f6bdd1870007b51b7886ecceddf7e040f5119caaa16"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m117.npz",
+      "sha256": "74bd77a2aa723ae743e3c667830de01d2aafb1101a2f858202a257a43636df7c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m024_fixed.npz",
+      "sha256": "819d8afbda6540458a10f5e59d152477f9e368a8f435236c7d8d026520f78026"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m024_extension.npz",
+      "sha256": "a23caf0a16f8f16729740884bee6a1d1f0ac0e3acba6eddc01a0eb7fedceb04c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m024.npz",
+      "sha256": "ec3d42e6e56db06e874304ce1625675f07833d472b39d2380d22aec72cff35bd"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m153_fixed.npz",
+      "sha256": "6b99702cded39779f91425cc8a733dcf6073662b07e8bcb199dec9ff83bd2b78"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m153.npz",
+      "sha256": "ae3d14e9ee33e8333b2a1274d7e50a96b51e55fd94d14b7b096aa0978dfbd00c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m138_fixed.npz",
+      "sha256": "3395e2dcdb4d5ec3d1838789b485a5baf696bc2a8b009ff5bde765dab5427319"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m138_extension.npz",
+      "sha256": "c0d9111ccaadd5abeed4c2cffa345304bb1f0b777c1ba0c8d7ed1f285f910706"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m138.npz",
+      "sha256": "381f84f3611247098e7c74f9c671ff5e468469150c88a7da2e09e381d459116f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m086_fixed.npz",
+      "sha256": "253bd7cc52a69a0d747a2a95bf4fbe6f2cd8a6f0472a913a8687689e1c02bd7f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m086_extension.npz",
+      "sha256": "22fbfad67ae09856a6b97c5fddbac0b397871695a7040f77c59f1a28e9b31828"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m086.npz",
+      "sha256": "1223b2fe715e64819e09e67573af100cbe0b3be114dda6d089ce20269fd33cfc"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m148_fixed.npz",
+      "sha256": "a8061718df4ff016cc5996e03c35105e652b829006c27b7ac42e581456fe45eb"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m148_extension.npz",
+      "sha256": "5f120aef2dada5b285a843ec2c017d335634dfa3f08b8f3abd7c5d3d317a4251"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m148.npz",
+      "sha256": "0bdcba8b0866223658fc989c394281f1be82dc0ae84dffbacbeb824b3b18413f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m063_fixed.npz",
+      "sha256": "9bf24c82d351cfdece1096f0f12c12e452b28d1caef120e242d2ca79be492fa6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m063.npz",
+      "sha256": "cceb57059ad399c111b26435f9b55192d26b81bea58ff0843f6295f0c9583fe3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m125_fixed.npz",
+      "sha256": "80f9419eab34037d09814ff6f9552c09c6009a71fe648856a017dbbcccc2afba"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m125_extension.npz",
+      "sha256": "4571953b11e177d8a759e12fe5510e83cdec78d97a4753f985522c08086429c6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m125.npz",
+      "sha256": "c5b5c38ed44557674f6435ce16b870d65bdd2047ca18a41538554c0824f13f1c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m171_fixed.npz",
+      "sha256": "5fe6cbca436a85260b5239c2519a6547c688e9b8225e711805847d304c005ded"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m171_extension.npz",
+      "sha256": "b79ac8a756b97abcbc4203691209551ce8301ccb0b6a121e3fb3bf2f4a5d4f21"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m171.npz",
+      "sha256": "a4c245eb168dd5fd0d2bd66c8cb18da7c1628c9233fd565c4854d57da83a30e5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m119_fixed.npz",
+      "sha256": "ada97e02bedc9af1e0140ead57f3f41a69e61e0852a50d3c3504fd7d28951c08"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m119_extension.npz",
+      "sha256": "5ff293a52e27c3d518960aea1df2c915548ae69aa16e4e5ade8bf08318867ea4"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m119.npz",
+      "sha256": "d4df25d03c6f414a31551b0bedc720e0a43b048c6a4a13b2c6d7ca29a69a1202"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m002_fixed.npz",
+      "sha256": "39446c950fe9d08719fae7da74406e307806292f02b52f5a532f8f38f7226a4f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m002_extension.npz",
+      "sha256": "32d9a9a26ed72873a141bbbfb2cbed60693c2605a5759e43e2d08408b382026c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m002.npz",
+      "sha256": "531fd868d9f6b383c1f58f00baa27fc496fc8fb2e904578db52a251bcccc7a5c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m118_fixed.npz",
+      "sha256": "58ced276553f8f40e92239bf5926437613ad216030d2e5a3c7d1a521ec3133aa"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c02_m118_extension.npz",
+      "sha256": "69351be1abd0ac4c35ff46e16a5140885b4c0a291bd391d6b9aefa70736b2899"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c02_m118.npz",
+      "sha256": "c618e45b355e35b8de77918fab16142d746021a5db74d8a2a5641f4c855faad8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m011_fixed.npz",
+      "sha256": "262da0e9b967fb4c60f15d86770ec19e5a0b16fb7648de4cd7a44d9ff61f5a04"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m011.npz",
+      "sha256": "868aec3ea5a766c58540fa43294bef1a3506dab53e41832338029335d4405b76"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m088_fixed.npz",
+      "sha256": "4ada9ca11a5f5491b8167009b4689a2830d1beea4a6c7d89290fc03b67e9b1fe"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m088_extension.npz",
+      "sha256": "2999b984f0ed8a92bbf857974f47c6395692f2b10942281150d5d8e1191a9e97"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m088.npz",
+      "sha256": "d941f391c34a1862835130538ff84799390ca4f42b6296b0feeb9ae88802236d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m110_fixed.npz",
+      "sha256": "fc3e7714e034b71bace30a2ce1423472fb155fc9d57e8dbb217c4d2f06c2483f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m110.npz",
+      "sha256": "6ff0783d07ae3bd4f095985cda747e272c11dfc0df2188569ca43a3ab6ab529d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m179_fixed.npz",
+      "sha256": "d94a186c2abeb489f2efaf5973454cb2fd950fb08abe03cf1232857509c0938b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m179.npz",
+      "sha256": "f2b6559aaf2e2614120cc660a331ac7674e785a5682cb018a8b81016bd416843"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m023_fixed.npz",
+      "sha256": "421e91cad89bc9808c01cf2ec22cbc5264c84af3870459445a13cda469361293"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m023_extension.npz",
+      "sha256": "5cd3000e5f5849322a992384f1ade9169adc04d05b38adacb0e1a0817a66bde5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m023.npz",
+      "sha256": "158b9acd8f8ae88c3e6c72cb333c471acb698318a0d57c8aac5a919a3c949673"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m017_fixed.npz",
+      "sha256": "d1a43bf65d6717a21bbba3d2bba114c5dffd68da1dbe765e7d8d79c5beda1b6e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m017.npz",
+      "sha256": "5fbb635f83a3a09ea60c65ead5aae9420dceedb4827569aaf176742f76ca47de"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m054_fixed.npz",
+      "sha256": "1f7ab5d7d8086913855b3549960d604cbd9712e25d8148f9b6b55015c6ba4853"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m054_extension.npz",
+      "sha256": "64cf421e75f4263072e7babc40f211ca25a3be47884a2138fb42ab05a71085b7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m054.npz",
+      "sha256": "c218117bcaa36bb24731bc07939544168d3561450193c94cdbc09b89bb8b78d6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m132_fixed.npz",
+      "sha256": "94553978d47a72171d3869f5d0612d610d267ae8ece25d7b82c908c1137acfba"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m132.npz",
+      "sha256": "0deab4d6d74901e7ddb79f0a017cb80f783319f21b545686572c1c587de24ad8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m196_fixed.npz",
+      "sha256": "91d59749d15a8a83a27df8c2e1a52bb64476c65fe227ad6a1b2243ae3678b290"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m196.npz",
+      "sha256": "96fa766b75df255bd6df066fffecff4abb1fc303c21163dcad388aef53de8af6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m158_fixed.npz",
+      "sha256": "a884135aa5552dde87ea65f3ed570c6a4a807ece65a58d8e35adaf00684fec80"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m158.npz",
+      "sha256": "1debbc45e08398b62bcb3ad63d9666e67078c56007be222e2856d5c1ec0c8c2d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m010_fixed.npz",
+      "sha256": "7e6aea332ae95867f0dab1bae4737ae02306a7645f05f48cefa74baeebfaaa9b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m010_extension.npz",
+      "sha256": "bb01693ebf48c5132f065124c939050a9084fe91e39a79932ccf3f9edae33ef1"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m010.npz",
+      "sha256": "0ca33bc9900afd9cb9ebf63d46c08f7ce4690d16fee4a16376058d4d03d00a75"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m090_fixed.npz",
+      "sha256": "508d7a6af930e67e7b0a2be6bd207fb946cd3eea17f8bdf242418362fea79bef"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m090_extension.npz",
+      "sha256": "ca20d52475ce05698e51bca8b9152bb982ce320fb24db978159bb92b7dd54b7c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m090.npz",
+      "sha256": "600a937d8889e8396d24f284ea8d39e31fd1c62927bffbff37628948a08fd0e7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m032_fixed.npz",
+      "sha256": "8f6963b8030bb5205e11afea5cb059dfca61132710edb1b92d5c9a8f822f31a3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m032_extension.npz",
+      "sha256": "1ba57396b65f9c0301d08f224846a69828c8394c95a421a3dbc5d2e338bd4b2c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m032.npz",
+      "sha256": "526e1ee0b636c00d7410519e598101c7a661c9e592926420b123256c5f5037e1"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m045_fixed.npz",
+      "sha256": "1672c260c62def2c30995b45b042369fb27f1ba81ebf3de4ff70842d06d171d5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m045_extension.npz",
+      "sha256": "6dacb9de2064417116390bb9c4419ca268c8aa9a7f1364a51c6e73f1b30b2829"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m045.npz",
+      "sha256": "b08c992621e0c43ff63af646545aad349d735d2ead820048ece84381b5d2cd43"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m028_fixed.npz",
+      "sha256": "0aec689be06d8e47e970a3d070a1336185fe076167d817d2b6bfe88f0f0f0e7e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m028_extension.npz",
+      "sha256": "01a3eb96337eb83818314f2589c72e2cb2e0c868ce21baee64744888e48eab50"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m028.npz",
+      "sha256": "055923efc333382a200b54c47b4151320a20df57e744d9e347d67e6e781ef931"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m159_fixed.npz",
+      "sha256": "ac8a7a810550e8039d1bb97192e59f1219e0479ff1e643df3a70afbbad556b02"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m159.npz",
+      "sha256": "37fcaafd0fcac66b690711f990cfccaafb0cf03008af3e488b23d34122a58507"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m149_fixed.npz",
+      "sha256": "14b93dc3f801849c5b57ba527abe574d4ec5fffead183d033df9cdd767d9969c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m149.npz",
+      "sha256": "1141e84e9ac79c98f153d1ecdb65ecfc9faae3e5c8903af00e39f9511311e26e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m058_fixed.npz",
+      "sha256": "2edcb02c1e7b5fa31d02957992086c8b52652ab7c21e4b69d09209a7cbd3d03c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m058_extension.npz",
+      "sha256": "3fcd97c8c702ef19902b6506bb20cb0ad3668c74f994b0700e9ffc79850d1583"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m058.npz",
+      "sha256": "5c317caba4317e0611a9e28044c1dcfec855c3f698f1cea464661c34f1d80108"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m025_fixed.npz",
+      "sha256": "cd3ba3d9b5be34e2ac83b8bb619c045abc6b14081b1784b942d4a9aa81c81115"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m025_extension.npz",
+      "sha256": "3ae5cfdd5a6560a049fc547192bdb95789bd24ccf09f6cca74ea550faef4c6f7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m025.npz",
+      "sha256": "ea85b93b07649e4d9eb3565a1ec94f569b5019fd86ea7c99219242972e95b5ed"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m198_fixed.npz",
+      "sha256": "cad782403ee2e927cfee1c4bc50656f63e1d24e898ca3ac30e8f39a8aa5388ee"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m198.npz",
+      "sha256": "bd68b2e57f9dabdb5f306fa9256ddf4065e21dab838402bc034c3e68cf79baca"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m097_fixed.npz",
+      "sha256": "ceebc9a79f0e1317fedc410e6cc9b7349bb50950b8c949f8a574d30747660891"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m097_extension.npz",
+      "sha256": "0952b476d09844fd327eae61b920caac2b7dc04123220e8e8361579a18a9d43a"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m097.npz",
+      "sha256": "d1881cd0a3e10ce2dc7daaa4ab1d023f24d7cc133b70ca5f8662de03ddba5344"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m014_fixed.npz",
+      "sha256": "7bc8ac4ccb916614d1ac84e6a6911b77ffd6c7c63402c71c72c5226a3f3a8831"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m014_extension.npz",
+      "sha256": "75cfc02e4f674dcc9b866f4175ef72dc8f884e113130c401db89ceb5d9fde27e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m014.npz",
+      "sha256": "f2fba5623d7e2a6c81a3ebf129b3b651cc40a45914933ef54ac8871c6e2dbb0b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m197_fixed.npz",
+      "sha256": "bf8a8535e803d5a85ffeca4415f46a9aacdfb951c01c6c8000ee90e67e20e7b0"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m197_extension.npz",
+      "sha256": "5218a8f088a6b68bbc6cfce87ede8600fc4c7d7fe7203176b905193af06c989b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m197.npz",
+      "sha256": "f9a436978f7708fe76b471c1da1c0ce4baeeb3a93d4ba4e690deab97a9e45c44"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m126_fixed.npz",
+      "sha256": "43df4d04ecf174f987bcf4249eb4ba70a6b4e8a3dae7dc332b557c070e4c013a"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m126_extension.npz",
+      "sha256": "6845dfa1c7d3e2a06b014be5c5a7e859ad772c4192bb5ed4214f37e0941eeda7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m126.npz",
+      "sha256": "ab93fceedee494e6374d5b88b5de8ba04baf2dc28db3e2d473319dd6ffbd9e94"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m112_fixed.npz",
+      "sha256": "15cb5c37166e1df78d6fd2b8370033317a732480501e7e6c2ef697bd76864048"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m112_extension.npz",
+      "sha256": "fc5ed84c9bd93c4a97643fcff092d3dff3609c4868d9aa9482e0fb59241acd23"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m112.npz",
+      "sha256": "84a3caccbaeac5decb78d0d350b7726f1934d0cde9b448a8a315fadd1f33692f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m038_fixed.npz",
+      "sha256": "af78412476c6679f25c7667bf6456789e8ba39772f52bf98dfe54ec0536b30f8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m038.npz",
+      "sha256": "efa475e033653dab19c42157de22fe8f7d55a0248e530cbbe6129fe4fda48368"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m001_fixed.npz",
+      "sha256": "275fab01f07ddc76de82cd2ad9b246e8e3ed321420a1d3360c73cfea7559311c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m001.npz",
+      "sha256": "11ecb91d2674da71349d915880ab1a88a9d34081f0c68bea516587ca9133bcdf"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m043_fixed.npz",
+      "sha256": "23ebd5e993512316a90ce266a98cc869f6bac9b2bafc0ad30d31054e2e9e4368"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m043_extension.npz",
+      "sha256": "18b2ab91b23af31edf83de7db31fbaa495a8c9abdd8aa130cf0767322210d395"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m043.npz",
+      "sha256": "706b37a410a172968c77df60e2ecc1a3eafe6581441f5b9940bce35b04ccc7f4"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m018_fixed.npz",
+      "sha256": "01b7f3d157da7a88affffdb9652d1b7f5c1bd8f75104d2501817cc5bf49af92c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m018_extension.npz",
+      "sha256": "d38392cdcc21279250aee56c157c8d8659384bf19e77541121b26181ea7a744c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m018.npz",
+      "sha256": "b4bcbe68349be2e25a7e56420d7df2b476a38cb1429b6527ed849adae35f136b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m064_fixed.npz",
+      "sha256": "7f53d812695967ced66231973229e0fdb7fe0123263ab2356d8a7d23d9e59b25"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m064_extension.npz",
+      "sha256": "a9b0b61fa11523945624a6a52aa341a00a3b591b5f5611306f8ca3e77085b5a8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m064.npz",
+      "sha256": "1ec6c9fc9a18e5bcbf72d30458c6c4baedf92d317e1c297f21226abd03de4ee2"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m072_fixed.npz",
+      "sha256": "9c3c5e30c4b3f06d789ba8e744b16af103e1fa624372439b3ae84967948391e0"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m072.npz",
+      "sha256": "b65ba1f98e1f34ea7c52dcfc1c8066dc551ad39dc52a4be7d3f71f038b9c8932"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m178_fixed.npz",
+      "sha256": "5e3b8459ef11f6cc2ba46c2877a675d4754986dd16f8cf676b73e7791c7c1669"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m178_extension.npz",
+      "sha256": "9a3fe7d78688628217cfb91d5c15bc49d271e05531452e87c403e410d456f9cc"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m178.npz",
+      "sha256": "ef332bbde60744eb1d7e4f512b2eddffe32924327aaad5798f5bdd5b98d09bb1"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m161_fixed.npz",
+      "sha256": "5d4cfad4b59f29000212af4ef0b1ea5f51fd2cce16e2f6ceb0bea3a55e7d083c"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m161.npz",
+      "sha256": "50cd3986d3e6f12e7962494ccd762543d3ec90eb64a87f4b92eba2d01b60f0f8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m174_fixed.npz",
+      "sha256": "e084105646d3ace7564e250d56417b4b08b801d14cd6808405262b932be78b46"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m174_extension.npz",
+      "sha256": "332fcb204fb0798573d2d36e9788887bf98f5ba690bfc29d7eaee1c1c729d582"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m174.npz",
+      "sha256": "f87d5b0f9731a7b29434f6288b261fd7c7da63e10d19ad8bff476f9fb0496de5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m005_fixed.npz",
+      "sha256": "f8702e7cfa01277de010a3b8b32fb8e696689a0c6d5c8d8cbf5cedcc9a0fc2db"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m005_extension.npz",
+      "sha256": "fd36f7d369daadc0183689125d80c9e2856c309b717e03ed9cc042a3181054ac"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m005.npz",
+      "sha256": "aee396ea35688a7785dbdc22d5951e1fa2ea02b3d98e741c9a2b58ccbe987af7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m009_fixed.npz",
+      "sha256": "d0acfa41d8c12f99021b652b0002e1c6dc9ef94115ff6fa066ecae60fc7a41f7"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m009.npz",
+      "sha256": "f578cea50b38d1c05b5c579d4cba01875b8c9b912c0c496756fc93eefae0e027"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m079_fixed.npz",
+      "sha256": "03308c9b0376bb54a1470380e995cdad030e5bbea3ec5d6e6b5fb1a62d03a272"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m079_extension.npz",
+      "sha256": "9a9b0a1105244ea8ff9d892a7fa3f5ffcfe0e368dc7ffd9fc619e6abee3b7b0b"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m079.npz",
+      "sha256": "db57b78b305df4fdf4295b6bba058ffd4c12a81bf603061b0ce4c9df707d6511"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m055_fixed.npz",
+      "sha256": "d495b4fce92dfaf7e716169526efce7a1f806642286f9f864c7402af79431f98"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m055_extension.npz",
+      "sha256": "c958c5064fdeb8fc8f13e188c4084240ca3c98029b4b23f3c14b74e0072703c5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m055.npz",
+      "sha256": "df0242ecaa9c262f4506d26a284e04c5143e14986815bec2b6d3706b1f3fbc80"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m117_fixed.npz",
+      "sha256": "df7880430fabea13c1e71a2a1cd4d576814fa19e18562fe6c3f88eb6e9e3f73d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m117.npz",
+      "sha256": "03cca2d0df1f377e73ecd7d992cb4dde1f518b51a0ea3d31be9b79d648a7e357"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m024_fixed.npz",
+      "sha256": "fae93bc8ae541a54b28ca32c011b6da9133f66cbdd0dcec9d53c0c764d5ac8dd"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m024_extension.npz",
+      "sha256": "a9e1681110676b626466da158188d46614ceb331ff8f985b863c88530a24e6a9"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m024.npz",
+      "sha256": "54b4709834c3ee9abe0b3ec8fd4da1c37ff34bd6109b55ed944d111417dfad87"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m153_fixed.npz",
+      "sha256": "552e3b5f4d803464bc07bc369590057e125a32028d95cf219e1d5d947717a4de"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m153.npz",
+      "sha256": "10d1aee9b4bc28aa4b29bc618e0b97c0aaab9ae3a26fbbe42e0ad3bcb878545d"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m138_fixed.npz",
+      "sha256": "4fc51083c1eed1a0712fcc6d9fab55fe97b7d3a03e5312e3ef0d8edfccb34da4"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m138_extension.npz",
+      "sha256": "d1d69a8e49709eba77d9cabaa49e357d4378480972dd1ba079bca98756dc1a48"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m138.npz",
+      "sha256": "fc0277af5956bd015ed86df3d54cd18fc32efde82732f761b5b6e07f9ffba4bc"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m086_fixed.npz",
+      "sha256": "c96ca726f562509edfcadd6da40880e9f86cb70a2c8ebefff157985e14a4a0cc"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m086_extension.npz",
+      "sha256": "3f276c11ca4a56bdd1fb8bcd09ea0d7867d111fdfa6fdc0dcc917c6d0f906b6f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m086.npz",
+      "sha256": "905c273e720e90d49a49b725916c91f42c0636a798966b266337887dda70001f"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m148_fixed.npz",
+      "sha256": "3cae73045ca0ea0c65b9d93ee32dc31c3604bdd230feccc96a8bf6f994413e65"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m148_extension.npz",
+      "sha256": "1ce48bffe3250bd9361ca69827ffca601122f0abe0a3f2b01f5230e8b0124ac9"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m148.npz",
+      "sha256": "ae188c0e831d304ba990d8ee2ff79a39e91c68b1ad99141c6d25745abccf9082"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m063_fixed.npz",
+      "sha256": "7eef2279b320b0736b6fe3f5a913a209af15ad88ba1efd2f1718e8c7160f5423"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m063.npz",
+      "sha256": "bb1d94ed9420627e7828ca34fc9840f76ef96b4bf77eaa2de2771e25916d2401"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m125_fixed.npz",
+      "sha256": "24030cae666bc40f19d08b3288f873bfd356f923310f0b49fcb8a72a0ce192b5"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m125_extension.npz",
+      "sha256": "ce7319e751162a78d9e866516813a8f61932e25cc1c5c0f90226c64135f0cc3e"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m125.npz",
+      "sha256": "07f19b9e10ed30163adf20179e0e262710db45ea1f75da7cd9490dd47e2fd678"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m171_fixed.npz",
+      "sha256": "50603ddfc489ab6576cb9f5fe6153e3fe22f37fcd6a91030444c51c743ca7330"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m171.npz",
+      "sha256": "8f05f1308ee8677443e7415023793c87b4a5e3197372b82e7ce3b461d6ec3fff"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m119_fixed.npz",
+      "sha256": "3b7687eb55e0c343459b8a56b0056c608bd75a1bf50387d1a9ed6992fa738845"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m119_extension.npz",
+      "sha256": "70a332d8d7f3e2644f52d0df2fb847b8f400cae119a73486134103ee2d06dff3"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m119.npz",
+      "sha256": "8921cf43c140fee1e647ea88f3223c4c279024cfe4c63d0d49f4139255327304"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m002_fixed.npz",
+      "sha256": "4197f6468d6c33c67f8cdeab7fae1bfb4253681c9d82303ffbdb4cdc26fabca0"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m002_extension.npz",
+      "sha256": "a12a4060f64aefef858aacead19fb0061c63867a62926381bb2bb5216c27b8d8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m002.npz",
+      "sha256": "94812261ff26acff27819d043f2cd126b7c5fefed4c594d9b17c0c7d789247d8"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m118_fixed.npz",
+      "sha256": "04361a18e2d0bbb81423fe9fb0c45432da3bd2d0c4306b4c7bbe385eca4888e6"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/lineages/c03_m118_extension.npz",
+      "sha256": "650e05f6e397020ec2fb52844c7bdfba7c3e67943f00cd5604c2c2d150ee1d97"
+    },
+    {
+      "path": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/artifacts/work/forks/c03_m118.npz",
+      "sha256": "670856fbdcefd8fc2264af899f96e61544305c1b8b65ae4f968180f5f8547abd"
+    }
+  ],
+  "checkpoint_files": 268,
+  "complete": true,
+  "discrete_replay_exact": true,
+  "format": "reviewer-lineage-identity-v1",
+  "full_replay_requested": true,
+  "maximum_h_error": 0.0,
+  "output_checksums_verified": true,
+  "protocol_id": "ac22060e8ebd1e2a501b21cecbc303fa32454cce7a5a506eb84da9c448c024b4",
+  "registration_id": "e18577a04c2e60c33677c26f3660e262e13b45f92fa83dd76aa7aeee73cf92ab",
+  "replayed_lineages": 21504
+}

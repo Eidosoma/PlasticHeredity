@@ -1,0 +1,842 @@
+{
+  "additional_scientific_experiments": [],
+  "automatic_confirmation_launch": false,
+  "cohort_audit": {
+    "eligible_pairs": 98,
+    "frozen_pool_pairs": 506,
+    "local_used_donors": 612,
+    "local_used_pairs": 306,
+    "max_density_difference": 0.01171875,
+    "newideas_exposed_donors": 1000,
+    "newideas_exposed_pair_ids": 500,
+    "union_excluded_donors": 1421
+  },
+  "cohorts": {
+    "confirmation": [
+      {
+        "a_donor_id": "life-31649-2-24",
+        "b_donor_id": "life-31649-2-1595",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-77e95a41482de376"
+      },
+      {
+        "a_donor_id": "life-31649-3-734",
+        "b_donor_id": "life-31649-3-443",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-6ca62bf95c11525e"
+      },
+      {
+        "a_donor_id": "life-31649-2-1052",
+        "b_donor_id": "life-31649-2-1484",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-aa1ef643d2614c06"
+      },
+      {
+        "a_donor_id": "life-31649-3-874",
+        "b_donor_id": "life-31649-3-599",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-0ea0f8aed122d4bd"
+      },
+      {
+        "a_donor_id": "life-31649-2-1248",
+        "b_donor_id": "life-31649-2-1588",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-e91662a2d83bf75c"
+      },
+      {
+        "a_donor_id": "life-31649-0-601",
+        "b_donor_id": "life-31649-0-413",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-08096bcc16193696"
+      },
+      {
+        "a_donor_id": "life-31649-2-662",
+        "b_donor_id": "life-31649-2-1565",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-fbd25618007e6b5d"
+      },
+      {
+        "a_donor_id": "life-31649-3-347",
+        "b_donor_id": "life-31649-3-901",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-47d2ae4cc19818ae"
+      },
+      {
+        "a_donor_id": "life-31649-3-107",
+        "b_donor_id": "life-31649-3-838",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-6ab69d8ebbd21e83"
+      },
+      {
+        "a_donor_id": "life-31649-2-333",
+        "b_donor_id": "life-31649-2-574",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-95033197bbb5870e"
+      },
+      {
+        "a_donor_id": "life-31649-3-112",
+        "b_donor_id": "life-31649-3-852",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-890294f66a7e77a7"
+      },
+      {
+        "a_donor_id": "life-31649-3-814",
+        "b_donor_id": "life-31649-3-399",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-b59c8256532e8b23"
+      },
+      {
+        "a_donor_id": "life-31649-2-27",
+        "b_donor_id": "life-31649-2-1462",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-a9418cdd47393b88"
+      },
+      {
+        "a_donor_id": "life-31649-3-888",
+        "b_donor_id": "life-31649-3-504",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-0b3d6e922941d869"
+      },
+      {
+        "a_donor_id": "life-31649-1-2726",
+        "b_donor_id": "life-31649-1-651",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-714efcc7a83bfb74"
+      },
+      {
+        "a_donor_id": "life-31649-0-104",
+        "b_donor_id": "life-31649-0-851",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-26b6ba26f4c43c0a"
+      },
+      {
+        "a_donor_id": "life-31649-3-668",
+        "b_donor_id": "life-31649-3-818",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-2bae1a1e2bf50a9e"
+      },
+      {
+        "a_donor_id": "life-31649-2-1348",
+        "b_donor_id": "life-31649-2-1426",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-885ce8aab7473766"
+      },
+      {
+        "a_donor_id": "life-31649-2-844",
+        "b_donor_id": "life-31649-2-781",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-0c93cd898574b1bf"
+      },
+      {
+        "a_donor_id": "life-31649-1-1752",
+        "b_donor_id": "life-31649-1-1555",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-88c4f0a33fddadb0"
+      },
+      {
+        "a_donor_id": "life-31649-2-1417",
+        "b_donor_id": "life-31649-2-972",
+        "density_difference": 0.00390625,
+        "launch_index": 2,
+        "pair_id": "fresh-2-81fb6be401d34f18"
+      },
+      {
+        "a_donor_id": "life-31649-1-2978",
+        "b_donor_id": "life-31649-1-3063",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-be6579196a2912c3"
+      },
+      {
+        "a_donor_id": "life-31649-3-843",
+        "b_donor_id": "life-31649-3-954",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-493e50d4f8683326"
+      },
+      {
+        "a_donor_id": "life-31649-2-513",
+        "b_donor_id": "life-31649-2-1051",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-3b3fa55df17ad200"
+      },
+      {
+        "a_donor_id": "life-31649-3-538",
+        "b_donor_id": "life-31649-3-335",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-057dcbe735785c9d"
+      },
+      {
+        "a_donor_id": "life-31649-2-1396",
+        "b_donor_id": "life-31649-2-247",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-a9b9dae0c7320c94"
+      },
+      {
+        "a_donor_id": "life-31649-0-987",
+        "b_donor_id": "life-31649-0-943",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-484e4c260fff84a9"
+      },
+      {
+        "a_donor_id": "life-31649-1-181",
+        "b_donor_id": "life-31649-1-2194",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-2bcb41da55142a39"
+      },
+      {
+        "a_donor_id": "life-31649-2-1120",
+        "b_donor_id": "life-31649-2-41",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-2fa9ab71acab3beb"
+      },
+      {
+        "a_donor_id": "life-31649-3-80",
+        "b_donor_id": "life-31649-3-489",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-4b933aa9168000dd"
+      },
+      {
+        "a_donor_id": "life-31649-3-507",
+        "b_donor_id": "life-31649-3-768",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-dd12035eb3e8a9a9"
+      },
+      {
+        "a_donor_id": "life-31649-0-278",
+        "b_donor_id": "life-31649-0-497",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0fabc70b556c52a7"
+      },
+      {
+        "a_donor_id": "life-31649-1-304",
+        "b_donor_id": "life-31649-1-1777",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-008b7b0623e3beb4"
+      },
+      {
+        "a_donor_id": "life-31649-1-646",
+        "b_donor_id": "life-31649-1-1913",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-9121dd75f735f683"
+      },
+      {
+        "a_donor_id": "life-31649-3-970",
+        "b_donor_id": "life-31649-3-602",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-d0261589c9733172"
+      },
+      {
+        "a_donor_id": "life-31649-0-330",
+        "b_donor_id": "life-31649-0-875",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-17a3a3ff950b3b10"
+      },
+      {
+        "a_donor_id": "life-31649-2-970",
+        "b_donor_id": "life-31649-2-1000",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-acc03821012dc116"
+      },
+      {
+        "a_donor_id": "life-31649-2-702",
+        "b_donor_id": "life-31649-2-10",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-9abfbbca3ec31125"
+      },
+      {
+        "a_donor_id": "life-31649-1-303",
+        "b_donor_id": "life-31649-1-1256",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-d0c27d6cad979b04"
+      },
+      {
+        "a_donor_id": "life-31649-3-264",
+        "b_donor_id": "life-31649-3-212",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-2ce60f7073312dcf"
+      },
+      {
+        "a_donor_id": "life-31649-3-671",
+        "b_donor_id": "life-31649-3-243",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-807d0b1bc7ed0058"
+      },
+      {
+        "a_donor_id": "life-31649-1-273",
+        "b_donor_id": "life-31649-1-2457",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-7c1354feaf8a8528"
+      },
+      {
+        "a_donor_id": "life-31649-0-569",
+        "b_donor_id": "life-31649-0-406",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0f90d2423b059d42"
+      },
+      {
+        "a_donor_id": "life-31649-1-63",
+        "b_donor_id": "life-31649-1-2509",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-0f72f5e2c54b5963"
+      },
+      {
+        "a_donor_id": "life-31649-2-890",
+        "b_donor_id": "life-31649-2-685",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-748beb82c13e344f"
+      },
+      {
+        "a_donor_id": "life-31649-1-897",
+        "b_donor_id": "life-31649-1-2982",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-6bb4b582a693a967"
+      },
+      {
+        "a_donor_id": "life-31649-1-426",
+        "b_donor_id": "life-31649-1-2949",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-ca8d41deafea1723"
+      },
+      {
+        "a_donor_id": "life-31649-3-3",
+        "b_donor_id": "life-31649-3-333",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-358e2e643b1d9226"
+      },
+      {
+        "a_donor_id": "life-31649-0-983",
+        "b_donor_id": "life-31649-0-957",
+        "density_difference": 0.00390625,
+        "launch_index": 0,
+        "pair_id": "fresh-0-8dc8c65f2e72f946"
+      },
+      {
+        "a_donor_id": "life-31649-3-512",
+        "b_donor_id": "life-31649-3-737",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-48a1edf56ab4937f"
+      },
+      {
+        "a_donor_id": "life-31649-0-656",
+        "b_donor_id": "life-31649-0-995",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-00c50b58ae48597d"
+      },
+      {
+        "a_donor_id": "life-31649-0-691",
+        "b_donor_id": "life-31649-0-1173",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-01a30f49e9b7e9f8"
+      },
+      {
+        "a_donor_id": "life-31649-3-208",
+        "b_donor_id": "life-31649-3-711",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-57c5d5728bd96a22"
+      },
+      {
+        "a_donor_id": "life-31649-3-353",
+        "b_donor_id": "life-31649-3-128",
+        "density_difference": 0.01171875,
+        "launch_index": 3,
+        "pair_id": "fresh-3-90a54a1e1999cd6a"
+      },
+      {
+        "a_donor_id": "life-31649-2-934",
+        "b_donor_id": "life-31649-2-604",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-1ce616d28e90f110"
+      },
+      {
+        "a_donor_id": "life-31649-3-570",
+        "b_donor_id": "life-31649-3-90",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-4ac255eca9cd722f"
+      },
+      {
+        "a_donor_id": "life-31649-1-3038",
+        "b_donor_id": "life-31649-1-295",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-b412f2d9794e1196"
+      },
+      {
+        "a_donor_id": "life-31649-0-57",
+        "b_donor_id": "life-31649-0-615",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-24038dfc4200bdc8"
+      },
+      {
+        "a_donor_id": "life-31649-2-983",
+        "b_donor_id": "life-31649-2-694",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-3436c09aa1533d51"
+      },
+      {
+        "a_donor_id": "life-31649-3-440",
+        "b_donor_id": "life-31649-3-134",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-28bfeb9f94477fb1"
+      },
+      {
+        "a_donor_id": "life-31649-3-886",
+        "b_donor_id": "life-31649-3-305",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-1bb46dec07b45989"
+      },
+      {
+        "a_donor_id": "life-31649-2-537",
+        "b_donor_id": "life-31649-2-683",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-a9fac53919f88894"
+      },
+      {
+        "a_donor_id": "life-31649-0-257",
+        "b_donor_id": "life-31649-0-1198",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-3ca8b3cdfbd5c806"
+      },
+      {
+        "a_donor_id": "life-31649-1-1027",
+        "b_donor_id": "life-31649-1-1640",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-edc5383833acc85e"
+      },
+      {
+        "a_donor_id": "life-31649-2-738",
+        "b_donor_id": "life-31649-2-19",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-7f46967119368a9c"
+      },
+      {
+        "a_donor_id": "life-31649-3-664",
+        "b_donor_id": "life-31649-3-943",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-f13e7fc871e444ea"
+      },
+      {
+        "a_donor_id": "life-31649-1-408",
+        "b_donor_id": "life-31649-1-2658",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-5a183d1b5c79d8be"
+      },
+      {
+        "a_donor_id": "life-31649-2-368",
+        "b_donor_id": "life-31649-2-474",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-f50d9bf8741f116f"
+      },
+      {
+        "a_donor_id": "life-31649-0-786",
+        "b_donor_id": "life-31649-0-1064",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-081e4be6cc07b12a"
+      },
+      {
+        "a_donor_id": "life-31649-1-1175",
+        "b_donor_id": "life-31649-1-1587",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-e86588b7b8296122"
+      },
+      {
+        "a_donor_id": "life-31649-1-1876",
+        "b_donor_id": "life-31649-1-2300",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-9bb79983673a3ee8"
+      },
+      {
+        "a_donor_id": "life-31649-1-1008",
+        "b_donor_id": "life-31649-1-1250",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "fresh-1-281722b4ec7b61f3"
+      },
+      {
+        "a_donor_id": "life-31649-1-2547",
+        "b_donor_id": "life-31649-1-2684",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-8bc9f80ab5475d7c"
+      },
+      {
+        "a_donor_id": "life-31649-2-198",
+        "b_donor_id": "life-31649-2-393",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-21aab78f2cad44fa"
+      },
+      {
+        "a_donor_id": "life-31649-2-1411",
+        "b_donor_id": "life-31649-2-1467",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-c4e35cba3d8a27d5"
+      },
+      {
+        "a_donor_id": "life-31649-1-3378",
+        "b_donor_id": "life-31649-1-2720",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-0465668c27b726c3"
+      },
+      {
+        "a_donor_id": "life-31649-1-3249",
+        "b_donor_id": "life-31649-1-473",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-8bbfb6fc9a2e7dc9"
+      },
+      {
+        "a_donor_id": "life-31649-3-44",
+        "b_donor_id": "life-31649-3-397",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "fresh-3-129e0fee2ba1fcc4"
+      },
+      {
+        "a_donor_id": "life-31649-3-964",
+        "b_donor_id": "life-31649-3-488",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-3dd812e43d8d0174"
+      },
+      {
+        "a_donor_id": "life-31649-1-2533",
+        "b_donor_id": "life-31649-1-2216",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-58dfa233f380280b"
+      },
+      {
+        "a_donor_id": "life-31649-0-670",
+        "b_donor_id": "life-31649-0-46",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-031945b26623eed8"
+      },
+      {
+        "a_donor_id": "life-31649-3-833",
+        "b_donor_id": "life-31649-3-322",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-7ace30fbc1a91175"
+      },
+      {
+        "a_donor_id": "life-31649-0-887",
+        "b_donor_id": "life-31649-0-978",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-026d73ae1bc7716d"
+      },
+      {
+        "a_donor_id": "life-31649-3-553",
+        "b_donor_id": "life-31649-3-864",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-64af30ace00b3c8b"
+      },
+      {
+        "a_donor_id": "life-31649-0-1177",
+        "b_donor_id": "life-31649-0-1043",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-0b846aa142a242e6"
+      },
+      {
+        "a_donor_id": "life-31649-2-1071",
+        "b_donor_id": "life-31649-2-1197",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-33c1776c9d32d26a"
+      },
+      {
+        "a_donor_id": "life-31649-2-1388",
+        "b_donor_id": "life-31649-2-533",
+        "density_difference": 0.00390625,
+        "launch_index": 2,
+        "pair_id": "fresh-2-2f05c230adb18e5c"
+      },
+      {
+        "a_donor_id": "life-31649-1-888",
+        "b_donor_id": "life-31649-1-1628",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-af249a721dbf4d8e"
+      },
+      {
+        "a_donor_id": "life-31649-1-2094",
+        "b_donor_id": "life-31649-1-831",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-cc8e85f623d2faad"
+      },
+      {
+        "a_donor_id": "life-31649-3-52",
+        "b_donor_id": "life-31649-3-100",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-d7f8527693debfcd"
+      },
+      {
+        "a_donor_id": "life-31649-0-27",
+        "b_donor_id": "life-31649-0-1032",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-01544f0aea2deff6"
+      },
+      {
+        "a_donor_id": "life-31649-0-1201",
+        "b_donor_id": "life-31649-0-476",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "fresh-0-013ab9e57db69b42"
+      },
+      {
+        "a_donor_id": "life-31649-3-840",
+        "b_donor_id": "life-31649-3-728",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-4ce38a1015d07c37"
+      },
+      {
+        "a_donor_id": "life-31649-1-968",
+        "b_donor_id": "life-31649-1-1861",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-990d962aea89707d"
+      },
+      {
+        "a_donor_id": "life-31649-2-257",
+        "b_donor_id": "life-31649-2-663",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-a9492e59fd93ee1e"
+      },
+      {
+        "a_donor_id": "life-31649-3-428",
+        "b_donor_id": "life-31649-3-926",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "fresh-3-dc2d9c9e963ece7a"
+      }
+    ],
+    "quarantine": [
+      {
+        "a_donor_id": "life-31649-1-1418",
+        "b_donor_id": "life-31649-1-2958",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-37a449ce3120d1ca"
+      },
+      {
+        "a_donor_id": "life-31649-2-675",
+        "b_donor_id": "life-31649-2-376",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-b57af45bba73a372"
+      }
+    ]
+  },
+  "conditions": [
+    "intact",
+    "zero_every_boundary",
+    "shuffle_every_boundary",
+    "read_disabled",
+    "founder_write_disabled",
+    "no_rewrite",
+    "ablate_after_g2",
+    "rescue_same_enter_g4",
+    "rescue_opposite_enter_g4",
+    "opposite_founder",
+    "carrier_corruption_1"
+  ],
+  "configuration": {
+    "configuration_id": "motif_energy512-w32-s025-d32",
+    "family": "motif_energy512",
+    "read_duration": 32,
+    "strength": 0.25,
+    "write_window": 32
+  },
+  "contract": {
+    "assignment_margin": 0.05,
+    "assignment_similarity": 0.9,
+    "carrier_corruption": 0.01,
+    "claim_boundary": "synthetic CA lineage memory only; no metabolism, agency, biological-life, or extra-automaton memory claim",
+    "confirmation_alpha": 0.0125,
+    "control_advantage": 0.1,
+    "corruption_crossover": 0.1,
+    "durable_crossover_generation16": 0.1,
+    "energy_clip": 4.0,
+    "generation_sweeps": 64,
+    "height": 16,
+    "independent_unit": "matched founder pair",
+    "jeffreys_alpha": 0.5,
+    "loss_fraction": 0.7,
+    "missing_policy": "dead and unresolved futures remain in denominators",
+    "notation": "B13456/S0578",
+    "observation_window": [
+      57,
+      64
+    ],
+    "primary_crossover_generation4": 0.2,
+    "primary_crossover_generation8": 0.15,
+    "process_noise": 0.002,
+    "read_sweeps": 32,
+    "repair_gain": 0.5,
+    "repair_kind": "universal_scalar_gain",
+    "rescue_fraction": 0.7,
+    "rule": 31649,
+    "runtime_label_access": false,
+    "runtime_parent_access": false,
+    "runtime_repair_access": "raw daughter carrier and fixed gain only",
+    "runtime_target_access": false,
+    "stale_retention": 0.5,
+    "survival_gate": 0.9,
+    "visible_reset": "bitwise-identical native board before every generation",
+    "width": 16,
+    "write_window": [
+      49,
+      64
+    ]
+  },
+  "dependency_manifest": {
+    "__init__.py": "b43a69a19363c63333ed3369b77175a845995285f4d16ee328e5c3980d685c4d",
+    "contract.py": "4113c062b42fcfcbad2beb42a7bdfe719195ec83e6b3ba97e8ee30f121b8fa16",
+    "engine.py": "aad3267325b41b65b4d7611bec89a680e513a30b0a8e1204e18d37b4cde481c6"
+  },
+  "design_digest": "33fa9e1101ff41533fdc5218df0b0f61fb6a5f6f3944ec52204a45624e7e11f1",
+  "experiment": "independent_ca_lineage_renewal_stage3r_replication",
+  "fresh_outcome_files_present_at_seal": [],
+  "frozen_date_utc": "2026-08-23",
+  "implementation_manifest": {
+    "__init__.py": "192752fa607820bc68057524f6111d59296ee746f186b544472b8e84302a8e90",
+    "campaign.py": "be40389d08897a44cdc45702ae6f6f0f5e54c24cfeaba94ac678fd741e753a8c",
+    "cohorts.py": "54978d6f2c93e5b8d4c8063336f9b8380ea9d346edc1ed345f860a87687c5096",
+    "contract.py": "1caa80cd229f6e84297614bbf16ff2c3613f60a37ebf89edbd9259a6127579ed",
+    "engine.py": "7f354656c9b497d6d0860c9effeac52f4191718b5fcd0343de38a53d959e5e14",
+    "inference.py": "0684d65ba9afa5c33c0eea970861a995cb048f36a0b961d0f7c413800c5eeb82",
+    "run.py": "664115e79fa0fab48f8ee4fa09ad875c2d97177eeab17b01f113834aea6616ff",
+    "snapshot.py": "706804d5862febf8aae00cdf4dbb982195ed642752fec6ea5e88ba080bb95cad"
+  },
+  "independent_unit": "matched founder pair",
+  "local_upstream_bindings": {
+    "FRESH_PAIR_POOL.json": "3420b7b2dce8e81002c907ec4f04afe1a5e2a16dd0ec038078e06d9ab0f788c7",
+    "STAGE1_CALIBRATION.json": "40bd9a4dff504523aa0654c863382d93fb0be9f66d2b8d3e185181f94b703882",
+    "STAGE1_DECISION.json": "a7f96c20daf17f3f10ce446465d2ed2077ca6013e3a6951896cc07e85d375bbd",
+    "STAGE1_REGISTRATION.json": "ee73ea1d4a5020a9c83eaca8505c67605be576bd1c8e42c4f33ddb7f3b70b69f",
+    "STAGE1_RESULTS.json": "d151b53b18fc22d587c9a96575a2fd49243797fde1a16b98694402ccda6c1d9d",
+    "STAGE2_DECISION.json": "cb225341a951d3bf3a214e1428e1c84f4908407724011d6e696dd7f93d00d7a6",
+    "STAGE2_REGISTRATION.json": "93b0db4f71e56842efbe5c187a604665d47359e02831671b999a71a46b0f361b",
+    "STAGE2_RESULTS.json": "28b5703fa131d24ec78913d4fd47c77bd414266e16714529d1c7f1ba9f029576"
+  },
+  "namespace": "reviewer-ca-lineage-renewal-stage3r-fresh-v1",
+  "parity_sha256": "c7f87b0d0b940de0cf81679bc79777cb31c04eb905cca33041b2bf86d358bc78",
+  "profile": {
+    "bootstrap_resamples": 10000,
+    "confirmation_pairs": 96,
+    "default_workers": 8,
+    "generation_checkpoints": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "generations": 16,
+    "quarantine_pairs": 2,
+    "replicates": 64
+  },
+  "quarantine_role": "engineering only; never enters inference",
+  "registration_state": "sealed_before_any_local_lineage_outcome",
+  "repair": {
+    "daughter_write_window": [
+      49,
+      64
+    ],
+    "gain": 0.5,
+    "kind": "gain-050",
+    "mechanism_class": "simple",
+    "source_candidate": "simple--strict-49-64--gain-050"
+  },
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1",
+  "secondary_decoder": {
+    "gating": false,
+    "reason": "independent texture descriptor is underspecified in data/docs",
+    "status": "not_replicated"
+  },
+  "snapshot_digest": "7e447a2cc25dfbac82de9f5b2e906ca5ff9572d84d3bd2be2eaa4dee958f63e4",
+  "snapshot_manifest_sha256": "01fc6caaec2b59fde869c53207f26da8f08ff67cd3285b304af86ddbc938efca",
+  "source_bindings": {
+    "decision_sha256": "97c5eee0743a13f2ec2febd4bb20923b3c9cdaf1f552a0b85211ab5c46c120cf",
+    "design_sha256": "9c5711889e172f364cee238fd440157f4acb5c4d0ca61b022adde6797c6821e7",
+    "evidential_role": "none; hypothesis and protocol source only",
+    "results_sha256": "bde1629cdd8b437f5dd1492230b8bca3c98ff489c6c5384677c6f0dcce8bdf1b"
+  },
+  "validation_sha256": "51770aebd19db99fe0e7451b0ab959e86fa5d264bdf3e743a4bd6071c0b5cbf4"
+}

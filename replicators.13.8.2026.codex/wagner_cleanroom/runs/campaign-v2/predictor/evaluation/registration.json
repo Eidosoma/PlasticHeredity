@@ -1,0 +1,67 @@
+{
+  "derived_master_seeds": {
+    "wagner-cleanroom-v1|2026-08-21|predictor-development": "5876382fdb87d2121db2b8c401a28fa00e29ebd5cfe689795e65a7d34ec3bf4c",
+    "wagner-cleanroom-v1|2026-08-21|predictor-evaluation": "f0cc9b1ad2e7cd234d17e9ff74ae0538dd0a702fad94990f555e4b80a5b7fcb3"
+  },
+  "format": "wagner-cleanroom-registration-v1",
+  "protocol": {
+    "active_cohort": "evaluation",
+    "bootstrap_repetitions": 4096,
+    "cohort": "fresh-wagner-ph-predictor-extension",
+    "development_seed_label": "wagner-cleanroom-v1|2026-08-21|predictor-development",
+    "development_sources": 96,
+    "evaluation_seed_label": "wagner-cleanroom-v1|2026-08-21|predictor-evaluation",
+    "evaluation_sources": 128,
+    "expression_flip_probability": 0.05,
+    "f12": {
+      "break_similarity_maximum": 0.9,
+      "horizon": 12,
+      "inherit_similarity_strict_minimum": 0.9,
+      "run": 3
+    },
+    "f32": {
+      "break_similarity_maximum": 0.9,
+      "horizon": 32,
+      "old_distance_minimum": 0.2,
+      "stable_run": 8
+    },
+    "format": "wagner-cleanroom-predictor-v1",
+    "futures_per_state": 128,
+    "genes": 10,
+    "grouped_folds": 5,
+    "histories_per_source": 5,
+    "horizon": 32,
+    "maximum_source_proposals": 500000,
+    "minimum_basin_fraction": 0.05,
+    "minimum_form_distance": 0.4,
+    "prelaunch_boundaries": 12,
+    "promising_gate": {
+      "history_log_loss_gain": 0.02,
+      "reliability_minimum": 0.8,
+      "structural_lower_bound_positive": true
+    },
+    "regularization_c": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ],
+    "scientific": true,
+    "sensitivity": {
+      "old_distance_thresholds": [
+        0.2,
+        0.3
+      ],
+      "similarity_thresholds": [
+        0.8,
+        0.9
+      ]
+    }
+  },
+  "protocol_digest": "87a52b861bb1b23db158388a3dd95043df0c8b98248498fe845d5523b9b55dd6"
+}

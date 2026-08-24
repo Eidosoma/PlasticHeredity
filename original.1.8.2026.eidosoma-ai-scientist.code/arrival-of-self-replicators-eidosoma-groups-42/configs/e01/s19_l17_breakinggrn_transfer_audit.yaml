@@ -1,0 +1,205 @@
+schema: eidosoma.e01.s19.l17.preregistration.v1
+researchStepId: S19-L17
+versionedStepId: E01-S19-L17-BREAKINGGRNMEMORIES-PHI-LINEAGE-TRANSFER-AUDIT-v1.0.0
+title: BreakingGRNMemories Phi Lineage Transfer Audit
+evidenceClass: ADAPTIVE_EXPLORATORY_SOURCE_LINEAGE_TRANSFER_AUDIT
+authorizedAtUtc: '2026-08-10T00:00:00Z'
+outcomeAccessedAtLock: false
+
+humanDirectionVerbatim: |-
+  We have plenty of time and we are in exploratory mode. Check this repo: https://github.com/pigozzif/BreakingGRNMemories
+
+  This is the latest code we have from the team that did the paper we're trying to replicate and it has phi work as well which has been what we are not able to replicate - we can replicate the replicators, even too well - let this be an inspiration for L17
+
+immutableBoundary:
+  preserveByteForByte:
+    - S01-S18
+    - E01 forensic replication V1 bundle
+    - E01 forensic replication V2 artifact
+    - S19-L01-S19-L16
+    - every historical classification, failure, amendment, waiver, manifest, seed, matrix, trajectory, label, feature, split, model and prediction artifact
+    - S17 CPU-allowance waiver
+  mayAlterPriorClassification: false
+
+breakingGrnSnapshot:
+  repository: https://github.com/pigozzif/BreakingGRNMemories
+  defaultBranch: master
+  commit: afe44231ad3ce915172cdb53a6b234bd76fcb6a5
+  tree: 56f66ab8b57a2c60e830370842926708eee0767d
+  licenseStatus: NO_LICENSE_FILE_DETECTED
+  redistribution: HASH_IDENTITY_AND_FINDINGS_ONLY
+  relevantFileSha256:
+    README.md: 084656c973be2c3ca353f00eceb69b4be24a53fee3650765dbbe69fffd6bef8b
+    information.py: bfd8f30525a7e25ff8e98fa5195814839ddef448d2c7fc55426c79d67ac5054f
+    phi.py: 8e773df849ef04779ed17280b18133a09dcb5c017a51375a7c730cf0e71df821
+    plotting.py: 5b8dba5408674f08b605c1779ad0659fd2e1e342c417c77be1695ceec3f78a4c
+    optima.py: 7d83ea000bf9914c483df4a7f34552771b2843753bd5a9b790e81b4ff39528ee
+    phi_lattice_22.pickle: 66cd662640079e9a2a8bc172250b124d59945fd805b7f91d5588e2f7d1d7ea03
+    requirements.txt: 63a7d7c3e6779f33e5cbce481170735d267df420f71457b6759787e4384251f1
+    info.txt: 170de12b85eb150f2e754d5a03225513c5598b9ff0cbf5812034db32da49ecfe
+
+lineageLocks:
+  phirlCommit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+  iigrCommit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+  historicalGardCommit: 86dff6320d5ae91b4e831471079ff46749b14df9
+  safeLatticeSha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+  paperMarkdownSha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a
+  l12MetricAdjudicationSha256: 79481f16d2f853d8fe30f7e281b33553e8c4f45b6b286dbd184483519aa77c43
+
+frozenInputs:
+  cohort: S13Y_CLEAN_100_SHARED_MATRICES_200_TRAJECTORIES
+  matrices: 100
+  candidates:
+    - S12F-CANDIDATE-02
+    - S12F-CANDIDATE-03
+  trajectoriesPerCandidate: 100
+  clock: C1_SELECTED_DAUGHTER_RETAINED
+  compositionPreprocessing:
+    closure: ADDITIVE_0.5
+    coordinates: FULL_CLR
+    droppedOriginalComponent: 100
+    inputShapeToBreakingGrn: CHANNELS_BY_SELECTED_MOLECULAR_TIME
+  frozenLabel: MOLECULAR_ADJACENT_INCOMING_H_GT_0.9
+  controls:
+    - EXACT_INCOMING_COSINE_H
+    - EUCLIDEAN_L2_CLOSED_COMPOSITION_CHANGE
+    - FROZEN_MOLECULAR_H090_LABEL
+  generateMatrices: false
+  generateTrajectories: false
+  generateLabels: false
+
+hypothesisCompletenessGate:
+  maximumHypotheses: 3
+  requiredFields:
+    - source_entrypoint
+    - input_object
+    - preprocessing
+    - lagged_mi
+    - partition
+    - reduction
+    - entropy_and_regularization
+    - atom_identity
+    - scalar_identity
+    - temporal_fit
+    - numerical_nonfinite_policy
+    - output_alignment
+    - analysis_estimands
+    - source_seed_wrapper
+  doNotInventMissingFields: true
+  doNotSelectByPaperProximity: true
+  stopAuditOnlyIfNoneComplete: true
+
+transferHypotheses:
+  - hypothesisId: H1_BGM_CURRENT_PHI_EMERGENCE_NANZERO_COMPLETED
+    sourceEntrypoint: phi.py::compute_integrated_info
+    inputObject: PAPER_CLR99_SELECTED_MOLECULAR_TRAJECTORY
+    preprocessing: CORRECTED_ZSCORE_GSR_AR1_RESIDUAL_CORRECTED_ZSCORE
+    laggedMi: SLOW_BIDIRECTIONAL_GAUSSIAN_MI_SUM_ALPHA1_NO_BONFERRONI_LAG1
+    partition: UNNORMALIZED_FIEDLER_STRICT_SIGN_WITH_1E-6_GRAPH_FLOOR
+    reduction: ARITHMETIC_MEAN_WITHIN_PARTITION
+    entropyAndRegularization: GAUSSIAN_UNREGULARIZED_CPU_FLOAT64
+    atomIdentity: SYNERGY_PLUS_TWO_DOWNWARD_CAUSATION_ATOMS
+    scalarIdentity: EMERGENCE
+    temporalFit: COMPLETED_TRAJECTORY_RETROSPECTIVE
+    numericalNonfinitePolicy: NANZERO_AT_SYNERGY_AND_CAUSATION_OUTPUTS
+    outputAlignment: LOCAL_INDEX_PLUS_2_TO_SELECTED_CLOCK
+    analysisEstimands: FROZEN_S15_LEVEL_CHANGE_AND_STATE_COMPARISONS
+    sourceSeedWrapper: DOMAIN_SEPARATED_NUMPY_GLOBAL_STATE_FOR_IMPLICIT_FIEDLER_INITIALIZATION
+  - hypothesisId: H2_BGM_OPTIMA_EMERGENCE_RAW_COMPLETED
+    sourceEntrypoint: optima.py::preprocess_data+information.py::compute_circuit_info
+    inputObject: PAPER_CLR99_SELECTED_MOLECULAR_TRAJECTORY
+    preprocessing: CORRECTED_ZSCORE_GSR_AR1_RESIDUAL_CORRECTED_ZSCORE
+    laggedMi: SLOW_BIDIRECTIONAL_GAUSSIAN_MI_SUM_ALPHA1_NO_BONFERRONI_LAG1
+    partition: UNNORMALIZED_FIEDLER_STRICT_SIGN_WITH_1E-6_GRAPH_FLOOR
+    reduction: ARITHMETIC_MEAN_WITHIN_PARTITION
+    entropyAndRegularization: GAUSSIAN_UNREGULARIZED_CPU_FLOAT64
+    atomIdentity: SYNERGY_PLUS_TWO_DOWNWARD_CAUSATION_ATOMS
+    scalarIdentity: EMERGENCE
+    temporalFit: COMPLETED_TRAJECTORY_RETROSPECTIVE
+    numericalNonfinitePolicy: RAW_SOURCE_VALUES_STATUS_BEARING_NONFINITE
+    outputAlignment: LOCAL_INDEX_PLUS_2_TO_SELECTED_CLOCK
+    analysisEstimands: FROZEN_S15_LEVEL_CHANGE_AND_STATE_COMPARISONS
+    sourceSeedWrapper: DOMAIN_SEPARATED_NUMPY_GLOBAL_STATE_FOR_IMPLICIT_FIEDLER_INITIALIZATION
+  - hypothesisId: H3_BGM_INFORMATION_INTEGRATED_RAW_COMPLETED
+    sourceEntrypoint: information.py::compute_circuit_info
+    inputObject: PAPER_CLR99_SELECTED_MOLECULAR_TRAJECTORY_AFTER_BGM_PREPROCESS
+    preprocessing: CORRECTED_ZSCORE_GSR_AR1_RESIDUAL_CORRECTED_ZSCORE
+    laggedMi: SLOW_BIDIRECTIONAL_GAUSSIAN_MI_SUM_ALPHA1_NO_BONFERRONI_LAG1
+    partition: UNNORMALIZED_FIEDLER_STRICT_SIGN_WITH_1E-6_GRAPH_FLOOR
+    reduction: ARITHMETIC_MEAN_WITHIN_PARTITION
+    entropyAndRegularization: GAUSSIAN_UNREGULARIZED_CPU_FLOAT64
+    atomIdentity: CORRECTED_LOCAL_PHI_R_ATOM_SUM
+    scalarIdentity: INTEGRATED
+    temporalFit: COMPLETED_TRAJECTORY_RETROSPECTIVE
+    numericalNonfinitePolicy: RAW_SOURCE_VALUES_STATUS_BEARING_NONFINITE
+    outputAlignment: LOCAL_INDEX_PLUS_2_TO_SELECTED_CLOCK
+    analysisEstimands: FROZEN_S15_LEVEL_CHANGE_AND_STATE_COMPARISONS
+    sourceSeedWrapper: DOMAIN_SEPARATED_NUMPY_GLOBAL_STATE_FOR_IMPLICIT_FIEDLER_INITIALIZATION
+
+nativeEvidenceGate:
+  repositoryTestsPresent: false
+  repositoryFixturesPresent: false
+  rawPhiInputsBundled: false
+  trackedInfoSchemaCompatibleWithCurrentScript: false
+  trackedInfoSchemaCompatibleWithOriginalScript: false
+  disposition: NO_NATIVE_REGENERABLE_PHI_EXAMPLE_SYNTHETIC_SOURCE_EQUIVALENCE_REQUIRED
+
+fixtures:
+  ids:
+    - COUPLED_GAUSSIAN
+    - COUPLED_AUTOREGRESSIVE
+    - CONSTANT_CHANNEL
+    - DUPLICATED_CHANNEL
+    - EXACT_REPLAY
+  exactToleranceAbsolute: 1.0e-12
+  exactToleranceRelative: 1.0e-12
+
+execution:
+  benchmarkUnits:
+    - [S12F-CANDIDATE-02, 0]
+    - [S12F-CANDIDATE-02, 1]
+    - [S12F-CANDIDATE-03, 0]
+    - [S12F-CANDIDATE-03, 1]
+  onePassSharedComputationAcrossRegisteredScalars: true
+  workers: 6
+  numericalLibraryThreadsPerWorker: 1
+  exactReplayAllUnits: true
+  candidatesSeparate: true
+  pooling: false
+  pastOnlyMode: false
+  pastOnlyReason: BREAKINGGRNMEMORIES_DOES_NOT_SPECIFY_PREFIX_REFITTING
+  bootstrapReplicates: 4096
+  bootstrapUnit: CATALYTIC_MATRIX
+  outcomeGuidedSelection: false
+
+classifications:
+  - EXPLORATORY_PAPER_MATCH
+  - EXPLORATORY_DIRECTIONAL_MATCH
+  - EXPLORATORY_NON_SUPPORT
+  - RETROSPECTIVE_ONLY_LEAD
+  - METHOD_DEPENDENT_LEAD
+  - POSSIBLE_STABILITY_PROXY
+  - POSSIBLE_PIPELINE_ARTIFACT
+  - NOT_PROMOTABLE
+  - AUTHOR_AMBIGUITY_UNRESOLVED
+  - LOOP_FAILED_CLOSED
+
+resources:
+  cpuCoresMaximum: 8
+  workers: 6
+  cpuHoursMaximum: 100
+  gpuHoursMaximum: 12
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 25
+  temporaryGiBMaximum: 75
+  reserveFraction: 0.10
+
+stopBoundary:
+  mandatoryHumanReviewAfterL17: true
+  activateL18: false
+  activateS20: false
+  activateE02: false
+  contactAuthors: false
+  interventions: false
+  prediction: false
+  generateReportBundle: false

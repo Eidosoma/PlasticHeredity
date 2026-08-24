@@ -1,0 +1,33 @@
+{
+  "all_passed": true,
+  "checks": {
+    "endpoint_positive": true,
+    "endpoint_requires_later_run": true,
+    "evoloop_published_fixture": true,
+    "evoloop_rule_count": true,
+    "evoloop_seed_placement": true,
+    "evoloop_separates_descendant": true,
+    "order_null_all_broken_zero": true,
+    "order_null_all_inherited_zero": true,
+    "protocell_exclusion": true,
+    "protocell_fixture_counts": true,
+    "protocell_fixture_digest": true,
+    "seed_domains_separate": true,
+    "similarity_detects_change": true,
+    "similarity_identity": true,
+    "similarity_rotation": true,
+    "source_firewall": true,
+    "threshold_is_strict": true
+  },
+  "evoloop_fixture_counts": {
+    "0": 60,
+    "1": 60,
+    "10": 65,
+    "100": 114,
+    "150": 137,
+    "50": 86
+  },
+  "format": "reviewer-cross-substrate-ca-v1",
+  "profile": "full",
+  "scientific_outcomes_disclosed": false
+}

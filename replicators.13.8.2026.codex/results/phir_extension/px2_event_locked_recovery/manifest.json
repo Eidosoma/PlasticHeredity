@@ -1,0 +1,15 @@
+{
+  "acquisition_matrices": 32,
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 753.6687578829998,
+  "format": "codex-ch5-phir-extension-px2-result-v1",
+  "gates": {
+    "event_locked_material_information": false,
+    "paired_eligibility_24": true,
+    "renewal_manipulation_validity": false,
+    "vector_response_all_cells": false
+  },
+  "intervention_matrices": 24,
+  "registration_id": "3ebaa78cf37dbe9d7d2cc6eadf12bad587a912da30ea44640cd63914d6b5f76b"
+}

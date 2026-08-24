@@ -1,0 +1,15 @@
+{
+  "files": {
+    "LAY_SUMMARY.md": "7bcd88e7131012378de2c9220a0d9b42919e715c0dcfbed174952cd03bceaf66",
+    "QUEUE.json": "1e57e5e713339dd632d16675944e586c226c1f18396d1b3c72cb330842e2fbd1",
+    "RAW_OUTCOMES.csv": "2e73d47d5991db7f2a296aabe057ed2eedee9604d319de6122f217537223d5e0",
+    "REGISTRATION.json": "7b94f9f77d15d747f4aef28c2137f260231dbbeeca1ab0522dd5c5cc5548da43",
+    "REPORT.md": "cb08917ef6afb1557f6958044e83c3bccf6873ae422236e6fca85e7ebf4d9da9",
+    "REPORTING_AMENDMENT.json": "250aeab305928a87771e4534634979810f1a2bc2f41282683d8018ef5779a9c4",
+    "RESULTS.json": "e0c5ab38ee676b50d49aeab2516ef89dde8fa627ebdea4763aecb904e10b4d62",
+    "STAGE_DECISION.json": "42a48fc66b388fd770bc2303d253681e23fa5eaf43f40149f8c1a5f0e0b691f6"
+  },
+  "reporting_amendment": "REPORTING_AMENDMENT.json",
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1",
+  "seal_digest": "0b19f7c6c3a7ad49f195d625bbf70f627585ce935f474e8c716fec76efaac85c"
+}

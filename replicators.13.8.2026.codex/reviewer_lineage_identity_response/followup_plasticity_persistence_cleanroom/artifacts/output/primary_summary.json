@@ -1,0 +1,828 @@
+{
+  "complete": true,
+  "donor_selection_id": "484a4759638cfde074a950e6c488e788d3c625bfab1c270b032887263b533049",
+  "factorial": {
+    "candidate_corner_parity": true,
+    "distributed_implementation_sensitivity": true,
+    "minimum_completion": 0.9166666666666666,
+    "minimum_twin_completion": 1.0,
+    "outcomes": {
+      "damage_exponent": {
+        "dominant_factors": [],
+        "factors": {
+          "daughter": {
+            "absolute_share": {
+              "lower": 0.09162988206173783,
+              "n_matrices": 12,
+              "point": 0.17739005404089792,
+              "upper": 0.29151132260058804
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.010203324749336573,
+              "n_matrices": 12,
+              "point": -0.003131152337045307,
+              "upper": 0.0038450378443034695
+            }
+          },
+          "exposure": {
+            "absolute_share": {
+              "lower": 0.09402859234523926,
+              "n_matrices": 12,
+              "point": 0.14135039109554168,
+              "upper": 0.19825676234117348
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.0026240646132360095,
+              "n_matrices": 12,
+              "point": 0.0046225810790306065,
+              "upper": 0.012326145557471775
+            }
+          },
+          "fission": {
+            "absolute_share": {
+              "lower": 0.11139076554130939,
+              "n_matrices": 12,
+              "point": 0.18484413806255443,
+              "upper": 0.2580562774777957
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.016927896741468926,
+              "n_matrices": 12,
+              "point": -0.01225606192495328,
+              "upper": -0.007315474800472287
+            }
+          },
+          "overshoot": {
+            "absolute_share": {
+              "lower": 0.368123054234938,
+              "n_matrices": 12,
+              "point": 0.496415416801006,
+              "upper": 0.622034292032347
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.043641227806558144,
+              "n_matrices": 12,
+              "point": -0.03403874934362273,
+              "upper": -0.024005694116313467
+            }
+          }
+        }
+      },
+      "f12_rate": {
+        "dominant_factors": [],
+        "factors": {
+          "daughter": {
+            "absolute_share": {
+              "lower": 0.13547898862408883,
+              "n_matrices": 12,
+              "point": 0.23142647333221525,
+              "upper": 0.33588758257220896
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.011253720238095241,
+              "n_matrices": 12,
+              "point": -0.0013728555395222163,
+              "upper": 0.008911661255411242
+            }
+          },
+          "exposure": {
+            "absolute_share": {
+              "lower": 0.11493438785679731,
+              "n_matrices": 12,
+              "point": 0.1566718479811577,
+              "upper": 0.20373680762700472
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": false,
+            "shapley": {
+              "lower": -0.006183799803591481,
+              "n_matrices": 12,
+              "point": 0.001658449575116239,
+              "upper": 0.010071573873657199
+            }
+          },
+          "fission": {
+            "absolute_share": {
+              "lower": 0.22547565312124218,
+              "n_matrices": 12,
+              "point": 0.3203806658956225,
+              "upper": 0.42339029693905356
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": 0.002542162698412695,
+              "n_matrices": 12,
+              "point": 0.017145662978996303,
+              "upper": 0.03278475478996311
+            }
+          },
+          "overshoot": {
+            "absolute_share": {
+              "lower": 0.18104921256361706,
+              "n_matrices": 12,
+              "point": 0.29152101279100456,
+              "upper": 0.39886806521205836
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": 0.01182396885521887,
+              "n_matrices": 12,
+              "point": 0.022491782908449578,
+              "upper": 0.034443204365079354
+            }
+          }
+        }
+      },
+      "strict8_rate": {
+        "dominant_factors": [],
+        "factors": {
+          "daughter": {
+            "absolute_share": {
+              "lower": 0.16727430555555556,
+              "n_matrices": 12,
+              "point": 0.2252314814814815,
+              "upper": 0.28521825396825395
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.007111354116562451,
+              "n_matrices": 12,
+              "point": -0.0016960277376944055,
+              "upper": 0.0029909085898669214
+            }
+          },
+          "exposure": {
+            "absolute_share": {
+              "lower": 0.16165261243386247,
+              "n_matrices": 12,
+              "point": 0.24639550264550267,
+              "upper": 0.32956349206349206
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.01025132275132275,
+              "n_matrices": 12,
+              "point": -0.0052784792368125695,
+              "upper": -0.0007236927809844463
+            }
+          },
+          "fission": {
+            "absolute_share": {
+              "lower": 0.1378841066341067,
+              "n_matrices": 12,
+              "point": 0.21305199430199429,
+              "upper": 0.30546684218559217
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": false,
+            "shapley": {
+              "lower": -0.004680046997755329,
+              "n_matrices": 12,
+              "point": -0.0004835056918390257,
+              "upper": 0.0031130376182459505
+            }
+          },
+          "overshoot": {
+            "absolute_share": {
+              "lower": 0.23249421296296297,
+              "n_matrices": 12,
+              "point": 0.3153210215710216,
+              "upper": 0.3963293650793651
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.003288715528298861,
+              "n_matrices": 12,
+              "point": 0.002106882315215649,
+              "upper": 0.007685047398589067
+            }
+          }
+        }
+      },
+      "terminal_cross_similarity": {
+        "dominant_factors": [],
+        "factors": {
+          "daughter": {
+            "absolute_share": {
+              "lower": 0.10958805162818196,
+              "n_matrices": 12,
+              "point": 0.17443803443895267,
+              "upper": 0.2390083944287395
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": 0.0007928795210980376,
+              "n_matrices": 12,
+              "point": 0.003506771969517878,
+              "upper": 0.006431975723907363
+            }
+          },
+          "exposure": {
+            "absolute_share": {
+              "lower": 0.2331824479530649,
+              "n_matrices": 12,
+              "point": 0.303136835168264,
+              "upper": 0.37828271898447224
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": false,
+            "shapley": {
+              "lower": -0.005189257243963993,
+              "n_matrices": 12,
+              "point": 7.877384758103788e-05,
+              "upper": 0.005235534892407261
+            }
+          },
+          "fission": {
+            "absolute_share": {
+              "lower": 0.22795371446736512,
+              "n_matrices": 12,
+              "point": 0.3008960077468818,
+              "upper": 0.37263178976195704
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": true,
+            "shapley": {
+              "lower": -0.008882031920567518,
+              "n_matrices": 12,
+              "point": -0.0026317440092639565,
+              "upper": 0.003608913636771992
+            }
+          },
+          "overshoot": {
+            "absolute_share": {
+              "lower": 0.15656024901505458,
+              "n_matrices": 12,
+              "point": 0.2215291226459015,
+              "upper": 0.29190480754464465
+            },
+            "dominant": false,
+            "replicate_half_direction_agreement": false,
+            "shapley": {
+              "lower": -0.012640434372594893,
+              "n_matrices": 12,
+              "point": -0.004251351631296963,
+              "upper": 0.0019776916705668483
+            }
+          }
+        }
+      }
+    }
+  },
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "identity": {
+    "candidates": {
+      "02": {
+        "anchors": {
+          "b1p0_l0p5": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.02719907407407407,
+              "n_matrices": 72,
+              "point": 0.06626157407407408,
+              "upper": 0.11603009259259262
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.33865017361111116,
+              "n_matrices": 72,
+              "point": 0.5980902777777778,
+              "upper": 0.9331958912037036
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.004340277777777777,
+              "n_matrices": 72,
+              "point": 0.013888888888888888,
+              "upper": 0.024884259259259255
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.36006221064814814,
+              "n_matrices": 72,
+              "point": 0.6015625,
+              "upper": 0.8833550347222223
+            },
+            "permuted_capture_f16": {
+              "lower": 0.013020833333333334,
+              "n_matrices": 72,
+              "point": 0.04369212962962962,
+              "upper": 0.08304398148148148
+            },
+            "permuted_capture_f32": {
+              "lower": 0.025173611111111112,
+              "n_matrices": 72,
+              "point": 0.06481481481481481,
+              "upper": 0.11216001157407407
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.017623126126044882,
+              "n_matrices": 72,
+              "point": 0.03600913541056645,
+              "upper": 0.0570372142803605
+            },
+            "same_parent_f8": {
+              "lower": 0.49130037697054224,
+              "n_matrices": 72,
+              "point": 0.5242542974660352,
+              "upper": 0.5604178540970106
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          },
+          "b1p0_l1p0": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.020254629629629633,
+              "n_matrices": 72,
+              "point": 0.055266203703703706,
+              "upper": 0.09837962962962964
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.162037037037037,
+              "n_matrices": 72,
+              "point": 0.32118055555555547,
+              "upper": 0.5400752314814813
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.0075231481481481495,
+              "n_matrices": 72,
+              "point": 0.019965277777777776,
+              "upper": 0.03356481481481482
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.3556134259259258,
+              "n_matrices": 72,
+              "point": 0.6333912037037037,
+              "upper": 0.9875578703703702
+            },
+            "permuted_capture_f16": {
+              "lower": 0.005787037037037037,
+              "n_matrices": 72,
+              "point": 0.028067129629629626,
+              "upper": 0.0642361111111111
+            },
+            "permuted_capture_f32": {
+              "lower": 0.016782407407407406,
+              "n_matrices": 72,
+              "point": 0.04687499999999999,
+              "upper": 0.08564814814814815
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.014169835082920272,
+              "n_matrices": 72,
+              "point": 0.02997296143564225,
+              "upper": 0.04736764871541667
+            },
+            "same_parent_f8": {
+              "lower": 0.5129876080377639,
+              "n_matrices": 72,
+              "point": 0.548477655960637,
+              "upper": 0.584624693614533
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          },
+          "b2p0_l2p0": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.0008680555555555555,
+              "n_matrices": 72,
+              "point": 0.018518518518518517,
+              "upper": 0.04850260416666666
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.20583767361111108,
+              "n_matrices": 72,
+              "point": 0.285011574074074,
+              "upper": 0.36371527777777773
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.0,
+              "n_matrices": 72,
+              "point": 0.005497685185185185,
+              "upper": 0.015335648148148147
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.2505787037037037,
+              "n_matrices": 72,
+              "point": 0.3689236111111111,
+              "upper": 0.5386646412037036
+            },
+            "permuted_capture_f16": {
+              "lower": 0.0,
+              "n_matrices": 72,
+              "point": 0.005208333333333333,
+              "upper": 0.013020833333333334
+            },
+            "permuted_capture_f32": {
+              "lower": 0.0,
+              "n_matrices": 72,
+              "point": 0.01417824074074074,
+              "upper": 0.03819444444444445
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.011562880881828974,
+              "n_matrices": 72,
+              "point": 0.02324953619686753,
+              "upper": 0.036451336827747406
+            },
+            "same_parent_f8": {
+              "lower": 0.5046728550294879,
+              "n_matrices": 72,
+              "point": 0.5355618821213243,
+              "upper": 0.5667341306269285
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          },
+          "b4p0_l2p0": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.006076388888888889,
+              "n_matrices": 72,
+              "point": 0.026041666666666668,
+              "upper": 0.05150462962962962
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.1996527777777778,
+              "n_matrices": 72,
+              "point": 0.2728587962962963,
+              "upper": 0.34595630787037035
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.0017361111111111108,
+              "n_matrices": 72,
+              "point": 0.008391203703703705,
+              "upper": 0.017361111111111112
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.27615017361111116,
+              "n_matrices": 72,
+              "point": 0.4024884259259259,
+              "upper": 0.550636574074074
+            },
+            "permuted_capture_f16": {
+              "lower": 0.0005787037037037037,
+              "n_matrices": 72,
+              "point": 0.005208333333333332,
+              "upper": 0.011574074074074073
+            },
+            "permuted_capture_f32": {
+              "lower": 0.003761574074074074,
+              "n_matrices": 72,
+              "point": 0.015625,
+              "upper": 0.030671296296296294
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.008008460712411621,
+              "n_matrices": 72,
+              "point": 0.02166320451250519,
+              "upper": 0.03844055804890164
+            },
+            "same_parent_f8": {
+              "lower": 0.5190028478463918,
+              "n_matrices": 72,
+              "point": 0.5508208853208628,
+              "upper": 0.58580460963994
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          }
+        },
+        "high_f12_lineage_identity": false
+      },
+      "03": {
+        "anchors": {
+          "b1p0_l0p5": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.03946035879629632,
+              "n_matrices": 72,
+              "point": 0.08478009259259259,
+              "upper": 0.1362847222222222
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.38100405092592593,
+              "n_matrices": 72,
+              "point": 0.6333912037037037,
+              "upper": 0.9354745370370371
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.007523148148148148,
+              "n_matrices": 72,
+              "point": 0.021701388888888885,
+              "upper": 0.03790509259259259
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.5654658564814816,
+              "n_matrices": 72,
+              "point": 0.8926504629629631,
+              "upper": 1.2746672453703707
+            },
+            "permuted_capture_f16": {
+              "lower": 0.02025462962962963,
+              "n_matrices": 72,
+              "point": 0.049479166666666664,
+              "upper": 0.08535879629629631
+            },
+            "permuted_capture_f32": {
+              "lower": 0.03338396990740743,
+              "n_matrices": 72,
+              "point": 0.07667824074074076,
+              "upper": 0.1274956597222222
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.00991398727310877,
+              "n_matrices": 72,
+              "point": 0.03069035274847139,
+              "upper": 0.055744295872958774
+            },
+            "same_parent_f8": {
+              "lower": 0.5168041660884941,
+              "n_matrices": 72,
+              "point": 0.5573656870542946,
+              "upper": 0.6022093977468937
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          },
+          "b1p0_l1p0": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.017758969907407433,
+              "n_matrices": 72,
+              "point": 0.044560185185185196,
+              "upper": 0.0769675925925926
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.29021990740740744,
+              "n_matrices": 72,
+              "point": 0.4253472222222222,
+              "upper": 0.5864076967592593
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.004050925925925927,
+              "n_matrices": 72,
+              "point": 0.01244212962962963,
+              "upper": 0.02199074074074074
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.34964554398148157,
+              "n_matrices": 72,
+              "point": 0.5182291666666666,
+              "upper": 0.7388599537037037
+            },
+            "permuted_capture_f16": {
+              "lower": 0.006655092592592593,
+              "n_matrices": 72,
+              "point": 0.026041666666666664,
+              "upper": 0.05168547453703703
+            },
+            "permuted_capture_f32": {
+              "lower": 0.013020833333333334,
+              "n_matrices": 72,
+              "point": 0.03761574074074074,
+              "upper": 0.06770833333333333
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.02276446907105881,
+              "n_matrices": 72,
+              "point": 0.03802540819839226,
+              "upper": 0.05559592267827169
+            },
+            "same_parent_f8": {
+              "lower": 0.5082288872267302,
+              "n_matrices": 72,
+              "point": 0.5429474848376602,
+              "upper": 0.5799405565488397
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          },
+          "b2p0_l2p0": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.0031828703703703706,
+              "n_matrices": 72,
+              "point": 0.014467592592592594,
+              "upper": 0.030960648148148154
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.20930989583333337,
+              "n_matrices": 72,
+              "point": 0.2942708333333333,
+              "upper": 0.37865306712962965
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.0008680555555555555,
+              "n_matrices": 72,
+              "point": 0.005208333333333333,
+              "upper": 0.01099537037037037
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.2955367476851852,
+              "n_matrices": 72,
+              "point": 0.3802083333333333,
+              "upper": 0.46932870370370366
+            },
+            "permuted_capture_f16": {
+              "lower": 0.00028935185185185184,
+              "n_matrices": 72,
+              "point": 0.0023148148148148147,
+              "upper": 0.005208333333333333
+            },
+            "permuted_capture_f32": {
+              "lower": 0.00318287037037037,
+              "n_matrices": 72,
+              "point": 0.01099537037037037,
+              "upper": 0.02141203703703704
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.0024818365001639735,
+              "n_matrices": 72,
+              "point": 0.014102535752224596,
+              "upper": 0.026558420161334473
+            },
+            "same_parent_f8": {
+              "lower": 0.5013487008619872,
+              "n_matrices": 72,
+              "point": 0.5328304110153219,
+              "upper": 0.5658120208067997
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          },
+          "b4p0_l2p0": {
+            "lineage_identity_pass": false,
+            "native_capture_f32": {
+              "lower": 0.002604166666666666,
+              "n_matrices": 72,
+              "point": 0.013310185185185184,
+              "upper": 0.027488425925925923
+            },
+            "native_minus_natural_residence": {
+              "lower": 0.19212962962962965,
+              "n_matrices": 72,
+              "point": 0.2508680555555556,
+              "upper": 0.31047453703703703
+            },
+            "native_minus_permuted_capture_f16_90": {
+              "lower": 0.000289351851851852,
+              "n_matrices": 72,
+              "point": 0.002314814814814815,
+              "upper": 0.004629629629629632
+            },
+            "native_minus_permuted_residence": {
+              "lower": 0.2884837962962963,
+              "n_matrices": 72,
+              "point": 0.35966435185185186,
+              "upper": 0.4337384259259259
+            },
+            "permuted_capture_f16": {
+              "lower": 0.0,
+              "n_matrices": 72,
+              "point": 0.004340277777777778,
+              "upper": 0.010416666666666664
+            },
+            "permuted_capture_f32": {
+              "lower": 0.001736111111111111,
+              "n_matrices": 72,
+              "point": 0.00925925925925926,
+              "upper": 0.019097222222222224
+            },
+            "same_minus_cross_f8": {
+              "lower": 0.010360151758458433,
+              "n_matrices": 72,
+              "point": 0.020279032365084885,
+              "upper": 0.031137323013917553
+            },
+            "same_parent_f8": {
+              "lower": 0.5047112583062393,
+              "n_matrices": 72,
+              "point": 0.5352507500552437,
+              "upper": 0.5659165313500855
+            },
+            "shared_destination_pass": false,
+            "transient_churn_pass": true
+          }
+        },
+        "high_f12_lineage_identity": false
+      }
+    },
+    "high_f12_lineage_identity_both": false
+  },
+  "protocol_id": "c231093da83fad91eda65348b1cd2dbd4a846b97e62ae79f2b48ad307ec596a8",
+  "reporting_boundary": "next-preprint exploratory follow-up; not current-preprint evidence or independent GARD/Wagner replication",
+  "runtime_selection_id": "4611c3bc551805bd6fe72466d643d59218098721c3c1e41075e15fa8b8f3e95c",
+  "surface": {
+    "candidates": {
+      "02": {
+        "break_supply_component": {
+          "lower": 0.025009321543292645,
+          "n_matrices": 72,
+          "point": 0.03626794161834976,
+          "upper": 0.0477182071495383
+        },
+        "decomposition_total": {
+          "lower": 0.011827256944444444,
+          "n_matrices": 72,
+          "point": 0.027235243055555556,
+          "upper": 0.04275173611111111
+        },
+        "f12_strict8_spearman": {
+          "lower": -0.11671504785388155,
+          "n_matrices": 65,
+          "point": -0.03727078234602189,
+          "upper": 0.043310703885846964
+        },
+        "high_minus_flanks_f12": {
+          "lower": 0.011827256944444444,
+          "n_matrices": 72,
+          "point": 0.027235243055555556,
+          "upper": 0.042317708333333336
+        },
+        "high_minus_flanks_strict8": {
+          "lower": -0.06267632378472222,
+          "n_matrices": 72,
+          "point": -0.03993055555555555,
+          "upper": -0.022393120659722224
+        },
+        "minimum_completion": 1.0,
+        "multiform_matrix_fraction": {
+          "b1p0_l0p5": 0.0,
+          "b1p0_l1p0": 0.0,
+          "b2p0_l2p0": 0.0,
+          "b4p0_l2p0": 0.0
+        },
+        "recovery_propensity_component": {
+          "lower": -0.019601832259149465,
+          "n_matrices": 72,
+          "point": -0.009032698562794208,
+          "upper": 0.001578438632907659
+        },
+        "tradeoff_pass": false
+      },
+      "03": {
+        "break_supply_component": {
+          "lower": 0.011479415749474262,
+          "n_matrices": 72,
+          "point": 0.02418030829257491,
+          "upper": 0.03796294470903075
+        },
+        "decomposition_total": {
+          "lower": -0.001953125,
+          "n_matrices": 72,
+          "point": 0.015950520833333332,
+          "upper": 0.033637152777777776
+        },
+        "f12_strict8_spearman": {
+          "lower": -0.21387682313210113,
+          "n_matrices": 67,
+          "point": -0.12583193300872209,
+          "upper": -0.03437972574212966
+        },
+        "high_minus_flanks_f12": {
+          "lower": -0.0025634765624999905,
+          "n_matrices": 72,
+          "point": 0.015950520833333332,
+          "upper": 0.03342013888888889
+        },
+        "high_minus_flanks_strict8": {
+          "lower": -0.07476128472222222,
+          "n_matrices": 72,
+          "point": -0.051432291666666664,
+          "upper": -0.032158745659722224
+        },
+        "minimum_completion": 1.0,
+        "multiform_matrix_fraction": {
+          "b1p0_l0p5": 0.0,
+          "b1p0_l1p0": 0.0,
+          "b2p0_l2p0": 0.0,
+          "b4p0_l2p0": 0.0
+        },
+        "recovery_propensity_component": {
+          "lower": -0.01903786349955363,
+          "n_matrices": 72,
+          "point": -0.008229787459241583,
+          "upper": 0.0021659299368225974
+        },
+        "tradeoff_pass": false
+      }
+    },
+    "tradeoff_pass_both": false
+  }
+}

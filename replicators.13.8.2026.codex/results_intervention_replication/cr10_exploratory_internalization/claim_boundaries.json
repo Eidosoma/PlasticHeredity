@@ -1,0 +1,21 @@
+{
+  "cannot_rescue": [
+    "CR6",
+    "CR8",
+    "CR9"
+  ],
+  "format": "codex-intervention-cr10-claim-boundaries-v1",
+  "prohibited": [
+    "autonomous agency or installed compotype",
+    "biological memory or error correction",
+    "life or universal origin-of-life mechanism",
+    "real prebiotic chemistry",
+    "strict-eight control",
+    "Phi or PhiID"
+  ],
+  "supported_only_as_exploratory": [
+    "compression of externally demonstrated control into local rules",
+    "sparse-trigger efficacy if supported in both candidates",
+    "one retention-only model-extension result"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "cells": {
+    "02_r0": {
+      "functional_flux": {
+        "equivalence_margin": 0.03321441162874219,
+        "noop_matrix_sd": 0.16607205814371093
+      },
+      "material": {
+        "equivalence_margin": 2.6827135041888788,
+        "noop_matrix_sd": 13.413567520944394
+      }
+    },
+    "02_r1": {
+      "functional_flux": {
+        "equivalence_margin": 0.02662259460838915,
+        "noop_matrix_sd": 0.13311297304194575
+      },
+      "material": {
+        "equivalence_margin": 2.77408621217202,
+        "noop_matrix_sd": 13.8704310608601
+      }
+    },
+    "03_r0": {
+      "functional_flux": {
+        "equivalence_margin": 0.027650092297438613,
+        "noop_matrix_sd": 0.13825046148719305
+      },
+      "material": {
+        "equivalence_margin": 3.303539192139139,
+        "noop_matrix_sd": 16.517695960695693
+      }
+    },
+    "03_r1": {
+      "functional_flux": {
+        "equivalence_margin": 0.029969213127363115,
+        "noop_matrix_sd": 0.14984606563681557
+      },
+      "material": {
+        "equivalence_margin": 2.5168137634523333,
+        "noop_matrix_sd": 12.584068817261667
+      }
+    }
+  },
+  "format": "codex-ch5-phir-extension-px1-calibration-v1",
+  "intervention_contrasts_inspected": false,
+  "matrices": 24,
+  "maximum_material_archive_absolute_error": 1.096179857995594e-08,
+  "record_digest_mismatches": 0,
+  "source": "exact replay of archived R0 FRESH__NOOP lineages only"
+}

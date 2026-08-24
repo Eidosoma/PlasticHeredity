@@ -1,0 +1,617 @@
+schema: eidosoma.e01.s10_information_dynamics_preregistration.v1
+researchStepId: S10
+experimentId: E01
+preregistrationVersion: E01-S10-information-dynamics-preregistration-v1.0.0
+createdAtUtc: 2026-08-01T00:00:00Z
+status: FROZEN_BEFORE_ANY_CANONICAL_S10_BENCHMARK_OUTCOME
+
+frozenQuestion: >-
+  Do the pinned phyid reference implementation and explicitly named OmegaID
+  acceleration branches reproduce preregistered theoretical, qualitative, and
+  invariance behavior on synthetic information-dynamic systems, while failing
+  closed on unsupported inputs and preserving every author-method ambiguity?
+
+scopeBoundary:
+  executeOnly: S10
+  nextStepForbidden: S11
+  evidenceClass: VALIDATION_ONLY_RECONSTRUCTION_NOT_AUTHOR_METHOD_RECOVERY
+  authorCodeIdentity: UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND
+  authorPhiidMapping: UNRESOLVED::E01-A043
+  authorRedundancyFunction: UNRESOLVED::E01-A044
+  authorEstimatorFamily: UNRESOLVED::E01-A045
+  authorMibObjective: UNRESOLVED::E01-A054
+  authorMibNormalization: UNRESOLVED::E01-A055
+  authorPartitionSearch: UNRESOLVED::E01-A056
+  authorMatlabRngIdentity: UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER
+  paperPrimarySelectionForbidden: true
+  noSilentDefaults: true
+  paperEquationBoundary: >-
+    The paper's printed scalar is I((X_t,Y_t);(X_t+1,Y_t+1)) minus
+    I(X_t;(X_t+1,Y_t+1)) minus I(Y_t;(X_t+1,Y_t+1)). Algebra over the pinned
+    phyid lattice makes this the signed aggregate str+stx+sty+sts-rtr-rtx-rty-rts.
+    This is an equation-derived aggregate, not a source-named phyid atom and not
+    evidence of the unavailable authors' implementation mapping.
+
+frozenInputs:
+  - inputId: agentsInstructions
+    path: /workspace/AGENTS.md
+    sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c
+  - inputId: fullPlan
+    path: /workspace/FULL_PLAN.md
+    sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee
+  - inputId: preS10ResearchPlan
+    path: /workspace/RESEARCH_PLAN.md
+    sha256: 75f6f09f627b4577ff604cd778ac5b1c04dff44f3d2f838b050592c3df4bdc53
+  - inputId: attachmentManifest
+    path: /workspace/input-attachments/MANIFEST.json
+    sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e
+  - inputId: attachmentSidecar
+    path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md
+    sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c
+  - inputId: suppliedPaperExtraction
+    path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md
+    sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a
+  - inputId: officialPaperPdf
+    path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+    sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+  - inputId: s01Report
+    path: /artifacts/research_steps/S01/research_step_full_results.md
+    sha256: 4e7025fcb2aaa63eb9fad6b0760e5051b857245cfc4fd4c8840d628e44d72a97
+  - inputId: s02Report
+    path: /artifacts/research_steps/S02/research_step_full_results.md
+    sha256: 9bcd86ef86c371ba57e991a3bc8295cd92ef2fe05b9edf53327814b0c52f2cfa
+  - inputId: s03Report
+    path: /artifacts/research_steps/S03/research_step_full_results.md
+    sha256: 7ef7837bf0b2b65fd011ec5b530b90e07089df637050155b81fc08d3c99992ee
+  - inputId: s04Report
+    path: /artifacts/research_steps/S04/research_step_full_results.md
+    sha256: 62a1f862e17579769aca3939b69eba3ff725078d593ece6b29ccb58a29b8c59d
+  - inputId: s05Report
+    path: /artifacts/research_steps/S05/research_step_full_results.md
+    sha256: e83620da619d05687d218186cd2d2789ce26bbac6234de71990948915ea95196
+  - inputId: s06Report
+    path: /artifacts/research_steps/S06/research_step_full_results.md
+    sha256: 206482bce8e8a47d5050e83c4a99370c2bedf7dd4244a066078f9ad5c3233595
+  - inputId: s07Report
+    path: /artifacts/research_steps/S07/research_step_full_results.md
+    sha256: 9262b881f1dc15392d1d674e3ac15222dc6dfef69d82ca6aeb74f9fe90fd876d
+  - inputId: s08Report
+    path: /artifacts/research_steps/S08/research_step_full_results.md
+    sha256: aed1335f670ca695634aed6023247a6b75c5873a96aa0ff3be8bb5fb22cddbb6
+  - inputId: s09Report
+    path: /artifacts/research_steps/S09/research_step_full_results.md
+    sha256: 6d78777fd4a4fcecbfc8e0844554b8aa3398c7347464958787d385bfd06aad1c
+  - inputId: specificationRegistry
+    path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml
+    sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891
+  - inputId: sourceManifest
+    path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml
+    sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5
+  - inputId: environmentReport
+    path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json
+    sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd
+  - inputId: precisionPolicy
+    path: /artifacts/E01_forensic_replication_bundle/provenance/precision_policy.yaml
+    sha256: a49b2f37629382264881bb390dd010b453f1959d792eee180dae6c6c425259e6
+  - inputId: seedContract
+    path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml
+    sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1
+  - inputId: preprocessingContract
+    path: /artifacts/E01_forensic_replication_bundle/preprocessing/compositional_transform_contract_v1.0.0.yaml
+    sha256: 7203d0d273f529b3953c45a2c6e1a64dbbd323aac00d72bb60b099ce93dd2679
+  - inputId: transformSpecifications
+    path: /artifacts/E01_forensic_replication_bundle/preprocessing/transform_specifications_v1.0.0.yaml
+    sha256: 658c4de8095f6dd2b0c98adced809955fd1ec0f482d4c4f21870925d076c8c86
+  - inputId: validTransformRegistry
+    path: /artifacts/E01_forensic_replication_bundle/preprocessing/valid_transform_specification_registry_v1.0.0.yaml
+    sha256: a09608fe117c23d398a386326a06acc3742e2285aa77d59ff3e3a43590147e56
+  - inputId: s09ValidationSummary
+    path: /artifacts/research_steps/S09/validation_summary.json
+    sha256: bb457ebd09d86e0237e7a52ef83e5fed596a69780d37a6a78b87d0c421cb803b
+  - inputId: s09RegistryPreservation
+    path: /artifacts/research_steps/S09/registry_preservation.json
+    sha256: 5983d8831d5a1b5fa1341929fae1cf0090229c3cdf4e1fd0ae5d459b26dad369
+
+pinnedSources:
+  phyid:
+    identity: PHYID-GITHUB-COMMIT-6c5f2e9-v1
+    repository: https://github.com/Imperial-MIND-lab/integrated-info-decomp
+    localPath: /cache/e01_s03/sources/phyid
+    commit: 6c5f2e9d33c985efbdf875d45cb5a2a6a5cdbf44
+    tree: fdfe5a21190062b9dda7c8831f72438d8ff5ea95
+    license: BSD-3-Clause
+    sourceFiles:
+      calculate.py: fe4a101e696bb298b3975bdc4fc3d96fc3faef268a45107be98b49956cac03d8
+      measures.py: 4f816026f40698863ef45768536c3c6f95c78b2641d9b907b494b01174b2d7a6
+      utils.py: 29c3f5192df4f8ddb6b97394d6688ab5a7b1240b4be448c8dabf90b74ac399c5
+      LICENSE: be936c9502566b895b46d3d25f404d73f9a9e983f1a20bd90809178057d3e013
+    matlabFixture:
+      path: /cache/e01_s03/sources/omegaid/temp_data/PhiID-test-simple-1.mat
+      sha256: 977806cbf913d803c29aceab697edf6c57c8e78188ccd5b13e1fecc4a9b32463
+  omegaid:
+    identity: OMEGAID-GITHUB-V0.2.5-7fcf1fa-v1
+    repository: https://github.com/Imperial-MIND-lab/OmegaID
+    localPath: /cache/e01_s03/sources/omegaid
+    version: 0.2.5
+    commit: 7fcf1fa8e288e0634f81423283d2b349ed88440e
+    tree: 33ab6f59592048e78a691ecffd9a3dff6d95e54d
+    license: BSD-3-Clause
+    sourceFiles:
+      decomposition.py: 718c4a51242452369b7c7c6f6b3dacdc959a18767e19c9579fc954c929a74d78
+      entropy.py: 55824fd0b926ece6231687534bf173c62e01ee4433f464723728290689efbc85
+      doublet_lattice.py: 699191143546a63eacee3fe6871c22d8446ef093bc614791a15ee91a1667bf12
+      backend.py: 9b67e3c7cfcdbc913873dd0b942ccbc7516b440dac7885377209120e939ad3ce
+      LICENSE: be936c9502566b895b46d3d25f404d73f9a9e983f1a20bd90809178057d3e013
+    implementationBoundary: >-
+      Its 2x2 path reproduces the phyid 16-atom lattice, including vector-valued
+      equal-width parts. Its more-than-2x2 doublet-lattice least-squares path is
+      an approximation, emits different atom identities, and does not use its
+      redundancy argument; that path is never silently substituted for PhiID.
+
+runtime:
+  python: 3.13.14
+  numpy: 2.4.6
+  scipy: 1.18.0
+  numba: 0.65.1
+  pyyaml: 6.0.3
+  referenceBackend: numpy_cpu_float64
+  acceleratedBackend: cupy_gpu_float64
+  cupy:
+    version: 13.6.0
+    wheel: /cache/e01_s10/wheelhouse/cupy_cuda12x-13.6.0-cp313-cp313-manylinux2014_x86_64.whl
+    wheelSha256: 52d9e7f83d920da7d81ec2e791c2c2c747fdaa1d7b811971b34865ce6371e98a
+    dependencyWheel: /cache/e01_s10/wheelhouse/fastrlock-0.8.3-cp313-cp313-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_28_x86_64.whl
+    dependencyWheelSha256: dbdea6deeccea1917c6017d353987231c4e46c93d5338ca3e66d6cd88fbce259
+  gpu:
+    index: 0
+    uuid: GPU-1f5bed19-d63f-be98-470c-f670e3d4aafd
+    model: NVIDIA L4
+    driver: 610.43.02
+    visibleDevicePolicy: CUDA_VISIBLE_DEVICES=0
+  precision:
+    dtype: float64
+    tf32: false
+    stochasticMixedPrecision: false
+    cpuGpuAbsoluteTolerance: 1.0e-10
+    cpuGpuRelativeTolerance: 1.0e-10
+    nonfinitePolicy: FAIL_CLOSED_AND_RETAIN_CASE
+  execution:
+    workerProcesses: 4
+    maximumWorkerProcesses: 8
+    numericalLibraryThreads: 1
+    environment:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+
+randomness:
+  rootSeedHex: '1010101010101010101010101010101010101010101010101010101010101010'
+  seedSchemaVersion: E01-seed-schema-v1.0.0
+  derivationAlgorithm: E01-SHA256-DOMAIN-SEPARATION-PCG64DXSM-v1
+  bitGenerator: PCG64DXSM
+  streamPurpose: estimator
+  couplingPolicy: trajectory_isolated
+  namespaceRule: >-
+    Each fixture, replicate, transformation, and shuffle receives its own complete
+    S06 seed identity. Only the estimator stream is consumed. No seed is claimed
+    to match MATLAB or the unavailable author code.
+
+atomCatalog:
+  catalogVersion: E01-S10-PhiID-atom-catalog-v1.0.0
+  nativeAtoms:
+    - {atomId: rtr, pastMode: redundant, futureMode: redundant}
+    - {atomId: rtx, pastMode: redundant, futureMode: unique_1}
+    - {atomId: rty, pastMode: redundant, futureMode: unique_2}
+    - {atomId: rts, pastMode: redundant, futureMode: synergistic}
+    - {atomId: xtr, pastMode: unique_1, futureMode: redundant}
+    - {atomId: xtx, pastMode: unique_1, futureMode: unique_1}
+    - {atomId: xty, pastMode: unique_1, futureMode: unique_2}
+    - {atomId: xts, pastMode: unique_1, futureMode: synergistic}
+    - {atomId: ytr, pastMode: unique_2, futureMode: redundant}
+    - {atomId: ytx, pastMode: unique_2, futureMode: unique_1}
+    - {atomId: yty, pastMode: unique_2, futureMode: unique_2}
+    - {atomId: yts, pastMode: unique_2, futureMode: synergistic}
+    - {atomId: str, pastMode: synergistic, futureMode: redundant}
+    - {atomId: stx, pastMode: synergistic, futureMode: unique_1}
+    - {atomId: sty, pastMode: synergistic, futureMode: unique_2}
+    - {atomId: sts, pastMode: synergistic, futureMode: synergistic}
+  aggregates:
+    - aggregateId: E01-S10-AGG-PAPER-EQUATION-v1.0.0
+      formula: str+stx+sty+sts-rtr-rtx-rty-rts
+      directFormula: I_xytab-I_xtab-I_ytab
+      evidenceClass: PAPER_EQUATION_DERIVED_NOT_SOURCE_NAMED_ATOM
+    - aggregateId: E01-S10-AGG-PAST-REDUNDANCY-v1.0.0
+      formula: rtr+rtx+rty+rts
+      evidenceClass: LATTICE_DIAGNOSTIC
+    - aggregateId: E01-S10-AGG-PAST-SYNERGY-v1.0.0
+      formula: str+stx+sty+sts
+      evidenceClass: LATTICE_DIAGNOSTIC
+    - aggregateId: E01-S10-AGG-TOTAL-MI-v1.0.0
+      formula: sum_all_16_atoms
+      directFormula: I_xytab
+      evidenceClass: LATTICE_CLOSURE_DIAGNOSTIC
+
+estimatorCatalog:
+  catalogVersion: E01-S10-estimator-catalog-v1.0.0
+  candidates:
+    - estimatorId: E01-S10-PHYID-GAUSSIAN-STRICT-v1.0.0
+      family: gaussian_local_entropy_sample_covariance
+      implementation: pinned_phyid
+      covariance: numpy_cov_ddof_1
+      scaling: divide_each_series_by_sample_sd_ddof_1_without_mean_subtraction
+      biasCorrection: none
+      regularization: none
+      singularPolicy: INELIGIBLE_STRICT_FAILURE
+      unitsNative: nats
+      role: CPU_REFERENCE
+    - estimatorId: E01-S10-PHYID-DISCRETE-BINARY-v1.0.0
+      family: empirical_binary_plugin
+      implementation: pinned_phyid
+      binarization: value_strictly_greater_than_own_sample_mean
+      biasCorrection: none
+      regularization: none
+      unitsNative: bits
+      unitsReported: nats_via_multiply_ln_2
+      role: CPU_REFERENCE_SYNTHETIC_BINARY_ONLY
+    - estimatorId: E01-S10-OMEGAID-2X2-GAUSSIAN-STRICT-GUARDED-v1.0.0
+      family: gaussian_local_entropy_sample_covariance
+      implementation: pinned_omegaid_2x2
+      precondition: strict_full_rank_gate_passes_so_svd_plus_1e6_fallback_is_not_entered
+      sourceFallback: SVD_singular_values_plus_1e-6
+      fallbackStatus: SEPARATE_DIAGNOSTIC_NOT_REFERENCE_EQUIVALENT
+      role: ACCELERATED_CANDIDATE_CPU_OR_GPU
+    - estimatorId: E01-S10-OMEGAID-2X2-DISCRETE-BINARY-v1.0.0
+      family: empirical_binary_plugin
+      implementation: pinned_omegaid_2x2
+      unitsNative: bits
+      unitsReported: nats_via_multiply_ln_2
+      role: ACCELERATED_CANDIDATE_CPU_OR_GPU
+    - estimatorId: E01-S10-GAUSSIAN-POPULATION-ORACLE-MMI-v1.0.0
+      family: analytic_log_determinant_mutual_information
+      implementation: independent_s10_benchmark_oracle
+      scope: population_mean_atoms_for_known_covariance_and_MMI_only
+      role: THEORY_ORACLE_NOT_ANALYSIS_ESTIMATOR
+    - estimatorId: E01-S10-DISCRETE-EXACT-PMF-ORACLE-v1.0.0
+      family: exact_enumerated_probability_mass
+      implementation: independent_s10_benchmark_oracle
+      scope: population_mean_atoms_for_known_binary_joint_pmf_MMI_and_CCS
+      role: THEORY_ORACLE_NOT_ANALYSIS_ESTIMATOR
+    - estimatorId: UNRESOLVED::E01-A045::KNN
+      family: knn
+      status: NOT_IMPLEMENTED_NOT_VALIDATED
+    - estimatorId: UNRESOLVED::E01-A046::SHRINKAGE
+      family: gaussian_shrinkage
+      status: NOT_IMPLEMENTED_NOT_VALIDATED
+  redundancyBranches:
+    - redundancyId: E01-S10-REDUNDANCY-MMI-v1.0.0
+      sourceName: MMI
+      status: VALIDATION_CANDIDATE_NOT_AUTHOR_DEFAULT
+    - redundancyId: E01-S10-REDUNDANCY-CCS-v1.0.0
+      sourceName: CCS
+      status: EXPERIMENTAL_VALIDATION_CANDIDATE_NOT_AUTHOR_DEFAULT
+      caveat: >-
+        The pinned source implements this path while its docstrings say “To be
+        implemented” and its measure-level tests are marked expected failure.
+
+sampleGate:
+  specificationId: E01-S10-SAMPLE-GATE-STRICT-v1.0.0
+  effectiveSamples: raw_length_minus_tau
+  minimumEffectiveSamples: 512
+  minimumSamplesPerJointDimension: 20
+  gaussianRequirements:
+    - every_input_and_derived_value_finite
+    - every_scalar_series_sample_sd_ddof_1_strictly_positive
+    - complete_four_vector_sample_covariance_positive_definite
+    - numerical_rank_equals_joint_dimension
+    - condition_number_at_most_1e12
+  rankTolerance: max(n_samples,joint_dimension)*binary64_epsilon*largest_singular_value
+  discreteRequirements:
+    - every_input_is_finite
+    - both_binarized_states_observed_in_each_scalar_series
+    - no_row_deletion
+  failurePolicy: RETAIN_INELIGIBLE_CASE_WITH_MACHINE_READABLE_REASON
+  sourceBoundary: VALIDATION_BRANCH_DOES_NOT_RESOLVE_E01-A058_AS_AUTHOR_POLICY
+
+syntheticDesign:
+  rawSampleCount: 32769
+  effectiveSampleCountAtTau1: 32768
+  primaryReplicates: 16
+  crossBackendReplicates: 4
+  mibReplicates: 8
+  tau: 1
+  systems:
+    - systemId: E01-S10-SYS-INDEPENDENT-GAUSSIAN-v1.0.0
+      family: independent_gaussian_white_noise
+      equations: [x_t=epsilon_x_t, y_t=epsilon_y_t]
+      innovations: independent_standard_normal
+      expectedBehavior:
+        totalLaggedMiNats: 0.0
+        allPopulationAtomMeansNats: 0.0
+        paperEquationAggregateNats: 0.0
+      evaluatedRedundancies: [MMI, CCS]
+      estimatorKinds: [gaussian]
+    - systemId: E01-S10-SYS-REDUNDANT-DISCRETE-v1.0.0
+      family: redundant_binary_markov_copies
+      equations: [z_t_plus_1=z_t_xor_flip_t, x_t=z_t, y_t=z_t]
+      flipProbability: 0.1
+      stationaryInitialProbabilityOne: 0.5
+      theoreticalLaggedMiNats: ln(2)+0.9*ln(0.9)+0.1*ln(0.1)
+      expectedBehavior:
+        dominantAtom: rtr
+        otherAtomMeansNats: 0.0
+        paperEquationAggregate: negative_theoretical_lagged_mi
+      evaluatedRedundancies: [MMI, CCS]
+      estimatorKinds: [discrete]
+      strictGaussianStatus: INELIGIBLE_EXACT_COPY_SINGULAR
+    - systemId: E01-S10-SYS-REDUNDANT-GAUSSIAN-v1.0.0
+      family: noisy_redundant_gaussian_copies
+      equations:
+        - z_t_plus_1=0.9*z_t+epsilon_z_t
+        - x_t=z_t+0.35*epsilon_x_t
+        - y_t=z_t+0.35*epsilon_y_t
+      innovations: mutually_independent_standard_normal
+      expectedBehavior:
+        totalLaggedMi: positive
+        pastRedundancyGreaterThanPastSynergy: true
+        rtr: positive
+        paperEquationAggregate: negative
+      evaluatedRedundancies: [MMI, CCS]
+      estimatorKinds: [gaussian]
+    - systemId: E01-S10-SYS-XOR-DISCRETE-v1.0.0
+      family: xor_like_synergy
+      equations:
+        - x_t_plus_1=x_t_xor_y_t
+        - y_t_plus_1=independent_fair_bit
+      stationaryInitial: independent_fair_bits
+      theoreticalLaggedMiNats: ln(2)
+      expectedBehavior:
+        dominantAtom: stx
+        pastSynergyNats: ln(2)
+        pastRedundancyNats: 0.0
+        paperEquationAggregateNats: ln(2)
+      evaluatedRedundancies: [MMI, CCS]
+      estimatorKinds: [discrete]
+    - systemId: E01-S10-SYS-COUPLED-AR-v1.0.0
+      family: directional_bivariate_gaussian_var1
+      stateOrder: [x, y]
+      transitionMatrix: [[0.0, 0.0], [0.85, 0.25]]
+      innovationStandardDeviations: [1.0, 0.5]
+      burnIn: 4096
+      expectedBehavior:
+        totalLaggedMi: positive
+        forwardCrossMi: I_xtb_positive
+        reverseCrossMi: I_yta_population_zero
+        directionGate: I_xtb_greater_than_I_yta
+      evaluatedRedundancies: [MMI, CCS]
+      estimatorKinds: [gaussian]
+    - systemId: E01-S10-SYS-BLOCK-AR4-v1.0.0
+      family: two_independent_redundant_gaussian_ar_blocks
+      dimensions: 4
+      equations:
+        - latentA_t_plus_1=0.82*latentA_t+epsilon_A_t
+        - latentB_t_plus_1=0.82*latentB_t+epsilon_B_t
+        - components_0_1=latentA+0.20*independent_observation_noise
+        - components_2_3=latentB+0.20*independent_observation_noise
+      burnIn: 4096
+      plantedPartition: [[0, 1], [2, 3]]
+      expectedBehavior:
+        exhaustiveUnnormalizedSynchronousMiMinimum: plantedPartition
+        exhaustiveUnnormalizedBidirectionalLaggedMiMinimum: plantedPartition
+        exhaustiveUnnormalizedAbsolutePaperEquationAggregateMinimum: plantedPartition
+        spectralCandidate: plantedPartition
+
+transformControls:
+  gaussianAffine:
+    controlId: E01-S10-CONTROL-GAUSSIAN-AFFINE-v1.0.0
+    sourceTransform: x_prime=17*x+23
+    targetTransform: y_prime=-0.125*y+5
+    expectedBehavior: all_atom_and_intermediate_mi_means_invariant
+  discreteRelabeling:
+    controlId: E01-S10-CONTROL-DISCRETE-RELABEL-v1.0.0
+    sourceTransform: x_prime=3*x+11
+    targetTransform: y_prime=-2*y+7
+    expectedBehavior: binarized_state_relabeling_preserves_all_mean_atoms
+  timeShuffle:
+    controlId: E01-S10-CONTROL-COMMON-TIME-PERMUTATION-v1.0.0
+    rule: >-
+      Apply one estimator-stream-derived permutation to complete contemporaneous
+      observation rows, then reconstruct lag-one pairs. Preserve each same-time
+      marginal and cross-sectional relationship while destroying serial order.
+    expectedBehavior: structured_lagged_dependence_collapses_toward_zero
+
+partitionCatalog:
+  catalogVersion: E01-S10-partition-catalog-v1.0.0
+  mappingBranches:
+    - mappingId: E01-S10-PARTMAP-GROUP-MEAN-v1.0.0
+      formula: arithmetic_mean_of_named_component_series_per_part
+      scaling: downstream_phyid_sample_sd_normalization
+      status: VALIDATION_ONLY_NOT_AUTHOR_MAPPING
+    - mappingId: E01-S10-PARTMAP-PC1-v1.0.0
+      formula: first_principal_component_score_per_part_after_componentwise_centering
+      signRule: largest_absolute_loading_positive_ties_earliest_component
+      eigenTiePolicy: RETAIN_INELIGIBLE_IF_LEADING_EIGENGAP_AT_MOST_1e-10_RELATIVE
+      status: VALIDATION_ONLY_NOT_AUTHOR_MAPPING
+    - mappingId: E01-S10-PARTMAP-OMEGA-EQUAL-WIDTH-VECTOR-v1.0.0
+      formula: each_part_is_one_vector_variable_with_original_components_as_features
+      domain: balanced_equal_width_bipartitions_only
+      status: OMEGAID_ONLY_VALIDATION_BRANCH_NOT_AUTHOR_MAPPING
+    - mappingId: UNRESOLVED::E01-A043::AUTHOR_PARTITION_MAPPING
+      status: PRESERVED_UNRESOLVED
+  objectiveBranches:
+    - objectiveId: E01-S10-MIB-OBJ-SYNCHRONOUS-GAUSSIAN-MI-v1.0.0
+      formula: I(partA_t;partB_t)
+      status: VALIDATION_ONLY_MUTUAL_INFORMATION_CUT
+    - objectiveId: E01-S10-MIB-OBJ-BIDIRECTIONAL-LAGGED-GAUSSIAN-MI-v1.0.0
+      formula: I(partA_t;partB_t_plus_1)+I(partB_t;partA_t_plus_1)
+      status: VALIDATION_ONLY_CAUSAL_CUT_PROXY
+    - objectiveId: E01-S10-MIB-OBJ-ABS-PAPER-EQUATION-AGGREGATE-v1.0.0
+      formula: abs(I_xytab-I_xtab-I_ytab)
+      status: VALIDATION_ONLY_EQUATION_SENSITIVITY_NOT_SOURCE_RECOVERED_MIB
+    - objectiveId: UNRESOLVED::E01-A054::SOURCE_RECOVERED_OBJECTIVE
+      status: PRESERVED_UNRESOLVED
+  normalizationBranches:
+    - normalizationId: E01-S10-MIB-NORM-NONE-v1.0.0
+      formula: objective
+    - normalizationId: E01-S10-MIB-NORM-MIN-PART-ENTROPY-v1.0.0
+      formula: objective/min(H(partA_t),H(partB_t))
+      invalidPolicy: INELIGIBLE_IF_DENOMINATOR_NOT_FINITE_OR_NOT_POSITIVE
+    - normalizationId: E01-S10-MIB-NORM-GEOMETRIC-PART-SIZE-v1.0.0
+      formula: objective/sqrt(number_components_A*number_components_B)
+    - normalizationId: UNRESOLVED::E01-A055::SOURCE_RECOVERED_NORMALIZATION
+      status: PRESERVED_UNRESOLVED
+  searchBranches:
+    - searchId: E01-S10-MIB-SEARCH-EXHAUSTIVE-ALL-v1.0.0
+      rule: enumerate_every_nonempty_unordered_bipartition_with_component_0_in_part_A
+      tieRule: smallest_normalized_objective_then_lexicographic_part_A
+    - searchId: E01-S10-MIB-SEARCH-EXHAUSTIVE-BALANCED-v1.0.0
+      rule: exhaustive_all_restricted_to_absolute_part_size_difference_at_most_1
+      tieRule: smallest_normalized_objective_then_lexicographic_part_A
+    - searchId: E01-S10-MIB-SEARCH-SPECTRAL-FIXED-CANDIDATE-v1.0.0
+      rule: >-
+        Build absolute Pearson-correlation adjacency with zero diagonal, use the
+        normalized-Laplacian Fiedler vector, orient its largest-absolute entry
+        positive with earliest-index ties, and split by sign; zeros go to part A.
+      failurePolicy: RETAIN_EIGENTIE_OR_EMPTY_PART_AS_INELIGIBLE
+    - searchId: E01-S10-MIB-SEARCH-GREEDY-SINGLE-FLIP-v1.0.0
+      rule: >-
+        Start part A={0}; repeatedly accept the strictly best single-component
+        move preserving nonempty parts; ties use lexicographic resulting part A;
+        stop when improvement is at most 1e-12.
+    - searchId: UNRESOLVED::E01-A056::QUEYRANNE
+      status: NOT_IMPLEMENTED_NOT_PROVEN_SUBMODULAR_FOR_CANDIDATE_OBJECTIVES
+    - searchId: UNRESOLVED::E01-A056::AUTHOR_SEARCH
+      status: PRESERVED_UNRESOLVED
+
+comparisonGates:
+  gateVersion: E01-S10-comparison-gates-v1.0.0
+  frozenBeforeOutcomes: true
+  sourceMatlabFixture:
+    branches: [gaussian_MMI, gaussian_CCS, discrete_MMI, discrete_CCS]
+    localArrayAbsoluteTolerance: 1.0e-8
+    localArrayRelativeTolerance: 1.0e-5
+    meanArrayAbsoluteTolerance: 1.0e-8
+    meanArrayRelativeTolerance: 1.0e-5
+    rule: all_four_branches_must_pass_in_native_source_units
+  latticeClosure:
+    meanAbsoluteTolerance: 1.0e-10
+    rule: sum_16_atoms_equals_I_xytab_and_equation_aggregate_matches_direct_formula
+  independentGaussian:
+    ensembleMeanAbsoluteTotalMiNats: 0.002
+    ensembleMaximumAbsoluteAtomMeanNats: 0.002
+    everyReplicateAbsoluteTotalMiNats: 0.01
+  exactDiscreteTheory:
+    ensembleMaximumAbsoluteAtomErrorNats: 0.01
+    perReplicateMaximumAbsoluteAtomErrorNats: 0.04
+    minimumPassingReplicates: 15
+    dominantAtomMinimumFractionOfTheoreticalTotal: 0.95
+  gaussianMmiPopulationTheory:
+    ensembleMaximumAbsoluteAtomErrorNats: 0.015
+    perReplicateMaximumAbsoluteAtomErrorNats: 0.05
+    minimumPassingReplicates: 15
+  qualitative:
+    redundantGaussianMinimumPassingReplicates: 15
+    coupledDirectionMinimumPassingReplicates: 15
+    xorAndRedundantDiscreteMinimumPassingReplicates: 15
+  timeShuffle:
+    shuffledAbsoluteTotalMiNats: 0.01
+    shuffledToOriginalTotalMiRatioMaximum: 0.10
+    minimumPassingReplicates: 15
+  affineAndScaleInvariance:
+    meanAbsoluteTolerance: 1.0e-10
+    meanRelativeTolerance: 1.0e-10
+    rule: every_eligible_estimator_redundancy_control_must_pass
+  referenceVsOmegaCpu:
+    eligibleScope: 2x2_full_rank_or_supported_binary_only
+    localAbsoluteTolerance: 1.0e-10
+    localRelativeTolerance: 1.0e-10
+    meanAbsoluteTolerance: 1.0e-10
+    meanRelativeTolerance: 1.0e-10
+  omegaCpuVsGpu:
+    eligibleScope: 2x2_full_rank_or_supported_binary_only
+    localAbsoluteTolerance: 1.0e-10
+    localRelativeTolerance: 1.0e-10
+    meanAbsoluteTolerance: 1.0e-10
+    meanRelativeTolerance: 1.0e-10
+  mibRecovery:
+    primaryBranch:
+      mappingId: E01-S10-PARTMAP-GROUP-MEAN-v1.0.0
+      objectiveIds:
+        - E01-S10-MIB-OBJ-SYNCHRONOUS-GAUSSIAN-MI-v1.0.0
+        - E01-S10-MIB-OBJ-BIDIRECTIONAL-LAGGED-GAUSSIAN-MI-v1.0.0
+        - E01-S10-MIB-OBJ-ABS-PAPER-EQUATION-AGGREGATE-v1.0.0
+      normalizationId: E01-S10-MIB-NORM-NONE-v1.0.0
+      searchId: E01-S10-MIB-SEARCH-EXHAUSTIVE-ALL-v1.0.0
+      requiredPlantedRecoveries: 8
+      totalReplicates: 8
+    approximationGate:
+      rule: >-
+        A spectral or greedy branch is eligible only for validation/sensitivity
+        if it returns the same partition and objective value as exhaustive search
+        in all eight planted-system replicates for the same mapping, objective,
+        and normalization. Failure remains reported and makes that branch ineligible.
+  failureInjection:
+    requiredDetected: 10
+    total: 10
+  overallPassRule: >-
+    Reference source-fixture parity, lattice closure, theoretical systems,
+    qualitative systems, controls, strict failure handling, and every applicable
+    cross-backend comparison must pass its frozen gate. A failed optional branch
+    is retained and classified ineligible; it may not be hidden by an aggregate pass.
+
+failureInjections:
+  - {injectionId: FI01, fault: unresolved_estimator_sentinel, expected: reject_before_estimation}
+  - {injectionId: FI02, fault: unknown_atom_or_aggregate_mapping, expected: reject_configuration}
+  - {injectionId: FI03, fault: exact_copy_gaussian_singular_covariance, expected: retain_ineligible_strict}
+  - {injectionId: FI04, fault: hidden_nonfinite_row_deletion_request, expected: reject_policy}
+  - {injectionId: FI05, fault: discrete_bits_mislabeled_as_nats, expected: unit_audit_failure}
+  - {injectionId: FI06, fault: cpu_gpu_mean_perturbed_above_tolerance, expected: comparison_failure}
+  - {injectionId: FI07, fault: noncanonical_partition_complement_or_tie, expected: canonicalization_failure}
+  - {injectionId: FI08, fault: time_shuffle_without_permutation_identity, expected: provenance_failure}
+  - {injectionId: FI09, fault: omega_svd_regularization_labeled_strict, expected: branch_identity_failure}
+  - {injectionId: FI10, fault: frozen_input_or_output_checksum_tamper, expected: checksum_failure}
+
+reportingContract:
+  retainEveryCombination: true
+  retainFailedAndIneligible: true
+  requiredTables:
+    - benchmark_cases.csv
+    - atom_results.csv
+    - theoretical_comparisons.csv
+    - invariance_results.csv
+    - backend_comparisons.csv
+    - mib_partition_results.csv
+    - eligibility_registry.csv
+  requiredJson:
+    - preregistration_record.json
+    - validation_summary.json
+    - failure_injection.json
+    - source_traceability.json
+    - registry_preservation.json
+    - artifact_manifest.json
+  requiredFigures:
+    - synthetic_atom_profiles.png
+    - backend_agreement.png
+    - mib_recovery.png
+  requiredBundleContracts:
+    - information_dynamics_contract_v1.0.0.yaml
+    - information_dynamics_eligibility_registry_v1.0.0.yaml
+  classificationRule: >-
+    Supportive only if the preregistered reference gates pass and at least one
+    optional accelerated path satisfies every applicable cross-check. Otherwise
+    report null or constraining/contradictory according to the failed boundary.
+
+s11EligibilityPolicy:
+  rule: >-
+    Eligibility is branch-specific. Passing a synthetic gate does not resolve an
+    author sentinel or choose a paper-primary method. A branch must retain estimator,
+    redundancy, aggregate, partition mapping, objective, normalization, search,
+    preprocessing, precision, and sample-gate identities in every S11 record.
+  preprocessingBoundary: >-
+    S09 accepted transform specifications are numerical candidates only. Full CLR
+    and raw closed proportions retain structural covariance singularity; every
+    other transform still requires the S10 per-window strict sample gate.
+  omegaMultivariateBoundary: >-
+    OmegaID equal-width vector parts are validation-only and cannot represent an
+    arbitrary unbalanced 99-component bipartition. The more-than-2x2 doublet path
+    is not eligible as a silent substitute for the 16-atom PhiID lattice.

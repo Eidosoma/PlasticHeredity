@@ -1,0 +1,15 @@
+{
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 349308.509211643,
+  "development_gate": true,
+  "format": "codex-ch5-phir-extension-px3-result-v1",
+  "interim_diagnostics_inspected_before_amendment": true,
+  "matrices": 12,
+  "model_contract_sha256": "d4173807dc34f4d997b13ca3d6276be88afea2271ac7fcb106cdfdb0fcd382f3",
+  "model_sha256": "4639f6186fe7c8b6723d989b4761f9dfe8909fb25ec196fd737be9ccecc5f142",
+  "original_24_matrix_gate_eligible": false,
+  "phase": "PX3_DEVELOPMENT",
+  "registration_id": "dd828ee4855fe199b78fd86772466f185fafc8b71b7c852f07fad4e81a07a9d9",
+  "resource_bounded_development_gate": true
+}

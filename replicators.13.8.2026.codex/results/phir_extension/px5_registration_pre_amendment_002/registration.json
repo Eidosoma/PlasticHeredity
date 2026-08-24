@@ -1,0 +1,146 @@
+{
+  "format": "codex-ch5-phir-extension-px5-registration-v1",
+  "gn_manifest_sha256": "125873c2e36ef38fbbcfc8bafe736d17ea88953bd7a218685e6daa5c80983b9a",
+  "gn_registration_id": "89787fae14e42007280588207e2f80d991615bb3a59c5c6206f46388312a7e52",
+  "master_registration_id": "3ce19b47deeb543e23162edb3bf822cfbf248c308a6e8cb4e8ecf83f08636c3b",
+  "new_scientific_futures_at_registration": 0,
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "claim_boundary": [
+      "a geometric information floor is not catalytic heredity",
+      "Phi-r is not consciousness, agency, or life",
+      "null remeasurement cannot overwrite earlier intervention results",
+      "strict-eight is excluded"
+    ],
+    "classification": {
+      "catalytic_enrichment": "natural-minus-null full-block or public information has positive 95% lower bounds in both candidates and both halves",
+      "catalytic_steerability": "natural SOURCE_RULE_DOWN-minus-SOURCE_RULE_UP information and heredity effects have positive 95% lower bounds in both candidates",
+      "geometric_residual": "finite nonzero null information is reported as a floor, not catalytic heredity",
+      "no_omnibus_gate": true
+    },
+    "inference": {
+      "bootstrap": 4096,
+      "candidate_pooling": false,
+      "randomization": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "information_metrics": [
+      "full_revised",
+      "public_revised"
+    ],
+    "mechanisms": [
+      "NATURAL_GARD",
+      "HOMOGENEOUS_GENERATIVE",
+      "COUPLING_DERANGED",
+      "FISSION_ONLY_GENERATIVE"
+    ],
+    "no_48_matrix_campaign": true,
+    "no_new_matrix_or_branch_selection": true,
+    "phase": "PX5",
+    "primary_comparisons": {
+      "coupling": "within-matrix Spearman between information and JOINT_BREAK_RUN3 probability",
+      "levels": "NATURAL_GARD minus each generative null for untreated full-block and public revised readings",
+      "reliability": "within-matrix Spearman between independent untreated branch-half readings across landmarks",
+      "steerability": "SOURCE_RULE_DOWN minus SOURCE_RULE_UP information and heredity response in each mechanism"
+    },
+    "protocol_id": "53c7c8800fbc4c9a504486ddd2c3f9dfd65347fab1ba575e81fa0a882363ce24",
+    "question": "which information-dynamic features remain under homogeneous, coupling-deranged, and fission-only generative nulls?",
+    "remeasurement": {
+      "cross_branch_transitions": false,
+      "every_replayed_outcome_checked_against_sealed_GN1": true,
+      "explicit_transition_pairs": true,
+      "horizon": 12,
+      "intervention_arms": [
+        "NOOP",
+        "SOURCE_RULE_UP",
+        "SOURCE_RULE_DOWN",
+        "RANDOM"
+      ],
+      "intervention_branches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "untreated_branches": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "untreated_halves": {
+        "A": [
+          0,
+          8
+        ],
+        "B": [
+          8,
+          16
+        ]
+      }
+    },
+    "representations": [
+      "material",
+      "functional_flux"
+    ],
+    "run_regardless_of_prior_phase_gates": true,
+    "selection": "first 24 matrix identifiers from the sealed 96-matrix seed order",
+    "source_campaign": "sealed GN1 generative-null decomposition",
+    "spec": {
+      "cpu_seconds": 43200.0,
+      "horizon": 12,
+      "intervention_branches": 8,
+      "label": "scientific",
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 24,
+      "untreated_branches": 16
+    }
+  },
+  "registration_id": "e148dc5adbd1b6adbc5a1d8bc0d3d4a25135e86c41ff631663e909ef64cba605",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "selected_archive_prefix_digest": "809961d1ccf3899d76b324ab04cf61fb9f4d0577a67826e2ff6ed18aeb6327a8",
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/generative_nulls.py": "8f4d9de450a6560649b41d16b89460adcd4d6f37ea2b2ec4fb134b945ca8ed36",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px5.py": "c69f0c68d32f5203d4f7e3a884f8f7f62529b299bc6305f675756599ece68bcc",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_extension_px5.py": "a569f06b9a311c8706322b5fea102a9874d12531512820feff1bef75db5dfb0a"
+  }
+}

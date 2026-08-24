@@ -1,0 +1,134 @@
+{
+  "arms": [
+    "RULE_UP",
+    "RULE_DOWN",
+    "RANDOM",
+    "NOOP"
+  ],
+  "claim_boundary": {
+    "prohibited": [
+      "strict-eight control",
+      "agency",
+      "biological memory",
+      "error correction",
+      "life",
+      "autonomous organization",
+      "autonomous attractor",
+      "real prebiotic chemistry",
+      "Phi or PhiID intervention",
+      "universal origin-of-life mechanism"
+    ]
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fresh_matrices": true,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 200,
+    "natural_untreated_landmarks": true,
+    "no_risk_or_outcome_state_selection": true,
+    "states": 2000
+  },
+  "descriptive": {
+    "external_numerical_benchmarks_used_for_fitting_or_gating": false,
+    "landmark_and_matrix_effects": true,
+    "ratio_to_sealed_cr1_model_guided_effect": true,
+    "registered_secondary_process_outcomes": true
+  },
+  "endpoint": "JOINT_BREAK_RUN3 within F12",
+  "format": "codex-intervention-cr3-confirmation-v1",
+  "futures": {
+    "branches_per_arm_state": 64,
+    "common_random_streams": true,
+    "future_seed_excludes_arm": true,
+    "halves": {
+      "A": [
+        0,
+        31
+      ],
+      "B": [
+        32,
+        63
+      ]
+    },
+    "horizon": 12,
+    "no_retries_or_matrix_replacement": true,
+    "primary_futures": 512000,
+    "random_selection_stream_separate": true,
+    "replay_futures": 512000
+  },
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "cr1_only_random_effect_ratio_check_is_not_a_gate": true,
+    "cr1_only_up_noop_and_noop_down_checks_are_not_gates": true,
+    "exact_replay_and_readback_required": true,
+    "holm_family": [
+      "c02_A",
+      "c02_B",
+      "c03_A",
+      "c03_B"
+    ],
+    "random_noop_tost_margin": [
+      -0.025,
+      0.025
+    ],
+    "random_noop_tost_method": "90% whole-matrix bootstrap interval strictly inside margin",
+    "randomization_repetitions": 4096,
+    "target_bootstrap_lower_positive": true,
+    "target_contrast": "RULE_UP - RULE_DOWN",
+    "target_holm_randomization_p_below": 0.05,
+    "target_positive": true,
+    "unit": "whole catalytic matrix"
+  },
+  "operational": {
+    "estimated_cpu_hours": [
+      11.0,
+      13.0
+    ],
+    "mandatory_review_stop_after_seal": true,
+    "minimum_declared_cpu_budget_hours": 15.0,
+    "minimum_free_disk_bytes": 2500000000,
+    "no_mid_phase_kill": true
+  },
+  "predecessors": {
+    "cr1_model_guided_confirmation_already_sealed": true,
+    "p2_incoming_negative_control_preserved": true,
+    "p2b_corrected_outgoing_pilot_is_developmental": true,
+    "p2b_outcomes_do_not_select_design_seeds_or_gate": true,
+    "p2b_outcomes_seen_before_registration": true
+  },
+  "protocol_id": "27e254955e1c018eb8a7844861fe31417af4c32b52b0c291ae9365ad8713b59c",
+  "rule": {
+    "all_legal_swaps_enumerated": true,
+    "beta_storage": "beta[target,catalyst]",
+    "incoming_quantity_not_used": "beta @ x",
+    "kinetic_boost": "beta @ n",
+    "normalization": "x = n / sum(n)",
+    "outgoing_quantity": "x @ beta == beta.T @ x",
+    "random_uniform_over_legal_swaps": true,
+    "rule_down": "legal edit maximizing outgoing[add]-outgoing[remove]",
+    "rule_up": "legal edit minimizing outgoing[add]-outgoing[remove]",
+    "tie_breaking": "first fixed lexicographic legal edit"
+  },
+  "seed_domains": {
+    "bootstrap": "ab18ce2b34c0cefc5ed9d97f363dd902367ddf6c8b175a0eafb0ccef54c99eb3",
+    "cohort": "528a6c626940832c6bf6116b7173a024854dd9e1be6e9ea52a2ff19acf5b3f2f",
+    "future": "83ad08df7d46ec8585de37d9cc4e5d4ce01711db50b73bfaca627babd600e881",
+    "randomization": "ce3e2313183b2be79c010e0148ce64e4ac89c6253ff60c7dd082217d2ea8d512",
+    "replay": "9a74b302adf666382d3717a80335b5ecf6dee50ce6a7cccc1b319001c289a1c7",
+    "selection": "a010f5d2e1d7f0231deedade5c2d9b3fd400d811f49256ad2c8f0596094bc33c",
+    "smoke_cohort": "8e812b0b9fa20b9545916cdb9a126d74525db83399f9938160947c9b9b63eb44",
+    "smoke_future": "dd712bddf5c4445ef8d4a733985fb406602803dc717fd097490d62c752790e21",
+    "smoke_selection": "2b5fa0cd5bccaafdfc6d236fbdb9273415e6e145ac4bd7321c5bf4345679b78d",
+    "validation": "99eb7621041bc70337e10481f489f19209bd693f4f6405d6f8a79e09c2925c70"
+  },
+  "status": "frozen_before_any_cr3_confirmation_matrix"
+}

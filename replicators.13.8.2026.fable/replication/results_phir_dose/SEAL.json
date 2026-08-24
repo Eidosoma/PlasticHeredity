@@ -1,0 +1,22 @@
+{
+  "sealed": "2026-08-17",
+  "module": "Phase K - Phi_R dose-response, atom decomposition, natural prediction",
+  "seed_entropy_string": "replication-confirmation-domain-phir-dose-2026-08-17",
+  "spawn_domain": 29,
+  "bootstrap": {
+    "draws": 4096,
+    "seed": 19,
+    "unit": "catalytic matrix"
+  },
+  "suite": "31/31 PASS at seal time",
+  "sha256": {
+    "PHIR_DOSE.md": "85442a541d0655d12a18856d19d55d5b80182312b81a5cf2171846a92208ed69",
+    "run_phir_dose.py": "831c579e35cda88d263232006d0a5a41db84988fe39040a23f9d28c01fefcb8e",
+    "phir_code.py": "76b56991c38f3eaa564cded9714157861bb09de24c88c50921705cd005ff8178",
+    "phir.py": "05cb0a158277d9258c9c95560bf7dc80803b63789881f03f751295c0fc2cfd35",
+    "run_phir_bridge.py": "78c65426585c4ed26ac4c19326fafc3b9760b91cc127b47697e9595ebeef9796",
+    "run_phir_confirm.py": "15ba27af952b737abe0d2bedb304ebd8fc5be9e52d7ee81ab0697a55082ae5b0",
+    "sim.py": "289b6a48fe3f4850b5248f747172a5f859d1b270391eb650ff890235e4534221",
+    "cohort.py": "acab68436627b1a942382dd7fc4be3a41eb1a743d102eee8b1b40a7d086f4c89"
+  }
+}

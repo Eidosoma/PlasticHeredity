@@ -1,0 +1,63 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Python environments and bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging and test/tool caches
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+
+# Generated simulations, checkpoints, plots, and experiment trackers
+results/
+outputs/
+artifacts/
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# Large serialized model artifacts
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+
+# Logs, scratch space, and notebook checkpoints
+*.log
+tmp/
+.cache/
+.ipynb_checkpoints/

@@ -1,0 +1,122 @@
+schemaVersion: eidosoma.e01.s19.l12.audit.v1
+researchStepId: S19-L12
+programId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+loopId: E01-S19-L12-PAPER-PHIRL-FORENSIC-CONCORDANCE-AUDIT-v1.0.0
+title: Reconstructing the Hidden End-to-End Paper Pipeline from the Manuscript, Figures, PhiRL Source Lineage and Frozen E01 Evidence
+mode: ANALYSIS_ONLY_FORENSIC_SOURCE_AND_EVIDENCE_AUDIT
+frozenAtUtc: '2026-08-09T00:00:00Z'
+paths:
+  output: /artifacts/research_steps/S19/loops/L12
+  cache: /cache/e01_s19_l12
+  paperPdf: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+  paperMarkdown: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md
+  paperFigures: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/figures
+  phirl: /cache/e01_s12b/sources/PhiRL
+  iigr: /cache/e01_s12b/sources/IntegratedInformationGeneRegulation
+  gardHistorical: /cache/e01_s03/sources/gard-historical
+  gardModern: /cache/e01_s03/sources/gard-modern
+  breakingGrnMemories: /cache/e01_s19_l01/source_search/BreakingGRNMemories
+  safeLattice: /artifacts/research_steps/S12B/safe_phi_lattice.json
+  claimLedger: /artifacts/E01_forensic_replication_bundle/ledgers/claim_ledger.csv
+  matrixA: /artifacts/research_steps/S18/matrix_a_59_claims.csv
+  matrixB: /artifacts/research_steps/S18/matrix_b_prospective_causal.csv
+sourceLocks:
+  phirlRepository: https://github.com/pigozzif/PhiRL.git
+  phirlPinnedCommit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+  phirlExpectedMasterCommit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+  iigrRepository: https://github.com/pigozzif/IntegratedInformationGeneRegulation.git
+  iigrPinnedCommit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+  gardHistoricalRepository: https://github.com/ModelingOriginsofLife/GARD.git
+  gardHistoricalCommit: 86dff6320d5ae91b4e831471079ff46749b14df9
+  breakingGrnRepository: https://github.com/pigozzif/BreakingGRNMemories.git
+  breakingGrnCommit: afe44231ad3ce915172cdb53a6b234bd76fcb6a5
+  paperSha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+requiredPhiRLFunctions:
+  - preprocess_data
+  - compute_phi
+  - mutual_information_matrix
+  - mutual_information_matrix_fast
+  - minimum_information_bipartition
+  - local_entropy_nd
+  - local_phi_id
+  - local_phi_r
+  - save_info
+  - _load_phi
+requiredPaperComponents:
+  - FIGURE_1_A
+  - FIGURE_1_B
+  - FIGURE_1_C
+  - FIGURE_1_D
+  - FIGURE_2_A
+  - FIGURE_2_B
+  - FIGURE_2_C
+  - FIGURE_2_D
+  - FIGURE_3_A
+  - FIGURE_3_B
+  - FIGURE_4_A
+  - FIGURE_4_B
+  - FIGURE_5
+  - FIGURE_6_A
+  - FIGURE_6_B
+  - FIGURE_6_C
+  - TABLE_1_PERSISTENCE
+  - TABLE_1_PROBABILITY
+  - TABLE_1_CONSISTENCY
+  - TABLE_1_FIRST_REPLICATOR
+evidenceLabels:
+  - DIRECT_PAPER_SPECIFICATION
+  - DIRECT_PUBLIC_CODE
+  - DIRECT_FROZEN_E01_RESULT
+  - SOURCE_LINEAGE_INFERENCE
+  - FIGURE_FINGERPRINT_INFERENCE
+  - PAPER_INTERNAL_CONFLICT
+  - PUBLIC_CODE_MISSING
+  - AUTHOR_IMPLEMENTATION_REQUIRED
+auditClassifications:
+  - ONE_COHERENT_PUBLICLY_SUPPORTED_PIPELINE
+  - MULTIPLE_NONIDENTIFIABLE_PIPELINES
+  - PAPER_AND_PUBLIC_CODE_REQUIRE_DIFFERENT_PIPELINES
+  - NO_COHERENT_PIPELINE_FROM_PUBLIC_EVIDENCE
+  - AUTHOR_CODE_REQUIRED_FOR_DISCRIMINATION
+sequence:
+  - FREEZE_SOURCE_IDENTITIES
+  - FREEZE_PAPER_AND_FIGURE_INPUTS
+  - BUILD_PAPER_STATEMENT_REGISTRY
+  - BUILD_FIGURE_TABLE_REGISTRY
+  - TRACE_PHRL_EXECUTABLE_DATAFLOW
+  - ADJUDICATE_METRIC_IDENTITY
+  - FREEZE_CONCORDANCE_MATRIX
+  - RANK_AT_MOST_THREE_HIDDEN_PIPELINES
+  - DESIGN_AT_MOST_ONE_NEXT_STEP
+  - REGENERATE_VALIDATE_HASH_AND_STOP
+prohibited:
+  newGardTrajectory: true
+  newCatalyticMatrix: true
+  newReplicatorLabel: true
+  thresholdExposureClockProjectionSearch: true
+  newGardEmergenceBranch: true
+  mlpTrainingOrRetuning: true
+  intervention: true
+  authorContact: true
+  outcomeGuidedMethodSelection: true
+  s20OrE02Activation: true
+  reportBundleGeneration: true
+resources:
+  cpuCoresMaximum: 8
+  gpuHoursMaximum: 0
+  cpuHoursMaximum: 24
+  wallHoursMaximum: 48
+  retainedGiBMaximum: 20
+  temporaryGiBMaximum: 40
+  numericalLibraryThreadsPerWorker: 1
+validation:
+  immutablePriorRequired: true
+  exactSourceHashesRequired: true
+  masterPinnedComparisonRequired: true
+  everyFigureAndTableRequired: true
+  everyRequiredPhiRLFunctionRequired: true
+  everyS18AndS19ResultCrossReferenced: true
+  isolatedPickleOnly: true
+  deterministicRegenerationRequired: true
+  completeArtifactHashesRequired: true
+  mandatoryHumanReviewAfterCompletion: true

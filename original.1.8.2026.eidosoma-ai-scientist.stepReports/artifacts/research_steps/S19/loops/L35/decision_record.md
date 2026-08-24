@@ -1,0 +1,3 @@
+# S19-L35 decision record
+
+The reviewer proposed using the confirmed short propagator as a teacher and asking what it reveals that current/prefix representations discard. L35 freezes that question before full trace aggregation. It replays exactly the existing L30/L31 H8 streams, retains each intermediate observation, and separates realized entry and target-basin geometry from five physical mechanisms: composition dispersion, fission, mass, propensity concentration and sampled-event volume. The same physical metric and offset no later than four must satisfy the rank gate in both candidates and both evaluation cohorts. No branch-derived quantity is a past-only predictor, no new stochastic outcome is generated, and no favorable offset may be promoted post hoc.

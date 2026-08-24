@@ -1,0 +1,1466 @@
+{
+  "candidate_arm_summaries": [
+    {
+      "arm_means": {
+        "MODEL_DOWN": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.756442274650217,
+              0.8560652699563116
+            ],
+            "mean": 0.8071274503689908
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              39.142795138888886,
+              42.204861111111114
+            ],
+            "mean": 40.763888888888886
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              0.1840277777777778,
+              0.5451388888888888
+            ],
+            "mean": 0.3506944444444444
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              1.4957335980859918,
+              1.8004599251593767
+            ],
+            "mean": 1.642736580525441
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              9.532552083333332,
+              11.895833333333334
+            ],
+            "mean": 10.666666666666666
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.0423032139895536,
+              0.09958333108885123
+            ],
+            "mean": 0.06884440532708451
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              3344.912186933763,
+              7469.380143094322
+            ],
+            "mean": 5321.396278464296
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.4439236111111111,
+              0.5334743923611112
+            ],
+            "mean": 0.48975694444444445
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.9880208333333332,
+              0.9964120370370372
+            ],
+            "mean": 0.9925925925925926
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              53.89626736111111,
+              58.04383680555555
+            ],
+            "mean": 56.13194444444445
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              24.09286747685185,
+              30.62923900462963
+            ],
+            "mean": 27.2162037037037
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              -0.037509461041824496,
+              -0.027385732678235655
+            ],
+            "mean": -0.0322832736060315
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6687499999999998,
+              0.6891203703703704
+            ],
+            "mean": 0.6767361111111111
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              17.79513888888889,
+              20.85720486111111
+            ],
+            "mean": 19.23611111111111
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              0.21527777777777776,
+              0.71875
+            ],
+            "mean": 0.4444444444444444
+          }
+        },
+        "MODEL_UP": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.4810065160030917,
+              0.5895343411055527
+            ],
+            "mean": 0.5343448932237761
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              40.54991319444445,
+              46.342447916666664
+            ],
+            "mean": 43.482638888888886
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.5729166666666665,
+              3.439670138888889
+            ],
+            "mean": 3.0069444444444446
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.389040313607201,
+              2.7048690254978793
+            ],
+            "mean": 2.5523216754660534
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              18.664930555555554,
+              21.521701388888893
+            ],
+            "mean": 20.114583333333332
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.4456831571884741,
+              0.5860743113764626
+            ],
+            "mean": 0.5164793452195021
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              294.06708116922874,
+              2788.6721584260426
+            ],
+            "mean": 1326.1166957030507
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.22291666666666665,
+              0.3138454861111111
+            ],
+            "mean": 0.2673611111111111
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.7415943287037038,
+              0.8384693287037037
+            ],
+            "mean": 0.7919560185185185
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              20.76996527777778,
+              30.674479166666664
+            ],
+            "mean": 25.659722222222225
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              41.735865162037044,
+              50.19996383101852
+            ],
+            "mean": 45.93831018518518
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.042523901865876,
+              0.055541054784342875
+            ],
+            "mean": 0.04901875597705676
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6732060185185184,
+              0.6904296875
+            ],
+            "mean": 0.6797453703703704
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              13.657552083333332,
+              19.450086805555554
+            ],
+            "mean": 16.51736111111111
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              9.691840277777779,
+              15.504340277777777
+            ],
+            "mean": 12.482638888888888
+          }
+        },
+        "NOOP": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.5082315265399338,
+              0.6217439185527205
+            ],
+            "mean": 0.564165106131352
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              1.920138888888889,
+              2.901475694444444
+            ],
+            "mean": 2.3958333333333335
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.1407449000640537,
+              2.4431563797157154
+            ],
+            "mean": 2.2969583570794243
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              15.802083333333334,
+              18.399305555555557
+            ],
+            "mean": 17.145833333333332
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.29311477938743247,
+              0.40654776860655273
+            ],
+            "mean": 0.34864005214558746
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              615.1448254874246,
+              3466.144564495361
+            ],
+            "mean": 1783.093429666437
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.28556857638888894,
+              0.3723090277777778
+            ],
+            "mean": 0.3279513888888889
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.874826388888889,
+              0.9300708912037037
+            ],
+            "mean": 0.9041666666666668
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              30.231770833333336,
+              39.39930555555556
+            ],
+            "mean": 34.94097222222222
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              36.79385127314815,
+              43.973640046296296
+            ],
+            "mean": 40.36168981481482
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6691550925925925,
+              0.6745949074074074
+            ],
+            "mean": 0.671585648148148
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              4.195746527777778,
+              7.510416666666667
+            ],
+            "mean": 5.75
+          }
+        },
+        "RANDOM": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.4937033653071429,
+              0.6098069184201478
+            ],
+            "mean": 0.5520364076948363
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              59.416666666666664,
+              59.649305555555564
+            ],
+            "mean": 59.545138888888886
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.079861111111111,
+              3.0542534722222223
+            ],
+            "mean": 2.555555555555556
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.194128402459519,
+              2.4882447979871545
+            ],
+            "mean": 2.344028351690555
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              16.309027777777775,
+              18.931423611111107
+            ],
+            "mean": 17.631944444444443
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.30645887009402095,
+              0.4269223446044088
+            ],
+            "mean": 0.3643200770393469
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              603.842031023621,
+              3447.096837822515
+            ],
+            "mean": 1746.6812886400573
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.2730034722222222,
+              0.35847439236111106
+            ],
+            "mean": 0.3151041666666667
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.010416666666666666,
+              0.05208333333333332
+            ],
+            "mean": 0.027777777777777776
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.874189814814815,
+              0.9278718171296296
+            ],
+            "mean": 0.9023148148148148
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              28.25954861111111,
+              37.07855902777778
+            ],
+            "mean": 32.666666666666664
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              36.27174479166667,
+              43.200520833333336
+            ],
+            "mean": 39.7150462962963
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.004118843632219809,
+              0.005361963514466407
+            ],
+            "mean": 0.004737455913429555
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6692708333333334,
+              0.6797453703703704
+            ],
+            "mean": 0.6734953703703703
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              0.3506944444444444,
+              0.5833333333333334
+            ],
+            "mean": 0.45486111111111116
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              4.327690972222222,
+              7.548611111111112
+            ],
+            "mean": 5.861111111111111
+          }
+        },
+        "RULE_DOWN": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.6846825974905104,
+              0.8109346196707669
+            ],
+            "mean": 0.7504391676832466
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              26.10329861111111,
+              29.954427083333332
+            ],
+            "mean": 28.045138888888886
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              0.2152777777777778,
+              0.6770833333333334
+            ],
+            "mean": 0.4201388888888889
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              1.4881966248861045,
+              1.811298699077898
+            ],
+            "mean": 1.6453907416893738
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              10.024305555555555,
+              12.422309027777777
+            ],
+            "mean": 11.180555555555555
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.055045646365369454,
+              0.12264987959486048
+            ],
+            "mean": 0.08555762190143446
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              3466.4928857340365,
+              7705.449848791272
+            ],
+            "mean": 5491.393354692966
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.4596137152777778,
+              0.5572265625
+            ],
+            "mean": 0.5099826388888888
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.982081886574074,
+              0.9955801504629629
+            ],
+            "mean": 0.9897569444444444
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              52.7734375,
+              57.68272569444444
+            ],
+            "mean": 55.5
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              26.20146122685185,
+              32.45790653935185
+            ],
+            "mean": 29.16446759259259
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              -0.03144481475841961,
+              -0.023036496791287036
+            ],
+            "mean": -0.02717005240590677
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6697916666666665,
+              0.6899305555555555
+            ],
+            "mean": 0.6781828703703704
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              30.045572916666668,
+              33.896701388888886
+            ],
+            "mean": 31.954861111111114
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              0.2651909722222222,
+              1.0750868055555556
+            ],
+            "mean": 0.6145833333333334
+          }
+        },
+        "RULE_UP": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.5021442582735257,
+              0.6088556365284539
+            ],
+            "mean": 0.5542348799342092
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              38.3671875,
+              43.770833333333336
+            ],
+            "mean": 41.14930555555556
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.560329861111111,
+              3.506944444444444
+            ],
+            "mean": 3.0416666666666665
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.3821797748339923,
+              2.672827894702527
+            ],
+            "mean": 2.5330162266606475
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              18.197048611111114,
+              20.940538194444446
+            ],
+            "mean": 19.61111111111111
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.4047402740181075,
+              0.5371864586819365
+            ],
+            "mean": 0.4709742010275706
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              289.63831246411996,
+              2658.289556718401
+            ],
+            "mean": 1265.2210726885305
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.22454427083333334,
+              0.3073459201388889
+            ],
+            "mean": 0.26484375
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.7647207754629629,
+              0.8584129050925925
+            ],
+            "mean": 0.8132523148148149
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              22.05251736111111,
+              31.98480902777777
+            ],
+            "mean": 27.065972222222218
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              40.75865885416667,
+              48.96258680555556
+            ],
+            "mean": 44.87008101851851
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.030528728935916967,
+              0.04136627544590034
+            ],
+            "mean": 0.03585234767176925
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6702546296296296,
+              0.6855107060185184
+            ],
+            "mean": 0.6759259259259259
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              16.229166666666668,
+              21.6328125
+            ],
+            "mean": 18.850694444444443
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              8.495225694444445,
+              14.116753472222223
+            ],
+            "mean": 11.204861111111109
+          }
+        }
+      },
+      "candidate": "02"
+    },
+    {
+      "arm_means": {
+        "MODEL_DOWN": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.8099130000601561,
+              0.892897793265661
+            ],
+            "mean": 0.8528132289856373
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              38.357638888888886,
+              41.404947916666664
+            ],
+            "mean": 39.94097222222222
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              0.2847222222222222,
+              0.7326388888888888
+            ],
+            "mean": 0.4895833333333333
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              1.4681237354856187,
+              1.7702773222429595
+            ],
+            "mean": 1.6135508603386721
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              9.286024305555557,
+              11.760416666666666
+            ],
+            "mean": 10.461805555555555
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.06089090181892355,
+              0.13751384216204282
+            ],
+            "mean": 0.09660273451058625
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              3455.7771520703795,
+              7724.785235143328
+            ],
+            "mean": 5502.75213730399
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.45380093246231695,
+              0.5441583072871995
+            ],
+            "mean": 0.5005531766111456
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.9847800925925926,
+              0.9945601851851853
+            ],
+            "mean": 0.9901041666666668
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              52.572048611111114,
+              57.166666666666664
+            ],
+            "mean": 55.02777777777777
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              19.100245949074072,
+              24.343294270833336
+            ],
+            "mean": 21.57065972222222
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              -0.045943045450838854,
+              -0.03309789275831913
+            ],
+            "mean": -0.03937041360469399
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.671412037037037,
+              0.6955439814814813
+            ],
+            "mean": 0.681423611111111
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              18.595052083333332,
+              21.642361111111114
+            ],
+            "mean": 20.05902777777778
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              0.3263888888888889,
+              0.9131944444444445
+            ],
+            "mean": 0.5937500000000001
+          }
+        },
+        "MODEL_UP": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.49245268088950706,
+              0.6102463053138028
+            ],
+            "mean": 0.5496855552949422
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              41.591579861111114,
+              47.73914930555556
+            ],
+            "mean": 44.78819444444445
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.78125,
+              3.75
+            ],
+            "mean": 3.2604166666666665
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.4001817800726863,
+              2.697675681176612
+            ],
+            "mean": 2.5546462920451183
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              18.627604166666664,
+              21.338975694444446
+            ],
+            "mean": 20.01736111111111
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.48288845127762753,
+              0.6282558748709811
+            ],
+            "mean": 0.5574362250787336
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              304.6343826497749,
+              2821.9233809003417
+            ],
+            "mean": 1332.3102730870244
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.21888759172760192,
+              0.30825137519713847
+            ],
+            "mean": 0.2616846041440769
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.7588975694444444,
+              0.8482204861111111
+            ],
+            "mean": 0.8055555555555555
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              20.00390625,
+              29.79861111111111
+            ],
+            "mean": 24.899305555555554
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              33.83645109953704,
+              40.71384548611111
+            ],
+            "mean": 37.2328125
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.04431380205895296,
+              0.060156908688793365
+            ],
+            "mean": 0.05199246981474918
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6698712384259259,
+              0.6955801504629628
+            ],
+            "mean": 0.6793981481481483
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              12.260850694444443,
+              18.40842013888889
+            ],
+            "mean": 15.211805555555555
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              9.106770833333332,
+              14.466145833333334
+            ],
+            "mean": 11.666666666666666
+          }
+        },
+        "NOOP": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.4748999703537579,
+              0.5866887534484507
+            ],
+            "mean": 0.5303333094932999
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.1527777777777777,
+              3.1979166666666665
+            ],
+            "mean": 2.6736111111111107
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.127468636116363,
+              2.4092346323754894
+            ],
+            "mean": 2.270826205957856
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              15.475694444444443,
+              17.977864583333332
+            ],
+            "mean": 16.739583333333332
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.3243427874502604,
+              0.4496728971206566
+            ],
+            "mean": 0.38716222654588167
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              640.4954391727446,
+              3682.7889300386887
+            ],
+            "mean": 1854.3070145315603
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.28698774485039147,
+              0.3728816394497849
+            ],
+            "mean": 0.3283480216663512
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.8639467592592592,
+              0.9216218171296297
+            ],
+            "mean": 0.8943287037037037
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              28.053819444444443,
+              37.1171875
+            ],
+            "mean": 32.53125
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              29.69361255787037,
+              35.51223958333333
+            ],
+            "mean": 32.577083333333334
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6700231481481481,
+              0.6890046296296296
+            ],
+            "mean": 0.6780671296296296
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              4.702690972222222,
+              8.163194444444445
+            ],
+            "mean": 6.340277777777779
+          }
+        },
+        "RANDOM": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.5019868869311592,
+              0.6107359291064293
+            ],
+            "mean": 0.5556266082306823
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              59.423611111111114,
+              59.62847222222223
+            ],
+            "mean": 59.52777777777777
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.28125,
+              3.3020833333333335
+            ],
+            "mean": 2.788194444444444
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.155799472359979,
+              2.449859493782259
+            ],
+            "mean": 2.307793545775997
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              15.972222222222221,
+              18.55425347222222
+            ],
+            "mean": 17.274305555555557
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.33754271904340605,
+              0.4685613829111362
+            ],
+            "mean": 0.4029305939566097
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              616.2338068687199,
+              3328.9399219911743
+            ],
+            "mean": 1738.6144938129717
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.28428257983070676,
+              0.37014058342143386
+            ],
+            "mean": 0.3252059759988872
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.010416666666666666,
+              0.05555555555555555
+            ],
+            "mean": 0.03125
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.8609953703703704,
+              0.9180555555555556
+            ],
+            "mean": 0.8914930555555557
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              26.921440972222225,
+              36.0
+            ],
+            "mean": 31.503472222222225
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              29.432349537037037,
+              35.125419560185186
+            ],
+            "mean": 32.27482638888889
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.0037435390477053884,
+              0.005206385733686883
+            ],
+            "mean": 0.004470625400213702
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6699869791666666,
+              0.6929976851851851
+            ],
+            "mean": 0.6791666666666666
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              0.37152777777777773,
+              0.5763888888888888
+            ],
+            "mean": 0.47222222222222215
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              4.916666666666667,
+              8.340277777777779
+            ],
+            "mean": 6.510416666666667
+          }
+        },
+        "RULE_DOWN": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.7424070626154032,
+              0.8599356854605485
+            ],
+            "mean": 0.8038700458329106
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              25.9296875,
+              29.830729166666664
+            ],
+            "mean": 27.916666666666668
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              0.3854166666666667,
+              0.8993055555555557
+            ],
+            "mean": 0.6180555555555556
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              1.4662872583747415,
+              1.7741278537853669
+            ],
+            "mean": 1.614199495517541
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              9.737413194444446,
+              12.109809027777777
+            ],
+            "mean": 10.854166666666666
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.06736321667883403,
+              0.1486590260874217
+            ],
+            "mean": 0.10446870810384438
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              3571.3375680780478,
+              8264.185279260017
+            ],
+            "mean": 5787.517962976951
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.466245669953377,
+              0.5581917936130214
+            ],
+            "mean": 0.513531038007805
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.9795717592592593,
+              0.9923032407407408
+            ],
+            "mean": 0.9867476851851853
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              50.33246527777778,
+              55.73914930555556
+            ],
+            "mean": 53.243055555555564
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              20.662355324074074,
+              25.75103443287037
+            ],
+            "mean": 23.058391203703703
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              -0.03959512822021201,
+              -0.028886376298145756
+            ],
+            "mean": -0.03411831147843281
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6712384259259259,
+              0.6896412037037036
+            ],
+            "mean": 0.6793402777777778
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              30.169270833333336,
+              34.0703125
+            ],
+            "mean": 32.083333333333336
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              0.4618055555555555,
+              1.2256944444444444
+            ],
+            "mean": 0.795138888888889
+          }
+        },
+        "RULE_UP": {
+          "completed_horizon": {
+            "bootstrap_ci95": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0
+          },
+          "cross_lineage_final_cosine": {
+            "bootstrap_ci95": [
+              0.49671900200108365,
+              0.6051788105960483
+            ],
+            "mean": 0.5500334378702061
+          },
+          "distinct_swaps": {
+            "bootstrap_ci95": [
+              38.670138888888886,
+              43.80078125
+            ],
+            "mean": 41.34722222222222
+          },
+          "episode_count": {
+            "bootstrap_ci95": [
+              2.7638888888888893,
+              3.7534722222222228
+            ],
+            "mean": 3.2604166666666665
+          },
+          "final_entropy": {
+            "bootstrap_ci95": [
+              2.3909833676550574,
+              2.678655486683726
+            ],
+            "mean": 2.5395186329627317
+          },
+          "final_occupied_types": {
+            "bootstrap_ci95": [
+              18.485243055555557,
+              21.197916666666668
+            ],
+            "mean": 19.864583333333332
+          },
+          "final_risk": {
+            "bootstrap_ci95": [
+              0.46075303702462234,
+              0.6037068182983469
+            ],
+            "mean": 0.5334335850854769
+          },
+          "final_throughput": {
+            "bootstrap_ci95": [
+              297.64308575696134,
+              2691.828547473156
+            ],
+            "mean": 1294.1935527332523
+          },
+          "final_top1_share": {
+            "bootstrap_ci95": [
+              0.23343409367188597,
+              0.317142119841221
+            ],
+            "mean": 0.2736083038429638
+          },
+          "immediately_reversing_swaps": {
+            "bootstrap_ci95": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0
+          },
+          "inherited_fraction": {
+            "bootstrap_ci95": [
+              0.7575810185185186,
+              0.8477430555555556
+            ],
+            "mean": 0.8044560185185184
+          },
+          "longest_inherited_run": {
+            "bootstrap_ci95": [
+              19.876302083333332,
+              29.68706597222222
+            ],
+            "mean": 24.729166666666668
+          },
+          "mean_growth_updates": {
+            "bootstrap_ci95": [
+              33.31917679398148,
+              39.95178674768518
+            ],
+            "mean": 36.64913194444444
+          },
+          "mean_predicted_action_shift": {
+            "bootstrap_ci95": [
+              0.03398095348742854,
+              0.047153051488350924
+            ],
+            "mean": 0.040312609988052785
+          },
+          "out_of_development_envelope_fraction": {
+            "bootstrap_ci95": [
+              0.6710069444444443,
+              0.6954861111111109
+            ],
+            "mean": 0.6807291666666666
+          },
+          "repeated_swaps": {
+            "bootstrap_ci95": [
+              16.19921875,
+              21.32986111111111
+            ],
+            "mean": 18.652777777777775
+          },
+          "total_breaks": {
+            "bootstrap_ci95": [
+              9.135416666666666,
+              14.545138888888888
+            ],
+            "mean": 11.732638888888888
+          }
+        }
+      },
+      "candidate": "03"
+    }
+  ]
+}

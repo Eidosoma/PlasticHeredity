@@ -1,0 +1,367 @@
+schema: eidosoma.e01.s12c_source_equivalence_confirmation_preregistration.v1
+researchStepId: S12C
+stepNumber: 12
+stepSuffix: C
+optionId: option-3
+preregistrationVersion: E01-S12C-SOURCE-EQUIVALENCE-CONFIRMATION-v1.0.0
+title: Bounded Source-Equivalence Repair and Untouched Confirmation
+status: FROZEN_BEFORE_DEVELOPMENT_AND_BEFORE_GARD_ACCESS
+dateFrozenUtc: '2026-08-02'
+evidenceClass: SOURCE_INFORMED_FORENSIC_RECONSTRUCTION
+sourceRelationship: SOURCE_INFORMED_RECONSTRUCTION
+repairRelationship: WRAPPER_ADAPTER_EQUIVALENCE_CONFIRMATION_ONLY
+forbiddenIdentities: [AUTHOR_PRIMARY, PAPER_PRIMARY, EXACT_GARD_IMPLEMENTATION]
+
+frozenQuestion: >-
+  Can exactly one wrapper/adapter-only correction reproduce both unchanged
+  pinned public source implementations across disjoint development and
+  untouched-confirmation suites, including the original singular-status
+  requirement, and thereby permit the already frozen twelve-trajectory
+  completed-fit versus past-only-prefix source-family audit?
+
+scopeBoundary:
+  preserveS12BByteExact: true
+  preserveS10ThroughS12ByteExact: true
+  exactInputTrajectoryCount: 12
+  newGardTrajectories: 0
+  interventionTrajectories: 0
+  exactSourceImplementations: [IIGR_CORRECTED_SOURCE, PHIRL_REGULARIZED_SOURCE]
+  exactTemporalModes: [RETROSPECTIVE_FULL_TRAJECTORY_LOCAL, PAST_ONLY_PREFIX_ENDPOINT]
+  permittedDevelopmentChanges: [S12C_WRAPPER_BEHAVIOR, S12C_SOURCE_ADAPTER_BEHAVIOR]
+  pinnedSourceModificationForbidden: true
+  singularFixtureRemovalForbidden: true
+  singularStatusRelabelForbidden: true
+  exceptionEquivalentToEligibleForbidden: true
+  allBranchesMustPass: true
+  toleranceWeakeningForbidden: true
+  additionalRepairAfterConfirmationFailureForbidden: true
+  interventionForbidden: true
+  estimatorDevelopmentForbidden: true
+  mlpPredictionForbidden: true
+  reinforcementLearningForbidden: true
+  completeGeneRegulatoryExperimentForbidden: true
+  biomodelsDownloadForbidden: true
+  newSimulationForbidden: true
+  automaticS13Forbidden: true
+  s13Status: BLOCKED_PENDING_S12C_HUMAN_REVIEW
+
+inheritedS12BAuditContract:
+  path: /artifacts/research_steps/S12B/preregistration.yaml
+  sha256: 52b3ed1479e3aefc8c9abf4e1803af2e9d3a754b6ad7b4232594576a056f9731
+  inheritExactly:
+    - sourceSnapshots
+    - commonGardSubstrate
+    - implementations
+    - temporalModes
+    - futureSuffixInvariance
+    - analysis
+    - classification
+    - runtimeAndStorage
+    - stopConditionEvaluation
+  scientificRandomness:
+    rootSeedHex: 12b012b012b012b012b012b012b012b012b012b012b012b012b012b012b012b0
+    derivation: E01-S12B-SHA256-DOMAIN-SEPARATION-LEGACY-RANDOMSTATE-v1
+    rationale: reproduce_the_exact_previously_intended_S12B_scientific_seed_identities
+  changedOnlyByS12C:
+    - source_equivalence_development_confirmation_firewall
+    - repaired_wrapper_implementation_identity
+    - research_step_and_artifact_identifiers
+    - permanent_stop_policy_after_confirmation_failure
+
+sourceSnapshots:
+  IIGR_CORRECTED_SOURCE:
+    repository: pigozzif/IntegratedInformationGeneRegulation
+    repositoryUrl: https://github.com/pigozzif/IntegratedInformationGeneRegulation.git
+    commit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+    tree: b0baf451876f4c8760f25096b7d426add68f6881
+    localCheckout: /cache/e01_s12b/sources/IntegratedInformationGeneRegulation
+    files:
+      main.py: {sha256: a9df17e226abf3d2a97e2909073a764857d5306553f3328ce8d192a13eb792ca, gitBlob: 1d11e130b7b79c2191e36c17967c1d535211f76b}
+      information.py: {sha256: d4d9043bdcdefc290406341acca9bae8c45956a7c5712e11857adadb0d8348dd, gitBlob: ca5dd01196d92bdb62116e6167ad8cf1428a0771}
+      phi_lattice_22.pickle: {sha256: 66cd662640079e9a2a8bc172250b124d59945fd805b7f91d5588e2f7d1d7ea03, gitBlob: ce93845f84026b42f7d6c83553722176979dc8cc}
+  PHIRL_REGULARIZED_SOURCE:
+    repository: pigozzif/PhiRL
+    repositoryUrl: https://github.com/pigozzif/PhiRL.git
+    commit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+    tree: e59fa8e311c2f727724acf3c1f1885dc8d840ee5
+    localCheckout: /cache/e01_s12b/sources/PhiRL
+    covarianceRegularizationIntroducedCommit: 9030b598f436cd23c39a3c3fc312ff79c79fb2ad
+    files:
+      main.py: {sha256: 38041d5f158752fa7021c90eab3fbb5f54aa3d99b00bef7c4fc56978d26e2090, gitBlob: 6327323467bd6d59474602a05f5e1598fa8e7ab0}
+      information.py: {sha256: 4b38089c73d52822b5b1d7d397ebaf28aeded591effcb0b0d25916b0cc54703e, gitBlob: 0e413918c896080cf3bcfd2be859d5723b4e6cad}
+      phi_lattice_22.pickle: {sha256: 66cd662640079e9a2a8bc172250b124d59945fd805b7f91d5588e2f7d1d7ea03, gitBlob: ce93845f84026b42f7d6c83553722176979dc8cc}
+  safeLattice:
+    path: /artifacts/research_steps/S12B/safe_phi_lattice.json
+    sha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+    rawPickleSha256: 66cd662640079e9a2a8bc172250b124d59945fd805b7f91d5588e2f7d1d7ea03
+    rawPickleUsedByS12CScientificRunner: false
+    safeJsonOnly: true
+    restrictedConversionAlreadyAuditedInImmutableS12B: true
+  licensePolicy:
+    licenseFileStatus: NO_LICENSE_FILE_FOUND_AT_EITHER_PINNED_COMMIT
+    rawSourceRedistributionForbidden: true
+
+knownS12BFailure:
+  failureId: S12B-EQ-IIGR-SINGULAR
+  fixtureId: SINGULAR_DUPLICATE_INPUT
+  sourceStatus: ELIGIBLE
+  wrapperStatus: INELIGIBLE_SOURCE_PIPELINE_EXCEPTION
+  wrapperReason: 'LinAlgError:When `allow_singular is False`, the input matrix must be symmetric positive definite.'
+  preservedArtifact: /artifacts/research_steps/S12B/source_equivalence_results.csv
+  observedDiagnostic:
+    iigrMiMaximumAbsoluteDifference: 3.642919299551295e-17
+    sourcePartition1: [3, 4, 5]
+    sourcePartition2: [0, 1, 2, 6, 7]
+    wrapperVectorizedPartition1: [2, 4, 5, 7]
+    wrapperVectorizedPartition2: [0, 1, 3, 6]
+    interpretation: minute_vectorized_MI_rounding_changed_a_degenerate_Fiedler_split_and_exposed_singular_reduced_covariance
+  diagnosticIsNotConfirmationEvidence: true
+
+repairHypothesis:
+  repairId: E01-S12C-IIGR-PAIRWISE-PEARSONR-SOURCE-LOOP-v1.0.0
+  exactChange: replace_only_the_S12C_IIGR_vectorized_cross_correlation_MI_path_with_the_pinned_nested_pairwise_scipy_pearsonr_loop_and_source_assignment_order
+  unchanged:
+    - IIGR_preprocessing
+    - IIGR_noise_policy
+    - graph_floor
+    - networkx_Fiedler_method
+    - partition_sign_rule
+    - partition_averaging
+    - local_PhiID_lattice
+    - corrected_local_phi_r_atom_sum
+    - PhiRL_pipeline
+    - source_adapter
+    - all_status_and_numeric_gates
+  repairScopeAuditRequired: true
+
+fixtureFirewall:
+  schema: eidosoma.e01.s12c_fixture_firewall.v1
+  fixtureShape: {time: 384, dimensions: 10}
+  development:
+    rootSeedHex: d312c0d312c0d312c0d312c0d312c0d312c0d312c0d312c0d312c0d312c0d3
+    outputDirectory: /cache/e01_s12c/development
+    mayDiagnoseAndCorrect: wrapper_or_adapter_only
+    confirmationSeedDerivationForbidden: true
+  confirmation:
+    rootSeedHex: c012c0c012c0c012c0c012c0c012c0c012c0c012c0c012c0c012c0c012c0c0
+    outputDirectory: /cache/e01_s12c/confirmation
+    untouched: true
+    generationAndAccessRequiresCleanPushedImplementationLock: true
+    modificationsAfterOpeningForbidden: true
+  derivation: E01-S12C-SHA256-DOMAIN-SEPARATION-LEGACY-RANDOMSTATE-v1
+  requiredZeroIntersections:
+    - stream_identity
+    - seed_material
+    - fixture_payload_sha256
+  fixtureIds:
+    - COUPLED_GAUSSIAN
+    - COUPLED_AUTOREGRESSIVE
+    - CONSTANT_INPUT
+    - SINGULAR_DUPLICATE_INPUT
+    - NEAR_SINGULAR_DUPLICATE_INPUT
+    - LOW_RANK_LINEAR_COMBINATION_INPUT
+    - REPLAY_PARTIAL_CONSTANT_INPUT
+  constructions:
+    COUPLED_GAUSSIAN: independent_normal_then_last_half_plus_0p35_times_first_half
+    COUPLED_AUTOREGRESSIVE: stable_AR_0p55_with_last_half_plus_0p25_lagged_first_half
+    CONSTANT_INPUT: all_constant_with_phase_specific_level_development_1_confirmation_2
+    SINGULAR_DUPLICATE_INPUT: five_independent_normal_columns_duplicated_exactly
+    NEAR_SINGULAR_DUPLICATE_INPUT: five_normal_columns_plus_independent_1e-10_noise_duplicates
+    LOW_RANK_LINEAR_COMBINATION_INPUT: three_normal_latents_times_phase_seeded_3_by_10_normal_mixing_matrix
+    REPLAY_PARTIAL_CONSTANT_INPUT: two_constant_columns_plus_eight_coupled_normal_columns_to_exercise_IIGR_noise_and_PhiRL_filtering
+  implementationsPerFixture: [IIGR_CORRECTED_SOURCE, PHIRL_REGULARIZED_SOURCE]
+  exactRowsPerPhase: 14
+  exactReplayRunsPerSide: 2
+
+confirmationGates:
+  allRowsMustPass: true
+  expectedRows: 14
+  statusIdentical: true
+  retainedArrayAvailabilityIdentical: true
+  retainedVariablesIdentical: true
+  processedArrayAvailabilityIdentical: true
+  processedMaxAbsDifferenceAtMost: 1.0e-12
+  miArrayAvailabilityIdentical: true
+  miMaxAbsDifferenceAtMost: 1.0e-10
+  partitionArrayAvailabilityIdentical: true
+  partitionIdenticalUpToSideExchange: true
+  partitionAverageArrayAvailabilityIdentical: true
+  partitionAverageMaxAbsDifferenceAtMost: 1.0e-10
+  localPhiRArrayAvailabilityIdentical: true
+  localPhiRMaxAbsDifferenceAtMost: 1.0e-9
+  emergenceArrayAvailabilityIdentical: true
+  emergenceMaxAbsDifferenceAtMost: 1.0e-9
+  originalExactReplay: true
+  wrapperExactReplay: true
+  eligibleSourceCannotMatchWrapperException: true
+  globalFailureStatus: SOURCE_EQUIVALENCE_CONFIRMATION_FAILED_PERMANENT_STOP
+  failureAction: CLOSE_E01_NO_GARD_ACCESS_NO_FURTHER_REPAIR
+
+implementationLock:
+  requiredBeforeConfirmation: true
+  branch: eidosoma/groups/42
+  remote: origin
+  cleanWorkingTreeRequired: true
+  pushedHeadRequired: true
+  lockedFiles:
+    - src/e01_pigozzi_source_equivalence_confirmation/core.py
+    - scripts/e01/run_s12c_source_equivalence_confirmation.py
+    - scripts/e01/freeze_s12c_preregistration.py
+    - configs/e01/s12c_source_equivalence_confirmation_preregistration.yaml
+    - tests/e01/test_s12c_source_equivalence_confirmation.py
+    - scripts/e01/s12b_original_source_adapter.py
+    - configs/e01/s12c_implementation_lock.yaml
+  lockArtifact: /artifacts/research_steps/S12C/implementation_lock.json
+  developmentSummaryArtifact: /artifacts/research_steps/S12C/development_summary.json
+  confirmationAccessLedger: /artifacts/research_steps/S12C/confirmation_access_ledger.json
+
+conditionalScientificAudit:
+  allowedOnlyIfEveryConfirmationGatePasses: true
+  trajectoryInputsOpenedBeforeConfirmationForbidden: true
+  baseContractPath: /artifacts/research_steps/S12B/preregistration.yaml
+  baseContractSha256: 52b3ed1479e3aefc8c9abf4e1803af2e9d3a754b6ad7b4232594576a056f9731
+  useExactlyTwelveFrozenS12Baselines: true
+  commonSubstrateId: E01-S12B-PREPROC-ADD0p5-DROPCLR-D100-C100-v1.0.0
+  primaryProspectiveEstimand: current_generation_rho_0
+  secondaryProspectiveEstimand: next_generation_rho_plus_1
+  bootstrapReplicates: 4096
+  circularShiftReplicates: 4096
+  classificationVocabulary:
+    - SOURCE_FAMILY_NOT_SUPPORTED
+    - RETROSPECTIVE_SOURCE_FAMILY_RESEMBLANCE
+    - REGULARIZATION_DEPENDENT_RESEMBLANCE
+    - SOURCE_FAMILY_PROSPECTIVE_CANDIDATE
+  automaticS13Forbidden: true
+  interventionsForbidden: true
+
+runtimeAndStorage:
+  cpuFloat64Authoritative: true
+  sourceAnalysisWorkers: 6
+  statisticsWorkers: 1
+  orchestrationCores: 1
+  blasThreads: 1
+  openmpThreads: 1
+  hardCpuHours: 50.0
+  hardGpuHours: 2.0
+  hardWallHours: 24.0
+  hardNewArtifactBytes: 10737418240
+  gpuRequired: false
+  benchmarkFirstTrajectoryMatrixIndex: 0
+  scopeReductionForbidden: true
+  threadEnvironment:
+    OMP_NUM_THREADS: '1'
+    OPENBLAS_NUM_THREADS: '1'
+    MKL_NUM_THREADS: '1'
+    NUMEXPR_NUM_THREADS: '1'
+    VECLIB_MAXIMUM_THREADS: '1'
+
+immutablePriorEvidence:
+  artifactDirectories:
+    S10: {fileCount: 21, aggregateSha256: aeb44f0348370c78b46cc75f33f4e20acd2f3dfd2b68b91de1013b5052593f6a}
+    S11: {fileCount: 33, aggregateSha256: b328f9bed5458d4513891c85e4c57a8de4a0590ffb505be6c88957b2d4e90f0b}
+    S11R: {fileCount: 25, aggregateSha256: 29603ad75f2d62c5547271c80ae870553c3f479262f67376eb333adc9bc4e557}
+    S12: {fileCount: 54, aggregateSha256: 8434b6e41dd1263e9c1a4e507a00a6af8fb823cdf083e1911ef2bfa29ab761dc}
+    S12B: {fileCount: 28, aggregateSha256: f7cdb846b8e157a9a868eb5331e4c48e745521d5b87a291db068f93a463462a2}
+  repositoryBeforeS12C:
+    commit: 0f975d66edb32d927535e4eaa72b4fd1105ece99
+    trackedFileCount: 111
+    trackedFileAggregateSha256: f5a6ad125809e7b4fe799fb7e36070c907b44cfec0e7dfac4261fd11e702b196
+  registryMustRemainByteExact: true
+
+frozenInputs:
+  - {inputId: agentsInstructions, path: /workspace/AGENTS.md, sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c}
+  - {inputId: fullPlan, path: /workspace/FULL_PLAN.md, sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee}
+  - {inputId: s12cPreoutcomeResearchPlan, path: /workspace/RESEARCH_PLAN.md, sha256: a65e5aff9c5397d1f78ba7313b157553b50a5dc5131e3586436a5dd5c890a41c}
+  - {inputId: attachmentManifest, path: /workspace/input-attachments/MANIFEST.json, sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e}
+  - {inputId: attachmentSidecar, path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md, sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c}
+  - {inputId: suppliedPaperExtraction, path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md, sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a}
+  - {inputId: officialPaperPdf, path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf, sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4}
+  - {inputId: s10Report, path: /artifacts/research_steps/S10/research_step_full_results.md, sha256: 1a996d4e4b549b89761b9b21652553b8bf0e789b9e248a768b1e63d5704f3ff0}
+  - {inputId: s10Preregistration, path: /artifacts/research_steps/S10/preregistration.yaml, sha256: 5c54b8f88e8e8634a4b7f39783e3359084e25ce44cbed2291a141da85e19f3dd}
+  - {inputId: s11Report, path: /artifacts/research_steps/S11/research_step_full_results.md, sha256: f37bf5992ab3e5cdf95f66986d7d794f7244ca06f4476026b10e809fcb46ea60}
+  - {inputId: s11rReport, path: /artifacts/research_steps/S11R/research_step_full_results.md, sha256: ccf143b668576b799833259b427e637f8591dd3484563a6256da48232bf6148d}
+  - {inputId: s12Report, path: /artifacts/research_steps/S12/research_step_full_results.md, sha256: bae098df10103db9a195d31e79353e23cd23a4ecd1476658b95f0abeb2d0ed29}
+  - {inputId: s12Preregistration, path: /artifacts/research_steps/S12/preregistration.yaml, sha256: bb0f2c9863ebc866242c12b46117c0442ab8b2a0694eeebc5de7f5f8c2f8c99a}
+  - {inputId: s12bReport, path: /artifacts/research_steps/S12B/research_step_full_results.md, sha256: cd238db40ffd572aef33982e7ee11c9e0c89ccc5baebf5a85eeec4a85acd84b6}
+  - {inputId: s12bPreregistration, path: /artifacts/research_steps/S12B/preregistration.yaml, sha256: 52b3ed1479e3aefc8c9abf4e1803af2e9d3a754b6ad7b4232594576a056f9731}
+  - {inputId: s12bSourceSnapshot, path: /artifacts/research_steps/S12B/source_snapshot_manifest.json, sha256: 0dc36155a9972e304f35e76b13851e4a87442133c3e96f2e5df5ff1799df7f97}
+  - {inputId: s12bSafeLattice, path: /artifacts/research_steps/S12B/safe_phi_lattice.json, sha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1}
+  - {inputId: s12bEquivalence, path: /artifacts/research_steps/S12B/source_equivalence_results.csv, sha256: 2ddd4a509042e230b15d418fee333af69c58908e10605d3886c7562923022315}
+  - {inputId: s12bFailureLedger, path: /artifacts/research_steps/S12B/failure_ledger.csv, sha256: 162677ed14a7a23bc3d6469ac5b6552244c95c6e6da0d6d555c1b749d80dd639}
+  - {inputId: s12bClassification, path: /artifacts/research_steps/S12B/classification.json, sha256: f92ab39bc6ee61857a30e6ffd47c75a9196d6906aaa26fb39604a0d2e6a11468}
+  - {inputId: s12bStatus, path: /artifacts/research_steps/S12B/status.json, sha256: 23177d6928f3a21267d607b461bcc6c447c59de8ee810b3bec5928f51c164eb2}
+  - {inputId: s12bArtifactManifest, path: /artifacts/research_steps/S12B/artifact_manifest.json, sha256: b13af66b76546bd3f4e2d23ae54a35e94fc9edc544a0c4d2c4273d923b4c4f4d}
+  - {inputId: preprocessingContract, path: /artifacts/E01_forensic_replication_bundle/preprocessing/compositional_transform_contract_v1.0.0.yaml, sha256: 7203d0d273f529b3953c45a2c6e1a64dbbd323aac00d72bb60b099ce93dd2679}
+  - {inputId: informationDynamicsContract, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_contract_v1.0.0.yaml, sha256: c31adef6d6fc7acf098244422a6a46c7c98b582bbd1d99d431216577c1f01a83}
+  - {inputId: informationDynamicsEligibility, path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_eligibility_registry_v1.0.0.yaml, sha256: ff96a7ee46274bf0c40343a85280647e349fbceaa74003de608fc9b23481a186}
+  - {inputId: sourceManifest, path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml, sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5}
+  - {inputId: environmentReport, path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json, sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd}
+  - {inputId: baselineObservations, path: /artifacts/research_steps/S12/baseline_observations.parquet, sha256: 3c13b1f86eb3133a3161f5573c179f4f7cb2a6a8f0a0f179ca9a103a11f0888f}
+  - {inputId: baselineTrajectoryEvents, path: /artifacts/research_steps/S12/baseline_trajectory_events.parquet, sha256: 06a43c6e50fae8e5ced3acc1cdfa084c0341e1a5c34344ccba3ce937b7119375}
+  - {inputId: replicatorLabels, path: /artifacts/research_steps/S12/replicator_labels.parquet, sha256: bfe3d03ea0a71aa54a0703112b752226c36f9fff7234c65777437a26aebb5638}
+  - {inputId: baselineMatrices, path: /artifacts/research_steps/S12/baseline_matrices.npz, sha256: 336f040d0d00221560becd69ca6420c8071ad65e274962a527679ce486dc99fc}
+  - {inputId: trajectoryManifest, path: /artifacts/research_steps/S12/trajectory_manifest.json, sha256: 57b9dd984ef92afe20eff190615faebd224e15e376a51d99e836d7c4be1eb539}
+  - {inputId: preprocessingStatus, path: /artifacts/research_steps/S12/preprocessing_status.parquet, sha256: 186d71240e303af905d7a43adf1ef79bc007351d75c23603f98b11731cc4d63b}
+  - {inputId: seedManifest, path: /artifacts/research_steps/S12/seed_manifest.parquet, sha256: d0508cae37ddeb8d6c055c63ac160cab287f996638d86d62c3ebf7d1d6b8d835}
+  - {inputId: s12ArtifactManifest, path: /artifacts/research_steps/S12/artifact_manifest.json, sha256: e9070db9b15fd51eb0ff81c37ccf28d2f3c25447fa3c16e76725746f7c9f555a}
+  - {inputId: s12RuntimeManifest, path: /artifacts/research_steps/S12/runtime_manifest.json, sha256: 3b2d984e38dbf3f3f51bf45836c697b36c93ff352126952c5fcdb18c5d9cf369}
+
+requiredArtifacts:
+  files:
+    - preregistration.yaml
+    - preregistration_record.json
+    - immutable_input_audit.json
+    - source_snapshot_manifest.json
+    - safe_lattice_reference.json
+    - repair_delta.md
+    - development_fixture_results.csv
+    - development_summary.json
+    - development_attempt_history.json
+    - implementation_lock.json
+    - seed_firewall.json
+    - confirmation_access_ledger.json
+    - confirmation_fixture_results.csv
+    - confirmation_summary.json
+    - source_equivalence_results.csv
+    - benchmark.json
+    - full_trajectory_local_values.parquet
+    - prefix_endpoint_values.parquet
+    - partition_history.parquet
+    - source_diagnostic_outputs.parquet
+    - retrospective_associations.csv
+    - prospective_associations.csv
+    - spike_analysis.csv
+    - future_dependence_results.csv
+    - classification.json
+    - failure_ledger.csv
+    - scope_compliance.json
+    - replay_validation.json
+    - runtime_manifest.json
+    - artifact_manifest.json
+    - status.json
+    - S12C_FULL_RESULTS.md
+    - research_step_full_results.md
+  figures:
+    - figures/full_trajectory_matched_sources.png
+    - figures/full_versus_prefix_representative.png
+    - figures/association_distributions.png
+    - figures/spike_overlap.png
+    - figures/partition_stability.png
+    - figures/final_decision_matrix.png
+  canonicalReportPolicy: research_step_full_results.md_must_be_byte_exact_copy_of_S12C_FULL_RESULTS.md
+  statusJsonRequiredKeys: [researchStepId, stepNumber, success, status, artifactsWritten, validationResult, caveatsOrBlockers, recommendedNextAction]
+
+stopConditions:
+  - PINNED_SOURCE_IDENTITY_CHANGED
+  - PRIOR_S10_THROUGH_S12B_ARTIFACT_CHANGED
+  - DEVELOPMENT_SCOPE_VIOLATION
+  - IMPLEMENTATION_LOCK_NOT_CLEAN_COMMITTED_AND_PUSHED
+  - DEVELOPMENT_CONFIRMATION_FIREWALL_FAILED
+  - SOURCE_EQUIVALENCE_CONFIRMATION_FAILED
+  - FUTURE_SUFFIX_INVARIANCE_FAILED
+  - FULL_NONFINITE_FRACTION_GREATER_THAN_0.20
+  - PREFIX_INELIGIBLE_FRACTION_GREATER_THAN_0.50
+  - PROJECTED_RUNTIME_OR_STORAGE_EXCEEDS_CEILING
+  - UNDOCUMENTED_POST_CONFIRMATION_CODE_CHANGE_REQUIRED
+  - EXACT_SOURCE_WRAPPER_REPLAY_FAILED
+stopPolicy: PRESERVE_FAILURE_CLOSE_E01_KEEP_S13_BLOCKED_AND_RETURN_FOR_HUMAN_REVIEW

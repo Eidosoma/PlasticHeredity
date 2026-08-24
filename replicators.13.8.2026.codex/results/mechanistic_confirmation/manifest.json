@@ -1,0 +1,89 @@
+{
+  "clean_room": true,
+  "cohort": "MECHCONF",
+  "confirmation_digest_first": "559a3076b8666d2563ab0b7721b61ed88a7e8224fbf88e696b632d4c7e369f20",
+  "confirmation_digest_second": "559a3076b8666d2563ab0b7721b61ed88a7e8224fbf88e696b632d4c7e369f20",
+  "confirmation_futures": 128000,
+  "confirmation_replay_exact": true,
+  "experiment": {
+    "bootstrap_repetitions": 4096,
+    "candidates": {
+      "02": {
+        "daughter_rule": "first",
+        "fission_rule": "fixed_size",
+        "name": "02",
+        "overshoot_rule": "trim_whole_assembly",
+        "poisson_exposure": 0.1
+      },
+      "03": {
+        "daughter_rule": "second",
+        "fission_rule": "binomial",
+        "name": "03",
+        "overshoot_rule": "admit_joiners_to_capacity",
+        "poisson_exposure": 0.125
+      }
+    },
+    "confirmation": {
+      "branches_per_state": 64,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "development": {
+      "branches_per_state": 32,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "gard": {
+      "beta_log_mean": -4.0,
+      "beta_log_sd": 4.0,
+      "generations": 100,
+      "inheritance_threshold": 0.9,
+      "k_join": 0.01,
+      "k_leave": 0.0001,
+      "max_growth_steps": 1000,
+      "n_max": 80,
+      "n_min": 40,
+      "n_types": 100
+    },
+    "horizon": 12,
+    "logistic_c": 0.1,
+    "master_seed": "9329144f93f357f7c53f235edbbbfbc2aacd49a88e162499eebe77749fa950fd",
+    "pca_components": 12,
+    "permutation_repetitions": 4096,
+    "regenerate_confirmation": true
+  },
+  "extinct_futures": 2,
+  "prediction_readback_exact": true,
+  "registration_checksums_verified": true,
+  "registration_id": "57e0f9e00da2f5562e6caa2f80e690a9f2fc82f276f139205b6d3d1257f0d112",
+  "registration_path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results/mechanistic_registration",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scope": "prospective mechanistic attribution only",
+  "source_hashes_verified": true,
+  "states": 2000,
+  "support": {
+    "interaction": true,
+    "network": false,
+    "state": true
+  }
+}

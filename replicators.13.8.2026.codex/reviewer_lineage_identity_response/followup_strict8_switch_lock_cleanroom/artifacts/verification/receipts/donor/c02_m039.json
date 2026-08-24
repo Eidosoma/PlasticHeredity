@@ -1,0 +1,10 @@
+{
+  "all_arrays_exact": true,
+  "candidate": "02",
+  "checkpoint": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response/followup_strict8_switch_lock_cleanroom/artifacts/work/donors/c02_m039.npz",
+  "checkpoint_sha256": "63d06b3ade7fd677cded31521201069f1c413351a369eca5ee81d2a008e686e6",
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "kind": "donor",
+  "matrix_id": 39,
+  "replayed_at_epoch": 1787528089.379953
+}

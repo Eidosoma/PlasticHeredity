@@ -1,0 +1,305 @@
+{
+  "analysis_code": {
+    "adapters": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_sequence_history_response/implementation_adapters.py",
+      "sha256": "bf864e11486bd6109899e513d3694be69bd6ae78e3bf449c8fedc4a2a97f6fb2"
+    },
+    "core": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_sequence_history_response/sequence_core.py",
+      "sha256": "3f9acccb89dd6b546a816b1a89786be4133355804a6d63ee1be3949c3825b447"
+    },
+    "review_plan": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_sequence_history_response/REVIEW_AND_PLAN.md",
+      "sha256": "fd8ba1572d37de359162d5045878c2cc16dbb3def2670edb0568b36ba0915aa6"
+    },
+    "runner": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_sequence_history_response/run_analysis.py",
+      "sha256": "acc119c22d59c9bce0f134aa1bb8d8ebd601c281090e72ab6e27fa9c0e5fb466"
+    }
+  },
+  "cohorts": {
+    "codex_headline": {
+      "composite_label": "frozen_composite",
+      "confirmation_matrices": 40,
+      "confirmation_tag": "CONF",
+      "development_matrices": 40,
+      "development_source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/full",
+      "development_tag": "VALI",
+      "direct_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "direct_label": "registered_history9",
+      "implementation": "independent_test_1_codex",
+      "key": "codex_headline",
+      "role": "secondary_headline",
+      "source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/full"
+    },
+    "codex_primary": {
+      "composite_label": "frozen_composite",
+      "confirmation_matrices": 200,
+      "confirmation_tag": "CONF",
+      "development_matrices": 200,
+      "development_source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5",
+      "development_tag": "VALI",
+      "direct_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "direct_label": "registered_history9",
+      "implementation": "independent_test_1_codex",
+      "key": "codex_primary",
+      "role": "primary",
+      "source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5"
+    },
+    "fable_headline": {
+      "composite_label": "frozen_full",
+      "confirmation_matrices": 40,
+      "confirmation_tag": "2026-08-13",
+      "development_matrices": 40,
+      "development_source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results",
+      "development_tag": "2026-08-13",
+      "direct_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "direct_label": "registered_direct9",
+      "implementation": "independent_test_2_fable",
+      "key": "fable_headline",
+      "role": "secondary_headline",
+      "source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results"
+    },
+    "fable_primary": {
+      "composite_label": "frozen_v2",
+      "confirmation_matrices": 200,
+      "confirmation_tag": "v2-conf-2026-08-13",
+      "development_matrices": 1000,
+      "development_source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_25x",
+      "development_tag": "25x-2026-08-13",
+      "direct_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "direct_label": "registered_direct8",
+      "implementation": "independent_test_2_fable",
+      "key": "fable_primary",
+      "role": "primary",
+      "source_directory": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_v2"
+    }
+  },
+  "endpoint": {
+    "event": "a future break followed strictly later by three consecutive inherited fissions",
+    "extinction": "absorbing negative unless certification already occurred",
+    "horizon": 12,
+    "inheritance": "strict unrounded H > 0.9",
+    "renewal_run": 3
+  },
+  "format": "reviewer-sequence-history-protocol-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "cluster": "catalytic matrix",
+    "family": "eight primary composite-versus-lagged cells",
+    "multiplicity": "Holm",
+    "randomization": "paired matrix-sign, one-sided positive gain",
+    "randomization_repetitions": 4096,
+    "secondary_headline_rescue": false,
+    "strong_gate": "all eight gains > 0, bootstrap lower95 > 0, Holm p < 0.05"
+  },
+  "models": {
+    "lagged_primary": {
+      "base": "cohort's registered direct-history columns",
+      "c_grid": [
+        0.01,
+        0.1,
+        1.0,
+        10.0
+      ],
+      "classifier": "unweighted L2 logistic with intercept, fold-fitted standardization",
+      "folds": 5,
+      "grouping": "development catalytic matrix",
+      "lag_grid": [
+        5,
+        10,
+        20,
+        40,
+        100
+      ],
+      "ordered_features_per_lag": [
+        "continuous_H",
+        "strict_H_indicator",
+        "observed_mask"
+      ],
+      "selection": "minimum mean fold branch log loss; ties smaller lag then smaller C"
+    },
+    "markov": "P(next outcome | latest inheritance state)",
+    "semimarkov": "P(next outcome | latest state, duration bin 1,2,3,4,5+)",
+    "transition_outcomes": [
+      "break",
+      "inherit",
+      "terminal"
+    ],
+    "transition_smoothing": "symmetric Dirichlet(1,1,1)",
+    "transition_to_f12": "exact dynamic programming at launch"
+  },
+  "originating_l53_l54": {
+    "included": false,
+    "reason": "machine-readable state, prediction, and branch artifacts absent"
+  },
+  "protocol_id": "8cfbe951f70d2529c458faa9808d2704346d31f6944509e95a5923933b1cdb64",
+  "read_only_sources": {
+    "codex_experiment": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/experiment.py",
+      "sha256": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae"
+    },
+    "codex_features": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/features.py",
+      "sha256": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779"
+    },
+    "codex_full_arrays": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/full/analysis_arrays.npz",
+      "sha256": "01dcaa91a8ee3faaf9f69d4b164f2948a5caea6db36e454d43af1b59f6cf4186"
+    },
+    "codex_full_metrics": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/full/metrics.json",
+      "sha256": "75c381109fa8fd4e01a6fbaebf72e9bf0f540eb02900fabdc20390affd570d22"
+    },
+    "codex_full_models": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/full/frozen_models.npz",
+      "sha256": "420585768cdefcea5ab897569f48d43a2d3c3f2e5540273d686c57bdcc8adcc1"
+    },
+    "codex_full_states": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/full/confirmation_states.csv",
+      "sha256": "c1b8983a3e92a05c59637e71cd4cd4e1588e9ed4436360111d17c433691a46d2"
+    },
+    "codex_scaled_arrays": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5/analysis_arrays.npz",
+      "sha256": "102abe46f510660a4b11ddfcd96e08301278bd6da585c2158c9bc69122db7fc0"
+    },
+    "codex_scaled_metrics": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5/metrics.json",
+      "sha256": "c3b2f9bfe2151d0c2d565fa05ba8a4175cfcf0533769a60528138ca2d32e9c3a"
+    },
+    "codex_scaled_models": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5/frozen_models.npz",
+      "sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af"
+    },
+    "codex_scaled_states": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5/confirmation_states.csv",
+      "sha256": "f83b99009a281a65f045d0634d120013c81131803c06f3ebf98b2dfe49f1cfc2"
+    },
+    "codex_simulator": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/plastic_heredity/simulator.py",
+      "sha256": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358"
+    },
+    "fable_25x_dev_summary": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_25x/dev_summary.json",
+      "sha256": "b70eaff88dfdcc764ab85e2a7d1320134f0d6ae1a0b2ae16218f5c23503b3f0c"
+    },
+    "fable_25x_models": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_25x/frozen_models.pkl",
+      "sha256": "4f817180b310f627d59a98df944d9203eb77cc6d31ba6ddf5026f5aea50afcee"
+    },
+    "fable_cohort": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/cohort.py",
+      "sha256": "acab68436627b1a942382dd7fc4be3a41eb1a743d102eee8b1b40a7d086f4c89"
+    },
+    "fable_features": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/features.py",
+      "sha256": "1f7fd4b3350e76c33b069bd91524be97eb1ecc14bf0706d4b84cf4e1ffcff77d"
+    },
+    "fable_headline_conf": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results/conf_data.pkl",
+      "sha256": "750145f2104d83d85699e748205c5efcb549e1dae3c7349de83972a5a3670476"
+    },
+    "fable_headline_dev_summary": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results/dev_summary.json",
+      "sha256": "eed3a0967fc8bbb009d7edb6eb9a7386437d8b87bf0572a5ba2e3004ee9f39fb"
+    },
+    "fable_headline_metrics": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results/confirmation_metrics.json",
+      "sha256": "91e0964b95f7e96fce65fccc7022c070d4f0d55e9d63f6baab5d0bb219628e0c"
+    },
+    "fable_headline_models": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results/frozen_models.pkl",
+      "sha256": "9b58549ed5ee019370e7f0453dedcd00ec63178003838c4d5847d212e4b33ffb"
+    },
+    "fable_registry_v2": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/registry_v2.py",
+      "sha256": "27d17ada695cd1e6eb438d08053d33a95c6246b02bad2ff2423b1a5432b3f38a"
+    },
+    "fable_simulator": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/sim.py",
+      "sha256": "289b6a48fe3f4850b5248f747172a5f859d1b270391eb650ff890235e4534221"
+    },
+    "fable_v2_cohort": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_sensitivity/v2_cohort.pkl",
+      "sha256": "f032d9787d9615d0adf808154e11ee396699011ff74d6f314d9200e0bfa959a4"
+    },
+    "fable_v2_models": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_v2/frozen_models_v2.pkl",
+      "sha256": "0420cb49a2077bd200391410e369570481336d835d77210501c1a798f5c0ccbb"
+    },
+    "fable_v2_results": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.fable/replication/results_v2/v2_results.json",
+      "sha256": "d8c078e5c74e2d2b3a4cd7f2e942d2197c9d91d71e189eae90e092d4d73f62eb"
+    },
+    "manuscript": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/PRE_PRINT_PAPER_DRAFT.md",
+      "sha256": "ab64045c5ddb1c3ab463f19f4801a5d25f38791ef17d571437ef219d26cb6518"
+    }
+  },
+  "runtime_at_freeze": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scoring": {
+    "branch_halves_separate": true,
+    "candidates_separate": true,
+    "primary": "branch log loss in natural nats",
+    "secondary": [
+      "branch Brier",
+      "state-level overall Spearman",
+      "matrix-centered Spearman"
+    ],
+    "unit": "one retained stochastic future"
+  },
+  "status": "reviewer_prompted_post_hoc_rescore",
+  "working_boundary": {
+    "all_new_writes_below": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_sequence_history_response",
+    "manuscript_edit": false,
+    "new_confirmation_futures": false,
+    "read_only_sources": true
+  }
+}

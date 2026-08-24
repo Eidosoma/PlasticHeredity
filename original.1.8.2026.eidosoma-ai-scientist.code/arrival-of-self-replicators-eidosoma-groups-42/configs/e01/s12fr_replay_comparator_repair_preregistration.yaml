@@ -1,0 +1,227 @@
+schemaVersion: E01-S12FR-preregistration-v1.0.0
+researchStepId: E01-S12FR-EXACT-REPLAY-COMPARATOR-REPAIR-v1.0.0
+shortStepId: S12FR
+title: Exact Replay Comparator Repair
+evidenceClass: OPERATIONAL_REPRODUCIBILITY_REPAIR_WITH_CONDITIONAL_PAPER_AS_DATA_RESUMPTION
+preregisteredAtUtc: '2026-08-03T00:00:00Z'
+s13Status: BLOCKED_PENDING_S12FR_HUMAN_REVIEW
+
+frozenQuestion: >-
+  Is every S12F old-comparator failure caused solely by paired schema-defined
+  NaNs in exposure extrema for identical zero-update generations, with exact
+  equality of every finite, discrete, RNG-consumption, and integer-sequence
+  field, and does the repaired rule pass untouched confirmation before the
+  original S12F inverse problem is conditionally restarted?
+
+immutability:
+  priorSteps: [S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S11R, S12, S12B, S12C, S12D, S12E, S12F]
+  preserveByteForByte: true
+  s12fClassificationMustRemain: SIMULATOR_IDENTIFICATION_FAILED
+  s12fArtifactsMayChange: false
+  s12fCachesMayChange: false
+  s12fSuppressedDistancesMayBeOpened: false
+  livePlatformLogPolicy: >-
+    Files under /artifacts/logs are mutable platform telemetry rather than
+    S01-S12F research evidence and are excluded from the new hash baseline;
+    any mismatch inherited from S12F's broad sweep is recorded explicitly
+    before simulation. All research-step and E01 bundle evidence remains exact.
+
+frozenInputs:
+  s12fCommit: cf5b27b370a2d8d12e6867034d6ec8f4f96b3fc7
+  s12fConfig: configs/e01/s12f_latent_timebase_preregistration.yaml
+  s12fCore: src/e01_latent_timebase/core.py
+  s12fInference: src/e01_latent_timebase/inference.py
+  s12fRunner: scripts/e01/run_s12f_latent_timebase.py
+  s12fArtifacts: /artifacts/research_steps/S12F
+  s12fDevelopmentParticleIdentities: /artifacts/research_steps/S12F/abc_particle_results.parquet
+  s12fDevelopmentSeedManifest: /artifacts/research_steps/S12F/development_seed_manifest.parquet
+  s12fArtifactManifest: /artifacts/research_steps/S12F/artifact_manifest.json
+  originalPaper: /cache/e01_s03/downloads/paper-2607.28250v1.pdf
+  historicalGardCommit: 86dff6320d5ae91b4e831471079ff46749b14df9
+  iigrCommit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+  phirlCommit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+  safeLatticeSha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+
+comparatorContract:
+  path: configs/e01/s12fr/comparator_contract.yaml
+  schema: configs/e01/s12fr/pair_diagnostic_schema.json
+  implementation: src/e01_replay_repair/comparator.py
+  auditAdapter: src/e01_replay_repair/audit.py
+  campaignRunner: src/e01_replay_repair/campaign.py
+  normalizationScope: paired_schema_undefined_nan_zero_update_only
+  finiteTolerance: none_bit_exact
+  allDiscreteExact: true
+  allRngIdentityAndConsumptionExact: true
+  allSequenceFieldsExact: true
+  instrumentationParityExact: true
+
+phaseFirewall:
+  order:
+    - phase0_preregister_validate_commit_push
+    - phase1_original_2048_pair_diagnosis
+    - comparator_implementation_lock_commit_push_if_passed
+    - phase2_benchmark_16_and_untouched_2048_confirmation
+    - phase3_original_fixed_abc_restart_if_all_repair_gates_pass
+    - phase3_adaptive_abc_only_if_original_condition_fires
+    - candidate_lock_commit_push_if_candidates_exist
+    - phase4_original_32_matrix_candidate_confirmation_if_locked
+    - final_human_review
+  beforeAnyRerun:
+    - complete_preregistration
+    - comparator_contract_and_schema
+    - code_and_focused_tests
+    - source_input_manifest
+    - immutable_S01_through_S12F_baseline
+    - suppressed_output_identity_manifest
+    - committed_and_pushed_design
+  beforeUntouchedConfirmation:
+    - original_2048_complete_pair_diagnostics
+    - all_old_failures_explained_only_by_permitted_rule
+    - zero_genuine_divergences
+    - comparator_lock_committed_and_pushed
+  beforeFreshAbcDistances:
+    - benchmark_16_of_16
+    - untouched_confirmation_2048_of_2048
+    - seed_and_matrix_firewalls_passed
+    - comparator_code_and_contract_hashes_unchanged
+  beforeCandidateConfirmation:
+    - at_most_three_deterministic_candidates
+    - candidate_lock_committed_and_pushed
+  oneRepairRule: any_repair_or_confirmation_failure_permanently_stops_S12FR
+
+originalPairCampaign:
+  family: FIXED_COMMON_EXPOSURE
+  particles: 256
+  matricesPerParticle: 8
+  pairCount: 2048
+  inferenceRoot: 39a3e3fd8dcf68ca04841f0a4ddb21919b96f22d6c080cfe22221ce80a661d0f
+  simulatorRoot: dab1feb8d91b6337bdcffdbd016d0c23d67f487ea8fd82c77a802169b2ac4fb3
+  phase: development
+  particleGenerator: unchanged_S12F_initial_particles
+  simulator: unchanged_S12F_simulate_trajectory
+  previouslySuppressedDistanceAccess: prohibited
+  completePairAndDifferenceDiagnostics: required
+
+benchmarkCampaign:
+  configurations: unchanged_16_from_S12F
+  root: adcb9d039b421c93edf67314290feaa67d346e0e454b2ef5558248670cb0b147
+  pairCount: 16
+  unanimousPassRequired: true
+
+untouchedConfirmationCampaign:
+  family: FIXED_COMMON_EXPOSURE
+  particles: 256
+  matricesPerParticle: 8
+  pairCount: 2048
+  inferenceRoot: 66d623c7ad8ffcd5b56400df67bf54750d4786524493c5000796afc35577e953
+  simulatorRoot: 3a018f93ffb37c576fefacaedaa2d4b6167dfe0354dda2f3d0990d1b9a576b0c
+  phase: replay_confirmation
+  particleGenerator: unchanged_algorithm_with_disjoint_root
+  discreteSchedule: unchanged_exact_stratification
+  distancesPermitted: false
+  seedMatrixInitialStateOverlapWithOriginalMustEqual: 0
+  unanimousPassRequired: true
+
+conditionalAbcResume:
+  permittedOnlyAfterUnanimousRepairConfirmation: true
+  implementationVersion: E01-S12FR-EXACT-REPLAY-COMPARATOR-REPAIR-v1.0.0
+  originalS12FTargets: unchanged
+  originalS12FPriors: unchanged
+  originalS12FParticleCounts: [256, 128, 64]
+  originalS12FMatricesPerParticle: 8
+  originalS12FRoots: unchanged
+  originalS12FDistanceFunctionAndWeights: unchanged
+  originalS12FAcceptanceRules: unchanged
+  originalS12FAdaptiveFamilyCondition: unchanged
+  originalS12FCandidateLimit: 3
+  originalS12FConfirmationMatricesPerCandidate: 32
+  restartRound1Fresh: true
+  reuseOldSuppressedDistances: false
+  stopAtOriginalHumanReviewBoundary: true
+
+compute:
+  workers: 6
+  statisticsWorkers: 1
+  orchestrationCores: 1
+  blasThreadsPerWorker: 1
+  cpuHourCeiling: 250.0
+  gpuHourCeiling: 12.0
+  wallHourCeiling: 72.0
+  retainedArtifactGiBCeiling: 30.0
+  cpuFloat64Authoritative: true
+  gpuUse: none_required
+
+classification:
+  repairTokens:
+    - EXACT_REPLAY_COMPARATOR_REPAIR_CONFIRMED
+    - EXACT_REPLAY_COMPARATOR_REPAIR_FAILED_PERMANENT_STOP
+  conditionalTimebaseTokens:
+    - CLOCK_ACCOUNTING_MATCH
+    - FIXED_EXPOSURE_MATCH
+    - ADAPTIVE_EXPOSURE_MATCH
+    - OVERSHOOT_SEMANTICS_REQUIRED
+    - PAPER_TIMEBASE_CANDIDATE
+    - NONIDENTIFIABLE_TIMEBASE_ENSEMBLE
+    - NO_PAPER_TIMEBASE_RECONSTRUCTION
+    - SIMULATOR_IDENTIFICATION_FAILED
+    - UNDERDETERMINED
+
+prohibited:
+  - mutate_or_reinterpret_S12F
+  - modify_simulator_or_rng_derivation
+  - alter_seeds_particles_schedules_exposure_families_clocks_targets_distances_thresholds_or_gates
+  - open_previously_suppressed_S12F_distances
+  - labels_or_clustering
+  - source_defined_emergence_or_local_phi_r
+  - prediction_or_intervention
+  - S12G_or_S13
+  - second_repair
+
+requiredArtifacts:
+  - preregistration.yaml
+  - comparator_contract.yaml
+  - pair_diagnostic_schema.json
+  - preregistration_record.json
+  - source_input_snapshot_manifest.json
+  - immutable_prior_baseline.json
+  - s12f_cache_baseline.json
+  - s12f_suppressed_input_manifest.json
+  - original_pair_diagnostics.parquet
+  - original_field_differences.parquet
+  - original_trace_manifest.parquet
+  - original_seed_manifest.parquet
+  - original_pair_summary.json
+  - comparator_lock_proposal.json
+  - comparator_lock_validation.json
+  - benchmark_pair_diagnostics.csv
+  - untouched_pair_diagnostics.parquet
+  - untouched_field_differences.parquet
+  - untouched_trace_manifest.parquet
+  - untouched_seed_manifest.parquet
+  - untouched_pair_summary.json
+  - seed_matrix_firewall.json
+  - repair_confirmation_validation.json
+  - abc_particle_results.parquet
+  - abc_round_summary.csv
+  - posterior_candidates.csv
+  - candidate_lock_proposal.json
+  - candidate_lock_validation.json
+  - candidate_timebase_pipeline_lock.json
+  - confirmation_seed_manifest.parquet
+  - confirmation_trajectories.parquet
+  - confirmation_trajectory_manifest.parquet
+  - posterior_predictive_results.csv
+  - failure_ledger.csv
+  - scope_access_ledger.json
+  - runtime_manifest.json
+  - regeneration_validation.json
+  - classification.json
+  - status.json
+  - artifact_manifest.json
+  - research_step_full_results.md
+
+recommendedNextAction: >-
+  Return for mandatory human review regardless of outcome with S12G and S13
+  blocked. A successful repair is operational evidence only; any time-base
+  candidate remains paper-as-data simulator identification rather than author
+  implementation identity.

@@ -1,0 +1,12 @@
+{
+  "branch_arrays_reloaded": true,
+  "derived_pilot_eligibility_recomputed": true,
+  "inference_draws_reloaded": true,
+  "inference_recovery_amendment": "codex-intervention-p3-inference-recovery-amendment-v1",
+  "lifecycle_amendment": "codex-intervention-p3-lifecycle-amendment-v1",
+  "matrix_effects_exact": true,
+  "no_fitting_or_recalibration": true,
+  "primary_metrics_exact": true,
+  "semantic_random_arm": "RANDOM_SURGERY",
+  "semantic_random_arm_explicit_in_primary_and_readback": true
+}

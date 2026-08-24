@@ -1,0 +1,125 @@
+{
+  "f12": {
+    "replay": {
+      "geometry": {
+        "anchor_similarity_0": 0.7220571706401046,
+        "anchor_similarity_1": 0.5564711468570915,
+        "anchor_similarity_2": 0.6559445956528052,
+        "daughter_similarity_01": 0.7234904742258941,
+        "daughter_similarity_02": 0.7293249574894727,
+        "daughter_similarity_12": 0.8511379722701268,
+        "episode_end_index": 7,
+        "episode_start_index": 5,
+        "first_break_index": 2,
+        "first_last_daughter_similarity": 0.7293249574894727,
+        "later_break_observed": true,
+        "maximum_anchor_similarity": 0.7220571706401046,
+        "maximum_pairwise_daughter_similarity": 0.8511379722701268,
+        "mean_anchor_similarity": 0.6448243043833338,
+        "mean_pairwise_daughter_similarity": 0.7679844679951645,
+        "minimum_anchor_similarity": 0.5564711468570915,
+        "minimum_pairwise_daughter_similarity": 0.7234904742258941,
+        "observed_inherited_run_length": 5,
+        "onset_parent_to_final_daughter_similarity": 0.7755103503576983,
+        "persistence_5_status": "observed",
+        "second_renewal_after_later_break_observed": false
+      },
+      "replay_checks": {
+        "completed_horizon": true,
+        "episode_start_index": true,
+        "first_break_index": true,
+        "maximum_anchor_error": 0.0,
+        "minimum_pairwise_error": 0.0
+      }
+    },
+    "selected": {
+      "branch": 11,
+      "candidate": "03",
+      "landmark": 35,
+      "matrix_id": 23,
+      "selection_score": 0.009639874011050922,
+      "source_cohort": "MECHCONF2",
+      "state_id": "MECHCONF2-c03-m023-g035"
+    },
+    "selection_rule": {
+      "coordinates": [
+        "minimum_pairwise_daughter_similarity",
+        "maximum_anchor_similarity",
+        "first_break_index",
+        "episode_start_index",
+        "observed_inherited_run_length"
+      ],
+      "eligibility": "completed F12; first qualifying episode has minimum daughter-pair H < 0.9 and every episode daughter H <= 0.9 to the old anchor",
+      "eligible_population": 130044,
+      "interquartile_ranges": {
+        "episode_start_index": 4.0,
+        "first_break_index": 4.0,
+        "maximum_anchor_similarity": 0.22889507525292452,
+        "minimum_pairwise_daughter_similarity": 0.19645008420662013,
+        "observed_inherited_run_length": 4.0
+      },
+      "medians": {
+        "episode_start_index": 5.0,
+        "first_break_index": 2.0,
+        "maximum_anchor_similarity": 0.711398481249218,
+        "minimum_pairwise_daughter_similarity": 0.7065097564491557,
+        "observed_inherited_run_length": 5.0
+      },
+      "population": 145516,
+      "tie_break": "source cohort, candidate, matrix, landmark, then branch"
+    },
+    "source_table": "replicators.13.8.2026.codex/results/episode_coherence_audit/episode_measurements.csv.gz"
+  },
+  "format": "plastic-heredity-paper-trajectory-exemplars-v1",
+  "purpose": "post-hoc visualization only; no inferential claim is selected by these examples",
+  "strict8": {
+    "selected": {
+      "branch": 29,
+      "candidate": "02",
+      "certification": 24,
+      "first_break": 5,
+      "first_eligible_maximum_anchor": 0.49849860245876415,
+      "first_eligible_minimum_pairwise": 0.4174351456697628,
+      "first_eligible_start": 12,
+      "landmark": 65,
+      "matrix": 165,
+      "primary_start": 17,
+      "qualifying_maximum_anchor": 0.4580220033990975,
+      "qualifying_minimum_pairwise": 0.9165331320039535,
+      "run_length": 21,
+      "selection_score": 0.0476032888686585
+    },
+    "selection_rule": {
+      "archive_checks": {
+        "eight_inherited_boundaries": true,
+        "maximum_anchor_error": 1.1102230246251565e-16,
+        "minimum_pairwise_error": 0.0
+      },
+      "archive_population": 4215,
+      "coordinates": [
+        "first_break",
+        "primary_start",
+        "run_length",
+        "qualifying_minimum_pairwise",
+        "qualifying_maximum_anchor"
+      ],
+      "eligibility": "retained positive strict-eight episode with an earlier inherited eight-window whose all-pairs minimum H is <= 0.9",
+      "interquartile_ranges": {
+        "first_break": 7.0,
+        "primary_start": 10.0,
+        "qualifying_maximum_anchor": 0.38727350542611194,
+        "qualifying_minimum_pairwise": 0.027088936729520174,
+        "run_length": 9.0
+      },
+      "medians": {
+        "first_break": 6.0,
+        "primary_start": 17.0,
+        "qualifying_maximum_anchor": 0.46068236295916215,
+        "qualifying_minimum_pairwise": 0.9198288946770403,
+        "run_length": 20.0
+      },
+      "tie_break": "candidate, matrix, landmark, then branch"
+    },
+    "source_archive": "replicators.13.8.2026.fable/replication/results_strict8_occurrence/strict8_units.pkl"
+  }
+}

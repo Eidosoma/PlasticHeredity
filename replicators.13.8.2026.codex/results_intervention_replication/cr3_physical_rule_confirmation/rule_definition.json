@@ -1,0 +1,12 @@
+{
+  "all_legal_swaps_enumerated": true,
+  "beta_storage": "beta[target,catalyst]",
+  "incoming_quantity_not_used": "beta @ x",
+  "kinetic_boost": "beta @ n",
+  "normalization": "x = n / sum(n)",
+  "outgoing_quantity": "x @ beta == beta.T @ x",
+  "random_uniform_over_legal_swaps": true,
+  "rule_down": "legal edit maximizing outgoing[add]-outgoing[remove]",
+  "rule_up": "legal edit minimizing outgoing[add]-outgoing[remove]",
+  "tie_breaking": "first fixed lexicographic legal edit"
+}

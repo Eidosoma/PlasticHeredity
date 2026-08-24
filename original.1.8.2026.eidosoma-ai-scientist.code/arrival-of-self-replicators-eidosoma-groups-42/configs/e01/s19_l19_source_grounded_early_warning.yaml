@@ -1,0 +1,167 @@
+schema: eidosoma.e01.s19_l19.preregistration.v1
+researchStepId: S19-L19
+versionedId: E01-S19-L19-SOURCE-GROUNDED-EARLY-WARNING-OBSERVABLES-v1.0.0
+title: Source-Grounded Multivariate Early-Warning Observables Before Recurring-Attractor Entry
+evidenceClass: ADAPTIVE_DISCOVERY_ON_FROZEN_LANDMARK_TASK
+
+humanAuthorization:
+  scope: sequential bounded S19-L19 through at most S19-L42
+  stopEarly: only after a lead survives untouched seed-firewalled confirmation
+  terminalBoundary: stop for human review after success or L42
+  prohibited: [S20, E02, author_contact, intervention, report_bundle]
+
+immutableTask:
+  sourceLoop: S19-L18
+  cohort: S13Y_100_SHARED_MATRICES_200_CANDIDATE_TRAJECTORIES
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+  targetTemporalStatus: RETROSPECTIVE_COMPLETED_RUN_OUTCOME_DEFINITION
+  landmarkObservationCount: 64
+  horizonExclusiveIndex: 192
+  atRiskRule: no positive target at indices 0 through 63
+  eventRule: first positive target at indices 64 through 191
+  candidateSeparationRequired: true
+  splits: exact S19-L18 ten-repeated five-fold matrix splits
+  newSimulation: false
+
+sourceGrounding:
+  - sourceId: DAKOS_2012_EWS_METHODS
+    doi: 10.1371/journal.pone.0041010
+    url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0041010
+    supports: lag-one autocorrelation, variance, and spectral reddening
+  - sourceId: COVARIANCE_EIGENVALUE_2019
+    url: https://www.nature.com/articles/s41598-019-38961-5
+    supports: largest multivariate covariance eigenvalue and explained fraction
+  - sourceId: MARWAN_2007_RQA
+    doi: 10.1016/j.physrep.2006.11.001
+    supports: recurrence rate, determinism, diagonal entropy, laminarity, and trapping time
+  - sourceId: GOTTWALD_GUGOLE_2020_DMD
+    doi: 10.1007/s10955-019-02392-3
+    url: https://arxiv.org/abs/1904.09082
+    supports: DMD reconstruction error, effective dimension, and local relaxation/regime-transition diagnostics
+  - sourceId: BOETTIGER_HASTINGS_2012_LIMITS
+    doi: 10.1098/rsif.2012.0125
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3427498/
+    supports: explicit false-positive, power, and finite-series limitations
+
+featureFamilies:
+  CRITICAL_SLOWING:
+    window: [full_64, first_32, last_32]
+    fields:
+      - pc1 lag-one autocorrelation
+      - mean active-species lag-one autocorrelation
+      - largest covariance eigenvalue fraction
+      - log total variance
+      - PC1 low-frequency power fraction
+      - last-half minus first-half change for every field
+  RECURRENCE_QUANTIFICATION:
+    similarity: cosine H
+    threshold: 0.9
+    theilerWindow: 1
+    minimumLineLength: 2
+    fields:
+      - recurrence rate
+      - determinism
+      - diagonal length and entropy
+      - laminarity
+      - trapping time
+      - vertical length
+      - locked half-window changes
+  LOCAL_DMD:
+    input: closed relative compositions
+    centering: within-prefix or within-half mean
+    maximumRank: 8
+    numericalRankTolerance: 1.0e-10
+    relativeRidge: 1.0e-6
+    fields:
+      - spectral radius
+      - near-unit eigenvalue fraction
+      - relative reconstruction error
+      - effective rank
+      - nonnormality
+      - locked half-window changes
+
+baselineCompact:
+  fields:
+    - prefix_generation_last
+    - prefix_mass_last
+    - adjacent_h_last
+    - adjacent_h_mean
+    - adjacent_h_std
+    - adjacent_h_slope
+    - composition_change_mean
+    - composition_change_slope
+    - mean_max_prior_nonadjacent_h
+    - slope_max_prior_nonadjacent_h
+    - nonadjacent_recurrence_edge_density
+    - largest_recurrence_component_fraction
+
+models:
+  estimator: fixed L2 logistic regression
+  C: 1.0
+  solver: lbfgs
+  maximumIterations: 5000
+  classWeight: null
+  imputation: training median with missing indicators
+  scaling: training only
+  registry:
+    - DUMMY_TRAINING_PRIOR
+    - TIME_ONLY
+    - EXACT_H_STABILITY
+    - PREFIX_RECURRENCE_GEOMETRY
+    - L18_PAST_FULL_NO_BGM
+    - COMPACT_BASELINE
+    - EWS_ONLY
+    - RQA_ONLY
+    - DMD_ONLY
+    - COMPACT_PLUS_EWS
+    - COMPACT_PLUS_RQA
+    - COMPACT_PLUS_DMD
+    - COMPACT_PLUS_ALL
+  candidateLeadModels: [COMPACT_PLUS_EWS, COMPACT_PLUS_RQA, COMPACT_PLUS_DMD, COMPACT_PLUS_ALL]
+
+statistics:
+  independentUnit: catalytic matrix
+  crossValidation: exact L18 repeated five-fold splits
+  bootstrapReplicates: 4096
+  labelPermutationReplicates: 512
+  permutationMultiplicity: maximum incremental AUROC across four candidate-lead models
+  leaveOneMatrixOut: true
+  candidatesPooled: false
+
+discoveryLeadGate:
+  sameModelInBothCandidates: true
+  minimumPointAuRoc: 0.65
+  auRocBootstrapLowerGreaterThan: 0.5
+  pointAuPrcExceedsPrevalence: true
+  brierNoWorseThanDummy: true
+  positiveAuRocDeltaOverCompactBaseline: true
+  positiveAuRocDeltaOverExactH: true
+  familywisePermutationPAtMost: 0.10
+  leaveOneOutPositiveFractionAtLeast: 0.90
+  temporalPermutationMustReduceAuRoc: true
+  exactSuffixInvarianceRequired: true
+  untouchedConfirmationRequiredForSolution: true
+
+resources:
+  cpuCores: 8
+  gpuHoursMaximum: 0
+  cpuHoursMaximum: 100
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 25
+  temporaryGiBMaximum: 75
+  validationReserveFraction: 0.10
+  numericalThreadsPerWorker: 1
+
+classifications:
+  allowed:
+    - SOURCE_GROUNDED_EARLY_WARNING_DISCOVERY_LEAD
+    - CRITICAL_SLOWING_NOT_INCREMENTAL
+    - RQA_NOT_INCREMENTAL
+    - DMD_NOT_INCREMENTAL
+    - EARLY_WARNING_FAMILY_NON_SUPPORT
+    - CANDIDATE_SPECIFIC_SIGNAL
+    - POSSIBLE_STABILITY_PROXY
+    - ATTRACTOR_ONSET_TASK_ESTABLISHED
+    - REQUIRES_UNTOUCHED_CONFIRMATION
+    - NOT_PROMOTABLE_AS_CONFIRMED
+    - LOOP_FAILED_CLOSED

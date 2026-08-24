@@ -1,0 +1,16 @@
+{
+  "collision_audit": {
+    "collisions": [],
+    "master_seed": "202608211604-strict-b-transplant-v1",
+    "passed": true
+  },
+  "domains": [
+    "rule_permutation",
+    "primary.future",
+    "rare_perturbation",
+    "rare.future",
+    "bootstrap",
+    "smoke"
+  ],
+  "master_seed": "202608211604-strict-b-transplant-v1"
+}

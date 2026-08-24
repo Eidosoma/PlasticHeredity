@@ -1,0 +1,33 @@
+{
+  "agreementCriterion": "absolute method difference <= max(two original-raster pixels mapped to data units, one percent of plotted x-axis range)",
+  "aggregate": {
+    "axisUpperReconciledInterval": [1300.0, 1314.0],
+    "lateDiscontinuityInterval": [980.0, 1070.0],
+    "manualTerminalInterval": [1080.0, 1120.0],
+    "pixelTerminalEstimate": 1103.3333333333333,
+    "reconciledTerminalInterval": [1090.0, 1120.0],
+    "status": "AGREED_WITH_INTERVAL_CENSORING",
+    "warning": "The pale aggregate band and overlaid red regression make subpixel color leakage unreliable; only high-confidence blue pixels and the independent render were used."
+  },
+  "methods": [
+    {
+      "id": "TICK_CENTROID_PIXEL_AFFINE_CALIBRATION_ORIGINAL_RASTER",
+      "implementation": "independent affine least-squares fits from panel-specific tick centroids followed by color-segment terminal detection",
+      "raster": "/workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/figures/figure-02.png"
+    },
+    {
+      "id": "INDEPENDENT_HIGH_DPI_MANUAL_GRID_CALIBRATION",
+      "implementation": "manual endpoint and grid reading from a separately rendered 300-DPI PDF page",
+      "render": "/cache/e01_s12f/figure_digitization/page15-15.png"
+    }
+  ],
+  "panels": {
+    "A": {"onePercentUnits": 13.14, "twoPixelUnits": 6.6666666667, "retainedToleranceUnits": 13.14},
+    "B": {"onePercentUnits": 8.0, "twoPixelUnits": 4.2887506727, "retainedToleranceUnits": 8.0},
+    "C": {"onePercentUnits": 8.0, "twoPixelUnits": 4.2689223667, "retainedToleranceUnits": 8.0},
+    "D": {"onePercentUnits": 10.0, "twoPixelUnits": 5.3333333333, "retainedToleranceUnits": 10.0}
+  },
+  "paperFigureRasterSha256": "0e4aac507ccf6e10ced31edd6d7e5ba8c876d9d0c8d420b145dfc27c7d040778",
+  "researchStepId": "E01-S12F-LATENT-TIMEBASE-INFERENCE-v1.0.0",
+  "schemaVersion": "E01-S12F-figure-digitization-uncertainty-v1.0.0"
+}

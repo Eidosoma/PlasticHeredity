@@ -1,0 +1,52 @@
+schema: eidosoma.e01.s19_l07_round_registry.v1
+rounds:
+  - roundId: R01_BOUNDARY_CLOCK
+    outcomeAccessOrder: 1
+    input: FROZEN_S13Y_100_SHARED_MATRICES_200_TRAJECTORIES
+    purpose: Separate molecular, fission-boundary, generation-endpoint, and projection denominators at printed H=0.9.
+    settings:
+      - {settingId: L07-R01-001, settingPairId: C1_INCOMING_ALL_H900, family: ADJACENT_CLOCK, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT, sourceTier: PAPER_PRINTED_THRESHOLD_FROZEN_COMPARATOR}
+      - {settingId: L07-R01-002, settingPairId: C0_INCOMING_ALL_H900, family: ADJACENT_CLOCK, clockId: C0_BATCH_UPDATES_ONLY, alignment: INCOMING_DUPLICATE_FIRST, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT, sourceTier: FROZEN_TIMEBASE_ALTERNATIVE}
+      - {settingId: L07-R01-003, settingPairId: C1_TWO_NEIGHBOR_ALL_H900, family: ADJACENT_CLOCK, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: TWO_NEIGHBOR_AVERAGE, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_NODRIFT_TRANSPLANT}
+      - {settingId: L07-R01-004, settingPairId: PARENT_DAUGHTER_BOUNDARY_ONLY_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT, sourceTier: PAPER_INHERITANCE_AND_FISSION_GROUNDED}
+      - {settingId: L07-R01-005, settingPairId: PARENT_DAUGHTER_INCOMING_PROJECT_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: INCOMING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT, sourceTier: PAPER_INHERITANCE_PROJECTION_INFERRED}
+      - {settingId: L07-R01-006, settingPairId: PARENT_DAUGHTER_OUTGOING_NEGATIVE_PREFIX_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: OUTGOING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT, sourceTier: PAPER_INHERITANCE_PROJECTION_INFERRED}
+      - {settingId: L07-R01-007, settingPairId: PARENT_DAUGHTER_OUTGOING_ELIGIBLE_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: OUTGOING_INTERVAL_PREFIX_INELIGIBLE, threshold: 0.9, comparator: STRICT_GT, sourceTier: PAPER_INHERITANCE_PROJECTION_INFERRED}
+      - {settingId: L07-R01-008, settingPairId: POSTFISSION_INCOMING_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: POST_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_GENERATION_TRACE_GROUNDED}
+      - {settingId: L07-R01-009, settingPairId: POSTFISSION_INCOMING_OUTGOING_H900, family: BOUNDARY_SCORE, boundaryObject: POST_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: OUTGOING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_GENERATION_TRACE_PROJECTED}
+      - {settingId: L07-R01-010, settingPairId: POSTFISSION_TWO_NEIGHBOR_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: POST_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: TWO_NEIGHBOR_AVERAGE, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_TECHNIQUE1_LITERAL}
+      - {settingId: L07-R01-011, settingPairId: POSTFISSION_TWO_NEIGHBOR_OUTGOING_H900, family: BOUNDARY_SCORE, boundaryObject: POST_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: TWO_NEIGHBOR_AVERAGE, projection: OUTGOING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_TECHNIQUE1_PROJECTED}
+      - {settingId: L07-R01-012, settingPairId: PREFISSION_INCOMING_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: PRE_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_TRACE_ENDPOINT_ALTERNATIVE}
+      - {settingId: L07-R01-013, settingPairId: PREFISSION_INCOMING_PROJECT_H900, family: BOUNDARY_SCORE, boundaryObject: PRE_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: INCOMING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_TRACE_ENDPOINT_PROJECTED}
+      - {settingId: L07-R01-014, settingPairId: PREFISSION_TWO_NEIGHBOR_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: PRE_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: TWO_NEIGHBOR_AVERAGE, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_TECHNIQUE1_ENDPOINT_ALTERNATIVE}
+      - {settingId: L07-R01-015, settingPairId: PREFISSION_TWO_NEIGHBOR_PROJECT_H900, family: BOUNDARY_SCORE, boundaryObject: PRE_FISSION_TRACE, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: TWO_NEIGHBOR_AVERAGE, projection: INCOMING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT, sourceTier: HISTORICAL_TECHNIQUE1_ENDPOINT_PROJECTED}
+      - {settingId: L07-R01-016, settingPairId: PARENT_DAUGHTER_BOUNDARY_ONLY_GE_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: GE, sourceTier: COMPARATOR_SENSITIVITY}
+  - roundId: R02_THRESHOLD_TRANSCRIPTION
+    outcomeAccessOrder: 2
+    input: FROZEN_S13Y_100_SHARED_MATRICES_200_TRAJECTORIES
+    purpose: Quantify explicit printed-threshold/transcription sensitivity without treating a match as author identity.
+    generatedSettingContract:
+      clocks: [C1_SELECTED_DAUGHTER_RETAINED, C0_BATCH_UPDATES_ONLY]
+      alignments: [INCOMING_DUPLICATE_FIRST, TWO_NEIGHBOR_AVERAGE]
+      thresholds: [0.90, 0.92, 0.94, 0.95, 0.96, 0.965, 0.97, 0.9725, 0.975, 0.98, 0.985, 0.99]
+      comparator: STRICT_GT
+      sourceTier: PRINTED_OR_TRANSCRIPTION_SENSITIVITY
+  - roundId: R03_EXPOSURE_SIMULATOR
+    outcomeAccessOrder: 3
+    input: S13Y_SHARED_CATALYTIC_MATRICES_AND_INITIAL_STATES_REGENERATED_FROM_FROZEN_ROOT
+    purpose: Test whether the undocumented Poisson exposure/batch size can lower printed-H=0.9 molecular occupancy while retaining paper-time simulator families.
+    simulationContract:
+      hValues: [0.45, 0.55, 0.65, 0.75, 0.85, 0.95, 1.05, 1.15, 1.25]
+      daughterRules: [FIRST_DAUGHTER, RANDOM_NONEMPTY]
+      overshootRules: [TRIM_NEW_ENTRANTS_TO_NMAX]
+      sharedMatrixCount: 100
+      fissions: 100
+      exactFrozenReplayConfigurations:
+        - {configurationId: S13Y_BASELINE_CANDIDATE_02, h: 0.6031526490073492, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, frozenStreamIdentity: S12F-CANDIDATE-02}
+        - {configurationId: S13Y_BASELINE_CANDIDATE_03, h: 0.5613315384859516, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, frozenStreamIdentity: S12F-CANDIDATE-03}
+      labelSettings:
+        - {suffix: C1_INCOMING_ALL_H900, family: ADJACENT_CLOCK, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT}
+        - {suffix: C1_TWO_NEIGHBOR_ALL_H900, family: ADJACENT_CLOCK, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: TWO_NEIGHBOR_AVERAGE, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT}
+        - {suffix: PARENT_DAUGHTER_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT}
+        - {suffix: PARENT_DAUGHTER_INCOMING_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: INCOMING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT}
+        - {suffix: PARENT_DAUGHTER_OUTGOING_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: OUTGOING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT}

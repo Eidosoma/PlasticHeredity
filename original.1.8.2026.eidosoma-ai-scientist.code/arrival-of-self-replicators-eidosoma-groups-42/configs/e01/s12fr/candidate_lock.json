@@ -1,0 +1,57 @@
+{
+  "abcParticleResultsSha256": "8562e34c2c3e785a7687d2cce3962c3dda49cb61df126ef06f8b0c104d27606e",
+  "candidateCount": 3,
+  "candidates": [
+    {
+      "c": null,
+      "candidateGroup": "FIXED_COMMON_EXPOSURE__FIRST_DAUGHTER__RETAIN_OVERSHOOT__C0_BATCH_UPDATES_ONLY",
+      "candidateId": "S12F-CANDIDATE-01",
+      "clockId": "C0_BATCH_UPDATES_ONLY",
+      "confirmationRank": 1,
+      "daughterRule": "FIRST_DAUGHTER",
+      "developmentDistance": 0.10025000000000092,
+      "exposureFamily": "FIXED_COMMON_EXPOSURE",
+      "h": 0.5081160391061118,
+      "hMax": null,
+      "overshootRule": "RETAIN_OVERSHOOT",
+      "posteriorMass": 0.045291437504119944,
+      "representativeParticleId": "FIXED_COMMON_EXPOSURE-R3-P030"
+    },
+    {
+      "c": null,
+      "candidateGroup": "FIXED_COMMON_EXPOSURE__FIRST_DAUGHTER__TRIM_NEW_ENTRANTS_TO_NMAX__C1_SELECTED_DAUGHTER_RETAINED",
+      "candidateId": "S12F-CANDIDATE-02",
+      "clockId": "C1_SELECTED_DAUGHTER_RETAINED",
+      "confirmationRank": 2,
+      "daughterRule": "FIRST_DAUGHTER",
+      "developmentDistance": 0.1,
+      "exposureFamily": "FIXED_COMMON_EXPOSURE",
+      "h": 0.6031526490073492,
+      "hMax": null,
+      "overshootRule": "TRIM_NEW_ENTRANTS_TO_NMAX",
+      "posteriorMass": 0.026384730594010766,
+      "representativeParticleId": "FIXED_COMMON_EXPOSURE-R3-P002"
+    },
+    {
+      "c": null,
+      "candidateGroup": "FIXED_COMMON_EXPOSURE__RANDOM_NONEMPTY__TRIM_NEW_ENTRANTS_TO_NMAX__C1_SELECTED_DAUGHTER_RETAINED",
+      "candidateId": "S12F-CANDIDATE-03",
+      "clockId": "C1_SELECTED_DAUGHTER_RETAINED",
+      "confirmationRank": 3,
+      "daughterRule": "RANDOM_NONEMPTY",
+      "developmentDistance": 0.2919999999999993,
+      "exposureFamily": "FIXED_COMMON_EXPOSURE",
+      "h": 0.5613315384859516,
+      "hMax": null,
+      "overshootRule": "TRIM_NEW_ENTRANTS_TO_NMAX",
+      "posteriorMass": 0.02607816029620507,
+      "representativeParticleId": "FIXED_COMMON_EXPOSURE-R3-P018"
+    }
+  ],
+  "confirmationRoot": "955c93f7c2f2081ca5415bd029433015e736160b6333e5c8b4bf1f8b3f252e33",
+  "posteriorCandidatesSha256": "5215d5145c0a845d2f68933fbc7ff4d305135d27dd267ee081e0ff1f5c510933",
+  "repairConfirmationSha256": "95b787fc7a737aa553fb49bb7b09658315a310354cbb1fc87c38be6e1cb43745",
+  "researchStepId": "E01-S12FR-EXACT-REPLAY-COMPARATOR-REPAIR-v1.0.0",
+  "schemaVersion": "E01-S12FR-timebase-candidate-lock-v1.0.0",
+  "selectionRule": "unchanged_S12F_posterior_mass_then_distance_complexity_lexical_maximum_three"
+}

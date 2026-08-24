@@ -1,0 +1,22 @@
+{
+  "domains": {
+    "acquisition": "d4bac77e018f02cb9eff4bf82bbe43263d899b8f207dcfc7902df88c38f0ff17",
+    "bootstrap": "30fc452a4261a6339f7a8dfab4aec3e15d2d6a1e61ec569d4f3b20fd6e15b115",
+    "calibration": "835c24be50ab7fd5c1f55ad5819a99e30726c41f43179ee92edac2cacc56e68b",
+    "future": "f093b8767e9bf8103099af7861422fc88f8c8b925e38cea044e9a043cdaeea18",
+    "initial": "aae697dba442bad2cc50f7409892498a5856d716b6b0503b1a7bcfa92e430b24",
+    "macro_kernel": "cf5e14d81a1204da9ca04c272b847398527b996c3859b43e15ab1389a93b1993",
+    "main_path": "7b0f51b45ea4aef09a8bd2ff3dadc7eaebb7e31b9db67dcb52542aeed5eeeac8",
+    "matrix": "9d90cbcde163f216184440d2b7a1411c385f2980b33451241b1f62f36a3df913",
+    "partition": "a81e63e30c4bd3f71eb84a148c43a1ed0024d9971805a1e4875943291b5985f7",
+    "random_action": "34692398d2b32cb6da9ad25f1596e8f376e83e978a1ba93003680944880e0de8",
+    "randomization": "9fb89fa806c0001b0371aecaf693f5078bf937aa14ce3a4a63f9f920cb72705f",
+    "replay": "95f3d37e05dabd26db72ca2a3a08ca98d8014cf984caf86818eef0bf3d0d093c",
+    "smoke": "2566abfbaf7562659aa6a405b0b601f7f8f0018fb14157ab254af9df5bf1b463",
+    "temporal_shuffle": "80c636ec9b206be2754ae91d2b1bebdce4b58e301da277e5485bb595c750eed7",
+    "validation": "e1a7191b1c1177fd44454f4d016fec04e436e3490729f79246975ce274ee0b91"
+  },
+  "format": "codex-ch5-phir-px10-seed-registry-v1",
+  "fresh_from_px9": true,
+  "label": "CODEX_CH5_PHIR_PX10_MULTISCALE_CAUSAL_INFORMATION_V1"
+}

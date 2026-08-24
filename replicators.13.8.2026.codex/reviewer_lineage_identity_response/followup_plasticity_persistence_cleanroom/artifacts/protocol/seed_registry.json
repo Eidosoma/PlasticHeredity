@@ -1,0 +1,19 @@
+{
+  "master_seed": "e9b9dce4efce4238c357239abf0aa0d70fa3e65c694c1f23ea661bedc3da47e7",
+  "nonproduction_domains": [
+    "test",
+    "smoke",
+    "benchmark"
+  ],
+  "production_domains": [
+    "surface.beta",
+    "surface.lineage",
+    "identity.selection",
+    "identity.future",
+    "factorial.beta",
+    "factorial.lineage",
+    "factorial.twins",
+    "bootstrap",
+    "replay"
+  ]
+}

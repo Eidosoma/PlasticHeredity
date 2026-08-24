@@ -1,0 +1,13 @@
+{
+  "format": "plastic-heredity-regime-prediction-pilot-decision-report-v1",
+  "report_status": "post_hoc_decision_support",
+  "created_date": "2026-08-15",
+  "sealed_pilot_path": "../regime_prediction_pilot",
+  "sealed_pilot_status": "stopped_before_confirmation",
+  "pilot_seal_id": "4db89c5095682c4cf055ed0cb26f9ba80972fd849e8f9a722fe6edf84b3b08a7",
+  "registration_id": "19d9cd4c59a884928c33cd4028f57f8f6d012e6e75a23168f5bd0a795b800a2e",
+  "sealed_checksums_sha256": "664587f1b8e73f9154790d93846ad64903f00a65b979c610612fee5d46264ad2",
+  "canonical_pilot_bundle_modified": false,
+  "confirmation_authorized": false,
+  "recommended_followup": "new_versioned_equal_probability_direct_hurdle_ensemble_confirmation"
+}

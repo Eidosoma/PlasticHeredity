@@ -1,0 +1,40 @@
+{
+  "format": "wagner-cleanroom-primary-v1",
+  "cohort": "fresh-wagner-state-channel-replication",
+  "scientific": true,
+  "master_seed_label": "wagner-cleanroom-v1|2026-08-21|primary",
+  "genes": 10,
+  "source_count": 240,
+  "maximum_source_proposals": 500000,
+  "weight_distribution": "standard_normal",
+  "bias": 0.0,
+  "update": "sequential_in_place",
+  "update_order": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "theta": 0.0,
+  "max_sweeps": 100,
+  "expression_flip_probability": 0.05,
+  "inheritance_lambda": 1.0,
+  "horizon": 32,
+  "minimum_basin_fraction": 0.05,
+  "minimum_form_distance": 0.4,
+  "midpoint_count": 2,
+  "neutral_damage_bits": 2,
+  "stable_run": 3,
+  "bootstrap_repetitions": 4096,
+  "simultaneous_test_count": 18,
+  "conditions": [
+    {"name": "primary", "arms": ["self_continuation", "state_transplant", "reset", "destination_donor", "descriptor_null", "state_shuffle"], "challenges": ["neutral_damage"], "ages": [0], "futures": 128},
+    {"name": "recurrence", "arms": ["state_transplant", "reset"], "challenges": ["forced_break"], "ages": [0], "futures": 128},
+    {"name": "persistence", "arms": ["state_transplant", "reset", "state_shuffle"], "challenges": ["release", "neutral_damage", "forced_break"], "ages": [1, 2, 4, 8], "futures": 64}
+  ],
+  "gates": {
+    "acquisition_minimum": 0.8,
+    "acquisition_imbalance_maximum": 0.1,
+    "hold8_minimum": 0.2,
+    "risk_gain_minimum": 0.05,
+    "crossover_minimum": 0.05,
+    "log_loss_gain_minimum": 0.02,
+    "reliability_minimum": 0.8
+  }
+}
+

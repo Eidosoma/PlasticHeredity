@@ -1,0 +1,36 @@
+{
+  "all_passed": true,
+  "checks": {
+    "all_legal_confirmation_scoring": true,
+    "confirmation_scale_fixed": true,
+    "cpu_allocations_fixed": true,
+    "development_confirmation_streams_distinct": true,
+    "development_scale_fixed": true,
+    "draws_fixed": true,
+    "future_seed_arm_free": true,
+    "heredity_model_hash_exact": true,
+    "legal_edit_nonnegative_integer": true,
+    "legal_edit_preserves_mass": true,
+    "master_registration_exists": true,
+    "no_48_matrix_campaign": true,
+    "no_pca": true,
+    "px1_result_integrity_exists": true,
+    "px2_result_complete_before_px3": true,
+    "ridge_grid_fixed": true,
+    "run_confirmation_after_failed_development": true,
+    "selection_future_streams_distinct": true,
+    "strict_eight_excluded": true
+  },
+  "format": "codex-ch5-phir-extension-px3-validation-v1",
+  "pytest_returncode": 0,
+  "pytest_stderr": "",
+  "pytest_stdout": "......                                                                   [100%]\n",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  }
+}

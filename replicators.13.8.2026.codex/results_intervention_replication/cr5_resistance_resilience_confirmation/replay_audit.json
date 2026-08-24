@@ -1,0 +1,18 @@
+{
+  "natural_break_acquisition_exact": true,
+  "resilience": {
+    "not_launched_due_to_incomplete_matrix_coverage": true
+  },
+  "resistance": {
+    "format": "codex-intervention-replay-audit-v1",
+    "future_seed_domain_reused_for_exact_replay": true,
+    "generated_campaign_digest": "b8385e0e6876c4e38c1e45d9246244477b03e88108af0e754bb306c8048abe13",
+    "maximum_prediction_absolute_error": 0.0,
+    "mismatched_state_ids": [],
+    "replay_campaign_digest": "b8385e0e6876c4e38c1e45d9246244477b03e88108af0e754bb306c8048abe13",
+    "replay_seed_domain_does_not_perturb_future_stream": true,
+    "state_edit_endpoint_and_process_digests_exact": true,
+    "states": 2000,
+    "states_exact": 2000
+  }
+}

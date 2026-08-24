@@ -1,0 +1,113 @@
+{
+  "clean_room": true,
+  "cohort": "MEMCONF",
+  "confirmation_digest_first": "fca9b7e18f7dd0175e0085c59a821b725ff5b9bf90c4d023c29ecc61da48977a",
+  "confirmation_digest_second": "fca9b7e18f7dd0175e0085c59a821b725ff5b9bf90c4d023c29ecc61da48977a",
+  "confirmation_futures": 128000,
+  "confirmation_replay_exact": true,
+  "crossfit_archive_readback": {
+    "all_exact": true,
+    "arrays": 20,
+    "rows": {
+      "c02__branch": 1030942,
+      "c02__destination": 1030942,
+      "c02__duration_bin": 1030942,
+      "c02__loss_iid": 1030942,
+      "c02__loss_markov": 1030942,
+      "c02__loss_semimarkov": 1030942,
+      "c02__matrix_id": 1030942,
+      "c02__previous": 1030942,
+      "c02__state_index": 1030942,
+      "c02__test_fold": 1030942,
+      "c03__branch": 1095600,
+      "c03__destination": 1095600,
+      "c03__duration_bin": 1095600,
+      "c03__loss_iid": 1095600,
+      "c03__loss_markov": 1095600,
+      "c03__loss_semimarkov": 1095600,
+      "c03__matrix_id": 1095600,
+      "c03__previous": 1095600,
+      "c03__state_index": 1095600,
+      "c03__test_fold": 1095600
+    }
+  },
+  "experiment": {
+    "bootstrap_repetitions": 4096,
+    "candidates": {
+      "02": {
+        "daughter_rule": "first",
+        "fission_rule": "fixed_size",
+        "name": "02",
+        "overshoot_rule": "trim_whole_assembly",
+        "poisson_exposure": 0.1
+      },
+      "03": {
+        "daughter_rule": "second",
+        "fission_rule": "binomial",
+        "name": "03",
+        "overshoot_rule": "admit_joiners_to_capacity",
+        "poisson_exposure": 0.125
+      }
+    },
+    "confirmation": {
+      "branches_per_state": 64,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "development": {
+      "branches_per_state": 64,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "gard": {
+      "beta_log_mean": -4.0,
+      "beta_log_sd": 4.0,
+      "generations": 100,
+      "inheritance_threshold": 0.9,
+      "k_join": 0.01,
+      "k_leave": 0.0001,
+      "max_growth_steps": 1000,
+      "n_max": 80,
+      "n_min": 40,
+      "n_types": 100
+    },
+    "horizon": 32,
+    "logistic_c": 0.1,
+    "master_seed": "25cd8e32e8e2176b36c31ecf2486827a523a9d49ab18eb6e39cd74237f153868",
+    "pca_components": 12,
+    "permutation_repetitions": 4096,
+    "regenerate_confirmation": true
+  },
+  "registration_checksums_verified": true,
+  "registration_id": "0a100eb3d626f3fdb92f5b4f84f1404b095fc1d21b1dfe6b3a83d2adf0e78f1f",
+  "registration_path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results/memory_registration",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scope": "prospective statistical inheritance-dependence hierarchy",
+  "sequence_rows_readback_exact": true,
+  "source_hashes_verified": true,
+  "states": 2000,
+  "support": {
+    "markov_vs_iid": true,
+    "semimarkov_vs_markov": true
+  }
+}

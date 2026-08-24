@@ -1,0 +1,460 @@
+{
+  "design": {
+    "path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results/regime_design_registration",
+    "registration_id": "71dd86609d52e9853afee34d304dcdfd1afaa7556e51c51e9b6ce9b73561b277",
+    "sha256sums_digest": "bfef38e28e25576281f8524915041e4e0ad65ed1980e445a5d842c42db935d26"
+  },
+  "development_power": {
+    "02": {
+      "adequate": true,
+      "event_matrices": 134,
+      "events": 2705,
+      "minimum_event_matrices": 20,
+      "minimum_events": 100
+    },
+    "03": {
+      "adequate": true,
+      "event_matrices": 146,
+      "events": 3154,
+      "minimum_event_matrices": 20,
+      "minimum_events": 100
+    }
+  },
+  "endpoint_order": [
+    "primary_all8",
+    "secondary_first5",
+    "secondary_centroid"
+  ],
+  "experiment": {
+    "bootstrap_repetitions": 4096,
+    "candidates": {
+      "02": {
+        "daughter_rule": "first",
+        "fission_rule": "fixed_size",
+        "name": "02",
+        "overshoot_rule": "trim_whole_assembly",
+        "poisson_exposure": 0.1
+      },
+      "03": {
+        "daughter_rule": "second",
+        "fission_rule": "binomial",
+        "name": "03",
+        "overshoot_rule": "admit_joiners_to_capacity",
+        "poisson_exposure": 0.125
+      }
+    },
+    "confirmation": {
+      "branches_per_state": 128,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "development": {
+      "branches_per_state": 128,
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200
+    },
+    "gard": {
+      "beta_log_mean": -4.0,
+      "beta_log_sd": 4.0,
+      "generations": 100,
+      "inheritance_threshold": 0.9,
+      "k_join": 0.01,
+      "k_leave": 0.0001,
+      "max_growth_steps": 1000,
+      "n_max": 80,
+      "n_min": 40,
+      "n_types": 100
+    },
+    "horizon": 32,
+    "logistic_c": 0.1,
+    "master_seed": "4ab47ce6f50cc194f28418be8cf8048d9e47972eb2864492f6dc3449869fa931",
+    "pca_components": 12,
+    "permutation_repetitions": 4096,
+    "regenerate_confirmation": true
+  },
+  "feature_provenance_digest": "04e68c6e535638b1aafd330d20a72fa20a19637fefe576d20b9e5906ad376aaa",
+  "format": "plastic-heredity-regime-development-v1",
+  "futures": 256000,
+  "model_seal_id": "23d91ed55363de348ad4fd8fccc200e35822642eacd3e830e4d05b28bde36b4a",
+  "model_summary": {
+    "primary_all8": {
+      "02": {
+        "cv_scores": {
+          "beta": {
+            "0.0001": 0.14763313367325054,
+            "0.001": 0.11095272924848185,
+            "0.01": 0.10083023935665648,
+            "0.1": 0.09920728970354899,
+            "1": 0.1007030682826201,
+            "10": 0.10127094493229143,
+            "100": 0.10138164825840913
+          },
+          "interaction": {
+            "0.0001": 0.1604466498466555,
+            "0.001": 0.16817021666375512,
+            "0.01": 0.14695640925095765,
+            "0.1": 0.10510254876004362,
+            "1": 0.09935729020029459,
+            "10": 0.09920391507935628,
+            "100": 0.09920670407006875
+          },
+          "state": {
+            "0.0001": 0.10168562457761286,
+            "0.001": 0.1013962084862632,
+            "0.01": 0.10147030200884599,
+            "0.1": 0.10185318738771915,
+            "1": 0.10201024101988929,
+            "10": 0.10204066141654565,
+            "100": 0.10204410635525696
+          }
+        },
+        "retained_features": {
+          "beta": 239,
+          "h10": 9,
+          "interaction": 64,
+          "state": 11
+        },
+        "selected_lambdas": {
+          "beta": 0.1,
+          "interaction": 10.0,
+          "state": 0.001
+        },
+        "uses_pca": false
+      },
+      "03": {
+        "cv_scores": {
+          "beta": {
+            "0.0001": 0.19782992173531178,
+            "0.001": 0.14064681085279443,
+            "0.01": 0.12445048355313168,
+            "0.1": 0.11874723931412783,
+            "1": 0.11828150829460289,
+            "10": 0.11811719679168768,
+            "100": 0.11811325998402163
+          },
+          "interaction": {
+            "0.0001": 0.15859758610895489,
+            "0.001": 0.13866097078197087,
+            "0.01": 0.12509182584022696,
+            "0.1": 0.11904780465186163,
+            "1": 0.11805746235891328,
+            "10": 0.11809851052893029,
+            "100": 0.11811179206532359
+          },
+          "state": {
+            "0.0001": 0.11840813389355337,
+            "0.001": 0.11815979382072778,
+            "0.01": 0.11811480272136098,
+            "0.1": 0.1183081411845462,
+            "1": 0.11840747264373518,
+            "10": 0.11842710448176715,
+            "100": 0.11842930112622194
+          }
+        },
+        "retained_features": {
+          "beta": 239,
+          "h10": 10,
+          "interaction": 64,
+          "state": 12
+        },
+        "selected_lambdas": {
+          "beta": 100.0,
+          "interaction": 1.0,
+          "state": 0.01
+        },
+        "uses_pca": false
+      }
+    },
+    "secondary_centroid": {
+      "02": {
+        "cv_scores": {
+          "beta": {
+            "0.0001": 0.38738862287148956,
+            "0.001": 0.31912728694145526,
+            "0.01": 0.28707191036710644,
+            "0.1": 0.2786558480644009,
+            "1": 0.27917869727003053,
+            "10": 0.28034499047540096,
+            "100": 0.28072151555565655
+          },
+          "interaction": {
+            "0.0001": 0.332395261028,
+            "0.001": 0.3336038288176872,
+            "0.01": 0.32725308673560655,
+            "0.1": 0.294537447080638,
+            "1": 0.27925212795552584,
+            "10": 0.27854052216375236,
+            "100": 0.27864067512966073
+          },
+          "state": {
+            "0.0001": 0.28168752091423593,
+            "0.001": 0.2810416880813915,
+            "0.01": 0.28078840922487186,
+            "0.1": 0.28124383987992635,
+            "1": 0.2818902172214996,
+            "10": 0.2822752286081691,
+            "100": 0.28233683740671056
+          }
+        },
+        "retained_features": {
+          "beta": 239,
+          "h10": 9,
+          "interaction": 64,
+          "state": 11
+        },
+        "selected_lambdas": {
+          "beta": 0.1,
+          "interaction": 10.0,
+          "state": 0.01
+        },
+        "uses_pca": false
+      },
+      "03": {
+        "cv_scores": {
+          "beta": {
+            "0.0001": 0.4557021245999751,
+            "0.001": 0.36960910227290433,
+            "0.01": 0.32575735925880556,
+            "0.1": 0.30992982117626744,
+            "1": 0.3090793688427117,
+            "10": 0.30979034373198006,
+            "100": 0.31006001587702475
+          },
+          "interaction": {
+            "0.0001": 0.3749759314427583,
+            "0.001": 0.36000901716672845,
+            "0.01": 0.3378267170589099,
+            "0.1": 0.318974747857111,
+            "1": 0.30972843426494595,
+            "10": 0.3090183839076932,
+            "100": 0.30907041722867745
+          },
+          "state": {
+            "0.0001": 0.3104290163280429,
+            "0.001": 0.31023540867558097,
+            "0.01": 0.31011976656263257,
+            "0.1": 0.3104222462630624,
+            "1": 0.31115342388401057,
+            "10": 0.3116415811234793,
+            "100": 0.31172283352321967
+          }
+        },
+        "retained_features": {
+          "beta": 239,
+          "h10": 10,
+          "interaction": 64,
+          "state": 12
+        },
+        "selected_lambdas": {
+          "beta": 1.0,
+          "interaction": 10.0,
+          "state": 0.01
+        },
+        "uses_pca": false
+      }
+    },
+    "secondary_first5": {
+      "02": {
+        "cv_scores": {
+          "beta": {
+            "0.0001": 0.35618100979053413,
+            "0.001": 0.2957245376691429,
+            "0.01": 0.26847461859757715,
+            "0.1": 0.2597075471723523,
+            "1": 0.25953349120443364,
+            "10": 0.2611170013946894,
+            "100": 0.2620064893051861
+          },
+          "interaction": {
+            "0.0001": 0.31050044446964764,
+            "0.001": 0.30822510790830104,
+            "0.01": 0.29752157324527784,
+            "0.1": 0.270286822600876,
+            "1": 0.26019429341374484,
+            "10": 0.2594944198230423,
+            "100": 0.25952721601997414
+          },
+          "state": {
+            "0.0001": 0.26355360136176476,
+            "0.001": 0.26253813420155836,
+            "0.01": 0.2621869838048379,
+            "0.1": 0.2628791998361743,
+            "1": 0.2634619159084859,
+            "10": 0.2636742095999049,
+            "100": 0.2637052536548897
+          }
+        },
+        "retained_features": {
+          "beta": 239,
+          "h10": 9,
+          "interaction": 64,
+          "state": 11
+        },
+        "selected_lambdas": {
+          "beta": 1.0,
+          "interaction": 10.0,
+          "state": 0.01
+        },
+        "uses_pca": false
+      },
+      "03": {
+        "cv_scores": {
+          "beta": {
+            "0.0001": 0.41839937449180364,
+            "0.001": 0.3333518344757996,
+            "0.01": 0.2997893598821551,
+            "0.1": 0.28788981935058733,
+            "1": 0.28709217980017854,
+            "10": 0.2882713592424863,
+            "100": 0.2893033395497573
+          },
+          "interaction": {
+            "0.0001": 0.3162255875218453,
+            "0.001": 0.30741447546059497,
+            "0.01": 0.29655766557637003,
+            "0.1": 0.28956661604626166,
+            "1": 0.2871102372596829,
+            "10": 0.287028516940537,
+            "100": 0.2870841755674318
+          },
+          "state": {
+            "0.0001": 0.28989843457954806,
+            "0.001": 0.2896858668962973,
+            "0.01": 0.28955100063154926,
+            "0.1": 0.2900919006107094,
+            "1": 0.2906583376519241,
+            "10": 0.29090759066486205,
+            "100": 0.29094665401337744
+          }
+        },
+        "retained_features": {
+          "beta": 239,
+          "h10": 10,
+          "interaction": 64,
+          "state": 12
+        },
+        "selected_lambdas": {
+          "beta": 1.0,
+          "interaction": 10.0,
+          "state": 0.01
+        },
+        "uses_pca": false
+      }
+    }
+  },
+  "occurrence_metrics_digest": "499d84e17276e7f042bd16571bb1390f86d7ec49e52e3cd96755daa78a26b144",
+  "portable_prediction_audit": {
+    "all_within_1e-12": true,
+    "errors": {
+      "primary_all8": {
+        "02": {
+          "beta_only": 0.0,
+          "h10": 0.0,
+          "h10_beta": 0.0,
+          "h10_state": 0.0,
+          "h10_state_beta": 0.0,
+          "h10_state_beta_interaction": 0.0,
+          "state_only": 0.0
+        },
+        "03": {
+          "beta_only": 0.0,
+          "h10": 0.0,
+          "h10_beta": 0.0,
+          "h10_state": 0.0,
+          "h10_state_beta": 0.0,
+          "h10_state_beta_interaction": 0.0,
+          "state_only": 0.0
+        }
+      },
+      "secondary_centroid": {
+        "02": {
+          "beta_only": 0.0,
+          "h10": 0.0,
+          "h10_beta": 0.0,
+          "h10_state": 0.0,
+          "h10_state_beta": 0.0,
+          "h10_state_beta_interaction": 0.0,
+          "state_only": 0.0
+        },
+        "03": {
+          "beta_only": 0.0,
+          "h10": 0.0,
+          "h10_beta": 0.0,
+          "h10_state": 0.0,
+          "h10_state_beta": 0.0,
+          "h10_state_beta_interaction": 0.0,
+          "state_only": 0.0
+        }
+      },
+      "secondary_first5": {
+        "02": {
+          "beta_only": 0.0,
+          "h10": 0.0,
+          "h10_beta": 0.0,
+          "h10_state": 0.0,
+          "h10_state_beta": 0.0,
+          "h10_state_beta_interaction": 0.0,
+          "state_only": 0.0
+        },
+        "03": {
+          "beta_only": 0.0,
+          "h10": 0.0,
+          "h10_beta": 0.0,
+          "h10_state": 0.0,
+          "h10_state_beta": 0.0,
+          "h10_state_beta_interaction": 0.0,
+          "state_only": 0.0
+        }
+      }
+    },
+    "maximum_absolute_error": 0.0
+  },
+  "replay_audit": {
+    "continuous_values_compared": 673810,
+    "continuous_within_1e-14": true,
+    "digests_exact": true,
+    "discrete_exact": true,
+    "first_digest": "1ca24ef76a4a04118be5325e2c527814d2d642b2b570ef37fbaed7bc53f7b276",
+    "maximum_continuous_absolute_error": 0.0,
+    "second_digest": "1ca24ef76a4a04118be5325e2c527814d2d642b2b570ef37fbaed7bc53f7b276"
+  },
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "source_hashes": {
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/mechanistic_v2.py": "cbb69032d665b023d35ce7593acea914f3f0c7d2b4b36408be5a388d45132ddf",
+    "plastic_heredity/mechanistic_v2_features.py": "292bb478c71f6569fcbbc9834d6692a8ed92d1a8ae12f29fc2e759d29e9a7cd4",
+    "plastic_heredity/mechanistic_v2_models.py": "0ab9cc1ace5be8f7b7e2992a2f8fbe889ed029b61c51881ec61e1cf6f4377b8a",
+    "plastic_heredity/memory.py": "a1565c564dc1e22b11a6ed15190aa0030e0621217007163ada8c8471715cdca0",
+    "plastic_heredity/metrics.py": "56647628567f1cf8c38cec6adb4ec31efea45ad8b7744089ebe8c4d34e1a59cc",
+    "plastic_heredity/regime_confirmation.py": "034c70adf4571408ad2e0215e8a7bddf4aa03c39199f2e8c080ac6e50ad60c0a",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+  },
+  "states": 2000,
+  "status": "models_sealed_before_confirmation_matrix_generation"
+}

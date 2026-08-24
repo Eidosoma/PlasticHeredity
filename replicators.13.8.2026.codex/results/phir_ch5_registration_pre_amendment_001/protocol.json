@@ -1,0 +1,226 @@
+{
+  "claim_boundary": [
+    "no consciousness, life, agency, or biological-memory claim",
+    "no universal origin-of-life mechanism",
+    "no Ruliad or Platonic-space portal",
+    "no validation of the unavailable private GARD-paper pipeline",
+    "gauge response is not hereditary control"
+  ],
+  "clean_room": {
+    "external_values_are_post_seal_benchmarks": true,
+    "fable_code_data_seeds_models_states_forbidden": true,
+    "public_phirl_commit": "a6d1d0d18c7551302724b7158c6ccdc4d3a33373",
+    "public_preprint": "arXiv:2607.28250v1"
+  },
+  "clocks": {
+    "all_fits_past_only": true,
+    "generational_observations": 20,
+    "growth_only_sensitivity": true,
+    "molecular_observations": 512,
+    "primary_includes_fission_and_intervention_transitions": true
+  },
+  "confirmation": {
+    "bootstrap_repetitions": 4096,
+    "branches": 64,
+    "bridge_arms": [
+      "MODEL_STABILIZE",
+      "MODEL_DESTABILIZE",
+      "RULE_STABILIZE",
+      "RULE_DESTABILIZE",
+      "RANDOM",
+      "NOOP"
+    ],
+    "bridge_horizon": 60,
+    "dose_horizon": 24,
+    "dose_quantiles": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "label": "confirmation",
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "launch_generation": 60,
+    "matrices": 48,
+    "natural_generations": 100,
+    "probe_arms": [
+      "PHI_UP",
+      "PHI_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "probe_candidates": 64,
+    "probe_confirm_horizon": 24,
+    "probe_horizon": 6,
+    "probe_rollouts": 4,
+    "randomization_repetitions": 4096,
+    "replicates": 2
+  },
+  "format": "codex-ch5-phir-program-v1",
+  "frozen_predictor": {
+    "no_refit_recalibration_or_threshold_change": true,
+    "path": "results/scaled5/frozen_models.npz",
+    "sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af"
+  },
+  "inference": {
+    "bootstrap": 4096,
+    "candidate_pooling": false,
+    "foresight_correlation_margin": 0.1,
+    "foresight_logloss_margin": 0.005,
+    "holm_within_family": true,
+    "probability_equivalence_margin": 0.025,
+    "sign_randomization": 4096,
+    "standardized_phi_equivalence_margin": 0.1,
+    "unit": "whole catalytic matrix"
+  },
+  "instruments": {
+    "active_std_threshold": 1e-08,
+    "atoms": [
+      "r_to_r",
+      "r_to_u0",
+      "r_to_u1",
+      "r_to_s",
+      "u0_to_r",
+      "u0_to_u0",
+      "u0_to_u1",
+      "u0_to_s",
+      "u1_to_r",
+      "u1_to_u0",
+      "u1_to_u1",
+      "u1_to_s",
+      "s_to_r",
+      "s_to_u0",
+      "s_to_u1",
+      "s_to_s"
+    ],
+    "clr_drop_last": true,
+    "covariance_ridge": "max(1e-8, 1e-6*trace/d) for multivariate MI",
+    "graph_floor": 1e-06,
+    "pseudocount": 0.5,
+    "revised": "public-PhiRL nine-atom PhiID sum on macro Fiedler halves",
+    "text_artifact": "typeset numerator divided by whole MI; negative control",
+    "typeset": "unnormalized multivariate whole-minus-Fiedler-parts",
+    "units": "nats"
+  },
+  "manual_confirmation_barrier": {
+    "automatic_launch_forbidden": true,
+    "pilot_confirmation_pooling_forbidden": true,
+    "pilot_result_required": true,
+    "user_authorization_artifact_required": true
+  },
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "pilot": {
+    "bootstrap_repetitions": 4096,
+    "branches": 64,
+    "bridge_arms": [
+      "MODEL_STABILIZE",
+      "MODEL_DESTABILIZE",
+      "RULE_STABILIZE",
+      "RULE_DESTABILIZE",
+      "RANDOM",
+      "NOOP"
+    ],
+    "bridge_horizon": 60,
+    "dose_horizon": 24,
+    "dose_quantiles": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "label": "pilot",
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "launch_generation": 60,
+    "matrices": 24,
+    "natural_generations": 100,
+    "probe_arms": [
+      "PHI_UP",
+      "PHI_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "probe_candidates": 64,
+    "probe_confirm_horizon": 24,
+    "probe_horizon": 6,
+    "probe_rollouts": 4,
+    "randomization_repetitions": 4096,
+    "replicates": 2
+  },
+  "program": "independent Codex Phi-r / plastic-heredity Chapter 5",
+  "protocol_id": "817584a25190bbe6093213042d52f3ea6616b01eeac152f79bdd50817188c5a8",
+  "replay": "complete deterministic replay of every scientific matrix unit",
+  "seed_domains": {
+    "bootstrap": "cd65c2bcb6144cd38b9e8081d5e5cabc9baad81da1cdbbabcb3d8633b8d44f8b",
+    "bridge_future": "eb2f1852ee61f8c5ba7404bd5a2e2385ed723ae99b6a008b52e394f55511996b",
+    "confirmation_matrix": "bd4f76339dc3f4046ced8c20dc7196fbf9ddfc3bbb70f10fa70613a5ac2e0477",
+    "controller_action": "3b892592667f60aaea6d8acd3d2a4ca36457fc87676d116df7412bfd824f0e9d",
+    "dose_future": "7ced460d088c8b55dd4df2c8017cbb456ee6f0891b7d45081c4125f0ea149a25",
+    "f12_future": "ffea3caec8d5306604b38d1cfe0528fcd9e513c38c91e1044c68fae9bd28d05e",
+    "initial": "27934c9973423f782ce38e7fab6fa3aed5f36c806c9f412301dfddde99c3cc29",
+    "main_path": "c8dc5ad0b21de553bef8ffc17725b5e5f51a8cea3f050f5a739db708b04bdfed",
+    "pilot_matrix": "89ddf67765445199993d30cccb8c4d0fce2778932fa27c6985a9ef41a0817d0a",
+    "probe_confirmation": "556382e31dcc4c72f2735a6100b732136b43f90f1872f7828063efa66bff73bd",
+    "probe_screen": "27d2e8f29fa775d4093eb7849114fd22c76384ff4d3ad8f944de233399a6d36b",
+    "probe_selection": "0e77047d777c25d398aeb164d72fc7cfdb15539ab563a2ef0255f1743bbaa6ca",
+    "randomization": "f852b22b69525605368f8dc1b2bf93f1e6e1eb2f8bf713b9ddde6101873da454",
+    "replay": "890cd6e1403a5fe416208faf3c8c651d9ea92229b719366b366eb7ff2924bef0",
+    "smoke": "49341033c3303644ddf552ba0b5ea265816048e62a2faaf01eea6ab06165f97a",
+    "validation": "9a70b28a4115ed4f1613d6543495ce108eeaaa133589095159c6bf249fddfa00"
+  },
+  "simulator": {
+    "candidates": {
+      "02": {
+        "daughter_rule": "first",
+        "fission_rule": "fixed_size",
+        "name": "02",
+        "overshoot_rule": "trim_whole_assembly",
+        "poisson_exposure": 0.1
+      },
+      "03": {
+        "daughter_rule": "second",
+        "fission_rule": "binomial",
+        "name": "03",
+        "overshoot_rule": "admit_joiners_to_capacity",
+        "poisson_exposure": 0.125
+      }
+    },
+    "gard": {
+      "beta_log_mean": -4.0,
+      "beta_log_sd": 4.0,
+      "generations": 100,
+      "inheritance_threshold": 0.9,
+      "k_join": 0.01,
+      "k_leave": 0.0001,
+      "max_growth_steps": 1000,
+      "n_max": 80,
+      "n_min": 40,
+      "n_types": 100
+    },
+    "sealed_simulator_unmodified": true,
+    "trace_wrapper_bitwise_parity_required": true
+  },
+  "storage": "rolling molecular buffers only; raw molecular traces forbidden"
+}

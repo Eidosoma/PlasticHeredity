@@ -1,0 +1,8 @@
+/.venv/
+/.pytest_cache/
+/**/__pycache__/
+/*.egg-info/
+/runs/**/*.npz
+/runs/**/campaign.log
+/runs/**/PID
+/runs/**/TMUX_SESSION

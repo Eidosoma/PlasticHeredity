@@ -1,0 +1,74 @@
+schema: eidosoma.e01.s19_l34.preregistration.v1
+research_step_id: S19-L34
+versioned_id: E01-S19-L34-PERMUTATION-INVARIANT-FULL-STATE-GRAPH-COMMITTOR-v1.0.0
+title: Permutation-Invariant Full-State Catalytic-Graph Committor Coordinate
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Did earlier invariant scalar and path summaries discard a transferable
+  deterministic committor signal carried by the complete current composition
+  and beta-conditioned catalytic graph?
+inputs:
+  states: exact 280 L28/L31 restored at-risk states
+  response: H32 successes out of 128; H8 response-only mediator diagnostic
+  primary_target_scope: retrospective completed-run matrix-specific basin
+  new_trajectories_or_branches: 0
+representations:
+  primary: BETA_CONDITIONED_FULL_STATE_GRAPH
+  oracle_diagnostic: TARGET_CONDITIONED_FULL_STATE_GRAPH
+  molecule_semantics: simultaneous species-label permutation invariant
+  node_information: integer count, composition, presence, exact joins/losses/boost, beta row/column strengths
+  edge_information: complete beta retained through fixed depth-4 directed Krylov message passing and singular spectrum
+  phase_information: mass, distance to fission, local step, post-fission flag, completed fissions, batch step, landmark
+  compression: training-only standardized full-SVD PCA with exactly 12 components
+  no_architecture_or_component_search: true
+model:
+  family: exact L29 L2 aggregated-binomial logistic coordinate
+  inverse_regularization_C: 0.1
+  fit_scope: L28_DEVELOPMENT_ONLY
+  candidate_specific: true
+  refit_on_evaluation: false
+controls:
+  - FROZEN_LANDMARK_PRIOR
+  - FROZEN_TARGET_GEOMETRY
+  - FROZEN_EXACT_H_TUBE
+  - FROZEN_ORDINARY_TUBE
+  - FROZEN_L33_PHASE_MEMORY
+  - FROZEN_L33_OPERATOR_MEMORY
+statistics:
+  matrix_bootstraps: 4096
+  development_response_permutations: 512
+  evaluation_response_permutations: 512
+  candidates_and_evaluation_cohorts_separate: true
+audits:
+  - markov state completeness against simulator source
+  - one-state-per-matrix cardinality
+  - development validation confirmation distribution shift
+  - full graph molecule permutation invariance
+  - primary target and future-suffix invariance
+  - PCA model and feature replay
+solution_gate:
+  required_evaluation_cohorts: [L28_VALIDATION, L31_CONFIRMATION]
+  h32_and_h8_spearman_point_above: 0.5
+  h32_and_h8_spearman_lower95_above: 0.3
+  brier_improvement_lower95_above_zero_vs_all_controls: true
+  development_and_evaluation_familywise_permutation_p_at_most: 0.05
+  both_candidates_required: true
+prohibited:
+  - branch_q_as_predictor
+  - target_centroid_in_primary_predictor
+  - raw_species_index_alignment_across_matrices
+  - graph_feature_search
+  - message_depth_search
+  - pca_dimension_search
+  - regularization_search
+  - candidate_pooling
+  - within_matrix_ordering_claim_from_one_state_per_matrix
+  - reactive_current_claim
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

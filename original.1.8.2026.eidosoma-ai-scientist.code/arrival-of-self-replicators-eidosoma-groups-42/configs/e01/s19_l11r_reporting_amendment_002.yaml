@@ -1,0 +1,53 @@
+amendmentId: S19-L11R-REPORTING-AMENDMENT-002
+schema: eidosoma.e01.s19_l11r.reporting_amendment.v1
+researchStepId: S19-L11R
+versionedLoopId: E01-S19-L11R-CENTROID-NUMERICAL-TOLERANCE-CONFIRMATION-v1.0.0
+amendmentClass: POST_OUTCOME_TECHNICAL_REPORTING_ONLY
+authorizationDate: '2026-08-09'
+authorizationSource: EXPLICIT_HUMAN_OVERRIDE_TO_ITERATE_TECHNICAL_REPAIRS_BEFORE_HANDOFF
+humanDirectionSummary: Fix technical defects, conduct at least three and at most seven bounded assurance cycles, and preserve scientifically negative results without outcome tuning.
+
+preservedFailure:
+  failureId: S19-L11R-F002
+  stage: FIRST_COMPLETE_ANALYSIS_TABLE_ASSEMBLY
+  scientificAggregationReleased: false
+  authoritativeResultTablesWritten: false
+  exceptionClass: TypeError
+  failingOperation: BOOLEAN_SUBTRACTION_IN_DERIVED_CANDIDATE_COMPARISON
+  classification: POSSIBLE_PIPELINE_ARTIFACT
+
+amendment:
+  target: DERIVED_CANDIDATE_COMPARISON_REPORTING_ONLY
+  before: pandas numeric coercion retained Boolean dtype for binary fingerprint columns, making descriptive subtraction undefined.
+  after: copied comparison-series values are converted to float64 before descriptive means, differences, and correlations.
+  booleanMapping:
+    false: 0.0
+    true: 1.0
+    missing: NaN
+  inputLabelsChanged: false
+  fingerprintValuesChanged: false
+  controlsChanged: false
+  statisticsChanged: false
+  gatesChanged: false
+
+scientificMethodChanged: false
+scientificValuesChanged: false
+invalidatedWorkerOutputsReusable: false
+freshScientificAggregationRequired: true
+fullExactRegenerationRequired: true
+
+assurancePolicy:
+  minimumCycles: 3
+  maximumCycles: 7
+  stopEarlyCondition: COMPLETE_UNCHANGED_SCIENCE_EXACT_REGENERATION_AND_FINAL_ARTIFACT_AUDIT_PASS
+  scientificNonSupportTriggersMethodChange: false
+
+amendedFiles:
+  - path: scripts/e01/run_s19_l11r.py
+    oldSha256: 3f4a1b97c2f71a349e39a1da5b155fb909d72c056a4e884a5b8ec0b84a88c1a0
+    newSha256: e6f8eca870eb357b4985e6a879407fe9c9426c949ca5e0c3867ddf829f7fb901
+    changeClass: VALUE_PRESERVING_REPORTING_AND_TRANSPARENT_PROVENANCE_ONLY
+  - path: tests/e01/test_s19_l11r.py
+    oldSha256: 7a3cbef48513f9ce50e8897c3617dbff63d2999319c1967bfad9e93fd7ace6bb
+    newSha256: 1b74ac13e4245895b7895a48ac9a7f139e1186f8d4b57ed70cbbef6482dae425
+    changeClass: FOCUSED_BOOLEAN_REPORTING_FIXTURE_ONLY

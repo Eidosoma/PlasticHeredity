@@ -1,0 +1,89 @@
+{
+  "bootstrap_repetitions": 4096,
+  "claim_boundary": "cannot establish a distinct regime without a new prospective endpoint and cohort",
+  "cohorts_pooled_for_claims": false,
+  "format": "plastic-heredity-episode-coherence-audit-v1",
+  "input_bundles": [
+    {
+      "all_archived_branches": 128000,
+      "all_positive_targets_and_discrete_process_values_exact": true,
+      "cohort_name": "CONF",
+      "continuous_process_values_within_1e-14": true,
+      "horizon": 12,
+      "input_sha256sums_digest": "0e7ca52ccf654fad2557d2eed9558429033a70476d4137375180d96bd2875ca0",
+      "master_seed": "7d6e6f7dfe3ff3cd781693f4d95bbdc93f6404c90cbd39076d0c89704b77f21a",
+      "maximum_continuous_process_absolute_error": 1.1102230246251565e-16,
+      "positive_branches": 50423,
+      "positive_branches_regenerated": 50423,
+      "source_cohort": "scaled5",
+      "state_reconstruction": {
+        "beta_exact": true,
+        "history_exact": true,
+        "state_graph_exact": true,
+        "targets_exact": true
+      },
+      "states": 2000
+    },
+    {
+      "all_archived_branches": 128000,
+      "all_positive_targets_and_discrete_process_values_exact": true,
+      "cohort_name": "MECHCONF",
+      "continuous_process_values_within_1e-14": true,
+      "horizon": 12,
+      "input_sha256sums_digest": "2c32cb3407d3f47d102bd2d88022b9e28d155261ca095faa41c940a0cf808f04",
+      "master_seed": "9329144f93f357f7c53f235edbbbfbc2aacd49a88e162499eebe77749fa950fd",
+      "maximum_continuous_process_absolute_error": 1.1102230246251565e-16,
+      "positive_branches": 48362,
+      "positive_branches_regenerated": 48362,
+      "source_cohort": "MECHCONF",
+      "state_reconstruction": {
+        "compositions_exact": true,
+        "targets_exact": true
+      },
+      "states": 2000
+    },
+    {
+      "all_archived_branches": 128000,
+      "all_positive_targets_and_discrete_process_values_exact": true,
+      "cohort_name": "MECHCONF2",
+      "continuous_process_values_within_1e-14": true,
+      "horizon": 12,
+      "input_sha256sums_digest": "36769067976fc841294d597e81b055b24bf061f9782a7a3db9ef4d86869c523c",
+      "master_seed": "4b80c4056081287f4ad0c4359f9229cba2cb803124278b6961ca8edbaf86a086",
+      "maximum_continuous_process_absolute_error": 1.1102230246251565e-16,
+      "positive_branches": 46731,
+      "positive_branches_regenerated": 46731,
+      "source_cohort": "MECHCONF2",
+      "state_reconstruction": {
+        "compositions_exact": true,
+        "targets_exact": true
+      },
+      "states": 2000
+    }
+  ],
+  "positive_episodes": 145516,
+  "protocol_digest": "8edacd184eddf2300ae93c43307bf4b22c5753f4e7441dd00a3f64e9eae325fd",
+  "protocol_id": "ebfebfd14fb83eb3ad24fd7ff0c9b18d0d2ae997127d1ab10f8e90477470282d",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scope": "episode coherence, distinctness, persistence, and second-renewal-within-F12 description",
+  "source_hashes": {
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/episode_coherence.py": "3bcd307a2c345eaf1f297a697808c27f094fb819ecbd32f6e82f6258c862caf4",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+  },
+  "status": "post_hoc_exploratory_not_prospective_confirmation"
+}

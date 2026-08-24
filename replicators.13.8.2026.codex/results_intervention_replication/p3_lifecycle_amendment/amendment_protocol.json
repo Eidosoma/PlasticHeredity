@@ -1,0 +1,67 @@
+{
+  "claim_boundary": {
+    "may_eventually_support": "small molecular or network interventions causally alter the Codex JOINT_BREAK_RUN3 probability under common random streams",
+    "prohibited": [
+      "Phi or PhiID intervention",
+      "strict-eight control",
+      "autonomous agency",
+      "biological memory",
+      "error correction",
+      "a living organism",
+      "a universal origin-of-life mechanism",
+      "real prebiotic chemistry",
+      "cross-clean-room replication before the relevant untouched gate passes"
+    ]
+  },
+  "execution": {
+    "calls_original_registered_p3_entry_point": true,
+    "confirmation_launched": false,
+    "creates_separate_checksum_sealed_result_audit": true,
+    "mandatory_stop_after_p3": true,
+    "restores_callback_after_run": true,
+    "temporarily_replaces_only_in_memory_readback_callback": true
+  },
+  "format": "codex-intervention-p3-lifecycle-amendment-v1",
+  "only_change": "derive readback pilot_eligibility from readback inference and the written exact-replay audit before dictionary comparison",
+  "orientation_note": {
+    "outgoing_rule_correction_changes_p3": false,
+    "reason": "the full present-present beta edge set is transpose invariant"
+  },
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "original_scientific_design": {
+    "arms": [
+      "LOOSEN",
+      "TIGHTEN",
+      "RANDOM_SURGERY",
+      "NOOP"
+    ],
+    "bootstrap_repetitions": 4096,
+    "bootstrap_seed": "0baea7dd908563f22fa7efe1134eef9641c3410b087967aad44eb0edf08bb57f",
+    "branches": 32,
+    "cohort_seed": "786b23ed3578276c0b2e57a45ade05b1cf33ccdbe756c474c67ca757dd3d94c9",
+    "contrast": [
+      "LOOSEN",
+      "TIGHTEN"
+    ],
+    "equivalence_margin": 0.025,
+    "future_seed": "29fe8bab02e955fbe344c5375586f03a9beaf09e6275d1eed6386e295f4215e9",
+    "horizon": 12,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 40,
+    "random_ratio_limit": 0.25,
+    "randomization_repetitions": 4096,
+    "randomization_seed": "dffee4be3e320ed35eb71343835ad0663cd5eb1dd0b0ca585f81307abc426974",
+    "role": "CR4 fixed-composition catalytic-network-surgery pilot",
+    "selection_seed": "04872f7c3e68ab8792ca6aaa86b34ec8e321ab98a727798eb39e76cc569904dd"
+  },
+  "phase": "p3",
+  "protocol_id": "2508b40a7b882d82a54a24e06e0d40a03e62312ab35c33aebd3a3c47cd0e819f",
+  "scientific_contract_changes": [],
+  "status": "sealed_before_any_p3_scientific_matrix"
+}

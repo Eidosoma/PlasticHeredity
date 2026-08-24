@@ -1,0 +1,113 @@
+{
+  "schema": "eidosoma.e01.s12g_output_schemas.v1",
+  "tables": {
+    "trajectory_input_manifest.parquet": [
+      "researchStepId", "candidateId", "matrixIndex", "trajectoryId", "clockId",
+      "betaSha256", "initialStateSha256", "trajectorySha256", "cachePath",
+      "cacheSha256", "completedFissions", "totalBatchUpdates", "selectedObservationCount",
+      "selectedTransitionCount", "cacheHashPassed", "candidateIdentityPassed"
+    ],
+    "seed_manifest.parquet": [
+      "researchStepId", "candidateId", "matrixIndex", "implementationId",
+      "temporalModeId", "endpointGeneration", "purpose", "streamId", "seed"
+    ],
+    "label_values.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "generation",
+      "postFissionRawObservationIndex", "labelId", "labelStatus", "isReplicator",
+      "historicalIncomingH", "historicalLocalScore", "clusterId", "referenceObservationId",
+      "metricToReference", "ineligibilityReason"
+    ],
+    "preprocessing_diagnostics.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "clockId",
+      "observationCount", "inputDimension", "outputDimension", "minimumMass",
+      "maximumMass", "maximumClosureError", "finite", "clrSha256", "status", "reason"
+    ],
+    "full_source_values.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "clockId",
+      "implementationId", "temporalModeId", "temporalLabel", "selectedSequenceIndex",
+      "rawObservationIndex", "observationKind", "generation", "molecularStep", "status",
+      "reason", "synergy", "downwardCausation", "emergence", "localPhiR",
+      "historicalLabel", "pastOnlyCosineLabel", "exactReplayPassed"
+    ],
+    "prefix_endpoint_values.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "clockId",
+      "implementationId", "temporalModeId", "temporalLabel", "generation",
+      "endpointSelectedSequenceIndex", "endpointRawObservationIndex", "endpointObservationKind",
+      "priorLockedClockTransitions", "fitObservationCount", "status", "reason", "synergy",
+      "downwardCausation", "emergence", "localPhiR", "historicalLabel",
+      "nextHistoricalLabel", "pastOnlyCosineLabel", "exactReplayPassed",
+      "futureSuffixStructuralGatePassed", "futureSuffixExecutedSentinelPassed"
+    ],
+    "partition_history.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "clockId",
+      "implementationId", "temporalModeId", "fitKind", "endpointGeneration",
+      "endpointSelectedSequenceIndex", "status", "reason", "retainedVariablesJson",
+      "partition1Json", "partition2Json", "partitionSize1", "partitionSize2",
+      "exactReplayPassed"
+    ],
+    "source_diagnostic_outputs.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "implementationId",
+      "temporalModeId", "fitKind", "endpointGeneration", "status", "reason",
+      "componentIdentityMaxAbsError", "retainedVariableCount", "miFinite",
+      "partitionAverageFinite", "emergenceFiniteCount", "localPhiRFiniteCount"
+    ],
+    "replay_suffix_validation.parquet": [
+      "researchStepId", "candidateId", "trajectoryId", "matrixIndex", "implementationId",
+      "endpointGeneration", "validationKind", "sentinel", "prefixSha256",
+      "variantPrefixSha256", "structuralExact", "resultExact", "status", "reason"
+    ],
+    "candidate_associations.csv": [
+      "candidateId", "implementationId", "temporalModeId", "labelId", "estimand",
+      "definedTrajectoryCount", "positiveTrajectoryCount", "ordinaryPositivePCount",
+      "meanCorrelation", "medianCorrelation", "bootstrapLower95", "bootstrapUpper95",
+      "circularShiftPositiveP", "circularShiftNegativeP", "effectiveEpisodeCount",
+      "medianLagOneAutocorrelation", "finiteCoverage", "gatePassed"
+    ],
+    "replicator_drift_results.csv": [
+      "candidateId", "implementationId", "temporalModeId", "labelId",
+      "definedTrajectoryCount", "positiveMeanDifferenceCount", "medianMeanDifference",
+      "medianMedianDifference", "bootstrapLower95", "bootstrapUpper95",
+      "blockAwarePositiveP", "pooledMannWhitneyU", "pooledMannWhitneyP", "gatePassed"
+    ],
+    "temporal_dependence_results.csv": [
+      "candidateId", "implementationId", "temporalModeId", "rowType", "trajectoryId",
+      "nFinite", "ljungBoxLag", "ljungBoxStatistic", "ljungBoxPValue",
+      "differencedLjungBoxLag", "differencedLjungBoxStatistic",
+      "differencedLjungBoxPValue", "aggregateTrendSlope", "aggregateTrendPValue"
+    ],
+    "spike_results.csv": [
+      "candidateId", "implementationId", "temporalModeId", "trajectoryId", "nFinite",
+      "positive3SigmaCount", "negative3SigmaCount", "robustPositiveCount",
+      "robustNegativeCount", "peakCount", "medianPeakWidthObservations",
+      "medianPeakProminence", "medianPeakSpacingObservations"
+    ],
+    "metric_identity_results.csv": [
+      "candidateId", "trajectoryId", "matrixIndex", "implementationId", "temporalModeId",
+      "sharedFiniteCount", "spearman", "pearson", "signAgreement", "rankAgreement",
+      "fractionRanksChangedOver10Points", "spikeJaccard", "partitionIdentity",
+      "replicationAssociationEmergence", "replicationAssociationLocalPhiR",
+      "replicationAssociationDifference"
+    ],
+    "future_dependence_results.csv": [
+      "candidateId", "trajectoryId", "matrixIndex", "implementationId", "sharedEndpointCount",
+      "medianAbsoluteDifference", "fullIqr", "normalizedMedianAbsoluteDifference",
+      "spearman", "pearson", "signAgreement", "fractionRanksChangedOver10Points",
+      "spikeJaccard", "medianPartitionAdjustedRand", "fullReplicationAssociation",
+      "prefixReplicationAssociation", "replicationAssociationDifference"
+    ],
+    "cross_candidate_results.csv": [
+      "analysisType", "matrixIndex", "candidateA", "candidateB", "pairingStatus",
+      "identityMatched", "metric", "valueA", "valueB", "difference", "status", "reason"
+    ],
+    "ensemble_adjudication.csv": [
+      "candidateId", "primaryFullAssociationGate", "primaryFullDriftGate",
+      "primaryFullCoherent", "primaryPrefixGate", "punctuatedGate", "phirlOppositeFull",
+      "phirlOppositePrefix", "operationalCoverageGate", "candidateClassification"
+    ],
+    "failure_ledger.csv": [
+      "failureId", "stage", "candidateId", "trajectoryId", "implementationId",
+      "temporalModeId", "endpointGeneration", "severity", "status", "reason",
+      "gateImpact", "repairAttempted"
+    ]
+  }
+}

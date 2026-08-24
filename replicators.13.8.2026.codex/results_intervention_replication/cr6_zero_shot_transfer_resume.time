@@ -1,0 +1,23 @@
+	Command being timed: ".venv/bin/python -m plastic_heredity.intervention_cr6_readback_amendment run --workers 14 --available-cpu-hours 5.0"
+	User time (seconds): 21379.21
+	System time (seconds): 117.39
+	Percent of CPU this job got: 1180%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 30:20.80
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 773404
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7
+	Minor (reclaiming a frame) page faults: 3170562
+	Voluntary context switches: 18025
+	Involuntary context switches: 6384150
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 796064
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

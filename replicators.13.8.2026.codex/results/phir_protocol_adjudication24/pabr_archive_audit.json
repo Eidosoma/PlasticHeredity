@@ -1,0 +1,24 @@
+{
+  "action_digest_mismatches": 0,
+  "archived_actions": 28800,
+  "archived_lineages": 480,
+  "exact_mismatches": {
+    "completed_fissions": 0,
+    "completed_horizon": 0,
+    "controlled_observation_digest": 0,
+    "controlled_record_digest": 0,
+    "extinct": 0,
+    "final_rng_state_digest": 0,
+    "information_eligible": 0,
+    "natural_record_digest": 0,
+    "path_attempt": 0
+  },
+  "format": "codex-ch5-phir-protocol-adjudication-archive-audit-v1",
+  "key_exact": true,
+  "maximum_inherited_fraction_error": 1.1102230246251565e-16,
+  "maximum_score_absolute_error": 3.552713678800501e-15,
+  "passed": true,
+  "regenerated_actions": 28800,
+  "regenerated_lineages": 480,
+  "score_mismatches": 0
+}

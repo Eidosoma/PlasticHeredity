@@ -1,0 +1,792 @@
+{
+  "allocation_namespace": "reviewer-ca-lineage-renewal-corrected-pairing-v2",
+  "audit": {
+    "confirmation_pairs": 92,
+    "confirmation_pairs_by_launch": {
+      "launch0": 20,
+      "launch1": 30,
+      "launch2": 21,
+      "launch3": 21
+    },
+    "confirmation_unique_donors": 184,
+    "frozen_donors": 2048,
+    "local_stage1_stage2_donors": 612,
+    "local_stage1_stage2_pairs": 306,
+    "matching_objective": "maximum same-launch A/B cardinality under density caliper; then minimum total density difference; SHA256 deterministic tie-break",
+    "maximum_density_difference": 0.01953125,
+    "quarantine_source": "two already-exposed sealed-v1 engineering pairs",
+    "sealed_v1_donors": 196,
+    "sealed_v1_pairs": 98,
+    "source_exposed_donors": 1000,
+    "union_excluded_donors": 1617,
+    "untouched_by_launch_label": {
+      "launch0_A": 20,
+      "launch0_B": 166,
+      "launch1_A": 43,
+      "launch1_B": 30,
+      "launch2_A": 81,
+      "launch2_B": 21,
+      "launch3_A": 49,
+      "launch3_B": 21
+    },
+    "untouched_donors": 431
+  },
+  "cohorts": {
+    "confirmation": [
+      {
+        "a_donor_id": "life-31649-0-973",
+        "b_donor_id": "life-31649-0-210",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-03ec651db07aa063",
+        "pairing_edge_sha256": "03ec651db07aa0638b78f5652aebe41c03d45a09d5ab8229329ca5806b30b963"
+      },
+      {
+        "a_donor_id": "life-31649-3-915",
+        "b_donor_id": "life-31649-3-880",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-0d99bcea4ae480c6",
+        "pairing_edge_sha256": "0d99bcea4ae480c6c0d93f35fe5a34c30dfe4149dfc1473a9225ca52f0d64b02"
+      },
+      {
+        "a_donor_id": "life-31649-2-870",
+        "b_donor_id": "life-31649-2-1478",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-12bce13f4517a6af",
+        "pairing_edge_sha256": "12bce13f4517a6af30ce9dcee97e72bdfea757b71cbadee81c6497fccfef1357"
+      },
+      {
+        "a_donor_id": "life-31649-0-526",
+        "b_donor_id": "life-31649-0-817",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-4b2d9a945d88fc52",
+        "pairing_edge_sha256": "4b2d9a945d88fc522a8c993e7d6fb34aec4f87043a0e2a790bf688a86944f1ff"
+      },
+      {
+        "a_donor_id": "life-31649-0-80",
+        "b_donor_id": "life-31649-0-4",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-148d8cf4cd5bdc47",
+        "pairing_edge_sha256": "148d8cf4cd5bdc478451061def41f37e65eea11a90a450a4e831561fb9c7a239"
+      },
+      {
+        "a_donor_id": "life-31649-3-206",
+        "b_donor_id": "life-31649-3-494",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-2ec374806ca8c0bc",
+        "pairing_edge_sha256": "2ec374806ca8c0bcd8e0d28d896dbbb5302f684d01705f9e39f50d75258a3328"
+      },
+      {
+        "a_donor_id": "life-31649-3-417",
+        "b_donor_id": "life-31649-3-169",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-22e952914882955e",
+        "pairing_edge_sha256": "22e952914882955e97dbcf1290ab9aa5c6bae66509c0a6ae642f083fad43a9c5"
+      },
+      {
+        "a_donor_id": "life-31649-3-219",
+        "b_donor_id": "life-31649-3-292",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-cbdf1d7a679b8c45",
+        "pairing_edge_sha256": "cbdf1d7a679b8c4555b7971364a264691a33efeddfaded4ccf7c642ac50471fd"
+      },
+      {
+        "a_donor_id": "life-31649-0-196",
+        "b_donor_id": "life-31649-0-635",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-6418a47fad5dedef",
+        "pairing_edge_sha256": "6418a47fad5dedefb5a8846fa85f3cff9596e7ef4a3cfef3ace9d68931700732"
+      },
+      {
+        "a_donor_id": "life-31649-1-2577",
+        "b_donor_id": "life-31649-1-518",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-26360e5cfedb5122",
+        "pairing_edge_sha256": "26360e5cfedb51222c82de9495b62997f7f09b5fdbe32730d7c8355fb70e763b"
+      },
+      {
+        "a_donor_id": "life-31649-0-105",
+        "b_donor_id": "life-31649-0-605",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-0445934a425b5696",
+        "pairing_edge_sha256": "0445934a425b5696f80fd2a56c22ce7821c1960f1c516f4e5939fe8d9e7291c5"
+      },
+      {
+        "a_donor_id": "life-31649-3-569",
+        "b_donor_id": "life-31649-3-868",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-27577234d2e0147e",
+        "pairing_edge_sha256": "27577234d2e0147e34afe1ed0284c171f09de00dd751fb8576b4a812bfe27a61"
+      },
+      {
+        "a_donor_id": "life-31649-0-913",
+        "b_donor_id": "life-31649-0-25",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-01ecbdb2d382690e",
+        "pairing_edge_sha256": "01ecbdb2d382690eba8cc4ba9fff962bb5d646fb6c9f309249181a92e2f9f633"
+      },
+      {
+        "a_donor_id": "life-31649-2-363",
+        "b_donor_id": "life-31649-2-98",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-30c2026b88af800c",
+        "pairing_edge_sha256": "30c2026b88af800ca34efdb1cb744429b16b00aa2da1fcf4b8471b48893ce84d"
+      },
+      {
+        "a_donor_id": "life-31649-0-238",
+        "b_donor_id": "life-31649-0-50",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-294847a2fd1b07b3",
+        "pairing_edge_sha256": "294847a2fd1b07b35c9df43decbebe50801223a41b3e267c982a68fb480fdab2"
+      },
+      {
+        "a_donor_id": "life-31649-1-1146",
+        "b_donor_id": "life-31649-1-1306",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-009c74a228a8508d",
+        "pairing_edge_sha256": "009c74a228a8508d1dfe64a76b0308172d9dd9cc76438301916b4af12423f433"
+      },
+      {
+        "a_donor_id": "life-31649-3-883",
+        "b_donor_id": "life-31649-3-159",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-157eb01f82b6b48a",
+        "pairing_edge_sha256": "157eb01f82b6b48a9195ec9f2ab6c427fa42287c2d476b5387939ebed39cc79f"
+      },
+      {
+        "a_donor_id": "life-31649-0-1153",
+        "b_donor_id": "life-31649-0-873",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-1d59e5fef760aa7c",
+        "pairing_edge_sha256": "1d59e5fef760aa7cd81d3f9c36f60b527d103bb14d2e058349257d934ddf6ced"
+      },
+      {
+        "a_donor_id": "life-31649-2-1150",
+        "b_donor_id": "life-31649-2-1233",
+        "density_difference": 0.00390625,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-2a58891b254afc1e",
+        "pairing_edge_sha256": "2a58891b254afc1ebdbf26acd04fe27a87bf0fa6bde0235e6fedd6d4c18a1d57"
+      },
+      {
+        "a_donor_id": "life-31649-1-1511",
+        "b_donor_id": "life-31649-1-1882",
+        "density_difference": 0.01171875,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-03814192ab7b0f9d",
+        "pairing_edge_sha256": "03814192ab7b0f9d7d67944e26fc44d9945761e49a2495ff3146c192fbca0ef5"
+      },
+      {
+        "a_donor_id": "life-31649-0-133",
+        "b_donor_id": "life-31649-0-1109",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-4c63bcec589f8514",
+        "pairing_edge_sha256": "4c63bcec589f8514b3ae601d4aa8eb488667262ec2c1f4ee7ae42f0738547796"
+      },
+      {
+        "a_donor_id": "life-31649-1-1735",
+        "b_donor_id": "life-31649-1-2095",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-029c91b515348480",
+        "pairing_edge_sha256": "029c91b5153484809284f3cce0e4110d562684176d4d6919d424a31eb3a05acc"
+      },
+      {
+        "a_donor_id": "life-31649-1-442",
+        "b_donor_id": "life-31649-1-1905",
+        "density_difference": 0.01953125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-0a70a92569b25466",
+        "pairing_edge_sha256": "0a70a92569b254665a593cfbbbb1742409829f2be05f100573dfcdd2a6b83e6a"
+      },
+      {
+        "a_donor_id": "life-31649-1-3317",
+        "b_donor_id": "life-31649-1-1604",
+        "density_difference": 0.01171875,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-04a7140c6c939c6d",
+        "pairing_edge_sha256": "04a7140c6c939c6d4419eba776a9d7d4670be197a945314d4d506fddc05e244f"
+      },
+      {
+        "a_donor_id": "life-31649-3-362",
+        "b_donor_id": "life-31649-3-367",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-5f507d11ddce929a",
+        "pairing_edge_sha256": "5f507d11ddce929a447b2a5d38cc0de287c5cc75a154eb8b1151ab624833ebd4"
+      },
+      {
+        "a_donor_id": "life-31649-1-1912",
+        "b_donor_id": "life-31649-1-138",
+        "density_difference": 0.015625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-17bdb9132e8bf8a3",
+        "pairing_edge_sha256": "17bdb9132e8bf8a3100ee0be545c0c3d4dbfaae8c83c7245cbb960c89fd1a0a9"
+      },
+      {
+        "a_donor_id": "life-31649-2-1287",
+        "b_donor_id": "life-31649-2-358",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-45b651958de2d5bd",
+        "pairing_edge_sha256": "45b651958de2d5bd75678b41290b678ce80b8f0abd016d7decd10ece42e707c5"
+      },
+      {
+        "a_donor_id": "life-31649-0-698",
+        "b_donor_id": "life-31649-0-338",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-74584e6fc3b5578e",
+        "pairing_edge_sha256": "74584e6fc3b5578e2ef66136ba2713513eb25d8d67716a983df9205001e1a322"
+      },
+      {
+        "a_donor_id": "life-31649-1-3015",
+        "b_donor_id": "life-31649-1-1678",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-0517b8cdad387d95",
+        "pairing_edge_sha256": "0517b8cdad387d95760749c8a257f5c7344fe65bdae0d5f875d3f53aae8a22ce"
+      },
+      {
+        "a_donor_id": "life-31649-1-3338",
+        "b_donor_id": "life-31649-1-1857",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-43596e09e79e543f",
+        "pairing_edge_sha256": "43596e09e79e543f7a639b1a39ea802f2337c7b6f5550ae467ebe673ad3b576f"
+      },
+      {
+        "a_donor_id": "life-31649-0-243",
+        "b_donor_id": "life-31649-0-236",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-03c64739908deda0",
+        "pairing_edge_sha256": "03c64739908deda0bb4d636c7b8c8d29344acc4e4bbb1bc580487da4e0d6b4d0"
+      },
+      {
+        "a_donor_id": "life-31649-3-445",
+        "b_donor_id": "life-31649-3-721",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-680e53e13562a4d4",
+        "pairing_edge_sha256": "680e53e13562a4d477b08f1d2f8da0948b055758a9d841f1f78c772da7b7f2cb"
+      },
+      {
+        "a_donor_id": "life-31649-0-893",
+        "b_donor_id": "life-31649-0-607",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-0b9c4e72aebeff9b",
+        "pairing_edge_sha256": "0b9c4e72aebeff9b3917afcc6ea9836541b12dc05c238a30115646c2108ff0fd"
+      },
+      {
+        "a_donor_id": "life-31649-0-363",
+        "b_donor_id": "life-31649-0-463",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-109bc17e65233a66",
+        "pairing_edge_sha256": "109bc17e65233a669a159c57b386e96875311f931cea8cd22afb660f28fb4ad1"
+      },
+      {
+        "a_donor_id": "life-31649-3-848",
+        "b_donor_id": "life-31649-3-324",
+        "density_difference": 0.01171875,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-a1e45a974f9e1183",
+        "pairing_edge_sha256": "a1e45a974f9e11836421d878c02d8bcd124d462f7d5eebff11e35d6dfe80eb4c"
+      },
+      {
+        "a_donor_id": "life-31649-1-871",
+        "b_donor_id": "life-31649-1-143",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-1cfa1a75c0d93824",
+        "pairing_edge_sha256": "1cfa1a75c0d938243ca01e6182455d6f41c63a537bc331592c09c3db6396faf6"
+      },
+      {
+        "a_donor_id": "life-31649-2-170",
+        "b_donor_id": "life-31649-2-1410",
+        "density_difference": 0.00390625,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-5443d273e9fab187",
+        "pairing_edge_sha256": "5443d273e9fab187266a879e1e0b6f26dbc48e6174036a14de09a1c877d52b83"
+      },
+      {
+        "a_donor_id": "life-31649-1-1921",
+        "b_donor_id": "life-31649-1-1611",
+        "density_difference": 0.015625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-2ea68f2c92915ed1",
+        "pairing_edge_sha256": "2ea68f2c92915ed138be2d736cf4de75488a778f9a3697fdf6bc29e631e7d92c"
+      },
+      {
+        "a_donor_id": "life-31649-1-3277",
+        "b_donor_id": "life-31649-1-3114",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-56b22ca0ffb5d6f3",
+        "pairing_edge_sha256": "56b22ca0ffb5d6f3b4a8bdee21ad22053a053d82ac219fcfe83324a5bb1e09ad"
+      },
+      {
+        "a_donor_id": "life-31649-2-1275",
+        "b_donor_id": "life-31649-2-1250",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-7585e6b20da0398b",
+        "pairing_edge_sha256": "7585e6b20da0398b1615241969ce5a98bee0b90bc0e070555349015a4f03d59f"
+      },
+      {
+        "a_donor_id": "life-31649-2-677",
+        "b_donor_id": "life-31649-2-1205",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-bcb40a84f2862f18",
+        "pairing_edge_sha256": "bcb40a84f2862f183ce4024f3992e0e4297d4753cd76ff214707a6976e483013"
+      },
+      {
+        "a_donor_id": "life-31649-3-912",
+        "b_donor_id": "life-31649-3-831",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-7af87df563783a43",
+        "pairing_edge_sha256": "7af87df563783a43ce3ff4328a13f6dda6e4bb7c3fe886c99666c660d87de539"
+      },
+      {
+        "a_donor_id": "life-31649-2-1001",
+        "b_donor_id": "life-31649-2-581",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-63956615a5316bd2",
+        "pairing_edge_sha256": "63956615a5316bd25c6d8e542a229cbfd0496db667a82f21bc4e4a1371c975ab"
+      },
+      {
+        "a_donor_id": "life-31649-0-315",
+        "b_donor_id": "life-31649-0-578",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-3cccd255b42999c7",
+        "pairing_edge_sha256": "3cccd255b42999c74e5362b11feace973947e8ac3c3e84b7f812bf6363a49ca4"
+      },
+      {
+        "a_donor_id": "life-31649-3-17",
+        "b_donor_id": "life-31649-3-526",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-029f43786d8c8da0",
+        "pairing_edge_sha256": "029f43786d8c8da0e4019d8e260ff976b61d23d7ac14d0ce80dae55b850fd57d"
+      },
+      {
+        "a_donor_id": "life-31649-0-729",
+        "b_donor_id": "life-31649-0-221",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-19ff0fa1bf6b20b6",
+        "pairing_edge_sha256": "19ff0fa1bf6b20b60750c2b8956a44070020911fceb8affd9ef2b1fa6f37c30d"
+      },
+      {
+        "a_donor_id": "life-31649-0-216",
+        "b_donor_id": "life-31649-0-368",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-2a9a05d14bc83fd4",
+        "pairing_edge_sha256": "2a9a05d14bc83fd4eae17a03731be4524be2823de35db674fb4f235506fb69c3"
+      },
+      {
+        "a_donor_id": "life-31649-1-538",
+        "b_donor_id": "life-31649-1-1768",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-570ae36e920eeff8",
+        "pairing_edge_sha256": "570ae36e920eeff8212c95f5b66b490df6a8995f1a9c28204a7f86972c8acf92"
+      },
+      {
+        "a_donor_id": "life-31649-3-560",
+        "b_donor_id": "life-31649-3-36",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-4e071bf5277d2ed7",
+        "pairing_edge_sha256": "4e071bf5277d2ed72f412399533630419e724a4fcc35126af38a32961f45811a"
+      },
+      {
+        "a_donor_id": "life-31649-1-2070",
+        "b_donor_id": "life-31649-1-396",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-d2fb229c7450f49e",
+        "pairing_edge_sha256": "d2fb229c7450f49e9bd81c115c3d428c69710f9eb34290135c3ee26d7bca1329"
+      },
+      {
+        "a_donor_id": "life-31649-1-1829",
+        "b_donor_id": "life-31649-1-3046",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-54aaa72e93b40282",
+        "pairing_edge_sha256": "54aaa72e93b40282b8d47f0aff81a0e83b6a2b03719ccab5aabf92daa83a3f6b"
+      },
+      {
+        "a_donor_id": "life-31649-1-1869",
+        "b_donor_id": "life-31649-1-2714",
+        "density_difference": 0.015625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-56c951658d359317",
+        "pairing_edge_sha256": "56c951658d359317f4de67d6e8a4aaeed1f54be9f623ac80e11e435ccbbc2319"
+      },
+      {
+        "a_donor_id": "life-31649-2-1360",
+        "b_donor_id": "life-31649-2-303",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-1cb9f36714c2a2fb",
+        "pairing_edge_sha256": "1cb9f36714c2a2fb3db74d58ad01054a3915c61ef8a28999185b170134e81995"
+      },
+      {
+        "a_donor_id": "life-31649-2-262",
+        "b_donor_id": "life-31649-2-806",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-0066290bb6011724",
+        "pairing_edge_sha256": "0066290bb60117244d0b941b60d24007081bc13c618a1c205bd55e71fdc51f87"
+      },
+      {
+        "a_donor_id": "life-31649-2-1035",
+        "b_donor_id": "life-31649-2-316",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-51c44b27ac72bdea",
+        "pairing_edge_sha256": "51c44b27ac72bdea23f5d43234fe095686b9f8e5f95a6926d1ca04d13e0b1e39"
+      },
+      {
+        "a_donor_id": "life-31649-3-120",
+        "b_donor_id": "life-31649-3-898",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-a86c661333a71d61",
+        "pairing_edge_sha256": "a86c661333a71d6199b5ed8261c3be3f4ccd342d0030395382ef53aa3125f835"
+      },
+      {
+        "a_donor_id": "life-31649-2-36",
+        "b_donor_id": "life-31649-2-1338",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-45a47449a68661d9",
+        "pairing_edge_sha256": "45a47449a68661d95c5ed3460dcecb984f351c83070274d044c9b6befb8caef8"
+      },
+      {
+        "a_donor_id": "life-31649-2-379",
+        "b_donor_id": "life-31649-2-1390",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-17e22916b295708b",
+        "pairing_edge_sha256": "17e22916b295708ba798a1d684ab795cd1a3de802f3ee4f16bd3188d6549a8a0"
+      },
+      {
+        "a_donor_id": "life-31649-3-265",
+        "b_donor_id": "life-31649-3-650",
+        "density_difference": 0.0078125,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-6e8c9ecb41b1d688",
+        "pairing_edge_sha256": "6e8c9ecb41b1d688fc2f0076711114f3da8c0996b93d4efcf1e61c614c32cca7"
+      },
+      {
+        "a_donor_id": "life-31649-2-1632",
+        "b_donor_id": "life-31649-2-1643",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-1cc0d4e04bde52b3",
+        "pairing_edge_sha256": "1cc0d4e04bde52b3f3461e961b8928f99521ab35f161e8f90172c4ad2bce44d8"
+      },
+      {
+        "a_donor_id": "life-31649-1-1037",
+        "b_donor_id": "life-31649-1-2620",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-6468e114c195e07b",
+        "pairing_edge_sha256": "6468e114c195e07bed83e994db75acb039baef7f943a4e837174a3ce90747bc5"
+      },
+      {
+        "a_donor_id": "life-31649-0-201",
+        "b_donor_id": "life-31649-0-145",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-0c560a3664cb892d",
+        "pairing_edge_sha256": "0c560a3664cb892d62075dcc877e6900e3d8ab23044843bb1e0c76a334971ef1"
+      },
+      {
+        "a_donor_id": "life-31649-1-3024",
+        "b_donor_id": "life-31649-1-558",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-11d05d801de8b4df",
+        "pairing_edge_sha256": "11d05d801de8b4df37b980f3a5f51310e48c0f8b67b8feb9afdfc3c89b22cd81"
+      },
+      {
+        "a_donor_id": "life-31649-1-2392",
+        "b_donor_id": "life-31649-1-2265",
+        "density_difference": 0.01953125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-0aa09f20cbf845cb",
+        "pairing_edge_sha256": "0aa09f20cbf845cb08cf6c69509c5e0962e4345795fbad2bcb7db7476ed05169"
+      },
+      {
+        "a_donor_id": "life-31649-3-842",
+        "b_donor_id": "life-31649-3-896",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-1455ba5b2a12d663",
+        "pairing_edge_sha256": "1455ba5b2a12d66326337b1264dd080e61da1bab0f3dae77ad44df1bf1981c59"
+      },
+      {
+        "a_donor_id": "life-31649-0-405",
+        "b_donor_id": "life-31649-0-761",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-154f704785936445",
+        "pairing_edge_sha256": "154f704785936445f7c5bc4e303ef9d3d8c9a5b4ca95dd91578a4a38507cca21"
+      },
+      {
+        "a_donor_id": "life-31649-1-711",
+        "b_donor_id": "life-31649-1-2583",
+        "density_difference": 0.00390625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-200bd06a12d180b9",
+        "pairing_edge_sha256": "200bd06a12d180b9217341f0e70e9f5bd64fed6e5d72085d29262969b36a2f3f"
+      },
+      {
+        "a_donor_id": "life-31649-1-1463",
+        "b_donor_id": "life-31649-1-2359",
+        "density_difference": 0.015625,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-26d25bc904a9cc81",
+        "pairing_edge_sha256": "26d25bc904a9cc81735fda9ebe6268426b812f3a419ba798408189ddf71de8ed"
+      },
+      {
+        "a_donor_id": "life-31649-2-82",
+        "b_donor_id": "life-31649-2-926",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-0345c577b591aa82",
+        "pairing_edge_sha256": "0345c577b591aa82f57dc24e3e0c534b1a7b8b8dd9cf8ad3f74373e4a12b0f88"
+      },
+      {
+        "a_donor_id": "life-31649-2-1549",
+        "b_donor_id": "life-31649-2-1277",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-0359a95b18908da9",
+        "pairing_edge_sha256": "0359a95b18908da99094ea843a7cabe96ff17888f544ca4b5a20eee1c6d5bbdd"
+      },
+      {
+        "a_donor_id": "life-31649-3-690",
+        "b_donor_id": "life-31649-3-779",
+        "density_difference": 0.00390625,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-3290a6bafab2ca5c",
+        "pairing_edge_sha256": "3290a6bafab2ca5c4846cb90faf3da04f04d1632136c35f612ba0f2a78ebecdc"
+      },
+      {
+        "a_donor_id": "life-31649-3-757",
+        "b_donor_id": "life-31649-3-437",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-2fbe4999f508be6e",
+        "pairing_edge_sha256": "2fbe4999f508be6e0d9b8044177ea3b9a9bc56a40ed33664498875d6aeaff1db"
+      },
+      {
+        "a_donor_id": "life-31649-1-357",
+        "b_donor_id": "life-31649-1-2334",
+        "density_difference": 0.01953125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-0b647b07b629f6e1",
+        "pairing_edge_sha256": "0b647b07b629f6e12a38143151e3988d7371d0ffded9addeae796a45847fdf53"
+      },
+      {
+        "a_donor_id": "life-31649-2-384",
+        "b_donor_id": "life-31649-2-370",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-0b341d31d0ffe7c7",
+        "pairing_edge_sha256": "0b341d31d0ffe7c73d2614084aea52345de254a5fc109bd0ad48746896e6ab9a"
+      },
+      {
+        "a_donor_id": "life-31649-1-2451",
+        "b_donor_id": "life-31649-1-2986",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-1ac2a9eeb405554f",
+        "pairing_edge_sha256": "1ac2a9eeb405554f1f5fa64dc3e99e9cd552ff325327f7205520078a865ca467"
+      },
+      {
+        "a_donor_id": "life-31649-3-802",
+        "b_donor_id": "life-31649-3-879",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-6d871e59e7bb599d",
+        "pairing_edge_sha256": "6d871e59e7bb599dc30b513e92d4474c02240e443987c426dab32f35f7214704"
+      },
+      {
+        "a_donor_id": "life-31649-1-1744",
+        "b_donor_id": "life-31649-1-2678",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-28154c49064c01e2",
+        "pairing_edge_sha256": "28154c49064c01e2433906dbef18278e5ee08f2e118922cd3ab4d49d8dc8a3b1"
+      },
+      {
+        "a_donor_id": "life-31649-2-1064",
+        "b_donor_id": "life-31649-2-1409",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-17b64835db3c4731",
+        "pairing_edge_sha256": "17b64835db3c473140cb975027d349f7ac8c82b807443f742648f50dc87d8443"
+      },
+      {
+        "a_donor_id": "life-31649-0-449",
+        "b_donor_id": "life-31649-0-736",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-c1ef262312620288",
+        "pairing_edge_sha256": "c1ef2623126202880fb07bafa932c426b5ed647f3fa60d54f4fd441a679127e4"
+      },
+      {
+        "a_donor_id": "life-31649-1-3252",
+        "b_donor_id": "life-31649-1-515",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-1c67363a53aa18db",
+        "pairing_edge_sha256": "1c67363a53aa18dbe644ce2c3fd61e86357a6d6c5b0ed8b95142384b02594c8b"
+      },
+      {
+        "a_donor_id": "life-31649-2-1532",
+        "b_donor_id": "life-31649-2-541",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-129a9a9472ef8e3d",
+        "pairing_edge_sha256": "129a9a9472ef8e3d0ec1402b91feb973639ce9e218ddda3026a9e9a6eba83df8"
+      },
+      {
+        "a_donor_id": "life-31649-3-186",
+        "b_donor_id": "life-31649-3-329",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-37d9876c3dc192d9",
+        "pairing_edge_sha256": "37d9876c3dc192d923f06cd44c4e97b7199879241f2f113374469aa0bec87cd0"
+      },
+      {
+        "a_donor_id": "life-31649-1-3380",
+        "b_donor_id": "life-31649-1-1729",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-0e12cbc4e66d510a",
+        "pairing_edge_sha256": "0e12cbc4e66d510a389f164e0f46e41f3e0035084420d7a30620676c08ba76d1"
+      },
+      {
+        "a_donor_id": "life-31649-3-303",
+        "b_donor_id": "life-31649-3-152",
+        "density_difference": 0.0078125,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-236d9d398b2d6134",
+        "pairing_edge_sha256": "236d9d398b2d6134d3e5fc52f1b40af6cf476f2fc020369a6eca0533053d6700"
+      },
+      {
+        "a_donor_id": "life-31649-1-3423",
+        "b_donor_id": "life-31649-1-547",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-4379e072bdfa1f6f",
+        "pairing_edge_sha256": "4379e072bdfa1f6f85d3736cce4088f29bd31c61152d1cdc79ff634505c964a3"
+      },
+      {
+        "a_donor_id": "life-31649-2-1492",
+        "b_donor_id": "life-31649-2-1261",
+        "density_difference": 0.00390625,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-19bb58932c9c718f",
+        "pairing_edge_sha256": "19bb58932c9c718f70a839944f13bb9b405ab7d2cc8b33e2bedf8defe59bc45e"
+      },
+      {
+        "a_donor_id": "life-31649-0-61",
+        "b_donor_id": "life-31649-0-228",
+        "density_difference": 0.0,
+        "launch_index": 0,
+        "pair_id": "renewal-v2-0-3db3597d20782d12",
+        "pairing_edge_sha256": "3db3597d20782d12eeeca553d028f1da4d335b56ff8e550b467880d9f15df5b7"
+      },
+      {
+        "a_donor_id": "life-31649-1-1479",
+        "b_donor_id": "life-31649-1-2883",
+        "density_difference": 0.0078125,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-341b44d3bc1fb998",
+        "pairing_edge_sha256": "341b44d3bc1fb99877533c54ff0b1156dae614ce3c2b1759817218e56f92e5f5"
+      },
+      {
+        "a_donor_id": "life-31649-1-2823",
+        "b_donor_id": "life-31649-1-2172",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-055de676fc7baa53",
+        "pairing_edge_sha256": "055de676fc7baa53f821a59dd92ca3852dc0a5d7a7b1459d76b38209ad0efbc9"
+      },
+      {
+        "a_donor_id": "life-31649-2-875",
+        "b_donor_id": "life-31649-2-20",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "renewal-v2-2-922dd70255ce605a",
+        "pairing_edge_sha256": "922dd70255ce605a98b09952693d3177289d33d17df015d8ca2282f5744b030c"
+      },
+      {
+        "a_donor_id": "life-31649-3-545",
+        "b_donor_id": "life-31649-3-795",
+        "density_difference": 0.0,
+        "launch_index": 3,
+        "pair_id": "renewal-v2-3-0e98eb5af65bd990",
+        "pairing_edge_sha256": "0e98eb5af65bd99088ec7b979a636b147060a3ca3102a4f281aef5161c2ff178"
+      },
+      {
+        "a_donor_id": "life-31649-1-3367",
+        "b_donor_id": "life-31649-1-2110",
+        "density_difference": 0.01171875,
+        "launch_index": 1,
+        "pair_id": "renewal-v2-1-02a37b37f1886947",
+        "pairing_edge_sha256": "02a37b37f188694706d5083f35cd6f3b9383510cc31709eb933afca27e667707"
+      }
+    ],
+    "quarantine": [
+      {
+        "a_donor_id": "life-31649-1-1418",
+        "b_donor_id": "life-31649-1-2958",
+        "density_difference": 0.0,
+        "launch_index": 1,
+        "pair_id": "fresh-1-37a449ce3120d1ca"
+      },
+      {
+        "a_donor_id": "life-31649-2-675",
+        "b_donor_id": "life-31649-2-376",
+        "density_difference": 0.0,
+        "launch_index": 2,
+        "pair_id": "fresh-2-b57af45bba73a372"
+      }
+    ]
+  },
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "snapshot_digest": "f83fe4945277da978519b478079719c416a8e162bc7eac0399d25e37003f511d"
+}

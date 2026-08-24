@@ -1,0 +1,38 @@
+{
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "confirmation_authorization_required": true,
+  "confirmation_automatically_launched": false,
+  "format": "codex-ch5-phir-result-v1",
+  "mandatory_stop_after_pilot": true,
+  "matrices": 24,
+  "noop_plain_bitwise_exact": true,
+  "phase": "pilot",
+  "pilot_and_confirmation_pooled": false,
+  "raw_molecular_traces_persisted": false,
+  "registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+  "replicates": 2,
+  "row_counts": {
+    "branch_halves": 960,
+    "branch_states": 480,
+    "bridge": 34560,
+    "dose": 1152,
+    "natural": 7776,
+    "probe": 768,
+    "probe_screens": 6144,
+    "selected_edits": 29664
+  },
+  "runtime": {
+    "cpu_count": 16,
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  }
+}

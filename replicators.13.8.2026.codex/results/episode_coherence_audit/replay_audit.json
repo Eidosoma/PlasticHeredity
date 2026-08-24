@@ -1,0 +1,58 @@
+[
+  {
+    "all_archived_branches": 128000,
+    "all_positive_targets_and_discrete_process_values_exact": true,
+    "cohort_name": "CONF",
+    "continuous_process_values_within_1e-14": true,
+    "horizon": 12,
+    "input_sha256sums_digest": "0e7ca52ccf654fad2557d2eed9558429033a70476d4137375180d96bd2875ca0",
+    "master_seed": "7d6e6f7dfe3ff3cd781693f4d95bbdc93f6404c90cbd39076d0c89704b77f21a",
+    "maximum_continuous_process_absolute_error": 1.1102230246251565e-16,
+    "positive_branches": 50423,
+    "positive_branches_regenerated": 50423,
+    "source_cohort": "scaled5",
+    "state_reconstruction": {
+      "beta_exact": true,
+      "history_exact": true,
+      "state_graph_exact": true,
+      "targets_exact": true
+    },
+    "states": 2000
+  },
+  {
+    "all_archived_branches": 128000,
+    "all_positive_targets_and_discrete_process_values_exact": true,
+    "cohort_name": "MECHCONF",
+    "continuous_process_values_within_1e-14": true,
+    "horizon": 12,
+    "input_sha256sums_digest": "2c32cb3407d3f47d102bd2d88022b9e28d155261ca095faa41c940a0cf808f04",
+    "master_seed": "9329144f93f357f7c53f235edbbbfbc2aacd49a88e162499eebe77749fa950fd",
+    "maximum_continuous_process_absolute_error": 1.1102230246251565e-16,
+    "positive_branches": 48362,
+    "positive_branches_regenerated": 48362,
+    "source_cohort": "MECHCONF",
+    "state_reconstruction": {
+      "compositions_exact": true,
+      "targets_exact": true
+    },
+    "states": 2000
+  },
+  {
+    "all_archived_branches": 128000,
+    "all_positive_targets_and_discrete_process_values_exact": true,
+    "cohort_name": "MECHCONF2",
+    "continuous_process_values_within_1e-14": true,
+    "horizon": 12,
+    "input_sha256sums_digest": "36769067976fc841294d597e81b055b24bf061f9782a7a3db9ef4d86869c523c",
+    "master_seed": "4b80c4056081287f4ad0c4359f9229cba2cb803124278b6961ca8edbaf86a086",
+    "maximum_continuous_process_absolute_error": 1.1102230246251565e-16,
+    "positive_branches": 46731,
+    "positive_branches_regenerated": 46731,
+    "source_cohort": "MECHCONF2",
+    "state_reconstruction": {
+      "compositions_exact": true,
+      "targets_exact": true
+    },
+    "states": 2000
+  }
+]

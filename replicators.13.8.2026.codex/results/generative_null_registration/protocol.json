@@ -1,0 +1,163 @@
+{
+  "claim_boundary": {
+    "geometric_floor_reported_at_full_prominence": true,
+    "prohibited": [
+      "life or autonomous agency",
+      "biological memory or error correction",
+      "installed compotype",
+      "real prebiotic chemistry",
+      "Phi or PhiID",
+      "universal origin-of-life mechanism",
+      "evidence outside the reconstructed GARD family"
+    ]
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fresh_matrices": 96,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "main_path_attempts": 100,
+    "matrix_replacement": false,
+    "states": 3840
+  },
+  "endpoints": {
+    "extinction": "absorbing; uncertified event negative",
+    "f12": "JOINT_BREAK_RUN3 using strict unrounded H>0.9",
+    "strict_f32": {
+      "coherence": ">0.9",
+      "inheritance": ">0.9",
+      "old_anchor_distinctness": "<=0.85",
+      "primary": "primary_all8",
+      "secondary": [
+        "secondary_first5",
+        "secondary_centroid"
+      ]
+    }
+  },
+  "format": "codex-generative-null-decomposition-v1",
+  "futures": {
+    "branch_halves": {
+      "A": [
+        0,
+        31
+      ],
+      "B": [
+        32,
+        63
+      ]
+    },
+    "complete_replay": true,
+    "f12_from_f32_prefix": true,
+    "future_retry": false,
+    "intervention_arms": [
+      "NOOP",
+      "SOURCE_RULE_UP",
+      "SOURCE_RULE_DOWN",
+      "RANDOM"
+    ],
+    "intervention_f12_per_arm": 32,
+    "noop_reuses_f32_branches": [
+      0,
+      31
+    ],
+    "untreated_f32_per_state": 64
+  },
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_pooled_for_rescue": false,
+    "directional_ci": 0.95,
+    "equivalence_ci": 0.9,
+    "holm_families": {
+      "candidate_mechanism_intervention": 8,
+      "natural_null": 6
+    },
+    "omnibus_gate": false,
+    "randomization_repetitions": 4096,
+    "tost_probability_margin": 0.025,
+    "unit": "whole catalytic matrix"
+  },
+  "integrity": {
+    "checkpoint_resumable": true,
+    "complete_exact_replay": true,
+    "mandatory_stop_after_seal": true,
+    "minimum_free_disk_bytes": 2000000000,
+    "readback_audit": true
+  },
+  "mechanisms": {
+    "COUPLING_DERANGED": {
+      "composition_and_history_unchanged": true,
+      "entry_multiset_and_spectrum_preserved": true,
+      "operation": "fixed-point-free simultaneous beta row/column relabeling after natural landmark restoration",
+      "same_permutation_all_landmarks_and_candidates_within_matrix": true
+    },
+    "FISSION_ONLY_GENERATIVE": {
+      "beta_used_by_dynamics": false,
+      "generates_own_main_path": true,
+      "growth": "IID uniform arrivals to exact mass 80",
+      "growth_count": "number of uniform arrivals",
+      "partition_and_selected_daughter": "candidate-specific sealed contracts"
+    },
+    "HOMOGENEOUS_GENERATIVE": {
+      "constant": 54.598150033144236,
+      "formula": "exp(-4 + 4^2/2)",
+      "generates_own_main_path": true
+    },
+    "NATURAL_GARD": "sealed heterogeneous GARD main paths and futures"
+  },
+  "prediction": {
+    "crossfit": {
+      "added": "state/composition only; no beta-derived interactions",
+      "baseline": "unique H10, unpenalized",
+      "candidate_ridge": {
+        "02": 0.1,
+        "03": 0.01
+      },
+      "fold": "matrix_id modulo 2",
+      "hyperparameter_search": false,
+      "training_transforms_only": true
+    },
+    "feature_envelope_z": 5.0,
+    "fission_only_beta_placeholder": 54.598150033144236,
+    "frozen_archive_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "transfer_contrast": "FULL_STATE_GRAPH_HISTORY minus DIRECT_HISTORY_PHASE log-loss"
+  },
+  "protocol_id": "979900aba62732549e93abeb96ef6ac52e30c891a38ec470c0a44f2d6c7650fa",
+  "randomness": {
+    "common_random_streams_not_identical_futures": true,
+    "future_seed_excludes_mechanism_and_arm": true,
+    "random_edit_stream_separate": true,
+    "seed_domains": {
+      "bootstrap": "10e52514ab4a0831030c2ac98abbffa84050f37975f00723daffc2aed490759b",
+      "coupling_derangement": "0627775227810fffa617f2ddd62b7cb0a3b234bb256c4a8693d2903ddbf00ad1",
+      "future_simulation": "051fe08c616a01a2df226e2a8bc302ccbae6a3fed6314f14ec942d12a6202bb5",
+      "initial_composition": "a408a19cb6b69130378367f374dbf63b21ff4a6b080bbc72c593019197d06fc4",
+      "main_trajectory": "48d75aae97cb3b023a6d0611add95eebcbd77722c550e2961d05ef10a2ec2b85",
+      "matrix_generation": "8a3ef301e727993bc3d784dfa668775a930d890a04b1d39f5d64b3972d9540e0",
+      "random_edit_selection": "01ed85e19f2b820e276d125ead918891e760c95118725142ae8ca60b09a12e29",
+      "randomization": "68c9643b61a204fd7e745a6904c6a70f7db3827ecf091afe55cd8d89a77f5698",
+      "replay": "8a958c887b216f42a9fc2e05a68eecb7d56e2c9b166fe38d325e2616c8e866ef",
+      "smoke": "d6ce2d02f184b00b9fd7e16e3c034aec63948e42fb5a4ea0ecdd10f1f007611c",
+      "validation": "df8ca50a88dfe819d2aa933e810d263886b2c522151eb450b52ba87251ca9cd5"
+    }
+  },
+  "scope": "reviewer-response catalytic-versus-geometric decomposition",
+  "separate_from": [
+    "closed strict-eight prediction program",
+    "closed CR1--CR10 intervention program"
+  ],
+  "source_rule": {
+    "purpose": "transport registered causal rule after catalytic coupling removal",
+    "quantity": "x @ original_beta == original_beta.T @ x",
+    "random_uniform_over_legal_edits": true,
+    "selection_beta": "original heterogeneous matrix for every mechanism"
+  },
+  "status": "frozen_before_any_gn1_scientific_matrix"
+}

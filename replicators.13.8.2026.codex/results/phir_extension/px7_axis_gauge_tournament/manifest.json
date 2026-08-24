@@ -1,0 +1,24 @@
+{
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "declared_cpu_budget_hours": 30.0,
+  "format": "codex-ch5-phir-px7-result-v1",
+  "formulations": 18,
+  "gates": {
+    "axis_specific_phi_r_gauge_supported": false,
+    "published_revised_phi_r_axis_supported": false,
+    "resilience_eligibility": true,
+    "resilience_manipulation_valid": true,
+    "resistance_manipulation_valid": false,
+    "specified_phi_r_extension_supported": false,
+    "two_axis_plastic_heredity_gauge_supported": false
+  },
+  "generation_cpu_seconds": 6704.375027467999,
+  "matrices": 24,
+  "registration_id": "6cc8bc263d1f6cebc4025fa6706170010614b9b78571c854d1e1b3007ddf3893",
+  "replay_cpu_seconds": 6418.056336336998,
+  "scientific_digest": "4405bf45b7bb454a001da36d5de6e59ab18e6119e3a3b8a6497afd167d4a97fe",
+  "workers": 8
+}

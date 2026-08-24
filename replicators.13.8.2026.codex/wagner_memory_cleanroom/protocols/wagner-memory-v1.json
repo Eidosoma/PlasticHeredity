@@ -1,0 +1,85 @@
+{
+  "format": "wagner-memory-cleanroom-protocol-v1",
+  "campaign_id": "wagner-memory-v1",
+  "master_seed": "wagner-memory-cleanroom-v1-2026-08-22",
+  "scientific_profile": "full",
+  "engine": {
+    "genes": 10,
+    "connectivity": 0.35,
+    "memory_strength": 1.5,
+    "random_weight_sd": 0.55,
+    "max_sweeps": 100,
+    "generation_sweeps": 4,
+    "horizon_sweeps": 32,
+    "strict_run": 8,
+    "stable_run": 3,
+    "expression_flip_probability": 0.05,
+    "minimum_target_hamming": 4,
+    "minimum_basin_fraction": 0.25,
+    "maximum_source_proposals": 1000000
+  },
+  "profiles": {
+    "smoke": {"state_sources": 4, "boundary_sources": 4, "mark_sources": 4, "carrier_sources": 4, "futures_scale": 0.03125, "bootstrap_repetitions": 128, "scientific": false},
+    "quick": {"state_sources": 24, "boundary_sources": 16, "mark_sources": 16, "carrier_sources": 24, "futures_scale": 0.125, "bootstrap_repetitions": 512, "scientific": false},
+    "full": {"state_sources": 240, "boundary_sources": 96, "mark_sources": 96, "carrier_sources": 240, "futures_scale": 1.0, "bootstrap_repetitions": 4096, "scientific": true}
+  },
+  "state": {
+    "expected_futures_full": 6389760,
+    "writers": [
+      {"name": "hard-theta-0", "mode": "hard", "strength": 1.0, "dwell": 1, "theta": 0.0},
+      {"name": "soft-theta-0", "mode": "field", "strength": 0.5, "dwell": 1, "theta": 0.0}
+    ],
+    "arms": ["self", "state_transplant", "reset", "destination_matched", "descriptor_matched", "pattern_shuffle"],
+    "challenges": ["release", "neutral_damage", "forced_break"],
+    "ages": [0, 1, 2, 4, 8],
+    "primary_futures": 128,
+    "persistence_futures": 64,
+    "neutral_damage_fraction": 0.2
+  },
+  "boundary": {
+    "thetas": [0.0, 0.0025, 0.005, 0.01, 0.03, 0.1],
+    "writers": ["hard", "field"],
+    "futures": 32
+  },
+  "slow_mark": {
+    "half_lives": [1, 4, 8, 16],
+    "couplings": [0.25, 0.5],
+    "futures": 32,
+    "arms": ["mark", "reset", "shuffle", "write_disabled", "inert", "targeted_ablation", "random_ablation", "rescue"]
+  },
+  "carrier": {
+    "expected_records_full": 10063872,
+    "mechanism": "hysteretic_latch",
+    "write_threshold": 1,
+    "retention_cycles": 16,
+    "coupling": 1.0,
+    "futures_per_half": 32,
+    "checkpoints": [0, 1, 2, 4, 8, 16],
+    "challenges": ["release", "neutral_damage", "forced_break"],
+    "arms": ["natural_full", "targeted_k5", "targeted_k3", "targeted_k1", "random_k5", "random_k3", "random_k1", "pattern_shuffle", "opposite_history", "zero", "write_disabled", "read_disabled", "no_rewrite", "ablate_generation_2", "ablate_2_rescue_3", "exact_full"]
+  },
+  "gates": {
+    "acquisition_min": 0.8,
+    "acquisition_imbalance_max": 0.1,
+    "absolute_hold8_min": 0.2,
+    "ceiling_fraction_min": 0.7,
+    "risk_gain_min": 0.05,
+    "crossover_min": 0.05,
+    "logloss_gain_min": 0.02,
+    "reliability_min": 0.8,
+    "ablation_loss_fraction_min": 0.7,
+    "rescue_fraction_min": 0.7,
+    "bottleneck_retention_max": 0.7,
+    "interval_level": 0.95
+  },
+  "operations": {
+    "required_gpu_count": 2,
+    "admission_hours_with_margin": 10.5,
+    "benchmark_margin": 1.25,
+    "stop_new_shards_hours": 11.0,
+    "seal_hours": 11.5,
+    "hard_deadline_hours": 12.0,
+    "minimum_free_gib": 40,
+    "replay_futures_per_stage": 16
+  }
+}

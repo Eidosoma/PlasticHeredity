@@ -1,0 +1,238 @@
+schema: eidosoma.e01.s17_intervention_reconstruction_preregistration.v1
+researchStepId: S17
+stepNumber: 17
+versionedStepId: E01-S17-INTERVENTION-RECONSTRUCTION-v1.0.0
+decision: OPTION_2_BOUNDED_PAPER_DIRECTED_RECONSTRUCTION
+evidenceClass: PROSPECTIVELY_LOCKED_ONLINE_PREFIX_REFIT_INTERVENTION_RECONSTRUCTION
+
+frozenQuestion: >-
+  Can the paper's literal online max/control/min procedure be executed
+  reproducibly on the fixed 12-matrix scope, and does any directional ordering
+  survive paired prospective and numerical scrutiny in both candidates?
+
+computeGate:
+  combinedS16S17ScientificCpuHourCeiling: 105.0
+  s16ScientificCpuHours: 0.47616840622138884
+  protectedValidationArtifactReserveCpuHours: 4.0
+  s17AvailableScientificCpuHours: 100.52383159377861
+  cpuFloat64Authoritative: true
+  gpuPermittedOnlyAfterRepresentativeEquivalence: true
+  gpuUsed: false
+  benchmark:
+    scope: ONE_COMPLETE_100_FISSION_TREATED_SEQUENCE
+    domain: S17_RUNTIME_BENCHMARK_ONLY
+    candidateId: S12F-CANDIDATE-03
+    condition: MAX
+    matrixIndex: 17000000
+    scientificOutcomeEligible: false
+    candidateScoreValuesReportable: false
+    projectionMultiplier: 1.25
+    projectedTreatedSequenceCount: 48
+    projectedControlSequenceCount: 24
+    selectedAndRunnerUpReplayFitsPerDecision: 2
+    trajectoryReplayMethod: REPLAY_FROZEN_ACTION_SCHEDULE_WITH_COMMON_STREAMS
+    gateRule: >-
+      benchmark CPU plus 1.25 times the complete 48-treated/24-control fixed-scope
+      projection, including selected/runner-up source replay, trajectory replay,
+      analysis, validation, and artifact costs, must not exceed
+      100.52383159377861 CPU-hours.
+  failureAction: STOP_BEFORE_CREATING_ANY_OF_THE_12_SCIENTIFIC_MATRICES
+
+scientificScope:
+  sharedMatrixIndices: [0, 11]
+  sharedMatrixCount: 12
+  candidates:
+    S12F-CANDIDATE-02:
+      h: 0.6031526490073492
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+    S12F-CANDIDATE-03:
+      h: 0.5613315384859516
+      daughterRule: RANDOM_NONEMPTY
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+  conditions: [MAX, CONTROL, MIN]
+  trajectoryCount: 72
+  fissionsPerTrajectory: 100
+  poolingRole: SECONDARY_DESCRIPTIVE_ONLY
+  favorableCandidateSelection: forbidden
+
+seedAndPairing:
+  rootHex: 554b7d8421c0eadfd740cf9c5f13af7937b462898abb72ed5981331744c73f6a
+  benchmarkRootHex: 4bfd5bcbbb3c2be6ff56cc693a630558e995c6a93265bbb29e37103ca27a46a0
+  bitGenerator: PCG64DXSM
+  matrixAndInitialState: SHARED_ACROSS_CANDIDATES_AND_CONDITIONS_BY_MATRIX_INDEX
+  stochasticStreams: >-
+    Poisson-update, overshoot-trim, fission, and daughter-selection identities
+    are shared across both candidates and all three conditions by matrix index;
+    each trajectory instantiates a fresh generator at the same seed. State and
+    stream consumption remain identical until the first state divergence.
+  sourceFitSeeds: >-
+    One preprocessing seed and one Fiedler seed are derived by candidate,
+    matrix, and generation and shared across MAX/MIN and every candidate action
+    at that decision. PhiRL preprocessing is deterministic but its seed is
+    still recorded.
+  tieRule: DOMAIN_SEPARATED_SHA256_RANK_AMONG_EXACT_BINARY64_TIES
+  tieDomainIncludes: [candidateId, matrixIndex, condition, generation, actionId]
+
+trajectorySemantics:
+  interventionTiming: IMMEDIATELY_AFTER_EVERY_COMPLETED_FISSION
+  retainedBoundary: >-
+    The selected unedited daughter is available to the decision scorer. The
+    applied edited daughter is retained as the single C1 post_fission state,
+    matching the frozen S13Y/S13X selected-boundary trajectory convention.
+  scoringHistory: >-
+    Start with all actually retained observations before the current boundary,
+    append the selected unedited daughter, then append the hypothetically edited
+    daughter. Refit on that complete available prefix and use the final local
+    endpoint emergence value.
+  control: SEPARATE_NO_ACTION_CONDITION
+  actionStateRecordedAsSeparateClockStep: false
+
+scoring:
+  semantic: APPEND_AND_REFIT_CURRENT_PREFIX
+  implementationId: PHIRL_REGULARIZED_SOURCE
+  preprocessing: ADDITIVE_0p5_CLOSURE_FULL_CLR_DROP_ORIGINAL_COMPONENT_100
+  activeVariableRule: SOURCE_STD_GREATER_THAN_1e-8
+  partition: SOURCE_CONFIRMED_FIEDLER_STRICT_SIGN
+  gaussian: PINNED_PHIRL_TRACE_REGULARIZATION
+  localSemantics: EXISTING_SOURCE_CONFIRMED_LOCAL_PHIID
+  scalar: emergence
+  scalarIdentity: synergy_plus_downward_causation
+  endpoint: FINAL_LOCAL_VALUE
+  futureObservationsPermitted: false
+  actionSet:
+    additions: ONE_OF_EACH_OF_100_MOLECULAR_TYPES
+    deletions: ONE_OF_EACH_CURRENTLY_PRESENT_MOLECULAR_TYPE
+    noOpCandidate: false
+  eligibility: FINITE_ENDPOINT_FROM_SOURCE_ELIGIBLE_OR_PARTIAL_FINITE_STATUS
+  zeroEligibleActionRule: FAIL_TRAJECTORY_CLOSED
+  extrema:
+    MAX: RAW_NUMERIC_MAXIMUM
+    MIN: RAW_NUMERIC_MINIMUM
+  weakGapSuppression: false
+  noActionDiagnostic: >-
+    A separately scored no-edit endpoint is retained only as a diagnostic and
+    never enters the max/min candidate set.
+
+replay:
+  selectedAndRunnerUp: EXACT_RERUN_AT_EVERY_TREATED_DECISION
+  candidateSetSentinels: FIRST_MIDDLE_LAST_GENERATION_FULL_SET_RERUN_PER_TREATED_TRAJECTORY
+  trajectory: EXACT_RERUN_WITH_FROZEN_ACTION_SCHEDULE_FOR_ALL_72_TRAJECTORIES
+  scoreEquality: EXACT_ARRAY_EQUAL_WITH_MATCHING_NONFINITE_MASK
+  trajectoryEquality: DATACLASS_AND_SHA256_IDENTITY
+
+diagnostics:
+  stateMatchedNull: ALL_OTHER_ELIGIBLE_ACTION_SCORES_AT_THE_SAME_DECISION
+  displacementMatchedNull: >-
+    Eligible scores with the same ADD/DELETE operation and unit L1 count
+    displacement as the selected action.
+  matchedRandomAction: >-
+    One deterministic SHA256-ranked action from the displacement-matched set;
+    its score is diagnostic only and does not create another treatment rollout.
+  runnerUpUncertaintyScale: >-
+    Maximum of current exact selected/runner-up replay error and the frozen S13X
+    source scorer replay envelope 8.331113576787175e-13.
+  numericalCondition:
+    - retainedVariableCount
+    - partitionSizes
+    - minimumAbsoluteFiedlerEntry
+    - reducedCovarianceConditionNumber
+    - componentIdentityMaxAbsError
+  historicalReplayEnvelope: 8.331113576787175e-13
+
+outcome:
+  labelId: MOL_ADJACENT_INCOMING_H900
+  definition: Y_t=I(H_t>0.9)
+  clockId: C1_SELECTED_DAUGHTER_RETAINED
+  exact:
+    persistence: TOTAL_LABELLED_SELECTED_CLOCK_STEPS
+    probability: FRACTION_LABELLED_SELECTED_CLOCK_STEPS
+    consistency: PEARSON_CORRELATION_OF_CONSECUTIVE_BINARY_LABELS
+    timeToFirstReplicator: ZERO_BASED_SELECTED_CLOCK_INDEX
+  additional:
+    - longestReplicatingEpisode
+    - meanReplicatingEpisodeDuration
+    - entryCount
+    - exitCount
+    - parentDaughterSimilarityBeforeAction
+    - parentDaughterSimilarityAfterAction
+    - appliedAdditionCount
+    - appliedDeletionCount
+    - treatmentExposureByGeneration
+    - actionGapDistribution
+  paperTimeToFirstComparator: NORMALIZED_ZERO_BASED_INDEX_PERCENT_OF_SELECTED_CLOCK_LENGTH
+  uncertainty:
+    unit: SHARED_MATRIX
+    bootstrapReplicates: 4096
+    confidenceLevel: 0.95
+    candidateSpecificPrimary: true
+
+interpretation:
+  literalOrdering:
+    classification: LITERAL_INTERVENTION_ORDERING_RESEMBLANCE
+    required:
+      - max_ge_control_ge_min_for_persistence_or_probability
+      - directionally_consistent_in_both_candidates
+      - actions_applied_at_all_or_most_eligible_generations
+      - exact_prospective_replay
+      - no_future_observation_use
+  causalControl:
+    classification: PROSPECTIVE_CAUSAL_CONTROL_SUPPORTED
+    pairedEffectRule: >-
+      At least one of persistence or probability must show max-minus-control
+      above zero and min-minus-control below zero with both paired 95% matrix
+      bootstrap intervals excluding zero in each candidate; the qualifying
+      outcome must be the same in candidates 2 and 3.
+    matchedRandomScope: >-
+      The fixed 72-trajectory design permits action-score matched-random
+      diagnostics but no fourth random-action rollout. Accordingly, score-level
+      null rejection is reportable, while outcome-level exclusion of a random
+      matched-action explanation is underdetermined and cannot be silently
+      promoted to a pass.
+    required:
+      - adequate_action_frequency
+      - opposite_max_and_min_paired_effects
+      - paired_uncertainty_excludes_zero
+      - not_explained_by_ties_or_numerical_instability
+      - not_explained_by_matched_random_action_scores
+      - agreement_in_both_candidates
+  failedClassification: NOT_SUPPORTED_WITHIN_TESTED_SCOPE
+  unavailableAuthorDetailClassification: UNDERDETERMINED_AUTHOR_IMPLEMENTATION
+  retrospectiveEvidenceCannotEstablishCausalControl: true
+
+paperTargets:
+  MAX:
+    persistence: {mean: 874, dispersion: 233}
+    probability: {mean: 0.88, dispersion: 0.03}
+    consistency: {mean: 0.52, dispersion: 0.04}
+    timeToFirstNormalized: {mean: 0.36, dispersion: 0.26}
+  CONTROL:
+    persistence: {mean: 716, dispersion: 198}
+    probability: {mean: 0.88, dispersion: 0.03}
+    consistency: {mean: 0.38, dispersion: 0.06}
+    timeToFirstNormalized: {mean: 0.37, dispersion: 0.27}
+  MIN:
+    persistence: {mean: 559, dispersion: 99}
+    probability: {mean: 0.80, dispersion: 0.03}
+    consistency: {mean: 0.42, dispersion: 0.04}
+    timeToFirstNormalized: {mean: 0.40, dispersion: 0.28}
+  dispersionMeaning: UNDERDETERMINED_SD_OR_SE
+
+forbidden:
+  - author_contact
+  - method_search
+  - future_observation_scoring
+  - another_intervention_scorer
+  - favorable_candidate_selection
+  - no_op_in_max_or_min_candidates
+  - weak_gap_action_suppression
+  - scope_reduction_after_outcome_access
+  - gpu_without_cpu_equivalence
+  - S18_or_E02_execution
+
+stopBoundary:
+  nextQueuedStep: S18
+  nextStepActive: false
+  returnForHumanReview: true

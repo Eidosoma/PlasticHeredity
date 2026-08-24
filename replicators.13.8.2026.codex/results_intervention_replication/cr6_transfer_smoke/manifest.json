@@ -1,0 +1,16 @@
+{
+  "artificial_fixture_only": true,
+  "candidate_differences_disclosed": false,
+  "checks": {
+    "complete_artificial_worker_contract": true,
+    "exact_replay": true,
+    "scientific_arm_ordering_not_disclosed": true,
+    "scientific_effect_sizes_not_disclosed": true
+  },
+  "effect_sizes_disclosed": false,
+  "event_rates_disclosed": false,
+  "format": "codex-intervention-cr6-smoke-v1",
+  "registration_id": "d15ad57c7f925b5aa8585e3ae32090fa08c500b465d657bd0faf84327744b07e",
+  "scientific_futures": 0,
+  "scientific_matrices": 0
+}

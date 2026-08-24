@@ -1,0 +1,122 @@
+{
+  "bootstrap_repetitions": 4096,
+  "bootstrap_selection_frequencies": {
+    "auxiliary_stack": 0.0,
+    "direct_ridge": 0.436279296875,
+    "guarded_nonlinear": 0.0,
+    "hierarchical_offset": 0.0087890625,
+    "hurdle": 0.554443359375,
+    "local_dynamics": 0.00048828125
+  },
+  "bootstrap_unit": "paired catalytic matrix across candidates and families",
+  "families": [
+    {
+      "candidate_equal_log_loss": 0.11228097192003858,
+      "family": "direct_ridge",
+      "half_gains": {
+        "02": {
+          "A": 0.006567500366428056,
+          "B": 0.006000016889521859
+        },
+        "03": {
+          "A": 0.004904717233928419,
+          "B": 0.005792979108440954
+        }
+      },
+      "matrix_loss_standard_error": 0.018437841483970225,
+      "positive_all_candidate_halves": true
+    },
+    {
+      "candidate_equal_log_loss": 0.11157902440598362,
+      "family": "hurdle",
+      "half_gains": {
+        "02": {
+          "A": 0.0043445585001931075,
+          "B": 0.0028572813994361267
+        },
+        "03": {
+          "A": 0.009043816206098267,
+          "B": 0.009827347548811587
+        }
+      },
+      "matrix_loss_standard_error": 0.018965569468710582,
+      "positive_all_candidate_halves": true
+    },
+    {
+      "candidate_equal_log_loss": 0.11353276039945576,
+      "family": "hierarchical_offset",
+      "half_gains": {
+        "02": {
+          "A": 0.0037493933896114106,
+          "B": 0.003385358982925228
+        },
+        "03": {
+          "A": 0.005396134736461107,
+          "B": 0.005727172571652911
+        }
+      },
+      "matrix_loss_standard_error": 0.018816606187692823,
+      "positive_all_candidate_halves": true
+    },
+    {
+      "candidate_equal_log_loss": 0.11491035467410515,
+      "family": "local_dynamics",
+      "half_gains": {
+        "02": {
+          "A": 0.00303374426378571,
+          "B": 0.0026438535314375743
+        },
+        "03": {
+          "A": 0.003307696207297712,
+          "B": 0.0037623885795320805
+        }
+      },
+      "matrix_loss_standard_error": 0.01919267001142351,
+      "positive_all_candidate_halves": true
+    },
+    {
+      "candidate_equal_log_loss": 0.11574168210768895,
+      "family": "auxiliary_stack",
+      "half_gains": {
+        "02": {
+          "A": 9.443244531322295e-05,
+          "B": -0.00010151181740468272
+        },
+        "03": {
+          "A": 0.004944675421231096,
+          "B": 0.004484776798578232
+        }
+      },
+      "matrix_loss_standard_error": 0.019298026321201617,
+      "positive_all_candidate_halves": false
+    },
+    {
+      "candidate_equal_log_loss": 0.11396855630222788,
+      "family": "guarded_nonlinear",
+      "half_gains": {
+        "02": {
+          "A": -0.003943248503344461,
+          "B": -0.0044324861202513985
+        },
+        "03": {
+          "A": 0.012969919403659097,
+          "B": 0.011920691289498908
+        }
+      },
+      "matrix_loss_standard_error": 0.02019916505903779,
+      "positive_all_candidate_halves": false
+    }
+  ],
+  "one_se_threshold": 0.1305445938746942,
+  "passed": false,
+  "provisional_family": "direct_ridge",
+  "reason": "one-SE selection frequency below 75%",
+  "required_selection_frequency": 0.75,
+  "selected_family": null,
+  "within_one_se": [
+    "direct_ridge",
+    "hurdle",
+    "hierarchical_offset",
+    "local_dynamics"
+  ]
+}

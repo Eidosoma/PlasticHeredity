@@ -1,0 +1,5 @@
+state_index,state_id,candidate,matrix_id,landmark,occupied_types,mass,all_arm_predictions_bitwise_exact,all_arm_surgeries_none,all_arm_edits_none,all_arm_branch_records_bitwise_exact,zero_contribution_to_every_paired_contrast
+363,INTP3B_DOSE_BRIDGE_V1-c02-m030-g060,02,30,60,1,40,True,True,True,True,True
+365,INTP3B_DOSE_BRIDGE_V1-c02-m030-g080,02,30,80,1,40,True,True,True,True,True
+367,INTP3B_DOSE_BRIDGE_V1-c03-m030-g035,03,30,35,1,42,True,True,True,True,True
+368,INTP3B_DOSE_BRIDGE_V1-c03-m030-g050,03,30,50,1,44,True,True,True,True,True

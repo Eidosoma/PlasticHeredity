@@ -1,0 +1,186 @@
+{
+  "claim_boundary": {
+    "not_tests": [
+      "validity of the operational F12 event",
+      "infinite-time mathematical attractors",
+      "population selection",
+      "biological heredity"
+    ],
+    "tests": "lineage-specific identity and finite-horizon multistability"
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "capable": "at least one primary_all8 event in both candidates",
+    "conditional_claim_only": true,
+    "same_beta_across_candidates": true,
+    "selected_matrix_ids": [
+      11,
+      88,
+      110,
+      179,
+      23,
+      17,
+      54,
+      132,
+      196,
+      158,
+      10,
+      90,
+      32,
+      45,
+      28,
+      159,
+      149,
+      58,
+      25,
+      198,
+      97,
+      14,
+      197,
+      126,
+      112,
+      38,
+      1,
+      43,
+      18,
+      64,
+      72,
+      178,
+      161,
+      174,
+      5,
+      9,
+      79,
+      55,
+      117,
+      24,
+      153,
+      138,
+      86,
+      148,
+      63,
+      125,
+      171,
+      119,
+      2,
+      118
+    ],
+    "selection": "first 50 by SHA256(master_seed|matrix_id)",
+    "shared_capable_count": 134,
+    "source": "sealed REGCONF confirmation state table"
+  },
+  "endpoints": {
+    "F12_control": {
+      "non_rescuing": true,
+      "primary": false,
+      "selection": "final daughter of earliest post-break run3 in fixed non-overlapping F12 windows"
+    },
+    "strict_B": {
+      "break": "first unrounded H<=0.90 in the window",
+      "coherence": "all 28 daughter pairs unrounded H>0.90",
+      "distinctness": "every daughter unrounded H<=0.85 from break parent",
+      "inheritance": "eight consecutive unrounded H>0.90",
+      "primary": true,
+      "selection": "final daughter of earliest strict episode in earliest qualifying fixed F32 window"
+    }
+  },
+  "format": "reviewer-lineage-identity-v1",
+  "inference": {
+    "bootstrap_repetitions": 10000,
+    "candidate_rescue": false,
+    "candidates_separate": true,
+    "literal_and_corrected_readouts_both_reported": true,
+    "underfilled_cells_retained": true,
+    "unit": "catalytic rule"
+  },
+  "protocol_id": "ac22060e8ebd1e2a501b21cecbc303fa32454cce7a5a506eb84da9c448c024b4",
+  "scope": "reviewer-prompted lineage identity tests 2--4",
+  "simulation": {
+    "analysis_windows": {
+      "F12_control": 18,
+      "strict_F32": 7
+    },
+    "burn_in": 32,
+    "dynamics_seed_candidate_specific": true,
+    "extension": "launch indices 128--255 only when the fixed 128 contain fewer than 20 strict B episodes; extension excluded from census",
+    "generations": 256,
+    "initial_composition_seed_shared_across_candidates": true,
+    "master_seed": "2026082002403",
+    "maximum_starts_for_b_bank": 256,
+    "primary_random_starts_per_cell": 128,
+    "strict_b_bank": 20,
+    "window_lengths": {
+      "F12_control": 12,
+      "strict": 32
+    }
+  },
+  "status": "sealed_before_new_lineage_generation",
+  "test_2": {
+    "bank": "first 20 qualifying lineages in seed order",
+    "cross": "H(first-four centroid i, last-four centroid j), i!=j, same rule and candidate",
+    "literal": [
+      "empirical range overlap",
+      "cross fraction inside within range"
+    ],
+    "primary": [
+      "rule-level AUC",
+      "rule-level median within-minus-cross"
+    ],
+    "strong_gate_each_candidate": {
+      "whole_rule_bootstrap_AUC_lower95_above": 0.75,
+      "whole_rule_bootstrap_gap_lower95_above": 0.05
+    },
+    "within": "H(first-four centroid, last-four centroid) in one episode"
+  },
+  "test_3": {
+    "extinction": "incomplete sibling fork scores 0; incomplete stranger comparison scores 1, so extinction cannot create a pass",
+    "forks": 2,
+    "generations": 8,
+    "literal": "sibling minimum H>0.90 and stranger maximum H<=0.90",
+    "no_eligible_stranger": "shared-destination evidence, literal failure",
+    "noise": "independent; no common random streams",
+    "sibling_score": "minimum corresponding-generation H",
+    "stranger_eligibility": "different lineage and initial B H<=0.85",
+    "stranger_score": "maximum corresponding-generation H",
+    "strong_gate_each_candidate": {
+      "whole_rule_bootstrap_AUC_lower95_above": 0.75,
+      "whole_rule_bootstrap_gap_lower95_above": 0.05
+    }
+  },
+  "test_4": {
+    "census_uses_fixed_128_only": true,
+    "coherent_cluster": "deterministic complete-link, all representative H>0.90",
+    "distinct_forms": "greedy support-prioritized medoids all H<=0.85",
+    "durability": "16 continuous resident fissions or re-entry after at least 8 outside fissions",
+    "primary_durable_support": 4,
+    "primary_residence": 8,
+    "primary_start_support": 8,
+    "rule_survival": "at least two stable distinct forms",
+    "sensitivities": {
+      "distinctness": [
+        0.8,
+        0.85,
+        0.9
+      ],
+      "residence": [
+        4,
+        8,
+        16
+      ],
+      "start_support": [
+        4,
+        8,
+        16
+      ]
+    }
+  },
+  "working_boundary": {
+    "all_writes_below": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_lineage_identity_response",
+    "draft_only_data_excluded": true,
+    "existing_results_read_only": true,
+    "manuscript_edit": false
+  }
+}

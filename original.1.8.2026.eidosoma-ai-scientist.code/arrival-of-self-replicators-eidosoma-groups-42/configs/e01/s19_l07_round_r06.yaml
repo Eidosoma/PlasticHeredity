@@ -1,0 +1,39 @@
+schema: eidosoma.e01.s19_l07_adaptive_round_lock.v1
+roundId: R06_FRESH_SEED_VALIDATION
+outcomeAccessOrder: 6
+adaptiveBasis:
+  openedRound: R05_EXPOSURE_LOCAL_BRACKETING
+  resultPath: /artifacts/research_steps/S19/loops/L07/R05_EXPOSURE_LOCAL_BRACKETING_occupancy_results.parquet
+  resultSha256: 08d4d202be26d4cd49013d4f12e51f11f4fb74584907fb95194469a9765567eb
+  observedLead: The label-specific occupancy-only ranking selected h=2.875 for all-molecular incoming H>0.9 (0.881090 first, 0.880995 random) and h=3.25 for parent-to-selected-daughter boundary H>0.9 (0.879600 in both).
+  rationale: Evaluate both frozen leads once on a new domain-separated set of 100 catalytic matrices and initial states; no further value or definition selection follows this round.
+sourceBoundary:
+  paper: Specifies Poisson updates and H>0.9 but leaves exposure duration and the exact occupancy denominator/object ambiguous.
+  interpretation: Fresh-seed exploratory validation can establish reproducibility of occupancy proximity, not author-code identity or uniqueness.
+matrixContract:
+  trajectorySource: L07_FRESH_DOMAIN_SEPARATED_MATRICES
+  rootSeedHex: 0059ae520c72f0029f1e549b409cf7efa538ddef10e36541120dbc566d9230eb
+  matrixPhase: s19_l07_r06_fresh_matrix_set
+  noOverlapRequiredWith: FROZEN_S13Y_MATRIX_AND_INITIAL_STATE_HASHES
+simulationContract:
+  configurations:
+    - {simulationId: L07-R06-H28750-FIRST, simulationPairId: L07-R06-H28750, h: 2.875, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_fresh_seed_validation, streamIdentity: 'S19-L07-R06::H28750::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R06-H28750-RANDOM, simulationPairId: L07-R06-H28750, h: 2.875, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_fresh_seed_validation, streamIdentity: 'S19-L07-R06::H28750::RANDOM_NONEMPTY', exactFrozenReplay: false}
+    - {simulationId: L07-R06-H32500-FIRST, simulationPairId: L07-R06-H32500, h: 3.25, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_fresh_seed_validation, streamIdentity: 'S19-L07-R06::H32500::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R06-H32500-RANDOM, simulationPairId: L07-R06-H32500, h: 3.25, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_fresh_seed_validation, streamIdentity: 'S19-L07-R06::H32500::RANDOM_NONEMPTY', exactFrozenReplay: false}
+  labelSettings:
+    - {suffix: C1_INCOMING_ALL_H900, family: ADJACENT_CLOCK, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT}
+    - {suffix: PARENT_DAUGHTER_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT}
+resourceLock:
+  workers: 8
+  gpuHours: 0
+  numericalAuthority: CPU_FLOAT64
+  matrices: 100
+  fissions: 100
+validationLock:
+  selectedPairs:
+    - L07-R06-H28750::C1_INCOMING_ALL_H900
+    - L07-R06-H32500::PARENT_DAUGHTER_BOUNDARY_H900
+  occupancyTarget: 0.88
+  exact88Required: false
+  noFurtherAdaptiveRoundInsideL07: true

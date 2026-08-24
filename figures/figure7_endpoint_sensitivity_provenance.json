@@ -1,0 +1,19 @@
+{
+  "figure": "figure7_endpoint_sensitivity.png",
+  "analysis_status": "reviewer_prompted_post_hoc",
+  "verification_all_checks_passed": true,
+  "sources": {
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_threshold_metric_sensitivity_extension/artifacts/output/f12_sensitivity.csv": "1a6f076aba0fa672db4f39e83f4ae228d096b64ac185b1312920ea2e404b17d5",
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_threshold_metric_sensitivity_extension/artifacts/output/cr1_cosine_sensitivity.csv": "826a96771483230666e1b39d52146b5f394d35e5b7bd4ea5eaa28ff98d3dde9d",
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_threshold_metric_sensitivity_extension/artifacts/output/verification.json": "d00ba3e98b28314ed682e581d66dca1811d35592ce289eac1d5574999374114d",
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_strict_event_geometry_audit/artifacts/output/event_power.csv": "d8d773904b8dcb63a245ce763a66e7a3245e195dc3ccd7bf66898d760aec775c",
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_strict_event_geometry_audit/artifacts/output/event_overlap.csv": "4be82705f19d1babe0831b408e7ef889d0e9c6a634df8c9ca4faabc3a6889135",
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_strict_event_geometry_audit/artifacts/output/prediction_comparisons.csv": "3a15858e978e66f092b772b17a10e4f124047e9762c1e3fc5ac8070afb3fcf9f",
+    "paperFinalReplicationAttempt.15.8.2026.codex/reviewer_strict_event_geometry_audit/artifacts/output/verification_audit.json": "29dcf75b75799d47992c7ee9a574ba3f8525629a4914d4c2ccb59f6f835e7f4a"
+  },
+  "panel_a": "minimum point gain across candidates, fixed halves, and renewal lengths",
+  "panel_b": "minimum CR1 95% lower bound across candidates, fixed halves, and renewal lengths",
+  "panel_c": "confirmation prevalence under registered cosine, global-mapped Bray-Curtis, and relation-specific Bray-Curtis",
+  "panel_d": "branch-label Jaccard overlap with registered cosine; target-matched relation-specific predictor pass count",
+  "registered_outline": "source threshold 0.90 and F12; panel A aggregates renewal lengths 2-5"
+}

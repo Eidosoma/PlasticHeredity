@@ -1,0 +1,14 @@
+{
+  "all_checks_passed": true,
+  "checks": {
+    "all_checks_passed": true,
+    "all_four_mechanisms_exercised": true,
+    "artificial_non_scientific_fixture": true,
+    "no_rates_or_effect_directions_disclosed": true,
+    "registration_verified": true,
+    "replay_exact": true,
+    "scientific_gn1_matrices_generated_is_zero": true
+  },
+  "format": "codex-generative-null-smoke-v1",
+  "registration_id": "89787fae14e42007280588207e2f80d991615bb3a59c5c6206f46388312a7e52"
+}

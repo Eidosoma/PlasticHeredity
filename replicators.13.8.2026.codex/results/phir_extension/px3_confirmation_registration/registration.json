@@ -1,0 +1,67 @@
+{
+  "format": "codex-ch5-phir-extension-px3-confirmation-registration-v1",
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "claim_status": "prospective confirmation of a pilot-developed selector only",
+    "development_gate": true,
+    "development_manifest_sha256": "71147138a8b597b01b722220b53c17641bdc727d9a67f8b09e79cd0cb4ad2df1",
+    "development_registration_id": "dd828ee4855fe199b78fd86772466f185fafc8b71b7c852f07fad4e81a07a9d9",
+    "information_equivalence_margins": {
+      "02": {
+        "equivalence_margin": 14.168845944752846,
+        "noop_matrix_sd": 70.84422972376423
+      },
+      "03": {
+        "equivalence_margin": 14.542019211444234,
+        "noop_matrix_sd": 72.71009605722116
+      }
+    },
+    "model_contract_sha256": "d4173807dc34f4d997b13ca3d6276be88afea2271ac7fcb106cdfdb0fcd382f3",
+    "model_sha256": "4639f6186fe7c8b6723d989b4761f9dfe8909fb25ec196fd737be9ccecc5f142",
+    "new_confirmation_matrices_at_registration": 0,
+    "original_24_matrix_gate_eligible": false,
+    "phase": "PX3_CONFIRMATION",
+    "program_protocol_id": "9ea3b7ee5a1bb5c9b7a080f05ca406af799067d82d1c3c6fd93fc1bc5f83cab2",
+    "protocol_id": "6b34553092f6c0b4207bf435228c0027da05ced153085344e3868f6efc47ec6f",
+    "resource_bounded_pilot_development": true,
+    "run_even_if_development_gate_failed": true,
+    "spec": {
+      "branches": 64,
+      "cpu_seconds": 230400.0,
+      "horizon": 8,
+      "label": "confirmation",
+      "landmarks": [
+        20,
+        40,
+        60
+      ],
+      "matrices": 24
+    }
+  },
+  "registration_id": "bdb2083071141e23bd05dcc8b7fc2744324f2c69294be60972f20dad151817ec",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "CODEX_CH5_PHIR_EXTENSION_PX3_AMENDMENT.md": "8da33a4ff37092d39d5e01c27f494cea963d3f033b3fed6b19688b08c172db54",
+    "CODEX_CH5_PHIR_EXTENSION_PX3_CONFIRMATION_RESOURCE_NOTE.md": "2ef8b2ae1e4e2815d3652e0740b1e066d722520faa50cc0f3e553f928a48ceaa",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px3.py": "d1fe49c2758d5def54ebd4f1ba6bf94b89f70a2100fabb67ae022e39570773c1",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_extension_px3.py": "9dc2a5471f09b5350eb9c59468ceaae76f55e6dfb56651912b0502c7f555cdbc"
+  }
+}

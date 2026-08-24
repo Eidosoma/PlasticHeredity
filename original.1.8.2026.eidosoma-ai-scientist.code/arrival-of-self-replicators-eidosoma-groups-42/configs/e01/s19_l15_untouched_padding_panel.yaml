@@ -1,0 +1,214 @@
+schema: eidosoma.e01.s19.l15.preregistration.v1
+researchStepId: S19-L15
+versionedStepId: E01-S19-L15-UNTOUCHED-PADDING-LENGTH-PANEL-DISCRIMINATION-v1.0.0
+title: Untouched Figure-5 Padding/Length Panel Discrimination
+evidenceClass: ADAPTIVE_EXPLORATORY_UNTOUCHED_FORENSIC_RECONSTRUCTION
+authorizedAtUtc: '2026-08-10T00:00:00Z'
+outcomeAccessedAtLock: false
+
+rationale:
+  l14ScientificRerunRequired: false
+  l14Issue: REPORT_LINK_ONLY_ALREADY_REPAIRED_WITH_SCIENTIFIC_HASH_IDENTITY
+  unresolvedMechanism: L14_STOPPED_BEFORE_ANY_MODEL_FIT
+  observedClue: INPUT_QUARTER_LENGTH_NEARLY_EXACTLY_DETERMINES_OUTPUT_PADDING_BOUNDARY
+  scaleUpReason: DISTINGUISH_PADDING_LENGTH_MECHANISM_FROM_TEN_SPLIT_AND_100_MATRIX_NOISE
+
+immutableBoundary:
+  preserveByteForByte:
+    - S01-S18
+    - E01 forensic replication V1 bundle
+    - E01 forensic replication V2 artifact
+    - S19-L01-S19-L14 including all failed attempts and technical amendments
+    - S17 CPU-allowance waiver
+  l14Classification: FIGURE5_PADDING_ARITHMETIC_NOT_SUPPORTED
+  l14Promotion: NOT_PROMOTABLE
+  mayReinterpretL14: false
+
+scope:
+  sharedCatalyticMatrices: 200
+  matchedInitialStates: true
+  expectedTrajectories: 400
+  requestedFissions: 100
+  candidates: [CANDIDATE_2, CANDIDATE_3]
+  incompleteOrExtinctRule: RETAIN_STATUS_BEARING_UNIT_NO_REPLACEMENT
+  tensorOverflowRule: RETAIN_STATUS_BEARING_UNIT_EXCLUDE_FROM_MODEL_NO_REPLACEMENT
+  minimumModelEligibleMatricesEachCandidate: 190
+  generateNewGARDTrajectories: true
+  generateNewPhiRLFeatures: true
+  generateNewLabels: false
+  predictionModels: true
+  interventions: false
+  gpuHours: 0
+
+simulations:
+  - candidateId: CANDIDATE_2
+    exposure: 0.6031526490073492
+    daughterRule: FIRST_DAUGHTER
+    overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+    streamIdentity: S19-L15::ORIGINAL::CANDIDATE_2
+  - candidateId: CANDIDATE_3
+    exposure: 0.5613315384859516
+    daughterRule: RANDOM_NONEMPTY
+    overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+    streamIdentity: S19-L15::ORIGINAL::CANDIDATE_3
+
+seedContract:
+  phase: s19_l15_untouched_padding_panel
+  matrixRootHex: e12d7ca73504d98dc8af9283092912625dd10844c1175a674d04fdbb46d0f195
+  matrixRootDerivationStatement: SHA256 of E01-S19-L15-UNTOUCHED-PADDING-LENGTH-PANEL-DISCRIMINATION-MATRIX-ROOT-v1.0.0::2026-08-10::DOMAIN-SEPARATED
+  splitRootHex: acfa3303704ae10b337193136b44a2986a02ab148c3fb56541490292faf521c2
+  analysisRootHex: 1bf4e0e1be42e32f174e75c915ebc9e615923cb32004ca565b1070fbfa59f3ef
+  matrixIndices: {startInclusive: 0, stopExclusive: 200}
+  requireZeroOverlapWithEveryPriorSeedAndInput: true
+  replacementPolicy: NEVER_REPLACE
+
+target:
+  targetId: S16_ADJACENT_INCOMING_H090
+  definition: Y_t = I[H_t > 0.9]
+  similarity: HISTORICAL_COSINE_H
+  threshold: 0.9
+  comparator: STRICT_GREATER_THAN
+  firstIncomingValue: FIRST_ADJACENT_VALUE_REPEATED_AS_IN_S16
+  targetSearch: PROHIBITED
+
+tensor:
+  sourceContract: E01-S16-FIRST-QUARTER-PREDICTION-RECONSTRUCTION-v1.0.0
+  cutoff: floor(0.25*T)
+  maximumInputLength: 367
+  maximumOutputLength: 1101
+  paddingSide: right
+  inputPaddingValue: 0.0
+  targetPaddingValue: 0.0
+  targetPaddingClass: false
+  featureChannelCapacity: 100
+  overflowHandling: STATUS_BEARING_INELIGIBLE_NO_TRUNCATION_NO_REPLACEMENT
+
+features:
+  learned:
+    - P1_PHIRL_EMERGENCE_COMPLETED_FIT
+    - P2_PHIRL_EMERGENCE_FIRST_QUARTER_ONLY
+    - B1_COMPOSITION_CHANGE
+    - B2_RAW_COMPOSITIONS
+    - B3_MOLECULAR_FLUXES
+    - B4_ADJACENT_H
+  paperPanel: [P1_PHIRL_EMERGENCE_COMPLETED_FIT, B1_COMPOSITION_CHANGE, B2_RAW_COMPOSITIONS, B3_MOLECULAR_FLUXES, D0_MAJORITY_DUMMY]
+  completedFitStatus: RETROSPECTIVE_COMPLETED_FIT_FUTURE_DEPENDENT
+  prospectiveStatus: P2_FIRST_QUARTER_ONLY_SUFFIX_INVARIANT_REQUIRED
+
+maskConditions:
+  - {conditionId: S00_MASKED_TRAIN_MASKED_SCORE, trainIncludesPadding: false, scoreIncludesPadding: false}
+  - {conditionId: S01_MASKED_TRAIN_UNMASKED_SCORE, trainIncludesPadding: false, scoreIncludesPadding: true}
+  - {conditionId: S10_UNMASKED_TRAIN_MASKED_SCORE, trainIncludesPadding: true, scoreIncludesPadding: false}
+  - {conditionId: S11_UNMASKED_TRAIN_UNMASKED_SCORE, trainIncludesPadding: true, scoreIncludesPadding: true}
+
+model:
+  implementation: EXACT_S16_288789_PARAMETER_CPU_FLOAT64_MLP
+  architectureSource: configs/e01/s16_tensor_model_manifest.json
+  optimizer: EXACT_S16_ADAMW
+  epochCeiling: 120
+  earlyStoppingPatience: 15
+  minimumImprovement: 1.0e-5
+  repetitions: 10
+  matrixSplit: {fit: 128, validation: 32, test: 40}
+  outcomeStratification: false
+  classBalancing: false
+  candidatePooling: false
+
+diagnostics:
+  models:
+    - D0_MAJORITY_DUMMY
+    - D1_INPUT_LENGTH_ONLY_LOGISTIC
+    - D2_DETERMINISTIC_PADDING_BOUNDARY
+    - D3_TIME_ONLY_LOGISTIC
+  deterministicBoundaryRule: INFER_OUTPUT_LENGTH_AS_3C_PLUS_2_AND_PREDICT_FIT_VALID_MAJORITY_BEFORE_BOUNDARY_ZERO_AFTER
+
+negativeControls:
+  controls:
+    - NC1_VALID_LABEL_PERMUTATION_PRESERVING_PADDING
+    - NC2_PADDING_BOUNDARY_PERMUTATION
+    - NC3_INPUT_PADDING_OBFUSCATION_WITH_TIME_MASK_RETAINED
+    - NC4_VALID_FEATURE_TEMPORAL_PERMUTATION
+    - NC5_MATRIX_LABEL_PERMUTATION
+    - NC6_COMPLETED_FIT_SUFFIX_PERTURBATION
+  primaryControlFeature: P1_PHIRL_EMERGENCE_COMPLETED_FIT
+  primaryControlCondition: S11_UNMASKED_TRAIN_UNMASKED_SCORE
+
+preoutcomeTechnicalAmendments:
+  - amendmentId: S19-L15-PREOUTCOME-TECHNICAL-AMENDMENT-001
+    defect: YAML_SEQUENCE_MAPPING_INDENTATION
+    outcomeAccessed: false
+    scientificValueChanged: false
+    scientificSettingChanged: false
+    preservedAttempt: /cache/e01_s19_l15/failed_attempt_001_artifacts
+    resolution: NEST_DIAGNOSTIC_AND_CONTROL_LISTS_UNDER_EXPLICIT_KEYS
+
+paperDigitization:
+  source: /artifacts/research_steps/S19/loops/L14/paper_figure5_digitization_lock.csv
+  mayRedigitize: false
+  exactGate: MEDIAN_INTERVAL_AND_IQR_OVERLAP
+  directionalMedianToleranceAbsolute: 0.05
+  ordering: [P1>B1, P1>B2, P1>B3, P1>D0]
+  mannWhitneyPBelow: 0.01
+  requireBothCandidates: true
+
+scientificGates:
+  exactPanelClassification: EXPLORATORY_PAPER_MATCH
+  directionalPanelClassification: EXPLORATORY_DIRECTIONAL_MATCH
+  paddingArtifactClassification: POSSIBLE_PIPELINE_ARTIFACT
+  exactPanelRequiresBothCandidates: true
+  directionalPanelRequiresBothCandidates: true
+  noFavorableCandidateSelection: true
+  paddingDominance:
+    allMinusValidMinimum: 0.05
+    correctPredictionsFromPaddingMinimum: 0.50
+    lengthOrBoundaryWithinP1: 0.03
+    shuffledValidLabelRetentionMinimum: 0.80
+  validCellProspectiveEligibility:
+    minimumPreOnsetMatricesEachCandidate: 20
+    minimumFutureOnsetMatricesEachCandidate: 20
+    completedFitProhibited: true
+  authorIdentityClaim: PROHIBITED
+
+statistics:
+  independentUnit: CATALYTIC_MATRIX
+  candidatesSeparate: true
+  bootstrapReplicates: 4096
+  paperComparison: TWO_SIDED_MANN_WHITNEY_ACROSS_TEN_SPLIT_VALUES
+  pairedComparison: TWO_SIDED_WILCOXON_ACROSS_PAIRED_SPLITS
+  matrixUncertainty: PAIRED_MATRIX_BOOTSTRAP
+  multiplicity: HOLM_WITHIN_REGISTERED_COMPARISONS
+
+benchmark:
+  matrixCount: 10
+  opaqueToModelOutcomes: true
+  includesAllFourMaskConditions: true
+  includesP1B1D1OneSplit: true
+  projectionIncludesFullScopeAndRegeneration: true
+  safetyFactor: 1.5
+
+resources:
+  cpuCores: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuHoursMaximum: 160
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 40
+  temporaryGiBMaximum: 120
+  reserveFraction: 0.15
+  gpuHoursMaximum: 0
+
+classifications:
+  - EXPLORATORY_PAPER_MATCH
+  - EXPLORATORY_DIRECTIONAL_MATCH
+  - EXPLORATORY_NON_SUPPORT
+  - POSSIBLE_PIPELINE_ARTIFACT
+  - RETROSPECTIVE_ONLY_LEAD
+  - NOT_PROMOTABLE
+  - LOOP_FAILED_CLOSED
+
+stopBoundary:
+  mandatoryHumanReviewAfterL15: true
+  activateNextLoop: false
+  activateS20: false
+  activateE02: false
+  contactAuthors: false
+  generateReportBundle: false

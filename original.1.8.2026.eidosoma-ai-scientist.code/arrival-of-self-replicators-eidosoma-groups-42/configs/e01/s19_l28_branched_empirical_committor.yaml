@@ -1,0 +1,73 @@
+schema: eidosoma.e01.s19_l28.preregistration.v1
+research_step_id: S19-L28
+versioned_id: E01-S19-L28-BRANCHED-EMPIRICAL-COMMITTOR-IDENTIFIABILITY-v1.0.0
+title: Branched Empirical Committor Identifiability at the Frozen H32 Task
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does the frozen first-entry target define a reliable state-dependent
+  finite-horizon probability that any predictor could recover?
+input:
+  cohort: frozen L23 400-shared-matrix and 800-trajectory cohort
+  matrix_firewall: exact frozen L24 200-development/200-validation split
+  online_task: exact frozen L25 five-landmark next-32 task
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+  target_scope: retrospective matrix-and-candidate-specific completed-run basin
+state_selection:
+  scheme: deterministic SHA256 ordering within candidate-role-landmark strata, allocating nested late-landmark strata first
+  states_per_stratum: 10
+  landmarks: [64, 96, 128, 160, 192]
+  unique_matrix_within_candidate_role: true
+  expected_states_per_candidate: 100
+branching:
+  horizon_selected_clock_observations: 32
+  branches_per_state: 128
+  split_halves: [64, 64]
+  independent_domain_separated_streams: true
+  branch_seed_root_sha256: 173faa80847abc978ae2ca332f2732e32d99ddc2a32bb5abda9d25e8ed19af5f
+  cpu_float64_authoritative: true
+  original_suffix_used_by_branch_dynamics: false
+reliability:
+  corrected_between_state_variance: sample_variance_qhat_minus_mean_qhat_one_minus_qhat_over_127
+  split_half_rank_metric: spearman
+  intermediate_probability_interval: [0.1, 0.9]
+  candidate_separate: true
+  matrix_bootstraps: 4096
+  pass:
+    corrected_variance_bootstrap_lower_above_zero: true
+    split_half_spearman_point_above: 0.5
+    split_half_spearman_bootstrap_lower_above: 0.3
+    intermediate_states_minimum: 20
+predictor_audit:
+  validation_matrices_only: true
+  frozen_scores:
+    - L26_EXACT_H_TRACE_ANALOG
+    - L26_ORDINARY_PATH_ANALOG
+    - L25_OPERATOR_CHANGE
+    - L26_RECURRENCE_MAP_ANALOG
+  metrics:
+    - spearman_qhat
+    - binomial_log_loss
+    - binomial_deviance
+    - brier
+    - calibration_intercept
+    - calibration_slope
+prohibited:
+  - k_tuning
+  - recurrence_map_tuning
+  - operator_tuning
+  - landmark_tuning
+  - horizon_tuning
+  - label_threshold_tuning
+  - simulator_candidate_tuning
+  - target_definition_tuning
+  - transition_tube_or_current_analysis
+  - new_catalytic_matrix
+  - author_contact
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

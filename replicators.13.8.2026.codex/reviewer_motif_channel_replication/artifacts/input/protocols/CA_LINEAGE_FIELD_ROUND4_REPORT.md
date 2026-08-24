@@ -1,0 +1,14 @@
+# CA lineage-field round 4
+
+State: **complete**. Profile: `reference`.
+Overall verdict: **NO_RENEWED_LINEAGE_CARRIER**.
+Elapsed: 0.07 wall hours.
+
+## Mechanisms
+
+- `latch`: **NO_CAUSAL_FIELD_HEREDITY**; Rule-31649 generation-8 crossover `-0.05810546875`, CI `[-0.0888671875, -0.026849365234374645]`; holdouts `[]`; 16-degree compression `False`.
+- `diffuse`: **NO_CAUSAL_FIELD_HEREDITY**; Rule-31649 generation-8 crossover `-0.01904296875`, CI `[-0.0498046875, 0.01318359375]`; holdouts `[]`; 16-degree compression `False`.
+
+## Evidence boundary
+
+A positive result is a synthetic, two-timescale local carrier mechanism after a verified visible-state reset. The carrier is still part of the total CA state. No verdict implies metabolism, agency, biological life, or a global organism.

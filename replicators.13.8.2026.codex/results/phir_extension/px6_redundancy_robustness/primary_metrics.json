@@ -1,0 +1,3801 @@
+{
+  "cells": [
+    {
+      "analytic_maximum_ci95": [
+        68.46368966289029,
+        112.48771928272652
+      ],
+      "analytic_minimum_ci95": [
+        4.74669782796687,
+        23.32800260716068
+      ],
+      "analytic_point_envelope": [
+        13.474723660419132,
+        90.02531323282953
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            71.66150810205076,
+            109.05507957993193
+          ],
+          "ci95": [
+            68.46368966289029,
+            112.48771928272652
+          ],
+          "effect": 90.02531323282953,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            55.65258509779939,
+            86.96430505303428
+          ],
+          "ci95": [
+            52.934133672905446,
+            89.70408386712008
+          ],
+          "effect": 70.88766583972692,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            39.62020044438263,
+            64.55023923510188
+          ],
+          "ci95": [
+            37.31151980315337,
+            67.45457964159648
+          ],
+          "effect": 51.750018446624324,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            23.093706768753567,
+            42.75936265073137
+          ],
+          "ci95": [
+            21.53954596339268,
+            45.14559112053672
+          ],
+          "effect": 32.612371053521734,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.999814648518999,
+            21.617994425222605
+          ],
+          "ci95": [
+            4.74669782796687,
+            23.32800260716068
+          ],
+          "effect": 13.474723660419132,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.005857944837686112,
+          "two_sided_sign_randomization_p": 0.010251403465950696
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 90.02531323282953,
+      "mean_redundancy_contrast": -76.55058957241039,
+      "phase": "PX1",
+      "replicate": 0,
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        67.73436876493541,
+        106.69859530659461
+      ],
+      "analytic_minimum_ci95": [
+        4.749577621424079,
+        20.56063795542775
+      ],
+      "analytic_point_envelope": [
+        11.888563268617668,
+        86.63559645760755
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            70.41646036371866,
+            103.31370594356741
+          ],
+          "ci95": [
+            67.73436876493541,
+            106.69859530659461
+          ],
+          "effect": 86.63559645760755,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            54.689778734906604,
+            82.05558463549202
+          ],
+          "ci95": [
+            52.280556347186575,
+            84.53039860974843
+          ],
+          "effect": 67.94883816036007,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            38.61980833309758,
+            60.66491381503117
+          ],
+          "ci95": [
+            36.9067130193828,
+            62.641538342876714
+          ],
+          "effect": 49.262079863112604,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            22.519806104970257,
+            39.43347746697885
+          ],
+          "ci95": [
+            21.117106701181793,
+            41.37979654755022
+          ],
+          "effect": 30.575321565865135,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.768007597663992,
+            18.885746383180255
+          ],
+          "ci95": [
+            4.749577621424079,
+            20.56063795542775
+          ],
+          "effect": 11.888563268617668,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 86.63559645760755,
+      "mean_redundancy_contrast": -74.74703318898987,
+      "phase": "PX1",
+      "replicate": 1,
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        72.20004665618987,
+        109.16099564896255
+      ],
+      "analytic_minimum_ci95": [
+        4.26343440697439,
+        18.286200790591412
+      ],
+      "analytic_point_envelope": [
+        10.537305664716841,
+        90.4676789903278
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            75.43589573172251,
+            106.01579514618135
+          ],
+          "ci95": [
+            72.20004665618987,
+            109.16099564896255
+          ],
+          "effect": 90.4676789903278,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            58.17102722920526,
+            82.97300419873153
+          ],
+          "ci95": [
+            55.96073061715957,
+            85.71288904365511
+          ],
+          "effect": 70.48508565892507,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            40.90948794380823,
+            60.43177860503378
+          ],
+          "ci95": [
+            39.49000829251881,
+            62.38998786574062
+          ],
+          "effect": 50.502492327522326,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            23.431316810537837,
+            38.28510226055106
+          ],
+          "ci95": [
+            22.35577132808737,
+            39.95310807213589
+          ],
+          "effect": 30.519898996119583,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.048275773468077,
+            16.87637099396045
+          ],
+          "ci95": [
+            4.26343440697439,
+            18.286200790591412
+          ],
+          "effect": 10.537305664716841,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 90.4676789903278,
+      "mean_redundancy_contrast": -79.93037332561097,
+      "phase": "PX1",
+      "replicate": 0,
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        59.64179208241093,
+        96.49459916802225
+      ],
+      "analytic_minimum_ci95": [
+        5.325026785504868,
+        18.589254518690495
+      ],
+      "analytic_point_envelope": [
+        11.408476292763096,
+        78.11022511004565
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            62.73480053910787,
+            93.857893607334
+          ],
+          "ci95": [
+            59.64179208241093,
+            96.49459916802225
+          ],
+          "effect": 78.11022511004565,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            48.948505068281406,
+            74.50465172873628
+          ],
+          "ci95": [
+            46.661562812051706,
+            76.37904445100403
+          ],
+          "effect": 61.43478790572501,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            35.090000213827835,
+            54.849033989392154
+          ],
+          "ci95": [
+            33.485216692439835,
+            56.718183686796856
+          ],
+          "effect": 44.759350701404365,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            21.056788285009294,
+            35.72978753626952
+          ],
+          "ci95": [
+            19.845319575275745,
+            37.22612015584217
+          ],
+          "effect": 28.08391349708373,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            6.197288104311976,
+            17.418941223215263
+          ],
+          "ci95": [
+            5.325026785504868,
+            18.589254518690495
+          ],
+          "effect": 11.408476292763096,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 78.11022511004565,
+      "mean_redundancy_contrast": -66.70174881728254,
+      "phase": "PX1",
+      "replicate": 1,
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        1.9425633647913227,
+        3.5444441330559013
+      ],
+      "analytic_minimum_ci95": [
+        1.6782582874503558,
+        3.1273897305801497
+      ],
+      "analytic_point_envelope": [
+        2.376945541793828,
+        2.7229027867082762
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            1.7801633380620372,
+            3.003225554951814
+          ],
+          "ci95": [
+            1.6782582874503558,
+            3.1273897305801497
+          ],
+          "effect": 2.376945541793828,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.858309008854028,
+            3.0969733962709656
+          ],
+          "ci95": [
+            1.7552051031579938,
+            3.221673320946789
+          ],
+          "effect": 2.46343485302244,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.9310968911580875,
+            3.192499351742212
+          ],
+          "ci95": [
+            1.8218757615850754,
+            3.337133093259395
+          ],
+          "effect": 2.549924164251052,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            2.0038209250809786,
+            3.292628919243156
+          ],
+          "ci95": [
+            1.8810951075903355,
+            3.4448995914428044
+          ],
+          "effect": 2.6364134754796638,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            2.0699997166856194,
+            3.41617042280936
+          ],
+          "ci95": [
+            1.9420343459218816,
+            3.5444441330559013
+          ],
+          "effect": 2.7229027867082762,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "A",
+      "matrices": 24,
+      "mean_base_contrast": 2.376945541793828,
+      "mean_redundancy_contrast": 0.34595724491444796,
+      "phase": "PX2",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        1.9073234268685033,
+        3.522748222727578
+      ],
+      "analytic_minimum_ci95": [
+        1.4534601783778192,
+        2.932800653673393
+      ],
+      "analytic_point_envelope": [
+        2.1319774636531528,
+        2.6552424261457044
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            1.541667998060936,
+            2.7792759715848274
+          ],
+          "ci95": [
+            1.4534601783778192,
+            2.932800653673393
+          ],
+          "effect": 2.1319774636531528,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.6711813284307877,
+            2.919902273985082
+          ],
+          "ci95": [
+            1.5786694934381325,
+            3.080386875131352
+          ],
+          "effect": 2.2627937042762905,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.791654583008483,
+            3.0682828957427737
+          ],
+          "ci95": [
+            1.6982192558185178,
+            3.216892309247866
+          ],
+          "effect": 2.3936099448994286,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.9065188844651975,
+            3.214165135455148
+          ],
+          "ci95": [
+            1.8056207969561469,
+            3.3623461679009323
+          ],
+          "effect": 2.5244261855225667,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            2.0223606275487938,
+            3.378265234203934
+          ],
+          "ci95": [
+            1.9073234268685033,
+            3.522748222727578
+          ],
+          "effect": 2.6552424261457044,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "B",
+      "matrices": 24,
+      "mean_base_contrast": 2.1319774636531528,
+      "mean_redundancy_contrast": 0.5232649624925517,
+      "phase": "PX2",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        1.4538694741010438,
+        3.7183050273041056
+      ],
+      "analytic_minimum_ci95": [
+        1.3419179114296242,
+        3.311619926310378
+      ],
+      "analytic_point_envelope": [
+        2.2231864161794763,
+        2.466085489749964
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            1.4698041771929284,
+            3.1011651266126137
+          ],
+          "ci95": [
+            1.3482904092948238,
+            3.311619926310378
+          ],
+          "effect": 2.2231864161794763,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.5060385165563532,
+            3.20137215353587
+          ],
+          "ci95": [
+            1.3735667152339843,
+            3.4085027439195184
+          ],
+          "effect": 2.2839111845720983,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.5370562730602444,
+            3.298404387063702
+          ],
+          "ci95": [
+            1.4057100085350707,
+            3.5042750180647357
+          ],
+          "effect": 2.3446359529647203,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.554766380198918,
+            3.3911675042461837
+          ],
+          "ci95": [
+            1.4240801522356397,
+            3.611247074328975
+          ],
+          "effect": 2.4053607213573422,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.575677813399051,
+            3.4934322893830823
+          ],
+          "ci95": [
+            1.4383701131663986,
+            3.7183050273041056
+          ],
+          "effect": 2.466085489749964,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "A",
+      "matrices": 24,
+      "mean_base_contrast": 2.2231864161794763,
+      "mean_redundancy_contrast": 0.24289907357048798,
+      "phase": "PX2",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        1.4908756625959259,
+        3.4896875217391488
+      ],
+      "analytic_minimum_ci95": [
+        1.3638066798858863,
+        3.0667612818707584
+      ],
+      "analytic_point_envelope": [
+        2.1505389013174554,
+        2.4360599602900943
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            1.4752772175829933,
+            2.8969243038316463
+          ],
+          "ci95": [
+            1.3696726194608067,
+            3.0667612818707584
+          ],
+          "effect": 2.1505389013174554,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.5209330090674333,
+            3.00323485361415
+          ],
+          "ci95": [
+            1.4006172275536997,
+            3.175028993859354
+          ],
+          "effect": 2.2219191660606152,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.5455428302424725,
+            3.1020357475823617
+          ],
+          "ci95": [
+            1.436223554923221,
+            3.2822543155540362
+          ],
+          "effect": 2.2932994308037746,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            1.5787987325561923,
+            3.201203661180529
+          ],
+          "ci95": [
+            1.4612023835450847,
+            3.3810993047276723
+          ],
+          "effect": 2.3646796955469345,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000488162069807176,
+          "two_sided_sign_randomization_p": 0.000732243104710764
+        },
+        {
+          "ci90": [
+            1.613320467117222,
+            3.3028481413482833
+          ],
+          "ci95": [
+            1.485291734839911,
+            3.4896875217391488
+          ],
+          "effect": 2.4360599602900943,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000488162069807176,
+          "two_sided_sign_randomization_p": 0.000732243104710764
+        }
+      ],
+      "half": "B",
+      "matrices": 24,
+      "mean_base_contrast": 2.1505389013174554,
+      "mean_redundancy_contrast": 0.28552105897263885,
+      "phase": "PX2",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -3.0520393410730144,
+        -1.389347047072379
+      ],
+      "analytic_minimum_ci95": [
+        -3.502760021632079,
+        -1.5472508684868955
+      ],
+      "analytic_point_envelope": [
+        -2.5294489694600024,
+        -2.20850524563464
+      ],
+      "candidate": "02",
+      "classification": "uniform_negative",
+      "grid": [
+        {
+          "ci90": [
+            -2.888054962631427,
+            -1.5192637142198677
+          ],
+          "ci95": [
+            -3.0520393410730144,
+            -1.389347047072379
+          ],
+          "effect": -2.20850524563464,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -2.9975031052045424,
+            -1.5701445547472206
+          ],
+          "ci95": [
+            -3.1588369449939506,
+            -1.422803546314701
+          ],
+          "effect": -2.2887411765909804,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.1045971388838365,
+            -1.6174629571673538
+          ],
+          "ci95": [
+            -3.2695772689056284,
+            -1.465392103587086
+          ],
+          "effect": -2.368977107547321,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.220361573402249,
+            -1.6541170492476498
+          ],
+          "ci95": [
+            -3.392341521496395,
+            -1.5028703473468716
+          ],
+          "effect": -2.4492130385036615,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.3352639557976267,
+            -1.6917108054323444
+          ],
+          "ci95": [
+            -3.502760021632079,
+            -1.5472508684868955
+          ],
+          "effect": -2.5294489694600024,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "A",
+      "matrices": 24,
+      "mean_base_contrast": -2.20850524563464,
+      "mean_redundancy_contrast": -0.3209437238253628,
+      "phase": "PX3",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -2.678727096860899,
+        -1.3516722078396182
+      ],
+      "analytic_minimum_ci95": [
+        -3.2168150515868787,
+        -1.625409045262745
+      ],
+      "analytic_point_envelope": [
+        -2.385518955378961,
+        -1.9919155351654292
+      ],
+      "candidate": "02",
+      "classification": "uniform_negative",
+      "grid": [
+        {
+          "ci90": [
+            -2.553181988808297,
+            -1.4670829734695117
+          ],
+          "ci95": [
+            -2.678727096860899,
+            -1.3516722078396182
+          ],
+          "effect": -1.9919155351654292,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -2.673019310834723,
+            -1.547150112044263
+          ],
+          "ci95": [
+            -2.810505187601236,
+            -1.422365647374194
+          ],
+          "effect": -2.090316390218812,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -2.802269892115073,
+            -1.6165360050188602
+          ],
+          "ci95": [
+            -2.94393117689516,
+            -1.496768241032193
+          ],
+          "effect": -2.1887172452721955,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -2.9383973709169156,
+            -1.681705987478419
+          ],
+          "ci95": [
+            -3.077066371470115,
+            -1.5571962862628352
+          ],
+          "effect": -2.287118100325578,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.068487044472976,
+            -1.7457728357433469
+          ],
+          "ci95": [
+            -3.2168150515868787,
+            -1.625409045262745
+          ],
+          "effect": -2.385518955378961,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "B",
+      "matrices": 24,
+      "mean_base_contrast": -1.9919155351654292,
+      "mean_redundancy_contrast": -0.3936034202135317,
+      "phase": "PX3",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -3.120685665756357,
+        -1.5481183338580047
+      ],
+      "analytic_minimum_ci95": [
+        -3.7151354322022776,
+        -1.8387307520981702
+      ],
+      "analytic_point_envelope": [
+        -2.7681807935410014,
+        -2.3364970398381004
+      ],
+      "candidate": "03",
+      "classification": "uniform_negative",
+      "grid": [
+        {
+          "ci90": [
+            -2.98508298685646,
+            -1.6841111679413698
+          ],
+          "ci95": [
+            -3.120685665756357,
+            -1.5481183338580047
+          ],
+          "effect": -2.3364970398381004,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.1287878364690744,
+            -1.7602341936552992
+          ],
+          "ci95": [
+            -3.2719095103323657,
+            -1.62406168009384
+          ],
+          "effect": -2.4444179782638256,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.2802138275143458,
+            -1.8298087733699795
+          ],
+          "ci95": [
+            -3.4151538012470475,
+            -1.6921832138401123
+          ],
+          "effect": -2.552338916689551,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.4252089474752037,
+            -1.898701196996697
+          ],
+          "ci95": [
+            -3.5626834185832967,
+            -1.7712462287558164
+          ],
+          "effect": -2.660259855115276,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.5681901360824195,
+            -1.9690724383017753
+          ],
+          "ci95": [
+            -3.7151354322022776,
+            -1.8387307520981702
+          ],
+          "effect": -2.7681807935410014,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "A",
+      "matrices": 24,
+      "mean_base_contrast": -2.3364970398381004,
+      "mean_redundancy_contrast": -0.4316837537029006,
+      "phase": "PX3",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -2.9335096345932885,
+        -1.4711495099089886
+      ],
+      "analytic_minimum_ci95": [
+        -3.5864807951680246,
+        -1.7947591653797983
+      ],
+      "analytic_point_envelope": [
+        -2.682198324360281,
+        -2.2217175773881603
+      ],
+      "candidate": "03",
+      "classification": "uniform_negative",
+      "grid": [
+        {
+          "ci90": [
+            -2.8303627270987284,
+            -1.5939343606926752
+          ],
+          "ci95": [
+            -2.9335096345932885,
+            -1.4711495099089886
+          ],
+          "effect": -2.2217175773881603,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -2.9843925522787784,
+            -1.6821951699434137
+          ],
+          "ci95": [
+            -3.092795238344365,
+            -1.5447350249473069
+          ],
+          "effect": -2.336837764131191,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.139639933156117,
+            -1.7691498854527343
+          ],
+          "ci95": [
+            -3.2570755873092363,
+            -1.6316592989763181
+          ],
+          "effect": -2.451957950874221,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.2909093701580217,
+            -1.8590122817906316
+          ],
+          "ci95": [
+            -3.417255077315516,
+            -1.7166633987948086
+          ],
+          "effect": -2.567078137617251,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            -3.443795920204253,
+            -1.9528325613777873
+          ],
+          "ci95": [
+            -3.5864807951680246,
+            -1.7947591653797983
+          ],
+          "effect": -2.682198324360281,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 1.0,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "half": "B",
+      "matrices": 24,
+      "mean_base_contrast": -2.2217175773881603,
+      "mean_redundancy_contrast": -0.4604807469721209,
+      "phase": "PX3",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        62.23915117790795,
+        109.997683398997
+      ],
+      "analytic_minimum_ci95": [
+        6.229811052540513,
+        20.867091091706197
+      ],
+      "analytic_point_envelope": [
+        12.89121096291782,
+        85.47489936572875
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            66.383143812223,
+            105.89660200106607
+          ],
+          "ci95": [
+            62.23915117790795,
+            109.997683398997
+          ],
+          "effect": 85.47489936572875,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            52.163236441736125,
+            83.85757171371606
+          ],
+          "ci95": [
+            48.7924791219633,
+            86.8806805570911
+          ],
+          "effect": 67.32897726502601,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            37.6303293959178,
+            61.86209327835516
+          ],
+          "ci95": [
+            35.49491444746518,
+            64.15327322636895
+          ],
+          "effect": 49.183055164323285,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            22.890716687521415,
+            40.2233466941203
+          ],
+          "ci95": [
+            21.43749971316147,
+            42.29080745562036
+          ],
+          "effect": 31.037133063620548,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            7.125106750435912,
+            19.626865321701004
+          ],
+          "ci95": [
+            6.229811052540513,
+            20.867091091706197
+          ],
+          "effect": 12.89121096291782,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 85.47489936572875,
+      "mean_redundancy_contrast": -72.58368840281092,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C02_CODEX",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        77.47520773649804,
+        122.81641521833632
+      ],
+      "analytic_minimum_ci95": [
+        5.773422235856007,
+        22.476633085984055
+      ],
+      "analytic_point_envelope": [
+        13.604214920774055,
+        99.55450488266324
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            80.85867478532205,
+            119.17754723946177
+          ],
+          "ci95": [
+            77.47520773649804,
+            122.81641521833632
+          ],
+          "effect": 99.55450488266324,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            62.85816991697334,
+            94.48380080822855
+          ],
+          "ci95": [
+            59.94828000007957,
+            97.42468000808265
+          ],
+          "effect": 78.06693239219094,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            44.45099704363899,
+            69.68383310034709
+          ],
+          "ci95": [
+            42.25967175479626,
+            72.10366713794535
+          ],
+          "effect": 56.57935990171864,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            26.02219853166221,
+            45.10716877210199
+          ],
+          "ci95": [
+            24.423379452631522,
+            46.97421414347046
+          ],
+          "effect": 35.091787411246344,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            7.008283889508768,
+            20.856941095072287
+          ],
+          "ci95": [
+            5.773422235856007,
+            22.476633085984055
+          ],
+          "effect": 13.604214920774055,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 99.55450488266324,
+      "mean_redundancy_contrast": -85.95028996188917,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C02_EVENTWISE",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        63.190441628231305,
+        108.13747488878069
+      ],
+      "analytic_minimum_ci95": [
+        4.7320083474215515,
+        16.29518385006516
+      ],
+      "analytic_point_envelope": [
+        10.085313145340779,
+        85.33258799311083
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            66.6278345055188,
+            104.50466813547817
+          ],
+          "ci95": [
+            63.190441628231305,
+            108.13747488878069
+          ],
+          "effect": 85.33258799311083,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            51.660222054826725,
+            81.68903679131785
+          ],
+          "ci95": [
+            49.29241917446513,
+            84.93346623385246
+          ],
+          "effect": 66.52076928116831,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            36.78071686017595,
+            59.221771384994796
+          ],
+          "ci95": [
+            34.834764205216686,
+            61.67135921138471
+          ],
+          "effect": 47.708950569225806,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            21.519676943773216,
+            36.8167069372896
+          ],
+          "ci95": [
+            20.249021441538687,
+            38.434373343603546
+          ],
+          "effect": 28.897131857283295,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.409415886577374,
+            15.224480719905896
+          ],
+          "ci95": [
+            4.7320083474215515,
+            16.29518385006516
+          ],
+          "effect": 10.085313145340779,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 85.33258799311083,
+      "mean_redundancy_contrast": -75.24727484777004,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C02_CODEX",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        71.14985604151977,
+        121.3473013802153
+      ],
+      "analytic_minimum_ci95": [
+        4.807667717966562,
+        23.18798964625517
+      ],
+      "analytic_point_envelope": [
+        13.130138009187121,
+        95.53501998256968
+      ],
+      "candidate": "02",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            75.0716466194544,
+            116.95804968574087
+          ],
+          "ci95": [
+            71.14985604151977,
+            121.3473013802153
+          ],
+          "effect": 95.53501998256968,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            58.02542657791213,
+            92.55176954499285
+          ],
+          "ci95": [
+            55.15700044589234,
+            96.36417051732593
+          ],
+          "effect": 74.93379948922403,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            41.09586841272206,
+            68.29252690593808
+          ],
+          "ci95": [
+            38.93450966778485,
+            71.46046420623364
+          ],
+          "effect": 54.3325789958784,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            23.957609824199878,
+            44.560566180740125
+          ],
+          "ci95": [
+            22.251994957804357,
+            46.84234005004289
+          ],
+          "effect": 33.731358502532764,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.88352830173446,
+            21.467158132037305
+          ],
+          "ci95": [
+            4.807667717966562,
+            23.18798964625517
+          ],
+          "effect": 13.130138009187121,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000488162069807176
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 95.53501998256968,
+      "mean_redundancy_contrast": -82.40488197338254,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C02_EVENTWISE",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        59.594328604901534,
+        102.65634133093714
+      ],
+      "analytic_minimum_ci95": [
+        3.998273490373505,
+        20.186796540179685
+      ],
+      "analytic_point_envelope": [
+        10.960565196446675,
+        79.91139975299238
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            62.64547151833431,
+            98.8690808775549
+          ],
+          "ci95": [
+            59.594328604901534,
+            102.65634133093714
+          ],
+          "effect": 79.91139975299238,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            48.554501387584025,
+            78.39290062032424
+          ],
+          "ci95": [
+            46.05758740929665,
+            81.77778230140667
+          ],
+          "effect": 62.673691113855945,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            34.240779202805115,
+            58.112367182840146
+          ],
+          "ci95": [
+            32.442066852819494,
+            60.9821528660237
+          ],
+          "effect": 45.435982474719516,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            19.840526623520034,
+            38.176674279043894
+          ],
+          "ci95": [
+            18.623006942626965,
+            40.569101244185276
+          ],
+          "effect": 28.198273835583098,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            4.8672364906475085,
+            18.54522355621263
+          ],
+          "ci95": [
+            3.998273490373505,
+            20.186796540179685
+          ],
+          "effect": 10.960565196446675,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 79.91139975299238,
+      "mean_redundancy_contrast": -68.9508345565457,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E0_O0_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        66.41833185508865,
+        107.85496677992353
+      ],
+      "analytic_minimum_ci95": [
+        5.489376472734475,
+        17.41758295394218
+      ],
+      "analytic_point_envelope": [
+        11.22988904638187,
+        86.57719554603433
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            68.94540400468048,
+            104.802364404841
+          ],
+          "ci95": [
+            66.41833185508865,
+            107.85496677992353
+          ],
+          "effect": 86.57719554603433,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            53.59860892754774,
+            82.29635773764927
+          ],
+          "ci95": [
+            51.67143388056366,
+            84.95362625340015
+          ],
+          "effect": 67.7403689211212,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            38.161774460970456,
+            60.065829291988315
+          ],
+          "ci95": [
+            36.564200707534795,
+            62.29767777119922
+          ],
+          "effect": 48.903542296208094,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            22.5292436218143,
+            38.006349976600234
+          ],
+          "ci95": [
+            21.36643314692351,
+            39.434003213264475
+          ],
+          "effect": 30.066715671294983,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            6.27046096185225,
+            16.453724702849115
+          ],
+          "ci95": [
+            5.489376472734475,
+            17.41758295394218
+          ],
+          "effect": 11.22988904638187,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000488162069807176
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 86.57719554603433,
+      "mean_redundancy_contrast": -75.34730649965246,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E0_O0_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        67.372142556874,
+        111.20069543616204
+      ],
+      "analytic_minimum_ci95": [
+        3.5863726241743628,
+        15.38878228420742
+      ],
+      "analytic_point_envelope": [
+        8.69125538750803,
+        88.16688205564007
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            70.51846147595995,
+            107.21555454822612
+          ],
+          "ci95": [
+            67.372142556874,
+            111.20069543616204
+          ],
+          "effect": 88.16688205564007,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            54.21699808149041,
+            83.68292361670333
+          ],
+          "ci95": [
+            51.64091846533268,
+            86.84891895414106
+          ],
+          "effect": 68.29797538860706,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            37.81684853821732,
+            60.11400603229548
+          ],
+          "ci95": [
+            36.007481876545285,
+            62.578328461821066
+          ],
+          "effect": 48.42906872157405,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            21.34449252680989,
+            36.723362196178044
+          ],
+          "ci95": [
+            20.122835833698904,
+            38.462546037843566
+          ],
+          "effect": 28.56016205454104,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            4.134630427077745,
+            14.207867969426948
+          ],
+          "ci95": [
+            3.5863726241743628,
+            15.38878228420742
+          ],
+          "effect": 8.69125538750803,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000488162069807176,
+          "two_sided_sign_randomization_p": 0.000488162069807176
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 88.16688205564007,
+      "mean_redundancy_contrast": -79.47562666813205,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E0_O1_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        58.40736347422141,
+        105.45355234522651
+      ],
+      "analytic_minimum_ci95": [
+        4.366843177225875,
+        18.63924123765242
+      ],
+      "analytic_point_envelope": [
+        10.771541373814928,
+        80.7237642545971
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            61.617794961360225,
+            101.34172746405304
+          ],
+          "ci95": [
+            58.40736347422141,
+            105.45355234522651
+          ],
+          "effect": 80.7237642545971,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            47.913222343121056,
+            79.85481564335173
+          ],
+          "ci95": [
+            45.29167973720847,
+            83.48035367764693
+          ],
+          "effect": 63.23570853440156,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            33.952854118040136,
+            58.65281074474487
+          ],
+          "ci95": [
+            31.864365815802834,
+            61.331370910801596
+          ],
+          "effect": 45.74765281420602,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            19.71515513677724,
+            37.789621674493326
+          ],
+          "ci95": [
+            18.41516841368396,
+            39.63004458237114
+          ],
+          "effect": 28.259597094010473,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.216197326877194,
+            17.321998667798912
+          ],
+          "ci95": [
+            4.366843177225875,
+            18.63924123765242
+          ],
+          "effect": 10.771541373814928,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 80.7237642545971,
+      "mean_redundancy_contrast": -69.95222288078217,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E0_O1_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        65.53089620347475,
+        114.06271151592907
+      ],
+      "analytic_minimum_ci95": [
+        6.670426864182818,
+        24.18711358030799
+      ],
+      "analytic_point_envelope": [
+        14.301623543794237,
+        88.6014380177027
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            68.98405234734687,
+            110.0256740815115
+          ],
+          "ci95": [
+            65.53089620347475,
+            114.06271151592907
+          ],
+          "effect": 88.6014380177027,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            54.09930038274763,
+            87.66090058502505
+          ],
+          "ci95": [
+            51.37466792421229,
+            91.31209002916422
+          ],
+          "effect": 70.02648439922558,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            39.016356626721155,
+            65.65386546255148
+          ],
+          "ci95": [
+            36.79277094350335,
+            68.31062810196552
+          ],
+          "effect": 51.45153078074846,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            23.474085048317995,
+            43.64110493531912
+          ],
+          "ci95": [
+            22.251013687914046,
+            46.18543593675805
+          ],
+          "effect": 32.87657716227135,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            7.634008477041571,
+            22.238250361736885
+          ],
+          "ci95": [
+            6.670426864182818,
+            24.18711358030799
+          ],
+          "effect": 14.301623543794237,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 88.6014380177027,
+      "mean_redundancy_contrast": -74.29981447390846,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E1_O0_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        63.45364600412518,
+        111.98203584844737
+      ],
+      "analytic_minimum_ci95": [
+        4.260094101379838,
+        19.75395501121866
+      ],
+      "analytic_point_envelope": [
+        11.35993122015969,
+        86.81398307946101
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            66.68555787065111,
+            107.50317162713819
+          ],
+          "ci95": [
+            63.45364600412518,
+            111.98203584844737
+          ],
+          "effect": 86.81398307946101,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            51.76463685367945,
+            84.74667334627898
+          ],
+          "ci95": [
+            49.15707495719887,
+            88.63250516638718
+          ],
+          "effect": 67.95047011463568,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            36.63973642484457,
+            62.44923995282286
+          ],
+          "ci95": [
+            34.58879586150067,
+            65.10621453948522
+          ],
+          "effect": 49.08695714981036,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            21.256678507856467,
+            40.03529466669557
+          ],
+          "ci95": [
+            19.76084131240267,
+            42.2042253699594
+          ],
+          "effect": 30.223444184985016,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.054303008715874,
+            18.432439392305206
+          ],
+          "ci95": [
+            4.260094101379838,
+            19.75395501121866
+          ],
+          "effect": 11.35993122015969,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000732243104710764
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 86.81398307946101,
+      "mean_redundancy_contrast": -75.45405185930132,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E1_O0_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        66.60038789674624,
+        111.97551392993522
+      ],
+      "analytic_minimum_ci95": [
+        5.054532945843441,
+        22.06112115987549
+      ],
+      "analytic_point_envelope": [
+        12.846493990586326,
+        88.25798459448356
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            69.33449596274895,
+            108.22521566436275
+          ],
+          "ci95": [
+            66.60038789674624,
+            111.97551392993522
+          ],
+          "effect": 88.25798459448356,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            53.988696673378605,
+            85.73845073994109
+          ],
+          "ci95": [
+            51.58450992479606,
+            89.27347954994667
+          ],
+          "effect": 69.40511194350925,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            38.30854515014536,
+            63.706728347975655
+          ],
+          "ci95": [
+            36.31029871315166,
+            66.54465397824004
+          ],
+          "effect": 50.55223929253494,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            22.509134177482117,
+            41.81003574607825
+          ],
+          "ci95": [
+            21.16040105184305,
+            43.977107288756606
+          ],
+          "effect": 31.699366641560633,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            6.119503110829485,
+            20.440160520856264
+          ],
+          "ci95": [
+            5.054532945843441,
+            22.06112115987549
+          ],
+          "effect": 12.846493990586326,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000732243104710764
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 88.25798459448356,
+      "mean_redundancy_contrast": -75.41149060389724,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E1_O1_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        68.40195771801446,
+        112.02826500581871
+      ],
+      "analytic_minimum_ci95": [
+        6.305985329788253,
+        21.724576799823886
+      ],
+      "analytic_point_envelope": [
+        13.04683467227792,
+        89.84559432015783
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            71.66353099101116,
+            108.32909493011141
+          ],
+          "ci95": [
+            68.40195771801446,
+            112.02826500581871
+          ],
+          "effect": 89.84559432015783,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            55.993596455715796,
+            86.04307778677571
+          ],
+          "ci95": [
+            53.282663041426616,
+            89.1372225029366
+          ],
+          "effect": 70.64590440818786,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            40.16908745449152,
+            63.65781347149632
+          ],
+          "ci95": [
+            38.30547305867937,
+            66.13429099077958
+          ],
+          "effect": 51.446214496217884,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            24.066798601734018,
+            41.914294963367716
+          ],
+          "ci95": [
+            22.769798118553005,
+            43.631062126128406
+          ],
+          "effect": 32.2465245842479,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            7.09201590078445,
+            20.30036335862743
+          ],
+          "ci95": [
+            6.305985329788253,
+            21.724576799823886
+          ],
+          "effect": 13.04683467227792,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 89.84559432015783,
+      "mean_redundancy_contrast": -76.79875964787992,
+      "phase": "PX4",
+      "replicate": 0,
+      "variant": "C03_E1_O1_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        66.81800533302302,
+        118.97915257688591
+      ],
+      "analytic_minimum_ci95": [
+        6.506532651523077,
+        28.476840001366142
+      ],
+      "analytic_point_envelope": [
+        16.14323401891309,
+        91.91441079550869
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            70.04059708867271,
+            114.56203893559898
+          ],
+          "ci95": [
+            66.81800533302302,
+            118.97915257688591
+          ],
+          "effect": 91.91441079550869,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            54.7109127550134,
+            92.124253675826
+          ],
+          "ci95": [
+            52.1598554925385,
+            95.6432128210559
+          ],
+          "effect": 72.9716166013598,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            39.5035857838208,
+            69.81258130389509
+          ],
+          "ci95": [
+            37.46735986962404,
+            72.64297579138336
+          ],
+          "effect": 54.028822407210896,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            23.93321130355704,
+            47.646561658221415
+          ],
+          "ci95": [
+            22.342020395297524,
+            50.32359536827089
+          ],
+          "effect": 35.086028213061994,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            7.62647312493027,
+            25.892505050264543
+          ],
+          "ci95": [
+            6.506532651523077,
+            28.476840001366142
+          ],
+          "effect": 16.14323401891309,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000488162069807176,
+          "two_sided_sign_randomization_p": 0.000488162069807176
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 91.91441079550869,
+      "mean_redundancy_contrast": -75.77117677659561,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E0_O0_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        58.14050428922922,
+        110.9702180807488
+      ],
+      "analytic_minimum_ci95": [
+        3.2789704997862703,
+        20.47912786620084
+      ],
+      "analytic_point_envelope": [
+        10.961813969709718,
+        83.87171133845148
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            62.145876643072995,
+            106.70340563374577
+          ],
+          "ci95": [
+            58.14050428922922,
+            110.9702180807488
+          ],
+          "effect": 83.87171133845148,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            47.95724631011762,
+            84.18942986027761
+          ],
+          "ci95": [
+            44.83754913857548,
+            87.86831138609013
+          ],
+          "effect": 65.64423699626603,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            33.98192864650602,
+            61.95412651147218
+          ],
+          "ci95": [
+            31.47717001125997,
+            65.1342617867827
+          ],
+          "effect": 47.41676265408059,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            19.300446811404292,
+            40.23654208320729
+          ],
+          "ci95": [
+            17.785955376732534,
+            42.558365714207724
+          ],
+          "effect": 29.189288311895154,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            4.3722408672147,
+            18.86398267025255
+          ],
+          "ci95": [
+            3.2789704997862703,
+            20.47912786620084
+          ],
+          "effect": 10.961813969709718,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000732243104710764,
+          "two_sided_sign_randomization_p": 0.000732243104710764
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 83.87171133845148,
+      "mean_redundancy_contrast": -72.90989736874174,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E0_O0_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        64.26617838991824,
+        110.67412051928937
+      ],
+      "analytic_minimum_ci95": [
+        5.755430959584258,
+        24.394301315742915
+      ],
+      "analytic_point_envelope": [
+        14.241270245089048,
+        87.38655353780727
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            67.91324495562087,
+            107.0735065746324
+          ],
+          "ci95": [
+            64.26617838991824,
+            110.67412051928937
+          ],
+          "effect": 87.38655353780727,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            53.195903223299894,
+            85.55563855844682
+          ],
+          "ci95": [
+            50.183278060941845,
+            88.31755660717113
+          ],
+          "effect": 69.10023271462772,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            38.31894886060326,
+            64.18632710463308
+          ],
+          "ci95": [
+            35.99262804229899,
+            66.31318567358214
+          ],
+          "effect": 50.813911891448164,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            23.078128045940474,
+            43.07461436775493
+          ],
+          "ci95": [
+            21.414438732735174,
+            44.94138197050021
+          ],
+          "effect": 32.527591068268606,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            6.776509193737891,
+            22.520385824234527
+          ],
+          "ci95": [
+            5.755430959584258,
+            24.394301315742915
+          ],
+          "effect": 14.241270245089048,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 87.38655353780727,
+      "mean_redundancy_contrast": -73.14528329271823,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E0_O1_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        67.74305488475348,
+        111.76344658886507
+      ],
+      "analytic_minimum_ci95": [
+        6.85265505834686,
+        22.608123983301553
+      ],
+      "analytic_point_envelope": [
+        14.128157617736798,
+        89.39901376313033
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            70.88389784642027,
+            108.1850320734382
+          ],
+          "ci95": [
+            67.74305488475348,
+            111.76344658886507
+          ],
+          "effect": 89.39901376313033,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            55.59367933181445,
+            86.16685281419063
+          ],
+          "ci95": [
+            53.027308589186795,
+            89.24334950860911
+          ],
+          "effect": 70.58129972678195,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            40.137532401832516,
+            64.0297791488589
+          ],
+          "ci95": [
+            37.9144730830614,
+            66.52100635353308
+          ],
+          "effect": 51.76358569043356,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            24.379738840924535,
+            42.34847072728434
+          ],
+          "ci95": [
+            22.803818903508645,
+            44.183901814214266
+          ],
+          "effect": 32.94587165408518,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            7.7255326023141455,
+            21.180261338407433
+          ],
+          "ci95": [
+            6.85265505834686,
+            22.608123983301553
+          ],
+          "effect": 14.128157617736798,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 89.39901376313033,
+      "mean_redundancy_contrast": -75.27085614539352,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E0_O1_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        54.69637745299508,
+        105.32417751967351
+      ],
+      "analytic_minimum_ci95": [
+        3.151895037041895,
+        18.72780433357365
+      ],
+      "analytic_point_envelope": [
+        10.048002129336547,
+        79.01477500322888
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            58.2281742417857,
+            101.2042312785649
+          ],
+          "ci95": [
+            54.69637745299508,
+            105.32417751967351
+          ],
+          "effect": 79.01477500322888,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            45.10322914386089,
+            79.8464420420314
+          ],
+          "ci95": [
+            42.1946530974974,
+            83.6440242515997
+          ],
+          "effect": 61.773081784755796,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            31.756714910159722,
+            58.70818654542164
+          ],
+          "ci95": [
+            29.692099160884606,
+            61.552289296700394
+          ],
+          "effect": 44.531388566282715,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            18.23730641421462,
+            37.79022656198126
+          ],
+          "ci95": [
+            16.940763207742467,
+            39.97826447936833
+          ],
+          "effect": 27.28969534780963,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            4.029160971283481,
+            17.158863300506525
+          ],
+          "ci95": [
+            3.151895037041895,
+            18.72780433357365
+          ],
+          "effect": 10.048002129336547,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 79.01477500322888,
+      "mean_redundancy_contrast": -68.96677287389234,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E1_O0_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        74.95549112581888,
+        116.73828315867422
+      ],
+      "analytic_minimum_ci95": [
+        5.348999373779383,
+        21.13706609106619
+      ],
+      "analytic_point_envelope": [
+        12.13740116202956,
+        95.05501079141884
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            78.11686922920592,
+            113.4276520796698
+          ],
+          "ci95": [
+            74.95549112581888,
+            116.73828315867422
+          ],
+          "effect": 95.05501079141884,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            60.470019121345665,
+            89.75294309019583
+          ],
+          "ci95": [
+            57.90540270482572,
+            92.51922397480988
+          ],
+          "effect": 74.32560838407153,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            42.71759880177191,
+            65.93896154844695
+          ],
+          "ci95": [
+            41.06543787861183,
+            68.07633232163441
+          ],
+          "effect": 53.59620597672421,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            24.664878140085495,
+            42.18720929990446
+          ],
+          "ci95": [
+            23.517875458191636,
+            44.42865091314565
+          ],
+          "effect": 32.866803569376884,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            6.001019575165409,
+            19.063482442237287
+          ],
+          "ci95": [
+            5.348999373779383,
+            21.13706609106619
+          ],
+          "effect": 12.13740116202956,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 95.05501079141884,
+      "mean_redundancy_contrast": -82.91760962938928,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E1_O0_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        64.48352478783676,
+        112.35537351956114
+      ],
+      "analytic_minimum_ci95": [
+        3.5874081153925417,
+        17.873285394531
+      ],
+      "analytic_point_envelope": [
+        9.956626743946238,
+        88.18956415679584
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            68.34714239494393,
+            108.22185132681227
+          ],
+          "ci95": [
+            64.48352478783676,
+            112.35537351956114
+          ],
+          "effect": 88.18956415679584,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            52.89751734495341,
+            84.88661036812847
+          ],
+          "ci95": [
+            49.71155456252976,
+            88.24936199729459
+          ],
+          "effect": 68.63132980358345,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            37.172866968365085,
+            61.60904189625232
+          ],
+          "ci95": [
+            34.809580645316544,
+            64.1687740841205
+          ],
+          "effect": 49.07309545037105,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            21.13383283518911,
+            38.653510365389344
+          ],
+          "ci95": [
+            19.90060143555788,
+            40.549442481181636
+          ],
+          "effect": 29.514861097158633,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            4.331492481253864,
+            16.322558032837104
+          ],
+          "ci95": [
+            3.5874081153925417,
+            17.873285394531
+          ],
+          "effect": 9.956626743946238,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000732243104710764,
+          "two_sided_sign_randomization_p": 0.001464486209421528
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 88.18956415679584,
+      "mean_redundancy_contrast": -78.23293741284961,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E1_O1_D0",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        67.24215711381886,
+        111.96079289687857
+      ],
+      "analytic_minimum_ci95": [
+        4.346554015504494,
+        21.43825771910038
+      ],
+      "analytic_point_envelope": [
+        12.03708859187364,
+        88.68199286134309
+      ],
+      "candidate": "03",
+      "classification": "uniform_positive",
+      "grid": [
+        {
+          "ci90": [
+            70.49813882741569,
+            108.29586662395911
+          ],
+          "ci95": [
+            67.24215711381886,
+            111.96079289687857
+          ],
+          "effect": 88.68199286134309,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            54.69459556702469,
+            85.61821522665555
+          ],
+          "ci95": [
+            52.207310755618316,
+            89.00736507264018
+          ],
+          "effect": 69.52076679397574,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            38.715690656724355,
+            63.274890636169346
+          ],
+          "ci95": [
+            36.8560179589044,
+            66.44102368215205
+          ],
+          "effect": 50.35954072660837,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            22.463223539534116,
+            41.274353433744444
+          ],
+          "ci95": [
+            21.03659659707905,
+            43.598324389435035
+          ],
+          "effect": 31.198314659241007,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000244081034903588
+        },
+        {
+          "ci90": [
+            5.3301973851355235,
+            19.845483865452593
+          ],
+          "ci95": [
+            4.346554015504494,
+            21.43825771910038
+          ],
+          "effect": 12.03708859187364,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.000244081034903588,
+          "two_sided_sign_randomization_p": 0.000488162069807176
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 88.68199286134309,
+      "mean_redundancy_contrast": -76.64490426946946,
+      "phase": "PX4",
+      "replicate": 1,
+      "variant": "C03_E1_O1_D1",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -3.6548733033668066,
+        1.8745495825272647
+      ],
+      "analytic_minimum_ci95": [
+        -3.8266585529265655,
+        1.6683675070314021
+      ],
+      "analytic_point_envelope": [
+        -0.9669846845371678,
+        -0.8959189860117034
+      ],
+      "candidate": "02",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            -3.3102195594677144,
+            1.3408689360427763
+          ],
+          "ci95": [
+            -3.7786117433618878,
+            1.7644306722783178
+          ],
+          "effect": -0.9669846845371678,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.7373688064437394,
+          "two_sided_sign_randomization_p": 0.5115938491579204
+        },
+        {
+          "ci90": [
+            -3.2626840328151547,
+            1.3516269654696476
+          ],
+          "ci95": [
+            -3.730740504347323,
+            1.7672765164484259
+          ],
+          "effect": -0.9492182599058019,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.7344398340248963,
+          "two_sided_sign_randomization_p": 0.5167195508908958
+        },
+        {
+          "ci90": [
+            -3.256557976465203,
+            1.3690413757680888
+          ],
+          "ci95": [
+            -3.7203865120919364,
+            1.7824808965112033
+          ],
+          "effect": -0.9314518352744355,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.7324871857456675,
+          "two_sided_sign_randomization_p": 0.5240419819380034
+        },
+        {
+          "ci90": [
+            -3.233055079010751,
+            1.3668581582038546
+          ],
+          "ci95": [
+            -3.7240391431217392,
+            1.7618117462369824
+          ],
+          "effect": -0.9136854106430695,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.7295582133268245,
+          "two_sided_sign_randomization_p": 0.5311203319502075
+        },
+        {
+          "ci90": [
+            -3.2068714215967797,
+            1.3576977813259379
+          ],
+          "ci95": [
+            -3.698249319758838,
+            1.7728834980789219
+          ],
+          "effect": -0.8959189860117034,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.7266292409079814,
+          "two_sided_sign_randomization_p": 0.5391750061020258
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": -0.9669846845371678,
+      "mean_redundancy_contrast": 0.0710656985254643,
+      "mechanism": "COUPLING_DERANGED",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -0.052405715827814836,
+        0.9337388817406455
+      ],
+      "analytic_minimum_ci95": [
+        -0.17359085836119775,
+        0.6835087343538626
+      ],
+      "analytic_point_envelope": [
+        0.26649419228345067,
+        0.43932936445830345
+      ],
+      "candidate": "02",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            0.014968423817596974,
+            0.8536190743421197
+          ],
+          "ci95": [
+            -0.07025116837604868,
+            0.9337388817406455
+          ],
+          "effect": 0.43932936445830345,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.05565047595801806,
+          "two_sided_sign_randomization_p": 0.1056870881132536
+        },
+        {
+          "ci90": [
+            -0.007559496998537536,
+            0.790475978337515
+          ],
+          "ci95": [
+            -0.08109874995916955,
+            0.8649769199676512
+          ],
+          "effect": 0.3961205714145903,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.06541371735416159,
+          "two_sided_sign_randomization_p": 0.12374908469611912
+        },
+        {
+          "ci90": [
+            -0.032279078492208776,
+            0.73267590389614
+          ],
+          "ci95": [
+            -0.103273706498901,
+            0.8017237269914117
+          ],
+          "effect": 0.3529117783708771,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.08030266048328046,
+          "two_sided_sign_randomization_p": 0.15157432267512813
+        },
+        {
+          "ci90": [
+            -0.06175259899965202,
+            0.6771978127430727
+          ],
+          "ci95": [
+            -0.12579764441218375,
+            0.7395627077281041
+          ],
+          "effect": 0.30970298532716384,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.09909690017085672,
+          "two_sided_sign_randomization_p": 0.18818647791066634
+        },
+        {
+          "ci90": [
+            -0.09488544574932269,
+            0.6231017572842116
+          ],
+          "ci95": [
+            -0.16561533829909017,
+            0.6840636322005511
+          ],
+          "effect": 0.26649419228345067,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.12326092262631194,
+          "two_sided_sign_randomization_p": 0.23822309006590187
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 0.43932936445830345,
+      "mean_redundancy_contrast": -0.17283517217485275,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -0.6594184309547886,
+        0.3714229366346128
+      ],
+      "analytic_minimum_ci95": [
+        -0.771507616920879,
+        0.2994334775814129
+      ],
+      "analytic_point_envelope": [
+        -0.21068672652207376,
+        -0.17423802013734227
+      ],
+      "candidate": "02",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            -0.6804129186356673,
+            0.2579437511468683
+          ],
+          "ci95": [
+            -0.7711061493057481,
+            0.3403456692523972
+          ],
+          "effect": -0.21068672652207376,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.7700756651208202,
+          "two_sided_sign_randomization_p": 0.4657066145960459
+        },
+        {
+          "ci90": [
+            -0.6556251012522418,
+            0.2497340812203127
+          ],
+          "ci95": [
+            -0.7407107508711046,
+            0.33111359006506486
+          ],
+          "effect": -0.20157454992589088,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.7703197461557237,
+          "two_sided_sign_randomization_p": 0.46668293873566025
+        },
+        {
+          "ci90": [
+            -0.6363459258394234,
+            0.24668037182353675
+          ],
+          "ci95": [
+            -0.7121124901432582,
+            0.3318562402990407
+          ],
+          "effect": -0.19246237332970806,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.7703197461557237,
+          "two_sided_sign_randomization_p": 0.4749816939223822
+        },
+        {
+          "ci90": [
+            -0.6130164377427056,
+            0.24726959467895976
+          ],
+          "ci95": [
+            -0.6869516459082654,
+            0.33261824975884896
+          ],
+          "effect": -0.18335019673352515,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.7649499633878447,
+          "two_sided_sign_randomization_p": 0.48620942152794727
+        },
+        {
+          "ci90": [
+            -0.59632668126162,
+            0.2507989489594048
+          ],
+          "ci95": [
+            -0.6715629535727056,
+            0.333640178897158
+          ],
+          "effect": -0.17423802013734227,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.7581156944105443,
+          "two_sided_sign_randomization_p": 0.49890163534293386
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": -0.21068672652207376,
+      "mean_redundancy_contrast": 0.03644870638473147,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -3.417973350063168,
+        1.7539414131099207
+      ],
+      "analytic_minimum_ci95": [
+        -3.7110513771356057,
+        1.31432202881612
+      ],
+      "analytic_point_envelope": [
+        -1.1715553326218642,
+        -1.0208217205274
+      ],
+      "candidate": "02",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            -3.1302169230526298,
+            0.8851700966237951
+          ],
+          "ci95": [
+            -3.461388174220042,
+            1.31432202881612
+          ],
+          "effect": -1.1715553326218642,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.812789846228948,
+          "two_sided_sign_randomization_p": 0.3631925799365389
+        },
+        {
+          "ci90": [
+            -3.1376486705581503,
+            0.9998244121042077
+          ],
+          "ci95": [
+            -3.502341567361,
+            1.4317753221418594
+          ],
+          "effect": -1.133871929598248,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.8003417134488651,
+          "two_sided_sign_randomization_p": 0.3900414937759336
+        },
+        {
+          "ci90": [
+            -3.1591047660372324,
+            1.0858049897600686
+          ],
+          "ci95": [
+            -3.5568465220435166,
+            1.532108387291509
+          ],
+          "effect": -1.0961885265746318,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.7854527703197461,
+          "two_sided_sign_randomization_p": 0.41981938003417135
+        },
+        {
+          "ci90": [
+            -3.176456589181805,
+            1.17991686542799
+          ],
+          "ci95": [
+            -3.6218315848270226,
+            1.637213568156795
+          ],
+          "effect": -1.058505123551016,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.769587503051013,
+          "two_sided_sign_randomization_p": 0.44862094215279474
+        },
+        {
+          "ci90": [
+            -3.2187025311935846,
+            1.3105541697695489
+          ],
+          "ci95": [
+            -3.697986793415503,
+            1.7539414131099207
+          ],
+          "effect": -1.0208217205274,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.7578716133756407,
+          "two_sided_sign_randomization_p": 0.47400536978276786
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": -1.1715553326218642,
+      "mean_redundancy_contrast": 0.1507336120944643,
+      "mechanism": "NATURAL_GARD",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -3.481123826163226,
+        0.25893425515518537
+      ],
+      "analytic_minimum_ci95": [
+        -3.6310316745762394,
+        0.008791897384989688
+      ],
+      "analytic_point_envelope": [
+        -1.696050458037477,
+        -1.542962668535097
+      ],
+      "candidate": "03",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            -3.3244400419128017,
+            -0.20279521688091304
+          ],
+          "ci95": [
+            -3.6134392519455996,
+            0.03573788022718652
+          ],
+          "effect": -1.696050458037477,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.9475225774957285,
+          "two_sided_sign_randomization_p": 0.10251403465950695
+        },
+        {
+          "ci90": [
+            -3.275206314133873,
+            -0.16858431849893574
+          ],
+          "ci95": [
+            -3.5794735558487316,
+            0.08615860014129219
+          ],
+          "effect": -1.6577785106618819,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.9441054430070783,
+          "two_sided_sign_randomization_p": 0.11008054674151818
+        },
+        {
+          "ci90": [
+            -3.2237227665130166,
+            -0.11929447949374274
+          ],
+          "ci95": [
+            -3.569480817837291,
+            0.12074913305515846
+          ],
+          "effect": -1.619506563286287,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.9414205516231389,
+          "two_sided_sign_randomization_p": 0.11740297778862582
+        },
+        {
+          "ci90": [
+            -3.1696955143363637,
+            -0.08963032196548715
+          ],
+          "ci95": [
+            -3.5451622449416678,
+            0.18299994981627307
+          ],
+          "effect": -1.5812346159106923,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.9372711740297779,
+          "two_sided_sign_randomization_p": 0.1257017329753478
+        },
+        {
+          "ci90": [
+            -3.139943186179231,
+            -0.04544637359840523
+          ],
+          "ci95": [
+            -3.5009133736720144,
+            0.23005312108922701
+          ],
+          "effect": -1.542962668535097,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.9323895533317061,
+          "two_sided_sign_randomization_p": 0.13741762265072005
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": -1.696050458037477,
+      "mean_redundancy_contrast": 0.15308778950237975,
+      "mechanism": "COUPLING_DERANGED",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -0.5325235899064402,
+        0.3310193501440124
+      ],
+      "analytic_minimum_ci95": [
+        -0.6116077538992265,
+        0.2712388580502281
+      ],
+      "analytic_point_envelope": [
+        -0.154379180978205,
+        -0.1416766280186235
+      ],
+      "candidate": "03",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            -0.5409395706819252,
+            0.24208127147026154
+          ],
+          "ci95": [
+            -0.6039067700680995,
+            0.32934101267104055
+          ],
+          "effect": -0.154379180978205,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.737612887478643,
+          "two_sided_sign_randomization_p": 0.5159873077861851
+        },
+        {
+          "ci90": [
+            -0.5255681905408428,
+            0.23476834188156334
+          ],
+          "ci95": [
+            -0.5860373196933238,
+            0.31314683488267936
+          ],
+          "effect": -0.15120354273830955,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.7415181840371003,
+          "two_sided_sign_randomization_p": 0.5128142543324383
+        },
+        {
+          "ci90": [
+            -0.5053629687202575,
+            0.22135165027339948
+          ],
+          "ci95": [
+            -0.5672422661175058,
+            0.3030240707747208
+          ],
+          "effect": -0.14802790449841424,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.743470832316329,
+          "two_sided_sign_randomization_p": 0.5086648767390773
+        },
+        {
+          "ci90": [
+            -0.4906242892099466,
+            0.21063758927352258
+          ],
+          "ci95": [
+            -0.5511038329576765,
+            0.289375655317428
+          ],
+          "effect": -0.14485226625851888,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.7461557237002685,
+          "two_sided_sign_randomization_p": 0.5045154991457164
+        },
+        {
+          "ci90": [
+            -0.4769694123895559,
+            0.20365010517163004
+          ],
+          "ci95": [
+            -0.5336654690119296,
+            0.28080094083045165
+          ],
+          "effect": -0.1416766280186235,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.7510373443983402,
+          "two_sided_sign_randomization_p": 0.4976812301684159
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": -0.154379180978205,
+      "mean_redundancy_contrast": 0.01270255295958155,
+      "mechanism": "FISSION_ONLY_GENERATIVE",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -0.3208235114422491,
+        0.638627192675731
+      ],
+      "analytic_minimum_ci95": [
+        -0.43293784507936023,
+        0.5448499509182138
+      ],
+      "analytic_point_envelope": [
+        0.05514513745120834,
+        0.15479151790229084
+      ],
+      "candidate": "03",
+      "classification": "inconclusive_same_sign",
+      "grid": [
+        {
+          "ci90": [
+            -0.24958351962083122,
+            0.5527500122940033
+          ],
+          "ci95": [
+            -0.32383695670317025,
+            0.631116654994885
+          ],
+          "effect": 0.15479151790229084,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.2716621918476934,
+          "two_sided_sign_randomization_p": 0.5477178423236515
+        },
+        {
+          "ci90": [
+            -0.2682402977857143,
+            0.5269361275063509
+          ],
+          "ci95": [
+            -0.35236425695156726,
+            0.6107949732293491
+          ],
+          "effect": 0.12987992278952024,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.3058335367341958,
+          "two_sided_sign_randomization_p": 0.6148401269221382
+        },
+        {
+          "ci90": [
+            -0.29435598970943755,
+            0.5097558159037492
+          ],
+          "ci95": [
+            -0.3767897329118499,
+            0.5913161200964665
+          ],
+          "effect": 0.10496832767674959,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.341225286795216,
+          "two_sided_sign_randomization_p": 0.6902611667073468
+        },
+        {
+          "ci90": [
+            -0.32469532652043454,
+            0.4903970292362943
+          ],
+          "ci95": [
+            -0.40467094352050986,
+            0.5711569828265173
+          ],
+          "effect": 0.08005673256397901,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.38052233341469366,
+          "two_sided_sign_randomization_p": 0.7671466927019771
+        },
+        {
+          "ci90": [
+            -0.35664521348240413,
+            0.4767711825322852
+          ],
+          "ci95": [
+            -0.43183159973642515,
+            0.5547840332012965
+          ],
+          "effect": 0.05514513745120834,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.4151818403710032,
+          "two_sided_sign_randomization_p": 0.8401269221381499
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": 0.15479151790229084,
+      "mean_redundancy_contrast": -0.09964638045108247,
+      "mechanism": "HOMOGENEOUS_GENERATIVE",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    },
+    {
+      "analytic_maximum_ci95": [
+        -7.624760121867378,
+        -0.06082178225148529
+      ],
+      "analytic_minimum_ci95": [
+        -7.951690104533104,
+        -0.4149634748873482
+      ],
+      "analytic_point_envelope": [
+        -3.8408978941690286,
+        -3.709376192433892
+      ],
+      "candidate": "03",
+      "classification": "uniform_negative",
+      "grid": [
+        {
+          "ci90": [
+            -6.990116910659759,
+            -0.872892452335599
+          ],
+          "ci95": [
+            -7.695361679524526,
+            -0.3972537781995955
+          ],
+          "effect": -3.8408978941690286,
+          "lambda": 0.0,
+          "positive_sign_randomization_p": 0.982182084452038,
+          "two_sided_sign_randomization_p": 0.040761532828899195
+        },
+        {
+          "ci90": [
+            -7.033293379859954,
+            -0.7890197228397329
+          ],
+          "ci95": [
+            -7.758481302131777,
+            -0.329599090296507
+          ],
+          "effect": -3.8080174687352444,
+          "lambda": 0.25,
+          "positive_sign_randomization_p": 0.9790090309982914,
+          "two_sided_sign_randomization_p": 0.04588723456187454
+        },
+        {
+          "ci90": [
+            -7.045742566259426,
+            -0.7501018849305898
+          ],
+          "ci95": [
+            -7.811675444639509,
+            -0.23490599980459034
+          ],
+          "effect": -3.775137043301461,
+          "lambda": 0.5,
+          "positive_sign_randomization_p": 0.9760800585794484,
+          "two_sided_sign_randomization_p": 0.04979253112033195
+        },
+        {
+          "ci90": [
+            -7.081977063676378,
+            -0.6930991770767496
+          ],
+          "ci95": [
+            -7.841213258043108,
+            -0.13946386003474065
+          ],
+          "effect": -3.742256617867677,
+          "lambda": 0.75,
+          "positive_sign_randomization_p": 0.9731510861606053,
+          "two_sided_sign_randomization_p": 0.05443007078350012
+        },
+        {
+          "ci90": [
+            -7.126409902848112,
+            -0.6307716331445348
+          ],
+          "ci95": [
+            -7.9284875539188775,
+            -0.07092827116253209
+          ],
+          "effect": -3.709376192433892,
+          "lambda": 1.0,
+          "positive_sign_randomization_p": 0.9704661947766658,
+          "two_sided_sign_randomization_p": 0.06053209665608982
+        }
+      ],
+      "matrices": 24,
+      "mean_base_contrast": -3.8408978941690286,
+      "mean_redundancy_contrast": 0.1315217017351367,
+      "mechanism": "NATURAL_GARD",
+      "phase": "PX5",
+      "zero_crossing_lambda": NaN
+    }
+  ],
+  "cells_total": 40,
+  "classification_counts": {
+    "definition_sensitive": 0,
+    "inconclusive_same_sign": 7,
+    "uniform_negative": 5,
+    "uniform_positive": 28
+  },
+  "format": "codex-ch5-phir-extension-px6-metrics-v1",
+  "lambda_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "no_lambda_selected": true,
+  "public_nine_atom_result_unchanged": true
+}

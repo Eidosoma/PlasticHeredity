@@ -1,0 +1,19 @@
+{
+  "all_values_unique": true,
+  "disjoint_from_original": true,
+  "domains": {
+    "bootstrap": "2109cb3773d3627dfad0e5179603adb62fa1f29df06a4bd05a3c3d1b4b23bade",
+    "cohort": "0a6bc9a826f82c812e42bd4e3cc9f6b7dabf994cfad6dda180f562b7f4201eb3",
+    "future": "311aa2f80b185f568576f958b8813bf25220fab4339a0bacef96e59127b40078",
+    "randomization": "723b5033785766651db6b74ef13e7fe70b3a570818ce169bc01e3aa6a81bc765",
+    "replay": "de6beca797988ccd095e7c20e2474f0811c84eacc897b107665f3271e00a27f6",
+    "selection": "47366a7dd183f79481af2217eb09bcda57bf79a0a5d67d7331fc3b6664130173",
+    "smoke_cohort": "45ba807372d3af048bda6189a27c8661e17c19a01cd985f74f1d9a2e1b4e816e",
+    "smoke_future": "89f9937b700be0eb78a742876c8828ee134c87bf09f015eb6c982e9fd5db738e",
+    "smoke_selection": "024eb22c0c6090b026a66e9d9b70a5d6f8aa812a1c29901a4930f09fc3075cf9",
+    "validation": "6f0024c7f24376cad920cae51fd5ae4906b2192bdecfbeffe6df4064487ee48b"
+  },
+  "format": "codex-intervention-p3b-seed-registry-v1",
+  "future_seed_includes_arm": false,
+  "random_selection_stream_separate_from_future_stream": true
+}

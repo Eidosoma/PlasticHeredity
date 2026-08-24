@@ -1,0 +1,17 @@
+{
+  "benchmark_sha256": "dc4b7b123755c5c00d5ee0d526b67f618aebeb18ac09fd84501b590ded1bf6cf",
+  "design": {
+    "carrier_futures": 16,
+    "confirmation_matrices": 48,
+    "confirmation_starts": 12,
+    "development_matrices": 18,
+    "development_starts": 6,
+    "ph_lineages": 32
+  },
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "protocol_id": "fb3ad23678c2b9531ba65c9f0e07556db478d605535167e87a1dc5062f5f1833",
+  "selected_before_scientific_futures": true,
+  "selection_id": "d613347b230814decd571e6161734fa99a8af4a231191d8073c6320876e5f6bc",
+  "selection_rule": "largest preregistered tier projected within six hours; C is minimum authorized tier",
+  "tier": "B"
+}

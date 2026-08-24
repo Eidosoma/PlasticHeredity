@@ -1,0 +1,57 @@
+schema: eidosoma.e01.s19_l38.preregistration.v1
+version: E01-S19-L38-PAST-ONLY-RECURRENCE-INHERITANCE-OUTCOME-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Does a completed-trajectory-independent recurrence and parent/daughter
+  inheritance event have a reliable state-dependent H32 probability, and can
+  the exact frozen H8 shooting estimate recover that probability across both
+  simulator candidates and independent evaluation cohorts?
+inputs:
+  states: 280 frozen L28/L31 restored states
+  branchStreams:
+    H32: 128 exact frozen continuations per state
+    H8: 64 exact frozen continuations per state
+  observedHistory: frozen selected-clock prefix ending at each restored state
+primaryEvent:
+  id: PAST_ONLY_RECURRENCE_INHERITANCE_H090_GAP2
+  boundary: selected post-fission daughter
+  inheritance: strict parent-to-daughter cosine H > 0.9 for both boundaries
+  recurrence: strict daughter-to-earlier-daughter cosine H > 0.9
+  minimumGenerationGap: 2
+  history: observed prefix plus earlier observations in the same branch only
+  completedTestTrajectoryUsed: false
+controls:
+  - SPECIES_PERMUTED_PREFIX
+  - UNRELATED_MATRIX_PREFIX
+  - BRANCH_ONLY_RECURRENCE
+  - INHERITANCE_ONLY
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  bootstraps: 4096
+  primaryHorizon: 32
+  shortHorizon: 8
+gates:
+  correctedVarianceLower95: ">0"
+  splitHalfSpearman: ">0.5"
+  splitHalfLower95: ">0.3"
+  intermediateStatesPerEvaluationGroup: 20
+  h8ToH32Spearman: ">0.5"
+  h8ToH32Lower95: ">0.3"
+  controlDifferenceLower95: ">0"
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  thresholdSearch: false
+  horizonSearch: false
+  targetBasin: none
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  validationReserveFraction: 0.10
+nextIfPass: UNTOUCHED_RECURRENCE_INHERITANCE_COMMITTOR_CONFIRMATION
+nextIfFail: SUSTAINED_HOMEOSTATIC_INHERITANCE_OUTCOME_CONSTRUCTION

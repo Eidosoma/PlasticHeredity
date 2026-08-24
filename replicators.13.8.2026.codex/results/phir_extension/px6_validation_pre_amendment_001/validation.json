@@ -1,0 +1,29 @@
+{
+  "all_passed": true,
+  "checks": {
+    "affine_envelope_fixed": true,
+    "cannot_rescue_public_result": true,
+    "cpu_allocation_fixed": true,
+    "draws_fixed": true,
+    "five_phase_contracts": true,
+    "lambda_endpoints_present": true,
+    "lambda_grid_fixed": true,
+    "lambda_grid_monotonic": true,
+    "master_registration_exists": true,
+    "no_48_matrix_campaign": true,
+    "no_lambda_selection": true,
+    "strict_eight_excluded": true
+  },
+  "format": "codex-ch5-phir-extension-px6-validation-v1",
+  "pytest_returncode": 0,
+  "pytest_stderr": "",
+  "pytest_stdout": ".....                                                                    [100%]\n",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  }
+}

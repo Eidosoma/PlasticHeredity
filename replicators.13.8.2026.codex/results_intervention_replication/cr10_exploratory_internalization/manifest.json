@@ -1,0 +1,35 @@
+{
+  "complete_readback_exact": true,
+  "exploratory_no_confirmatory_gate": true,
+  "format": "codex-intervention-cr10-result-v2",
+  "home_matrices": 48,
+  "kinetic_exact_replay": true,
+  "kinetic_lineages": 864,
+  "kinetic_replay_lineages": 864,
+  "lambda_zero_plain_bitwise_exact": true,
+  "mandatory_final_stop": true,
+  "maximum_replay_fission_boundaries": 414720,
+  "maximum_scientific_fission_boundaries": 414720,
+  "no_controlled_future_retry_or_matrix_replacement": true,
+  "no_refit_or_post_outcome_policy_change": true,
+  "noop_plain_bitwise_exact": true,
+  "policy_exact_replay": true,
+  "policy_lineages": 6048,
+  "policy_replay_lineages": 6048,
+  "registration_id": "ae144b0f3a1d186a92aa05c8a7db061bfec6da547e3343e91ebbd943a22efcf9",
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "transfer_matrices_per_regime": 24,
+  "transfer_regimes": [
+    "POS_A_M4_S5",
+    "POS_A_M3_S4",
+    "POS_A_M5_S4"
+  ]
+}

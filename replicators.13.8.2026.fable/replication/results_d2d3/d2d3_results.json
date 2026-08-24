@@ -1,0 +1,161 @@
+{
+  "02": {
+    "panel": {
+      "model_up": {
+        "entropy": 2.6242220137629557,
+        "occupied": 20.510416666666668,
+        "top1": 0.23730902777777776,
+        "throughput": 22.449327809428205,
+        "updates_pf": 59.59953703703703,
+        "extinct": 0,
+        "cross_lineage_sim": 0.4956523312841304,
+        "out_env_frac": 0.11828703703703702
+      },
+      "model_down": {
+        "entropy": 1.5888580899349345,
+        "occupied": 10.350694444444445,
+        "top1": 0.4946701388888889,
+        "throughput": 34.89548171831117,
+        "updates_pf": 106.9724537037037,
+        "extinct": 0,
+        "cross_lineage_sim": 0.8675914668397552,
+        "out_env_frac": 0.19791666666666666
+      },
+      "noop": {
+        "entropy": 2.2427148965619996,
+        "occupied": 16.612499999999997,
+        "top1": 0.3380208333333334,
+        "throughput": 24.956754729156636,
+        "updates_pf": 78.88333333333334,
+        "extinct": 0,
+        "cross_lineage_sim": 0.5402124556029616,
+        "out_env_frac": 0.11435185185185187
+      },
+      "random": {
+        "entropy": 2.3014685000493227,
+        "occupied": 17.241666666666667,
+        "top1": 0.325,
+        "throughput": 25.259757780483838,
+        "updates_pf": 76.86736111111111,
+        "extinct": 0,
+        "cross_lineage_sim": 0.5226218988178909,
+        "out_env_frac": 0.10266203703703704
+      }
+    },
+    "predictions": {
+      "P1_down_entropy_lower": true,
+      "P2_down_occupied_lower": true,
+      "P3_down_top1_higher": true,
+      "P4_down_convergence_higher": true,
+      "P5_up_entropy_higher": true,
+      "P6_up_occupied_higher": true,
+      "P7_no_extinction": true,
+      "P8_extension_stable": true
+    },
+    "ext_tail_inherit": 0.9958333333333332,
+    "audit": {
+      "model_up": {
+        "distinct_swaps_per_lineage": 42.50694444444444,
+        "repeat_rate": 0.036637931034482756,
+        "cycle_rate": 0.0026340996168582377,
+        "rule_agreement": {
+          "exact": 0.0014124293785310734,
+          "add": 0.0029425612052730696,
+          "rem": 0.4965866290018832
+        },
+        "out_env_frac": 0.11828703703703702
+      },
+      "model_down": {
+        "distinct_swaps_per_lineage": 35.854166666666664,
+        "repeat_rate": 0.045737547892720304,
+        "cycle_rate": 0.00011973180076628352,
+        "rule_agreement": {
+          "exact": 0.054613935969868174,
+          "add": 0.628177966101695,
+          "rem": 0.11511299435028248
+        },
+        "out_env_frac": 0.19791666666666666
+      }
+    }
+  },
+  "03": {
+    "panel": {
+      "model_up": {
+        "entropy": 2.6410948633022686,
+        "occupied": 20.71458333333333,
+        "top1": 0.22829147930660998,
+        "throughput": 23.19691360775252,
+        "updates_pf": 13.572800925925925,
+        "extinct": 0,
+        "cross_lineage_sim": 0.5046438752044882,
+        "out_env_frac": 0.1
+      },
+      "model_down": {
+        "entropy": 1.5847590896006838,
+        "occupied": 10.44236111111111,
+        "top1": 0.4999487002863401,
+        "throughput": 35.92777744031221,
+        "updates_pf": 26.962152777777778,
+        "extinct": 0,
+        "cross_lineage_sim": 0.8141223684746421,
+        "out_env_frac": 0.2065972222222222
+      },
+      "noop": {
+        "entropy": 2.2556685961568106,
+        "occupied": 16.903472222222224,
+        "top1": 0.3370299507893755,
+        "throughput": 25.57258569071321,
+        "updates_pf": 19.47199074074074,
+        "extinct": 0,
+        "cross_lineage_sim": 0.5365948640970367,
+        "out_env_frac": 0.10659722222222222
+      },
+      "random": {
+        "entropy": 2.277146810895962,
+        "occupied": 17.17986111111111,
+        "top1": 0.3338275528447783,
+        "throughput": 26.054291514188133,
+        "updates_pf": 19.120833333333334,
+        "extinct": 0,
+        "cross_lineage_sim": 0.5319912507619171,
+        "out_env_frac": 0.08333333333333333
+      }
+    },
+    "predictions": {
+      "P1_down_entropy_lower": true,
+      "P2_down_occupied_lower": true,
+      "P3_down_top1_higher": true,
+      "P4_down_convergence_higher": true,
+      "P5_up_entropy_higher": true,
+      "P6_up_occupied_higher": true,
+      "P7_no_extinction": true,
+      "P8_extension_stable": true
+    },
+    "ext_tail_inherit": 0.9947916666666666,
+    "audit": {
+      "model_up": {
+        "distinct_swaps_per_lineage": 41.90972222222222,
+        "repeat_rate": 0.03675766283524903,
+        "cycle_rate": 0.005268199233716475,
+        "rule_agreement": {
+          "exact": 0.002824858757062147,
+          "add": 0.004119585687382297,
+          "rem": 0.5072975517890772
+        },
+        "out_env_frac": 0.1
+      },
+      "model_down": {
+        "distinct_swaps_per_lineage": 36.236111111111114,
+        "repeat_rate": 0.04346264367816092,
+        "cycle_rate": 0.00011973180076628352,
+        "rule_agreement": {
+          "exact": 0.08039077212806027,
+          "add": 0.663017890772128,
+          "rem": 0.15101224105461394
+        },
+        "out_env_frac": 0.2065972222222222
+      }
+    }
+  },
+  "all_predictions_pass": true
+}

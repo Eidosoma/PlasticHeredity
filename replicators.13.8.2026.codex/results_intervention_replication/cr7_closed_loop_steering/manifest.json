@@ -1,0 +1,45 @@
+{
+  "administrative_extension_readback_amendment_only": true,
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "complete_cr7_60_fission_gate": true,
+  "complete_readback_exact": true,
+  "conditional_active_extension_launched": true,
+  "conditional_extension_exact_replay": true,
+  "controllers": [
+    "MODEL_UP",
+    "MODEL_DOWN",
+    "RULE_UP",
+    "RULE_DOWN",
+    "RANDOM",
+    "NOOP"
+  ],
+  "cr8_and_cr9_launched": false,
+  "exact_replay": true,
+  "fissions_per_primary_lineage": 60,
+  "format": "codex-intervention-cr7-result-v1",
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 48,
+  "maximum_primary_boundaries": 207360,
+  "no_controlled_lineage_retry_or_matrix_replacement": true,
+  "no_refit_recalibration_or_threshold_change": true,
+  "noop_callback_plain_bitwise_exact": true,
+  "original_scientific_registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70",
+  "primary_controlled_lineages": 3456,
+  "readback_amendment_id": "8fe8647aac70d87318a4ebeea53a56cd12b7cf7a1ead2a70275e7c562131756f",
+  "registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70",
+  "replay_controlled_lineages": 3456,
+  "replicates_per_controller": 6,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "scientific_lineages_regenerated_during_amendment": 0
+}

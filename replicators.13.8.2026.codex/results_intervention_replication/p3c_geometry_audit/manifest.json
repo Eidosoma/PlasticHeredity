@@ -1,0 +1,15 @@
+{
+  "audit_id": "3a72de4a310581988d7014e5941128b1142c14d0d851d91ae9b2e02457ce8337",
+  "classification": "posthoc_exploratory_existing_data_audit",
+  "confirmatory": false,
+  "format": "codex-intervention-p3c-posthoc-geometry-audit-v1",
+  "new_scientific_matrices": 0,
+  "new_simulated_futures": 0,
+  "p3b_result_modified": false,
+  "source_hashes": {
+    "CODEX_INTERVENTION_P3C_GEOMETRY_AUDIT.md": "13ff26d65f95d6f24a9deccb88ad18452cb230166321b0131a25757850a47016",
+    "plastic_heredity/intervention_p3c_geometry_audit.py": "ea4bb8d7a319b2308d7b218b7382814bb6e3ab8712807a422492e7cbbf085fc5",
+    "tests/test_intervention_p3c_geometry_audit.py": "0d1c8336cacb281b72c882ad82457ce2d11f6b99285eadec3dbce272c96eace1"
+  },
+  "source_result_checksum_manifest_sha256": "9aaf3cafadfa595c924821efa543e6c08865633b0f592d5eb7977541d70b0a19"
+}

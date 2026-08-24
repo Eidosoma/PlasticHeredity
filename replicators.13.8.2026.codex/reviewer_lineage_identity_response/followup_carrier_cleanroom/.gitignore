@@ -1,0 +1,9 @@
+artifacts/work/
+artifacts/verification/replay/
+artifacts/detached_pipeline.log
+artifacts/detached_pipeline.pid
+artifacts/watchdog.pid
+artifacts/matplotlib/
+__pycache__/
+*.pyc
+

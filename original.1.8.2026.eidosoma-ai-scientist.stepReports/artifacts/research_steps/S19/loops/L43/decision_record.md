@@ -1,0 +1,3 @@
+# S19-L43 decision record
+
+L42 retained the reviewer-requested distinction between common inheritance and recovery after genuine disruption. Strict-H sustained return to the exact pre-break neighbourhood was reference-specific but occurred in less than one percent of eligible branches, so it could not define a reliable binary committor. Before opening any L43 cohort result, L43 freezes one continuous alternative without changing the break, H threshold, two-fission resumption clock, horizons, candidates, states or branches: the change in H to the online pre-break daughter from the break state to the certifying resumption daughter. Molecule-permuted and unrelated anchors use the identical physical break and certification, exactly holding frequency and opportunities fixed.

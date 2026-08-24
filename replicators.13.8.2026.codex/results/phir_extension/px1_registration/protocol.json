@@ -1,0 +1,113 @@
+{
+  "arm_in_future_stream_key": false,
+  "arms": [
+    "STABILIZE",
+    "DESTABILIZE",
+    "RANDOM",
+    "NOOP"
+  ],
+  "bootstrap_draws": 4096,
+  "candidate_pooling": false,
+  "claim_boundary": [
+    "prior sealed negative results remain unchanged",
+    "no consciousness, agency, life, or metaphysical inference",
+    "no 48-matrix continuation",
+    "cross-clean-room claims require exactly matched tests"
+  ],
+  "edits": "after fissions 1-59; no edit after fission 60",
+  "format": "codex-ch5-phir-extension-px1-program-v1",
+  "future_stream_key": [
+    "phase",
+    "candidate",
+    "matrix",
+    "replicate"
+  ],
+  "gate": [
+    "positive point effect",
+    "positive 95% whole-matrix bootstrap lower bound",
+    "Holm-adjusted one-sided randomization p < 0.05",
+    "all leave-one-matrix-out effects positive",
+    "RANDOM equivalent to NOOP",
+    "heredity manipulation validity",
+    "complete exact replay and readback"
+  ],
+  "launch": "fresh mass-40 composition",
+  "matrix_inference": true,
+  "measurement": "31 unique boundaries at fissions 30-60; 30 transitions",
+  "model": {
+    "destabilize": "maximum frozen JOINT_BREAK_RUN3 probability",
+    "selection": "exhaustive legal substitution extrema",
+    "sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "source": "results/phir_protocol_adjudication_registration/frozen_full_predictor.npz",
+    "stabilize": "minimum frozen JOINT_BREAK_RUN3 probability"
+  },
+  "no_48_matrix_continuation": true,
+  "phase": "PX1",
+  "primary_contrasts": "STABILIZE minus DESTABILIZE in four candidate-by-replicate cells",
+  "primary_family": "eight representation-by-cell comparisons",
+  "protocol_id": "29b0e9aa077cb3f8e4690a351a4f5a29815b50c9eb549549cf1ac67efed61137",
+  "question": "fresh generational material and catalytic-flux confirmation",
+  "random_action_stream_separate": true,
+  "randomization_draws": 4096,
+  "replicate_pooling": false,
+  "representations": [
+    "material",
+    "functional_flux"
+  ],
+  "spec": {
+    "bootstrap_draws": 4096,
+    "cpu_allocation_seconds": 28800.0,
+    "final_start": 30,
+    "horizon": 60,
+    "label": "scientific",
+    "matrices": 24,
+    "randomization_draws": 4096,
+    "replicates": 2
+  },
+  "specificity": {
+    "heredity_margin": 0.025,
+    "information_margins": {
+      "02_r0": {
+        "functional_flux": {
+          "equivalence_margin": 0.03321441162874219,
+          "noop_matrix_sd": 0.16607205814371093
+        },
+        "material": {
+          "equivalence_margin": 2.6827135041888788,
+          "noop_matrix_sd": 13.413567520944394
+        }
+      },
+      "02_r1": {
+        "functional_flux": {
+          "equivalence_margin": 0.02662259460838915,
+          "noop_matrix_sd": 0.13311297304194575
+        },
+        "material": {
+          "equivalence_margin": 2.77408621217202,
+          "noop_matrix_sd": 13.8704310608601
+        }
+      },
+      "03_r0": {
+        "functional_flux": {
+          "equivalence_margin": 0.027650092297438613,
+          "noop_matrix_sd": 0.13825046148719305
+        },
+        "material": {
+          "equivalence_margin": 3.303539192139139,
+          "noop_matrix_sd": 16.517695960695693
+        }
+      },
+      "03_r1": {
+        "functional_flux": {
+          "equivalence_margin": 0.029969213127363115,
+          "noop_matrix_sd": 0.14984606563681557
+        },
+        "material": {
+          "equivalence_margin": 2.5168137634523333,
+          "noop_matrix_sd": 12.584068817261667
+        }
+      }
+    },
+    "random_minus_noop": true
+  }
+}

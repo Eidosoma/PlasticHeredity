@@ -1,0 +1,30 @@
+{
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "projections": [
+    {
+      "fits": false,
+      "projected_seconds": 33534.314044884275,
+      "tier": "A"
+    },
+    {
+      "fits": true,
+      "projected_seconds": 19352.186048882348,
+      "tier": "B"
+    },
+    {
+      "fits": true,
+      "projected_seconds": 9894.798213243484,
+      "tier": "C"
+    }
+  ],
+  "sample_workers": 4,
+  "seconds_per_weighted_fission": 0.01921965430180232,
+  "wall_seconds": 2.2476260662078857,
+  "worker_durations": [
+    2.161952257156372,
+    1.6513149738311768,
+    1.4025256633758545,
+    2.1645543575286865
+  ],
+  "workers": 16
+}

@@ -1,0 +1,164 @@
+{
+  "claim_boundary": "statistical out-of-matrix predictive dependence, not biological memory, molecular storage, error correction, or causal mechanism",
+  "confirmation_contract": {
+    "branches_per_state": 64,
+    "cohort_name": "MEMCONF",
+    "exact_replay": true,
+    "experiment": {
+      "bootstrap_repetitions": 4096,
+      "candidates": {
+        "02": {
+          "daughter_rule": "first",
+          "fission_rule": "fixed_size",
+          "name": "02",
+          "overshoot_rule": "trim_whole_assembly",
+          "poisson_exposure": 0.1
+        },
+        "03": {
+          "daughter_rule": "second",
+          "fission_rule": "binomial",
+          "name": "03",
+          "overshoot_rule": "admit_joiners_to_capacity",
+          "poisson_exposure": 0.125
+        }
+      },
+      "confirmation": {
+        "branches_per_state": 64,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "development": {
+        "branches_per_state": 64,
+        "landmarks": [
+          20,
+          35,
+          50,
+          65,
+          80
+        ],
+        "matrices": 200
+      },
+      "gard": {
+        "beta_log_mean": -4.0,
+        "beta_log_sd": 4.0,
+        "generations": 100,
+        "inheritance_threshold": 0.9,
+        "k_join": 0.01,
+        "k_leave": 0.0001,
+        "max_growth_steps": 1000,
+        "n_max": 80,
+        "n_min": 40,
+        "n_types": 100
+      },
+      "horizon": 32,
+      "logistic_c": 0.1,
+      "master_seed": "25cd8e32e8e2176b36c31ecf2486827a523a9d49ab18eb6e39cd74237f153868",
+      "pca_components": 12,
+      "permutation_repetitions": 4096,
+      "regenerate_confirmation": true
+    },
+    "horizon": 32,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 200,
+    "seed_disjoint_from_mechconf": true,
+    "seed_disjoint_from_scaled5": true
+  },
+  "crossfit_contract": {
+    "candidate_separated": true,
+    "directions": [
+      "even_to_odd",
+      "odd_to_even"
+    ],
+    "fold_0": "even matrix IDs",
+    "fold_1": "odd matrix IDs",
+    "unit": "catalytic matrix"
+  },
+  "diagnostic": {
+    "artifact_hashes": {
+      "MEMORY_DIAGNOSTIC.md": "17efa3ca1d1bd5eff1e8e256c1440638ef959b69e3987c4062fb569625583c32",
+      "SHA256SUMS": "21f8bd97aa70cbde55412be28b3ba60dede38d335e59fed29cbc61e5aea2fd90",
+      "crossfit_losses.npz": "83288a220120b0d6e21109e0c8582b5ea0fe62f36b5d0fa3ba99088d8cffe85c",
+      "heldout_calibration.csv": "d7a36416de526a8dc151ed13ee7787148c39e81ed11fa7eaf593ccd72c6aaed7",
+      "manifest.json": "80d603c7de16c2bc74219629c23aa6c5401f332b4d4638d5059e6328fb160b0b",
+      "metrics.json": "0eebadcc7167ce510c85ae94b698106289f13c25f85e79f056ebcf95ee967a4b",
+      "model_fits.csv": "dd8a2659dc4b2a9e3a62de1f0c188d7b8fe0990b11b4cb92b75547ab8ebabb6a",
+      "primary_tests.csv": "ceafee99060f0f0d18d1e72a4289f6a966b58f49cf7969320a9bf18b2b8de60e",
+      "sequence_counts.csv": "aea9cdbc5b7de0618365ef5c131c668642980ebf64195135ad5f669a2e2ff860",
+      "sequences.csv.gz": "53c0081f140b6047f8e9b5c899b2db6bb876675adf5336cde0c622c9f8c7ce5b"
+    },
+    "confirmatory": false,
+    "legacy_reconstruction_exact": true,
+    "path": "/home/robert/Projects/replications/replicators.13.8.2026.codex/results/memory_diagnostic"
+  },
+  "format": "plastic-heredity-memory-registration-v1",
+  "model_contract": {
+    "common_transition_support": true,
+    "duration_bins": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5+"
+    ],
+    "iid": "one probability fitted only on scored destinations",
+    "markov": "destination probability conditional on previous symbol",
+    "semimarkov": "destination probability conditional on previous symbol and past-only run-duration bin",
+    "smoothing": "independent Beta(1,1) posterior means in every cell"
+  },
+  "registration_id": "0a100eb3d626f3fdb92f5b4f84f1404b095fc1d21b1dfe6b3a83d2adf0e78f1f",
+  "scope": "prospective statistical inheritance-dependence hierarchy",
+  "sequence_contract": {
+    "conditioning": "first break in each future",
+    "excluded_from_fit_and_score": "no-break, empty-suffix, and singleton-suffix futures",
+    "extinction": "absorbing; only observed pre-extinction symbols retained",
+    "inheritance": "strict parent-selected-daughter cosine H > 0.9",
+    "scored_support": "sequence destinations at indices 1 onward",
+    "sequence": "all observed symbols strictly after the first break"
+  },
+  "source_hashes": {
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/memory.py": "a1565c564dc1e22b11a6ed15190aa0030e0621217007163ada8c8471715cdca0",
+    "plastic_heredity/memory_metrics.py": "a6e01adc00742d1aa2a7c884d42c12567775ad69f1e3c3d65bec4edde3383c99",
+    "plastic_heredity/memory_models.py": "5f28d0a5b36458a113eb0b21a99819c5544c1da85abb66f484ae73c08230b2eb",
+    "plastic_heredity/memory_plotting.py": "b68c32d242b9e70bd6bfe5db8d8dcd5dc3ee89fa2c7e44070eab8914291d6f09",
+    "plastic_heredity/metrics.py": "56647628567f1cf8c38cec6adb4ec31efea45ad8b7744089ebe8c4d34e1a59cc",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "ba50e9a2c35f3d806951d68a45a326a9c898ba21a541e2dd6a06dab6ff715dd5",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5"
+  },
+  "statistical_contract": {
+    "bootstrap": "4096 paired resamples of whole catalytic matrices",
+    "gate": "positive pooled gain, positive lower 95% matrix-bootstrap bound, Holm p < 0.05, and positive point gain in both cross-fit directions, in both candidates",
+    "multiplicity": "Holm adjustment over 2 contrasts x 2 candidates",
+    "primary_contrasts": {
+      "markov_vs_iid": [
+        "iid",
+        "markov"
+      ],
+      "semimarkov_vs_markov": [
+        "markov",
+        "semimarkov"
+      ]
+    },
+    "primary_estimand": "transition-weighted held-out bits per transition",
+    "randomization": "4096 paired whole-matrix sign randomizations",
+    "robustness_estimand": "equal-state macro-average gain"
+  },
+  "status": "sealed_before_confirmation"
+}

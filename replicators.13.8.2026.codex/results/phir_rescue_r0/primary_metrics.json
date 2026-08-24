@@ -1,0 +1,1002 @@
+{
+  "cells": [
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.24327135568033065,
+        -0.07603376601155223
+      ],
+      "effect": -0.15884553398614412,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 6,
+      "metric": "fable_style_numit_probit",
+      "positive_p": 0.9992677568952892,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.23317968334330513,
+        -0.08932336135235748
+      ],
+      "effect": -0.16223112167590822,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 4,
+      "metric": "fable_style_numit_probit",
+      "positive_p": 0.9997559189650964,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.13744334421378163,
+        -0.014163244868693376
+      ],
+      "effect": -0.07292985599811934,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 9,
+      "metric": "fable_style_numit_probit",
+      "positive_p": 0.9831584085916524,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.2883778167937949,
+        -0.03467086513922147
+      ],
+      "effect": -0.15540488323540502,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 7,
+      "metric": "fable_style_numit_probit",
+      "positive_p": 0.9873077861850135,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.22204054830045145,
+        -0.04819614277520827
+      ],
+      "effect": -0.1382219795937246,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 6,
+      "metric": "phase_normalized_numit_probit",
+      "positive_p": 0.9963387844764462,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.24458334467305476,
+        -0.10210678410555526
+      ],
+      "effect": -0.1732090926862145,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 3,
+      "metric": "phase_normalized_numit_probit",
+      "positive_p": 1.0,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.13484487552732705,
+        -0.0008668913163445468
+      ],
+      "effect": -0.06377837599231888,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 9,
+      "metric": "phase_normalized_numit_probit",
+      "positive_p": 0.9614351964852331,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.23073625914328189,
+        -0.0230459908355974
+      ],
+      "effect": -0.1278646642832685,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 8,
+      "metric": "phase_normalized_numit_probit",
+      "positive_p": 0.982182084452038,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.3905493116818801,
+        0.4008030121816546
+      ],
+      "effect": 0.012006405643114152,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 14,
+      "matrices": 24,
+      "matrices_positive": 12,
+      "metric": "generational_numit_probit",
+      "positive_p": 0.4796192335855504,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.10666293411409102,
+        0.40127996545306965
+      ],
+      "effect": 0.13827074032972123,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.6375396631681718,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 16,
+      "metric": "generational_numit_probit",
+      "positive_p": 0.15938491579204295,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.42594210167461294,
+        0.1919764017000257
+      ],
+      "effect": -0.12570322996517838,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 9,
+      "metric": "generational_numit_probit",
+      "positive_p": 0.764217720283134,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.6704219243386658,
+        0.14329384409915355
+      ],
+      "effect": -0.2545534009354319,
+      "estimator": "NUMIT_MACRO",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 12,
+      "metric": "generational_numit_probit",
+      "positive_p": 0.8847937515255064,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -1.0664055770709724,
+        0.21522214804041867
+      ],
+      "effect": -0.4035900496316262,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 12,
+      "metric": "fable_style_partition_null_z",
+      "positive_p": 0.8740541859897486,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -1.0134379900188926,
+        0.2595642897905943
+      ],
+      "effect": -0.38079763412483897,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 9,
+      "metric": "fable_style_partition_null_z",
+      "positive_p": 0.8645350256285087,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.42259536400944875,
+        0.820786656049102
+      ],
+      "effect": 0.22078085623339103,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 15,
+      "metric": "fable_style_partition_null_z",
+      "positive_p": 0.2516475469855992,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.371301357164208,
+        0.7085869783136657
+      ],
+      "effect": 0.1839065239598249,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 16,
+      "metric": "fable_style_partition_null_z",
+      "positive_p": 0.2680009763241396,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.8595184381070183,
+        0.09693717422820332
+      ],
+      "effect": -0.3692015278711301,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 11,
+      "metric": "phase_normalized_partition_null_z",
+      "positive_p": 0.9253112033195021,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.8008505292460711,
+        0.49122234526344455
+      ],
+      "effect": -0.14522516664492605,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 1,
+      "matrices": 24,
+      "matrices_positive": 11,
+      "metric": "phase_normalized_partition_null_z",
+      "positive_p": 0.6692701977056382,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.3785172642932975,
+        0.8453421727304706
+      ],
+      "effect": 0.24805467215910904,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.8269465462533561,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 16,
+      "metric": "phase_normalized_partition_null_z",
+      "positive_p": 0.20673663656333902,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.4820861155230768,
+        0.5444366486443715
+      ],
+      "effect": 0.03155303727700228,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 16,
+      "matrices": 24,
+      "matrices_positive": 12,
+      "metric": "phase_normalized_partition_null_z",
+      "positive_p": 0.4620453990724921,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.7947425398653757,
+        0.2898792649415412
+      ],
+      "effect": -0.2720303576399709,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 8,
+      "metric": "generational_partition_null_z",
+      "positive_p": 0.8254820600439345,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.699637267029452,
+        0.3772516762372194
+      ],
+      "effect": -0.1582142700137755,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 10,
+      "metric": "generational_partition_null_z",
+      "positive_p": 0.7112521357090554,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.609916602378616,
+        0.530051448184068
+      ],
+      "effect": -0.03122989641101444,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 8,
+      "matrices": 24,
+      "matrices_positive": 13,
+      "metric": "generational_partition_null_z",
+      "positive_p": 0.5311203319502075,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.812610011524796,
+        0.1977862851625313
+      ],
+      "effect": -0.3150769274928023,
+      "estimator": "PARTITION_NULL_FULL",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 10,
+      "metric": "generational_partition_null_z",
+      "positive_p": 0.8689284842567733,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -2.9576457051492895,
+        -1.6981247411871159
+      ],
+      "effect": -2.2824932786032632,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 1,
+      "metric": "fable_style_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -3.347557168626301,
+        -1.8927812990179151
+      ],
+      "effect": -2.6091280387284064,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 2,
+      "metric": "fable_style_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -3.8273696538550235,
+        -1.3349550959616976
+      ],
+      "effect": -2.526336147857695,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 3,
+      "metric": "fable_style_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -3.6970167139364403,
+        -1.748318573670865
+      ],
+      "effect": -2.7036949524673966,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 3,
+      "metric": "fable_style_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -7.490576193346158,
+        -4.727966963137774
+      ],
+      "effect": -6.064121523484694,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 0,
+      "metric": "phase_normalized_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -7.114155515766448,
+        -4.287138710709898
+      ],
+      "effect": -5.6153629355091725,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 0,
+      "metric": "phase_normalized_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -7.85277332917845,
+        -4.340385717863051
+      ],
+      "effect": -6.033260090125649,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 1,
+      "metric": "phase_normalized_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -8.40226829931044,
+        -5.011678068029529
+      ],
+      "effect": -6.649143960986502,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 1,
+      "metric": "phase_normalized_full_block_raw",
+      "positive_p": 1.0,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        7.998461095707439,
+        20.809754089862828
+      ],
+      "effect": 13.957143161748276,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 21,
+      "metric": "generational_full_block_raw",
+      "positive_p": 0.000244081034903588,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        4.373916295783393,
+        15.536153963469074
+      ],
+      "effect": 9.541201378829369,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 18,
+      "metric": "generational_full_block_raw",
+      "positive_p": 0.000244081034903588,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        5.139677692611325,
+        18.96754830877995
+      ],
+      "effect": 11.304591872764552,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 20,
+      "metric": "generational_full_block_raw",
+      "positive_p": 0.000244081034903588,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        4.512462100296488,
+        19.00258192641812
+      ],
+      "effect": 11.24948284302838,
+      "estimator": "FULL_BLOCK_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 17,
+      "metric": "generational_full_block_raw",
+      "positive_p": 0.000732243104710764,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.4081918234967364,
+        -0.21777332401445498
+      ],
+      "effect": -0.31168785222189316,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 2,
+      "metric": "fable_style_copula_public_raw",
+      "positive_p": 1.0,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.39640194733307854,
+        -0.20650671462837855
+      ],
+      "effect": -0.2986458223507631,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 3,
+      "metric": "fable_style_copula_public_raw",
+      "positive_p": 0.9997559189650964,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.4104430621114644,
+        -0.15450660781446557
+      ],
+      "effect": -0.27502231220620404,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 3,
+      "metric": "fable_style_copula_public_raw",
+      "positive_p": 1.0,
+      "replicate": 0,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.532899501704204,
+        -0.30865983407146513
+      ],
+      "effect": -0.41563612403356665,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 1,
+      "metric": "fable_style_copula_public_raw",
+      "positive_p": 1.0,
+      "replicate": 1,
+      "representation": "fable_style"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.06368256851886352,
+        0.056690608607687536
+      ],
+      "effect": -0.0036091286746381818,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 5,
+      "matrices": 24,
+      "matrices_positive": 10,
+      "metric": "phase_normalized_copula_public_raw",
+      "positive_p": 0.540883573346351,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.08428995948826798,
+        0.01918267364130643
+      ],
+      "effect": -0.03339260791742674,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 11,
+      "metric": "phase_normalized_copula_public_raw",
+      "positive_p": 0.880888454967049,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.09082605023369694,
+        0.10426078369485468
+      ],
+      "effect": 0.016443317347733827,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 23,
+      "matrices": 24,
+      "matrices_positive": 15,
+      "metric": "phase_normalized_copula_public_raw",
+      "positive_p": 0.3844276299731511,
+      "replicate": 0,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.17852895183459855,
+        0.008553992346571795
+      ],
+      "effect": -0.08437102474493603,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 9,
+      "metric": "phase_normalized_copula_public_raw",
+      "positive_p": 0.9589943861361973,
+      "replicate": 1,
+      "representation": "phase_normalized"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.05173240878068223,
+        0.06222453757467669
+      ],
+      "effect": 0.008638839573280863,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 22,
+      "matrices": 24,
+      "matrices_positive": 14,
+      "metric": "generational_copula_public_raw",
+      "positive_p": 0.3793019282401757,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        -0.0463261261709722,
+        0.0580394199374724
+      ],
+      "effect": 0.0014523704730403434,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 17,
+      "matrices": 24,
+      "matrices_positive": 10,
+      "metric": "generational_copula_public_raw",
+      "positive_p": 0.4876739077373688,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.05471646453154902,
+        0.0442129101508451
+      ],
+      "effect": -0.003363110133656725,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 5,
+      "matrices": 24,
+      "matrices_positive": 13,
+      "metric": "generational_copula_public_raw",
+      "positive_p": 0.5433243836953868,
+      "replicate": 0,
+      "representation": "generational"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        -0.09702681057250634,
+        0.04281280439639545
+      ],
+      "effect": -0.027766506836481585,
+      "estimator": "COPULA_PUBLIC_RAW",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 1.0,
+      "loo_positive": 0,
+      "matrices": 24,
+      "matrices_positive": 11,
+      "metric": "generational_copula_public_raw",
+      "positive_p": 0.7700756651208202,
+      "replicate": 1,
+      "representation": "generational"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        0.10833333333333332,
+        0.24583333333333335
+      ],
+      "effect": 0.17499999999999996,
+      "estimator": "HEREDITY",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 17,
+      "metric": "inherited_31_60",
+      "positive_p": 0.000244081034903588,
+      "replicate": 0,
+      "representation": "final30"
+    },
+    {
+      "candidate": "02",
+      "ci95": [
+        0.10833333333333332,
+        0.25972222222222224
+      ],
+      "effect": 0.18194444444444444,
+      "estimator": "HEREDITY",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 18,
+      "metric": "inherited_31_60",
+      "positive_p": 0.000244081034903588,
+      "replicate": 1,
+      "representation": "final30"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        0.14722222222222223,
+        0.28975694444444444
+      ],
+      "effect": 0.21666666666666665,
+      "estimator": "HEREDITY",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 20,
+      "metric": "inherited_31_60",
+      "positive_p": 0.000244081034903588,
+      "replicate": 0,
+      "representation": "final30"
+    },
+    {
+      "candidate": "03",
+      "ci95": [
+        0.11944444444444445,
+        0.28194444444444444
+      ],
+      "effect": 0.19722222222222222,
+      "estimator": "HEREDITY",
+      "finite_paired_fraction": 1.0,
+      "holm_positive_p": 0.000976324139614352,
+      "loo_positive": 24,
+      "matrices": 24,
+      "matrices_positive": 20,
+      "metric": "inherited_31_60",
+      "positive_p": 0.000244081034903588,
+      "replicate": 1,
+      "representation": "final30"
+    }
+  ],
+  "decision_status": "r0_no_coherent_candidate_r1_locked",
+  "format": "codex-ch5-phir-rescue-primary-metrics-v1",
+  "gates": {
+    "archive_reproduction_exact": true,
+    "complete_exact_replay": true,
+    "permutation_invariance": true,
+    "r0_selected_candidate": false,
+    "r1_authorized": false
+  },
+  "prior_legacy_result_modified": false,
+  "registration_id": "ca6281f9539a0a45d5e0fe297f4479b793c312cb6542f767c3cd9b95d45155e1",
+  "selection": {
+    "candidate_diagnostics": [
+      {
+        "coverage_at_least_95_percent": true,
+        "estimator": "NUMIT_MACRO",
+        "generational_positive_cells": 2,
+        "loo_at_least_22_all_four": false,
+        "metric_suffix": "numit_probit",
+        "phase_positive_cells": 0,
+        "primary_positive_all_four": false,
+        "qualifies": false,
+        "secondary_scale_gate": false
+      },
+      {
+        "coverage_at_least_95_percent": true,
+        "estimator": "PARTITION_NULL_FULL",
+        "generational_positive_cells": 0,
+        "loo_at_least_22_all_four": false,
+        "metric_suffix": "partition_null_z",
+        "phase_positive_cells": 2,
+        "primary_positive_all_four": false,
+        "qualifies": false,
+        "secondary_scale_gate": false
+      },
+      {
+        "coverage_at_least_95_percent": true,
+        "estimator": "FULL_BLOCK_RAW",
+        "generational_positive_cells": 4,
+        "loo_at_least_22_all_four": false,
+        "metric_suffix": "full_block_raw",
+        "phase_positive_cells": 0,
+        "primary_positive_all_four": false,
+        "qualifies": false,
+        "secondary_scale_gate": true
+      },
+      {
+        "coverage_at_least_95_percent": true,
+        "estimator": "COPULA_PUBLIC_RAW",
+        "generational_positive_cells": 2,
+        "loo_at_least_22_all_four": false,
+        "metric_suffix": "copula_public_raw",
+        "phase_positive_cells": 1,
+        "primary_positive_all_four": false,
+        "qualifies": false,
+        "secondary_scale_gate": false
+      }
+    ],
+    "r0_development_candidate_selected": false,
+    "r1_remains_locked_pending_human_authorization": true,
+    "selected_estimator": null
+  }
+}

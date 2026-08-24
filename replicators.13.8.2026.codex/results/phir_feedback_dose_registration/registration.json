@@ -1,0 +1,149 @@
+{
+  "completed_ch5_pilot_manifest_sha256": "21e7448f498b043467b05eb39607d30d18c6cad823f6eb797cded8add6841f2b",
+  "completed_ch5_pilot_registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+  "completed_window_bridge_manifest_sha256": "414d20831b894b07004afd988e3cc3b406e0cd9a06d5bb57c1f8309f349c951b",
+  "completed_window_bridge_registration_id": "9ef3c307b39d56ee9b82651ee39984ef5c3260cef735243eecd680fb97100c89",
+  "external_code_data_seeds_models_imported": false,
+  "format": "codex-ch5-phir-feedback-dose-registration-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "numeric_environment": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "protocol": {
+    "arms": [
+      "NOOP",
+      "RANDOM",
+      "NEUTRAL",
+      "STABILIZE_25",
+      "STABILIZE_50",
+      "STABILIZE_75",
+      "STABILIZE_100",
+      "DESTABILIZE_25",
+      "DESTABILIZE_50",
+      "DESTABILIZE_75",
+      "DESTABILIZE_100"
+    ],
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "cannot_authorize_or_launch_original_confirmation": true,
+    "claim_boundary": [
+      "a dose response does not select a uniquely correct Phi-r",
+      "gauge response is not hereditary control or a cause",
+      "no consciousness, life, agency, or biological-memory claim",
+      "no universal origin-of-life mechanism or Platonic-space portal"
+    ],
+    "classification": {
+      "none": "neither registered classification passes",
+      "partial": "dose-valid and paired half-minus-high positive, without strict sign crossing",
+      "strict": "dose-valid; alpha 0.5 positive; alpha 1 negative; paired half-minus-high positive in every cell"
+    },
+    "completed_ch5_pilot_registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+    "completed_window_bridge_registration_id": "9ef3c307b39d56ee9b82651ee39984ef5c3260cef735243eecd680fb97100c89",
+    "doses": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "external_context_only": {
+      "fable_heredity_effect_approximate_range": [
+        0.11,
+        0.16
+      ],
+      "fable_revised_sign": "positive under pooled and rolling readings",
+      "imported_as_fitting_target": false
+    },
+    "format": "codex-ch5-phir-feedback-dose-program-v1",
+    "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "inference": {
+      "bootstrap": 4096,
+      "candidate_pooling": false,
+      "holm_across_four_cells_within_family": true,
+      "replicate_pooling": false,
+      "sign_randomization": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "no_48_matrix_continuation": true,
+    "original_confirmation_locked": true,
+    "primary": [
+      "inherited fraction over controlled fissions 31-60",
+      "pooled-final-30 CLR/drop-last revised nine-atom Phi-r",
+      "all 16 pooled-final-30 CLR PhiID atoms"
+    ],
+    "program": "fresh 24-matrix repeated-feedback strength reconciliation",
+    "protocol_id": "68dbb137681b7dd2ac46819289562f19afb34a517f73ab81035a17dda36bbdae",
+    "raw_molecular_trajectories_persisted": false,
+    "replay": "complete deterministic regeneration of all 24 matrices",
+    "secondary": [
+      "rolling-512 CLR and raw-count readings over fissions 31-60",
+      "pooled full-dimensional and macro typeset",
+      "pooled normalized-full ratio",
+      "random-minus-noop and neutral-minus-noop"
+    ],
+    "seed_domains": {
+      "bootstrap": "5d0379482e8f3de5d240fc093f3e0bedf9697a01f3512d347640bb73e1d0ce9d",
+      "future": "535d143d625432834ee37a2865e4a5ceed4c6a086dee162f8ddaa7d7687f5045",
+      "initial": "c359ad548cc364e9af82f97e7b0ba3a213e6c85e5e80f0f326c8e99d681de5f4",
+      "main_path": "45703cb2d0da9c7a903eef378d55c6aeb059976adab7f9a1cddae4685a4aadd7",
+      "matrix": "62c039ca7def7e364ab008f324154306f9c5bd2f72fa893e91d0f91fd5684f89",
+      "random_action": "baba140ccd8fc81165eede158298011fae334ca1176787a08c9bc2f728256c5e",
+      "randomization": "57bfca28363d139bf408e2e37ca921ddeb048585480f6716f695388e99f4db78",
+      "smoke": "7244df9c75574f4ec8b282c47049f83a994ef04e041c8fb3a77aec31294d79ad",
+      "validation": "efe5aa118137958bda62d57557e929818bd1607ad593226d316288de924b7f46"
+    },
+    "selector": {
+      "edit_frequency": "one edit after every completed fission in edited arms",
+      "enumeration": "every legal mass-preserving one-molecule substitution",
+      "neutral": "legal prediction closest to no-op",
+      "targets": "linear interpolation from neutral to each legal extreme",
+      "ties": "remove_type then add_type"
+    },
+    "spec": {
+      "bootstrap_repetitions": 4096,
+      "control_horizon": 60,
+      "label": "feedback_dose24",
+      "matrices": 24,
+      "natural_generations": 60,
+      "pooled30_start": 31,
+      "randomization_repetitions": 4096,
+      "replicates": 2,
+      "rolling_window": 512
+    }
+  },
+  "protocol_id": "68dbb137681b7dd2ac46819289562f19afb34a517f73ab81035a17dda36bbdae",
+  "registration_id": "2339c473693d06574a266a7d14d9e94e36a75d817cca0a539e173f10157128f6",
+  "scientific_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "5d0379482e8f3de5d240fc093f3e0bedf9697a01f3512d347640bb73e1d0ce9d",
+    "future": "535d143d625432834ee37a2865e4a5ceed4c6a086dee162f8ddaa7d7687f5045",
+    "initial": "c359ad548cc364e9af82f97e7b0ba3a213e6c85e5e80f0f326c8e99d681de5f4",
+    "main_path": "45703cb2d0da9c7a903eef378d55c6aeb059976adab7f9a1cddae4685a4aadd7",
+    "matrix": "62c039ca7def7e364ab008f324154306f9c5bd2f72fa893e91d0f91fd5684f89",
+    "random_action": "baba140ccd8fc81165eede158298011fae334ca1176787a08c9bc2f728256c5e",
+    "randomization": "57bfca28363d139bf408e2e37ca921ddeb048585480f6716f695388e99f4db78",
+    "smoke": "7244df9c75574f4ec8b282c47049f83a994ef04e041c8fb3a77aec31294d79ad",
+    "validation": "efe5aa118137958bda62d57557e929818bd1607ad593226d316288de924b7f46"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_FEEDBACK_DOSE_PREREGISTRATION.md": "5a9174974ff0b9315dbf33be2961e5b96372cd8557c7b995c72b7e6c95ebef3f",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/mechanistic_metrics.py": "ff8cfbd8365fd2e6274b20ded9fd6606c8b12a349594d9c7e7a8ef7c61fefe8b",
+    "plastic_heredity/phir_ch5.py": "dac7c122573bb1548188c19ebfb051d8f6e6c4b750f45c0707eae03ac9ca1425",
+    "plastic_heredity/phir_feedback_dose.py": "401085ad91f5f7e281f234a784f31790c823ba3ce193eea310cc7a3ac0414891",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_window_bridge.py": "c39233f8f4b1c0a5672d970478bd49f67a607520d657edc0bfe92a6c82ff3b74",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_feedback_dose.py": "f70c88057decd2757c8d7e40cf964f8b1539aec01bc5d90e3830927e342a5035"
+  },
+  "source_tree_sha256": "8da3762b5243a4ae9508078b47abcb0091a5e415e13aecf9fdb43791c91a130d"
+}

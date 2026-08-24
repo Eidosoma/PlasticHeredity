@@ -1,0 +1,1781 @@
+{
+  "candidate_contrasts": [
+    {
+      "candidate": "02",
+      "launch_by_convention_interaction": {
+        "bootstrap_ci90": [
+          0.023190453794463144,
+          0.3008706112236329
+        ],
+        "bootstrap_ci95": [
+          -0.005770717942342586,
+          0.3262504016920016
+        ],
+        "estimate": 0.1618924068786034,
+        "maximum_leave_one_matrix_out_influence": 0.03427117179273831,
+        "negative_matrices": 20,
+        "positive_matrices": 28,
+        "raw_one_sided_randomization_p": 0.0366121552355382,
+        "zero_matrices": 0
+      },
+      "launch_moderation": {
+        "bootstrap_ci90": [
+          0.22298378024810978,
+          0.4697410805280719
+        ],
+        "bootstrap_ci95": [
+          0.19999682610787903,
+          0.49455887911988416
+        ],
+        "candidate_primary_gate": true,
+        "estimate": 0.34790566095473147,
+        "holm_adjusted_p": 0.000488162069807176,
+        "maximum_leave_one_matrix_out_influence": 0.03686372281703665,
+        "negative_matrices": 10,
+        "positive_matrices": 38,
+        "raw_one_sided_randomization_p": 0.000244081034903588,
+        "zero_matrices": 0
+      },
+      "relaxed_minus_post_edit": {
+        "bootstrap_ci90": [
+          -0.10667560434552951,
+          0.03582016884327302
+        ],
+        "bootstrap_ci95": [
+          -0.12010609407141397,
+          0.04733801183616554
+        ],
+        "estimate": -0.03543775447664802,
+        "maximum_leave_one_matrix_out_influence": 0.014562109959736717,
+        "negative_matrices": 25,
+        "positive_matrices": 23,
+        "raw_one_sided_randomization_p": 0.7813033927263852,
+        "zero_matrices": 0
+      }
+    },
+    {
+      "candidate": "03",
+      "launch_by_convention_interaction": {
+        "bootstrap_ci90": [
+          -0.19429470350047562,
+          0.0716453450955566
+        ],
+        "bootstrap_ci95": [
+          -0.21794662537471293,
+          0.09815481986045176
+        ],
+        "estimate": -0.06599728687197783,
+        "maximum_leave_one_matrix_out_influence": 0.03169103144533961,
+        "negative_matrices": 24,
+        "positive_matrices": 24,
+        "raw_one_sided_randomization_p": 0.7817915547961923,
+        "zero_matrices": 0
+      },
+      "launch_moderation": {
+        "bootstrap_ci90": [
+          0.22354902079701472,
+          0.4956231225563724
+        ],
+        "bootstrap_ci95": [
+          0.19767333493467604,
+          0.5234607957183892
+        ],
+        "candidate_primary_gate": true,
+        "estimate": 0.3616047452984608,
+        "holm_adjusted_p": 0.000488162069807176,
+        "maximum_leave_one_matrix_out_influence": 0.03153132231896194,
+        "negative_matrices": 13,
+        "positive_matrices": 35,
+        "raw_one_sided_randomization_p": 0.000488162069807176,
+        "zero_matrices": 0
+      },
+      "relaxed_minus_post_edit": {
+        "bootstrap_ci90": [
+          -0.06738405446356968,
+          0.06428116171700528
+        ],
+        "bootstrap_ci95": [
+          -0.08065413363106946,
+          0.07645485652164233
+        ],
+        "estimate": -0.0024061602176120842,
+        "maximum_leave_one_matrix_out_influence": 0.014588901399344437,
+        "negative_matrices": 22,
+        "positive_matrices": 26,
+        "raw_one_sided_randomization_p": 0.5286795216011716,
+        "zero_matrices": 0
+      }
+    }
+  ],
+  "complete_registered_gate_with_integrity": true,
+  "factorial_cells": [
+    {
+      "bootstrap_ci90": [
+        0.4236472418890038,
+        0.5850999523720498
+      ],
+      "bootstrap_ci95": [
+        0.4077566590488912,
+        0.5999624000491867
+      ],
+      "candidate": "02",
+      "convention": "RELAXED",
+      "estimate": 0.5075870215611645,
+      "holm_adjusted_nascent_family_p": 0.000976324139614352,
+      "launch": "NASCENT",
+      "maximum_leave_one_matrix_out_influence": 0.022957778574249743,
+      "nascent_cell_gate": true,
+      "negative_matrices": 4,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          2.5625,
+          7.364583333333333
+        ],
+        "bootstrap_ci95": [
+          2.256944444444444,
+          8.0
+        ],
+        "estimate": 4.736111111111112,
+        "maximum_leave_one_matrix_out_influence": 1.1545508274231677,
+        "negative_matrices": 2,
+        "positive_matrices": 45,
+        "raw_one_sided_randomization_p": 0.000244081034903588,
+        "zero_matrices": 1
+      },
+      "positive_ci95": true,
+      "positive_matrices": 44,
+      "raw_one_sided_randomization_p": 0.000244081034903588,
+      "zero_matrices": 0
+    },
+    {
+      "bootstrap_ci90": [
+        0.3664745941006546,
+        0.5511655728075319
+      ],
+      "bootstrap_ci95": [
+        0.34709111403559073,
+        0.5661832362437413
+      ],
+      "candidate": "02",
+      "convention": "POST_EDIT",
+      "estimate": 0.4620785725985109,
+      "holm_adjusted_nascent_family_p": 0.000976324139614352,
+      "launch": "NASCENT",
+      "maximum_leave_one_matrix_out_influence": 0.022599527037180656,
+      "nascent_cell_gate": true,
+      "negative_matrices": 6,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          2.7152777777777777,
+          7.460069444444444
+        ],
+        "bootstrap_ci95": [
+          2.465277777777778,
+          8.066840277777779
+        ],
+        "estimate": 4.909722222222222,
+        "maximum_leave_one_matrix_out_influence": 1.1437647754137115,
+        "negative_matrices": 8,
+        "positive_matrices": 37,
+        "raw_one_sided_randomization_p": 0.000244081034903588,
+        "zero_matrices": 3
+      },
+      "positive_ci95": true,
+      "positive_matrices": 42,
+      "raw_one_sided_randomization_p": 0.000244081034903588,
+      "zero_matrices": 0
+    },
+    {
+      "bootstrap_ci90": [
+        -0.03436817151415808,
+        0.1933467266773669
+      ],
+      "bootstrap_ci95": [
+        -0.05505465983751773,
+        0.21616911322140234
+      ],
+      "candidate": "02",
+      "convention": "RELAXED",
+      "estimate": 0.07873515716713149,
+      "holm_adjusted_nascent_family_p": null,
+      "launch": "MATURE",
+      "maximum_leave_one_matrix_out_influence": 0.019693965363850152,
+      "nascent_cell_gate": null,
+      "negative_matrices": 18,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          -1.388888888888889,
+          0.6684027777777778
+        ],
+        "bootstrap_ci95": [
+          -1.6111111111111114,
+          0.8819444444444443
+        ],
+        "estimate": -0.3402777777777779,
+        "maximum_leave_one_matrix_out_influence": 0.2764479905437352,
+        "negative_matrices": 17,
+        "positive_matrices": 25,
+        "raw_one_sided_randomization_p": 0.7014888943129118,
+        "zero_matrices": 6
+      },
+      "positive_ci95": false,
+      "positive_matrices": 28,
+      "raw_one_sided_randomization_p": 0.12326092262631194,
+      "zero_matrices": 2
+    },
+    {
+      "bootstrap_ci90": [
+        0.08197407605964524,
+        0.3058209057541945
+      ],
+      "bootstrap_ci95": [
+        0.05732862311717377,
+        0.32886176882133394
+      ],
+      "candidate": "02",
+      "convention": "POST_EDIT",
+      "estimate": 0.19511911508308125,
+      "holm_adjusted_nascent_family_p": null,
+      "launch": "MATURE",
+      "maximum_leave_one_matrix_out_influence": 0.021499858795963694,
+      "nascent_cell_gate": null,
+      "negative_matrices": 15,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          -0.7152777777777777,
+          1.1874999999999998
+        ],
+        "bootstrap_ci95": [
+          -0.9305555555555558,
+          1.3402777777777777
+        ],
+        "estimate": 0.2986111111111111,
+        "maximum_leave_one_matrix_out_influence": 0.4106087470449172,
+        "negative_matrices": 15,
+        "positive_matrices": 30,
+        "raw_one_sided_randomization_p": 0.3238955333170613,
+        "zero_matrices": 3
+      },
+      "positive_ci95": true,
+      "positive_matrices": 31,
+      "raw_one_sided_randomization_p": 0.002928972418843056,
+      "zero_matrices": 2
+    },
+    {
+      "bootstrap_ci90": [
+        0.43089757969326553,
+        0.5917339720911194
+      ],
+      "bootstrap_ci95": [
+        0.41560636041051086,
+        0.6048036012042247
+      ],
+      "candidate": "03",
+      "convention": "RELAXED",
+      "estimate": 0.5145759005526599,
+      "holm_adjusted_nascent_family_p": 0.000976324139614352,
+      "launch": "NASCENT",
+      "maximum_leave_one_matrix_out_influence": 0.026666906807723878,
+      "nascent_cell_gate": true,
+      "negative_matrices": 3,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          3.076388888888889,
+          8.805555555555555
+        ],
+        "bootstrap_ci95": [
+          2.7734375,
+          9.469618055555555
+        ],
+        "estimate": 5.673611111111111,
+        "maximum_leave_one_matrix_out_influence": 1.14878841607565,
+        "negative_matrices": 2,
+        "positive_matrices": 46,
+        "raw_one_sided_randomization_p": 0.000244081034903588,
+        "zero_matrices": 0
+      },
+      "positive_ci95": true,
+      "positive_matrices": 45,
+      "raw_one_sided_randomization_p": 0.000244081034903588,
+      "zero_matrices": 0
+    },
+    {
+      "bootstrap_ci90": [
+        0.4593166139070792,
+        0.6337262820960159
+      ],
+      "bootstrap_ci95": [
+        0.43890456398874395,
+        0.6494440107374246
+      ],
+      "candidate": "03",
+      "convention": "POST_EDIT",
+      "estimate": 0.5499807042062609,
+      "holm_adjusted_nascent_family_p": 0.000976324139614352,
+      "launch": "NASCENT",
+      "maximum_leave_one_matrix_out_influence": 0.027659163919282137,
+      "nascent_cell_gate": true,
+      "negative_matrices": 3,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          3.0902777777777777,
+          8.913194444444446
+        ],
+        "bootstrap_ci95": [
+          2.680555555555556,
+          9.701388888888888
+        ],
+        "estimate": 5.743055555555556,
+        "maximum_leave_one_matrix_out_influence": 1.1402186761229318,
+        "negative_matrices": 4,
+        "positive_matrices": 44,
+        "raw_one_sided_randomization_p": 0.000244081034903588,
+        "zero_matrices": 0
+      },
+      "positive_ci95": true,
+      "positive_matrices": 44,
+      "raw_one_sided_randomization_p": 0.000244081034903588,
+      "zero_matrices": 1
+    },
+    {
+      "bootstrap_ci90": [
+        0.0549787507153473,
+        0.31177975555743626
+      ],
+      "bootstrap_ci95": [
+        0.028867594709882555,
+        0.33442251026491077
+      ],
+      "candidate": "03",
+      "convention": "RELAXED",
+      "estimate": 0.18596979869018795,
+      "holm_adjusted_nascent_family_p": null,
+      "launch": "MATURE",
+      "maximum_leave_one_matrix_out_influence": 0.025042574630963904,
+      "nascent_cell_gate": null,
+      "negative_matrices": 15,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          -3.494791666666667,
+          0.986111111111111
+        ],
+        "bootstrap_ci95": [
+          -4.090277777777779,
+          1.284722222222222
+        ],
+        "estimate": -1.0972222222222225,
+        "maximum_leave_one_matrix_out_influence": 0.8986406619385343,
+        "negative_matrices": 15,
+        "positive_matrices": 28,
+        "raw_one_sided_randomization_p": 0.7773980961679278,
+        "zero_matrices": 5
+      },
+      "positive_ci95": true,
+      "positive_matrices": 32,
+      "raw_one_sided_randomization_p": 0.010739565535757872,
+      "zero_matrices": 1
+    },
+    {
+      "bootstrap_ci90": [
+        0.051076065637887316,
+        0.25999739772983343
+      ],
+      "bootstrap_ci95": [
+        0.033137980617957745,
+        0.27820431250614497
+      ],
+      "candidate": "03",
+      "convention": "POST_EDIT",
+      "estimate": 0.1553773154718112,
+      "holm_adjusted_nascent_family_p": null,
+      "launch": "MATURE",
+      "maximum_leave_one_matrix_out_influence": 0.021542982396056787,
+      "nascent_cell_gate": null,
+      "negative_matrices": 15,
+      "p60_minus_p1": {
+        "bootstrap_ci90": [
+          -1.8697916666666663,
+          1.5277777777777777
+        ],
+        "bootstrap_ci95": [
+          -2.302083333333333,
+          1.7222222222222223
+        ],
+        "estimate": -0.0069444444444444935,
+        "maximum_leave_one_matrix_out_influence": 0.8367316784869976,
+        "negative_matrices": 14,
+        "positive_matrices": 31,
+        "raw_one_sided_randomization_p": 0.5091530388088845,
+        "zero_matrices": 3
+      },
+      "positive_ci95": true,
+      "positive_matrices": 30,
+      "raw_one_sided_randomization_p": 0.00732243104710764,
+      "zero_matrices": 3
+    }
+  ],
+  "format": "codex-intervention-cr9m-primary-metrics-v1",
+  "integrity": {
+    "artifact_readback_exact": true,
+    "exact_replay": true,
+    "release_interventions_exactly_zero": true
+  },
+  "packing_diagnostics": [
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.375183908907775,
+            0.547337616852938
+          ],
+          "bootstrap_ci95": [
+            0.36084238171725536,
+            0.5624987114112955
+          ],
+          "estimate": 0.4672432505544859,
+          "maximum_leave_one_matrix_out_influence": 0.02361915730663039,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.4356164504156184,
+            0.6044348907299532
+          ],
+          "bootstrap_ci95": [
+            0.4214505936211902,
+            0.620365740144858
+          ],
+          "estimate": 0.522076502145586,
+          "maximum_leave_one_matrix_out_influence": 0.020780789506466002,
+          "negative_matrices": 3,
+          "positive_matrices": 45,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.37967699964092133,
+            0.5497020996860208
+          ],
+          "bootstrap_ci95": [
+            0.3629408040986579,
+            0.5628900602080608
+          ],
+          "estimate": 0.46930052199536293,
+          "maximum_leave_one_matrix_out_influence": 0.02366292903941497,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.42292929476809643,
+            0.5840672026752054
+          ],
+          "bootstrap_ci95": [
+            0.40962764124348117,
+            0.5970303890714707
+          ],
+          "estimate": 0.5073539492910142,
+          "maximum_leave_one_matrix_out_influence": 0.024472576428684167,
+          "negative_matrices": 2,
+          "positive_matrices": 46,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.36397304298064004,
+            0.5374336855902353
+          ],
+          "bootstrap_ci95": [
+            0.3478032945515335,
+            0.5551387401830532
+          ],
+          "estimate": 0.45524622141185117,
+          "maximum_leave_one_matrix_out_influence": 0.021514536359737824,
+          "negative_matrices": 7,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      },
+      "candidate": "02",
+      "convention": "RELAXED",
+      "launch": "NASCENT",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.7745535714285715,
+            0.8437500000000002
+          ],
+          "bootstrap_ci95": [
+            0.7671130952380953,
+            0.849702380952381
+          ],
+          "estimate": 0.8102678571428573,
+          "maximum_leave_one_matrix_out_influence": 0.011160714285714302,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.4449404761904763,
+            0.6026785714285715
+          ],
+          "bootstrap_ci95": [
+            0.43080357142857145,
+            0.6168154761904763
+          ],
+          "estimate": 0.5267857142857144,
+          "maximum_leave_one_matrix_out_influence": 0.018806990881458985,
+          "negative_matrices": 5,
+          "positive_matrices": 42,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.8104782227906271,
+            0.8654855734797012
+          ],
+          "bootstrap_ci95": [
+            0.8054287442151639,
+            0.8705196899642879
+          ],
+          "estimate": 0.8385039170954321,
+          "maximum_leave_one_matrix_out_influence": 0.007489312494464495,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.9233630952380953,
+            0.9600074404761907
+          ],
+          "bootstrap_ci95": [
+            0.9188988095238096,
+            0.9632626488095238
+          ],
+          "estimate": 0.9427083333333334,
+          "maximum_leave_one_matrix_out_influence": 0.007139690982776115,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.6722455438281612,
+            0.7683300688803761
+          ],
+          "bootstrap_ci95": [
+            0.6625306546643265,
+            0.7769347467662082
+          ],
+          "estimate": 0.7213053336797947,
+          "maximum_leave_one_matrix_out_influence": 0.013067286734828598,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.3923355613268846,
+            0.5553085914489311
+          ],
+          "bootstrap_ci95": [
+            0.3760821888994761,
+            0.5707209501245135
+          ],
+          "estimate": 0.47616503845407165,
+          "maximum_leave_one_matrix_out_influence": 0.022899239076660638,
+          "negative_matrices": 4,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.3557557915106335,
+            0.5407790413371204
+          ],
+          "bootstrap_ci95": [
+            0.33610773916882664,
+            0.5591095634643025
+          ],
+          "estimate": 0.45227424828140506,
+          "maximum_leave_one_matrix_out_influence": 0.020843279780533075,
+          "negative_matrices": 7,
+          "positive_matrices": 40,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.38186332115518284,
+            0.5511064148830488
+          ],
+          "bootstrap_ci95": [
+            0.36258403439274406,
+            0.5670331824970432
+          ],
+          "estimate": 0.46934074450430946,
+          "maximum_leave_one_matrix_out_influence": 0.022754041333048702,
+          "negative_matrices": 6,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.38434421405177177,
+            0.5573084737736019
+          ],
+          "bootstrap_ci95": [
+            0.3643938575311681,
+            0.571610222510711
+          ],
+          "estimate": 0.4741058741777083,
+          "maximum_leave_one_matrix_out_influence": 0.022855427070780587,
+          "negative_matrices": 6,
+          "positive_matrices": 42,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.3519183458915859,
+            0.5248190122833363
+          ],
+          "bootstrap_ci95": [
+            0.3339459298533056,
+            0.5393367457838909
+          ],
+          "estimate": 0.441410916147067,
+          "maximum_leave_one_matrix_out_influence": 0.021683079659404803,
+          "negative_matrices": 6,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        }
+      },
+      "candidate": "02",
+      "convention": "POST_EDIT",
+      "launch": "NASCENT",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.7633928571428573,
+            0.8385416666666669
+          ],
+          "bootstrap_ci95": [
+            0.7566964285714286,
+            0.8452380952380955
+          ],
+          "estimate": 0.8020833333333335,
+          "maximum_leave_one_matrix_out_influence": 0.010986575481256367,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.6197916666666667,
+            0.7336309523809526
+          ],
+          "bootstrap_ci95": [
+            0.6086309523809524,
+            0.7433035714285716
+          ],
+          "estimate": 0.6785714285714287,
+          "maximum_leave_one_matrix_out_influence": 0.014437689969604817,
+          "negative_matrices": 0,
+          "positive_matrices": 47,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.79905123242321,
+            0.8569884376385712
+          ],
+          "bootstrap_ci95": [
+            0.7930446272291598,
+            0.8623207141880584
+          ],
+          "estimate": 0.828761031123387,
+          "maximum_leave_one_matrix_out_influence": 0.007282017048250711,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.9523809523809526,
+            0.9734002976190478
+          ],
+          "bootstrap_ci95": [
+            0.9501488095238096,
+            0.9754464285714287
+          ],
+          "estimate": 0.9635416666666666,
+          "maximum_leave_one_matrix_out_influence": 0.0037835612968591947,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.6708302645597038,
+            0.76586992124215
+          ],
+          "bootstrap_ci95": [
+            0.6615792663261827,
+            0.7743378973030919
+          ],
+          "estimate": 0.719266774235744,
+          "maximum_leave_one_matrix_out_influence": 0.013023913129635911,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            -0.06556552464950674,
+            0.159707308204885
+          ],
+          "bootstrap_ci95": [
+            -0.08450850830539418,
+            0.18412212309314935
+          ],
+          "estimate": 0.04798678979458637,
+          "maximum_leave_one_matrix_out_influence": 0.018498199174960803,
+          "negative_matrices": 19,
+          "positive_matrices": 26,
+          "raw_one_sided_randomization_p": 0.248230412496949,
+          "zero_matrices": 3
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.2537445991982651,
+            0.448885235458474
+          ],
+          "bootstrap_ci95": [
+            0.23674708789656515,
+            0.46556521514747046
+          ],
+          "estimate": 0.3521196400234006,
+          "maximum_leave_one_matrix_out_influence": 0.023449354043051096,
+          "negative_matrices": 12,
+          "positive_matrices": 34,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            -0.06508882027216042,
+            0.1640232512240438
+          ],
+          "bootstrap_ci95": [
+            -0.08805886812170155,
+            0.18857752033589767
+          ],
+          "estimate": 0.049819744673387845,
+          "maximum_leave_one_matrix_out_influence": 0.02157671189274686,
+          "negative_matrices": 20,
+          "positive_matrices": 26,
+          "raw_one_sided_randomization_p": 0.24505735904320233,
+          "zero_matrices": 2
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.0449230180598415,
+            0.26856423582739275
+          ],
+          "bootstrap_ci95": [
+            0.023180792807419894,
+            0.2959208479080605
+          ],
+          "estimate": 0.1585914496475235,
+          "maximum_leave_one_matrix_out_influence": 0.021611368229582595,
+          "negative_matrices": 17,
+          "positive_matrices": 29,
+          "raw_one_sided_randomization_p": 0.010983646570661459,
+          "zero_matrices": 2
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            -0.06246123068507173,
+            0.16015823301961424
+          ],
+          "bootstrap_ci95": [
+            -0.08118522710642484,
+            0.17957955900574082
+          ],
+          "estimate": 0.04865011684234605,
+          "maximum_leave_one_matrix_out_influence": 0.018670480479197032,
+          "negative_matrices": 17,
+          "positive_matrices": 29,
+          "raw_one_sided_randomization_p": 0.231632902123505,
+          "zero_matrices": 2
+        }
+      },
+      "candidate": "02",
+      "convention": "RELAXED",
+      "launch": "MATURE",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.517671130952381,
+            0.7053571428571429
+          ],
+          "bootstrap_ci95": [
+            0.49730282738095244,
+            0.7217261904761907
+          ],
+          "estimate": 0.6168154761904763,
+          "maximum_leave_one_matrix_out_influence": 0.032120694022289786,
+          "negative_matrices": 4,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.28125000000000006,
+            0.49330357142857145
+          ],
+          "bootstrap_ci95": [
+            0.26339285714285715,
+            0.5111607142857144
+          ],
+          "estimate": 0.3898809523809524,
+          "maximum_leave_one_matrix_out_influence": 0.024252786220871347,
+          "negative_matrices": 9,
+          "positive_matrices": 38,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.5374837969545935,
+            0.7173474272817462
+          ],
+          "bootstrap_ci95": [
+            0.5189089045769375,
+            0.730414229724679
+          ],
+          "estimate": 0.6319007583612425,
+          "maximum_leave_one_matrix_out_influence": 0.03237021145435237,
+          "negative_matrices": 3,
+          "positive_matrices": 45,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.771577380952381,
+            0.8781622023809526
+          ],
+          "bootstrap_ci95": [
+            0.7611607142857144,
+            0.8861607142857144
+          ],
+          "estimate": 0.8266369047619048,
+          "maximum_leave_one_matrix_out_influence": 0.020627532928064962,
+          "negative_matrices": 1,
+          "positive_matrices": 47,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.3998862253193902,
+            0.62306778920338
+          ],
+          "bootstrap_ci95": [
+            0.37745687672363387,
+            0.6432364816116135
+          ],
+          "estimate": 0.5150984909376176,
+          "maximum_leave_one_matrix_out_influence": 0.03204531276388789,
+          "negative_matrices": 5,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.16933475138092696,
+            0.3713740027121353
+          ],
+          "bootstrap_ci95": [
+            0.14742010811819203,
+            0.38846254701238986
+          ],
+          "estimate": 0.2689923337338767,
+          "maximum_leave_one_matrix_out_influence": 0.023741990397185164,
+          "negative_matrices": 13,
+          "positive_matrices": 32,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 3
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.19526153874551164,
+            0.3933621329545323
+          ],
+          "bootstrap_ci95": [
+            0.17790962028035912,
+            0.4121975135908291
+          ],
+          "estimate": 0.2960246021462842,
+          "maximum_leave_one_matrix_out_influence": 0.025083900331658082,
+          "negative_matrices": 12,
+          "positive_matrices": 34,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.16790568910886974,
+            0.3763432938910229
+          ],
+          "bootstrap_ci95": [
+            0.1437422501172149,
+            0.3949692122733982
+          ],
+          "estimate": 0.27320116933530364,
+          "maximum_leave_one_matrix_out_influence": 0.024381456214097375,
+          "negative_matrices": 9,
+          "positive_matrices": 36,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 3
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.13408069435608244,
+            0.3485918985276345
+          ],
+          "bootstrap_ci95": [
+            0.111558164121868,
+            0.3676099342037798
+          ],
+          "estimate": 0.2435325741835049,
+          "maximum_leave_one_matrix_out_influence": 0.0209528061881831,
+          "negative_matrices": 10,
+          "positive_matrices": 36,
+          "raw_one_sided_randomization_p": 0.000488162069807176,
+          "zero_matrices": 2
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.10643435890139773,
+            0.318312239408384
+          ],
+          "bootstrap_ci95": [
+            0.08803266415666981,
+            0.33638201001651574
+          ],
+          "estimate": 0.20983619932890188,
+          "maximum_leave_one_matrix_out_influence": 0.020183083377431105,
+          "negative_matrices": 16,
+          "positive_matrices": 30,
+          "raw_one_sided_randomization_p": 0.00244081034903588,
+          "zero_matrices": 2
+        }
+      },
+      "candidate": "02",
+      "convention": "POST_EDIT",
+      "launch": "MATURE",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.5044642857142858,
+            0.7053571428571429
+          ],
+          "bootstrap_ci95": [
+            0.4813988095238096,
+            0.722935267857143
+          ],
+          "estimate": 0.6108630952380953,
+          "maximum_leave_one_matrix_out_influence": 0.03199404761904756,
+          "negative_matrices": 4,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.4477306547619048,
+            0.646577380952381
+          ],
+          "bootstrap_ci95": [
+            0.4248511904761905,
+            0.6634114583333335
+          ],
+          "estimate": 0.5491071428571429,
+          "maximum_leave_one_matrix_out_influence": 0.02840045592705165,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.5427371697534176,
+            0.722958550968056
+          ],
+          "bootstrap_ci95": [
+            0.524257183141879,
+            0.7351627196719541
+          ],
+          "estimate": 0.6371062013951447,
+          "maximum_leave_one_matrix_out_influence": 0.0309664529740451,
+          "negative_matrices": 3,
+          "positive_matrices": 45,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.7961309523809526,
+            0.9002976190476192
+          ],
+          "bootstrap_ci95": [
+            0.7864583333333335,
+            0.9069940476190478
+          ],
+          "estimate": 0.8504464285714287,
+          "maximum_leave_one_matrix_out_influence": 0.018094604863221897,
+          "negative_matrices": 0,
+          "positive_matrices": 47,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.4000182325459936,
+            0.6223151962883016
+          ],
+          "bootstrap_ci95": [
+            0.3773959156691648,
+            0.6424017379757407
+          ],
+          "estimate": 0.5145951619307195,
+          "maximum_leave_one_matrix_out_influence": 0.031267848348681127,
+          "negative_matrices": 5,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.40127715392557955,
+            0.5658867013801143
+          ],
+          "bootstrap_ci95": [
+            0.37748496391194125,
+            0.5782587660570827
+          ],
+          "estimate": 0.48582163753529467,
+          "maximum_leave_one_matrix_out_influence": 0.027588624552368046,
+          "negative_matrices": 4,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.5251748012181789,
+            0.6740116811382404
+          ],
+          "bootstrap_ci95": [
+            0.5053858253481189,
+            0.6878447737900258
+          ],
+          "estimate": 0.6005980701065959,
+          "maximum_leave_one_matrix_out_influence": 0.018529346998197083,
+          "negative_matrices": 3,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.40340274639357093,
+            0.5798210497349796
+          ],
+          "bootstrap_ci95": [
+            0.38177520942451665,
+            0.59507465803363
+          ],
+          "estimate": 0.49485644258213535,
+          "maximum_leave_one_matrix_out_influence": 0.029290949455325954,
+          "negative_matrices": 6,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.46964520097636714,
+            0.6221522943503004
+          ],
+          "bootstrap_ci95": [
+            0.4547129332576102,
+            0.6359553538704896
+          ],
+          "estimate": 0.5486799568487669,
+          "maximum_leave_one_matrix_out_influence": 0.023175370946087348,
+          "negative_matrices": 3,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.3681161298903115,
+            0.5506644737221694
+          ],
+          "bootstrap_ci95": [
+            0.3475376426003677,
+            0.5649684331207382
+          ],
+          "estimate": 0.46204032669977213,
+          "maximum_leave_one_matrix_out_influence": 0.027849394502842517,
+          "negative_matrices": 7,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      },
+      "candidate": "03",
+      "convention": "RELAXED",
+      "launch": "NASCENT",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.771577380952381,
+            0.834077380952381
+          ],
+          "bootstrap_ci95": [
+            0.7648809523809526,
+            0.8397507440476192
+          ],
+          "estimate": 0.802827380952381,
+          "maximum_leave_one_matrix_out_influence": 0.009482649442755897,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.42633928571428575,
+            0.593936011904762
+          ],
+          "bootstrap_ci95": [
+            0.40848214285714296,
+            0.6078869047619049
+          ],
+          "estimate": 0.511904761904762,
+          "maximum_leave_one_matrix_out_influence": 0.019250253292806496,
+          "negative_matrices": 4,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.7832948863961138,
+            0.8468075672808515
+          ],
+          "bootstrap_ci95": [
+            0.7779326938872362,
+            0.8520765776782772
+          ],
+          "estimate": 0.8158735101286917,
+          "maximum_leave_one_matrix_out_influence": 0.008240469820367302,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.8854166666666669,
+            0.9248511904761907
+          ],
+          "bootstrap_ci95": [
+            0.8804873511904764,
+            0.9285714285714287
+          ],
+          "estimate": 0.9062500000000001,
+          "maximum_leave_one_matrix_out_influence": 0.004844224924012153,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.7157738095238098,
+            0.7894345238095241
+          ],
+          "bootstrap_ci95": [
+            0.709077380952381,
+            0.795386904761905
+          ],
+          "estimate": 0.7529761904761907,
+          "maximum_leave_one_matrix_out_influence": 0.00766210739614992,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.39660352638192464,
+            0.5688239385203705
+          ],
+          "bootstrap_ci95": [
+            0.38175913985754306,
+            0.5816296047856963
+          ],
+          "estimate": 0.48600901753471115,
+          "maximum_leave_one_matrix_out_influence": 0.028912352733588942,
+          "negative_matrices": 4,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.43264102005275623,
+            0.6168020273086354
+          ],
+          "bootstrap_ci95": [
+            0.4137410507182458,
+            0.6327672101241243
+          ],
+          "estimate": 0.5280319972353315,
+          "maximum_leave_one_matrix_out_influence": 0.02903263637886455,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.3951724693534136,
+            0.5713343047980648
+          ],
+          "bootstrap_ci95": [
+            0.3789879900998286,
+            0.5847889064136871
+          ],
+          "estimate": 0.4867303983942972,
+          "maximum_leave_one_matrix_out_influence": 0.028927701262516314,
+          "negative_matrices": 4,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.45428204997239935,
+            0.6194885809337927
+          ],
+          "bootstrap_ci95": [
+            0.43613234808374257,
+            0.6348622940469407
+          ],
+          "estimate": 0.5399679406486751,
+          "maximum_leave_one_matrix_out_influence": 0.02619130339849607,
+          "negative_matrices": 3,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.36883024334055414,
+            0.5354968550338788
+          ],
+          "bootstrap_ci95": [
+            0.3538192840986034,
+            0.5503994680785027
+          ],
+          "estimate": 0.4541812733620499,
+          "maximum_leave_one_matrix_out_influence": 0.023979144005454478,
+          "negative_matrices": 4,
+          "positive_matrices": 44,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      },
+      "candidate": "03",
+      "convention": "POST_EDIT",
+      "launch": "NASCENT",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.7790178571428573,
+            0.8415178571428573
+          ],
+          "bootstrap_ci95": [
+            0.7730654761904763,
+            0.8474702380952382
+          ],
+          "estimate": 0.811011904761905,
+          "maximum_leave_one_matrix_out_influence": 0.009656788247213832,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.6822916666666669,
+            0.7700892857142859
+          ],
+          "bootstrap_ci95": [
+            0.6748511904761906,
+            0.7790178571428573
+          ],
+          "estimate": 0.7276785714285715,
+          "maximum_leave_one_matrix_out_influence": 0.012443009118540904,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.79171280546188,
+            0.8511397931411397
+          ],
+          "bootstrap_ci95": [
+            0.7869497193804473,
+            0.8562321885305348
+          ],
+          "estimate": 0.8223529927433871,
+          "maximum_leave_one_matrix_out_influence": 0.007912431093523686,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.9188988095238096,
+            0.9508928571428573
+          ],
+          "bootstrap_ci95": [
+            0.9151785714285715,
+            0.9538690476190477
+          ],
+          "estimate": 0.9352678571428572,
+          "maximum_leave_one_matrix_out_influence": 0.003941869300911893,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.7165178571428572,
+            0.7894345238095241
+          ],
+          "bootstrap_ci95": [
+            0.709077380952381,
+            0.7953869047619048
+          ],
+          "estimate": 0.7529761904761907,
+          "maximum_leave_one_matrix_out_influence": 0.00766210739614992,
+          "negative_matrices": 0,
+          "positive_matrices": 48,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.07128431677095692,
+            0.2788545851612385
+          ],
+          "bootstrap_ci95": [
+            0.05133103765576153,
+            0.30088196622100477
+          ],
+          "estimate": 0.17695519064890766,
+          "maximum_leave_one_matrix_out_influence": 0.02255050859767138,
+          "negative_matrices": 13,
+          "positive_matrices": 32,
+          "raw_one_sided_randomization_p": 0.003417134488650232,
+          "zero_matrices": 3
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.2836567265941391,
+            0.5020357123240357
+          ],
+          "bootstrap_ci95": [
+            0.26168630370337875,
+            0.5199221173116106
+          ],
+          "estimate": 0.39349163322157205,
+          "maximum_leave_one_matrix_out_influence": 0.023569730798027377,
+          "negative_matrices": 9,
+          "positive_matrices": 36,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 3
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.038226173776529565,
+            0.2526560656305641
+          ],
+          "bootstrap_ci95": [
+            0.01614866164452469,
+            0.26922048763088385
+          ],
+          "estimate": 0.14497571391060488,
+          "maximum_leave_one_matrix_out_influence": 0.021870094198984114,
+          "negative_matrices": 15,
+          "positive_matrices": 32,
+          "raw_one_sided_randomization_p": 0.014888943129118867,
+          "zero_matrices": 1
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.12376367027194413,
+            0.34788274964777266
+          ],
+          "bootstrap_ci95": [
+            0.09855793569583304,
+            0.3676982448834514
+          ],
+          "estimate": 0.23720185603798918,
+          "maximum_leave_one_matrix_out_influence": 0.023832352542119933,
+          "negative_matrices": 14,
+          "positive_matrices": 31,
+          "raw_one_sided_randomization_p": 0.000488162069807176,
+          "zero_matrices": 3
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.09263132255805695,
+            0.30543875956362776
+          ],
+          "bootstrap_ci95": [
+            0.07070553032798658,
+            0.3250046296724123
+          ],
+          "estimate": 0.19946876077157052,
+          "maximum_leave_one_matrix_out_influence": 0.02149601015313987,
+          "negative_matrices": 12,
+          "positive_matrices": 34,
+          "raw_one_sided_randomization_p": 0.002196729314132292,
+          "zero_matrices": 2
+        }
+      },
+      "candidate": "03",
+      "convention": "RELAXED",
+      "launch": "MATURE",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.4769345238095239,
+            0.6867559523809526
+          ],
+          "bootstrap_ci95": [
+            0.4605654761904763,
+            0.7023809523809526
+          ],
+          "estimate": 0.5885416666666669,
+          "maximum_leave_one_matrix_out_influence": 0.02999936676798376,
+          "negative_matrices": 6,
+          "positive_matrices": 42,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.29761904761904767,
+            0.5342261904761906
+          ],
+          "bootstrap_ci95": [
+            0.2733444940476191,
+            0.5552455357142858
+          ],
+          "estimate": 0.4203869047619049,
+          "maximum_leave_one_matrix_out_influence": 0.028701241134751754,
+          "negative_matrices": 8,
+          "positive_matrices": 39,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 1
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.49542869526697964,
+            0.6818879532053914
+          ],
+          "bootstrap_ci95": [
+            0.4760013676670968,
+            0.6960543049692386
+          ],
+          "estimate": 0.5932555041387754,
+          "maximum_leave_one_matrix_out_influence": 0.02795756328287713,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.6971726190476192,
+            0.8415178571428572
+          ],
+          "bootstrap_ci95": [
+            0.6815476190476192,
+            0.8501674107142858
+          ],
+          "estimate": 0.7730654761904763,
+          "maximum_leave_one_matrix_out_influence": 0.025566742654508645,
+          "negative_matrices": 2,
+          "positive_matrices": 46,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.40252976190476203,
+            0.6279761904761906
+          ],
+          "bootstrap_ci95": [
+            0.3802083333333334,
+            0.6470424107142858
+          ],
+          "estimate": 0.523809523809524,
+          "maximum_leave_one_matrix_out_influence": 0.027862208713272496,
+          "negative_matrices": 7,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      }
+    },
+    {
+      "anchor_consolidation_to_persistence": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.07085115997062633,
+            0.2614225886913423
+          ],
+          "bootstrap_ci95": [
+            0.05191831068229676,
+            0.2807284640498976
+          ],
+          "estimate": 0.16633548143346247,
+          "maximum_leave_one_matrix_out_influence": 0.0169635878771483,
+          "negative_matrices": 16,
+          "positive_matrices": 30,
+          "raw_one_sided_randomization_p": 0.003417134488650232,
+          "zero_matrices": 2
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.14261522194946052,
+            0.33641259354914493
+          ],
+          "bootstrap_ci95": [
+            0.11975471344795671,
+            0.3554709926786734
+          ],
+          "estimate": 0.2398275635438021,
+          "maximum_leave_one_matrix_out_influence": 0.02182003934591678,
+          "negative_matrices": 11,
+          "positive_matrices": 35,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.07887447312684912,
+            0.2772687881934593
+          ],
+          "bootstrap_ci95": [
+            0.05980111558795973,
+            0.2926158960579476
+          ],
+          "estimate": 0.1782443197961383,
+          "maximum_leave_one_matrix_out_influence": 0.021590345369520036,
+          "negative_matrices": 15,
+          "positive_matrices": 31,
+          "raw_one_sided_randomization_p": 0.00366121552355382,
+          "zero_matrices": 2
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.09161712677378561,
+            0.28133731949877067
+          ],
+          "bootstrap_ci95": [
+            0.07231514400443725,
+            0.3025682398838145
+          ],
+          "estimate": 0.18730884118377325,
+          "maximum_leave_one_matrix_out_influence": 0.02222237656014109,
+          "negative_matrices": 14,
+          "positive_matrices": 31,
+          "raw_one_sided_randomization_p": 0.000976324139614352,
+          "zero_matrices": 3
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.1408204066472159,
+            0.33012921994315403
+          ],
+          "bootstrap_ci95": [
+            0.11819475598820843,
+            0.3473370146520534
+          ],
+          "estimate": 0.23506894314185942,
+          "maximum_leave_one_matrix_out_influence": 0.020199035264416493,
+          "negative_matrices": 12,
+          "positive_matrices": 34,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 2
+        }
+      },
+      "candidate": "03",
+      "convention": "POST_EDIT",
+      "launch": "MATURE",
+      "pulse_to_anchor_consolidation": {
+        "entropy_reduction": {
+          "bootstrap_ci90": [
+            0.480654761904762,
+            0.6912202380952381
+          ],
+          "bootstrap_ci95": [
+            0.463076636904762,
+            0.7080543154761906
+          ],
+          "estimate": 0.5915178571428572,
+          "maximum_leave_one_matrix_out_influence": 0.030062689969604928,
+          "negative_matrices": 6,
+          "positive_matrices": 42,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "log_throughput_ratio": {
+          "bootstrap_ci90": [
+            0.4471726190476192,
+            0.6651785714285716
+          ],
+          "bootstrap_ci95": [
+            0.4248511904761905,
+            0.6827566964285716
+          ],
+          "estimate": 0.5632440476190478,
+          "maximum_leave_one_matrix_out_influence": 0.030220997973657515,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "occupied_reduction": {
+          "bootstrap_ci90": [
+            0.4918864384057247,
+            0.6813064853414985
+          ],
+          "bootstrap_ci95": [
+            0.46728208062023313,
+            0.6950893259571479
+          ],
+          "estimate": 0.5902333152728235,
+          "maximum_leave_one_matrix_out_influence": 0.030795237710971923,
+          "negative_matrices": 5,
+          "positive_matrices": 43,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "risk_reduction": {
+          "bootstrap_ci90": [
+            0.7395833333333335,
+            0.8794642857142859
+          ],
+          "bootstrap_ci95": [
+            0.7212611607142858,
+            0.8883928571428573
+          ],
+          "estimate": 0.8154761904761907,
+          "maximum_leave_one_matrix_out_influence": 0.029508611955420427,
+          "negative_matrices": 2,
+          "positive_matrices": 46,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        },
+        "top1_increase": {
+          "bootstrap_ci90": [
+            0.40029761904761907,
+            0.6272321428571429
+          ],
+          "bootstrap_ci95": [
+            0.3779761904761905,
+            0.6450892857142859
+          ],
+          "estimate": 0.521577380952381,
+          "maximum_leave_one_matrix_out_influence": 0.027814716312056786,
+          "negative_matrices": 7,
+          "positive_matrices": 41,
+          "raw_one_sided_randomization_p": 0.000244081034903588,
+          "zero_matrices": 0
+        }
+      }
+    }
+  ],
+  "packing_diagnostics_cannot_rescue_primary": true,
+  "primary_launch_moderation_gate": true,
+  "protocol_robust_nascent_hysteresis": true,
+  "sealed_cr9_result_unchanged": true
+}

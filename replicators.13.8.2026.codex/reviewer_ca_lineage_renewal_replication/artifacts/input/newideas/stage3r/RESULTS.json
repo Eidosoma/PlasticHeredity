@@ -1,0 +1,358 @@
+{
+  "adjudication": {
+    "candidates": {
+      "simple--strict-49-64--gain-050": {
+        "carrier_decoder": {
+          "ablation_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 96
+          },
+          "active_advantage_over_no_rewrite": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.40277125040690104,
+              -0.37552846272786455
+            ],
+            "mean": -0.3888346354166667,
+            "n_pairs": 96
+          },
+          "intact_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.5973709106445312,
+              0.62451171875
+            ],
+            "mean": 0.6111653645833334,
+            "n_pairs": 96
+          },
+          "no_rewrite_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0,
+            "n_pairs": 96
+          },
+          "opposite_rescue_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.60009765625,
+              0.6299441019694011
+            ],
+            "mean": 0.6155192057291666,
+            "n_pairs": 96
+          },
+          "passed": false,
+          "read_advantage": {
+            "alpha": 0.0125,
+            "ci": [
+              0.5971473693847656,
+              0.6250205993652344
+            ],
+            "mean": 0.6111653645833334,
+            "n_pairs": 96
+          },
+          "read_disabled_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 96
+          },
+          "rescue_restoration_fraction": 1.0508784773060025,
+          "same_rescue_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.6028032938639323,
+              0.6308392842610677
+            ],
+            "mean": 0.6168212890625,
+            "n_pairs": 96
+          }
+        },
+        "model": {
+          "candidate_id": "simple--strict-49-64--gain-050",
+          "complexity": 1,
+          "gain": 0.5,
+          "kind": "gain-050",
+          "mechanism_class": "simple",
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "tier": "strict",
+          "window_id": "strict-49-64"
+        },
+        "phenotype_decoder": {
+          "ablation_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 96
+          },
+          "active_advantage_over_no_rewrite": {
+            "alpha": 0.0125,
+            "ci": [
+              0.25441309611002605,
+              0.35020014444986985
+            ],
+            "mean": 0.302001953125,
+            "n_pairs": 96
+          },
+          "intact_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.590087890625,
+              0.61962890625
+            ],
+            "mean": 0.6053466796875,
+            "n_pairs": 96
+          },
+          "no_rewrite_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.25679473876953124,
+              0.34796218872070317
+            ],
+            "mean": 0.3033447265625,
+            "n_pairs": 96
+          },
+          "opposite_rescue_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.5982666015625,
+              0.6268516540527344
+            ],
+            "mean": 0.6125895182291666,
+            "n_pairs": 96
+          },
+          "passed": false,
+          "read_advantage": {
+            "alpha": 0.0125,
+            "ci": [
+              0.5898030598958334,
+              0.6199951171875
+            ],
+            "mean": 0.6053466796875,
+            "n_pairs": 96
+          },
+          "read_disabled_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 96
+          },
+          "rescue_restoration_fraction": 1.0003862495171878,
+          "same_rescue_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.5898638407389323,
+              0.6207682291666666
+            ],
+            "mean": 0.6053873697916666,
+            "n_pairs": 96
+          }
+        },
+        "secondary_verdict": "STRICT_FORM_PRIMARY",
+        "strict": {
+          "ablation_generation4": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 96
+          },
+          "ablation_loss_fraction": 1.0,
+          "active_rewrite_advantage_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              0.3920074462890625,
+              0.4649261474609376
+            ],
+            "mean": 0.4293619791666667,
+            "n_pairs": 96
+          },
+          "alpha": 0.0125,
+          "carrier_corruption_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              0.4449869791666667,
+              0.5038258870442709
+            ],
+            "mean": 0.4755859375,
+            "n_pairs": 96
+          },
+          "control_advantages_generation8": {
+            "founder_write_disabled": {
+              "alpha": 0.0125,
+              "ci": [
+                0.45467020670572916,
+                0.5164388020833334
+              ],
+              "mean": 0.4869791666666667,
+              "n_pairs": 96
+            },
+            "read_disabled": {
+              "alpha": 0.0125,
+              "ci": [
+                0.4547526041666667,
+                0.51708984375
+              ],
+              "mean": 0.4869791666666667,
+              "n_pairs": 96
+            },
+            "shuffle_every_boundary": {
+              "alpha": 0.0125,
+              "ci": [
+                0.4759114583333333,
+                0.5540364583333334
+              ],
+              "mean": 0.5154622395833334,
+              "n_pairs": 96
+            },
+            "zero_every_boundary": {
+              "alpha": 0.0125,
+              "ci": [
+                0.4547526041666667,
+                0.51708984375
+              ],
+              "mean": 0.4869791666666667,
+              "n_pairs": 96
+            }
+          },
+          "direction_a_mean": 0.5128580729166666,
+          "direction_b_mean": 0.4983723958333333,
+          "fraction_pairs_positive": 1.0,
+          "intact_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              0.20979817708333334,
+              0.2554534912109376
+            ],
+            "mean": 0.23291015625,
+            "n_pairs": 96
+          },
+          "intact_generation4": {
+            "alpha": 0.0125,
+            "ci": [
+              0.6516103108723958,
+              0.7248545328776043
+            ],
+            "mean": 0.6892903645833334,
+            "n_pairs": 96
+          },
+          "intact_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              0.4545074462890625,
+              0.5177408854166666
+            ],
+            "mean": 0.4869791666666667,
+            "n_pairs": 96
+          },
+          "no_rewrite_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              0.03271484375,
+              0.0830078125
+            ],
+            "mean": 0.0576171875,
+            "n_pairs": 96
+          },
+          "no_rewrite_loss_fraction": 0.8816844919786097,
+          "opposite_founder_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.5552581787109375,
+              -0.4912109375
+            ],
+            "mean": -0.5242513020833334,
+            "n_pairs": 96
+          },
+          "opposite_rescue_generation4": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.7745768229166666,
+              -0.70263671875
+            ],
+            "mean": -0.7400716145833334,
+            "n_pairs": 96
+          },
+          "renewed_gate": true,
+          "rescue_advantage_generation4": {
+            "alpha": 0.0125,
+            "ci": [
+              0.6505533854166666,
+              0.7254252115885418
+            ],
+            "mean": 0.6892903645833334,
+            "n_pairs": 96
+          },
+          "rescue_generation4": {
+            "alpha": 0.0125,
+            "ci": [
+              0.6504709879557291,
+              0.7244466145833334
+            ],
+            "mean": 0.6892903645833334,
+            "n_pairs": 96
+          },
+          "rescue_restoration_fraction": 1.0,
+          "survival_generation16": {
+            "alpha": 0.0125,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0,
+            "n_pairs": 96
+          },
+          "survival_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "mean": 1.0,
+            "n_pairs": 96
+          },
+          "terminal_generation8": {
+            "alpha": 0.0125,
+            "ci": [
+              0.4457183837890625,
+              0.51123046875
+            ],
+            "mean": 0.4803059895833333,
+            "n_pairs": 96
+          },
+          "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+        }
+      }
+    },
+    "claim_boundary": "synthetic CA lineage memory only; no metabolism, agency, or biological-life claim",
+    "state": "complete",
+    "strict_primary_passed": true,
+    "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+  },
+  "design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "elapsed_seconds": 1023.6764092445374,
+  "experiment": "ca_motif_lineage_stage_3r",
+  "profile": "reference",
+  "stage3_design_digest": "1b14f11eced3a2a529e1da9c698d48588c2b4963851cc368b4a660b2f1d9b4c1",
+  "state": "complete"
+}

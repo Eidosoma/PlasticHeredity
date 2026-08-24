@@ -1,0 +1,2780 @@
+{
+  "candidate_summaries": {
+    "learned--overlap-17-48--diagonal-ridge": {
+      "candidate": {
+        "alpha": 0.1,
+        "candidate_id": "learned--overlap-17-48--diagonal-ridge",
+        "complexity": 1024,
+        "kind": "diagonal-ridge",
+        "mechanism_class": "learned",
+        "rank": null,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.853515625,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.435546875,
+              0.5927795410156254
+            ],
+            "mean": 0.51513671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.60400390625,
+          "direction_b_mean": 0.55712890625,
+          "fraction_pairs_positive": 0.953125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.759765625,
+              0.869140625
+            ],
+            "mean": 0.81689453125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.8759765625,
+          "direction_b_mean": 0.8486328125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.64599609375,
+              0.78076171875
+            ],
+            "mean": 0.71533203125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.8017578125,
+          "direction_b_mean": 0.75048828125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.529779052734375,
+              0.68994140625
+            ],
+            "mean": 0.6103515625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.7001953125,
+          "direction_b_mean": 0.65380859375,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.470697021484375,
+          0.64892578125
+        ],
+        "mean": 0.560546875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.51513671875,
+      "screen_eligible": false
+    },
+    "learned--overlap-17-48--reduced-rank-ridge": {
+      "candidate": {
+        "actual_rank": 64,
+        "alpha": 10.0,
+        "candidate_id": "learned--overlap-17-48--reduced-rank-ridge",
+        "complexity": 66048,
+        "kind": "reduced-rank-ridge",
+        "mechanism_class": "learned",
+        "rank": 64,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85302734375,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.169921875,
+              0.23583984375
+            ],
+            "mean": 0.20166015625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.240234375,
+          "direction_b_mean": 0.23583984375,
+          "fraction_pairs_positive": 0.953125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.7001953125,
+              0.80322265625
+            ],
+            "mean": 0.75341796875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.7978515625,
+          "direction_b_mean": 0.798828125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.52978515625,
+              0.63525390625
+            ],
+            "mean": 0.58251953125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.63037109375,
+          "direction_b_mean": 0.623046875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.36669921875,
+              0.46240234375
+            ],
+            "mean": 0.4150390625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.451171875,
+          "direction_b_mean": 0.458984375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.31982421875,
+          0.41357421875
+        ],
+        "mean": 0.365234375,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.20166015625,
+      "screen_eligible": false
+    },
+    "learned--overlap-17-48--scalar-affine": {
+      "candidate": {
+        "alpha": 0.0001,
+        "candidate_id": "learned--overlap-17-48--scalar-affine",
+        "complexity": 2,
+        "intercept": -0.44231072988888404,
+        "kind": "scalar-affine",
+        "mechanism_class": "learned",
+        "rank": null,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "slope": 0.6816271346765728,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8525390625,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0859375,
+              -0.0263671875
+            ],
+            "mean": -0.05615234375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.001953125,
+          "direction_b_mean": -0.01611328125,
+          "fraction_pairs_positive": 0.1875,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.456536865234375,
+              0.57421875
+            ],
+            "mean": 0.5146484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.61181640625,
+          "direction_b_mean": 0.5595703125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.01416015625,
+              0.06298828125
+            ],
+            "mean": 0.0244140625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.07421875,
+          "direction_b_mean": 0.07666015625,
+          "fraction_pairs_positive": 0.53125,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0595703125,
+              -0.005859375
+            ],
+            "mean": -0.03271484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0283203125,
+          "direction_b_mean": 0.01708984375,
+          "fraction_pairs_positive": 0.3125,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.123046875,
+          -0.04248046875
+        ],
+        "mean": -0.08251953125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.05615234375,
+      "screen_eligible": false
+    },
+    "learned--strict-41-56--diagonal-ridge": {
+      "candidate": {
+        "alpha": 0.1,
+        "candidate_id": "learned--strict-41-56--diagonal-ridge",
+        "complexity": 1024,
+        "kind": "diagonal-ridge",
+        "mechanism_class": "learned",
+        "rank": null,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8525390625,
+              0.9272521972656254
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0517578125,
+              0.020513916015625355
+            ],
+            "mean": -0.015625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02001953125,
+          "direction_b_mean": 0.021484375,
+          "fraction_pairs_positive": 0.40625,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.7275390625,
+              0.81005859375
+            ],
+            "mean": 0.76953125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.81689453125,
+          "direction_b_mean": 0.80126953125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.43896484375,
+              0.52734375
+            ],
+            "mean": 0.48291015625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.54736328125,
+          "direction_b_mean": 0.5224609375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.14208984375,
+              0.21142578125
+            ],
+            "mean": 0.1767578125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.22607421875,
+          "direction_b_mean": 0.2109375,
+          "fraction_pairs_positive": 0.90625,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.07958984375,
+          0.171875
+        ],
+        "mean": 0.126953125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.015625,
+      "screen_eligible": false
+    },
+    "learned--strict-41-56--reduced-rank-ridge": {
+      "candidate": {
+        "actual_rank": 16,
+        "alpha": 10.0,
+        "candidate_id": "learned--strict-41-56--reduced-rank-ridge",
+        "complexity": 16896,
+        "kind": "reduced-rank-ridge",
+        "mechanism_class": "learned",
+        "rank": 16,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8525390625,
+              0.9282287597656254
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.076171875,
+              -0.01611328125
+            ],
+            "mean": -0.0458984375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.00439453125,
+          "direction_b_mean": -0.01806640625,
+          "fraction_pairs_positive": 0.28125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.5888671875,
+              0.66845703125
+            ],
+            "mean": 0.62939453125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.66259765625,
+          "direction_b_mean": 0.658203125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.2919921875,
+              0.365234375
+            ],
+            "mean": 0.3271484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.36669921875,
+          "direction_b_mean": 0.34619140625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.04833984375,
+              0.1142578125
+            ],
+            "mean": 0.0810546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.11279296875,
+          "direction_b_mean": 0.10400390625,
+          "fraction_pairs_positive": 0.734375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.01513671875,
+          0.0791015625
+        ],
+        "mean": 0.03125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0458984375,
+      "screen_eligible": false
+    },
+    "learned--strict-41-56--scalar-affine": {
+      "candidate": {
+        "alpha": 0.0001,
+        "candidate_id": "learned--strict-41-56--scalar-affine",
+        "complexity": 2,
+        "intercept": -0.23300848264789853,
+        "kind": "scalar-affine",
+        "mechanism_class": "learned",
+        "rank": null,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "slope": 1.045382292269731,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85302734375,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.09130859375,
+              -0.02783203125
+            ],
+            "mean": -0.0595703125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.01220703125,
+          "direction_b_mean": -0.02392578125,
+          "fraction_pairs_positive": 0.21875,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.6572265625,
+              0.74609375
+            ],
+            "mean": 0.7021484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.76513671875,
+          "direction_b_mean": 0.72802734375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.27978515625,
+              0.36524047851562536
+            ],
+            "mean": 0.322265625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.3681640625,
+          "direction_b_mean": 0.35693359375,
+          "fraction_pairs_positive": 0.96875,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0185546875,
+              0.041015625
+            ],
+            "mean": 0.01171875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0537109375,
+          "direction_b_mean": 0.0546875,
+          "fraction_pairs_positive": 0.5,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.07763671875,
+          0.0014709472656253553
+        ],
+        "mean": -0.0380859375,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0595703125,
+      "screen_eligible": false
+    },
+    "learned--strict-49-64--diagonal-ridge": {
+      "candidate": {
+        "alpha": 0.01,
+        "candidate_id": "learned--strict-49-64--diagonal-ridge",
+        "complexity": 1024,
+        "kind": "diagonal-ridge",
+        "mechanism_class": "learned",
+        "rank": null,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8544921875,
+              0.927734375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.029296875,
+              0.02880859375
+            ],
+            "mean": 0.0,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.025390625,
+          "direction_b_mean": 0.044921875,
+          "fraction_pairs_positive": 0.453125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.667474365234375,
+              0.755859375
+            ],
+            "mean": 0.7119140625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.7724609375,
+          "direction_b_mean": 0.74853515625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.3515625,
+              0.44141235351562536
+            ],
+            "mean": 0.39697265625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.4462890625,
+          "direction_b_mean": 0.4208984375,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0712890625,
+              0.1416015625
+            ],
+            "mean": 0.1064453125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.14990234375,
+          "direction_b_mean": 0.1416015625,
+          "fraction_pairs_positive": 0.78125,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.00927734375,
+          0.10302734375
+        ],
+        "mean": 0.056640625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -1.0,
+      "screen_eligible": false
+    },
+    "learned--strict-49-64--reduced-rank-ridge": {
+      "candidate": {
+        "actual_rank": 16,
+        "alpha": 10.0,
+        "candidate_id": "learned--strict-49-64--reduced-rank-ridge",
+        "complexity": 16896,
+        "kind": "reduced-rank-ridge",
+        "mechanism_class": "learned",
+        "rank": 16,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.853515625,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.03955078125,
+              0.0302734375
+            ],
+            "mean": -0.0048828125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0185546875,
+          "direction_b_mean": 0.02294921875,
+          "fraction_pairs_positive": 0.390625,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.56982421875,
+              0.64697265625
+            ],
+            "mean": 0.60791015625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.63623046875,
+          "direction_b_mean": 0.63623046875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.2685546875,
+              0.34619140625
+            ],
+            "mean": 0.306640625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.33935546875,
+          "direction_b_mean": 0.333984375,
+          "fraction_pairs_positive": 0.96875,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.05078125,
+              0.12255859375
+            ],
+            "mean": 0.08740234375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.1171875,
+          "direction_b_mean": 0.12109375,
+          "fraction_pairs_positive": 0.6875,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.015142822265624994,
+          0.09033203125
+        ],
+        "mean": 0.03759765625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0048828125,
+      "screen_eligible": false
+    },
+    "learned--strict-49-64--scalar-affine": {
+      "candidate": {
+        "alpha": 0.0001,
+        "candidate_id": "learned--strict-49-64--scalar-affine",
+        "complexity": 2,
+        "intercept": -0.0886585096565593,
+        "kind": "scalar-affine",
+        "mechanism_class": "learned",
+        "rank": null,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "slope": 1.0701249306633978,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8525390625,
+              0.927734375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.02001953125,
+              0.04541015625
+            ],
+            "mean": 0.0126953125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0439453125,
+          "direction_b_mean": 0.04638671875,
+          "fraction_pairs_positive": 0.46875,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.7060546875,
+              0.78955078125
+            ],
+            "mean": 0.7490234375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.798828125,
+          "direction_b_mean": 0.7763671875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.41064453125,
+              0.49853515625
+            ],
+            "mean": 0.455078125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.51806640625,
+          "direction_b_mean": 0.48193359375,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.1298828125,
+              0.19140625
+            ],
+            "mean": 0.16162109375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.22265625,
+          "direction_b_mean": 0.17822265625,
+          "fraction_pairs_positive": 0.90625,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.0673828125,
+          0.15380859375
+        ],
+        "mean": 0.11181640625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.0126953125,
+      "screen_eligible": false
+    },
+    "simple--overlap-17-48--gain-050": {
+      "candidate": {
+        "candidate_id": "simple--overlap-17-48--gain-050",
+        "complexity": 1,
+        "gain": 0.5,
+        "kind": "gain-050",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85302734375,
+              0.9277404785156254
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0927734375,
+              -0.02685546875
+            ],
+            "mean": -0.05908203125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.005859375,
+          "direction_b_mean": -0.00537109375,
+          "fraction_pairs_positive": 0.296875,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.51171875,
+              0.64013671875
+            ],
+            "mean": 0.576171875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.6630859375,
+          "direction_b_mean": 0.6171875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.01611328125,
+              0.078125
+            ],
+            "mean": 0.04736328125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0986328125,
+          "direction_b_mean": 0.09228515625,
+          "fraction_pairs_positive": 0.609375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.076171875,
+              -0.01611328125
+            ],
+            "mean": -0.04638671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0166015625,
+          "direction_b_mean": -0.0087890625,
+          "fraction_pairs_positive": 0.3125,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.13525390625,
+          -0.05615234375
+        ],
+        "mean": -0.09619140625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.05908203125,
+      "screen_eligible": false
+    },
+    "simple--overlap-17-48--gain-100": {
+      "candidate": {
+        "candidate_id": "simple--overlap-17-48--gain-100",
+        "complexity": 1,
+        "gain": 1.0,
+        "kind": "gain-100",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8515625,
+              0.9267639160156254
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.06005859375,
+              -0.00537109375
+            ],
+            "mean": -0.0322265625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.00634765625,
+          "direction_b_mean": 0.009765625,
+          "fraction_pairs_positive": 0.328125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.39208984375,
+              0.51416015625
+            ],
+            "mean": 0.45263671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.54345703125,
+          "direction_b_mean": 0.49853515625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.01513671875,
+              0.0458984375
+            ],
+            "mean": 0.0146484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.05126953125,
+          "direction_b_mean": 0.06494140625,
+          "fraction_pairs_positive": 0.484375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0517578125,
+              0.0
+            ],
+            "mean": -0.0263671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02978515625,
+          "direction_b_mean": 0.02001953125,
+          "fraction_pairs_positive": 0.28125,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.11474609375,
+          -0.03857421875
+        ],
+        "mean": -0.076171875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0322265625,
+      "screen_eligible": false
+    },
+    "simple--overlap-17-48--gain-200": {
+      "candidate": {
+        "candidate_id": "simple--overlap-17-48--gain-200",
+        "complexity": 1,
+        "gain": 2.0,
+        "kind": "gain-200",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.853515625,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0673828125,
+              -0.001953125
+            ],
+            "mean": -0.03515625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02197265625,
+          "direction_b_mean": 0.01025390625,
+          "fraction_pairs_positive": 0.34375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.375,
+              0.48584594726562536
+            ],
+            "mean": 0.4296875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.51220703125,
+          "direction_b_mean": 0.46875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.02392578125,
+              0.0302734375
+            ],
+            "mean": 0.0029296875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.0634765625,
+          "direction_b_mean": 0.03955078125,
+          "fraction_pairs_positive": 0.4375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.08447265625,
+              -0.02392578125
+            ],
+            "mean": -0.05419921875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.00830078125,
+          "direction_b_mean": -0.01904296875,
+          "fraction_pairs_positive": 0.296875,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.1416015625,
+          -0.0673828125
+        ],
+        "mean": -0.10400390625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.05419921875,
+      "screen_eligible": false
+    },
+    "simple--overlap-17-48--gain-400": {
+      "candidate": {
+        "candidate_id": "simple--overlap-17-48--gain-400",
+        "complexity": 1,
+        "gain": 4.0,
+        "kind": "gain-400",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8525390625,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.08447265625,
+              -0.0234375
+            ],
+            "mean": -0.05419921875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.0078125,
+          "direction_b_mean": -0.00439453125,
+          "fraction_pairs_positive": 0.1875,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.44873046875,
+              0.56298828125
+            ],
+            "mean": 0.505859375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.5947265625,
+          "direction_b_mean": 0.54638671875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.017578125,
+              0.07958984375
+            ],
+            "mean": 0.048828125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.10302734375,
+          "direction_b_mean": 0.09326171875,
+          "fraction_pairs_positive": 0.59375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.04443359375,
+              0.01171875
+            ],
+            "mean": -0.01611328125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02099609375,
+          "direction_b_mean": 0.03759765625,
+          "fraction_pairs_positive": 0.390625,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.1103515625,
+          -0.02392578125
+        ],
+        "mean": -0.06591796875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.05419921875,
+      "screen_eligible": false
+    },
+    "simple--overlap-17-48--gauge-norm": {
+      "candidate": {
+        "candidate_id": "simple--overlap-17-48--gauge-norm",
+        "complexity": 2,
+        "kind": "gauge-norm",
+        "mechanism_class": "simple",
+        "norm_target": 28.75956566456363,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85302734375,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.08544921875,
+              -0.0185546875
+            ],
+            "mean": -0.0517578125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.01513671875,
+          "direction_b_mean": -0.00390625,
+          "fraction_pairs_positive": 0.3125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.412109375,
+              0.53466796875
+            ],
+            "mean": 0.47216796875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.564453125,
+          "direction_b_mean": 0.52685546875,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.025390625,
+              0.03564453125
+            ],
+            "mean": 0.0048828125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.05810546875,
+          "direction_b_mean": 0.037109375,
+          "fraction_pairs_positive": 0.40625,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.06103515625,
+              -0.00048828125
+            ],
+            "mean": -0.03125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02490234375,
+          "direction_b_mean": -0.001953125,
+          "fraction_pairs_positive": 0.34375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.12646484375,
+          -0.0361328125
+        ],
+        "mean": -0.0810546875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0517578125,
+      "screen_eligible": false
+    },
+    "simple--overlap-17-48--identity": {
+      "candidate": {
+        "candidate_id": "simple--overlap-17-48--identity",
+        "complexity": 0,
+        "kind": "identity",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "overlap",
+        "window_id": "overlap-17-48"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8515625,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.05908203125,
+              -0.00537109375
+            ],
+            "mean": -0.0322265625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.00634765625,
+          "direction_b_mean": 0.009765625,
+          "fraction_pairs_positive": 0.328125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.392578125,
+              0.5146484375
+            ],
+            "mean": 0.45263671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.54345703125,
+          "direction_b_mean": 0.49853515625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.01513671875,
+              0.0458984375
+            ],
+            "mean": 0.0146484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.05126953125,
+          "direction_b_mean": 0.06494140625,
+          "fraction_pairs_positive": 0.484375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0517578125,
+              0.0009826660156253553
+            ],
+            "mean": -0.0263671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02978515625,
+          "direction_b_mean": 0.02001953125,
+          "fraction_pairs_positive": 0.28125,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.11328125,
+          -0.03857421875
+        ],
+        "mean": -0.076171875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0322265625,
+      "screen_eligible": false
+    },
+    "simple--strict-41-56--gain-050": {
+      "candidate": {
+        "candidate_id": "simple--strict-41-56--gain-050",
+        "complexity": 1,
+        "gain": 0.5,
+        "kind": "gain-050",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85205078125,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0361328125,
+              0.1083984375
+            ],
+            "mean": 0.072265625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.10986328125,
+          "direction_b_mean": 0.109375,
+          "fraction_pairs_positive": 0.71875,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.757318115234375,
+              0.84375
+            ],
+            "mean": 0.8017578125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.86083984375,
+          "direction_b_mean": 0.82421875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.544921875,
+              0.640625
+            ],
+            "mean": 0.59375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.64697265625,
+          "direction_b_mean": 0.615234375,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.25537109375,
+              0.326171875
+            ],
+            "mean": 0.291015625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.34228515625,
+          "direction_b_mean": 0.32568359375,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.19677734375,
+          0.28759765625
+        ],
+        "mean": 0.2412109375,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.072265625,
+      "screen_eligible": false
+    },
+    "simple--strict-41-56--gain-100": {
+      "candidate": {
+        "candidate_id": "simple--strict-41-56--gain-100",
+        "complexity": 1,
+        "gain": 1.0,
+        "kind": "gain-100",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85302734375,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.06103515625,
+              0.0014709472656253553
+            ],
+            "mean": -0.029296875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.01123046875,
+          "direction_b_mean": 0.0009765625,
+          "fraction_pairs_positive": 0.359375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.6455078125,
+              0.7451171875
+            ],
+            "mean": 0.6962890625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.76953125,
+          "direction_b_mean": 0.7255859375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.326171875,
+              0.40869140625
+            ],
+            "mean": 0.3671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.4462890625,
+          "direction_b_mean": 0.3955078125,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.02685546875,
+              0.0888671875
+            ],
+            "mean": 0.0576171875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.1005859375,
+          "direction_b_mean": 0.10400390625,
+          "fraction_pairs_positive": 0.609375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0322265625,
+          0.046392822265625355
+        ],
+        "mean": 0.0078125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.029296875,
+      "screen_eligible": false
+    },
+    "simple--strict-41-56--gain-200": {
+      "candidate": {
+        "candidate_id": "simple--strict-41-56--gain-200",
+        "complexity": 1,
+        "gain": 2.0,
+        "kind": "gain-200",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85400390625,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0634765625,
+              -0.0078125
+            ],
+            "mean": -0.0361328125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.00634765625,
+          "direction_b_mean": 0.01611328125,
+          "fraction_pairs_positive": 0.3125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.5986328125,
+              0.70654296875
+            ],
+            "mean": 0.65380859375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.72802734375,
+          "direction_b_mean": 0.67822265625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.18798828125,
+              0.25537109375
+            ],
+            "mean": 0.22119140625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.28564453125,
+          "direction_b_mean": 0.2685546875,
+          "fraction_pairs_positive": 0.96875,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0400390625,
+              0.018072509765625355
+            ],
+            "mean": -0.0107421875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.03369140625,
+          "direction_b_mean": 0.03125,
+          "fraction_pairs_positive": 0.421875,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.09912109375,
+          -0.0205078125
+        ],
+        "mean": -0.060546875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0361328125,
+      "screen_eligible": false
+    },
+    "simple--strict-41-56--gain-400": {
+      "candidate": {
+        "candidate_id": "simple--strict-41-56--gain-400",
+        "complexity": 1,
+        "gain": 4.0,
+        "kind": "gain-400",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.852532958984375,
+              0.92724609375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.06982421875,
+              -0.0048828125
+            ],
+            "mean": -0.03759765625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.00927734375,
+          "direction_b_mean": 0.02001953125,
+          "fraction_pairs_positive": 0.328125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.6181640625,
+              0.71630859375
+            ],
+            "mean": 0.6689453125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.74072265625,
+          "direction_b_mean": 0.70263671875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.24853515625,
+              0.32373046875
+            ],
+            "mean": 0.28662109375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.3447265625,
+          "direction_b_mean": 0.31396484375,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.01806640625,
+              0.044921875
+            ],
+            "mean": 0.01416015625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.06494140625,
+          "direction_b_mean": 0.0478515625,
+          "fraction_pairs_positive": 0.5,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.07421875,
+          0.00244140625
+        ],
+        "mean": -0.03564453125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.03759765625,
+      "screen_eligible": false
+    },
+    "simple--strict-41-56--gauge-norm": {
+      "candidate": {
+        "candidate_id": "simple--strict-41-56--gauge-norm",
+        "complexity": 2,
+        "kind": "gauge-norm",
+        "mechanism_class": "simple",
+        "norm_target": 28.75956566456363,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85302734375,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.10107421875,
+              -0.0400390625
+            ],
+            "mean": -0.0703125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.03271484375,
+          "direction_b_mean": -0.0087890625,
+          "fraction_pairs_positive": 0.234375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.6494140625,
+              0.7431640625
+            ],
+            "mean": 0.69677734375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.7705078125,
+          "direction_b_mean": 0.7216796875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.2978515625,
+              0.39306640625
+            ],
+            "mean": 0.34521484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.41552734375,
+          "direction_b_mean": 0.37255859375,
+          "fraction_pairs_positive": 0.96875,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.001953125,
+              0.0732421875
+            ],
+            "mean": 0.03564453125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.07763671875,
+          "direction_b_mean": 0.07373046875,
+          "fraction_pairs_positive": 0.59375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.06689453125,
+          0.03662109375
+        ],
+        "mean": -0.01416015625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0703125,
+      "screen_eligible": false
+    },
+    "simple--strict-41-56--identity": {
+      "candidate": {
+        "candidate_id": "simple--strict-41-56--identity",
+        "complexity": 0,
+        "kind": "identity",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-41-56"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.853515625,
+              0.927734375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.060546875,
+              0.001953125
+            ],
+            "mean": -0.029296875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.01123046875,
+          "direction_b_mean": 0.0009765625,
+          "fraction_pairs_positive": 0.359375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.64404296875,
+              0.74609375
+            ],
+            "mean": 0.6962890625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.76953125,
+          "direction_b_mean": 0.7255859375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.326171875,
+              0.408203125
+            ],
+            "mean": 0.3671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.4462890625,
+          "direction_b_mean": 0.3955078125,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.02783203125,
+              0.08935546875
+            ],
+            "mean": 0.0576171875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.1005859375,
+          "direction_b_mean": 0.10400390625,
+          "fraction_pairs_positive": 0.609375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0322265625,
+          0.04736328125
+        ],
+        "mean": 0.0078125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.029296875,
+      "screen_eligible": false
+    },
+    "simple--strict-49-64--gain-050": {
+      "candidate": {
+        "candidate_id": "simple--strict-49-64--gain-050",
+        "complexity": 1,
+        "gain": 0.5,
+        "kind": "gain-050",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85400390625,
+              0.927734375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.212890625,
+              0.27783203125
+            ],
+            "mean": 0.2451171875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.27294921875,
+          "direction_b_mean": 0.265625,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.76708984375,
+              0.84912109375
+            ],
+            "mean": 0.80908203125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.8642578125,
+          "direction_b_mean": 0.8369140625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.64697265625,
+              0.7192443847656254
+            ],
+            "mean": 0.68408203125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.7255859375,
+          "direction_b_mean": 0.69677734375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.46435546875,
+              0.53076171875
+            ],
+            "mean": 0.498046875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.5380859375,
+          "direction_b_mean": 0.51171875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.40234375,
+          0.49365234375
+        ],
+        "mean": 0.4482421875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.2451171875,
+      "screen_eligible": true
+    },
+    "simple--strict-49-64--gain-100": {
+      "candidate": {
+        "candidate_id": "simple--strict-49-64--gain-100",
+        "complexity": 1,
+        "gain": 1.0,
+        "kind": "gain-100",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.853021240234375,
+              0.9277404785156254
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0146484375,
+              0.05224609375
+            ],
+            "mean": 0.01953125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.05419921875,
+          "direction_b_mean": 0.05419921875,
+          "fraction_pairs_positive": 0.59375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.7099609375,
+              0.79150390625
+            ],
+            "mean": 0.7509765625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.8173828125,
+          "direction_b_mean": 0.779296875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.43603515625,
+              0.5185607910156254
+            ],
+            "mean": 0.4775390625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.544921875,
+          "direction_b_mean": 0.49462890625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.16162109375,
+              0.22608032226562536
+            ],
+            "mean": 0.193359375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.2412109375,
+          "direction_b_mean": 0.2177734375,
+          "fraction_pairs_positive": 0.9375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.1025390625,
+          0.18603515625
+        ],
+        "mean": 0.1435546875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.01953125,
+      "screen_eligible": false
+    },
+    "simple--strict-49-64--gain-200": {
+      "candidate": {
+        "candidate_id": "simple--strict-49-64--gain-200",
+        "complexity": 1,
+        "gain": 2.0,
+        "kind": "gain-200",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.853509521484375,
+              0.92724609375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0771484375,
+              -0.0234375
+            ],
+            "mean": -0.0498046875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": -0.01220703125,
+          "direction_b_mean": -0.00634765625,
+          "fraction_pairs_positive": 0.265625,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.63671875,
+              0.72119140625
+            ],
+            "mean": 0.67919921875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.74658203125,
+          "direction_b_mean": 0.7158203125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.303704833984375,
+              0.37548828125
+            ],
+            "mean": 0.3388671875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.40380859375,
+          "direction_b_mean": 0.3671875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.02099609375,
+              0.0771484375
+            ],
+            "mean": 0.048828125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.099609375,
+          "direction_b_mean": 0.08154296875,
+          "fraction_pairs_positive": 0.625,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.044921875,
+          0.041015625
+        ],
+        "mean": -0.0009765625,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0498046875,
+      "screen_eligible": false
+    },
+    "simple--strict-49-64--gain-400": {
+      "candidate": {
+        "candidate_id": "simple--strict-49-64--gain-400",
+        "complexity": 1,
+        "gain": 4.0,
+        "kind": "gain-400",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85400390625,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.07275390625,
+              0.00048828125
+            ],
+            "mean": -0.0361328125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.01513671875,
+          "direction_b_mean": 0.00537109375,
+          "fraction_pairs_positive": 0.3125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.672845458984375,
+              0.75927734375
+            ],
+            "mean": 0.71728515625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.77392578125,
+          "direction_b_mean": 0.75244140625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.34716796875,
+              0.43017578125
+            ],
+            "mean": 0.3896484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.44873046875,
+          "direction_b_mean": 0.408203125,
+          "fraction_pairs_positive": 0.984375,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.052728271484375006,
+              0.12109375
+            ],
+            "mean": 0.08642578125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.1328125,
+          "direction_b_mean": 0.1171875,
+          "fraction_pairs_positive": 0.75,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          -0.009771728515624994,
+          0.083984375
+        ],
+        "mean": 0.03662109375,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.0361328125,
+      "screen_eligible": false
+    },
+    "simple--strict-49-64--gauge-norm": {
+      "candidate": {
+        "candidate_id": "simple--strict-49-64--gauge-norm",
+        "complexity": 2,
+        "kind": "gauge-norm",
+        "mechanism_class": "simple",
+        "norm_target": 28.75956566456363,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8525390625,
+              0.9287109375
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.041021728515624994,
+              0.0283203125
+            ],
+            "mean": -0.00634765625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.02001953125,
+          "direction_b_mean": 0.04833984375,
+          "fraction_pairs_positive": 0.453125,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.69384765625,
+              0.78515625
+            ],
+            "mean": 0.74169921875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.79541015625,
+          "direction_b_mean": 0.771484375,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.41162109375,
+              0.494140625
+            ],
+            "mean": 0.4521484375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.5146484375,
+          "direction_b_mean": 0.47705078125,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.11962890625,
+              0.1767578125
+            ],
+            "mean": 0.14794921875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.2021484375,
+          "direction_b_mean": 0.173828125,
+          "fraction_pairs_positive": 0.921875,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.056146240234375006,
+          0.140625
+        ],
+        "mean": 0.09814453125,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": -0.00634765625,
+      "screen_eligible": false
+    },
+    "simple--strict-49-64--identity": {
+      "candidate": {
+        "candidate_id": "simple--strict-49-64--identity",
+        "complexity": 0,
+        "kind": "identity",
+        "mechanism_class": "simple",
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "tier": "strict",
+        "window_id": "strict-49-64"
+      },
+      "checkpoints": {
+        "1": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.85205078125,
+              0.92822265625
+            ],
+            "mean": 0.8935546875,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.9306640625,
+          "direction_b_mean": 0.916015625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "16": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.0146484375,
+              0.052734375
+            ],
+            "mean": 0.01953125,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.05419921875,
+          "direction_b_mean": 0.05419921875,
+          "fraction_pairs_positive": 0.59375,
+          "survival_mean": 1.0
+        },
+        "2": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.71044921875,
+              0.79150390625
+            ],
+            "mean": 0.7509765625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.8173828125,
+          "direction_b_mean": 0.779296875,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "4": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.43603515625,
+              0.51806640625
+            ],
+            "mean": 0.4775390625,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.544921875,
+          "direction_b_mean": 0.49462890625,
+          "fraction_pairs_positive": 1.0,
+          "survival_mean": 1.0
+        },
+        "8": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.1611328125,
+              0.2265625
+            ],
+            "mean": 0.193359375,
+            "n_pairs": 64
+          },
+          "direction_a_mean": 0.2412109375,
+          "direction_b_mean": 0.2177734375,
+          "fraction_pairs_positive": 0.9375,
+          "survival_mean": 1.0
+        }
+      },
+      "generation8_no_rewrite_advantage": {
+        "alpha": 0.025,
+        "ci": [
+          0.103021240234375,
+          0.185546875
+        ],
+        "mean": 0.1435546875,
+        "n_pairs": 64
+      },
+      "minimum_checkpoint_crossover": 0.01953125,
+      "screen_eligible": false
+    }
+  },
+  "design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "scientific_gate_applied": true,
+  "selected_candidate_ids": [
+    "simple--strict-49-64--gain-050"
+  ],
+  "selected_overlap_candidate_id": "learned--overlap-17-48--diagonal-ridge",
+  "state": "complete"
+}

@@ -1,0 +1,221 @@
+{
+  "created_at_unix": 1787399502.474652,
+  "format": "codex-ch5-phir-px7-registration-v1",
+  "model_contract_sha256": "0d14920f45f831c3825ee36a73537cfbc067cafe9042088ae9a123d82900bd95",
+  "model_sha256": "59750718efcea3492a6d9b4493e9dc379eb221150025681acd38651d623cd430",
+  "protocol": {
+    "axes": {
+      "resilience": {
+        "acquisition_limit": 60,
+        "arms": [
+          "RENEWAL_UP",
+          "RENEWAL_DOWN",
+          "RANDOM",
+          "NOOP"
+        ],
+        "endpoint": "run3 within F8 from identical post-break daughter",
+        "horizon": 8,
+        "minimum_eligible_matrices": 20
+      },
+      "resistance": {
+        "arms": [
+          "BREAK_UP",
+          "BREAK_DOWN",
+          "RANDOM",
+          "NOOP"
+        ],
+        "endpoint": "complete F6 with no strict break",
+        "horizon": 6
+      }
+    },
+    "cohort": {
+      "branches": 64,
+      "candidates": [
+        "02",
+        "03"
+      ],
+      "halves": {
+        "A": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "B": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63
+        ]
+      },
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 24
+    },
+    "format": "codex-ch5-phir-px7-axis-gauge-v1",
+    "formulations": {
+      "atom_subset_selection": false,
+      "clocks": [
+        "molecular",
+        "generational"
+      ],
+      "count": 18,
+      "eligible": [
+        "molecular__self__revised",
+        "molecular__self__typeset",
+        "molecular__self__ratio",
+        "molecular__past__revised",
+        "molecular__past__typeset",
+        "molecular__past__ratio",
+        "molecular__beta__revised",
+        "molecular__beta__typeset",
+        "molecular__beta__ratio",
+        "generational__self__revised",
+        "generational__self__typeset",
+        "generational__self__ratio",
+        "generational__past__revised",
+        "generational__past__typeset",
+        "generational__past__ratio",
+        "generational__beta__revised",
+        "generational__beta__typeset",
+        "generational__beta__ratio"
+      ],
+      "functionals": [
+        "revised",
+        "typeset",
+        "ratio"
+      ],
+      "partitions": [
+        "self",
+        "past",
+        "beta"
+      ],
+      "source_half_prefix_support": 16,
+      "source_target_orientation": "past/source to future/target"
+    },
+    "frozen_students": {
+      "archive_sha256": "59750718efcea3492a6d9b4493e9dc379eb221150025681acd38651d623cd430",
+      "contract_sha256": "0d14920f45f831c3825ee36a73537cfbc067cafe9042088ae9a123d82900bd95",
+      "refit_or_recalibration": false
+    },
+    "inference": {
+      "bootstrap_draws": 4096,
+      "formulation_max_t": true,
+      "minimum_finite_fraction": 0.9,
+      "outcome_equivalence_margin": 0.025,
+      "outcome_holm": true,
+      "randomization_draws": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "operational": {
+      "complete_replay": true,
+      "cpu_hours_max": 30.0,
+      "detached_science": true,
+      "matrix_checkpointing": true,
+      "minimum_free_disk_bytes": 1500000000,
+      "workers_max": 8
+    },
+    "protocol_id": "0aea794ecd81279cb61cc3b80342d1c67e5c4d18c7c0d049325cb818f953de99",
+    "randomness": {
+      "arm_in_future_seed": false,
+      "common_random_streams": true,
+      "random_action_separate": true,
+      "replacement": false,
+      "seed_domains": {
+        "acquisition": "4a45f7afd5f3ce4dd1ab3358b2f6b14337a4c7bd93ec5f53093339a327c57c68",
+        "bootstrap": "527970bd92076162e6a6a81287a1adc7e113d412a8a575a5283d3c32667eb5ad",
+        "future": "7ff1de51483630a450647e43be7c70ac3ecedfa9d87bd285390925574042a755",
+        "initial": "7788692a60cb541684fdc0ae428dc17f05cc54629d3f92ecbb00db838bb3b633",
+        "main_path": "3f6c2e0c9eac64fe82f21930fac696cfe6ff604f690ba8ff93e8d620660af5cb",
+        "matrix": "b19a544aa72b5a42289230715e5ab78e738e3228a5113fa34ccad6ca57999606",
+        "random_action": "b05e8ea110846f69381affe1547fd1c0ee179881320da9f97670a4071cb63088",
+        "randomization": "89e683c5f01e6fc3c4f4b8c0f99f27454c4290b482c2d4c7921f6416340cf727",
+        "replay": "9103544bd61ece2535952dbb65a2027668d1cc20782460adef2f4ad3bd0542e6",
+        "selection": "9b223c1accfd338c8b9b35e653c1084d8c80d7b36c18fe0248a69990230119d2",
+        "smoke": "162d8256e38edb1f0ebd6f3797b9d4fe52b27012703ad7bbfc879ca5763b5d44",
+        "validation": "4996da15d896118b4a70655512b46988e5b787d03627d73a3d3c2822e28d8a75"
+      }
+    },
+    "strict_eight_excluded": true,
+    "target": "prospective Phi-r gauge of resistance and resilience"
+  },
+  "registration_id": "6cc8bc263d1f6cebc4025fa6706170010614b9b78571c854d1e1b3007ddf3893",
+  "scientific_matrices_generated_at_registration": 0,
+  "scientific_outcomes_generated_at_registration": 0,
+  "source_hashes": {
+    "CODEX_CH5_PHIR_PX7_PREREGISTRATION.md": "8d377644825a8dc144e46a15531555f470fbc23c84b3a8e676969003f8e27c14",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr5.py": "f28488a2d0f7e742f12f6636696ea02e81a4bbb1e9f1f25d88760a86aac44050",
+    "plastic_heredity/phir_extension_px7.py": "cd1845d6d9d9e776a0ab9422c01e9df27502bb327462c4fff32477f0bafa6c7d",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "348ccf3e51a9839b3aa5d3d5f60a4559abdffd9737d596077982e63300ac1310",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5",
+    "tests/test_phir_extension_px7.py": "c5303fbf75b62f17312a23bb3cbc698dae28bca7c23e418545a48dbf985bec78"
+  },
+  "validation_sha256": "b64935d986be79ab7e1cdda7cb6fce25d3ecfcd5911b5e4a5909aeeb58b0cc59"
+}

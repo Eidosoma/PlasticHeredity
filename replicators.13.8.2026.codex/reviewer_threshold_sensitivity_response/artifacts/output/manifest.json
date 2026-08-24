@@ -1,0 +1,13 @@
+{
+  "cr1_only": true,
+  "f12_definitions": 60,
+  "f32_definitions": 27,
+  "format": "threshold-sensitivity-appendix-v1",
+  "models_refit_or_recalibrated": false,
+  "protocol_id": "9878c6ae11f95ac4b79105cd98b08fec39d2d243a4ce047293d118c131516d8c",
+  "runtime": {
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12"
+  },
+  "source_files_modified": false
+}

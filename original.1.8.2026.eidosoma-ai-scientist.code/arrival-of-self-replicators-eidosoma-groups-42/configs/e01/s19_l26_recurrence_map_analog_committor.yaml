@@ -1,0 +1,63 @@
+schema: eidosoma.e01.s19_l26.preregistration.v1
+research_step_id: S19-L26
+versioned_id: E01-S19-L26-RECURRENCE-MAP-ANALOG-COMMITTOR-v1.0.0
+title: Online Recurrence-Map Analog Committor Before Attractor Entry
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does the complete past-only recurrence geometry of a 64-observation window
+  support an analogue estimate of near-term attractor-entry probability beyond
+  exact-H traces, ordinary organization paths, and elapsed time?
+input:
+  cohort: frozen L23 400-shared-matrix cohort
+  matrix_firewall: exact frozen L24 200-development/200-validation split
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+task:
+  landmarks: [64, 96, 128, 160, 192]
+  event_horizon: 32
+  at_risk: no first onset before landmark
+  input_window: previous 64 observations only
+  statistical_unit: catalytic matrix
+representations:
+  primary: all nonadjacent pairwise cosine similarities in the past window
+  exact_h_control: five frozen H-derived organization-channel traces
+  ordinary_control: six frozen non-H organization-channel traces
+  normalization: development-only per-coordinate standardization
+analogue:
+  neighbors: 15
+  weighting: uniform
+  library: development rows at the same landmark
+  candidate_identity_used: false
+  tie_rule: distance then candidate ID then matrix index
+validation:
+  candidate_separate: true
+  matrix_bootstraps: 4096
+  development_label_permutations: 512
+  validation_label_permutations: 512
+  suffix_invariance: true
+  temporal_reversal_control: true
+success:
+  auroc_minimum_each_candidate: 0.60
+  bootstrap_lower_above_chance: true
+  incremental_over_exact_h_and_ordinary: true
+  auprc_above_prevalence: true
+  brier_below_landmark_prior: true
+  familywise_permutation_p_maximum: 0.05
+  directionally_agreeing_landmarks_minimum: 4
+  requires_untouched_confirmation: true
+interpretation:
+  target_is_completed_run_retrospective: true
+  predictors_are_suffix_invariant: true
+  prospective_confirmation_claim_permitted: false
+prohibited:
+  - new_simulation
+  - target_change
+  - landmark_horizon_or_neighbor_search
+  - validation_guided_change
+  - candidate_pooling_to_rescue_failure
+  - intervention
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75

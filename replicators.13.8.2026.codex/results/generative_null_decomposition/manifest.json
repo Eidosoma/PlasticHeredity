@@ -1,0 +1,31 @@
+{
+  "exact_replay": true,
+  "format": "codex-generative-null-result-v1",
+  "mandatory_stop": true,
+  "matrices": 96,
+  "maximum_replay_fission_boundaries": 12288000,
+  "maximum_scientific_fission_boundaries": 12288000,
+  "mechanisms": [
+    "NATURAL_GARD",
+    "HOMOGENEOUS_GENERATIVE",
+    "COUPLING_DERANGED",
+    "FISSION_ONLY_GENERATIVE"
+  ],
+  "no_future_retry_or_matrix_replacement": true,
+  "no_omnibus_gate": true,
+  "nonnoop_intervention_f12_futures": 368640,
+  "noop_intervention_reused_from_f32": true,
+  "registration_id": "89787fae14e42007280588207e2f80d991615bb3a59c5c6206f46388312a7e52",
+  "replayed_state_batches": 3840,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "states": 3840,
+  "untreated_f32_futures": 245760
+}

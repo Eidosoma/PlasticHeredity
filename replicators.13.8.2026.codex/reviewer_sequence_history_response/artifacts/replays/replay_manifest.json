@@ -1,0 +1,38 @@
+{
+  "cohorts": {
+    "codex_headline": {
+      "checkpoints": 80,
+      "cohort": "codex_headline",
+      "confirmation_states": 400,
+      "development_states": 400,
+      "development_trajectories": 80,
+      "pending_completed": 80
+    },
+    "codex_primary": {
+      "checkpoints": 400,
+      "cohort": "codex_primary",
+      "confirmation_states": 2000,
+      "development_states": 2000,
+      "development_trajectories": 400,
+      "pending_completed": 400
+    },
+    "fable_headline": {
+      "checkpoints": 80,
+      "cohort": "fable_headline",
+      "confirmation_states": 400,
+      "development_states": 6956,
+      "development_trajectories": 80,
+      "pending_completed": 80
+    },
+    "fable_primary": {
+      "checkpoints": 2000,
+      "cohort": "fable_primary",
+      "confirmation_states": 2000,
+      "development_states": 175642,
+      "development_trajectories": 2000,
+      "pending_completed": 2000
+    }
+  },
+  "confirmation_futures_generated": false,
+  "protocol_id": "bfeff2ea8e4b6d32c87e04b0887a121f658d3ce34a55315ca9ef125dd47b9913"
+}

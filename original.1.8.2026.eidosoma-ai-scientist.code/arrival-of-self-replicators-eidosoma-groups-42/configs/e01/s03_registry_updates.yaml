@@ -1,0 +1,87 @@
+schema: eidosoma.e01.s03_registry_updates.v1
+researchStepId: S03
+inputRegistryVersion: E01-specification-registry-v0.2.0
+outputRegistryVersion: E01-specification-registry-v0.3.0
+allowedAmbiguityIds:
+  - E01-A001
+  - E01-A002
+  - E01-A003
+  - E01-A004
+  - E01-A043
+  - E01-A044
+updates:
+  - ambiguityId: E01-A001
+    parameter: source.paper.complete_formula_source
+    resolutionStatus: SOURCE_FIXED
+    unresolved: false
+    value: arxiv:2607.28250v1@sha256:77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4
+    sourceEvidence: >-
+      Official arXiv v1 PDF page 7 supplies the missing equations: Phi^r =
+      I(X_t,X_{t+1}) - sum_i I(X_t^i,X_{t+1}), and the centered log-ratio
+      transform X_t = log(X_t/geometric_mean(X)). The 1,117,911-byte PDF
+      matches the attachment manifest's original PDF size and has the pinned SHA-256.
+    resolutionBasis: Immutable equation-bearing arXiv v1 PDF recovered and hash-verified; this fixes the source identity, not unspecified estimator semantics.
+    validationRule: Every use of the paper equations must cite arXiv 2607.28250v1 and verify the pinned PDF SHA-256.
+
+  - ambiguityId: E01-A002
+    parameter: source.author_code.revision
+    resolutionStatus: DEFERRED_EVIDENCE
+    unresolved: true
+    value: UNRESOLVED::E01-A002
+    sourceEvidence: >-
+      The paper states that code will be available upon publication, but arXiv v1
+      has no code link. On 2026-08-01, exact-title/GARD GitHub repository searches
+      returned zero matches and none of the 34 public pigozzif repositories was an
+      identifiable release for this paper.
+    resolutionBasis: No authoritative implementation identity is present in the checked sources; absence is preserved and cannot be replaced with related code.
+    validationRule: Reject any author-code claim unless a later versioned registry update supplies an authenticated immutable release identity.
+
+  - ambiguityId: E01-A003
+    parameter: source.gard_historical.revision
+    resolutionStatus: SOURCE_FIXED
+    unresolved: false
+    value: git:https://github.com/ModelingOriginsofLife/GARD.git@86dff6320d5ae91b4e831471079ff46749b14df9
+    sourceEvidence: >-
+      The FULL_PLAN-named historical repository was fetched and verified at commit
+      86dff6320d5ae91b4e831471079ff46749b14df9, tree
+      a602fc99b494982c04c60405bc6422af9db5a77a; required MATLAB file hashes are
+      recorded in the S03 source manifest.
+    resolutionBasis: The sole historical repository commit is immutable, locally fsck-valid, remotely ref-verifiable, and archived by tree.
+    validationRule: Historical-reference work must reject any checkout whose commit, tree, or required-file hashes differ from the S03 source manifest.
+
+  - ambiguityId: E01-A004
+    parameter: source.phiid_reference.revision
+    resolutionStatus: SOURCE_FIXED
+    unresolved: false
+    value: git:https://github.com/Imperial-MIND-lab/integrated-info-decomp.git@6c5f2e9d33c985efbdf875d45cb5a2a6a5cdbf44
+    sourceEvidence: >-
+      The authoritative phyid repository was fetched and verified at commit
+      6c5f2e9d33c985efbdf875d45cb5a2a6a5cdbf44, tree
+      fdfe5a21190062b9dda7c8831f72438d8ff5ea95; implementation and license file
+      hashes are recorded in the S03 source manifest.
+    resolutionBasis: Immutable reference implementation commit and tree are now frozen without selecting an undocumented PhiID method branch.
+    validationRule: PhiID reference comparisons must use this commit or a separately versioned registry revision with an explicit source delta.
+
+  - ambiguityId: E01-A043
+    parameter: phi.atom.identity_and_formula
+    resolutionStatus: DEFERRED_EVIDENCE
+    unresolved: true
+    value: UNRESOLVED::E01-A043
+    sourceEvidence: >-
+      arXiv v1 page 7 recovers the scalar Phi^r formula, but names no phyid atom
+      key. Pinned phyid returns 16 keys (rtr through sts) and defines no named
+      Phi^r aggregate matching the paper's expression.
+    resolutionBasis: The formula-source gap is closed, but the author-to-reference atom/aggregate mapping remains absent; no guessed mapping is admissible.
+    validationRule: Reject Phi^r estimation until a versioned specification supplies an author-supported key/aggregate mapping or explicitly frozen sensitivity branches.
+
+  - ambiguityId: E01-A044
+    parameter: phi.redundancy.function
+    resolutionStatus: DEFERRED_EVIDENCE
+    unresolved: true
+    value: UNRESOLVED::E01-A044
+    sourceEvidence: >-
+      Pinned phyid supports MMI and CCS and its function signature defaults to MMI;
+      neither arXiv v1 nor an author-code release states which redundancy function
+      generated the paper results.
+    resolutionBasis: A library default is not source evidence of the authors' choice; both supported functions remain candidate branches.
+    validationRule: Reject an unqualified redundancy choice; any later MMI/CCS branches must receive distinct immutable specification IDs.

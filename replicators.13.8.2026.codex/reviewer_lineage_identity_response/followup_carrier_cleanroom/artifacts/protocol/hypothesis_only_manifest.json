@@ -1,0 +1,91 @@
+{
+  "classification": "hypothesis_only_non_evidentiary",
+  "entries": {
+    "carrier_calibration_report": {
+      "bytes": 15179,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-lineage-carrier-v1/carrier-calibration/report.md",
+      "sha256": "8a9f15a7e0c7243806e38c3f478d40e70e219a807b202900d522b787f90556b9"
+    },
+    "carrier_campaign_registration": {
+      "bytes": 637,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-lineage-carrier-v1/campaign-registration.json",
+      "sha256": "e894076cd4b1690b881f27a8499cef19d665c3f0328a39b2798a8023baaa3f86"
+    },
+    "carrier_discovery_report": {
+      "bytes": 4360,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-lineage-carrier-v1/discovery/report.md",
+      "sha256": "f4293281204de6bff4e5bbdedcc5cd1636d315f91b300757c9bc8039c825df85"
+    },
+    "carrier_protocol": {
+      "bytes": 9055,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/WAGNER_LINEAGE_CARRIER_V1_PROTOCOL.md",
+      "sha256": "4fed0b0bc77ccd6f0ba5214ce4b4d76e5272a1cb6069a568b76a689452ad5c18"
+    },
+    "carrier_selection": {
+      "bytes": 357,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-lineage-carrier-v1/carrier-selection.json",
+      "sha256": "a71c8097f9b1d720462816953e65b5dbf4eab36c01d4585b38f88fb10b7feba3"
+    },
+    "gard_mirror_registry": {
+      "bytes": 10445884,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-heredity-v1/gard-mirror/calibration-registry.json",
+      "sha256": "9d2cdf1a68e9712c75e17453e16838846a49f439f55e88a77a2b8372e97c5731"
+    },
+    "gre_readme": {
+      "bytes": 13520,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/README.md",
+      "sha256": "337746c2aba7f1483383953d76d14ca8d123929a34bc1d5a8cf6832d875ec894"
+    },
+    "heredity_confirmation_report": {
+      "bytes": 1332,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-heredity-v1/confirmation/report.md",
+      "sha256": "5c739612dedc9e43cdbd78ded9a7bc8c07221f49f00973d3b5cbaf52ad116a77"
+    },
+    "heredity_preregistration": {
+      "bytes": 6224,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/WAGNER_HEREDITY_EXPERIMENT_PREREGISTRATION.md",
+      "sha256": "f24007984c9a367fed317910f9e9082c6a7c83b9a72bab400290d7101e411136"
+    },
+    "heredity_report": {
+      "bytes": 667,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-heredity-v1/report.md",
+      "sha256": "c56ed336322328a5f385486e5137bbfab44614e514dd11609594881d54659e6b"
+    },
+    "induction_candidate": {
+      "bytes": 5215,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-induction-rescue-v1/candidate.json",
+      "sha256": "e4e641f33cec71223d74f0b5ca514756d82f22ec59a5af84b1e23a163abd2301"
+    },
+    "induction_report": {
+      "bytes": 487,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-induction-rescue-v1/report.md",
+      "sha256": "6997ad28370b6a097f8fa8dc684be13096fe63ffc603b00940a54194345cf799"
+    },
+    "induction_rescue_protocol": {
+      "bytes": 5604,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/WAGNER_INDUCTION_RESCUE_PROTOCOL.md",
+      "sha256": "2511d2214f7716ad05a60d0bf9fa8d37f4598619da3cd1f93e3a8b2756d6d90f"
+    },
+    "induction_validation_report": {
+      "bytes": 987,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-induction-rescue-v1/validation/report.md",
+      "sha256": "861083b71c8395c370f82c8b369338a0fcac76b0b39220d73d9edbbc3e845acf"
+    },
+    "local_ph_protocol": {
+      "bytes": 5155,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/WAGNER_LOCAL_PH_V1_PROTOCOL.md",
+      "sha256": "24e25bbeb11a0f2658b75dc4d9cb6fca183df8df283e6906bef583ec8b530dfb"
+    },
+    "plastic_memory_preregistration": {
+      "bytes": 9964,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/PLASTIC_MEMORY_EXPERIMENT_PREREGISTRATION.md",
+      "sha256": "b7d6b0f63315678307a1dff5cbc3e4c283a9cc78eda0126497d2952eccca1a7e"
+    },
+    "slow_mark_report": {
+      "bytes": 1791,
+      "path": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/gre-ideas/runs/wagner-heredity-v1/mark-discovery/report.md",
+      "sha256": "1fd1e402c90f4688ef3f65fe3059b4bf9341e4d9125d41dba40224d2014e178f"
+    }
+  },
+  "manifest_id": "cb23bb58e1edc1e1fa894a9aeba654ad2686ab74cd7978e123815012f69551a9"
+}

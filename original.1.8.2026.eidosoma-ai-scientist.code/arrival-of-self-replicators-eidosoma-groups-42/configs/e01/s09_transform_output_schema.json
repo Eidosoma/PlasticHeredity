@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eidosoma.local/e01/s09/transform-output-schema-v1.0.0.json",
+  "title": "E01 S09 lossless compositional transform output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["serializationVersion", "payloadSha256", "payload"],
+  "properties": {
+    "serializationVersion": {"const": "E01-canonical-json-v1.0.0"},
+    "payloadSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "payload": {"$ref": "#/$defs/payload"}
+  },
+  "$defs": {
+    "hexFloat": {
+      "type": "string",
+      "pattern": "^-?0x[0-9a-f]+(?:\\.[0-9a-f]+)?p[+-][0-9]+$"
+    },
+    "stringOrNull": {"type": ["string", "null"]},
+    "hexArrayOrNull": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/hexFloat"}}
+      ]
+    },
+    "hexMatrixOrNull": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"$ref": "#/$defs/hexFloat"}
+          }
+        }
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema", "researchStepId", "contractVersion", "preregistrationSha256",
+        "registryBoundary", "fixtures", "zeroSpecifications",
+        "coordinateSpecifications", "completeSpecifications",
+        "principalLogRatioBases", "records"
+      ],
+      "properties": {
+        "schema": {"const": "eidosoma.e01.s09_transform_payload.v1"},
+        "researchStepId": {"const": "S09"},
+        "contractVersion": {"const": "E01-S09-compositional-transform-contract-v1.0.0"},
+        "preregistrationSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "registryBoundary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "registryVersion", "registrySha256", "executable", "noSilentDefaults",
+            "unresolvedParameterCount", "unexpandedBranchSetCount"
+          ],
+          "properties": {
+            "registryVersion": {"type": "string"},
+            "registrySha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "executable": {"const": false},
+            "noSilentDefaults": {"const": true},
+            "unresolvedParameterCount": {"type": "integer", "minimum": 0},
+            "unexpandedBranchSetCount": {"type": "integer", "minimum": 0}
+          }
+        },
+        "fixtures": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["fixtureId", "dimension", "observationCount", "stateSha256"],
+            "properties": {
+              "fixtureId": {"type": "string"},
+              "dimension": {"type": "integer", "minimum": 2},
+              "observationCount": {"type": "integer", "minimum": 1},
+              "stateSha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+            }
+          }
+        },
+        "zeroSpecifications": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["specificationId", "method", "deltaHex", "evidenceClass"],
+            "properties": {
+              "specificationId": {"type": "string"},
+              "method": {"enum": ["additive_pseudocount", "multiplicative_replacement", "none"]},
+              "deltaHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+              "evidenceClass": {"type": "string"}
+            }
+          }
+        },
+        "coordinateSpecifications": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "specificationId", "family", "dimension", "droppedComponentOneBased",
+              "basisFitScopeId", "evidenceClass"
+            ],
+            "properties": {
+              "specificationId": {"type": "string"},
+              "family": {
+                "enum": ["full_clr", "dropped_clr", "ilr_helmert", "raw_proportions", "hellinger", "principal_log_ratio"]
+              },
+              "dimension": {"type": "integer", "minimum": 2},
+              "droppedComponentOneBased": {"type": ["integer", "null"], "minimum": 1},
+              "basisFitScopeId": {"type": ["string", "null"]},
+              "evidenceClass": {"type": "string"}
+            }
+          }
+        },
+        "completeSpecifications": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "completeSpecificationId", "zeroSpecificationId",
+              "coordinateSpecificationId", "dimension", "basisFitScopeId",
+              "basisId", "evidenceClass"
+            ],
+            "properties": {
+              "completeSpecificationId": {"type": "string"},
+              "zeroSpecificationId": {"type": "string"},
+              "coordinateSpecificationId": {"type": "string"},
+              "dimension": {"type": "integer", "minimum": 2},
+              "basisFitScopeId": {"type": ["string", "null"]},
+              "basisId": {"type": ["string", "null"]},
+              "evidenceClass": {"type": "string"}
+            }
+          }
+        },
+        "principalLogRatioBases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "basisId", "scopeId", "zeroSpecificationId", "dimension",
+              "status", "eligibleFitRowCount", "basisHex", "eigenvaluesHex",
+              "gramMaximumAbsoluteErrorHex", "onesOrthogonalityMaximumAbsoluteErrorHex",
+              "eigenvalueNearTieToleranceHex", "adjacentEigenvalueNearTieCount"
+            ],
+            "properties": {
+              "basisId": {"type": "string"},
+              "scopeId": {"type": "string"},
+              "zeroSpecificationId": {"type": "string"},
+              "dimension": {"type": "integer", "minimum": 2},
+              "status": {"enum": ["FIT", "INSUFFICIENT_ROWS_TO_FIT"]},
+              "eligibleFitRowCount": {"type": "integer", "minimum": 0},
+              "basisHex": {"$ref": "#/$defs/hexMatrixOrNull"},
+              "eigenvaluesHex": {"$ref": "#/$defs/hexArrayOrNull"},
+              "gramMaximumAbsoluteErrorHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+              "onesOrthogonalityMaximumAbsoluteErrorHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+              "eigenvalueNearTieToleranceHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+              "adjacentEigenvalueNearTieCount": {"type": ["integer", "null"], "minimum": 0}
+            }
+          }
+        },
+        "records": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/record"}
+        }
+      }
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fixtureId", "observationId", "observationIndexOneBased", "completeSpecificationId",
+        "zeroSpecificationId", "coordinateSpecificationId", "status", "reason",
+        "inputStateHex", "inputMassHex", "zeroCount", "treatedCompositionHex",
+        "replacementMassPerZeroHex", "coordinatesHex", "reconstructedCompositionHex",
+        "maximumAbsoluteInverseErrorHex", "maximumRelativeInverseErrorHex", "closureErrorHex"
+      ],
+      "properties": {
+        "fixtureId": {"type": "string"},
+        "observationId": {"type": "string"},
+        "observationIndexOneBased": {"type": "integer", "minimum": 1},
+        "completeSpecificationId": {"type": "string"},
+        "zeroSpecificationId": {"type": "string"},
+        "coordinateSpecificationId": {"type": "string"},
+        "status": {"enum": ["ELIGIBLE", "INELIGIBLE"]},
+        "reason": {"$ref": "#/$defs/stringOrNull"},
+        "inputStateHex": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/hexFloat"}},
+        "inputMassHex": {"$ref": "#/$defs/hexFloat"},
+        "zeroCount": {"type": "integer", "minimum": 0},
+        "treatedCompositionHex": {"$ref": "#/$defs/hexArrayOrNull"},
+        "replacementMassPerZeroHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+        "coordinatesHex": {"$ref": "#/$defs/hexArrayOrNull"},
+        "reconstructedCompositionHex": {"$ref": "#/$defs/hexArrayOrNull"},
+        "maximumAbsoluteInverseErrorHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+        "maximumRelativeInverseErrorHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]},
+        "closureErrorHex": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hexFloat"}]}
+      }
+    }
+  }
+}

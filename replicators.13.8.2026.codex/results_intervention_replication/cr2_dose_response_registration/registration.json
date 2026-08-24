@@ -1,0 +1,39 @@
+{
+  "cr1_effect_sizes_used_for_design": false,
+  "cr1_gate_used_only_for_phase_advancement": true,
+  "cr1_registration_id": "a8743234235e82133d2938c15ead062c7c85004c5f640d7359e5b075cb31368e",
+  "cr1_result_checksum_manifest_sha256": "a76ac941b976ffbc64831ae888fd140fa6d34c9cd2a5a3fa797945873bebb939",
+  "cr1_state_artifact_sha256": "9e9e935b20609c66bf13ba61dae35cbaec1ebb13991330ae9308f9e4557c246b",
+  "format": "codex-intervention-cr2-dose-response-registration-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "protocol_id": "8399e6d8b4ae8401a97010662492ce4eb300b23f173b4860265c876a88d9aa80",
+  "registration_id": "9d5c1f3deddb1c4b09276f74b208f3e8a15ac5ca421171d69b3c39ac2d4cb6a0",
+  "scientific_cr2_futures_at_registration": 0,
+  "scientific_cr2_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "694d38132d9aae6cae7764fb5cad94499b433e6c774a78743c9fc0b67a3d39fc",
+    "future": "c5a41f10a4f1e38d440d2479d09d37c1b5bb4e68a4a7d8e6960ff8f9b0c4d457",
+    "randomization": "e247e9058740c4d7ce2a323e6f9051a969a3c5c7076c07ebef00f11fe4774439",
+    "replay": "fd5ef2b0f1da5ae604a6d2669dcd1649822f5f2668a584b56bcc624bf4cf0339",
+    "selection_audit": "c534551bcc65e5ba42262da56faa20b6d8758ed5e306a4a006f3ac6cfb4c0306",
+    "smoke_cohort": "0d3dd170d4ea7d2383c0ac28217e6ad92f6da350f5c874c2e8456565a385ae92",
+    "smoke_future": "4d6a00c8c6b30cf09ad36d574aebb2cdbcecc6d0f0bf7dc52737403dd0268208",
+    "validation": "f3d30fa73b2405d17e582eafb8fcb98f826d4cd373d1dff40575ac5eb7628452"
+  },
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR2_DOSE_RESPONSE_PREREGISTRATION.md": "a32a4186a2e48ebc127bfae4b5dcd7cf07e1c8c9b0cd8c53fff339a2ec65191e",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr1_confirmation.py": "1e8f002e8796ee9002d5859fb40a87a875e3ca345a02a8e1c281133dfff8c205",
+    "plastic_heredity/intervention_cr2_dose_response.py": "f95345de69c0a7a45c0b5a91a578fda63667ec3ff8533c4a68d84dda352f2b51",
+    "plastic_heredity/intervention_metrics.py": "037c36dd20547dd54b0638f99fb4e520e2f64d17b8fc2799331076a9ddb4eb54",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_intervention_cr2_dose_response.py": "64f52527c0577a4c78eaf4054e4fc5166446552fd5a9f9f292152971348e6e9c"
+  },
+  "validation_checksum_manifest_sha256": "30ca81e6faffa060bed8a683a553022f1a4868fa51c86a0ba9cb8bf0b6b10144"
+}

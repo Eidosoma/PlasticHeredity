@@ -1,0 +1,29 @@
+{
+  "allowed_kinds": [
+    "JSON data",
+    "Markdown prose"
+  ],
+  "code_access": "none",
+  "files": [
+    "CA_MOTIF_LINEAGE_STAGE3R_PROTOCOL.md",
+    "CA_MOTIF_LINEAGE_STAGE3_PROTOCOL.md",
+    "results/ca-motif-lineage-stage-3/COHORTS.json",
+    "results/ca-motif-lineage-stage-3/DESIGN.json",
+    "results/ca-motif-lineage-stage-3/REPORT.md",
+    "results/ca-motif-lineage-stage-3/RESULTS.json",
+    "results/ca-motif-lineage-stage-3/STAGE_DECISION.json",
+    "results/ca-motif-lineage-stage-3r/COHORTS.json",
+    "results/ca-motif-lineage-stage-3r/CONFIRMATION_DESIGN.json",
+    "results/ca-motif-lineage-stage-3r/DESIGN.json",
+    "results/ca-motif-lineage-stage-3r/DIAGNOSTIC.json",
+    "results/ca-motif-lineage-stage-3r/FIT_AUDIT.json",
+    "results/ca-motif-lineage-stage-3r/LAY_SUMMARY.md",
+    "results/ca-motif-lineage-stage-3r/QUALIFICATION.json",
+    "results/ca-motif-lineage-stage-3r/REPAIR_MODELS.json",
+    "results/ca-motif-lineage-stage-3r/REPORT.md",
+    "results/ca-motif-lineage-stage-3r/RESULTS.json",
+    "results/ca-motif-lineage-stage-3r/SCREEN.json",
+    "results/ca-motif-lineage-stage-3r/SELECTION_DECISION.json",
+    "results/ca-motif-lineage-stage-3r/STAGE_DECISION.json"
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "bootstrap_repetitions": 4096,
+  "cells": [
+    {
+      "arm_means": {
+        "BALANCED_LOG_RANDOM": 0.9342489919354839,
+        "LOOSEN": 0.9021001344086022,
+        "NOOP": 0.9261424731182796,
+        "THROUGHPUT_NEUTRAL_RANDOM": 0.8886004704301077,
+        "TIGHTEN": 0.9469674059139785
+      },
+      "branch_half": "A",
+      "candidate": "02",
+      "cell": "c02_A",
+      "eligible_matrices": 124,
+      "eligible_states": 387,
+      "strength_cell_pass": true,
+      "strength_gates": {
+        "bootstrap_lower_positive": true,
+        "estimate_positive": true,
+        "holm_p_below_0_05": true,
+        "throughput_slope_lower_positive": true,
+        "throughput_slope_positive": true
+      },
+      "strength_tighten_minus_loosen": {
+        "bootstrap_ci95": [
+          0.032530031922043005,
+          0.05785870295698924
+        ],
+        "estimate": 0.044867271505376345,
+        "matrices_positive": 75,
+        "matrices_zero": 38,
+        "randomization_p_holm": 0.000976324139614352,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "throughput_recovery_association": {
+        "informative_state_correlations": 338,
+        "matrices_with_defined_rank_mean": 107,
+        "mean_within_state_spearman": 0.24185801454552008,
+        "slope_bootstrap_ci95": [
+          0.059122643654346996,
+          0.09596272177669743
+        ],
+        "spearman_bootstrap_ci95": [
+          0.17191971992967714,
+          0.31158318220770476
+        ],
+        "state_centered_slope": 0.07731835147097384,
+        "total_states": 387
+      },
+      "topology_minus_noop": {
+        "bootstrap_ci90": [
+          -0.04757644489247311,
+          -0.027652469758064516
+        ],
+        "bootstrap_ci95": [
+          -0.049437163978494625,
+          -0.02573399697580645
+        ],
+        "ci95_excludes_zero": true,
+        "equivalent_margin_0_025": false,
+        "estimate": -0.03754200268817204,
+        "randomization_p_holm_two_sided": 0.000976324139614352,
+        "randomization_p_raw_two_sided": 0.000244081034903588
+      }
+    },
+    {
+      "arm_means": {
+        "BALANCED_LOG_RANDOM": 0.9368531586021505,
+        "LOOSEN": 0.9012684811827958,
+        "NOOP": 0.9200940860215054,
+        "THROUGHPUT_NEUTRAL_RANDOM": 0.8845514112903227,
+        "TIGHTEN": 0.9503360215053762
+      },
+      "branch_half": "B",
+      "candidate": "02",
+      "cell": "c02_B",
+      "eligible_matrices": 124,
+      "eligible_states": 387,
+      "strength_cell_pass": true,
+      "strength_gates": {
+        "bootstrap_lower_positive": true,
+        "estimate_positive": true,
+        "holm_p_below_0_05": true,
+        "throughput_slope_lower_positive": true,
+        "throughput_slope_positive": true
+      },
+      "strength_tighten_minus_loosen": {
+        "bootstrap_ci95": [
+          0.03605300739247312,
+          0.06370127688172043
+        ],
+        "estimate": 0.04906754032258064,
+        "matrices_positive": 82,
+        "matrices_zero": 27,
+        "randomization_p_holm": 0.000976324139614352,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "throughput_recovery_association": {
+        "informative_state_correlations": 336,
+        "matrices_with_defined_rank_mean": 112,
+        "mean_within_state_spearman": 0.3007135518017669,
+        "slope_bootstrap_ci95": [
+          0.05957431918411152,
+          0.0985551979082371
+        ],
+        "spearman_bootstrap_ci95": [
+          0.2412531660906945,
+          0.3596399508181458
+        ],
+        "state_centered_slope": 0.078801129442084,
+        "total_states": 387
+      },
+      "topology_minus_noop": {
+        "bootstrap_ci90": [
+          -0.044741263440860206,
+          -0.02670530913978495
+        ],
+        "bootstrap_ci95": [
+          -0.0462859122983871,
+          -0.02468918010752688
+        ],
+        "ci95_excludes_zero": true,
+        "equivalent_margin_0_025": false,
+        "estimate": -0.0355426747311828,
+        "randomization_p_holm_two_sided": 0.000976324139614352,
+        "randomization_p_raw_two_sided": 0.000244081034903588
+      }
+    },
+    {
+      "arm_means": {
+        "BALANCED_LOG_RANDOM": 0.9263666666666667,
+        "LOOSEN": 0.9018916666666668,
+        "NOOP": 0.915325,
+        "THROUGHPUT_NEUTRAL_RANDOM": 0.8890250000000001,
+        "TIGHTEN": 0.9366166666666668
+      },
+      "branch_half": "A",
+      "candidate": "03",
+      "cell": "c03_A",
+      "eligible_matrices": 125,
+      "eligible_states": 418,
+      "strength_cell_pass": true,
+      "strength_gates": {
+        "bootstrap_lower_positive": true,
+        "estimate_positive": true,
+        "holm_p_below_0_05": true,
+        "throughput_slope_lower_positive": true,
+        "throughput_slope_positive": true
+      },
+      "strength_tighten_minus_loosen": {
+        "bootstrap_ci95": [
+          0.022332291666666663,
+          0.047571875
+        ],
+        "estimate": 0.034725,
+        "matrices_positive": 68,
+        "matrices_zero": 37,
+        "randomization_p_holm": 0.000976324139614352,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "throughput_recovery_association": {
+        "informative_state_correlations": 361,
+        "matrices_with_defined_rank_mean": 109,
+        "mean_within_state_spearman": 0.18038539920685892,
+        "slope_bootstrap_ci95": [
+          0.04201097289089097,
+          0.07687778078556531
+        ],
+        "spearman_bootstrap_ci95": [
+          0.11320979072234298,
+          0.24280986727954013
+        ],
+        "state_centered_slope": 0.059309692658622064,
+        "total_states": 418
+      },
+      "topology_minus_noop": {
+        "bootstrap_ci90": [
+          -0.035643749999999995,
+          -0.01730625
+        ],
+        "bootstrap_ci95": [
+          -0.037566666666666665,
+          -0.015533333333333333
+        ],
+        "ci95_excludes_zero": true,
+        "equivalent_margin_0_025": false,
+        "estimate": -0.0263,
+        "randomization_p_holm_two_sided": 0.000976324139614352,
+        "randomization_p_raw_two_sided": 0.000244081034903588
+      }
+    },
+    {
+      "arm_means": {
+        "BALANCED_LOG_RANDOM": 0.9252250000000001,
+        "LOOSEN": 0.90305,
+        "NOOP": 0.9171083333333333,
+        "THROUGHPUT_NEUTRAL_RANDOM": 0.8824583333333332,
+        "TIGHTEN": 0.9367583333333332
+      },
+      "branch_half": "B",
+      "candidate": "03",
+      "cell": "c03_B",
+      "eligible_matrices": 125,
+      "eligible_states": 418,
+      "strength_cell_pass": true,
+      "strength_gates": {
+        "bootstrap_lower_positive": true,
+        "estimate_positive": true,
+        "holm_p_below_0_05": true,
+        "throughput_slope_lower_positive": true,
+        "throughput_slope_positive": true
+      },
+      "strength_tighten_minus_loosen": {
+        "bootstrap_ci95": [
+          0.022192708333333335,
+          0.046315625000000006
+        ],
+        "estimate": 0.033708333333333326,
+        "matrices_positive": 65,
+        "matrices_zero": 36,
+        "randomization_p_holm": 0.000976324139614352,
+        "randomization_p_raw": 0.000244081034903588
+      },
+      "throughput_recovery_association": {
+        "informative_state_correlations": 368,
+        "matrices_with_defined_rank_mean": 113,
+        "mean_within_state_spearman": 0.21226453945284735,
+        "slope_bootstrap_ci95": [
+          0.043572002397119745,
+          0.08109669472200527
+        ],
+        "spearman_bootstrap_ci95": [
+          0.15553828536038503,
+          0.26998699596617765
+        ],
+        "state_centered_slope": 0.06136337994317962,
+        "total_states": 418
+      },
+      "topology_minus_noop": {
+        "bootstrap_ci90": [
+          -0.045135416666666664,
+          -0.025056250000000006
+        ],
+        "bootstrap_ci95": [
+          -0.047625,
+          -0.023194791666666666
+        ],
+        "ci95_excludes_zero": true,
+        "equivalent_margin_0_025": false,
+        "estimate": -0.03465000000000001,
+        "randomization_p_holm_two_sided": 0.000976324139614352,
+        "randomization_p_raw_two_sided": 0.000244081034903588
+      }
+    }
+  ],
+  "eligibility_gate_pass": true,
+  "eligible_matrices_by_candidate": {
+    "02": 124,
+    "03": 125
+  },
+  "endpoint": "RUN3_WITHIN_F8_FROM_IDENTICAL_NATURAL_POST_BREAK_DAUGHTER",
+  "format": "codex-intervention-p4-inference-v1",
+  "inference_unit": "whole catalytic matrix",
+  "integrity_gates": {
+    "artifact_readback_exact": true,
+    "future_replay_exact": true,
+    "natural_acquisition_replay_exact": true,
+    "surgery_audit_pass": true
+  },
+  "minimum_required_per_candidate": 120,
+  "randomization_repetitions": 4096,
+  "strength_all_statistical_cells_pass": true,
+  "strength_and_topology_are_separate_families": true,
+  "strength_recovery_gate_pass": true,
+  "topology_classification": "reproducible_directional_topology_effect"
+}

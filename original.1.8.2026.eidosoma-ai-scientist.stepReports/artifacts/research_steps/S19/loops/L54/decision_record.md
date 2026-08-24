@@ -1,0 +1,3 @@
+# S19-L54 decision record
+
+The human-authorized autonomous sequence through L65 remains active, with an early stop for a genuinely confirmed solution. L53 produced the first past-observable state-local plastic-heredity process-risk lead. L54 freezes that exact PCA, model, target, landmarks, F12 horizon and validation gate, then evaluates 40 wholly new shared catalytic matrices in both simulator candidates. Break probability, conditional resumption and their joint event remain distinct. The reviewer framing is accepted: this is stochastic switching between hereditary and nonhereditary regimes, not a monotonic ramp toward one privileged attractor. No Phi quantity, new feature, model refit, threshold search, intervention or paper-identity claim is authorized.

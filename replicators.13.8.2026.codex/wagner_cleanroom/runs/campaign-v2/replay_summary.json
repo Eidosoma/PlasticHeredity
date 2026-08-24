@@ -1,0 +1,23 @@
+{
+  "all_exact": true,
+  "replays": [
+    {
+      "exact": true,
+      "future_id": "P0000-c0-a1-h0-m0-k1-g0-f000",
+      "replayed_digest": 7310399944684200801,
+      "retained_digest": 7310399944684200801
+    },
+    {
+      "exact": true,
+      "future_id": "P0120-c1-a1-h1-m1-k2-g0-f127",
+      "replayed_digest": 15560659269520170441,
+      "retained_digest": 15560659269520170441
+    },
+    {
+      "exact": true,
+      "future_id": "P0239-c2-a5-h1-m1-k0-g8-f063",
+      "replayed_digest": 492318654440265314,
+      "retained_digest": 492318654440265314
+    }
+  ]
+}

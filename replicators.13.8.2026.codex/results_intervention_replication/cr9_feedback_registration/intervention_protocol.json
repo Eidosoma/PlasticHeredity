@@ -1,0 +1,147 @@
+{
+  "claim_boundary": {
+    "prohibited": [
+      "installed compotype or autonomous attractor",
+      "biological memory, agency, life, or error correction",
+      "real prebiotic chemistry or universal origin-of-life mechanism",
+      "strict-eight or Phi/PhiID control"
+    ],
+    "sparse_feedback_not_passive_memory": true,
+    "transient_hysteresis_not_restoring_basin": true
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fresh_matrices": 48,
+    "main_path_only_uses_frozen_retry_contract": true,
+    "natural_launch_landmark": 60,
+    "policy_lineage_retry_or_replacement": false,
+    "replicates_per_policy": 6
+  },
+  "event_triggered": {
+    "action": "frozen exhaustive MODEL_DOWN",
+    "horizon": 60,
+    "no_threshold_selection_after_outcomes": true,
+    "policies": [
+      "THRESHOLD_015",
+      "THRESHOLD_025",
+      "THRESHOLD_035",
+      "CONTINUOUS",
+      "NOOP"
+    ],
+    "thresholds": [
+      0.15,
+      0.25,
+      0.35
+    ],
+    "trigger": "unedited frozen risk strictly greater than threshold"
+  },
+  "format": "codex-intervention-cr9-feedback-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_never_pooled": true,
+    "holm_within_periodic_and_event_families": true,
+    "randomization_repetitions": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "integrity": {
+    "artifact_readback": true,
+    "complete_replay_all_three_stages": true,
+    "noop_callback_plain_bitwise_identity": true,
+    "release_zero_interventions": true
+  },
+  "outcomes": {
+    "fixed_horizon_adverse_fraction": "unobserved registered boundaries count as non-inherited",
+    "process_metrics": [
+      "breaks",
+      "episodes",
+      "longest_run",
+      "growth_updates",
+      "survival"
+    ],
+    "state_metrics": [
+      "risk",
+      "entropy",
+      "top1_share",
+      "occupied_types",
+      "xT_beta_x"
+    ],
+    "strict_inheritance": "unrounded H > 0.9"
+  },
+  "periodic": {
+    "action_boundary": "successful fissions K,2K,3K,...",
+    "descriptive_minimum_interval": "largest K with CI95 lower > 0 versus matched random and NOOP",
+    "horizon": 60,
+    "periods": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "policies": [
+      "MODEL_EVERY_1",
+      "MODEL_EVERY_2",
+      "MODEL_EVERY_4",
+      "MODEL_EVERY_8",
+      "MODEL_EVERY_16",
+      "RANDOM_EVERY_1",
+      "RANDOM_EVERY_2",
+      "RANDOM_EVERY_4",
+      "RANDOM_EVERY_8",
+      "RANDOM_EVERY_16",
+      "NOOP"
+    ],
+    "random_uniform_over_current_legal_swaps": true
+  },
+  "protocol_id": "e1ee2c6f25335d472f9dc2031fb570ac647f9e65d44e005b62e518a0148b3420",
+  "pulse_ladder": {
+    "active_action": "frozen exhaustive MODEL_DOWN after every successful pulse fission",
+    "constant_persistence_vector_spearman": 0.0,
+    "departure": "unrounded cosine < 0.7",
+    "gate": "95% whole-matrix bootstrap lower bound > 0 in each candidate",
+    "incomplete_before_crossing": "first unobserved boundary",
+    "primary": "mean whole-matrix Spearman(pulse length, persistence)",
+    "pulse_lengths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      60
+    ],
+    "right_censor_cap": 61,
+    "untreated_release_fissions": 60,
+    "written_anchor": "post-edit state at final pulse boundary"
+  },
+  "randomness": {
+    "common_random_streams_not_identical_realized_futures": true,
+    "future_seeds_exclude_policy": true,
+    "random_action_stream_separate": true,
+    "seed_domains": {
+      "bootstrap": "c9e2e594023ea17d8caea7fbbb61fbdccae68bae4b2971c9f57222b96b920c03",
+      "event_future": "45920861b5f3391760cd45a23969c97e4671cc3fdff7aa17be37168e21e9f629",
+      "initial_composition": "bdcc8478f55cd5bb9e5c206c8962e6b8a631ebf2c05c1d2811affdaa4b019930",
+      "landmark_restoration": "7e71fac7d66908dd596ee4585fc2c109fbfb3b80f93dec845066807a6bcef123",
+      "main_trajectory": "8fac670195e5829910014672895d72fea7786d2f3124808f8fe1a8e40fc732cf",
+      "matrix_generation": "19da3dd895fc0af5dc0d9864686e9462d6e15e9ff147d5e1d6200cf60a3a4143",
+      "periodic_future": "e0f9ec26ac6a619bb4e764b99602c7bbb1a924a2ac06fc7a904daa41556b5743",
+      "periodic_random_action": "e668867dbb5bf6ef5acac4046f9b5c0ff4bc1f22bbfd6a0c50e578a94ac521d8",
+      "pulse_future": "bc776455af7aedfa49ba159c2e36cc3920b375d0ffb85f0f22d2bf63719c7e99",
+      "randomization": "8ec5a87584eafb7372600433c38d1bf4265b6db4ff2cd74ab8912d1b7e1bbe09",
+      "replay": "99f64887f36312450895ad23f78980abaac5a128799644ebe0d950fb75cf11fb",
+      "smoke": "d2a6ec3ad2ce570b2a323bc3768908aeca8ddc6116563ce5e10bdaeae691487b",
+      "validation": "532c57fec06cc23144c811fce241bb8a775e21adb051d52ce45914c27610d9a8"
+    }
+  },
+  "status": "frozen_before_any_cr9_scientific_matrix",
+  "stop_rule": "seal CR9 and stop before CR10",
+  "upstream": {
+    "cr7_complete_gate_required": true,
+    "cr7_registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70",
+    "cr8_context_only_not_authorizing_or_tuning": true
+  }
+}

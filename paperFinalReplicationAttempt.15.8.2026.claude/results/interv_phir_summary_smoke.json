@@ -1,0 +1,72 @@
+{
+  "arms": {
+    "control": {
+      "persistence": "374.333\u00b189.794",
+      "probability": "0.365\u00b10.064",
+      "consistency_1k": "0.932\u00b10.033",
+      "episode_mean": "36.649\u00b123.333",
+      "phi_r_mean": "0.938\u00b10.181",
+      "psi_mean": "-0.818\u00b10.257",
+      "n_edits": "0.000\u00b10.000"
+    },
+    "max": {
+      "persistence": "267.333\u00b1103.696",
+      "probability": "0.246\u00b10.068",
+      "consistency_1k": "0.908\u00b10.023",
+      "episode_mean": "16.459\u00b14.630",
+      "phi_r_mean": "0.916\u00b10.051",
+      "psi_mean": "-1.010\u00b10.249",
+      "n_edits": "90.000\u00b12.160"
+    },
+    "min": {
+      "persistence": "179.000\u00b1133.284",
+      "probability": "0.165\u00b10.109",
+      "consistency_1k": "0.880\u00b10.028",
+      "episode_mean": "11.720\u00b14.756",
+      "phi_r_mean": "0.991\u00b10.251",
+      "psi_mean": "-1.123\u00b10.222",
+      "n_edits": "90.000\u00b12.160"
+    },
+    "random": {
+      "persistence": "279.333\u00b1171.931",
+      "probability": "0.262\u00b10.122",
+      "consistency_1k": "0.898\u00b10.028",
+      "episode_mean": "15.585\u00b15.321",
+      "phi_r_mean": "0.961\u00b10.143",
+      "psi_mean": "-1.251\u00b11.510",
+      "n_edits": "90.000\u00b12.160"
+    }
+  },
+  "T1_manipulation_check": {
+    "max_gt_min": 0.8,
+    "max_gt_control": 0.5,
+    "min_lt_control": 0.65,
+    "gate_passes": false
+  },
+  "T2_primary_sr_outcomes": {
+    "persistence_max_gt_control": 0.9,
+    "persistence_min_lt_control": 0.2,
+    "probability_max_gt_control": 0.9500000000000001,
+    "probability_min_lt_control": 0.1,
+    "all_four_pass": false
+  },
+  "T3_secondary": {
+    "consistency_1k": {
+      "max_vs_control": 0.7,
+      "min_vs_control": 0.2
+    },
+    "episode_mean": {
+      "max_vs_control": 0.4,
+      "min_vs_control": 0.2
+    }
+  },
+  "T4_random_validity": {
+    "persistence": 0.7,
+    "probability": 0.4
+  },
+  "T4_valid": true,
+  "T5_cross_instrument_psi": {
+    "max_vs_min": 0.7
+  },
+  "frozen_table_verdict": "manipulation-check gate FAILED \u2014 no working Phi_R manipulation at one-molecule granularity; C7 untestable at this intervention strength"
+}

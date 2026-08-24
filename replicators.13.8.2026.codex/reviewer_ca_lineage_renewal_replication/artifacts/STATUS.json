@@ -1,0 +1,29 @@
+{
+  "automatic_launch": false,
+  "confirmation": {
+    "completed": 96,
+    "eta_seconds": 0.0,
+    "last_update_unix": 1787497821.224643,
+    "pairs_per_second": 0.0420785676037523,
+    "resume_safe": true,
+    "session_started_unix": 1787495539.7781432,
+    "state": "complete",
+    "total": 96
+  },
+  "design_digest": "33fa9e1101ff41533fdc5218df0b0f61fb6a5f6f3944ec52204a45624e7e11f1",
+  "next_action": "review the sealed replication result",
+  "quarantine": {
+    "completed": 2,
+    "eta_seconds": 0.0,
+    "last_update_unix": 1787495539.0215986,
+    "pairs_per_second": 0.9865709874828625,
+    "resume_safe": true,
+    "session_started_unix": 1787495536.9943619,
+    "state": "complete",
+    "total": 2
+  },
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1",
+  "source_candidate": "simple--strict-49-64--gain-050",
+  "state": "complete",
+  "verdict": "NO_DURABLE_RENEWAL"
+}

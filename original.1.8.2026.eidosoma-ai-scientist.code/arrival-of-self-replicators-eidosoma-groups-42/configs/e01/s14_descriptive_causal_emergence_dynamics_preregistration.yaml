@@ -1,0 +1,160 @@
+schema: eidosoma.e01.s14_descriptive_causal_emergence_dynamics_preregistration.v1
+researchStepId: S14
+stepNumber: 14
+versionedStepId: E01-S14-DESCRIPTIVE-CAUSAL-EMERGENCE-DYNAMICS-v1.0.0
+title: Reconstruct Descriptive Causal-Emergence Dynamics
+dateFrozen: '2026-08-07'
+humanDecision: OPTION_2_BOUNDED_PAPER_DIRECTED_RECONSTRUCTION
+evidenceClass: PAPER_DIRECTED_DESCRIPTIVE_RECONSTRUCTION
+
+frozenQuestion: >-
+  Do the frozen S13Y source-defined emergence values reproduce the paper's
+  Figure 2-like combination of no aggregate linear trend and punctuated
+  run-level excursions, separately for both confirmed simulator candidates?
+
+scope:
+  onlyActiveStep: S14
+  nextStepsQueuedInactive: [S15, S16, S17, S18]
+  preserveStepsByteExact: S01-S13Y
+  newTrajectoriesPermitted: false
+  sourceRefitsPermitted: false
+  upstreamMethodChangesPermitted: false
+  authorContactPermitted: false
+  candidatePoolingRole: SECONDARY_DESCRIPTIVE_ONLY
+
+frozenInputs:
+  root: /artifacts/research_steps/S13Y
+  completedValues: full_source_values.parquet
+  pastOnlyValues: prefix_endpoint_values.parquet
+  partitions: partition_history.parquet
+  sourceDiagnostics: source_diagnostic_outputs.parquet
+  preprocessingDiagnostics: preprocessing_diagnostics.parquet
+  trajectoryManifest: trajectory_manifest.parquet
+  simulationSummary: simulation_summary.parquet
+  candidates:
+    - candidateId: S12F-CANDIDATE-02
+      h: 0.6031526490073492
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+    - candidateId: S12F-CANDIDATE-03
+      h: 0.5613315384859516
+      daughterRule: RANDOM_NONEMPTY
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+  informationBranch:
+    implementationId: PHIRL_REGULARIZED_SOURCE
+    metric: emergence
+    identity: synergy_plus_downward_causation
+    primaryMode: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+    comparatorMode: PAST_ONLY_PREFIX_ENDPOINT
+    preprocessing: additive_0.5_closure_dropped_component_CLR
+    partition: source_confirmed_Fiedler
+    localSemantics: source_confirmed_local_PhiID
+
+aggregateAlignment:
+  molecularIndex: selectedSequenceIndex
+  primaryView: AVAILABLE_CASE
+  views:
+    - AVAILABLE_CASE
+    - FULL_COHORT_SUPPORT
+    - MAJORITY_SUPPORT
+    - NORMALIZED_TIME_101
+  availableCaseMinimumCount: 1
+  majorityFraction: 0.5
+  normalizedGridPoints: 101
+  center: median
+  dispersion: sample_standard_deviation_ddof_1
+  regression: unweighted_ordinary_least_squares_on_aggregate_median
+  regressionInference: scipy_stats_linregress_two_sided
+  robustDiagnostic: Theil_Sen_slope_and_95_percent_interval
+  noFavorableViewSelection: true
+
+excursions:
+  thresholdScope: WITHIN_COMPLETE_TRAJECTORY
+  inheritedS13YThreeSigmaScale: population_standard_deviation_ddof_0
+  threeSigmaPositive: value_greater_than_mean_plus_3_sd
+  threeSigmaNegative: value_less_than_mean_minus_3_sd
+  robustCenter: median
+  robustScale: 1.4826_times_median_absolute_deviation
+  robustPositive: value_greater_than_median_plus_3_robust_scale
+  robustNegative: value_less_than_median_minus_3_robust_scale
+  zeroScalePolicy: no_excursion
+  episodeRule: contiguous_in_mode_observation_order
+  peakRule: maximum_signed_extremeness_with_first_tie
+  widthMeasures:
+    - episode_observation_count
+    - episode_raw_molecular_span
+    - scipy_half_prominence_width
+  prominence: scipy_signal_peak_prominences_on_signed_series
+  spacing: same_mode_family_sign_peak_raw_index_difference
+  timing:
+    - raw_observation_index
+    - selected_sequence_index
+    - generation
+    - molecular_step
+    - normalized_trajectory_time
+
+temporalDependence:
+  modes: [RETROSPECTIVE_FULL_TRAJECTORY_LOCAL, PAST_ONLY_PREFIX_ENDPOINT]
+  transforms: [RAW, FIRST_DIFFERENCE]
+  lagRule: max_1_min_10_floor_n_over_5
+  statistic: statsmodels_acorr_ljungbox
+  significanceThreshold: 0.05
+  multiplicityRole: descriptive_unadjusted_paper_like
+
+dependencyDiagnostics:
+  fissionEvent: observationKind_equals_post_fission
+  fissionMeasures:
+    - peak_is_post_fission
+    - episode_contains_post_fission
+    - distance_to_nearest_post_fission
+    - Fisher_exact_enrichment_of_excursion_points_at_post_fission
+  completedPartitionPolicy: one_whole_trajectory_partition_so_within_run_change_not_applicable
+  prefixPartitionChange: unordered_bipartition_differs_from_previous_eligible_prefix_fit
+  numericalConditionPolicy: >-
+    Use only frozen serialized diagnostics: eligibility, finite MI and partition
+    averages, component-identity error, retained-variable count, and maximum
+    closure error. Do not reconstruct an unrecorded covariance condition number;
+    classify condition-number dependence as not evaluable.
+
+paperTargets:
+  aggregateTrendP: 0.1995
+  positiveSpikeRunCriterion: more_than_half
+  rawLjungBoxRejectCount: 86
+  rawLjungBoxMedianP: 2.07e-51
+  differencedLjungBoxRejectCount: 100
+  paperRunCount: 100
+  exactLagSpecificationAvailable: false
+
+classification:
+  supportive: no_aggregate_trend_and_punctuated_gate_pass_independently_in_both_candidates
+  constrainingContradictory: aggregate_trend_is_significant_in_either_candidate_or_punctuated_gate_fails
+  null: frozen_values_or_power_insufficient_to_decide
+  noProspectiveOrCausalInference: true
+
+validation:
+  required:
+    - exact_frozen_input_hashes_before_and_after
+    - zero_generated_trajectory_files
+    - exact_candidate_and_method_identity
+    - exact_row_key_and_emergence_identity
+    - trajectory_count_100_per_candidate
+    - deterministic_replay
+    - independent_trend_excursion_and_ljung_box_recomputation
+    - schema_and_cardinality_checks
+    - figure_inspection
+    - repository_tests
+    - artifact_hash_manifest
+
+forbiddenAfterOutcomeAccess:
+  - candidate_selection
+  - aggregate_view_selection
+  - threshold_change
+  - spike_definition_change
+  - lag_change
+  - preprocessing_change
+  - partition_change
+  - information_scalar_change
+  - source_refit
+  - trajectory_generation

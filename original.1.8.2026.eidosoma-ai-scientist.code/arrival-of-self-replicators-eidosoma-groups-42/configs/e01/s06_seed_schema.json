@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:eidosoma:e01:seed-schema:1.0.0",
+  "title": "E01 canonical seed manifest envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["serializationVersion", "payloadSha256", "payload"],
+  "properties": {
+    "serializationVersion": {"const": "E01-canonical-json-v1.0.0"},
+    "payloadSha256": {"$ref": "#/$defs/sha256"},
+    "payload": {"$ref": "#/$defs/seedPayload"}
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/@+\\-]*$"
+    },
+    "streamPurpose": {
+      "enum": [
+        "catalytic_matrix",
+        "initial_state",
+        "event",
+        "waiting_time",
+        "fission",
+        "daughter_selection",
+        "intervention",
+        "estimator",
+        "machine_learning"
+      ]
+    },
+    "stream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "namespace",
+        "streamId",
+        "derivationContextSha256",
+        "seedMaterialHex",
+        "seedIntegerHex",
+        "bitGenerator",
+        "numpyVersion",
+        "initialStateSha256"
+      ],
+      "properties": {
+        "purpose": {"$ref": "#/$defs/streamPurpose"},
+        "namespace": {"$ref": "#/$defs/identifier"},
+        "streamId": {
+          "type": "string",
+          "pattern": "^urn:eidosoma:rng:E01-seed-schema-v1\\.0\\.0:[a-z_]+:[0-9a-f]{64}$"
+        },
+        "derivationContextSha256": {"$ref": "#/$defs/sha256"},
+        "seedMaterialHex": {"$ref": "#/$defs/sha256"},
+        "seedIntegerHex": {
+          "type": "string",
+          "pattern": "^0x[0-9a-f]{64}$"
+        },
+        "bitGenerator": {"const": "PCG64DXSM"},
+        "numpyVersion": {"const": "2.4.6"},
+        "initialStateSha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "streams": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "catalytic_matrix",
+        "initial_state",
+        "event",
+        "waiting_time",
+        "fission",
+        "daughter_selection",
+        "intervention",
+        "estimator",
+        "machine_learning"
+      ],
+      "properties": {
+        "catalytic_matrix": {"$ref": "#/$defs/stream"},
+        "initial_state": {"$ref": "#/$defs/stream"},
+        "event": {"$ref": "#/$defs/stream"},
+        "waiting_time": {"$ref": "#/$defs/stream"},
+        "fission": {"$ref": "#/$defs/stream"},
+        "daughter_selection": {"$ref": "#/$defs/stream"},
+        "intervention": {"$ref": "#/$defs/stream"},
+        "estimator": {"$ref": "#/$defs/stream"},
+        "machine_learning": {"$ref": "#/$defs/stream"}
+      }
+    },
+    "uncertaintyBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "authorInitialStateRngStream",
+        "legacyMatlabRngIdentity",
+        "authorCodeIdentity",
+        "interpretation"
+      ],
+      "properties": {
+        "authorInitialStateRngStream": {"const": "UNRESOLVED::E01-A020"},
+        "legacyMatlabRngIdentity": {
+          "const": "UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER"
+        },
+        "authorCodeIdentity": {
+          "const": "UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND"
+        },
+        "interpretation": {"type": "string", "minLength": 1}
+      }
+    },
+    "seedPayload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "seedSchemaVersion",
+        "derivationAlgorithm",
+        "canonicalJsonVersion",
+        "rootSeedHex",
+        "rootSeedSha256",
+        "experimentId",
+        "specificationId",
+        "trajectoryId",
+        "replicateIndex",
+        "engineId",
+        "couplingPolicy",
+        "couplingReason",
+        "streams",
+        "uncertaintyBoundary"
+      ],
+      "properties": {
+        "seedSchemaVersion": {"const": "E01-seed-schema-v1.0.0"},
+        "derivationAlgorithm": {
+          "const": "E01-SHA256-DOMAIN-SEPARATION-PCG64DXSM-v1"
+        },
+        "canonicalJsonVersion": {"const": "E01-canonical-json-v1.0.0"},
+        "rootSeedHex": {"$ref": "#/$defs/sha256"},
+        "rootSeedSha256": {"$ref": "#/$defs/sha256"},
+        "experimentId": {"const": "E01"},
+        "specificationId": {"$ref": "#/$defs/identifier"},
+        "trajectoryId": {"$ref": "#/$defs/identifier"},
+        "replicateIndex": {"type": "integer", "minimum": 0},
+        "engineId": {"$ref": "#/$defs/identifier"},
+        "couplingPolicy": {
+          "enum": ["trajectory_isolated", "explicit_common_random_numbers"]
+        },
+        "couplingReason": {"type": ["string", "null"]},
+        "streams": {"$ref": "#/$defs/streams"},
+        "uncertaintyBoundary": {"$ref": "#/$defs/uncertaintyBoundary"}
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {"couplingPolicy": {"const": "trajectory_isolated"}}
+          },
+          "then": {"properties": {"couplingReason": {"type": "null"}}}
+        },
+        {
+          "if": {
+            "properties": {
+              "couplingPolicy": {"const": "explicit_common_random_numbers"}
+            }
+          },
+          "then": {
+            "properties": {"couplingReason": {"type": "string", "minLength": 1}}
+          }
+        }
+      ]
+    }
+  }
+}

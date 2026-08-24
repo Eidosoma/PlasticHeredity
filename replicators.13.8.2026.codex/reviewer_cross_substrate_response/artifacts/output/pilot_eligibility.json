@@ -1,0 +1,37 @@
+{
+  "developmental_only": true,
+  "format": "reviewer-cross-substrate-ca-v1",
+  "mandatory_stop_after_this_report": true,
+  "models": {
+    "evoloop": {
+      "breaks": 0,
+      "complete_blocks": 0,
+      "complete_horizon_fraction": 0.0,
+      "eligible": false,
+      "event_blocks": 0,
+      "events": 0,
+      "profile": "full",
+      "reason": "no futures"
+    },
+    "protocell": {
+      "breaks": 5096,
+      "complete_blocks": 32,
+      "complete_horizon_fraction": 0.968359375,
+      "eligible": true,
+      "event_blocks": 16,
+      "events": 189,
+      "expected_blocks": 32,
+      "gates": {
+        "break_count": true,
+        "complete_blocks": true,
+        "complete_horizon_fraction": true,
+        "event_blocks": true,
+        "event_count": true
+      },
+      "profile": "full",
+      "smoke_cannot_qualify": false
+    }
+  },
+  "pilot_stage_summary_sha256": "97315dae54ffb04ea511eb662e370d30fae609c3b7194ac8f192544df107909b",
+  "profile": "full"
+}

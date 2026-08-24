@@ -1,0 +1,81 @@
+schema: eidosoma.e01.s19_l31.preregistration.v1
+research_step_id: S19-L31
+versioned_id: E01-S19-L31-UNTOUCHED-EIGHT-STEP-PROPAGATOR-COMMITTOR-CONFIRMATION-v1.0.0
+title: Untouched Eight-Step Propagator Committor Confirmation
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Does the unchanged L30 eight-observation shooting coordinate predict an
+  independently re-estimated H32 committor on matrices never used by L28-L30?
+inputs:
+  trajectory_cohort: exact frozen L23 400-shared-matrix cohort
+  exclusion: every candidate-specific matrix used in L28-L30
+  target: exact L23/L28 matrix-specific completed-run dominant-component basin
+  target_scope: RETROSPECTIVE_COMPLETED_RUN_MATRIX_SPECIFIC
+state_selection:
+  landmarks: [64, 96, 128, 160, 192]
+  states_per_candidate_landmark: 8
+  expected_states_per_candidate: 40
+  unique_matrix_within_candidate: true
+  ordering: descending-landmark then SHA256 rank under L31 version identity
+  selection_uses_branch_outcomes: false
+branching:
+  h32_branches_per_state: 128
+  h32_halves: [64, 64]
+  h8_branches_per_state: 64
+  h8_halves: [32, 32]
+  h32_seed_root: 668de9809d77a3f56e9b881083c2db8fb8cda4e2fb207f6c540d23e80ca44b06
+  h8_seed_root: 5d598b0a9e72bf6a2e97160bc16cf751eaf1c890362640aa677f0986d59f2453
+  exact_common_stream_target_reference_control: true
+models:
+  refit_allowed: false
+  primary: frozen_L30_EIGHT_STEP_PROPAGATOR_MOMENTS
+  registered:
+    - frozen_L30_EIGHT_STEP_PROPAGATOR_MOMENTS
+    - frozen_L30_Q8_CALIBRATED
+    - Q8_JEFFREYS_DIRECT
+    - frozen_L29_TARGET_GEOMETRY_CONTROL
+    - frozen_L26_EXACT_H_TRACE_ANALOG
+    - frozen_L26_ORDINARY_PATH_ANALOG
+    - frozen_L30_DEVELOPMENT_PRIOR
+statistics:
+  matrix_bootstraps: 4096
+  label_permutations: 512
+  candidates_separate: true
+confirmation_gate:
+  q32_corrected_variance_lower95_above_zero: true
+  q32_split_half_point_above: 0.5
+  q32_split_half_lower95_above: 0.3
+  intermediate_states_minimum_per_candidate: 8
+  h8_split_half_point_above: 0.5
+  h8_split_half_lower95_above: 0.3
+  primary_spearman_point_above: 0.5
+  primary_spearman_lower95_above: 0.3
+  brier_improvement_lower95_above_zero_vs:
+    - frozen_L30_DEVELOPMENT_PRIOR
+    - frozen_L29_TARGET_GEOMETRY_CONTROL
+    - frozen_L26_EXACT_H_TRACE_ANALOG
+    - frozen_L26_ORDINARY_PATH_ANALOG
+  label_permutation_p_at_most: 0.05
+  target_reference_control_must_be_worse: true
+  both_candidates_required: true
+interpretation:
+  pass: independent confirmation of a retrospective-basin-conditioned simulation shooting coordinate
+  fail: L30 coordinate does not generalize to untouched matrices
+prohibited:
+  - model_refit
+  - horizon_search
+  - branch_count_search
+  - target_or_threshold_change
+  - landmark_search
+  - candidate_pooling
+  - observed_suffix_use_by_branches
+  - transition_current_analysis
+  - intervention
+  - author_contact
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

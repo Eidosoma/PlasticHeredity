@@ -1,0 +1,254 @@
+schema: eidosoma.e01.s13rrr_eligibility_aware_replay_finalization_preregistration.v1
+researchStepId: S13RRR
+stepNumber: S13RRR
+versionedStepId: E01-S13RRR-ELIGIBILITY-AWARE-REPLAY-FINALIZATION-v1.0.0
+title: Eligibility-Aware Replay Finalization
+dateFrozen: '2026-08-06'
+humanOptionId: option-2
+evidenceClass: THIRD_OVERRIDE_POST_OUTCOME_ELIGIBILITY_EXCEPTION_ANALYSIS
+humanOverride: >-
+  Explicitly override the S13RR permanent-stop rule a third time, solely to
+  replace the fixed 3,600 executed-sentinel gate with the exact frozen-data
+  availability requirement of 3,552 and to normalize two reporting column
+  orders without changing any scientific value.
+
+frozenQuestion: >-
+  Do all 3,552 suffix sentinel comparisons that are executable under the 200
+  frozen trajectories pass, are the other 48 nominal slots exactly unavailable,
+  and—after only two value-preserving reporting reorders—what result do two
+  exact executions of the unchanged S13 statistics and adjudication return?
+
+immutability:
+  preserveSteps: S01-S13RR
+  priorArtifactsByteExact: true
+  historicalClassifications:
+    S13: S13_VALIDATION_FAILED_CLOSED
+    S13R: S13R_REPAIR_PATH_PERMANENTLY_STOPPED
+    S13RR: S13RR_REPAIR_PATH_PERMANENTLY_STOPPED
+  s13TaskBundlesByteExact: true
+  s13rrCanonicalViewsByteExact: true
+  partialOrSubsetAnalysisPermitted: false
+
+inputs:
+  taskCount: 200
+  taskBundlesPerCandidate: 100
+  s13TaskRoot: /cache/e01_s13/source_results
+  s13SourceManifest: /artifacts/research_steps/S13/source_cache_manifest.json
+  s13rrCanonicalViewRoot: /cache/e01_s13rr/canonical_views
+  s13rrCanonicalViewManifest: /artifacts/research_steps/S13RR/derived_view_manifest.json
+  s13rrCanonicalizationValidation: /artifacts/research_steps/S13RR/canonicalization_validation.json
+  s13rrStrictCollationValidation: /artifacts/research_steps/S13RR/strict_collation_validation.json
+  candidateIds:
+    - S12F-CANDIDATE-02
+    - S12F-CANDIDATE-03
+  candidate1Excluded: true
+
+replayRuleOverride:
+  identifier: S13RRR_FROZEN_DATA_AVAILABILITY_AWARE_SUFFIX_GATE-v1.0.0
+  oldFixedRequirement: 3600
+  newExactApplicableRequirement: 3552
+  nominalSlotsPerTask: 18
+  nominalSlotCount: 3600
+  notApplicableSlotCount: 48
+  applicablePlusNotApplicableMustEqualNominal: true
+  exactUnavailableTasks:
+    S12F-CANDIDATE-02/M68:
+      nominalSlots: 18
+      applicableSlots: 6
+      notApplicableSlots: 12
+      eligibleEndpointsPerImplementation: 1
+      reason: FIRST_MIDDLE_LAST_COLLAPSE_TO_ONE_UNIQUE_GENERATION
+    S12F-CANDIDATE-02/M72:
+      nominalSlots: 18
+      applicableSlots: 0
+      notApplicableSlots: 18
+      eligibleEndpointsPerImplementation: 0
+      reason: NO_ENDPOINT_AT_OR_ABOVE_256_TRANSITIONS
+    S12F-CANDIDATE-03/M72:
+      nominalSlots: 18
+      applicableSlots: 0
+      notApplicableSlots: 18
+      eligibleEndpointsPerImplementation: 0
+      reason: NO_ENDPOINT_AT_OR_ABOVE_256_TRANSITIONS
+  sentinelNames: [first, middle, last]
+  validationKinds:
+    - suffix_deletion
+    - suffix_deterministic_shuffle
+    - suffix_domain_separated_replacement
+  implementationIds:
+    - IIGR_CORRECTED_SOURCE
+    - PHIRL_REGULARIZED_SOURCE
+  allApplicableIdentitiesMustExistExactlyOnce: true
+  allExecutedStructuralExact: true
+  allExecutedResultExact: true
+  noSyntheticSentinelRows: true
+
+unchangedSourceGates:
+  workerFailureRows: 0
+  fullReplayAll: true
+  eligiblePrefixReplayAll: true
+  structuralSuffixAll: true
+  minimumFullFiniteCoverage: 0.80
+  minimumEligiblePrefixFiniteCoverage: 0.80
+  maximumComponentIdentityAbsoluteError: 1.0e-12
+
+reportingOrderContract:
+  identifier: S13RRR_TWO_TABLE_VALUE_PRESERVING_REPORTING_ORDER-v1.0.0
+  exactTables:
+    prefix_endpoint_values.parquet:
+      - researchStepId
+      - candidateId
+      - trajectoryId
+      - matrixIndex
+      - clockId
+      - implementationId
+      - temporalModeId
+      - temporalLabel
+      - generation
+      - endpointSelectedSequenceIndex
+      - endpointRawObservationIndex
+      - endpointObservationKind
+      - priorLockedClockTransitions
+      - fitObservationCount
+      - status
+      - reason
+      - synergy
+      - downwardCausation
+      - emergence
+      - localPhiR
+      - historicalLabel
+      - nextHistoricalLabel
+      - pastOnlyCosineLabel
+      - exactReplayPassed
+      - futureSuffixStructuralGatePassed
+      - futureSuffixExecutedSentinelPassed
+    ensemble_adjudication.csv:
+      - candidateId
+      - primaryFullAssociationGate
+      - primaryFullDriftGate
+      - primaryFullCoherent
+      - primaryPrefixGate
+      - punctuatedGate
+      - phirlOppositeFull
+      - phirlOppositePrefix
+      - operationalCoverageGate
+      - candidateClassification
+      - candidateEvidenceStatus
+      - combinedRetrospectiveAndProspectiveGate
+  fieldSetMustRemainExact: true
+  rowCountAndOrderUnchanged: true
+  valuesAndNullMasksUnchanged: true
+  keysUnchanged: true
+  sourceInputsUnchanged: true
+  anyOtherReportingReorderPermitted: false
+
+statisticsContract:
+  runOnlyAfterEveryPriorInputAvailabilityReplayAndReportingGatePasses: true
+  exactS13Implementation: true
+  executions: 2
+  exactReplayRequired: true
+  originalSeedsAndDecisionRules: true
+  prefixStatisticalAlias: rawObservationIndex=endpointRawObservationIndex
+  resamplingReplicates:
+    trajectoryBootstrap: 4096
+    circularShift: 4096
+    blockAwarePermutation: 4096
+  analyses:
+    - candidate_association
+    - replicator_versus_drift
+    - temporal_dependence
+    - spike_structure
+    - metric_identity
+    - full_versus_prefix_future_dependence
+    - paired_cross_candidate_comparison
+    - two_candidate_adjudication
+  positiveRequiresBothCandidatesRetrospectiveAndProspective: true
+  candidateDisagreement: HELD_OUT_TWO_CANDIDATE_CANDIDATE_SENSITIVE_UNDERDETERMINATION
+  bothFail: HELD_OUT_TWO_CANDIDATE_SCALEUP_NON_SUPPORT_WITHIN_SOURCE_INFORMED_SCOPE
+  resultEvidenceLabel: THIRD_OVERRIDE_POST_OUTCOME_ELIGIBILITY_EXCEPTION_ANALYSIS
+
+permanentStopRule:
+  furtherCodeChangePermitted: false
+  furtherSchemaChangePermitted: false
+  dataChangePermitted: false
+  replayRuleChangePermitted: false
+  statisticalChangePermitted: false
+  scopeChangePermitted: false
+  onAnyAdditionalRequirement: STOP_PERMANENTLY_WITHOUT_REPAIR
+
+forbiddenWork:
+  - new_trajectory
+  - source_fit_or_rerun
+  - omit_task_or_subset_analysis
+  - candidate_1_execution_or_reclassification
+  - candidate_or_weight_change
+  - prediction
+  - MLP
+  - intervention
+  - estimator_repair
+  - S14_through_S18
+  - E02
+  - report_bundle_progression
+  - further_scaleup
+
+artifacts:
+  required:
+    - preregistration.yaml
+    - preregistration_record.json
+    - human_override.json
+    - replay_rule_contract.json
+    - reporting_order_contract.json
+    - method_lock.json
+    - implementation_lock.json
+    - immutable_prior_baseline.json
+    - immutable_prior_validation.json
+    - source_cache_input_manifest.json
+    - source_cache_input_validation.json
+    - canonical_view_input_manifest.json
+    - canonical_view_input_validation.json
+    - input_collation_validation.json
+    - availability_aware_replay_task_ledger.csv
+    - unavailable_sentinel_slots.csv
+    - executed_sentinel_validation.parquet
+    - availability_rule_validation.json
+    - unchanged_source_gate_validation.json
+    - reporting_order_audit.parquet
+    - reporting_order_validation.json
+    - prefix_statistical_view_index.parquet
+    - prefix_interface_validation.json
+    - label_values.parquet
+    - preprocessing_diagnostics.parquet
+    - full_source_values.parquet
+    - prefix_endpoint_values.parquet
+    - partition_history.parquet
+    - source_diagnostic_outputs.parquet
+    - replay_suffix_validation.parquet
+    - seed_manifest.parquet
+    - candidate_associations.csv
+    - candidate_association_details.parquet
+    - replicator_drift_results.csv
+    - replicator_drift_details.parquet
+    - temporal_dependence_results.csv
+    - spike_results.csv
+    - metric_identity_results.csv
+    - future_dependence_results.csv
+    - cross_candidate_results.csv
+    - ensemble_adjudication.csv
+    - statistics_replay_validation.json
+    - result_validation.json
+    - classification.json
+    - execution_validation.json
+    - failure_ledger.csv
+    - scope_access_ledger.json
+    - schema_validation.json
+    - provenance_manifest.json
+    - runtime_manifest.json
+    - storage_validation.json
+    - status.json
+    - research_step_full_results.md
+    - artifact_manifest.json
+
+finalBoundary:
+  laterWorkStatus: BLOCKED_PENDING_S13RRR_HUMAN_REVIEW
+  mandatoryHumanReview: true
+  automaticContinuationPermitted: false

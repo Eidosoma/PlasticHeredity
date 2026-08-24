@@ -1,0 +1,264 @@
+{
+  "failed_launch_produced_scientific_result": false,
+  "format": "codex-ch5-phir-extension-px6-registration-v2",
+  "input_hashes": {
+    "PX1": "105fa667ab8d616050eeaf37676a134db93dc3237a09ea7f319244d5a6b71837",
+    "PX2": "19afe706a97e343054995e7c3593cbdb3c003598675abbf3f29a2a3bcacfdf9f",
+    "PX3": "b0e03d2ec8cf2e9e6214f05947eed71cb38ed35c16beff2f6ca0b899e2d09f39",
+    "PX4": "d92285352fa1fed979bb4aca75636465e2e46da33ef19e22f6b66aae58ad9236",
+    "PX5": "d7b209f8ce298c2bc8c751509ac50cfd25ac105e20412a561d668f1d0e8db931"
+  },
+  "input_manifests": {
+    "PX1": {
+      "manifest": {
+        "complete_exact_replay": true,
+        "complete_readback_exact": true,
+        "cpu_seconds": 6417.254054828001,
+        "format": "codex-ch5-phir-extension-px1-result-v1",
+        "gates": {
+          "functional_flux_confirmation": false,
+          "heredity_manipulation_validity": false,
+          "material_confirmation": false
+        },
+        "lineages": 384,
+        "matrices": 24,
+        "registration_id": "e1987d2dea749f5e92a580da33836a4334175dbd1016d197aee7ff45fe4476bb"
+      },
+      "sha256": "dc3007fb7f80a7fd8ef8f8df9b426ef0079eaaa14f9889f133aafa170f172bd3"
+    },
+    "PX2": {
+      "manifest": {
+        "acquisition_matrices": 32,
+        "complete_exact_replay": true,
+        "complete_readback_exact": true,
+        "cpu_seconds": 753.6687578829998,
+        "format": "codex-ch5-phir-extension-px2-result-v1",
+        "gates": {
+          "event_locked_material_information": false,
+          "paired_eligibility_24": true,
+          "renewal_manipulation_validity": false,
+          "vector_response_all_cells": false
+        },
+        "intervention_matrices": 24,
+        "registration_id": "3ebaa78cf37dbe9d7d2cc6eadf12bad587a912da30ea44640cd63914d6b5f76b"
+      },
+      "sha256": "c4ae752cb05614a37cbb7bc5542c3f8190c68e30eacc6586dbecf28d5b5791ec"
+    },
+    "PX3": {
+      "manifest": {
+        "classification": "direct_phi_control_not_confirmed",
+        "complete_exact_replay": true,
+        "complete_readback_exact": true,
+        "cpu_seconds": 1603.651581182,
+        "format": "codex-ch5-phir-extension-px3-result-v1",
+        "gates": {
+          "confirmation_only_phi_control": false,
+          "confirmed_direct_phi_control": false,
+          "coupled_heredity_response": false,
+          "decoupled_heredity_response": false,
+          "development_validity": true,
+          "original_24_matrix_gate_eligible": false,
+          "prospective_pilot_selector_confirmation": false
+        },
+        "matrices": 24,
+        "phase": "PX3_CONFIRMATION",
+        "registration_id": "bdb2083071141e23bd05dcc8b7fc2744324f2c69294be60972f20dad151817ec"
+      },
+      "sha256": "74a4c2eeda418dd386d68b1fd8e427ccc15105edcbf0f6547efa209b9775177b"
+    },
+    "PX4": {
+      "manifest": {
+        "classification": "unresolved_or_distributed_simulator_moderation",
+        "complete_exact_replay": true,
+        "complete_readback_exact": true,
+        "cpu_seconds": 747.3510592060003,
+        "format": "codex-ch5-phir-extension-px4-result-v1",
+        "gates": {
+          "at_least_one_localized_public_factor": false,
+          "full_port_public_direction_recovery": false,
+          "heredity_full_port_valid": true
+        },
+        "matrices": 24,
+        "registration_id": "62b0463faf9ada82a7f9db32e061804f7ff5233810d78914058f47da144a43b8"
+      },
+      "sha256": "53854bc10b8c012d673fba72d5c6a8d17695a54261d678ef9081bda229264b7e"
+    },
+    "PX5": {
+      "manifest": {
+        "classification": "no_complete_catalytic_information_separation",
+        "complete_exact_replay": true,
+        "complete_readback_exact": true,
+        "cpu_seconds": 1682.7764991690003,
+        "format": "codex-ch5-phir-extension-px5-result-v1",
+        "gates": {
+          "archived_outcomes_exact": true,
+          "material_full_catalytic_enrichment": false,
+          "material_public_catalytic_enrichment": false,
+          "natural_full_information_steerability": false,
+          "natural_heredity_steerability": true,
+          "natural_public_information_steerability": false
+        },
+        "matrices": 24,
+        "registration_id": "300e09b7ee09fdfcc519f66433ea5af4cde23325239fd548ee8d7c26ec99c9f8",
+        "states": 960
+      },
+      "sha256": "aa9b068d8bca9d6045b4b012c2243a875c145b888c3f142aed53c60e1aa518ed"
+    }
+  },
+  "master_registration_id": "3ce19b47deeb543e23162edb3bf822cfbf248c308a6e8cb4e8ecf83f08636c3b",
+  "new_scientific_futures_at_registration": 0,
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "analytic_envelope": "because each matrix effect is affine in lambda, extrema over [0,1] occur at lambda=0 or lambda=1",
+    "claim_boundary": [
+      "robustness of a full-block statistic is not robustness of public nine-atom Phi-r",
+      "no correction value may be chosen after seeing results",
+      "information robustness is not consciousness, agency, or life",
+      "strict-eight is excluded"
+    ],
+    "classification": {
+      "definition_sensitive": "point analytic envelope spans zero",
+      "inconclusive_same_sign": "point envelope has one sign but its bootstrap envelope includes zero",
+      "uniform_negative": "95% whole-matrix bootstrap upper bound of the analytic maximum is below zero",
+      "uniform_positive": "95% whole-matrix bootstrap lower bound of the analytic minimum is above zero"
+    },
+    "correction": "Phi(lambda) = full_base + lambda * double_redundancy",
+    "cpu_seconds": 7200.0,
+    "datasets": [
+      {
+        "base_column": "material_full_base",
+        "filters": [],
+        "group_columns": [
+          "candidate",
+          "replicate"
+        ],
+        "high_arm": "STABILIZE",
+        "low_arm": "DESTABILIZE",
+        "phase": "PX1",
+        "redundancy_column": "material_double_redundancy",
+        "relative_path": "results/phir_extension/px1_fresh_confirmation/lineages.csv.gz",
+        "within_columns": []
+      },
+      {
+        "base_column": "material_full_base",
+        "filters": [],
+        "group_columns": [
+          "candidate",
+          "half"
+        ],
+        "high_arm": "RENEWAL_UP",
+        "low_arm": "RENEWAL_DOWN",
+        "phase": "PX2",
+        "redundancy_column": "material_double_redundancy",
+        "relative_path": "results/phir_extension/px2_event_locked_recovery/scores.csv.gz",
+        "within_columns": [
+          "break_step"
+        ]
+      },
+      {
+        "base_column": "material_full_base",
+        "filters": [],
+        "group_columns": [
+          "candidate",
+          "half"
+        ],
+        "high_arm": "PHI_UP",
+        "low_arm": "PHI_DOWN",
+        "phase": "PX3",
+        "redundancy_column": "material_double_redundancy",
+        "relative_path": "results/phir_extension/px3_confirmation/scores.csv.gz",
+        "within_columns": [
+          "landmark"
+        ]
+      },
+      {
+        "base_column": "final30_material_full_base",
+        "filters": [],
+        "group_columns": [
+          "candidate",
+          "replicate",
+          "variant"
+        ],
+        "high_arm": "STABILIZE",
+        "low_arm": "DESTABILIZE",
+        "phase": "PX4",
+        "redundancy_column": "final30_material_double_redundancy",
+        "relative_path": "results/phir_extension/px4_simulator_moderator/lineages.csv.gz",
+        "within_columns": []
+      },
+      {
+        "base_column": "material_full_base",
+        "filters": [
+          [
+            "context",
+            "INTERVENTION"
+          ]
+        ],
+        "group_columns": [
+          "candidate",
+          "mechanism"
+        ],
+        "high_arm": "SOURCE_RULE_DOWN",
+        "low_arm": "SOURCE_RULE_UP",
+        "phase": "PX5",
+        "redundancy_column": "material_double_redundancy",
+        "relative_path": "results/phir_extension/px5_generative_null_remeasurement/scores.csv.gz",
+        "within_columns": [
+          "landmark"
+        ]
+      }
+    ],
+    "inference": {
+      "bootstrap": 4096,
+      "randomization": 4096,
+      "same_matrix_resamples_for_all_lambda": true,
+      "unit": "whole catalytic matrix"
+    },
+    "lambda_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "phase": "PX6",
+    "procedural_amendment": {
+      "change": "PX2 within-state namespace landmark -> break_step",
+      "document": "CODEX_CH5_PHIR_EXTENSION_PX6_AMENDMENT.md",
+      "scientific_result_existed_at_amendment": false,
+      "supersedes_registration_id": "50d7e122ea37da68cbdcf716b235ebf4c5d4305c15f7b5e81fd4abf43ac43576"
+    },
+    "prohibitions": {
+      "cannot_rescue_failed_public_nine_atom_result": true,
+      "no_48_matrix_campaign": true,
+      "no_lambda_selection": true,
+      "no_outcome_driven_grid_change": true
+    },
+    "protocol_id": "b18dd15a3f59efd9ac7e8ea7b24281c1064d4469a975ef2e8045442297b9f8b3",
+    "provenance_boundary": {
+      "PX1_PX2": "post-outcome robustness remeasurement",
+      "PX3_PX4_PX5": "prospectively fixed before those result files existed"
+    },
+    "question": "are full-block intervention contrasts robust to every fixed correction between no redundancy restoration and the complete minimum-MI correction?"
+  },
+  "registration_id": "0b5e17ae7ff253be723700d457af4751b77705d704ea15bc9db9b658cb9db0a8",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "CODEX_CH5_PHIR_EXTENSION_PX6_AMENDMENT.md": "9b149fe0516ec033ad3c27fbce88c85c9307e1f9a295d2b9eb3eba362dd6d243",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px6.py": "e33d62e2c903fcd96a9a508e3e00ddde050f7b3d944b1c451222a907ba446cf3",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "tests/test_phir_extension_px6.py": "a897c8bdbaffb2d1ea10100f1fe6a171ec8b0f7843ca41276ffcd6c390c33de6"
+  },
+  "supersedes_registration_id": "50d7e122ea37da68cbdcf716b235ebf4c5d4305c15f7b5e81fd4abf43ac43576"
+}

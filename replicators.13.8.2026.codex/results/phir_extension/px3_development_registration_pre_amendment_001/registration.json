@@ -1,0 +1,55 @@
+{
+  "format": "codex-ch5-phir-extension-px3-development-registration-v1",
+  "master_registration_id": "3ce19b47deeb543e23162edb3bf822cfbf248c308a6e8cb4e8ecf83f08636c3b",
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "confirmation_not_generated": true,
+    "heredity_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+    "phase": "PX3_DEVELOPMENT",
+    "program_protocol_id": "81ab66fc412d04946d3df9c6bff048a4cbdea2dec14206dfe10ef1c9708e49ff",
+    "protocol_id": "7dad6e0bb3c3b92526735b8b04ea42bb4a4980b266a62d78cf5954af22cb6f21",
+    "px1_manifest_sha256": "dc3007fb7f80a7fd8ef8f8df9b426ef0079eaaa14f9889f133aafa170f172bd3",
+    "px1_matrix_inputs_sha256": "17835d9d345185179ba0781e6f324219d638ae89800be9870983aa5b5033a03b",
+    "px1_registration_id": "e1987d2dea749f5e92a580da33836a4334175dbd1016d197aee7ff45fe4476bb",
+    "px2_integrity_complete": true,
+    "px2_manifest_sha256": "c4ae752cb05614a37cbb7bc5542c3f8190c68e30eacc6586dbecf28d5b5791ec",
+    "px2_registration_id": "3ebaa78cf37dbe9d7d2cc6eadf12bad587a912da30ea44640cd63914d6b5f76b",
+    "spec": {
+      "branches": 16,
+      "cpu_seconds": 72000.0,
+      "horizon": 8,
+      "label": "development",
+      "landmarks": [
+        20,
+        30,
+        40,
+        50
+      ],
+      "matrices": 24
+    }
+  },
+  "registration_id": "86a91cf7c75b6b268e25fbd06f5b1efd94eccd37fac16c49adea65ed3977707d",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px3.py": "ed82ecb4e62c1df2af4f548f2b2ea60ca000a2516057b181b7a92c4391fc97ad",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/processes.py": "b3098cddb7b4d38a83d75a9c7c5ac279a6a09cc9076970f5620c1b626cb87501",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_extension_px3.py": "24364c5a63bfbc791ba88b31df80b2cdb158a254e18c99795148e61ed42a773c"
+  }
+}

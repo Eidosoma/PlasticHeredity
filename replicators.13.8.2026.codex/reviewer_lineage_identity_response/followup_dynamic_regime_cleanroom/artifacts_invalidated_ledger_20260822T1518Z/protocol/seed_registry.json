@@ -1,0 +1,16 @@
+{
+  "master_seed": "c5bd56033592044060bb9a68f2ee727f1dba1397ed112877484cc8d3f7dc1dc",
+  "nonproduction_domains": [
+    "test",
+    "smoke",
+    "benchmark"
+  ],
+  "production_domains": [
+    "development",
+    "confirmation",
+    "ph",
+    "carrier",
+    "bootstrap",
+    "replay"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "02": {
+    "test_2": {
+      "adequate": false,
+      "auc_mean_ci": [
+        0.7524513457683121,
+        0.7227930747423376,
+        0.7816480746619004
+      ],
+      "complete_banks": 23,
+      "median_gap_mean_ci": [
+        0.09701092521646154,
+        0.03313537479221386,
+        0.1697889854343564
+      ],
+      "rules": 50,
+      "strong_gate": false
+    },
+    "test_3": {
+      "adequate": false,
+      "auc_mean_ci": [
+        0.28027297189599976,
+        0.1797623799370839,
+        0.40090474220195704
+      ],
+      "complete_banks": 23,
+      "median_gap_mean_ci": [
+        -0.21407535821861745,
+        -0.3465389850084934,
+        -0.06022303669915295
+      ],
+      "rules": 50,
+      "rules_without_distinguishable_stranger": 29,
+      "strong_gate": false
+    },
+    "test_4": {
+      "multistable_fraction_ci": [
+        0.06,
+        0.0,
+        0.14
+      ],
+      "one_form": 25,
+      "rules": 50,
+      "two_or_more_forms": 3,
+      "universal_all_50_gate": false,
+      "zero_forms": 22
+    }
+  },
+  "03": {
+    "test_2": {
+      "adequate": false,
+      "auc_mean_ci": [
+        0.7642172687723662,
+        0.7346253611682064,
+        0.7931531172508633
+      ],
+      "complete_banks": 26,
+      "median_gap_mean_ci": [
+        0.06618554069175411,
+        0.013162663199876887,
+        0.13555806990372563
+      ],
+      "rules": 50,
+      "strong_gate": false
+    },
+    "test_3": {
+      "adequate": false,
+      "auc_mean_ci": [
+        0.14478330779622753,
+        0.08610252541173968,
+        0.21246060488415067
+      ],
+      "complete_banks": 26,
+      "median_gap_mean_ci": [
+        -0.3810622738810074,
+        -0.46089726766515243,
+        -0.28612064029714357
+      ],
+      "rules": 50,
+      "rules_without_distinguishable_stranger": 24,
+      "strong_gate": false
+    },
+    "test_4": {
+      "multistable_fraction_ci": [
+        0.06,
+        0.0,
+        0.14
+      ],
+      "one_form": 27,
+      "rules": 50,
+      "two_or_more_forms": 3,
+      "universal_all_50_gate": false,
+      "zero_forms": 20
+    }
+  },
+  "all_candidate_gates": {
+    "test_2": false,
+    "test_3": false,
+    "test_4_universal": false
+  }
+}

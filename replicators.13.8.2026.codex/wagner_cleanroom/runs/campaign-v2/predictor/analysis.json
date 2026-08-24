@@ -1,0 +1,51 @@
+{
+  "checks": {
+    "history_gain": false,
+    "reliability": true,
+    "strong_baseline_gain": false
+  },
+  "claim_class": "exploratory; cannot alter the primary replication verdict",
+  "development_sources": 96,
+  "evaluation_prevalence": 0.6722900390625,
+  "evaluation_sources": 128,
+  "expected_calibration_error": 0.026625420318065716,
+  "format": "wagner-cleanroom-predictor-analysis-v1",
+  "full_brier_score": {
+    "adjusted_lower": 0.2040240021807536,
+    "estimate": 0.20915000673704953,
+    "lower": 0.20295182281907156,
+    "upper": 0.21566676143552133
+  },
+  "history_log_loss_gain": {
+    "adjusted_lower": 0.008250226604185165,
+    "estimate": 0.012684482080610082,
+    "lower": 0.0073455821042629,
+    "upper": 0.01803513241656849
+  },
+  "selected_regularization_c": {
+    "full": 0.0001,
+    "history": 0.001,
+    "structural": 0.001
+  },
+  "sensitivity_event_rates": [
+    0.639990234375,
+    0.6722900390625,
+    0.3872802734375,
+    0.356982421875
+  ],
+  "split_half_reliability": 0.9678825418155569,
+  "strict_f32_prevalence": 0.3872802734375,
+  "structural_log_loss_gain": {
+    "adjusted_lower": -0.019572088342859836,
+    "estimate": -0.015525721281689924,
+    "lower": -0.020445782962337435,
+    "upper": -0.010808423180413192
+  },
+  "verdict": "NOT_PROMISING",
+  "within_rulebook_rank_correlation": {
+    "adjusted_lower": 0.24543752955772716,
+    "estimate": 0.31853978986314324,
+    "lower": 0.23269644037119863,
+    "upper": 0.40495571873774044
+  }
+}

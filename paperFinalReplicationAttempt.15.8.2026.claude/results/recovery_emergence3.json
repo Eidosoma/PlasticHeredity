@@ -1,0 +1,33 @@
+{
+  "sign_regime": {
+    "emergence3_run_mean": "+0.7267\u00b10.1595",
+    "emergence3_runs_positive": 100,
+    "sts_run_mean": "-0.1214\u00b10.2677",
+    "sts_runs_positive": 31,
+    "n_runs": 100
+  },
+  "headline_emergence3": {
+    "C2_spike_runs": 89,
+    "C3": {
+      "positive": 36.0,
+      "positive_sig": 14.0,
+      "higher_p001": 8.0,
+      "n": 100,
+      "fisher_p": 2.0052276414518026e-16
+    },
+    "C4_ljungbox_reject": 75,
+    "consistency_phi_autocorr": "0.159\u00b10.123"
+  },
+  "headline_sts": {
+    "C2_spike_runs": 38,
+    "C3": {
+      "positive": 48.0,
+      "positive_sig": 24.0,
+      "higher_p001": 9.0,
+      "n": 100,
+      "fisher_p": 1.4528298503335515e-37
+    },
+    "C4_ljungbox_reject": 48,
+    "consistency_phi_autocorr": "0.095\u00b10.089"
+  }
+}

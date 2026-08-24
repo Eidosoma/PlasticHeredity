@@ -1,0 +1,6 @@
+{
+  "codex_expression": "beta.T @ x",
+  "fable_expression": "x @ beta",
+  "legacy_selection_arrays_field": "selection_arrays.npz::catalytic_support stores outgoing influence",
+  "storage": "beta[target,catalyst]"
+}

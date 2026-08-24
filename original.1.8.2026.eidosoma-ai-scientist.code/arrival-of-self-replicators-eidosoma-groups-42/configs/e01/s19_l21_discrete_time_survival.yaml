@@ -1,0 +1,89 @@
+schema: eidosoma.e01.s19_l21.preregistration.v1
+researchStepId: S19-L21
+versionedId: E01-S19-L21-DISCRETE-TIME-ATTRACTOR-ONSET-SURVIVAL-v1.0.0
+title: Discrete-Time Survival Reconstruction of Recurring-Attractor Onset
+evidenceClass: ADAPTIVE_DISCOVERY_ON_FROZEN_LANDMARK_TASK
+
+immutableTask:
+  cohort: S13Y_100_SHARED_MATRICES_200_CANDIDATE_TRAJECTORIES
+  target: PF_DOMINANT_COMPONENT_CENTROID_H900
+  landmarkObservationCount: 64
+  intervalStarts: [64, 128, 192, 256]
+  intervalEnds: [128, 192, 256, 320]
+  atRiskRule: no positive target at indices 0 through 63
+  candidatesSeparated: true
+  splits: exact S19-L18 ten-repeated five-fold matrix splits
+  newSimulation: false
+  newPrefixFeature: false
+
+survivalSemantics:
+  model: pooled discrete-time logistic hazard
+  trainingRiskSet: stop at first event; omit interval censored before its end
+  predictionGrid: every fully observed registered interval
+  cumulativeRisk: one minus cumulative product of one minus interval hazard
+  primaryMetric: Harrell-style comparable-pair concordance using summed cumulative risk
+  secondaryMetrics: [integrated Brier, horizon AUROC, horizon AUPRC, horizon Brier]
+  censoring: right censor at min(selected-clock length, 320)
+
+featureBundles:
+  controls:
+    - DUMMY_BASE_HAZARD
+    - TIME_ONLY
+    - EXACT_H_STABILITY
+    - COMPACT_BASELINE
+  leads:
+    - COMPACT_PLUS_L19_ALL
+    - COMPACT_PLUS_L20_ALL
+    - COMPACT_PLUS_L19_L20_ALL
+  intervalRepresentation: three one-hot indicators with interval zero as reference
+  sourceFeatureSemantics: exact frozen L18/L19/L20 original-prefix values
+
+model:
+  estimator: L2 logistic regression
+  C: 1.0
+  solver: lbfgs
+  maximumIterations: 5000
+  classWeight: null
+  imputation: training median with missing indicators
+  scaling: training only
+
+statistics:
+  independentUnit: catalytic matrix
+  bootstrapReplicates: 4096
+  onsetPermutationReplicates: 512
+  permutationMultiplicity: maximum concordance increment across three lead models
+  candidatesPooled: false
+
+discoveryGate:
+  sameModelInBothCandidates: true
+  minimumCIndex: 0.65
+  cIndexBootstrapLowerGreaterThan: 0.5
+  integratedBrierBetterThanTimeAndCompact: true
+  horizonAuRocImprovementCountAtLeast: 3
+  mustImproveOverCompactAndExactH: true
+  familywisePermutationPAtMost: 0.10
+  featurePermutationMustReduceCIndex: true
+  suffixInvarianceRequired: true
+  untouchedConfirmationRequiredForSolution: true
+
+resources:
+  cpuCores: 8
+  gpuHoursMaximum: 0
+  cpuHoursMaximum: 100
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 25
+  temporaryGiBMaximum: 75
+  validationReserveFraction: 0.10
+  numericalThreadsPerWorker: 1
+
+classifications:
+  allowed:
+    - DISCRETE_TIME_SURVIVAL_DISCOVERY_LEAD
+    - SURVIVAL_REFORMULATION_NON_SUPPORT
+    - SINGLE_HORIZON_INFORMATION_LOSS_NOT_PRIMARY
+    - CANDIDATE_SPECIFIC_TIMING_SIGNAL
+    - POSSIBLE_STABILITY_PROXY
+    - ATTRACTOR_ONSET_SURVIVAL_TASK_ESTABLISHED
+    - REQUIRES_UNTOUCHED_CONFIRMATION
+    - NOT_PROMOTABLE_AS_CONFIRMED
+    - LOOP_FAILED_CLOSED

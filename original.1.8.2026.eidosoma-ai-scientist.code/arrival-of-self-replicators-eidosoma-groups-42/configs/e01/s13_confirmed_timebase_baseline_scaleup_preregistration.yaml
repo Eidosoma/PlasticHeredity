@@ -1,0 +1,326 @@
+schema: eidosoma.e01.s13_confirmed_timebase_baseline_scaleup_preregistration.v1
+researchStepId: S13
+stepNumber: S13
+versionedStepId: E01-S13-CONFIRMED-TIMEBASE-BASELINE-SCALEUP-v1.0.0
+title: Confirmed Time-base Baseline Held-out Scale-up
+dateFrozen: '2026-08-06'
+humanOptionId: option-3
+evidenceClass: HELD_OUT_SOURCE_INFORMED_TWO_CANDIDATE_BASELINE_SCALEUP
+sourceRelationship: SOURCE_INFORMED_RECONSTRUCTION_NOT_AUTHOR_OR_PAPER_PRIMARY
+s14ThroughS18Status: BLOCKED_PENDING_S13_HUMAN_REVIEW
+
+frozenQuestion: >-
+  On 100 genuinely new catalytic matrices shared across the two upstream-confirmed
+  S12FR time-base candidates, does the S12J near-zero/non-support result persist,
+  or do both candidates pass the same frozen retrospective and prospective
+  source-emergence gates?
+
+interpretationBoundary:
+  - This is one baseline-only held-out scale-up and not the original S13-S18 sequence.
+  - It cannot identify the unavailable author implementation.
+  - It cannot resolve fixed-window, pre-256-transition, or early-warning ambiguity.
+  - Full-trajectory fits remain retrospective and potentially future-dependent.
+  - A positive result conflicts with prior negative evidence and requires human adjudication.
+  - No outcome authorizes prediction, intervention, S14-S18, E02, or another scale-up.
+  - Repeated repairs and human overrides remain a procedural-credibility caveat.
+
+immutability:
+  preserveSteps: S01-S12J
+  priorArtifactsByteExact: true
+  priorClassificationChangesPermitted: false
+  candidate1:
+    runPermitted: false
+    evidenceStatusRetained: HUMAN_WAIVED_NEAR_ENVELOPE_NONCONFIRMED
+  pinnedInputs:
+    - path: /artifacts/research_steps/S12FR/candidate_timebase_pipeline_lock.json
+      sha256: bcec29a7193acdfeeed0de16b0a0171b9d918060389559de5bb8296c0aefac21
+    - path: /artifacts/research_steps/S12FR/confirmation_trajectory_manifest.parquet
+      sha256: 9e7f917b277284781a6b1f7368201073c3376f5ba487e1fae3aa2a1b367c5265
+    - path: /artifacts/research_steps/S12J/classification.json
+      sha256: 99d85c34b864b51ec2570cfafe1b481b4334f844f34d02fffee6abf62aa3c4a7
+    - path: /artifacts/research_steps/S12J/analysis_lock.json
+      sha256: ab7fe8189011177ba504fec286adc585b703b95acecd7cac9051316af1fd529f
+    - path: /artifacts/research_steps/S12J/statistics_replay_validation.json
+      sha256: e6320e88c51cd007b8d733d49a8aabc8ba8323c01e5189fb2b2681909adc19f1
+    - path: /artifacts/research_steps/S12I/source_equivalence_validation.json
+      sha256: 4b68003cc0534393f901f0e82c58f08e67ea946eacffe10eb64291d8a775f9e6
+    - path: /artifacts/research_steps/S12B/safe_phi_lattice.json
+      sha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+
+sourceIdentities:
+  historicalGardCommit: 86dff6320d5ae91b4e831471079ff46749b14df9
+  iigrCommit: 7c1c22fe39f539d4a453135476f1f0dd5a6b45f7
+  phirlCommit: a6d1d0d18c7551302724b7158c6ccdc4d3a33373
+  safeLatticeSha256: 74ecca37f04201088d76a9e8ede7efe04bafebecff85a4882a44f03afbd23aa1
+  sourceEquivalenceRequired: S12C_14_OF_14
+  emergenceIdentityRequired: S12D_40_OF_40
+  scientificPickleLoadingPermitted: false
+
+simulation:
+  independentUnits: 100
+  retainedTrajectoryCount: 200
+  validationReplayExecutionCount: 200
+  fissionsPerTrajectory: 100
+  sharedAcrossCandidates:
+    - catalytic_matrix
+    - initial_state
+  matrixDistribution: beta_ij_equals_exp_minus4_plus4_standard_normal
+  initialization: exactly_40_distinct_singletons_without_replacement
+  rates:
+    kForward: 0.01
+    kBackward: 0.0001
+    rhoEach: 0.01
+  updateKernel: simultaneous_separate_reaction_Poisson_vector_update
+  fission: complementary_binomial_p_0.5
+  nSpecies: 100
+  nMin: 40
+  nMax: 80
+  maxSteps: 1000
+  candidateCount: 2
+  candidates:
+    - candidateId: S12F-CANDIDATE-02
+      heldoutAnalysisId: S13-HELDOUT-CANDIDATE-02-v1.0.0
+      h: 0.6031526490073492
+      exposureFamily: FIXED_COMMON_EXPOSURE
+      daughterRule: FIRST_DAUGHTER
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+      evidenceStatus: S12FR_UPSTREAM_CONFIRMED
+    - candidateId: S12F-CANDIDATE-03
+      heldoutAnalysisId: S13-HELDOUT-CANDIDATE-03-v1.0.0
+      h: 0.5613315384859516
+      exposureFamily: FIXED_COMMON_EXPOSURE
+      daughterRule: RANDOM_NONEMPTY
+      overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+      clockId: C1_SELECTED_DAUGHTER_RETAINED
+      evidenceStatus: S12FR_UPSTREAM_CONFIRMED
+
+randomness:
+  rootHex: f1748908fc1eddb34e2767fb5ca88d045a47003af29caeef4c7ffcb94466e21d
+  rootId: E01-S13-HELDOUT-ROOT-v1.0.0
+  bitGenerator: PCG64DXSM
+  matrixAndInitialStreamsSharedAcrossCandidates: true
+  candidateDynamicsStreamsIndependent: true
+  sourceAndStatisticsStreamsDomainSeparated: true
+  zeroPriorIdentityOverlapRequired: true
+  zeroPriorSeedMaterialOverlapRequired: true
+  frozenPurposes:
+    - catalytic_matrix
+    - initial_state
+    - poisson_update
+    - overshoot_trim
+    - fission
+    - daughter_selection
+    - source_preprocessing
+    - source_partition
+    - suffix_deterministic_shuffle
+    - suffix_domain_separated_replacement
+    - statistics_bootstrap
+    - statistics_circular_shift
+    - statistics_block_permutation
+
+scientificContract:
+  primaryLabel: HISTORICAL_H090_REPLICATOR
+  secondaryLabel: PAST_ONLY_COSINE_REPLICATOR
+  preprocessing: additive_0.5_closure_full_CLR_remove_original_component_100
+  primaryMetric: IIGR_source_defined_emergence_synergy_plus_two_downward_causation_atoms
+  robustnessMetric: PHIRL_regularized_source_defined_emergence
+  comparatorMetric: corrected_local_phi_r_only
+  fullTemporalLabel: RETROSPECTIVE_FULL_TRAJECTORY_LOCAL
+  prefixTemporalLabel: PAST_ONLY_PREFIX_ENDPOINT
+  prefixBoundaryTransitions: 256
+  prefixRefit: independently_from_trajectory_start_at_every_eligible_post_fission_endpoint
+  exactSourceReplayEveryFit: true
+  futureSuffixTests:
+    structuralAtEveryEligibleEndpoint: [deletion, deterministic_shuffle, domain_separated_replacement]
+    executedSentinelsPerTrajectoryImplementation: [first, middle, last]
+  resampling:
+    trajectoryBootstrapReplicates: 4096
+    circularShiftReplicates: 4096
+    blockAwarePermutationReplicates: 4096
+  analyses:
+    - candidate_association
+    - replicator_versus_drift
+    - temporal_dependence
+    - spike_structure
+    - metric_identity
+    - full_versus_prefix_future_dependence
+    - paired_cross_candidate_comparison
+
+decisionGates:
+  scaleRationale: >-
+    Preserve the S12G/S12J proportions when scaling from 32 to 100 units:
+    80-percent defined/coverage, 75-percent positive association, the original
+    14-of-24 drift proportion rounded upward, 75-percent spiking, and 87.5-percent
+    raw temporal dependence. Continuous, resampling, direction, and p-value gates
+    are unchanged.
+  candidateRetrospectiveIigrAssociation:
+    finiteCoverageAtLeast: 0.80
+    definedTrajectoriesAtLeast: 80
+    positiveTrajectoriesAtLeast: 75
+    medianStrictlyPositive: true
+    trajectoryBootstrapLower95StrictlyPositive: true
+    circularShiftPositivePAtMost: 0.05
+  candidateRetrospectiveIigrDrift:
+    definedTrajectoriesAtLeast: 80
+    positiveMeanDifferencesAtLeast: 59
+    medianMeanDifferenceStrictlyPositive: true
+    trajectoryBootstrapLower95StrictlyPositive: true
+    blockAwarePositivePAtMost: 0.05
+  candidateRetrospectiveCoherent: association_and_drift_gates_all_pass
+  candidateProspectiveIigr:
+    eligibleCoverageAtLeast: 0.80
+    definedTrajectoriesAtLeast: 80
+    positiveTrajectoriesAtLeast: 75
+    medianStrictlyPositive: true
+    trajectoryBootstrapLower95StrictlyPositive: true
+    circularShiftPositivePAtMost: 0.05
+    exactReplay: true
+    exactSuffixInvariance: true
+    noSignificantOppositePhiRL: true
+  punctuatedSeparateGate:
+    runsWithPositive3SigmaSpikeAtLeast: 75
+    aggregateTrendPStrictlyGreaterThan: 0.05
+    rawLjungBoxSignificantRunsAtLeast: 88
+    differencedLjungBoxSignificantRunsAtMost: 0
+    role: descriptive_only_not_part_of_combined_positive_gate
+  combinedCandidatePositive: retrospective_coherent_and_prospective_iigr
+  heldoutScaleupPositive: both_confirmed_candidates_combined_positive
+  candidateSensitive: exactly_one_confirmed_candidate_combined_positive
+  heldoutNonSupport: neither_confirmed_candidate_combined_positive
+
+classificationVocabulary:
+  positive: HELD_OUT_TWO_CANDIDATE_RETROSPECTIVE_AND_PROSPECTIVE_SUPPORT
+  disagreement: HELD_OUT_TWO_CANDIDATE_CANDIDATE_SENSITIVE_UNDERDETERMINATION
+  negative: HELD_OUT_TWO_CANDIDATE_SCALEUP_NON_SUPPORT_WITHIN_SOURCE_INFORMED_SCOPE
+  failed: S13_VALIDATION_FAILED_CLOSED
+
+compute:
+  cumulativeE01CpuHourCeiling: 250.0
+  cumulativeE01GpuHourCeiling: 80.0
+  preSimulationLedgerRequired: true
+  conservativePriorCpuEnvelopeHours: 80.0
+  projectedS13CpuHoursIncludingReserve: 64.0
+  cumulativeProjectedCpuHours: 144.0
+  projectedS13GpuHours: 0.0
+  preSimulationGate: cumulative_projected_cpu_at_most_250_and_gpu_at_most_80
+  benchmark:
+    retainedUnits: shared_matrix_000_under_both_candidates
+    includedInFinal200: true
+    sourceFitsIncluded: true
+    projectionUsesBothCandidateTaskCpuMeanTimes200PlusSimulationStatisticsReserve: true
+  workers: 6
+  statisticsWorkers: 1
+  orchestrationCores: 1
+  blasThreadsPerWorker: 1
+  cpuFloat64Authoritative: true
+  gpuUse: none
+  hardWallHours: 72.0
+  retainedArtifactGiB: 30.0
+  runtimeReductionForbidden: true
+
+validation:
+  exactPrimaryTrajectoryReplay: 200_of_200
+  discreteOrFiniteReplayDivergenceAllowed: false
+  schemaCausalSameConditionPairedNaNRule: S12FR_SCHEMA_CAUSAL_EXACT_COMPARATOR_v1.0.0
+  all200Complete100Fissions: true
+  sharedMatrixInitialIdentityCount: 100
+  candidate1TrajectoryCount: 0
+  sourceCoverageAtLeast: 0.80_each_candidate_and_implementation_and_temporal_mode
+  exactSourceReplay: every_full_and_eligible_prefix_fit
+  exactSuffixInvariance: every_structural_test_and_all_executed_sentinels
+  exactStatisticsReplay: all_result_frames_and_classification
+  priorArtifactImmutability: every_S01_through_S12J_file
+  manifestAndHashValidation: required
+  failClosedNoRepair: true
+
+stopRules:
+  - prior_artifact_immutability_failure
+  - source_identity_or_equivalence_failure
+  - pre_simulation_cumulative_compute_gate_failure
+  - benchmark_runtime_or_storage_projection_failure
+  - matrix_or_initial_seed_overlap
+  - any_primary_or_replay_trajectory_incomplete
+  - any_discrete_finite_rng_or_forbidden_nonfinite_replay_divergence
+  - any_pairing_or_schema_failure
+  - any_source_full_or_prefix_replay_failure
+  - any_source_branch_coverage_failure
+  - any_suffix_invariance_failure
+  - statistics_replay_failure
+  - artifact_or_hash_validation_failure
+  - undocumented_method_or_scope_change_required
+
+forbiddenWork:
+  - candidate_1_execution_or_reclassification
+  - new_candidate_or_exposure_search
+  - prediction
+  - MLP
+  - intervention
+  - estimator_repair
+  - S14_through_S18
+  - report_bundle_progression
+  - E02
+  - further_scaleup
+
+artifacts:
+  required:
+    - preregistration.yaml
+    - preregistration_record.json
+    - method_lock.json
+    - implementation_lock.json
+    - compute_ledger.json
+    - compute_gate.json
+    - source_snapshot_manifest.json
+    - immutable_prior_baseline.json
+    - immutable_prior_validation.json
+    - seed_root_lock.json
+    - seed_firewall.json
+    - seed_manifest.parquet
+    - trajectory_manifest.parquet
+    - simulation_summary.parquet
+    - trajectory_replay_validation.parquet
+    - pairing_audit.json
+    - runtime_benchmark.json
+    - label_values.parquet
+    - preprocessing_diagnostics.parquet
+    - full_source_values.parquet
+    - prefix_endpoint_values.parquet
+    - prefix_statistical_view_index.parquet
+    - adapter_validation.json
+    - partition_history.parquet
+    - source_diagnostic_outputs.parquet
+    - replay_suffix_validation.parquet
+    - candidate_associations.csv
+    - candidate_association_details.parquet
+    - replicator_drift_results.csv
+    - replicator_drift_details.parquet
+    - temporal_dependence_results.csv
+    - spike_results.csv
+    - metric_identity_results.csv
+    - future_dependence_results.csv
+    - cross_candidate_results.csv
+    - ensemble_adjudication.csv
+    - classification.json
+    - statistics_replay_validation.json
+    - execution_validation.json
+    - schema_validation.json
+    - provenance_manifest.json
+    - scope_access_ledger.json
+    - failure_ledger.csv
+    - runtime_manifest.json
+    - storage_validation.json
+    - artifact_manifest.json
+    - status.json
+    - research_step_full_results.md
+  figures:
+    - figures/association_distributions.png
+    - figures/replicator_drift_distributions.png
+    - figures/temporal_spike_summary.png
+    - figures/full_prefix_comparison.png
+    - figures/metric_identity_comparison.png
+    - figures/final_decision_matrix.png
+
+handoff:
+  mandatoryHumanReview: true
+  s14ThroughS18BlockedRegardlessOfOutcome: true
+  automaticContinuationPermitted: false

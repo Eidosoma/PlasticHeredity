@@ -1,0 +1,55 @@
+schema: eidosoma.e01.s19_l35.preregistration.v1
+research_step_id: S19-L35
+versioned_id: E01-S19-L35-SHORT-BRANCH-ENSEMBLE-MECHANISM-ATTRIBUTION-v1.0.0
+title: Short-Branch Ensemble Mechanism Attribution
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  What physical, catalytic, geometric, or phase information first becomes
+  visible inside the confirmed H8 shooting ensemble, and does it separate
+  committor states before branches actually enter the target basin?
+inputs:
+  l28: exact 200 L30 original H8 state/seed/branch identities
+  l31: exact 80 L31 original H8 state/seed/branch identities
+  branches_per_state: 64
+  horizon: 8 selected-clock observations
+  new_stochastic_outcomes: 0
+replay:
+  regenerate_same_streams_only: true
+  require_exact_path_summary_and_stream_identity: true
+primary_state_offset_metrics:
+  - cumulative_entry_fraction
+  - at_risk_mean_target_score
+  - at_risk_mean_target_score_change
+  - all_branch_target_score_sd
+  - at_risk_composition_dispersion
+  - fission_fraction_at_offset
+  - at_risk_mean_mass
+  - at_risk_mean_join_share_maximum
+  - at_risk_mean_gross_sampled_events
+statistics:
+  matrix_bootstraps: 4096
+  candidates_and_cohorts_separate: true
+  earliest_mechanical_separation_offset_maximum: 4
+  rank_point_gate: 0.5
+  rank_lower95_gate: 0.3
+interpretation:
+  cumulative_entry_is_teacher_not_proxy: true
+  target_score_is_retrospective_basin_conditioned: true
+  no_l35_result_is_past_only_promotion: true
+  same_nonentry_metric_and_offset_required_across_both_candidates_and_evaluation_cohorts: true
+prohibited:
+  - new_branch_stream
+  - new_target_or_threshold
+  - branch_horizon_search
+  - metric_family_search
+  - predictor_training
+  - favorable_offset_selection_for_promotion
+  - candidate_pooling
+  - causal_or_paper_claim
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

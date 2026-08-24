@@ -1,0 +1,22 @@
+{
+  "density_caliper_max": 0.01953125,
+  "fresh_nonreusing_pairs": 506,
+  "frozen_donors": 2048,
+  "historical_donor_exclusions": 746,
+  "historical_pair_exclusions": 373,
+  "new_experiments_added": false,
+  "schema_version": "reviewer-motif-channel-replication-v1",
+  "snapshot_digest": "b6557c9c367726e5a03b2639b95aa0d9666a398eadc846a52b1691de18e074a2",
+  "source_runtime_firewall": "scientific modules consume artifacts/input only",
+  "stage1_counts": {
+    "calibration": 64,
+    "discovery": 48,
+    "validation": 64
+  },
+  "stage2_capacity": {
+    "development_quarantine": 2,
+    "outcome": 96,
+    "writer_audit": 32
+  },
+  "valid": true
+}

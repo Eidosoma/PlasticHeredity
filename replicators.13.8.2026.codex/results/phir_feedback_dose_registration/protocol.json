@@ -1,0 +1,103 @@
+{
+  "arms": [
+    "NOOP",
+    "RANDOM",
+    "NEUTRAL",
+    "STABILIZE_25",
+    "STABILIZE_50",
+    "STABILIZE_75",
+    "STABILIZE_100",
+    "DESTABILIZE_25",
+    "DESTABILIZE_50",
+    "DESTABILIZE_75",
+    "DESTABILIZE_100"
+  ],
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "cannot_authorize_or_launch_original_confirmation": true,
+  "claim_boundary": [
+    "a dose response does not select a uniquely correct Phi-r",
+    "gauge response is not hereditary control or a cause",
+    "no consciousness, life, agency, or biological-memory claim",
+    "no universal origin-of-life mechanism or Platonic-space portal"
+  ],
+  "classification": {
+    "none": "neither registered classification passes",
+    "partial": "dose-valid and paired half-minus-high positive, without strict sign crossing",
+    "strict": "dose-valid; alpha 0.5 positive; alpha 1 negative; paired half-minus-high positive in every cell"
+  },
+  "completed_ch5_pilot_registration_id": "9bf0cfc0050726d0fb6893cfa6f1789363612b50a6154a399477e3748f7726cf",
+  "completed_window_bridge_registration_id": "9ef3c307b39d56ee9b82651ee39984ef5c3260cef735243eecd680fb97100c89",
+  "doses": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "external_context_only": {
+    "fable_heredity_effect_approximate_range": [
+      0.11,
+      0.16
+    ],
+    "fable_revised_sign": "positive under pooled and rolling readings",
+    "imported_as_fitting_target": false
+  },
+  "format": "codex-ch5-phir-feedback-dose-program-v1",
+  "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "inference": {
+    "bootstrap": 4096,
+    "candidate_pooling": false,
+    "holm_across_four_cells_within_family": true,
+    "replicate_pooling": false,
+    "sign_randomization": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "no_48_matrix_continuation": true,
+  "original_confirmation_locked": true,
+  "primary": [
+    "inherited fraction over controlled fissions 31-60",
+    "pooled-final-30 CLR/drop-last revised nine-atom Phi-r",
+    "all 16 pooled-final-30 CLR PhiID atoms"
+  ],
+  "program": "fresh 24-matrix repeated-feedback strength reconciliation",
+  "protocol_id": "68dbb137681b7dd2ac46819289562f19afb34a517f73ab81035a17dda36bbdae",
+  "raw_molecular_trajectories_persisted": false,
+  "replay": "complete deterministic regeneration of all 24 matrices",
+  "secondary": [
+    "rolling-512 CLR and raw-count readings over fissions 31-60",
+    "pooled full-dimensional and macro typeset",
+    "pooled normalized-full ratio",
+    "random-minus-noop and neutral-minus-noop"
+  ],
+  "seed_domains": {
+    "bootstrap": "5d0379482e8f3de5d240fc093f3e0bedf9697a01f3512d347640bb73e1d0ce9d",
+    "future": "535d143d625432834ee37a2865e4a5ceed4c6a086dee162f8ddaa7d7687f5045",
+    "initial": "c359ad548cc364e9af82f97e7b0ba3a213e6c85e5e80f0f326c8e99d681de5f4",
+    "main_path": "45703cb2d0da9c7a903eef378d55c6aeb059976adab7f9a1cddae4685a4aadd7",
+    "matrix": "62c039ca7def7e364ab008f324154306f9c5bd2f72fa893e91d0f91fd5684f89",
+    "random_action": "baba140ccd8fc81165eede158298011fae334ca1176787a08c9bc2f728256c5e",
+    "randomization": "57bfca28363d139bf408e2e37ca921ddeb048585480f6716f695388e99f4db78",
+    "smoke": "7244df9c75574f4ec8b282c47049f83a994ef04e041c8fb3a77aec31294d79ad",
+    "validation": "efe5aa118137958bda62d57557e929818bd1607ad593226d316288de924b7f46"
+  },
+  "selector": {
+    "edit_frequency": "one edit after every completed fission in edited arms",
+    "enumeration": "every legal mass-preserving one-molecule substitution",
+    "neutral": "legal prediction closest to no-op",
+    "targets": "linear interpolation from neutral to each legal extreme",
+    "ties": "remove_type then add_type"
+  },
+  "spec": {
+    "bootstrap_repetitions": 4096,
+    "control_horizon": 60,
+    "label": "feedback_dose24",
+    "matrices": 24,
+    "natural_generations": 60,
+    "pooled30_start": 31,
+    "randomization_repetitions": 4096,
+    "replicates": 2,
+    "rolling_window": 512
+  }
+}

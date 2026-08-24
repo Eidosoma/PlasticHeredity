@@ -1,0 +1,8 @@
+{
+  "aggregate_sha256": "c377ee3d18ff283929a0d68fa15e93819a699ab8dd6b40ae03901130bdc3ec77",
+  "checkpoint_aggregate_sha256": "de707265c7d890b69d759ae50e3a0be2461d95c245dd470edbcd45e719d145b8",
+  "deterministic_pair_bootstrap": true,
+  "raw_outcomes_sha256": "9afb00f3e28c5edb4ab50c890294f9d0bff845ecae6154b975d719972165f5ec",
+  "results_sha256": "16fa4d082d93defca4c5a69af58729370542e824a8a603279024b7993cf683fa",
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1"
+}

@@ -1,0 +1,305 @@
+{
+  "status": "evidence_current_through_2026-08-21",
+  "sources": [
+    "replicators.13.8.2026.fable/replication/results_phir_confirm/phir_confirm_results.json",
+    "replicators.13.8.2026.fable/replication/results_phir_foresight/foresight_results.json",
+    "replicators.13.8.2026.codex/results/phir_ch5_pilot/primary_metrics.json",
+    "replicators.13.8.2026.codex/results/phir_window_bridge24/primary_metrics.json",
+    "replicators.13.8.2026.codex/results/phir_extension/px3_posthoc_support_audit/audit.json"
+  ],
+  "panels": {
+    "A": "Inherited-boundary-frequency-raising minus -lowering control contrast in inherited-boundary frequency in both tests",
+    "B": "Inherited-boundary-frequency-raising minus -lowering control contrast in public PhiRL revised Phi_R in both tests",
+    "C": "Clean-room-test-2 generational macro-typeset response",
+    "D": "Post-hoc support audit of retained PX3 full-block PHI_UP-minus-PHI_DOWN on the same sealed futures"
+  },
+  "boundary": "Some readings respond under heredity control, but the instruments are not numerically interchangeable. PX3's registered direct-control failure remains controlling; its support audit is diagnostic and cannot rescue it.",
+  "values": {
+    "heredity": [
+      {
+        "test": "Clean-room test 2",
+        "candidate": "02",
+        "replicate": null,
+        "label": "Test 2 \u00b7 T2-02",
+        "value": 0.12552083333333333,
+        "lower": 0.09947916666666666,
+        "upper": 0.1552083333333333
+      },
+      {
+        "test": "Clean-room test 2",
+        "candidate": "03",
+        "replicate": null,
+        "label": "Test 2 \u00b7 T2-03",
+        "value": 0.14930555555555555,
+        "lower": 0.1190972222222222,
+        "upper": 0.18177083333333333
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "02",
+        "replicate": 1,
+        "label": "Test 1 \u00b7 T1-02 \u00b7 replicate 1",
+        "value": 0.23194444444444443,
+        "lower": 0.16805555555555554,
+        "upper": 0.2986111111111111
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "02",
+        "replicate": 2,
+        "label": "Test 1 \u00b7 T1-02 \u00b7 replicate 2",
+        "value": 0.28055555555555556,
+        "lower": 0.2125,
+        "upper": 0.3522569444444444
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "03",
+        "replicate": 1,
+        "label": "Test 1 \u00b7 T1-03 \u00b7 replicate 1",
+        "value": 0.27777777777777773,
+        "lower": 0.20329861111111114,
+        "upper": 0.3550347222222222
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "03",
+        "replicate": 2,
+        "label": "Test 1 \u00b7 T1-03 \u00b7 replicate 2",
+        "value": 0.23888888888888885,
+        "lower": 0.16527777777777775,
+        "upper": 0.31666666666666665
+      }
+    ],
+    "revised_phi_r": [
+      {
+        "test": "Clean-room test 2",
+        "candidate": "02",
+        "replicate": null,
+        "label": "Test 2 \u00b7 T2-02",
+        "value": 0.1548405487302853,
+        "lower": 0.07485570005275308,
+        "upper": 0.23334145414542617
+      },
+      {
+        "test": "Clean-room test 2",
+        "candidate": "03",
+        "replicate": null,
+        "label": "Test 2 \u00b7 T2-03",
+        "value": 0.17809611844899856,
+        "lower": 0.10296965940656637,
+        "upper": 0.25908595158762293
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "02",
+        "replicate": 1,
+        "label": "Test 1 \u00b7 T1-02 \u00b7 replicate 1",
+        "value": -0.1930085007606546,
+        "lower": -0.3696756703199482,
+        "upper": -0.018379051946179115
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "02",
+        "replicate": 2,
+        "label": "Test 1 \u00b7 T1-02 \u00b7 replicate 2",
+        "value": -0.22280797275399786,
+        "lower": -0.403187988299488,
+        "upper": -0.05556567359822658
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "03",
+        "replicate": 1,
+        "label": "Test 1 \u00b7 T1-03 \u00b7 replicate 1",
+        "value": -0.4000501226282694,
+        "lower": -0.5502304474671358,
+        "upper": -0.25825140373405675
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "03",
+        "replicate": 2,
+        "label": "Test 1 \u00b7 T1-03 \u00b7 replicate 2",
+        "value": -0.1954463931759595,
+        "lower": -0.4006506174600369,
+        "upper": -0.006446730705681612
+      }
+    ],
+    "macro_typeset": [
+      {
+        "test": "Clean-room test 2",
+        "candidate": "02",
+        "replicate": null,
+        "label": "Test 2 \u00b7 T2-02",
+        "value": 0.026326667051737866,
+        "lower": 0.004383047007276431,
+        "upper": 0.04941270901281785
+      },
+      {
+        "test": "Clean-room test 2",
+        "candidate": "03",
+        "replicate": null,
+        "label": "Test 2 \u00b7 T2-03",
+        "value": 0.038948953771068835,
+        "lower": 0.01746076979374588,
+        "upper": 0.06025825374282327
+      }
+    ],
+    "full_typeset_unplotted": [
+      {
+        "test": "Clean-room test 1",
+        "candidate": "02",
+        "replicate": 1,
+        "label": "Test 1 \u00b7 T1-02 \u00b7 replicate 1",
+        "value": 3.1198082434965726,
+        "lower": 0.5558238259769662,
+        "upper": 5.8883105052071
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "02",
+        "replicate": 2,
+        "label": "Test 1 \u00b7 T1-02 \u00b7 replicate 2",
+        "value": 4.448653295565821,
+        "lower": 1.6426866357054444,
+        "upper": 7.227694762997573
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "03",
+        "replicate": 1,
+        "label": "Test 1 \u00b7 T1-03 \u00b7 replicate 1",
+        "value": 3.367181292122917,
+        "lower": 0.47596559131007404,
+        "upper": 6.168290328845744
+      },
+      {
+        "test": "Clean-room test 1",
+        "candidate": "03",
+        "replicate": 2,
+        "label": "Test 1 \u00b7 T1-03 \u00b7 replicate 2",
+        "value": 3.6852391394944486,
+        "lower": 0.6156947317608851,
+        "upper": 6.814233938059895
+      }
+    ],
+    "px3_support_audit": [
+      {
+        "branches_per_block": 16,
+        "candidate_02_positive_matrices": 21,
+        "candidate_02_up_minus_down": 8.690129,
+        "candidate_03_positive_matrices": 22,
+        "candidate_03_up_minus_down": 12.53738,
+        "pairs_per_block": 128
+      },
+      {
+        "branches_per_block": 32,
+        "candidate_02_positive_matrices": 3,
+        "candidate_02_up_minus_down": -2.4574839624194813,
+        "candidate_03_positive_matrices": 1,
+        "candidate_03_up_minus_down": -2.7251895589506407,
+        "pairs_per_block": 256
+      },
+      {
+        "branches_per_block": 64,
+        "candidate_02_positive_matrices": 3,
+        "candidate_02_up_minus_down": -0.89095,
+        "candidate_03_positive_matrices": 1,
+        "candidate_03_up_minus_down": -1.087114,
+        "pairs_per_block": 512
+      }
+    ],
+    "codex_pilot_full_typeset_unplotted": [
+      {
+        "candidate": "02",
+        "ci90": [
+          1.9276771441146008,
+          5.399930701284139
+        ],
+        "ci95": [
+          1.5926695160895672,
+          5.685369333959548
+        ],
+        "contrast": "model",
+        "effect": 3.633277733890763,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.002928972418843056,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 18,
+        "maximum_absolute_matrix_effect": 15.702748406761032,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.001464486209421528,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          3.3757171420544783,
+          7.0659276216936036
+        ],
+        "ci95": [
+          2.997456023681459,
+          7.391183108285202
+        ],
+        "contrast": "model",
+        "effect": 5.304651203233284,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 22,
+        "maximum_absolute_matrix_effect": 13.683814555160055,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          2.0987297945556245,
+          5.971006647030881
+        ],
+        "ci95": [
+          1.6734125869285614,
+          6.277852070604111
+        ],
+        "contrast": "model",
+        "effect": 4.105007824472614,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.002928972418843056,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 12.858502120982976,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.002684891383939468,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          3.0165964833525396,
+          6.647201501795943
+        ],
+        "ci95": [
+          2.6485097812573146,
+          6.994935933289389
+        ],
+        "contrast": "model",
+        "effect": 4.809002920044127,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.002196729314132292,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 14.756020712817616,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.000732243104710764,
+        "replicate": 1
+      }
+    ]
+  }
+}

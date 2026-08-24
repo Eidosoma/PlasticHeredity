@@ -1,0 +1,24 @@
+{
+  "failed_predictions": [
+    "candidate 02 accumulating-hysteresis gate",
+    "candidate 03 accumulating-hysteresis gate"
+  ],
+  "periodic_and_event_results_do_not_rescue_pulse_gate": true,
+  "prohibited": [
+    "installed compotype or autonomous attractor",
+    "biological memory, agency, life, or error correction",
+    "real prebiotic chemistry or universal origin-of-life mechanism",
+    "strict-eight or Phi/PhiID control"
+  ],
+  "sparse_feedback_still_external_active_control": true,
+  "supported": [
+    "candidate 02 supports active MODEL_DOWN maintenance at a descriptive interval of 16 fissions",
+    "candidate 03 supports active MODEL_DOWN maintenance at a descriptive interval of 16 fissions"
+  ],
+  "transient_not_restoring_basin": true,
+  "unresolved": [
+    "whether another physical embodiment can internalize the corrective rule",
+    "whether transient persistence generalizes beyond registered candidates and parameters",
+    "whether sparse control transfers across parameter regimes"
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "02": {
+    "precursor_risk": {
+      "mean": 0.11191093012680527,
+      "q90": 0.21732570303084758
+    },
+    "release": {
+      "mode_survival_frac": 0.6041666666666666,
+      "composition_hold_frac": 0.3125,
+      "mean_inherit_frac": 0.9086805555555556,
+      "mean_end_anchor_h": 0.5891961095349443,
+      "natural_mean_inherit_frac": 0.907986111111111
+    },
+    "arms": {
+      "none": {
+        "written": {
+          "held": 0.10221354166666667,
+          "returned": 0.072265625,
+          "mode_recovered": 0.14322916666666666,
+          "lost": 0.6822916666666666
+        },
+        "natural": {
+          "held": 0.123046875,
+          "returned": 0.08919270833333333,
+          "mode_recovered": 0.09635416666666667,
+          "lost": 0.69140625
+        },
+        "held_or_returned_written": 0.17447916666666666,
+        "held_or_returned_natural": 0.21223958333333334,
+        "diff_ci": [
+          -0.14703776041666666,
+          0.04975585937499997
+        ]
+      },
+      "k2": {
+        "written": {
+          "held": 0.10611979166666667,
+          "returned": 0.07552083333333333,
+          "mode_recovered": 0.13216145833333334,
+          "lost": 0.6861979166666666
+        },
+        "natural": {
+          "held": 0.12434895833333333,
+          "returned": 0.07356770833333333,
+          "mode_recovered": 0.08984375,
+          "lost": 0.7122395833333334
+        },
+        "held_or_returned_written": 0.181640625,
+        "held_or_returned_natural": 0.19791666666666666,
+        "diff_ci": [
+          -0.11653645833333333,
+          0.06212565104166664
+        ]
+      },
+      "k4": {
+        "written": {
+          "held": 0.10611979166666667,
+          "returned": 0.087890625,
+          "mode_recovered": 0.126953125,
+          "lost": 0.6790364583333334
+        },
+        "natural": {
+          "held": 0.12760416666666666,
+          "returned": 0.08072916666666667,
+          "mode_recovered": 0.0859375,
+          "lost": 0.7057291666666666
+        },
+        "held_or_returned_written": 0.19401041666666666,
+        "held_or_returned_natural": 0.20833333333333334,
+        "diff_ci": [
+          -0.11160481770833333,
+          0.06575520833333333
+        ]
+      },
+      "k8": {
+        "written": {
+          "held": 0.1015625,
+          "returned": 0.072265625,
+          "mode_recovered": 0.14192708333333334,
+          "lost": 0.6842447916666666
+        },
+        "natural": {
+          "held": 0.12760416666666666,
+          "returned": 0.07747395833333333,
+          "mode_recovered": 0.09830729166666667,
+          "lost": 0.6966145833333334
+        },
+        "held_or_returned_written": 0.173828125,
+        "held_or_returned_natural": 0.205078125,
+        "diff_ci": [
+          -0.11848958333333333,
+          0.044921875
+        ]
+      },
+      "k16": {
+        "written": {
+          "held": 0.1015625,
+          "returned": 0.09114583333333333,
+          "mode_recovered": 0.13346354166666666,
+          "lost": 0.673828125
+        },
+        "natural": {
+          "held": 0.12434895833333333,
+          "returned": 0.08984375,
+          "mode_recovered": 0.1015625,
+          "lost": 0.6842447916666666
+        },
+        "held_or_returned_written": 0.19270833333333334,
+        "held_or_returned_natural": 0.21419270833333334,
+        "diff_ci": [
+          -0.10667317708333333,
+          0.05821940104166664
+        ]
+      },
+      "adversarial": {
+        "written": {
+          "held": 0.10481770833333333,
+          "returned": 0.08854166666666667,
+          "mode_recovered": 0.13671875,
+          "lost": 0.669921875
+        },
+        "natural": {
+          "held": 0.12174479166666667,
+          "returned": 0.07682291666666667,
+          "mode_recovered": 0.1015625,
+          "lost": 0.6998697916666666
+        },
+        "held_or_returned_written": 0.193359375,
+        "held_or_returned_natural": 0.19856770833333334,
+        "diff_ci": [
+          -0.09337565104166666,
+          0.07775065104166663
+        ]
+      }
+    },
+    "basin_radius": 0,
+    "verdict": "written-but-passive"
+  },
+  "03": {
+    "precursor_risk": {
+      "mean": 0.12708831721484212,
+      "q90": 0.2744987931583202
+    },
+    "release": {
+      "mode_survival_frac": 0.5625,
+      "composition_hold_frac": 0.2916666666666667,
+      "mean_inherit_frac": 0.9277777777777777,
+      "mean_end_anchor_h": 0.5853254382036045,
+      "natural_mean_inherit_frac": 0.9086805555555556
+    },
+    "arms": {
+      "none": {
+        "written": {
+          "held": 0.12760416666666666,
+          "returned": 0.08203125,
+          "mode_recovered": 0.08984375,
+          "lost": 0.7005208333333334
+        },
+        "natural": {
+          "held": 0.14127604166666666,
+          "returned": 0.10221354166666667,
+          "mode_recovered": 0.06380208333333333,
+          "lost": 0.6927083333333334
+        },
+        "held_or_returned_written": 0.20963541666666666,
+        "held_or_returned_natural": 0.24348958333333334,
+        "diff_ci": [
+          -0.10462239583333333,
+          0.028645833333333332
+        ]
+      },
+      "k2": {
+        "written": {
+          "held": 0.14192708333333334,
+          "returned": 0.06705729166666667,
+          "mode_recovered": 0.095703125,
+          "lost": 0.6953125
+        },
+        "natural": {
+          "held": 0.1484375,
+          "returned": 0.10546875,
+          "mode_recovered": 0.07552083333333333,
+          "lost": 0.6705729166666666
+        },
+        "held_or_returned_written": 0.208984375,
+        "held_or_returned_natural": 0.25390625,
+        "diff_ci": [
+          -0.111328125,
+          0.01655273437499997
+        ]
+      },
+      "k4": {
+        "written": {
+          "held": 0.12825520833333334,
+          "returned": 0.10091145833333333,
+          "mode_recovered": 0.078125,
+          "lost": 0.6927083333333334
+        },
+        "natural": {
+          "held": 0.146484375,
+          "returned": 0.10872395833333333,
+          "mode_recovered": 0.072265625,
+          "lost": 0.6725260416666666
+        },
+        "held_or_returned_written": 0.22916666666666666,
+        "held_or_returned_natural": 0.2552083333333333,
+        "diff_ci": [
+          -0.096630859375,
+          0.04575195312499991
+        ]
+      },
+      "k8": {
+        "written": {
+          "held": 0.11979166666666667,
+          "returned": 0.08723958333333333,
+          "mode_recovered": 0.09635416666666667,
+          "lost": 0.6966145833333334
+        },
+        "natural": {
+          "held": 0.140625,
+          "returned": 0.10481770833333333,
+          "mode_recovered": 0.07291666666666667,
+          "lost": 0.681640625
+        },
+        "held_or_returned_written": 0.20703125,
+        "held_or_returned_natural": 0.24544270833333334,
+        "diff_ci": [
+          -0.109375,
+          0.03533528645833325
+        ]
+      },
+      "k16": {
+        "written": {
+          "held": 0.115234375,
+          "returned": 0.09114583333333333,
+          "mode_recovered": 0.08854166666666667,
+          "lost": 0.705078125
+        },
+        "natural": {
+          "held": 0.130859375,
+          "returned": 0.12890625,
+          "mode_recovered": 0.0703125,
+          "lost": 0.669921875
+        },
+        "held_or_returned_written": 0.20638020833333334,
+        "held_or_returned_natural": 0.259765625,
+        "diff_ci": [
+          -0.11160481770833333,
+          0.010416666666666666
+        ]
+      },
+      "adversarial": {
+        "written": {
+          "held": 0.125,
+          "returned": 0.08333333333333333,
+          "mode_recovered": 0.087890625,
+          "lost": 0.7037760416666666
+        },
+        "natural": {
+          "held": 0.12760416666666666,
+          "returned": 0.1328125,
+          "mode_recovered": 0.06380208333333333,
+          "lost": 0.67578125
+        },
+        "held_or_returned_written": 0.20833333333333334,
+        "held_or_returned_natural": 0.2604166666666667,
+        "diff_ci": [
+          -0.119140625,
+          0.013020833333333334
+        ]
+      }
+    },
+    "basin_radius": 0,
+    "verdict": "written-but-passive"
+  }
+}

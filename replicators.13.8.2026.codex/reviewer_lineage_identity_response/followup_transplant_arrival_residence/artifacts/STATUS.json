@@ -1,0 +1,15 @@
+{
+  "completed": 106,
+  "elapsed_seconds": 21349.627328395844,
+  "error": null,
+  "eta_seconds": 0.0,
+  "format": "strict-b-transplant-arrival-residence-v1",
+  "message": "replayed_futures=182272",
+  "pid": 2,
+  "protocol_id": "920aa591842e0aec5a25fcc6f803ae4ca71d285e6157c5032d56e2e34c1ee165",
+  "stage": "complete",
+  "state": "complete",
+  "throughput_cells_per_second": 0.004964957859429042,
+  "total": 106,
+  "updated_at_epoch": 1787353122.0695844
+}

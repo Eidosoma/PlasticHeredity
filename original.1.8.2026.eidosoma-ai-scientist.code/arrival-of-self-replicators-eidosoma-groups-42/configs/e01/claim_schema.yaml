@@ -1,0 +1,203 @@
+schema_name: e01_forensic_claim_ledger
+schema_version: 1.0.0
+ledger_version: E01-S01-v1.0.0
+research_step_id: S01
+experiment_id: E01
+frozen_question: >-
+  Can every reported claim be represented as a separate, testable target with an
+  explicit statistic, unit of analysis, expected direction, and replication criterion?
+
+source_document:
+  title: Causal Architecture Dynamics Prior to Arrival of Self-replicators in a Model of Catalytic Networks Relevant to Origin-of-Life
+  authors: F. Pigozzi and M. Levin
+  original_filename: Causal Architecture Dynamics Prior to Arrival of Self-replicators in a Model of Catalytic Networks Relevant to Origin-of-Life.pdf
+  extracted_markdown: input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md
+  attachment_manifest: input-attachments/MANIFEST.json
+  attachment_sidecar: input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md
+  figure_directory: input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/figures
+  extractor: docling
+  page_count: 18
+  figure_count: 8
+  supplementary_materials: none
+  code_availability_statement: Code is promised upon publication but is not supplied with the attachment.
+
+columns:
+  - claim_id
+  - claim_family
+  - evidence_layer
+  - claim_text
+  - primary_source_location
+  - corroborating_source_location
+  - reported_statistic
+  - reported_target
+  - expected_direction
+  - unit_of_analysis
+  - sample_scope
+  - reproduction_estimand
+  - reproduction_criterion
+  - inferential_test
+  - specification_status
+  - downstream_step
+  - discrepancy_ids
+  - notes
+
+required_nonempty_fields:
+  - claim_id
+  - claim_family
+  - evidence_layer
+  - claim_text
+  - primary_source_location
+  - reported_statistic
+  - reported_target
+  - expected_direction
+  - unit_of_analysis
+  - sample_scope
+  - reproduction_estimand
+  - reproduction_criterion
+  - inferential_test
+  - specification_status
+  - downstream_step
+
+id_pattern: '^E01-C[0-9]{3}$'
+
+enums:
+  claim_family:
+    - metric_distinctiveness
+    - aggregate_trend
+    - spiking
+    - run_level_association
+    - state_comparison
+    - temporal_structure
+    - prediction
+    - spike_timing
+    - intervention_absolute
+    - intervention_contrast
+    - intervention_time_trend
+  evidence_layer:
+    - descriptive
+    - associative
+    - predictive
+    - interventional
+  specification_status:
+    - fully_specified_from_paper
+    - testable_with_declared_ambiguity
+    - underdetermined_pending_S02
+  downstream_step:
+    - S14
+    - S15
+    - S16
+    - S17
+
+required_claim_families:
+  - metric_distinctiveness
+  - aggregate_trend
+  - spiking
+  - run_level_association
+  - state_comparison
+  - temporal_structure
+  - prediction
+  - spike_timing
+  - intervention_absolute
+  - intervention_contrast
+  - intervention_time_trend
+
+required_numeric_anchors:
+  - 'p=0.1995'
+  - '73/100'
+  - '54/100'
+  - '54/73'
+  - 'mean rho=0.139'
+  - '57/100'
+  - '86/100'
+  - 'median p=2.07e-51'
+  - '100/100'
+  - 'rho=0.66; p<0.001'
+  - 'rho=0.71; p<0.001'
+  - '874 +/- 233 molecular steps'
+  - '716 +/- 198 molecular steps'
+  - '559 +/- 99 molecular steps'
+  - '88 +/- 3%'
+  - '80 +/- 3%'
+  - '0.52 +/- 0.04'
+  - '0.38 +/- 0.06'
+  - '0.42 +/- 0.04'
+  - '36 +/- 26% (unit conflict)'
+  - '37 +/- 27% (unit conflict)'
+  - '40 +/- 28% (unit conflict)'
+  - 'coefficient=0.041; p<0.001'
+  - 'coefficient=0.008; p=0.4659'
+  - 'coefficient=-0.03; p=0.0034'
+
+discrepancies:
+  D01:
+    kind: denominator_wording
+    summary: >-
+      Results says 54/73 positive runs were significant, while Figure 3 says 54% of all
+      100 runs were positive and significant. These are reconcilable only by preserving
+      both the raw count (54) and both denominators.
+  D02:
+    kind: estimand_wording
+    summary: >-
+      Results describes a correlation between the Phi-r trajectory and replication state;
+      the Figure 3 caption describes changes in Phi-r. Level and change are different estimands.
+  D03:
+    kind: prediction_endpoint_wording
+    summary: >-
+      Results describes predicting the remaining 75% of the full replication-state trajectory,
+      while the Figure 5 title/caption calls the task prediction of initial appearance.
+  D04:
+    kind: unit_conflict
+    summary: >-
+      Table 1 prints time-to-first values with percent signs, but its note defines the outcome
+      as a number of molecular steps.
+  D05:
+    kind: direction_conflict
+    summary: >-
+      Results says min-Phi-r significantly worsened all four outcomes, but Table 1 reports
+      higher consistency for min (0.42) than control (0.38), where higher is defined as better.
+  D06:
+    kind: scope_conflict
+    summary: >-
+      Results says overall max-Phi-r probability did not significantly differ from control,
+      whereas Discussion says maximizing yielded higher probability than original runs.
+      The latter may refer only to the final generation, but does not say so there.
+  D07:
+    kind: spike_definition_gap
+    summary: >-
+      Text defines spikes as positive excursions more than three standard deviations above
+      the overall mean and says most runs spike, but gives no run count or thresholding scope;
+      plotted examples also contain prominent negative excursions.
+  D08:
+    kind: undecoded_formula
+    summary: >-
+      The supplied paper extraction contains two formula-not-decoded placeholders for the
+      causal-emergence definition, preventing equation-level method linkage in S01.
+  D09:
+    kind: statistic_label_ambiguity
+    summary: >-
+      Figure 6C prints coefficients next to regression lines using rho-like notation, leaving
+      unclear whether they are regression slopes or correlation coefficients.
+  D10:
+    kind: dispersion_undefined
+    summary: >-
+      Table 1 reports plus/minus quantities without defining whether they are standard
+      deviations, standard errors, or confidence-interval half-widths.
+  D11:
+    kind: significance_scope_ambiguity
+    summary: >-
+      The p<0.001 Mann-Whitney statement for replicator versus drift steps does not state
+      clearly whether it is a pooled test, a representative run, or a summary of runwise tests.
+  D12:
+    kind: spike_height_missing_statistic
+    summary: >-
+      Spike height is called nonsignificant without a reported coefficient or p-value.
+
+validation_contract:
+  unique_claim_ids: true
+  require_all_columns: true
+  require_all_families: true
+  require_each_discrepancy_reference_to_resolve: true
+  require_no_composite_pass_score: true
+  require_results_caption_reconciliation: true
+  require_table_cell_claims: 12
+  require_claim_count: 59

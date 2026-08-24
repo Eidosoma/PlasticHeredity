@@ -1,0 +1,24 @@
+{
+  "failed_predictions": [
+    "CR6 registered regime gate: POS_A_M4_S5",
+    "CR6 registered regime gate: POS_A_M3_S4",
+    "CR6 registered regime gate: POS_A_M5_S4",
+    "CR6 registered regime gate: NULL_A_M4_S3"
+  ],
+  "prohibited": [
+    "universal transfer",
+    "strict-eight control",
+    "biological memory",
+    "agency or life",
+    "autonomous organization or installed attractor",
+    "real prebiotic chemistry",
+    "universal origin-of-life mechanism",
+    "Phi or PhiID intervention"
+  ],
+  "supported": [],
+  "unresolved": [
+    "transfer beyond the four registered beta distributions",
+    "long-horizon closed-loop control",
+    "autonomous persistence after release"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "format": "codex-intervention-replay-audit-v1",
+  "future_seed_domain_reused_for_exact_replay": true,
+  "generated_campaign_digest": "1f4243e579bcf531383926999180f724b72aff19804a2507ccd800e3e321c1de",
+  "maximum_prediction_absolute_error": 0.0,
+  "mismatched_state_ids": [],
+  "replay_campaign_digest": "1f4243e579bcf531383926999180f724b72aff19804a2507ccd800e3e321c1de",
+  "replay_seed_domain_does_not_perturb_future_stream": true,
+  "state_edit_endpoint_and_process_digests_exact": true,
+  "states": 805,
+  "states_exact": 805
+}

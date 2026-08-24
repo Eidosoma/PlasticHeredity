@@ -1,0 +1,1146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:eidosoma:e01:trajectory-schema:1.0.0",
+  "title": "E01 lossless GARD trajectory envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "serializationVersion",
+    "payloadSha256",
+    "payload"
+  ],
+  "properties": {
+    "serializationVersion": {
+      "const": "E01-canonical-json-v1.0.0"
+    },
+    "payloadSha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "payload": {
+      "$ref": "#/$defs/trajectory"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "gitSha1": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "identifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:/@+\\-]*$"
+    },
+    "floatHex": {
+      "type": "string",
+      "pattern": "^-?0x[0-9a-f]+(?:\\.[0-9a-f]+)?p[+\\-][0-9]+$"
+    },
+    "nullableFloatHex": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/floatHex"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "state": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 9223372036854775807
+      }
+    },
+    "floatVector": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/floatHex"
+      }
+    },
+    "rngUse": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "purpose",
+        "streamId",
+        "stateSha256Before",
+        "stateSha256After",
+        "consumed"
+      ],
+      "properties": {
+        "purpose": {
+          "enum": [
+            "catalytic_matrix",
+            "initial_state",
+            "event",
+            "waiting_time",
+            "fission",
+            "daughter_selection",
+            "intervention",
+            "estimator",
+            "machine_learning"
+          ]
+        },
+        "streamId": {
+          "type": "string",
+          "pattern": "^urn:eidosoma:rng:E01-seed-schema-v1\\.0\\.0:[a-z_]+:[0-9a-f]{64}$"
+        },
+        "stateSha256Before": {
+          "$ref": "#/$defs/sha256"
+        },
+        "stateSha256After": {
+          "$ref": "#/$defs/sha256"
+        },
+        "consumed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "specificationFields": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "specification_id",
+        "profile_role",
+        "n_species",
+        "n_min",
+        "n_max",
+        "n_generations",
+        "max_steps",
+        "beta_a",
+        "beta_sigma",
+        "k_f",
+        "k_b",
+        "rho",
+        "propensity_equation_branch",
+        "catalytic_matrix_branch",
+        "reservoir_semantics",
+        "update_kernel",
+        "clock_semantics",
+        "poisson_exposure",
+        "loss_nonnegativity",
+        "growth_boundary",
+        "max_steps_semantics",
+        "zero_propensity_semantics",
+        "fission_semantics",
+        "fission_probability",
+        "daughter_selection",
+        "post_fission_semantics",
+        "initial_state_semantics"
+      ],
+      "properties": {
+        "specification_id": {
+          "$ref": "#/$defs/identifier"
+        },
+        "profile_role": {
+          "enum": [
+            "historical_distribution_comparison",
+            "paper_reconstruction_fixture",
+            "modern_gillespie_fixture"
+          ]
+        },
+        "n_species": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "n_min": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "n_max": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "n_generations": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_steps": {
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "beta_a": {
+          "$ref": "#/$defs/floatHex"
+        },
+        "beta_sigma": {
+          "$ref": "#/$defs/floatHex"
+        },
+        "k_f": {
+          "$ref": "#/$defs/floatHex"
+        },
+        "k_b": {
+          "$ref": "#/$defs/floatHex"
+        },
+        "rho": {
+          "$ref": "#/$defs/floatVector"
+        },
+        "propensity_equation_branch": {
+          "enum": [
+            "historical_reference",
+            "paper_poisson_reconstruction",
+            "modern_gillespie"
+          ]
+        },
+        "catalytic_matrix_branch": {
+          "enum": [
+            "historical_orientation_with_diagonal",
+            "transposed_with_diagonal",
+            "historical_orientation_zero_diagonal"
+          ]
+        },
+        "reservoir_semantics": {
+          "enum": [
+            "constant_require_sum_one",
+            "constant_as_supplied"
+          ]
+        },
+        "update_kernel": {
+          "enum": [
+            "categorical_single_event",
+            "direct_gillespie",
+            "vector_poisson_batch"
+          ]
+        },
+        "clock_semantics": {
+          "enum": [
+            "event_index_only",
+            "gillespie_exponential",
+            "fixed_poisson_exposure"
+          ]
+        },
+        "poisson_exposure": {
+          "$ref": "#/$defs/nullableFloatHex"
+        },
+        "loss_nonnegativity": {
+          "enum": [
+            "eventwise_zero_rate",
+            "clip_batch_to_available",
+            "error_on_batch_excess"
+          ]
+        },
+        "growth_boundary": {
+          "enum": [
+            "eventwise_exact_stop",
+            "retain_batch_overshoot",
+            "reject_batch_overshoot"
+          ]
+        },
+        "max_steps_semantics": {
+          "enum": [
+            "unbounded_historical_comparison",
+            "fission_current_state",
+            "stop_without_fission",
+            "raise"
+          ]
+        },
+        "zero_propensity_semantics": {
+          "enum": [
+            "stop",
+            "raise"
+          ]
+        },
+        "fission_semantics": {
+          "enum": [
+            "fixed_size_without_replacement_odd_discard",
+            "binomial_complement"
+          ]
+        },
+        "fission_probability": {
+          "$ref": "#/$defs/nullableFloatHex"
+        },
+        "daughter_selection": {
+          "enum": [
+            "first",
+            "second",
+            "uniform_random"
+          ]
+        },
+        "post_fission_semantics": {
+          "enum": [
+            "continue_exact_selected",
+            "error_if_selected_empty"
+          ]
+        },
+        "initial_state_semantics": {
+          "enum": [
+            "distinct_types_without_replacement",
+            "with_replacement_counts"
+          ]
+        }
+      }
+    },
+    "specification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "specificationPayloadVersion",
+        "specificationId",
+        "fieldsSha256",
+        "fields"
+      ],
+      "properties": {
+        "specificationPayloadVersion": {
+          "const": "E01-gard-specification-payload-v1.0.0"
+        },
+        "specificationId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "fieldsSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "fields": {
+          "$ref": "#/$defs/specificationFields"
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "eventId",
+        "specificationId",
+        "generationIndexOneBased",
+        "stepIndexOneBased",
+        "preEventState",
+        "postEventState",
+        "preEventMass",
+        "postEventMass",
+        "massDelta",
+        "eventIdentity",
+        "propensities",
+        "updateCounts",
+        "boundaryAction",
+        "clock",
+        "rngUses"
+      ],
+      "properties": {
+        "eventId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "specificationId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "generationIndexOneBased": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "stepIndexOneBased": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "preEventState": {
+          "$ref": "#/$defs/state"
+        },
+        "postEventState": {
+          "$ref": "#/$defs/state"
+        },
+        "preEventMass": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "postEventMass": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "massDelta": {
+          "type": "integer"
+        },
+        "eventIdentity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "updateKernel",
+            "eventKind",
+            "selectedEventIndexZeroBased",
+            "selectedSpeciesIndexZeroBased",
+            "selectionProbabilityHex"
+          ],
+          "properties": {
+            "updateKernel": {
+              "enum": [
+                "categorical_single_event",
+                "direct_gillespie",
+                "vector_poisson_batch"
+              ]
+            },
+            "eventKind": {
+              "enum": [
+                "join",
+                "leave",
+                "vector_poisson_batch"
+              ]
+            },
+            "selectedEventIndexZeroBased": {
+              "oneOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "selectedSpeciesIndexZeroBased": {
+              "oneOf": [
+                {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "selectionProbabilityHex": {
+              "$ref": "#/$defs/nullableFloatHex"
+            }
+          }
+        },
+        "propensities": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "equationBranch",
+            "boostHex",
+            "joinHex",
+            "leaveHex",
+            "concatenatedHex",
+            "normalizedHex",
+            "totalHex"
+          ],
+          "properties": {
+            "equationBranch": {
+              "enum": [
+                "historical_reference",
+                "paper_poisson_reconstruction",
+                "modern_gillespie"
+              ]
+            },
+            "boostHex": {
+              "$ref": "#/$defs/floatVector"
+            },
+            "joinHex": {
+              "$ref": "#/$defs/floatVector"
+            },
+            "leaveHex": {
+              "$ref": "#/$defs/floatVector"
+            },
+            "concatenatedHex": {
+              "$ref": "#/$defs/floatVector"
+            },
+            "normalizedHex": {
+              "$ref": "#/$defs/floatVector"
+            },
+            "totalHex": {
+              "$ref": "#/$defs/floatHex"
+            }
+          }
+        },
+        "updateCounts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "attemptedJoin",
+            "attemptedLoss",
+            "appliedJoin",
+            "appliedLoss"
+          ],
+          "properties": {
+            "attemptedJoin": {
+              "$ref": "#/$defs/state"
+            },
+            "attemptedLoss": {
+              "$ref": "#/$defs/state"
+            },
+            "appliedJoin": {
+              "$ref": "#/$defs/state"
+            },
+            "appliedLoss": {
+              "$ref": "#/$defs/state"
+            }
+          }
+        },
+        "boundaryAction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "clock": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "semantics",
+            "timeIncrementHex",
+            "modelTimeBeforeHex",
+            "modelTimeAfterHex"
+          ],
+          "properties": {
+            "semantics": {
+              "enum": [
+                "event_index_only",
+                "gillespie_exponential",
+                "fixed_poisson_exposure"
+              ]
+            },
+            "timeIncrementHex": {
+              "$ref": "#/$defs/nullableFloatHex"
+            },
+            "modelTimeBeforeHex": {
+              "$ref": "#/$defs/nullableFloatHex"
+            },
+            "modelTimeAfterHex": {
+              "$ref": "#/$defs/nullableFloatHex"
+            }
+          }
+        },
+        "rngUses": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "event",
+            "waitingTime"
+          ],
+          "properties": {
+            "event": {
+              "$ref": "#/$defs/rngUse"
+            },
+            "waitingTime": {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/rngUse"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "fission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fissionId",
+        "specificationId",
+        "generationIndexOneBased",
+        "preFissionState",
+        "fissionSemantics",
+        "fissionProbabilityHex",
+        "result",
+        "daughterChoice",
+        "rngUses"
+      ],
+      "properties": {
+        "fissionId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "specificationId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "generationIndexOneBased": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "preFissionState": {
+          "$ref": "#/$defs/state"
+        },
+        "fissionSemantics": {
+          "enum": [
+            "fixed_size_without_replacement_odd_discard",
+            "binomial_complement"
+          ]
+        },
+        "fissionProbabilityHex": {
+          "$ref": "#/$defs/nullableFloatHex"
+        },
+        "result": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "childFirst",
+            "childSecond",
+            "discarded",
+            "conservationHolds"
+          ],
+          "properties": {
+            "childFirst": {
+              "$ref": "#/$defs/state"
+            },
+            "childSecond": {
+              "$ref": "#/$defs/state"
+            },
+            "discarded": {
+              "$ref": "#/$defs/state"
+            },
+            "conservationHolds": {
+              "const": true
+            }
+          }
+        },
+        "daughterChoice": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "selectionSemantics",
+            "selectedLabel",
+            "selectedState",
+            "postFissionSemantics"
+          ],
+          "properties": {
+            "selectionSemantics": {
+              "enum": [
+                "first",
+                "second",
+                "uniform_random"
+              ]
+            },
+            "selectedLabel": {
+              "enum": [
+                "first",
+                "second"
+              ]
+            },
+            "selectedState": {
+              "$ref": "#/$defs/state"
+            },
+            "postFissionSemantics": {
+              "enum": [
+                "continue_exact_selected",
+                "error_if_selected_empty"
+              ]
+            }
+          }
+        },
+        "rngUses": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "fission",
+            "daughterSelection"
+          ],
+          "properties": {
+            "fission": {
+              "$ref": "#/$defs/rngUse"
+            },
+            "daughterSelection": {
+              "$ref": "#/$defs/rngUse"
+            }
+          }
+        }
+      }
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generationId",
+        "specificationId",
+        "generationIndexOneBased",
+        "growth",
+        "fission",
+        "postGenerationState",
+        "stoppingReason"
+      ],
+      "properties": {
+        "generationId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "specificationId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "generationIndexOneBased": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "growth": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "initialState",
+            "finalState",
+            "stoppingReason",
+            "elapsedModelTimeHex",
+            "events"
+          ],
+          "properties": {
+            "initialState": {
+              "$ref": "#/$defs/state"
+            },
+            "finalState": {
+              "$ref": "#/$defs/state"
+            },
+            "stoppingReason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "elapsedModelTimeHex": {
+              "$ref": "#/$defs/nullableFloatHex"
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/event"
+              }
+            }
+          }
+        },
+        "fission": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/fission"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "postGenerationState": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/state"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stoppingReason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "engineIdentity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "engineId",
+        "enginePackage",
+        "engineVersion",
+        "repositoryCommit",
+        "engineSourceSha256",
+        "adapterSourceSha256",
+        "pythonVersion",
+        "numpyVersion",
+        "platform",
+        "byteOrder",
+        "runtimeFingerprint",
+        "seedSchemaSha256",
+        "trajectorySchemaSha256",
+        "precisionContractSha256",
+        "numericThreadEnvironment",
+        "sameEngineRegenerationScope"
+      ],
+      "properties": {
+        "engineId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "enginePackage": {
+          "const": "e01_gard_independent"
+        },
+        "engineVersion": {
+          "const": "1.0.0"
+        },
+        "repositoryCommit": {
+          "$ref": "#/$defs/gitSha1"
+        },
+        "engineSourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "adapterSourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "pythonVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "numpyVersion": {
+          "const": "2.4.6"
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "byteOrder": {
+          "enum": [
+            "little",
+            "big"
+          ]
+        },
+        "runtimeFingerprint": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seedSchemaSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "trajectorySchemaSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "precisionContractSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "numericThreadEnvironment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "MKL_NUM_THREADS",
+            "NUMEXPR_NUM_THREADS",
+            "OMP_NUM_THREADS",
+            "OPENBLAS_NUM_THREADS"
+          ],
+          "properties": {
+            "MKL_NUM_THREADS": {
+              "const": "1"
+            },
+            "NUMEXPR_NUM_THREADS": {
+              "const": "1"
+            },
+            "OMP_NUM_THREADS": {
+              "const": "1"
+            },
+            "OPENBLAS_NUM_THREADS": {
+              "const": "1"
+            }
+          }
+        },
+        "sameEngineRegenerationScope": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "registryBoundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registryVersion",
+        "registrySha256",
+        "registryExecutable",
+        "noSilentDefaults",
+        "parameterCount",
+        "unresolvedParameterCount",
+        "unexpandedBranchSetCount",
+        "authorInitialStateRngStream",
+        "analysisStateSamplingInstant",
+        "authorCodeIdentity",
+        "legacyMatlabRngIdentity",
+        "rule"
+      ],
+      "properties": {
+        "registryVersion": {
+          "const": "E01-specification-registry-v0.3.0"
+        },
+        "registrySha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "registryExecutable": {
+          "const": false
+        },
+        "noSilentDefaults": {
+          "const": true
+        },
+        "parameterCount": {
+          "const": 120
+        },
+        "unresolvedParameterCount": {
+          "const": 64
+        },
+        "unexpandedBranchSetCount": {
+          "const": 21
+        },
+        "authorInitialStateRngStream": {
+          "const": "UNRESOLVED::E01-A020"
+        },
+        "analysisStateSamplingInstant": {
+          "const": "UNRESOLVED::E01-A025"
+        },
+        "authorCodeIdentity": {
+          "const": "UNAVAILABLE::NO_AUTHOR_CODE_RELEASE_FOUND"
+        },
+        "legacyMatlabRngIdentity": {
+          "const": "UNRESOLVED::LEGACY_MATLAB_RNG_ALGORITHM_AND_GLOBAL_STATE_ORDER"
+        },
+        "rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "terminalRngState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "streamId",
+        "initialStateSha256",
+        "terminalStateSha256",
+        "consumed"
+      ],
+      "properties": {
+        "streamId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initialStateSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "terminalStateSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "consumed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "trajectory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "trajectorySchemaVersion",
+        "precisionContractVersion",
+        "experimentId",
+        "specificationId",
+        "trajectoryId",
+        "replicateIndex",
+        "engineIdentity",
+        "specification",
+        "seedIdentity",
+        "registryBoundary",
+        "samplingBoundary",
+        "setup",
+        "generations",
+        "terminal",
+        "rngTerminalStates"
+      ],
+      "properties": {
+        "trajectorySchemaVersion": {
+          "const": "E01-trajectory-schema-v1.0.0"
+        },
+        "precisionContractVersion": {
+          "const": "E01-trajectory-precision-v1.0.0"
+        },
+        "experimentId": {
+          "const": "E01"
+        },
+        "specificationId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "trajectoryId": {
+          "$ref": "#/$defs/identifier"
+        },
+        "replicateIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "engineIdentity": {
+          "$ref": "#/$defs/engineIdentity"
+        },
+        "specification": {
+          "$ref": "#/$defs/specification"
+        },
+        "seedIdentity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "seedManifestPayloadSha256",
+            "seedManifest"
+          ],
+          "properties": {
+            "seedManifestPayloadSha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "seedManifest": {
+              "type": "object"
+            }
+          }
+        },
+        "registryBoundary": {
+          "$ref": "#/$defs/registryBoundary"
+        },
+        "samplingBoundary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "recordedStateBoundaries",
+            "analysisSamplingInstant",
+            "rule"
+          ],
+          "properties": {
+            "recordedStateBoundaries": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "initial_state",
+                  "pre_event",
+                  "post_event",
+                  "pre_fission",
+                  "child_first",
+                  "child_second",
+                  "discarded",
+                  "selected_daughter",
+                  "terminal_state"
+                ]
+              }
+            },
+            "analysisSamplingInstant": {
+              "const": "UNRESOLVED::E01-A025"
+            },
+            "rule": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "setup": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "catalyticMatrix",
+            "catalyticMatrixRngUse",
+            "initialState",
+            "initialStateRngUse"
+          ],
+          "properties": {
+            "catalyticMatrix": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "dtype",
+                "shape",
+                "valuesHex",
+                "canonicalValuesSha256"
+              ],
+              "properties": {
+                "dtype": {
+                  "const": "float64"
+                },
+                "shape": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "integer",
+                    "minimum": 1
+                  }
+                },
+                "valuesHex": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "$ref": "#/$defs/floatVector"
+                  }
+                },
+                "canonicalValuesSha256": {
+                  "$ref": "#/$defs/sha256"
+                }
+              }
+            },
+            "catalyticMatrixRngUse": {
+              "$ref": "#/$defs/rngUse"
+            },
+            "initialState": {
+              "$ref": "#/$defs/state"
+            },
+            "initialStateRngUse": {
+              "$ref": "#/$defs/rngUse"
+            }
+          }
+        },
+        "generations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/generation"
+          }
+        },
+        "terminal": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "finalState",
+            "requestedGenerations",
+            "completedFissions",
+            "stoppingReason"
+          ],
+          "properties": {
+            "finalState": {
+              "$ref": "#/$defs/state"
+            },
+            "requestedGenerations": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "completedFissions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "stoppingReason": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "rngTerminalStates": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "catalytic_matrix",
+            "initial_state",
+            "event",
+            "waiting_time",
+            "fission",
+            "daughter_selection",
+            "intervention",
+            "estimator",
+            "machine_learning"
+          ],
+          "properties": {
+            "catalytic_matrix": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "initial_state": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "event": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "waiting_time": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "fission": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "daughter_selection": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "intervention": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "estimator": {
+              "$ref": "#/$defs/terminalRngState"
+            },
+            "machine_learning": {
+              "$ref": "#/$defs/terminalRngState"
+            }
+          }
+        }
+      }
+    }
+  }
+}

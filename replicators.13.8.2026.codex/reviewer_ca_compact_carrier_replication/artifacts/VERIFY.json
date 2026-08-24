@@ -1,0 +1,13 @@
+{
+  "adjudication_recomputes_exactly": true,
+  "checkpoint_count": 768,
+  "checkpoint_payloads_valid": true,
+  "expected_checkpoint_count": 768,
+  "missing_checkpoints": 0,
+  "output_manifest_valid": true,
+  "registration_valid": true,
+  "schema_version": "reviewer-ca-compact-carrier-replication-v1",
+  "snapshot_valid": true,
+  "source_results_or_checkpoints_used": false,
+  "valid": true
+}

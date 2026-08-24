@@ -1,0 +1,20 @@
+{
+  "format": "codex-intervention-outgoing-rule-registration-v1",
+  "frozen_predictor_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "original_p2_checksum_manifest_sha256": "b6dcc401d5b3e50d503de8e8233e2a5fcbd9c6386231a159da01f73d40119ab1",
+  "original_registration_checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "p2b_scientific_matrices_generated": false,
+  "protocol_id": "3128743368708a4a3c07de12b094ce5e406334cad03f9a76ffbeaeb04cf51645",
+  "protocol_sha256": "2050f19f474e69d9aaec2fe806a4bcb198814b66c369965e90a3244ef364fe3d",
+  "registration_id": "02185a2364e03628c0417f937548c518c0c8c0025514809a7bb3edef25be0a23",
+  "seed_registry_sha256": "888eeb79ce107c888ec15722ba7d9b18774de2a66c8ebbcf5c0edb6249882ff4",
+  "source_hashes": {
+    "CODEX_INTERVENTION_OUTGOING_RULE_CORRECTION_PREREGISTRATION.md": "3f1f456a9f0ee49e65fc419bee755150330efad7c22fd03056386465db87c66d",
+    "conftest.py": "c700af10852e4c354405b50eb536852024cf5473929a94864c11ddea85bc0286",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "tests/test_intervention_outgoing_rule.py": "72f94529d2cff9ae31571b2c6ac5486016a89a339f09282a2edc9bc32e6e8335"
+  },
+  "status": "sealed_before_any_p2b_scientific_matrix",
+  "validation_checksum_manifest_sha256": "53c7e958d3f24d3be0023e394b8b74ffd9326327ca49d064981abda65bd60b7b"
+}

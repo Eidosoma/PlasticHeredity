@@ -1,0 +1,24 @@
+{
+  "format": "wagner-cleanroom-campaign-v1",
+  "predictor_digest": "c34582575ca8fd7ed1d95d6d4713b3a4f6ea8233968f0d61ff0b67dcb09ed136",
+  "primary_digest": "1bcae67b66e6acf968715337f130bfda6d0969938fda29047575a2b066fa8005",
+  "profile": "full",
+  "source_tree": {
+    "PREREGISTRATION.md": "5654344f294b1f2ff7334a0283eedc0c118ac965b510a55624344ceae4f5770b",
+    "protocols/predictor-v1.json": "0728a78dffc69938be1cfa51b7a1a2d0e5bac13aacbd09081130d7ccd3e6f87d",
+    "protocols/primary-v1.json": "a1d09c2f378f7937e0d963771496dece5f90b6cd8c399fef97fec7ee42662703",
+    "pyproject.toml": "6cd42d20ab8cb39ddd443c8722f95d92c2fe24d45121f81cfe3f9d46bcdacb7d",
+    "src/wagner_cleanroom/__init__.py": "b7adeea7e966a970595394a9021b21031049d4cbd0727f11630a8385d439b4a2",
+    "src/wagner_cleanroom/__main__.py": "0cc608c146f1c647aa9c6da00f3deb4e0d85a253271dfd25434eecffdb00afb0",
+    "src/wagner_cleanroom/analysis.py": "9ce38269abd3dc39af30f95fc41a6adda7cf5e262ed9135ab855e7d464a22ebe",
+    "src/wagner_cleanroom/campaign.py": "3662e2909eb7a98645bb1161ff2edf19316c1650d590a6fbba4fe557ab233b29",
+    "src/wagner_cleanroom/cli.py": "55af1276b0f308c203b8d4343d75b6f2fa07475cd4751120ad48735dd8e86a3a",
+    "src/wagner_cleanroom/dynamics.py": "1768c4468a3045daa593bef0b25d082bbe229f1c837eee7fb1181376863233fd",
+    "src/wagner_cleanroom/experiment.py": "d49d47da0fb5d3bad5853d46df98ce904e87c7dad266c9c0574e0287b85212bf",
+    "src/wagner_cleanroom/predictor.py": "652285606ab62b7c433fb4900178a16540d8ab4743bdbca535a37936a8796700",
+    "src/wagner_cleanroom/protocol.py": "179ee94ebb5dcb13f0780037542590e76fe7a704bdc382d96460939e7de3a52f",
+    "src/wagner_cleanroom/rng.py": "2b482eb54ab1eb22d44fff691b5a1e47e6ccfb3d19b6edd1e22c87be332725b9",
+    "src/wagner_cleanroom/storage.py": "ec13a53294ae4e53e7e37ca9566375a8e1a67a71a475b2262f894a17edabcc58",
+    "src/wagner_cleanroom/verification.py": "7bbe869549fdc8e6c0d8300aefc99253ab034312a09b566137d6e3c1c5f2d14c"
+  }
+}

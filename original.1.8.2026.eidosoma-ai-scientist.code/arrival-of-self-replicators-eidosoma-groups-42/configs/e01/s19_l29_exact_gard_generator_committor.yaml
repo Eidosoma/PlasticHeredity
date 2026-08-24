@@ -1,0 +1,84 @@
+schema: eidosoma.e01.s19_l29.preregistration.v1
+research_step_id: S19-L29
+versioned_id: E01-S19-L29-EXACT-GARD-GENERATOR-COMMITTOR-COORDINATE-v1.0.0
+title: Exact GARD Generator Drift/Diffusion Committor Coordinate
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Do exact local GARD birth/death/fission drift and diffusion features recover
+  the reliable L28 H32 committor on held-out matrices beyond target geometry,
+  exact-H, ordinary-path, operator and recurrence controls?
+input:
+  states: exact 200 L28 restored states
+  target: exact L28 retrospective completed-run matrix-specific basin
+  response: exact L28 128-branch q_hat and successes
+  roles: exact L28 100 development and 100 validation states
+  candidates_separate: true
+generator:
+  analytic: source-defined clipped-Poisson pretrim reaction moments or exact frozen daughter-fission moments
+  complete_kernel: exact frozen one-selected-clock transition implementation
+  kernel_samples_per_state: 2048
+  kernel_split_halves: [1024, 1024]
+  new_h32_branches: 0
+  domain_separated_seed_root: 8db9a1c44a1cc014576f001b75232ed21ed19bf355261d13cb64700917b13aea
+registered_models:
+  - DEVELOPMENT_PRIOR
+  - TARGET_GEOMETRY_CONTROL
+  - BASIN_BLIND_GENERATOR
+  - ANALYTIC_RADIAL_GENERATOR
+  - COMPLETE_KERNEL_RADIAL_GENERATOR
+model:
+  family: standardized L2-regularized aggregated-binomial logistic coordinate
+  solver: L-BFGS
+  inverse_regularization_C: 0.1
+  max_iterations: 2000
+  development_only_fit: true
+  validation_untouched_by_fit: true
+controls:
+  - frozen exact-H-trace analogue
+  - frozen ordinary-path analogue
+  - frozen L25 operator change
+  - frozen L26 recurrence-map analogue
+  - development-label permutation, 512 replicates
+  - target-reference permutation
+  - simultaneous molecular relabeling
+  - exact feature and model replay
+statistics:
+  matrix_bootstraps: 4096
+  primary_rank: Spearman(q_hat, predicted_q)
+  calibration:
+    - branchwise Brier
+    - binomial log loss
+    - calibration intercept
+    - calibration slope
+gate:
+  validation_spearman_point_above: 0.5
+  validation_spearman_lower95_above: 0.3
+  brier_improvement_lower95_above_zero_vs:
+    - development prior
+    - target geometry
+    - basin-blind generator
+    - frozen exact-H trace
+    - frozen ordinary path
+  development_label_permutation_p_at_most: 0.05
+  both_candidates_required: true
+interpretation:
+  basin_blind_pass: online-state generator lead for a retrospectively defined target
+  target_radial_only_pass: retrospective-basin-conditioned coordinate only
+  no_pass: exact local generator family misses the established H32 state signal
+prohibited:
+  - target_threshold_change
+  - target_basin_change
+  - landmark_or_horizon_change
+  - candidate_pooling
+  - feature_or_model_tuning_after_outcomes
+  - new_H32_branches
+  - transition_tube_or_reactive_current
+  - intervention
+  - author_contact
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

@@ -1,0 +1,43 @@
+{
+  "donor_seconds_per_lineage": 0.11694077029824257,
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "future_seconds_per_f32": 0.1005379930138588,
+  "projections": [
+    {
+      "fits": true,
+      "projected_seconds": 12003.996667128342,
+      "tier": "A"
+    },
+    {
+      "fits": true,
+      "projected_seconds": 7398.146890860337,
+      "tier": "B"
+    },
+    {
+      "fits": true,
+      "projected_seconds": 5043.617115387549,
+      "tier": "C"
+    }
+  ],
+  "sample_workers": 4,
+  "samples": [
+    {
+      "donor_seconds": 0.04858708381652832,
+      "future_f32_seconds": 0.03841257095336914
+    },
+    {
+      "donor_seconds": 0.1485430747270584,
+      "future_f32_seconds": 0.09378010034561157
+    },
+    {
+      "donor_seconds": 0.15024904906749725,
+      "future_f32_seconds": 0.12197509407997131
+    },
+    {
+      "donor_seconds": 0.12038387358188629,
+      "future_f32_seconds": 0.14798420667648315
+    }
+  ],
+  "wall_seconds": 3.4616458415985107,
+  "workers": 16
+}

@@ -1,0 +1,66 @@
+schema: eidosoma.e01.s19_l40.preregistration.v1
+version: E01-S19-L40-ONLINE-RECURRENCE-AFTER-DEPARTURE-COMMITTOR-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Does a future post-fission trajectory have a reliable H32 probability of
+  first departing from and later returning to the strict-H090 neighborhood of
+  the latest post-fission composition already observed in its prefix, and can
+  a frozen H8 return-progress coordinate recover that probability?
+inputs:
+  states: 280 frozen L28/L31 restored states
+  branchStreams:
+    H32: 128 exact frozen continuations per state
+    H8: 64 exact frozen continuations per state
+  anchor: latest selected post-fission composition in the observed prefix
+primaryEvent:
+  id: ONLINE_RECURRENCE_AFTER_DEPARTURE_H090
+  clock: selected post-fission boundaries
+  departure: H <= 0.9 to the frozen prefix anchor
+  return: later strict H > 0.9 to the same frozen prefix anchor
+  certificationOnset: first qualifying return boundary
+  completedTestTrajectoryUsed: false
+controls:
+  - SPECIES_PERMUTED_PREFIX_ANCHOR
+  - UNRELATED_MATRIX_PREFIX_ANCHOR
+  - EXACT_ORDER_CONDITIONED_DEPARTURE_RETURN_NULL
+  - MIXED_MEMBERSHIP_OPPORTUNITY
+  - PREFIX_INHERITANCE_FRACTION
+  - CURRENT_MASS
+  - GENERATION_PHASE
+shortCoordinate:
+  id: H8_MEAN_MAXIMUM_POSTDEPARTURE_H
+  noDepartureValue: 0.0
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  bootstraps: 4096
+  primaryHorizon: 32
+  shortHorizon: 8
+gates:
+  correctedVarianceLower95: ">0"
+  splitHalfSpearman: ">0.5"
+  splitHalfLower95: ">0.3"
+  intermediateStatesPerEvaluationGroup: 20
+  h8ToH32Spearman: ">0.5"
+  h8ToH32Lower95: ">0.3"
+  primaryMinusControlLower95: ">0"
+  primaryMinusOrderNullLower95: ">0"
+  opportunityWithoutCertificationFraction: ">=0.1"
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  thresholdSearch: false
+  anchorSearch: false
+  horizonSearch: false
+  completedRunTarget: none
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  validationReserveFraction: 0.10
+nextIfPass: UNTOUCHED_RECURRENCE_AFTER_DEPARTURE_CONFIRMATION
+nextIfTargetPassesButProxyFails: RECURRENCE_SHOOTING_BUDGET_EFFICIENCY
+nextIfFail: REPEATED_CROSS_GENERATION_RECURRENCE_COMMITTOR

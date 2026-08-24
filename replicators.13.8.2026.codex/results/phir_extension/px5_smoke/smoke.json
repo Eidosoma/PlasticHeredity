@@ -1,0 +1,11 @@
+{
+  "all_intervention_arms": true,
+  "all_untreated_halves": true,
+  "archived_outcomes_exact": true,
+  "effect_sizes_suppressed": true,
+  "explicit_pairs_positive": true,
+  "format": "codex-ch5-phir-extension-px5-smoke-v1",
+  "passed": true,
+  "replay_exact": true,
+  "scores_finite": true
+}

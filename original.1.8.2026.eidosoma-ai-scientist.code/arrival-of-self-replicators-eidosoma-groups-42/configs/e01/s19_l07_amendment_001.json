@@ -1,0 +1,23 @@
+{
+  "schema": "eidosoma.e01.s19_l07_value_preserving_amendment.v1",
+  "amendmentId": "S19-L07-AMENDMENT-001-NUMERICAL-REPLAY",
+  "trigger": "The initial preanalysis replay reproduced all 200 trajectory identities, all selected clocks, and every H>0.9 boolean label, but mathematically equivalent normalization orders were not bit-exact for finite cosine scores.",
+  "diagnosticBounds": {
+    "maximumAbsoluteError": 8.881784197001252e-16,
+    "maximumRelativeError": 8.946934114690078e-16,
+    "maximumUlpDistance": 8
+  },
+  "replacementPolicy": {
+    "finiteNonfiniteMasksMustMatch": true,
+    "booleanLabelsMustMatchExactly": true,
+    "absoluteErrorMaximum": 1e-12,
+    "relativeErrorMaximum": 1e-12,
+    "ulpDistanceMaximum": 8
+  },
+  "scientificValuesChanged": false,
+  "settingsChanged": false,
+  "thresholdsChanged": false,
+  "occupancyOpenedBeforeAmendment": false,
+  "initialFailureRetained": true,
+  "basis": "The numerical-equivalence contract already documented in S06 and used by the additive L06R audit."
+}

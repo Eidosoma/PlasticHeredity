@@ -1,0 +1,20 @@
+{
+  "amendment_id": "1cad7cda20f852e33c21e2ac1aee4e96c925c2c170b3f2714dcd7642ef3699ea",
+  "failed_log_sha256": "526f6f40939b86f1596b4f69fd16c5fc3ff567db427590788250451c25f517fb",
+  "format": "codex-intervention-p2-readback-amendment-v1",
+  "generation_checkpoint_aggregate_sha256": "b8f3793d4982a8093d99bd91dd01164e88bb671c964fc6b18050d4f00d055850",
+  "original_registration_checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "p2_checkpoint_outcomes_loaded": false,
+  "protocol_id": "dae771f5196eaf981900bcb083b0dcd72fe98d380572e7b1aec69b39ce09a29c",
+  "protocol_sha256": "725d7cbd301cd098b372bccb0f8060b338666dc705185607993cd4b7b7b5c9c2",
+  "replay_checkpoint_aggregate_sha256": "b8f3793d4982a8093d99bd91dd01164e88bb671c964fc6b18050d4f00d055850",
+  "source_hashes": {
+    "CODEX_INTERVENTION_P2_READBACK_AMENDMENT.md": "57f68fef736b7b9e1cfa92e87dc373ff3c817608747bec5330f3647814102019",
+    "plastic_heredity/intervention_p2_readback_recovery.py": "e019d93b384d8cea90615d455d04d3382b4908bc8cc2b4775824b1bdb1f9eb28",
+    "plastic_heredity/intervention_readback_common.py": "3e2f65029f3951cfd488a6965bdb0822db0884e739cabc19df0599eac413d8c9",
+    "plastic_heredity/intervention_readback_recovery.py": "9a33ec3dd04b416739df9d4604674eb6d16e042434a98b0088ced1cc527fb531",
+    "tests/test_intervention_p2_readback_recovery.py": "60a9492ce88eca15ab01fce1e5b3c8755faaec2574a097343b4f2301035c0e56"
+  },
+  "status": "sealed_before_recovery_loaded_any_p2_checkpoint_outcome"
+}

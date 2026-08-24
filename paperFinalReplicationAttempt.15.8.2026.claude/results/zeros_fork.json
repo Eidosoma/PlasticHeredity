@@ -1,0 +1,52 @@
+{
+  "anchor": {
+    "runs_defined": 100,
+    "run_mean": "+0.9568\u00b10.1996",
+    "runs_positive": 100,
+    "runmean_pearson_vs_anchor": 1.0,
+    "headline": {
+      "C2_spike_runs": 95,
+      "C3": {
+        "positive": 31.0,
+        "positive_sig": 12.0,
+        "higher_p001": 9.0,
+        "n": 100,
+        "fisher_p": 1.613964373782642e-15
+      },
+      "C4_ljungbox_reject": 84,
+      "consistency_phi_autocorr": "0.261\u00b10.189"
+    }
+  },
+  "fable": {
+    "runs_defined": 100,
+    "run_mean": "+0.9767\u00b10.1873",
+    "runs_positive": 100,
+    "runmean_pearson_vs_anchor": 0.922,
+    "headline": {
+      "C2_spike_runs": 96,
+      "C3": {
+        "positive": 37.0,
+        "positive_sig": 18.0,
+        "higher_p001": 13.0,
+        "n": 100,
+        "fisher_p": 1.0537528624646232e-39
+      },
+      "C4_ljungbox_reject": 92,
+      "consistency_phi_autocorr": "0.341\u00b10.206"
+    }
+  },
+  "literal": {
+    "runs_defined": 0,
+    "run_mean": "undefined",
+    "runs_positive": 0,
+    "runmean_pearson_vs_anchor": null,
+    "headline": "undefined"
+  },
+  "presentonly": {
+    "runs_defined": 0,
+    "run_mean": "undefined",
+    "runs_positive": 0,
+    "runmean_pearson_vs_anchor": null,
+    "headline": "undefined"
+  }
+}

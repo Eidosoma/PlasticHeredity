@@ -1,0 +1,27 @@
+{
+  "archive_reproduction_exact": true,
+  "complete_exact_replay": true,
+  "complete_readback_exact": true,
+  "cpu_seconds": 4593.785647183,
+  "format": "codex-ch5-phir-rescue-result-v1",
+  "matrices": 24,
+  "new_scientific_matrices": 0,
+  "no_48_matrix_run": true,
+  "r1_authorized": false,
+  "registration_id": "ca6281f9539a0a45d5e0fe297f4479b793c312cb6542f767c3cd9b95d45155e1",
+  "row_counts": {
+    "candidate_diagnostics": 4,
+    "cell_summaries": 52,
+    "lineages": 288,
+    "matrix_effects": 1248
+  },
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1",
+    "threadpoolctl": "3.6.0"
+  },
+  "selected_estimator": null
+}

@@ -1,0 +1,25 @@
+{
+  "carrier_overlay_grid_ids": [
+    "b1p0_l0p5",
+    "b2p0_l2p0",
+    "b4p0_l2p0"
+  ],
+  "development_rows": 756,
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "integrated_damage_median_threshold": 0.04694010416666668,
+  "ph_overlay_grid_ids": [
+    "b1p0_l0p5",
+    "b2p0_l2p0",
+    "b4p0_l2p0",
+    "b1p0_l1p0"
+  ],
+  "protocol_id": "fb3ad23678c2b9531ba65c9f0e07556db478d605535167e87a1dc5062f5f1833",
+  "runtime_selection_id": "d613347b230814decd571e6161734fa99a8af4a231191d8073c6320876e5f6bc",
+  "selected": {
+    "boundary": "b2p0_l2p0",
+    "expansive": "b4p0_l2p0",
+    "ordered": "b1p0_l0p5"
+  },
+  "selected_before_confirmation_futures": true,
+  "selection_id": "29477ff48af5e76dd3bcdbfffc599b51e350a924caa04aaed1e8efbecdbeec61"
+}

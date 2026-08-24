@@ -1,0 +1,859 @@
+{
+  "claim_boundary": "No alternate definition is confirmatory, no favorable cell changes a registered verdict, and F12 intervention effects do not establish control of the strict F32 event.",
+  "f12_grid": [
+    {
+      "definition_index": 0,
+      "definition_key": "h0.85_f08_r2",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 1,
+      "definition_key": "h0.85_f08_r3",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 2,
+      "definition_key": "h0.85_f08_r4",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 3,
+      "definition_key": "h0.85_f10_r2",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 4,
+      "definition_key": "h0.85_f10_r3",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 5,
+      "definition_key": "h0.85_f10_r4",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 6,
+      "definition_key": "h0.85_f12_r2",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 7,
+      "definition_key": "h0.85_f12_r3",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 8,
+      "definition_key": "h0.85_f12_r4",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 9,
+      "definition_key": "h0.85_f16_r2",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 10,
+      "definition_key": "h0.85_f16_r3",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 11,
+      "definition_key": "h0.85_f16_r4",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.85,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 12,
+      "definition_key": "h0.88_f08_r2",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 13,
+      "definition_key": "h0.88_f08_r3",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 14,
+      "definition_key": "h0.88_f08_r4",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 15,
+      "definition_key": "h0.88_f10_r2",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 16,
+      "definition_key": "h0.88_f10_r3",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 17,
+      "definition_key": "h0.88_f10_r4",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 18,
+      "definition_key": "h0.88_f12_r2",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 19,
+      "definition_key": "h0.88_f12_r3",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 20,
+      "definition_key": "h0.88_f12_r4",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 21,
+      "definition_key": "h0.88_f16_r2",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 22,
+      "definition_key": "h0.88_f16_r3",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 23,
+      "definition_key": "h0.88_f16_r4",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.88,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 24,
+      "definition_key": "h0.90_f08_r2",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 25,
+      "definition_key": "h0.90_f08_r3",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 26,
+      "definition_key": "h0.90_f08_r4",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 27,
+      "definition_key": "h0.90_f10_r2",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 28,
+      "definition_key": "h0.90_f10_r3",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 29,
+      "definition_key": "h0.90_f10_r4",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 30,
+      "definition_key": "h0.90_f12_r2",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 31,
+      "definition_key": "h0.90_f12_r3",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": true,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 32,
+      "definition_key": "h0.90_f12_r4",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 33,
+      "definition_key": "h0.90_f16_r2",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 34,
+      "definition_key": "h0.90_f16_r3",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 35,
+      "definition_key": "h0.90_f16_r4",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.9,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 36,
+      "definition_key": "h0.92_f08_r2",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 37,
+      "definition_key": "h0.92_f08_r3",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 38,
+      "definition_key": "h0.92_f08_r4",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 39,
+      "definition_key": "h0.92_f10_r2",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 40,
+      "definition_key": "h0.92_f10_r3",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 41,
+      "definition_key": "h0.92_f10_r4",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 42,
+      "definition_key": "h0.92_f12_r2",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 43,
+      "definition_key": "h0.92_f12_r3",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 44,
+      "definition_key": "h0.92_f12_r4",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 45,
+      "definition_key": "h0.92_f16_r2",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 46,
+      "definition_key": "h0.92_f16_r3",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 47,
+      "definition_key": "h0.92_f16_r4",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.92,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 48,
+      "definition_key": "h0.95_f08_r2",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 49,
+      "definition_key": "h0.95_f08_r3",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 50,
+      "definition_key": "h0.95_f08_r4",
+      "horizon_fissions": 8,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 51,
+      "definition_key": "h0.95_f10_r2",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 52,
+      "definition_key": "h0.95_f10_r3",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 53,
+      "definition_key": "h0.95_f10_r4",
+      "horizon_fissions": 10,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 54,
+      "definition_key": "h0.95_f12_r2",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 55,
+      "definition_key": "h0.95_f12_r3",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 56,
+      "definition_key": "h0.95_f12_r4",
+      "horizon_fissions": 12,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    },
+    {
+      "definition_index": 57,
+      "definition_key": "h0.95_f16_r2",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 2
+    },
+    {
+      "definition_index": 58,
+      "definition_key": "h0.95_f16_r3",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 3
+    },
+    {
+      "definition_index": 59,
+      "definition_key": "h0.95_f16_r4",
+      "horizon_fissions": 16,
+      "inheritance_threshold_strict": 0.95,
+      "registered_baseline": false,
+      "renewal_run_length": 4
+    }
+  ],
+  "f32_grid": [
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 0,
+      "definition_key": "h0.88_r7_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 1,
+      "definition_key": "h0.88_r7_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 2,
+      "definition_key": "h0.88_r7_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 3,
+      "definition_key": "h0.88_r8_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 4,
+      "definition_key": "h0.88_r8_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 5,
+      "definition_key": "h0.88_r8_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 6,
+      "definition_key": "h0.88_r9_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 7,
+      "definition_key": "h0.88_r9_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.88,
+      "definition_index": 8,
+      "definition_key": "h0.88_r9_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 9,
+      "definition_key": "h0.90_r7_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 10,
+      "definition_key": "h0.90_r7_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 11,
+      "definition_key": "h0.90_r7_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 12,
+      "definition_key": "h0.90_r8_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 13,
+      "definition_key": "h0.90_r8_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": true,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 14,
+      "definition_key": "h0.90_r8_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 15,
+      "definition_key": "h0.90_r9_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 16,
+      "definition_key": "h0.90_r9_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.9,
+      "definition_index": 17,
+      "definition_key": "h0.90_r9_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 18,
+      "definition_key": "h0.92_r7_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 19,
+      "definition_key": "h0.92_r7_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 20,
+      "definition_key": "h0.92_r7_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 7
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 21,
+      "definition_key": "h0.92_r8_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 22,
+      "definition_key": "h0.92_r8_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 23,
+      "definition_key": "h0.92_r8_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 8
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 24,
+      "definition_key": "h0.92_r9_a0.80",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.8,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 25,
+      "definition_key": "h0.92_r9_a0.85",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.85,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    },
+    {
+      "adjacent_and_pairwise_threshold_strict": 0.92,
+      "definition_index": 26,
+      "definition_key": "h0.92_r9_a0.90",
+      "horizon_fissions": 32,
+      "old_anchor_threshold_inclusive": 0.9,
+      "registered_baseline": false,
+      "strict_run_length": 9
+    }
+  ],
+  "format": "threshold-sensitivity-exploratory-protocol-v1",
+  "independent_lineage_reference": {
+    "application": "new contextual reference on scaled5 restored states",
+    "classification": "new_contextual_simulation_not_historical_l36_replay",
+    "historical_raw_l36_parquets_available": false,
+    "horizon": 100,
+    "master_seed": "e354bb648e15692f59bd99e947cddeeb3cbc5643a38045157762313166f86d4b",
+    "method": "L36 two independently seeded same-beta same-initial-state lineages; H090 dominant-component centroid per lineage; cosine H between centroids",
+    "roles": [
+      "REFERENCE_A",
+      "REFERENCE_B"
+    ]
+  },
+  "inequalities": {
+    "break": "inclusive H <= threshold",
+    "inheritance": "strict H > threshold",
+    "old_anchor_distinctness": "inclusive H <= threshold",
+    "strict_pairwise_coherence": "strict H > threshold"
+  },
+  "inference": {
+    "all_grid_cells_reported": true,
+    "bootstrap_master_seed": "a252d844064bec1441e2f14feee1c1d083f173eca5e060e262691554eade5568",
+    "bootstrap_repetitions": 512,
+    "branch_halves_separate": true,
+    "candidates_separate": true,
+    "independent_unit": "catalytic matrix",
+    "multiplicity_status": "descriptive exploratory intervals; no cellwise confirmatory claims"
+  },
+  "intervention": {
+    "arms": [
+      "MODEL_UP",
+      "MODEL_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "common_random_streams_preserved": true,
+    "contrasts": [
+      "MODEL_UP-MODEL_DOWN",
+      "MODEL_UP-NOOP",
+      "NOOP-MODEL_DOWN",
+      "RANDOM-NOOP"
+    ],
+    "f16_is_deterministic_extension": true,
+    "program": "CR1 model-guided confirmation only"
+  },
+  "models": {
+    "f12": "archived scaled5 prediction_full versus prediction_history",
+    "f32": "archived REGCONF prediction_primary_all8_h10_state versus prediction_primary_all8_h10",
+    "f32_ensemble": "existing baseline result quoted secondarily; not rescored or used to rescue REGCONF",
+    "refitting_or_recalibration": false,
+    "threshold_dependent_history_recomputed": false
+  },
+  "protocol_id": "9878c6ae11f95ac4b79105cd98b08fec39d2d243a4ce047293d118c131516d8c",
+  "source_contract": {
+    "cr1_checksum_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results_intervention_replication/cr1_model_guided_confirmation/SHA256SUMS",
+      "sha256": "a76ac941b976ffbc64831ae888fd140fa6d34c9cd2a5a3fa797945873bebb939"
+    },
+    "cr1_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results_intervention_replication/cr1_model_guided_confirmation/manifest.json",
+      "sha256": "5ff80d7ae7a3fe7252e5622ce5af254ad08fa04a968f044788e9b2fa7c54b615"
+    },
+    "cr1_registration_checksum_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results_intervention_replication/cr1_confirmation_registration/SHA256SUMS",
+      "sha256": "4fa9814303f4f927544ef4f8c1c72b87a27c5d745446e9969dbfb5c53b77a784"
+    },
+    "f12_checksum_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5/SHA256SUMS",
+      "sha256": "0e7ca52ccf654fad2557d2eed9558429033a70476d4137375180d96bd2875ca0"
+    },
+    "f12_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/scaled5/manifest.json",
+      "sha256": "7358276ee14cea62ba18fc7e9d06108ef8b2019999d6f4e4bfcbe6721b37e372"
+    },
+    "f32_checksum_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/regime_confirmation/SHA256SUMS",
+      "sha256": "162657b02c44e63fa804620e5c879fdfbebc6633d8e1d4738835c00ac4dc7b52"
+    },
+    "f32_ensemble_checksum_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/regime_ensemble_confirmation/SHA256SUMS",
+      "sha256": "c2f2d6399dab46be7ec02fa524c1ee505f3afb3226e600a7fc93992dad2e9c80"
+    },
+    "f32_manifest": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/results/regime_confirmation/manifest.json",
+      "sha256": "ebb81bbd3d3e41a476c710e0206e8f3a991c5062a88688bbb7b45f6feb40e619"
+    },
+    "l36_frozen_centroid_source": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.code/arrival-of-self-replicators-eidosoma-groups-42/src/e01_onset_discovery/empirical_committor.py",
+      "sha256": "85575bca32241b76939fce211647f547e9c60cd583f300ae5e63a2fe31b24914"
+    },
+    "l36_frozen_config": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.code/arrival-of-self-replicators-eidosoma-groups-42/configs/e01/s19_l36_independent_lineage_basin_transfer.yaml",
+      "sha256": "210f33b5aba2256983c28f075106d5a38a45942cfdd59c47b5fcaa6900968308"
+    },
+    "l36_frozen_script": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.code/arrival-of-self-replicators-eidosoma-groups-42/scripts/e01/run_s19_l36_independent_lineage_basin_transfer.py",
+      "sha256": "c59ad145b168070664a3635a6b3ddaebc445ac95434a3ab27b616304811e5d23"
+    },
+    "l36_report": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.stepReports/artifacts/research_steps/S19/loops/L36/S19_L36_FULL_RESULTS.md",
+      "sha256": "67f9438cc046760f921542dba39b193813d0208f0e99d5a76b7c8aeb270e74f0"
+    },
+    "l37_frozen_config": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.code/arrival-of-self-replicators-eidosoma-groups-42/configs/e01/s19_l37_multilineage_any_attractor.yaml",
+      "sha256": "1324b7b653c529e79228f830c56f5e1c10c5b02f3a163003a93b5396e53bd400"
+    },
+    "l37_frozen_script": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.code/arrival-of-self-replicators-eidosoma-groups-42/scripts/e01/run_s19_l37_multilineage_any_attractor.py",
+      "sha256": "f9198ff1f42cb90ab450a9c6e5245bdabe10cc98a82ee0ea274e03edef4825a2"
+    },
+    "l37_report": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/original.1.8.2026.eidosoma-ai-scientist.stepReports/artifacts/research_steps/S19/loops/L37/S19_L37_FULL_RESULTS.md",
+      "sha256": "57564034b21d12fe1af54b393df40483ed94a6ee174fb9e976175b85eeeffef0"
+    },
+    "task_core": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_threshold_sensitivity_response/sensitivity_core.py",
+      "sha256": "b53b77829c230c5ae63313838cc570c58305c5f8ce173bb465b264a34ef2f115"
+    },
+    "task_runner": {
+      "path": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_threshold_sensitivity_response/run_sensitivity.py",
+      "sha256": "472eb5fd48ed4269c741a5f794201d6a14f1cf49d41a8f63d40a8fb21f8f4182"
+    }
+  },
+  "status": "post_hoc_exploratory_sensitivity_frozen_before_grid_readout",
+  "working_boundary": {
+    "all_new_writes_below": "/home/robert/Projects/replications/PlasticHeredity/replicators.13.8.2026.codex/reviewer_threshold_sensitivity_response",
+    "existing_and_external_sources_read_only": true,
+    "source_manuscript_modified": false
+  }
+}

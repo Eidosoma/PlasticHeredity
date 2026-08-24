@@ -1,0 +1,38 @@
+schema: eidosoma.e01.s19_l07_adaptive_round_lock.v1
+roundId: R04_ADAPTIVE_EXPOSURE_REFINEMENT
+outcomeAccessOrder: 4
+adaptiveBasis:
+  openedRound: R03_EXPOSURE_SIMULATOR
+  resultPath: /artifacts/research_steps/S19/loops/L07/R03_EXPOSURE_SIMULATOR_occupancy_results.parquet
+  resultSha256: 212961c08e0fe185085aeb8b06626d39312781806c091d6282f210c902c8b567
+  observedBoundary: At h=1.25, all-molecular incoming-H occupancy remained approximately 0.956 in both daughter rules and had not reached 0.88.
+  rationale: Extend only the paper-undocumented Poisson exposure scalar to test whether batch size alone can reach 0.88; no threshold, kernel, matrix, label, or outcome definition changes.
+sourceBoundary:
+  paper: Specifies Poisson updates but no exposure duration.
+  priorInferenceRange: The h<=1.25 cap belonged to the earlier S12F reconstruction search, not to an explicit paper or historical-source bound.
+  interpretation: Values above 1.25 are missing-configuration diagnostics, not recovered author settings.
+simulationContract:
+  configurations:
+    - {simulationId: L07-R04-H15000-FIRST, simulationPairId: L07-R04-H15000, h: 1.5, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H15000::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H15000-RANDOM, simulationPairId: L07-R04-H15000, h: 1.5, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H15000::RANDOM_NONEMPTY', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H20000-FIRST, simulationPairId: L07-R04-H20000, h: 2.0, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H20000::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H20000-RANDOM, simulationPairId: L07-R04-H20000, h: 2.0, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H20000::RANDOM_NONEMPTY', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H25000-FIRST, simulationPairId: L07-R04-H25000, h: 2.5, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H25000::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H25000-RANDOM, simulationPairId: L07-R04-H25000, h: 2.5, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H25000::RANDOM_NONEMPTY', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H30000-FIRST, simulationPairId: L07-R04-H30000, h: 3.0, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H30000::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H30000-RANDOM, simulationPairId: L07-R04-H30000, h: 3.0, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H30000::RANDOM_NONEMPTY', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H35000-FIRST, simulationPairId: L07-R04-H35000, h: 3.5, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H35000::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H35000-RANDOM, simulationPairId: L07-R04-H35000, h: 3.5, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H35000::RANDOM_NONEMPTY', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H40000-FIRST, simulationPairId: L07-R04-H40000, h: 4.0, daughterRule: FIRST_DAUGHTER, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: FIRST_DAUGHTER, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H40000::FIRST_DAUGHTER', exactFrozenReplay: false}
+    - {simulationId: L07-R04-H40000-RANDOM, simulationPairId: L07-R04-H40000, h: 4.0, daughterRule: RANDOM_NONEMPTY, overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX, candidateId: RANDOM_NONEMPTY, phase: s19_l07_exposure_refinement, streamIdentity: 'S19-L07-R04::H40000::RANDOM_NONEMPTY', exactFrozenReplay: false}
+  labelSettings:
+    - {suffix: C1_INCOMING_ALL_H900, family: ADJACENT_CLOCK, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: ALL_OBSERVATIONS, threshold: 0.9, comparator: STRICT_GT}
+    - {suffix: PARENT_DAUGHTER_BOUNDARY_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: BOUNDARY_ONLY, threshold: 0.9, comparator: STRICT_GT}
+    - {suffix: PARENT_DAUGHTER_OUTGOING_H900, family: BOUNDARY_SCORE, boundaryObject: PARENT_TO_SELECTED_DAUGHTER, clockId: C1_SELECTED_DAUGHTER_RETAINED, alignment: INCOMING_DUPLICATE_FIRST, projection: OUTGOING_INTERVAL_INITIAL_NEGATIVE, threshold: 0.9, comparator: STRICT_GT}
+resourceLock:
+  workers: 8
+  gpuHours: 0
+  numericalAuthority: CPU_FLOAT64
+  matrices: 100
+  fissions: 100
+selectionLock: Same occupancy-only rule as the governing protocol; temporal scale is descriptive and cannot block selection.

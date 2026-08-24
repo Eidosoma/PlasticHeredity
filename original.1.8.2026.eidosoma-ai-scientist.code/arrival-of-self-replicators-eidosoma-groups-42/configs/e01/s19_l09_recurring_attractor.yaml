@@ -1,0 +1,116 @@
+versionedLoopId: E01-S19-L09-RECURRING-ATTRACTOR-LABEL-RECONSTRUCTION-v1.0.0
+loopId: S19-L09
+evidenceClass: ADAPTIVE_EXPLORATORY_SOURCE_GROUNDED_RECURRING_ATTRACTOR_LABEL_RECONSTRUCTION
+rootSeedHex: 1af2599e7e4c6a35e6b4bb9fc11f813484157798160a304c4012a3e26e564f3d
+inputs:
+  sharedMatrixCount: 100
+  primaryMechanism: A_FISSION_BOUNDARY
+  comparatorMechanism: B_HIGH_EXPOSURE
+  primaryCandidates: [CANDIDATE_2, CANDIDATE_3]
+  requiredCompletedFissions: 100
+  missingTrajectoryRule: FAIL_CLOSED_NO_REPLACEMENT
+labels:
+  membershipSimilarity: HISTORICAL_COSINE_H
+  membershipThreshold: 0.9
+  comparator: STRICT_GREATER_THAN
+  molecularLabel: DIRECT_TO_DOMINANT_CENTROID_NOT_INTERVAL_PROJECTED
+  pipelines:
+    - pipelineId: R1_HISTORICAL_DOMINANT_COMPTYPE_H090
+      boundarySubstrate: 100_SELECTED_POST_FISSION_RELATIVE_COMPOSITIONS
+      eligibleBoundaryRule: PINNED_TGS_NONDRIFT_TECHNIQUE_1_STRICT_H090
+      metric: COSINE_DISTANCE
+      kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      replicas: 10
+      replicaSelection: MINIMUM_TOTAL_COSINE_DISTANCE_THEN_EARLIEST_REPLICA
+      kOneScore: MEAN_PAIRWISE_TGS_H_CARPET_INCLUDING_DIAGONAL
+      kSelection: MAXIMUM_SOURCE_EQUIVALENT_SCORE_THEN_SMALLEST_K
+      earlyStopNonimprovementStreak: 4
+      centroid: SOURCE_EQUIVALENT_ARITHMETIC_MEAN_DIRECTION
+      dominantTie: LARGEST_ASSIGNED_CLUSTER_THEN_LOWEST_CANONICAL_CLUSTER_ID
+    - pipelineId: R2_PAPER_EUCLIDEAN_DOMINANT_ATTRACTOR_H090
+      boundarySubstrate: ALL_100_SELECTED_POST_FISSION_RELATIVE_COMPOSITIONS
+      metric: ORDINARY_EUCLIDEAN_L2
+      kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+      replicas: 10
+      initialization: DETERMINISTIC_KMEANS_PLUS_PLUS
+      algorithm: LLOYD
+      tolerance: 0.0001
+      maximumIterations: 300
+      replicaSelection: MINIMUM_INERTIA_THEN_EARLIEST_REPLICA
+      kOneScore: UNDEFINED_NOT_ELIGIBLE_FOR_SILHOUETTE_SELECTION
+      kSelection: MAXIMUM_EUCLIDEAN_SILHOUETTE_THEN_SMALLEST_K
+      centroid: ARITHMETIC_MEAN_RELATIVE_COMPOSITION
+      dominantTie: LARGEST_ASSIGNED_CLUSTER_THEN_EARLIEST_MEMBER
+  validCluster:
+    minimumAssignedSize: 2
+    minimumStrictH090CentroidVisits: 2
+    noFallbackToAlternateK: true
+  centroidNumericalPolicy:
+    clampNegativeCoordinatesNoSmallerThan: -1.0e-12
+    materialNegativeStatus: FAIL_CLOSED
+    rationale: VALUE_PRESERVING_FLOAT64_RESIDUE_ON_NONNEGATIVE_ARITHMETIC_CENTROIDS
+table1:
+  probability: MEAN_BINARY_MOLECULAR_LABEL
+  persistence: SUM_BINARY_MOLECULAR_LABEL
+  consistency: PEARSON_CORRELATION_CONSECUTIVE_MOLECULAR_LABELS
+  constantConsistency: EXPLICIT_UNDEFINED
+  onsetUnits:
+    - ZERO_BASED_RAW_MOLECULAR_STEP
+    - ONE_BASED_RAW_MOLECULAR_STEP
+    - NORMALIZED_TRAJECTORY_FRACTION
+    - FISSION_GENERATION_DIAGNOSTIC
+  dispersion: [SAMPLE_STANDARD_DEVIATION, STANDARD_ERROR]
+  authorDispersionIdentity: AUTHOR_DISPERSION_UNRESOLVED
+controls:
+  randomReferenceDraws: 64
+  randomReferenceSubstrate: OBSERVED_POST_FISSION_COMPOSITIONS
+  secondLargestCluster: USE_SELECTED_K_SECOND_VALID_CLUSTER_WITH_UNCHANGED_H090
+  multiplicity: HOLM_WITHIN_PIPELINE_ACROSS_CANDIDATES_AND_CONTROL_OUTCOMES
+statistics:
+  independentUnit: CATALYTIC_MATRIX
+  candidatePooling: SECONDARY_ONLY
+  bootstrapReplicates: 4096
+  confidenceLevel: 0.95
+  undefinedRule: RETAIN_NO_IMPUTATION
+promotionOperationalization:
+  nontrivialPreOnset:
+    minimumCandidateMeanOneBasedRawStep: 10
+    minimumTrajectoryFractionWithOneBasedOnsetAtLeast10: 0.5
+  meaningfulQuarterEligibility:
+    minimumFractionNonreplicatingAtQuarterCutoff: 0.1
+    minimumFractionNoReplicatorThroughQuarterCutoff: 0.1
+  nondegenerateEpisodes:
+    minimumTrajectoryFractionWithBothPolarities: 0.9
+  randomReferenceOutperformance:
+    aggregateBoundaryRecurrenceAboveQuantile: 0.95
+    aggregateRawFingerprintDistanceBelowQuantile: 0.05
+    aggregateNormalizedFingerprintDistanceBelowQuantile: 0.05
+  secondClusterOutperformance:
+    applicableWhenValidSecondClusterExists: true
+    requireLargerMeanBoundaryRecurrence: true
+    requireLowerRawAndNormalizedDistance: true
+  crossCandidateAgreement:
+    requireSameGateDirection: true
+compute:
+  cpuWorkers: 8
+  numericalThreadsPerWorker: 1
+  gpuHours: 0
+  maximumCpuHours: 32
+  maximumWallHours: 8
+  maximumRetainedGiB: 10
+  maximumTemporaryGiB: 25
+  validationReserveFraction: 0.1
+stopConditions:
+  - IMMUTABLE_PRIOR_CHANGED
+  - SOURCE_OR_FIXTURE_EQUIVALENCE_FAILED
+  - UNREGISTERED_THIRD_LABEL_FAMILY
+  - METHOD_CHANGE_AFTER_OUTCOME_ACCESS
+  - MISSING_TRAJECTORY_REPLACED
+  - SOURCE_OR_SEED_IDENTITY_CHANGED
+  - EXACT_REPLAY_FAILED
+  - MOLECULAR_LABEL_REPLACED_BY_PROJECTION
+  - EMERGENCE_USED_FOR_SELECTION
+  - PREDICTION_OR_INTERVENTION_EXECUTED
+  - CANDIDATE_MISSING
+  - COMPUTE_OR_STORAGE_CEILING_EXCEEDED
+  - ARTIFACT_REGENERATION_FAILED

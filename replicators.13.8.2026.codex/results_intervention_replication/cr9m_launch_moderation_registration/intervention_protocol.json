@@ -1,0 +1,111 @@
+{
+  "boundary": {
+    "cannot_rescue_or_replace_cr9": true,
+    "post_result_prospective_moderation_followup": true,
+    "sealed_cr9_unchanged": true,
+    "strict_eight_excluded": true
+  },
+  "cohort": {
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "fresh_matrices": 48,
+    "lineage_retry_or_replacement": false,
+    "mature_landmark": 60,
+    "paired_launches": [
+      "NASCENT",
+      "MATURE"
+    ],
+    "replicates": 3,
+    "same_beta_and_initial_composition_within_matrix": true
+  },
+  "endpoint": {
+    "constant_persistence_spearman": 0.0,
+    "departure": "unrounded float64 cosine < 0.7",
+    "incomplete_pulse_persistence": 1,
+    "incomplete_release": "first unobserved registered release boundary",
+    "right_censor_cap": 61,
+    "rows_dropped": 0
+  },
+  "factorial": {
+    "conventions": [
+      "RELAXED",
+      "POST_EDIT"
+    ],
+    "launches": [
+      "NASCENT",
+      "MATURE"
+    ],
+    "post_edit": "P fissions; edits after 1..P; post-edit anchor",
+    "pulse_lengths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      60
+    ],
+    "relaxed": "P fissions; edits after 1..P-1; unedited final daughter anchor",
+    "release_callback": null,
+    "release_fissions": 60,
+    "selector": "frozen exhaustive legal mass-preserving MODEL_DOWN in all cells"
+  },
+  "format": "codex-intervention-cr9m-launch-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "candidates_never_pooled": true,
+    "randomization_repetitions": 4096,
+    "unit": "whole catalytic matrix"
+  },
+  "integrity": {
+    "artifact_readback": true,
+    "complete_exact_replay": true,
+    "release_zero_interventions": true
+  },
+  "primary": {
+    "contrast": "0.5*((NASCENT_RELAXED-MATURE_RELAXED)+(NASCENT_POST_EDIT-MATURE_POST_EDIT))",
+    "gate": "positive mean, CI95 lower > 0, Holm sign p < 0.05 in both candidates",
+    "holm_family": "two candidate launch-moderation cells",
+    "matrix_estimand": "mean-over-replicates seven-point Spearman within each factorial cell"
+  },
+  "prohibited_claims": [
+    "autonomous restoring basin or installed compotype",
+    "biological memory, agency, life, or error correction",
+    "real prebiotic chemistry or universal origin-of-life mechanism",
+    "strict-eight or Phi/PhiID control"
+  ],
+  "protocol_id": "9dd65f2c0f636bcb9de95168256e8049839e313b9246f50633a6a70a3ba99ae4",
+  "randomness": {
+    "common_random_streams_not_identical_futures": true,
+    "future_seed_excludes": [
+      "launch",
+      "convention",
+      "pulse_length"
+    ],
+    "seed_domains": {
+      "bootstrap": "9553849e8bb145b1bab54b3270770306e94d0b21db49086357e49bc043e481cf",
+      "factorial_future": "60f7be962bef5f157d89cfc83509aafedaf43e9700edebb736d986a8ddcdcff3",
+      "initial_composition": "ea676b2c5171293c416cd76d95f93e1d233d18df11aa18055b157b8182bcedca",
+      "matrix_generation": "eb2155919e116039ac0d8fcf922680df1c320884116113ac3082503f86ba1aed",
+      "mature_main_trajectory": "13e738de1af372e3a6dde7b0741b94d2439f463571591a70a0a0e2304679cf50",
+      "randomization": "db45d830bbf46be05ac150cbb5ba707f4ccf40df58fdb2c40a55e249143eb698",
+      "replay": "9506469495f54aa9cdf5463206bb1cc348d6f3c9f0fd7abd8bf04c5c3eafc007",
+      "smoke": "4382eee452f150224fbb40c29fc13d71ec1d19bdedcbee56592d9394b6920412",
+      "validation": "91e1de7d18b43999cf17b935ccffad3f73464e879d1b35bbf5ce8bae121ee4d4"
+    }
+  },
+  "status": "frozen_before_any_cr9m_scientific_matrix",
+  "stop_rule": "seal CR9M and stop without launching CR10 or another moderator search",
+  "supporting": {
+    "packing_diagnostics_cannot_rescue_primary": true,
+    "protocol_robust_nascent_hysteresis": "all four candidate-by-convention nascent cells pass positive CI and Holm sign test",
+    "survivor_only_is_nonprimary": true
+  },
+  "upstream": {
+    "cr9_failed_hysteresis_gate_retained": true,
+    "cr9_registration_id": "a2f8340b632e9a75725c8bc42ec3069d59839be2119e6122268440a866d7fe00",
+    "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af"
+  }
+}

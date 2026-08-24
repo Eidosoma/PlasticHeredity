@@ -1,0 +1,49 @@
+amendmentId: S19-L11R-QUARANTINE-AMENDMENT-004
+schema: eidosoma.e01.s19_l11r.quarantine_amendment.v1
+researchStepId: S19-L11R
+versionedLoopId: E01-S19-L11R-CENTROID-NUMERICAL-TOLERANCE-CONFIRMATION-v1.0.0
+amendmentClass: POST_OUTCOME_TECHNICAL_QUARANTINE_ONLY
+authorizationDate: '2026-08-09'
+authorizationSource: EXPLICIT_HUMAN_OVERRIDE_UP_TO_SEVEN_TECHNICAL_ASSURANCE_CYCLES
+humanDirectionSummary: Repair technical execution before handoff while leaving the frozen scientific method and outcomes unchanged.
+
+preservedFailure:
+  failureId: S19-L11R-F004
+  stage: SERIALIZATION_AMENDMENT_PARTIAL_OUTPUT_QUARANTINE
+  scientificAggregationReleased: false
+  sourcePartialOutputsChangedDuringFailedAttempt: false
+  exceptionClass: OSError
+  errno: 18
+  failingOperation: CROSS_FILESYSTEM_PATH_REPLACE
+  classification: POSSIBLE_PIPELINE_ARTIFACT
+
+amendment:
+  target: INVALIDATED_PARTIAL_OUTPUT_QUARANTINE_ONLY
+  before: Atomic Path.replace was used between /artifacts and /cache mounts.
+  after: Copy each file, require exact SHA-256 and size equality, then remove the artifact-side invalidated source.
+  scientificSchemaChanged: false
+  scientificCalculationsChanged: false
+  scientificValuesChanged: false
+  invalidatedValuesReused: false
+  partialOutputAccountingPreserved: true
+
+scientificMethodChanged: false
+scientificValuesChanged: false
+freshScientificAggregationRequired: true
+fullExactRegenerationRequired: true
+
+assurancePolicy:
+  minimumCycles: 3
+  maximumCycles: 7
+  currentCycleAfterLock: 5
+  scientificNonSupportTriggersMethodChange: false
+
+amendedFiles:
+  - path: scripts/e01/run_s19_l11r.py
+    oldSha256: e4fcc944547c2c17bbf88eb600b1dd25e878945dbd45feaaf9eb974c9f67db23
+    newSha256: b94ecdbf22ef0ff5297abe0d36caf7242d78795e79b379558e277e06e4e22b34
+    changeClass: OPERATIONAL_QUARANTINE_AND_TRANSPARENT_PROVENANCE_ONLY
+  - path: tests/e01/test_s19_l11r.py
+    oldSha256: d0db068074a5961ca1a981859a8f14d2da5c3df38157430d915b077bf91bfe24
+    newSha256: 49a5c92f7be1893ff7dd9c718aa8094fd874f63ef11607c5fab9f757431c64b0
+    changeClass: FOCUSED_VERIFIED_COPY_FIXTURE_ONLY

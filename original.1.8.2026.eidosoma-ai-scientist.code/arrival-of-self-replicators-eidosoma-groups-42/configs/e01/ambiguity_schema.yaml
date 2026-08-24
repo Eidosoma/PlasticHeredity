@@ -1,0 +1,218 @@
+schema_name: e01_ambiguity_and_specification_registry
+schema_version: 1.0.0
+ledger_version: E01-S02-v1.0.0
+registry_version: E01-specification-registry-v0.2.0
+research_step_id: S02
+experiment_id: E01
+frozen_question: >-
+  Can every material undocumented choice be enumerated before final results are
+  inspected and mapped to a versioned specification parameter or an explicit
+  unresolved sentinel?
+
+columns:
+  - ambiguity_id
+  - category
+  - specification_parameter
+  - materiality
+  - source_evidence
+  - ambiguity_description
+  - admissible_values_or_branches
+  - primary_spec_value
+  - resolution_status
+  - unresolved_flag
+  - resolution_basis
+  - downstream_owner_step
+  - affected_claim_ids
+  - s01_discrepancy_ids
+  - risk_if_silent
+  - validation_rule
+  - registry_version
+  - notes
+
+required_nonempty_fields:
+  - ambiguity_id
+  - category
+  - specification_parameter
+  - materiality
+  - source_evidence
+  - ambiguity_description
+  - admissible_values_or_branches
+  - primary_spec_value
+  - resolution_status
+  - unresolved_flag
+  - resolution_basis
+  - downstream_owner_step
+  - affected_claim_ids
+  - risk_if_silent
+  - validation_rule
+  - registry_version
+
+id_pattern: '^E01-A[0-9]{3}$'
+
+enums:
+  category:
+    - source_provenance
+    - gard_dynamics
+    - preprocessing
+    - replicator_labels
+    - phi_estimation
+    - descriptive_statistics
+    - prediction
+    - intervention_outcomes
+  materiality:
+    - critical
+    - high
+    - medium
+  resolution_status:
+    - PAPER_FIXED
+    - PLAN_FIXED
+    - PROVISIONAL_PRIMARY
+    - FROZEN_BRANCH_SET
+    - RECONCILED
+    - CONFLICT_PRESERVED
+    - UNRESOLVED_REQUIRED
+    - DEFERRED_EVIDENCE
+  downstream_owner_step:
+    - S03
+    - S04
+    - S05
+    - S06
+    - S07
+    - S08
+    - S09
+    - S10
+    - S11
+    - S14
+    - S15
+    - S16
+    - S17
+
+unresolved_statuses:
+  - CONFLICT_PRESERVED
+  - UNRESOLVED_REQUIRED
+  - DEFERRED_EVIDENCE
+
+sentinel_prefix_by_status:
+  CONFLICT_PRESERVED: 'CONFLICT::'
+  UNRESOLVED_REQUIRED: 'UNRESOLVED::'
+  DEFERRED_EVIDENCE: 'UNRESOLVED::'
+  FROZEN_BRANCH_SET: 'BRANCH_SET::'
+
+required_categories:
+  - source_provenance
+  - gard_dynamics
+  - preprocessing
+  - replicator_labels
+  - phi_estimation
+  - descriptive_statistics
+  - prediction
+  - intervention_outcomes
+
+required_plan_parameters:
+  - gard.kinetics.k_f
+  - gard.kinetics.k_b
+  - gard.environment.rho_i
+  - gard.initial_state.construction
+  - gard.update.kernel
+  - preprocessing.zero.policy
+  - phi.estimator.family
+  - phi.window.length
+  - phi.lag
+  - phi.mib.normalization
+  - phi.partition.search
+  - spike.threshold.scope
+  - labels.similarity.threshold
+  - intervention.consistency.formula
+  - ml.sequence.layout
+  - intervention.score.horizon
+
+known_parameters:
+  - parameter: gard.N_g
+    value: 100
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.n_min
+    value: 40
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.n_max
+    value: 80
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.beta.A
+    value: -4
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.beta.sigma
+    value: 4
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.n_gen
+    value: 100
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.max_steps
+    value: 1000
+    status: PAPER_FIXED
+    source: 'Paper Methods line 69; FULL_PLAN frozen baseline'
+  - parameter: gard.fission.binomial_p
+    value: 0.5
+    status: PAPER_FIXED
+    source: 'Paper Methods line 67; FULL_PLAN frozen baseline'
+  - parameter: ensemble.baseline_run_count
+    value: 100
+    status: PAPER_FIXED
+    source: 'Paper Results line 31'
+  - parameter: ml.input_fraction
+    value: 0.25
+    status: PAPER_FIXED
+    source: 'Paper Results line 39'
+  - parameter: ml.train_fraction
+    value: 0.8
+    status: PAPER_FIXED
+    source: 'Paper Results line 39'
+  - parameter: ml.test_fraction
+    value: 0.2
+    status: PAPER_FIXED
+    source: 'Paper Results line 39'
+  - parameter: ml.repetition_count
+    value: 10
+    status: PAPER_FIXED
+    source: 'Paper Results line 39'
+  - parameter: intervention.run_count
+    value: 100
+    status: PAPER_FIXED
+    source: 'Paper Results line 41'
+  - parameter: intervention.action.molecule_count
+    value: 1
+    status: PAPER_FIXED
+    source: 'Paper Results line 41 and Figure 6A'
+
+s01_discrepancy_ids:
+  - D01
+  - D02
+  - D03
+  - D04
+  - D05
+  - D06
+  - D07
+  - D08
+  - D09
+  - D10
+  - D11
+  - D12
+
+validation_contract:
+  require_ambiguity_count: 105
+  require_unique_parameters: true
+  require_all_claims_mapped: true
+  require_minimum_ambiguities_per_claim: 8
+  require_all_s01_discrepancies_mapped: true
+  require_each_claim_discrepancy_linked: true
+  require_all_plan_parameters_mapped: true
+  require_no_blank_primary_values: true
+  require_unresolved_sentinels: true
+  require_exact_unresolved_sentinels: true
+  require_multivalued_branches: true
+  require_no_silent_defaults: true
+  require_registry_non_executable_while_blocked: true

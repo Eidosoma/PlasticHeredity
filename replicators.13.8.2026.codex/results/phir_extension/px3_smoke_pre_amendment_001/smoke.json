@@ -1,0 +1,13 @@
+{
+  "all_arms": true,
+  "all_candidates": true,
+  "all_halves": true,
+  "effect_sizes_suppressed": true,
+  "exhaustive_edit_counts_positive": true,
+  "explicit_pairs_positive": true,
+  "format": "codex-ch5-phir-extension-px3-smoke-v1",
+  "passed": true,
+  "replay_exact": true,
+  "scores_finite": true,
+  "surrogate_serialization_exact": true
+}

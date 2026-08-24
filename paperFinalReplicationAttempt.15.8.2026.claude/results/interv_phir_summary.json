@@ -1,0 +1,72 @@
+{
+  "arms": {
+    "control": {
+      "persistence": "305.850\u00b1143.018",
+      "probability": "0.385\u00b10.262",
+      "consistency_1k": "0.931\u00b10.037",
+      "episode_mean": "69.599\u00b1100.551",
+      "phi_r_mean": "0.957\u00b10.200",
+      "psi_mean": "-1.229\u00b10.601",
+      "n_edits": "0.000\u00b10.000"
+    },
+    "max": {
+      "persistence": "304.730\u00b1161.817",
+      "probability": "0.398\u00b10.281",
+      "consistency_1k": "0.921\u00b10.041",
+      "episode_mean": "59.811\u00b193.527",
+      "phi_r_mean": "0.907\u00b10.187",
+      "psi_mean": "-1.198\u00b10.696",
+      "n_edits": "87.960\u00b15.921"
+    },
+    "min": {
+      "persistence": "289.890\u00b1158.194",
+      "probability": "0.382\u00b10.272",
+      "consistency_1k": "0.920\u00b10.043",
+      "episode_mean": "54.838\u00b176.799",
+      "phi_r_mean": "0.908\u00b10.198",
+      "psi_mean": "-1.250\u00b10.578",
+      "n_edits": "87.960\u00b15.921"
+    },
+    "random": {
+      "persistence": "286.280\u00b1143.204",
+      "probability": "0.381\u00b10.266",
+      "consistency_1k": "0.921\u00b10.042",
+      "episode_mean": "57.250\u00b188.933",
+      "phi_r_mean": "0.915\u00b10.181",
+      "psi_mean": "-1.176\u00b10.618",
+      "n_edits": "87.960\u00b15.921"
+    }
+  },
+  "T1_manipulation_check": {
+    "max_gt_min": 0.5798772960893318,
+    "max_gt_control": 0.9754745948957371,
+    "min_lt_control": 0.040849276134470536,
+    "gate_passes": false
+  },
+  "T2_primary_sr_outcomes": {
+    "persistence_max_gt_control": 0.6347735965384811,
+    "persistence_min_lt_control": 0.15412176444151132,
+    "probability_max_gt_control": 0.5476499380146485,
+    "probability_min_lt_control": 0.33759301330993285,
+    "all_four_pass": false
+  },
+  "T3_secondary": {
+    "consistency_1k": {
+      "max_vs_control": 0.034346885409916185,
+      "min_vs_control": 0.06008249471363292
+    },
+    "episode_mean": {
+      "max_vs_control": 0.2984951622797024,
+      "min_vs_control": 0.2374511530193314
+    }
+  },
+  "T4_random_validity": {
+    "persistence": 0.35377955508400105,
+    "probability": 0.7313756854272451
+  },
+  "T4_valid": true,
+  "T5_cross_instrument_psi": {
+    "max_vs_min": 0.4451300738527264
+  },
+  "frozen_table_verdict": "manipulation-check gate FAILED \u2014 no working Phi_R manipulation at one-molecule granularity; C7 untestable at this intervention strength"
+}

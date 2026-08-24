@@ -1,0 +1,26 @@
+{
+  "available_cpu_hours_at_launch": 22.0,
+  "branches_per_arm_state": 64,
+  "complete_readback_exact": true,
+  "cr2_launched": false,
+  "exact_replay": true,
+  "format": "codex-intervention-cr1-confirmation-result-v1",
+  "full_four_cell_gate": true,
+  "mandatory_stop_after_this_stage": true,
+  "matrices": 200,
+  "no_future_retry_or_matrix_replacement": true,
+  "no_refitting_recalibration_or_threshold_change": true,
+  "primary_futures": 512000,
+  "registration_id": "a8743234235e82133d2938c15ead062c7c85004c5f640d7359e5b075cb31368e",
+  "replay_futures": 512000,
+  "runtime": {
+    "matplotlib": "3.5.1",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "python": "3.10.12",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "states": 2000
+}

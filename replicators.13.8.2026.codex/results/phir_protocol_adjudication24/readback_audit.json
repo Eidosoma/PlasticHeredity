@@ -1,0 +1,20 @@
+{
+  "archive_reproduction_exact": true,
+  "complete_readback_exact": true,
+  "expected_table_row_counts": {
+    "completion": 52,
+    "matrix_effects": 48288,
+    "pab24_lineages": 960,
+    "pabr_lineages": 480,
+    "selected_edits": 86400
+  },
+  "pab24_replay_exact": true,
+  "pabr_replay_exact": true,
+  "table_row_counts": {
+    "completion": 52,
+    "matrix_effects": 48288,
+    "pab24_lineages": 960,
+    "pabr_lineages": 480,
+    "selected_edits": 86400
+  }
+}

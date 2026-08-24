@@ -1,0 +1,42 @@
+{
+  "C1_aggregate_trend": {
+    "slope": -8.467095346805812e-05,
+    "p": 1.851447865263808e-09,
+    "horizon_steps": 968
+  },
+  "C2_spikes": {
+    "runs_with_spikes": 94.0,
+    "n_runs": 100
+  },
+  "C3_correlation": {
+    "runs_valid": 100,
+    "positive": 78,
+    "positive_significant": 64,
+    "phi_higher_in_sr_p001": 54,
+    "fisher_p": 0.0,
+    "mean_rho": 0.10004666048173254,
+    "mean_rho_ttest_p": 2.888490637080769e-10
+  },
+  "C4_ljungbox": {
+    "reject": 99,
+    "reject_after_diff": 100,
+    "median_p": 0.0
+  },
+  "C6_spike_geometry": {
+    "sr_prob_vs_spike_time": {
+      "rho": -0.11430119567965899,
+      "p": 0.27265739573013253,
+      "n": 94
+    },
+    "sr_prob_vs_spike_gap": {
+      "rho": 0.04200991470438142,
+      "p": 0.6992407797423301,
+      "n": 87
+    },
+    "sr_prob_vs_spike_height": {
+      "rho": 0.06790449012029043,
+      "p": 0.5154978923473712,
+      "n": 94
+    }
+  }
+}

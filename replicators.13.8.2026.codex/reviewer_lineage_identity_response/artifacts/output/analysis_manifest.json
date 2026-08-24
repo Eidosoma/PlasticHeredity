@@ -1,0 +1,37 @@
+{
+  "cells": 100,
+  "figures": [
+    "figure_1_sibling_stranger_ecdf.png",
+    "figure_2_post_break_forks.png",
+    "figure_3_attractor_census.png",
+    "figure_4_strict_f12_control.png"
+  ],
+  "format": "reviewer-lineage-identity-v1",
+  "protocol_id": "ac22060e8ebd1e2a501b21cecbc303fa32454cce7a5a506eb84da9c448c024b4",
+  "registration_id": "e18577a04c2e60c33677c26f3660e262e13b45f92fa83dd76aa7aeee73cf92ab",
+  "reports": [
+    "SCIENTIFIC_REPORT.md",
+    "APPENDIX_LINEAGE_IDENTITY.md",
+    "PROPOSED_MANUSCRIPT_AND_REVIEWER_PATCH.md"
+  ],
+  "runtime": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "python": "3.13.5",
+    "scipy": "1.18.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "status": "reports_complete_verification_pending",
+  "tables": {
+    "attractor_census.csv": 100,
+    "attractor_sensitivity.csv": 2700,
+    "b_bank.csv": 3501,
+    "baseline_rule_metrics.csv": 200,
+    "baseline_values.csv": 66053,
+    "fork_rule_metrics.csv": 200,
+    "fork_scores.csv": 40259,
+    "fork_trajectories.csv": 322072,
+    "stable_forms.csv": 118
+  }
+}

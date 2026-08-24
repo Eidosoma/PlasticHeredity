@@ -1,0 +1,94 @@
+{
+  "break__c02": {
+    "branches_per_state": 32,
+    "candidate": "02",
+    "combined_features": 21,
+    "cv_scores": {
+      "0.001": 0.4689107996810824,
+      "0.01": 0.4716314850709388,
+      "0.1": 0.4838513589647733,
+      "1": 0.5340365515211029,
+      "10": 0.6073302286913055,
+      "100": 0.6272463908677695
+    },
+    "event_rate": 0.32146875,
+    "gradient_max_abs": 9.349976800116725e-09,
+    "iterations": 38,
+    "matrices": 200,
+    "objective": 0.4657195120869737,
+    "optimizer_success": true,
+    "pca_components": 12,
+    "selected_ridge_penalty": 0.001,
+    "states": 1000,
+    "target": "break"
+  },
+  "break__c03": {
+    "branches_per_state": 32,
+    "candidate": "03",
+    "combined_features": 21,
+    "cv_scores": {
+      "0.001": 0.4801245574709327,
+      "0.01": 0.4832037862280343,
+      "0.1": 0.500313937561065,
+      "1": 0.5573262619129553,
+      "10": 0.6344648447579054,
+      "100": 0.6552214634624335
+    },
+    "event_rate": 0.36309375,
+    "gradient_max_abs": 3.2667614270577225e-08,
+    "iterations": 49,
+    "matrices": 200,
+    "objective": 0.47651950931274156,
+    "optimizer_success": true,
+    "pca_components": 12,
+    "selected_ridge_penalty": 0.001,
+    "states": 1000,
+    "target": "break"
+  },
+  "renewal__c02": {
+    "branches_per_state": 32,
+    "candidate": "02",
+    "combined_features": 21,
+    "cv_scores": {
+      "0.001": 0.2237352043215733,
+      "0.01": 0.22467006716930887,
+      "0.1": 0.23402414670708568,
+      "1": 0.251054742191529,
+      "10": 0.25629114378425066,
+      "100": 0.256918881437992
+    },
+    "event_rate": 0.92890625,
+    "gradient_max_abs": 8.762064935093301e-09,
+    "iterations": 17,
+    "matrices": 173,
+    "objective": 0.22062895373674035,
+    "optimizer_success": true,
+    "pca_components": 12,
+    "selected_ridge_penalty": 0.001,
+    "states": 760,
+    "target": "renewal"
+  },
+  "renewal__c03": {
+    "branches_per_state": 32,
+    "candidate": "03",
+    "combined_features": 21,
+    "cv_scores": {
+      "0.001": 0.2425996701465532,
+      "0.01": 0.24308746617169663,
+      "0.1": 0.25127597357659776,
+      "1": 0.2713944925198078,
+      "10": 0.279169151783676,
+      "100": 0.28014072592049855
+    },
+    "event_rate": 0.9199589127686473,
+    "gradient_max_abs": 2.3791221631219023e-08,
+    "iterations": 20,
+    "matrices": 174,
+    "objective": 0.24000943916149597,
+    "optimizer_success": true,
+    "pca_components": 12,
+    "selected_ridge_penalty": 0.001,
+    "states": 791,
+    "target": "renewal"
+  }
+}

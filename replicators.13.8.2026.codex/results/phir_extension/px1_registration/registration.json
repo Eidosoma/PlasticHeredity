@@ -1,0 +1,195 @@
+{
+  "archived_inputs_sha256": "4eb535a5ec07682a60e4cb251891d5272d11e72916d8b3e71b84ad6ac42eae3d",
+  "archived_r0_sha256": "4b68841708fd336234b73e5e4ea9a4fb3b01ae05a643adc30181277126a8ed78",
+  "calibration": {
+    "cells": {
+      "02_r0": {
+        "functional_flux": {
+          "equivalence_margin": 0.03321441162874219,
+          "noop_matrix_sd": 0.16607205814371093
+        },
+        "material": {
+          "equivalence_margin": 2.6827135041888788,
+          "noop_matrix_sd": 13.413567520944394
+        }
+      },
+      "02_r1": {
+        "functional_flux": {
+          "equivalence_margin": 0.02662259460838915,
+          "noop_matrix_sd": 0.13311297304194575
+        },
+        "material": {
+          "equivalence_margin": 2.77408621217202,
+          "noop_matrix_sd": 13.8704310608601
+        }
+      },
+      "03_r0": {
+        "functional_flux": {
+          "equivalence_margin": 0.027650092297438613,
+          "noop_matrix_sd": 0.13825046148719305
+        },
+        "material": {
+          "equivalence_margin": 3.303539192139139,
+          "noop_matrix_sd": 16.517695960695693
+        }
+      },
+      "03_r1": {
+        "functional_flux": {
+          "equivalence_margin": 0.029969213127363115,
+          "noop_matrix_sd": 0.14984606563681557
+        },
+        "material": {
+          "equivalence_margin": 2.5168137634523333,
+          "noop_matrix_sd": 12.584068817261667
+        }
+      }
+    },
+    "format": "codex-ch5-phir-extension-px1-calibration-v1",
+    "intervention_contrasts_inspected": false,
+    "matrices": 24,
+    "maximum_material_archive_absolute_error": 1.096179857995594e-08,
+    "record_digest_mismatches": 0,
+    "source": "exact replay of archived R0 FRESH__NOOP lineages only"
+  },
+  "format": "codex-ch5-phir-extension-px1-registration-v1",
+  "master_registration_id": "3ce19b47deeb543e23162edb3bf822cfbf248c308a6e8cb4e8ecf83f08636c3b",
+  "model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "arm_in_future_stream_key": false,
+    "arms": [
+      "STABILIZE",
+      "DESTABILIZE",
+      "RANDOM",
+      "NOOP"
+    ],
+    "bootstrap_draws": 4096,
+    "candidate_pooling": false,
+    "claim_boundary": [
+      "prior sealed negative results remain unchanged",
+      "no consciousness, agency, life, or metaphysical inference",
+      "no 48-matrix continuation",
+      "cross-clean-room claims require exactly matched tests"
+    ],
+    "edits": "after fissions 1-59; no edit after fission 60",
+    "format": "codex-ch5-phir-extension-px1-program-v1",
+    "future_stream_key": [
+      "phase",
+      "candidate",
+      "matrix",
+      "replicate"
+    ],
+    "gate": [
+      "positive point effect",
+      "positive 95% whole-matrix bootstrap lower bound",
+      "Holm-adjusted one-sided randomization p < 0.05",
+      "all leave-one-matrix-out effects positive",
+      "RANDOM equivalent to NOOP",
+      "heredity manipulation validity",
+      "complete exact replay and readback"
+    ],
+    "launch": "fresh mass-40 composition",
+    "matrix_inference": true,
+    "measurement": "31 unique boundaries at fissions 30-60; 30 transitions",
+    "model": {
+      "destabilize": "maximum frozen JOINT_BREAK_RUN3 probability",
+      "selection": "exhaustive legal substitution extrema",
+      "sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+      "source": "results/phir_protocol_adjudication_registration/frozen_full_predictor.npz",
+      "stabilize": "minimum frozen JOINT_BREAK_RUN3 probability"
+    },
+    "no_48_matrix_continuation": true,
+    "phase": "PX1",
+    "primary_contrasts": "STABILIZE minus DESTABILIZE in four candidate-by-replicate cells",
+    "primary_family": "eight representation-by-cell comparisons",
+    "protocol_id": "29b0e9aa077cb3f8e4690a351a4f5a29815b50c9eb549549cf1ac67efed61137",
+    "question": "fresh generational material and catalytic-flux confirmation",
+    "random_action_stream_separate": true,
+    "randomization_draws": 4096,
+    "replicate_pooling": false,
+    "representations": [
+      "material",
+      "functional_flux"
+    ],
+    "spec": {
+      "bootstrap_draws": 4096,
+      "cpu_allocation_seconds": 28800.0,
+      "final_start": 30,
+      "horizon": 60,
+      "label": "scientific",
+      "matrices": 24,
+      "randomization_draws": 4096,
+      "replicates": 2
+    },
+    "specificity": {
+      "heredity_margin": 0.025,
+      "information_margins": {
+        "02_r0": {
+          "functional_flux": {
+            "equivalence_margin": 0.03321441162874219,
+            "noop_matrix_sd": 0.16607205814371093
+          },
+          "material": {
+            "equivalence_margin": 2.6827135041888788,
+            "noop_matrix_sd": 13.413567520944394
+          }
+        },
+        "02_r1": {
+          "functional_flux": {
+            "equivalence_margin": 0.02662259460838915,
+            "noop_matrix_sd": 0.13311297304194575
+          },
+          "material": {
+            "equivalence_margin": 2.77408621217202,
+            "noop_matrix_sd": 13.8704310608601
+          }
+        },
+        "03_r0": {
+          "functional_flux": {
+            "equivalence_margin": 0.027650092297438613,
+            "noop_matrix_sd": 0.13825046148719305
+          },
+          "material": {
+            "equivalence_margin": 3.303539192139139,
+            "noop_matrix_sd": 16.517695960695693
+          }
+        },
+        "03_r1": {
+          "functional_flux": {
+            "equivalence_margin": 0.029969213127363115,
+            "noop_matrix_sd": 0.14984606563681557
+          },
+          "material": {
+            "equivalence_margin": 2.5168137634523333,
+            "noop_matrix_sd": 12.584068817261667
+          }
+        }
+      },
+      "random_minus_noop": true
+    }
+  },
+  "registration_id": "e1987d2dea749f5e92a580da33836a4334175dbd1016d197aee7ff45fe4476bb",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/phir_ch5.py": "dac7c122573bb1548188c19ebfb051d8f6e6c4b750f45c0707eae03ac9ca1425",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px1.py": "f990feab43ec7f29eff903e7382eaf5736a568726f4c30ad644b9351c72f35dd",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_extension_common.py": "56ebce5bd754851c9bad2079ee6e4ffcd48b2e9fef6647d6794475d443db3b19",
+    "tests/test_phir_extension_px1.py": "7bcd087f48edd1c7b3aad7fe1716bd5f7afa42d04fbb6f944911a39384c5757e"
+  }
+}

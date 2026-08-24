@@ -1,0 +1,82 @@
+{
+  "analysis": {
+    "bootstrap": 4096,
+    "candidate_02": "eventwise-minus-Codex moderation of the arm contrast",
+    "candidate_03": "complete 2^3 factorial moderation of the arm contrast",
+    "inference_unit": "whole catalytic matrix",
+    "randomization": 4096,
+    "replicates_never_pooled": true
+  },
+  "arms": [
+    "STABILIZE",
+    "DESTABILIZE",
+    "NOOP"
+  ],
+  "candidate_02_factor": {
+    "codex": "fixed-exposure vector Poisson, whole-assembly trim, fixed-size first daughter",
+    "port": "single-event categorical growth to exact mass, same fixed-size first daughter"
+  },
+  "candidate_03_factorial": {
+    "adaptive_exposure": "expected four events per vector-Poisson update",
+    "allow_overshoot": "stop at or above parent mass without capacity admission",
+    "uniform_daughter": "uniformly choose one of two binomial daughters",
+    "variants": [
+      "C03_E0_O0_D0",
+      "C03_E0_O0_D1",
+      "C03_E0_O1_D0",
+      "C03_E0_O1_D1",
+      "C03_E1_O0_D0",
+      "C03_E1_O0_D1",
+      "C03_E1_O1_D0",
+      "C03_E1_O1_D1"
+    ]
+  },
+  "claim_boundary": [
+    "simulator moderation is not proof that either implementation is uniquely correct",
+    "an information response is not consciousness, agency, or life",
+    "prior negative public Phi-r results remain unchanged",
+    "strict-eight is excluded"
+  ],
+  "classification": {
+    "factor_localization": "a registered factor contrast has a same-signed 95% interval excluding zero in both replicates",
+    "full_port_recovery": "public response positive with positive 95% matrix-bootstrap lower bound in both replicates of both candidates, with positive hereditary separation",
+    "otherwise": "unresolved or distributed simulator moderation"
+  },
+  "controller": {
+    "destabilize": "RULE_UP: remove highest and add lowest outgoing influence",
+    "rule": "outgoing catalytic influence beta.T @ x",
+    "stabilize": "RULE_DOWN: remove lowest and add highest outgoing influence",
+    "timing": "after fissions 1-59; final daughter remains unedited"
+  },
+  "external_code_imported_or_executed": false,
+  "measurements": {
+    "all_16_atoms_retained": true,
+    "primary": "public nine-atom revised STABILIZE minus DESTABILIZE",
+    "representation": "material",
+    "secondary": "material full-block revised and inherited-boundary fraction",
+    "windows": {
+      "final20": "21 post-fission/post-control observations from boundaries 40-60",
+      "final30": "31 post-fission/post-control observations from boundaries 30-60"
+    }
+  },
+  "neutral_shared_inputs": {
+    "common_random_streams_not_identical_realized_futures": true,
+    "future_seed_excludes_arm": true,
+    "future_seed_excludes_variant": true,
+    "same_beta_and_initial_across_all_variants": true
+  },
+  "no_48_matrix_campaign": true,
+  "phase": "PX4",
+  "protocol_id": "18050519588c1b13ef4fada99bb68ff9bb8c4e07db90fbfbe2cb4ce2d7807984",
+  "question": "which documented simulator mechanics moderate the public nine-atom and full-block material responses to the physical outgoing rule?",
+  "run_regardless_of_px1_px2_px3_gates": true,
+  "spec": {
+    "cpu_seconds": 50400.0,
+    "final20_start": 40,
+    "final30_start": 30,
+    "horizon": 60,
+    "label": "scientific",
+    "matrices": 24,
+    "replicates": 2
+  }
+}

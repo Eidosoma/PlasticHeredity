@@ -1,0 +1,20 @@
+{
+  "complete_readback_exact": true,
+  "expected_table_row_counts": {
+    "lineage_metrics": 1056,
+    "lineages": 1056,
+    "matrix_effects": 34190,
+    "rolling_windows": 31625,
+    "selected_edits": 63278,
+    "selection_diagnostics": 44
+  },
+  "replay_exact": true,
+  "table_row_counts": {
+    "lineage_metrics": 1056,
+    "lineages": 1056,
+    "matrix_effects": 34190,
+    "rolling_windows": 31625,
+    "selected_edits": 63278,
+    "selection_diagnostics": 44
+  }
+}

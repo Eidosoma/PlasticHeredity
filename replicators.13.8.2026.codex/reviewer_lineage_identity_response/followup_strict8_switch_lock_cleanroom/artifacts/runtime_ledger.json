@@ -1,0 +1,11 @@
+{
+  "active_cumulative_at_start": null,
+  "active_started_epoch": null,
+  "created_at_epoch": 1787522687.987406,
+  "cumulative_seconds": 11251.414040088654,
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "hard_limit_seconds": 28800.0,
+  "last_stopped_at_epoch": 1787533939.4014566,
+  "runs_started": 1,
+  "soft_limit_seconds": 27000.0
+}

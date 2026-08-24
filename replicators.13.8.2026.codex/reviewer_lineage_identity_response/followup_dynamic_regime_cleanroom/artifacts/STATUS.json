@@ -1,0 +1,14 @@
+{
+  "completed": 322,
+  "cumulative_elapsed_seconds": 16709.20422053337,
+  "error": null,
+  "format": "gard-dynamic-regime-cleanroom-v1",
+  "message": "full exact replay and reports complete",
+  "pid": 62,
+  "protocol_id": "fb3ad23678c2b9531ba65c9f0e07556db478d605535167e87a1dc5062f5f1833",
+  "stage": "complete",
+  "stage_elapsed_seconds": null,
+  "state": "complete",
+  "total": 322,
+  "updated_at_epoch": 1787428664.3216941
+}

@@ -1,0 +1,304 @@
+{
+  "PAB-R": {
+    "complete_exact_replay": true,
+    "format": "codex-ch5-phir-protocol-adjudication-replay-v1",
+    "matrices": [
+      {
+        "exact": true,
+        "generated_digest": "af2d9de960de9aa32c7c57c8d254f514856c520d5ef42285327e03a7bb13aeb9",
+        "matrix_id": 0,
+        "replay_digest": "af2d9de960de9aa32c7c57c8d254f514856c520d5ef42285327e03a7bb13aeb9"
+      },
+      {
+        "exact": true,
+        "generated_digest": "e800bd77111a7f4a3cf1f080a07dec22acad12eb48aec466d90726d2ee9a3f94",
+        "matrix_id": 1,
+        "replay_digest": "e800bd77111a7f4a3cf1f080a07dec22acad12eb48aec466d90726d2ee9a3f94"
+      },
+      {
+        "exact": true,
+        "generated_digest": "6848aadebcd0aa0754dfd3eb48c424dff826a569b433f0422534873c16b710d7",
+        "matrix_id": 2,
+        "replay_digest": "6848aadebcd0aa0754dfd3eb48c424dff826a569b433f0422534873c16b710d7"
+      },
+      {
+        "exact": true,
+        "generated_digest": "6358210f30cd6d5d859d2984b21780625ecd530ba85aa8fe89809d1d99dbbd7f",
+        "matrix_id": 3,
+        "replay_digest": "6358210f30cd6d5d859d2984b21780625ecd530ba85aa8fe89809d1d99dbbd7f"
+      },
+      {
+        "exact": true,
+        "generated_digest": "16d69e61bf18efd57b878d2eaa930536f40ff1959346c5ac9bd4a330e0f3fbd8",
+        "matrix_id": 4,
+        "replay_digest": "16d69e61bf18efd57b878d2eaa930536f40ff1959346c5ac9bd4a330e0f3fbd8"
+      },
+      {
+        "exact": true,
+        "generated_digest": "40091e2c71551242d1b914bd706831154bc5f96a45fd9ddf48e358e2221d3105",
+        "matrix_id": 5,
+        "replay_digest": "40091e2c71551242d1b914bd706831154bc5f96a45fd9ddf48e358e2221d3105"
+      },
+      {
+        "exact": true,
+        "generated_digest": "dd8713a7927f9baa80eef523139fcc124eb8bdbc24649f96c6e13b2a9622a75f",
+        "matrix_id": 6,
+        "replay_digest": "dd8713a7927f9baa80eef523139fcc124eb8bdbc24649f96c6e13b2a9622a75f"
+      },
+      {
+        "exact": true,
+        "generated_digest": "b709f70310489997e928cc439eff2a5d9745ba422dec2591279d308877e1867b",
+        "matrix_id": 7,
+        "replay_digest": "b709f70310489997e928cc439eff2a5d9745ba422dec2591279d308877e1867b"
+      },
+      {
+        "exact": true,
+        "generated_digest": "8c3a6492937111f6e4c23a860573c4eee2842085a6f6b99fbfba24f1c5b98ed0",
+        "matrix_id": 8,
+        "replay_digest": "8c3a6492937111f6e4c23a860573c4eee2842085a6f6b99fbfba24f1c5b98ed0"
+      },
+      {
+        "exact": true,
+        "generated_digest": "f8324c18236c780fa67018c9466d33452a6427070be37bf426c0dc1b26f1c24e",
+        "matrix_id": 9,
+        "replay_digest": "f8324c18236c780fa67018c9466d33452a6427070be37bf426c0dc1b26f1c24e"
+      },
+      {
+        "exact": true,
+        "generated_digest": "4a72fb1185617fda0c557cf38c19f75289a8979a4738842d10bdfa961a8cccca",
+        "matrix_id": 10,
+        "replay_digest": "4a72fb1185617fda0c557cf38c19f75289a8979a4738842d10bdfa961a8cccca"
+      },
+      {
+        "exact": true,
+        "generated_digest": "447ae84bc0cb3dbcb6db6a67f38b7ab98e3fdf4fc5199f44ea8e09c9fc0bc4fb",
+        "matrix_id": 11,
+        "replay_digest": "447ae84bc0cb3dbcb6db6a67f38b7ab98e3fdf4fc5199f44ea8e09c9fc0bc4fb"
+      },
+      {
+        "exact": true,
+        "generated_digest": "258485f8e41efb28a72c8bcf8feb3bedeefc84d2479fbde1f01f830911114ae8",
+        "matrix_id": 12,
+        "replay_digest": "258485f8e41efb28a72c8bcf8feb3bedeefc84d2479fbde1f01f830911114ae8"
+      },
+      {
+        "exact": true,
+        "generated_digest": "fdf92701f0ca9d13eb32a5315e4b987dc8eaeefc9dd691d00026f30bb3f3c1ea",
+        "matrix_id": 13,
+        "replay_digest": "fdf92701f0ca9d13eb32a5315e4b987dc8eaeefc9dd691d00026f30bb3f3c1ea"
+      },
+      {
+        "exact": true,
+        "generated_digest": "47e730b3d0da435d98d526fcc0534a7179612d4728beffd93325231d92eb5474",
+        "matrix_id": 14,
+        "replay_digest": "47e730b3d0da435d98d526fcc0534a7179612d4728beffd93325231d92eb5474"
+      },
+      {
+        "exact": true,
+        "generated_digest": "3ebaad96369d5555dd8c20682439f964ec9e4bb42210b21541167cbf1e5e978a",
+        "matrix_id": 15,
+        "replay_digest": "3ebaad96369d5555dd8c20682439f964ec9e4bb42210b21541167cbf1e5e978a"
+      },
+      {
+        "exact": true,
+        "generated_digest": "e47c7db7368bccc734fea5d5ec66049543e147c4a0eec4ff72f95772de660ae4",
+        "matrix_id": 16,
+        "replay_digest": "e47c7db7368bccc734fea5d5ec66049543e147c4a0eec4ff72f95772de660ae4"
+      },
+      {
+        "exact": true,
+        "generated_digest": "f8460f77c8f1f472d7525075a6887fd2c01eaaca412ecc710414c9d2674e3e0c",
+        "matrix_id": 17,
+        "replay_digest": "f8460f77c8f1f472d7525075a6887fd2c01eaaca412ecc710414c9d2674e3e0c"
+      },
+      {
+        "exact": true,
+        "generated_digest": "9dadcb4b203ab1e9744df2a27141f20abd03384ecebbe1419ed92517ef7f915a",
+        "matrix_id": 18,
+        "replay_digest": "9dadcb4b203ab1e9744df2a27141f20abd03384ecebbe1419ed92517ef7f915a"
+      },
+      {
+        "exact": true,
+        "generated_digest": "741262a269250e48360f876ffff2ec7dea8050fdfb583b07e0759d2cd99d86f4",
+        "matrix_id": 19,
+        "replay_digest": "741262a269250e48360f876ffff2ec7dea8050fdfb583b07e0759d2cd99d86f4"
+      },
+      {
+        "exact": true,
+        "generated_digest": "c26eafd87d471b570d39834d5ea674b54817434dac4d3e298479ee47abafb604",
+        "matrix_id": 20,
+        "replay_digest": "c26eafd87d471b570d39834d5ea674b54817434dac4d3e298479ee47abafb604"
+      },
+      {
+        "exact": true,
+        "generated_digest": "17751f76b6ee52aec799094215d653ff7846fe065fea37bd1b238af76a0554df",
+        "matrix_id": 21,
+        "replay_digest": "17751f76b6ee52aec799094215d653ff7846fe065fea37bd1b238af76a0554df"
+      },
+      {
+        "exact": true,
+        "generated_digest": "dcb44e4bf3ffa8361930add078139e478e14a00eb8144424552666f4c3b211f4",
+        "matrix_id": 22,
+        "replay_digest": "dcb44e4bf3ffa8361930add078139e478e14a00eb8144424552666f4c3b211f4"
+      },
+      {
+        "exact": true,
+        "generated_digest": "6b122b606ba3144fa23ecdd29b437290d2feab73e7149ac036bb2b4fd6fb7e69",
+        "matrix_id": 23,
+        "replay_digest": "6b122b606ba3144fa23ecdd29b437290d2feab73e7149ac036bb2b4fd6fb7e69"
+      }
+    ],
+    "phase": "PAB-R"
+  },
+  "PAB24": {
+    "complete_exact_replay": true,
+    "format": "codex-ch5-phir-protocol-adjudication-replay-v1",
+    "matrices": [
+      {
+        "exact": true,
+        "generated_digest": "9d11d852766313bfe194fc8c947325190a8448e7737ea5235952b02300451859",
+        "matrix_id": 0,
+        "replay_digest": "9d11d852766313bfe194fc8c947325190a8448e7737ea5235952b02300451859"
+      },
+      {
+        "exact": true,
+        "generated_digest": "8d74995303464533ad9fff35c094699a2b73014d043b9006f72a679e012d8165",
+        "matrix_id": 1,
+        "replay_digest": "8d74995303464533ad9fff35c094699a2b73014d043b9006f72a679e012d8165"
+      },
+      {
+        "exact": true,
+        "generated_digest": "0251cca2fada6b05c15e67f32484006555674097702df62ceb35966bdf4fe010",
+        "matrix_id": 2,
+        "replay_digest": "0251cca2fada6b05c15e67f32484006555674097702df62ceb35966bdf4fe010"
+      },
+      {
+        "exact": true,
+        "generated_digest": "ad3849c0cb68122c1f16f02be4d97131a51ccbb936f5cdfff7fc7791fb6f50ed",
+        "matrix_id": 3,
+        "replay_digest": "ad3849c0cb68122c1f16f02be4d97131a51ccbb936f5cdfff7fc7791fb6f50ed"
+      },
+      {
+        "exact": true,
+        "generated_digest": "cd21814cb95185435a65f12e0ea2f985cd5f8d8df7beee0d50315a8609d49c72",
+        "matrix_id": 4,
+        "replay_digest": "cd21814cb95185435a65f12e0ea2f985cd5f8d8df7beee0d50315a8609d49c72"
+      },
+      {
+        "exact": true,
+        "generated_digest": "8d66b3826520c2872999eba28327609c9dbdf5bcdb53d317cb2969b3ff2c53f3",
+        "matrix_id": 5,
+        "replay_digest": "8d66b3826520c2872999eba28327609c9dbdf5bcdb53d317cb2969b3ff2c53f3"
+      },
+      {
+        "exact": true,
+        "generated_digest": "a95341ec34f161208b34606911a9e50cd74df6724bac1f593ae9c587e27a3add",
+        "matrix_id": 6,
+        "replay_digest": "a95341ec34f161208b34606911a9e50cd74df6724bac1f593ae9c587e27a3add"
+      },
+      {
+        "exact": true,
+        "generated_digest": "138b50a7c38314611e663534d104e906141032ded4eccadfef197111e682954d",
+        "matrix_id": 7,
+        "replay_digest": "138b50a7c38314611e663534d104e906141032ded4eccadfef197111e682954d"
+      },
+      {
+        "exact": true,
+        "generated_digest": "01465cf158db2907ad38df2024bb0fc25029ef478bbe11098f1316352e480177",
+        "matrix_id": 8,
+        "replay_digest": "01465cf158db2907ad38df2024bb0fc25029ef478bbe11098f1316352e480177"
+      },
+      {
+        "exact": true,
+        "generated_digest": "e494b5f540b56ed0fc16143c1a69394286e7f5d5df9819c5aa81cfa30a23501e",
+        "matrix_id": 9,
+        "replay_digest": "e494b5f540b56ed0fc16143c1a69394286e7f5d5df9819c5aa81cfa30a23501e"
+      },
+      {
+        "exact": true,
+        "generated_digest": "23052935ed4b1e18d3d803758f9a328c540767c4a114524c3776bc2b9e071485",
+        "matrix_id": 10,
+        "replay_digest": "23052935ed4b1e18d3d803758f9a328c540767c4a114524c3776bc2b9e071485"
+      },
+      {
+        "exact": true,
+        "generated_digest": "a4130bd9c2e262514b3c7beafa288ef165877e87e054c2fae71c7e28679a823c",
+        "matrix_id": 11,
+        "replay_digest": "a4130bd9c2e262514b3c7beafa288ef165877e87e054c2fae71c7e28679a823c"
+      },
+      {
+        "exact": true,
+        "generated_digest": "7c87983d6a49421e2c578893130681ef33ae9961359ad991022916d4c5eec89e",
+        "matrix_id": 12,
+        "replay_digest": "7c87983d6a49421e2c578893130681ef33ae9961359ad991022916d4c5eec89e"
+      },
+      {
+        "exact": true,
+        "generated_digest": "77e777413623fc09d905ace9d8cfc5deb1368169bc8654ebc9856e9f74c2d25d",
+        "matrix_id": 13,
+        "replay_digest": "77e777413623fc09d905ace9d8cfc5deb1368169bc8654ebc9856e9f74c2d25d"
+      },
+      {
+        "exact": true,
+        "generated_digest": "aa740e992d32947d0fc7ff74b0883361efa1677b0d923c4d0d6227fab8240e83",
+        "matrix_id": 14,
+        "replay_digest": "aa740e992d32947d0fc7ff74b0883361efa1677b0d923c4d0d6227fab8240e83"
+      },
+      {
+        "exact": true,
+        "generated_digest": "51b8c143adf90ba0f0e2d28e0934c65eb748ba3ff76344a4a63b2105e44e8f5f",
+        "matrix_id": 15,
+        "replay_digest": "51b8c143adf90ba0f0e2d28e0934c65eb748ba3ff76344a4a63b2105e44e8f5f"
+      },
+      {
+        "exact": true,
+        "generated_digest": "5078dc06e4952858b3b135bb11c2f63aa5310d6053b162294c98373f7aee01ce",
+        "matrix_id": 16,
+        "replay_digest": "5078dc06e4952858b3b135bb11c2f63aa5310d6053b162294c98373f7aee01ce"
+      },
+      {
+        "exact": true,
+        "generated_digest": "b482b9256bc3d0ed1bfbe229942886c98370a5581dd5521e542eeabdf4e0ab99",
+        "matrix_id": 17,
+        "replay_digest": "b482b9256bc3d0ed1bfbe229942886c98370a5581dd5521e542eeabdf4e0ab99"
+      },
+      {
+        "exact": true,
+        "generated_digest": "e80dfc95834320815b839e9a68cd3eba1a6cf0ad2cc8324ad4d4350440ad294e",
+        "matrix_id": 18,
+        "replay_digest": "e80dfc95834320815b839e9a68cd3eba1a6cf0ad2cc8324ad4d4350440ad294e"
+      },
+      {
+        "exact": true,
+        "generated_digest": "e6b62e17e996ee87d968301fe98822425b82c6a6b503f83b5405e11bf2bc45a1",
+        "matrix_id": 19,
+        "replay_digest": "e6b62e17e996ee87d968301fe98822425b82c6a6b503f83b5405e11bf2bc45a1"
+      },
+      {
+        "exact": true,
+        "generated_digest": "fa6f32acd9e289601e98c6a1daf22f5964279c0d67bd96b62bec0137f20ba3dd",
+        "matrix_id": 20,
+        "replay_digest": "fa6f32acd9e289601e98c6a1daf22f5964279c0d67bd96b62bec0137f20ba3dd"
+      },
+      {
+        "exact": true,
+        "generated_digest": "69b852353c61a4a06ad43bd5e9d6ff42282f448277c512505a30162571a7d7e8",
+        "matrix_id": 21,
+        "replay_digest": "69b852353c61a4a06ad43bd5e9d6ff42282f448277c512505a30162571a7d7e8"
+      },
+      {
+        "exact": true,
+        "generated_digest": "6c6289d3126b530047e1810c1a4a39bdd21d781e6f050a1a7966b9c4ac80e782",
+        "matrix_id": 22,
+        "replay_digest": "6c6289d3126b530047e1810c1a4a39bdd21d781e6f050a1a7966b9c4ac80e782"
+      },
+      {
+        "exact": true,
+        "generated_digest": "2bcae4dd30fcf7a83970b2f44606cb8b00333512bbbf1af5309fbe6df0107697",
+        "matrix_id": 23,
+        "replay_digest": "2bcae4dd30fcf7a83970b2f44606cb8b00333512bbbf1af5309fbe6df0107697"
+      }
+    ],
+    "phase": "PAB24"
+  }
+}

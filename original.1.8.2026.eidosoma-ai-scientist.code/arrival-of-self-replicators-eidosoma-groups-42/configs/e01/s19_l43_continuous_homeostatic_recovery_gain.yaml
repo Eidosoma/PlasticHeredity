@@ -1,0 +1,78 @@
+schema: eidosoma.e01.s19_l43.preregistration.v1
+version: E01-S19-L43-CONTINUOUS-HOMEOSTATIC-RECOVERY-GAIN-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  After a genuine fission-boundary heredity break, does the first sustained
+  resumption of parent-daughter inheritance move the lineage back toward its
+  online pre-break composition by a reliable, anchor-specific continuous
+  amount, and can an independent four-fission ensemble rank that propensity?
+inputs:
+  states: 280 frozen L28/L31 restored states
+  branchPaths: exact L41 F12/F4 streams and identities
+  newBranchStreams: 0
+primaryOutcome:
+  id: CONTINUOUS_PREBREAK_ANCHOR_GAIN_AT_INHERITANCE_RESUMPTION
+  clock: selected post-fission boundaries
+  firstBreak:
+    parentDaughterInheritance: H <= 0.9
+    departureFromPreviousDaughter: H <= 0.9
+  resumption:
+    inheritedFission: parent-daughter H > 0.9
+    sustainedRun: 2 consecutive fissions
+  value: >-
+    H(certifying daughter, pre-break daughter) minus
+    H(break daughter, pre-break daughter)
+  completedTestTrajectoryUsed: false
+pairedControls:
+  - SPECIES_PERMUTED_PREBREAK_ANCHOR_GAIN
+  - UNRELATED_MATRIX_ANCHOR_GAIN
+  - SECOND_INHERITED_FISSION_GAIN
+  - MAXIMUM_POSTBREAK_GAIN
+ordinaryBaselines:
+  - BREAK_PROBABILITY
+  - INHERITANCE_RESUMPTION_PROBABILITY
+  - FUTURE_INHERITANCE_FREQUENCY
+  - POSTBREAK_OPPORTUNITY_COUNT
+  - CURRENT_MASS
+  - GENERATION_PHASE_AS_CURRENT_GENERATION_LOCAL_SELECTED_STEP
+shortCoordinate:
+  id: F4_CONTINUOUS_RECOVERY_GAIN
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  bootstraps: 4096
+  f12MinimumResumptionTrialsPerState: 32
+  f12MinimumResumptionTrialsPerHalf: 16
+  f4MinimumResumptionTrialsPerState: 12
+  f4MinimumResumptionTrialsPerHalf: 6
+gates:
+  eligibleStatesPerEvaluationGroup: 32
+  meanGainLower95: ">0"
+  correctedVarianceLower95: ">0"
+  splitHalfSpearman: ">0.5"
+  splitHalfLower95: ">0.3"
+  primaryMinusSpeciesPermutedLower95: ">0"
+  primaryMinusUnrelatedLower95: ">0"
+  f4ToF12Spearman: ">0.5"
+  f4ToF12Lower95: ">0.3"
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  thresholdSearch: false
+  breakSearch: false
+  resumptionRunSearch: false
+  horizonSearch: false
+  outcomeFamilySearch: false
+  completedRunTarget: none
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  validationReserveFraction: 0.10
+nextIfPass: UNTOUCHED_CONTINUOUS_HOMEOSTATIC_RECOVERY_CONFIRMATION
+nextIfTargetPassesButProxyFails: CONTINUOUS_RECOVERY_SHOOTING_EFFICIENCY
+nextIfAnchorSpecificButUnreliable: HOMEOSTATIC_RECOVERY_HAZARD_SURVIVAL_AUDIT
+nextIfTargetFails: PROCESS_OUTCOME_FAMILY_IDENTIFIABILITY_AUDIT

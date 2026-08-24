@@ -1,0 +1,74 @@
+{
+  "calibration_summary_sha256": "97402a6930de3363c6f216c0f8b53fde85c23d9f03a434f720ea6a824538a691",
+  "confirmation_authorized": true,
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "no_confirmation_reason": null,
+  "protocol_id": "e4250713b53cffa4fac9be5967c108cb8adff2ef6ce92bf44c53f7898c126a17",
+  "selected_setting_count": 2,
+  "selected_settings": [
+    {
+      "copy_mode": "nominal",
+      "coupling": 2.0,
+      "half_life": 1,
+      "k": 8,
+      "selection_role": "smallest_nominal_pass",
+      "setting_id": "k008_l01_u2p0_nominal"
+    },
+    {
+      "copy_mode": "ideal",
+      "coupling": 2.0,
+      "half_life": 8,
+      "k": 8,
+      "selection_role": "strongest_pass",
+      "setting_id": "k008_l08_u2p0_ideal"
+    }
+  ],
+  "selection_id": "e6a5708b898fa0539c6a03f26da1e4730f680e5b029766c38c4e4bea7c073185",
+  "status": "frozen_after_engineering_before_confirmation_futures",
+  "tier": {
+    "confirmation_future_generations": 8773632,
+    "fits_6p75_hour_budget": true,
+    "futures": 48,
+    "horizon": 64,
+    "projected_cumulative_seconds": 21954.559153437614,
+    "raw_remaining_seconds": 14249.209633111954,
+    "safety_adjusted_remaining_seconds": 21373.81444966793,
+    "selected_settings": 2,
+    "tier": "B"
+  },
+  "tier_projections": [
+    {
+      "confirmation_future_generations": 11698176,
+      "fits_6p75_hour_budget": false,
+      "futures": 64,
+      "horizon": 64,
+      "projected_cumulative_seconds": 28530.49406826496,
+      "raw_remaining_seconds": 18633.166303396225,
+      "safety_adjusted_remaining_seconds": 27949.749455094337,
+      "selected_settings": 2,
+      "tier": "A"
+    },
+    {
+      "confirmation_future_generations": 8773632,
+      "fits_6p75_hour_budget": true,
+      "futures": 48,
+      "horizon": 64,
+      "projected_cumulative_seconds": 21954.559153437614,
+      "raw_remaining_seconds": 14249.209633111954,
+      "safety_adjusted_remaining_seconds": 21373.81444966793,
+      "selected_settings": 2,
+      "tier": "B"
+    },
+    {
+      "confirmation_future_generations": 5849088,
+      "fits_6p75_hour_budget": true,
+      "futures": 64,
+      "horizon": 32,
+      "projected_cumulative_seconds": 15378.624225020409,
+      "raw_remaining_seconds": 9865.252962827682,
+      "safety_adjusted_remaining_seconds": 14797.879444241524,
+      "selected_settings": 2,
+      "tier": "C"
+    }
+  ]
+}

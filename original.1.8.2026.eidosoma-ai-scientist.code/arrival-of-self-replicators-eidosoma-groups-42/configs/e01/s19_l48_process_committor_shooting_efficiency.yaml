@@ -1,0 +1,77 @@
+schema: eidosoma.e01.s19_l48.preregistration.v1
+version: E01-S19-L48-PROCESS-COMMITTOR-SHOOTING-EFFICIENCY-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  How many frozen forward branches are required to recover the independently
+  measured state ranking and probability of the L44 online-certified run-of-three
+  heredity committor, and can uncertainty allocation lower that cost?
+inputs:
+  process: NEW_HEREDITARY_EPISODE_RUN3
+  conditioning: conditional on L44 genuine break
+  states: L44 process-eligible states only
+  estimatorHalf: L44 branch A, indices 0 through 63
+  referenceHalf: L44 branch B, indices 64 through 127
+  branchCosts: frozen L41 F12 trace rows
+  newSimulation: false
+developmentUse:
+  technicalBenchmark: first 10 sorted L28 development candidate-2 states only
+  heldoutOutcomeAccessBeforeLock: false
+  designChangedAfterDevelopmentBenchmark: false
+fixedBranchBudgets: [4, 8, 16, 32, 64]
+estimator:
+  posterior: Jeffreys Beta(0.5, 0.5)
+  point: posterior mean
+  interval: equal-tailed 95 percent posterior interval
+  zeroBreakTrials: prior-only estimate retained and marked not data-informed
+adaptiveAllocation:
+  startBranchesPerState: 4
+  batchSize: 4
+  checkpointsAverageBranches: [4, 8, 16, 32, 64]
+  priority: largest current Jeffreys posterior variance
+  tie: lexical stateId
+  capBranchesPerState: 64
+  heldoutReferenceUsedForAllocation: false
+robustness:
+  deterministicIndependentResplits: 128
+  matrixBootstraps: 4096
+  reference: independent 64-branch half
+metrics:
+  - data-informed state fraction
+  - split-half Spearman rank
+  - conditional branch-level Brier score
+  - Brier improvement over frozen development prior
+  - binomial log loss
+  - mean absolute q difference
+  - branch and molecular-update cost
+  - rank robustness across deterministic resplits
+reducedBudgetGate:
+  - fixed budget no greater than 32 branches
+  - at least 95 percent data-informed states in every held-out group
+  - Spearman above 0.5 with matrix-bootstrap lower bound above 0.3
+  - Brier-improvement lower bound above zero versus the frozen development prior
+  - resplit tenth-percentile Spearman above 0.3
+  - both candidates and both held-out cohorts pass
+adaptiveGate:
+  - passes the same availability, rank and Brier gates
+  - uses fewer average branches than the minimum passing fixed budget
+  - heldout branch B never enters allocation
+scope:
+  newMatrices: 0
+  newTrajectories: 0
+  newBranchStreams: 0
+  targetSearch: false
+  thresholdSearch: false
+  horizonSearch: false
+  featureSearch: false
+  intervention: false
+ceilings:
+  cpuHours: 24
+  gpuHours: 0
+  wallHours: 24
+  retainedGiB: 15
+  temporaryGiB: 30
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+interpretation: >-
+  Shooting is a simulator-based measurement of future propensity, not a static
+  past-observable biomarker or evidence of causal emergence.

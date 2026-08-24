@@ -1,0 +1,132 @@
+{
+  "claim_boundary": {
+    "prohibited": [
+      "strict-eight control",
+      "biological repair",
+      "biological memory",
+      "agency",
+      "life",
+      "autonomous organization",
+      "real prebiotic chemistry",
+      "universal origin-of-life mechanism",
+      "Phi or PhiID intervention"
+    ]
+  },
+  "development": {
+    "archive_audit_horizon": 12,
+    "branches": 32,
+    "break_target": "first strict break within F6",
+    "candidates": [
+      "02",
+      "03"
+    ],
+    "complete_replay": true,
+    "landmarks": [
+      20,
+      35,
+      50,
+      65,
+      80
+    ],
+    "matrices": 200,
+    "natural_break_acquisition_limit": 60,
+    "renewal_target": "run3 within F8 from natural post-break daughter",
+    "source": "exactly regenerated results/scaled5 VALI cohort",
+    "states": 2000
+  },
+  "format": "codex-intervention-cr5-resistance-resilience-v1",
+  "inference": {
+    "bootstrap_repetitions": 4096,
+    "equivalence_margin": 0.025,
+    "holm_family": "four candidate-by-branch-half cells within each stage",
+    "random_effect_ratio_limit": 0.25,
+    "randomization_repetitions": 4096,
+    "unit": "whole catalytic matrix",
+    "up_noop_and_noop_down_reported_not_gated": true
+  },
+  "model": {
+    "candidate_separated": true,
+    "confirmation_refit_or_recalibration": false,
+    "fold_rule": "matrix_id modulo 5",
+    "history_features": 9,
+    "intercept_penalized": false,
+    "ridge_penalties": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "state_graph_features": 195,
+    "state_pca_components": 12,
+    "target_separated": true,
+    "tie_rule": "largest penalty within 1e-12 of minimum loss",
+    "whole_matrix_cv_folds": 5
+  },
+  "operational": {
+    "checkpoint_resumable": true,
+    "cr6_not_launched_automatically": true,
+    "mandatory_stop_after_seal": true,
+    "maximum_cpu_hours": 30.0,
+    "minimum_declared_cpu_budget_hours": 16.0,
+    "minimum_free_disk_bytes": 4000000000
+  },
+  "protocol_id": "8196fe16ddc211e35a908dc1b091d5e849d5ddfce413faa1af737f9bb7fad31b",
+  "randomness": {
+    "common_random_streams": true,
+    "future_seed_excludes_arm": true,
+    "no_future_retries": true,
+    "no_matrix_or_source_replacement": true,
+    "random_selection_stream_separate": true,
+    "seed_domains": {
+      "confirmation_cohort": "03b1103847486442ec4886f7af9e8b61c456364aad6231a4fa1336b77546ca30",
+      "confirmation_replay": "de1fb88ee635bdbc164a26bae85ad6a1c5bbba88154ce257ced6fa8641bfc395",
+      "development_renewal_acquisition": "7d1090f9c60aa2af14dde495f3d0a65664d6a8add6f8814e3709f62e5ead0c39",
+      "development_renewal_future": "8709bdd37de00ed9b4070f943ed70d60e09ecbaeff80c1d5f0871f39a3ba50a7",
+      "development_replay": "632932b68bfe70767a09fbddd25e70872244fa8a1cdc3a140be33f47c012456c",
+      "resilience_acquisition": "021c48e3a85545825f08a470dbedcdbace42194b30cab79dd8a7a33f5a548e96",
+      "resilience_bootstrap": "13c26994956338b5296dcb3b132087824170de7c551c74fd61380333be6747a5",
+      "resilience_future": "0fffc81038ea2ba0254170aaaca29d0a9854004d600959aef14665aa2baa5025",
+      "resilience_randomization": "571c33d1fe0e7016bf3a0a7485a56eddc08bb452b9e8cc95c9b069f26052f71e",
+      "resilience_selection": "0c1adc183135f73c2f9e4d7e4597589a48c187135561368a3f00212bbe544b3b",
+      "resistance_bootstrap": "7b1cce7c3642a62b161997fedd8ade5c89bb699045a18e8c0872fbd9e1dcae8a",
+      "resistance_future": "dc43e53f3ada0e8b94a45b06b1f3ff1e7e9a773337800c5d8f431cf9b88259dc",
+      "resistance_randomization": "2c631c1613e230902b30f03c93242ce93da27b724f25d7bb64e5be3de0c5442e",
+      "resistance_selection": "52e74d2af465cf08ff685ee1ba35469ddeeffa9268fd22dca48ad2b72da12244",
+      "smoke_future": "c63a34c263d9a35ecf74a6ad971f953172f39d577fdeb057b624d9fd71eea098",
+      "smoke_selection": "dc6fb43dbaabb0d43f0d1639f587825618c925033145854f2d2fffecaea48092",
+      "validation": "67ffef860854fe490d849d56510b85a18f238431b2acf378c59284a943556a2b"
+    }
+  },
+  "resilience": {
+    "all_200_matrices_per_candidate_required": true,
+    "arms": [
+      "RENEWAL_UP",
+      "RENEWAL_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "branches": 64,
+    "complete_replay": true,
+    "horizon": 8,
+    "natural_break_acquisition_limit": 60,
+    "natural_sources": 2000
+  },
+  "resistance": {
+    "arms": [
+      "BREAK_UP",
+      "BREAK_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "branches": 64,
+    "complete_replay": true,
+    "horizon": 6,
+    "matrices": 200,
+    "primary_futures": 512000,
+    "states": 2000
+  },
+  "status": "frozen_before_cr5_development_labels_and_confirmation_matrices",
+  "target": "JOINT_BREAK_RUN3 decomposition; strict-eight excluded"
+}

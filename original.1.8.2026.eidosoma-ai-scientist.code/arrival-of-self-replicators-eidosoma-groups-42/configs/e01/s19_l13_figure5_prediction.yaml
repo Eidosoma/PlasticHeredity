@@ -1,0 +1,179 @@
+schema: eidosoma.e01.s19.l13.preregistration.v1
+researchStepId: S19-L13
+versionedStepId: E01-S19-L13-FIGURE5-RECURRING-TARGET-PREDICTION-RECONSTRUCTION-v1.0.0
+title: Figure-5 Recurring-Target Prediction Reconstruction
+evidenceClass: ADAPTIVE_EXPLORATORY_FORENSIC_RECONSTRUCTION
+authorizedAtUtc: '2026-08-09T00:00:00Z'
+outcomeAccessedAtLock: false
+
+inputs:
+  matrixCount: 100
+  candidates: [CANDIDATE_2, CANDIDATE_3]
+  trajectorySource: /artifacts/research_steps/S19/loops/L11R/trajectory_manifest.parquet
+  authoritativeU2Labels: /artifacts/research_steps/S19/loops/L11R/molecular_union_label_results.parquet
+  trajectoryPolicy: exact frozen L11R original-exposure trajectories only; no replacement
+
+targets:
+  - targetId: F5_R1_HISTORICAL_DOMINANT_COMPTYPE_H090
+    implementation: exact L10 R1 MATLAB-compatible historical dominant-compotype fit
+    membership: direct molecular strict cosine H greater than 0.9 to the unique dominant centroid
+    completedRunDependent: true
+  - targetId: F5_U2_PAPER_EUCLIDEAN_RECURRING_UNION_H090
+    implementation: exact authoritative L11R U2 recurring-centroid-union labels
+    membership: direct molecular strict cosine H greater than 0.9 to any recurring centroid
+    completedRunDependent: true
+
+figure5Digitization:
+  source: /artifacts/research_steps/S19/loops/L12/figure_digitization.csv
+  frozenCentralValues:
+    P1_PHIRL_EMERGENCE_COMPLETED_FIT: 0.85
+    B1_COMPOSITION_CHANGE: 0.80
+    B2_RAW_COMPOSITIONS: 0.80
+    B3_MOLECULAR_FLUXES: 0.79
+    MAJORITY_DUMMY: 0.60
+  approximateComparisonHalfWidth: 0.05
+  caveat: L12 froze approximate panel centers, not numerical whisker endpoints; the plus-or-minus 0.05 comparison envelope is an outcome-blind adjudication tolerance and is not a redigitization.
+
+geometryGate:
+  minimumDefinedMatricesEachCandidate: 80
+  promotionMinimumDefinedMatricesEachCandidate: 95
+  requireBothClassesInAggregateTestSuffix: true
+  dummyInterval: [0.55, 0.65]
+  dummyRule: ten-split range overlaps the interval and ten-split median lies within it
+  noPaddingOrUndefinedContribution: true
+  requireCrossCandidateDirectionalAgreement: true
+
+tensorAndModel:
+  sourceManifest: configs/e01/s16_tensor_model_manifest.json
+  splitManifest: configs/e01/s16_split_manifest.csv
+  cutoff: floor(0.25*T)
+  repetitions: 10
+  matrixSplit: {fit: 64, validation: 16, test: 20}
+  padding: exact S16 right padding with explicit masks
+  scaling: exact S16 fit-matrix-only per-channel population mean and standard deviation
+  model: exact S16 288789-parameter CPU-float64 deterministic masked MLP
+  architectureTournament: false
+
+features:
+  - P1_PHIRL_EMERGENCE_COMPLETED_FIT
+  - P2_PHIRL_EMERGENCE_FIRST_QUARTER_ONLY
+  - B1_COMPOSITION_CHANGE
+  - B2_RAW_COMPOSITIONS
+  - B3_MOLECULAR_FLUXES
+  - B4_ADJACENT_H
+  - B5_PREFIX_ATTRACTOR_GEOMETRY
+  - B6_TIME_ONLY
+  - B7_RANDOM_MATCHED_SHAPE
+  - P2_PLUS_B4
+  - P2_PLUS_B5
+  - MAJORITY_DUMMY
+  - O1_COMPLETED_TARGET_CENTROID_ORACLE
+  - NC1_WITHIN_PREFIX_TEMPORAL_PERMUTATION
+  - NC2_MATRIX_LABEL_PERMUTATION
+
+prefixAttractorGeometry:
+  method: exact L10 R1 fit on selected post-fission boundary states available strictly before the quarter cutoff
+  value: direct molecular H to the unique dominant prefix compotype centroid
+  ineligiblePolicy: false feature mask with no imputation
+  completedCentroidAccess: prohibited
+
+timeOnlyControl:
+  channels:
+    - selected index divided by max(cutoff minus one, one)
+    - generation divided by maximum observed prefix generation, with denominator one when zero
+
+randomMatchedShapeControl:
+  generator: numpy PCG64DXSM
+  matching: per-trajectory P2 valid-mask, mean, and population standard deviation
+  targetAccess: prohibited
+
+negativeControls:
+  withinPrefixTemporalPermutation: one domain-separated permutation of valid P2 time positions per matrix
+  matrixLabelPermutation: one domain-separated permutation of the complete padded target and mask among the 80 training-plus-validation matrices, independently per split
+  timeOnly: B6_TIME_ONLY
+  randomMatchedShape: B7_RANDOM_MATCHED_SHAPE
+  suffixSentinels: [0, 24, 49, 74]
+  suffixMutation: deterministic permutation of suffix states
+  oracle: completed target centroid or centroid set; diagnostic only and excluded from all gates
+
+metrics:
+  primary: valid-target-position micro binary accuracy
+  robustness:
+    - balanced accuracy
+    - AUROC
+    - AUPRC
+    - Brier score
+    - log loss
+    - sensitivity
+    - specificity
+    - positive predictive value
+    - negative predictive value
+    - calibration intercept
+    - calibration slope
+    - expected calibration error
+    - per-matrix cellwise accuracy
+    - mean per-matrix accuracy
+    - target prevalence
+    - test majority accuracy
+  paperComparison: two-sided Mann-Whitney across ten splits
+  pairedComparison: split-wise two-sided Wilcoxon
+  independentUnit: catalytic matrix
+  matrixBootstrapReplicates: 4096
+  multiplicity: Holm across registered feature comparisons within target and candidate
+
+paperFacingGate:
+  requireBothCandidates: true
+  p1Comparators: [B1_COMPOSITION_CHANGE, B2_RAW_COMPOSITIONS, B3_MOLECULAR_FLUXES, MAJORITY_DUMMY]
+  p1MustExceedAll: true
+  mannWhitneyPBelow: 0.01
+  requirePairedMatrixDirection: true
+  requireNoHandlingArtifact: true
+
+prospectiveGate:
+  reference: P2_PHIRL_EMERGENCE_FIRST_QUARTER_ONLY
+  comparators: [MAJORITY_DUMMY, B6_TIME_ONLY, B1_COMPOSITION_CHANGE, B2_RAW_COMPOSITIONS, B3_MOLECULAR_FLUXES, B4_ADJACENT_H, B5_PREFIX_ATTRACTOR_GEOMETRY]
+  requireP2PlusB4AboveB4: true
+  requireP2PlusB5AboveB5: true
+  balancedAccuracyLower95Above: 0.5
+  auprcMinusPrevalenceLower95Above: 0.0
+  brierMustBeatTrainingPrior: true
+  minimumPreOnsetMatricesAtCutoff: 20
+  minimumFutureOnsetMatrices: 20
+  requireBothCandidates: true
+  requireSuffixInvariance: true
+  requireNegativeControls: true
+
+technicalAssurance:
+  maximumPostOutcomeAmendments: 2
+  permittedOnly: [serialization, schema typing, canonical column order, plotting, report assembly, quarantine, atomic file movement]
+  scientificValueChangePermitted: false
+
+promotionPriority:
+  order:
+    - F5_R1_HISTORICAL_DOMINANT_COMPTYPE_H090
+    - F5_U2_PAPER_EUCLIDEAN_RECURRING_UNION_H090
+  basis: paper's singular most-recurring-composition wording; frozen before target or model outcomes
+  maximumPromotedPipelines: 1
+
+resources:
+  cpuCores: 8
+  gpuHours: 0
+  cpuHoursMaximum: 160
+  wallHoursMaximum: 72
+  retainedGiBMaximum: 35
+  temporaryGiBMaximum: 100
+  reserveFraction: 0.15
+  numericalThreadsPerWorker: 1
+
+forbidden:
+  - new catalytic matrix, initial state, trajectory, or stochastic stream
+  - third primary target
+  - changed H threshold, cluster rule, simulator, exposure, or label projection
+  - changed S16 tensor, mask, cutoff, architecture, optimizer, or split
+  - balancing, oversampling, or undersampling
+  - target selection using PhiRL or MLP performance
+  - candidate pooling to rescue a result
+  - completed-fit or completed-centroid information in prospective inputs
+  - treating the oracle as an ordinary baseline
+  - imputing or replacing an undefined target
+  - author contact, intervention, S20, E02, or report-bundle generation

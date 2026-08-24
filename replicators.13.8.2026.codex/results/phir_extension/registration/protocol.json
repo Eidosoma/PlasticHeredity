@@ -1,0 +1,55 @@
+{
+  "bootstrap_draws": 4096,
+  "candidates_pooled": false,
+  "claim_boundaries": [
+    "prior sealed negative results remain unchanged",
+    "no consciousness, agency, life, or metaphysical inference",
+    "no 48-matrix continuation",
+    "cross-clean-room claims require exactly matched tests"
+  ],
+  "cpu_budget_hours": 80.0,
+  "document_sha256": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+  "format": "codex-ch5-phir-extension-program-v1",
+  "inference_unit": "whole catalytic matrix",
+  "matrix_scale": 24,
+  "max_workers": 12,
+  "minimum_free_disk_bytes": 1500000000,
+  "no_48_matrix_campaign": true,
+  "phase_allocations_cpu_hours": {
+    "PX0": 2,
+    "PX1": 8,
+    "PX2": 10,
+    "PX3_CONFIRMATION": 12,
+    "PX3_DEVELOPMENT": 20,
+    "PX4": 14,
+    "PX5": 12,
+    "PX6": 2
+  },
+  "phases": [
+    "PX1",
+    "PX2",
+    "PX3",
+    "PX4",
+    "PX5",
+    "PX6"
+  ],
+  "protocol_id": "4ffd53d670a65f862056a1a3a9dc453d07cd4ecdf731850d1213e0908343a93e",
+  "randomization_draws": 4096,
+  "run_all_phases_without_evidence_gating": true,
+  "seed_domains": {
+    "acquisition": "1890fca19e6e9cb8c02ec1c78a6d82c40f3450bb43c5941595695e238c28675f",
+    "action": "9ba8ec6189b173f7bc264d23e18fd78b3bba7f3e68d4e46cf3d9129725789cd2",
+    "bootstrap": "5f0c4c81c2b1b54b7d482e74cab6c33950471edd3f1c3333a3298e1e866296c8",
+    "future": "3948453b44526c0bf12f77aa8bc9edafc2e541ad0a1f269b816020c270678d75",
+    "initial": "469b8134b7444e31c88ad9549ceb633d8ae5e58fd8e6afd14ff2fa51eaac9ea8",
+    "main_path": "2e2e0e4553e2f0471278e602d8356efb67155011081ef033e45ffb08d04b52f4",
+    "matrix": "74341948d25c67d1dd0a4b04d305a12cb091f7791f61afb1eb916a994d467da9",
+    "random_action": "4e876b36b95d7d4fa728a32a5b3cd4e3ccf7cf4a5e17e28cc73fa3c421b4141e",
+    "randomization": "af2c54f78d69c2da52129a3471c8bff6784f3e31b7d48db6e50f600e96ee4979",
+    "replay": "5cdc54ac2dfe7a101f83f4fa4470159e29b95534cb583e73e9961727b52ac4bb",
+    "screen": "c37eceb1df1509295d0e24332c2183c1817fd071797772449a6fe786fb839052",
+    "smoke": "60dabaa0f1b3092b610618c140ec02ae02a9585a04d447738df3f29922f2e894",
+    "validation": "4e0ab8155dbefb00dd49c49e2b041e8b9f6aacd037155536599e15401998a15a"
+  },
+  "title": "Chapter 5 Phi-r extension"
+}

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grn-f12-realistic"
+version = "0.1.0"
+description = "Clean-room two-tier GRN replication of the PH F12 prediction result"
+requires-python = ">=3.13"
+dependencies = [
+  "jax[cuda13]==0.11.1",
+  "numpy==2.5.2",
+  "optax==0.2.8",
+  "scikit-learn==1.9.0",
+  "scipy==1.18.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+grn-f12 = "grn_f12_realistic.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

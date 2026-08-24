@@ -1,0 +1,176 @@
+{
+  "anchors": [
+    {
+      "beta_multiplier": 1.0,
+      "grid_id": "b1p0_l1p0",
+      "leave_multiplier": 1.0
+    },
+    {
+      "beta_multiplier": 2.0,
+      "grid_id": "b2p0_l2p0",
+      "leave_multiplier": 2.0
+    }
+  ],
+  "arms": [
+    {
+      "field": "none",
+      "name": "control",
+      "phase": 0.0,
+      "quench": false,
+      "release_after": 0
+    },
+    {
+      "field": "none",
+      "name": "quench",
+      "phase": 0.0,
+      "quench": true,
+      "release_after": 0
+    },
+    {
+      "field": "wave",
+      "name": "wave",
+      "phase": 0.0,
+      "quench": false,
+      "release_after": 0
+    },
+    {
+      "field": "wave",
+      "name": "quench_wave",
+      "phase": 0.0,
+      "quench": true,
+      "release_after": 0
+    },
+    {
+      "field": "static",
+      "name": "quench_static",
+      "phase": 0.0,
+      "quench": true,
+      "release_after": 0
+    },
+    {
+      "field": "shuffled",
+      "name": "quench_shuffled",
+      "phase": 0.0,
+      "quench": true,
+      "release_after": 0
+    },
+    {
+      "field": "wave",
+      "name": "quench_phase_pi",
+      "phase": 3.141592653589793,
+      "quench": true,
+      "release_after": 0
+    },
+    {
+      "field": "wave",
+      "name": "pulse_release",
+      "phase": 0.0,
+      "quench": true,
+      "release_after": 8
+    }
+  ],
+  "candidates": [
+    "02",
+    "03"
+  ],
+  "classification": "next_preprint_exploratory_followup",
+  "donors": {
+    "b_definition": "third daughter of first registered strict8 window or first F12 run3",
+    "composition_identity_not_used_for_matching": true,
+    "f12_only": "F12 event and no registered strict8 anywhere in F32",
+    "horizon": 32,
+    "matching_features": [
+      "break_time",
+      "run3_start",
+      "first3_min_pairwise",
+      "first3_max_anchor_h",
+      "B_mass"
+    ],
+    "matching_scales": [
+      4.0,
+      4.0,
+      0.1,
+      0.1,
+      10.0
+    ],
+    "required_per_kind": 2,
+    "strict_extension": "first registered all8 window, captured at its third daughter rather than eighth",
+    "strict_selection": "semantic hash"
+  },
+  "endpoints": {
+    "checkpoints": [
+      8,
+      16,
+      32
+    ],
+    "primary": [
+      "same_parent_static",
+      "cross_parent_static",
+      "terminal_target_capture",
+      "target_residence"
+    ],
+    "secondary": [
+      "phase_aligned_same",
+      "phase_aligned_cross",
+      "occupancy"
+    ]
+  },
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "gates": {
+    "autonomous_switch_lock": "supported specificity plus pulse-release F32 capture lower>.20 and gain-control lower>.10 in both candidates",
+    "phase_coding_secondary": "phase-minus-static same-cross lower>.05 in both candidates; cannot rescue static",
+    "strict_enrichment": "primary-anchor strict control same-cross F8 lower>.10, F32 lower>.05, strict-minus-F12 DID lower>.05 in both candidates",
+    "strong_static_identity": "strict same-parent F8 lower>.90 in addition to strict enrichment"
+  },
+  "inference": {
+    "bootstraps": 4096,
+    "candidates_separate": true,
+    "unit": "whole catalytic matrix"
+  },
+  "primary_anchor": "b1p0_l1p0",
+  "protocol_id": "e10e9a1a499c66cb7ab5e20e51aed56cbf6fa1fc4e6a062dd63095576c605e3f",
+  "questions": [
+    "does same-event strict8 extension enrich lineage identity over identically aged matched F12-only B?",
+    "can an engineered target wave plus turnover quench create persistence that survives cue removal?"
+  ],
+  "reporting_boundary": {
+    "engineered_wave_not_native_heredity": true,
+    "hybrid_contract_and_matrix45_excluded_current_round": true,
+    "not_current_preprint_evidence": true,
+    "not_replication": true,
+    "prior_results_not_pooled": true
+  },
+  "runtime": {
+    "hard_limit_seconds": 28800.0,
+    "projection_budget_seconds": 23400.0,
+    "replay_receipts_are_durable": true,
+    "soft_limit_seconds": 27000.0
+  },
+  "status": "frozen_before_donor_or_future_production",
+  "tiers": {
+    "A": {
+      "donor_lineages": 192,
+      "future_replicates": 16,
+      "matrices": 64
+    },
+    "B": {
+      "donor_lineages": 160,
+      "future_replicates": 12,
+      "matrices": 48
+    },
+    "C": {
+      "donor_lineages": 128,
+      "future_replicates": 10,
+      "matrices": 36
+    }
+  },
+  "wave": {
+    "amplitude": "(1+cos(2*pi*(g-1)/4+phase))/2",
+    "coordinates": 32,
+    "coupling": 2.0,
+    "mask": "beta incoming-plus-outgoing influence rank",
+    "period": 4,
+    "quench_absolute_leave_multiplier": 0.5,
+    "release_after_generation": 8
+  }
+}

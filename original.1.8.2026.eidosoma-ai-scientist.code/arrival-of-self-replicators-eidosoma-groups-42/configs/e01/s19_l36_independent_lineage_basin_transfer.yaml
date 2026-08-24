@@ -1,0 +1,52 @@
+schema: eidosoma.e01.s19_l36.preregistration.v1
+research_step_id: S19-L36
+versioned_id: E01-S19-L36-INDEPENDENT-LINEAGE-BASIN-TRANSFER-AUDIT-v1.0.0
+title: Independent-Lineage Basin Transfer Audit
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Is the completed-trajectory target basin a reproducible property of a
+  catalytic matrix and simulator candidate, or a lineage-specific object that
+  makes the current empirical committor difficult to transfer?
+reference_lineages:
+  per_state_matrix_candidate: 2
+  identities: [REFERENCE_A, REFERENCE_B]
+  same_beta_and_initial_state: true
+  generations: 100
+  replacement: prohibited
+target:
+  method: frozen L23 dominant post-fission H090 component centroid
+  targets: [ORIGINAL, REFERENCE_A, REFERENCE_B]
+  threshold: 0.9
+branch_replay:
+  h32_branches_per_state: 128
+  h8_branches_per_state: 64
+  new_branch_streams: 0
+statistics:
+  matrix_bootstraps: 4096
+  candidates_and_cohorts_separate: true
+primary_gates:
+  minimum_reference_trajectory_availability: 0.9
+  minimum_at_risk_state_availability: 0.8
+  centroid_similarity_threshold: 0.9
+  minimum_fraction_centroid_agreement: 0.8
+  rank_point_gate: 0.5
+  rank_lower95_gate: 0.3
+interpretation:
+  reference_target_is_completed_lineage_conditioned: true
+  no_result_is_past_only_or_paper_confirmation: true
+prohibited:
+  - target_threshold_search
+  - basin_method_search
+  - branch_horizon_search
+  - simulator_or_candidate_change
+  - replacement_of_incomplete_unit
+  - favorable_reference_selection
+  - candidate_pooling
+  - paper_or_causal_claim
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

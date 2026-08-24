@@ -1,0 +1,21 @@
+{
+  "collision_audit": {
+    "exact_literal_collisions": [],
+    "master_seed": "2026082002403",
+    "passed": true,
+    "scanned_root": "/home/robert/Random-Replications/PlasticHeredity/replicators.13.8.2026.codex"
+  },
+  "domains": [
+    "initial",
+    "lineage",
+    "strict_fork_a",
+    "strict_fork_b",
+    "f12_fork_a",
+    "f12_fork_b",
+    "bootstrap_test2",
+    "bootstrap_test3",
+    "bootstrap_test4"
+  ],
+  "existing_regconf_master_read_only": "c498f2e934bfd17e0fb175dee2332eedec9e4c5914ab58fa621aaf7c5d99ac9a",
+  "master": "2026082002403"
+}

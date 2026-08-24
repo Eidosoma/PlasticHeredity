@@ -1,0 +1,76 @@
+schema: eidosoma.e01.s19_l54.preregistration.v1
+version: E01-S19-L54-UNTOUCHED-PAST-OBSERVABLE-PROCESS-RISK-CONFIRMATION-v1.0.0
+status: PREOUTCOME_LOCK
+question: >-
+  Does the unchanged L53 full-state-graph-plus-history coordinate predict an
+  independently measured break-plus-new-hereditary-episode probability on a
+  wholly new shared-matrix cohort in both simulator candidates?
+untouchedInputs:
+  sharedMatrices: 40
+  matchedInitialStates: 40
+  candidates: [S12F-CANDIDATE-02, S12F-CANDIDATE-03]
+  completedFissionsRequired: 100
+  postFissionLandmarks: [20, 35, 50, 65, 80]
+  branchesPerState: 64
+  branchHalves: [A, B]
+  fissionHorizonMaximum: 12
+  noReplacement: true
+  newDomainSeparatedSeedRoot: true
+frozenTarget:
+  inheritance: strict parent-daughter H > 0.9
+  break: first future noninheritance
+  resumption: three consecutive inherited fissions after a break
+  primary: joint break plus resumption at F12
+  nestedHorizons: [4, 8, 12]
+frozenModels:
+  source: exact L53 development-only pipelines
+  models:
+    - TRAINING_PRIOR
+    - DIRECT_HISTORY_PHASE
+    - BETA_STRUCTURE
+    - FULL_STATE_GRAPH_HISTORY
+  historyColumns: exact L53 nine-coordinate order
+  graph: exact L34/L53 195-coordinate target-blind signature
+  pcaComponents: 12
+  logisticRidgeC: 0.1
+  refittingOnConfirmation: false
+  oldValidationPredictionReplayRequired: true
+confirmationDirections:
+  - A_TO_B
+  - B_TO_A
+statistics:
+  independentUnit: catalytic_matrix
+  candidatesPooled: false
+  branchHalvesPooled: false
+  matrixBootstraps: 4096
+  wholeMatrixPermutations: 512
+availabilityGate: exactly 40 complete matrices and 200 eligible states per candidate
+reliabilityGate: >-
+  F12 joint-q A/B Spearman exceeds 0.5 with matrix-bootstrap lower 95% bound
+  above 0.3; within-matrix-centered split-half Spearman lower bound exceeds
+  0.1; at least 20 states have 0.1 < q < 0.9, separately in both candidates.
+predictiveGate: >-
+  In both candidates and both frozen directions, FULL_STATE_GRAPH_HISTORY
+  improves heldout branch log loss and q-Brier over DIRECT_HISTORY_PHASE and
+  TRAINING_PRIOR with matrix-bootstrap lower bounds above zero; overall
+  q-Spearman lower bound exceeds 0.3; within-matrix-centered q-Spearman lower
+  bound exceeds 0.1; and both whole-matrix permutation p-values are below 0.01.
+scope:
+  targetSearch: false
+  thresholdSearch: false
+  featureSearch: false
+  pcaSearch: false
+  architectureSearch: false
+  modelRefit: false
+  phiComputation: false
+  intervention: false
+ceilings:
+  cpuHours: 100
+  gpuHours: 0
+  wallHours: 72
+  retainedGiB: 25
+  temporaryGiB: 75
+  workersMaximum: 8
+  validationReserveFraction: 0.15
+stopOnSuccess: true
+nextStep: human review on confirmation; otherwise conditional L55 through L65

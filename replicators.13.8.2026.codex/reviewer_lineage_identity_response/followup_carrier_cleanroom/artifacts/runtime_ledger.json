@@ -1,0 +1,11 @@
+{
+  "active_cumulative_at_start": null,
+  "active_started_epoch": null,
+  "created_at_epoch": 1787400994.5627983,
+  "cumulative_seconds": 7570.312090396881,
+  "format": "gard-lineage-carrier-cleanroom-v1",
+  "hard_limit_seconds": 28800.0,
+  "last_stopped_at_epoch": 1787408564.8748972,
+  "runs_started": 1,
+  "soft_limit_seconds": 27000.0
+}

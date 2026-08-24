@@ -1,0 +1,79 @@
+{
+  "acquisition": {
+    "A": 1.0,
+    "B": 1.0,
+    "imbalance": 0.0
+  },
+  "checks": {
+    "acquisition": true,
+    "crossover": true,
+    "generation_one_crossover": true,
+    "generation_one_risk": true,
+    "hold8": true,
+    "log_loss_gain": true,
+    "pathwise_identity": true,
+    "record_count": true,
+    "reliability": true,
+    "risk_gain": true,
+    "state_shuffle": true,
+    "unique_coordinates": true
+  },
+  "duplicate_coordinate_sources": 0,
+  "expected_rows": 3194880,
+  "format": "wagner-cleanroom-primary-analysis-v1",
+  "metrics": {
+    "crossover": {
+      "adjusted_lower": 0.16739501953125,
+      "estimate": 0.19727376302083333,
+      "lower": 0.17673645019531248,
+      "upper": 0.21937357584635417
+    },
+    "gen1_crossover": {
+      "adjusted_lower": 0.2242706298828125,
+      "estimate": 0.2583821614583333,
+      "lower": 0.23397318522135416,
+      "upper": 0.2836222330729167
+    },
+    "gen1_risk": {
+      "adjusted_lower": 0.12893880208333333,
+      "estimate": 0.1490478515625,
+      "lower": 0.13426513671874998,
+      "upper": 0.16406656901041666
+    },
+    "hold8_a": {
+      "adjusted_lower": 0.3470703125,
+      "estimate": 0.38404947916666665,
+      "lower": 0.35895182291666666,
+      "upper": 0.4095377604166667
+    },
+    "hold8_b": {
+      "adjusted_lower": 0.3449910481770833,
+      "estimate": 0.3794921875,
+      "lower": 0.35518798828125,
+      "upper": 0.40587972005208334
+    },
+    "log_loss_gain": {
+      "adjusted_lower": 0.024060154785817266,
+      "estimate": 0.03391810295670699,
+      "lower": 0.02683505406380815,
+      "upper": 0.041468896848073825
+    },
+    "risk_gain": {
+      "adjusted_lower": 0.08756001790364584,
+      "estimate": 0.103125,
+      "lower": 0.09204915364583334,
+      "upper": 0.1147369384765625
+    },
+    "state_shuffle": {
+      "adjusted_lower": 0.06693827311197917,
+      "estimate": 0.0913330078125,
+      "lower": 0.07443440755208333,
+      "upper": 0.10862325032552084
+    }
+  },
+  "pathwise_mismatch_sources": 0,
+  "rows": 3194880,
+  "sources": 240,
+  "split_half_reliability": 0.816765790038859,
+  "verdict": "PASS"
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "eidosoma.e01.s19_l01_value_preserving_amendment.v1",
+  "amendmentId": "S19-L01-VPA-001",
+  "loopId": "S19-L01",
+  "detectedAfterOutcomeAccessBegan": true,
+  "detectionStage": "Bundle B frozen-input loading before any alternative-proportion source fit or model outcome",
+  "failure": "The independent H replay helper initialized H[0] to 1.0, whereas frozen S13Y/S16 duplicates the first adjacent similarity into H[0]. The assertion stopped the run.",
+  "outcomesAtDetection": {
+    "bundleA": "calculated in process memory but not serialized, inspected, ranked, classified, or reported",
+    "bundleB": "no cutoff source fit, model, prediction, or claim outcome accessed",
+    "bundleC": "not started"
+  },
+  "repair": {
+    "file": "src/e01_s19_iterative_replication/bundle_b.py",
+    "oldSha256": "c61b90018c15194a4cfbc4d1b8985bbc487acc535cd42a4400d2c244e4bf67d9",
+    "newSha256": "40f9392ba133ce498ab5a9217017343720812d14255a3e7306f27dfc66a74431",
+    "oldBehavior": "independently recomputed H[0]=1.0 and used recomputed floating values",
+    "newBehavior": "independently replay exact S16 concatenate(first-adjacent, adjacent) convention, assert against frozen values at 2e-15, then use the frozen serialized H vector as the authoritative model input",
+    "scientificContractChanged": false,
+    "reasonValuePreserving": "The preregistration and method lock already require the exact frozen S13Y/S16 H-history input. The repair restores that declared input and is independently required for exact 25/75 S16 replay; it changes no label, threshold, split, architecture, feature family, estimand, test, or gate."
+  },
+  "evidence": {
+    "frozenConventionSource": "scripts/e01/run_s16_prediction_reconstruction.py:incoming_h",
+    "diagnosticMismatch": "candidate 2 matrix 0 mismatch occurred only at selected index 0 before adopting the exact S16 arithmetic; frozen H[0]=H[1]",
+    "requiredPostRepairChecks": [
+      "all 200 independently recomputed H vectors agree with frozen H within 2e-15",
+      "all model features use serialized frozen H values",
+      "25/75 metrics replay S16 exactly",
+      "clean amended commit equals pushed remote before restart"
+    ]
+  },
+  "prohibitedByAmendment": [
+    "any scientific formula or branch change",
+    "reuse of partial Bundle A values for selection",
+    "any change to candidate ranking or promotion gates",
+    "any later amendment that alters a scientific value"
+  ],
+  "status": "VALUE_PRESERVING_IMPLEMENTATION_AMENDMENT_PENDING_TEST_COMMIT_PUSH_AND_RESTART",
+  "amendmentCommit": "RESOLVED_FROM_CLEAN_REMOTE_MATCH_BEFORE_RESTART"
+}

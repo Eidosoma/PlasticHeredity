@@ -1,0 +1,202 @@
+schema: eidosoma.e01.s19_l10.preregistration.v1
+researchStepId: S19-L10
+versionedLoopId: E01-S19-L10-MATLAB-COMPATIBLE-RECURRING-ATTRACTOR-RECONSTRUCTION-v1.0.0
+programContinuationId: E01-FORENSIC-REPLICATION-CONTINUATION-v3.0.0
+designClass: ADDITIVE_EXPLORATORY_UNTOUCHED_MATLAB_COMPATIBLE_RECONSTRUCTION
+immutableBoundary:
+  preserveByteForByte:
+    - S01-S18
+    - E01 forensic replication V1 bundle
+    - E01 forensic replication V2 artifact
+    - S19-L01-S19-L09 including L06R
+    - every historical classification, failure, waiver, manifest, seed, and artifact hash
+  requiredHistoricalClassifications:
+    l08: NEITHER_MECHANISM_REPRODUCES_ON_UNTOUCHED_DATA
+    l09: [LOOP_FAILED_CLOSED, POSSIBLE_PIPELINE_ARTIFACT, NOT_PROMOTABLE]
+seedContract:
+  matrixRootHex: 4e8c874546df66ad132580720f3969ee8fa1b5fac1f4bb67f4b82f7ea70e91fb
+  matrixRootDerivationStatement: SHA256 of E01-S19-L10-UNTOUCHED-MATRIX-ROOT-v1.0.0::2026-08-09::DOMAIN-SEPARATED
+  bootstrapRootHex: 167c00bcb513f2c8dd98d26b160f335b40ed250bdeb7582d100c657fee36249b
+  controlRootHex: 3f0c61b5af62626d24d561d7ee730eadb9d23eb8b138fafd3dce3464dd30112f
+  phase: s19_l10_untouched_matlab_compatible_attractor
+  matrixIndices: {startInclusive: 0, stopExclusive: 100}
+  replacementPolicy: NEVER_REPLACE
+  requireZeroOverlapWithEveryPriorSeedAndInput: true
+scope:
+  sharedCatalyticMatrices: 100
+  matchedInitialStates: true
+  requestedFissions: 100
+  trajectoryGroups: 4
+  expectedTrajectories: 400
+  primaryTrajectoryGroups: 2
+  comparatorTrajectoryGroups: 2
+  labelsCalculatedOnlyAfterAllTrajectoryAttempts: true
+  incompleteTrajectoryRule: RETAIN_ATTEMPT_LABEL_INELIGIBLE_UNLESS_EXACT_100_BOUNDARIES
+simulations:
+  - groupId: ORIGINAL_EXPOSURE
+    role: PRIMARY
+    candidates:
+      - candidateId: CANDIDATE_2
+        exposure: 0.6031526490073492
+        daughterRule: FIRST_DAUGHTER
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L10::ORIGINAL::CANDIDATE_2
+      - candidateId: CANDIDATE_3
+        exposure: 0.5613315384859516
+        daughterRule: RANDOM_NONEMPTY
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L10::ORIGINAL::CANDIDATE_3
+  - groupId: HIGH_EXPOSURE_H2875
+    role: COMPARATOR_ONLY
+    candidates:
+      - candidateId: CANDIDATE_2
+        exposure: 2.875
+        daughterRule: FIRST_DAUGHTER
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L10::HIGH_EXPOSURE::CANDIDATE_2
+      - candidateId: CANDIDATE_3
+        exposure: 2.875
+        daughterRule: RANDOM_NONEMPTY
+        overshootRule: TRIM_NEW_ENTRANTS_TO_NMAX
+        streamIdentity: S19-L10::HIGH_EXPOSURE::CANDIDATE_3
+pipelines:
+  - pipelineId: R1_MATLAB_COMPATIBLE_HISTORICAL_DOMINANT_COMPTYPE_H090
+    substrate: 100_SELECTED_POST_FISSION_RELATIVE_COMPOSITIONS
+    prefilter: PINNED_TGS_NONDRIFT_TECHNIQUE_1_STRICT_H090
+    metric: COSINE_DISTANCE
+    kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    replicas: 10
+    replicaSelection: MINIMUM_TOTAL_COSINE_DISTANCE_THEN_EARLIEST_REPLICA
+    kOneScore: FROZEN_HISTORICAL_MEAN_H_CARPET_INCLUDING_DIAGONAL
+    multiClusterScore: CLEAN_ROOM_MATLAB_COMPATIBLE_MEAN_SILHOUETTE_SINGLETON_EQUALS_ONE
+    kSelection: MAXIMUM_SCORE_THEN_SMALLEST_K
+    earlyStop: FOUR_CONSECUTIVE_K_WITHOUT_SCORE_GREATER_THAN_OR_EQUAL_TO_BEST
+  - pipelineId: R2_PAPER_EUCLIDEAN_DOMINANT_ATTRACTOR_H090
+    substrate: ALL_100_SELECTED_POST_FISSION_RELATIVE_COMPOSITIONS
+    prefilter: NONE
+    metric: ORDINARY_EUCLIDEAN_L2
+    kValues: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    replicas: 10
+    initialization: DETERMINISTIC_KMEANS_PLUS_PLUS
+    algorithm: LLOYD
+    tolerance: 0.0001
+    maximumIterations: 300
+    replicaSelection: MINIMUM_INERTIA_THEN_EARLIEST_REPLICA
+    kOneScore: UNDEFINED_NOT_ELIGIBLE_FOR_SILHOUETTE_SELECTION
+    kSelection: MAXIMUM_EUCLIDEAN_SILHOUETTE_THEN_SMALLEST_K
+commonLabel:
+  threshold: 0.9
+  comparator: STRICT_GREATER_THAN
+  similarity: PINNED_HISTORICAL_TGS_H_COSINE
+  primaryObject: DIRECT_SELECTED_MOLECULAR_COMPOSITION_TO_DOMINANT_CENTROID
+  boundaryObject: SEPARATE_DIAGNOSTIC_ONLY
+  intervalProjection: PROHIBITED
+scientificRecurrenceGate:
+  minimumLargestAssignedMembership: 2
+  largestClusterMustBeUnique: true
+  everyClusterSingletonStatus: NO_RECURRING_COMPTYPE
+  tiedLargestStatus: NO_UNIQUE_RECURRING_COMPTYPE
+  noFallbackToAlternateK: true
+  noOutcomeTieBreak: true
+silhouetteNumerics:
+  authority: CPU_FLOAT64
+  singletonValue: 1.0
+  identicalVectorZeroOverZeroValue: 0.0
+  finiteInputsRequired: true
+  distanceClampTolerance: 1.0e-12
+  replayAbsoluteTolerance: 1.0e-12
+  replayRelativeTolerance: 1.0e-12
+  clusterCanonicalization: EARLIEST_ASSIGNED_OBSERVATION
+  tieHandling: FIRST_SMALLEST_K_ONLY_FOR_EXACT_SCORE_TIE_RECURRENCE_TIES_REJECTED
+comparators:
+  definitions:
+    - ORIGINAL_ADJACENT_MOLECULAR_H090
+    - L08_A_FISSION_BOUNDARY_H090
+    - L08_A_FOLLOWING_INTERVAL_PROJECTED_H090
+    - L08_B_HIGH_EXPOSURE_MOLECULAR_H090
+  rule: REUSE_EXACT_FROZEN_DEFINITIONS_ON_NEW_L10_TRAJECTORIES_NO_CHANGED_COMPARATOR
+negativeControls:
+  randomReferenceDrawsPerTrajectory: 64
+  randomReferenceSubstrate: OBSERVED_POST_FISSION_COMPOSITIONS
+  secondLargestCluster: UNIQUE_SECOND_LARGEST_ASSIGNED_CLUSTER_OF_SELECTED_FIT_WHEN_SIZE_AT_LEAST_TWO
+  permutedTimeDrawsPerTrajectory: 1
+  permutedTimeOperation: PERMUTE_POST_FISSION_ORDER_BEFORE_CLUSTERING_PRESERVE_VALUES_LABEL_ORIGINAL_MOLECULAR_CLOCK
+  noEmergenceValues: true
+statistics:
+  independentUnit: CATALYTIC_MATRIX
+  candidatesSeparate: true
+  candidatePooling: PROHIBITED_FOR_PRIMARY_GATES
+  bootstrapReplicates: 4096
+  confidenceLevel: 0.95
+  undefinedRule: RETAIN_NO_IMPUTATION
+  multiplicity: HOLM_ACROSS_TWO_PRIMARY_PIPELINES_WITHIN_CANDIDATE_CONTROL_AND_OUTCOME
+paperTargets:
+  occupancy: {target: 0.88, scale: 0.03, promotionRangeInclusive: [0.85, 0.91]}
+  persistence: {target: 716.0, scale: 198.0, promotionRangeInclusive: [518.0, 914.0]}
+  consistency: {target: 0.38, scale: 0.06}
+  firstOnsetRawStep1: {target: 37.0, scale: 27.0}
+  firstOnsetNormalized: {target: 0.37, scale: 0.27, status: UNRESOLVED_COMPANION}
+  selectedClockLength: {target: 813.6363636363636, scale: 225.0, derivation: 716/0.88}
+  authorDispersionIdentity: AUTHOR_DISPERSION_UNRESOLVED
+promotionGate:
+  minimumDefinedMatricesEachCandidate: 95
+  occupancyBothCandidates: [0.85, 0.91]
+  persistenceBothCandidates: [518.0, 914.0]
+  consistencyCloserThanEveryComparatorBothCandidates: true
+  rawOnsetCloserThanEveryComparatorBothCandidates: true
+  nontrivialPreReplicatorInterval:
+    minimumCandidateMeanOneBasedOnset: 10
+    minimumTrajectoryFractionOnsetAtLeast10: 0.5
+  quarterCutoffMinimumNoOnsetFraction: 0.20
+  positiveNegativeEpisodeMinimumFraction: 0.90
+  controlsMustPass: [RANDOM_REFERENCE, SECOND_LARGEST_WHERE_APPLICABLE, PERMUTED_TIME]
+  candidateDirectionalAgreement: true
+  knAndAllSingletonCannotEmitLabel: true
+  allValidationGates: true
+  noEmergencePredictionInterventionOrTargetSearchInfluence: true
+classifications:
+  - PROMOTABLE_TO_S20
+  - METHOD_DEPENDENT_LEAD
+  - EXPLORATORY_PAPER_MATCH_OCCUPANCY_ONLY
+  - RECURRING_ATTRACTOR_LABEL_NOT_RECONSTRUCTED
+  - LOOP_FAILED_CLOSED
+resourceCeilings:
+  cpuWorkers: 8
+  numericalLibraryThreadsPerWorker: 1
+  cpuHoursMaximum: 32
+  gpuHoursMaximum: 0
+  wallHoursMaximum: 8
+  retainedArtifactsGiBMaximum: 12
+  temporaryCacheGiBMaximum: 30
+  validationReserveFractionMinimum: 0.10
+  scientificCpuHoursMaximumAfterReserve: 28.8
+benchmark:
+  matrixCount: 10
+  opaque: true
+  labelsCalculated: false
+  projectionIncludesPrimaryAndCompleteRegeneration: true
+  safetyFactor: 1.5
+stopConditions:
+  - IMMUTABLE_PRIOR_CHANGED
+  - MANDATORY_FIXTURE_FAILED
+  - MATLAB_SINGLETON_CONVENTION_CHANGED_AFTER_OUTCOME_ACCESS
+  - R1_KN_SILENTLY_EXCLUDED
+  - ALL_SINGLETON_TREATED_AS_RECURRING
+  - RECURRENCE_TIE_BROKEN
+  - THIRD_PIPELINE_INTRODUCED
+  - THRESHOLD_OR_CLUSTER_SETTING_CHANGED
+  - MISSING_UNIT_REPLACED
+  - EMERGENCE_USED_FOR_SELECTION
+  - PREDICTION_OR_INTERVENTION_EXECUTED
+  - EXACT_REPLAY_FAILED
+  - SEED_OVERLAP_DETECTED
+  - UNREGISTERED_EXCEPTION
+  - COMPUTE_OR_STORAGE_CEILING_EXCEEDED
+  - ARTIFACT_REGENERATION_FAILED
+stopBoundary: Freeze all L10 outputs and hashes and return for mandatory human review; no later work starts automatically.
+preoutcomePreparationHistory:
+  - event: YAML_COMPARATOR_MAPPING_INDENTATION_CORRECTED
+    outcomeAccessed: false
+    artifactsWrittenBeforeCorrection: false
+    scientificValueChanged: false
+    scopeChanged: false

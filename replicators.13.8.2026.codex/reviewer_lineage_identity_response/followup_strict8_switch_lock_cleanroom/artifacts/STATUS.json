@@ -1,0 +1,14 @@
+{
+  "completed": 256,
+  "cumulative_elapsed_seconds": 11251.414040088654,
+  "error": null,
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "message": "analysis and durable exact replay complete",
+  "pid": 61,
+  "protocol_id": "e10e9a1a499c66cb7ab5e20e51aed56cbf6fa1fc4e6a062dd63095576c605e3f",
+  "stage": "complete",
+  "stage_elapsed_seconds": null,
+  "state": "complete",
+  "total": 256,
+  "updated_at_epoch": 1787533939.4586747
+}

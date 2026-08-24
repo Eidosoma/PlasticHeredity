@@ -1,0 +1,53 @@
+amendmentId: S19-L11R-SERIALIZATION-AMENDMENT-003
+schema: eidosoma.e01.s19_l11r.serialization_amendment.v1
+researchStepId: S19-L11R
+versionedLoopId: E01-S19-L11R-CENTROID-NUMERICAL-TOLERANCE-CONFIRMATION-v1.0.0
+amendmentClass: POST_OUTCOME_TECHNICAL_SERIALIZATION_ONLY
+authorizationDate: '2026-08-09'
+authorizationSource: EXPLICIT_HUMAN_OVERRIDE_UP_TO_SEVEN_TECHNICAL_ASSURANCE_CYCLES
+humanDirectionSummary: Continue technical repair and validation without changing or tuning the frozen science.
+
+preservedFailure:
+  failureId: S19-L11R-F003
+  stage: SCIENTIFIC_GATE_TABLE_PARQUET_SERIALIZATION
+  scientificCalculationsCompleted: true
+  authoritativeScientificAggregationReleased: false
+  exceptionClass: pyarrow.lib.ArrowInvalid
+  failingOperation: MIXED_TYPE_OBSERVED_VALUE_ARROW_INFERENCE
+  classification: POSSIBLE_PIPELINE_ARTIFACT
+
+amendment:
+  target: SCIENTIFIC_GATE_AUDIT_SERIALIZATION_ONLY
+  before: One object column mixed numeric scalar observations with a JSON control-map string.
+  after: Every observation is stored as canonical JSON with explicit type and an optional numeric companion.
+  canonicalFields:
+    - observedValue
+    - observedValueType
+    - observedValueNumeric
+  gatePassValuesChanged: false
+  controlValuesChanged: false
+  scientificCalculationsChanged: false
+  partialAttemptOutputsQuarantined: true
+  partialAttemptOutputsReusable: false
+
+scientificMethodChanged: false
+scientificValuesChanged: false
+invalidatedWorkerOutputsReusable: false
+freshScientificAggregationRequired: true
+fullExactRegenerationRequired: true
+
+assurancePolicy:
+  minimumCycles: 3
+  maximumCycles: 7
+  currentCycleAfterLock: 4
+  scientificNonSupportTriggersMethodChange: false
+
+amendedFiles:
+  - path: scripts/e01/run_s19_l11r.py
+    oldSha256: e6f8eca870eb357b4985e6a879407fe9c9426c949ca5e0c3867ddf829f7fb901
+    newSha256: e4fcc944547c2c17bbf88eb600b1dd25e878945dbd45feaaf9eb974c9f67db23
+    changeClass: VALUE_PRESERVING_SERIALIZATION_AND_TRANSPARENT_PROVENANCE_ONLY
+  - path: tests/e01/test_s19_l11r.py
+    oldSha256: 1b74ac13e4245895b7895a48ac9a7f139e1186f8d4b57ed70cbbef6482dae425
+    newSha256: d0db068074a5961ca1a981859a8f14d2da5c3df38157430d915b077bf91bfe24
+    changeClass: FOCUSED_TYPED_SERIALIZATION_FIXTURE_ONLY

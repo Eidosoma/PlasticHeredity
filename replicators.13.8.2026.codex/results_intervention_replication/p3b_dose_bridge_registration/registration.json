@@ -1,0 +1,23 @@
+{
+  "external_instruction_file_sha256_at_registration": "26bdf10f1f2ed1d725576494ebf714632809c8876cf180c50abe73710d16e84a",
+  "format": "codex-intervention-p3b-dose-bridge-registration-v1",
+  "frozen_predictor_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af",
+  "original_registration_checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "p3_recovery_amendment_id": "86e0cda5d5403fed3601fcd65110472ed76305ab9f5a1b139a0347abf238e185",
+  "p3_recovery_checksum_manifest_sha256": "dfac5fed951f92a16866c64fb28f9a96e4b77a285d16d5d312f7f5f8631da152",
+  "p3b_effect_sizes_computed": false,
+  "p3b_scientific_matrices_generated": false,
+  "protocol_id": "d4e11376629429325b570d7523b0e7b50bf854254d7ade41c3de42c2eaa18459",
+  "protocol_sha256": "504d0159a064248ad67279d47b588cbaa2a728da002c859ed430ab188873967e",
+  "registration_id": "c1fe38be6a7e2b71eb5e288c9e238ff45c30d8fe388f2d21a879acea6dd5624e",
+  "sealed_p3_checksum_manifest_sha256": "dcde0f03165b43eaefb0d552c93fc64ec03890fdcb3ade02d6062ccc3f338abd",
+  "seed_registry_sha256": "ebc170eed0439b4c782ee6f04cfbd258da9422bd8c3da658f75ecbeb51540986",
+  "source_hashes": {
+    "CODEX_INTERVENTION_P3B_DOSE_BRIDGE_PREREGISTRATION.md": "ad86c36c25d2f557f5699b2aa3c2a55d039b98290eda65b651c0b54cf48d67ce",
+    "plastic_heredity/intervention_p3b_dose_bridge.py": "b04cda36e7bc95e1da69267054cb1a6ca472dbc3d7a3074e5f34d8acadaa25f7",
+    "tests/test_intervention_p3b_dose_bridge.py": "25c7eded45862496b6b622d447845dcfcb246685b283048075d1781ce5b44eef"
+  },
+  "status": "sealed_before_any_p3b_scientific_matrix",
+  "validation_checksum_manifest_sha256": "d1ac2da68b787395116961874c50bb3b0efb0cdcae5bff483b006b72168fd6bb"
+}

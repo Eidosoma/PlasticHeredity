@@ -1,0 +1,129 @@
+{
+  "format": "codex-ch5-phir-extension-px2-registration-v1",
+  "master_registration_id": "3ce19b47deeb543e23162edb3bf822cfbf248c308a6e8cb4e8ecf83f08636c3b",
+  "model_contract_sha256": "0d14920f45f831c3825ee36a73537cfbc067cafe9042088ae9a123d82900bd95",
+  "model_sha256": "59750718efcea3492a6d9b4493e9dc379eb221150025681acd38651d623cd430",
+  "new_scientific_matrices_at_registration": 0,
+  "protocol": {
+    "acquisition": {
+      "break_limit": 60,
+      "break_start": 10,
+      "if_shortfall": "run all paired-eligible matrices and fail coverage; add no seeds",
+      "outcome_blind": true,
+      "paired_candidate_eligibility": true,
+      "seeded_pool": 32,
+      "selection": "first 24 paired-eligible matrices in sealed seed order"
+    },
+    "arms": [
+      "RENEWAL_UP",
+      "RENEWAL_DOWN",
+      "RANDOM",
+      "NOOP"
+    ],
+    "branches": 64,
+    "claim_boundary": [
+      "event-locked information is not consciousness",
+      "association is not a claim that Phi causes recovery",
+      "strict-eight is excluded",
+      "prior results remain unchanged"
+    ],
+    "cross_branch_transitions": false,
+    "equivalence_margins": {
+      "heredity_probability": 0.025,
+      "information": {
+        "functional_flux": 0.03321441162874219,
+        "material": 3.303539192139139
+      },
+      "origin": "transported pre-outcome PX1 archived-NOOP calibration maxima"
+    },
+    "explicit_pairs": true,
+    "extinction_information_rule": "retain every observed transition, never retry, and report pair count and survival",
+    "format": "codex-ch5-phir-extension-px2-program-v1",
+    "future_seed_includes_arm": false,
+    "gate": [
+      "24 paired-eligible matrices",
+      "positive material effect in all four cells",
+      "positive bootstrap lower bounds",
+      "Holm-adjusted p < 0.05",
+      "RANDOM equivalent to NOOP",
+      "renewal manipulation valid in all four cells",
+      "exact acquisition and intervention replay"
+    ],
+    "halves": {
+      "A": [
+        0,
+        32
+      ],
+      "B": [
+        32,
+        64
+      ]
+    },
+    "inference": {
+      "bootstrap": 4096,
+      "holm": "four candidate-by-half primary cells",
+      "randomization": 4096,
+      "unit": "whole catalytic matrix",
+      "vector_test": "ridge Hotelling paired whole-matrix sign randomization"
+    },
+    "model_contract_sha256": "0d14920f45f831c3825ee36a73537cfbc067cafe9042088ae9a123d82900bd95",
+    "model_refit_or_recalibration": false,
+    "model_sha256": "59750718efcea3492a6d9b4493e9dc379eb221150025681acd38651d623cd430",
+    "no_48_matrix_continuation": true,
+    "phase": "PX2",
+    "primary": "material full-block RENEWAL_UP minus RENEWAL_DOWN",
+    "protocol_id": "f9753b0d7813e36bb2495dad88a37bc4d486ef82e8220606a24f5ae128d9515a",
+    "question": "information dynamics during causal recovery from an identical naturally broken state",
+    "representations": [
+      "material",
+      "functional_flux"
+    ],
+    "secondary": [
+      "functional-flux full block",
+      "first two transitions",
+      "four-component public PhiID vector",
+      "renewal probability",
+      "inherited count",
+      "renewal time",
+      "old-anchor similarity",
+      "survival"
+    ],
+    "selection_stream_separate": true,
+    "spec": {
+      "acquisition_limit": 60,
+      "acquisition_matrices": 32,
+      "acquisition_start": 10,
+      "bootstrap_draws": 4096,
+      "branches": 64,
+      "cpu_allocation_seconds": 36000.0,
+      "horizon": 8,
+      "label": "scientific",
+      "randomization_draws": 4096,
+      "target_matrices": 24
+    }
+  },
+  "registration_id": "3ebaa78cf37dbe9d7d2cc6eadf12bad587a912da30ea44640cd63914d6b5f76b",
+  "runtime": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scikit_learn": "1.7.2",
+    "scipy": "1.14.1"
+  },
+  "source_hashes": {
+    "CODEX_CH5_PHIR_EXTENSION_PREREGISTRATION.md": "eca4d492476758181b451fb6073c9f049fff75e756d1075be442462b41bb6421",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr5.py": "f28488a2d0f7e742f12f6636696ea02e81a4bbb1e9f1f25d88760a86aac44050",
+    "plastic_heredity/phir_extension_common.py": "550f871092f2b05079293db3e75c5a1337f1a097665fbf845acf7f1073572c7a",
+    "plastic_heredity/phir_extension_px2.py": "0957e15897431801e734f363ad964f153639702d9e9349c8673335d3e4cd8352",
+    "plastic_heredity/phir_instruments.py": "69132410f668a2d1c4767a75bf9f4e9c25a9182d12be887c15e75bd6e4f29205",
+    "plastic_heredity/phir_rescue_instruments.py": "55b1b8cb328a25ca497330ef8770f758c2807364cf22408200859663e252c62c",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "tests/test_phir_extension_px2.py": "04116623dc93094537a0504af6626f003e05c3d4d316fff9076d1687e24a738e"
+  }
+}

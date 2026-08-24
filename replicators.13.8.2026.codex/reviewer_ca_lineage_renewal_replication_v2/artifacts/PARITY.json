@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "calibration_reference_within_1e-15": true,
+    "reader_transfer_function_frozen": true,
+    "scalar_batch_motif_counts_exact": true,
+    "scalar_batch_reader_exact": true,
+    "scalar_batch_rule_exact": true,
+    "state_hex_roundtrip_all_donors": true,
+    "sweep_order_frozen": true
+  },
+  "fresh_outcomes_generated": false,
+  "reference_max_abs_error": 0.0,
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "source_trajectory_parity": "not performed; source outcomes are non-evidential",
+  "valid": true
+}

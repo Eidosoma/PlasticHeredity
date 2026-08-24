@@ -1,0 +1,21 @@
+{
+  "schema": "eidosoma.e01.s19.l17.technical_amendment.v1",
+  "amendmentId": "S19-L17-TECHNICAL-AMENDMENT-001",
+  "authorizedScope": "value-preserving worker metadata and empty-table report assembly only",
+  "observedFailure": "The frozen StateObservation schema exposes the global molecular clock as batch_step, not molecular_step_one_based. The worker completed the registered Phi call but then raised AttributeError while serializing an unused metadata coordinate, causing all 200 status records to be marked UNREGISTERED_WORKER_EXCEPTION. Final report assembly subsequently assumed a nonempty summary table.",
+  "changes": [
+    "Serialize the already frozen global molecular clock from StateObservation.batch_step.",
+    "Give empty summary/bootstrap tables their registered schemas and allow the negative-result/report path to serialize an empty table."
+  ],
+  "scientificValuesChanged": false,
+  "scientificMethodChanged": false,
+  "sourcePathChanged": false,
+  "trajectoryChanged": false,
+  "seedChanged": false,
+  "scalarChanged": false,
+  "gateChanged": false,
+  "classificationRuleChanged": false,
+  "failedAttemptPreservation": "/cache/e01_s19_l17/failed_attempt_001",
+  "freshCachesRequired": true,
+  "status": "FROZEN_BEFORE_REEXECUTION"
+}

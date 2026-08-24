@@ -1,0 +1,93 @@
+schema: eidosoma.e01.s19_l33.preregistration.v1
+research_step_id: S19-L33
+versioned_id: E01-S19-L33-SINGLE-STATE-OPERATOR-MEMORY-PHASE-COMMITTOR-v1.0.0
+title: Single-State Operator-Memory and Phase Committor Coordinate
+status: ACTIVE_PREOUTCOME_METHOD_LOCK
+question: >-
+  Can a fixed low-dimensional history of exact GARD generator activity,
+  target geometry, and simulator phase recover the reliable H32 committor
+  without branch-derived predictors?
+inputs:
+  development: exact L28 DEVELOPMENT states and H32/H8 responses
+  internal_validation: exact L28 VALIDATION states and H32/H8 responses
+  untouched_confirmation: exact L31 CONFIRMATION states and H32/H8 responses
+  target_scope: RETROSPECTIVE_COMPLETED_RUN_MATRIX_SPECIFIC
+  observed_history_states: 8
+  branch_derived_predictors_allowed: false
+representations:
+  source: exact source-defined GARD analytic generator on observed states
+  summaries: [endpoint, temporal_slope]
+  phase_mean_addition: true
+  registered_views:
+    - PHASE_MEMORY
+    - BASIN_BLIND_OPERATOR_MEMORY
+    - TARGET_CONDITIONED_OPERATOR_MEMORY
+  primary: BASIN_BLIND_OPERATOR_MEMORY
+  target_conditioned_view_role: retrospective_oracle_diagnostic_only
+model:
+  family: exact L29 standardized L2 aggregated-binomial logistic coordinate
+  inverse_regularization_C: 0.1
+  solver: L-BFGS
+  max_iterations: 2000
+  candidate_specific: true
+  fit_scope: L28_DEVELOPMENT_ONLY
+  response: H32 successes out of 128
+  refit_on_validation_or_confirmation: false
+frozen_controls:
+  - FROZEN_LANDMARK_PRIOR
+  - FROZEN_TARGET_GEOMETRY
+  - FROZEN_EXACT_H_TUBE
+  - FROZEN_ORDINARY_TUBE
+  - PHASE_MEMORY
+statistics:
+  matrix_bootstraps: 4096
+  development_response_permutations: 512
+  evaluation_response_permutations: 512
+  candidates_and_evaluation_cohorts_separate: true
+controls:
+  - exact state target beta clock and phase replay
+  - simultaneous molecule permutation fixture
+  - future-suffix shuffle invariance
+  - history-order reversal preserving current state
+  - development-response permutation
+  - evaluation-response permutation
+  - H8 mediator rank diagnostic only
+numerical_contract:
+  dtype: CPU_FLOAT64
+  zero_compositional_drift_norm_at_or_below: 1.0e-14
+  rationale: normalized direction is undefined at analytic-zero drift; fixture exposed only permutation-order cancellation residue
+solution_gate:
+  required_evaluation_cohorts: [L28_VALIDATION, L31_CONFIRMATION]
+  primary_h32_spearman_point_above: 0.5
+  primary_h32_spearman_lower95_above: 0.3
+  primary_h8_spearman_point_above: 0.5
+  primary_h8_spearman_lower95_above: 0.3
+  brier_improvement_lower95_above_zero_vs_all_nonoracle_controls: true
+  development_permutation_p_at_most: 0.05
+  evaluation_permutation_p_at_most: 0.05
+  history_reversal_worse: true
+  suffix_invariance: exact
+  both_candidates_required: true
+interpretation:
+  pass: basin-blind deterministic past-only operator-memory coordinate established within retrospective target task
+  fail: confirmed shooting signal is not distilled by the frozen basin-blind operator history
+prohibited:
+  - branch_q_as_predictor
+  - feature_search
+  - history_length_search
+  - summary_search
+  - regularization_search
+  - model_refit_on_confirmation
+  - completed_future_observation_predictor
+  - target_centroid_in_primary_predictor
+  - candidate_pooling
+  - reactive_current_claim
+  - intervention
+  - author_contact
+ceilings:
+  cpu_hours: 100
+  gpu_hours: 0
+  wall_hours: 72
+  retained_gib: 25
+  temporary_gib: 75
+  validation_reserve_fraction: 0.10

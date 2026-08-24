@@ -1,0 +1,690 @@
+{
+  "candidates_never_pooled": true,
+  "challenge": {
+    "all_registered_random_doses_tost_equivalent": true,
+    "candidates": [
+      {
+        "candidate": "02",
+        "origins": [
+          {
+            "arms": [
+              {
+                "arm": "NONE",
+                "bootstrap_ci90": [
+                  -0.005235460069444445,
+                  0.04310438368055556
+                ],
+                "bootstrap_ci95": [
+                  -0.010050455729166664,
+                  0.048611111111111126
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.007371546247044915,
+                "natural_held_or_returned": 0.23719618055555558,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.22626311935562607,
+                "registered_dose": 0,
+                "written_held_or_returned": 0.2555338541666667,
+                "written_minus_natural": 0.018337673611111115
+              },
+              {
+                "arm": "RANDOM_K2",
+                "bootstrap_ci90": [
+                  -0.0012207031249999991,
+                  0.04557291666666668
+                ],
+                "bootstrap_ci95": [
+                  -0.0054931640624999965,
+                  0.050455729166666664
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006734356530732861,
+                "natural_held_or_returned": 0.23426649305555555,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.1300951916036124,
+                "registered_dose": 2,
+                "written_held_or_returned": 0.2562934027777778,
+                "written_minus_natural": 0.02202690972222222
+              },
+              {
+                "arm": "RANDOM_K4",
+                "bootstrap_ci90": [
+                  -0.003255208333333334,
+                  0.04503038194444444
+                ],
+                "bootstrap_ci95": [
+                  -0.007812500000000003,
+                  0.0504150390625
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006986000295508273,
+                "natural_held_or_returned": 0.2357855902777778,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.1691481571881865,
+                "registered_dose": 4,
+                "written_held_or_returned": 0.2564019097222222,
+                "written_minus_natural": 0.020616319444444444
+              },
+              {
+                "arm": "RANDOM_K8",
+                "bootstrap_ci90": [
+                  -0.0022786458333333356,
+                  0.042643229166666664
+                ],
+                "bootstrap_ci95": [
+                  -0.006252712673611116,
+                  0.048136393229166664
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.007897920360520094,
+                "natural_held_or_returned": 0.23263888888888892,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.1691481571881865,
+                "registered_dose": 8,
+                "written_held_or_returned": 0.2520616319444444,
+                "written_minus_natural": 0.019422743055555552
+              },
+              {
+                "arm": "RANDOM_K16",
+                "bootstrap_ci90": [
+                  -0.009657118055555561,
+                  0.03797743055555555
+                ],
+                "bootstrap_ci95": [
+                  -0.014431423611111115,
+                  0.04296875
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.007383089539007093,
+                "natural_held_or_returned": 0.24153645833333334,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.36050768855259946,
+                "registered_dose": 16,
+                "written_held_or_returned": 0.2552083333333333,
+                "written_minus_natural": 0.013671874999999995
+              },
+              {
+                "arm": "ADVERSARIAL",
+                "bootstrap_ci90": [
+                  -0.0068630642361111075,
+                  0.0400390625
+                ],
+                "bootstrap_ci95": [
+                  -0.010918511284722217,
+                  0.04481336805555556
+                ],
+                "equivalent_within_0_05": false,
+                "maximum_leave_one_matrix_out_influence": 0.007193779550827421,
+                "natural_held_or_returned": 0.23665364583333334,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.26189895045154993,
+                "registered_dose": 1,
+                "written_held_or_returned": 0.2527126736111111,
+                "written_minus_natural": 0.01605902777777778
+              }
+            ],
+            "dose_advantage_slope": {
+              "bootstrap_ci95": [
+                -0.0009982638888888892,
+                0.00021023220486111053
+              ],
+              "estimate": -0.0003987630208333338,
+              "no_significantly_positive_dose_trend": true,
+              "significantly_positive": false
+            },
+            "origin": "MODEL_DOWN"
+          },
+          {
+            "arms": [
+              {
+                "arm": "NONE",
+                "bootstrap_ci90": [
+                  -0.03309461805555555,
+                  0.003038194444444444
+                ],
+                "bootstrap_ci95": [
+                  -0.03689236111111111,
+                  0.006510416666666665
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.005566175384160758,
+                "natural_held_or_returned": 0.23719618055555558,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.1991701244813278,
+                "registered_dose": 0,
+                "written_held_or_returned": 0.22276475694444442,
+                "written_minus_natural": -0.01443142361111111
+              },
+              {
+                "arm": "RANDOM_K2",
+                "bootstrap_ci90": [
+                  -0.029324001736111112,
+                  0.008924696180555556
+                ],
+                "bootstrap_ci95": [
+                  -0.03298611111111111,
+                  0.012586805555555552
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.00510906102245863,
+                "natural_held_or_returned": 0.23426649305555555,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.4044422748352453,
+                "registered_dose": 2,
+                "written_held_or_returned": 0.22439236111111108,
+                "written_minus_natural": -0.009874131944444446
+              },
+              {
+                "arm": "RANDOM_K4",
+                "bootstrap_ci90": [
+                  -0.03526475694444444,
+                  0.006076388888888893
+                ],
+                "bootstrap_ci95": [
+                  -0.039388020833333336,
+                  0.01015896267361111
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.005683916962174939,
+                "natural_held_or_returned": 0.2357855902777778,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.27581156944105445,
+                "registered_dose": 4,
+                "written_held_or_returned": 0.22167968750000003,
+                "written_minus_natural": -0.014105902777777778
+              },
+              {
+                "arm": "RANDOM_K8",
+                "bootstrap_ci90": [
+                  -0.026177300347222224,
+                  0.01030815972222222
+                ],
+                "bootstrap_ci95": [
+                  -0.0302734375,
+                  0.014282226562499998
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.004492649231678487,
+                "natural_held_or_returned": 0.23263888888888892,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.5023187698315841,
+                "registered_dose": 8,
+                "written_held_or_returned": 0.22504340277777776,
+                "written_minus_natural": -0.007595486111111112
+              },
+              {
+                "arm": "RANDOM_K16",
+                "bootstrap_ci90": [
+                  -0.0341796875,
+                  0.005533854166666668
+                ],
+                "bootstrap_ci95": [
+                  -0.038519965277777776,
+                  0.009223090277777776
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.0050305666371158395,
+                "natural_held_or_returned": 0.24153645833333334,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.2701977056382719,
+                "registered_dose": 16,
+                "written_held_or_returned": 0.22797309027777782,
+                "written_minus_natural": -0.013563368055555558
+              },
+              {
+                "arm": "ADVERSARIAL",
+                "bootstrap_ci90": [
+                  -0.030409071180555556,
+                  0.012261284722222222
+                ],
+                "bootstrap_ci95": [
+                  -0.03537326388888889,
+                  0.015367296006944444
+                ],
+                "equivalent_within_0_05": false,
+                "maximum_leave_one_matrix_out_influence": 0.005577718676122932,
+                "natural_held_or_returned": 0.23665364583333334,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.5262387112521357,
+                "registered_dose": 1,
+                "written_held_or_returned": 0.22797309027777776,
+                "written_minus_natural": -0.008680555555555554
+              }
+            ],
+            "dose_advantage_slope": {
+              "bootstrap_ci95": [
+                -0.000508456759982639,
+                0.0005610148111979168
+              ],
+              "estimate": 2.1701388888888903e-05,
+              "no_significantly_positive_dose_trend": true,
+              "significantly_positive": false
+            },
+            "origin": "RULE_DOWN"
+          }
+        ]
+      },
+      {
+        "candidate": "03",
+        "origins": [
+          {
+            "arms": [
+              {
+                "arm": "NONE",
+                "bootstrap_ci90": [
+                  -0.020073784722222217,
+                  0.019883897569444448
+                ],
+                "bootstrap_ci95": [
+                  -0.023763020833333332,
+                  0.024047851562500003
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.005425347222222222,
+                "natural_held_or_returned": 0.2236328125,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.9870637051501099,
+                "registered_dose": 0,
+                "written_held_or_returned": 0.22384982638888892,
+                "written_minus_natural": 0.0002170138888888887
+              },
+              {
+                "arm": "RANDOM_K2",
+                "bootstrap_ci90": [
+                  -0.02042643229166667,
+                  0.023328993055555552
+                ],
+                "bootstrap_ci95": [
+                  -0.024156358506944448,
+                  0.027560763888888885
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006286476802600472,
+                "natural_held_or_returned": 0.22146267361111113,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.9165242860629729,
+                "registered_dose": 2,
+                "written_held_or_returned": 0.22287326388888887,
+                "written_minus_natural": 0.0014105902777777739
+              },
+              {
+                "arm": "RANDOM_K4",
+                "bootstrap_ci90": [
+                  -0.019992404513888895,
+                  0.023111979166666668
+                ],
+                "bootstrap_ci95": [
+                  -0.024522569444444448,
+                  0.026692708333333332
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006023289745862886,
+                "natural_held_or_returned": 0.22374131944444442,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.8923602636075177,
+                "registered_dose": 4,
+                "written_held_or_returned": 0.2255859375,
+                "written_minus_natural": 0.0018446180555555518
+              },
+              {
+                "arm": "RANDOM_K8",
+                "bootstrap_ci90": [
+                  -0.029296875,
+                  0.0166015625
+                ],
+                "bootstrap_ci95": [
+                  -0.033203125,
+                  0.021335177951388885
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006106401447990545,
+                "natural_held_or_returned": 0.22960069444444445,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.6829387356602392,
+                "registered_dose": 8,
+                "written_held_or_returned": 0.22384982638888887,
+                "written_minus_natural": -0.005750868055555556
+              },
+              {
+                "arm": "RANDOM_K16",
+                "bootstrap_ci90": [
+                  -0.025960286458333336,
+                  0.018473307291666664
+                ],
+                "bootstrap_ci95": [
+                  -0.029907226562499997,
+                  0.022026909722222227
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006688183362884162,
+                "natural_held_or_returned": 0.22710503472222224,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.8061996582865512,
+                "registered_dose": 16,
+                "written_held_or_returned": 0.22374131944444442,
+                "written_minus_natural": -0.0033637152777777775
+              },
+              {
+                "arm": "ADVERSARIAL",
+                "bootstrap_ci90": [
+                  -0.02419704861111111,
+                  0.01963975694444445
+                ],
+                "bootstrap_ci95": [
+                  -0.028279622395833325,
+                  0.02311197916666667
+                ],
+                "equivalent_within_0_05": false,
+                "maximum_leave_one_matrix_out_influence": 0.005723164154846335,
+                "natural_held_or_returned": 0.22569444444444442,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.8930925067122285,
+                "registered_dose": 1,
+                "written_held_or_returned": 0.22384982638888892,
+                "written_minus_natural": -0.0018446180555555525
+              }
+            ],
+            "dose_advantage_slope": {
+              "bootstrap_ci95": [
+                -0.0009195963541666667,
+                0.00016954210069444447
+              ],
+              "estimate": -0.0003485785590277776,
+              "no_significantly_positive_dose_trend": true,
+              "significantly_positive": false
+            },
+            "origin": "MODEL_DOWN"
+          },
+          {
+            "arms": [
+              {
+                "arm": "NONE",
+                "bootstrap_ci90": [
+                  -0.007052951388888888,
+                  0.04299587673611111
+                ],
+                "bootstrap_ci95": [
+                  -0.010484483506944444,
+                  0.048895941840277776
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.0072976691784869974,
+                "natural_held_or_returned": 0.2236328125,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.29045643153526973,
+                "registered_dose": 0,
+                "written_held_or_returned": 0.24001736111111113,
+                "written_minus_natural": 0.016384548611111112
+              },
+              {
+                "arm": "RANDOM_K2",
+                "bootstrap_ci90": [
+                  -0.002848307291666672,
+                  0.046929253472222224
+                ],
+                "bootstrap_ci95": [
+                  -0.007405598958333338,
+                  0.052951388888888895
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.007643967937352248,
+                "natural_held_or_returned": 0.22146267361111113,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.1769587503051013,
+                "registered_dose": 2,
+                "written_held_or_returned": 0.24240451388888884,
+                "written_minus_natural": 0.020941840277777773
+              },
+              {
+                "arm": "RANDOM_K4",
+                "bootstrap_ci90": [
+                  -0.009874131944444439,
+                  0.04307725694444444
+                ],
+                "bootstrap_ci95": [
+                  -0.0146484375,
+                  0.04882812500000001
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.008424294473995272,
+                "natural_held_or_returned": 0.22374131944444442,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.34635098852819135,
+                "registered_dose": 4,
+                "written_held_or_returned": 0.2392578125,
+                "written_minus_natural": 0.015516493055555558
+              },
+              {
+                "arm": "RANDOM_K8",
+                "bootstrap_ci90": [
+                  -0.013699001736111117,
+                  0.038547092013888895
+                ],
+                "bootstrap_ci95": [
+                  -0.018337673611111112,
+                  0.04423014322916667
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.007962562795508273,
+                "natural_held_or_returned": 0.22960069444444445,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.48620942152794727,
+                "registered_dose": 8,
+                "written_held_or_returned": 0.2407769097222222,
+                "written_minus_natural": 0.011176215277777778
+              },
+              {
+                "arm": "RANDOM_K16",
+                "bootstrap_ci90": [
+                  -0.010416666666666664,
+                  0.037109375
+                ],
+                "bootstrap_ci95": [
+                  -0.0142822265625,
+                  0.0419921875
+                ],
+                "equivalent_within_0_05": true,
+                "maximum_leave_one_matrix_out_influence": 0.006605071660756501,
+                "natural_held_or_returned": 0.22710503472222224,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.3888210886014157,
+                "registered_dose": 16,
+                "written_held_or_returned": 0.23958333333333334,
+                "written_minus_natural": 0.012478298611111114
+              },
+              {
+                "arm": "ADVERSARIAL",
+                "bootstrap_ci90": [
+                  -0.006429036458333336,
+                  0.046766493055555546
+                ],
+                "bootstrap_ci95": [
+                  -0.010375976562499998,
+                  0.05323621961805555
+                ],
+                "equivalent_within_0_05": false,
+                "maximum_leave_one_matrix_out_influence": 0.00945626477541371,
+                "natural_held_or_returned": 0.22569444444444442,
+                "randomization_p_holm_all_challenge_cells": 1.0,
+                "randomization_p_raw": 0.25091530388088845,
+                "registered_dose": 1,
+                "written_held_or_returned": 0.24479166666666666,
+                "written_minus_natural": 0.01909722222222222
+              }
+            ],
+            "dose_advantage_slope": {
+              "bootstrap_ci95": [
+                -0.0009172227647569443,
+                9.307861328125024e-05
+              ],
+              "estimate": -0.00041232638888888856,
+              "no_significantly_positive_dose_trend": true,
+              "significantly_positive": false
+            },
+            "origin": "RULE_DOWN"
+          }
+        ]
+      }
+    ],
+    "no_significantly_positive_dose_trend": true,
+    "registered_shared_basin_radius": 0
+  },
+  "external_written_but_passive_classification": false,
+  "format": "codex-intervention-cr8-primary-metrics-v1",
+  "integrity": {
+    "artifact_readback_exact": true,
+    "challenge_exact_replay": true,
+    "release_exact_replay": true,
+    "release_interventions_exactly_zero": true
+  },
+  "preparation_audit": {
+    "all_written_states_genuinely_altered": true,
+    "rows": [
+      {
+        "candidate": "02",
+        "genuinely_altered": true,
+        "inheritance_minus_noop": 0.0884259259259258,
+        "maximum_registered_state_metric_change": 3538.302848797859,
+        "origin": "MODEL_DOWN",
+        "risk_minus_noop": -0.27979564681850294
+      },
+      {
+        "candidate": "02",
+        "genuinely_altered": true,
+        "inheritance_minus_noop": 0.08559027777777761,
+        "maximum_registered_state_metric_change": 3708.2999250265284,
+        "origin": "RULE_DOWN",
+        "risk_minus_noop": -0.263082430244153
+      },
+      {
+        "candidate": "03",
+        "genuinely_altered": true,
+        "inheritance_minus_noop": 0.09577546296296313,
+        "maximum_registered_state_metric_change": 3648.4451227724294,
+        "origin": "MODEL_DOWN",
+        "risk_minus_noop": -0.2905594920352954
+      },
+      {
+        "candidate": "03",
+        "genuinely_altered": true,
+        "inheritance_minus_noop": 0.09241898148148164,
+        "maximum_registered_state_metric_change": 3933.2109484453904,
+        "origin": "RULE_DOWN",
+        "risk_minus_noop": -0.2826935184420373
+      }
+    ]
+  },
+  "release": {
+    "all_last_six_inheritance_tost_equivalent": false,
+    "all_written_mean_curves_cross_below_0_7": true,
+    "candidates": [
+      {
+        "candidate": "02",
+        "origins": [
+          {
+            "anchor_release": {
+              "first_mean_crossing_fission": 5,
+              "lineage_departure_fraction": 0.9409722222222222,
+              "mean_curve_crosses_below_0_7": true,
+              "minimum_mean_similarity": 0.4371911401253603
+            },
+            "last_six_inheritance_minus_noop": {
+              "bootstrap_ci90": [
+                -0.012152777777777788,
+                0.015625
+              ],
+              "bootstrap_ci95": [
+                -0.014467592592592605,
+                0.01793981481481483
+              ],
+              "estimate": 0.0017361111111111164,
+              "maximum_leave_one_matrix_out_influence": 0.0047650709219858155,
+              "randomization_p_holm_four_release_cells": 1.0,
+              "randomization_p_raw": 0.8232853307298023,
+              "tost_equivalent_within_0_03": true
+            },
+            "origin": "MODEL_DOWN"
+          },
+          {
+            "anchor_release": {
+              "first_mean_crossing_fission": 5,
+              "lineage_departure_fraction": 0.9201388888888888,
+              "mean_curve_crosses_below_0_7": true,
+              "minimum_mean_similarity": 0.4570381242685751
+            },
+            "last_six_inheritance_minus_noop": {
+              "bootstrap_ci90": [
+                -0.01504629629629632,
+                0.017361111111111115
+              ],
+              "bootstrap_ci95": [
+                -0.01851851851851852,
+                0.020833333333333322
+              ],
+              "estimate": 0.0011574074074074032,
+              "maximum_leave_one_matrix_out_influence": 0.004752758077226165,
+              "randomization_p_holm_four_release_cells": 1.0,
+              "randomization_p_raw": 0.9297046619477667,
+              "tost_equivalent_within_0_03": true
+            },
+            "origin": "RULE_DOWN"
+          }
+        ]
+      },
+      {
+        "candidate": "03",
+        "origins": [
+          {
+            "anchor_release": {
+              "first_mean_crossing_fission": 5,
+              "lineage_departure_fraction": 0.9409722222222222,
+              "mean_curve_crosses_below_0_7": true,
+              "minimum_mean_similarity": 0.4380743907504429
+            },
+            "last_six_inheritance_minus_noop": {
+              "bootstrap_ci90": [
+                -0.02662037037037035,
+                0.013310185185185208
+              ],
+              "bootstrap_ci95": [
+                -0.03067129629629629,
+                0.01736111111111113
+              ],
+              "estimate": -0.0069444444444444345,
+              "maximum_leave_one_matrix_out_influence": 0.004875886524822696,
+              "randomization_p_holm_four_release_cells": 1.0,
+              "randomization_p_raw": 0.5884793751525507,
+              "tost_equivalent_within_0_03": true
+            },
+            "origin": "MODEL_DOWN"
+          },
+          {
+            "anchor_release": {
+              "first_mean_crossing_fission": 5,
+              "lineage_departure_fraction": 0.9166666666666666,
+              "mean_curve_crosses_below_0_7": true,
+              "minimum_mean_similarity": 0.44756198566453004
+            },
+            "last_six_inheritance_minus_noop": {
+              "bootstrap_ci90": [
+                -0.032986111111111126,
+                -0.0005787037037036988
+              ],
+              "bootstrap_ci95": [
+                -0.03645833333333334,
+                0.0023148148148147965
+              ],
+              "estimate": -0.016203703703703703,
+              "maximum_leave_one_matrix_out_influence": 0.003792356185973211,
+              "randomization_p_holm_four_release_cells": 0.48132780082987553,
+              "randomization_p_raw": 0.12033195020746888,
+              "tost_equivalent_within_0_03": false
+            },
+            "origin": "RULE_DOWN"
+          }
+        ]
+      }
+    ]
+  },
+  "whole_matrix_inference": true
+}

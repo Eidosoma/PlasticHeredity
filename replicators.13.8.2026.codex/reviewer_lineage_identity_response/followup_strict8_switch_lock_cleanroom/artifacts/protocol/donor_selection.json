@@ -1,0 +1,19 @@
+{
+  "eligible_matrix_counts": {
+    "02": {
+      "b1p0_l1p0": 38,
+      "b2p0_l2p0": 18
+    },
+    "03": {
+      "b1p0_l1p0": 40,
+      "b2p0_l2p0": 21
+    }
+  },
+  "format": "gard-strict8-switch-lock-cleanroom-v1",
+  "protocol_id": "e10e9a1a499c66cb7ab5e20e51aed56cbf6fa1fc4e6a062dd63095576c605e3f",
+  "registry_sha256": "ae194df8d579b546f253f5a0fcc6e5bcb2164b34fbb0c8af3bf5d610a3283be6",
+  "required_two_strict_and_two_f12": true,
+  "runtime_selection_id": "63856f908b2dd39fe9da351078aa813f6d6582c24a80eb063bfbe9cae521e719",
+  "selected_before_fresh_futures": true,
+  "selection_id": "275744ea685612978c6009a9ce5aef827892d65e30ec30a839cf0bde6aab839d"
+}

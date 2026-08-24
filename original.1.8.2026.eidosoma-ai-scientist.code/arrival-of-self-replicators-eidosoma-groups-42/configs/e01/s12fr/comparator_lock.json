@@ -1,0 +1,26 @@
+{
+  "auditVersion": "E01-S12FR-RNG-SEQUENCE-AUDIT-v1.0.0",
+  "comparatorVersion": "S12FR_SCHEMA_CAUSAL_EXACT_COMPARATOR_v1.0.0",
+  "configSha256": "ede44733d8f852e443a9b5e0194560edf74a3346fb7dc03c86ff9779ac11da2f",
+  "contractSha256": "03d720f9ad3ffc8f8113dea0b1eaeff38668177ddb8f812f4cb578c5c163132b",
+  "designCommit": "a9dbb36b2485b50b3f91c6f3646fcef93ecf5404",
+  "implementationHashes": {
+    "audit": "ca6c9e6b2f545a0dcc0f822d3369e3308e63b723a78f6f051072eedfb6614c18",
+    "campaign": "407fa75493bf97dcfe60cf85d2c9a04c4106ee04590df9f44b481b3029fb73a7",
+    "comparator": "c4cd1a3c60f5276bf0508aca47e5ee945383e34322f1404b5e7c06970c058552",
+    "runner": "78c98dfac953b151786a9d1b9334fe1cfbfdcc94c3b51f885d5b8ac48f7cb930"
+  },
+  "oneRepairRule": "ANY_CONFIRMATION_FAILURE_PERMANENTLY_CLOSES_PATH",
+  "originalCampaignGatePassed": true,
+  "originalFieldDifferencesSha256": "456938dd069ea63092ecb02d902d0b175323080ccfb59d92af32688f670f9f49",
+  "originalPairCount": 2048,
+  "originalPairDiagnosticsSha256": "1d12ded280e28ada60ebcf94870ae54e866885805730902acc76128f486ed577",
+  "originalPairSummarySha256": "e3545872fff91b2144895b3ef92f412a652a3d81619191f768187a306dd94f06",
+  "originalTraceManifestSha256": "819b2dec41e41759dae864cbadeaf970be7ecd310c7a8ee0ba5924752cf236fd",
+  "pairSchemaSha256": "ca82ce8000301ed0f1f1a50795e11905776f6632d9befe98b0e63381415d3dc9",
+  "permittedNormalization": "PAIRED_SCHEMA_UNDEFINED_NAN_ZERO_UPDATE",
+  "researchStepId": "E01-S12FR-EXACT-REPLAY-COMPARATOR-REPAIR-v1.0.0",
+  "schemaVersion": "E01-S12FR-comparator-lock-v1.0.0",
+  "untouchedInferenceRoot": "66d623c7ad8ffcd5b56400df67bf54750d4786524493c5000796afc35577e953",
+  "untouchedSimulatorRoot": "3a018f93ffb37c576fefacaedaa2d4b6167dfe0354dda2f3d0990d1b9a576b0c"
+}

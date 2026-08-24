@@ -1,0 +1,29 @@
+{
+  "automatic_launch": false,
+  "confirmation": {
+    "completed": 92,
+    "eta_seconds": 0.0,
+    "last_update_unix": 1787508091.7641723,
+    "pairs_per_second": 0.027804076930333235,
+    "resume_safe": true,
+    "session_started_unix": 1787504782.8969026,
+    "state": "complete",
+    "total": 92
+  },
+  "design_digest": "05bbff9c76cc264828bb6916f10cc4a4e0dd80b6041903772dcad2a505598bfc",
+  "next_action": "review the sealed corrected result",
+  "quarantine": {
+    "completed": 2,
+    "eta_seconds": 0.0,
+    "last_update_unix": 1787504765.1559892,
+    "pairs_per_second": 1.4682645019008944,
+    "resume_safe": true,
+    "session_started_unix": 1787504763.7938316,
+    "state": "complete",
+    "total": 2
+  },
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v2",
+  "state": "complete",
+  "v1_disposition": "NON_COMPARABLE_MODEL_RUN",
+  "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+}

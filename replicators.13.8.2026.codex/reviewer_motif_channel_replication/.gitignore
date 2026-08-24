@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+artifacts/stage1/screen/checkpoints/
+artifacts/stage1/validation/checkpoints/
+artifacts/stage2/generalization/checkpoints/

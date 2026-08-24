@@ -1,0 +1,20 @@
+{
+  "sealed": "2026-08-18",
+  "module": "Phase M - SR-state reading vs organizational reading",
+  "design": "byte-exact replay of Phase J arms, full recording, sliding 3-gen windows",
+  "bootstrap": {
+    "draws": 4096,
+    "seed": 29,
+    "unit": "catalytic matrix"
+  },
+  "suite": "33/33 PASS at seal time",
+  "sha256": {
+    "PHIR_SR.md": "bc141dfcae86add99f572d49355fa1bbae30ffe7b4d8c74370ba5b898aea0796",
+    "run_phir_sr.py": "b4f24dc4bd405aaf0ad6611567b3785965d0fb08f24094e349288c6a7489eca7",
+    "phir_code.py": "76b56991c38f3eaa564cded9714157861bb09de24c88c50921705cd005ff8178",
+    "run_phir_confirm.py": "15ba27af952b737abe0d2bedb304ebd8fc5be9e52d7ee81ab0697a55082ae5b0",
+    "run_phir_dose.py": "831c579e35cda88d263232006d0a5a41db84988fe39040a23f9d28c01fefcb8e",
+    "sim.py": "289b6a48fe3f4850b5248f747172a5f859d1b270391eb650ff890235e4534221",
+    "cohort.py": "acab68436627b1a942382dd7fc4be3a41eb1a743d102eee8b1b40a7d086f4c89"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "cohorts": {
+    "codex_headline": {
+      "candidates": {
+        "02": {
+          "features": 39,
+          "lag_model_path": "artifacts/models/codex_headline_c02_lagged_ridge.npz",
+          "selected_c": 0.01,
+          "selected_lag": 10,
+          "transition_path": "artifacts/models/codex_headline_c02_transitions.json"
+        },
+        "03": {
+          "features": 24,
+          "lag_model_path": "artifacts/models/codex_headline_c03_lagged_ridge.npz",
+          "selected_c": 0.01,
+          "selected_lag": 5,
+          "transition_path": "artifacts/models/codex_headline_c03_transitions.json"
+        }
+      },
+      "development_audit": {
+        "02": {
+          "branches": 6400,
+          "prevalence": 0.31734375,
+          "states": 200
+        },
+        "03": {
+          "branches": 6400,
+          "prevalence": 0.34546875,
+          "states": 200
+        }
+      }
+    },
+    "codex_primary": {
+      "candidates": {
+        "02": {
+          "features": 69,
+          "lag_model_path": "artifacts/models/codex_primary_c02_lagged_ridge.npz",
+          "selected_c": 0.01,
+          "selected_lag": 20,
+          "transition_path": "artifacts/models/codex_primary_c02_transitions.json"
+        },
+        "03": {
+          "features": 69,
+          "lag_model_path": "artifacts/models/codex_primary_c03_lagged_ridge.npz",
+          "selected_c": 0.01,
+          "selected_lag": 20,
+          "transition_path": "artifacts/models/codex_primary_c03_transitions.json"
+        }
+      },
+      "development_audit": {
+        "02": {
+          "branches": 32000,
+          "prevalence": 0.34825,
+          "states": 1000
+        },
+        "03": {
+          "branches": 32000,
+          "prevalence": 0.38684375,
+          "states": 1000
+        }
+      }
+    },
+    "fable_headline": {
+      "candidates": {
+        "02": {
+          "features": 24,
+          "lag_model_path": "artifacts/models/fable_headline_c02_lagged_ridge.npz",
+          "selected_c": 0.1,
+          "selected_lag": 5,
+          "transition_path": "artifacts/models/fable_headline_c02_transitions.json"
+        },
+        "03": {
+          "features": 24,
+          "lag_model_path": "artifacts/models/fable_headline_c03_lagged_ridge.npz",
+          "selected_c": 0.1,
+          "selected_lag": 5,
+          "transition_path": "artifacts/models/fable_headline_c03_transitions.json"
+        }
+      },
+      "development_audit": {
+        "02": {
+          "branches": 3436,
+          "prevalence": 0.3608847497089639,
+          "states": 3436
+        },
+        "03": {
+          "branches": 3520,
+          "prevalence": 0.3548295454545455,
+          "states": 3520
+        }
+      }
+    },
+    "fable_primary": {
+      "candidates": {
+        "02": {
+          "features": 128,
+          "lag_model_path": "artifacts/models/fable_primary_c02_lagged_ridge.npz",
+          "selected_c": 0.1,
+          "selected_lag": 40,
+          "transition_path": "artifacts/models/fable_primary_c02_transitions.json"
+        },
+        "03": {
+          "features": 128,
+          "lag_model_path": "artifacts/models/fable_primary_c03_lagged_ridge.npz",
+          "selected_c": 0.1,
+          "selected_lag": 40,
+          "transition_path": "artifacts/models/fable_primary_c03_transitions.json"
+        }
+      },
+      "development_audit": {
+        "02": {
+          "branches": 87824,
+          "prevalence": 0.36589087265439973,
+          "states": 87824
+        },
+        "03": {
+          "branches": 87818,
+          "prevalence": 0.38526270240725136,
+          "states": 87818
+        }
+      }
+    }
+  },
+  "confirmation_outcomes_loaded": false,
+  "format": "reviewer-sequence-history-fitted-models-v1",
+  "model_selection_sha256": "dfec2659dd5542dc351bacafcc971429bd24a0673f857383e824ca59caf32c09",
+  "protocol_id": "bfeff2ea8e4b6d32c87e04b0887a121f658d3ce34a55315ca9ef125dd47b9913"
+}

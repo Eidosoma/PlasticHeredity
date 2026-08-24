@@ -1,0 +1,257 @@
+{
+  "development_checksum_manifest_sha256": "be3a6396364f6a32bd7ac9777d2817d65ff772941a3406380c49f2f25d5fab5d",
+  "format": "codex-intervention-cr10-registration-v2",
+  "protocol": {
+    "challenge": {
+      "additions": "with replacement outside unique removed labels",
+      "fixed_mass_nonnegative_integer": true,
+      "order": "ordinary controller action after fission 30, then exact K8 transport; control resumes after fission 31",
+      "removals": "molecule instances sampled without replacement"
+    },
+    "claim_boundary": {
+      "exploratory_only": true,
+      "prohibited": [
+        "autonomous agency or installed compotype",
+        "biological memory or error correction",
+        "life or universal origin-of-life mechanism",
+        "real prebiotic chemistry",
+        "strict-eight control",
+        "Phi or PhiID"
+      ]
+    },
+    "development": {
+      "architecture": {
+        "class_weight": "balanced",
+        "criterion": "gini",
+        "max_depth": 3,
+        "min_samples_leaf": 25,
+        "splitter": "best"
+      },
+      "candidate_pooled": false,
+      "candidates": [
+        "02",
+        "03"
+      ],
+      "features": [
+        "abundance_share",
+        "outgoing_influence_percentile",
+        "incoming_boost_percentile",
+        "presence"
+      ],
+      "landmarks": [
+        20,
+        35,
+        50,
+        65,
+        80
+      ],
+      "matrices": 200,
+      "outcomes_used": false,
+      "source": "exact reconstructed original scaled5 development cohort only",
+      "teacher": "frozen candidate-separated exhaustive MODEL_DOWN",
+      "trees_per_candidate": [
+        "remove",
+        "add"
+      ]
+    },
+    "format": "codex-intervention-cr10-internalization-v2",
+    "home_cohort": {
+      "candidates": [
+        "02",
+        "03"
+      ],
+      "challenge_after_fission": 30,
+      "challenge_exact_transport": 8,
+      "conditions": [
+        "UNCHALLENGED",
+        "CHALLENGED_K8"
+      ],
+      "fissions": 60,
+      "fresh_matrices": 48,
+      "lineages": 4032,
+      "natural_untreated_landmark": 60,
+      "policies": [
+        "L0_RULE_CONTINUOUS",
+        "L1_RULE_AFTER_BREAK",
+        "L2_RULE_UNTIL_RUN3",
+        "L3_LOCAL_TREE",
+        "MODEL_DOWN",
+        "RANDOM",
+        "NOOP"
+      ],
+      "replicates": 3
+    },
+    "inference": {
+      "bootstrap_repetitions": 4096,
+      "candidates_and_transfer_regimes_never_pooled": true,
+      "holm_within_analysis_family": true,
+      "no_confirmatory_pass_fail_gate": true,
+      "random_noop_tost_margin": 0.025,
+      "randomization_repetitions": 4096,
+      "unit": "whole catalytic matrix"
+    },
+    "integrity": {
+      "checkpoint_resumable": true,
+      "complete_exact_replay": true,
+      "controlled_future_retry_or_matrix_replacement": false,
+      "lambda_zero_plain_bitwise_identity": true,
+      "noop_plain_bitwise_identity": true
+    },
+    "kinetic_prototype": {
+      "baseline_simulator_unchanged": true,
+      "candidates": [
+        "02",
+        "03"
+      ],
+      "fissions": 60,
+      "formula": "leave_rate(type)/(1+lambda*outgoing_influence_percentile(type))",
+      "lambda_zero_plain_dispatch_and_bitwise_identity": true,
+      "lambdas": [
+        0.0,
+        0.1,
+        0.3
+      ],
+      "matrices": 48,
+      "percentile_recomputed_each_growth_update": true,
+      "replicates": 3
+    },
+    "operational": {
+      "mandatory_stop_after_cr10_seal": true,
+      "minimum_free_disk_bytes": 2000000000,
+      "no_later_phase_launched": true
+    },
+    "policies": {
+      "L0_RULE_CONTINUOUS": "outgoing x@beta RULE_DOWN after every fission",
+      "L1_RULE_AFTER_BREAK": "RULE_DOWN only when just-observed H <= 0.9",
+      "L2_RULE_UNTIL_RUN3": "RULE_DOWN only while trailing strict run < 3",
+      "L3_LOCAL_TREE": "frozen local remove/add trees after every fission",
+      "MODEL_DOWN": "exhaustive frozen predictor minimum after every fission",
+      "NOOP": "no edit",
+      "RANDOM": "uniform legal edit after every fission from separate stream",
+      "callback_including_last_fission": true
+    },
+    "protocol_id": "d8de91a0acc03b9206d23ff0e6ae1eae6970928f953899457b8c2ec3a5043f52",
+    "randomness": {
+      "common_random_streams_not_identical_realized_futures": true,
+      "future_seed_excludes_policy_and_home_condition": true,
+      "random_action_challenge_and_future_streams_separate": true,
+      "seed_domains": {
+        "bootstrap": "5f6b9aab2edb281400019ee924adf287b63d5cb853883d7c23503ea874830b86",
+        "challenge_action": "92697a964867e70f61d22e6126658e7669e15b326cf1a09e50337937eb7ece80",
+        "development_reconstruction": "cdc6a81c8a1a4f00b6de3725f9d8602729f2544f79f730630fa9a05e5c23e3ae",
+        "future_simulation": "adbc6d814ecf7a0f745e3b241741498b8d2cd4997abc1111a3d018ac63e528b4",
+        "home_initial_composition": "bb4f04f860462ddaaa141cd8e243034f9447a8167a3a591027e6109e5c57213d",
+        "home_main_trajectory": "a0f6c2de970200a14f6726136b680ea7270220736a81b28db2ad75f82731ff78",
+        "home_matrix_generation": "6696b2b2577920bbb185a245fabd9821d881aecff91d8119cd0c75e1f4133739",
+        "kinetic_future": "9b69023e324cd3d76a8643df02e773e2f599488bf3a3c679fca5c88d8291950a",
+        "random_policy_action": "cc22d773a72b40ae9019de2cab7c599e6c107f2238dda399062b210584432cec",
+        "randomization": "a2bc479bc1ce8c5d80d3bd203ada29f62761e08fb7fd907c21c956abfd34c80d",
+        "replay": "c3e337146e70eadaf70b169b160148e1aa519fce4298b1aa4f271b30c1bfe056",
+        "smoke": "19c0ddd003e155439401e1866f4c83fa25a4fdabb64ba22a948f56f4bb12436f",
+        "transfer_initial_composition": "5a7e0a2eec8eb7fc3872149affdd42761e1f33a34e6c33c21f9ef2d9b7833198",
+        "transfer_main_trajectory": "7c0bbdec5a9695df510d46dc57428d280c2fa97c8d454b30005a855e57672e61",
+        "transfer_matrix_generation": "941b048a09457f5aa0bf6fcbdfbc3faea140079fd973cc56b5c118fa4ba751d4",
+        "tree_fit": "f9ad4725f52ca2cd89b8162894584f007e0e19dda7c593b880dea3e4973dc759",
+        "validation": "0cf57b4c582124cc3da7913cfa1889957c179997cdf5a8419310fdbb206c9494"
+      }
+    },
+    "role": "final exploratory phase; cannot rescue any confirmatory result",
+    "status": "frozen_before_any_cr10_scientific_matrix",
+    "target": {
+      "inheritance": "strict unrounded float64 H > 0.9",
+      "name": "JOINT_BREAK_RUN3",
+      "strict_eight_excluded": true
+    },
+    "transfer": {
+      "conditions": [
+        "UNCHALLENGED"
+      ],
+      "fissions": 60,
+      "fresh_matrices_per_regime": 24,
+      "natural_untreated_landmark": 60,
+      "policies": [
+        "L0_RULE_CONTINUOUS",
+        "L1_RULE_AFTER_BREAK",
+        "L2_RULE_UNTIL_RUN3",
+        "L3_LOCAL_TREE",
+        "MODEL_DOWN",
+        "RANDOM",
+        "NOOP"
+      ],
+      "regimes": {
+        "POS_A_M3_S4": {
+          "A": -3.0,
+          "sigma": 4.0
+        },
+        "POS_A_M4_S5": {
+          "A": -4.0,
+          "sigma": 5.0
+        },
+        "POS_A_M5_S4": {
+          "A": -5.0,
+          "sigma": 4.0
+        }
+      },
+      "replicates": 2
+    },
+    "upstream": {
+      "cr3_gate_required": true,
+      "cr3_registration_id": "64e871db56b3958a14bdad47b404f6c9f1ad09d0bda1e996e24498598523d189",
+      "cr6_cr8_cr9_cr9m_not_advancement_gates": true,
+      "cr7_gate_required": true,
+      "cr7_registration_id": "41cf815a63129f40c04c7fb260f0f90c713adb9743eaae8479a5f6046e826e70"
+    }
+  },
+  "registration_id": "ae144b0f3a1d186a92aa05c8a7db061bfec6da547e3343e91ebbd943a22efcf9",
+  "scientific_cr10_lineages_at_registration": 0,
+  "scientific_cr10_matrices_at_registration": 0,
+  "seed_registry": {
+    "bootstrap": "5f6b9aab2edb281400019ee924adf287b63d5cb853883d7c23503ea874830b86",
+    "challenge_action": "92697a964867e70f61d22e6126658e7669e15b326cf1a09e50337937eb7ece80",
+    "development_reconstruction": "cdc6a81c8a1a4f00b6de3725f9d8602729f2544f79f730630fa9a05e5c23e3ae",
+    "future_simulation": "adbc6d814ecf7a0f745e3b241741498b8d2cd4997abc1111a3d018ac63e528b4",
+    "home_initial_composition": "bb4f04f860462ddaaa141cd8e243034f9447a8167a3a591027e6109e5c57213d",
+    "home_main_trajectory": "a0f6c2de970200a14f6726136b680ea7270220736a81b28db2ad75f82731ff78",
+    "home_matrix_generation": "6696b2b2577920bbb185a245fabd9821d881aecff91d8119cd0c75e1f4133739",
+    "kinetic_future": "9b69023e324cd3d76a8643df02e773e2f599488bf3a3c679fca5c88d8291950a",
+    "random_policy_action": "cc22d773a72b40ae9019de2cab7c599e6c107f2238dda399062b210584432cec",
+    "randomization": "a2bc479bc1ce8c5d80d3bd203ada29f62761e08fb7fd907c21c956abfd34c80d",
+    "replay": "c3e337146e70eadaf70b169b160148e1aa519fce4298b1aa4f271b30c1bfe056",
+    "smoke": "19c0ddd003e155439401e1866f4c83fa25a4fdabb64ba22a948f56f4bb12436f",
+    "transfer_initial_composition": "5a7e0a2eec8eb7fc3872149affdd42761e1f33a34e6c33c21f9ef2d9b7833198",
+    "transfer_main_trajectory": "7c0bbdec5a9695df510d46dc57428d280c2fa97c8d454b30005a855e57672e61",
+    "transfer_matrix_generation": "941b048a09457f5aa0bf6fcbdfbc3faea140079fd973cc56b5c118fa4ba751d4",
+    "tree_fit": "f9ad4725f52ca2cd89b8162894584f007e0e19dda7c593b880dea3e4973dc759",
+    "validation": "0cf57b4c582124cc3da7913cfa1889957c179997cdf5a8419310fdbb206c9494"
+  },
+  "source_hashes": {
+    "CODEX_INTERVENTION_CR10_PREREGISTRATION.md": "030cb20fa7adbdc362ea13d5b1e2814c271271805d7d582a4ee28614e1db2efd",
+    "plastic_heredity/config.py": "0ec6dab19beab3d195fc1bdd326668ba44af38e780c30cce4e6c6e6bad467957",
+    "plastic_heredity/experiment.py": "211a707a7e05e4f086e7874ae2c39b588113b0e39094be1de4578713034013ae",
+    "plastic_heredity/features.py": "80b7b448cd93ff618b0d48fde6ab24e6d449249881fda62514e081a1f9f9b779",
+    "plastic_heredity/intervention_core.py": "8770cf7ee7a6cb3d16ee472090ed6f01a59bb0e6d51b5cd9ba6d01c535a81809",
+    "plastic_heredity/intervention_cr10_internalization.py": "a0e7b45617119f9d9db4c462832b16d705dfcb84d6868f0329ac430bec63732a",
+    "plastic_heredity/intervention_outgoing_rule.py": "dbb2f74a6b3b0beeaac2331a16f538b429a50e40c74c03c9a65b75b8af23d98e",
+    "plastic_heredity/intervention_replication.py": "c814c8c273f07acfec8c37db0260507c5eeb5a1b26aa5aa60402a8807c5451d6",
+    "plastic_heredity/mechanistic.py": "6c3252c6e83c98f08c0e1de0e146c288f12ba9bcf44787230a3fc14e513789d1",
+    "plastic_heredity/seeds.py": "bdd814d41b939d74ea29f2205d0cf4a70cb28fae182eb965753cf0209cf73f61",
+    "plastic_heredity/simulator.py": "fdd4cc122f5b56ed8d27f1d78320db452374d42d6538e5e6d913b89396d89358",
+    "pyproject.toml": "348ccf3e51a9839b3aa5d3d5f60a4559abdffd9737d596077982e63300ac1310",
+    "requirements-lock.txt": "0bd8771c6eb64fa5bc491afaea1df14aba7dfd1f8997005a901b5cac674835b5",
+    "tests/test_intervention_cr10_internalization.py": "90d8503219d2282c3cb26bf578c3b67a14808dce087f5cc76aba557478a30ad2"
+  },
+  "source_tree_sha256": "c3d3a46b294252ebfb769d3e4322378d4b1fc620b49f1621db3a730b8dfd693f",
+  "upstream": {
+    "cr0_checksum_manifest_sha256": "7a37b71ad8659dd4ce208b4dbff87e4cf85ed5bff199f9e0d4a8fdf1401dcad6",
+    "cr1_registration_checksum_manifest_sha256": "4fa9814303f4f927544ef4f8c1c72b87a27c5d745446e9969dbfb5c53b77a784",
+    "cr3_registration_checksum_manifest_sha256": "93ea3d1006b2ed4ea8230a9fa739903d98abedbbebadc13476c9cc2a970a8c2a",
+    "cr3_result_checksum_manifest_sha256": "4275695af8edfb2d7e34c8c0cdf0e125e7cee8fb8b3920b7a43041a01f9062a3",
+    "cr7_registration_checksum_manifest_sha256": "e5a4250e5533ba25773fe292ef5d30c5e0b0977368fac80b7d556726cdc2d2fc",
+    "cr7_result_checksum_manifest_sha256": "97d1a63fd462a8363dd34a858da67b91fd090895f69c877635ea34935436dd65",
+    "cr8_checksum_manifest_sha256": "08b758d062b9a1d9c3bc3aff03442c9ae0bfddbd12bf6e5c860c4d7055d81a12",
+    "cr9_checksum_manifest_sha256": "ab5182546b5da9a7f59f73bdf73102a735c4e8749f5064d6435a6171c151be5d",
+    "cr9m_checksum_manifest_sha256": "eff869d709a431c2e6d153555a4f878b36c35cbb0caf110db1ba2c276c737460",
+    "frozen_model_sha256": "9b3305a7fed11f432651926d34903443e9413ed299c5d0f1056a0b5fde9990af"
+  },
+  "validation_checksum_manifest_sha256": "3a76654d14488164e7a5abb1cd70df3abe7f62be229ff526d599059add3dc47e"
+}

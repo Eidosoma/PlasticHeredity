@@ -1,0 +1,20 @@
+{
+  "admission_limit_seconds": 40500,
+  "admitted": true,
+  "attempt": "attempt-001",
+  "format": "wagner-cleanroom-benchmark-v1",
+  "predictor_sampling_seconds": 0.34410843905061483,
+  "predictor_simulation_seconds": 0.5942649440839887,
+  "primary_sampling_seconds": 0.2665831451304257,
+  "primary_simulation_seconds": 4.8577405218966305,
+  "projected_components_seconds": {
+    "analysis_replay_sealing_allowance": 7200,
+    "predictor_sampling": 19.27007258683443,
+    "predictor_simulation": 6.790056553436443,
+    "primary_sampling": 15.994988707825541,
+    "primary_simulation": 80.75923210009933
+  },
+  "projected_seconds": 7322.814349948196,
+  "projected_with_20_percent_margin_seconds": 8787.377219937835,
+  "workers": 12
+}

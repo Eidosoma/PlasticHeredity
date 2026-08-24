@@ -1,0 +1,13 @@
+{
+  "binding_sha256": "33fa9e1101ff41533fdc5218df0b0f61fb6a5f6f3944ec52204a45624e7e11f1",
+  "payload": {
+    "design_changes_permitted": false,
+    "missing": [],
+    "pair_count": 2,
+    "passed": true,
+    "phase": "engineering_quarantine",
+    "scientific_inference": false
+  },
+  "payload_sha256": "f44ba3e7e12c5987fd9214e78c49ec560ed47dca8a5f4f2a1c9ccbe258511e6e",
+  "schema_version": "reviewer-ca-lineage-renewal-replication-v1"
+}

@@ -1,0 +1,18 @@
+{
+  "amendment_id": "8ac3df3717880fad899187dcfaaec5c56cda897838e0704511792f883adad620",
+  "failed_log_sha256": "e6d963a526586becdacc84ae9945260a203b7f2df60035a0789d96d8ee8de5cf",
+  "format": "codex-intervention-p1-readback-amendment-v1",
+  "generation_checkpoint_aggregate_sha256": "5d80d3cf0f04f02c45f27bea722a0ffaa92866b8d7e681c2a264063c3af4a2f1",
+  "original_registration_checksum_manifest_sha256": "ca3e5b0860a99666fbfca4b94735d99f05e71675978af22723377435f107d70e",
+  "original_registration_id": "f61e0340dcd8c9ae6b606c8133ca3d8fb1de2e13fe863719aa67b649e8b74531",
+  "protocol_id": "b8447bf6e2c6d7e61e41bf7dbb6eacbb0eb954c061787c10058524d240b2f628",
+  "protocol_sha256": "1c96da373419a5f920bc551f4a74556743be6684e1a294757cefbff3e9e8e9dc",
+  "replay_checkpoint_aggregate_sha256": "5d80d3cf0f04f02c45f27bea722a0ffaa92866b8d7e681c2a264063c3af4a2f1",
+  "scientific_checkpoint_outcomes_loaded": false,
+  "source_hashes": {
+    "CODEX_INTERVENTION_P1_READBACK_AMENDMENT.md": "cc587ded2ca1037b8715b4cfe43d980a5976adff75196da2824ea09bb8b9158d",
+    "plastic_heredity/intervention_readback_recovery.py": "9a33ec3dd04b416739df9d4604674eb6d16e042434a98b0088ced1cc527fb531",
+    "tests/test_intervention_readback_recovery.py": "a37e195d3b0ffb433637e461f9bb01024343601963cb8ce1304f1694be52dbe5"
+  },
+  "status": "sealed_before_recovery_loaded_any_scientific_checkpoint_outcome"
+}

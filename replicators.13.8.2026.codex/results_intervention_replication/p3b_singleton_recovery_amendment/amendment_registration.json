@@ -1,0 +1,21 @@
+{
+  "amendment_id": "c5a941f9a6b1d71fcd02b4d3878cb9c091cc2090bd914273d58f5740d3e183c0",
+  "checkpoint_outcomes_loaded": false,
+  "checkpoint_prefix_audit_sha256": "ecd4a91abd16984ee806a4cf8a870999fb63c8db30f1ff45258a50260df2fb27",
+  "completed_scientific_futures": 81312,
+  "format": "codex-intervention-p3b-singleton-recovery-amendment-v1",
+  "immutable_prefix_aggregate_sha256": "efc28a57eac888f74b2ae84e56013c856d6cb0a682842093dc1baa1accdcb66d",
+  "immutable_prefix_checkpoints": 363,
+  "original_registration_checksum_manifest_sha256": "8feca230c7beff850541bec11f4127b95e02b38eadc08264f95bb3be2ce4a072",
+  "original_registration_id": "c1fe38be6a7e2b71eb5e288c9e238ff45c30d8fe388f2d21a879acea6dd5624e",
+  "protocol_id": "b0d83175de537c1cd2f122353263af04db52e4f4cf3034e2bc9458ba8cfd365c",
+  "protocol_sha256": "7f0995eae12c66a4d6a2d183dfa2038a6458ce9aafadf273f6420fbdacca35ca",
+  "replay_started": false,
+  "scientific_effects_computed": false,
+  "source_hashes": {
+    "CODEX_INTERVENTION_P3B_SINGLETON_RECOVERY_AMENDMENT.md": "87b6e40e11d455936c46d91f5df2a8fde65cb60d6571a7c39e693a77229202e5",
+    "plastic_heredity/intervention_p3b_singleton_recovery.py": "4aefde6662d07d3d9b4a28aef00d72464c0b5ef0d8860462839beecef414d792",
+    "tests/test_intervention_p3b_singleton_recovery.py": "0582f2657246cd0a8a661a1194faa03310cfe8448c5142049ec416172ddea218"
+  },
+  "status": "sealed_after_partial_generation_before_outcome_loading_replay_or_inference"
+}

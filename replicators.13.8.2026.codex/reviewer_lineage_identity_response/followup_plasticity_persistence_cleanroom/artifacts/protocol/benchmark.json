@@ -1,0 +1,43 @@
+{
+  "format": "gard-plasticity-persistence-cleanroom-v1",
+  "projections": [
+    {
+      "fits": true,
+      "projected_seconds": 10026.376168727875,
+      "tier": "A"
+    },
+    {
+      "fits": true,
+      "projected_seconds": 7014.289557337762,
+      "tier": "B"
+    },
+    {
+      "fits": true,
+      "projected_seconds": 3955.2870225906377,
+      "tier": "C"
+    }
+  ],
+  "sample_workers": 4,
+  "samples": [
+    {
+      "standard_seconds_per_fission": 0.002026105299592018,
+      "twin_seconds_per_weighted_fission": 0.0031198151409626007
+    },
+    {
+      "standard_seconds_per_fission": 0.002352830022573471,
+      "twin_seconds_per_weighted_fission": 0.004585184156894684
+    },
+    {
+      "standard_seconds_per_fission": 0.001916462555527687,
+      "twin_seconds_per_weighted_fission": 0.0038333050906658173
+    },
+    {
+      "standard_seconds_per_fission": 0.002083895727992058,
+      "twin_seconds_per_weighted_fission": 0.002967163920402527
+    }
+  ],
+  "standard_seconds_per_fission": 0.0020948234014213085,
+  "twin_seconds_per_weighted_fission": 0.003626367077231407,
+  "wall_seconds": 0.9279546737670898,
+  "workers": 16
+}

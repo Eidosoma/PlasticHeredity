@@ -1,0 +1,19 @@
+{
+  "arm_ordering_disclosed": false,
+  "artificial_fixture_only": true,
+  "candidate_differences_disclosed": false,
+  "checks": {
+    "break_all_legal_swaps_scored": true,
+    "break_exhaustive_selection_deterministic": true,
+    "future_replay_exact": true,
+    "no_effect_sizes_or_arm_ordering_disclosed": true,
+    "renewal_all_legal_swaps_scored": true,
+    "renewal_exhaustive_selection_deterministic": true
+  },
+  "effect_sizes_disclosed": false,
+  "event_rates_disclosed": false,
+  "format": "codex-intervention-cr5-smoke-v1",
+  "registration_id": "61afdf612368c59aeb63fee7adb72b20e15dfdd3fafdefcc19f2f4e4d1bd4d3c",
+  "scientific_futures": 0,
+  "scientific_matrices": 0
+}

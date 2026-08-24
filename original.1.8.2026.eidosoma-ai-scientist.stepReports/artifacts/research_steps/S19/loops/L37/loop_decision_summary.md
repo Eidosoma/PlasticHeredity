@@ -1,0 +1,9 @@
+# S19-L37 decision summary
+
+**Classification:** MULTILINEAGE_ATTRACTOR_FAMILY_NOT_SUPPORTED, TRAJECTORY_SPECIFIC_TARGET_CONFIRMED_WITHIN_TESTED_SCOPE, NOT_PROMOTABLE_AS_CONFIRMED
+
+**All-group target family:** `False`.
+
+**All-group independent committor:** `False`.
+
+**Next:** `PAST_ONLY_RECURRENCE_INHERITANCE_OUTCOME_CONSTRUCTION`.

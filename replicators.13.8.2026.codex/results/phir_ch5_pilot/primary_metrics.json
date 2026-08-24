@@ -1,0 +1,5797 @@
+{
+  "bridge": {
+    "cells": [
+      {
+        "candidate": "02",
+        "ci90": [
+          0.10138888888888888,
+          0.21805555555555556
+        ],
+        "ci95": [
+          0.09166666666666666,
+          0.23055555555555554
+        ],
+        "contrast": "model",
+        "effect": 0.15833333333333333,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 15,
+        "maximum_absolute_matrix_effect": 0.6333333333333333,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.08333333333333331,
+          0.18055555555555555
+        ],
+        "ci95": [
+          0.075,
+          0.1925347222222222
+        ],
+        "contrast": "model",
+        "effect": 0.13055555555555556,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 0.5333333333333333,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.13194444444444445,
+          0.25
+        ],
+        "ci95": [
+          0.12222222222222223,
+          0.2611111111111111
+        ],
+        "contrast": "model",
+        "effect": 0.19027777777777777,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 18,
+        "maximum_absolute_matrix_effect": 0.6,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.13333333333333333,
+          0.25416666666666665
+        ],
+        "ci95": [
+          0.12274305555555556,
+          0.2652777777777778
+        ],
+        "contrast": "model",
+        "effect": 0.19166666666666668,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 17,
+        "maximum_absolute_matrix_effect": 0.5666666666666667,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000488162069807176,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.19400120207478172,
+          -0.07245088313355445
+        ],
+        "ci95": [
+          -0.20565595432947545,
+          -0.05975162346980049
+        ],
+        "contrast": "model",
+        "effect": -0.13477699960690023,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 0.4084317382715683,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9985355137905785,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.2592053447281313,
+          -0.10650067183855123
+        ],
+        "ci95": [
+          -0.2747717345904243,
+          -0.0908941743980783
+        ],
+        "contrast": "model",
+        "effect": -0.1817227364380761,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.7745822815362804,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9995118379301928,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.24414669136964928,
+          -0.09979448566361884
+        ],
+        "ci95": [
+          -0.2557995796970112,
+          -0.08622293463885772
+        ],
+        "contrast": "model",
+        "effect": -0.17097851675330566,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.6940751732245309,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9992677568952892,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.3062550472495153,
+          -0.18421739051369126
+        ],
+        "ci95": [
+          -0.3178022535068265,
+          -0.17227167930665876
+        ],
+        "contrast": "model",
+        "effect": -0.24414128068763166,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 1,
+        "maximum_absolute_matrix_effect": 0.566205900452972,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          1.9276771441146008,
+          5.399930701284139
+        ],
+        "ci95": [
+          1.5926695160895672,
+          5.685369333959548
+        ],
+        "contrast": "model",
+        "effect": 3.633277733890763,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.002928972418843056,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 18,
+        "maximum_absolute_matrix_effect": 15.702748406761032,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.001464486209421528,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          3.3757171420544783,
+          7.0659276216936036
+        ],
+        "ci95": [
+          2.997456023681459,
+          7.391183108285202
+        ],
+        "contrast": "model",
+        "effect": 5.304651203233284,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 22,
+        "maximum_absolute_matrix_effect": 13.683814555160055,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          2.0987297945556245,
+          5.971006647030881
+        ],
+        "ci95": [
+          1.6734125869285614,
+          6.277852070604111
+        ],
+        "contrast": "model",
+        "effect": 4.105007824472614,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.002928972418843056,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 12.858502120982976,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.002684891383939468,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          3.0165964833525396,
+          6.647201501795943
+        ],
+        "ci95": [
+          2.6485097812573146,
+          6.994935933289389
+        ],
+        "contrast": "model",
+        "effect": 4.809002920044127,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.002196729314132292,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 14.756020712817616,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.000732243104710764,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.004412217285217616,
+          0.055778773274811205
+        ],
+        "ci95": [
+          -0.00028175058757472465,
+          0.06090277213716253
+        ],
+        "contrast": "model",
+        "effect": 0.030340147291976496,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.02880156211862338,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 15,
+        "maximum_absolute_matrix_effect": 0.1832364288623831,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.02880156211862338,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.03035318911271458,
+          0.0821940542155221
+        ],
+        "ci95": [
+          0.025099851720248225,
+          0.08669719017099864
+        ],
+        "contrast": "model",
+        "effect": 0.057400342036288764,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.008786917256529168,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 21,
+        "maximum_absolute_matrix_effect": 0.20578042048165052,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.002196729314132292,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.0125420467900457,
+          0.0694746379375882
+        ],
+        "ci95": [
+          0.007085284966177059,
+          0.07511206948917319
+        ],
+        "contrast": "model",
+        "effect": 0.04144083669447835,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.021967293141322917,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 0.19535034625365036,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.010983646570661459,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.02381526430562381,
+          0.07255310197082995
+        ],
+        "ci95": [
+          0.01806219999390478,
+          0.0775158183312136
+        ],
+        "contrast": "model",
+        "effect": 0.04869290450121767,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.008786917256529168,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 0.16683956140126308,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.002928972418843056,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.19435542380359916,
+          0.06959726979425888
+        ],
+        "ci95": [
+          -0.2206251627997844,
+          0.09705893579310312
+        ],
+        "contrast": "model",
+        "effect": -0.06422700450652973,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.871877640674305,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.7803270685867708,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3259294955957607,
+          0.009934915200677248
+        ],
+        "ci95": [
+          -0.3577276688768226,
+          0.0414713160201547
+        ],
+        "contrast": "model",
+        "effect": -0.15901605900454321,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 1.1746579864232183,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.9340981205760313,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.2564808955840495,
+          0.05695302628426434
+        ],
+        "ci95": [
+          -0.282241617094814,
+          0.0888134943136859
+        ],
+        "contrast": "model",
+        "effect": -0.10537453561123629,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.1133602150473467,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.859653404930437,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.23879276992863355,
+          0.0317828806381477
+        ],
+        "ci95": [
+          -0.26380377015609774,
+          0.060347554269319564
+        ],
+        "contrast": "model",
+        "effect": -0.10352059923285113,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.7876395888966266,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.8825970222113741,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.14648782857382947,
+          -0.045088280503681445
+        ],
+        "ci95": [
+          -0.15716115148317567,
+          -0.03688147984356702
+        ],
+        "contrast": "model",
+        "effect": -0.09562319599072083,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.4070850374565903,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.997071027581157,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.20037707686441067,
+          -0.08725613053516733
+        ],
+        "ci95": [
+          -0.21295259240992478,
+          -0.0781579277626873
+        ],
+        "contrast": "model",
+        "effect": -0.14078019804652,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.6130074061900616,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9997559189650964,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.1774053698988287,
+          -0.056570313217548476
+        ],
+        "ci95": [
+          -0.1894687805997338,
+          -0.04553807769709076
+        ],
+        "contrast": "model",
+        "effect": -0.11528636145173839,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.6393915221777606,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9995118379301928,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.20684499945970344,
+          -0.12805656686525987
+        ],
+        "ci95": [
+          -0.21497341416360194,
+          -0.1207900479236035
+        ],
+        "contrast": "model",
+        "effect": -0.1671953053757381,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 1,
+        "maximum_absolute_matrix_effect": 0.4022536522747052,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.143725489455822,
+          0.08218196531701963
+        ],
+        "ci95": [
+          -0.16686377311158712,
+          0.10380144940709393
+        ],
+        "contrast": "model",
+        "effect": -0.0313961914841911,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.7358032150162245,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.6807420063461069,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.12020130432942899,
+          0.15589897003463202
+        ],
+        "ci95": [
+          -0.14673649985747472,
+          0.17981677039465657
+        ],
+        "contrast": "model",
+        "effect": 0.018235860958023195,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.7756995201744203,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.42152794727849646,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.15120543938825853,
+          0.11929741281135822
+        ],
+        "ci95": [
+          -0.18090399666748,
+          0.1426271065270045
+        ],
+        "contrast": "model",
+        "effect": -0.009911825840502056,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 1.0304469294650032,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5511349768123017,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.19133933240835774,
+          0.06719986967843836
+        ],
+        "ci95": [
+          -0.21832175162567274,
+          0.0906167540148415
+        ],
+        "contrast": "model",
+        "effect": -0.06367470614288694,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.8719226535948988,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.7891139858433,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3123702789139531,
+          -0.19994975573297785
+        ],
+        "ci95": [
+          -0.3212020935400425,
+          -0.19083395302323855
+        ],
+        "contrast": "model",
+        "effect": -0.2538114064874585,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 0,
+        "maximum_absolute_matrix_effect": 0.6817541664350555,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.39649663730508733,
+          -0.22558230807202523
+        ],
+        "ci95": [
+          -0.41366826507767385,
+          -0.21081039123206696
+        ],
+        "contrast": "model",
+        "effect": -0.3083705380185983,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 2,
+        "maximum_absolute_matrix_effect": 0.884053419216426,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.3763470768815506,
+          -0.18712295814955177
+        ],
+        "ci95": [
+          -0.39928568526057584,
+          -0.17165790154283095
+        ],
+        "contrast": "model",
+        "effect": -0.27507868380890504,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 1.1967903918929965,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.34008850950993497,
+          -0.2311969959068832
+        ],
+        "ci95": [
+          -0.3514327675797479,
+          -0.22064427600162334
+        ],
+        "contrast": "model",
+        "effect": -0.2864231485202571,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 1,
+        "maximum_absolute_matrix_effect": 0.5918263841905909,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.10320723691213285,
+          -0.03164121012832542
+        ],
+        "ci95": [
+          -0.11096644486917633,
+          -0.025432600041462892
+        ],
+        "contrast": "model",
+        "effect": -0.06597881719907543,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.3088466421696944,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.9982914327556749,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.06277315915937906,
+          0.0064852836822426475
+        ],
+        "ci95": [
+          -0.06982833857149594,
+          0.012925535299691263
+        ],
+        "contrast": "model",
+        "effect": -0.02903681741824241,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.21325128850353095,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.918232853307298,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.07007341826573373,
+          0.002139799987614173
+        ],
+        "ci95": [
+          -0.07634589380362487,
+          0.009330233385572737
+        ],
+        "contrast": "model",
+        "effect": -0.03468247398814194,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.23944845020986116,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.9345862826458384,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.07298646914091483,
+          -0.0024893542568775536
+        ],
+        "ci95": [
+          -0.079095691072733,
+          0.004443664812472081
+        ],
+        "contrast": "model",
+        "effect": -0.037470519389262165,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.24310539885549576,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.9497193068098608,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          22.49462152370968,
+          46.9688491715989
+        ],
+        "ci95": [
+          19.81103350459444,
+          49.45644281195773
+        ],
+        "contrast": "model",
+        "effect": 34.823591567844055,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 20,
+        "maximum_absolute_matrix_effect": 109.64078178108946,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          29.184674441026036,
+          53.16048834186844
+        ],
+        "ci95": [
+          26.72256930811463,
+          55.2219654296974
+        ],
+        "contrast": "model",
+        "effect": 41.23983288994337,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 21,
+        "maximum_absolute_matrix_effect": 108.01065475563576,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          44.226415442243585,
+          65.06444318919475
+        ],
+        "ci95": [
+          42.27526841901388,
+          66.98410068672493
+        ],
+        "contrast": "model",
+        "effect": 54.70157465222443,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 23,
+        "maximum_absolute_matrix_effect": 94.7039987089459,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          44.13043714299125,
+          62.38431839277885
+        ],
+        "ci95": [
+          42.41013561617146,
+          63.96897720407896
+        ],
+        "contrast": "model",
+        "effect": 53.705537295799125,
+        "high_arm": "MODEL_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "MODEL_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 22,
+        "maximum_absolute_matrix_effect": 98.66424565440661,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.11527777777777777,
+          0.23749999999999996
+        ],
+        "ci95": [
+          0.10555555555555556,
+          0.25
+        ],
+        "contrast": "rule",
+        "effect": 0.17499999999999996,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 15,
+        "maximum_absolute_matrix_effect": 0.6,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.08472222222222221,
+          0.21388888888888888
+        ],
+        "ci95": [
+          0.075,
+          0.23055555555555554
+        ],
+        "contrast": "rule",
+        "effect": 0.14722222222222223,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.6,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000488162069807176,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.10694444444444444,
+          0.21805555555555556
+        ],
+        "ci95": [
+          0.0986111111111111,
+          0.2263888888888889
+        ],
+        "contrast": "rule",
+        "effect": 0.15972222222222224,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 18,
+        "maximum_absolute_matrix_effect": 0.5333333333333333,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.10138888888888888,
+          0.20833333333333334
+        ],
+        "ci95": [
+          0.09305555555555554,
+          0.22083333333333333
+        ],
+        "contrast": "rule",
+        "effect": 0.15277777777777776,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 15,
+        "maximum_absolute_matrix_effect": 0.5333333333333333,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1720353279775495,
+          -0.045393501804619485
+        ],
+        "ci95": [
+          -0.1831861985553617,
+          -0.031525201907047315
+        ],
+        "contrast": "rule",
+        "effect": -0.10991513799722176,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 0.46689413307052563,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.992921649987796,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.24636807106820924,
+          -0.12953795200132856
+        ],
+        "ci95": [
+          -0.2565846047039499,
+          -0.11892300274513115
+        ],
+        "contrast": "rule",
+        "effect": -0.18905467013890445,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 0.5171432511015597,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.17761083727248964,
+          -0.06872674620399312
+        ],
+        "ci95": [
+          -0.18778396551471022,
+          -0.05757490267643914
+        ],
+        "contrast": "rule",
+        "effect": -0.12410587928599555,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 4,
+        "maximum_absolute_matrix_effect": 0.4177691414473974,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9992677568952892,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.12556068425951644,
+          -0.0024395893164174884
+        ],
+        "ci95": [
+          -0.1362009020864928,
+          0.009894718601157345
+        ],
+        "contrast": "rule",
+        "effect": -0.06493124091806912,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.5229587023419644,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9492311447400537,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.6323381124160254,
+          3.699165878249926
+        ],
+        "ci95": [
+          0.34801161660076924,
+          3.9752261616207676
+        ],
+        "contrast": "rule",
+        "effect": 2.182096554937774,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.02782523797900903,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 10.78745488531753,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.013912618989504515,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          2.2512019789058897,
+          5.063595947163449
+        ],
+        "ci95": [
+          1.9700948507807166,
+          5.289970813664229
+        ],
+        "contrast": "rule",
+        "effect": 3.70271479818706,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.002196729314132292,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 10.605410173893375,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.000732243104710764,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          2.380298710025605,
+          5.624509529926803
+        ],
+        "ci95": [
+          2.124996547597895,
+          5.878665392395421
+        ],
+        "contrast": "rule",
+        "effect": 4.039849499151926,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 18,
+        "maximum_absolute_matrix_effect": 13.659951293802905,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.317328626795232,
+          3.3977786385049478
+        ],
+        "ci95": [
+          0.031520381438038335,
+          3.6711806077912543
+        ],
+        "contrast": "rule",
+        "effect": 1.8609172554672153,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.03295093971198438,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 9.911216488618834,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.03295093971198438,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.009800878033729641,
+          0.03471400753651231
+        ],
+        "ci95": [
+          -0.013405868256190669,
+          0.03827224975665283
+        ],
+        "contrast": "rule",
+        "effect": 0.012447713985992342,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.3797900903099829,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.12266387548705932,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.18989504515499145,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.01283328004087301,
+          0.05638178466694183
+        ],
+        "ci95": [
+          0.007845335940571692,
+          0.060973726470707965
+        ],
+        "contrast": "rule",
+        "effect": 0.034702906082724645,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.022455455211130095,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 17,
+        "maximum_absolute_matrix_effect": 0.15011423949153674,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.006834268977300464,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.017085462975435096,
+          0.06036322950812263
+        ],
+        "ci95": [
+          0.012762161358053633,
+          0.0638272642676541
+        ],
+        "contrast": "rule",
+        "effect": 0.038928068840279634,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.022455455211130095,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 18,
+        "maximum_absolute_matrix_effect": 0.15050809937178053,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.005613863802782524,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.01785364678600744,
+          0.029803030769362426
+        ],
+        "ci95": [
+          -0.021947473365078515,
+          0.034626505228891304
+        ],
+        "contrast": "rule",
+        "effect": 0.006278148115835008,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.3797900903099829,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.12410522904341934,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.3375640712716622,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.29674446120498094,
+          0.04423383108418999
+        ],
+        "ci95": [
+          -0.32648108484932903,
+          0.07435317670420864
+        ],
+        "contrast": "rule",
+        "effect": -0.1287386384597086,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 1.000916972409435,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.8799121308274347,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.14573688831503123,
+          0.2230274589256419
+        ],
+        "ci95": [
+          -0.17870157475570655,
+          0.25584543866930265
+        ],
+        "contrast": "rule",
+        "effect": 0.04193783570234234,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.130523878823671,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.33414693678301194,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.09633423825450249,
+          0.20229530500306395
+        ],
+        "ci95": [
+          -0.12378781812403558,
+          0.23063678742542618
+        ],
+        "contrast": "rule",
+        "effect": 0.04962301772613128,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.9041524624184624,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.28508664876739076,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.19598803231063008,
+          0.09746426823106329
+        ],
+        "ci95": [
+          -0.22755643685383456,
+          0.12505169437894942
+        ],
+        "contrast": "rule",
+        "effect": -0.04337039774816608,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 1.2569306673746017,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.6609714425189163,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1446116338595869,
+          -0.029829913805485973
+        ],
+        "ci95": [
+          -0.1559371755085747,
+          -0.018704426922774756
+        ],
+        "contrast": "rule",
+        "effect": -0.08580049460779927,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.39126419248949995,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9873077861850135,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.13669072549382602,
+          -0.05178282619650996
+        ],
+        "ci95": [
+          -0.14327426741305282,
+          -0.04230959705184127
+        ],
+        "contrast": "rule",
+        "effect": -0.09461621241661451,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 0.33229299292450054,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9995118379301928,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.10307207119133042,
+          -0.014426249494227874
+        ],
+        "ci95": [
+          -0.11094524535852596,
+          -0.006066176752759095
+        ],
+        "contrast": "rule",
+        "effect": -0.05901311435455007,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.33136075259401143,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9802294361728093,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.10830688502796518,
+          0.00802992634958149
+        ],
+        "ci95": [
+          -0.11811032642615805,
+          0.020734615314155012
+        ],
+        "contrast": "rule",
+        "effect": -0.0512870361759503,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.3568675707549742,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9126189895045155,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.0893238034554868,
+          0.17757092850494693
+        ],
+        "ci95": [
+          -0.11632831991825338,
+          0.20045252333958474
+        ],
+        "contrast": "rule",
+        "effect": 0.042938143851909326,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.7199827025067675,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.30339272638515985,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.29503696034298066,
+          0.013931633639298837
+        ],
+        "ci95": [
+          -0.32617555297566064,
+          0.03937429660085217
+        ],
+        "contrast": "rule",
+        "effect": -0.13655404811895688,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.9115423366528731,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.9077373688064437,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.2351017362637024,
+          0.014244766436900681
+        ],
+        "ci95": [
+          -0.2588970923339014,
+          0.03611308664996832
+        ],
+        "contrast": "rule",
+        "effect": -0.1086361320806814,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.9309336748017434,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.9172565291676836,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.12559737015474906,
+          0.12143255401641333
+        ],
+        "ci95": [
+          -0.14557626902360793,
+          0.14513656806440522
+        ],
+        "contrast": "rule",
+        "effect": -0.007916638427784247,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.9246135366577077,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5462533561142299,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3204962274059025,
+          -0.1828576013297417
+        ],
+        "ci95": [
+          -0.3330370269103704,
+          -0.17020268840332514
+        ],
+        "contrast": "rule",
+        "effect": -0.25165325739117833,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 0.6320490611105349,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.32258025351029385,
+          -0.19128245982096248
+        ],
+        "ci95": [
+          -0.33601977470580124,
+          -0.18040719908355873
+        ],
+        "contrast": "rule",
+        "effect": -0.2558230466377336,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 1,
+        "maximum_absolute_matrix_effect": 0.719433563065647,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.2748078187264147,
+          -0.16008536732327042
+        ],
+        "ci95": [
+          -0.2852370797468595,
+          -0.15093990496294016
+        ],
+        "contrast": "rule",
+        "effect": -0.21685706358977277,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 1,
+        "maximum_absolute_matrix_effect": 0.5567485356238808,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.24950861092873183,
+          -0.11182215061874003
+        ],
+        "ci95": [
+          -0.2626734835239009,
+          -0.09911351344116877
+        ],
+        "contrast": "rule",
+        "effect": -0.18038627884910174,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.6001026537735261,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 1.0,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.05888492082931033,
+          0.016408500167280793
+        ],
+        "ci95": [
+          -0.06669617480642277,
+          0.02313667211612245
+        ],
+        "contrast": "rule",
+        "effect": -0.019462400446894523,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.2947937375723725,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.7937515255064681,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.03871565229745591,
+          0.014946858697438668
+        ],
+        "ci95": [
+          -0.04392784055387747,
+          0.020193907134811638
+        ],
+        "contrast": "rule",
+        "effect": -0.01205568278298303,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.2412801063216025,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.7620209909690017,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.04029654322502,
+          0.030035235775204283
+        ],
+        "ci95": [
+          -0.04775944044249607,
+          0.03552177763963146
+        ],
+        "contrast": "rule",
+        "effect": -0.004862349718861558,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.21112195725528454,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.5879912130827435,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.08653207912119058,
+          -0.012328578532733087
+        ],
+        "ci95": [
+          -0.09401455973251134,
+          -0.0045558878174562665
+        ],
+        "contrast": "rule",
+        "effect": -0.05029847422187358,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.2512614652977452,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.9760800585794484,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          20.782096759548747,
+          37.275588614813095
+        ],
+        "ci95": [
+          19.045013165470866,
+          38.66865108370325
+        ],
+        "contrast": "rule",
+        "effect": 28.81126850244816,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 21,
+        "maximum_absolute_matrix_effect": 73.85970557885355,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          19.737706713593788,
+          43.31788285114281
+        ],
+        "ci95": [
+          17.49940221997015,
+          45.173498152979306
+        ],
+        "contrast": "rule",
+        "effect": 31.40892209981334,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 101.65497770499627,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000488162069807176,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          26.57573929486079,
+          44.749893890964074
+        ],
+        "ci95": [
+          25.0833139764014,
+          46.67985801395845
+        ],
+        "contrast": "rule",
+        "effect": 35.62279147459572,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 21,
+        "maximum_absolute_matrix_effect": 89.01928902135069,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000244081034903588,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          27.82545379708623,
+          57.22049947898423
+        ],
+        "ci95": [
+          25.382416962142234,
+          59.9411499078611
+        ],
+        "contrast": "rule",
+        "effect": 42.70097304776894,
+        "high_arm": "RULE_STABILIZE",
+        "holm_adjusted_p": 0.000976324139614352,
+        "low_arm": "RULE_DESTABILIZE",
+        "matrices": 24,
+        "matrices_positive": 19,
+        "maximum_absolute_matrix_effect": 114.88822957165547,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.000488162069807176,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.04166666666666668,
+          0.009722222222222215
+        ],
+        "ci95": [
+          -0.04583333333333336,
+          0.013888888888888881
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.015277777777777788,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.20000000000000007,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.8452526238711252,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.020833333333333325,
+          0.019444444444444445
+        ],
+        "ci95": [
+          -0.023611111111111107,
+          0.022222222222222237
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.0013888888888888794,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 0.16666666666666674,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.5223334146936783,
+        "replicate": 1,
+        "tost_via_90ci": true
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.036111111111111115,
+          0.018055555555555554
+        ],
+        "ci95": [
+          -0.04027777777777778,
+          0.023611111111111114
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.00972222222222222,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 0.2333333333333334,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.7083231632902124,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.008333333333333326,
+          0.0861111111111111
+        ],
+        "ci95": [
+          0.0013888888888888978,
+          0.09583333333333333
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.044444444444444446,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.1972174762020991,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.3666666666666667,
+        "metric": "inherited",
+        "one_sided_sign_randomization_p": 0.04930436905052477,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.07286204955362617,
+          -0.0015952377198243221
+        ],
+        "ci95": [
+          -0.08013557833502238,
+          0.0060296989512713525
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.03764701480936928,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.28177383784502896,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9438613619721747,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.007795072001511569,
+          0.09046041163267939
+        ],
+        "ci95": [
+          0.0006151249077031261,
+          0.0980688480954361
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.04859459503946039,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.1259458140102514,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 0.2733326742043225,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.03148645350256285,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.06460185932428886,
+          0.022850338778957473
+        ],
+        "ci95": [
+          -0.07365138819885082,
+          0.030161183728535334
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.020020472907199206,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.2755154705390366,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.7644618013180375,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.04603024981909119,
+          0.05246487370887866
+        ],
+        "ci95": [
+          -0.05508255109220263,
+          0.059998941273490106
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.00527565017806611,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.3062460843162491,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.43397608005857946,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -2.3260166900105146,
+          0.9300069051235528
+        ],
+        "ci95": [
+          -2.6120039261780468,
+          1.2719733941677764
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.6938947278706552,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 10.128072782268191,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.7568952892360263,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -2.8459003497150857,
+          0.2695679338098298
+        ],
+        "ci95": [
+          -3.2283888086001653,
+          0.5514143877462617
+        ],
+        "contrast": "random_specificity",
+        "effect": -1.270355046754047,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 12.567518030396329,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.8923602636075177,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -4.136878270486874,
+          -0.8954567670829618
+        ],
+        "ci95": [
+          -4.438947004770831,
+          -0.5862646806591492
+        ],
+        "contrast": "random_specificity",
+        "effect": -2.47820320600584,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 12.736268869540936,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.9877959482548206,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -2.808833445919068,
+          -0.07539734480380597
+        ],
+        "ci95": [
+          -3.10324501214221,
+          0.1353832511973542
+        ],
+        "contrast": "random_specificity",
+        "effect": -1.4207608374721037,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 9.056777576048574,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.9380034171344886,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.02318563457872507,
+          0.021790141035780416
+        ],
+        "ci95": [
+          -0.02714900657274641,
+          0.026874081534373692
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.001042239813381584,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.14335443069792658,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.5372223578227971,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.034400199392075045,
+          0.012430688135349985
+        ],
+        "ci95": [
+          -0.03886862445172881,
+          0.016956054055521516
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.010660801530350079,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.17442282052214067,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.7576275323407371,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.04140116397926437,
+          0.0026563133991399776
+        ],
+        "ci95": [
+          -0.044764130801338134,
+          0.006595641845632022
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.01971565674637064,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.15714444327904886,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.9223822309006591,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.03398116602083984,
+          0.0038888102505745363
+        ],
+        "ci95": [
+          -0.03814257518925509,
+          0.006911008735835072
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.014530435212341028,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.11496308666362148,
+        "metric": "molecular_text",
+        "one_sided_sign_randomization_p": 0.8869904808396387,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.2099235799244145,
+          0.09869480798616752
+        ],
+        "ci95": [
+          -0.2365153881490745,
+          0.12494025642517556
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.05135539633138564,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.1795259516373373,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.7012448132780082,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.18349002614813315,
+          0.04093735557383184
+        ],
+        "ci95": [
+          -0.2043367473420882,
+          0.06267122341998595
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.06825969208990867,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.7127588799696207,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.8213326824505736,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.15154644021775607,
+          0.20078920181021445
+        ],
+        "ci95": [
+          -0.18472905360423555,
+          0.2383116057300083
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.02408908788960859,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.988546804498516,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.4244569196973395,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.17221268881114588,
+          0.16608548753998265
+        ],
+        "ci95": [
+          -0.1990370409920925,
+          0.19707645641271512
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.0005533598686421523,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.0673211675842778,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.49938979741274103,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.08748555655600106,
+          -0.019001849289446655
+        ],
+        "ci95": [
+          -0.0936610530886271,
+          -0.012761868217268744
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.05250545778341905,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.22318471470621004,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9885281913595314,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.03465754156914089,
+          0.031689113159484174
+        ],
+        "ci95": [
+          -0.041164156788849285,
+          0.03778351132495005
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.0010211426508406572,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.20080611068811804,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.520136685379546,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.03983664482808605,
+          0.033318940122328805
+        ],
+        "ci95": [
+          -0.04625337929280948,
+          0.04044450920356064
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.0032186649607893053,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.21568357418031459,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.5374664388577007,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.046717694820690596,
+          0.030827744676296447
+        ],
+        "ci95": [
+          -0.05389312347197947,
+          0.03975064288503365
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.009082427722832243,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.3053286469523999,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.6360751769587503,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1276647328964295,
+          0.13241411641400447
+        ],
+        "ci95": [
+          -0.15055604875831236,
+          0.15682358556216539
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.0011500614520333584,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.9563412369311274,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5096412008786917,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.0270406516464564,
+          0.15802222290182788
+        ],
+        "ci95": [
+          -0.047121330079317916,
+          0.17465626640636114
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.06723854943906808,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.4735172077129607,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.5148574082867347,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.11837930192824017,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.17653839938750443,
+          0.12435704418623592
+        ],
+        "ci95": [
+          -0.20075804102814607,
+          0.1495253094469063
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.02730775285039787,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.8350419072452198,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.6138638027825238,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.15183045280734891,
+          0.13605046447690206
+        ],
+        "ci95": [
+          -0.1787520910220378,
+          0.16117837655944306
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.008529067854190128,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.8132751719439324,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5352697095435685,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.004423748575337791,
+          0.09474222982925751
+        ],
+        "ci95": [
+          -0.015423058043723485,
+          0.1044969747289632
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.044963903121371114,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.3153526970954357,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 0.2927178198673477,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 0.07883817427385892,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.042814320724847484,
+          0.041918536358546574
+        ],
+        "ci95": [
+          -0.04954050332159282,
+          0.04946636006750856
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.002743653186468233,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.3188909677757983,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 0.5428362216255797,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.03496354636657638,
+          0.06342534996369609
+        ],
+        "ci95": [
+          -0.045533769391834206,
+          0.07285091576830278
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.015081333275517991,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.9482548206004393,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.2848409453780776,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 0.31608494020014644,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.05826763137403637,
+          0.028984964208721514
+        ],
+        "ci95": [
+          -0.06656354877058923,
+          0.03495675845107011
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.013109650207957088,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.37531272345421973,
+        "metric": "growth_only_revised",
+        "one_sided_sign_randomization_p": 0.6880644373932145,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.05733816709400127,
+          0.011803243007986339
+        ],
+        "ci95": [
+          -0.06401850231068221,
+          0.017764751233601824
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.021965031634712206,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.2903863624054813,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.8367097876494997,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.030166432688740454,
+          0.04629864679093469
+        ],
+        "ci95": [
+          -0.03708775147464763,
+          0.053991113839236445
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.008526205706199833,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.3059843610964944,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.3634366609714425,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.003064376230216771,
+          0.034278933569297475
+        ],
+        "ci95": [
+          -0.006770506797659569,
+          0.03793543361789925
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.015598111664821742,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.35342933854039543,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.12236676201397623,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.08835733463509886,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.026186068465029674,
+          0.01584459211152685
+        ],
+        "ci95": [
+          -0.02929972185317663,
+          0.02010873905443661
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.0058352378162853215,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.13809926649695042,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.6709787649499633,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -12.094343835708562,
+          6.082898590338708
+        ],
+        "ci95": [
+          -13.621723000739951,
+          7.727081565035895
+        ],
+        "contrast": "random_specificity",
+        "effect": -3.0185517350826694,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 48.849413394818896,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.6919697339516719,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -20.250169182721113,
+          -5.288157513299585
+        ],
+        "ci95": [
+          -21.95071896829143,
+          -3.8906665886312015
+        ],
+        "contrast": "random_specificity",
+        "effect": -12.329755303175135,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 79.89937786577144,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.9948742982670247,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -16.68030264166446,
+          -0.502487534500092
+        ],
+        "ci95": [
+          -18.387320627514317,
+          1.1647405106112403
+        ],
+        "contrast": "random_specificity",
+        "effect": -8.585213121128561,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 62.38805598765964,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.9516719550890895,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -15.317950107256179,
+          -1.3443379058326967
+        ],
+        "ci95": [
+          -16.54158167508976,
+          0.22789376089818406
+        ],
+        "contrast": "random_specificity",
+        "effect": -8.436335851235393,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 39.24379846311649,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.9670490602880156,
+        "replicate": 1
+      }
+    ],
+    "late_window": [
+      31,
+      60
+    ],
+    "model_heredity_validity_gate": true,
+    "model_revised_response_gate": false
+  },
+  "candidates_never_pooled": true,
+  "confirmation_was_automatically_launched": false,
+  "decision_status": "pilot_estimation_only_awaiting_user_decision",
+  "dose": {
+    "results": [
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.13825381607245918,
+          0.13873183272675843
+        ],
+        "ci95": [
+          -0.15952380952380954,
+          0.1660323547577823
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.0006343119088843922,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.9276336570439174,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.49914571637783745,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.0607056586221921,
+          0.21012336116509445
+        ],
+        "ci95": [
+          -0.08585338975948992,
+          0.23333333333333334
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.0767900278317611,
+        "holm_adjusted_p": 0.6160605320966561,
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.9856107606091624,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.1891628020502807,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.08735880215657868,
+          0.3001411978434214
+        ],
+        "ci95": [
+          -0.13623568972827804,
+          0.33757059892171065
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.11288667648964118,
+        "holm_adjusted_p": 0.679521601171589,
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.16988040029289725,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.17202812306985635,
+          0.12677277364757386
+        ],
+        "ci95": [
+          -0.20000000000000004,
+          0.14880089671743021
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.02202812306985633,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.9856107606091624,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5899438613619722,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.06939522172361393,
+          0.19979143839440308
+        ],
+        "ci95": [
+          -0.09436046145601443,
+          0.2261904761904762
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.06771810178674491,
+        "holm_adjusted_p": 0.6502318769831584,
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.7142857142857143,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.21674395899438614,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.16452675094068267,
+          0.2181817185078034
+        ],
+        "ci95": [
+          -0.19312713863054445,
+          0.26302538985587753
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.024279952083921235,
+        "holm_adjusted_p": 0.762997315108616,
+        "matrices": 18,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.7715167498104596,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.4137173541615816,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1785714285714286,
+          0.0976190476190476
+        ],
+        "ci95": [
+          -0.20476190476190478,
+          0.12380952380952381
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.04285714285714287,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.6571428571428573,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.6887966804979253,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3238095238095238,
+          0.033333333333333326
+        ],
+        "ci95": [
+          -0.35386904761904764,
+          0.06666666666666668
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.15000000000000002,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.8857142857142858,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.9104222601903832,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.2976190476190476,
+          0.024404761904761922
+        ],
+        "ci95": [
+          -0.3261904761904762,
+          0.059523809523809534
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.1380952380952381,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9104222601903832,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.028571428571428577,
+          0.2839285714285715
+        ],
+        "ci95": [
+          -0.057142857142857134,
+          0.30714285714285716
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.12380952380952381,
+        "holm_adjusted_p": 0.43641689040761533,
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.10910422260190383,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.32884951071222446,
+          -0.05609142202277891
+        ],
+        "ci95": [
+          -0.3556971338527496,
+          -0.03333333333333332
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.19656761249896937,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.8285714285714287,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.9836465706614596,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1543479676289318,
+          0.22541199061256237
+        ],
+        "ci95": [
+          -0.1906875830522723,
+          0.2587849038210401
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.03651907443259647,
+        "holm_adjusted_p": 0.762997315108616,
+        "matrices": 17,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.8451542547285165,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.381498657554308,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.2849843200946965,
+          0.04292450661931844
+        ],
+        "ci95": [
+          -0.31472560956326634,
+          0.0700209065404047
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.12213240387265478,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.8823529411764706,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.14761904761904762,
+          0.1325252200864515
+        ],
+        "ci95": [
+          -0.1779816138961521,
+          0.16426944402582938
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.005570018008786588,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.7714285714285715,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.5259946302172321,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.2835092914443542,
+          0.022401858921357064
+        ],
+        "ci95": [
+          -0.31190476190476196,
+          0.04832839794530199
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.13165621339646433,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9082255308762509,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.15714285714285714,
+          0.13217761741045664
+        ],
+        "ci95": [
+          -0.18643660816608365,
+          0.16074904598188522
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.013060477827638597,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.8285714285714287,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5660239199414205,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.18322258221146467,
+          0.14047619047619048
+        ],
+        "ci95": [
+          -0.21175709374227036,
+          0.17142857142857146
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.022966650295042492,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.8285714285714287,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.5921405906761045,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.06946892852877135,
+          0.2797722406831848
+        ],
+        "ci95": [
+          -0.09911929522581853,
+          0.3121602891826715
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.10814427238398065,
+        "holm_adjusted_p": 0.48547717842323657,
+        "matrices": 20,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.8451542547285165,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.16182572614107885,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.11666666666666668,
+          0.15952380952380954
+        ],
+        "ci95": [
+          -0.1404761904761905,
+          0.18571428571428572
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.021428571428571425,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 17,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.4088357334635099,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.05714285714285714,
+          0.2571428571428572
+        ],
+        "ci95": [
+          -0.08809523809523807,
+          0.28244047619047624
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.10000000000000002,
+        "holm_adjusted_p": 0.6160605320966561,
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.8285714285714287,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.15401513302416403,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.18333333333333335,
+          0.13095238095238093
+        ],
+        "ci95": [
+          -0.21428571428571433,
+          0.16190476190476188
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.026190476190476198,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.7714285714285715,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.6058091286307054,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.20952380952380956,
+          0.11011904761904763
+        ],
+        "ci95": [
+          -0.2404761904761905,
+          0.13809523809523813
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": -0.04761904761904764,
+        "holm_adjusted_p": 1.0,
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.942857142857143,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.6841591408347572,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.04761904761904763,
+          0.31428571428571433
+        ],
+        "ci95": [
+          0.023809523809523805,
+          0.33809523809523817
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.18571428571428572,
+        "holm_adjusted_p": 0.06736636563339028,
+        "matrices": 24,
+        "matrices_positive": 16,
+        "maximum_absolute_matrix_effect": 0.8285714285714287,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.01684159140834757,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.0591777379253459,
+          0.3458190829839982
+        ],
+        "ci95": [
+          -0.10010696109397473,
+          0.38488303525445716
+        ],
+        "direction": "larger stabilizing predicted shift mapped to larger metric",
+        "effect": 0.14907609018492948,
+        "holm_adjusted_p": 0.4823041249694899,
+        "matrices": 18,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.9710083124552246,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.12057603124237247,
+        "replicate": 1
+      }
+    ],
+    "revised_phi_dose_gate": false
+  },
+  "foresight": {
+    "correlations": [
+      {
+        "candidate": "02",
+        "centered_spearman": 0.518604657298552,
+        "ci90": [
+          0.40513722156586107,
+          0.617661241243219
+        ],
+        "ci95": [
+          0.38047416800109585,
+          0.6359184564567282
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "frozen_prediction",
+        "states": 240
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.06170134405393062,
+        "ci90": [
+          -0.03899812514217079,
+          0.1643456351311805
+        ],
+        "ci95": [
+          -0.05534826510695884,
+          0.1811742683213237
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_revised",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.02409317454311421,
+        "ci90": [
+          -0.08421389502124982,
+          0.1204509954151127
+        ],
+        "ci95": [
+          -0.10431579025609228,
+          0.13800248391914086
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_typeset",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.03316038388046387,
+        "ci90": [
+          -0.06373048690761901,
+          0.12446503314840572
+        ],
+        "ci95": [
+          -0.08102145019122384,
+          0.14116249729611285
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_text",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.07058673731548158,
+        "ci90": [
+          -0.018817340324207683,
+          0.1691984122673356
+        ],
+        "ci95": [
+          -0.03651983646431035,
+          0.1873165384002654
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_causation",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.08176079247773509,
+        "ci90": [
+          -0.016274595945958335,
+          0.17615407928167326
+        ],
+        "ci95": [
+          -0.03845112962060621,
+          0.18876458823686326
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_emergence",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": -0.06381744260533821,
+        "ci90": [
+          -0.16232344963550926,
+          0.027039337181475283
+        ],
+        "ci95": [
+          -0.18054108387807485,
+          0.041213720170097036
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_synergy",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.04590092563980221,
+        "ci90": [
+          -0.058517813988983695,
+          0.1546526865223046
+        ],
+        "ci95": [
+          -0.0770577138300184,
+          0.1805563180468623
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "growth_only_revised",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.12285128263946092,
+        "ci90": [
+          0.024571248667073504,
+          0.22065466772610245
+        ],
+        "ci95": [
+          0.0042318839122936075,
+          0.2404713837296935
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_revised",
+        "states": 240
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.16763790836728334,
+        "ci90": [
+          0.07416402774985027,
+          0.24354896444138494
+        ],
+        "ci95": [
+          0.05462475585747244,
+          0.2576698694906988
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_typeset",
+        "states": 240
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.6029466056116956,
+        "ci90": [
+          0.4990608602742735,
+          0.6791012001496791
+        ],
+        "ci95": [
+          0.47426120367311403,
+          0.6906327839679919
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "frozen_prediction",
+        "states": 240
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": -0.0021965820187852224,
+        "ci90": [
+          -0.0885431374895256,
+          0.08512963204685808
+        ],
+        "ci95": [
+          -0.104349324465375,
+          0.10595226388421933
+        ],
+        "equivalent_within_0.10": true,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_revised",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.051312951687776526,
+        "ci90": [
+          -0.07649876326814349,
+          0.181271704778135
+        ],
+        "ci95": [
+          -0.10267792147459447,
+          0.20479508629612322
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_typeset",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.05802344498652961,
+        "ci90": [
+          -0.06387878573485713,
+          0.18259511034144618
+        ],
+        "ci95": [
+          -0.08629184749318382,
+          0.20584293673668688
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_text",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.05990219805693543,
+        "ci90": [
+          -0.04038423789374198,
+          0.15864387145839107
+        ],
+        "ci95": [
+          -0.0611314656069884,
+          0.17729749031783829
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_causation",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.039240077980485205,
+        "ci90": [
+          -0.0693241748795866,
+          0.13943990171369805
+        ],
+        "ci95": [
+          -0.09198661060298205,
+          0.15686498436009583
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_emergence",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": -0.057922590967975446,
+        "ci90": [
+          -0.15145622471066866,
+          0.03166872475504122
+        ],
+        "ci95": [
+          -0.1703995106170711,
+          0.053966485729557326
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_synergy",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.08811634106401958,
+        "ci90": [
+          -0.007962324441617005,
+          0.1888289882358889
+        ],
+        "ci95": [
+          -0.026856187414638646,
+          0.21248224839271035
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "growth_only_revised",
+        "states": 235
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.06349304764756604,
+        "ci90": [
+          -0.027935696789300076,
+          0.1547333835632786
+        ],
+        "ci95": [
+          -0.04600002066540304,
+          0.16882346924254452
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_revised",
+        "states": 240
+      },
+      {
+        "candidate": "02",
+        "centered_spearman": 0.11037049957092415,
+        "ci90": [
+          0.011764110914882098,
+          0.20039078627879955
+        ],
+        "ci95": [
+          -0.008154122305571363,
+          0.21686060712848926
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_typeset",
+        "states": 240
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.5917616397916413,
+        "ci90": [
+          0.4835129741759664,
+          0.6825187342077047
+        ],
+        "ci95": [
+          0.4613444718658886,
+          0.6989682515612944
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "frozen_prediction",
+        "states": 240
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.093234372913317,
+        "ci90": [
+          0.0028816418639149664,
+          0.1812886063803896
+        ],
+        "ci95": [
+          -0.01856357048292885,
+          0.19506929526303407
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_revised",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.04404311181053531,
+        "ci90": [
+          -0.15081397712422695,
+          0.060788246431789705
+        ],
+        "ci95": [
+          -0.17140822132084008,
+          0.08172731021626854
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_typeset",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.028736087837442813,
+        "ci90": [
+          -0.1397430604986774,
+          0.07773133659857231
+        ],
+        "ci95": [
+          -0.15842733752824362,
+          0.10133987423063609
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_text",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.016664772141121366,
+        "ci90": [
+          -0.1093651756925119,
+          0.0808494808661134
+        ],
+        "ci95": [
+          -0.13405164341053777,
+          0.09884602050813421
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_causation",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.04517748366972763,
+        "ci90": [
+          -0.0469513747409775,
+          0.1349039881988577
+        ],
+        "ci95": [
+          -0.06681074719602506,
+          0.15105566056809844
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_emergence",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.030664020274783772,
+        "ci90": [
+          -0.07149341782568014,
+          0.12945730763225685
+        ],
+        "ci95": [
+          -0.09049874527431523,
+          0.14858539904197512
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_synergy",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.03896092599203932,
+        "ci90": [
+          -0.12481099587924334,
+          0.04352183719530375
+        ],
+        "ci95": [
+          -0.14172078936496235,
+          0.06038984627616647
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "growth_only_revised",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.12514727044241306,
+        "ci90": [
+          -0.23418955550514428,
+          -0.014406509116967676
+        ],
+        "ci95": [
+          -0.25667944292608846,
+          0.006451852377917473
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_revised",
+        "states": 240
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.007316841878684538,
+        "ci90": [
+          -0.11194117584130601,
+          0.10446882831249774
+        ],
+        "ci95": [
+          -0.1275736933600497,
+          0.12686461121982678
+        ],
+        "equivalent_within_0.10": false,
+        "half": "A",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_typeset",
+        "states": 240
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.5867929443447073,
+        "ci90": [
+          0.4457052868260383,
+          0.6955489721346977
+        ],
+        "ci95": [
+          0.4179340946723281,
+          0.7153003677140427
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "frozen_prediction",
+        "states": 240
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.11966841162407799,
+        "ci90": [
+          0.02681308583404887,
+          0.21597501183323586
+        ],
+        "ci95": [
+          0.005631017114430147,
+          0.23412211234812882
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_revised",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.04350774331845503,
+        "ci90": [
+          -0.13871976817521908,
+          0.05723946706860357
+        ],
+        "ci95": [
+          -0.15800767941576946,
+          0.07591791747194494
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_typeset",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.01787643678309546,
+        "ci90": [
+          -0.11363117400346417,
+          0.07867424750504205
+        ],
+        "ci95": [
+          -0.1318457086149854,
+          0.0956818514042842
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_text",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.02248987202727192,
+        "ci90": [
+          -0.12835686650886535,
+          0.07777108607862848
+        ],
+        "ci95": [
+          -0.1470341540517145,
+          0.09606974524821654
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_causation",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.08260398290287957,
+        "ci90": [
+          -0.04669645549396502,
+          0.20123741660144331
+        ],
+        "ci95": [
+          -0.07244750457353881,
+          0.2221552345169476
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_emergence",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.04523165861175564,
+        "ci90": [
+          -0.048170068542611404,
+          0.14158736518452042
+        ],
+        "ci95": [
+          -0.06524706061133453,
+          0.15792379957666122
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "molecular_synergy",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": 0.04740941997241402,
+        "ci90": [
+          -0.04928144772394873,
+          0.13445144739506903
+        ],
+        "ci95": [
+          -0.06651964201854445,
+          0.1528182063276664
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "growth_only_revised",
+        "states": 229
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.13948845570724813,
+        "ci90": [
+          -0.24590497041692458,
+          -0.03692905817403304
+        ],
+        "ci95": [
+          -0.2634844158224419,
+          -0.014774626435569729
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_revised",
+        "states": 240
+      },
+      {
+        "candidate": "03",
+        "centered_spearman": -0.10522872747476607,
+        "ci90": [
+          -0.20706979176065396,
+          0.0005652383372595069
+        ],
+        "ci95": [
+          -0.2260819502616976,
+          0.020314295783646175
+        ],
+        "equivalent_within_0.10": false,
+        "half": "B",
+        "matrices": 24,
+        "outcome": "q",
+        "predictor": "generational_typeset",
+        "states": 240
+      }
+    ],
+    "frozen_predictor_validity_gate": true,
+    "incremental_log_loss": [
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.001264018125636388,
+          0.002915224921003495
+        ],
+        "ci95": [
+          -0.0016688269261287778,
+          0.003330164986424658
+        ],
+        "effect": 0.0008825468181718963,
+        "equivalent_within_0.005": true,
+        "half": "A",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.01351040367419416,
+        "one_sided_sign_randomization_p": 0.24408103490358798,
+        "positive_gain_means_phi_improves_log_loss": true
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.00340685926515918,
+          0.00127813078705804
+        ],
+        "ci95": [
+          -0.0038873653794528986,
+          0.0017488494776611353
+        ],
+        "effect": -0.0010080184809355649,
+        "equivalent_within_0.005": true,
+        "half": "B",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.02002723827173225,
+        "one_sided_sign_randomization_p": 0.7400536978276788,
+        "positive_gain_means_phi_improves_log_loss": true
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.011505095693099009,
+          -0.004315555194838584
+        ],
+        "ci95": [
+          -0.012214465358456335,
+          -0.0035731118900439664
+        ],
+        "effect": -0.00790793186992414,
+        "equivalent_within_0.005": false,
+        "half": "A",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.03421541448802858,
+        "one_sided_sign_randomization_p": 0.9997559189650964,
+        "positive_gain_means_phi_improves_log_loss": true
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.006484065868429467,
+          -0.0003676767011730201
+        ],
+        "ci95": [
+          -0.0071176331036316,
+          0.00015356651679802362
+        ],
+        "effect": -0.003385529995821297,
+        "equivalent_within_0.005": false,
+        "half": "B",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.026260623119065407,
+        "one_sided_sign_randomization_p": 0.956797656822065,
+        "positive_gain_means_phi_improves_log_loss": true
+      }
+    ],
+    "incremental_phi_logloss_equivalence_gate": false,
+    "revised_phi_centered_equivalence_gate": false
+  },
+  "format": "codex-ch5-phir-result-v1-metrics",
+  "integrity": {
+    "all_noop_plain_exact": true,
+    "batch_digests_unique": true,
+    "raw_molecular_traces_persisted": false
+  },
+  "matrices": 24,
+  "phase": "pilot",
+  "probe": {
+    "probe_heredity_equivalence_gate": false,
+    "probe_moves_revised_phi_gate": false,
+    "results": [
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.17546283920720893,
+          0.1065629294282283
+        ],
+        "ci95": [
+          -0.19997611406853794,
+          0.13714544943242885
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.035953606907986935,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.8865237560737116,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.65169636319258,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.27181044034345636,
+          -0.0028010679362259734
+        ],
+        "ci95": [
+          -0.29715620897087136,
+          0.02424502873707701
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.13951995184987995,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.9378225393776757,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.941908713692946,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.06908747690289291,
+          0.15121023403874637
+        ],
+        "ci95": [
+          -0.08881081481703149,
+          0.17060078858875014
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.04174489967805512,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.8118391663991739,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.26922138149865754,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.20373964023612956,
+          0.006156404210377955
+        ],
+        "ci95": [
+          -0.22383583459284173,
+          0.03263800003824639
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.10119817598254417,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.7862479098616739,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.9340981205760313,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.20794278217394313,
+          0.38854073488735696
+        ],
+        "ci95": [
+          -0.25446705399576286,
+          0.4513855554033298
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.09053600104526525,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.5354825308925784,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.3238955333170613,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3705899224084829,
+          0.23537933899124303
+        ],
+        "ci95": [
+          -0.4240528212597749,
+          0.29343184532488503
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.0670464655431503,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.9772890872894142,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.6292409079814498,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.3078855803529432,
+          0.3661772021175702
+        ],
+        "ci95": [
+          -0.35858901500980456,
+          0.4227087906998171
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.02278834644769599,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 2.0778509938913263,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.45789602147913105,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.24399165618079108,
+          0.37133454181327563
+        ],
+        "ci95": [
+          -0.29731294531180585,
+          0.4331854472437059
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.06623235554626879,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.976273172965209,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.3722235782279717,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.047306991929201056,
+          0.10984072166017503
+        ],
+        "ci95": [
+          -0.06322650308880044,
+          0.12674342860960847
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.03013733718561253,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 0.9226263119355627,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.5603929412946029,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.26678057114962167,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.15182398209153367,
+          -0.012190955432342516
+        ],
+        "ci95": [
+          -0.16546218018206,
+          0.0015600413301154667
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.0812890013009263,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.5910436551679785,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.9550890895777399,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.029654200485465257,
+          0.08287983250558942
+        ],
+        "ci95": [
+          -0.04036114308648514,
+          0.09297647153249905
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.026246561020933996,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 0.9226263119355627,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.4180275192820402,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.23065657798389066,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.08628233444538055,
+          0.04982225530603404
+        ],
+        "ci95": [
+          -0.0992091868189728,
+          0.06384041215145492
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.01720855985799448,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.4426563079633389,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.646326580424701,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3378745466726806,
+          0.202108128667908
+        ],
+        "ci95": [
+          -0.38487450450732275,
+          0.2604546931438827
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.06039866385965273,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.3557155695805632,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.6341225286795216,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.28965451573470147,
+          0.25749177992493494
+        ],
+        "ci95": [
+          -0.3345664266481051,
+          0.30542827298853353
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.01424253575777599,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.431871474402186,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5308762509153039,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.29887041162679784,
+          0.3097157501593607
+        ],
+        "ci95": [
+          -0.35970248514349856,
+          0.36448655750257564
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.0034582145732379907,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.8182071455597728,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.49206736636563336,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.3539958802926598,
+          0.1817199166688308
+        ],
+        "ci95": [
+          -0.4115014598340356,
+          0.23455713553096935
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.08344091540426331,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.6670439448010614,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.6880644373932145,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.023754406952964394,
+          0.08957719460809757
+        ],
+        "ci95": [
+          -0.0323730777888897,
+          0.10014686102081141
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.03275041588812495,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 0.7400536978276788,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.3744426842318656,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.1850134244569197,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.08138581968645348,
+          0.06488669968857573
+        ],
+        "ci95": [
+          -0.0939486423769609,
+          0.08014959600479153
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.0076267651399770375,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.5812520184680193,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.5545521113009519,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.06913301763649529,
+          0.08413517604375179
+        ],
+        "ci95": [
+          -0.0848023687670348,
+          0.0988509345172495
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.006742530177943753,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.4295095713413346,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.4442274835245301,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.052257108322377864,
+          0.06753334877587663
+        ],
+        "ci95": [
+          -0.06400604675037372,
+          0.07715514644873162
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.0074302510991257386,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.30168528922444277,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.41127654381254575,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.05034722222222222,
+          0.005208333333333352
+        ],
+        "ci95": [
+          -0.05381944444444446,
+          0.011501736111111115
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.020833333333333332,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 4,
+        "maximum_absolute_matrix_effect": 0.20833333333333337,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.8838174273858921,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.03645833333333332,
+          0.02256944444444445
+        ],
+        "ci95": [
+          -0.03993055555555556,
+          0.02886284722222223
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.008680555555555547,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.25,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.6590187942396876,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.0017361111111111004,
+          0.05902777777777778
+        ],
+        "ci95": [
+          -0.0069444444444444475,
+          0.06597222222222222
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.027777777777777776,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 0.35538198681962413,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.29166666666666674,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.08884549670490603,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.039930555555555546,
+          0.010416666666666676
+        ],
+        "ci95": [
+          -0.045138888888888874,
+          0.015625
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.013888888888888881,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 5,
+        "maximum_absolute_matrix_effect": 0.16666666666666663,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.7937515255064681,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.08333333333333333,
+          0.3333333333333333
+        ],
+        "ci95": [
+          -0.08333333333333333,
+          0.375
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.125,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 0.9987795948254821,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.24969489870637052,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "ci95": [
+          -0.20833333333333334,
+          0.20833333333333334
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.6607273614840127,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.16666666666666666,
+          0.16666666666666666
+        ],
+        "ci95": [
+          -0.20833333333333334,
+          0.20833333333333334
+        ],
+        "contrast": "phi_extremes",
+        "effect": 0.0,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.6626800097632414,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.25,
+          0.08333333333333333
+        ],
+        "ci95": [
+          -0.2916666666666667,
+          0.125
+        ],
+        "contrast": "phi_extremes",
+        "effect": -0.08333333333333333,
+        "equivalence_margin": 0.025,
+        "high_arm": "PHI_UP",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "PHI_DOWN",
+        "matrices": 24,
+        "matrices_positive": 2,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.8918721015377106,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.040575359728523414,
+          0.17941731934821287
+        ],
+        "ci95": [
+          -0.06019094471804478,
+          0.2017297459134832
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.07469376461256319,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.560410056138638,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 15,
+        "maximum_absolute_matrix_effect": 0.6194890151856554,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.1401025140346595,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.07931313199802079,
+          0.13787821705295045
+        ],
+        "ci95": [
+          -0.10288796759765473,
+          0.15642221727029784
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.03215313585147328,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.8977300463753966,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.8767237576508344,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.31779350744447155,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.13379018253918995,
+          0.09748958467685286
+        ],
+        "ci95": [
+          -0.15660633651510777,
+          0.11650034649959608
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.018289796096638656,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.8977300463753966,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.6518142763410868,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.6009275079326336,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.06964237492856323,
+          0.1417401257804932
+        ],
+        "ci95": [
+          -0.09278984789287743,
+          0.15858763171104617
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.036253401486406996,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.8977300463753966,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 17,
+        "maximum_absolute_matrix_effect": 0.8954493785371058,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.29924334879179887,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.5542936076317917,
+          0.022260860231226795
+        ],
+        "ci95": [
+          -0.616569467648016,
+          0.07638410408845242
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.2579565086644529,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 2.136809424888065,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.9192091774469123,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.40872768432194256,
+          0.11006813262496226
+        ],
+        "ci95": [
+          -0.45656762137705986,
+          0.16562261086859356
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.14249503017377738,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 1.6868899457134177,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.8035147669026117,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.39719593420137067,
+          0.11960199584431205
+        ],
+        "ci95": [
+          -0.44405985260277175,
+          0.1714358008277315
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.1347912399681922,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.6402635774953864,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.7891139858433,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.025568329490593157,
+          0.4186988497124315
+        ],
+        "ci95": [
+          -0.0725880108245054,
+          0.4657520434835882
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.19498432352007078,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.3670978764949963,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 1.8068943754542413,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.09177446912374908,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.05573104843484318,
+          0.07185536777523438
+        ],
+        "ci95": [
+          -0.06463817796379331,
+          0.08478556042747809
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.007285688437696447,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.3718425839774744,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.4315352697095436,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1047713322087292,
+          0.04311397032324743
+        ],
+        "ci95": [
+          -0.11633640511325485,
+          0.056905430850333144
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.029939143872459394,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.4454805666744157,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.7427385892116183,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.08138235488149173,
+          0.019863335554208786
+        ],
+        "ci95": [
+          -0.09198793113308411,
+          0.029277311249378355
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.03182763886731591,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.40491508585951763,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.8269465462533561,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          0.014541342592242334,
+          0.09919898360727167
+        ],
+        "ci95": [
+          0.007011093580747669,
+          0.10811564925781916
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.055664415818665325,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.10837197949719307,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 15,
+        "maximum_absolute_matrix_effect": 0.35378713720616073,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.027092994874298268,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.00795287518017658,
+          0.5202169712282126
+        ],
+        "ci95": [
+          -0.04245636315003481,
+          0.566393233648403
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.2652421971021494,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.23724676592628752,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 1.8986551776645806,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.05931169148157188,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.13323306458213222,
+          0.357734969946179
+        ],
+        "ci95": [
+          -0.18241225356535037,
+          0.40726119781475967
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.11255588630131796,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.7168659995118379,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.8568335479270837,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.23895533317061265,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.1418816945974846,
+          0.33782792791998667
+        ],
+        "ci95": [
+          -0.18774120100812836,
+          0.3878599539431863
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.10296360110087625,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.7168659995118379,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 1.4948124973710262,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.24774225042714182,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.37058663984651924,
+          0.07073838469311705
+        ],
+        "ci95": [
+          -0.40674807944388147,
+          0.1074055590745846
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.13931990770140545,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.8428118135220893,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 1.5918171480301613,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.8428118135220893,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.06026253476421357,
+          0.09204879989418444
+        ],
+        "ci95": [
+          -0.07335649165970154,
+          0.10579810748424252
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.016853978240504868,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 13,
+        "maximum_absolute_matrix_effect": 0.6009041404904749,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.3522089333658775,
+        "replicate": 0
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.07469506404260767,
+          0.07072640494270659
+        ],
+        "ci95": [
+          -0.08554890680584154,
+          0.08402502837403507
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.004718876945170906,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.5686550415389487,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.5350256285086649,
+        "replicate": 1
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.00321894035761041,
+          0.13926225489977348
+        ],
+        "ci95": [
+          -0.018003769864004864,
+          0.1542014341309378
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.06746518245908655,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.2821576763485477,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.44399280079872006,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.07053941908713693,
+        "replicate": 0
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.059089231568550005,
+          0.06912099080008338
+        ],
+        "ci95": [
+          -0.07104923886112384,
+          0.08038121520190683
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.004323275430287419,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.34125068672243986,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.46448620942152796,
+        "replicate": 1
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          0.0017361111111111188,
+          0.05555555555555558
+        ],
+        "ci95": [
+          -0.002821180555555546,
+          0.0607638888888889
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.027777777777777787,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.2255308762509153,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.25,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.05638271906272883,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.048611111111111105,
+          0.024305555555555566
+        ],
+        "ci95": [
+          -0.05729166666666666,
+          0.03125000000000001
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.01215277777777777,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.25000000000000006,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.675372223578228,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.022569444444444444,
+          0.048611111111111105
+        ],
+        "ci95": [
+          -0.02777777777777778,
+          0.05555555555555556
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.012152777777777781,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 0.8882108860141567,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 0.29166666666666674,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.29607029533805224,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.03993055555555555,
+          0.0069444444444444475
+        ],
+        "ci95": [
+          -0.04513888888888889,
+          0.012152777777777771
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.015625,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.16666666666666663,
+        "metric": "inherited_fraction",
+        "one_sided_sign_randomization_p": 0.8728337808152307,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.125,
+          0.20833333333333334
+        ],
+        "ci95": [
+          -0.125,
+          0.20833333333333334
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.041666666666666664,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.4925555284354406,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.3333333333333333,
+          0.0
+        ],
+        "ci95": [
+          -0.375,
+          0.0
+        ],
+        "contrast": "random_specificity",
+        "effect": -0.16666666666666666,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 1,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.9824261654869416,
+        "replicate": 1,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.08333333333333333,
+          0.16666666666666666
+        ],
+        "ci95": [
+          -0.08333333333333333,
+          0.16666666666666666
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.041666666666666664,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 2,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.5101293629484989,
+        "replicate": 0,
+        "tost_via_90ci": false
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.125,
+          0.20833333333333334
+        ],
+        "ci95": [
+          -0.125,
+          0.20833333333333334
+        ],
+        "contrast": "random_specificity",
+        "effect": 0.041666666666666664,
+        "equivalence_margin": 0.025,
+        "high_arm": "RANDOM",
+        "holm_adjusted_p": 1.0,
+        "low_arm": "NOOP",
+        "matrices": 24,
+        "matrices_positive": 3,
+        "maximum_absolute_matrix_effect": 1.0,
+        "metric": "joint_break_run3",
+        "one_sided_sign_randomization_p": 0.4918232853307298,
+        "replicate": 1,
+        "tost_via_90ci": false
+      }
+    ]
+  },
+  "state_reading": {
+    "bridge_revised_reads_state_gate": false,
+    "definition": "within-lineage mean Phi during trailing inheritance run >=5 minus other states",
+    "results": [
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.04212349640724525,
+          0.02638580227618685
+        ],
+        "ci95": [
+          -0.04895632763819332,
+          0.0336808537104644
+        ],
+        "effect": -0.006563085075103345,
+        "eligible_lineages": 35,
+        "holm_adjusted_p": 1.0,
+        "matrices": 19,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.20240965089595553,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.6258237734927996,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -1.128196546904849,
+          1.0360426401538203
+        ],
+        "ci95": [
+          -1.3383301880208023,
+          1.2627504594912566
+        ],
+        "effect": -0.047266252564938695,
+        "eligible_lineages": 30,
+        "holm_adjusted_p": 1.0,
+        "matrices": 17,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 5.55070225319283,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.5196485233097389,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.13601857757004554,
+          0.16192561325520635
+        ],
+        "ci95": [
+          -0.17141617225839687,
+          0.17917770593640073
+        ],
+        "effect": 0.024168415239103794,
+        "eligible_lineages": 35,
+        "holm_adjusted_p": 0.8332926531608494,
+        "matrices": 19,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 1.3240436470049324,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.4166463265804247,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.04280422537098126,
+          0.03126504531924355
+        ],
+        "ci95": [
+          -0.05244471725755068,
+          0.03687690497835446
+        ],
+        "effect": -0.0044492381924281215,
+        "eligible_lineages": 35,
+        "holm_adjusted_p": 1.0,
+        "matrices": 19,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.332471516381603,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.5674884061508421,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.1382681384383674,
+          0.08960581134751519
+        ],
+        "ci95": [
+          -0.1548728273860393,
+          0.11851748336403713
+        ],
+        "effect": -0.02861765343153191,
+        "eligible_lineages": 35,
+        "holm_adjusted_p": 1.0,
+        "matrices": 19,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 0.9915721306233295,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.6424212838662436,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.030829774722676066,
+          0.029722169157656065
+        ],
+        "ci95": [
+          -0.03899947869242848,
+          0.03409550768698096
+        ],
+        "effect": 0.0019500531059255708,
+        "eligible_lineages": 35,
+        "holm_adjusted_p": 0.47058823529411764,
+        "matrices": 19,
+        "matrices_positive": 12,
+        "maximum_absolute_matrix_effect": 0.28847439461588675,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.47058823529411764,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -3.892606485304818,
+          7.8566039401055265
+        ],
+        "ci95": [
+          -5.030496971738036,
+          9.23918708249616
+        ],
+        "effect": 1.7204862401083398,
+        "eligible_lineages": 31,
+        "holm_adjusted_p": 0.5482060043934587,
+        "matrices": 17,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 38.592011384949274,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.3112033195020747,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.05305709725177859,
+          0.027288700604365737
+        ],
+        "ci95": [
+          -0.06036939702353168,
+          0.035413603159692324
+        ],
+        "effect": -0.01398238477308476,
+        "eligible_lineages": 37,
+        "holm_adjusted_p": 1.0,
+        "matrices": 20,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.29418396611857567,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.6973395167195509,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -1.6771339851523863,
+          1.02793923231513
+        ],
+        "ci95": [
+          -1.868120516432533,
+          1.3037840774338183
+        ],
+        "effect": -0.36898596610313805,
+        "eligible_lineages": 30,
+        "holm_adjusted_p": 1.0,
+        "matrices": 19,
+        "matrices_positive": 6,
+        "maximum_absolute_matrix_effect": 10.174082678279735,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.6653649011471808,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.13207594886930743,
+          0.11926969624991884
+        ],
+        "ci95": [
+          -0.1571773767307776,
+          0.14562817727494032
+        ],
+        "effect": -0.006774170043706981,
+        "eligible_lineages": 37,
+        "holm_adjusted_p": 0.8332926531608494,
+        "matrices": 20,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.7808269792315812,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.5301440078105931,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.03986230098757387,
+          0.022539397017264033
+        ],
+        "ci95": [
+          -0.04533212321069811,
+          0.027751331756509092
+        ],
+        "effect": -0.008484905110933968,
+        "eligible_lineages": 37,
+        "holm_adjusted_p": 1.0,
+        "matrices": 20,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.2031133799481889,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.6748840615084208,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.10675353867059813,
+          0.10134763180604774
+        ],
+        "ci95": [
+          -0.12711147969959571,
+          0.11954484184452185
+        ],
+        "effect": -0.0017107350672271398,
+        "eligible_lineages": 37,
+        "holm_adjusted_p": 1.0,
+        "matrices": 20,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.6065195069786419,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5194044422748353,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.002338076660186213,
+          0.03378783078846989
+        ],
+        "ci95": [
+          -0.005960393250309229,
+          0.0371187269146401
+        ],
+        "effect": 0.016443474923292116,
+        "eligible_lineages": 37,
+        "holm_adjusted_p": 0.15377105198926044,
+        "matrices": 20,
+        "matrices_positive": 14,
+        "maximum_absolute_matrix_effect": 0.12407018159642796,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.07688552599463022,
+        "source": "natural"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -4.539366973426431,
+          8.887356214305044
+        ],
+        "ci95": [
+          -5.82474750071215,
+          10.121601168745
+        ],
+        "effect": 2.428439398444576,
+        "eligible_lineages": 30,
+        "holm_adjusted_p": 0.5482060043934587,
+        "matrices": 19,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 38.350154051689316,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.27410300219672934,
+        "source": "natural"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.018218153433403717,
+          0.06107085471801313
+        ],
+        "ci95": [
+          -0.02337773364218257,
+          0.06935895329358072
+        ],
+        "effect": 0.018079426980651077,
+        "eligible_lineages": 166,
+        "holm_adjusted_p": 0.5857944837686112,
+        "matrices": 21,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.43796950534986423,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.2928972418843056,
+        "source": "bridge"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -1.8685116483289896,
+          0.4479375592442746
+        ],
+        "ci95": [
+          -2.076686727915884,
+          0.6584907118528167
+        ],
+        "effect": -0.7000975181764486,
+        "eligible_lineages": 87,
+        "holm_adjusted_p": 0.9353185257505492,
+        "matrices": 18,
+        "matrices_positive": 7,
+        "maximum_absolute_matrix_effect": 5.943608842414374,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.840615084207957,
+        "source": "bridge"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.09796854592165483,
+          0.10995866559406049
+        ],
+        "ci95": [
+          -0.11857325761129899,
+          0.1274879705782807
+        ],
+        "effect": 0.006237379450680475,
+        "eligible_lineages": 166,
+        "holm_adjusted_p": 0.47010007322431047,
+        "matrices": 21,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.6836272562027257,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.47010007322431047,
+        "source": "bridge"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.02954365767620889,
+          0.021014800103888325
+        ],
+        "ci95": [
+          -0.03414338656999362,
+          0.02570582100117268
+        ],
+        "effect": -0.005551896994379985,
+        "eligible_lineages": 166,
+        "holm_adjusted_p": 1.0,
+        "matrices": 21,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.21106048335192995,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.6326580424701,
+        "source": "bridge"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.10497051060374554,
+          0.08174441340499267
+        ],
+        "ci95": [
+          -0.12294805408558249,
+          0.0986460968535352
+        ],
+        "effect": -0.011789276445060413,
+        "eligible_lineages": 166,
+        "holm_adjusted_p": 1.0,
+        "matrices": 21,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.537608959031131,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.5752989992677568,
+        "source": "bridge"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -0.009734093807846298,
+          0.01714691446909969
+        ],
+        "ci95": [
+          -0.011979563744266546,
+          0.020068757968552422
+        ],
+        "effect": 0.0031201858555048776,
+        "eligible_lineages": 166,
+        "holm_adjusted_p": 0.7307786185013424,
+        "matrices": 21,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.10980006297993355,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.3653893092506712,
+        "source": "bridge"
+      },
+      {
+        "candidate": "02",
+        "ci90": [
+          -4.800380844259715,
+          11.882875857630914
+        ],
+        "ci95": [
+          -6.7289142806497635,
+          13.089541254957684
+        ],
+        "effect": 3.735774270058636,
+        "eligible_lineages": 87,
+        "holm_adjusted_p": 0.49694898706370516,
+        "matrices": 18,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 57.30410140122012,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.24847449353185258,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.038422832000673736,
+          0.021158277583177773
+        ],
+        "ci95": [
+          -0.044014896615931165,
+          0.028401167558278293
+        ],
+        "effect": -0.010799423043080085,
+        "eligible_lineages": 176,
+        "holm_adjusted_p": 0.7066145960458873,
+        "matrices": 21,
+        "matrices_positive": 8,
+        "maximum_absolute_matrix_effect": 0.25984762126315336,
+        "metric": "molecular_revised",
+        "one_sided_sign_randomization_p": 0.7066145960458873,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -1.1056797890602716,
+          1.2020405182983618
+        ],
+        "ci95": [
+          -1.3379011889329084,
+          1.460930688489254
+        ],
+        "effect": 0.06699304673344351,
+        "eligible_lineages": 95,
+        "holm_adjusted_p": 0.9353185257505492,
+        "matrices": 19,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 6.492905054510231,
+        "metric": "molecular_typeset",
+        "one_sided_sign_randomization_p": 0.4676592628752746,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.025094054932869564,
+          0.09730876821591145
+        ],
+        "ci95": [
+          -0.03562104063710702,
+          0.10609878555609739
+        ],
+        "effect": 0.03389126184617474,
+        "eligible_lineages": 176,
+        "holm_adjusted_p": 0.393946790334391,
+        "matrices": 21,
+        "matrices_positive": 11,
+        "maximum_absolute_matrix_effect": 0.4144091545350966,
+        "metric": "molecular_causation",
+        "one_sided_sign_randomization_p": 0.1969733951671955,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.018845517138268753,
+          0.011124176805961025
+        ],
+        "ci95": [
+          -0.021621686868410255,
+          0.014173963403779476
+        ],
+        "effect": -0.003708599791910517,
+        "eligible_lineages": 176,
+        "holm_adjusted_p": 1.0,
+        "matrices": 21,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 0.08370157656794819,
+        "metric": "molecular_emergence",
+        "one_sided_sign_randomization_p": 0.6538930925067122,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.09536811805765497,
+          0.018716117265938748
+        ],
+        "ci95": [
+          -0.10519878463417906,
+          0.02936223600096494
+        ],
+        "effect": -0.03759986163808528,
+        "eligible_lineages": 176,
+        "holm_adjusted_p": 1.0,
+        "matrices": 21,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.36164971814285185,
+        "metric": "molecular_synergy",
+        "one_sided_sign_randomization_p": 0.8337808152306566,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -0.022241543590969186,
+          0.008765669867797995
+        ],
+        "ci95": [
+          -0.02526906415966526,
+          0.011773251268894048
+        ],
+        "effect": -0.007147920235338667,
+        "eligible_lineages": 176,
+        "holm_adjusted_p": 0.7564071271662192,
+        "matrices": 21,
+        "matrices_positive": 9,
+        "maximum_absolute_matrix_effect": 0.10734970906793437,
+        "metric": "generational_revised",
+        "one_sided_sign_randomization_p": 0.7564071271662192,
+        "source": "bridge"
+      },
+      {
+        "candidate": "03",
+        "ci90": [
+          -4.984018049156591,
+          8.15015519046994
+        ],
+        "ci95": [
+          -6.132506772221231,
+          9.31415580273482
+        ],
+        "effect": 1.6655836617752982,
+        "eligible_lineages": 95,
+        "holm_adjusted_p": 0.49694898706370516,
+        "matrices": 19,
+        "matrices_positive": 10,
+        "maximum_absolute_matrix_effect": 28.81762831313414,
+        "metric": "generational_typeset",
+        "one_sided_sign_randomization_p": 0.35050036612155233,
+        "source": "bridge"
+      }
+    ]
+  }
+}

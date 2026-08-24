@@ -1,0 +1,18 @@
+{
+  "exact_mismatches": {
+    "completed_fissions": 0,
+    "completed_horizon": 0,
+    "controlled_record_digest": 0,
+    "extinct": 0,
+    "final_rng_state_digest": 0,
+    "information_eligible": 0
+  },
+  "final_composition_mismatches": 0,
+  "format": "codex-ch5-phir-rescue-archive-audit-v1",
+  "key_exact": true,
+  "legacy_score_mismatches": 0,
+  "lineages": 288,
+  "maximum_inherited_fraction_error": 1.1102230246251565e-16,
+  "maximum_legacy_score_error": 2.842170943040401e-14,
+  "passed": true
+}

@@ -1,0 +1,1409 @@
+{
+  "audit_id": "3a72de4a310581988d7014e5941128b1142c14d0d851d91ae9b2e02457ce8337",
+  "bootstrap_repetitions": 4096,
+  "can_rescue_p3b_gate": false,
+  "cells": [
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.40242411979735315
+          ],
+          "matrix_spearman_geometry_outcome": -0.07917796203908717,
+          "mean_log_throughput_ratio": -0.404451445337894,
+          "mean_realized_shift": 0.056874999999999995,
+          "realized_shift_bootstrap_ci95": [
+            0.040312499999999994,
+            0.07384765625
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.03483348887891839,
+            0.0554298773874706
+          ],
+          "matrix_spearman_geometry_outcome": -0.1843963348540281,
+          "mean_log_throughput_ratio": 0.01062557638077959,
+          "mean_realized_shift": -0.0125,
+          "realized_shift_bootstrap_ci95": [
+            -0.028066406250000002,
+            0.003749999999999999
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.40242411979735315,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.1630784422767457,
+          "mean_log_throughput_ratio": 0.404451445337894,
+          "mean_realized_shift": -0.06531250000000001,
+          "realized_shift_bootstrap_ci95": [
+            -0.08171874999999999,
+            -0.04849609375
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.05129329438755058,
+            -0.050908594679643926
+          ],
+          "matrix_spearman_geometry_outcome": 0.17257266079784317,
+          "mean_log_throughput_ratio": -0.05116506115158168,
+          "mean_realized_shift": 0.0128125,
+          "realized_shift_bootstrap_ci95": [
+            -0.00015625000000000144,
+            0.025
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.006521524150750666,
+            0.0014069921779452034
+          ],
+          "matrix_spearman_geometry_outcome": 0.03365228498492273,
+          "mean_log_throughput_ratio": -0.0026236762901737077,
+          "mean_realized_shift": -0.006718750000000001,
+          "realized_shift_bootstrap_ci95": [
+            -0.019531250000000003,
+            0.005937500000000001
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.04842423793816129,
+            0.04879016416943206
+          ],
+          "matrix_spearman_geometry_outcome": 0.12772487046163522,
+          "mean_log_throughput_ratio": 0.048668188759008454,
+          "mean_realized_shift": -0.0026562499999999998,
+          "realized_shift_bootstrap_ci95": [
+            -0.015625,
+            0.009687500000000002
+          ]
+        }
+      },
+      "branch_half": "A",
+      "candidate": "02",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.32881592341566973,
+          "slope_bootstrap_ci95": [
+            -0.15671307147753935,
+            -0.09092598781644179
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3817211978099526,
+            -0.27220981340206374
+          ],
+          "state_centered_slope": -0.12196012299535372
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.3299391941999996,
+          "slope_bootstrap_ci95": [
+            -0.17412897464953248,
+            -0.1177064069471482
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3792920880178122,
+            -0.27641411040900304
+          ],
+          "state_centered_slope": -0.14529797688769497
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.2984236172021933,
+          "slope_bootstrap_ci95": [
+            -0.16399435455682543,
+            -0.1116819646493295
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3458772770406936,
+            -0.2468648713041513
+          ],
+          "state_centered_slope": -0.13796311184446694
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.29254890567896374,
+          "slope_bootstrap_ci95": [
+            -0.17287800781109472,
+            -0.11909794272689753
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.34491939790399184,
+            -0.23413990163108148
+          ],
+          "state_centered_slope": -0.14591727977992602
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": 0.009705439800567013,
+          "slope_bootstrap_ci95": [
+            -0.1307196034835052,
+            0.10180065866624122
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.03772853883573328,
+            0.05920650558369781
+          ],
+          "state_centered_slope": -0.00877950640191047
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.03443804740324726,
+          "slope_bootstrap_ci95": [
+            -0.129508029215607,
+            0.0969373800618085
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.08522356443486029,
+            0.015111634378521475
+          ],
+          "state_centered_slope": -0.0139163655234185
+        }
+      },
+      "matrices": 80,
+      "scope": "five_standard_landmarks",
+      "states": 400
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.40242411979735315
+          ],
+          "matrix_spearman_geometry_outcome": -0.05439996067100796,
+          "mean_log_throughput_ratio": -0.404451445337894,
+          "mean_realized_shift": 0.040625,
+          "realized_shift_bootstrap_ci95": [
+            0.024062499999999997,
+            0.058437499999999996
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.03483348887891839,
+            0.0554298773874706
+          ],
+          "matrix_spearman_geometry_outcome": -0.2756914167699032,
+          "mean_log_throughput_ratio": 0.01062557638077959,
+          "mean_realized_shift": -0.01671875,
+          "realized_shift_bootstrap_ci95": [
+            -0.0346875,
+            0.0014062499999999989
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.40242411979735315,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.09610120715964265,
+          "mean_log_throughput_ratio": 0.404451445337894,
+          "mean_realized_shift": -0.06546875,
+          "realized_shift_bootstrap_ci95": [
+            -0.08369140624999999,
+            -0.04796875
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.05129329438755058,
+            -0.050908594679643926
+          ],
+          "matrix_spearman_geometry_outcome": -0.025542640632897733,
+          "mean_log_throughput_ratio": -0.05116506115158168,
+          "mean_realized_shift": -0.0004687500000000001,
+          "realized_shift_bootstrap_ci95": [
+            -0.01234375,
+            0.01134765625
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.006521524150750666,
+            0.0014069921779452034
+          ],
+          "matrix_spearman_geometry_outcome": -0.02991435644534315,
+          "mean_log_throughput_ratio": -0.0026236762901737077,
+          "mean_realized_shift": -0.004843749999999999,
+          "realized_shift_bootstrap_ci95": [
+            -0.01765625,
+            0.007500000000000001
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.04842423793816129,
+            0.04879016416943206
+          ],
+          "matrix_spearman_geometry_outcome": -0.19603097632525984,
+          "mean_log_throughput_ratio": 0.048668188759008454,
+          "mean_realized_shift": -0.00859375,
+          "realized_shift_bootstrap_ci95": [
+            -0.022031250000000002,
+            0.005
+          ]
+        }
+      },
+      "branch_half": "B",
+      "candidate": "02",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.2803520518352341,
+          "slope_bootstrap_ci95": [
+            -0.14473591539548086,
+            -0.08274321805451593
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.33715916642213556,
+            -0.22036883016622597
+          ],
+          "state_centered_slope": -0.11162121622700716
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.28582422481463954,
+          "slope_bootstrap_ci95": [
+            -0.1572776771914544,
+            -0.09787838268136434
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.346064771161191,
+            -0.2230502304948781
+          ],
+          "state_centered_slope": -0.12591817448765344
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.25213498413271235,
+          "slope_bootstrap_ci95": [
+            -0.14622352617090745,
+            -0.09117628275578629
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3101633694456438,
+            -0.19124191142127797
+          ],
+          "state_centered_slope": -0.1177830963717245
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.2595746972458223,
+          "slope_bootstrap_ci95": [
+            -0.1561469329552022,
+            -0.10111691456090022
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.31896712122168314,
+            -0.19848201711462163
+          ],
+          "state_centered_slope": -0.12798243166863504
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": 0.0067567872391485284,
+          "slope_bootstrap_ci95": [
+            -0.051762934704456164,
+            0.1607548529952671
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.036900098689677384,
+            0.05133777931446928
+          ],
+          "state_centered_slope": 0.057869257838588324
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.013396213659478115,
+          "slope_bootstrap_ci95": [
+            -0.05333675927651344,
+            0.15515031722262243
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.06639048571842449,
+            0.036943907664908585
+          ],
+          "state_centered_slope": 0.055839352138462944
+        }
+      },
+      "matrices": 80,
+      "scope": "five_standard_landmarks",
+      "states": 400
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.3993831314865419
+          ],
+          "matrix_spearman_geometry_outcome": -0.16348260890291333,
+          "mean_log_throughput_ratio": -0.4034377825676236,
+          "mean_realized_shift": 0.049843750000000006,
+          "realized_shift_bootstrap_ci95": [
+            0.03203125,
+            0.06681640625
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.006883683507171603,
+            0.08073331340838896
+          ],
+          "matrix_spearman_geometry_outcome": -0.28454654205385893,
+          "mean_log_throughput_ratio": 0.037692259819510354,
+          "mean_realized_shift": -0.014843749999999998,
+          "realized_shift_bootstrap_ci95": [
+            -0.0303125,
+            0.0009375000000000019
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.3993831314865419,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": 0.15037755808410594,
+          "mean_log_throughput_ratio": 0.4034377825676236,
+          "mean_realized_shift": -0.053593749999999996,
+          "realized_shift_bootstrap_ci95": [
+            -0.06953125,
+            -0.037558593749999994
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.05129329438755058,
+            -0.0505238949717373
+          ],
+          "matrix_spearman_geometry_outcome": -0.05246612193940007,
+          "mean_log_throughput_ratio": -0.051036827915612815,
+          "mean_realized_shift": 0.00703125,
+          "realized_shift_bootstrap_ci95": [
+            -0.006093750000000001,
+            0.0209375
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.0033190443001739896,
+            0.004189624475458682
+          ],
+          "matrix_spearman_geometry_outcome": -0.07055370832576825,
+          "mean_log_throughput_ratio": 0.0005086832196794698,
+          "mean_realized_shift": -0.008906250000000001,
+          "realized_shift_bootstrap_ci95": [
+            -0.021718750000000002,
+            0.0037500000000000003
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.048058311706890566,
+            0.04879016416943208
+          ],
+          "matrix_spearman_geometry_outcome": 0.0967436869049345,
+          "mean_log_throughput_ratio": 0.0485462133485849,
+          "mean_realized_shift": -0.011093750000000001,
+          "realized_shift_bootstrap_ci95": [
+            -0.02515625,
+            0.003749999999999999
+          ]
+        }
+      },
+      "branch_half": "A",
+      "candidate": "03",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.2823110856870952,
+          "slope_bootstrap_ci95": [
+            -0.14598186290079362,
+            -0.08803539385030384
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.33557642280471023,
+            -0.22787515859333526
+          ],
+          "state_centered_slope": -0.1156602516984309
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.284212550113501,
+          "slope_bootstrap_ci95": [
+            -0.15914078646190194,
+            -0.10545534242732064
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3392178575458203,
+            -0.22539334661866287
+          ],
+          "state_centered_slope": -0.13183364910292616
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.2675283414495146,
+          "slope_bootstrap_ci95": [
+            -0.13676196262766127,
+            -0.08989739102307191
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3214137868122914,
+            -0.21105185171402466
+          ],
+          "state_centered_slope": -0.11255827109276283
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.27380268119827156,
+          "slope_bootstrap_ci95": [
+            -0.14701643306933246,
+            -0.09619063344130802
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3293368632541906,
+            -0.21601729519143129
+          ],
+          "state_centered_slope": -0.12108124704310708
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": -0.034546788953118926,
+          "slope_bootstrap_ci95": [
+            -0.06987964676381085,
+            0.13582213952151811
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.08084616065279154,
+            0.011543718073220535
+          ],
+          "state_centered_slope": 0.03169977470499822
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.029403037327915656,
+          "slope_bootstrap_ci95": [
+            -0.09741063004092097,
+            0.06606922476712322
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.07503010338029072,
+            0.015932381058838815
+          ],
+          "state_centered_slope": -0.01627010808768438
+        }
+      },
+      "matrices": 80,
+      "scope": "five_standard_landmarks",
+      "states": 400
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.3993831314865419
+          ],
+          "matrix_spearman_geometry_outcome": 0.06339337193585938,
+          "mean_log_throughput_ratio": -0.4034377825676236,
+          "mean_realized_shift": 0.044062500000000004,
+          "realized_shift_bootstrap_ci95": [
+            0.0278125,
+            0.060625
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.006883683507171603,
+            0.08073331340838896
+          ],
+          "matrix_spearman_geometry_outcome": -0.2971393182084469,
+          "mean_log_throughput_ratio": 0.037692259819510354,
+          "mean_realized_shift": -0.01328125,
+          "realized_shift_bootstrap_ci95": [
+            -0.031093749999999996,
+            0.0046875
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.3993831314865419,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.0758748604301505,
+          "mean_log_throughput_ratio": 0.4034377825676236,
+          "mean_realized_shift": -0.05093749999999999,
+          "realized_shift_bootstrap_ci95": [
+            -0.0684375,
+            -0.03396484375
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.05129329438755058,
+            -0.0505238949717373
+          ],
+          "matrix_spearman_geometry_outcome": 0.024884826684079223,
+          "mean_log_throughput_ratio": -0.051036827915612815,
+          "mean_realized_shift": 0.001562499999999999,
+          "realized_shift_bootstrap_ci95": [
+            -0.011093750000000001,
+            0.014687499999999997
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.0033190443001739896,
+            0.004189624475458682
+          ],
+          "matrix_spearman_geometry_outcome": -0.00976161305083521,
+          "mean_log_throughput_ratio": 0.0005086832196794698,
+          "mean_realized_shift": 0.0024999999999999996,
+          "realized_shift_bootstrap_ci95": [
+            -0.011503906250000001,
+            0.0159375
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.048058311706890566,
+            0.04879016416943208
+          ],
+          "matrix_spearman_geometry_outcome": 0.036050139244275206,
+          "mean_log_throughput_ratio": 0.0485462133485849,
+          "mean_realized_shift": -0.002968749999999999,
+          "realized_shift_bootstrap_ci95": [
+            -0.01546875,
+            0.00953125
+          ]
+        }
+      },
+      "branch_half": "B",
+      "candidate": "03",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.24580531996193983,
+          "slope_bootstrap_ci95": [
+            -0.1358189232834496,
+            -0.07476282215221258
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.30953931845461335,
+            -0.18044552494039307
+          ],
+          "state_centered_slope": -0.10287311751954138
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.2514125549432473,
+          "slope_bootstrap_ci95": [
+            -0.14798679526248992,
+            -0.09049168378458047
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.31666698680682237,
+            -0.18485352750867912
+          ],
+          "state_centered_slope": -0.1182490322120575
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.22544492649611259,
+          "slope_bootstrap_ci95": [
+            -0.1341896262507218,
+            -0.08281966314468732
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.286255333403795,
+            -0.16290850768612758
+          ],
+          "state_centered_slope": -0.1080219832444505
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.22477780093358737,
+          "slope_bootstrap_ci95": [
+            -0.14073298438494644,
+            -0.08687750544530727
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.29024559808975897,
+            -0.15892542084861158
+          ],
+          "state_centered_slope": -0.11305505596730339
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": -0.06260660697437598,
+          "slope_bootstrap_ci95": [
+            -0.15459287662649412,
+            0.05241644476228166
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.10578800879657205,
+            -0.019557309494895134
+          ],
+          "state_centered_slope": -0.05174036603412631
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.05413953128343105,
+          "slope_bootstrap_ci95": [
+            -0.15422585622455937,
+            0.017424507732878597
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.09264839597091486,
+            -0.015968325129124154
+          ],
+          "state_centered_slope": -0.06905484832246221
+        }
+      },
+      "matrices": 80,
+      "scope": "five_standard_landmarks",
+      "states": 400
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.3902601665541082
+          ],
+          "matrix_spearman_geometry_outcome": -0.2187334220882184,
+          "mean_log_throughput_ratio": -0.40039679425681235,
+          "mean_realized_shift": 0.04921875,
+          "realized_shift_bootstrap_ci95": [
+            0.02265625,
+            0.0765625
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.07230949938940227,
+            0.09317953608795179
+          ],
+          "matrix_spearman_geometry_outcome": -0.13426568825305935,
+          "mean_log_throughput_ratio": 0.013275838997701055,
+          "mean_realized_shift": -0.03515625,
+          "realized_shift_bootstrap_ci95": [
+            -0.075,
+            0.00390625
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.3902601665541082,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.06432454419922488,
+          "mean_log_throughput_ratio": 0.4003967942568124,
+          "mean_realized_shift": -0.04765625,
+          "realized_shift_bootstrap_ci95": [
+            -0.08046875,
+            -0.01484375
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.05129329438755059,
+            -0.049369795848017387
+          ],
+          "matrix_spearman_geometry_outcome": 0.1342623722950774,
+          "mean_log_throughput_ratio": -0.05065212820770617,
+          "mean_realized_shift": 0.01328125,
+          "realized_shift_bootstrap_ci95": [
+            -0.01298828125,
+            0.04140625
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.008774448753896491,
+            0.00829139466939946
+          ],
+          "matrix_spearman_geometry_outcome": 0.1159382739605279,
+          "mean_log_throughput_ratio": -8.575829004391356e-05,
+          "mean_realized_shift": -0.01171875,
+          "realized_shift_bootstrap_ci95": [
+            -0.03984375,
+            0.015625
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.0469605330130783,
+            0.04879016416943207
+          ],
+          "matrix_spearman_geometry_outcome": 0.03822503564933867,
+          "mean_log_throughput_ratio": 0.048180287117314126,
+          "mean_realized_shift": -0.0078125,
+          "realized_shift_bootstrap_ci95": [
+            -0.03671875,
+            0.01953125
+          ]
+        }
+      },
+      "branch_half": "A",
+      "candidate": "02",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.28895294955822043,
+          "slope_bootstrap_ci95": [
+            -0.1522505462109831,
+            -0.08504478096506632
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.38630937576154867,
+            -0.1860569320393121
+          ],
+          "state_centered_slope": -0.11830848351115009
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.26908857272075126,
+          "slope_bootstrap_ci95": [
+            -0.15668441145623727,
+            -0.08334886724895314
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.36895917538309597,
+            -0.16651732107428732
+          ],
+          "state_centered_slope": -0.11915470656804311
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.2615762321719368,
+          "slope_bootstrap_ci95": [
+            -0.14817896913251832,
+            -0.07436520817757647
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.36085046665100695,
+            -0.16148765473162502
+          ],
+          "state_centered_slope": -0.11099485149765155
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.2802769073914939,
+          "slope_bootstrap_ci95": [
+            -0.15578709595403062,
+            -0.08244150338946325
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3793042242260552,
+            -0.1800720266281145
+          ],
+          "state_centered_slope": -0.11851208480685022
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": -0.03915538819066512,
+          "slope_bootstrap_ci95": [
+            -0.20876963216739874,
+            0.23752874619019412
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.13164751529102658,
+            0.051546111474497114
+          ],
+          "state_centered_slope": 0.017713812455068773
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.06305410190512264,
+          "slope_bootstrap_ci95": [
+            -0.17870296472769368,
+            0.24858742512791324
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.16151084457106113,
+            0.03415244189295828
+          ],
+          "state_centered_slope": 0.042696515336428285
+        }
+      },
+      "matrices": 80,
+      "scope": "landmark60_compatibility",
+      "states": 80
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.3902601665541082
+          ],
+          "matrix_spearman_geometry_outcome": -0.05953288700158759,
+          "mean_log_throughput_ratio": -0.40039679425681235,
+          "mean_realized_shift": 0.05703125,
+          "realized_shift_bootstrap_ci95": [
+            0.02421875,
+            0.09140625
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.07230949938940227,
+            0.09317953608795179
+          ],
+          "matrix_spearman_geometry_outcome": -0.37847555750346396,
+          "mean_log_throughput_ratio": 0.013275838997701055,
+          "mean_realized_shift": 0.0140625,
+          "realized_shift_bootstrap_ci95": [
+            -0.02392578125,
+            0.05
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.3902601665541082,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.12913162744559953,
+          "mean_log_throughput_ratio": 0.4003967942568124,
+          "mean_realized_shift": -0.0640625,
+          "realized_shift_bootstrap_ci95": [
+            -0.09296875,
+            -0.034375
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.05129329438755059,
+            -0.049369795848017387
+          ],
+          "matrix_spearman_geometry_outcome": -0.048461651132483116,
+          "mean_log_throughput_ratio": -0.05065212820770617,
+          "mean_realized_shift": 0.0203125,
+          "realized_shift_bootstrap_ci95": [
+            -0.00625,
+            0.04921875
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.008774448753896491,
+            0.00829139466939946
+          ],
+          "matrix_spearman_geometry_outcome": -0.12183192482423953,
+          "mean_log_throughput_ratio": -8.575829004391356e-05,
+          "mean_realized_shift": 0.00859375,
+          "realized_shift_bootstrap_ci95": [
+            -0.01875,
+            0.0375
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.0469605330130783,
+            0.04879016416943207
+          ],
+          "matrix_spearman_geometry_outcome": 0.005033195041548099,
+          "mean_log_throughput_ratio": 0.048180287117314126,
+          "mean_realized_shift": 0.0203125,
+          "realized_shift_bootstrap_ci95": [
+            -0.00703125,
+            0.04921875
+          ]
+        }
+      },
+      "branch_half": "B",
+      "candidate": "02",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.3035647525470383,
+          "slope_bootstrap_ci95": [
+            -0.19777608242415343,
+            -0.10834495548754505
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4045506865194232,
+            -0.2011448046457391
+          ],
+          "state_centered_slope": -0.15253441519041594
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.3262285134418226,
+          "slope_bootstrap_ci95": [
+            -0.200595880137147,
+            -0.10768341471737101
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.42913129313027387,
+            -0.2256422401319064
+          ],
+          "state_centered_slope": -0.15253196167891492
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.30885319254630195,
+          "slope_bootstrap_ci95": [
+            -0.19053998873240302,
+            -0.10353312265652481
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4013581696490341,
+            -0.21627370577095875
+          ],
+          "state_centered_slope": -0.14565386358304955
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.3253753265363487,
+          "slope_bootstrap_ci95": [
+            -0.192553615211819,
+            -0.10453218757872823
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4222853776304533,
+            -0.2289089154429204
+          ],
+          "state_centered_slope": -0.14708704725331384
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": -0.029947431884016835,
+          "slope_bootstrap_ci95": [
+            -0.40003284554922636,
+            0.02813370158081984
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.11315032400262366,
+            0.05014783320728961
+          ],
+          "state_centered_slope": -0.18250760398156046
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.017445623070101463,
+          "slope_bootstrap_ci95": [
+            -0.39422133119135255,
+            0.04358122064602311
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.1157901548768803,
+            0.07810135496805663
+          ],
+          "state_centered_slope": -0.16516152083521735
+        }
+      },
+      "matrices": 80,
+      "scope": "landmark60_compatibility",
+      "states": 80
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.06551234790236385,
+          "mean_log_throughput_ratio": -0.40546510810816444,
+          "mean_realized_shift": 0.0609375,
+          "realized_shift_bootstrap_ci95": [
+            0.025,
+            0.0984375
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.08041621025807812,
+            0.07975108169025645
+          ],
+          "matrix_spearman_geometry_outcome": -0.31041593324595745,
+          "mean_log_throughput_ratio": -0.0004880861976943249,
+          "mean_realized_shift": 0.003125,
+          "realized_shift_bootstrap_ci95": [
+            -0.0359375,
+            0.04345703125
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.40546510810816433,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.01268512521354869,
+          "mean_log_throughput_ratio": 0.40546510810816444,
+          "mean_realized_shift": -0.028125,
+          "realized_shift_bootstrap_ci95": [
+            -0.06015625,
+            0.00595703125
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.051293294387550634,
+            -0.05129329438755055
+          ],
+          "matrix_spearman_geometry_outcome": -0.06330263369871553,
+          "mean_log_throughput_ratio": -0.05129329438755059,
+          "mean_realized_shift": 0.025,
+          "realized_shift_bootstrap_ci95": [
+            -0.003125,
+            0.053125
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.012982390840057792,
+            0.0019459894065031547
+          ],
+          "matrix_spearman_geometry_outcome": -0.08213557876229477,
+          "mean_log_throughput_ratio": -0.005690530748035512,
+          "mean_realized_shift": 0.0203125,
+          "realized_shift_bootstrap_ci95": [
+            -0.00625,
+            0.0484375
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.048790164169431965,
+            0.04879016416943206
+          ],
+          "matrix_spearman_geometry_outcome": -0.02514578349328687,
+          "mean_log_throughput_ratio": 0.048790164169432014,
+          "mean_realized_shift": -0.00859375,
+          "realized_shift_bootstrap_ci95": [
+            -0.0359375,
+            0.0171875
+          ]
+        }
+      },
+      "branch_half": "A",
+      "candidate": "03",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.3101322829346363,
+          "slope_bootstrap_ci95": [
+            -0.16803215020024506,
+            -0.08821224558278914
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.40042574376919315,
+            -0.21593874484061273
+          ],
+          "state_centered_slope": -0.12751073801735985
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.30801678677682265,
+          "slope_bootstrap_ci95": [
+            -0.1715807722049557,
+            -0.08738544556770952
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3993913160754763,
+            -0.21406557393794606
+          ],
+          "state_centered_slope": -0.1281954309861077
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.28243410143813563,
+          "slope_bootstrap_ci95": [
+            -0.1472956982287627,
+            -0.07218697820806536
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.3796059405228284,
+            -0.18751351141303593
+          ],
+          "state_centered_slope": -0.10805081889139423
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.28634774373668886,
+          "slope_bootstrap_ci95": [
+            -0.1565617664202985,
+            -0.07530334194090765
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.38556624772547526,
+            -0.1884083666010076
+          ],
+          "state_centered_slope": -0.11489878026310038
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": 0.00031408436297034357,
+          "slope_bootstrap_ci95": [
+            -0.15752806696507216,
+            0.2584097873145545
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.09672326794762644,
+            0.09553030305438406
+          ],
+          "state_centered_slope": 0.050399880731157955
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.06873411131344671,
+          "slope_bootstrap_ci95": [
+            -0.1690245263006687,
+            0.21067679953358345
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.1595861607520947,
+            0.018986431699034738
+          ],
+          "state_centered_slope": 0.024213058881248
+        }
+      },
+      "matrices": 80,
+      "scope": "landmark60_compatibility",
+      "states": 80
+    },
+    {
+      "arm_summaries": {
+        "FABLE_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.40546510810816444,
+            -0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": 0.1235264617812659,
+          "mean_log_throughput_ratio": -0.40546510810816444,
+          "mean_realized_shift": 0.03203125,
+          "realized_shift_bootstrap_ci95": [
+            -0.0015625,
+            0.06484375
+          ]
+        },
+        "FABLE_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.08041621025807812,
+            0.07975108169025645
+          ],
+          "matrix_spearman_geometry_outcome": -0.24267869204039236,
+          "mean_log_throughput_ratio": -0.0004880861976943249,
+          "mean_realized_shift": -0.04609375,
+          "realized_shift_bootstrap_ci95": [
+            -0.0859375,
+            -0.0078125
+          ]
+        },
+        "FABLE_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.40546510810816433,
+            0.40546510810816444
+          ],
+          "matrix_spearman_geometry_outcome": -0.03885418508884341,
+          "mean_log_throughput_ratio": 0.40546510810816444,
+          "mean_realized_shift": -0.0921875,
+          "realized_shift_bootstrap_ci95": [
+            -0.12265625,
+            -0.0625
+          ]
+        },
+        "NOOP": {
+          "log_throughput_bootstrap_ci95": [
+            0.0,
+            0.0
+          ],
+          "matrix_spearman_geometry_outcome": null,
+          "mean_log_throughput_ratio": 0.0,
+          "mean_realized_shift": 0.0,
+          "realized_shift_bootstrap_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "SMALL_LOOSEN": {
+          "log_throughput_bootstrap_ci95": [
+            -0.051293294387550634,
+            -0.05129329438755055
+          ],
+          "matrix_spearman_geometry_outcome": 0.1120222652065865,
+          "mean_log_throughput_ratio": -0.05129329438755059,
+          "mean_realized_shift": -0.0109375,
+          "realized_shift_bootstrap_ci95": [
+            -0.0421875,
+            0.01875
+          ]
+        },
+        "SMALL_RANDOM_PP": {
+          "log_throughput_bootstrap_ci95": [
+            -0.012982390840057792,
+            0.0019459894065031547
+          ],
+          "matrix_spearman_geometry_outcome": -0.067583620454091,
+          "mean_log_throughput_ratio": -0.005690530748035512,
+          "mean_realized_shift": -0.0171875,
+          "realized_shift_bootstrap_ci95": [
+            -0.0421875,
+            0.00859375
+          ]
+        },
+        "SMALL_TIGHTEN": {
+          "log_throughput_bootstrap_ci95": [
+            0.048790164169431965,
+            0.04879016416943206
+          ],
+          "matrix_spearman_geometry_outcome": 0.12908965727750796,
+          "mean_log_throughput_ratio": 0.048790164169432014,
+          "mean_realized_shift": -0.0125,
+          "realized_shift_bootstrap_ci95": [
+            -0.04140625,
+            0.0171875
+          ]
+        }
+      },
+      "branch_half": "B",
+      "candidate": "03",
+      "geometry_associations": {
+        "log_spectral_radius_ratio": {
+          "mean_within_state_spearman": -0.34878240084945566,
+          "slope_bootstrap_ci95": [
+            -0.18875574697101802,
+            -0.10561696395894962
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4339502325917039,
+            -0.25775913889212293
+          ],
+          "state_centered_slope": -0.14699734549539137
+        },
+        "log_throughput_ratio": {
+          "mean_within_state_spearman": -0.3320252184768889,
+          "slope_bootstrap_ci95": [
+            -0.19309450883988055,
+            -0.10794302468132516
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4177235535218362,
+            -0.24184421999680505
+          ],
+          "state_centered_slope": -0.15029766617551177
+        },
+        "relative_block_frobenius": {
+          "mean_within_state_spearman": -0.31938088476094517,
+          "slope_bootstrap_ci95": [
+            -0.1817050777041468,
+            -0.10261672987252309
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4033654715471783,
+            -0.23176777089509548
+          ],
+          "state_centered_slope": -0.141419219738038
+        },
+        "relative_block_sum": {
+          "mean_within_state_spearman": -0.32371179215616047,
+          "slope_bootstrap_ci95": [
+            -0.1903501480495588,
+            -0.1108506663100107
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.4098434878609704,
+            -0.23274138897022295
+          ],
+          "state_centered_slope": -0.15022740230876916
+        },
+        "relative_column_strength_dispersion": {
+          "mean_within_state_spearman": 0.09380439371579115,
+          "slope_bootstrap_ci95": [
+            -0.06547240905735091,
+            0.2723873832556869
+          ],
+          "spearman_bootstrap_ci95": [
+            0.0016586866540307511,
+            0.18478147029508127
+          ],
+          "state_centered_slope": 0.10073224851257523
+        },
+        "relative_row_strength_dispersion": {
+          "mean_within_state_spearman": -0.015868132362262217,
+          "slope_bootstrap_ci95": [
+            -0.1312576382288761,
+            0.1799953853340645
+          ],
+          "spearman_bootstrap_ci95": [
+            -0.10585553567525038,
+            0.07286770582645244
+          ],
+          "state_centered_slope": 0.03364849815193438
+        }
+      },
+      "matrices": 80,
+      "scope": "landmark60_compatibility",
+      "states": 80
+    }
+  ],
+  "classification": "posthoc_exploratory_existing_data_audit",
+  "confirmatory": false,
+  "format": "codex-intervention-p3c-posthoc-geometry-audit-v1",
+  "geometry_rows": 6720,
+  "inference_unit": "whole catalytic matrix",
+  "matrices": 80,
+  "outcome_geometry_rows": 13440,
+  "source_checksum_manifest_sha256": "9aaf3cafadfa595c924821efa543e6c08865633b0f592d5eb7977541d70b0a19",
+  "source_result": "results_intervention_replication/p3b_beta_surgery_dose_bridge",
+  "states": 960
+}

@@ -1,0 +1,406 @@
+schemaVersion: "1.0.0"
+researchStepId: S11
+stepNumber: 11
+title: Reconstruct time-localized Phi-r
+status: FROZEN_BEFORE_ANY_CANONICAL_S11_BENCHMARK_OUTCOME
+frozenAtUtc: "2026-08-01T00:00:00Z"
+evidenceClass: VALIDATION_BRANCH_NOT_RECOVERED_AUTHOR_METHOD
+
+frozenQuestion: >-
+  Can a separately named regularized Gaussian PhiID branch and an explicitly
+  approximate high-dimensional partition branch pass preregistered validation at
+  every planned fixed-window effective sample size, while the S10 strict branch
+  remains unchanged and is used only at 512 or more effective samples?
+
+scopeBoundary:
+  currentStepOnly: S11
+  nextStepForbidden: S12
+  noGardBaselineOrInterventionRun: true
+  fixedWindowScope: past-only sliding windows on validated synthetic fixtures
+  expandingScope: S10 strict branch only when effectiveSampleCount >= 512
+  wholeTrajectoryScope: descriptive and explicitly non-prospective
+  noPaperPrimaryDesignation: true
+  noSilentDefaults: true
+  noAuthorOrMatlabIdentityClaim: true
+  unavailableScientificInput: >-
+    S12 has not generated an E01 GARD minimal-run trajectory. S11 therefore emits
+    validated synthetic time-localized histories and executable contracts, not
+    paper-claim or GARD-baseline estimates.
+
+immutableS10Boundary:
+  strictSampleGateId: E01-S10-SAMPLE-GATE-STRICT-v1.0.0
+  minimumEffectiveSamples: 512
+  action: DO_NOT_RELAX_RENAME_OR_BACKPORT
+  fixedPairsEligibleUnderS10Strict: 0
+  strictBackends:
+    - E01-S10-PHYID-PINNED-GAUSSIAN-MMI-v1.0.0
+    - E01-S10-PHYID-PINNED-GAUSSIAN-CCS-v1.0.0
+    - E01-S10-OMEGAID-PINNED-GAUSSIAN-NUMPY-v1.0.0
+    - E01-S10-OMEGAID-PINNED-GAUSSIAN-CUPY-v1.0.0
+  exclusions:
+    - branch: OmegaID discrete CPU/GPU
+      reason: S10 binary relabel-invariance failure
+    - branch: OmegaID more-than-2x2 doublet output
+      reason: not the required 16-atom PhiID lattice
+
+fixedWindowGrid:
+  windows: [32, 64, 128, 256]
+  lags: [1, 2, 4, 8]
+  effectiveSampleFormula: windowLength - lag
+  pairs:
+    - {pairId: E01-S11-W032-T01, windowLength: 32, lag: 1, effectiveSampleCount: 31}
+    - {pairId: E01-S11-W032-T02, windowLength: 32, lag: 2, effectiveSampleCount: 30}
+    - {pairId: E01-S11-W032-T04, windowLength: 32, lag: 4, effectiveSampleCount: 28}
+    - {pairId: E01-S11-W032-T08, windowLength: 32, lag: 8, effectiveSampleCount: 24}
+    - {pairId: E01-S11-W064-T01, windowLength: 64, lag: 1, effectiveSampleCount: 63}
+    - {pairId: E01-S11-W064-T02, windowLength: 64, lag: 2, effectiveSampleCount: 62}
+    - {pairId: E01-S11-W064-T04, windowLength: 64, lag: 4, effectiveSampleCount: 60}
+    - {pairId: E01-S11-W064-T08, windowLength: 64, lag: 8, effectiveSampleCount: 56}
+    - {pairId: E01-S11-W128-T01, windowLength: 128, lag: 1, effectiveSampleCount: 127}
+    - {pairId: E01-S11-W128-T02, windowLength: 128, lag: 2, effectiveSampleCount: 126}
+    - {pairId: E01-S11-W128-T04, windowLength: 128, lag: 4, effectiveSampleCount: 124}
+    - {pairId: E01-S11-W128-T08, windowLength: 128, lag: 8, effectiveSampleCount: 120}
+    - {pairId: E01-S11-W256-T01, windowLength: 256, lag: 1, effectiveSampleCount: 255}
+    - {pairId: E01-S11-W256-T02, windowLength: 256, lag: 2, effectiveSampleCount: 254}
+    - {pairId: E01-S11-W256-T04, windowLength: 256, lag: 4, effectiveSampleCount: 252}
+    - {pairId: E01-S11-W256-T08, windowLength: 256, lag: 8, effectiveSampleCount: 248}
+
+smallWindowEstimator:
+  specificationId: E01-S11-PHIID-GAUSSIAN-OAS-CROSSFIT-v1.0.0
+  relationshipToS10: DISTINCT_REGULARIZED_VALIDATION_BRANCH
+  implementation:
+    kind: Gaussian local-surprisal PhiID
+    inputAfterPartitionMapping: two finite scalar time series
+    laggedVectorOrder: [x_t, y_t, x_t_plus_tau, y_t_plus_tau]
+    folds: 4
+    foldAssignment: contiguous balanced folds over lagged-pair row indices
+    evaluation: each row evaluated exactly once by a model trained on the other folds
+    standardization: training-fold mean and sample standard deviation per variable
+    covariance:
+      estimator: Oracle Approximating Shrinkage
+      estimatorId: E01-S11-COV-OAS-IDENTITY-v1.0.0
+      empiricalNormalization: maximum-likelihood divisor n_train
+      target: mu times identity where mu is trace(empiricalCovariance)/4
+      shrinkageFormula: >-
+        min((mean(S^2)+mu^2)/((n_train+1)*(mean(S^2)-mu^2/4)),1), with
+        shrinkage 1 when the denominator is nonpositive
+      sensitivityMultipliers: [0.5, 1.0, 1.5]
+      canonicalMultiplier: 1.0
+      sensitivityUse: validation only; no post-hoc branch replacement
+    entropy: held-out negative log-density from every required covariance submatrix
+    nativeUnits: nats
+    rowsDeleted: 0
+    precision: IEEE-754 binary64
+  gate:
+    minimumEffectiveSamples: 24
+    minimumTrainingRowsPerFold: 18
+    minimumEvaluationRowsPerFold: 6
+    finiteInputRequired: true
+    minimumSampleSd: 1.0e-12
+    minimumRegularizedEigenvalue: 1.0e-10
+    maximumRegularizedConditionNumber: 1.0e8
+    maximumLatticeClosureAbsoluteError: 5.0e-10
+    maximumEquationClosureAbsoluteError: 5.0e-10
+    noFallback: true
+  calibration:
+    specificationId: E01-S11-NULL-CENTERING-EXACT-PAIR-v1.0.0
+    method: subtract independent-calibration ensemble mean for every atom and intermediate MI
+    keys: [pairId, redundancyId]
+    calibrationReplicatesPerPair: 512
+    heldOutNullReplicatesPerPair: 256
+    calibrationAndValidationStreamsDisjoint: true
+    uncertainty: percentile interval from held-out replicate distribution
+    nullEnvelopeQuantile: 0.99
+    preserveRawAndCalibratedValues: true
+
+redundancyBranches:
+  - redundancyId: E01-S11-REDUNDANCY-MMI-v1.0.0
+    name: MMI
+    interpretation: local array selected by the lower ensemble-mean mutual information
+    evidenceClass: source-traceable formula reconstructed under the new estimator
+  - redundancyId: E01-S11-REDUNDANCY-CCS-EXPERIMENTAL-v1.0.0
+    name: CCS
+    interpretation: sign-filtered local common change in surprisal
+    evidenceClass: experimental sensitivity branch; pinned phyid source says To be implemented
+
+atomAndAggregateContract:
+  nativeAtomIds: [rtr, rtx, rty, rts, xtr, xtx, xty, xts, ytr, ytx, yty, yts, str, stx, sty, sts]
+  latticeSolveId: E01-S10-PHYID-16-ATOM-LINEAR-SOLVE-v1.0.0
+  equationAggregateId: E01-S10-PAPER-EQUATION-DERIVED-AGGREGATE-v1.0.0
+  equationAggregateFormula: str+stx+sty+sts-rtr-rtx-rty-rts
+  equationDirectFormula: I_xytab-I_xtab-I_ytab
+  sourceNamingBoundary: equation-derived aggregate is not relabeled as a source-named atom
+  outputPolicy: emit all raw and calibrated atoms, intermediate MIs, aggregate, and closure diagnostics
+
+partitionBranch:
+  affinityId: E01-S11-PARTITION-AFFINITY-ABS-CORR-LAG-v1.0.0
+  searchId: E01-S11-MIB-SEARCH-STABILITY-SPECTRAL-SINGLE-FLIP-v1.0.0
+  implementation:
+    componentStandardization: window-local mean and sample standard deviation
+    adjacency: >-
+      mean of absolute contemporaneous correlation and the two absolute directed
+      lagged correlations; diagonal set to zero
+    bootstrap:
+      method: Bayesian exponential row weights on lag-aligned rows
+      primaryReplicates: 8
+      stabilityAuditReplicates: 16
+      zeroWeightOrRowDeletion: forbidden
+    initialPartition: normalized-Laplacian Fiedler split for base and each bootstrap adjacency
+    consensus: normalized-Laplacian split of the co-assignment matrix
+    candidateSet: base, bootstrap, consensus, and every canonical single-component flip of consensus
+    canonicalization: component zero belongs to part A; complement duplicates removed
+    selection: minimum normalized objective then lexicographic part-A tuple
+  eligibilityGate:
+    minimumPartFraction: 0.10
+    minimumMeanPairwiseBootstrapAri: 0.75
+    minimumConsensusConfidence: 0.85
+    minimumWithinMinusBetweenAffinity: 0.20
+    minimumRelativeFiedlerEigengap: 0.05
+    allCandidateScoresFinite: true
+    noFallbackPartition: true
+  representativeDimensions:
+    - {dimension: 99, plantedPartSizes: [49, 50], context: dropped-CLR-or-ILR-sized E01 coordinate stress test}
+    - {dimension: 100, plantedPartSizes: [50, 50], context: full-component E01 stress test}
+  partitionMappings:
+    - mappingId: E01-S11-PARTMAP-ZSCORE-GROUP-MEAN-v1.0.0
+      name: zscore_group_mean
+      outputWidths: [1, 1]
+    - mappingId: E01-S11-PARTMAP-ZSCORE-PC1-v1.0.0
+      name: zscore_pc1
+      outputWidths: [1, 1]
+      signRule: largest-absolute-loading pivot positive; lowest index breaks ties
+      eigengapGate: 1.0e-8
+    - mappingId: E01-S10-PARTMAP-OMEGA-EQUAL-WIDTH-VECTOR-v1.0.0
+      name: omega_equal_width_vector
+      eligibility: equal part widths only
+      use: strict Gaussian source cross-check only; more-than-2x2 doublet output excluded
+  objectiveBranches:
+    - {objectiveId: E01-S10-MIB-OBJ-SYNCHRONOUS-GAUSSIAN-MI-v1.0.0, name: synchronous_mi}
+    - {objectiveId: E01-S10-MIB-OBJ-BIDIRECTIONAL-LAGGED-GAUSSIAN-MI-v1.0.0, name: bidirectional_lagged_mi}
+    - {objectiveId: E01-S10-MIB-OBJ-ABS-PAPER-EQUATION-AGGREGATE-v1.0.0, name: abs_paper_equation}
+  normalizationBranches:
+    - {normalizationId: E01-S10-MIB-NORM-NONE-v1.0.0, name: none}
+    - {normalizationId: E01-S10-MIB-NORM-MIN-PART-ENTROPY-v1.0.0, name: min_part_entropy}
+    - {normalizationId: E01-S10-MIB-NORM-GEOMETRIC-PART-SIZE-v1.0.0, name: geometric_part_size}
+  uncertaintyPolicy: every mapping/objective/normalization combination remains a separate sensitivity branch
+
+syntheticSystems:
+  scalar:
+    - systemId: E01-S11-SYS-INDEPENDENT-WHITE-GAUSSIAN-v1.0.0
+      truth: all atoms, mutual informations, and equation aggregate are zero
+    - systemId: E01-S11-SYS-NOISY-REDUNDANT-AR-v1.0.0
+      parameters: {latentAr: 0.80, latentInnovationSd: 1.0, observationSd: 0.35}
+      truth: analytic lag-specific Gaussian MMI; quasi-Monte-Carlo population CCS
+    - systemId: E01-S11-SYS-DIRECTIONAL-VAR-v1.0.0
+      parameters:
+        transition: [[0.10, 0.00], [0.75, 0.20]]
+        innovationSd: [1.0, 0.5]
+      truth: analytic lag-specific Gaussian MMI; quasi-Monte-Carlo population CCS
+  highDimensional:
+    - systemId: E01-S11-SYS-PLANTED-TWO-BLOCK-AR-v1.0.0
+      parameters: {latentAr: 0.80, loading: 1.0, componentNoiseSd: 0.10, burnIn: 512}
+      truth: planted 49x50 or 50x50 partition
+    - systemId: E01-S11-SYS-HIGHDIM-INDEPENDENT-NULL-v1.0.0
+      parameters: {componentAr: 0.20, burnIn: 512}
+      truth: no privileged bipartition; partition branch must fail closed
+    - systemId: E01-S11-SYS-PIECEWISE-BLOCK-AR-v1.0.0
+      parameters: {length: 2048, dimension: 100, changePoint: 1024, burnIn: 512}
+      truth: predeclared component-membership exchange at change point
+  ccsOracle:
+    method: scrambled Sobol draws transformed by the exact population covariance
+    drawsPerScramble: 262144
+    independentScrambles: 2
+    maximumCrossScrambleAtomDifference: 0.002
+    use: validation reference only
+
+sampleSizes:
+  scalarKnownTruthReplicatesPerPairPerSystem: 256
+  highDimensionalSignalReplicatesPerPairPerDimension: 16
+  highDimensionalNullReplicatesPerPairPerDimension: 16
+  smallDimensionExactSearchReplicates: 64
+  smallDimension: 8
+  invarianceReplicatesPerPair: 8
+  shuffleReplicatesPerPairPerStructuredSystem: 128
+
+validationGates:
+  multipleTestingPolicy: all gates are simultaneous engineering acceptance gates; no outcome-selected branch substitution
+  nullCalibration:
+    maximumAbsoluteHeldOutMeanPerAtom: 0.040
+    maximumAbsoluteHeldOutMeanEquationAggregate: 0.040
+    maximumHeldOutFalsePositiveRateAgainstCalibration99PercentEnvelope: 0.050
+  gaussianMmiKnownTruth:
+    maximumAbsoluteEnsembleTotalMiError: 0.20
+    maximumAbsoluteEnsembleEquationAggregateError: 0.20
+    maximumAtomRootMeanSquareError: 0.20
+    requiredDirectionalSigns: true
+  gaussianCcsKnownTruth:
+    maximumPopulationOracleCrossScrambleDifference: 0.002
+    maximumAbsoluteEnsembleTotalMiError: 0.20
+    maximumAbsoluteEnsembleEquationAggregateError: 0.25
+    maximumAtomRootMeanSquareError: 0.25
+    experimentalLabelRequired: true
+  regularization:
+    everyOasCovariancePositiveDefinite: true
+    maximumMedianAbsoluteEquationChangeAcrossSensitivityMultipliers: 0.15
+    singularFailureInjectionMustFailWithoutOasAndPassWithOas: true
+  plantedPartition:
+    minimumEligibleReplicatesPer16: 15
+    minimumMedianAdjustedRandIndex: 0.95
+    minimumExactPlantedRecoveryFraction: 0.875
+  nullPartition:
+    maximumEligibleReplicatesPer16: 1
+    numericPhiEstimateCount: 0
+  approximation:
+    minimumExactSearchAgreementFractionAtDimension8: 0.90
+    minimumMedianPrimaryVsAuditBootstrapAri: 0.95
+    minimumMedianObjectiveWinnerAriAcrossRepeat: 0.90
+  invariance:
+    scalarAffineMaximumAbsoluteDifference: 1.0e-9
+    scalarRelabelMaximumMappedAtomDifference: 1.0e-9
+    featureRelabelMinimumPartitionAri: 1.0
+    positiveFeatureAffineMinimumPartitionAri: 1.0
+  shuffle:
+    minimumFractionInsideHeldOutNull99PercentEnvelope: 0.95
+  reproducibility:
+    exactCpuRepeat: true
+    exactSeedManifestRepeat: true
+    exactCausalityIndexAudit: true
+  cpuGpu:
+    branch: E01-S11-PHIID-GAUSSIAN-OAS-CROSSFIT-v1.0.0
+    devices: [numpy_cpu, cupy_gpu]
+    dtype: float64
+    maximumAbsoluteAtomOrAggregateDifference: 1.0e-9
+    maximumRelativeDifference: 1.0e-8
+  closure:
+    maximumAbsoluteLatticeError: 5.0e-10
+    maximumAbsoluteEquationError: 5.0e-10
+
+pairEligibilityRule: >-
+  A fixed pair is eligible separately for each redundancy, mapping, objective, and
+  normalization identity only if its exact-size estimator gates, planted and null
+  high-dimensional gates at dimensions 99 and 100, approximation, invariance,
+  shuffle, reproducibility, causality, closure, and CPU/GPU gates all pass. Failed
+  combinations retain a status and reason but contain no numeric PhiID estimate.
+
+temporalEvaluation:
+  windowDefinition: inclusive rows [end-windowLength+1, end]
+  lagPairs: past row s and future row s+lag, both inside the window
+  requiredIndexFields: [windowStart, windowEnd, pastIndexMin, pastIndexMax, futureIndexMin, futureIndexMax]
+  prospectiveGate: futureIndexMax <= windowEnd
+  slidingHistory:
+    fixture: E01-S11-SYS-PIECEWISE-BLOCK-AR-v1.0.0
+    endpoints: first complete window, then every floor(windowLength/2) rows, and final row
+  expandingHistory:
+    estimator: S10 strict pinned phyid Gaussian only
+    effectiveSampleCheckpoints: [512, 1024]
+    condition: each requested lag must satisfy the unchanged strict sample/covariance gate
+  wholeTrajectory:
+    estimator: S10 strict pinned phyid Gaussian only
+    prospective: false
+    label: NON_PROSPECTIVE_WHOLE_TRAJECTORY_DESCRIPTION
+  selectedPartitionAtEveryEvaluation: required
+
+preprocessingBoundary:
+  contractId: E01-S09-COMPOSITIONAL-TRANSFORM-CONTRACT-v1.0.0
+  eligibleInputsOnly: true
+  noObservationDeletion: true
+  fullClrAndRawClosedProportion: structurally singular and never silently regularized as paper defaults
+  droppedClrIlrAndZeroBranches: preserve exact versioned S09 identities
+  validationDataStatement: high-dimensional Gaussian fixtures test estimator dimensions, not compositional scientific claims
+
+randomness:
+  contractId: E01-S06-SEED-DERIVATION-v1.0.0
+  rootSeedHex: "1111111111111111111111111111111111111111111111111111111111111111"
+  streamPurpose: estimator
+  domains:
+    - calibration
+    - heldout-null
+    - known-truth
+    - ccs-oracle
+    - highdim-signal
+    - highdim-null
+    - bootstrap-primary
+    - bootstrap-audit
+    - invariance
+    - shuffle
+    - dynamic-history
+  coupling: trajectory-isolated; no stream reuse across calibration and validation
+
+runtimePolicy:
+  cpuWorkers: 8
+  threadEnvironment:
+    OMP_NUM_THREADS: "1"
+    OPENBLAS_NUM_THREADS: "1"
+    MKL_NUM_THREADS: "1"
+    NUMEXPR_NUM_THREADS: "1"
+  cpuBackend: NumPy float64
+  gpuBackend: CuPy float64 on one explicitly identified L4
+  gpuDeviceIndex: 0
+  noReducedScopeOnLongRuntime: true
+  temporaryOutputs: /cache/e01_s11
+  finalOutputs: /artifacts/research_steps/S11
+
+failureInjections:
+  - NONFINITE_INPUT_NO_ROW_DELETION
+  - INVALID_LAG
+  - EFFECTIVE_SAMPLE_COUNT_BELOW_24
+  - CONSTANT_SCALAR_SERIES
+  - OAS_DISABLED_SINGULAR_COVARIANCE
+  - PARTITION_COMPONENT_CONSTANT
+  - PARTITION_STABILITY_GATE_FAILURE
+  - OMEGA_DISCRETE_EXCLUDED
+  - OMEGA_DOUBLET_EXCLUDED
+  - OMEGA_UNEQUAL_WIDTH_EXCLUDED
+  - FUTURE_INDEX_BEYOND_WINDOW_END
+  - FIXED_PAIR_GATE_FAILURE_SUPPRESSES_NUMERIC_ESTIMATE
+
+requiredOutputs:
+  - preregistration.yaml
+  - preregistration_record.json
+  - validation_summary.json
+  - exact_pair_eligibility.csv
+  - finite_sample_calibration.csv
+  - known_truth_results.csv
+  - highdim_partition_validation.csv
+  - partition_candidate_scores.parquet
+  - partition_histories.parquet
+  - phir_estimates.parquet
+  - atom_outputs.parquet
+  - invariance_results.csv
+  - shuffle_controls.csv
+  - cpu_gpu_comparisons.csv
+  - regularization_sensitivity.csv
+  - causality_audit.csv
+  - runtime_benchmarks.csv
+  - failure_injection.json
+  - seed_manifest.json
+  - specification_metadata.yaml
+  - registry_preservation.json
+  - runtime_manifest.json
+  - artifact_manifest.json
+  - time_localized_phir.png
+  - partition_stability.png
+  - research_step_full_results.md
+
+frozenInputs:
+  - {path: /workspace/AGENTS.md, sha256: 85041503713d0dd36796acac13e2f8c1d840bbce521e3301da590e422de1195c}
+  - {path: /workspace/FULL_PLAN.md, sha256: 6e59a75d2bb23ace8110ebf3da07ddff2f3dc4ae3377cd8d14be8e8bfd22d7ee}
+  - {path: /workspace/RESEARCH_PLAN.md, sha256: 9f37924e4584e34bc0284cc85636c4ae7d5e60f3209f63de45472b5a20932179}
+  - {path: /workspace/input-attachments/MANIFEST.json, sha256: d0f71c606281cf289a4b9e0852e08c1a6b889c9021d37d5d1c32c64b62f1183e}
+  - {path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/_metadata/ATTACHMENT.md, sha256: 983c410106015858e6a5a2234b1128af3f29d772059775aa8c33785abc0d885c}
+  - {path: /workspace/input-attachments/ed5486bf-a043-485b-a233-d88d8d123759/pdf-markdown.md, sha256: 23ca5473759e78be12699655fbdbc143cdd3fd383e3d28485dbb3c042bd1c59a}
+  - {path: /cache/e01_s03/downloads/paper-2607.28250v1.pdf, sha256: 77a2ec2c0751839d8a2e10863ca803c6f8b61475bbc790f2bbdad2a38af04ae4}
+  - {path: /artifacts/research_steps/S09/research_step_full_results.md, sha256: 6d78777fd4a4fcecbfc8e0844554b8aa3398c7347464958787d385bfd06aad1c}
+  - {path: /artifacts/E01_forensic_replication_bundle/preprocessing/compositional_transform_contract_v1.0.0.yaml, sha256: 7203d0d273f529b3953c45a2c6e1a64dbbd323aac00d72bb60b099ce93dd2679}
+  - {path: /artifacts/E01_forensic_replication_bundle/preprocessing/transform_specifications_v1.0.0.yaml, sha256: 658c4de8095f6dd2b0c98adced809955fd1ec0f482d4c4f21870925d076c8c86}
+  - {path: /artifacts/E01_forensic_replication_bundle/preprocessing/valid_transform_specification_registry_v1.0.0.yaml, sha256: a09608fe117c23d398a386326a06acc3742e2285aa77d59ff3e3a43590147e56}
+  - {path: /artifacts/research_steps/S10/research_step_full_results.md, sha256: 1a996d4e4b549b89761b9b21652553b8bf0e789b9e248a768b1e63d5704f3ff0}
+  - {path: /artifacts/research_steps/S10/preregistration.yaml, sha256: 5c54b8f88e8e8634a4b7f39783e3359084e25ce44cbed2291a141da85e19f3dd}
+  - {path: /artifacts/research_steps/S10/preregistration_record.json, sha256: 66d030853fac6cc48d1ab8716bf2290fe569890544d76e703031fcaebcf49b51}
+  - {path: /artifacts/research_steps/S10/eligibility_registry.csv, sha256: f70e59b4521e6fb143c4d000a1eefae76283e610cb3fe4407acb8a1812a91f1a}
+  - {path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_contract_v1.0.0.yaml, sha256: c31adef6d6fc7acf098244422a6a46c7c98b582bbd1d99d431216577c1f01a83}
+  - {path: /artifacts/E01_forensic_replication_bundle/information_dynamics/information_dynamics_eligibility_registry_v1.0.0.yaml, sha256: ff96a7ee46274bf0c40343a85280647e349fbceaa74003de608fc9b23481a186}
+  - {path: /artifacts/E01_forensic_replication_bundle/provenance/source_manifest.yaml, sha256: 50a569e30826fe893258f5c0935469576008f43134eee94e8bf2654d4ef23ed5}
+  - {path: /artifacts/E01_forensic_replication_bundle/provenance/environment_report.json, sha256: 021c6f848e01172c098e615f27babcf6748dbba1f8bd0f1374883d9d392ef2cd}
+  - {path: /artifacts/E01_forensic_replication_bundle/reproducibility/seed_derivation_contract_v1.0.0.yaml, sha256: a4c5586fc6be012afaff21f47fae422c4d6b6c68200c236df4a5b1ea5e736bb1}
+  - {path: /artifacts/E01_forensic_replication_bundle/specifications/specification_registry_v0.3.0.yaml, sha256: aef0e179de6466697540ba10236ed24af37fbda12bd4f1c6b1fb5fe7a27af891}

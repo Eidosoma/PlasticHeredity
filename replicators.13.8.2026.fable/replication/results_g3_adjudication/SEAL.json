@@ -1,0 +1,18 @@
+{
+  "sealed": "2026-08-18",
+  "module": "G3-ADJ - launch-state x convention factorial",
+  "domain": 32,
+  "bootstrap": {
+    "draws": 4096,
+    "seed": 41
+  },
+  "suite": "35/35 PASS at seal time",
+  "sha256": {
+    "replication/G3_ADJUDICATION.md": "ecf5f32140f47e7af78bf6c7b6058a9bcb9da14e19437415e9aefcd4f35a2967",
+    "replication/run_g3_adjudication.py": "efc36b1d79ebfaf11251caadf6d446d519f37674e197a1856d2cebcf9110a3c8",
+    "replication/run_g3_halflife.py": "465f3fd48dc9171e2460b52ad344960a2b9f5705273c01af8dd47ba4a8c44777",
+    "replication/run_steering.py": "6e61b793efade4161aa39b7a3fe26b3cc4d4d72c624346ce2d0f2679138a5036",
+    "replication/sim.py": "289b6a48fe3f4850b5248f747172a5f859d1b270391eb650ff890235e4534221",
+    "replication/cohort.py": "acab68436627b1a942382dd7fc4be3a41eb1a743d102eee8b1b40a7d086f4c89"
+  }
+}

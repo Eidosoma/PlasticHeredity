@@ -1,0 +1,212 @@
+{
+  "contract": {
+    "activity_budget": 4096,
+    "activity_count": "realized_post_noise_state_changes",
+    "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+    "composition_zero": "first_completed_generation",
+    "copy_draw": "unconditional_generation_batch",
+    "copy_error": 0.005,
+    "death": "activity_timeout_or_empty_terminal_board",
+    "flip_noise": 0.002,
+    "form_mass_quantile": 0.75,
+    "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+    "futures_per_launch": 32,
+    "height": 32,
+    "horizon": 32,
+    "implementation_version": "life-family-cleanroom-v1",
+    "launch_densities": [
+      0.1,
+      0.2,
+      0.3,
+      0.4
+    ],
+    "launch_rows_hex": null,
+    "launch_tag": "life-family-launch-v1",
+    "max_sweeps": 256,
+    "min_sweeps": 4,
+    "observed_daughter": "terminal_pre_copy",
+    "process_noise_order": "post_rule_each_sweep",
+    "rng_tag": "life-family-trajectory-v1:scale-32",
+    "rule_update": "synchronous_toroidal_Moore_8",
+    "thresholds": {
+      "break_horizon": 8,
+      "coherence": 0.9,
+      "distinct": 0.85,
+      "horizon": 32,
+      "inherit": 0.9,
+      "strict_run": 8
+    },
+    "width": 32
+  },
+  "contract_digest": "59cb8f7b1c49a2f08885e6a84fa515d9b70437713a482e7839333e33f7b528a8",
+  "death_counts": {
+    "empty": 7,
+    "timeout": 8888,
+    "timeout_and_empty": 391
+  },
+  "elapsed_seconds": 173.9477880001068,
+  "environment": {
+    "implementation": "vectorized shrinking Life batches",
+    "numpy": "2.5.2",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "life_family_cleanroom",
+  "gates": {
+    "capable_median_clock": 17.5,
+    "edge_mean_jaccard": 0.7222222222222222,
+    "family_clock_iqr": [
+      10.5,
+      131.125
+    ],
+    "family_clock_iqr_width": 120.625,
+    "gate_boundary_of_order": true,
+    "gate_heavy_tail": false,
+    "gate_life_rare_book": false,
+    "gate_smoothness": false,
+    "heavy_tail_share": 0.1891891891891892,
+    "life_in_band": false,
+    "life_library_rank": 27,
+    "life_strict": 0.0,
+    "life_top_decile": false,
+    "n_capable": 1,
+    "n_edges_in_sample": 81,
+    "n_forms": 30,
+    "named_rules": [
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "life",
+        "notation": "B3/S23",
+        "rule": 2060,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "highlife",
+        "notation": "B36/S23",
+        "rule": 18444,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "seeds",
+        "notation": "B2/S",
+        "rule": 1024,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.015625,
+        "library_rank": 4,
+        "library_size": 2,
+        "name": "daynight",
+        "notation": "B3678/S34678",
+        "rule": 117208,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "diamoeba",
+        "notation": "B35678/S5678",
+        "rule": 125408,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "morley",
+        "notation": "B368/S245",
+        "rule": 84020,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "twobytwo",
+        "notation": "B36/S125",
+        "rule": 18470,
+        "strict": 0.0
+      },
+      {
+        "break_by_8": 0.0,
+        "library_rank": 27,
+        "library_size": 0,
+        "name": "anneal",
+        "notation": "B4678/S35678",
+        "rule": 119272,
+        "strict": 0.0
+      }
+    ],
+    "random_mean_jaccard": 0.5925925925925926,
+    "smoothness_ratio": 1.21875
+  },
+  "launches": [
+    {
+      "density": 0.0048828125,
+      "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c00000010000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "index": 0,
+      "live_cells": 5,
+      "name": "glider"
+    },
+    {
+      "density": 0.0029296875,
+      "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "index": 1,
+      "live_cells": 3,
+      "name": "blinker"
+    },
+    {
+      "density": 0.005859375,
+      "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003800000070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "index": 2,
+      "live_cells": 6,
+      "name": "toad"
+    },
+    {
+      "density": 0.00390625,
+      "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001800000018000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "index": 3,
+      "live_cells": 4,
+      "name": "block"
+    },
+    {
+      "density": 0.099609375,
+      "hex": "008090840200000800410080002204188020860000020000040180021a0800020050801080400260000800210400000000000000d000000000004824000010400410280100000200010800800a00010000041020090000000040008020010412404000000108180020000c200008000180001442000018000100000260100140",
+      "index": 4,
+      "live_cells": 102,
+      "name": "density-0"
+    },
+    {
+      "density": 0.2001953125,
+      "hex": "04002044c0b101000200c10e20218140000440120200990280040400210084c11090a082290002804890020c5644a0200400401014410000008802215008200000012407441427045147c8c00014982a418080802d4312d002800210612010a201032200056040c2720420001011050010a84908006a4800184240028820b803",
+      "index": 5,
+      "live_cells": 205,
+      "name": "density-1"
+    },
+    {
+      "density": 0.2998046875,
+      "hex": "648048213d0000284042061026b12904c00608a28701722401417c452808e340852d5c0298e49058410823251b02904c04002c102f05848022f11224d09555118c90c08001440300ed8114860294a200d00405546a969d41156d012024b144190104d182281025c07021141423692032143bd00082041216010fa2708531a038",
+      "index": 6,
+      "live_cells": 307,
+      "name": "density-2"
+    },
+    {
+      "density": 0.400390625,
+      "hex": "e07082e98fc070d8d12e39cd9142b08346c04ac46132386279ec892c54dd844a251ab0550c3387229869028a9037d206739840c8122048ae88ccc04138a0cc0b6e5a5c0f58e2438478f4eb227c5002027d2089700a94379561d252028500cde58d68d5c2c55b4d408bc14521040bf8ce954b4506046fc28a1ed084641581830c",
+      "index": 7,
+      "live_cells": 410,
+      "name": "density-3"
+    }
+  ],
+  "n_lineages": 32768,
+  "n_rules": 128
+}

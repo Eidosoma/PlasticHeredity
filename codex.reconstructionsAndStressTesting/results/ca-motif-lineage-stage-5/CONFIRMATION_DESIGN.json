@@ -1,0 +1,23 @@
+{
+  "authorization_required": true,
+  "candidate_ids": [
+    "global-walsh-anchor"
+  ],
+  "candidate_metadata": {
+    "global-walsh-anchor": {
+      "bits": 4,
+      "boundary_scope": "uniform global broadcast diagnostic",
+      "candidate_id": "global-walsh-anchor",
+      "kind": "global",
+      "locality_audit": false,
+      "payload_bits": 64,
+      "rank": 16,
+      "shared_stage4_codebook_bits": 656,
+      "shared_writer_parameter_bits": 0
+    }
+  },
+  "cohort_ids_sha256": "3e6623fc1fbb719b175ad937cba7d1338d0d8d99ba1eb9d76cb5350dedfb4452",
+  "design_digest": "d0ae4d70c28cd78d325cde0f5744851fcd62bdb85d6adc35315635fc52b4d2fc",
+  "local_model_sha256": "7026529fd646f1c3076d69d3f72de4fd9ef08ab0f93648a5f4cd3181aa575afc",
+  "trajectory_state": "untouched"
+}

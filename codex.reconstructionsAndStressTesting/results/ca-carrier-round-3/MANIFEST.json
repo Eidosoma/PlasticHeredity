@@ -1,0 +1,14 @@
+{
+  "design_digest": "041fd850aa50248722cd190c03d59409560b8d91939d0729b48ee7fa2cce61f3",
+  "environment": {
+    "numpy": "2.5.2",
+    "omp_num_threads": "1",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "ca_carrier_round_3",
+  "max_hours": 48.0,
+  "profile": "reference",
+  "started_unix": 1787346279.030512,
+  "workers": 20
+}

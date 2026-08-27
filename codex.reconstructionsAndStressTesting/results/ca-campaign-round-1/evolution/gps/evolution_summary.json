@@ -1,0 +1,94 @@
+{
+  "boundary": "GPS planned on the frozen dev atlas and scored only on an independently simulated truth atlas",
+  "config": {
+    "generations": 40,
+    "measurement_budget": 256,
+    "population": 24,
+    "repeats": 32,
+    "seed_namespace": "plastic-ca-cleanroom-evolution-v1",
+    "tournament_k": 3
+  },
+  "elapsed_seconds": 6.583641767501831,
+  "evolution": {
+    "arm_summaries": {
+      "drift": {
+        "ci95": [
+          0.0072387695312500005,
+          0.061122131347656226
+        ],
+        "mean": 0.024443308512369793,
+        "median_class": 2.0
+      },
+      "fitness_shuffled": {
+        "ci95": [
+          0.00389556884765625,
+          0.08005472819010417
+        ],
+        "mean": 0.024814605712890625,
+        "median_class": 2.0
+      },
+      "random_walk": {
+        "ci95": [
+          0.009000142415364584,
+          0.06326700846354166
+        ],
+        "mean": 0.029405593872070312,
+        "median_class": 2.0
+      },
+      "selection": {
+        "ci95": [
+          0.04986165364583334,
+          0.16289062499999996
+        ],
+        "mean": 0.0930341084798177,
+        "median_class": 2.0
+      }
+    },
+    "class3_core_visit_fraction": {
+      "random_walk": 0.10074869791666667,
+      "selection": 0.059375
+    },
+    "gate_selection_finds_boundary": true,
+    "gate_sticky_walk": false,
+    "stickiness": {
+      "evolved": 0.024462890625,
+      "null": 0.05094915574596774
+    },
+    "stickiness_all_edges_nonempty_reanalysis": {
+      "direction_recovered": true,
+      "edge_mean": 0.07376478775226165,
+      "n_edges": 958,
+      "random_mean": 0.025862630208333334,
+      "ratio": 2.8521765635613314
+    },
+    "stickiness_nonempty_reanalysis": {
+      "evolved": 0.023477467496497116,
+      "null": 0.03502327026498954,
+      "ratio": 0.670339100799676
+    }
+  },
+  "experiment": "rulial_evolution_fresh_truth_gps",
+  "gps": {
+    "gate_gps": true,
+    "max_edits": 16,
+    "n_trials": 64,
+    "oracle_median_edits": 2.0,
+    "oracle_success": 1.0,
+    "planned_median_edits": 2.0,
+    "planned_success": 0.875,
+    "planning_data": "dev atlas only",
+    "random_median_edits": 8.0,
+    "random_walk_success": 0.453125,
+    "scoring_data": "fresh truth atlas only",
+    "targets": [
+      1056,
+      275,
+      1,
+      21,
+      23,
+      32769,
+      5,
+      17
+    ]
+  }
+}

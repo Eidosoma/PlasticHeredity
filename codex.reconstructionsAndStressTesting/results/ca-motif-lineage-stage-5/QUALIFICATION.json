@@ -1,0 +1,444 @@
+{
+  "candidate_summaries": {
+    "global-walsh-anchor": {
+      "candidate": {
+        "bits": 4,
+        "boundary_scope": "uniform global broadcast diagnostic",
+        "candidate_id": "global-walsh-anchor",
+        "kind": "global",
+        "locality_audit": false,
+        "payload_bits": 64,
+        "rank": 16,
+        "shared_stage4_codebook_bits": 656,
+        "shared_writer_parameter_bits": 0
+      },
+      "local_renewed_gate": false,
+      "localization": {
+        "not_applicable_global_anchor": true,
+        "passed": false
+      },
+      "strict": {
+        "ablation_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 96
+        },
+        "ablation_loss_fraction": 1.0,
+        "active_rewrite_advantage_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            0.9140625,
+            0.9775390625
+          ],
+          "mean": 0.94921875,
+          "n_pairs": 96
+        },
+        "alpha": 0.025,
+        "carrier_corruption_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            0.9039713541666666,
+            0.9720052083333334
+          ],
+          "mean": 0.94140625,
+          "n_pairs": 96
+        },
+        "control_advantages_generation8": {
+          "founder_write_disabled": {
+            "alpha": 0.025,
+            "ci": [
+              0.9127604166666666,
+              0.9768880208333334
+            ],
+            "mean": 0.94921875,
+            "n_pairs": 96
+          },
+          "read_disabled": {
+            "alpha": 0.025,
+            "ci": [
+              0.9130859375,
+              0.9778645833333334
+            ],
+            "mean": 0.94921875,
+            "n_pairs": 96
+          },
+          "shuffle_every_boundary": {
+            "alpha": 0.025,
+            "ci": [
+              0.9560546875,
+              1.0400390625
+            ],
+            "mean": 1.0006510416666667,
+            "n_pairs": 96
+          },
+          "zero_every_boundary": {
+            "alpha": 0.025,
+            "ci": [
+              0.9134114583333334,
+              0.9772135416666666
+            ],
+            "mean": 0.94921875,
+            "n_pairs": 96
+          }
+        },
+        "direction_a_mean": 0.951171875,
+        "direction_b_mean": 0.9495442708333334,
+        "fraction_pairs_positive": 1.0,
+        "intact_generation16": {
+          "alpha": 0.025,
+          "ci": [
+            0.9062459309895833,
+            0.9690755208333334
+          ],
+          "mean": 0.94140625,
+          "n_pairs": 96
+        },
+        "intact_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            0.9173136393229167,
+            0.9814453125
+          ],
+          "mean": 0.953125,
+          "n_pairs": 96
+        },
+        "intact_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            0.9134114583333334,
+            0.9775431315104169
+          ],
+          "mean": 0.94921875,
+          "n_pairs": 96
+        },
+        "no_rewrite_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 96
+        },
+        "no_rewrite_loss_fraction": 1.0,
+        "opposite_founder_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            -0.9794921875,
+            -0.9156901041666666
+          ],
+          "mean": -0.9514973958333334,
+          "n_pairs": 96
+        },
+        "opposite_rescue_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            -0.9830729166666666,
+            -0.9192708333333334
+          ],
+          "mean": -0.955078125,
+          "n_pairs": 96
+        },
+        "renewed_gate": true,
+        "rescue_advantage_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            0.9173177083333334,
+            0.9811197916666666
+          ],
+          "mean": 0.953125,
+          "n_pairs": 96
+        },
+        "rescue_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            0.9182942708333334,
+            0.9811197916666666
+          ],
+          "mean": 0.953125,
+          "n_pairs": 96
+        },
+        "rescue_restoration_fraction": 1.0,
+        "survival_generation16": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 96
+        },
+        "survival_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 96
+        },
+        "terminal_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            0.9140625,
+            0.9781901041666666
+          ],
+          "mean": 0.9495442708333334,
+          "n_pairs": 96
+        },
+        "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+      }
+    },
+    "local-affine-p2-d35-w08-r100": {
+      "candidate": {
+        "bits": 4,
+        "calibration_score": 1.0854529278052059,
+        "candidate_id": "local-affine-p2-d35-w08-r100",
+        "developmental_field_storage_bits_float32": 131072,
+        "developmental_field_values": 4096,
+        "diffusion": 0.35,
+        "kind": "local",
+        "locality_audit": true,
+        "patch_side": 2,
+        "payload_bits": 256,
+        "rank": 64,
+        "retention": 1.0,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "shared_stage4_codebook_bits": 656,
+        "shared_writer_parameter_bits": 1024,
+        "write_gain": 0.08,
+        "writer_id": "affine"
+      },
+      "local_renewed_gate": false,
+      "localization": {
+        "channel_shuffle_advantage": {
+          "alpha": 0.025,
+          "ci": [
+            -0.005859375,
+            -0.0006510416666666666
+          ],
+          "mean": -0.0032552083333333335,
+          "n_pairs": 96
+        },
+        "light_cone_and_runtime_locality_audit": true,
+        "passed": false,
+        "payload_accounting_audit": true,
+        "spatial_shuffle_advantage_diagnostic": {
+          "alpha": 0.025,
+          "ci": [
+            -0.001953125,
+            0.005859375
+          ],
+          "mean": 0.001953125,
+          "n_pairs": 96
+        },
+        "translated_patch": {
+          "alpha": 0.025,
+          "ci": [
+            -0.006184895833333333,
+            0.0006510416666666666
+          ],
+          "mean": -0.0026041666666666665,
+          "n_pairs": 96
+        },
+        "translation_retention": 0.0,
+        "transport_disabled_advantage": {
+          "alpha": 0.025,
+          "ci": [
+            0.0035766601562500036,
+            0.019205729166666668
+          ],
+          "mean": 0.011067708333333334,
+          "n_pairs": 96
+        }
+      },
+      "strict": {
+        "ablation_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 96
+        },
+        "ablation_loss_fraction": null,
+        "active_rewrite_advantage_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            -0.006184895833333333,
+            -0.0006510416666666666
+          ],
+          "mean": -0.0032552083333333335,
+          "n_pairs": 96
+        },
+        "alpha": 0.025,
+        "carrier_corruption_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            -0.0068359375,
+            -0.0013020833333333333
+          ],
+          "mean": -0.00390625,
+          "n_pairs": 96
+        },
+        "control_advantages_generation8": {
+          "founder_write_disabled": {
+            "alpha": 0.025,
+            "ci": [
+              -0.006184895833333333,
+              -0.0006510416666666666
+            ],
+            "mean": -0.0032552083333333335,
+            "n_pairs": 96
+          },
+          "read_disabled": {
+            "alpha": 0.025,
+            "ci": [
+              -0.005859375,
+              -0.0006510416666666666
+            ],
+            "mean": -0.0032552083333333335,
+            "n_pairs": 96
+          },
+          "shuffle_every_boundary": {
+            "alpha": 0.025,
+            "ci": [
+              -0.005859375,
+              -0.0006510416666666666
+            ],
+            "mean": -0.0032552083333333335,
+            "n_pairs": 96
+          },
+          "zero_every_boundary": {
+            "alpha": 0.025,
+            "ci": [
+              -0.005859375,
+              -0.0006510416666666666
+            ],
+            "mean": -0.0032552083333333335,
+            "n_pairs": 96
+          }
+        },
+        "direction_a_mean": -0.0013020833333333333,
+        "direction_b_mean": 0.0009765625,
+        "fraction_pairs_positive": 0.020833333333333332,
+        "intact_generation16": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 96
+        },
+        "intact_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            -0.03125,
+            -0.01171875
+          ],
+          "mean": -0.021484375,
+          "n_pairs": 96
+        },
+        "intact_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            -0.005859375,
+            -0.0006510416666666666
+          ],
+          "mean": -0.0032552083333333335,
+          "n_pairs": 96
+        },
+        "no_rewrite_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 96
+        },
+        "no_rewrite_loss_fraction": null,
+        "opposite_founder_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            -0.006184895833333333,
+            0.0003255208333333333
+          ],
+          "mean": -0.0029296875,
+          "n_pairs": 96
+        },
+        "opposite_rescue_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            -0.021809895833333332,
+            -0.0022786458333333335
+          ],
+          "mean": -0.012044270833333334,
+          "n_pairs": 96
+        },
+        "renewed_gate": false,
+        "rescue_advantage_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            -0.03125,
+            -0.012044270833333334
+          ],
+          "mean": -0.021484375,
+          "n_pairs": 96
+        },
+        "rescue_generation4": {
+          "alpha": 0.025,
+          "ci": [
+            -0.030924479166666668,
+            -0.01171875
+          ],
+          "mean": -0.021484375,
+          "n_pairs": 96
+        },
+        "rescue_restoration_fraction": null,
+        "survival_generation16": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 96
+        },
+        "survival_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 96
+        },
+        "terminal_generation8": {
+          "alpha": 0.025,
+          "ci": [
+            -0.006184895833333333,
+            -0.0013020833333333333
+          ],
+          "mean": -0.0035807291666666665,
+          "n_pairs": 96
+        },
+        "verdict": "NO_STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+      }
+    }
+  },
+  "design_digest": "d0ae4d70c28cd78d325cde0f5744851fcd62bdb85d6adc35315635fc52b4d2fc",
+  "qualified_candidate_ids": [
+    "global-walsh-anchor"
+  ],
+  "scientific_gate_applied": true,
+  "state": "complete"
+}

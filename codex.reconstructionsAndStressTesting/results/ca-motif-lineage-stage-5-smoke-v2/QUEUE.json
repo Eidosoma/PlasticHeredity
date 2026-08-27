@@ -1,0 +1,46 @@
+{
+  "automatic_launch": false,
+  "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+  "stages": [
+    {
+      "name": "motif_carrier_upper_bound",
+      "stage": 1,
+      "state": "complete"
+    },
+    {
+      "name": "freeze_and_generalize_reader",
+      "stage": 2,
+      "state": "complete"
+    },
+    {
+      "name": "renewed_heredity_causal_ladder",
+      "stage": 3,
+      "state": "complete_negative"
+    },
+    {
+      "name": "semantic_closure_and_repair",
+      "stage": "3R",
+      "state": "complete_positive"
+    },
+    {
+      "name": "compression_and_robustness",
+      "stage": 4,
+      "state": "complete_positive"
+    },
+    {
+      "confirmation_candidate_ids": [
+        "global-walsh-anchor",
+        "local-affine-p1-d20-w08-r100",
+        "local-affine-p2-d20-w08-r100"
+      ],
+      "name": "physical_localization",
+      "stage": 5,
+      "state": "blocked_pending_human_review"
+    },
+    {
+      "name": "unregistered_follow_up",
+      "stage": 6,
+      "state": "blocked_pending_stage5_review"
+    }
+  ]
+}

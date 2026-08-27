@@ -1,0 +1,32 @@
+{
+  "anchor_candidate_id": "identity-r512-f32",
+  "automatic_launch": false,
+  "confirmation_requires_separate_invocation": true,
+  "confirmation_state": "awaiting_human_review",
+  "design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "finalist_candidate_ids": [
+    "pca-r008-q04",
+    "walsh-r016-q04"
+  ],
+  "review_required": true,
+  "screen_selected_candidate_ids": [
+    "identity-r512-f32",
+    "identity-r512-q04",
+    "identity-r512-q08",
+    "pca-r008-q04",
+    "random-r256-q08",
+    "sparse-r032-q08",
+    "sparse-r256-q08",
+    "walsh-r016-q04"
+  ],
+  "stage3r_design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "strictly_qualified_candidate_ids": [
+    "identity-r512-f32",
+    "identity-r512-q04",
+    "identity-r512-q08",
+    "pca-r008-q04",
+    "sparse-r032-q08",
+    "sparse-r256-q08",
+    "walsh-r016-q04"
+  ]
+}

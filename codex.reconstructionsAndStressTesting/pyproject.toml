@@ -1,0 +1,14 @@
+[build-system]
+requires = []
+build-backend = "plastic_ca.build_backend"
+backend-path = ["."]
+
+[project]
+name = "plastic-ca-cleanroom"
+version = "0.1.0"
+description = "Clean-room reconstruction of plastic heredity in cellular automata"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.5.2"]
+
+[project.scripts]
+plastic-ca = "plastic_ca.cli:main"

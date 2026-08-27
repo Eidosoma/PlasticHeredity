@@ -1,0 +1,18 @@
+{
+  "confirmation_candidate_ids": [
+    "global-walsh-anchor",
+    "local-affine-p1-d20-w08-r100",
+    "local-affine-p2-d20-w08-r100"
+  ],
+  "deadline_remaining_seconds": 1613.1848385334015,
+  "elapsed_seconds": 186.8151614665985,
+  "hard_deadline_unix": 1787531456.7192752,
+  "phase": "campaign",
+  "pid": 2,
+  "profile": "smoke",
+  "science_deadline_unix": 1787531276.7192752,
+  "stage": "5-physical-localization",
+  "started_unix": 1787529656.7192752,
+  "state": "awaiting_confirmation",
+  "updated_unix": 1787529843.5344367
+}

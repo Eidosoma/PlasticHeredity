@@ -1,0 +1,61 @@
+{
+  "authorization_required": true,
+  "candidate_ids": [
+    "global-walsh-anchor",
+    "local-affine-p1-d10-w08-r100",
+    "local-affine-p2-d20-w08-r100"
+  ],
+  "candidate_metadata": {
+    "global-walsh-anchor": {
+      "bits": 4,
+      "boundary_scope": "uniform global broadcast diagnostic",
+      "candidate_id": "global-walsh-anchor",
+      "kind": "global",
+      "locality_audit": false,
+      "payload_bits": 64,
+      "rank": 16
+    },
+    "local-affine-p1-d10-w08-r100": {
+      "bits": 4,
+      "calibration_score": 0.8808273883027048,
+      "candidate_id": "local-affine-p1-d10-w08-r100",
+      "developmental_field_storage_bits_float32": 131072,
+      "developmental_field_values": 4096,
+      "diffusion": 0.1,
+      "kind": "local",
+      "locality_audit": true,
+      "patch_side": 1,
+      "payload_bits": 64,
+      "rank": 16,
+      "retention": 1.0,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "write_gain": 0.08,
+      "writer_id": "affine"
+    },
+    "local-affine-p2-d20-w08-r100": {
+      "bits": 4,
+      "calibration_score": 0.8885013989358691,
+      "candidate_id": "local-affine-p2-d20-w08-r100",
+      "developmental_field_storage_bits_float32": 131072,
+      "developmental_field_values": 4096,
+      "diffusion": 0.2,
+      "kind": "local",
+      "locality_audit": true,
+      "patch_side": 2,
+      "payload_bits": 256,
+      "rank": 64,
+      "retention": 1.0,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "write_gain": 0.08,
+      "writer_id": "affine"
+    }
+  },
+  "cohort_ids_sha256": "d887b2c8dd2baf5f702c308fa198563df1df464973f65f4ef24463452411979b",
+  "design_digest": "64f6ce298620c127a5b5ad857fc973c964fe6eed9e183dc6f5ddd08f35b881a5",
+  "local_model_sha256": "7026529fd646f1c3076d69d3f72de4fd9ef08ab0f93648a5f4cd3181aa575afc",
+  "trajectory_state": "untouched"
+}

@@ -1,0 +1,400 @@
+{
+  "adjudication": {
+    "contrasts": {
+      "eca": {
+        "causal_50_structured_minus_density_random": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_donors": 2
+        },
+        "dose_response": {
+          "fractions": [
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "mean_success": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "monotonic": true,
+          "slope": {
+            "ci95": [
+              0.0,
+              3.267514600480389e-17
+            ],
+            "mean": 1.6337573002401944e-17,
+            "n_donors": 2
+          }
+        },
+        "native_minus_neighbor_transplant": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_donors": 1
+        },
+        "observer_directions": {
+          "multiscale": -0.5,
+          "raw4": 0.0
+        },
+        "pedigree_half_minus_shuffled_depth_final": {
+          "ci95": [
+            -0.25,
+            0.0
+          ],
+          "mean": -0.125,
+          "n_donors": 2
+        },
+        "structure_50_structured_minus_shuffled": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_donors": 2
+        }
+      },
+      "life": {
+        "causal_50_structured_minus_density_random": {
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_donors": 2
+        },
+        "dose_response": {
+          "fractions": [
+            0.25,
+            0.5,
+            0.75,
+            1.0
+          ],
+          "mean_success": [
+            0.5,
+            0.5,
+            0.5,
+            1.0
+          ],
+          "monotonic": true,
+          "slope": {
+            "ci95": [
+              0.40000000000000013,
+              0.7999999999999998
+            ],
+            "mean": 0.6,
+            "n_donors": 2
+          }
+        },
+        "native_minus_neighbor_transplant": {
+          "ci95": [
+            null,
+            null
+          ],
+          "mean": null,
+          "n_donors": 0
+        },
+        "observer_directions": {
+          "components": 0.0,
+          "terminal2x2": 0.0
+        },
+        "pedigree_half_minus_shuffled_depth_final": {
+          "ci95": [
+            -0.25,
+            0.0
+          ],
+          "mean": -0.125,
+          "n_donors": 2
+        },
+        "structure_50_structured_minus_shuffled": {
+          "ci95": [
+            -1.0,
+            1.0
+          ],
+          "mean": 0.0,
+          "n_donors": 2
+        }
+      }
+    },
+    "donor_acquisition": {
+      "eca": {
+        "acquired_donors": 2,
+        "rules": 3,
+        "rules_below_target": [
+          110
+        ],
+        "target_donors": 3
+      },
+      "life": {
+        "acquired_donors": 2,
+        "rules": 3,
+        "rules_below_target": [
+          117208
+        ],
+        "target_donors": 3
+      }
+    },
+    "environmental_memory": {
+      "eca": {
+        "after_eight": {
+          "accuracy": 0.5,
+          "correct": 2,
+          "n_test": 4,
+          "permutation_p": 0.9108910891089109,
+          "permutations": 100
+        },
+        "after_one": {
+          "accuracy": 0.25,
+          "correct": 1,
+          "n_test": 4,
+          "permutation_p": 0.8217821782178217,
+          "permutations": 100
+        }
+      },
+      "life": {
+        "after_eight": {
+          "accuracy": 0.5,
+          "correct": 1,
+          "n_test": 2,
+          "permutation_p": 0.6237623762376238,
+          "permutations": 100
+        },
+        "after_one": {
+          "accuracy": 0.5,
+          "correct": 1,
+          "n_test": 2,
+          "permutation_p": 0.6534653465346535,
+          "permutations": 100
+        }
+      }
+    },
+    "gates": {
+      "causal_transmission": false,
+      "dose_response": false,
+      "environmental_memory": false,
+      "observer_robustness": false,
+      "pedigree_persistence": false,
+      "rule_specificity": false,
+      "structure_matters": false
+    },
+    "noise_decomposition": {
+      "eca": {
+        "intact:eta0:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta0:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta0:epsilon2": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "intact:eta1:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta1:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta1:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta2:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta2:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta2:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta0:epsilon0": {
+          "mean_success": 0.0,
+          "n_donors": 2
+        },
+        "structured_half:eta0:epsilon1": {
+          "mean_success": 0.0,
+          "n_donors": 2
+        },
+        "structured_half:eta0:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta1:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta1:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta1:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta2:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta2:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta2:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        }
+      },
+      "life": {
+        "intact:eta0:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta0:epsilon1": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "intact:eta0:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta1:epsilon0": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "intact:eta1:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "intact:eta1:epsilon2": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "intact:eta2:epsilon0": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "intact:eta2:epsilon1": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "intact:eta2:epsilon2": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "structured_half:eta0:epsilon0": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta0:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta0:epsilon2": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "structured_half:eta1:epsilon0": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "structured_half:eta1:epsilon1": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta1:epsilon2": {
+          "mean_success": 0.5,
+          "n_donors": 2
+        },
+        "structured_half:eta2:epsilon0": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "structured_half:eta2:epsilon1": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        },
+        "structured_half:eta2:epsilon2": {
+          "mean_success": 1.0,
+          "n_donors": 2
+        }
+      }
+    },
+    "row_counts": {
+      "common_garden": 74,
+      "memory_donors": 4,
+      "noise": 72,
+      "pedigrees": 12,
+      "transplant": 9
+    },
+    "rule_level_tests": [
+      {
+        "effect": 0.0,
+        "n_donors": 1,
+        "p_value": 1.0,
+        "q_value": 1.0,
+        "rule": 35,
+        "significant_q05": false,
+        "substrate": "eca"
+      },
+      {
+        "effect": 0.0,
+        "n_donors": 1,
+        "p_value": 1.0,
+        "q_value": 1.0,
+        "rule": 90,
+        "significant_q05": false,
+        "substrate": "eca"
+      },
+      {
+        "effect": 0.0,
+        "n_donors": 1,
+        "p_value": 1.0,
+        "q_value": 1.0,
+        "rule": 2060,
+        "significant_q05": false,
+        "substrate": "life"
+      },
+      {
+        "effect": 1.0,
+        "n_donors": 1,
+        "p_value": 0.44554455445544555,
+        "q_value": 1.0,
+        "rule": 18444,
+        "significant_q05": false,
+        "substrate": "life"
+      }
+    ]
+  },
+  "completed_unix": 1787309443.952702,
+  "contract_digest": "289e200613ccdebb6303dc848f45012b39630a0e1189f45e142b9b88c4597206",
+  "design_digest": "9dd8dc9532ff7b0a570de1126a2e7caeb6e4077a37225457acb796fc8b308e2e",
+  "elapsed_seconds": 0.18745660781860352,
+  "experiment": "causal_plastic_heredity",
+  "profile": "smoke",
+  "stage_completeness": {
+    "common_garden": true,
+    "donors": true,
+    "memory": true,
+    "noise": true,
+    "pedigrees": true,
+    "transplant": true
+  },
+  "started_unix": 1787309443.7652462,
+  "state": "complete"
+}

@@ -1,0 +1,624 @@
+{
+  "adjudication": {
+    "claim_boundary": "one-generation controllability only; not plastic heredity",
+    "familywise_interval_alpha": 0.0125,
+    "nominees": {
+      "contextual256-w32-s025-d08": {
+        "carrier_corruption_1": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.00390625,
+            -0.00048828125
+          ],
+          "mean": -0.001953125,
+          "n_pairs": 64
+        },
+        "checkpoint": 8,
+        "configuration": {
+          "configuration_id": "contextual256-w32-s025-d08",
+          "family": "contextual256",
+          "read_duration": 8,
+          "strength": 0.25,
+          "write_window": 32
+        },
+        "control_advantages": {
+          "read_disabled": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.005126953125,
+              -0.000732421875
+            ],
+            "mean": -0.002685546875,
+            "n_pairs": 64
+          },
+          "shuffle": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.0048828125,
+              -0.00048828125
+            ],
+            "mean": -0.00244140625,
+            "n_pairs": 64
+          },
+          "zero": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.005126953125,
+              -0.000732421875
+            ],
+            "mean": -0.002685546875,
+            "n_pairs": 64
+          }
+        },
+        "controllability_gate": false,
+        "diagnostics": {
+          "spatial_latch": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 64
+          },
+          "unrelated_pair": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.00439453125,
+              -0.000732421875
+            ],
+            "mean": -0.00244140625,
+            "n_pairs": 64
+          },
+          "visible64": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.0625,
+              0.0
+            ],
+            "mean": -0.015625,
+            "n_pairs": 64
+          }
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": -0.0009765625,
+        "fraction_pairs_positive": 0.0,
+        "independent_observer_gate": false,
+        "independent_observers": {
+          "components": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.01953125,
+              0.013671875
+            ],
+            "mean": -0.001953125,
+            "n_pairs": 64
+          },
+          "terminal": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.09509429931640626,
+              -0.0517578125
+            ],
+            "mean": -0.072509765625,
+            "n_pairs": 64
+          },
+          "texture_diagnostic": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.03125,
+              0.05762939453125071
+            ],
+            "mean": 0.01171875,
+            "n_pairs": 64
+          }
+        },
+        "intact": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.005126953125,
+            -0.000732421875
+          ],
+          "mean": -0.002685546875,
+          "n_pairs": 64
+        },
+        "opposite_history": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.003662109375,
+            -0.000244140625
+          ],
+          "mean": -0.001708984375,
+          "n_pairs": 64
+        },
+        "opposite_reversal_gate": false,
+        "process_noise": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.006591796875,
+            -0.000732421875
+          ],
+          "mean": -0.0029296875,
+          "n_pairs": 64
+        },
+        "robust_gate": false,
+        "survival": {
+          "alpha": 0.0125,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 64
+        }
+      },
+      "contextual256-w32-s025-d16": {
+        "carrier_corruption_1": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.00390625,
+            -0.00048828125
+          ],
+          "mean": -0.001953125,
+          "n_pairs": 64
+        },
+        "checkpoint": 8,
+        "configuration": {
+          "configuration_id": "contextual256-w32-s025-d16",
+          "family": "contextual256",
+          "read_duration": 16,
+          "strength": 0.25,
+          "write_window": 32
+        },
+        "control_advantages": {
+          "read_disabled": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.005126953125,
+              -0.000732421875
+            ],
+            "mean": -0.002685546875,
+            "n_pairs": 64
+          },
+          "shuffle": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.0048828125,
+              -0.000244140625
+            ],
+            "mean": -0.00244140625,
+            "n_pairs": 64
+          },
+          "zero": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.005126953125,
+              -0.000732421875
+            ],
+            "mean": -0.002685546875,
+            "n_pairs": 64
+          }
+        },
+        "controllability_gate": false,
+        "diagnostics": {
+          "spatial_latch": {
+            "alpha": 0.0125,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 64
+          },
+          "unrelated_pair": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.00439453125,
+              -0.000732421875
+            ],
+            "mean": -0.00244140625,
+            "n_pairs": 64
+          },
+          "visible64": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.0625,
+              0.0
+            ],
+            "mean": -0.015625,
+            "n_pairs": 64
+          }
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": -0.0009765625,
+        "fraction_pairs_positive": 0.0,
+        "independent_observer_gate": false,
+        "independent_observers": {
+          "components": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.01953125,
+              0.013671875
+            ],
+            "mean": -0.001953125,
+            "n_pairs": 64
+          },
+          "terminal": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.09423828125,
+              -0.052001953125
+            ],
+            "mean": -0.072509765625,
+            "n_pairs": 64
+          },
+          "texture_diagnostic": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.03125,
+              0.056640625
+            ],
+            "mean": 0.01171875,
+            "n_pairs": 64
+          }
+        },
+        "intact": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.005126953125,
+            -0.000732421875
+          ],
+          "mean": -0.002685546875,
+          "n_pairs": 64
+        },
+        "opposite_history": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.003662109375,
+            -0.000244140625
+          ],
+          "mean": -0.001708984375,
+          "n_pairs": 64
+        },
+        "opposite_reversal_gate": false,
+        "process_noise": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.006591796875,
+            -0.0006088256835936612
+          ],
+          "mean": -0.0029296875,
+          "n_pairs": 64
+        },
+        "robust_gate": false,
+        "survival": {
+          "alpha": 0.0125,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 64
+        }
+      },
+      "motif_energy512-w16-s025-d32": {
+        "carrier_corruption_1": {
+          "alpha": 0.0125,
+          "ci": [
+            0.8253158569335938,
+            0.9150390625
+          ],
+          "mean": 0.873779296875,
+          "n_pairs": 64
+        },
+        "checkpoint": 64,
+        "configuration": {
+          "configuration_id": "motif_energy512-w16-s025-d32",
+          "family": "motif_energy512",
+          "read_duration": 32,
+          "strength": 0.25,
+          "write_window": 16
+        },
+        "control_advantages": {
+          "read_disabled": {
+            "alpha": 0.0125,
+            "ci": [
+              0.825439453125,
+              0.916259765625
+            ],
+            "mean": 0.8740234375,
+            "n_pairs": 64
+          },
+          "shuffle": {
+            "alpha": 0.0125,
+            "ci": [
+              0.896240234375,
+              1.16064453125
+            ],
+            "mean": 1.03271484375,
+            "n_pairs": 64
+          },
+          "zero": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8255569458007812,
+              0.916748046875
+            ],
+            "mean": 0.8740234375,
+            "n_pairs": 64
+          }
+        },
+        "controllability_gate": true,
+        "diagnostics": {
+          "spatial_latch": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8193359375,
+              0.9144302368164063
+            ],
+            "mean": 0.86962890625,
+            "n_pairs": 64
+          },
+          "unrelated_pair": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8332489013671875,
+              0.9212661743164063
+            ],
+            "mean": 0.88037109375,
+            "n_pairs": 64
+          },
+          "visible64": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.234375,
+              0.1875
+            ],
+            "mean": -0.015625,
+            "n_pairs": 64
+          }
+        },
+        "direction_a_mean": 0.914794921875,
+        "direction_b_mean": 0.899169921875,
+        "fraction_pairs_positive": 1.0,
+        "independent_observer_gate": true,
+        "independent_observers": {
+          "components": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.014660644531249989,
+              0.10546875
+            ],
+            "mean": 0.044921875,
+            "n_pairs": 64
+          },
+          "terminal": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8175033569335938,
+              0.911865234375
+            ],
+            "mean": 0.867431640625,
+            "n_pairs": 64
+          },
+          "texture_diagnostic": {
+            "alpha": 0.0125,
+            "ci": [
+              0.125,
+              0.31640625
+            ],
+            "mean": 0.220703125,
+            "n_pairs": 64
+          }
+        },
+        "intact": {
+          "alpha": 0.0125,
+          "ci": [
+            0.82470703125,
+            0.916748046875
+          ],
+          "mean": 0.8740234375,
+          "n_pairs": 64
+        },
+        "opposite_history": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.9656997680664062,
+            -0.9097885131835937
+          ],
+          "mean": -0.93994140625,
+          "n_pairs": 64
+        },
+        "opposite_reversal_gate": true,
+        "process_noise": {
+          "alpha": 0.0125,
+          "ci": [
+            0.804443359375,
+            0.8975845336914063
+          ],
+          "mean": 0.853271484375,
+          "n_pairs": 64
+        },
+        "robust_gate": true,
+        "survival": {
+          "alpha": 0.0125,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 64
+        }
+      },
+      "motif_energy512-w32-s025-d32": {
+        "carrier_corruption_1": {
+          "alpha": 0.0125,
+          "ci": [
+            0.8685287475585938,
+            0.9453125
+          ],
+          "mean": 0.910400390625,
+          "n_pairs": 64
+        },
+        "checkpoint": 64,
+        "configuration": {
+          "configuration_id": "motif_energy512-w32-s025-d32",
+          "family": "motif_energy512",
+          "read_duration": 32,
+          "strength": 0.25,
+          "write_window": 32
+        },
+        "control_advantages": {
+          "read_disabled": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8814682006835938,
+              0.951904296875
+            ],
+            "mean": 0.920166015625,
+            "n_pairs": 64
+          },
+          "shuffle": {
+            "alpha": 0.0125,
+            "ci": [
+              0.9427444458007812,
+              1.199951171875
+            ],
+            "mean": 1.072509765625,
+            "n_pairs": 64
+          },
+          "zero": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8823211669921875,
+              0.951904296875
+            ],
+            "mean": 0.920166015625,
+            "n_pairs": 64
+          }
+        },
+        "controllability_gate": true,
+        "diagnostics": {
+          "spatial_latch": {
+            "alpha": 0.0125,
+            "ci": [
+              0.87109375,
+              0.9482421875
+            ],
+            "mean": 0.912841796875,
+            "n_pairs": 64
+          },
+          "unrelated_pair": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8856185913085938,
+              0.9576431274414063
+            ],
+            "mean": 0.92529296875,
+            "n_pairs": 64
+          },
+          "visible64": {
+            "alpha": 0.0125,
+            "ci": [
+              -0.234375,
+              0.1875
+            ],
+            "mean": -0.03125,
+            "n_pairs": 64
+          }
+        },
+        "direction_a_mean": 0.94482421875,
+        "direction_b_mean": 0.939453125,
+        "fraction_pairs_positive": 1.0,
+        "independent_observer_gate": true,
+        "independent_observers": {
+          "components": {
+            "alpha": 0.0125,
+            "ci": [
+              0.013671875,
+              0.119140625
+            ],
+            "mean": 0.0625,
+            "n_pairs": 64
+          },
+          "terminal": {
+            "alpha": 0.0125,
+            "ci": [
+              0.8709701538085938,
+              0.947509765625
+            ],
+            "mean": 0.91259765625,
+            "n_pairs": 64
+          },
+          "texture_diagnostic": {
+            "alpha": 0.0125,
+            "ci": [
+              0.169921875,
+              0.34765625
+            ],
+            "mean": 0.255859375,
+            "n_pairs": 64
+          }
+        },
+        "intact": {
+          "alpha": 0.0125,
+          "ci": [
+            0.8828125,
+            0.95263671875
+          ],
+          "mean": 0.920166015625,
+          "n_pairs": 64
+        },
+        "opposite_history": {
+          "alpha": 0.0125,
+          "ci": [
+            -0.981201171875,
+            -0.9429916381835937
+          ],
+          "mean": -0.964111328125,
+          "n_pairs": 64
+        },
+        "opposite_reversal_gate": true,
+        "process_noise": {
+          "alpha": 0.0125,
+          "ci": [
+            0.8543685913085938,
+            0.936767578125
+          ],
+          "mean": 0.89892578125,
+          "n_pairs": 64
+        },
+        "robust_gate": true,
+        "survival": {
+          "alpha": 0.0125,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 64
+        }
+      }
+    },
+    "passing_configurations": [
+      "motif_energy512-w32-s025-d32",
+      "motif_energy512-w16-s025-d32"
+    ],
+    "robust_passing_configurations": [
+      "motif_energy512-w32-s025-d32",
+      "motif_energy512-w16-s025-d32"
+    ],
+    "verdict": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY"
+  },
+  "completed_unix": 1787410370.4657812,
+  "design_digest": "3a2fecbe9b4240ed9fd064759044c8eca4aac55cf0aa0ad8cc5850fef63b0346",
+  "elapsed_seconds": 144.4049015045166,
+  "experiment": "ca_motif_lineage_stage_1",
+  "profile": "reference",
+  "stage_completeness": {
+    "screen": true,
+    "validation": true
+  },
+  "started_unix": 1787410226.0608804,
+  "state": "complete"
+}

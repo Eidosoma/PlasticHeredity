@@ -1,0 +1,17 @@
+{
+  "automatic_launch": false,
+  "claim_boundary": "Stage 2 cannot establish multigenerational Plastic Heredity",
+  "decision": "advance_to_stage_3_after_review",
+  "design_digest": "2663720d207312c959443a8c61d5c69e690053a81ca5a5dafa268c504de08677",
+  "review_required": true,
+  "selected_stage3_input": {
+    "configuration_id": "motif_energy512-w32-s025-d32",
+    "family": "motif_energy512",
+    "read_duration": 32,
+    "strength": 0.25,
+    "write_window": 32
+  },
+  "stage": 2,
+  "stage1_design_digest": "3a2fecbe9b4240ed9fd064759044c8eca4aac55cf0aa0ad8cc5850fef63b0346",
+  "verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL"
+}

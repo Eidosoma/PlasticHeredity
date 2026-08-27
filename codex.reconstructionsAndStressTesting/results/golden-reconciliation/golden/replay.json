@@ -1,0 +1,11 @@
+{
+  "errors": [],
+  "expected_spectrum_checks": 15,
+  "expected_sweep_checks": 907,
+  "fixture_sha256": "e95674116b3af9214222bd8f095fa5aa4b19578623ab5b08d682c9ba08849575",
+  "launch_checks": 16,
+  "passed": true,
+  "spectrum_checks": 15,
+  "sweep_checks": 907,
+  "total_checks": 938
+}

@@ -1,0 +1,21 @@
+{
+  "design_digest": "bfd46d458b87294b62f8783956a5e8aeadbd62ae18d06869d895ec2c3286f2e6",
+  "pairs": {
+    "31648": [
+      "life-31648-local-holdout-a-holdout-b-0012",
+      "life-31648-local-holdout-a-holdout-b-0029",
+      "life-31648-local-holdout-a-holdout-b-0021"
+    ],
+    "31649": [
+      "narrow-0440-life-31649-2-115-life-31649-2-1452",
+      "narrow-0725-life-31649-3-308-life-31649-3-38",
+      "narrow-0875-life-31649-3-236-life-31649-3-508",
+      "narrow-0827-life-31649-3-807-life-31649-3-880"
+    ],
+    "70366": [
+      "life-70366-local-holdout-a-holdout-b-0025",
+      "life-70366-local-holdout-a-holdout-b-0055",
+      "life-70366-local-holdout-a-holdout-b-0053"
+    ]
+  }
+}

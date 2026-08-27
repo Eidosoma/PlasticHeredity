@@ -1,0 +1,482 @@
+{
+  "audit_rules": [
+    124375,
+    125398
+  ],
+  "contract": {
+    "activity_budget": 48,
+    "assignment": "cosine >=0.90 and best-minus-runner-up >=0.05",
+    "assignment_margin": 0.05,
+    "assignment_similarity": 0.9,
+    "control_advantage": 0.1,
+    "copy_error": 0.005,
+    "density_max": 0.95,
+    "density_min": 0.05,
+    "donor_horizon": 32,
+    "doses": [
+      0.0625,
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "form_id": "0.75 mass support of established primary centroid",
+    "height": 16,
+    "holdout_crossover": 0.15,
+    "holdout_horizon": 48,
+    "implementation_version": "life-carrier-cleanroom-v1",
+    "mapping_horizon": 16,
+    "max_sweeps": 64,
+    "min_sweeps": 4,
+    "morphology_component_cosine": 0.95,
+    "morphology_max_swaps": 100000,
+    "morphology_neighbor_error": 0.02,
+    "namespace": "plastic-ca-life-carrier-v1",
+    "noise_multipliers": [
+      0,
+      1,
+      2
+    ],
+    "pair_density_tolerance": 0.05,
+    "pedigree_depth": 8,
+    "primary_unit": "matched donor pair",
+    "process_noise": 0.002,
+    "recipient_operation": "replace bits under mask; never OR composite",
+    "screen_crossover": 0.1,
+    "screen_horizon": 16,
+    "simulator": {
+      "common_garden_rng": "independent condition stream",
+      "eca_activity_budget": 256,
+      "eca_copy_error": 0.015,
+      "eca_max_sweeps": 128,
+      "eca_min_sweeps": 4,
+      "eca_process_noise": 0.01,
+      "eca_semantics": {
+        "activity_budget": 256,
+        "activity_count": "realized_post_noise",
+        "boundary_death": "timeout_or_terminal_monochrome",
+        "break_horizon": 8,
+        "cell_zero_bit_order": "most_significant_bit",
+        "coherence": 0.9,
+        "composition_zero": "first_completed_generation",
+        "copy_draw": "unconditional_generation_batch",
+        "copy_error": 0.015,
+        "distinct": 0.85,
+        "flip_noise": 0.01,
+        "form_mass_quantile": 0.5,
+        "form_pooling": "per seed, equal mean of each broken future's last completed composition; the break-causing daughter satisfies the later-generation requirement",
+        "futures_per_seed": 128,
+        "horizon": 32,
+        "inherit": 0.9,
+        "launch_preparation": "none",
+        "launch_rows_hex": [
+          "0000000080000000",
+          "0000000180000000",
+          "00000003c0000000",
+          "0000000ff0000000",
+          "aaaaaaaaaaaaaaaa",
+          "ffffffff00000000",
+          "23a031300051000a",
+          "6420581808011102",
+          "4450081105301018",
+          "01c1385c048a0f68",
+          "2349a69c817d7b9b",
+          "a13c035191c53554",
+          "9d65705fb9e2a777",
+          "89f7b38cfeff37ed",
+          "27deeff5fff7aefd",
+          "dfd73effdfef7dea"
+        ],
+        "max_sweeps": 128,
+        "min_sweeps": 4,
+        "n_seeds": 16,
+        "observed_daughter": "terminal_pre_copy",
+        "process_noise_order": "post_rule",
+        "rng_tag": "eca-traj-v1",
+        "strict_run": 8,
+        "width": 64
+      },
+      "eca_width": 64,
+      "implementation_version": "life-carrier-cleanroom-v1",
+      "intervention_copy_timing": "initial daughter and after every completed generation",
+      "life_activity_budget": 48,
+      "life_copy_error": 0.005,
+      "life_height": 16,
+      "life_max_sweeps": 64,
+      "life_min_sweeps": 4,
+      "life_process_noise": 0.002,
+      "life_semantics": {
+        "activity_budget": 48,
+        "activity_count": "realized_post_noise_state_changes",
+        "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+        "composition_zero": "first_completed_generation",
+        "copy_draw": "unconditional_generation_batch",
+        "copy_error": 0.005,
+        "death": "activity_timeout_or_empty_terminal_board",
+        "flip_noise": 0.002,
+        "form_mass_quantile": 0.75,
+        "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+        "futures_per_launch": 64,
+        "height": 16,
+        "horizon": 32,
+        "implementation_version": "life-family-cleanroom-v1",
+        "launch_densities": [
+          0.1,
+          0.2,
+          0.3,
+          0.4
+        ],
+        "launch_rows_hex": null,
+        "launch_tag": "life-family-launch-v1",
+        "max_sweeps": 64,
+        "min_sweeps": 4,
+        "observed_daughter": "terminal_pre_copy",
+        "process_noise_order": "post_rule_each_sweep",
+        "rng_tag": "life-family-trajectory-v1",
+        "rule_update": "synchronous_toroidal_Moore_8",
+        "thresholds": {
+          "break_horizon": 8,
+          "coherence": 0.9,
+          "distinct": 0.85,
+          "horizon": 32,
+          "inherit": 0.9,
+          "strict_run": 8
+        },
+        "width": 16
+      },
+      "life_width": 16,
+      "memory_garden_horizon": 8,
+      "memory_precondition_horizon": 4,
+      "namespace": "plastic-ca-life-carrier-v1:base",
+      "noise_multipliers": [
+        0,
+        1,
+        2
+      ],
+      "pedigree_depth": 8,
+      "recovery_horizon": 48,
+      "success": "last eight valid compositions each target cosine >0.90, pairwise >0.90; switchers also <=0.85 to historical break-causing-daughter anchor",
+      "thresholds": {
+        "break_horizon": 8,
+        "coherence": 0.9,
+        "distinct": 0.85,
+        "horizon": 32,
+        "inherit": 0.9,
+        "strict_run": 8
+      },
+      "transmission_fractions": [
+        0.25,
+        0.5,
+        0.75
+      ]
+    },
+    "target_probability": 0.25,
+    "width": 16
+  },
+  "design_digest": "9565528d988ec8b79c797103da560f239b7f681cb2768d70d5baed9b04705582",
+  "implementation_sha256": {
+    "causal_heredity.py": "c65597713a88ea26460945a469429c14634dab979923b0286420f531514d4eab",
+    "life_carrier.py": "9689027e4eb7f1f2b66062f904158628acac28600290ef69fb8d9e19cf4212e3",
+    "life_family.py": "dd23a07a1c85b7fe8bde62a647acc15de69b819864ae71abedae53bb222161c1"
+  },
+  "life_atlas_sha256": "366f6dc6925eed2a2a5f71c66d05b02841ae682fc37a7ac3def85c9bd7010fe1",
+  "profile": {
+    "audit_discovery_cap": 32768,
+    "audit_donors": 128,
+    "audit_replicates": 128,
+    "bootstrap_resamples": 10000,
+    "holdout_discovery_cap": 32768,
+    "holdout_pairs": 64,
+    "holdout_replicates": 128,
+    "mapping_pairs": 16,
+    "mapping_replicates": 32,
+    "max_candidates": 4,
+    "morphology_max_swaps": 100000,
+    "panel_limit": 24,
+    "screen_discovery_cap": 32768,
+    "screen_pairs": 16,
+    "screen_replicates": 32
+  },
+  "protocol_sha256": "30abb5d88cf97149328d92b54ddb7ab80cd6372d34470ca7ec3f72f9ad913eca",
+  "screen_panel": [
+    {
+      "development_library_size": 3,
+      "development_strict": 0.439453125,
+      "development_support_masks": [
+        13376,
+        21568,
+        28736
+      ],
+      "notation": "B1256/S04567",
+      "rule": 26353
+    },
+    {
+      "development_library_size": 3,
+      "development_strict": 0.404296875,
+      "development_support_masks": [
+        16384,
+        16514,
+        16520
+      ],
+      "notation": "B3678/S235678",
+      "rule": 117228
+    },
+    {
+      "development_library_size": 2,
+      "development_strict": 0.369140625,
+      "development_support_masks": [
+        21568,
+        29760
+      ],
+      "notation": "B246/S14567",
+      "rule": 21746
+    },
+    {
+      "development_library_size": 2,
+      "development_strict": 0.3515625,
+      "development_support_masks": [
+        13376,
+        29760
+      ],
+      "notation": "B3456/S24567",
+      "rule": 30964
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.3359375,
+      "development_support_masks": [
+        21568,
+        25664,
+        28736,
+        29696
+      ],
+      "notation": "B3457/S0234567",
+      "rule": 47357
+    },
+    {
+      "development_library_size": 2,
+      "development_strict": 0.291015625,
+      "development_support_masks": [
+        29760,
+        29889
+      ],
+      "notation": "B345/S24567",
+      "rule": 14580
+    },
+    {
+      "development_library_size": 3,
+      "development_strict": 0.28515625,
+      "development_support_masks": [
+        16384,
+        28875,
+        29899
+      ],
+      "notation": "B4678/S1234678",
+      "rule": 119262
+    },
+    {
+      "development_library_size": 3,
+      "development_strict": 0.28125,
+      "development_support_masks": [
+        29764,
+        29776,
+        31808
+      ],
+      "notation": "B23578/S04567",
+      "rule": 109809
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.26953125,
+      "development_support_masks": [
+        30288,
+        31808,
+        31812,
+        32320
+      ],
+      "notation": "B34567/S012467",
+      "rule": 63703
+    },
+    {
+      "development_library_size": 6,
+      "development_strict": 0.259765625,
+      "development_support_masks": [
+        16384,
+        17472,
+        21568,
+        24576,
+        24640,
+        29760
+      ],
+      "notation": "B278/S1345678",
+      "rule": 99834
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.2578125,
+      "development_support_masks": [
+        29760,
+        29764,
+        31808,
+        31812
+      ],
+      "notation": "B34567/S12567",
+      "rule": 63718
+    },
+    {
+      "development_library_size": 3,
+      "development_strict": 0.255859375,
+      "development_support_masks": [
+        29796,
+        30032,
+        30048
+      ],
+      "notation": "B2345/S0456",
+      "rule": 15473
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.251953125,
+      "development_support_masks": [
+        32340,
+        32342,
+        32348,
+        32468
+      ],
+      "notation": "B4578/S1234578",
+      "rule": 111038
+    },
+    {
+      "development_library_size": 6,
+      "development_strict": 0.25,
+      "development_support_masks": [
+        29764,
+        30288,
+        30420,
+        32332,
+        32340,
+        32460
+      ],
+      "notation": "B4567/S1234568",
+      "rule": 61822
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.23828125,
+      "development_support_masks": [
+        2932,
+        6964,
+        7702,
+        7764
+      ],
+      "notation": "B13456/S0578",
+      "rule": 31649
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.232421875,
+      "development_support_masks": [
+        29764,
+        29776,
+        30272,
+        31808
+      ],
+      "notation": "B24568/S03567",
+      "rule": 95465
+    },
+    {
+      "development_library_size": 2,
+      "development_strict": 0.232421875,
+      "development_support_masks": [
+        16384,
+        20480
+      ],
+      "notation": "B13568/S04678",
+      "rule": 93137
+    },
+    {
+      "development_library_size": 2,
+      "development_strict": 0.208984375,
+      "development_support_masks": [
+        29760,
+        30016
+      ],
+      "notation": "B345/S023567",
+      "rule": 14573
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.181640625,
+      "development_support_masks": [
+        29764,
+        29776,
+        30272,
+        31808
+      ],
+      "notation": "B23567/S2567",
+      "rule": 60644
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.177734375,
+      "development_support_masks": [
+        29764,
+        29776,
+        30272,
+        31808
+      ],
+      "notation": "B14567/S04567",
+      "rule": 62193
+    },
+    {
+      "development_library_size": 4,
+      "development_strict": 0.171875,
+      "development_support_masks": [
+        32349,
+        32350,
+        32469,
+        32476
+      ],
+      "notation": "B23457/S0267",
+      "rule": 48325
+    },
+    {
+      "development_library_size": 3,
+      "development_strict": 0.171875,
+      "development_support_masks": [
+        25803,
+        29764,
+        30272
+      ],
+      "notation": "B34568/S24567",
+      "rule": 96500
+    },
+    {
+      "development_library_size": 6,
+      "development_strict": 0.16796875,
+      "development_support_masks": [
+        21504,
+        21568,
+        24640,
+        25664,
+        28736,
+        29696
+      ],
+      "notation": "B12456/S5678",
+      "rule": 30688
+    },
+    {
+      "development_library_size": 5,
+      "development_strict": 0.15625,
+      "development_support_masks": [
+        29780,
+        30288,
+        30300,
+        31828,
+        32336
+      ],
+      "notation": "B3467/S12567",
+      "rule": 55526
+    }
+  ]
+}

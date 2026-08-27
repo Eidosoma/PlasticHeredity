@@ -1,0 +1,13 @@
+{
+  "cleanroom_exclusion_upheld": true,
+  "confirmation_not_opened": true,
+  "confirmation_pairs": 128,
+  "design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "prior_rule31649_pairs": 500,
+  "selection_pairs": 96,
+  "stage3r_strict_gate": true,
+  "stage3r_winner": "simple--strict-49-64--gain-050",
+  "stage5_reserve_pairs": 158,
+  "state": "passed",
+  "unused_before_stage4": 382
+}

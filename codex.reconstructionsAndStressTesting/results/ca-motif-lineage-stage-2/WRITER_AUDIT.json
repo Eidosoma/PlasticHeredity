@@ -1,0 +1,13 @@
+{
+  "design_digest": "2663720d207312c959443a8c61d5c69e690053a81ca5a5dafa268c504de08677",
+  "label_use": "adjudication-only LOPO diagnostic; never parameter selection",
+  "leave_one_pair_out_accuracy": 0.96875,
+  "mean_a_b_l2": 41.23377227783203,
+  "pair_count": 32,
+  "raw_motif_symmetry_max_abs_error": {
+    "reflection_x": 0.0,
+    "rotation90": 0.0,
+    "translation": 0.0
+  },
+  "writer_gate": true
+}

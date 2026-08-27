@@ -1,0 +1,84 @@
+{
+  "design_digest": "64f6ce298620c127a5b5ad857fc973c964fe6eed9e183dc6f5ddd08f35b881a5",
+  "exploratory_only": true,
+  "generation": 4,
+  "rules": {
+    "31648": {
+      "candidates": {
+        "global-walsh-anchor": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0,
+              1.0
+            ],
+            "mean": 0.5,
+            "n_pairs": 2
+          }
+        },
+        "local-affine-p1-d10-w08-r100": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 2
+          }
+        },
+        "local-affine-p2-d20-w08-r100": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 2
+          }
+        }
+      },
+      "pairs": 6
+    },
+    "70366": {
+      "candidates": {
+        "global-walsh-anchor": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.5,
+              0.0
+            ],
+            "mean": -0.25,
+            "n_pairs": 2
+          }
+        },
+        "local-affine-p1-d10-w08-r100": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 2
+          }
+        },
+        "local-affine-p2-d20-w08-r100": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "mean": 0.0,
+            "n_pairs": 2
+          }
+        }
+      },
+      "pairs": 6
+    }
+  },
+  "state": "complete"
+}

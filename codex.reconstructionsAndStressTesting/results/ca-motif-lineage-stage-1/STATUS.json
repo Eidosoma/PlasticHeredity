@@ -1,0 +1,14 @@
+{
+  "deadline_remaining_seconds": 28655.59112930298,
+  "elapsed_seconds": 144.40887069702148,
+  "hard_deadline_unix": 1787439026.0608804,
+  "phase": "campaign",
+  "pid": 2690755,
+  "profile": "reference",
+  "science_deadline_unix": 1787437226.0608804,
+  "stage": "1-upper-bound",
+  "started_unix": 1787410226.0608804,
+  "state": "complete",
+  "updated_unix": 1787410370.4697511,
+  "verdict": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY"
+}

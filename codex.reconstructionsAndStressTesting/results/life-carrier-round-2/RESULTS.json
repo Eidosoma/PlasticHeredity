@@ -1,0 +1,139 @@
+{
+  "adjudication": {
+    "audit": {
+      "124375": {
+        "acquired_form_specific": false,
+        "contrasts": {
+          "intact_minus_ancestor": {
+            "ci95": [
+              -0.08612060546875,
+              -0.06475830078125
+            ],
+            "mean": -0.07537841796875,
+            "n_donors": 128,
+            "p_holm": 1.0,
+            "p_value": 1.0
+          },
+          "square_minus_density_random": {
+            "ci95": [
+              0.0006103515625,
+              0.017822265625
+            ],
+            "mean": 0.00927734375,
+            "n_donors": 128,
+            "p_holm": 0.06119388061193881,
+            "p_value": 0.020397960203979604
+          },
+          "square_minus_generic_all_live": {
+            "ci95": [
+              0.00225830078125,
+              0.017578125
+            ],
+            "mean": 0.0098876953125,
+            "n_donors": 128,
+            "p_holm": 0.029197080291970802,
+            "p_value": 0.0072992700729927005
+          },
+          "square_minus_morphology": {
+            "ci95": [
+              -0.009033203125,
+              0.0068359375
+            ],
+            "mean": -0.001220703125,
+            "n_donors": 128,
+            "p_holm": 1.0,
+            "p_value": 0.6320367963203679
+          }
+        },
+        "historical_effect_replicated": false,
+        "n_donors": 128,
+        "verdict": "SATURATION_LEAD_NOT_REPLICATED"
+      },
+      "125398": {
+        "acquired_form_specific": false,
+        "contrasts": {
+          "intact_minus_ancestor": {
+            "ci95": [
+              -0.09564208984375,
+              -0.05780029296875
+            ],
+            "mean": -0.07763671875,
+            "n_donors": 128,
+            "p_holm": 1.0,
+            "p_value": 1.0
+          },
+          "square_minus_density_random": {
+            "ci95": [
+              0.04547119140625,
+              0.0618896484375
+            ],
+            "mean": 0.0537109375,
+            "n_donors": 128,
+            "p_holm": 0.00039996000399960006,
+            "p_value": 9.999000099990002e-05
+          },
+          "square_minus_generic_all_live": {
+            "ci95": [
+              -0.0103759765625,
+              0.0015869140625
+            ],
+            "mean": -0.0045166015625,
+            "n_donors": 128,
+            "p_holm": 1.0,
+            "p_value": 0.9279072092790721
+          },
+          "square_minus_morphology": {
+            "ci95": [
+              -0.0047607421875,
+              0.01007080078125
+            ],
+            "mean": 0.0025634765625,
+            "n_donors": 128,
+            "p_holm": 0.7496250374962504,
+            "p_value": 0.24987501249875013
+          }
+        },
+        "historical_effect_replicated": false,
+        "n_donors": 128,
+        "verdict": "SATURATION_LEAD_NOT_REPLICATED"
+      }
+    },
+    "holdout": {},
+    "mapping_candidates": [],
+    "overall_verdict": "NO_CAUSAL_CARRIER_FOUND",
+    "screen": {
+      "31649": {
+        "auxiliary_crossover": {
+          "components": -0.00390625,
+          "terminal2x2": 0.50390625
+        },
+        "eligible_for_holdout": false,
+        "mean_crossover": 0.515625,
+        "mean_direction_a": 0.55078125,
+        "mean_direction_b": 0.552734375,
+        "mean_survival": 1.0,
+        "n_pairs": 16
+      }
+    },
+    "selected_candidates": []
+  },
+  "completed_unix": 1787332177.5862226,
+  "contract_digest": "ac07bfe95ff287c059575cd038504455db28aee3d30b2089ea4f768a711d3ec6",
+  "design_digest": "9565528d988ec8b79c797103da560f239b7f681cb2768d70d5baed9b04705582",
+  "elapsed_seconds": 14375.930510282516,
+  "experiment": "life_carrier_round_2",
+  "profile": "reference",
+  "stage_completeness": {
+    "audit": true,
+    "audit_acquire": true,
+    "holdout": true,
+    "holdout_acquire": true,
+    "mapping": true,
+    "mapping_seal": true,
+    "screen": true,
+    "screen_acquire": true,
+    "seal": true
+  },
+  "started_unix": 1787317801.655713,
+  "state": "complete"
+}

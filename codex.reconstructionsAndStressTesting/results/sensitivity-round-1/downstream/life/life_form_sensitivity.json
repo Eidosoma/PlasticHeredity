@@ -1,0 +1,252 @@
+{
+  "config": {
+    "activity_budget": 48,
+    "copy_error": 0.005,
+    "flip_noise": 0.002,
+    "form_mass_quantile": 0.75,
+    "height": 16,
+    "max_sweeps": 64,
+    "min_sweeps": 4,
+    "named_futures": 256,
+    "random_futures_per_seed": 64,
+    "random_seeds": 32,
+    "seed_namespace": "plastic-ca-cleanroom-life-v1",
+    "thresholds": {
+      "break_horizon": 8,
+      "coherence": 0.9,
+      "distinct": 0.85,
+      "horizon": 32,
+      "inherit": 0.9,
+      "strict_run": 8
+    },
+    "width": 16
+  },
+  "experiment": "life_form_sensitivity",
+  "gate_any_plausible_distinct": true,
+  "rows": [
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9659745968947195,
+        "glider|blinker": 0.9458863660968674,
+        "glider|toad": 0.987566594421959
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": true,
+      "mode": "first_1",
+      "supports": {
+        "blinker": 667,
+        "glider": 415,
+        "toad": 2715
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9843090394608278,
+        "glider|blinker": 0.9721479090069287,
+        "glider|toad": 0.993020245922992
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": true,
+      "mode": "first_2",
+      "supports": {
+        "blinker": 671,
+        "glider": 415,
+        "toad": 2715
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9950468934388336,
+        "glider|blinker": 0.9921492176045766,
+        "glider|toad": 0.998199565137458
+      },
+      "contract_plausible": true,
+      "gate_distinct_forms": false,
+      "mode": "first_4",
+      "supports": {
+        "blinker": 2715,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.999120829491704,
+        "glider|blinker": 0.9986000637989187,
+        "glider|toad": 0.9996853983633778
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": false,
+      "mode": "first_8",
+      "supports": {
+        "blinker": 2719,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9999217038016379,
+        "glider|blinker": 0.9999088887884142,
+        "glider|toad": 0.9999747137402721
+      },
+      "contract_plausible": true,
+      "gate_distinct_forms": false,
+      "mode": "all_pooled",
+      "supports": {
+        "blinker": 2719,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9994695308435272,
+        "glider|blinker": 0.9988337664306804,
+        "glider|toad": 0.9996766329591168
+      },
+      "contract_plausible": true,
+      "gate_distinct_forms": false,
+      "mode": "equal_future",
+      "supports": {
+        "blinker": 2719,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9999030985308659,
+        "glider|blinker": 0.9999423894040705,
+        "glider|toad": 0.9999760028517046
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": false,
+      "mode": "post_break",
+      "supports": {
+        "blinker": 2719,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "mass_weighted"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9658177107193638,
+        "glider|blinker": 0.944421782104517,
+        "glider|toad": 0.9875633872629015
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": true,
+      "mode": "first_1",
+      "supports": {
+        "blinker": 667,
+        "glider": 411,
+        "toad": 2715
+      },
+      "weighting": "normalized_each_generation"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9807635388755597,
+        "glider|blinker": 0.9649402014443672,
+        "glider|toad": 0.9919753151423774
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": true,
+      "mode": "first_2",
+      "supports": {
+        "blinker": 667,
+        "glider": 159,
+        "toad": 2715
+      },
+      "weighting": "normalized_each_generation"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.990645640991827,
+        "glider|blinker": 0.98245456235982,
+        "glider|toad": 0.9958022868026574
+      },
+      "contract_plausible": true,
+      "gate_distinct_forms": true,
+      "mode": "first_4",
+      "supports": {
+        "blinker": 667,
+        "glider": 415,
+        "toad": 671
+      },
+      "weighting": "normalized_each_generation"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9961553861193918,
+        "glider|blinker": 0.9928539213796167,
+        "glider|toad": 0.9978000832521974
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": false,
+      "mode": "first_8",
+      "supports": {
+        "blinker": 671,
+        "glider": 671,
+        "toad": 671
+      },
+      "weighting": "normalized_each_generation"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9993270519693711,
+        "glider|blinker": 0.9985925362021031,
+        "glider|toad": 0.999514519859055
+      },
+      "contract_plausible": true,
+      "gate_distinct_forms": false,
+      "mode": "all_pooled",
+      "supports": {
+        "blinker": 2715,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "normalized_each_generation"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9967605427775633,
+        "glider|blinker": 0.9935956166239811,
+        "glider|toad": 0.9974216741044587
+      },
+      "contract_plausible": true,
+      "gate_distinct_forms": true,
+      "mode": "equal_future",
+      "supports": {
+        "blinker": 667,
+        "glider": 159,
+        "toad": 2715
+      },
+      "weighting": "normalized_each_generation"
+    },
+    {
+      "between_object_cosines": {
+        "blinker|toad": 0.9994662017972981,
+        "glider|blinker": 0.9998277215378721,
+        "glider|toad": 0.9998845802443385
+      },
+      "contract_plausible": false,
+      "gate_distinct_forms": false,
+      "mode": "post_break",
+      "supports": {
+        "blinker": 2719,
+        "glider": 2719,
+        "toad": 2719
+      },
+      "weighting": "normalized_each_generation"
+    }
+  ]
+}

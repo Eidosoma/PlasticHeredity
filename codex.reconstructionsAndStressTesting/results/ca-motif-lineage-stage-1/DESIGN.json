@@ -1,0 +1,723 @@
+{
+  "cleanroom_exclusion": "no Wagner or Fable implementation source is read, imported, hashed, or executed",
+  "cohorts": {
+    "calibration": [
+      "narrow-0741-life-31649-3-792-life-31649-3-957",
+      "narrow-0766-life-31649-3-741-life-31649-3-600",
+      "narrow-0277-life-31649-1-1364-life-31649-1-546",
+      "narrow-0273-life-31649-1-788-life-31649-1-3227",
+      "narrow-0056-life-31649-0-901-life-31649-0-466",
+      "narrow-0814-life-31649-3-22-life-31649-3-273",
+      "narrow-0633-life-31649-2-1475-life-31649-2-1191",
+      "narrow-0547-life-31649-2-861-life-31649-2-1506",
+      "narrow-0272-life-31649-1-701-life-31649-1-3093",
+      "narrow-0739-life-31649-3-700-life-31649-3-81",
+      "narrow-0085-life-31649-0-737-life-31649-0-136",
+      "narrow-0600-life-31649-2-1280-life-31649-2-1355",
+      "narrow-0879-life-31649-3-326-life-31649-3-283",
+      "narrow-0482-life-31649-2-1512-life-31649-2-260",
+      "narrow-0707-life-31649-3-634-life-31649-3-618",
+      "narrow-0029-life-31649-0-925-life-31649-0-331",
+      "narrow-0297-life-31649-1-3376-life-31649-1-723",
+      "narrow-0598-life-31649-2-127-life-31649-2-1033",
+      "narrow-0303-life-31649-1-850-life-31649-1-2176",
+      "narrow-0439-life-31649-2-206-life-31649-2-1013",
+      "narrow-0863-life-31649-3-652-life-31649-3-708",
+      "narrow-0696-life-31649-3-207-life-31649-3-69",
+      "narrow-0631-life-31649-2-1321-life-31649-2-621",
+      "narrow-0508-life-31649-2-475-life-31649-2-584",
+      "narrow-0156-life-31649-0-73-life-31649-0-516",
+      "narrow-0191-life-31649-1-1661-life-31649-1-1666",
+      "narrow-0688-life-31649-3-781-life-31649-3-454",
+      "narrow-0328-life-31649-1-3450-life-31649-1-1618",
+      "narrow-0073-life-31649-0-844-life-31649-0-417",
+      "narrow-0572-life-31649-2-1624-life-31649-2-241",
+      "narrow-0227-life-31649-1-3293-life-31649-1-573",
+      "narrow-0872-life-31649-3-966-life-31649-3-83",
+      "narrow-0426-life-31649-2-121-life-31649-2-1679",
+      "narrow-0677-life-31649-3-817-life-31649-3-55",
+      "narrow-0557-life-31649-2-1217-life-31649-2-275",
+      "narrow-0577-life-31649-2-319-life-31649-2-905",
+      "narrow-0256-life-31649-1-2456-life-31649-1-736",
+      "narrow-0474-life-31649-2-739-life-31649-2-829",
+      "narrow-0556-life-31649-2-1164-life-31649-2-267",
+      "narrow-0816-life-31649-3-238-life-31649-3-386",
+      "narrow-0208-life-31649-1-2635-life-31649-1-2488",
+      "narrow-0192-life-31649-1-3152-life-31649-1-1685",
+      "narrow-0125-life-31649-0-716-life-31649-0-530",
+      "narrow-0074-life-31649-0-1116-life-31649-0-465",
+      "narrow-0294-life-31649-1-3073-life-31649-1-445",
+      "narrow-0708-life-31649-3-662-life-31649-3-622",
+      "narrow-0654-life-31649-3-855-life-31649-3-192",
+      "narrow-0067-life-31649-0-423-life-31649-0-1180",
+      "narrow-0098-life-31649-0-600-life-31649-0-553",
+      "narrow-0182-life-31649-1-2624-life-31649-1-2202",
+      "narrow-0721-life-31649-3-111-life-31649-3-267",
+      "narrow-0848-life-31649-3-897-life-31649-3-89",
+      "narrow-0041-life-31649-0-909-life-31649-0-129",
+      "narrow-0014-life-31649-0-1107-life-31649-0-874",
+      "narrow-0667-life-31649-3-234-life-31649-3-825",
+      "narrow-0188-life-31649-1-423-life-31649-1-1964",
+      "narrow-0630-life-31649-2-1282-life-31649-2-459",
+      "narrow-0082-life-31649-0-439-life-31649-0-993",
+      "narrow-0760-life-31649-3-557-life-31649-3-924",
+      "narrow-0260-life-31649-1-2559-life-31649-1-2969",
+      "narrow-0146-life-31649-0-455-life-31649-0-186",
+      "narrow-0841-life-31649-3-525-life-31649-3-506",
+      "narrow-0662-life-31649-3-612-life-31649-3-929",
+      "narrow-0548-life-31649-2-897-life-31649-2-1535"
+    ],
+    "discovery": [
+      "narrow-0411-life-31649-1-3030-life-31649-1-2700",
+      "narrow-0781-life-31649-3-196-life-31649-3-5",
+      "narrow-0187-life-31649-1-2990-life-31649-1-1830",
+      "narrow-0021-life-31649-0-1208-life-31649-0-470",
+      "narrow-0826-life-31649-3-647-life-31649-3-691",
+      "narrow-0504-life-31649-2-1486-life-31649-2-301",
+      "narrow-0689-life-31649-3-860-life-31649-3-462",
+      "narrow-0037-life-31649-0-560-life-31649-0-872",
+      "narrow-0795-life-31649-3-592-life-31649-3-958",
+      "narrow-0408-life-31649-1-2541-life-31649-1-1959",
+      "narrow-0136-life-31649-0-646-life-31649-0-1040",
+      "narrow-0697-life-31649-3-248-life-31649-3-788",
+      "narrow-0070-life-31649-0-471-life-31649-0-160",
+      "narrow-0055-life-31649-0-889-life-31649-0-448",
+      "narrow-0129-life-31649-0-947-life-31649-0-767",
+      "narrow-0644-life-31649-3-174-life-31649-3-630",
+      "narrow-0513-life-31649-2-612-life-31649-2-1008",
+      "narrow-0601-life-31649-2-1363-life-31649-2-1501",
+      "narrow-0048-life-31649-0-242-life-31649-0-580",
+      "narrow-0485-life-31649-2-1617-life-31649-2-994",
+      "narrow-0072-life-31649-0-591-life-31649-0-379",
+      "narrow-0497-life-31649-2-1203-life-31649-2-1539",
+      "narrow-0003-life-31649-0-840-life-31649-0-771",
+      "narrow-0046-life-31649-0-1161-life-31649-0-489",
+      "narrow-0687-life-31649-3-597-life-31649-3-346",
+      "narrow-0450-life-31649-2-1026-life-31649-2-1400",
+      "narrow-0684-life-31649-3-424-life-31649-3-214",
+      "narrow-0422-life-31649-2-569-life-31649-2-920",
+      "narrow-0470-life-31649-2-1495-life-31649-2-414",
+      "narrow-0298-life-31649-1-3473-life-31649-1-799",
+      "narrow-0875-life-31649-3-236-life-31649-3-508",
+      "narrow-0542-life-31649-2-654-life-31649-2-1152",
+      "narrow-0228-life-31649-1-3397-life-31649-1-781",
+      "narrow-0050-life-31649-0-493-life-31649-0-68",
+      "narrow-0431-life-31649-2-657-life-31649-2-1190",
+      "narrow-0617-life-31649-2-830-life-31649-2-1468",
+      "narrow-0706-life-31649-3-611-life-31649-3-426",
+      "narrow-0226-life-31649-1-3248-life-31649-1-3418",
+      "narrow-0288-life-31649-1-2033-life-31649-1-2105",
+      "narrow-0175-life-31649-0-501-life-31649-0-1044",
+      "narrow-0106-life-31649-0-100-life-31649-0-860",
+      "narrow-0088-life-31649-0-1-life-31649-0-174",
+      "narrow-0259-life-31649-1-2557-life-31649-1-2959",
+      "narrow-0483-life-31649-2-1550-life-31649-2-432",
+      "narrow-0665-life-31649-3-157-life-31649-3-726",
+      "narrow-0603-life-31649-2-1563-life-31649-2-1627",
+      "narrow-0535-life-31649-2-30-life-31649-2-469",
+      "narrow-0280-life-31649-1-156-life-31649-1-1124"
+    ],
+    "validation": [
+      "narrow-0001-life-31649-0-665-life-31649-0-1130",
+      "narrow-0415-life-31649-1-565-life-31649-1-734",
+      "narrow-0758-life-31649-3-472-life-31649-3-68",
+      "narrow-0832-life-31649-3-133-life-31649-3-193",
+      "narrow-0585-life-31649-2-641-life-31649-2-1383",
+      "narrow-0554-life-31649-2-114-life-31649-2-212",
+      "narrow-0250-life-31649-1-1839-life-31649-1-3148",
+      "narrow-0819-life-31649-3-360-life-31649-3-419",
+      "narrow-0865-life-31649-3-712-life-31649-3-867",
+      "narrow-0813-life-31649-3-140-life-31649-3-247",
+      "narrow-0359-life-31649-1-999-life-31649-1-1398",
+      "narrow-0480-life-31649-2-130-life-31649-2-1631",
+      "narrow-0270-life-31649-1-524-life-31649-1-2591",
+      "narrow-0553-life-31649-2-1022-life-31649-2-1667",
+      "narrow-0290-life-31649-1-2293-life-31649-1-2677",
+      "narrow-0738-life-31649-3-635-life-31649-3-804",
+      "narrow-0119-life-31649-0-531-life-31649-0-372",
+      "narrow-0405-life-31649-1-1720-life-31649-1-1214",
+      "narrow-0130-life-31649-0-971-life-31649-0-822",
+      "narrow-0668-life-31649-3-252-life-31649-3-829",
+      "narrow-0829-life-31649-3-881-life-31649-3-935",
+      "narrow-0614-life-31649-2-639-life-31649-2-136",
+      "narrow-0268-life-31649-1-3424-life-31649-1-1636",
+      "narrow-0859-life-31649-3-590-life-31649-3-137",
+      "narrow-0653-life-31649-3-450-life-31649-3-116",
+      "narrow-0460-life-31649-2-356-life-31649-2-947",
+      "narrow-0453-life-31649-2-1127-life-31649-2-1537",
+      "narrow-0700-life-31649-3-407-life-31649-3-179",
+      "narrow-0732-life-31649-3-492-life-31649-3-660",
+      "narrow-0467-life-31649-2-1327-life-31649-2-1476",
+      "narrow-0216-life-31649-1-1235-life-31649-1-2121",
+      "narrow-0391-life-31649-1-1884-life-31649-1-2476",
+      "narrow-0181-life-31649-1-1810-life-31649-1-1782",
+      "narrow-0308-life-31649-1-1655-life-31649-1-2838",
+      "narrow-0714-life-31649-3-856-life-31649-3-794",
+      "narrow-0462-life-31649-2-705-life-31649-2-1340",
+      "narrow-0183-life-31649-1-2746-life-31649-1-2508",
+      "narrow-0399-life-31649-1-691-life-31649-1-1299",
+      "narrow-0874-life-31649-3-195-life-31649-3-276",
+      "narrow-0784-life-31649-3-251-life-31649-3-606",
+      "narrow-0530-life-31649-2-1464-life-31649-2-322",
+      "narrow-0505-life-31649-2-15-life-31649-2-443",
+      "narrow-0350-life-31649-1-2207-life-31649-1-2003",
+      "narrow-0778-life-31649-3-99-life-31649-3-438",
+      "narrow-0174-life-31649-0-949-life-31649-0-110",
+      "narrow-0246-life-31649-1-795-life-31649-1-2760",
+      "narrow-0157-life-31649-0-749-life-31649-0-536",
+      "narrow-0235-life-31649-1-2307-life-31649-1-1489",
+      "narrow-0373-life-31649-1-3205-life-31649-1-1231",
+      "narrow-0083-life-31649-0-602-life-31649-0-1134",
+      "narrow-0545-life-31649-2-841-life-31649-2-1380",
+      "narrow-0052-life-31649-0-543-life-31649-0-247",
+      "narrow-0590-life-31649-2-765-life-31649-2-447",
+      "narrow-0421-life-31649-2-461-life-31649-2-1556",
+      "narrow-0534-life-31649-2-224-life-31649-2-420",
+      "narrow-0141-life-31649-0-1121-life-31649-0-1094",
+      "narrow-0673-life-31649-3-470-life-31649-3-521",
+      "narrow-0011-life-31649-0-748-life-31649-0-168",
+      "narrow-0115-life-31649-0-34-life-31649-0-199",
+      "narrow-0792-life-31649-3-480-life-31649-3-872",
+      "narrow-0787-life-31649-3-355-life-31649-3-763",
+      "narrow-0387-life-31649-1-1503-life-31649-1-48",
+      "narrow-0509-life-31649-2-48-life-31649-2-704",
+      "narrow-0377-life-31649-1-385-life-31649-1-2153"
+    ]
+  },
+  "configurations": [
+    {
+      "configuration_id": "contextual256-w16-s025-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s025-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s025-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s025-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s050-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s075-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w16-s100-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s025-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s050-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s075-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d08",
+      "family": "contextual256",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d16",
+      "family": "contextual256",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d32",
+      "family": "contextual256",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "contextual256-w32-s100-d64",
+      "family": "contextual256",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s025-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s050-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s075-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w16-s100-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 16
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s025-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.25,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s050-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.5,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s075-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 0.75,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d08",
+      "family": "motif_energy512",
+      "read_duration": 8,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d16",
+      "family": "motif_energy512",
+      "read_duration": 16,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d32",
+      "family": "motif_energy512",
+      "read_duration": 32,
+      "strength": 1.0,
+      "write_window": 32
+    },
+    {
+      "configuration_id": "motif_energy512-w32-s100-d64",
+      "family": "motif_energy512",
+      "read_duration": 64,
+      "strength": 1.0,
+      "write_window": 32
+    }
+  ],
+  "contract": {
+    "assignment_margin": 0.05,
+    "assignment_similarity": 0.9,
+    "carrier_corruption": 0.01,
+    "checkpoints": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "claim_boundary": "controllability upper bound; not renewed plastic heredity",
+    "control_advantage_gate": 0.1,
+    "crossover_gate": 0.15,
+    "energy_clip": 4.0,
+    "height": 16,
+    "horizon": 64,
+    "implementation_version": "ca-motif-lineage-cleanroom-v1",
+    "jeffreys_alpha": 0.5,
+    "missing_policy": "dead and unresolved futures remain in denominators",
+    "namespace": "plastic-ca-motif-lineage-stage1-v1",
+    "observation_window": 8,
+    "primary_observer": "trailing-eight-sweep accumulated live 2x2 texture",
+    "process_noise": 0.002,
+    "reader_access": "current local motif address and inherited carrier only",
+    "robust_crossover_gate": 0.1,
+    "rule": 31649,
+    "science_reserve_seconds": 1800.0,
+    "survival_gate": 0.9,
+    "visible_reset": "bitwise-identical neutral board across histories",
+    "width": 16,
+    "writer_access": "local visible spacetime motifs only; no labels or prototypes"
+  },
+  "design_digest": "3a2fecbe9b4240ed9fd064759044c8eca4aac55cf0aa0ad8cc5850fef63b0346",
+  "experiment": "ca_motif_lineage_stage_1",
+  "implementation_sha256": {
+    "life_family.py": "dd23a07a1c85b7fe8bde62a647acc15de69b819864ae71abedae53bb222161c1",
+    "lineage_field.py": "94b170a6bb352aa4be80c72e15827b1e905407c0660cf9014b4f8db85b0ba5f9",
+    "motif_lineage.py": "e30436d9a18f76ff8adb7fe3e0cf91295b6d4bf96471b06ca50af3905fe8e0b4"
+  },
+  "input_sha256": {
+    "CA_MOTIF_LINEAGE_STAGE1_PROTOCOL.md": "da0982c8c20745baa40800c275c32c9ab7371476b6cd9c47ffb26a176ab802af",
+    "results/ca-carrier-round-3/CALIBRATION.json": "32f4300b1c924adeffbed73d8d8f32386201632653dc5413d36d9589c5602d65",
+    "results/ca-carrier-round-3/NARROW_COHORTS.json": "a68a0bf66f724739c4583970968ae7ca0420ebb5d393a78aec74c07f7c206d6f",
+    "results/ca-carrier-round-3/narrow_acquire/checkpoints/launch-0.json": "164439336eade9ac6fd8e95c817fd84c39de9d2d6c6fef7d7664f109dc3c3336",
+    "results/ca-carrier-round-3/narrow_acquire/checkpoints/launch-1.json": "dd8c02ff5ccf8467757d91cdad1a82395f46c2942c17bd3f87b88db5abe7a87a",
+    "results/ca-carrier-round-3/narrow_acquire/checkpoints/launch-2.json": "549ea12c56745fd806216f345bc1f0ac571c3a5bbc45243b50dfbd3ba43e1ced",
+    "results/ca-carrier-round-3/narrow_acquire/checkpoints/launch-3.json": "a1af41739124beb86150a0434183be7bef2fb853431fc0eee2dcf8facf7cff84",
+    "results/ca-lineage-field-round-4/CALIBRATION.json": "5ef24c5e6f08a559fcc9fba784160af43116ca0c551b9fb5e5be9d305d7a600a"
+  },
+  "profile": {
+    "bootstrap_resamples": 10000,
+    "calibration_pairs": 64,
+    "discovery_pairs": 48,
+    "nominees_per_family": 2,
+    "read_durations": [
+      8,
+      16,
+      32,
+      64
+    ],
+    "screen_replicates": 16,
+    "strengths": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "validation_pairs": 64,
+    "validation_replicates": 64,
+    "write_windows": [
+      16,
+      32
+    ]
+  },
+  "profile_name": "reference",
+  "spatial_latch_benchmark": {
+    "calibration_score": 0.11788479499518871,
+    "decay": 0.55,
+    "diffusion": 0.04,
+    "eligible": true,
+    "kappa": 0.05,
+    "lower": 0.4,
+    "mechanism": "latch",
+    "upper": 0.6,
+    "write_gain": 0.08
+  }
+}

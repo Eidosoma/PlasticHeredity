@@ -1,0 +1,846 @@
+{
+  "allow_pickle": false,
+  "design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "fit_trace_digest": "cabe84baa5d0b4cd47d53ed825cfda82c633c7f8d6ff724506362ed3050ca891",
+  "model_sha256": "fba53f1cd19e073727e79a802ff67423198d26f05bc215bc21c08eed94629462",
+  "models": [
+    {
+      "array_keys": {},
+      "bits": 32,
+      "candidate_id": "identity-r512-f32",
+      "codebook_bits": 0,
+      "family": "identity",
+      "interpretable": true,
+      "payload_bits": 16384,
+      "precision": "float32",
+      "rank": 512,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "quantizer_scale": "model_001__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "identity-r512-q08",
+      "codebook_bits": 16384,
+      "family": "identity",
+      "interpretable": true,
+      "payload_bits": 4096,
+      "precision": "fixed-scale-signed",
+      "rank": 512,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "quantizer_scale": "model_002__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "identity-r512-q04",
+      "codebook_bits": 16384,
+      "family": "identity",
+      "interpretable": true,
+      "payload_bits": 2048,
+      "precision": "fixed-scale-signed",
+      "rank": 512,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "quantizer_scale": "model_003__quantizer_scale"
+      },
+      "bits": 2,
+      "candidate_id": "identity-r512-q02",
+      "codebook_bits": 16384,
+      "family": "identity",
+      "interpretable": true,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 512,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_004__basis"
+      },
+      "bits": 32,
+      "candidate_id": "pca-r256-f32",
+      "codebook_bits": 4194304,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 8192,
+      "precision": "float32",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_005__basis",
+        "quantizer_scale": "model_005__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "pca-r256-q08",
+      "codebook_bits": 4202496,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 2048,
+      "precision": "fixed-scale-signed",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_006__basis",
+        "quantizer_scale": "model_006__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "pca-r256-q04",
+      "codebook_bits": 4202496,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_007__basis"
+      },
+      "bits": 32,
+      "candidate_id": "pca-r128-f32",
+      "codebook_bits": 2097152,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 4096,
+      "precision": "float32",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_008__basis",
+        "quantizer_scale": "model_008__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "pca-r128-q08",
+      "codebook_bits": 2101248,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_009__basis",
+        "quantizer_scale": "model_009__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "pca-r128-q04",
+      "codebook_bits": 2101248,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 512,
+      "precision": "fixed-scale-signed",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_010__basis"
+      },
+      "bits": 32,
+      "candidate_id": "pca-r064-f32",
+      "codebook_bits": 1048576,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 2048,
+      "precision": "float32",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_011__basis",
+        "quantizer_scale": "model_011__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "pca-r064-q08",
+      "codebook_bits": 1050624,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 512,
+      "precision": "fixed-scale-signed",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_012__basis",
+        "quantizer_scale": "model_012__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "pca-r064-q04",
+      "codebook_bits": 1050624,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 256,
+      "precision": "fixed-scale-signed",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_013__basis"
+      },
+      "bits": 32,
+      "candidate_id": "pca-r032-f32",
+      "codebook_bits": 524288,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 1024,
+      "precision": "float32",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_014__basis",
+        "quantizer_scale": "model_014__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "pca-r032-q08",
+      "codebook_bits": 525312,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 256,
+      "precision": "fixed-scale-signed",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_015__basis",
+        "quantizer_scale": "model_015__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "pca-r032-q04",
+      "codebook_bits": 525312,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 128,
+      "precision": "fixed-scale-signed",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_016__basis"
+      },
+      "bits": 32,
+      "candidate_id": "pca-r016-f32",
+      "codebook_bits": 262144,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 512,
+      "precision": "float32",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_017__basis",
+        "quantizer_scale": "model_017__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "pca-r016-q08",
+      "codebook_bits": 262656,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 128,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_018__basis",
+        "quantizer_scale": "model_018__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "pca-r016-q04",
+      "codebook_bits": 262656,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_019__basis"
+      },
+      "bits": 32,
+      "candidate_id": "pca-r008-f32",
+      "codebook_bits": 131072,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 256,
+      "precision": "float32",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_020__basis",
+        "quantizer_scale": "model_020__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "pca-r008-q08",
+      "codebook_bits": 131328,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_021__basis",
+        "quantizer_scale": "model_021__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "pca-r008-q04",
+      "codebook_bits": 131328,
+      "family": "pca",
+      "interpretable": false,
+      "payload_bits": 32,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_022__basis",
+        "quantizer_scale": "model_022__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "walsh-r256-q08",
+      "codebook_bits": 10496,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 2048,
+      "precision": "fixed-scale-signed",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_023__basis",
+        "quantizer_scale": "model_023__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "walsh-r256-q04",
+      "codebook_bits": 10496,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_024__basis",
+        "quantizer_scale": "model_024__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "walsh-r128-q08",
+      "codebook_bits": 5248,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_025__basis",
+        "quantizer_scale": "model_025__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "walsh-r128-q04",
+      "codebook_bits": 5248,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 512,
+      "precision": "fixed-scale-signed",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_026__basis",
+        "quantizer_scale": "model_026__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "walsh-r064-q08",
+      "codebook_bits": 2624,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 512,
+      "precision": "fixed-scale-signed",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_027__basis",
+        "quantizer_scale": "model_027__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "walsh-r064-q04",
+      "codebook_bits": 2624,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 256,
+      "precision": "fixed-scale-signed",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_028__basis",
+        "quantizer_scale": "model_028__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "walsh-r032-q08",
+      "codebook_bits": 1312,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 256,
+      "precision": "fixed-scale-signed",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_029__basis",
+        "quantizer_scale": "model_029__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "walsh-r032-q04",
+      "codebook_bits": 1312,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 128,
+      "precision": "fixed-scale-signed",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_030__basis",
+        "quantizer_scale": "model_030__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "walsh-r016-q08",
+      "codebook_bits": 656,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 128,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_031__basis",
+        "quantizer_scale": "model_031__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "walsh-r016-q04",
+      "codebook_bits": 656,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_032__basis",
+        "quantizer_scale": "model_032__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "walsh-r008-q08",
+      "codebook_bits": 328,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_033__basis",
+        "quantizer_scale": "model_033__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "walsh-r008-q04",
+      "codebook_bits": 328,
+      "family": "walsh",
+      "interpretable": true,
+      "payload_bits": 32,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_034__basis",
+        "quantizer_scale": "model_034__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "sparse-r256-q08",
+      "codebook_bits": 10496,
+      "family": "sparse",
+      "interpretable": true,
+      "payload_bits": 2048,
+      "precision": "fixed-scale-signed",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_035__basis",
+        "quantizer_scale": "model_035__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "sparse-r128-q08",
+      "codebook_bits": 5248,
+      "family": "sparse",
+      "interpretable": true,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_036__basis",
+        "quantizer_scale": "model_036__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "sparse-r064-q08",
+      "codebook_bits": 2624,
+      "family": "sparse",
+      "interpretable": true,
+      "payload_bits": 512,
+      "precision": "fixed-scale-signed",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_037__basis",
+        "quantizer_scale": "model_037__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "sparse-r032-q08",
+      "codebook_bits": 1312,
+      "family": "sparse",
+      "interpretable": true,
+      "payload_bits": 256,
+      "precision": "fixed-scale-signed",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_038__basis",
+        "quantizer_scale": "model_038__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "sparse-r016-q08",
+      "codebook_bits": 656,
+      "family": "sparse",
+      "interpretable": true,
+      "payload_bits": 128,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_039__basis",
+        "quantizer_scale": "model_039__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "sparse-r008-q08",
+      "codebook_bits": 328,
+      "family": "sparse",
+      "interpretable": true,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_040__basis",
+        "quantizer_scale": "model_040__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "random-r256-q08",
+      "codebook_bits": 8256,
+      "family": "random",
+      "interpretable": false,
+      "payload_bits": 2048,
+      "precision": "fixed-scale-signed",
+      "rank": 256,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_041__basis",
+        "quantizer_scale": "model_041__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "random-r128-q08",
+      "codebook_bits": 4160,
+      "family": "random",
+      "interpretable": false,
+      "payload_bits": 1024,
+      "precision": "fixed-scale-signed",
+      "rank": 128,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_042__basis",
+        "quantizer_scale": "model_042__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "random-r064-q08",
+      "codebook_bits": 2112,
+      "family": "random",
+      "interpretable": false,
+      "payload_bits": 512,
+      "precision": "fixed-scale-signed",
+      "rank": 64,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_043__basis",
+        "quantizer_scale": "model_043__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "random-r032-q08",
+      "codebook_bits": 1088,
+      "family": "random",
+      "interpretable": false,
+      "payload_bits": 256,
+      "precision": "fixed-scale-signed",
+      "rank": 32,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_044__basis",
+        "quantizer_scale": "model_044__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "random-r016-q08",
+      "codebook_bits": 576,
+      "family": "random",
+      "interpretable": false,
+      "payload_bits": 128,
+      "precision": "fixed-scale-signed",
+      "rank": 16,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_045__basis",
+        "quantizer_scale": "model_045__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "random-r008-q08",
+      "codebook_bits": 320,
+      "family": "random",
+      "interpretable": false,
+      "payload_bits": 64,
+      "precision": "fixed-scale-signed",
+      "rank": 8,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_046__basis",
+        "quantizer_scale": "model_046__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "d4-r102-q08",
+      "codebook_bits": 3264,
+      "family": "d4",
+      "interpretable": true,
+      "payload_bits": 816,
+      "precision": "fixed-scale-signed",
+      "rank": 102,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_047__basis",
+        "quantizer_scale": "model_047__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "d4-r102-q04",
+      "codebook_bits": 3264,
+      "family": "d4",
+      "interpretable": true,
+      "payload_bits": 408,
+      "precision": "fixed-scale-signed",
+      "rank": 102,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_048__basis",
+        "quantizer_scale": "model_048__quantizer_scale"
+      },
+      "bits": 8,
+      "candidate_id": "count18-r018-q08",
+      "codebook_bits": 576,
+      "family": "count18",
+      "interpretable": true,
+      "payload_bits": 144,
+      "precision": "fixed-scale-signed",
+      "rank": 18,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    },
+    {
+      "array_keys": {
+        "basis": "model_049__basis",
+        "quantizer_scale": "model_049__quantizer_scale"
+      },
+      "bits": 4,
+      "candidate_id": "count18-r018-q04",
+      "codebook_bits": 576,
+      "family": "count18",
+      "interpretable": true,
+      "payload_bits": 72,
+      "precision": "fixed-scale-signed",
+      "rank": 18,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "contract": {
+    "common_garden_rng": "independent condition stream",
+    "eca_activity_budget": 256,
+    "eca_copy_error": 0.015,
+    "eca_max_sweeps": 128,
+    "eca_min_sweeps": 4,
+    "eca_process_noise": 0.01,
+    "eca_semantics": {
+      "activity_budget": 256,
+      "activity_count": "realized_post_noise",
+      "boundary_death": "timeout_or_terminal_monochrome",
+      "break_horizon": 8,
+      "cell_zero_bit_order": "most_significant_bit",
+      "coherence": 0.9,
+      "composition_zero": "first_completed_generation",
+      "copy_draw": "unconditional_generation_batch",
+      "copy_error": 0.015,
+      "distinct": 0.85,
+      "flip_noise": 0.01,
+      "form_mass_quantile": 0.5,
+      "form_pooling": "per seed, equal mean of each broken future's last completed composition; the break-causing daughter satisfies the later-generation requirement",
+      "futures_per_seed": 128,
+      "horizon": 32,
+      "inherit": 0.9,
+      "launch_preparation": "none",
+      "launch_rows_hex": [
+        "0000000080000000",
+        "0000000180000000",
+        "00000003c0000000",
+        "0000000ff0000000",
+        "aaaaaaaaaaaaaaaa",
+        "ffffffff00000000",
+        "23a031300051000a",
+        "6420581808011102",
+        "4450081105301018",
+        "01c1385c048a0f68",
+        "2349a69c817d7b9b",
+        "a13c035191c53554",
+        "9d65705fb9e2a777",
+        "89f7b38cfeff37ed",
+        "27deeff5fff7aefd",
+        "dfd73effdfef7dea"
+      ],
+      "max_sweeps": 128,
+      "min_sweeps": 4,
+      "n_seeds": 16,
+      "observed_daughter": "terminal_pre_copy",
+      "process_noise_order": "post_rule",
+      "rng_tag": "eca-traj-v1",
+      "strict_run": 8,
+      "width": 64
+    },
+    "eca_width": 64,
+    "implementation_version": "causal-heredity-cleanroom-v1",
+    "intervention_copy_timing": "initial daughter and after every completed generation",
+    "life_activity_budget": 48,
+    "life_copy_error": 0.005,
+    "life_height": 16,
+    "life_max_sweeps": 64,
+    "life_min_sweeps": 4,
+    "life_process_noise": 0.002,
+    "life_semantics": {
+      "activity_budget": 48,
+      "activity_count": "realized_post_noise_state_changes",
+      "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+      "composition_zero": "first_completed_generation",
+      "copy_draw": "unconditional_generation_batch",
+      "copy_error": 0.005,
+      "death": "activity_timeout_or_empty_terminal_board",
+      "flip_noise": 0.002,
+      "form_mass_quantile": 0.75,
+      "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+      "futures_per_launch": 64,
+      "height": 16,
+      "horizon": 32,
+      "implementation_version": "life-family-cleanroom-v1",
+      "launch_densities": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "launch_rows_hex": null,
+      "launch_tag": "life-family-launch-v1",
+      "max_sweeps": 64,
+      "min_sweeps": 4,
+      "observed_daughter": "terminal_pre_copy",
+      "process_noise_order": "post_rule_each_sweep",
+      "rng_tag": "life-family-trajectory-v1",
+      "rule_update": "synchronous_toroidal_Moore_8",
+      "thresholds": {
+        "break_horizon": 8,
+        "coherence": 0.9,
+        "distinct": 0.85,
+        "horizon": 32,
+        "inherit": 0.9,
+        "strict_run": 8
+      },
+      "width": 16
+    },
+    "life_width": 16,
+    "memory_garden_horizon": 8,
+    "memory_precondition_horizon": 4,
+    "namespace": "plastic-ca-causal-heredity-v1",
+    "noise_multipliers": [
+      0,
+      1,
+      2
+    ],
+    "pedigree_depth": 5,
+    "recovery_horizon": 16,
+    "success": "last eight valid compositions each target cosine >0.90, pairwise >0.90; switchers also <=0.85 to historical break-causing-daughter anchor",
+    "thresholds": {
+      "break_horizon": 8,
+      "coherence": 0.9,
+      "distinct": 0.85,
+      "horizon": 32,
+      "inherit": 0.9,
+      "strict_run": 8
+    },
+    "transmission_fractions": [
+      0.25,
+      0.5,
+      0.75
+    ]
+  },
+  "design_digest": "51710c4b87bdf0f154c67741daff6b15c7ff5d97fc2a68af62fe79da354f3e8b",
+  "implementation_sha256": {
+    "causal_heredity.py": "c65597713a88ea26460945a469429c14634dab979923b0286420f531514d4eab",
+    "e19.py": "f482dc0d6edb9c9fafc078fd1340d0b72e2b38fff33d27a93648735d348c6fd0",
+    "life_family.py": "dd23a07a1c85b7fe8bde62a647acc15de69b819864ae71abedae53bb222161c1",
+    "particle_e19.py": "ba9a0c401d795349c3e4776bfe2fffbaed5177879ecef5d0e7b07860c73f08c2"
+  },
+  "life_atlas_sha256": "366f6dc6925eed2a2a5f71c66d05b02841ae682fc37a7ac3def85c9bd7010fe1",
+  "panel": {
+    "eca": [
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": null,
+        "observer": "raw",
+        "rule": 0,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": null,
+        "observer": "raw",
+        "rule": 8,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "raw",
+        "rule": 11,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 18,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 22,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 30,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "raw",
+        "rule": 35,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 41,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "raw",
+        "rule": 43,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 45,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 54,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "raw",
+        "rule": 57,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": null,
+        "observer": "particle",
+        "rule": 90,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 106,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 110,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 122,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 126,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "particle",
+        "rule": 146,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": null,
+        "observer": "particle",
+        "rule": 150,
+        "substrate": "eca"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": null,
+        "notation": null,
+        "observer": "raw",
+        "rule": 184,
+        "substrate": "eca"
+      }
+    ],
+    "life": [
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.001953125,
+        "notation": "B3/S23",
+        "observer": "primary",
+        "rule": 2060,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.001953125,
+        "notation": "B36/S23",
+        "observer": "primary",
+        "rule": 18444,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B2/S",
+        "observer": "primary",
+        "rule": 1024,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.0078125,
+        "notation": "B3678/S34678",
+        "observer": "primary",
+        "rule": 117208,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B35678/S5678",
+        "observer": "primary",
+        "rule": 125408,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B368/S245",
+        "observer": "primary",
+        "rule": 84020,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.001953125,
+        "notation": "B36/S125",
+        "observer": "primary",
+        "rule": 18470,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B4678/S35678",
+        "observer": "primary",
+        "rule": 119272,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.48046875,
+        "notation": "B25678/S0124678",
+        "observer": "primary",
+        "rule": 124375,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.439453125,
+        "notation": "B1256/S04567",
+        "observer": "primary",
+        "rule": 26353,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.423828125,
+        "notation": "B2567/S0134678",
+        "observer": "primary",
+        "rule": 58843,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.404296875,
+        "notation": "B3678/S235678",
+        "observer": "primary",
+        "rule": 117228,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.369140625,
+        "notation": "B246/S14567",
+        "observer": "primary",
+        "rule": 21746,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.357421875,
+        "notation": "B35678/S124678",
+        "observer": "primary",
+        "rule": 125398,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.3515625,
+        "notation": "B3456/S24567",
+        "observer": "primary",
+        "rule": 30964,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.3359375,
+        "notation": "B3457/S0234567",
+        "observer": "primary",
+        "rule": 47357,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B267/S2456",
+        "observer": "primary",
+        "rule": 50292,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.1171875,
+        "notation": "B356/S134678",
+        "observer": "primary",
+        "rule": 27098,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.048828125,
+        "notation": "B3578/S124678",
+        "observer": "primary",
+        "rule": 109014,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "switcher",
+        "development_strict": 0.021484375,
+        "notation": "B237/S23467",
+        "observer": "primary",
+        "rule": 36060,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B1234567/S135678",
+        "observer": "primary",
+        "rule": 65514,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B123456/S35678",
+        "observer": "primary",
+        "rule": 32744,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B1236/S01678",
+        "observer": "primary",
+        "rule": 20419,
+        "substrate": "life"
+      },
+      {
+        "desired_kind": "maintainer",
+        "development_strict": 0.0,
+        "notation": "B123456/S135678",
+        "observer": "primary",
+        "rule": 32746,
+        "substrate": "life"
+      }
+    ],
+    "selection": {
+      "life_matched_strict_zero": 4,
+      "life_named": 8,
+      "life_top_in_band": 8,
+      "life_top_remaining_libraries": 4,
+      "tie_break": "ascending rule id"
+    }
+  },
+  "profile": {
+    "bootstrap_resamples": 10000,
+    "discovery_batch": 256,
+    "discovery_cap": 16384,
+    "donor_target": 16,
+    "panel_limit": null,
+    "pedigree_depth": 5,
+    "pedigree_donors": 8,
+    "recovery_replicates": 16,
+    "transplant_donors": 4,
+    "transplant_replicates": 8
+  },
+  "protocol_sha256": "416a3be7a7d87cbdcc0cc6c477787307f901441bed2e256a4c66df6c2771497f"
+}

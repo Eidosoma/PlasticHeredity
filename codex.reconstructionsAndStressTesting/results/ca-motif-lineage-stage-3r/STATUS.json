@@ -1,0 +1,14 @@
+{
+  "deadline_remaining_seconds": 27776.32026529312,
+  "elapsed_seconds": 1023.6797347068787,
+  "hard_deadline_unix": 1787520732.0604692,
+  "phase": "campaign",
+  "pid": 253611,
+  "profile": "reference",
+  "science_deadline_unix": 1787518932.0604692,
+  "stage": "3R-semantic-closure-repair",
+  "started_unix": 1787491932.0604692,
+  "state": "complete",
+  "updated_unix": 1787492955.7402039,
+  "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+}

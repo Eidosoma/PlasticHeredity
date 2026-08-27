@@ -1,0 +1,90 @@
+[
+  {
+    "break_mae": 0.14246160333806818,
+    "break_rho": 0.7632281417189698,
+    "class3_separation": true,
+    "class4_max_strict": 0.0,
+    "class_break_medians": {
+      "1": 0.0,
+      "2": 0.56591796875,
+      "3": 1.0,
+      "4": 0.99951171875
+    },
+    "contract_plausible": true,
+    "n_rules": 88,
+    "reconciliation_loss": 0.17338855043935658,
+    "setting": {
+      "activity_count": "realized",
+      "launch_anchor": "first_completed_generation",
+      "launch_preparation": "noiseless_generation",
+      "monochrome_death": "deterministic_immediate",
+      "observed_daughter": "post_copy_offspring",
+      "process_noise": "pre_rule_each_sweep",
+      "seed_mode": "exact_half"
+    },
+    "setting_id": "322e82cd2d0e0d80",
+    "strict_mae": 0.025951038707386364,
+    "strict_rho": 0.748837247050659,
+    "survival_mae": 5.546647505326704,
+    "survival_rho": 0.5797575705859671,
+    "sweep_log_mae": 0.1299340250544626,
+    "sweep_rho": 0.9508501083855134,
+    "top10_reference_recall": 0.2,
+    "top10_rules": [
+      1,
+      3,
+      19,
+      33,
+      35,
+      50,
+      56,
+      138,
+      178,
+      232
+    ]
+  },
+  {
+    "break_mae": 0.1490811434659091,
+    "break_rho": 0.7475572574502692,
+    "class3_separation": true,
+    "class4_max_strict": 0.0,
+    "class_break_medians": {
+      "1": 0.0,
+      "2": 0.5078125,
+      "3": 1.0,
+      "4": 0.9990234375
+    },
+    "contract_plausible": true,
+    "n_rules": 88,
+    "reconciliation_loss": 0.17750432638042038,
+    "setting": {
+      "activity_count": "deterministic",
+      "launch_anchor": "first_completed_generation",
+      "launch_preparation": "noiseless_generation",
+      "monochrome_death": "terminal_only",
+      "observed_daughter": "post_copy_offspring",
+      "process_noise": "pre_rule_each_sweep",
+      "seed_mode": "exact_half"
+    },
+    "setting_id": "b35342e5d6a7e996",
+    "strict_mae": 0.026211825284090908,
+    "strict_rho": 0.7433336599062124,
+    "survival_mae": 5.617143110795454,
+    "survival_rho": 0.5400102011074571,
+    "sweep_log_mae": 0.10554293615113272,
+    "sweep_rho": 0.9552048634236004,
+    "top10_reference_recall": 0.2,
+    "top10_rules": [
+      1,
+      3,
+      19,
+      33,
+      35,
+      50,
+      51,
+      56,
+      178,
+      232
+    ]
+  }
+]

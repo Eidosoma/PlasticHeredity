@@ -1,0 +1,18 @@
+{
+  "adjudication": {
+    "mechanisms": {},
+    "verdict": "INCOMPLETE"
+  },
+  "completed_unix": 1787399320.092845,
+  "design_digest": "36e34869bbc28517e8ec421149589c6cc2b3e5c88a9ffdd09804d31ac6597326",
+  "elapsed_seconds": 1.8418669700622559,
+  "experiment": "ca_lineage_field_round_4",
+  "requested_profile": "smoke",
+  "selected_profile": "smoke",
+  "stage_completeness": {
+    "core": false,
+    "diagnostics": false
+  },
+  "started_unix": 1787399318.2509787,
+  "state": "partial_budget_exhausted"
+}

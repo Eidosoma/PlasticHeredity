@@ -1,0 +1,1029 @@
+{
+  "label_access": false,
+  "mechanisms": {
+    "diffuse": {
+      "calibration_failure": true,
+      "candidate_count": 36,
+      "candidates": [
+        {
+          "calibration_score": 0.1692472183756763,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.02361568808555603,
+            "no_write_residual_g4": 0.0006045615882612765,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1668196818762226,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.0325787253677845,
+            "no_write_residual_g4": 0.0008340153726749122,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.16942801576515193,
+          "decay": 0.4,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.022873498499393463,
+            "no_write_residual_g4": 0.0005855615600012243,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1668712875805795,
+          "decay": 0.4,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.032366879284381866,
+            "no_write_residual_g4": 0.0008285921066999435,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.167624944250565,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.03247157484292984,
+            "no_write_residual_g4": 0.002971351845189929,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16458169505931436,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.044795747846364975,
+            "no_write_residual_g4": 0.004099090583622456,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.16761258618207647,
+          "decay": 0.55,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.031451061367988586,
+            "no_write_residual_g4": 0.0028779685962945223,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16464785342104732,
+          "decay": 0.55,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04450445994734764,
+            "no_write_residual_g4": 0.004072436131536961,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1669046761933714,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04132745414972305,
+            "no_write_residual_g4": 0.009922721423208714,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16368071753531693,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.05701277032494545,
+            "no_write_residual_g4": 0.013688765466213226,
+            "perturbation": 0.00048828125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1671514221932739,
+          "decay": 0.7,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04002862051129341,
+            "no_write_residual_g4": 0.009610871784389019,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.163751147640869,
+          "decay": 0.7,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.05664203688502312,
+            "no_write_residual_g4": 0.013599752448499203,
+            "perturbation": 0.00048828125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1690030777506763,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.02361568808555603,
+            "no_write_residual_g4": 0.0006045615882612765,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1665755412512226,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.0325787253677845,
+            "no_write_residual_g4": 0.0008340153726749122,
+            "perturbation": 0.00048828125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.16893973451515193,
+          "decay": 0.4,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.022873498499393463,
+            "no_write_residual_g4": 0.0005855615600012243,
+            "perturbation": 0.00048828125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1663830063305795,
+          "decay": 0.4,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.032366879284381866,
+            "no_write_residual_g4": 0.0008285921066999435,
+            "perturbation": 0.000732421875,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.167136663000565,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.03247157484292984,
+            "no_write_residual_g4": 0.002971351845189929,
+            "perturbation": 0.00048828125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16384927318431436,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.044795747846364975,
+            "no_write_residual_g4": 0.004099090583622456,
+            "perturbation": 0.0009765625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.16736844555707647,
+          "decay": 0.55,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.031451061367988586,
+            "no_write_residual_g4": 0.0028779685962945223,
+            "perturbation": 0.00048828125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16391543154604732,
+          "decay": 0.55,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04450445994734764,
+            "no_write_residual_g4": 0.004072436131536961,
+            "perturbation": 0.0009765625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1661722543183714,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04132745414972305,
+            "no_write_residual_g4": 0.009922721423208714,
+            "perturbation": 0.0009765625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16246001441031693,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.05701277032494545,
+            "no_write_residual_g4": 0.013688765466213226,
+            "perturbation": 0.001708984375,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1666631409432739,
+          "decay": 0.7,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04002862051129341,
+            "no_write_residual_g4": 0.009610871784389019,
+            "perturbation": 0.000732421875,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.162286303890869,
+          "decay": 0.7,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.05664203688502312,
+            "no_write_residual_g4": 0.013599752448499203,
+            "perturbation": 0.001953125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1677823746256763,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.02361568808555603,
+            "no_write_residual_g4": 0.0006045615882612765,
+            "perturbation": 0.00146484375,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1648665568762226,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.0325787253677845,
+            "no_write_residual_g4": 0.0008340153726749122,
+            "perturbation": 0.002197265625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.16796317201515193,
+          "decay": 0.4,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.022873498499393463,
+            "no_write_residual_g4": 0.0005855615600012243,
+            "perturbation": 0.00146484375,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1649181625805795,
+          "decay": 0.4,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.032366879284381866,
+            "no_write_residual_g4": 0.0008285921066999435,
+            "perturbation": 0.002197265625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.165671819250565,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.03247157484292984,
+            "no_write_residual_g4": 0.002971351845189929,
+            "perturbation": 0.001953125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16214028880931436,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.044795747846364975,
+            "no_write_residual_g4": 0.004099090583622456,
+            "perturbation": 0.002685546875,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.16590360180707647,
+          "decay": 0.55,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.031451061367988586,
+            "no_write_residual_g4": 0.0028779685962945223,
+            "perturbation": 0.001953125,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16245058779604732,
+          "decay": 0.55,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04450445994734764,
+            "no_write_residual_g4": 0.004072436131536961,
+            "perturbation": 0.00244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1644632699433714,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04132745414972305,
+            "no_write_residual_g4": 0.009922721423208714,
+            "perturbation": 0.002685546875,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16050688941031693,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.05701277032494545,
+            "no_write_residual_g4": 0.013688765466213226,
+            "perturbation": 0.003662109375,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        },
+        {
+          "calibration_score": 0.1651982971932739,
+          "decay": 0.7,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.04002862051129341,
+            "no_write_residual_g4": 0.009610871784389019,
+            "perturbation": 0.002197265625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.160577319515869,
+          "decay": 0.7,
+          "diffusion": 0.08,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "diffuse",
+          "metrics": {
+            "mean_abs": 0.05664203688502312,
+            "no_write_residual_g4": 0.013599752448499203,
+            "perturbation": 0.003662109375,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.12
+        }
+      ],
+      "eligible_count": 0,
+      "mechanism": "diffuse",
+      "selected": {
+        "calibration_score": 0.167624944250565,
+        "decay": 0.55,
+        "diffusion": 0.04,
+        "eligible": false,
+        "kappa": 0.025,
+        "lower": 0.4,
+        "mechanism": "diffuse",
+        "upper": 0.6,
+        "write_gain": 0.08
+      },
+      "selected_metrics": {
+        "mean_abs": 0.03247157484292984,
+        "no_write_residual_g4": 0.002971351845189929,
+        "perturbation": 0.0,
+        "saturation": 0.0,
+        "viability": 1.0
+      }
+    },
+    "latch": {
+      "calibration_failure": true,
+      "candidate_count": 18,
+      "candidates": [
+        {
+          "calibration_score": 0.1659839449392166,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.03701172024011612,
+            "no_write_residual_g4": 0.0009474999969825149,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17492863280954224,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.0002929687616415322,
+            "no_write_residual_g4": 7.499999810534064e-06,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1634414356201887,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.05089111253619194,
+            "no_write_residual_g4": 0.004656855016946793,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17490850739868619,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.00040283205453306437,
+            "no_write_residual_g4": 3.686164927785285e-05,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16269522318616508,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.06477050483226776,
+            "no_write_residual_g4": 0.015551397576928139,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17490260071353986,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.025,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.0005126952892169356,
+            "no_write_residual_g4": 0.00012309814337641,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1659839449392166,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.03701172024011612,
+            "no_write_residual_g4": 0.0009474999969825149,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17492863280954224,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.0002929687616415322,
+            "no_write_residual_g4": 7.499999810534064e-06,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1634414356201887,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.05089111253619194,
+            "no_write_residual_g4": 0.004656855016946793,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17490850739868619,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.00040283205453306437,
+            "no_write_residual_g4": 3.686164927785285e-05,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16245108256116508,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.06477050483226776,
+            "no_write_residual_g4": 0.015551397576928139,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17490260071353986,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.05,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.0005126952892169356,
+            "no_write_residual_g4": 0.00012309814337641,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1657398043142166,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.03701172024011612,
+            "no_write_residual_g4": 0.0009474999969825149,
+            "perturbation": 0.000244140625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17492863280954224,
+          "decay": 0.4,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.0002929687616415322,
+            "no_write_residual_g4": 7.499999810534064e-06,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.1627090137451887,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.05089111253619194,
+            "no_write_residual_g4": 0.004656855016946793,
+            "perturbation": 0.000732421875,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17490850739868619,
+          "decay": 0.55,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.00040283205453306437,
+            "no_write_residual_g4": 3.686164927785285e-05,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.16171866068616508,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.4,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.06477050483226776,
+            "no_write_residual_g4": 0.015551397576928139,
+            "perturbation": 0.0009765625,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.6,
+          "write_gain": 0.08
+        },
+        {
+          "calibration_score": 0.17490260071353986,
+          "decay": 0.7,
+          "diffusion": 0.04,
+          "eligible": false,
+          "kappa": 0.1,
+          "lower": 0.30000000000000004,
+          "mechanism": "latch",
+          "metrics": {
+            "mean_abs": 0.0005126952892169356,
+            "no_write_residual_g4": 0.00012309814337641,
+            "perturbation": 0.0,
+            "saturation": 0.0,
+            "viability": 1.0
+          },
+          "upper": 0.7,
+          "write_gain": 0.08
+        }
+      ],
+      "eligible_count": 0,
+      "mechanism": "latch",
+      "selected": {
+        "calibration_score": 0.16269522318616508,
+        "decay": 0.7,
+        "diffusion": 0.04,
+        "eligible": false,
+        "kappa": 0.025,
+        "lower": 0.4,
+        "mechanism": "latch",
+        "upper": 0.6,
+        "write_gain": 0.08
+      },
+      "selected_metrics": {
+        "mean_abs": 0.06477050483226776,
+        "no_write_residual_g4": 0.015551397576928139,
+        "perturbation": 0.0,
+        "saturation": 0.0,
+        "viability": 1.0
+      }
+    }
+  }
+}

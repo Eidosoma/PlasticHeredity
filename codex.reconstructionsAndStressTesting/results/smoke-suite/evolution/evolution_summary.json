@@ -1,0 +1,64 @@
+{
+  "boundary": "GPS omitted: the clean-room atlas has no independent fresh-stream truth table",
+  "config": {
+    "generations": 40,
+    "measurement_budget": 256,
+    "population": 24,
+    "repeats": 32,
+    "seed_namespace": "plastic-ca-cleanroom-evolution-v1",
+    "tournament_k": 3
+  },
+  "elapsed_seconds": 6.794314861297607,
+  "evolution": {
+    "arm_summaries": {
+      "drift": {
+        "ci95": [
+          0.19915364583333334,
+          0.5972656249999999
+        ],
+        "mean": 0.4073893229166667,
+        "median_class": 2.0
+      },
+      "fitness_shuffled": {
+        "ci95": [
+          0.16204427083333334,
+          0.542578125
+        ],
+        "mean": 0.34912109375,
+        "median_class": 2.0
+      },
+      "random_walk": {
+        "ci95": [
+          0.2805989583333333,
+          0.5766927083333331
+        ],
+        "mean": 0.4125162760416667,
+        "median_class": 2.0
+      },
+      "selection": {
+        "ci95": [
+          0.3130208333333333,
+          0.6990885416666666
+        ],
+        "mean": 0.51513671875,
+        "median_class": 2.0
+      }
+    },
+    "class3_core_visit_fraction": {
+      "random_walk": 0.10074869791666667,
+      "selection": 0.07705078125
+    },
+    "gate_selection_finds_boundary": false,
+    "gate_sticky_walk": true,
+    "stickiness": {
+      "evolved": 0.1331244574652778,
+      "null": 0.06220067584325397
+    },
+    "stickiness_nonempty_reanalysis": {
+      "evolved": 0.1331244574652778,
+      "null": 0.06220067584325397,
+      "ratio": 2.1402413343667215
+    }
+  },
+  "experiment": "rulial_evolution"
+}

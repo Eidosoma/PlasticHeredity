@@ -1,0 +1,27 @@
+{
+  "automatic_launch": false,
+  "candidate_metadata": {
+    "global-walsh-anchor": {
+      "bits": 4,
+      "boundary_scope": "uniform global broadcast diagnostic",
+      "candidate_id": "global-walsh-anchor",
+      "kind": "global",
+      "locality_audit": false,
+      "payload_bits": 64,
+      "rank": 16,
+      "shared_stage4_codebook_bits": 656,
+      "shared_writer_parameter_bits": 0
+    }
+  },
+  "confirmation_candidate_ids": [
+    "global-walsh-anchor"
+  ],
+  "confirmation_generations": 16,
+  "confirmation_pairs": 128,
+  "confirmation_replicates": 64,
+  "confirmation_state": "awaiting_human_review",
+  "design_digest": "d0ae4d70c28cd78d325cde0f5744851fcd62bdb85d6adc35315635fc52b4d2fc",
+  "ordinary_and_moderate_joint": true,
+  "retuning_permitted": false,
+  "stage4_design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2"
+}

@@ -1,0 +1,1892 @@
+{
+  "anatomy": {
+    "d4_crossover": {
+      "anatomy-d4-r0-f0": 1.0,
+      "anatomy-d4-r0-f1": 0.75,
+      "anatomy-d4-r1-f0": 1.0,
+      "anatomy-d4-r1-f1": 1.0,
+      "anatomy-d4-r2-f0": 1.0,
+      "anatomy-d4-r2-f1": 1.0,
+      "anatomy-d4-r3-f0": 1.0,
+      "anatomy-d4-r3-f1": 1.0
+    },
+    "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+    "distributed_across_modes": false,
+    "full16_crossover_mean": 1.0,
+    "generation": 4,
+    "leave_one_out_effect_loss": {
+      "0": 0.0,
+      "1": 0.0,
+      "10": 0.0,
+      "11": 0.0,
+      "12": 0.0,
+      "13": 0.0,
+      "14": 0.25,
+      "15": 0.0,
+      "2": 0.0,
+      "3": 0.0,
+      "4": 0.0,
+      "5": 0.0,
+      "6": 0.0,
+      "7": 0.0,
+      "8": 0.0,
+      "9": 0.0
+    },
+    "leave_one_out_importance_concentration": 1.0,
+    "single_mode_crossover": {
+      "0": 0.0,
+      "1": 0.0,
+      "10": -0.25,
+      "11": 0.0,
+      "12": 0.5,
+      "13": -0.5,
+      "14": 0.5,
+      "15": 0.0,
+      "2": 0.0,
+      "3": -0.25,
+      "4": -0.5,
+      "5": 0.5,
+      "6": 0.25,
+      "7": 0.0,
+      "8": -0.5,
+      "9": 0.5
+    },
+    "state": "complete",
+    "variants": {
+      "anatomy-balanced-00": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-01": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-02": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-03": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.5
+          ],
+          "mean": 0.25,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-04": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-05": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-06": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-07": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-08": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-09": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-10": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-11": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-12": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-13": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-14": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-15": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-16": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-17": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-18": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-19": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-20": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-21": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-22": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-23": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-24": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-25": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-26": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-27": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-28": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-29": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-30": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-balanced-31": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 32,
+        "rank": 8,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r0-f0": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r0-f1": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r1-f0": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r1-f1": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r2-f0": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r2-f1": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r3-f0": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-d4-r3-f1": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-equal-scale": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-full16": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 64,
+        "rank": 16,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-00": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-01": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-02": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-03": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-04": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-05": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-06": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-07": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-08": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-09": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-10": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-11": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-12": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-13": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-14": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            1.0
+          ],
+          "mean": 0.75,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-loo-15": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 60,
+        "rank": 15,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-00": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-01": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            0.5
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-02": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-03": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            0.0
+          ],
+          "mean": -0.25,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-04": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            -0.5
+          ],
+          "mean": -0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-05": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            1.0
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-06": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            1.0
+          ],
+          "mean": 0.25,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-07": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-08": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            -0.5
+          ],
+          "mean": -0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-09": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-10": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            0.0
+          ],
+          "mean": -0.25,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-11": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-12": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-13": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            -0.5
+          ],
+          "mean": -0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-14": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.5,
+            0.5
+          ],
+          "mean": 0.5,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      },
+      "anatomy-single-15": {
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "payload_bits": 4,
+        "rank": 1,
+        "survival_mean": 1.0
+      }
+    }
+  },
+  "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+  "elapsed_seconds": 186.81274223327637,
+  "experiment": "ca_motif_lineage_stage_5",
+  "information_accounting": {
+    "affine_writer_shared_parameter_bits": 1024,
+    "categories_not_interchangeable": true,
+    "developmental_field_storage_bits_float32": 131072,
+    "developmental_field_values": 4096,
+    "primary_inherited_bits": 64,
+    "stage4_shared_codebook_bits": 656
+  },
+  "profile": "smoke",
+  "qualification": {
+    "candidate_summaries": {
+      "global-walsh-anchor": {
+        "candidate": {
+          "bits": 4,
+          "boundary_scope": "uniform global broadcast diagnostic",
+          "candidate_id": "global-walsh-anchor",
+          "kind": "global",
+          "locality_audit": false,
+          "payload_bits": 64,
+          "rank": 16,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0
+        },
+        "local_renewed_gate": false,
+        "localization": {
+          "not_applicable_global_anchor": true,
+          "passed": false
+        },
+        "strict": {
+          "renewed_gate": false,
+          "verdict": "NOT_ADJUDICATED_PROFILE"
+        }
+      },
+      "local-affine-p1-d20-w08-r100": {
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.021313898935869,
+          "candidate_id": "local-affine-p1-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 1,
+          "payload_bits": 64,
+          "rank": 16,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "local_renewed_gate": false,
+        "localization": {
+          "passed": false,
+          "scientific_gate_applied": false
+        },
+        "strict": {
+          "renewed_gate": false,
+          "verdict": "NOT_ADJUDICATED_PROFILE"
+        }
+      },
+      "local-affine-p2-d20-w08-r100": {
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.021313898935869,
+          "candidate_id": "local-affine-p2-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 2,
+          "payload_bits": 256,
+          "rank": 64,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "local_renewed_gate": false,
+        "localization": {
+          "passed": false,
+          "scientific_gate_applied": false
+        },
+        "strict": {
+          "renewed_gate": false,
+          "verdict": "NOT_ADJUDICATED_PROFILE"
+        }
+      },
+      "local-analytic-p4-d20-w08-r100": {
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.1018261035685477,
+          "candidate_id": "local-analytic-p4-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 4,
+          "payload_bits": 1024,
+          "rank": 256,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "local_renewed_gate": false,
+        "localization": {
+          "passed": false,
+          "scientific_gate_applied": false
+        },
+        "strict": {
+          "renewed_gate": false,
+          "verdict": "NOT_ADJUDICATED_PROFILE"
+        }
+      }
+    },
+    "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+    "qualified_candidate_ids": [
+      "global-walsh-anchor",
+      "local-affine-p1-d20-w08-r100",
+      "local-affine-p2-d20-w08-r100",
+      "local-analytic-p4-d20-w08-r100"
+    ],
+    "scientific_gate_applied": false,
+    "state": "complete"
+  },
+  "screen": {
+    "anchor_crossover_mean": 1.0,
+    "candidate_summaries": {
+      "global-walsh-anchor": {
+        "candidate": {
+          "bits": 4,
+          "boundary_scope": "uniform global broadcast diagnostic",
+          "candidate_id": "global-walsh-anchor",
+          "kind": "global",
+          "locality_audit": false,
+          "payload_bits": 64,
+          "rank": 16,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 1.0,
+        "direction_b_mean": 1.0,
+        "fraction_pairs_positive": 1.0,
+        "survival_mean": 1.0
+      },
+      "local-affine-p1-d20-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.021313898935869,
+          "candidate_id": "local-affine-p1-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 1,
+          "payload_bits": 64,
+          "rank": 16,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-affine-p1-d35-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.0854529278052059,
+          "candidate_id": "local-affine-p1-d35-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.35,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 1,
+          "payload_bits": 64,
+          "rank": 16,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-affine-p2-d20-w08-r100": {
+        "anchor_retention": 0.25,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.021313898935869,
+          "candidate_id": "local-affine-p2-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 2,
+          "payload_bits": 256,
+          "rank": 64,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.5
+          ],
+          "mean": 0.25,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.25,
+        "direction_b_mean": 0.25,
+        "fraction_pairs_positive": 0.5,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-affine-p2-d35-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.0854529278052059,
+          "candidate_id": "local-affine-p2-d35-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.35,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 2,
+          "payload_bits": 256,
+          "rank": 64,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-affine-p4-d20-w08-r100": {
+        "anchor_retention": -0.5,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.021313898935869,
+          "candidate_id": "local-affine-p4-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 4,
+          "payload_bits": 1024,
+          "rank": 256,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -1.0,
+            0.0
+          ],
+          "mean": -0.5,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": -0.5,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-affine-p4-d35-w08-r100": {
+        "anchor_retention": -0.25,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.0854529278052059,
+          "candidate_id": "local-affine-p4-d35-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.35,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 4,
+          "payload_bits": 1024,
+          "rank": 256,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 1024,
+          "write_gain": 0.08,
+          "writer_id": "affine"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            0.0
+          ],
+          "mean": -0.25,
+          "n_pairs": 2
+        },
+        "direction_a_mean": -0.25,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-analytic-p1-d20-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.1018261035685477,
+          "candidate_id": "local-analytic-p1-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 1,
+          "payload_bits": 64,
+          "rank": 16,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-analytic-p1-d35-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.165888748699108,
+          "candidate_id": "local-analytic-p1-d35-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.35,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 1,
+          "payload_bits": 64,
+          "rank": 16,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-analytic-p2-d20-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.1018261035685477,
+          "candidate_id": "local-analytic-p2-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 2,
+          "payload_bits": 256,
+          "rank": 64,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-analytic-p2-d35-w08-r100": {
+        "anchor_retention": 0.0,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.165888748699108,
+          "candidate_id": "local-analytic-p2-d35-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.35,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 2,
+          "payload_bits": 256,
+          "rank": 64,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.0,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-analytic-p4-d20-w08-r100": {
+        "anchor_retention": 0.25,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.1018261035685477,
+          "candidate_id": "local-analytic-p4-d20-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.2,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 4,
+          "payload_bits": 1024,
+          "rank": 256,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            0.0,
+            0.5
+          ],
+          "mean": 0.25,
+          "n_pairs": 2
+        },
+        "direction_a_mean": 0.5,
+        "direction_b_mean": 0.25,
+        "fraction_pairs_positive": 0.5,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      },
+      "local-analytic-p4-d35-w08-r100": {
+        "anchor_retention": -0.25,
+        "candidate": {
+          "bits": 4,
+          "calibration_score": 1.165888748699108,
+          "candidate_id": "local-analytic-p4-d35-w08-r100",
+          "developmental_field_storage_bits_float32": 131072,
+          "developmental_field_values": 4096,
+          "diffusion": 0.35,
+          "kind": "local",
+          "locality_audit": true,
+          "patch_side": 4,
+          "payload_bits": 1024,
+          "rank": 256,
+          "retention": 1.0,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false,
+          "shared_stage4_codebook_bits": 656,
+          "shared_writer_parameter_bits": 0,
+          "write_gain": 0.08,
+          "writer_id": "analytic"
+        },
+        "crossover": {
+          "alpha": 0.025,
+          "ci": [
+            -0.5,
+            0.0
+          ],
+          "mean": -0.25,
+          "n_pairs": 2
+        },
+        "direction_a_mean": -0.25,
+        "direction_b_mean": 0.0,
+        "fraction_pairs_positive": 0.0,
+        "screen_eligible": false,
+        "survival_mean": 1.0
+      }
+    },
+    "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+    "fallback_nomination_used": true,
+    "generation": 4,
+    "scientific_gate_applied": false,
+    "selected_candidate_ids": [
+      "global-walsh-anchor",
+      "local-affine-p1-d20-w08-r100",
+      "local-affine-p2-d20-w08-r100",
+      "local-analytic-p4-d20-w08-r100"
+    ],
+    "state": "complete"
+  },
+  "selection_decision": {
+    "automatic_launch": false,
+    "candidate_metadata": {
+      "global-walsh-anchor": {
+        "bits": 4,
+        "boundary_scope": "uniform global broadcast diagnostic",
+        "candidate_id": "global-walsh-anchor",
+        "kind": "global",
+        "locality_audit": false,
+        "payload_bits": 64,
+        "rank": 16,
+        "shared_stage4_codebook_bits": 656,
+        "shared_writer_parameter_bits": 0
+      },
+      "local-affine-p1-d20-w08-r100": {
+        "bits": 4,
+        "calibration_score": 1.021313898935869,
+        "candidate_id": "local-affine-p1-d20-w08-r100",
+        "developmental_field_storage_bits_float32": 131072,
+        "developmental_field_values": 4096,
+        "diffusion": 0.2,
+        "kind": "local",
+        "locality_audit": true,
+        "patch_side": 1,
+        "payload_bits": 64,
+        "rank": 16,
+        "retention": 1.0,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "shared_stage4_codebook_bits": 656,
+        "shared_writer_parameter_bits": 1024,
+        "write_gain": 0.08,
+        "writer_id": "affine"
+      },
+      "local-affine-p2-d20-w08-r100": {
+        "bits": 4,
+        "calibration_score": 1.021313898935869,
+        "candidate_id": "local-affine-p2-d20-w08-r100",
+        "developmental_field_storage_bits_float32": 131072,
+        "developmental_field_values": 4096,
+        "diffusion": 0.2,
+        "kind": "local",
+        "locality_audit": true,
+        "patch_side": 2,
+        "payload_bits": 256,
+        "rank": 64,
+        "retention": 1.0,
+        "runtime_label_access": false,
+        "runtime_parent_access": false,
+        "runtime_target_access": false,
+        "shared_stage4_codebook_bits": 656,
+        "shared_writer_parameter_bits": 1024,
+        "write_gain": 0.08,
+        "writer_id": "affine"
+      }
+    },
+    "confirmation_candidate_ids": [
+      "global-walsh-anchor",
+      "local-affine-p1-d20-w08-r100",
+      "local-affine-p2-d20-w08-r100"
+    ],
+    "confirmation_generations": 4,
+    "confirmation_pairs": 2,
+    "confirmation_replicates": 2,
+    "confirmation_state": "awaiting_human_review",
+    "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+    "ordinary_and_moderate_joint": true,
+    "retuning_permitted": false,
+    "stage4_design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2"
+  },
+  "stage4_design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "state": "awaiting_confirmation",
+  "transfer": {
+    "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+    "exploratory_only": true,
+    "generation": 4,
+    "rules": {
+      "31648": {
+        "candidates": {
+          "global-walsh-anchor": {
+            "crossover": {
+              "alpha": 0.025,
+              "ci": [
+                0.0,
+                1.0
+              ],
+              "mean": 0.5,
+              "n_pairs": 2
+            }
+          },
+          "local-affine-p1-d20-w08-r100": {
+            "crossover": {
+              "alpha": 0.025,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 2
+            }
+          },
+          "local-affine-p2-d20-w08-r100": {
+            "crossover": {
+              "alpha": 0.025,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 2
+            }
+          }
+        },
+        "pairs": 6
+      },
+      "70366": {
+        "candidates": {
+          "global-walsh-anchor": {
+            "crossover": {
+              "alpha": 0.025,
+              "ci": [
+                -0.5,
+                0.0
+              ],
+              "mean": -0.25,
+              "n_pairs": 2
+            }
+          },
+          "local-affine-p1-d20-w08-r100": {
+            "crossover": {
+              "alpha": 0.025,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 2
+            }
+          },
+          "local-affine-p2-d20-w08-r100": {
+            "crossover": {
+              "alpha": 0.025,
+              "ci": [
+                0.0,
+                0.0
+              ],
+              "mean": 0.0,
+              "n_pairs": 2
+            }
+          }
+        },
+        "pairs": 6
+      }
+    },
+    "state": "complete"
+  }
+}

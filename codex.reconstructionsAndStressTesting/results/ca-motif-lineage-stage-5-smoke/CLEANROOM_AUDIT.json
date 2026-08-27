@@ -1,0 +1,96 @@
+{
+  "cleanroom_exclusion_upheld": true,
+  "confirmation_not_opened": true,
+  "confirmation_pairs": 2,
+  "design_digest": "64f6ce298620c127a5b5ad857fc973c964fe6eed9e183dc6f5ddd08f35b881a5",
+  "later_audit_pairs": 158,
+  "stage4_verdict": "ROBUST_COMPACT_RENEWED_CA_PLASTIC_HEREDITY",
+  "stage4_winner": "walsh-r016-q04",
+  "stage5_reserve_pairs": 158,
+  "state": "passed",
+  "walsh_bit_supports": [
+    [],
+    [
+      2,
+      4
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "walsh_mode_ids": [
+    0,
+    20,
+    320,
+    17,
+    272,
+    3,
+    384,
+    80,
+    288,
+    6,
+    192,
+    5,
+    36,
+    9,
+    72,
+    24
+  ],
+  "winner_bits_per_value": 4,
+  "winner_codebook_bits": 656,
+  "winner_payload_bits": 64,
+  "winner_rank": 16
+}

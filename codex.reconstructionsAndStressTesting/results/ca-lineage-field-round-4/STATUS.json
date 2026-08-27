@@ -1,0 +1,13 @@
+{
+  "deadline_remaining_seconds": 28537.046224832535,
+  "elapsed_seconds": 262.9537751674652,
+  "hard_deadline_unix": 1787428564.9195354,
+  "pid": 2469334,
+  "profile": "reference",
+  "science_deadline_unix": 1787426764.9195354,
+  "stage": "campaign",
+  "started_unix": 1787399764.9195354,
+  "state": "complete",
+  "updated_unix": 1787400027.8733106,
+  "verdict": "NO_RENEWED_LINEAGE_CARRIER"
+}

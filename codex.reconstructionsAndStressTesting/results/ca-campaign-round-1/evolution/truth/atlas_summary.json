@@ -1,0 +1,101 @@
+{
+  "contract": {
+    "activity_budget": 256,
+    "activity_count": "realized_post_noise",
+    "boundary_death": "timeout_or_terminal_monochrome",
+    "break_horizon": 8,
+    "cell_zero_bit_order": "most_significant_bit",
+    "coherence": 0.9,
+    "composition_zero": "first_completed_generation",
+    "copy_draw": "unconditional_generation_batch",
+    "copy_error": 0.015,
+    "distinct": 0.85,
+    "flip_noise": 0.01,
+    "form_mass_quantile": 0.5,
+    "form_pooling": "per seed, equal mean of each broken future's last completed composition; the break-causing daughter satisfies the later-generation requirement",
+    "futures_per_seed": 128,
+    "horizon": 32,
+    "inherit": 0.9,
+    "launch_preparation": "none",
+    "launch_rows_hex": [
+      "0000000080000000",
+      "0000000180000000",
+      "00000003c0000000",
+      "0000000ff0000000",
+      "aaaaaaaaaaaaaaaa",
+      "ffffffff00000000",
+      "23a031300051000a",
+      "6420581808011102",
+      "4450081105301018",
+      "01c1385c048a0f68",
+      "2349a69c817d7b9b",
+      "a13c035191c53554",
+      "9d65705fb9e2a777",
+      "89f7b38cfeff37ed",
+      "27deeff5fff7aefd",
+      "dfd73effdfef7dea"
+    ],
+    "max_sweeps": 128,
+    "min_sweeps": 4,
+    "n_seeds": 16,
+    "observed_daughter": "terminal_pre_copy",
+    "process_noise_order": "post_rule",
+    "rng_tag": "rulial-evo-truth-v1",
+    "strict_run": 8,
+    "width": 64
+  },
+  "contract_digest": "7de0026d1e53223d0b07aff330693378480e6a26e04a1e3b23882b1324f06d90",
+  "death_counts": {
+    "monochrome": 1954,
+    "timeout": 40276,
+    "timeout_and_monochrome": 10609
+  },
+  "elapsed_seconds": 49.64713788032532,
+  "environment": {
+    "implementation": "clean-room NumPy shrinking-batch PCG64",
+    "numpy": "2.5.2",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "e19_bit_exact_atlas",
+  "gates": {
+    "champion_strict": {
+      "11": 0.35302734375,
+      "184": 0.1962890625,
+      "35": 0.44873046875,
+      "43": 0.34423828125,
+      "57": 0.31298828125
+    },
+    "class3_min_break_by_8": 0.94140625,
+    "class_break_medians": {
+      "1": 0.024658203125,
+      "2": 0.3642578125,
+      "3": 0.9990234375,
+      "4": 0.99853515625
+    },
+    "clean_class12_median_break_by_8": 0.281494140625,
+    "edge_mean_jaccard": 0.14207175925925927,
+    "gate_class3_separation": true,
+    "gate_heavy_tail": true,
+    "gate_metric": true,
+    "gate_rule110_top_decile": false,
+    "gate_smoothness": true,
+    "heavy_tail_share": 0.6358381502890174,
+    "metric_rho_descriptors": 0.12330406279027006,
+    "metric_rho_hamming": 0.1058324389589834,
+    "n_forms": 210,
+    "random_mean_jaccard": 0.05022401433691756,
+    "raw_class4_strict": {
+      "106": 0.0,
+      "110": 0.0,
+      "41": 0.0,
+      "54": 0.0
+    },
+    "rule110_strict": 0.0,
+    "rule110_strict_rank": 70.5,
+    "smoothness_ratio": 2.828761522450194
+  },
+  "n_form_ids": 210,
+  "n_futures": 180224,
+  "n_rules": 88
+}

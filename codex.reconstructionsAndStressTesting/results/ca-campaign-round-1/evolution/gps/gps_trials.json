@@ -1,0 +1,2253 @@
+{
+  "trials": [
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        144,
+        146,
+        178
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        144,
+        146,
+        178
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        144,
+        145,
+        144,
+        176,
+        144,
+        176,
+        177,
+        161,
+        33,
+        1,
+        17,
+        21,
+        149,
+        21,
+        17,
+        145,
+        149
+      ],
+      "random_success": false,
+      "start_rule": 144,
+      "target_form": 1056,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        44,
+        45,
+        13
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        44,
+        45,
+        13
+      ],
+      "planned_success": true,
+      "random_edits": 2,
+      "random_path": [
+        44,
+        45,
+        13
+      ],
+      "random_success": true,
+      "start_rule": 44,
+      "target_form": 1056,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        194,
+        198
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        194,
+        198
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        194,
+        202,
+        218,
+        222,
+        214,
+        210,
+        146,
+        154,
+        26,
+        27,
+        31,
+        23,
+        31,
+        27,
+        91,
+        83,
+        91
+      ],
+      "random_success": false,
+      "start_rule": 194,
+      "target_form": 1056,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        134,
+        198
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        134,
+        198
+      ],
+      "planned_success": true,
+      "random_edits": 5,
+      "random_path": [
+        134,
+        166,
+        182,
+        180,
+        182,
+        178
+      ],
+      "random_success": true,
+      "start_rule": 134,
+      "target_form": 1056,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        225,
+        224,
+        226
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        225,
+        224,
+        226
+      ],
+      "planned_success": true,
+      "random_edits": 14,
+      "random_path": [
+        225,
+        193,
+        129,
+        137,
+        169,
+        233,
+        237,
+        236,
+        232,
+        233,
+        201,
+        233,
+        235,
+        107,
+        99
+      ],
+      "random_success": true,
+      "start_rule": 225,
+      "target_form": 1056,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        46,
+        14,
+        78
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        46,
+        14,
+        78
+      ],
+      "planned_success": true,
+      "random_edits": 5,
+      "random_path": [
+        46,
+        62,
+        30,
+        26,
+        30,
+        28
+      ],
+      "random_success": true,
+      "start_rule": 46,
+      "target_form": 1056,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        117,
+        125,
+        93
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        117,
+        125,
+        93
+      ],
+      "planned_success": true,
+      "random_edits": 8,
+      "random_path": [
+        117,
+        119,
+        115,
+        51,
+        49,
+        53,
+        37,
+        5,
+        69
+      ],
+      "random_success": true,
+      "start_rule": 117,
+      "target_form": 1056,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        34,
+        50
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        34,
+        50
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        34,
+        42,
+        43,
+        41,
+        9,
+        8,
+        136,
+        152,
+        153,
+        152,
+        136,
+        138,
+        130,
+        162,
+        34,
+        42,
+        106
+      ],
+      "random_success": false,
+      "start_rule": 34,
+      "target_form": 1056,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        130,
+        134
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        130,
+        134
+      ],
+      "planned_success": true,
+      "random_edits": 1,
+      "random_path": [
+        130,
+        138
+      ],
+      "random_success": true,
+      "start_rule": 130,
+      "target_form": 275,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        102,
+        38
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        102,
+        38
+      ],
+      "planned_success": true,
+      "random_edits": 6,
+      "random_path": [
+        102,
+        110,
+        78,
+        76,
+        12,
+        13,
+        9
+      ],
+      "random_success": true,
+      "start_rule": 102,
+      "target_form": 275,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        86,
+        22
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        86,
+        22
+      ],
+      "planned_success": true,
+      "random_edits": 1,
+      "random_path": [
+        86,
+        214
+      ],
+      "random_success": true,
+      "start_rule": 86,
+      "target_form": 275,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        99,
+        97,
+        65
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        99,
+        97,
+        65
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        99,
+        67,
+        66,
+        98,
+        106,
+        104,
+        40,
+        44,
+        40,
+        56,
+        184,
+        176,
+        177,
+        185,
+        153,
+        145,
+        129
+      ],
+      "random_success": false,
+      "start_rule": 99,
+      "target_form": 275,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        204,
+        205,
+        197,
+        229
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        204,
+        205,
+        197,
+        229
+      ],
+      "planned_success": true,
+      "random_edits": 9,
+      "random_path": [
+        204,
+        206,
+        202,
+        218,
+        90,
+        26,
+        18,
+        19,
+        23,
+        151
+      ],
+      "random_success": true,
+      "start_rule": 204,
+      "target_form": 275,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        239,
+        111
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        239,
+        175
+      ],
+      "planned_success": false,
+      "random_edits": 7,
+      "random_path": [
+        239,
+        255,
+        251,
+        187,
+        185,
+        189,
+        191,
+        159
+      ],
+      "random_success": true,
+      "start_rule": 239,
+      "target_form": 275,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        5,
+        4,
+        6
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        5,
+        4,
+        6
+      ],
+      "planned_success": true,
+      "random_edits": 13,
+      "random_path": [
+        5,
+        21,
+        23,
+        87,
+        83,
+        67,
+        3,
+        11,
+        139,
+        203,
+        201,
+        203,
+        202,
+        138
+      ],
+      "random_success": true,
+      "start_rule": 5,
+      "target_form": 275,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        160,
+        161,
+        165,
+        173
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        160,
+        161,
+        165,
+        173
+      ],
+      "planned_success": true,
+      "random_edits": 4,
+      "random_path": [
+        160,
+        128,
+        0,
+        8,
+        10
+      ],
+      "random_success": false,
+      "start_rule": 160,
+      "target_form": 275,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        42,
+        40
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        42,
+        40
+      ],
+      "planned_success": true,
+      "random_edits": 4,
+      "random_path": [
+        42,
+        43,
+        41,
+        33,
+        32
+      ],
+      "random_success": true,
+      "start_rule": 42,
+      "target_form": 1,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        227,
+        235
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        227,
+        235
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        227,
+        99,
+        98,
+        34,
+        162,
+        170,
+        174,
+        175,
+        167,
+        163,
+        162,
+        163,
+        167,
+        175,
+        239,
+        207,
+        206
+      ],
+      "random_success": false,
+      "start_rule": 227,
+      "target_form": 1,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        57,
+        56,
+        40
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        57,
+        56,
+        40
+      ],
+      "planned_success": true,
+      "random_edits": 15,
+      "random_path": [
+        57,
+        49,
+        57,
+        61,
+        60,
+        44,
+        12,
+        76,
+        204,
+        76,
+        72,
+        200,
+        232,
+        200,
+        232,
+        168
+      ],
+      "random_success": true,
+      "start_rule": 57,
+      "target_form": 1,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        118,
+        119,
+        87
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        118,
+        119,
+        87
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        118,
+        119,
+        103,
+        119,
+        103,
+        99,
+        67,
+        65,
+        97,
+        33,
+        41,
+        9,
+        1,
+        0,
+        8,
+        9,
+        25
+      ],
+      "random_success": false,
+      "start_rule": 118,
+      "target_form": 1,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        148,
+        149,
+        21
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        148,
+        149,
+        21
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        148,
+        132,
+        140,
+        141,
+        205,
+        237,
+        173,
+        165,
+        173,
+        189,
+        173,
+        175,
+        47,
+        39,
+        38,
+        39,
+        7
+      ],
+      "random_success": true,
+      "start_rule": 148,
+      "target_form": 1,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        180,
+        176,
+        160
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        180,
+        176,
+        160
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        180,
+        52,
+        60,
+        44,
+        46,
+        44,
+        45,
+        109,
+        237,
+        205,
+        204,
+        76,
+        92,
+        76,
+        68,
+        84,
+        20
+      ],
+      "random_success": false,
+      "start_rule": 180,
+      "target_form": 1,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        201,
+        233
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        201,
+        233
+      ],
+      "planned_success": true,
+      "random_edits": 5,
+      "random_path": [
+        201,
+        193,
+        129,
+        133,
+        149,
+        21
+      ],
+      "random_success": true,
+      "start_rule": 201,
+      "target_form": 1,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        150,
+        151,
+        23
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        150,
+        151,
+        23
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        150,
+        22,
+        150,
+        151,
+        183,
+        182,
+        183,
+        181,
+        180,
+        148,
+        149,
+        157,
+        153,
+        185,
+        189,
+        173,
+        45
+      ],
+      "random_success": false,
+      "start_rule": 150,
+      "target_form": 1,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        168,
+        172
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        168,
+        172
+      ],
+      "planned_success": true,
+      "random_edits": 1,
+      "random_path": [
+        168,
+        172
+      ],
+      "random_success": true,
+      "start_rule": 168,
+      "target_form": 21,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        88,
+        80
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        88,
+        80
+      ],
+      "planned_success": true,
+      "random_edits": 15,
+      "random_path": [
+        88,
+        90,
+        122,
+        120,
+        104,
+        105,
+        109,
+        108,
+        124,
+        252,
+        254,
+        252,
+        253,
+        125,
+        117,
+        245
+      ],
+      "random_success": true,
+      "start_rule": 88,
+      "target_form": 21,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        219,
+        218,
+        216
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        219,
+        217
+      ],
+      "planned_success": false,
+      "random_edits": 11,
+      "random_path": [
+        219,
+        91,
+        75,
+        74,
+        75,
+        79,
+        15,
+        7,
+        6,
+        38,
+        102,
+        100
+      ],
+      "random_success": false,
+      "start_rule": 219,
+      "target_form": 21,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        18,
+        16,
+        48
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        18,
+        16,
+        48
+      ],
+      "planned_success": true,
+      "random_edits": 2,
+      "random_path": [
+        18,
+        2,
+        130
+      ],
+      "random_success": false,
+      "start_rule": 18,
+      "target_form": 21,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        3,
+        2,
+        10
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        3,
+        2,
+        10
+      ],
+      "planned_success": true,
+      "random_edits": 10,
+      "random_path": [
+        3,
+        1,
+        65,
+        81,
+        209,
+        193,
+        209,
+        211,
+        209,
+        211,
+        243
+      ],
+      "random_success": true,
+      "start_rule": 3,
+      "target_form": 21,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        181,
+        245
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        181,
+        245
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        181,
+        53,
+        61,
+        29,
+        13,
+        9,
+        8,
+        12,
+        28,
+        29,
+        13,
+        9,
+        25,
+        153,
+        137,
+        9,
+        41
+      ],
+      "random_success": false,
+      "start_rule": 181,
+      "target_form": 21,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        178,
+        176
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        178,
+        176
+      ],
+      "planned_success": true,
+      "random_edits": 4,
+      "random_path": [
+        178,
+        182,
+        178,
+        146,
+        130
+      ],
+      "random_success": false,
+      "start_rule": 178,
+      "target_form": 21,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        101,
+        100,
+        228
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        101,
+        100
+      ],
+      "planned_success": false,
+      "random_edits": 16,
+      "random_path": [
+        101,
+        117,
+        53,
+        21,
+        5,
+        133,
+        149,
+        157,
+        153,
+        157,
+        189,
+        181,
+        183,
+        55,
+        23,
+        87,
+        86
+      ],
+      "random_success": false,
+      "start_rule": 101,
+      "target_form": 21,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        76,
+        108
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        76,
+        108
+      ],
+      "planned_success": true,
+      "random_edits": 11,
+      "random_path": [
+        76,
+        68,
+        4,
+        20,
+        16,
+        48,
+        16,
+        0,
+        8,
+        0,
+        16,
+        18
+      ],
+      "random_success": true,
+      "start_rule": 76,
+      "target_form": 23,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        45,
+        44,
+        108
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        45,
+        44,
+        108
+      ],
+      "planned_success": true,
+      "random_edits": 2,
+      "random_path": [
+        45,
+        109,
+        108
+      ],
+      "random_success": true,
+      "start_rule": 45,
+      "target_form": 23,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        86,
+        84,
+        80
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        86,
+        84,
+        80
+      ],
+      "planned_success": true,
+      "random_edits": 11,
+      "random_path": [
+        86,
+        82,
+        86,
+        118,
+        114,
+        122,
+        58,
+        50,
+        34,
+        98,
+        226,
+        242
+      ],
+      "random_success": true,
+      "start_rule": 86,
+      "target_form": 23,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        207,
+        205,
+        201
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        207,
+        205,
+        201
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        207,
+        223,
+        95,
+        127,
+        126,
+        127,
+        123,
+        251,
+        123,
+        107,
+        106,
+        110,
+        102,
+        98,
+        96,
+        100,
+        108
+      ],
+      "random_success": true,
+      "start_rule": 207,
+      "target_form": 23,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        142,
+        138
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        142,
+        138
+      ],
+      "planned_success": true,
+      "random_edits": 1,
+      "random_path": [
+        142,
+        138
+      ],
+      "random_success": true,
+      "start_rule": 142,
+      "target_form": 23,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        11,
+        10
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        11,
+        10
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        11,
+        15,
+        7,
+        5,
+        69,
+        101,
+        229,
+        165,
+        37,
+        101,
+        229,
+        165,
+        167,
+        39,
+        7,
+        39,
+        37
+      ],
+      "random_success": false,
+      "start_rule": 11,
+      "target_form": 23,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        215,
+        213,
+        245
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        215,
+        213,
+        245
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        215,
+        211,
+        215,
+        247,
+        246,
+        254,
+        222,
+        218,
+        210,
+        194,
+        130,
+        128,
+        192,
+        224,
+        160,
+        32,
+        33
+      ],
+      "random_success": false,
+      "start_rule": 215,
+      "target_form": 23,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        64,
+        80
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        64,
+        80
+      ],
+      "planned_success": true,
+      "random_edits": 14,
+      "random_path": [
+        64,
+        0,
+        8,
+        0,
+        64,
+        96,
+        100,
+        101,
+        97,
+        101,
+        229,
+        165,
+        181,
+        180,
+        244
+      ],
+      "random_success": true,
+      "start_rule": 64,
+      "target_form": 23,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        212,
+        213,
+        215,
+        87
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        212,
+        213,
+        215,
+        87
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        212,
+        214,
+        198,
+        206,
+        238,
+        239,
+        175,
+        171,
+        163,
+        131,
+        3,
+        67,
+        71,
+        199,
+        195,
+        67,
+        66
+      ],
+      "random_success": false,
+      "start_rule": 212,
+      "target_form": 32769,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        124,
+        120,
+        104,
+        232
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        124,
+        125,
+        127
+      ],
+      "planned_success": false,
+      "random_edits": 14,
+      "random_path": [
+        124,
+        120,
+        122,
+        123,
+        115,
+        119,
+        103,
+        99,
+        115,
+        51,
+        179,
+        243,
+        115,
+        119,
+        55
+      ],
+      "random_success": true,
+      "start_rule": 124,
+      "target_form": 32769,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        64,
+        72,
+        104,
+        232
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        64,
+        65,
+        1
+      ],
+      "planned_success": false,
+      "random_edits": 16,
+      "random_path": [
+        64,
+        65,
+        73,
+        89,
+        217,
+        221,
+        213,
+        85,
+        93,
+        29,
+        157,
+        141,
+        143,
+        15,
+        14,
+        6,
+        2
+      ],
+      "random_success": false,
+      "start_rule": 64,
+      "target_form": 32769,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        61,
+        63,
+        55
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        61,
+        63,
+        55
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        61,
+        125,
+        93,
+        77,
+        69,
+        197,
+        196,
+        132,
+        196,
+        198,
+        199,
+        215,
+        211,
+        215,
+        211,
+        243,
+        251
+      ],
+      "random_success": false,
+      "start_rule": 61,
+      "target_form": 32769,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        139,
+        143,
+        135,
+        7
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        139,
+        137,
+        129,
+        1
+      ],
+      "planned_success": false,
+      "random_edits": 11,
+      "random_path": [
+        139,
+        171,
+        235,
+        234,
+        202,
+        138,
+        202,
+        194,
+        130,
+        131,
+        3,
+        1
+      ],
+      "random_success": false,
+      "start_rule": 139,
+      "target_form": 32769,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        200,
+        232
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        200,
+        232
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        200,
+        204,
+        206,
+        198,
+        214,
+        86,
+        22,
+        20,
+        4,
+        132,
+        134,
+        166,
+        230,
+        246,
+        182,
+        178,
+        50
+      ],
+      "random_success": false,
+      "start_rule": 200,
+      "target_form": 32769,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        227,
+        226,
+        224,
+        232
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        227,
+        226,
+        224,
+        232
+      ],
+      "planned_success": true,
+      "random_edits": 8,
+      "random_path": [
+        227,
+        195,
+        67,
+        195,
+        67,
+        66,
+        2,
+        3,
+        1
+      ],
+      "random_success": false,
+      "start_rule": 227,
+      "target_form": 32769,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        254,
+        252,
+        248,
+        232
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        254,
+        255,
+        127
+      ],
+      "planned_success": false,
+      "random_edits": 16,
+      "random_path": [
+        254,
+        126,
+        254,
+        222,
+        94,
+        90,
+        82,
+        210,
+        218,
+        219,
+        218,
+        222,
+        218,
+        250,
+        242,
+        250,
+        242
+      ],
+      "random_success": false,
+      "start_rule": 254,
+      "target_form": 32769,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        98,
+        66
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        98,
+        66
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        98,
+        34,
+        35,
+        43,
+        11,
+        139,
+        131,
+        163,
+        227,
+        235,
+        171,
+        163,
+        179,
+        187,
+        59,
+        63,
+        61
+      ],
+      "random_success": false,
+      "start_rule": 98,
+      "target_form": 5,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        156,
+        152
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        156,
+        152
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        156,
+        148,
+        132,
+        134,
+        150,
+        151,
+        150,
+        151,
+        23,
+        19,
+        147,
+        151,
+        149,
+        133,
+        165,
+        37,
+        39
+      ],
+      "random_success": false,
+      "start_rule": 156,
+      "target_form": 5,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        153,
+        152
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        153,
+        152
+      ],
+      "planned_success": true,
+      "random_edits": 6,
+      "random_path": [
+        153,
+        137,
+        9,
+        73,
+        9,
+        8,
+        24
+      ],
+      "random_success": true,
+      "start_rule": 153,
+      "target_form": 5,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        129,
+        128,
+        130
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        129,
+        128,
+        130
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        129,
+        133,
+        149,
+        213,
+        197,
+        229,
+        101,
+        229,
+        197,
+        196,
+        68,
+        196,
+        212,
+        208,
+        216,
+        217,
+        249
+      ],
+      "random_success": false,
+      "start_rule": 129,
+      "target_form": 5,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        223,
+        221,
+        217
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        223,
+        222,
+        218
+      ],
+      "planned_success": false,
+      "random_edits": 16,
+      "random_path": [
+        223,
+        215,
+        199,
+        207,
+        143,
+        159,
+        155,
+        187,
+        186,
+        184,
+        168,
+        184,
+        176,
+        178,
+        242,
+        240,
+        242
+      ],
+      "random_success": false,
+      "start_rule": 223,
+      "target_form": 5,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        43,
+        42,
+        40,
+        44
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        43,
+        42,
+        34,
+        2
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        43,
+        11,
+        75,
+        73,
+        89,
+        93,
+        95,
+        31,
+        23,
+        87,
+        85,
+        93,
+        221,
+        213,
+        197,
+        196,
+        228
+      ],
+      "random_success": false,
+      "start_rule": 43,
+      "target_form": 5,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        51,
+        50,
+        48,
+        16
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        51,
+        50,
+        48,
+        16
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        51,
+        59,
+        123,
+        59,
+        58,
+        62,
+        30,
+        94,
+        126,
+        127,
+        123,
+        107,
+        123,
+        122,
+        126,
+        124,
+        108
+      ],
+      "random_success": false,
+      "start_rule": 51,
+      "target_form": 5,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        103,
+        231
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        103,
+        231
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        103,
+        99,
+        98,
+        226,
+        162,
+        34,
+        42,
+        58,
+        26,
+        58,
+        42,
+        46,
+        62,
+        60,
+        62,
+        126,
+        94
+      ],
+      "random_success": false,
+      "start_rule": 103,
+      "target_form": 5,
+      "trial_index": 7
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        72,
+        74,
+        66
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        72,
+        74,
+        66
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        72,
+        74,
+        90,
+        91,
+        123,
+        59,
+        58,
+        56,
+        40,
+        168,
+        160,
+        161,
+        169,
+        171,
+        43,
+        47,
+        45
+      ],
+      "random_success": false,
+      "start_rule": 72,
+      "target_form": 17,
+      "trial_index": 0
+    },
+    {
+      "oracle_edits": 1,
+      "oracle_path": [
+        185,
+        189
+      ],
+      "oracle_success": true,
+      "planned_edits": 1,
+      "planned_path": [
+        185,
+        189
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        185,
+        249,
+        248,
+        232,
+        233,
+        169,
+        41,
+        57,
+        61,
+        57,
+        25,
+        9,
+        137,
+        201,
+        200,
+        216,
+        88
+      ],
+      "random_success": false,
+      "start_rule": 185,
+      "target_form": 17,
+      "trial_index": 1
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        104,
+        106,
+        98,
+        66
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        104,
+        106,
+        98,
+        66
+      ],
+      "planned_success": true,
+      "random_edits": 8,
+      "random_path": [
+        104,
+        96,
+        224,
+        226,
+        227,
+        226,
+        224,
+        192,
+        194
+      ],
+      "random_success": true,
+      "start_rule": 104,
+      "target_form": 17,
+      "trial_index": 2
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        55,
+        63,
+        191
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        55,
+        63,
+        191
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        55,
+        53,
+        21,
+        5,
+        1,
+        65,
+        81,
+        80,
+        84,
+        92,
+        93,
+        77,
+        69,
+        101,
+        37,
+        165,
+        37
+      ],
+      "random_success": false,
+      "start_rule": 55,
+      "target_form": 17,
+      "trial_index": 3
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        221,
+        253,
+        189
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        221,
+        253,
+        189
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        221,
+        205,
+        207,
+        79,
+        15,
+        79,
+        77,
+        73,
+        105,
+        121,
+        89,
+        81,
+        113,
+        49,
+        48,
+        49,
+        17
+      ],
+      "random_success": false,
+      "start_rule": 221,
+      "target_form": 17,
+      "trial_index": 4
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        150,
+        148,
+        144
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        150,
+        148,
+        144
+      ],
+      "planned_success": true,
+      "random_edits": 5,
+      "random_path": [
+        150,
+        148,
+        150,
+        151,
+        215,
+        247
+      ],
+      "random_success": true,
+      "start_rule": 150,
+      "target_form": 17,
+      "trial_index": 5
+    },
+    {
+      "oracle_edits": 3,
+      "oracle_path": [
+        233,
+        235,
+        239,
+        231
+      ],
+      "oracle_success": true,
+      "planned_edits": 3,
+      "planned_path": [
+        233,
+        235,
+        239,
+        231
+      ],
+      "planned_success": true,
+      "random_edits": 13,
+      "random_path": [
+        233,
+        232,
+        224,
+        192,
+        200,
+        232,
+        168,
+        232,
+        224,
+        226,
+        98,
+        99,
+        227,
+        231
+      ],
+      "random_success": true,
+      "start_rule": 233,
+      "target_form": 17,
+      "trial_index": 6
+    },
+    {
+      "oracle_edits": 2,
+      "oracle_path": [
+        193,
+        192,
+        194
+      ],
+      "oracle_success": true,
+      "planned_edits": 2,
+      "planned_path": [
+        193,
+        192,
+        194
+      ],
+      "planned_success": true,
+      "random_edits": 16,
+      "random_path": [
+        193,
+        197,
+        69,
+        68,
+        4,
+        36,
+        4,
+        20,
+        22,
+        86,
+        22,
+        18,
+        26,
+        10,
+        74,
+        202,
+        74
+      ],
+      "random_success": false,
+      "start_rule": 193,
+      "target_form": 17,
+      "trial_index": 7
+    }
+  ]
+}

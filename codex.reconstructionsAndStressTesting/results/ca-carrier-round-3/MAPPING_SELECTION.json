@@ -1,0 +1,88 @@
+{
+  "design_digest": "041fd850aa50248722cd190c03d59409560b8d91939d0729b48ee7fa2cce61f3",
+  "scores": [
+    {
+      "mean_score": 0.244140625,
+      "n_pairs": 16,
+      "tile": 0
+    },
+    {
+      "mean_score": 0.130859375,
+      "n_pairs": 16,
+      "tile": 1
+    },
+    {
+      "mean_score": 0.162109375,
+      "n_pairs": 16,
+      "tile": 2
+    },
+    {
+      "mean_score": 0.171875,
+      "n_pairs": 16,
+      "tile": 3
+    },
+    {
+      "mean_score": 0.2890625,
+      "n_pairs": 16,
+      "tile": 4
+    },
+    {
+      "mean_score": 0.1875,
+      "n_pairs": 16,
+      "tile": 5
+    },
+    {
+      "mean_score": 0.181640625,
+      "n_pairs": 16,
+      "tile": 6
+    },
+    {
+      "mean_score": 0.13671875,
+      "n_pairs": 16,
+      "tile": 7
+    },
+    {
+      "mean_score": 0.1015625,
+      "n_pairs": 16,
+      "tile": 8
+    },
+    {
+      "mean_score": 0.171875,
+      "n_pairs": 16,
+      "tile": 9
+    },
+    {
+      "mean_score": 0.3046875,
+      "n_pairs": 16,
+      "tile": 10
+    },
+    {
+      "mean_score": 0.17578125,
+      "n_pairs": 16,
+      "tile": 11
+    },
+    {
+      "mean_score": 0.078125,
+      "n_pairs": 16,
+      "tile": 12
+    },
+    {
+      "mean_score": 0.216796875,
+      "n_pairs": 16,
+      "tile": 13
+    },
+    {
+      "mean_score": 0.06640625,
+      "n_pairs": 16,
+      "tile": 14
+    },
+    {
+      "mean_score": 0.236328125,
+      "n_pairs": 16,
+      "tile": 15
+    }
+  ],
+  "selected_tile": 10,
+  "selection_rule": "max mean(sufficiency + baseline - deletion); lower tile tie break",
+  "source_complete": true
+}

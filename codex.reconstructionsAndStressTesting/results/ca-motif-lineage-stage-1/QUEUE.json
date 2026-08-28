@@ -1,0 +1,34 @@
+{
+  "automatic_chaining": false,
+  "per_stage_max_hours": 8.0,
+  "programme": "ca_motif_lineage_five_stage",
+  "stage1_design_digest": "3a2fecbe9b4240ed9fd064759044c8eca4aac55cf0aa0ad8cc5850fef63b0346",
+  "stages": [
+    {
+      "name": "motif_carrier_upper_bound",
+      "stage": 1,
+      "state": "complete",
+      "verdict": "ROBUST_LOCAL_MOTIF_CONTROLLABILITY"
+    },
+    {
+      "name": "freeze_and_generalize_reader",
+      "stage": 2,
+      "state": "blocked_pending_human_review"
+    },
+    {
+      "name": "renewed_heredity_causal_ladder",
+      "stage": 3,
+      "state": "blocked_pending_stage2_review"
+    },
+    {
+      "name": "compression_and_robustness",
+      "stage": 4,
+      "state": "blocked_pending_stage3_review"
+    },
+    {
+      "name": "localize_inheritance",
+      "stage": 5,
+      "state": "blocked_pending_stage4_review"
+    }
+  ]
+}

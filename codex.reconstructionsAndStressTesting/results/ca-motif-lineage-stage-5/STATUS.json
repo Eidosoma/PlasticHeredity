@@ -1,0 +1,16 @@
+{
+  "confirmation_candidate_ids": [
+    "global-walsh-anchor"
+  ],
+  "deadline_remaining_seconds": 13701.292656183243,
+  "elapsed_seconds": 15098.707343816757,
+  "hard_deadline_unix": 1787558769.6296208,
+  "phase": "campaign",
+  "pid": 1200565,
+  "profile": "reference",
+  "science_deadline_unix": 1787556969.6296208,
+  "stage": "5-physical-localization",
+  "started_unix": 1787529969.6296208,
+  "state": "awaiting_confirmation",
+  "updated_unix": 1787545068.3369646
+}

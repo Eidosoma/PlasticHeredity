@@ -1,0 +1,13 @@
+{
+  "boundary_roundtrip_exact": true,
+  "design_digest": "64f6ce298620c127a5b5ad857fc973c964fe6eed9e183dc6f5ddd08f35b881a5",
+  "passed": true,
+  "reader_neighbourhood": "nine affected 3x3 motif sites only",
+  "three_step_light_cone_max_chebyshev_distance": 3,
+  "three_step_light_cone_pass": true,
+  "transport_neighbourhood": "eight nearest Moore neighbours only",
+  "uniform_field_global_equivalence": true,
+  "uniform_field_global_equivalence_max_abs_error": 5.364418029785156e-07,
+  "writer_neighbourhood": "current 3x3 motif at the same site only",
+  "zero_field_exactly_inert": true
+}

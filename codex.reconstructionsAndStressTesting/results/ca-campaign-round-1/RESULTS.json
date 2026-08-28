@@ -1,0 +1,2944 @@
+{
+  "cleanroom": {
+    "dev_atlas": "results/golden-reconciliation/atlas/eca_rules.csv",
+    "dev_atlas_sha256": "e6120b8342aa84f1146be1cc7ac0a137597575314e19626decffaff1a30ff316",
+    "permitted_reference_root": "..",
+    "sibling_code_read": false
+  },
+  "elapsed_seconds": 2039.1141231060028,
+  "evolution_gps": {
+    "boundary": "GPS planned on the frozen dev atlas and scored only on an independently simulated truth atlas",
+    "config": {
+      "generations": 40,
+      "measurement_budget": 256,
+      "population": 24,
+      "repeats": 32,
+      "seed_namespace": "plastic-ca-cleanroom-evolution-v1",
+      "tournament_k": 3
+    },
+    "elapsed_seconds": 6.583641767501831,
+    "evolution": {
+      "arm_summaries": {
+        "drift": {
+          "ci95": [
+            0.0072387695312500005,
+            0.061122131347656226
+          ],
+          "mean": 0.024443308512369793,
+          "median_class": 2.0
+        },
+        "fitness_shuffled": {
+          "ci95": [
+            0.00389556884765625,
+            0.08005472819010417
+          ],
+          "mean": 0.024814605712890625,
+          "median_class": 2.0
+        },
+        "random_walk": {
+          "ci95": [
+            0.009000142415364584,
+            0.06326700846354166
+          ],
+          "mean": 0.029405593872070312,
+          "median_class": 2.0
+        },
+        "selection": {
+          "ci95": [
+            0.04986165364583334,
+            0.16289062499999996
+          ],
+          "mean": 0.0930341084798177,
+          "median_class": 2.0
+        }
+      },
+      "class3_core_visit_fraction": {
+        "random_walk": 0.10074869791666667,
+        "selection": 0.059375
+      },
+      "gate_selection_finds_boundary": true,
+      "gate_sticky_walk": false,
+      "stickiness": {
+        "evolved": 0.024462890625,
+        "null": 0.05094915574596774
+      },
+      "stickiness_all_edges_nonempty_reanalysis": {
+        "direction_recovered": true,
+        "edge_mean": 0.07376478775226165,
+        "n_edges": 958,
+        "random_mean": 0.025862630208333334,
+        "ratio": 2.8521765635613314
+      },
+      "stickiness_nonempty_reanalysis": {
+        "evolved": 0.023477467496497116,
+        "null": 0.03502327026498954,
+        "ratio": 0.670339100799676
+      }
+    },
+    "experiment": "rulial_evolution_fresh_truth_gps",
+    "gps": {
+      "gate_gps": true,
+      "max_edits": 16,
+      "n_trials": 64,
+      "oracle_median_edits": 2.0,
+      "oracle_success": 1.0,
+      "planned_median_edits": 2.0,
+      "planned_success": 0.875,
+      "planning_data": "dev atlas only",
+      "random_median_edits": 8.0,
+      "random_walk_success": 0.453125,
+      "scoring_data": "fresh truth atlas only",
+      "targets": [
+        1056,
+        275,
+        1,
+        21,
+        23,
+        32769,
+        5,
+        17
+      ]
+    }
+  },
+  "experiment": "full_ca_campaign_e23_e24",
+  "life_family": {
+    "campaign_gates": {
+      "clock_rescued": false,
+      "family_laws_robust": false,
+      "launch_rank_correlations": {
+        "broad-b1024": {
+          "break_by_8": 0.8195837327036144,
+          "library_size": 0.8121252006380965,
+          "median_gen_sweeps": 0.9929575878313607,
+          "strict": 0.8164520343759908
+        },
+        "broad-b48": {
+          "break_by_8": 0.8475910067225917,
+          "library_size": 0.6316424851292642,
+          "median_gen_sweeps": 0.9947544700264003,
+          "strict": 0.7250636195477569
+        },
+        "v2-b1024": {
+          "break_by_8": 0.9177701235709704,
+          "library_size": 0.8937483825266938,
+          "median_gen_sweeps": 0.9944238794067918,
+          "strict": 0.5819143739626463
+        },
+        "v2-b48": {
+          "break_by_8": 0.9589550232753818,
+          "library_size": 0.6634169575505237,
+          "median_gen_sweeps": 0.986734967484075,
+          "strict": 0.8771706136767305
+        }
+      },
+      "launch_robustness": false,
+      "life_remains_maintainer": false,
+      "primary_condition_gates": {
+        "area-b1024": {
+          "capable_median_clock": 8.5,
+          "edge_mean_jaccard": 0.5552299182299182,
+          "family_clock_iqr": [
+            9.5,
+            64.0
+          ],
+          "family_clock_iqr_width": 54.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.47104247104247104,
+          "life_in_band": false,
+          "life_library_rank": 375,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 15,
+          "n_edges_in_sample": 825,
+          "n_forms": 243,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.056640625,
+              "library_rank": 115,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.40959595959595957,
+          "smoothness_ratio": 1.3555551641125008
+        },
+        "budget-b256": {
+          "capable_median_clock": 5.0,
+          "edge_mean_jaccard": 0.22467682485864304,
+          "family_clock_iqr": [
+            4.0,
+            16.25
+          ],
+          "family_clock_iqr_width": 12.25,
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": true,
+          "heavy_tail_share": 0.5342185903983657,
+          "life_in_band": false,
+          "life_library_rank": 524,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 122,
+          "n_edges_in_sample": 825,
+          "n_forms": 436,
+          "named_rules": [
+            {
+              "break_by_8": 0.00390625,
+              "library_rank": 524,
+              "library_size": 1,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.044921875,
+              "library_rank": 322,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.00390625
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.00390625,
+              "library_rank": 524,
+              "library_size": 1,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.009765625,
+              "library_rank": 524,
+              "library_size": 1,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.06502068302068302,
+          "smoothness_ratio": 3.4554670055861076
+        },
+        "frozen-b48": {
+          "capable_median_clock": 4.0,
+          "edge_mean_jaccard": 0.2223887358432813,
+          "family_clock_iqr": [
+            4.0,
+            4.5
+          ],
+          "family_clock_iqr_width": 0.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": true,
+          "heavy_tail_share": 0.59113750571037,
+          "life_in_band": false,
+          "life_library_rank": 79,
+          "life_strict": 0.001953125,
+          "life_top_decile": true,
+          "n_capable": 215,
+          "n_edges_in_sample": 825,
+          "n_forms": 520,
+          "named_rules": [
+            {
+              "break_by_8": 0.109375,
+              "library_rank": 79,
+              "library_size": 4,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.001953125
+            },
+            {
+              "break_by_8": 0.11328125,
+              "library_rank": 28,
+              "library_size": 5,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.001953125
+            },
+            {
+              "break_by_8": 0.001953125,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.09375,
+              "library_rank": 392,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0078125
+            },
+            {
+              "break_by_8": 0.0390625,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.076171875,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.095703125,
+              "library_rank": 204,
+              "library_size": 3,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.001953125
+            },
+            {
+              "break_by_8": 0.16796875,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.03534343434343434,
+          "smoothness_ratio": 6.292222020144284
+        }
+      },
+      "scale_rank_correlations": {
+        "break_by_8": 0.780054517256803,
+        "library_size": 0.6955876439620098,
+        "median_gen_sweeps": 0.9933811218719518,
+        "strict": 0.5819022526404773
+      },
+      "scale_stability": false
+    },
+    "conditions": {
+      "area-b1024": {
+        "contract": {
+          "activity_budget": 1024,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 64,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:area-b1024",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "478fcfbb09d194a67126c91eefaa4b28b007828be526f59917b40b394fa38202",
+        "death_counts": {
+          "empty": 38,
+          "timeout": 137730,
+          "timeout_and_empty": 26023
+        },
+        "elapsed_seconds": 419.72781014442444,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 8.5,
+          "edge_mean_jaccard": 0.5552299182299182,
+          "family_clock_iqr": [
+            9.5,
+            64.0
+          ],
+          "family_clock_iqr_width": 54.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.47104247104247104,
+          "life_in_band": false,
+          "life_library_rank": 375,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 15,
+          "n_edges_in_sample": 825,
+          "n_forms": 243,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.056640625,
+              "library_rank": 115,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 375,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.40959595959595957,
+          "smoothness_ratio": 1.3555551641125008
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "00005000000010021000020004000090000030006140000b8040000082200502",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "8424045a202880418001000100200201004680a580c914401001890054011071",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "0c002c554240100132c0d0108846848e501004916762038d3a4821827b0304a2",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "0e8700b60c81238d08d5d30045137fa69d8d14072d0f2105b8a90e222760c522",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 524288,
+        "n_rules": 1024
+      },
+      "budget-b256": {
+        "contract": {
+          "activity_budget": 256,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 64,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:budget-b256",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "820106cc80447f73b67311a0563e410fb452a563028f2029ae882243e0593d37",
+        "death_counts": {
+          "empty": 439,
+          "timeout": 119674,
+          "timeout_and_empty": 26228
+        },
+        "elapsed_seconds": 306.42461228370667,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 5.0,
+          "edge_mean_jaccard": 0.22467682485864304,
+          "family_clock_iqr": [
+            4.0,
+            16.25
+          ],
+          "family_clock_iqr_width": 12.25,
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": true,
+          "heavy_tail_share": 0.5342185903983657,
+          "life_in_band": false,
+          "life_library_rank": 524,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 122,
+          "n_edges_in_sample": 825,
+          "n_forms": 436,
+          "named_rules": [
+            {
+              "break_by_8": 0.00390625,
+              "library_rank": 524,
+              "library_size": 1,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.044921875,
+              "library_rank": 322,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.00390625
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.00390625,
+              "library_rank": 524,
+              "library_size": 1,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 789,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.009765625,
+              "library_rank": 524,
+              "library_size": 1,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.06502068302068302,
+          "smoothness_ratio": 3.4554670055861076
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "00005000000010021000020004000090000030006140000b8040000082200502",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "8424045a202880418001000100200201004680a580c914401001890054011071",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "0c002c554240100132c0d0108846848e501004916762038d3a4821827b0304a2",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "0e8700b60c81238d08d5d30045137fa69d8d14072d0f2105b8a90e222760c522",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 524288,
+        "n_rules": 1024
+      },
+      "frozen-b48": {
+        "contract": {
+          "activity_budget": 48,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 64,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:frozen-b48",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "d3ca71d1c158b34e1fa48fe7040f5496055ebbd48214f1fc868d20d50b0cdc86",
+        "death_counts": {
+          "empty": 46174,
+          "timeout": 51376,
+          "timeout_and_empty": 2650
+        },
+        "elapsed_seconds": 528.218367099762,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 4.0,
+          "edge_mean_jaccard": 0.2223887358432813,
+          "family_clock_iqr": [
+            4.0,
+            4.5
+          ],
+          "family_clock_iqr_width": 0.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": true,
+          "heavy_tail_share": 0.59113750571037,
+          "life_in_band": false,
+          "life_library_rank": 79,
+          "life_strict": 0.001953125,
+          "life_top_decile": true,
+          "n_capable": 215,
+          "n_edges_in_sample": 825,
+          "n_forms": 520,
+          "named_rules": [
+            {
+              "break_by_8": 0.109375,
+              "library_rank": 79,
+              "library_size": 4,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.001953125
+            },
+            {
+              "break_by_8": 0.11328125,
+              "library_rank": 28,
+              "library_size": 5,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.001953125
+            },
+            {
+              "break_by_8": 0.001953125,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.09375,
+              "library_rank": 392,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0078125
+            },
+            {
+              "break_by_8": 0.0390625,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.076171875,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.095703125,
+              "library_rank": 204,
+              "library_size": 3,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.001953125
+            },
+            {
+              "break_by_8": 0.16796875,
+              "library_rank": 586,
+              "library_size": 1,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.03534343434343434,
+          "smoothness_ratio": 6.292222020144284
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "00005000000010021000020004000090000030006140000b8040000082200502",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "8424045a202880418001000100200201004680a580c914401001890054011071",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "0c002c554240100132c0d0108846848e501004916762038d3a4821827b0304a2",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "0e8700b60c81238d08d5d30045137fa69d8d14072d0f2105b8a90e222760c522",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 524288,
+        "n_rules": 1024
+      },
+      "horizon-b1024-t128": {
+        "contract": {
+          "activity_budget": 1024,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 64,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 128,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:horizon-b1024-t128",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "c07444ff1bcb832230676a292477b9ba6f635dd6bb61218e570fdeb5d5173b0c",
+        "death_counts": {
+          "empty": 19,
+          "timeout": 15596,
+          "timeout_and_empty": 4225
+        },
+        "elapsed_seconds": 87.53342890739441,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": null,
+          "edge_mean_jaccard": 0.5534979423868313,
+          "family_clock_iqr": [
+            9.5,
+            114.125
+          ],
+          "family_clock_iqr_width": 104.625,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": false,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.27586206896551724,
+          "life_in_band": false,
+          "life_library_rank": 46,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 0,
+          "n_edges_in_sample": 81,
+          "n_forms": 65,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.060546875,
+              "library_rank": 12,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 46,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.4444444444444444,
+          "smoothness_ratio": 1.2453703703703705
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "00005000000010021000020004000090000030006140000b8040000082200502",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "8424045a202880418001000100200201004680a580c914401001890054011071",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "0c002c554240100132c0d0108846848e501004916762038d3a4821827b0304a2",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "0e8700b60c81238d08d5d30045137fa69d8d14072d0f2105b8a90e222760c522",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 65536,
+        "n_rules": 128
+      },
+      "horizon-b1024-t256": {
+        "contract": {
+          "activity_budget": 1024,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 64,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 256,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:horizon-b1024-t256",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "cfe1c1a5a69b4e11eba335657ed2ca47f73999aa38d5107de3e9f6cb50fbd3bb",
+        "death_counts": {
+          "empty": 94,
+          "timeout": 14968,
+          "timeout_and_empty": 4252
+        },
+        "elapsed_seconds": 145.69482254981995,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 17.0,
+          "edge_mean_jaccard": 0.558641975308642,
+          "family_clock_iqr": [
+            9.5,
+            114.0
+          ],
+          "family_clock_iqr_width": 104.5,
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": false,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.24468085106382978,
+          "life_in_band": false,
+          "life_library_rank": 48,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 3,
+          "n_edges_in_sample": 81,
+          "n_forms": 71,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.06640625,
+              "library_rank": 13,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 48,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.35802469135802467,
+          "smoothness_ratio": 1.560344827586207
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "00005000000010021000020004000090000030006140000b8040000082200502",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "8424045a202880418001000100200201004680a580c914401001890054011071",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "0c002c554240100132c0d0108846848e501004916762038d3a4821827b0304a2",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "0e8700b60c81238d08d5d30045137fa69d8d14072d0f2105b8a90e222760c522",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 65536,
+        "n_rules": 128
+      },
+      "launch-broad-b1024": {
+        "contract": {
+          "activity_budget": 1024,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 32,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.2,
+            0.4,
+            0.6,
+            0.8
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-broad-v1",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:launch-broad-b1024",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "2bca1e8d5be150b193173cd2b386f49988148878dcb780877ec01923a5b63bd1",
+        "death_counts": {
+          "empty": 5,
+          "timeout": 9321,
+          "timeout_and_empty": 1677
+        },
+        "elapsed_seconds": 46.297582149505615,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 14.75,
+          "edge_mean_jaccard": 0.6201646090534979,
+          "family_clock_iqr": [
+            9.5,
+            64.0
+          ],
+          "family_clock_iqr_width": 54.5,
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": false,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.25274725274725274,
+          "life_in_band": false,
+          "life_library_rank": 44,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 2,
+          "n_edges_in_sample": 81,
+          "n_forms": 65,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.078125,
+              "library_rank": 15,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.5061728395061729,
+          "smoothness_ratio": 1.2252032520325202
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "89040442080000950c2044045013220a400040243a0321894040020082014042",
+            "index": 4,
+            "live_cells": 51,
+            "name": "density-0"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "3c61ea72da08b20b6471908168a856c5c309045265519983aab8d30251a40a18",
+            "index": 5,
+            "live_cells": 102,
+            "name": "density-1"
+          },
+          {
+            "density": 0.6015625,
+            "hex": "3b7dc473e3024db7ff9f7f9e721cf21f9d627bf7f9a917b36fc1f30bda8b536b",
+            "index": 6,
+            "live_cells": 154,
+            "name": "density-2"
+          },
+          {
+            "density": 0.80078125,
+            "hex": "f6fefbbff976fd3efa7fbfbd9fbffddfd6d3ff7fdfd7bbfefddfffa7bfb8ff67",
+            "index": 7,
+            "live_cells": 205,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 32768,
+        "n_rules": 128
+      },
+      "launch-broad-b48": {
+        "contract": {
+          "activity_budget": 48,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 32,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.2,
+            0.4,
+            0.6,
+            0.8
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-broad-v1",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:launch-broad-b48",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "0c46b8c4a6597000ed8c809fc8165e1f698fa5250f098fa4fbcaec620df7a637",
+        "death_counts": {
+          "empty": 2813,
+          "timeout": 2769,
+          "timeout_and_empty": 162
+        },
+        "elapsed_seconds": 55.62421703338623,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 4.5,
+          "edge_mean_jaccard": 0.20864197530864198,
+          "family_clock_iqr": [
+            4.0,
+            4.5
+          ],
+          "family_clock_iqr_width": 0.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": true,
+          "heavy_tail_share": 0.37815126050420167,
+          "life_in_band": false,
+          "life_library_rank": 4,
+          "life_strict": 0.0,
+          "life_top_decile": true,
+          "n_capable": 24,
+          "n_edges_in_sample": 81,
+          "n_forms": 134,
+          "named_rules": [
+            {
+              "break_by_8": 0.125,
+              "library_rank": 4,
+              "library_size": 4,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.10546875,
+              "library_rank": 1,
+              "library_size": 6,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.00390625
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 120,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.125,
+              "library_rank": 16,
+              "library_size": 3,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0078125
+            },
+            {
+              "break_by_8": 0.0078125,
+              "library_rank": 69,
+              "library_size": 1,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.046875,
+              "library_rank": 69,
+              "library_size": 1,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.00390625
+            },
+            {
+              "break_by_8": 0.06640625,
+              "library_rank": 16,
+              "library_size": 3,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.12890625,
+              "library_rank": 69,
+              "library_size": 1,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.008024691358024692,
+          "smoothness_ratio": 26.0
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "89040442080000950c2044045013220a400040243a0321894040020082014042",
+            "index": 4,
+            "live_cells": 51,
+            "name": "density-0"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "3c61ea72da08b20b6471908168a856c5c309045265519983aab8d30251a40a18",
+            "index": 5,
+            "live_cells": 102,
+            "name": "density-1"
+          },
+          {
+            "density": 0.6015625,
+            "hex": "3b7dc473e3024db7ff9f7f9e721cf21f9d627bf7f9a917b36fc1f30bda8b536b",
+            "index": 6,
+            "live_cells": 154,
+            "name": "density-2"
+          },
+          {
+            "density": 0.80078125,
+            "hex": "f6fefbbff976fd3efa7fbfbd9fbffddfd6d3ff7fdfd7bbfefddfffa7bfb8ff67",
+            "index": 7,
+            "live_cells": 205,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 32768,
+        "n_rules": 128
+      },
+      "launch-v2-b1024": {
+        "contract": {
+          "activity_budget": 1024,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 32,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v2",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:launch-v2-b1024",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "6ae50b4ea087354c1c92478372175aff852a98eb65165526e4c1c7091afcae24",
+        "death_counts": {
+          "empty": 2,
+          "timeout": 9136,
+          "timeout_and_empty": 1935
+        },
+        "elapsed_seconds": 47.72151017189026,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 8.5,
+          "edge_mean_jaccard": 0.6026748971193415,
+          "family_clock_iqr": [
+            9.5,
+            64.0
+          ],
+          "family_clock_iqr_width": 54.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": false,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.26744186046511625,
+          "life_in_band": false,
+          "life_library_rank": 44,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 1,
+          "n_edges_in_sample": 81,
+          "n_forms": 66,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0625,
+              "library_rank": 24,
+              "library_size": 1,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 44,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.3888888888888889,
+          "smoothness_ratio": 1.5497354497354496
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "4002008000040400004000080010014000b0000a800e80014810010000000004",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "5106053400051044015208a08100100005050c310c4100e0132a014804000000",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "9998c1a0279238caca5d088801400c050080a989648048146141600658218820",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "3dc6e10dfc44b2027013ac579510586a384101d1a89409e842020dbec9c1031c",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 32768,
+        "n_rules": 128
+      },
+      "launch-v2-b48": {
+        "contract": {
+          "activity_budget": 48,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 32,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v2",
+          "max_sweeps": 64,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:launch-v2-b48",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "38faae1cd6d6d97dd4b703c8e64dfc53357103f51a95ed3cf097002099b47913",
+        "death_counts": {
+          "empty": 3086,
+          "timeout": 2618,
+          "timeout_and_empty": 164
+        },
+        "elapsed_seconds": 57.50382685661316,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 4.5,
+          "edge_mean_jaccard": 0.17789535567313344,
+          "family_clock_iqr": [
+            4.0,
+            4.5
+          ],
+          "family_clock_iqr_width": 0.5,
+          "gate_boundary_of_order": false,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": false,
+          "gate_smoothness": true,
+          "heavy_tail_share": 0.35968379446640314,
+          "life_in_band": false,
+          "life_library_rank": 6,
+          "life_strict": 0.0,
+          "life_top_decile": true,
+          "n_capable": 24,
+          "n_edges_in_sample": 81,
+          "n_forms": 143,
+          "named_rules": [
+            {
+              "break_by_8": 0.14453125,
+              "library_rank": 6,
+              "library_size": 4,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.125,
+              "library_rank": 15,
+              "library_size": 3,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 115,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.1875,
+              "library_rank": 42,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.01171875
+            },
+            {
+              "break_by_8": 0.09765625,
+              "library_rank": 42,
+              "library_size": 2,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.08984375,
+              "library_rank": 15,
+              "library_size": 3,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.08203125,
+              "library_rank": 15,
+              "library_size": 3,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.234375,
+              "library_rank": 42,
+              "library_size": 2,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.01440329218106996,
+          "smoothness_ratio": 12.351020408163265
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "4002008000040400004000080010014000b0000a800e80014810010000000004",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "5106053400051044015208a08100100005050c310c4100e0132a014804000000",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "9998c1a0279238caca5d088801400c050080a989648048146141600658218820",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "3dc6e10dfc44b2027013ac579510586a384101d1a89409e842020dbec9c1031c",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 32768,
+        "n_rules": 128
+      },
+      "scale-16": {
+        "contract": {
+          "activity_budget": 1024,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 32,
+          "height": 16,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 256,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:scale-16",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 16
+        },
+        "contract_digest": "1111978d7ff8555b76339857a0e9283137b9f0047f23ff6d7656c4c469d0ee08",
+        "death_counts": {
+          "empty": 43,
+          "timeout": 7427,
+          "timeout_and_empty": 2198
+        },
+        "elapsed_seconds": 113.9610652923584,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 22.5,
+          "edge_mean_jaccard": 0.5893004115226338,
+          "family_clock_iqr": [
+            9.5,
+            133.875
+          ],
+          "family_clock_iqr_width": 124.375,
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": false,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.26136363636363635,
+          "life_in_band": false,
+          "life_library_rank": 45,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 3,
+          "n_edges_in_sample": 81,
+          "n_forms": 68,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.02734375,
+              "library_rank": 13,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 45,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.49382716049382713,
+          "smoothness_ratio": 1.1933333333333336
+        },
+        "launches": [
+          {
+            "density": 0.01953125,
+            "hex": "000000000000000000000000000001c001000080000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.01171875,
+            "hex": "0000000000000000000000000000038000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.0234375,
+            "hex": "0000000000000000000000000000038007000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.015625,
+            "hex": "0000000000000000000000000000018001800000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.1015625,
+            "hex": "00005000000010021000020004000090000030006140000b8040000082200502",
+            "index": 4,
+            "live_cells": 26,
+            "name": "density-0"
+          },
+          {
+            "density": 0.19921875,
+            "hex": "8424045a202880418001000100200201004680a580c914401001890054011071",
+            "index": 5,
+            "live_cells": 51,
+            "name": "density-1"
+          },
+          {
+            "density": 0.30078125,
+            "hex": "0c002c554240100132c0d0108846848e501004916762038d3a4821827b0304a2",
+            "index": 6,
+            "live_cells": 77,
+            "name": "density-2"
+          },
+          {
+            "density": 0.3984375,
+            "hex": "0e8700b60c81238d08d5d30045137fa69d8d14072d0f2105b8a90e222760c522",
+            "index": 7,
+            "live_cells": 102,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 32768,
+        "n_rules": 128
+      },
+      "scale-32": {
+        "contract": {
+          "activity_budget": 4096,
+          "activity_count": "realized_post_noise_state_changes",
+          "composition": "unit_normalized_sum_of_live_2x2_censuses_across_generation",
+          "composition_zero": "first_completed_generation",
+          "copy_draw": "unconditional_generation_batch",
+          "copy_error": 0.005,
+          "death": "activity_timeout_or_empty_terminal_board",
+          "flip_noise": 0.002,
+          "form_mass_quantile": 0.75,
+          "form_pooling": "per launch, equal mean of each broken future's last completed composition; mass support at quantile 0.75",
+          "futures_per_launch": 32,
+          "height": 32,
+          "horizon": 32,
+          "implementation_version": "life-family-cleanroom-v1",
+          "launch_densities": [
+            0.1,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "launch_rows_hex": null,
+          "launch_tag": "life-family-launch-v1",
+          "max_sweeps": 256,
+          "min_sweeps": 4,
+          "observed_daughter": "terminal_pre_copy",
+          "process_noise_order": "post_rule_each_sweep",
+          "rng_tag": "life-family-trajectory-v1:scale-32",
+          "rule_update": "synchronous_toroidal_Moore_8",
+          "thresholds": {
+            "break_horizon": 8,
+            "coherence": 0.9,
+            "distinct": 0.85,
+            "horizon": 32,
+            "inherit": 0.9,
+            "strict_run": 8
+          },
+          "width": 32
+        },
+        "contract_digest": "59cb8f7b1c49a2f08885e6a84fa515d9b70437713a482e7839333e33f7b528a8",
+        "death_counts": {
+          "empty": 7,
+          "timeout": 8888,
+          "timeout_and_empty": 391
+        },
+        "elapsed_seconds": 173.9477880001068,
+        "environment": {
+          "implementation": "vectorized shrinking Life batches",
+          "numpy": "2.5.2",
+          "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+          "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+        },
+        "experiment": "life_family_cleanroom",
+        "gates": {
+          "capable_median_clock": 17.5,
+          "edge_mean_jaccard": 0.7222222222222222,
+          "family_clock_iqr": [
+            10.5,
+            131.125
+          ],
+          "family_clock_iqr_width": 120.625,
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": false,
+          "gate_life_rare_book": false,
+          "gate_smoothness": false,
+          "heavy_tail_share": 0.1891891891891892,
+          "life_in_band": false,
+          "life_library_rank": 27,
+          "life_strict": 0.0,
+          "life_top_decile": false,
+          "n_capable": 1,
+          "n_edges_in_sample": 81,
+          "n_forms": 30,
+          "named_rules": [
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "life",
+              "notation": "B3/S23",
+              "rule": 2060,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "highlife",
+              "notation": "B36/S23",
+              "rule": 18444,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "seeds",
+              "notation": "B2/S",
+              "rule": 1024,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.015625,
+              "library_rank": 4,
+              "library_size": 2,
+              "name": "daynight",
+              "notation": "B3678/S34678",
+              "rule": 117208,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "diamoeba",
+              "notation": "B35678/S5678",
+              "rule": 125408,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "morley",
+              "notation": "B368/S245",
+              "rule": 84020,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "twobytwo",
+              "notation": "B36/S125",
+              "rule": 18470,
+              "strict": 0.0
+            },
+            {
+              "break_by_8": 0.0,
+              "library_rank": 27,
+              "library_size": 0,
+              "name": "anneal",
+              "notation": "B4678/S35678",
+              "rule": 119272,
+              "strict": 0.0
+            }
+          ],
+          "random_mean_jaccard": 0.5925925925925926,
+          "smoothness_ratio": 1.21875
+        },
+        "launches": [
+          {
+            "density": 0.0048828125,
+            "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001c00000010000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "index": 0,
+            "live_cells": 5,
+            "name": "glider"
+          },
+          {
+            "density": 0.0029296875,
+            "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "index": 1,
+            "live_cells": 3,
+            "name": "blinker"
+          },
+          {
+            "density": 0.005859375,
+            "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003800000070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "index": 2,
+            "live_cells": 6,
+            "name": "toad"
+          },
+          {
+            "density": 0.00390625,
+            "hex": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001800000018000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "index": 3,
+            "live_cells": 4,
+            "name": "block"
+          },
+          {
+            "density": 0.099609375,
+            "hex": "008090840200000800410080002204188020860000020000040180021a0800020050801080400260000800210400000000000000d000000000004824000010400410280100000200010800800a00010000041020090000000040008020010412404000000108180020000c200008000180001442000018000100000260100140",
+            "index": 4,
+            "live_cells": 102,
+            "name": "density-0"
+          },
+          {
+            "density": 0.2001953125,
+            "hex": "04002044c0b101000200c10e20218140000440120200990280040400210084c11090a082290002804890020c5644a0200400401014410000008802215008200000012407441427045147c8c00014982a418080802d4312d002800210612010a201032200056040c2720420001011050010a84908006a4800184240028820b803",
+            "index": 5,
+            "live_cells": 205,
+            "name": "density-1"
+          },
+          {
+            "density": 0.2998046875,
+            "hex": "648048213d0000284042061026b12904c00608a28701722401417c452808e340852d5c0298e49058410823251b02904c04002c102f05848022f11224d09555118c90c08001440300ed8114860294a200d00405546a969d41156d012024b144190104d182281025c07021141423692032143bd00082041216010fa2708531a038",
+            "index": 6,
+            "live_cells": 307,
+            "name": "density-2"
+          },
+          {
+            "density": 0.400390625,
+            "hex": "e07082e98fc070d8d12e39cd9142b08346c04ac46132386279ec892c54dd844a251ab0550c3387229869028a9037d206739840c8122048ae88ccc04138a0cc0b6e5a5c0f58e2438478f4eb227c5002027d2089700a94379561d252028500cde58d68d5c2c55b4d408bc14521040bf8ce954b4506046fc28a1ed084641581830c",
+            "index": 7,
+            "live_cells": 410,
+            "name": "density-3"
+          }
+        ],
+        "n_lineages": 32768,
+        "n_rules": 128
+      }
+    },
+    "full_rule_count": 1024,
+    "retained_comparison": {
+      "gate_verdicts": {
+        "all_match": true,
+        "matches": {
+          "gate_boundary_of_order": true,
+          "gate_heavy_tail": true,
+          "gate_life_rare_book": true,
+          "gate_smoothness": true
+        }
+      },
+      "per_rule": {
+        "field_exact_matches": {
+          "break_by_8": 148,
+          "library_size": 506,
+          "median_gen_sweeps": 797,
+          "strict": 708
+        },
+        "library_exact_matches": 0,
+        "mean_absolute_error": {
+          "break_by_8": 0.02143096923828125,
+          "library_size": 0.6494140625,
+          "median_gen_sweeps": 0.79052734375,
+          "strict": 0.007518768310546875
+        },
+        "n_common": 1024,
+        "spearman": {
+          "break_by_8": 0.9567552055408585,
+          "library_size": 0.8217119794200021,
+          "median_gen_sweeps": 0.9767711514982539,
+          "strict": 0.8671227509177064
+        },
+        "strong_statistical": true,
+        "strong_statistical_thresholds": {
+          "break_by_8": 0.9,
+          "library_size": 0.7,
+          "median_gen_sweeps": 0.9,
+          "strict": 0.7
+        }
+      }
+    },
+    "stress_subset": [
+      616,
+      618,
+      1024,
+      2060,
+      2870,
+      4718,
+      4719,
+      5307,
+      6697,
+      7959,
+      11062,
+      11063,
+      14573,
+      14580,
+      15158,
+      16951,
+      17971,
+      17975,
+      18444,
+      18470,
+      18743,
+      22017,
+      22856,
+      24343,
+      25051,
+      26167,
+      30964,
+      31048,
+      31476,
+      33792,
+      36060,
+      37047,
+      37947,
+      38059,
+      38075,
+      38470,
+      38662,
+      38726,
+      40974,
+      41998,
+      44188,
+      44252,
+      44764,
+      46602,
+      46634,
+      47341,
+      47357,
+      50044,
+      51836,
+      52092,
+      52670,
+      52671,
+      55212,
+      57260,
+      57819,
+      60178,
+      60180,
+      60182,
+      61423,
+      65519,
+      66334,
+      67884,
+      67885,
+      67900,
+      68045,
+      68047,
+      69048,
+      69705,
+      69707,
+      69835,
+      69918,
+      69963,
+      70185,
+      70428,
+      70430,
+      72027,
+      72233,
+      72361,
+      77240,
+      77569,
+      77601,
+      78663,
+      78791,
+      82535,
+      82543,
+      82755,
+      82771,
+      84020,
+      84268,
+      84279,
+      86676,
+      86678,
+      93010,
+      93018,
+      93042,
+      95047,
+      96500,
+      102506,
+      102583,
+      103018,
+      104262,
+      104795,
+      112139,
+      112267,
+      115176,
+      115596,
+      117208,
+      117216,
+      117224,
+      117225,
+      117228,
+      117736,
+      118978,
+      119272,
+      119874,
+      120002,
+      120258,
+      121893,
+      123788,
+      124592,
+      124593,
+      124594,
+      124812,
+      125408,
+      126640,
+      130053,
+      130085,
+      130213
+    ]
+  },
+  "profile": "reference"
+}

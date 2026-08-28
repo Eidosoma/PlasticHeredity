@@ -1,0 +1,288 @@
+{
+  "adjudication": {
+    "ablation_generation4": {
+      "alpha": 0.025,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "n_pairs": 64
+    },
+    "ablation_loss_fraction": 1.0,
+    "carrier_corruption_generation8": {
+      "alpha": 0.025,
+      "ci": [
+        -0.01171875,
+        0.03369445800781268
+      ],
+      "mean": 0.0107421875,
+      "n_pairs": 64
+    },
+    "carrier_renewal": {
+      "1": {
+        "intact_exit_centroid_l2": {
+          "alpha": 0.025,
+          "ci": [
+            29.943399193324147,
+            33.49577816464007
+          ],
+          "mean": 31.734476402401924,
+          "n_pairs": 64
+        },
+        "no_rewrite_entry_mean_abs": {
+          "alpha": 0.025,
+          "ci": [
+            0.981856725027319,
+            1.0347715233801864
+          ],
+          "mean": 1.0077072875574231,
+          "n_pairs": 64
+        }
+      },
+      "16": {
+        "intact_exit_centroid_l2": {
+          "alpha": 0.025,
+          "ci": [
+            2.5024387766607106,
+            2.636428155284375
+          ],
+          "mean": 2.567156918346882,
+          "n_pairs": 64
+        },
+        "no_rewrite_entry_mean_abs": {
+          "alpha": 0.025,
+          "ci": [
+            2.9957465322638654e-05,
+            3.1555374369673925e-05
+          ],
+          "mean": 3.07527858751655e-05,
+          "n_pairs": 64
+        }
+      },
+      "2": {
+        "intact_exit_centroid_l2": {
+          "alpha": 0.025,
+          "ci": [
+            21.659047244675456,
+            25.627297429554165
+          ],
+          "mean": 23.642832048237324,
+          "n_pairs": 64
+        },
+        "no_rewrite_entry_mean_abs": {
+          "alpha": 0.025,
+          "ci": [
+            0.49084320056135766,
+            0.5164583322533872
+          ],
+          "mean": 0.5038536437787116,
+          "n_pairs": 64
+        }
+      },
+      "4": {
+        "intact_exit_centroid_l2": {
+          "alpha": 0.025,
+          "ci": [
+            8.54768694783561,
+            10.961329213622959
+          ],
+          "mean": 9.735888309776783,
+          "n_pairs": 64
+        },
+        "no_rewrite_entry_mean_abs": {
+          "alpha": 0.025,
+          "ci": [
+            0.12282667831605068,
+            0.12919625418289798
+          ],
+          "mean": 0.1259634109446779,
+          "n_pairs": 64
+        }
+      },
+      "8": {
+        "intact_exit_centroid_l2": {
+          "alpha": 0.025,
+          "ci": [
+            2.7709662369452417,
+            3.128362022526562
+          ],
+          "mean": 2.9369202814996243,
+          "n_pairs": 64
+        },
+        "no_rewrite_entry_mean_abs": {
+          "alpha": 0.025,
+          "ci": [
+            0.007675608899535291,
+            0.008073465867346386
+          ],
+          "mean": 0.007872713184042368,
+          "n_pairs": 64
+        }
+      }
+    },
+    "claim_boundary": "synthetic CA Plastic Heredity; no metabolism, agency, or biological-life claim",
+    "control_advantages_generation8": {
+      "founder_write_disabled": {
+        "alpha": 0.025,
+        "ci": [
+          -0.010498046875,
+          0.03345031738281268
+        ],
+        "mean": 0.01123046875,
+        "n_pairs": 64
+      },
+      "read_disabled": {
+        "alpha": 0.025,
+        "ci": [
+          -0.010009765625,
+          0.032958984375
+        ],
+        "mean": 0.01123046875,
+        "n_pairs": 64
+      },
+      "shuffle_every_boundary": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0017120361328124972,
+          0.05786437988281268
+        ],
+        "mean": 0.0283203125,
+        "n_pairs": 64
+      },
+      "zero_every_boundary": {
+        "alpha": 0.025,
+        "ci": [
+          -0.009765625,
+          0.033935546875
+        ],
+        "mean": 0.01123046875,
+        "n_pairs": 64
+      }
+    },
+    "direction_a_mean": 0.0498046875,
+    "direction_b_mean": 0.04345703125,
+    "fraction_pairs_positive": 0.40625,
+    "intact_generation16": {
+      "alpha": 0.025,
+      "ci": [
+        -0.056884765625,
+        -0.015866088867187322
+      ],
+      "mean": -0.035888671875,
+      "n_pairs": 64
+    },
+    "intact_generation4": {
+      "alpha": 0.025,
+      "ci": [
+        0.22314453125,
+        0.308837890625
+      ],
+      "mean": 0.265625,
+      "n_pairs": 64
+    },
+    "intact_generation8": {
+      "alpha": 0.025,
+      "ci": [
+        -0.010498046875,
+        0.033447265625
+      ],
+      "mean": 0.01123046875,
+      "n_pairs": 64
+    },
+    "interval_alpha": 0.025,
+    "no_rewrite_generation8": {
+      "alpha": 0.025,
+      "ci": [
+        0.056884765625,
+        0.10595703125
+      ],
+      "mean": 0.08154296875,
+      "n_pairs": 64
+    },
+    "no_rewrite_loss_fraction": -6.260869565217392,
+    "opposite_founder_generation8": {
+      "alpha": 0.025,
+      "ci": [
+        -0.103515625,
+        -0.059814453125
+      ],
+      "mean": -0.08203125,
+      "n_pairs": 64
+    },
+    "opposite_rescue_generation4": {
+      "alpha": 0.025,
+      "ci": [
+        -0.40673828125,
+        -0.318359375
+      ],
+      "mean": -0.3623046875,
+      "n_pairs": 64
+    },
+    "renewed_gate": false,
+    "rescue_advantage_generation4": {
+      "alpha": 0.025,
+      "ci": [
+        0.223388671875,
+        0.30810546875
+      ],
+      "mean": 0.265625,
+      "n_pairs": 64
+    },
+    "rescue_generation4": {
+      "alpha": 0.025,
+      "ci": [
+        0.22314453125,
+        0.3081085205078127
+      ],
+      "mean": 0.265625,
+      "n_pairs": 64
+    },
+    "rescue_restoration_fraction": 1.0,
+    "static_template_gate": false,
+    "survival_generation16": {
+      "alpha": 0.025,
+      "ci": [
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "n_pairs": 64
+    },
+    "survival_generation8": {
+      "alpha": 0.025,
+      "ci": [
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "n_pairs": 64
+    },
+    "terminal_generation8": {
+      "alpha": 0.025,
+      "ci": [
+        -0.018310546875,
+        0.030517578125
+      ],
+      "mean": 0.006103515625,
+      "n_pairs": 64
+    },
+    "transient_memory_gate": false,
+    "verdict": "NO_RENEWED_CA_PLASTIC_HEREDITY"
+  },
+  "completed_unix": 1787416734.60414,
+  "configuration": {
+    "configuration_id": "motif_energy512-w32-s025-d32",
+    "family": "motif_energy512",
+    "read_duration": 32,
+    "strength": 0.25,
+    "write_window": 32
+  },
+  "design_digest": "1b14f11eced3a2a529e1da9c698d48588c2b4963851cc368b4a660b2f1d9b4c1",
+  "elapsed_seconds": 1283.5799136161804,
+  "experiment": "ca_motif_lineage_stage_3",
+  "profile": "reference",
+  "stage2_design_digest": "2663720d207312c959443a8c61d5c69e690053a81ca5a5dafa268c504de08677",
+  "started_unix": 1787415451.024227,
+  "state": "complete"
+}

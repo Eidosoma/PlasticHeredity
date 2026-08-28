@@ -1,0 +1,13 @@
+{
+  "design_digest": "9dd8dc9532ff7b0a570de1126a2e7caeb6e4077a37225457acb796fc8b308e2e",
+  "environment": {
+    "numpy": "2.5.2",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "causal_plastic_heredity",
+  "max_hours": 1.0,
+  "profile": "smoke",
+  "started_unix": 1787309443.7652462,
+  "workers": 2
+}

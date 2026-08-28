@@ -1,0 +1,5 @@
+substrate,rule,n_donors,effect,p_value,q_value,significant_q05
+eca,35,1,0.0,1.0,1.0,False
+eca,90,1,0.0,1.0,1.0,False
+life,2060,1,0.0,1.0,1.0,False
+life,18444,1,1.0,0.44554455445544555,1.0,False

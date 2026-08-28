@@ -1,0 +1,35 @@
+{
+  "exact_reproduction": true,
+  "field_exact_matches": {
+    "break_by_8": 88,
+    "mean_survival": 88,
+    "median_gen_sweeps": 88,
+    "strict": 88
+  },
+  "field_mismatch_rules": {
+    "break_by_8": [],
+    "mean_survival": [],
+    "median_gen_sweeps": [],
+    "strict": []
+  },
+  "library_exact_matches": 88,
+  "library_mismatch_rules": [],
+  "mean_absolute_error": {
+    "break_by_8": 0.0,
+    "mean_survival": 0.0,
+    "median_gen_sweeps": 0.0,
+    "strict": 0.0
+  },
+  "n_common": 88,
+  "secondary_strong_reproduction": true,
+  "spearman": {
+    "break_by_8": 1.0,
+    "mean_survival": 1.0,
+    "median_gen_sweeps": 1.0,
+    "strict": 1.0
+  },
+  "thresholds": {
+    "endpoint_spearman_min": 0.95,
+    "strict_break_mae_max": 0.02
+  }
+}

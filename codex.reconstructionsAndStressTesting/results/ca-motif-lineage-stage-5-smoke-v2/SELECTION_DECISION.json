@@ -1,0 +1,71 @@
+{
+  "automatic_launch": false,
+  "candidate_metadata": {
+    "global-walsh-anchor": {
+      "bits": 4,
+      "boundary_scope": "uniform global broadcast diagnostic",
+      "candidate_id": "global-walsh-anchor",
+      "kind": "global",
+      "locality_audit": false,
+      "payload_bits": 64,
+      "rank": 16,
+      "shared_stage4_codebook_bits": 656,
+      "shared_writer_parameter_bits": 0
+    },
+    "local-affine-p1-d20-w08-r100": {
+      "bits": 4,
+      "calibration_score": 1.021313898935869,
+      "candidate_id": "local-affine-p1-d20-w08-r100",
+      "developmental_field_storage_bits_float32": 131072,
+      "developmental_field_values": 4096,
+      "diffusion": 0.2,
+      "kind": "local",
+      "locality_audit": true,
+      "patch_side": 1,
+      "payload_bits": 64,
+      "rank": 16,
+      "retention": 1.0,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "shared_stage4_codebook_bits": 656,
+      "shared_writer_parameter_bits": 1024,
+      "write_gain": 0.08,
+      "writer_id": "affine"
+    },
+    "local-affine-p2-d20-w08-r100": {
+      "bits": 4,
+      "calibration_score": 1.021313898935869,
+      "candidate_id": "local-affine-p2-d20-w08-r100",
+      "developmental_field_storage_bits_float32": 131072,
+      "developmental_field_values": 4096,
+      "diffusion": 0.2,
+      "kind": "local",
+      "locality_audit": true,
+      "patch_side": 2,
+      "payload_bits": 256,
+      "rank": 64,
+      "retention": 1.0,
+      "runtime_label_access": false,
+      "runtime_parent_access": false,
+      "runtime_target_access": false,
+      "shared_stage4_codebook_bits": 656,
+      "shared_writer_parameter_bits": 1024,
+      "write_gain": 0.08,
+      "writer_id": "affine"
+    }
+  },
+  "confirmation_candidate_ids": [
+    "global-walsh-anchor",
+    "local-affine-p1-d20-w08-r100",
+    "local-affine-p2-d20-w08-r100"
+  ],
+  "confirmation_generations": 4,
+  "confirmation_pairs": 2,
+  "confirmation_replicates": 2,
+  "confirmation_state": "awaiting_human_review",
+  "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+  "ordinary_and_moderate_joint": true,
+  "retuning_permitted": false,
+  "stage4_design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2"
+}

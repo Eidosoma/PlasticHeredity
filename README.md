@@ -1,11 +1,11 @@
 # Plastic Heredity
 
-Code, retained results, preregistrations, and provenance supporting the version 1 preprint:
+Code, retained results, preregistrations, and provenance supporting manuscript version 2.1:
 
-> **Plastic heredity: Predicting and steering compositional inheritance in simulated lipid-like molecular assemblies**  
+> **Plastic heredity: Predicting and steering how inheritance breaks, returns, and persists**<br>
 > Robert Bjarnason · Eidosoma.ai
 
-The evidence cutoff for version 1 is **23 August 2026**. This repository is a computational research record, not a claim that the simulated assemblies are living systems or validated models of prebiotic chemistry.
+The scientific evidence cutoff for version 2.1 is **24 August 2026**; the manuscript is dated **27 August 2026**. This repository is a computational research record, not a claim that the simulated assemblies are living systems or validated models of prebiotic chemistry.
 
 ## What the study asks
 
@@ -41,7 +41,7 @@ The strongest conclusion is bounded: hereditary loss-and-renewal in these recons
 | Audit the direct target-paper reconstructions | [Codex reconstruction](paperFinalReplicationAttempt.15.8.2026.codex/README.md) and [Claude reconstruction report](paperFinalReplicationAttempt.15.8.2026.claude/REPORT.md) |
 | Inspect manuscript figures and provenance | [Figures](figures/) and [paper assets](paper_assets/) |
 
-Files named `PRE_PRINT_PAPER_DRAFT.md` inside implementation directories are historical branch-level drafts. They are retained as part of the research record and should not be treated as the canonical version 1 manuscript.
+Files named `PRE_PRINT_PAPER_DRAFT.md` inside implementation directories are historical branch-level drafts. They are retained as part of the research record and should not be treated as the canonical version 2.1 manuscript.
 
 ## Repository map
 
@@ -101,7 +101,7 @@ that derivation requires the raw Codex and Fable confirmation bundles, which
 are not included in this repository snapshot; the script therefore does not
 run standalone from this checkout.
 
-Manuscript figure generators and the bioRxiv-oriented PDF configuration are under `paper_assets/`. The PDF build additionally requires the canonical manuscript source, Pandoc, XeLaTeX, and the TeX Gyre fonts described in the [build guide](paper_assets/BIORXIV_PDF_README.md).
+Manuscript figure generators and historical PDF-build assets are under `paper_assets/`. Those build files are retained as part of the research record and are not the current version 2.1 submission package.
 
 Some full campaigns are computationally expensive. Do not infer a common environment or silently pool candidate contracts; follow the campaign-level documentation and fixed seed domains.
 
@@ -117,4 +117,4 @@ Third-party papers are cited through official sources and are not redistributed 
 
 ## Status
 
-This repository is the public computational companion to version 1 of the preprint. It may be updated after release of the target study's implementation, substantive external review, or completion of later campaigns. For audit-stable use, cite a tagged release or immutable commit rather than a moving branch.
+This repository is the public computational companion to manuscript version 2.1. It may be updated after release of the target study's implementation, substantive external review, or completion of later campaigns. For audit-stable use, cite a tagged release or immutable commit rather than a moving branch.

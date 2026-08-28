@@ -1,0 +1,14 @@
+{
+  "deadline_remaining_seconds": 28041.55759859085,
+  "elapsed_seconds": 758.4424014091492,
+  "hard_deadline_unix": 1787440665.4292762,
+  "phase": "campaign",
+  "pid": 2737554,
+  "profile": "reference",
+  "science_deadline_unix": 1787438865.4292762,
+  "stage": "2-generalization",
+  "started_unix": 1787411865.4292762,
+  "state": "complete",
+  "updated_unix": 1787412623.8716776,
+  "verdict": "DENSITY_ROBUST_GENERAL_MOTIF_CHANNEL"
+}

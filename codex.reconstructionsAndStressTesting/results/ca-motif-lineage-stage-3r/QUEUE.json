@@ -1,0 +1,43 @@
+{
+  "automatic_chaining": false,
+  "confirmation_requires_explicit_authorization": true,
+  "per_invocation_max_hours": 8.0,
+  "programme": "ca_motif_lineage_five_stage_with_stage3r",
+  "stage3r_design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "stages": [
+    {
+      "name": "motif_carrier_upper_bound",
+      "stage": 1,
+      "state": "complete"
+    },
+    {
+      "name": "freeze_and_generalize_reader",
+      "stage": 2,
+      "state": "complete"
+    },
+    {
+      "name": "renewed_heredity_causal_ladder",
+      "stage": 3,
+      "state": "complete_negative"
+    },
+    {
+      "eligible_candidate_ids": [
+        "simple--strict-49-64--gain-050"
+      ],
+      "name": "semantic_closure_and_repair",
+      "stage": "3R",
+      "state": "complete",
+      "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+    },
+    {
+      "name": "compression_and_robustness",
+      "stage": 4,
+      "state": "blocked_pending_human_review"
+    },
+    {
+      "name": "localize_inheritance",
+      "stage": 5,
+      "state": "blocked_pending_stage4_review"
+    }
+  ]
+}

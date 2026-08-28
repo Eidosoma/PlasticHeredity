@@ -1,0 +1,41 @@
+{
+  "automatic_launch": false,
+  "design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "stages": [
+    {
+      "name": "motif_carrier_upper_bound",
+      "stage": 1,
+      "state": "complete"
+    },
+    {
+      "name": "freeze_and_generalize_reader",
+      "stage": 2,
+      "state": "complete"
+    },
+    {
+      "name": "renewed_heredity_causal_ladder",
+      "stage": 3,
+      "state": "complete_negative"
+    },
+    {
+      "name": "semantic_closure_and_repair",
+      "stage": "3R",
+      "state": "complete_positive"
+    },
+    {
+      "finalist_candidate_ids": [
+        "pca-r008-q04",
+        "walsh-r016-q04"
+      ],
+      "name": "compression_and_robustness",
+      "stage": 4,
+      "state": "complete",
+      "verdict": "ROBUST_COMPACT_RENEWED_CA_PLASTIC_HEREDITY"
+    },
+    {
+      "name": "localize_inheritance",
+      "stage": 5,
+      "state": "blocked_pending_human_review"
+    }
+  ]
+}

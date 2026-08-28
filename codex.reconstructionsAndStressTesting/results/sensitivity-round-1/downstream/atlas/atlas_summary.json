@@ -1,0 +1,90 @@
+{
+  "cleanroom_semantics": {
+    "activity_count": "realized",
+    "form_definition": "per-seed mean of live post-first-break daughters, top-50%-mass support",
+    "launch_anchor": "first_completed_generation",
+    "launch_burnin_sweeps": 0,
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "deterministic_immediate",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half"
+  },
+  "config": {
+    "activity_budget": 256,
+    "copy_error": 0.015,
+    "flip_noise": 0.01,
+    "form_mass_quantile": 0.5,
+    "futures_per_seed": 128,
+    "launch_burnin_sweeps": 0,
+    "max_sweeps": 128,
+    "min_sweeps": 4,
+    "n_seeds": 16,
+    "observer": "raw4",
+    "seed_namespace": "plastic-ca-sensitivity-downstream-v1",
+    "semantics": {
+      "activity_count": "realized",
+      "launch_anchor": "first_completed_generation",
+      "launch_preparation": "noiseless_generation",
+      "monochrome_death": "deterministic_immediate",
+      "observed_daughter": "post_copy_offspring",
+      "process_noise": "pre_rule_each_sweep",
+      "seed_mode": "exact_half"
+    },
+    "thresholds": {
+      "break_horizon": 8,
+      "coherence": 0.9,
+      "distinct": 0.85,
+      "horizon": 32,
+      "inherit": 0.9,
+      "strict_run": 8
+    },
+    "width": 64
+  },
+  "elapsed_seconds": 312.3332347869873,
+  "environment": {
+    "implementation": "standard-library integer bitboards",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "sensitivity:downstream-atlas",
+  "gates": {
+    "champion_strict": {
+      "11": 0.048828125,
+      "184": 0.0146484375,
+      "35": 0.05908203125,
+      "43": 0.0029296875,
+      "57": 0.00537109375
+    },
+    "class3_min_break_by_8": 0.96044921875,
+    "class_break_medians": {
+      "1": 0.0,
+      "2": 0.56494140625,
+      "3": 1.0,
+      "4": 0.99951171875
+    },
+    "clean_class12_median_break_by_8": 0.360107421875,
+    "edge_mean_jaccard": 0.12239583333333333,
+    "gate_class3_separation": true,
+    "gate_heavy_tail": true,
+    "gate_metric": true,
+    "gate_rule110_top_decile": false,
+    "gate_smoothness": true,
+    "heavy_tail_share": 0.6266233766233766,
+    "metric_rho_descriptors": 0.11724143540733696,
+    "metric_rho_hamming": 0.0932268925134048,
+    "n_forms": 182,
+    "random_mean_jaccard": 0.02092308266703428,
+    "raw_class4_strict": {
+      "106": 0.0,
+      "110": 0.0,
+      "41": 0.0,
+      "54": 0.0
+    },
+    "rule110_strict": 0.0,
+    "rule110_strict_rank": 74.0,
+    "smoothness_ratio": 5.849799251913112
+  },
+  "n_futures": 180224,
+  "n_rules": 88
+}

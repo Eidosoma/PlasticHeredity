@@ -1,0 +1,17 @@
+{
+  "contract_digest": "a83644db7c3f1952336b2c218bb994d6beec3b29b98cb2d12b45d9ea24f67841",
+  "design_digest": "1b14f11eced3a2a529e1da9c698d48588c2b4963851cc368b4a660b2f1d9b4c1",
+  "environment": {
+    "cpu_count": 24,
+    "numpy": "2.5.2",
+    "omp_num_threads": "1",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "ca_motif_lineage_stage_3",
+  "max_hours": 8.0,
+  "profile": "reference",
+  "stage": 3,
+  "started_unix": 1787415451.024227,
+  "workers": 20
+}

@@ -1,0 +1,26 @@
+{
+  "contract_digest": "56b696196ac49a42bbac3385707d206603abfc3014a54b34aab30c0d06812829",
+  "design_digest": "c2ee79ddc90b691beb593644560f2555bc8f1cfef848ebed9cb0e172ab1a7509",
+  "environment": {
+    "cpu_count": 24,
+    "numpy": "2.5.2",
+    "omp_num_threads": "1",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "experiment": "ca_motif_lineage_stage_5",
+  "invocation_phases": [
+    "audit",
+    "anatomy",
+    "calibrate",
+    "transcode",
+    "localize",
+    "qualify",
+    "transfer",
+    "adjudicate"
+  ],
+  "max_hours": 0.5,
+  "profile": "smoke",
+  "started_unix": 1787529656.7192752,
+  "workers": 4
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_0",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "af78b84e01d2861c"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_0",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "ef05677d3a40f233"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "realized_immediate",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "0d2a01f80cab18f9"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "4034114a71af4aa3"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "deterministic_immediate",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "bcc382ca73a48ee1"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "2055fef4ff9d0636"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_0",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "acc8994558a99277"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_4",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "8a64dddd8bac496d"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_16",
+    "monochrome_death": "deterministic_immediate",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "expected_half_hash",
+    "setting_id": "3d9192a54ebd24b8"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_16",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "expected_half_hash",
+    "setting_id": "835eec486957f878"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_16",
+    "monochrome_death": "realized_immediate",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "expected_half_hash",
+    "setting_id": "edab059bf74d1708"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_0",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "e257a32830b92c48"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_4",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "160f2a9ece9d2074"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_16",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "pre_copy_terminal",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "expected_half_hash",
+    "setting_id": "605b699decec4c2c"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "realized_immediate",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "241a6fd9386fabdb"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "47618512bdceafc7"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "deterministic_immediate",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "63dbf34a9ca01e38"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_1",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "fe39ab5468c2bea7"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "b35342e5d6a7e996"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "deterministic_immediate",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "322e82cd2d0e0d80"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "realized_after_minimum",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "5ba34cd26e5a3138"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "realized_immediate",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "a4ffcae4c4e75f97"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "e4d36d7016a8c242"
+  },
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "sweeps_0",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "e3f947cbacb66889"
+  }
+]

@@ -1,0 +1,1206 @@
+{
+  "adjudication": {
+    "candidates": {
+      "identity-r512-f32": {
+        "environments": {
+          "moderate_joint": {
+            "strict": {
+              "ablation_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "ablation_loss_fraction": 1.0,
+              "active_rewrite_advantage_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.1058349609375,
+                  0.15625
+                ],
+                "mean": 0.130859375,
+                "n_pairs": 128
+              },
+              "alpha": 0.005,
+              "carrier_corruption_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.08996551513671874,
+                  0.1298828125
+                ],
+                "mean": 0.1099853515625,
+                "n_pairs": 128
+              },
+              "control_advantages_generation8": {
+                "founder_write_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.0986328125,
+                    0.1356201171875
+                  ],
+                  "mean": 0.116943359375,
+                  "n_pairs": 128
+                },
+                "read_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.097900390625,
+                    0.13586486816406262
+                  ],
+                  "mean": 0.116943359375,
+                  "n_pairs": 128
+                },
+                "shuffle_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.1112060546875,
+                    0.16870178222656262
+                  ],
+                  "mean": 0.139892578125,
+                  "n_pairs": 128
+                },
+                "zero_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.09850982666015626,
+                    0.1358642578125
+                  ],
+                  "mean": 0.116943359375,
+                  "n_pairs": 128
+                }
+              },
+              "direction_a_mean": 0.149169921875,
+              "direction_b_mean": 0.1397705078125,
+              "fraction_pairs_positive": 0.9140625,
+              "intact_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.02929718017578125,
+                  0.008056945800781312
+                ],
+                "mean": -0.0106201171875,
+                "n_pairs": 128
+              },
+              "intact_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.3656005859375,
+                  0.413818359375
+                ],
+                "mean": 0.3900146484375,
+                "n_pairs": 128
+              },
+              "intact_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.09814453125,
+                  0.1350100708007813
+                ],
+                "mean": 0.116943359375,
+                "n_pairs": 128
+              },
+              "latent_shuffle_advantage": {
+                "alpha": 0.005,
+                "ci": [
+                  0.12414520263671874,
+                  0.1773684692382813
+                ],
+                "mean": 0.150146484375,
+                "n_pairs": 128
+              },
+              "latent_shuffle_gate": true,
+              "no_rewrite_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.02941925048828125,
+                  0.0013430786132813122
+                ],
+                "mean": -0.013916015625,
+                "n_pairs": 128
+              },
+              "no_rewrite_loss_fraction": 1.1189979123173277,
+              "opposite_founder_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.19165069580078126,
+                  -0.1529537963867187
+                ],
+                "mean": -0.1719970703125,
+                "n_pairs": 128
+              },
+              "opposite_rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.4725341796875,
+                  -0.42236328125
+                ],
+                "mean": -0.4478759765625,
+                "n_pairs": 128
+              },
+              "renewed_gate": false,
+              "rescue_advantage_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.3662103271484375,
+                  0.41296478271484394
+                ],
+                "mean": 0.3900146484375,
+                "n_pairs": 128
+              },
+              "rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.36572174072265623,
+                  0.4140625
+                ],
+                "mean": 0.3900146484375,
+                "n_pairs": 128
+              },
+              "rescue_restoration_fraction": 1.0,
+              "stage4_renewed_gate": false,
+              "survival_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "survival_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "terminal_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.09558074951171874,
+                  0.1331790161132813
+                ],
+                "mean": 0.1141357421875,
+                "n_pairs": 128
+              },
+              "verdict": "NO_STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+            }
+          },
+          "ordinary": {
+            "strict": {
+              "ablation_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "ablation_loss_fraction": 1.0,
+              "active_rewrite_advantage_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.40136688232421874,
+                  0.4724127197265626
+                ],
+                "mean": 0.436767578125,
+                "n_pairs": 128
+              },
+              "alpha": 0.005,
+              "carrier_corruption_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.4595947265625,
+                  0.5145266723632813
+                ],
+                "mean": 0.488037109375,
+                "n_pairs": 128
+              },
+              "control_advantages_generation8": {
+                "founder_write_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.46142547607421874,
+                    0.5181887817382813
+                  ],
+                  "mean": 0.489990234375,
+                  "n_pairs": 128
+                },
+                "read_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.46118133544921874,
+                    0.5181890869140626
+                  ],
+                  "mean": 0.489990234375,
+                  "n_pairs": 128
+                },
+                "shuffle_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.47802703857421874,
+                    0.54638671875
+                  ],
+                  "mean": 0.5120849609375,
+                  "n_pairs": 128
+                },
+                "zero_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.46130340576171874,
+                    0.517578125
+                  ],
+                  "mean": 0.489990234375,
+                  "n_pairs": 128
+                }
+              },
+              "direction_a_mean": 0.524658203125,
+              "direction_b_mean": 0.4974365234375,
+              "fraction_pairs_positive": 1.0,
+              "intact_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  0.2161865234375,
+                  0.2631838989257813
+                ],
+                "mean": 0.239501953125,
+                "n_pairs": 128
+              },
+              "intact_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.6585693359375,
+                  0.720947265625
+                ],
+                "mean": 0.6904296875,
+                "n_pairs": 128
+              },
+              "intact_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.46057098388671874,
+                  0.5189212036132813
+                ],
+                "mean": 0.489990234375,
+                "n_pairs": 128
+              },
+              "latent_shuffle_advantage": {
+                "alpha": 0.005,
+                "ci": [
+                  0.4848626708984375,
+                  0.556396484375
+                ],
+                "mean": 0.522216796875,
+                "n_pairs": 128
+              },
+              "latent_shuffle_gate": true,
+              "no_rewrite_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0291741943359375,
+                  0.07702667236328131
+                ],
+                "mean": 0.05322265625,
+                "n_pairs": 128
+              },
+              "no_rewrite_loss_fraction": 0.8913801694070752,
+              "opposite_founder_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.5598147583007812,
+                  -0.5026852416992187
+                ],
+                "mean": -0.5321044921875,
+                "n_pairs": 128
+              },
+              "opposite_rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.7604983520507812,
+                  -0.705078125
+                ],
+                "mean": -0.7342529296875,
+                "n_pairs": 128
+              },
+              "renewed_gate": true,
+              "rescue_advantage_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.6578366088867188,
+                  0.7196047973632813
+                ],
+                "mean": 0.6904296875,
+                "n_pairs": 128
+              },
+              "rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.6597897338867188,
+                  0.719970703125
+                ],
+                "mean": 0.6904296875,
+                "n_pairs": 128
+              },
+              "rescue_restoration_fraction": 1.0,
+              "stage4_renewed_gate": true,
+              "survival_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "survival_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "terminal_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.46374359130859377,
+                  0.5186767578125
+                ],
+                "mean": 0.490966796875,
+                "n_pairs": 128
+              },
+              "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+            }
+          }
+        },
+        "model": {
+          "bits": 32,
+          "candidate_id": "identity-r512-f32",
+          "codebook_bits": 0,
+          "family": "identity",
+          "interpretable": true,
+          "payload_bits": 16384,
+          "precision": "float32",
+          "rank": 512,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false
+        }
+      },
+      "pca-r008-q04": {
+        "environments": {
+          "moderate_joint": {
+            "strict": {
+              "ablation_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "ablation_loss_fraction": 1.0,
+              "active_rewrite_advantage_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.05773895263671875,
+                  0.10620147705078131
+                ],
+                "mean": 0.082275390625,
+                "n_pairs": 128
+              },
+              "alpha": 0.005,
+              "carrier_corruption_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0548095703125,
+                  0.0970458984375
+                ],
+                "mean": 0.0762939453125,
+                "n_pairs": 128
+              },
+              "control_advantages_generation8": {
+                "founder_write_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.05822723388671875,
+                    0.1063232421875
+                  ],
+                  "mean": 0.082275390625,
+                  "n_pairs": 128
+                },
+                "read_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.0589599609375,
+                    0.10620147705078131
+                  ],
+                  "mean": 0.082275390625,
+                  "n_pairs": 128
+                },
+                "shuffle_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.06262176513671874,
+                    0.12646484375
+                  ],
+                  "mean": 0.09423828125,
+                  "n_pairs": 128
+                },
+                "zero_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.0582269287109375,
+                    0.10607971191406262
+                  ],
+                  "mean": 0.082275390625,
+                  "n_pairs": 128
+                }
+              },
+              "direction_a_mean": 0.108154296875,
+              "direction_b_mean": 0.1043701171875,
+              "fraction_pairs_positive": 0.7890625,
+              "intact_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.0324713134765625,
+                  0.009888000488281312
+                ],
+                "mean": -0.0111083984375,
+                "n_pairs": 128
+              },
+              "intact_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.301513671875,
+                  0.3489990234375
+                ],
+                "mean": 0.325439453125,
+                "n_pairs": 128
+              },
+              "intact_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.05822723388671875,
+                  0.10498046875
+                ],
+                "mean": 0.082275390625,
+                "n_pairs": 128
+              },
+              "latent_shuffle_advantage": {
+                "alpha": 0.005,
+                "ci": [
+                  0.078369140625,
+                  0.1330569458007813
+                ],
+                "mean": 0.105224609375,
+                "n_pairs": 128
+              },
+              "latent_shuffle_gate": true,
+              "no_rewrite_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "no_rewrite_loss_fraction": 1.0,
+              "opposite_founder_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.1536865234375,
+                  -0.10668914794921869
+                ],
+                "mean": -0.1302490234375,
+                "n_pairs": 128
+              },
+              "opposite_rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.39587493896484377,
+                  -0.3448483276367187
+                ],
+                "mean": -0.369384765625,
+                "n_pairs": 128
+              },
+              "renewed_gate": false,
+              "rescue_advantage_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.3006591796875,
+                  0.35009765625
+                ],
+                "mean": 0.325439453125,
+                "n_pairs": 128
+              },
+              "rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.30029266357421874,
+                  0.3489990234375
+                ],
+                "mean": 0.325439453125,
+                "n_pairs": 128
+              },
+              "rescue_restoration_fraction": 1.0,
+              "stage4_renewed_gate": false,
+              "survival_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "survival_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "terminal_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.05725067138671875,
+                  0.10607940673828131
+                ],
+                "mean": 0.081787109375,
+                "n_pairs": 128
+              },
+              "verdict": "NO_STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+            }
+          },
+          "ordinary": {
+            "strict": {
+              "ablation_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "ablation_loss_fraction": 1.0,
+              "active_rewrite_advantage_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.7059326171875,
+                  0.7678225708007813
+                ],
+                "mean": 0.738525390625,
+                "n_pairs": 128
+              },
+              "alpha": 0.005,
+              "carrier_corruption_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.5970455932617188,
+                  0.655517578125
+                ],
+                "mean": 0.6270751953125,
+                "n_pairs": 128
+              },
+              "control_advantages_generation8": {
+                "founder_write_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.7039785766601563,
+                    0.7669677734375
+                  ],
+                  "mean": 0.738525390625,
+                  "n_pairs": 128
+                },
+                "read_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.7039794921875,
+                    0.7669680786132813
+                  ],
+                  "mean": 0.738525390625,
+                  "n_pairs": 128
+                },
+                "shuffle_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.7341302490234375,
+                    0.7983404541015626
+                  ],
+                  "mean": 0.766845703125,
+                  "n_pairs": 128
+                },
+                "zero_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.7060543823242188,
+                    0.7680667114257813
+                  ],
+                  "mean": 0.738525390625,
+                  "n_pairs": 128
+                }
+              },
+              "direction_a_mean": 0.7626953125,
+              "direction_b_mean": 0.743408203125,
+              "fraction_pairs_positive": 1.0,
+              "intact_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  0.5531005859375,
+                  0.6044924926757813
+                ],
+                "mean": 0.5797119140625,
+                "n_pairs": 128
+              },
+              "intact_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8067626953125,
+                  0.8743899536132813
+                ],
+                "mean": 0.8427734375,
+                "n_pairs": 128
+              },
+              "intact_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.7054440307617188,
+                  0.767333984375
+                ],
+                "mean": 0.738525390625,
+                "n_pairs": 128
+              },
+              "latent_shuffle_advantage": {
+                "alpha": 0.005,
+                "ci": [
+                  0.7138665771484375,
+                  0.7851565551757813
+                ],
+                "mean": 0.7515869140625,
+                "n_pairs": 128
+              },
+              "latent_shuffle_gate": true,
+              "no_rewrite_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "no_rewrite_loss_fraction": 1.0,
+              "opposite_founder_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.796630859375,
+                  -0.7338851928710934
+                ],
+                "mean": -0.767578125,
+                "n_pairs": 128
+              },
+              "opposite_rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.9038092041015625,
+                  -0.841552734375
+                ],
+                "mean": -0.87548828125,
+                "n_pairs": 128
+              },
+              "renewed_gate": true,
+              "rescue_advantage_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8051754760742188,
+                  0.8747561645507813
+                ],
+                "mean": 0.8427734375,
+                "n_pairs": 128
+              },
+              "rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8060293579101563,
+                  0.8741455078125
+                ],
+                "mean": 0.8427734375,
+                "n_pairs": 128
+              },
+              "rescue_restoration_fraction": 1.0,
+              "stage4_renewed_gate": true,
+              "survival_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "survival_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "terminal_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.7073974609375,
+                  0.7702639770507813
+                ],
+                "mean": 0.740478515625,
+                "n_pairs": 128
+              },
+              "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+            }
+          }
+        },
+        "model": {
+          "bits": 4,
+          "candidate_id": "pca-r008-q04",
+          "codebook_bits": 131328,
+          "family": "pca",
+          "interpretable": false,
+          "payload_bits": 32,
+          "precision": "fixed-scale-signed",
+          "rank": 8,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false
+        }
+      },
+      "walsh-r016-q04": {
+        "environments": {
+          "moderate_joint": {
+            "strict": {
+              "ablation_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "ablation_loss_fraction": 1.0,
+              "active_rewrite_advantage_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8052978515625,
+                  0.875732421875
+                ],
+                "mean": 0.8458251953125,
+                "n_pairs": 128
+              },
+              "alpha": 0.005,
+              "carrier_corruption_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.7867428588867188,
+                  0.8516845703125
+                ],
+                "mean": 0.8226318359375,
+                "n_pairs": 128
+              },
+              "control_advantages_generation8": {
+                "founder_write_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.8065179443359375,
+                    0.8762210083007813
+                  ],
+                  "mean": 0.8458251953125,
+                  "n_pairs": 128
+                },
+                "read_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.8081045532226563,
+                    0.8750003051757813
+                  ],
+                  "mean": 0.8458251953125,
+                  "n_pairs": 128
+                },
+                "shuffle_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.8347152709960938,
+                    0.9080813598632813
+                  ],
+                  "mean": 0.8748779296875,
+                  "n_pairs": 128
+                },
+                "zero_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.8081051635742188,
+                    0.8760989379882813
+                  ],
+                  "mean": 0.8458251953125,
+                  "n_pairs": 128
+                }
+              },
+              "direction_a_mean": 0.858154296875,
+              "direction_b_mean": 0.84716796875,
+              "fraction_pairs_positive": 1.0,
+              "intact_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  0.7216790771484375,
+                  0.787841796875
+                ],
+                "mean": 0.75830078125,
+                "n_pairs": 128
+              },
+              "intact_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8502194213867188,
+                  0.92333984375
+                ],
+                "mean": 0.8922119140625,
+                "n_pairs": 128
+              },
+              "intact_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8077389526367188,
+                  0.8756103515625
+                ],
+                "mean": 0.8458251953125,
+                "n_pairs": 128
+              },
+              "latent_shuffle_advantage": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8372799682617188,
+                  0.9089358520507813
+                ],
+                "mean": 0.8758544921875,
+                "n_pairs": 128
+              },
+              "latent_shuffle_gate": true,
+              "no_rewrite_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "no_rewrite_loss_fraction": 1.0,
+              "opposite_founder_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.8895266723632812,
+                  -0.8187252807617187
+                ],
+                "mean": -0.8594970703125,
+                "n_pairs": 128
+              },
+              "opposite_rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.9384765625,
+                  -0.8646240234375
+                ],
+                "mean": -0.905517578125,
+                "n_pairs": 128
+              },
+              "renewed_gate": true,
+              "rescue_advantage_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.85107421875,
+                  0.9232186889648439
+                ],
+                "mean": 0.8922119140625,
+                "n_pairs": 128
+              },
+              "rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8510736083984375,
+                  0.9238293457031252
+                ],
+                "mean": 0.8922119140625,
+                "n_pairs": 128
+              },
+              "rescue_restoration_fraction": 1.0,
+              "stage4_renewed_gate": true,
+              "survival_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "survival_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "terminal_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.8082269287109375,
+                  0.875732421875
+                ],
+                "mean": 0.845703125,
+                "n_pairs": 128
+              },
+              "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+            }
+          },
+          "ordinary": {
+            "strict": {
+              "ablation_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "ablation_loss_fraction": 1.0,
+              "active_rewrite_advantage_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.912108154296875,
+                  0.98291015625
+                ],
+                "mean": 0.9544677734375,
+                "n_pairs": 128
+              },
+              "alpha": 0.005,
+              "carrier_corruption_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9108883666992188,
+                  0.9805908203125
+                ],
+                "mean": 0.951904296875,
+                "n_pairs": 128
+              },
+              "control_advantages_generation8": {
+                "founder_write_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.9114987182617188,
+                    0.9832763671875
+                  ],
+                  "mean": 0.9544677734375,
+                  "n_pairs": 128
+                },
+                "read_disabled": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.9145501708984375,
+                    0.9836431884765626
+                  ],
+                  "mean": 0.9544677734375,
+                  "n_pairs": 128
+                },
+                "shuffle_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.9259027099609375,
+                    1.0098880004882813
+                  ],
+                  "mean": 0.97265625,
+                  "n_pairs": 128
+                },
+                "zero_every_boundary": {
+                  "alpha": 0.005,
+                  "ci": [
+                    0.9139398193359375,
+                    0.982421875
+                  ],
+                  "mean": 0.9544677734375,
+                  "n_pairs": 128
+                }
+              },
+              "direction_a_mean": 0.9560546875,
+              "direction_b_mean": 0.9547119140625,
+              "fraction_pairs_positive": 1.0,
+              "intact_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9055157470703125,
+                  0.9760745239257813
+                ],
+                "mean": 0.947509765625,
+                "n_pairs": 128
+              },
+              "intact_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9146719360351563,
+                  0.9866943359375
+                ],
+                "mean": 0.9586181640625,
+                "n_pairs": 128
+              },
+              "intact_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9118643188476563,
+                  0.9835205078125
+                ],
+                "mean": 0.9544677734375,
+                "n_pairs": 128
+              },
+              "latent_shuffle_advantage": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9371334838867188,
+                  1.0144049072265626
+                ],
+                "mean": 0.980712890625,
+                "n_pairs": 128
+              },
+              "latent_shuffle_gate": true,
+              "no_rewrite_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.0,
+                  0.0
+                ],
+                "mean": 0.0,
+                "n_pairs": 128
+              },
+              "no_rewrite_loss_fraction": 1.0,
+              "opposite_founder_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.9846197509765625,
+                  -0.9138180541992187
+                ],
+                "mean": -0.956298828125,
+                "n_pairs": 128
+              },
+              "opposite_rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  -0.9881597900390625,
+                  -0.9184567260742187
+                ],
+                "mean": -0.9598388671875,
+                "n_pairs": 128
+              },
+              "renewed_gate": true,
+              "rescue_advantage_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9179681396484375,
+                  0.986572265625
+                ],
+                "mean": 0.9586181640625,
+                "n_pairs": 128
+              },
+              "rescue_generation4": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9173580932617188,
+                  0.987060546875
+                ],
+                "mean": 0.9586181640625,
+                "n_pairs": 128
+              },
+              "rescue_restoration_fraction": 1.0,
+              "stage4_renewed_gate": true,
+              "survival_generation16": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "survival_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  1.0,
+                  1.0
+                ],
+                "mean": 1.0,
+                "n_pairs": 128
+              },
+              "terminal_generation8": {
+                "alpha": 0.005,
+                "ci": [
+                  0.9121078491210938,
+                  0.9833984375
+                ],
+                "mean": 0.9542236328125,
+                "n_pairs": 128
+              },
+              "verdict": "STRICT_RENEWED_CA_PLASTIC_HEREDITY"
+            }
+          }
+        },
+        "model": {
+          "bits": 4,
+          "candidate_id": "walsh-r016-q04",
+          "codebook_bits": 656,
+          "family": "walsh",
+          "interpretable": true,
+          "payload_bits": 64,
+          "precision": "fixed-scale-signed",
+          "rank": 16,
+          "runtime_label_access": false,
+          "runtime_parent_access": false,
+          "runtime_target_access": false
+        }
+      }
+    },
+    "claim_boundary": "synthetic CA lineage memory only; no metabolism, agency, or biological-life claim",
+    "compact_candidate_ids": [
+      "pca-r008-q04",
+      "walsh-r016-q04"
+    ],
+    "compressed_candidate_ids": [
+      "pca-r008-q04",
+      "walsh-r016-q04"
+    ],
+    "fresh_anchor_replicated": true,
+    "robust_compact_candidate_ids": [
+      "walsh-r016-q04"
+    ],
+    "state": "complete",
+    "verdict": "ROBUST_COMPACT_RENEWED_CA_PLASTIC_HEREDITY"
+  },
+  "design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "elapsed_seconds": 7455.5141723155975,
+  "experiment": "ca_motif_lineage_stage_4",
+  "profile": "reference",
+  "stage3r_design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "state": "complete"
+}

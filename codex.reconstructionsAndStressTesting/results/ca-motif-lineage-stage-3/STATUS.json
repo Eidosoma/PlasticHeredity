@@ -1,0 +1,14 @@
+{
+  "deadline_remaining_seconds": 27516.41777729988,
+  "elapsed_seconds": 1283.582222700119,
+  "hard_deadline_unix": 1787444251.024227,
+  "phase": "campaign",
+  "pid": 2830108,
+  "profile": "reference",
+  "science_deadline_unix": 1787442451.024227,
+  "stage": "3-renewed-lineage",
+  "started_unix": 1787415451.024227,
+  "state": "complete",
+  "updated_unix": 1787416734.6064496,
+  "verdict": "NO_RENEWED_CA_PLASTIC_HEREDITY"
+}

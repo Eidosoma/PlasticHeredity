@@ -1,0 +1,90 @@
+{
+  "calibrations": {
+    "diffuse": {
+      "calibration_score": 0.11806439737556503,
+      "decay": 0.55,
+      "diffusion": 0.04,
+      "eligible": true,
+      "kappa": 0.05,
+      "lower": 0.4,
+      "mechanism": "diffuse",
+      "upper": 0.6,
+      "write_gain": 0.08
+    },
+    "latch": {
+      "calibration_score": 0.11788479499518871,
+      "decay": 0.55,
+      "diffusion": 0.04,
+      "eligible": true,
+      "kappa": 0.05,
+      "lower": 0.4,
+      "mechanism": "latch",
+      "upper": 0.6,
+      "write_gain": 0.08
+    }
+  },
+  "cleanroom_exclusion": "no Wagner implementation artifact is read, imported, hashed, or executed",
+  "cohorts": {
+    "31648": [
+      "life-31648-local-holdout-a-holdout-b-0012"
+    ],
+    "31649": [
+      "narrow-0440-life-31649-2-115-life-31649-2-1452"
+    ],
+    "70366": [
+      "life-70366-local-holdout-a-holdout-b-0025"
+    ]
+  },
+  "contract": {
+    "assignment_margin": 0.05,
+    "assignment_similarity": 0.9,
+    "control_advantage": 0.1,
+    "durable_crossover": 0.1,
+    "founder_sweeps": 16,
+    "generation_sweeps": 32,
+    "height": 16,
+    "implementation_version": "ca-lineage-field-cleanroom-v1",
+    "independent_unit": "matched founder pair",
+    "missing_policy": "dead and unresolved futures remain in denominators",
+    "namespace": "plastic-ca-lineage-field-v1",
+    "observe_start": 25,
+    "primary_crossover": 0.15,
+    "process_noise": 0.002,
+    "read_sweeps": 8,
+    "reader_inputs": "local carrier and semantic RNG only; no form labels or prototypes",
+    "science_reserve_seconds": 1800.0,
+    "survival_gate": 0.9,
+    "visible_reset": "bitwise matched launch before every descendant generation",
+    "width": 16,
+    "write_start": 17,
+    "writer_inputs": "local visible spacetime state only; no form labels or prototypes"
+  },
+  "design_digest": "e97fe4b261ccb0f9ecfac9fef4f636ee2093291565dc8c59eccae517585c40e3",
+  "implementation_sha256": {
+    "life_family.py": "dd23a07a1c85b7fe8bde62a647acc15de69b819864ae71abedae53bb222161c1",
+    "lineage_field.py": "94b170a6bb352aa4be80c72e15827b1e905407c0660cf9014b4f8db85b0ba5f9"
+  },
+  "input_sha256": {
+    "CA_LINEAGE_FIELD_PROTOCOL.md": "eeb8d89b9f9847f77e3b82d08b27bf06b608776b17bac17e67ad99226569be01",
+    "results/ca-carrier-round-3/CALIBRATION.json": "32f4300b1c924adeffbed73d8d8f32386201632653dc5413d36d9589c5602d65",
+    "results/ca-carrier-round-3/NARROW_COHORTS.json": "a68a0bf66f724739c4583970968ae7ca0420ebb5d393a78aec74c07f7c206d6f",
+    "results/ca-carrier-round-3/wide_holdout_acquire/checkpoints/candidate-000-life-070366.json": "494c3d9cb6ba1a06bda72f77427ad8a626c49442c237c154d888155894832ee8",
+    "results/ca-carrier-round-3/wide_holdout_acquire/checkpoints/candidate-001-life-031648.json": "21adff33e3e77052ae6ba8c2b0f98534454d2031c7b46e761b53c720b24eb23b"
+  },
+  "profile": {
+    "bootstrap_resamples": 100,
+    "diagnostic_pairs": 1,
+    "diagnostic_replicates": 2,
+    "generations": 4,
+    "holdout_pairs": 1,
+    "holdout_replicates": 2,
+    "primary_pairs": 1,
+    "primary_replicates": 2
+  },
+  "requested_profile": "smoke",
+  "selected_profile": "smoke",
+  "timing": {
+    "projected_seconds": {},
+    "seconds_per_unit": null
+  }
+}

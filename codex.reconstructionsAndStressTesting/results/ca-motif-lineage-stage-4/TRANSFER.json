@@ -1,0 +1,84 @@
+{
+  "design_digest": "ecebf68e14addc848ddbd59f22e01a4425c461d33f7d35336fac371cc3bcefb2",
+  "exploratory_only": true,
+  "generation": 16,
+  "rules": {
+    "31648": {
+      "candidates": {
+        "identity-r512-f32": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.4921875,
+              0.611328125
+            ],
+            "mean": 0.552734375,
+            "n_pairs": 64
+          }
+        },
+        "pca-r008-q04": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.669921875,
+              0.794921875
+            ],
+            "mean": 0.736328125,
+            "n_pairs": 64
+          }
+        },
+        "walsh-r016-q04": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              0.8515625,
+              0.96484375
+            ],
+            "mean": 0.916015625,
+            "n_pairs": 64
+          }
+        }
+      },
+      "pairs": 64
+    },
+    "70366": {
+      "candidates": {
+        "identity-r512-f32": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.1640625,
+              -0.068359375
+            ],
+            "mean": -0.115234375,
+            "n_pairs": 64
+          }
+        },
+        "pca-r008-q04": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.189453125,
+              -0.087890625
+            ],
+            "mean": -0.138671875,
+            "n_pairs": 64
+          }
+        },
+        "walsh-r016-q04": {
+          "crossover": {
+            "alpha": 0.025,
+            "ci": [
+              -0.1328125,
+              -0.015625
+            ],
+            "mean": -0.07421875,
+            "n_pairs": 64
+          }
+        }
+      },
+      "pairs": 64
+    }
+  },
+  "state": "complete"
+}

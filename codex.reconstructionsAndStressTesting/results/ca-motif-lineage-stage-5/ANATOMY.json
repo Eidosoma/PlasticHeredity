@@ -1,0 +1,1092 @@
+{
+  "d4_crossover": {
+    "anatomy-d4-r0-f0": 0.96875,
+    "anatomy-d4-r0-f1": 0.9453125,
+    "anatomy-d4-r1-f0": 0.984375,
+    "anatomy-d4-r1-f1": 1.0,
+    "anatomy-d4-r2-f0": 0.9296875,
+    "anatomy-d4-r2-f1": 0.96875,
+    "anatomy-d4-r3-f0": 0.984375,
+    "anatomy-d4-r3-f1": 0.984375
+  },
+  "design_digest": "d0ae4d70c28cd78d325cde0f5744851fcd62bdb85d6adc35315635fc52b4d2fc",
+  "distributed_across_modes": true,
+  "full16_crossover_mean": 0.96875,
+  "generation": 8,
+  "leave_one_out_effect_loss": {
+    "0": 0.0,
+    "1": 0.0,
+    "10": 0.0234375,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 0.0390625,
+    "14": 0.0703125,
+    "15": -0.015625,
+    "2": 0.0078125,
+    "3": 0.0,
+    "4": 0.0,
+    "5": 0.0078125,
+    "6": 0.0078125,
+    "7": 0.0078125,
+    "8": -0.0078125,
+    "9": 0.0078125
+  },
+  "leave_one_out_importance_concentration": 0.36,
+  "single_mode_crossover": {
+    "0": 0.0,
+    "1": 0.0078125,
+    "10": 0.015625,
+    "11": 0.015625,
+    "12": -0.078125,
+    "13": -0.09375,
+    "14": -0.015625,
+    "15": -0.0234375,
+    "2": -0.0234375,
+    "3": -0.0234375,
+    "4": -0.0546875,
+    "5": -0.0625,
+    "6": -0.0703125,
+    "7": -0.03125,
+    "8": -0.015625,
+    "9": 0.015625
+  },
+  "state": "complete",
+  "variants": {
+    "anatomy-balanced-00": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.359375,
+          0.609375
+        ],
+        "mean": 0.484375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-01": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.53125,
+          0.703125
+        ],
+        "mean": 0.625,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-02": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.890625,
+          0.9921875
+        ],
+        "mean": 0.953125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-03": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.109375,
+          0.28125
+        ],
+        "mean": 0.1875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-04": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.6875,
+          0.921875
+        ],
+        "mean": 0.828125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-05": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.3828125,
+          0.65625
+        ],
+        "mean": 0.5234375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-06": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.4765625,
+          0.6875
+        ],
+        "mean": 0.5859375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-07": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.8203125,
+          0.984375
+        ],
+        "mean": 0.921875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-08": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.8203125,
+          0.9921875
+        ],
+        "mean": 0.921875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-09": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.6171875,
+          0.890625
+        ],
+        "mean": 0.7734375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-10": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.7265625,
+          0.9609375
+        ],
+        "mean": 0.8671875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-11": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.3984375,
+          0.7421875
+        ],
+        "mean": 0.578125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-12": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.734375,
+          0.96875
+        ],
+        "mean": 0.875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-13": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.53125,
+          0.8046875
+        ],
+        "mean": 0.6796875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-14": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9453125,
+          1.0
+        ],
+        "mean": 0.9765625,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-15": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.625,
+          0.875
+        ],
+        "mean": 0.7734375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-16": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.7890625,
+          0.9375
+        ],
+        "mean": 0.8671875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-17": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9140625,
+          0.9921875
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-18": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.2421875,
+          0.4765625
+        ],
+        "mean": 0.3671875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-19": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.671875,
+          0.9453125
+        ],
+        "mean": 0.828125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-20": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.8515625,
+          1.0
+        ],
+        "mean": 0.9453125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-21": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.96875,
+          1.0
+        ],
+        "mean": 0.9921875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-22": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.640625,
+          0.9140625
+        ],
+        "mean": 0.796875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-23": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.65625,
+          0.90625
+        ],
+        "mean": 0.8125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-24": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.765625,
+          0.9296875
+        ],
+        "mean": 0.8515625,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-25": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.7421875,
+          0.9921875
+        ],
+        "mean": 0.8984375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-26": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.71875,
+          0.953125
+        ],
+        "mean": 0.859375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-27": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.7890625,
+          0.9921875
+        ],
+        "mean": 0.9140625,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-28": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.96875,
+          1.0
+        ],
+        "mean": 0.9921875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-29": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.7734375,
+          1.0
+        ],
+        "mean": 0.921875,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-30": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.890625,
+          0.9921875
+        ],
+        "mean": 0.953125,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-balanced-31": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.8671875,
+          0.9921875
+        ],
+        "mean": 0.9375,
+        "n_pairs": 16
+      },
+      "payload_bits": 32,
+      "rank": 8,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r0-f0": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r0-f1": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.8125,
+          1.0
+        ],
+        "mean": 0.9453125,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r1-f0": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9609375,
+          1.0
+        ],
+        "mean": 0.984375,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r1-f1": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean": 1.0,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r2-f0": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.796875,
+          0.9921875
+        ],
+        "mean": 0.9296875,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r2-f1": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.90625,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r3-f0": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9375,
+          1.0
+        ],
+        "mean": 0.984375,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-d4-r3-f1": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9375,
+          1.0
+        ],
+        "mean": 0.984375,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-equal-scale": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-full16": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 64,
+      "rank": 16,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-00": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-01": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-02": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.8984375,
+          1.0
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-03": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.90625,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-04": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.90625,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-05": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-06": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-07": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.84375,
+          1.0
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-08": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9296875,
+          1.0
+        ],
+        "mean": 0.9765625,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-09": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.9609375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-10": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.78125,
+          1.0
+        ],
+        "mean": 0.9453125,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-11": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.875,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-12": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.90625,
+          1.0
+        ],
+        "mean": 0.96875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-13": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.78125,
+          1.0
+        ],
+        "mean": 0.9296875,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-14": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.7265625,
+          0.9921875
+        ],
+        "mean": 0.8984375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-loo-15": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.9609375,
+          1.0
+        ],
+        "mean": 0.984375,
+        "n_pairs": 16
+      },
+      "payload_bits": 60,
+      "rank": 15,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-00": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-01": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.046875,
+          0.0625
+        ],
+        "mean": 0.0078125,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-02": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0859375,
+          0.03125
+        ],
+        "mean": -0.0234375,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-03": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0546875,
+          0.0
+        ],
+        "mean": -0.0234375,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-04": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0859375,
+          -0.0234375
+        ],
+        "mean": -0.0546875,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-05": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.1796875,
+          0.0390625
+        ],
+        "mean": -0.0625,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-06": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.1328125,
+          -0.015625
+        ],
+        "mean": -0.0703125,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-07": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0625,
+          -0.0078125
+        ],
+        "mean": -0.03125,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-08": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.078125,
+          0.046875
+        ],
+        "mean": -0.015625,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-09": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0625,
+          0.09375
+        ],
+        "mean": 0.015625,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-10": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0859375,
+          0.109375
+        ],
+        "mean": 0.015625,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-11": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0546875,
+          0.0859375
+        ],
+        "mean": 0.015625,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-12": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.15625,
+          0.0078125
+        ],
+        "mean": -0.078125,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-13": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.1640625,
+          -0.0234375
+        ],
+        "mean": -0.09375,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-14": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.09375,
+          0.0546875
+        ],
+        "mean": -0.015625,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    },
+    "anatomy-single-15": {
+      "crossover": {
+        "alpha": 0.025,
+        "ci": [
+          -0.0546875,
+          0.0
+        ],
+        "mean": -0.0234375,
+        "n_pairs": 16
+      },
+      "payload_bits": 4,
+      "rank": 1,
+      "survival_mean": 1.0
+    }
+  }
+}

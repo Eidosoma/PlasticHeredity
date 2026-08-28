@@ -1,0 +1,14 @@
+{
+  "deadline_remaining_seconds": 21344.47664618492,
+  "elapsed_seconds": 7455.523353815079,
+  "hard_deadline_unix": 1787547607.7934554,
+  "phase": "campaign",
+  "pid": 687279,
+  "profile": "reference",
+  "science_deadline_unix": 1787545807.7934554,
+  "stage": "4-compression-and-robustness",
+  "started_unix": 1787518807.7934554,
+  "state": "complete",
+  "updated_unix": 1787526263.3168092,
+  "verdict": "ROBUST_COMPACT_RENEWED_CA_PLASTIC_HEREDITY"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "activity_count": "realized",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "deterministic_immediate",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "322e82cd2d0e0d80"
+  },
+  {
+    "activity_count": "deterministic",
+    "launch_anchor": "first_completed_generation",
+    "launch_preparation": "noiseless_generation",
+    "monochrome_death": "terminal_only",
+    "observed_daughter": "post_copy_offspring",
+    "process_noise": "pre_rule_each_sweep",
+    "seed_mode": "exact_half",
+    "setting_id": "b35342e5d6a7e996"
+  }
+]

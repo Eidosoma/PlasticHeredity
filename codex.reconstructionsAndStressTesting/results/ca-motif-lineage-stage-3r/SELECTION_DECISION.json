@@ -1,0 +1,15 @@
+{
+  "automatic_launch": false,
+  "confirmation_requires_separate_invocation": true,
+  "confirmation_state": "awaiting_human_review",
+  "design_digest": "5efb2a2b3083f4e4a3c0a9a80d93d3060aca8753a926fb047d6120f9af2e120d",
+  "eligible_confirmation_candidate_ids": [
+    "simple--strict-49-64--gain-050"
+  ],
+  "review_required": true,
+  "screen_selected_candidate_ids": [
+    "simple--strict-49-64--gain-050"
+  ],
+  "selected_overlap_candidate_id": "learned--overlap-17-48--diagonal-ridge",
+  "stage3_design_digest": "1b14f11eced3a2a529e1da9c698d48588c2b4963851cc368b4a660b2f1d9b4c1"
+}

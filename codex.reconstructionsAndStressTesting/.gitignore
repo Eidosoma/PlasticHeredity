@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+results/*/atlas/checkpoints/
+results/*/phase/checkpoints/
+results/*/particle/checkpoints/
+results/*/diagnostics/checkpoints/
+results/sensitivity-round-1/screen/cells/
+results/ca-campaign-round-1/**/checkpoints/
+results/ca-campaign-round-1/RUN.log

@@ -1,0 +1,20 @@
+{
+  "candidates": [],
+  "design_digest": "9565528d988ec8b79c797103da560f239b7f681cb2768d70d5baed9b04705582",
+  "screen": {
+    "31649": {
+      "auxiliary_crossover": {
+        "components": -0.00390625,
+        "terminal2x2": 0.50390625
+      },
+      "eligible_for_holdout": false,
+      "mean_crossover": 0.515625,
+      "mean_direction_a": 0.55078125,
+      "mean_direction_b": 0.552734375,
+      "mean_survival": 1.0,
+      "n_pairs": 16
+    }
+  },
+  "sealed_unix": 1787332177.5822299,
+  "selection_rule": "eligible; decreasing crossover; ascending rule id"
+}

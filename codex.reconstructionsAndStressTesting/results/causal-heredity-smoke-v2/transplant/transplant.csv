@@ -1,0 +1,10 @@
+substrate,donor_rule,host_rule,native,donor_id,donor_kind,death_count,success_count,success_rate,observer_success_counts,observer_success_rates,n
+eca,35,35,True,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 1, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 1.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,34,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,33,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,39,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,43,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,51,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,3,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,99,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1
+eca,35,163,False,eca-35-0-0,switcher,0,0,0.0,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",1

@@ -1,0 +1,10 @@
+death_count,donor_id,donor_rule,host_rule,n,native,observer_success_counts,observer_success_rates,substrate,success_count,success_rate
+0,eca-35-0-0,35,35,1,True,"{""multiscale"": 1, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 1.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,34,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,33,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,39,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,43,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,51,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,3,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,99,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0
+0,eca-35-0-0,35,163,1,False,"{""multiscale"": 0, ""primary"": 0, ""raw4"": 0}","{""multiscale"": 0.0, ""primary"": 0.0, ""raw4"": 0.0}",eca,0,0.0

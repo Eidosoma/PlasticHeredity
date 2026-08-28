@@ -1,0 +1,70 @@
+{
+  "cleanroom_exclusions": [
+    "sibling src directories",
+    "sibling tests",
+    "sibling scripts"
+  ],
+  "command_pid": 504625,
+  "contract": {
+    "activity_budget": 256,
+    "activity_count": "realized_post_noise",
+    "boundary_death": "timeout_or_terminal_monochrome",
+    "break_horizon": 8,
+    "cell_zero_bit_order": "most_significant_bit",
+    "coherence": 0.9,
+    "composition_zero": "first_completed_generation",
+    "copy_draw": "unconditional_generation_batch",
+    "copy_error": 0.015,
+    "distinct": 0.85,
+    "flip_noise": 0.01,
+    "form_mass_quantile": 0.5,
+    "form_pooling": "per seed, equal mean of each broken future's last completed composition; the break-causing daughter satisfies the later-generation requirement",
+    "futures_per_seed": 128,
+    "horizon": 32,
+    "inherit": 0.9,
+    "launch_preparation": "none",
+    "launch_rows_hex": [
+      "0000000080000000",
+      "0000000180000000",
+      "00000003c0000000",
+      "0000000ff0000000",
+      "aaaaaaaaaaaaaaaa",
+      "ffffffff00000000",
+      "23a031300051000a",
+      "6420581808011102",
+      "4450081105301018",
+      "01c1385c048a0f68",
+      "2349a69c817d7b9b",
+      "a13c035191c53554",
+      "9d65705fb9e2a777",
+      "89f7b38cfeff37ed",
+      "27deeff5fff7aefd",
+      "dfd73effdfef7dea"
+    ],
+    "max_sweeps": 128,
+    "min_sweeps": 4,
+    "n_seeds": 16,
+    "observed_daughter": "terminal_pre_copy",
+    "process_noise_order": "post_rule",
+    "rng_tag": "eca-traj-v1",
+    "strict_run": 8,
+    "width": 64
+  },
+  "contract_digest": "0a37385a1177ac49f534a160b730a744542bacc3248a42b56d4237412b599f41",
+  "environment": {
+    "numpy": "2.5.2",
+    "platform": "Linux-6.12.95+deb13-cloud-amd64-x86_64-with-glibc2.41",
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]"
+  },
+  "evidence": {
+    "supplied_json_sha256": "8e0bf96ecb940be22c2d24676dd779032fa646fe6eab52b1151e7eedc2ba454a",
+    "supplied_markdown_sha256": "0d2603c634308c1aa9325de018d0f4ec9c06a9ff2cb202fe18e94017548cce1b",
+    "vendored_fixture": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas/codex.reconstructionsAndStressTesting/plastic_ca/data/e19_golden_traces.json",
+    "vendored_fixture_sha256": "e95674116b3af9214222bd8f095fa5aa4b19578623ab5b08d682c9ba08849575"
+  },
+  "reference_root": "/home/robert/Random-Replications/PlasticHeredity/NewIdeas/preprints/ingressing-minds-v-ruliad-paper-ideas",
+  "refreshed_after_form_registry_adjudication_unix": 1787244636.170048,
+  "resume": true,
+  "started_unix": 1787243703.310534,
+  "workers": 16
+}

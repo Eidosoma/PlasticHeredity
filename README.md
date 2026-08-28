@@ -2,7 +2,7 @@
 
 Code, retained results, preregistrations, and provenance supporting manuscript version 2.1:
 
-> **Plastic heredity: Predicting and steering how inheritance breaks, returns, and persists**  
+> **Plastic heredity: Predicting and steering how inheritance breaks, returns, and persists**<br>
 > Robert Bjarnason · Eidosoma.ai
 
 The scientific evidence cutoff for version 2.1 is **24 August 2026**; the manuscript is dated **27 August 2026**. This repository is a computational research record, not a claim that the simulated assemblies are living systems or validated models of prebiotic chemistry.
